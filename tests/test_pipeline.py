@@ -1,4 +1,6 @@
 import datetime as dt
+import contextlib
+import io
 import importlib.util
 import json
 import tempfile
@@ -23,6 +25,8 @@ class CollectionTests(unittest.TestCase):
  def test_atom_and_html_title(self):
   xml=b'<feed xmlns="http://www.w3.org/2005/Atom"><entry><title>Robot &amp; vision</title><link href="https://example.com/robot"/><published>2026-11-04T09:00:00Z</published></entry></feed>'
   rows,_,_=c.parse_feed(xml,self.source,self.now);self.assertEqual(rows[0]['title'],'Robot & vision')
+ def test_html_error_page_is_not_a_successful_empty_feed(self):
+  with self.assertRaises(ValueError):c.parse_feed(b'<html><body>Service unavailable</body></html>',self.source,self.now)
  def test_promo_is_not_news(self):
   self.assertIsNone(c.category('Black Friday robot discount','test'))
  def test_failed_fetch_reports_error(self):
@@ -34,7 +38,7 @@ class CollectionTests(unittest.TestCase):
    data=Path(d);source={**self.source,'auto':True};(data/'sources.json').write_text(json.dumps([source]))
    now=dt.datetime.now(dt.timezone.utc);old=dict(id='rss-old',url='https://example.com/robot',title='Robot',date=now.isoformat(),discoveredAt=now.isoformat(),sourceId='test')
    (data/'radar.json').write_text(json.dumps(dict(items=[old],health=[dict(id='test',lastSuccessAt='2026-01-01')],lastSuccessfulAt='2026-01-01')))
-   with patch.object(c,'DATA',data),patch.object(c,'fetch',return_value=([],dict(id='test',state='error',error='HTTP 503'))):c.main()
+   with patch.object(c,'DATA',data),patch.object(c,'fetch',return_value=([],dict(id='test',state='error',error='HTTP 503'))),contextlib.redirect_stdout(io.StringIO()):c.main()
    result=json.loads((data/'radar.json').read_text());self.assertEqual(len(result['items']),1);self.assertEqual(result['lastSuccessfulAt'],'2026-01-01');self.assertEqual(result['health'][0]['state'],'error')
 class ContentTests(unittest.TestCase):
  def test_curated_and_org_have_evidence_boundaries(self):

@@ -38,6 +38,8 @@ def category(title, source_id):
 
 def parse_feed(raw, source, now):
  root=ET.fromstring(raw)
+ if root.tag not in ('rss', '{http://www.w3.org/2005/Atom}feed'):
+  raise ValueError('Response is not an RSS or Atom feed')
  items=root.findall('./channel/item')
  atom={'a':'http://www.w3.org/2005/Atom'}
  if not items:items=root.findall('a:entry',atom)
