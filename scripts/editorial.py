@@ -119,7 +119,9 @@ def events_for(items):
     for eid,rows in groups.items():
         # Official representation, then quality; a publisher counts once, regardless of article count.
         rows.sort(key=lambda i:(i['sources'][0]['role']!='official',-i['score'],i['publishedAt'] or ''))
-        representative=next((i for i in rows if i['selected']),rows[0])
+        selected=[i for i in rows if i['selected']]
+        latest=max(selected,key=lambda i:i['publishedAt'] or '') if selected else None
+        representative=next((i for i in rows if i['selected'] and i['developmentId']==latest['developmentId']),rows[0]) if latest else rows[0]
         result.append({'id':eid,'representativeId':representative['id'],'itemIds':[i['id'] for i in rows],'publisherGroups':sorted({s['publisherGroup'] for i in rows for s in i['sources']}),'developmentIds':sorted({i['developmentId'] for i in rows}),'selected':any(i['selected'] for i in rows)})
     return result
 

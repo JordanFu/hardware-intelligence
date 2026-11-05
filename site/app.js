@@ -319,7 +319,7 @@ function search() {
     head(
       "SEARCH YOUR ATLAS",
       `搜索：${query}`,
-      `找到 ${hits.length} 条结果，涵盖精选、组织案例、行业地图、学习与自动动态。`,
+      `找到 ${hits.length} 条结果，涵盖中文情报、组织案例、岗位、全链路知识与自动动态。`,
     ) +
     `<button class="secondary" data-clear-search>清空搜索</button>${
       hits.length
@@ -415,7 +415,7 @@ function openDetail(id) {
         : []);
   html += `<h3>原始来源</h3>${sources.map((s) => `<a class="source-link" href="${esc(safeURL(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.name)} ↗<small>来源日期：${esc(s.date||s.publishedAt||"未标注")}${s.coverage?` · ${s.coverage==="body"?"已取得正文":"已取得正文片段"} · 查阅 ${esc(date(s.readAt,true))}`:""} · 点击阅读原文</small></a>`).join("")}<h3><label for="research-note">我的研究笔记 · 仅保存在本机</label></h3><textarea id="research-note" data-note="${n.id}" placeholder="记下你的判断、疑问或下一步验证动作…" maxlength="10000" rows="4">${esc(local.notes[n.id] || "")}</textarea><div class="dialog-bottom">${saveButton(n.id, true)}<button class="secondary" data-save-note="${n.id}">保存笔记</button><button class="secondary" data-copy="${n.id}">复制条目链接</button></div>`;
   $("#dialog-body").innerHTML =
-    `<div class="dialog-header"><span class="small">${esc(n.period || n.category || "研究资料")}${n.date ? " · " + esc(date(n.date)) : ""}</span><button class="icon-button" data-close aria-label="关闭详情">×</button></div><div class="dialog-content"><span class="tag">${esc(n.brief ? "AI 中文整理 · 非人工核验" : n.sourceId ? "自动发现 · 待摘要" : n.label || n.kind || "学习框架")}</span><h2>${esc(n.title || n.name)}</h2>${html}</div>`;
+    `<div class="dialog-header"><span class="small">${esc(n.period || n.category || n.family || "研究资料")}${n.date ? " · " + esc(date(n.date)) : ""}</span><button class="icon-button" data-close aria-label="关闭详情">×</button></div><div class="dialog-content"><span class="tag">${esc(n.responsibilities ? "公开岗位 · 能力需求线索" : n.brief ? "AI 中文整理 · 非人工核验" : n.sourceId ? "自动发现 · 待摘要" : n.label || n.kind || "学习框架")}</span><h2>${esc(n.title || n.name)}</h2>${html}</div>`;
   focusBeforeDialog = document.activeElement;
   if (!$("#detail").open) $("#detail").showModal();
   $("#detail").scrollTop = 0;

@@ -14,6 +14,10 @@ class EditorialTests(unittest.TestCase):
  def test_event_publisher_dedup(self):
   rows=[self.row(),self.row('b')];events=e.events_for(rows)
   self.assertEqual(len(events),1);self.assertEqual(events[0]['publisherGroups'],['A']);self.assertEqual(len(self.digest(rows)['itemIds']),1)
+ def test_latest_development_represents_event(self):
+  old=self.row('old',date='2026-11-01');old['score']=99
+  new=self.row('new',dev='two',date='2026-11-04')
+  self.assertEqual(e.events_for([old,new])[0]['representativeId'],'new')
  def test_repeat_excluded_and_substantial_change(self):
   prior=[dict(date='2026-11-04',developmentKeys=[['one','one']])]
   self.assertEqual(self.digest([self.row()],prior)['itemIds'],[])
