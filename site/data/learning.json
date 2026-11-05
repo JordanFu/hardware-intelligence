@@ -1,0 +1,135 @@
+[
+  {
+    "id": "lesson-1",
+    "day": 1,
+    "title": "先画一张产业地图",
+    "subtitle": "用 15 分钟建立观察坐标",
+    "body": "把一个智能硬件拆成四层：器件与模组、设备系统、软件服务、交付运营。不要把整机品牌等同于整个产业。",
+    "steps": [
+      "选一个自己真实使用的产品，写出它帮助你完成的任务。",
+      "沿行业地图标出它依赖的芯片、传感、软件与交付环节。",
+      "找出任一环节失效时，用户需要多做的工作。"
+    ],
+    "output": "一张产品价值链，以及一个最关键的使用约束。",
+    "route": "landscape",
+    "source": {
+      "name": "Samsung Global Newsroom",
+      "url": "https://news.samsung.com/global/samsung-introduces-smartthings-now-in-new-platform-update-that-brings-more-intuitive-user-experiences",
+      "date": "2026-10-06"
+    }
+  },
+  {
+    "id": "lesson-2",
+    "day": 2,
+    "title": "读懂软硬件系统",
+    "subtitle": "看一次任务如何完成",
+    "body": "把感知、计算、行动和反馈连起来。云端模型升级容易，但设备内存、功耗、散热和传感能力形成具体约束。",
+    "steps": [
+      "选择一个任务，例如眼镜翻译或机器人抓取。",
+      "标出哪些步骤在设备端，哪些需要网络。",
+      "模拟断网或传感错误，写出恢复方式。"
+    ],
+    "output": "一条带失败分支的任务流程。",
+    "route": "landscape",
+    "source": {
+      "name": "NVIDIA 官方公告",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Advances-Isaac-Platform-for-General-Purpose-Robotics-With-New-Reference-Humanoid-Frameworks-Simulation-Pipelines-and-Data/default.aspx",
+      "date": "2026-10-21"
+    }
+  },
+  {
+    "id": "lesson-3",
+    "day": 3,
+    "title": "分清样机与量产",
+    "subtitle": "把发布时间与交付状态分开",
+    "body": "概念演示、工程验证、设计验证、生产验证和稳定量产回答不同问题。各企业阶段定义可能不同，要核对其门槛而不是套用简称。",
+    "steps": [
+      "找一条发布新闻，圈出已完成、计划中与未披露。",
+      "检查是否有真实交付、认证或可靠性证据。",
+      "写下进入下一阶段还缺什么证据。"
+    ],
+    "output": "一张“已证实 / 待确认”清单。",
+    "route": "briefing",
+    "source": {
+      "name": "Bambu Lab 官方博客",
+      "url": "https://blog.bambulab.com/tool-changer-game-changer-bambu-lab-presents-h3c-the-defining-new-generation-of-3d-printers/",
+      "date": "2026-11-03"
+    }
+  },
+  {
+    "id": "lesson-4",
+    "day": 4,
+    "title": "研究组织如何做决定",
+    "subtitle": "从组织图走到决策机制",
+    "body": "组织结构需要结合决策权、专业能力、接口和评价方式研究。公开岗位只能证明招聘需求，不能直接证明在岗人数或组织结果。",
+    "steps": [
+      "阅读 Apple 历史案例，分开记录事实和借鉴。",
+      "选一个整机体验冲突，列出涉及的职能。",
+      "写清最终决策人、输入材料和升级路径。"
+    ],
+    "output": "一个关键取舍的决策责任说明。",
+    "route": "organizations",
+    "source": {
+      "name": "Apple 托管 / HBR 作者文章",
+      "url": "https://www.apple.com/jobs/pdf/HBR_How_Apple_Is_Organized_For_Innovation-4.pdf",
+      "date": "2020-11"
+    }
+  },
+  {
+    "id": "lesson-5",
+    "day": 5,
+    "title": "看懂成本与渠道",
+    "subtitle": "追问谁持续支付成本",
+    "body": "售价不是利润，BOM 也不是全部成本。认证、库存、渠道、售后、云服务与更新维护都可能影响硬件业务。",
+    "steps": [
+      "列出设备出售前和出售后的成本类别。",
+      "区分一次性收入、订阅、耗材与服务收入。",
+      "没有公开数据的地方保留空白，不用行业传闻补齐。"
+    ],
+    "output": "一份有明确未知项的成本与收入框架。",
+    "route": "landscape",
+    "source": {
+      "name": "Meta 官方公告",
+      "url": "https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/",
+      "date": "2026-06"
+    }
+  },
+  {
+    "id": "lesson-6",
+    "day": 6,
+    "title": "识别新闻里的证据",
+    "subtitle": "让来源强度匹配结论强度",
+    "body": "官方公告能确认官方说了什么，效果仍需独立验证。媒体转载不自动形成第二份独立证据；同一事件只计一次。",
+    "steps": [
+      "在动态雷达选择一条新闻，打开原始来源。",
+      "核对时间、主体、行为和适用条件。",
+      "写一句事实，再单独写一句解释。"
+    ],
+    "output": "一条可追溯的情报卡。",
+    "route": "radar",
+    "source": {
+      "name": "Samsung Global Newsroom",
+      "url": "https://news.samsung.com/global/upgraded-sleep-apnea-feature-now-available-on-galaxy-ring-following-regulatory-approvals-from-us-fda-and-korea-mfds",
+      "date": "2026-11-03"
+    }
+  },
+  {
+    "id": "lesson-7",
+    "day": 7,
+    "title": "形成自己的判断",
+    "subtitle": "完成一份一页行业观察",
+    "body": "把行业约束、产品变化和组织问题放在一起，给出下一步可以验证的问题。目标是逐步减少盲点，而不是制造确定感。",
+    "steps": [
+      "选择一个细分领域，挑选两条公开证据。",
+      "写出一个变化、一个组织启示和一个反例。",
+      "保存来源与日期，并约定什么新证据会改变判断。"
+    ],
+    "output": "一份含事实、解释、边界和待验证问题的观察笔记。",
+    "route": "saved",
+    "source": {
+      "name": "Bambu Lab 创始团队自述",
+      "url": "https://blog.bambulab.com/the-team-behind-bambu-lab-x1/",
+      "date": "2022-05-19"
+    }
+  }
+]

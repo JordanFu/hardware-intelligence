@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#176648" />
+    <meta
+      name="description"
+      content="每天十分钟，读懂智能硬件。行业地图、组织案例、公开动态与七步学习路径，来源可追溯，判断有边界。"
+    />
+    <title>硬件观测 · 智能硬件情报中心</title>
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="硬件观测精选"
+      href="feed.xml"
+    />
+    <script src="app.js" type="module"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">跳到主要内容</a>
+    <aside class="sidebar" aria-label="主导航">
+      <a class="brand" href="#briefing"
+        ><span class="brand-mark" aria-hidden="true">H<span>·</span></span
+        ><span>硬件观测<small>HARDWARE ATLAS</small></span></a
+      >
+      <p class="nav-label">你的行业研究台</p>
+      <nav id="nav"></nav>
+      <button id="nav-close" class="mobile-menu secondary">收起导航 ×</button>
+      <div class="sidebar-bottom">
+        <div class="tiny-label">从信息到理解</div>
+        <p>观察产品变化<br />理解背后的团队</p>
+        <a href="#sources">关于信源与方法 <span>↗</span></a>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <button
+          id="menu-toggle"
+          class="icon-button mobile-menu"
+          aria-label="打开导航"
+          aria-expanded="false"
+        >
+          ☰</button
+        ><span id="breadcrumb">编辑精选</span>
+        <div class="search-wrap">
+          <span aria-hidden="true">⌕</span
+          ><input
+            id="search"
+            type="search"
+            placeholder="搜索公司、技术、组织机制…"
+            aria-label="全站搜索"
+          /><kbd>/</kbd>
+        </div>
+        <a
+          class="top-link"
+          href="https://github.com/JordanFu/hardware-intelligence"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub ↗</a
+        >
+      </header>
+      <main id="main" tabindex="-1">
+        <div class="loading">
+          <span class="loader"></span>
+          <h1>正在打开你的研究台</h1>
+          <p>加载公开情报与学习资料…</p>
+        </div>
+      </main>
+      <footer>
+        <span>硬件观测 · 公开信息，独立整理</span
+        ><span
+          >灵感来自
+          <a
+            href="https://github.com/KKKKhazix/AIHOT"
+            target="_blank"
+            rel="noopener noreferrer"
+            >AI HOT</a
+          >
+          · <a href="feed.xml">精选 RSS</a> ·
+          <a href="llms.txt">给 Agent 阅读</a></span
+        >
+      </footer>
+    </div>
+    <dialog id="detail"><div id="dialog-body"></div></dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <noscript
+      ><p>
+        本站交互需要 JavaScript。可直接访问
+        <a href="data/curated.json">精选数据</a>或<a href="feed.xml">RSS</a>。
+      </p></noscript
+    >
+  </body>
+</html>

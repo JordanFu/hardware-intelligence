@@ -1,0 +1,117 @@
+[
+  {
+    "id": "apple-functional",
+    "name": "Apple",
+    "label": "职能组织",
+    "period": "历史案例 · 2020",
+    "title": "专家领导专家，跨职能协作完成产品",
+    "summary": "研究技术决策权如何与专业能力匹配，而不只看部门名称。",
+    "facts": [
+      "2020 年的作者文章描述 Apple 按职能组织专业能力，并在公司层面统一损益责任。",
+      "作者提出专业深度、关注细节和协作辩论等领导要求。"
+    ],
+    "mechanism": "把技术决策交给有相关经验的负责人，并为跨职能冲突保留共同讨论与升级处理的机制。",
+    "apply": "适合研究软硬件强耦合、专业深度高的产品；不是所有公司都应取消业务单元。",
+    "unknown": "本文不足以证明 2026 年完整组织图，也没有提供可直接复用的人员配比或因果对照。",
+    "prompt": "在你的团队里，关键技术取舍由谁决定？谁对整机体验负责？",
+    "lanes": [
+      "专业职能积累能力",
+      "跨职能讨论产品取舍",
+      "共同承担整机体验"
+    ],
+    "sources": [
+      {
+        "name": "Apple 托管 / HBR 作者文章",
+        "url": "https://www.apple.com/jobs/pdf/HBR_How_Apple_Is_Organized_For_Innovation-4.pdf",
+        "date": "2020-11"
+      }
+    ],
+    "category": "组织设计"
+  },
+  {
+    "id": "bambu-system",
+    "name": "Bambu Lab · 拓竹",
+    "label": "系统工程团队",
+    "period": "历史案例 · 2022",
+    "title": "在架构阶段让关键专业一起做决定",
+    "summary": "创始团队的专业组合，比照搬研发人数更有研究价值。",
+    "facts": [
+      "2022 年官方自述提到，五位初始成员共同讨论 X1 的系统架构。",
+      "该文披露当时团队超过 150 人，其中 120 人属于研发；这一数字仅适用于该历史时点。"
+    ],
+    "mechanism": "将机械、嵌入式、算法与产品经验带入同一个架构讨论，在实现前处理专业之间的依赖。",
+    "apply": "适合研究新硬件从概念到系统架构的阶段；不能仅由创始人履历推导成熟公司的组织机制。",
+    "unknown": "内部汇报线、激励制度、架构决策流程和当前人数未由这份材料确认。",
+    "prompt": "结构、传感、固件与应用的冲突，是否在开模前已经有明确决策？",
+    "lanes": [
+      "关键专业共同定义架构",
+      "软硬件并行验证",
+      "整机体验与量产约束"
+    ],
+    "sources": [
+      {
+        "name": "Bambu Lab 创始团队自述",
+        "url": "https://blog.bambulab.com/the-team-behind-bambu-lab-x1/",
+        "date": "2022-05-19"
+      }
+    ],
+    "category": "组织设计"
+  },
+  {
+    "id": "meta-partnership",
+    "name": "Meta × EssilorLuxottica",
+    "label": "跨公司合作",
+    "period": "合作案例 · 2026",
+    "title": "智能眼镜也是技术、佩戴与渠道的协作问题",
+    "summary": "跨公司边界需要像内部团队接口一样被设计。",
+    "facts": [
+      "Meta 官方公告介绍与 EssilorLuxottica 合作推出 Meta Glasses。",
+      "双方公开合作表明技术能力与眼镜产品能力需要协同，不能把产品归为单一软件团队产出。"
+    ],
+    "mechanism": "可研究技术研发、工业设计、镜片与渠道能力如何通过长期合作组合。此处是研究视角，不是已获内部制度。",
+    "apply": "适合研究形态、品牌与销售渠道同样重要的硬件品类。",
+    "unknown": "双方内部团队规模、职责矩阵、利润分配与争议处理机制未公开确认。",
+    "prompt": "联合产品出现体验问题时，谁有权决定方案，谁承担售后？",
+    "lanes": [
+      "技术与交互能力",
+      "眼镜产品与佩戴体验",
+      "共同面向用户交付"
+    ],
+    "sources": [
+      {
+        "name": "Meta 官方公告",
+        "url": "https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/",
+        "date": "2026-06"
+      }
+    ],
+    "category": "组织设计"
+  },
+  {
+    "id": "nvidia-ecosystem",
+    "name": "NVIDIA · 机器人生态",
+    "label": "平台协作",
+    "period": "公开案例 · 2026",
+    "title": "用共同工具链连接不同专业团队",
+    "summary": "从公开平台接口研究协作方式，保留对内部组织结构的未知。",
+    "facts": [
+      "2026 年 10 月公告把参考本体、机器人学习框架、仿真和运行时放在同一平台叙述中。"
+    ],
+    "mechanism": "可借鉴的是统一交付接口与验证环境，让数据、仿真、本体和应用团队减少重复集成。",
+    "apply": "适合多团队共用研发平台的场景；小团队需先核对维护成本。",
+    "unknown": "没有由此确认 NVIDIA 内部汇报线、平台团队编制或客户组织效率改善。",
+    "prompt": "各团队交付的是代码、模型还是可复现的任务表现？",
+    "lanes": [
+      "数据与仿真",
+      "模型与评测",
+      "本体与现场交付"
+    ],
+    "sources": [
+      {
+        "name": "NVIDIA 官方公告",
+        "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Advances-Isaac-Platform-for-General-Purpose-Robotics-With-New-Reference-Humanoid-Frameworks-Simulation-Pipelines-and-Data/default.aspx",
+        "date": "2026-10-21"
+      }
+    ],
+    "category": "组织设计"
+  }
+]

@@ -1,0 +1,89 @@
+[
+  {
+    "id": "nvidia",
+    "name": "NVIDIA Blog",
+    "url": "https://blogs.nvidia.com/feed/",
+    "home": "https://blogs.nvidia.com/",
+    "tier": "官方一手",
+    "type": "RSS",
+    "scope": "端侧 AI、机器人、部署",
+    "auto": true
+  },
+  {
+    "id": "samsung",
+    "name": "Samsung Newsroom",
+    "url": "https://news.samsung.com/global/feed",
+    "home": "https://news.samsung.com/global/",
+    "tier": "官方一手",
+    "type": "RSS",
+    "scope": "智能家居、可穿戴、产品研发",
+    "auto": true
+  },
+  {
+    "id": "meta",
+    "name": "Meta Newsroom",
+    "url": "https://about.fb.com/feed/",
+    "home": "https://about.fb.com/news/",
+    "tier": "官方一手",
+    "type": "RSS",
+    "scope": "智能眼镜、XR",
+    "auto": true
+  },
+  {
+    "id": "bambu",
+    "name": "Bambu Lab Blog",
+    "url": "https://blog.bambulab.com/rss/",
+    "home": "https://blog.bambulab.com/",
+    "tier": "官方一手",
+    "type": "RSS",
+    "scope": "桌面制造、产品与团队",
+    "auto": true
+  },
+  {
+    "id": "cnx",
+    "name": "CNX Software",
+    "url": "https://www.cnx-software.com/feed/",
+    "home": "https://www.cnx-software.com/",
+    "tier": "媒体补充",
+    "type": "RSS",
+    "scope": "嵌入式硬件、开发板、端侧计算",
+    "auto": true
+  },
+  {
+    "id": "ithome",
+    "name": "IT之家",
+    "url": "https://www.ithome.com/rss/",
+    "home": "https://www.ithome.com/",
+    "tier": "媒体补充",
+    "type": "RSS",
+    "scope": "中国硬件动态；需回溯一手来源",
+    "auto": true
+  },
+  {
+    "id": "dji",
+    "name": "DJI 官方更新日志",
+    "home": "https://fh.dji.com/user-manual/en/release-notes/release-notes-public.html",
+    "tier": "官方一手",
+    "type": "编辑查阅",
+    "scope": "设备与平台版本变化",
+    "auto": false
+  },
+  {
+    "id": "csa",
+    "name": "Connectivity Standards Alliance",
+    "home": "https://csa-iot.org/newsroom/",
+    "tier": "标准组织",
+    "type": "编辑查阅",
+    "scope": "Matter、认证与互操作",
+    "auto": false
+  },
+  {
+    "id": "apple",
+    "name": "Apple / HBR 组织案例",
+    "home": "https://www.apple.com/jobs/pdf/HBR_How_Apple_Is_Organized_For_Innovation-4.pdf",
+    "tier": "作者研究",
+    "type": "编辑查阅",
+    "scope": "历史组织设计；时间边界明确",
+    "auto": false
+  }
+]

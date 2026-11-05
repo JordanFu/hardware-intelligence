@@ -1,0 +1,98 @@
+[
+  {
+    "id": "track-0",
+    "name": "可穿戴与眼镜",
+    "title": "人与计算的随身接口",
+    "examples": "Meta、Apple、Samsung、雷鸟",
+    "chain": "光学 / 传感 → 低功耗计算 → 交互与应用 → 零售与服务",
+    "constraint": "佩戴舒适度、续航、隐私和持续使用",
+    "team": "光学 / 声学、算法、工业设计、移动应用、健康验证",
+    "metrics": "完成一次真实任务的成功率；佩戴负担；续航；退货原因",
+    "source": {
+      "name": "Samsung Global Newsroom",
+      "url": "https://news.samsung.com/global/upgraded-sleep-apnea-feature-now-available-on-galaxy-ring-following-regulatory-approvals-from-us-fda-and-korea-mfds",
+      "date": "2026-11-03"
+    },
+    "note": "本站学习框架；公司仅为观察对象示例，不是排名或完整市场名单。"
+  },
+  {
+    "id": "track-1",
+    "name": "机器人与无人机",
+    "title": "从感知到行动的闭环",
+    "examples": "DJI、宇树、NVIDIA 生态",
+    "chain": "传感与执行器 → 控制 / 模型 → 整机 → 场景交付与运维",
+    "constraint": "真实环境中的安全、可靠性与维护成本",
+    "team": "控制、感知、机械、电气、仿真、现场交付",
+    "metrics": "任务成功率；人工接管频次；故障恢复时间；现场工时",
+    "source": {
+      "name": "NVIDIA 官方公告",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Advances-Isaac-Platform-for-General-Purpose-Robotics-With-New-Reference-Humanoid-Frameworks-Simulation-Pipelines-and-Data/default.aspx",
+      "date": "2026-10-21"
+    },
+    "note": "本站学习框架；公司仅为观察对象示例，不是排名或完整市场名单。"
+  },
+  {
+    "id": "track-2",
+    "name": "智能家居",
+    "title": "跨设备完成家庭任务",
+    "examples": "Samsung、Aqara、小米、涂鸦",
+    "chain": "连接协议 → 设备与网关 → 场景联动 → 安装与售后",
+    "constraint": "互操作、断网可用性、安装和家人共同使用",
+    "team": "嵌入式、连接协议、云平台、客户端、认证与售后",
+    "metrics": "配网成功率；离线可用率；跨品牌联动失败率",
+    "source": {
+      "name": "Samsung Global Newsroom",
+      "url": "https://news.samsung.com/global/samsung-introduces-smartthings-now-in-new-platform-update-that-brings-more-intuitive-user-experiences",
+      "date": "2026-10-06"
+    },
+    "note": "本站学习框架；公司仅为观察对象示例，不是排名或完整市场名单。"
+  },
+  {
+    "id": "track-3",
+    "name": "端侧 AI 与芯片",
+    "title": "把模型放进功耗与成本约束",
+    "examples": "NVIDIA、Qualcomm、瑞芯微",
+    "chain": "芯片 / 模组 → SDK → 模型优化 → 整机集成",
+    "constraint": "延迟、内存、散热、能耗和模型持续维护",
+    "team": "芯片 / BSP、模型压缩、系统软件、热设计、应用工程",
+    "metrics": "同一任务下的延迟、功耗、内存与准确性",
+    "source": {
+      "name": "NVIDIA 官方公告",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Advances-Isaac-Platform-for-General-Purpose-Robotics-With-New-Reference-Humanoid-Frameworks-Simulation-Pipelines-and-Data/default.aspx",
+      "date": "2026-10-21"
+    },
+    "note": "本站学习框架；公司仅为观察对象示例，不是排名或完整市场名单。"
+  },
+  {
+    "id": "track-4",
+    "name": "制造与创作",
+    "title": "把复杂工艺变成易用工具",
+    "examples": "拓竹、创想三维、xTool",
+    "chain": "材料与运动控制 → 设备 → 软件工作流 → 内容与耗材",
+    "constraint": "良率、准备时间、耗材和失败恢复",
+    "team": "运动控制、固件、结构、材料、切片软件、制造工程",
+    "metrics": "第一次任务成功率；准备时间；废料；维护成本",
+    "source": {
+      "name": "Bambu Lab 官方博客",
+      "url": "https://blog.bambulab.com/tool-changer-game-changer-bambu-lab-presents-h3c-the-defining-new-generation-of-3d-printers/",
+      "date": "2026-11-03"
+    },
+    "note": "本站学习框架；公司仅为观察对象示例，不是排名或完整市场名单。"
+  },
+  {
+    "id": "track-5",
+    "name": "产品工程与量产",
+    "title": "从可演示走到可交付",
+    "examples": "品牌方、ODM / EMS、模组供应商",
+    "chain": "用户需求 → 原型 → 设计验证 → 生产验证 → 量产与服务",
+    "constraint": "成本、质量、交期、维修和供货风险",
+    "team": "产品、系统工程、制造、采购、质量、法规与售后",
+    "metrics": "关键缺陷关闭率；良率；交期；返修原因",
+    "source": {
+      "name": "Bambu Lab 创始团队自述",
+      "url": "https://blog.bambulab.com/the-team-behind-bambu-lab-x1/",
+      "date": "2022-05-19"
+    },
+    "note": "本站学习框架；公司仅为观察对象示例，不是排名或完整市场名单。"
+  }
+]

@@ -1,0 +1,5 @@
+{
+  "name": "hardware-intelligence", "version": "1.0.0", "private": true,
+  "description": "硬件观测：智能硬件行业、组织与产品情报中心",
+  "scripts": {"collect": "python3 scripts/collect.py", "build": "python3 scripts/build.py", "test": "python3 -m unittest discover -s tests -v", "dev": "python3 -m http.server 4173 --directory dist"}
+}
