@@ -1,76 +1,51 @@
-# 硬件观测 · Hardware Atlas
+# 硬件观测 / Hardware Atlas
 
-一个帮助你理解智能硬件产业、产品变化和组织协作的中文情报中心。
+[打开情报中心](https://jordanfu.github.io/hardware-intelligence/) · [发布记录](https://github.com/JordanFu/hardware-intelligence/actions)
 
-**在线访问：https://jordanfu.github.io/hardware-intelligence/**
+面向智能硬件产销研全链路的中文研究站：需求、研发、供应链、制造、质量、渠道、服务、经营与组织。独立实现，参考 [AI HOT 的筛选、去重与日报方法](https://github.com/KKKKhazix/AIHOT/blob/main/docs/selection.md)，没有复制其代码、数据库或品牌。
 
-## 可以做什么
+## 阅读入口
 
-- **编辑精选**：先读产品变化，再看事实、解读、证据边界和下一步问题。
-- **动态雷达**：6 个 RSS 信源每日采集，按领域、来源等级和原文发布日期筛选；自动条目一律标为待核验。
-- **行业地图**：6 个领域的价值链、约束、团队专业组合和观察指标。
-- **组织实验室**：Apple、拓竹、Meta × EssilorLuxottica、NVIDIA 生态案例，公开事实与研究推论分离。
-- **七步入门**：每一步给出阅读、行动与学习产出；完成状态可撤销。
-- **我的收藏**：收藏、研究笔记、学习进度在浏览器本地保存；支持 JSON 导出与合并导入。
-- **信源与方法**：显示采集成功/失败、最近成功时间、分类与筛选规则。
+- 中文精选：先读文章核心 brief，再展开事实、原标题、来源和证据边界。
+- 每日情报：按事件去重的历史日报，保留扫描失败和覆盖空白。
+- 全链路知识：八个环节的基础、团队接口、指标口径、小任务与来源案例。
+- 实践观察：已披露方法、适用条件、结果证据和下一步核验，不做无依据的“最优”排名。
+- 组织实验室：持续更新的组织机制线索，以及带年份的历史案例。
+- 岗位与人才：公司、岗位族、职责、协作对象、时间与版本变化；用于人员决策研究，不将职位数等同人员缺口。
+- 动态雷达、产品领域地图、七步入门、收藏/笔记/导出继续可用。
 
-无账号、无数据库、无付费模型调用、无第三方跟踪脚本。初始内容为真实公开材料的独立整理，不是演示新闻。
+## 自动更新
 
-## 更新方式与边界
+GitHub Actions 计划每日北京时间 08:17 发现公开 RSS，保存健康状态并部署。Codex 本地定时任务计划每日 08:40 执行 [整理规则](docs/editorial-runbook.md)：读取原文、补充国内来源、生成中文摘要、做证据复核与事件归组、更新组织/实践/招聘资料、测试并推送。使用现有 Codex，不需额外模型 API Key；电脑与 Codex 必须可用，调度可能延迟。页面分别显示采集和整理时间，超过 36 小时提醒。
 
-GitHub Actions 每天计划 **北京时间 08:17** 运行（平台调度可能延迟），也可在 Actions 手动 `Run workflow`。采集后校验、提交历史数据并部署 Pages。GitHub 可能暂停长期无活动的公共仓库计划任务；页面显示最近成功时间，超过 36 小时会警示。
+普通正文不可读时保留待摘要，不根据标题编写内容。初筛五维评分后逐条复核；这不是独立双模型评分。官方门槛 70、媒体 80，hold/reject 不入精选。同事件官方代表优先，同发布方只计一次。日报最多 8 条、同发布方最多 2 条，近 7 期重复进展排除；再入选须有实质新官方行动。首期回补近 14 天并标明，随后优先 72 小时；同日重跑不改已出日报。
 
-- 动态只自动采集标题、发布时间与链接；不转载正文，不自动写中文研判。
-- 编辑精选、组织案例、学习材料属于版本化编辑内容；**不会因 RSS 更新自动刷新**。超过 7 天未整理时首页提示。
-- 6 个自动源：NVIDIA、Samsung、Meta、Bambu Lab、CNX Software、IT之家。DJI、CSA、Apple/HBR 是编辑参考源，不声称自动抓取。
-- 标题关键词分类可能漏收或误收；RSS 通常只提供最近若干条，因此不是全网覆盖。中文原始源目前主要为 IT之家，国内组织研究覆盖仍有限。
-- 自动流保留最近 90 天、最多 400 条，按 URL 去重。相似标题不自动合并，不将多篇转载声称为独立交叉核验。
-- 采集失败保留已有历史并写明错误；所有源失败也不清空数据。每日索引按源发布时间（北京时间）生成，不是模型研判日报。
-- 收藏是当前数据的 ID 引用。自动条目超出保留窗口后会提示不再可读，备份仍保留标识与笔记。
+招聘：首轮建立基线，后续保留职责版本与字段前后差异。完整列表成功检查的未见只标可见性变化；明确关闭需原文证明。搜索索引、旧版无日期页面与实时正文分开；不推断扩编、裁撤、实际人数或行业缺口。
 
-## 本地运行
+## 本地运行与数据
 
-需要 Python 3.10+、curl，Node 22 用于 JavaScript 语法检查。无 npm 运行依赖。
+Python 3.11+ 与 Node 22；无前端构建依赖。
 
 ```sh
 python3 scripts/collect.py
+python3 scripts/editorial.py prepare
+# Codex 按运行规则读取原文并生成本地 bundle
+python3 scripts/editorial.py publish --bundle work/editorial/bundle.json
+python3 scripts/recruitment.py --bundle work/editorial/jobs-bundle.json
 python3 -m unittest discover -s tests -v
 node --check site/app.js
 python3 scripts/build.py
-python3 -m http.server 4173 --directory dist
+python3 -m http.server 8765 --directory dist
 ```
 
-打开 http://localhost:4173 。构建输出 `dist/` 不进 Git，源文件在 `site/`。
+- `site/data/intelligence.json`：中文 brief、事件、评分、事实位置、组织/实践、运行覆盖。
+- `daily.json`：持久化日报；`digests.json` 仅在构建时生成 RSS 按日索引，二者不同。
+- `recruitment.json`：公开岗位样本、可见性、职责版本、字段差异与扫描状态。
+- `industry.json`：13 家国内观察对象、八个环节、筛选口径；`valuechain.json`：学习框架。
+- `radar.json`：发现历史；`curated.json` / `organizations.json`：初始研究与历史案例。
+- `work/`：忽略的本地原文和中间材料，不进入 Git 或站点。
+- `dist/`：仅静态公开页面与摘要；精选 RSS 按代表事件生成。
 
-## 内容维护
+事实锚点检查仅证明短语出现在所读材料中，不能自动证明整条摘要真实；需 Codex 的逐条内容复核。官方披露与独立验证不同，组织/经营效果不足时保留未知。初始样本偏向拓竹；国内公司、招聘和全链路覆盖会按轮次扩充，目录不等于已经完整扫描。
 
-| 文件 | 用途 |
-| --- | --- |
-| `site/data/curated.json` | 编辑精选；填写事实、解读、边界、来源和整理日期 |
-| `site/data/organizations.json` | 组织案例；需保留资料年份、未知项和适用条件 |
-| `site/data/landscape.json` | 行业学习框架 |
-| `site/data/learning.json` | 七步学习任务 |
-| `site/data/sources.json` | 信源目录及自动采集开关 |
-| `site/data/radar.json` | 自动采集的持久历史与健康状态 |
-| `scripts/collect.py` | 关键词范围、时间门槛和链接去重 |
-| `scripts/build.py` | 发布产物、每日索引、RSS 和 llms.txt |
-
-新增一条精选时先打开来源核对：事件日期、发布日期、主体、行为、适用范围。内容字段使用纯文本，页面统一转义。详情中不复制全文。修改后运行检查并 push 到 `main`，Pages 工作流会发布。不要只改 `reviewedAt` 来伪造内容新鲜度。
-
-## 部署
-
-仓库 Settings → Pages → Source 为 **GitHub Actions**。工作流在 `.github/workflows/publish.yml`，使用仓库自带的 `GITHUB_TOKEN`；不需要额外 API Key。只发布 `dist/`，不发布脚本、私有配置或原始抓取正文。收藏与笔记绝不进入构建或仓库。
-
-回滚页面：将有问题的源码提交 revert 后 push，或在 GitHub 上恢复所需版本再手动执行工作流。不要 force push 采集历史。
-
-## 与 AI HOT 的关系
-
-参考 [AI HOT](https://github.com/KKKKhazix/AIHOT) 的介绍、[架构](https://github.com/KKKKhazix/AIHOT/blob/main/docs/architecture.md)及[行业定制方法](https://github.com/KKKKhazix/AIHOT/blob/main/docs/customize.md)，采用公开信源分级、去重、精选和来源可追溯的思路。
-
-这是**独立实现**，没有 fork 或复制 AI HOT 的引擎代码、商标、Logo、字体或运营数据。上游完整方案包含 Node 24、PostgreSQL、常驻 API/worker/web 进程与模型调用，GitHub Pages 不能直接运行，因此本项目按用户的“参考介绍、全新 GitHub 页面”要求采用静态架构。未实现上游的双评分、语义聚簇、全文翻译、后台管理或 MCP 服务；公开 JSON 与 `llms.txt` 可以供 Agent 读取。
-
-未来如需要模型双评、跨语言聚簇或自动中文日报，需要独立的预算、模型凭据与效果校准；不能把现有关键词筛选称为智能研判。
-
-## 许可与来源
-
-项目原创代码使用 MIT 许可证。外部资料、品牌及第三方文章版权归其原权利人；仅做短摘要与链接引用，不包含外部文章全文。Apple/HBR PDF 只链接，不存储或转载。AI HOT 品牌不属于本项目。
+无私有数据、无候选人信息、无员工监控。收藏和笔记只存浏览器，导出可备份；无账号、跨设备同步或实时问答。本站代码采用 MIT 许可；外部文章仍归原作者，只提供独立摘要与来源。

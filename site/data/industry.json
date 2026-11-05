@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "focus": "国内公司为主，覆盖产销研全链路；海外材料用于对照与技术约束",
+  "companies": [
+    {
+      "name": "DJI 大疆",
+      "aliases": [
+        "大疆",
+        "DJI"
+      ],
+      "domains": [
+        "dji.com"
+      ],
+      "stages": [
+        "研发与系统",
+        "制造与交付",
+        "渠道与销售",
+        "服务与生命周期"
+      ]
+    },
+    {
+      "name": "Bambu Lab 拓竹",
+      "aliases": [
+        "拓竹",
+        "Bambu"
+      ],
+      "domains": [
+        "bambulab.com"
+      ],
+      "stages": [
+        "需求与规划",
+        "研发与系统",
+        "制造与交付",
+        "质量与合规",
+        "服务与生命周期"
+      ]
+    },
+    {
+      "name": "安克创新",
+      "aliases": [
+        "安克",
+        "Anker",
+        "eufy",
+        "soundcore",
+        "SOLIX"
+      ],
+      "domains": [
+        "anker-in.com",
+        "anker.com"
+      ],
+      "stages": [
+        "供应链与采购",
+        "渠道与销售",
+        "经营与组织"
+      ]
+    },
+    {
+      "name": "小米",
+      "aliases": [
+        "小米",
+        "Xiaomi",
+        "米家"
+      ],
+      "domains": [
+        "mi.com",
+        "ir.mi.com",
+        "xiaomi.com"
+      ],
+      "stages": [
+        "供应链与采购",
+        "制造与交付",
+        "渠道与销售",
+        "经营与组织"
+      ]
+    },
+    {
+      "name": "石头科技",
+      "aliases": [
+        "石头科技",
+        "Roborock"
+      ],
+      "domains": [
+        "roborock.com"
+      ],
+      "stages": [
+        "研发与系统",
+        "制造与交付",
+        "渠道与销售"
+      ]
+    },
+    {
+      "name": "追觅",
+      "aliases": [
+        "追觅",
+        "Dreame"
+      ],
+      "domains": [
+        "dreame.tech",
+        "dreametech.com"
+      ],
+      "stages": [
+        "研发与系统",
+        "供应链与采购",
+        "经营与组织"
+      ]
+    },
+    {
+      "name": "科沃斯",
+      "aliases": [
+        "科沃斯",
+        "ECOVACS",
+        "添可",
+        "Tineco"
+      ],
+      "domains": [
+        "ecovacs.com",
+        "tineco.com"
+      ],
+      "stages": [
+        "制造与交付",
+        "渠道与销售",
+        "服务与生命周期"
+      ]
+    },
+    {
+      "name": "宇树科技",
+      "aliases": [
+        "宇树",
+        "Unitree"
+      ],
+      "domains": [
+        "unitree.com"
+      ],
+      "stages": [
+        "研发与系统",
+        "制造与交付",
+        "经营与组织"
+      ]
+    },
+    {
+      "name": "影石创新",
+      "aliases": [
+        "影石",
+        "Insta360"
+      ],
+      "domains": [
+        "insta360.com"
+      ],
+      "stages": [
+        "需求与规划",
+        "研发与系统",
+        "渠道与销售"
+      ]
+    },
+    {
+      "name": "绿米 Aqara",
+      "aliases": [
+        "绿米",
+        "Aqara"
+      ],
+      "domains": [
+        "aqara.com"
+      ],
+      "stages": [
+        "质量与合规",
+        "渠道与销售",
+        "服务与生命周期"
+      ]
+    },
+    {
+      "name": "雷鸟创新",
+      "aliases": [
+        "雷鸟",
+        "RayNeo"
+      ],
+      "domains": [
+        "rayneo.com"
+      ],
+      "stages": [
+        "研发与系统",
+        "供应链与采购"
+      ]
+    },
+    {
+      "name": "XREAL",
+      "aliases": [
+        "XREAL"
+      ],
+      "domains": [
+        "xreal.com"
+      ],
+      "stages": [
+        "研发与系统",
+        "供应链与采购",
+        "渠道与销售"
+      ]
+    },
+    {
+      "name": "xTool",
+      "aliases": [
+        "xTool",
+        "创客工场"
+      ],
+      "domains": [
+        "xtool.com"
+      ],
+      "stages": [
+        "需求与规划",
+        "制造与交付",
+        "渠道与销售"
+      ]
+    }
+  ],
+  "stages": [
+    "需求与规划",
+    "研发与系统",
+    "供应链与采购",
+    "制造与交付",
+    "质量与合规",
+    "渠道与销售",
+    "服务与生命周期",
+    "经营与组织"
+  ],
+  "selection": {
+    "officialThreshold": 70,
+    "mediaThreshold": 80,
+    "dimensions": [
+      "相关性",
+      "增量信息",
+      "证据质量",
+      "机制清晰",
+      "可行动性"
+    ],
+    "maxPerDimension": 20
+  },
+  "daily": {
+    "hour": 8,
+    "minute": 40,
+    "maxStories": 8,
+    "perPublisher": 2,
+    "repeatDays": 7
+  },
+  "priorities": [
+    "用户任务与需求验证",
+    "系统架构、研发接口与成本取舍",
+    "关键器件、供应商协同、库存与交期",
+    "NPI、量产爬坡、工艺与制造质量",
+    "安全、可靠性、认证与召回",
+    "定价、渠道、零售、出海与销售反馈",
+    "安装、维修、软件更新、售后与产品退出",
+    "组织决策、跨团队流程、人才机制和经营现金流"
+  ]
+}

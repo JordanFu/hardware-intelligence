@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-05T10:39:16.176722+00:00",
+  "jobs": [
+    {
+      "company": "DJI 大疆",
+      "title": "大模型后训练专家",
+      "family": "算法与端侧",
+      "location": "深圳 / 上海 / 北京",
+      "stages": [
+        "研发与系统"
+      ],
+      "url": "https://apply.careers.dji.com/social-recruitment/dji/170070?hash=%23%2Fjobs",
+      "postedAt": "2026-10-09",
+      "access": "搜索索引可见",
+      "responsibilities": [
+        "后训练与设备任务适配；以实际任务和端侧约束验证模型。"
+      ],
+      "interfaces": [
+        "飞控、导航、感知、系统、端侧部署"
+      ],
+      "requirements": [
+        "训练评测与端侧约束意识"
+      ],
+      "decisionQuestion": "招聘时是否验证候选人跨算法与设备的交付经验？",
+      "boundary": "官方招聘页搜索索引可见，直连重定向失败；标注日期来自索引，当前在招状态待复核。首次收录不代表新设岗位，招聘人数与实际缺口未知。",
+      "postingId": null,
+      "locator": "大模型后训练专家 · 岗位职责段",
+      "coverage": "正文片段/搜索索引；非完整岗位清单",
+      "id": "job-4cd3223cfd1b1a22",
+      "firstSeen": "2026-11-05T10:39:16.176722+00:00",
+      "lastSeen": "2026-11-05T10:39:16.176722+00:00",
+      "sourceHash": "ab537e55a7e2d54d54cc73353db58c4340054e285dc2b8d5c34265d865eba8e0",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-05T10:39:16.176722+00:00",
+          "sourceHash": "ab537e55a7e2d54d54cc73353db58c4340054e285dc2b8d5c34265d865eba8e0",
+          "access": "搜索索引可见",
+          "title": "大模型后训练专家",
+          "family": "算法与端侧",
+          "location": "深圳 / 上海 / 北京",
+          "responsibilities": [
+            "后训练与设备任务适配；以实际任务和端侧约束验证模型。"
+          ],
+          "interfaces": [
+            "飞控、导航、感知、系统、端侧部署"
+          ],
+          "requirements": [
+            "训练评测与端侧约束意识"
+          ],
+          "stages": [
+            "研发与系统"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "DJI 大疆",
+      "title": "销售预测计划专家（消费级产品）",
+      "family": "销售计划与供应链",
+      "location": "深圳",
+      "stages": [
+        "供应链与采购",
+        "渠道与销售"
+      ],
+      "url": "https://apply.careers.dji.com/social-recruitment/dji/170070?hash=%23%2Fjobs",
+      "postedAt": "2026-10-27",
+      "access": "搜索索引可见",
+      "responsibilities": [
+        "负责货源分配与交付规则，处理缺货、积压及错配。"
+      ],
+      "interfaces": [
+        "跨部门协调，具体部门未列明"
+      ],
+      "requirements": [
+        "分货、库存、订单和交付经验"
+      ],
+      "decisionQuestion": "销售计划岗位与采购、库存决策的责任如何分界？",
+      "boundary": "官方招聘页搜索索引可见，直连重定向失败；标注日期来自索引，当前在招状态待复核。首次收录不代表新设岗位，招聘人数与实际缺口未知。",
+      "postingId": null,
+      "locator": "销售预测计划专家（消费级产品） · 岗位职责段",
+      "coverage": "正文片段/搜索索引；非完整岗位清单",
+      "id": "job-2da99eb90de66e6f",
+      "firstSeen": "2026-11-05T10:39:16.176722+00:00",
+      "lastSeen": "2026-11-05T10:39:16.176722+00:00",
+      "sourceHash": "ccad29ab175dd4074a9d8c11784fbcaff94ffb6dcfa381d2befcad9423c1e7b0",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-05T10:39:16.176722+00:00",
+          "sourceHash": "ccad29ab175dd4074a9d8c11784fbcaff94ffb6dcfa381d2befcad9423c1e7b0",
+          "access": "搜索索引可见",
+          "title": "销售预测计划专家（消费级产品）",
+          "family": "销售计划与供应链",
+          "location": "深圳",
+          "responsibilities": [
+            "负责货源分配与交付规则，处理缺货、积压及错配。"
+          ],
+          "interfaces": [
+            "跨部门协调，具体部门未列明"
+          ],
+          "requirements": [
+            "分货、库存、订单和交付经验"
+          ],
+          "stages": [
+            "供应链与采购",
+            "渠道与销售"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "安克创新",
+      "title": "声学专家（博士）—影音事业部",
+      "family": "声学与系统验证",
+      "location": "深圳",
+      "stages": [
+        "研发与系统",
+        "制造与交付",
+        "质量与合规",
+        "服务与生命周期"
+      ],
+      "url": "https://career.anker-in.com/social/recruitment",
+      "postedAt": null,
+      "access": "搜索索引可见",
+      "responsibilities": [
+        "贯穿声学设计、算法联调、产线标准和市场异常处理。"
+      ],
+      "interfaces": [
+        "声学技术负责人；音频算法团队；产线"
+      ],
+      "requirements": [
+        "声学仿真、测评与量产问题处理"
+      ],
+      "decisionQuestion": "专家岗位是否有足够时间兼顾设计和量产支持？需要怎样的接口支持？",
+      "boundary": "搜索索引保留职责片段；直接页面显示空动态列表，不能认定岗位关闭。发布日期未标注，在招状态待复核。",
+      "postingId": null,
+      "locator": "声学专家（博士）—影音事业部 · 岗位职责段",
+      "coverage": "正文片段/搜索索引；非完整岗位清单",
+      "id": "job-3a0bbf257b108d20",
+      "firstSeen": "2026-11-05T10:39:16.176722+00:00",
+      "lastSeen": "2026-11-05T10:39:16.176722+00:00",
+      "sourceHash": "19fb34e2e3e5feba9e1c4406efc852a190e2a4d87bcfe50e95370cbcd326c400",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-05T10:39:16.176722+00:00",
+          "sourceHash": "19fb34e2e3e5feba9e1c4406efc852a190e2a4d87bcfe50e95370cbcd326c400",
+          "access": "搜索索引可见",
+          "title": "声学专家（博士）—影音事业部",
+          "family": "声学与系统验证",
+          "location": "深圳",
+          "responsibilities": [
+            "贯穿声学设计、算法联调、产线标准和市场异常处理。"
+          ],
+          "interfaces": [
+            "声学技术负责人；音频算法团队；产线"
+          ],
+          "requirements": [
+            "声学仿真、测评与量产问题处理"
+          ],
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规",
+            "服务与生命周期"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "小米",
+      "title": "供应链项目经理",
+      "family": "供应链项目管理",
+      "location": "北京",
+      "stages": [
+        "供应链与采购",
+        "制造与交付",
+        "质量与合规"
+      ],
+      "url": "https://hr.xiaomi.com/job/view/730",
+      "postedAt": null,
+      "access": "正文可见",
+      "responsibilities": [
+        "承担手机项目质量、交货与爬坡风险协调。"
+      ],
+      "interfaces": [
+        "研发、工程品质、制造与物流"
+      ],
+      "requirements": [
+        "手机制程及质量管理知识"
+      ],
+      "decisionQuestion": "项目经理对质量与交期负责时，是否拥有必要的跨部门协调权限？",
+      "boundary": "旧版官网岗位页，发布日期不明；仅作为职责参考，不能计入当前新增岗位或市场需求。",
+      "postingId": "730",
+      "locator": "供应链项目经理 · 岗位职责段",
+      "coverage": "正文片段/搜索索引；非完整岗位清单",
+      "id": "job-aecd029a0f7afa82",
+      "firstSeen": "2026-11-05T10:39:16.176722+00:00",
+      "lastSeen": "2026-11-05T10:39:16.176722+00:00",
+      "sourceHash": "4f445e8f98fce605446b3dd61b8603260eb4209c1d7a759c384640e9c9823bf3",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-05T10:39:16.176722+00:00",
+          "sourceHash": "4f445e8f98fce605446b3dd61b8603260eb4209c1d7a759c384640e9c9823bf3",
+          "access": "正文可见",
+          "title": "供应链项目经理",
+          "family": "供应链项目管理",
+          "location": "北京",
+          "responsibilities": [
+            "承担手机项目质量、交货与爬坡风险协调。"
+          ],
+          "interfaces": [
+            "研发、工程品质、制造与物流"
+          ],
+          "requirements": [
+            "手机制程及质量管理知识"
+          ],
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "质量与合规"
+          ]
+        }
+      ]
+    }
+  ],
+  "changes": [
+    {
+      "jobId": "job-4cd3223cfd1b1a22",
+      "observedAt": "2026-11-05T10:39:16.176722+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-2da99eb90de66e6f",
+      "observedAt": "2026-11-05T10:39:16.176722+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-3a0bbf257b108d20",
+      "observedAt": "2026-11-05T10:39:16.176722+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-aecd029a0f7afa82",
+      "observedAt": "2026-11-05T10:39:16.176722+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    }
+  ],
+  "scans": [
+    {
+      "company": "DJI 大疆",
+      "state": "partial",
+      "complete": false,
+      "note": "官方页面的搜索索引取样；直连重定向失败。",
+      "checkedAt": "2026-11-05T10:39:16.176722+00:00"
+    },
+    {
+      "company": "安克创新",
+      "state": "partial",
+      "complete": false,
+      "note": "搜索索引有职责，动态页面无列表；不能判断关闭。",
+      "checkedAt": "2026-11-05T10:39:16.176722+00:00"
+    },
+    {
+      "company": "小米",
+      "state": "partial",
+      "complete": false,
+      "note": "旧版官网无日期岗位样本，不代表当前需求。",
+      "checkedAt": "2026-11-05T10:39:16.176722+00:00"
+    }
+  ],
+  "insights": [
+    {
+      "title": "把交付能力写进算法岗位，而不只列模型技能",
+      "finding": "大疆后训练岗位把设备任务效果与飞控、系统、端侧部署协作放在同一职责范围。",
+      "interpretation": "人才储备可关注能把模型效果转成真实设备表现的跨专业经验。",
+      "alternative": "也可能是一个特定项目的要求；不能外推为全行业岗位缺口或部门调整。",
+      "nextAction": "面试中请候选人说明一次任务评测、设备约束与跨团队验收的实际取舍。",
+      "boundary": "官方招聘页搜索索引可见，直连重定向失败；标注日期来自索引，当前在招状态待复核。首次收录不代表新设岗位，招聘人数与实际缺口未知。",
+      "jobIds": [
+        "job-4cd3223cfd1b1a22"
+      ],
+      "reviewedAt": "2026-11-05T10:39:16.176722+00:00"
+    },
+    {
+      "title": "销售计划岗位的边界延伸到库存与交付",
+      "finding": "大疆销售计划样本要求制定货盘规则，并处理积压、缺货和货源错配。",
+      "interpretation": "设计类似岗位时，应明确它与采购、仓储及销售承诺之间的决策权限。",
+      "alternative": "职责表述不证明实际权限到位，也不证明公司当前存在库存问题。",
+      "nextAction": "先核对负责的指标、可调配资源和冲突升级路径，再决定岗位配置。",
+      "boundary": "官方招聘页搜索索引可见，直连重定向失败；标注日期来自索引，当前在招状态待复核。首次收录不代表新设岗位，招聘人数与实际缺口未知。",
+      "jobIds": [
+        "job-2da99eb90de66e6f"
+      ],
+      "reviewedAt": "2026-11-05T10:39:16.176722+00:00"
+    },
+    {
+      "title": "专家横跨研发与量产，需要检查支持条件",
+      "finding": "安克声学样本同时涉及研发设计、算法联调、产线测试和市场异常处理。",
+      "interpretation": "技术深度之外，问题复现与跨阶段协调值得纳入能力要求。",
+      "alternative": "职责跨阶段可能是合理的专家支撑，也可能造成过载；公开描述无法区分。",
+      "nextAction": "核对项目数量、支持团队、异常响应要求与实际时间分配，避免把接口负担全压给个人。",
+      "boundary": "搜索索引保留职责片段；直接页面显示空动态列表，不能认定岗位关闭。发布日期未标注，在招状态待复核。",
+      "jobIds": [
+        "job-3a0bbf257b108d20"
+      ],
+      "reviewedAt": "2026-11-05T10:39:16.176722+00:00"
+    }
+  ]
+}

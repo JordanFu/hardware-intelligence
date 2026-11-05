@@ -34,6 +34,7 @@ def category(title, source_id):
  for label,pattern in RULES:
   if re.search(pattern,title,re.I):return label
  if source_id=='bambu':return '制造与创作'
+ if re.search(r'大疆|安克|石头科技|追觅|科沃斯|宇树|影石|绿米|雷鸟|xreal|xtool|小米|anker|roborock|dreame|ecovacs|unitree|insta360|aqara|rayneo',title,re.I) and re.search(r'供应|制造|质量|召回|售后|招聘|渠道|库存|量产|研发|团队|组织|销售|supplier|quality|recall|manufactur|hiring|retail|inventory',title,re.I):return '产品工程与量产'
  return None
 
 def parse_feed(raw, source, now):

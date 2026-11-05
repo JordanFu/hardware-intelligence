@@ -1,0 +1,42 @@
+{
+  "editions": [
+    {
+      "id": "daily-2026-11-05",
+      "date": "2026-11-05",
+      "generatedAt": "2026-11-05T10:45:32.127823+00:00",
+      "state": "partial",
+      "bootstrap": true,
+      "windowNote": "首次上线回补近 14 天；旧实践另列，不算当天新闻。",
+      "itemIds": [
+        "bambu-service",
+        "rss-1a47ee385dceb5a7",
+        "rss-bfc0b11493f1086c"
+      ],
+      "developmentKeys": [
+        [
+          "bambu-service",
+          "initial"
+        ],
+        [
+          "bambu-h3c-launch",
+          "initial"
+        ],
+        [
+          "rss-bfc0b11493f1086c",
+          "initial"
+        ]
+      ],
+      "reviewedCount": 22,
+      "failedSources": [
+        "CNX Software：403，未取得正文",
+        "Samsung：正文请求超时"
+      ],
+      "coverage": "首轮阅读 22 份正文或正文片段；覆盖研发、制造、供应链、质量、渠道、服务和组织机制。以国内公司为主，样本明显偏向拓竹，不能代表行业总体。",
+      "knownGaps": [
+        "36氪、虎嗅及更多国内公司的持续覆盖仍需扩充",
+        "缺少独立经营结果与内部组织制度，不评选最优公司",
+        "剩余未读正文的 RSS 只保留为待摘要线索"
+      ]
+    }
+  ]
+}

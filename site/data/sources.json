@@ -64,26 +64,99 @@
     "name": "DJI 官方更新日志",
     "home": "https://fh.dji.com/user-manual/en/release-notes/release-notes-public.html",
     "tier": "官方一手",
-    "type": "编辑查阅",
+    "type": "Codex 定时查阅",
     "scope": "设备与平台版本变化",
-    "auto": false
+    "auto": false,
+    "research": true
   },
   {
     "id": "csa",
     "name": "Connectivity Standards Alliance",
     "home": "https://csa-iot.org/newsroom/",
     "tier": "标准组织",
-    "type": "编辑查阅",
+    "type": "Codex 定时查阅",
     "scope": "Matter、认证与互操作",
-    "auto": false
+    "auto": false,
+    "research": true
   },
   {
     "id": "apple",
     "name": "Apple / HBR 组织案例",
     "home": "https://www.apple.com/jobs/pdf/HBR_How_Apple_Is_Organized_For_Innovation-4.pdf",
     "tier": "作者研究",
-    "type": "编辑查阅",
+    "type": "Codex 定时查阅",
     "scope": "历史组织设计；时间边界明确",
-    "auto": false
+    "auto": false,
+    "research": true
+  },
+  {
+    "id": "anker",
+    "name": "安克创新官网",
+    "home": "https://www.anker-in.com/posts/ifa2026",
+    "tier": "官方一手",
+    "type": "Codex 定时检索",
+    "scope": "品牌、渠道、产品与经营",
+    "auto": false,
+    "research": true
+  },
+  {
+    "id": "xiaomi-ir",
+    "name": "小米投资者关系",
+    "home": "https://ir.mi.com/",
+    "tier": "官方一手",
+    "type": "Codex 定时检索",
+    "scope": "产销研、供应商协同、财报与组织",
+    "auto": false,
+    "research": true
+  },
+  {
+    "id": "unitree",
+    "name": "宇树科技新闻中心",
+    "home": "https://www.unitree.com/cn/news/",
+    "tier": "官方一手",
+    "type": "Codex 定时检索",
+    "scope": "机器人、交付与团队",
+    "auto": false,
+    "research": true
+  },
+  {
+    "id": "dji-careers",
+    "name": "DJI 官方招聘",
+    "home": "https://careers.dji.com/zh-CN",
+    "tier": "官方一手",
+    "type": "Codex 定时检索",
+    "scope": "专业协作与能力需求；不能推断人数",
+    "auto": false,
+    "research": true
+  },
+  {
+    "id": "bambu-service",
+    "name": "拓竹官方社区公告",
+    "home": "https://forum.bambulab.com/",
+    "tier": "官方一手",
+    "type": "Codex 定时检索",
+    "scope": "质量、售后与服务闭环",
+    "auto": false,
+    "research": true
+  },
+  {
+    "id": "36kr",
+    "name": "36氪",
+    "home": "https://36kr.com/",
+    "tier": "媒体补充",
+    "type": "Codex 定时检索",
+    "scope": "国内公司深访、团队与商业化",
+    "auto": false,
+    "research": true
+  },
+  {
+    "id": "huxiu",
+    "name": "虎嗅",
+    "home": "https://www.huxiu.com/",
+    "tier": "媒体补充",
+    "type": "Codex 定时检索",
+    "scope": "产销研与组织实践",
+    "auto": false,
+    "research": true
   }
 ]

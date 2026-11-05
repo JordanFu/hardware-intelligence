@@ -42,7 +42,11 @@ let db,
   query = "",
   focusBeforeDialog = null;
 const navs = [
-  ["briefing", "编辑精选", "◫"],
+  ["briefing", "中文精选", "◫"],
+  ["daily", "每日情报", "▤"],
+  ["valuechain", "全链路知识", "↔"],
+  ["practices", "实践观察", "◈"],
+  ["recruitment", "岗位与人才", "⌕"],
   ["radar", "动态雷达", "◎"],
   ["landscape", "行业地图", "▦"],
   ["organizations", "组织实验室", "◇"],
@@ -59,6 +63,49 @@ const categories = [
   "制造与创作",
   "产品工程与量产",
 ];
+let chainStage = '全部', domesticOnly = false, editionDate = '', jobFamily = '全部';
+function chainFilter() {
+  return `<div class="toolbar chain-filter"><label>链路环节 <select id="chain-stage">${['全部',...db.industry.stages].map(s=>`<option ${s===chainStage?'selected':''}>${esc(s)}</option>`).join('')}</select></label><label class="check-label"><input id="domestic-only" type="checkbox" ${domesticOnly?'checked':''}> 仅国内公司</label></div>`;
+}
+function inScope(n) {return (chainStage==='全部'||n.stages?.includes(chainStage))&&(!domesticOnly||n.domestic);}
+function selectedEvents() {return db.intelligence.events.filter(e=>e.selected).map(e=>itemById(e.representativeId)).filter(Boolean);}
+function editorialFreshness() {
+  const t=db.intelligence.lastCompletedAt, old=(Date.now()-new Date(t||0))/36e5>36;
+  return `<div class="notice ${old?'warning':''}">中文整理更新于 ${esc(date(t,true))} · Codex 每日 08:40（北京时间）计划执行，需电脑与 Codex 可用。${old?'已超过 36 小时，当前为历史资料。':'AI 整理，未经人工核验。'} <a href="#sources">查看覆盖与失败记录 ↗</a></div>`;
+}
+function briefing() {
+  const items=selectedEvents().filter(inScope).sort((a,b)=>(b.publishedAt||'').localeCompare(a.publishedAt||''));
+  const lead=items[0];
+  return head('THE HARDWARE BRIEF','读懂产销研，也读懂组织。','从需求到研发、制造、销售与服务，读中文核心摘要，沿证据追踪真实变化。')+editorialFreshness()+`<div class="overview-links"><a href="#daily"><strong>日报</strong><span>近期进展，按事件去重 ↗</span></a><a href="#valuechain"><strong>全链路知识</strong><span>8 个环节，基础到实践 ↗</span></a><a href="#recruitment"><strong>岗位与人才</strong><span>职责、接口与变化线索 ↗</span></a></div>`+chainFilter()+(lead?`<article class="lead-card"><div class="lead-meta">本期阅读 · ${esc(lead.stages.join(' / '))}</div><h2>${esc(lead.title)}</h2><p>${esc(lead.brief.lead)}</p><div class="lead-bottom"><span>${esc(date(lead.publishedAt))} · ${esc(lead.sources[0].name)}</span><button class="primary" data-detail="${lead.id}">核心内容与证据 ↗</button></div></article>`:'')+`<div class="section-head"><h2>中文精选 · ${items.length} 个事件</h2><a href="#radar">全部动态 ↗</a></div><div class="news-list">${items.length?items.map(newsRow).join(''):empty('当前筛选无精选','调整环节，或查看知识地图。')}</div><details class="method"><summary>初始研究资料 · 按原始日期阅读</summary>${db.curated.items.map(newsRow).join('')}</details>`;
+}
+function daily() {
+  const editions=db.daily.editions;const d=editions.find(e=>e.date===editionDate)||editions[0];
+  const states={complete:'本轮扫描完成',partial:'部分来源未读到',incomplete:'未完成有效扫描',no_new_qualifying_events:'本轮扫描无新增入选事件'};
+  if(!d)return head('DAILY BRIEF','每日情报','尚未生成首期日报。');
+  return head('DAILY BRIEF','每日情报','一天一份可回看的阅读清单。旧案例留在实践库，同一进展七期内不重复。')+editorialFreshness()+`<div class="toolbar"><label for="edition-date">选择日报</label><select id="edition-date">${editions.map(e=>`<option ${e.date===d.date?'selected':''}>${e.date}</option>`).join('')}</select><span class="tag">${esc(states[d.state]||d.state)}</span></div><p>${esc(d.windowNote)}</p><div class="news-list">${d.itemIds.length?d.itemIds.map(itemById).filter(Boolean).map(newsRow).join(''):empty('本期没有入选条目','请结合下面的扫描状态阅读；这不代表行业没有变化。')}</div><section class="method"><h2>本期覆盖与证据空白</h2><p>${esc(d.coverage)}</p><p>完成正文整理 ${d.reviewedCount} 条 · 生成于 ${esc(date(d.generatedAt,true))}</p>${[...d.failedSources,...d.knownGaps].map(s=>`<p class="small">${esc(s)}</p>`).join('')}</section>`;
+}
+function valuechain() {
+  return head('THE COMPLETE VALUE CHAIN','把产、销、研放在同一张图上。','每个环节都回答：输入是什么，向谁交付，如何判断完成。问题和反馈也会沿链路返回。')+`<div class="notice">${esc(db.valuechain.note)}</div><div class="chain-map">${db.valuechain.items.map((s,i)=>`<a href="#stage-${i+1}" data-stage-scroll="stage-${i+1}"><span>0${i+1}</span>${esc(s.name)}</a>`).join('')}</div><div class="grid-2">${db.valuechain.items.map((s,i)=>{const n=db.intelligence.items.filter(x=>x.selected).flatMap(x=>x.practices||[]).filter(p=>p.stages.includes(s.name)).length;return `<article class="map-card" id="stage-${i+1}"><span class="index">0${i+1} / ${esc(s.name)}</span><h2>${esc(s.title)}</h2><p class="chain">${esc(s.flow)}</p><h3>先理解</h3><p>${esc(s.basics)}</p><h3>团队接口</h3><p>${esc(s.team)}</p><h3>指标与常见误读</h3><p>${esc(s.metrics)}</p><p class="small">避免：${esc(s.pitfall)}</p><details><summary>用一个小任务学会</summary><p>${esc(s.exercise)}</p></details><div class="toolbar"><button class="secondary" data-detail="${s.referenceId}">看一个有来源的案例 ↗</button><button class="text-link" data-practice-stage="${esc(s.name)}">${n} 条实践线索 ↗</button></div></article>`}).join('')}</div>`;
+}
+function practiceCards(items) {return items.flatMap(n=>(n.practices||[]).filter(p=>chainStage==='全部'||p.stages.includes(chainStage)).map(p=>`<article class="org-card"><div class="meta"><span class="tag">${esc(p.evidenceLevel)}</span><time>${esc(date(n.publishedAt))}</time></div><h2>${esc(p.title)}</h2><p>${esc(p.method)}</p><h3>适用条件</h3><p>${esc(p.conditions)}</p><h3>结果证据</h3><p>${esc(p.outcome)}</p><p class="small">${esc(p.boundary)}</p><h3>下一步核验</h3><p>${esc(p.nextCheck)}</p><button class="secondary" data-detail="${n.id}">原文事实与来源 ↗</button></article>`)).join('');}
+function practices() {
+  const items=db.intelligence.items.filter(n=>n.selected&&inScope(n)&&n.practices?.length);
+  return head('PRACTICE OBSERVATORY','先看怎么做，再看是否有效。','将已披露做法、历史案例和实践线索分开。没有可比结果和适用条件，不标为“行业最优”。')+chainFilter()+`<div class="grid-2">${practiceCards(items)||empty('暂无该环节的实践记录','知识地图仍可用于建立观察问题。')}</div>`;
+}
+function organizations() {
+  const items=db.intelligence.items.filter(n=>inScope(n)&&n.organization?.length);
+  return head('ORGANIZATION SIGNALS','从公开行动，研究团队接口。','研究披露的协作机制与能力需求；组织图、净增人数和效率后果没有证据就保留未知。')+editorialFreshness()+`<div class="lower-banner"><div><h3>招聘，是另一扇观察窗口。</h3><p>按岗位族整理职责和协作对象，跟踪同一职位的变化。</p></div><a href="#recruitment" class="secondary">岗位与人才 ↗</a></div>`+chainFilter()+`<div class="grid-2">${items.flatMap(n=>n.organization.map(o=>`<article class="org-card"><span class="tag">${esc(o.kind)}</span><p class="small">${esc(n.sources[0].name)} · ${esc(date(n.publishedAt))}</p><h2>${esc(o.title)}</h2><p>${esc(o.observation)}</p><h3>可继续研究什么</h3><p>${esc(o.implication)}</p><p class="small">${esc(o.boundary)}</p><button class="secondary" data-detail="${n.id}">查看事实证据 ↗</button></article>`)).join('')||empty('暂无匹配的组织记录','尝试其他环节或岗位栏目。')}</div><details class="method"><summary>展开历史组织案例 · ${db.organizations.length} 份</summary>${historicalOrganizations()}</details>`;
+}
+function recruitment() {
+  const all=db.recruitment.jobs;const jobs=all.filter(j=>(chainStage==='全部'||j.stages.includes(chainStage))&&(jobFamily==='全部'||j.family===jobFamily));
+  const families=[...new Set(all.map(j=>j.family))];
+  return head('JOBS AS ORGANIZATION SIGNALS','从岗位职责，看见能力需求。','比较工作内容、协作接口与持续变化，为岗位设计、人才储备和面试追问提供线索。')+`<div class="notice">已积累 ${all.length} 个岗位样本，${new Set(all.map(j=>j.company)).size} 家公司。最近整理 ${esc(date(db.recruitment.checkedAt,true))}。${(Date.now()-new Date(db.recruitment.checkedAt))/36e5>36?"岗位观察已超过 36 小时，按历史样本阅读。":""}样本并非完整在招清单，不计算行业缺口或净增人数；单次未见、搜索缓存和页面失败分别记录。</div>`+chainFilter()+`<div class="toolbar"><label>岗位族 <select id="job-family">${['全部',...families].map(f=>`<option ${f===jobFamily?'selected':''}>${esc(f)}</option>`).join('')}</select></label><span>当前 ${jobs.length} 个职责样本 · 岗位数 ≠ 招聘人数</span></div><div class="grid-2">${jobs.map(j=>`<article class="org-card"><div class="meta"><span class="tag">${esc(j.family)}</span><span>${esc(j.access)} · ${esc(j.change)}</span></div><p class="small">${esc(j.company)} · ${esc(j.location)}</p><h2>${esc(j.title)}</h2><p>${esc(j.responsibilities.join('；'))}</p><h3>职责与协作边界</h3><p>${esc(j.interfaces.join('；'))}</p><h3>人员决策待验证问题</h3><p>${esc(j.decisionQuestion)}</p><p class="small">${esc(j.boundary)}</p><div class="toolbar"><button class="secondary" data-detail="${j.id}">来源、要求与变化记录 ↗</button>${saveButton(j.id)}</div></article>`).join('')||empty('无匹配岗位样本','目前尚未形成完整行业覆盖。')}</div><section class="method"><h2>人员决策观察 · 证据与解释分开</h2><div class="grid-2">${(db.recruitment.insights||[]).map(i=>`<article><h3>${esc(i.title)}</h3><p><strong>依据：</strong>${esc(i.finding)}</p><p><strong>解读：</strong>${esc(i.interpretation)}</p><p><strong>另一种解释：</strong>${esc(i.alternative)}</p><p><strong>下一步：</strong>${esc(i.nextAction)}</p><p class="small">${esc(i.boundary)} · 整理 ${esc(date(i.reviewedAt))}</p>${i.jobIds.map(id=>`<button class="text-link" data-detail="${id}">查看岗位证据 ↗</button>`).join('')}</article>`).join('')}</div></section><section class="method"><h2>这些线索可以怎样用于人员决策</h2><div class="grid-2"><div><h3>补充能力，先核对业务任务</h3><p>比较岗位负责的输入、输出与验收，而不只比较职位名称。某种能力在多个独立样本中出现，可形成储备线索，不能直接等同人才短缺。</p></div><div><h3>发现接口，先问清支持条件</h3><p>跨设计、量产和售后职责可能意味着岗位需要协调能力，也可能意味着职责过载。人员配置前应核对权限、工作量、可用支持和员工负担。</p></div></div><h3>变化如何记录</h3><p>以公司和岗位 ID 去重；没有 ID 时按公司、职位和地点匹配。首次收录标为基线；相同岗位保留职责版本。只有完整列表成功检查才能标记“本次未见”，明确关闭需要原文证明。重新出现也不直接认定为扩编。</p><h3>最近扫描边界</h3>${db.recruitment.scans.slice(-8).map(s=>`<p class="small">${esc(s.company)} · ${esc(s.note)} · ${esc(date(s.checkedAt,true))}</p>`).join('')}</section>`;
+}
+function sources() {
+ const f=freshness(), run=db.intelligence.runs.at(-1);
+ return head('SOURCE & METHOD','每个判断，都有来处。','原始来源、中文理解、研究推断分别呈现。来源失败和没有新内容是两种状态。')+editorialFreshness()+`<section class="method"><h2>从发现到发布</h2><div class="flow">${['公开发现','读取正文','评分与证据复核','事件归组','中文 brief','日报与组织研究'].map(s=>`<span>${esc(s)}</span>`).join('')}</div><p>GitHub Actions 每日 08:17 抓取 RSS；Codex 每日 08:40 读取公开来源，补充国内公司与全链路资料，再生成中文 brief、组织线索和岗位观察，验证后发布。计划执行可能延迟；Codex 需要本机与应用可用。</p><p>参考 AI HOT 的正文门槛、官方优先、事件去重和日报机制。本站采用 ${esc(db.intelligence.method)}。按相关性、增量信息、证据质量、机制清晰、可行动性各 0–20 分；官方门槛 70，媒体 80；复核不通过不入精选。</p><p>同事件保留各原始来源，精选和 RSS 以代表报道出现；同一发布方只计一次，不能称独立交叉核验。日报最多 8 条，同发布方最多 2 条；近 7 期重复进展不再收录，实质新进展须有新的官方行为证据。已出日报保留历史。</p><p>无正文不凭标题写摘要。原始全文仅作本地核对，不公开转载。公开记录保留来源、日期、正文或片段标识、内容哈希和事实定位。官方披露只证明其说法，效果需另证；招聘只作能力线索。</p><p>RSS 抓取最近成功：${esc(date(db.radar.lastSuccessfulAt,true))}；本轮 ${f.total-f.failed}/${f.total} 个成功。AI 整理和 RSS 状态独立，超过 36 小时会提醒。</p><h3>最近一次中文整理覆盖</h3><p>${esc(run?.coverage)}</p>${[...(run?.failedSources||[]),...(run?.knownGaps||[])].map(s=>`<p class="small">${esc(s)}</p>`).join('')}</section><div class="table-wrap"><table class="data-table"><thead><tr><th>信源</th><th>关注范围</th><th>方式与状态</th></tr></thead><tbody>${db.sources.map(s=>{const h=db.radar.health.find(x=>x.id===s.id);return `<tr><td>${link(s.home,s.name)}<small>${esc(s.tier)}</small></td><td>${esc(s.scope)}</td><td>${s.auto?'RSS 每日发现':'Codex 研究目录 · 按轮次查阅'}<small>${h?esc(h.state==='ok'?`抓取成功 · ${h.matched} 条`:`抓取失败：${h.error}`):'列入目录不等于本轮已经读取，实际范围以上方扫描记录为准。'}</small></td></tr>`}).join('')}</tbody></table></div><section class="method"><h2>使用与隐私边界</h2><p>只使用公开企业资料和岗位描述，不采集候选人或员工个人信息，不推断个人绩效。收藏与笔记只保存在当前浏览器，可自行导出。没有后台登录、跨设备同步或实时问答。</p><div class="toolbar">${link('https://github.com/KKKKhazix/AIHOT/blob/main/docs/selection.md','AI HOT 方法参考')}${link('https://github.com/JordanFu/hardware-intelligence/actions','发布运行记录')}${link('https://github.com/JordanFu/hardware-intelligence/blob/main/docs/editorial-runbook.md','自动整理规则')}</div></section>`;
+}
+
 function persist() {
   try {
     localStorage.setItem(STORE, JSON.stringify(local));
@@ -98,6 +145,9 @@ function day(value) {
 }
 function itemById(id) {
   return [
+    ...db.intelligence.items,
+    ...db.recruitment.jobs,
+    ...db.valuechain.items,
     ...db.curated.items,
     ...db.organizations,
     ...db.radar.items,
@@ -132,8 +182,8 @@ function nav() {
     : navs.find((n) => n[0] === route)?.[1] || "编辑精选";
 }
 function newsRow(n, index = 0) {
-  const rss = !!n.sourceId;
-  return `<article class="news-row"><span class="news-number">${String(index + 1).padStart(2, "0")}</span><div><div class="meta"><span class="tag">${esc(n.category)}</span><span>${esc(rss ? n.tier : n.kind)}</span>${rss ? '<span class="tag amber">待核验</span>' : ""}<time>${esc(date(n.date))}</time></div><button class="title-button" data-detail="${esc(n.id)}">${esc(n.title)}</button>${n.summary ? `<p>${esc(n.summary)}</p>` : ""}<div class="row-bottom"><span>${esc(rss ? n.source : n.sources.map((s) => s.name).join(" / "))}</span><button class="text-link" data-detail="${esc(n.id)}">${rss ? "查看来源与核验提示" : "事实 · 解读 · 边界"} ↗</button></div></div>${saveButton(n.id)}</article>`;
+  const rich=!!n.brief, rss=!!n.sourceId;
+  return `<article class="news-row"><span class="news-number">${String(index+1).padStart(2,'0')}</span><div><div class="meta"><span class="tag">${esc(n.stages?.join(' / ')||n.category)}</span><span>${rich?'AI 中文整理':rss?'待摘要 · 未读正文':esc(n.kind||'研究资料')}</span><time>${esc(n.date?date(n.date):'原文未标日期')}</time></div><button class="title-button" data-detail="${esc(n.id)}">${esc(n.title)}</button><p>${esc(n.summary||(rss?'尚未取得可核对正文，暂不生成核心内容。可打开原始来源阅读。':''))}</p><div class="row-bottom"><span>${esc(n.sources?n.sources.map(s=>s.name).join(' / '):n.source)}</span><button class="text-link" data-detail="${esc(n.id)}">${rich?'核心内容 · 原始证据':'来源与阅读边界'} ↗</button></div></div>${saveButton(n.id)}</article>`;
 }
 function freshness() {
   const hours =
@@ -141,30 +191,12 @@ function freshness() {
   const failed = db.radar.health.filter((h) => h.state !== "ok").length;
   return { hours, failed, total: db.sources.filter((s) => s.auto).length };
 }
-function briefing() {
-  const lead = db.curated.items[0],
-    items = db.curated.items.filter(
-      (n) => category === "全部" || n.category === category,
-    ),
-    f = freshness();
-  const old =
-    (Date.now() - new Date(db.curated.reviewedAt).getTime()) / 864e5 > 7;
-  return `<div class="page-head"><div class="heading-line"><div class="eyebrow">THE HARDWARE BRIEF</div><span class="date-label">精选整理于 ${esc(date(db.curated.reviewedAt))}</span></div><h1 class="home-title"><span>读懂硬件，</span><span>也读懂背后的团队。</span></h1><p class="intro">从一条产品变化，建立一份行业理解。每天十分钟，逐步补齐你的知识地图。</p><div class="status-line"><span class="${f.hours > 36 || f.failed ? "warn" : "healthy"}">${f.total - f.failed} / ${f.total} 自动信源最近抓取成功</span><span>最近检查 ${esc(date(db.radar.checkedAt, true))}</span><a href="#sources">查看更新状态 ↗</a></div></div>${old ? '<div class="notice warning">精选资料已超过 7 天未整理；最新自动发现请查看「动态雷达」，不要将旧精选视为今日新闻。</div>' : ""}${f.hours > 36 ? '<div class="notice warning">自动信源已超过 36 小时没有成功记录，当前展示历史缓存。请查看信源状态与运行记录。</div>' : ""}<div class="layout"><section><article class="lead-card"><div class="lead-meta"><span>本期重点</span><span> / </span><span>${esc(lead.category)}</span></div><h2>${esc(lead.title)}</h2><p>${esc(lead.summary)}</p><div class="lead-bottom"><span class="small">${esc(lead.sources[0].name)} · ${esc(date(lead.date))}</span><button class="primary" data-detail="${lead.id}">阅读完整情报 <span>↗</span></button></div></article><div class="section-head"><h2>值得理解的变化</h2><a href="#radar">自动动态 ${db.radar.items.length} 条 ↗</a></div>${chips()}<div class="news-list">${items.length ? items.map(newsRow).join("") : empty("这个领域暂时没有编辑精选", "可到动态雷达查找新线索，或先从行业地图开始。", '<a class="secondary" href="#landscape">打开行业地图 ↗</a>')}</div><div class="lower-banner"><div><h3>先有地图，再追热点。</h3><p>沿着 6 个观察领域，理解产业链、团队分工与关键指标。</p></div><a href="#landscape" class="secondary">展开行业地图 ↗</a></div></section><aside class="right-rail"><section class="side-card"><div class="tiny-label">YOUR DAILY ROUTINE</div><h2 style="margin-top:12px">今天，给行业 10 分钟</h2><div class="reading-step"><span class="step-minute">3 分</span><div><strong>理解一个产品变化</strong><small>先读事实，再看为什么值得关注</small></div></div><div class="reading-step"><span class="step-minute">4 分</span><div><strong>拆解一种团队机制</strong><small>看谁决策、如何协作、如何验证</small></div></div><div class="reading-step"><span class="step-minute">3 分</span><div><strong>留下一条自己的判断</strong><small>收藏情报，记下待验证的问题</small></div></div><a href="#learning" class="primary">从七步入门开始 ↗</a></section><section class="side-card question-card"><div class="tiny-label">本期研究问题</div><blockquote>当硬件、算法与软件发生冲突，谁对最终体验负责？</blockquote><p>从 Apple 的职能组织与拓竹的早期架构协作寻找线索。</p><a class="onboarding-link" href="#organizations">进入组织实验室 ↗</a></section><section class="side-card"><h2>组织观察对象</h2>${db.organizations
-    .slice(0, 3)
-    .map(
-      (o, i) =>
-        `<a class="mini-company" href="#org/${o.id}"><span class="company-monogram">${["A", "B", "M"][i]}</span><div><strong>${esc(o.name)}</strong><small>${esc(o.label)} · ${esc(o.period.split(" · ")[1])}</small></div><span>↗</span></a>`,
-    )
-    .join(
-      "",
-    )}<hr class="thin-rule"><p>观察对象不是优秀程度排名。每个案例都保留证据不足的部分。</p></section></aside></div>`;
-}
 function radar() {
   let items = db.radar.items.filter(
     (n) =>
       (category === "全部" || n.category === category) &&
       (tier === "全部" || n.tier === tier) &&
-      (radarDay === "全部" || day(n.date) === radarDay),
+      (radarDay === "全部" || day(n.date) === radarDay) && inScope(n),
   );
   const dates = db.digests.dates;
   const f = freshness();
@@ -174,7 +206,7 @@ function radar() {
       "动态雷达",
       "公开信源的自动发现，按原文发布时间排列。先找到线索，再回到原文核验。",
     ) +
-    `<div class="notice ${f.failed || f.hours > 36 ? "warning" : ""}">${f.failed ? `${f.failed} 个信源本次抓取失败，保留已有历史。` : "最近一轮所有自动信源抓取成功。"} 最近检查：${esc(date(db.radar.checkedAt, true))}。${f.hours > 36 ? "数据已超过 36 小时未成功更新。" : ""} 自动条目未经编辑核验，保留来源原标题；分类由关键词规则生成。</div>${chips()}<div class="toolbar"><label for="radar-date">每日索引</label><select id="radar-date"><option value="全部">全部日期</option>${dates.map((d) => `<option value="${d.date}" ${radarDay === d.date ? "selected" : ""}>${d.date} · ${d.ids.length} 条</option>`).join("")}</select><select id="radar-tier" aria-label="信源级别">${["全部", "官方一手", "媒体补充"].map((t) => `<option ${tier === t ? "selected" : ""}>${t}</option>`).join("")}</select><span class="count-label">共 ${items.length} 条 · 每日索引按北京时间</span></div><div class="news-list">${items.length ? items.slice(0, limit).map(newsRow).join("") : empty("当前筛选下没有条目", "这表示当前已收录数据没有匹配结果，不代表行业没有新动态。")}</div>${items.length > limit ? '<button class="secondary load-more" data-more>再显示 30 条</button>' : ""}<p class="small" style="margin-top:18px">保留最近 90 天，最多 400 条自动条目。同一链接去重；相似报道不会自动声称为同一事件或独立交叉核验。</p>`
+    `<div class="notice ${f.failed || f.hours > 36 ? "warning" : ""}">${f.failed ? `${f.failed} 个信源本次抓取失败，保留已有历史。` : "最近一轮所有自动信源抓取成功。"} 最近检查：${esc(date(db.radar.checkedAt, true))}。${f.hours > 36 ? "数据已超过 36 小时未成功更新。" : ""} 已读正文展示中文核心 brief；未读条目标为待摘要。分类由关键词与内容整理共同产生，AI 整理未经人工核验。</div>${chips()}${chainFilter()}<div class="toolbar"><label for="radar-date">每日索引</label><select id="radar-date"><option value="全部">全部日期</option>${dates.map((d) => `<option value="${d.date}" ${radarDay === d.date ? "selected" : ""}>${d.date} · ${d.ids.length} 条</option>`).join("")}</select><select id="radar-tier" aria-label="信源级别">${["全部", "官方一手", "媒体补充"].map((t) => `<option ${tier === t ? "selected" : ""}>${t}</option>`).join("")}</select><span class="count-label">共 ${items.length} 条 · 每日索引按北京时间</span></div><div class="news-list">${items.length ? items.slice(0, limit).map(newsRow).join("") : empty("当前筛选下没有条目", "这表示当前已收录数据没有匹配结果，不代表行业没有新动态。")}</div>${items.length > limit ? '<button class="secondary load-more" data-more>再显示 30 条</button>' : ""}<p class="small" style="margin-top:18px">保留最近 90 天，最多 400 条自动条目。发现层按链接去重；整理层按事件归组，同一发布方的多篇文章不是独立交叉核验。</p>`
   );
 }
 function landscape() {
@@ -187,7 +219,7 @@ function landscape() {
     `<div class="notice">这是本站整理的学习框架，观察对象仅为示例。每个领域的竞争和组织设计都要回到具体产品、阶段与证据。</div><div class="grid-3">${db.landscape.map((t, i) => `<article class="map-card"><span class="index">FIELD ${String(i + 1).padStart(2, "0")}</span><h2>${esc(t.name)}</h2><p>${esc(t.title)}</p><h3>价值链</h3><div class="chain">${esc(t.chain)}</div><h3>先理解的约束</h3><p>${esc(t.constraint)}</p><h3>观察对象举例</h3><p>${esc(t.examples)}</p><button class="secondary" data-detail="${t.id}">查看团队与研究指标 ↗</button></article>`).join("")}</div><section class="method"><h2>贯穿所有领域的产品链条</h2><div class="flow">${["真实任务", "系统方案", "验证与量产", "交付与持续服务"].map((t, i) => `${i ? "<i>→</i>" : ""}<span>${t}</span>`).join("")}</div><p>每一步都应回答：用户少做了什么，谁负责交付，用什么证据判断完成。新品发布只证明链条上的一个节点。</p></section>`
   );
 }
-function organizations() {
+function historicalOrganizations() {
   return (
     head(
       "ORGANIZATION LAB",
@@ -251,24 +283,6 @@ function saved() {
     `<div class="backup"><button class="secondary" data-export>导出我的研究</button><label class="secondary" for="import-file" style="cursor:pointer">导入备份</label><input id="import-file" type="file" accept="application/json,.json" hidden><p>导入会合并收藏和进度；已有笔记保留。</p></div>${missing ? `<div class="notice warning">${missing} 条收藏已不在当前内容库中（自动条目保留 90 天）。备份仍保留标识和笔记。</div>` : ""}${items.length ? items.map((i) => `<article class="search-result"><div class="org-top"><div class="result-type">${esc(i.category || "研究资料")} · ${esc(i.date ? date(i.date) : i.period || "学习框架")}</div>${saveButton(i.id)}</div><button class="title-button" data-detail="${i.id}">${esc(i.title || i.name)}</button><p>${esc(local.notes[i.id] || i.summary || "点击打开详情并添加研究笔记。")}</p></article>`).join("") : empty("你的研究收藏，从第一条线索开始", "在任意情报右侧点 ☆，或在案例详情中收藏和记录笔记。", '<a class="primary" href="#briefing">去看看编辑精选 ↗</a>')}`
   );
 }
-function sources() {
-  const f = freshness();
-  return (
-    head(
-      "SOURCE & METHOD",
-      "每个判断，都有来处。",
-      "公开来源可追溯，采集状态可见。事实、解释与待核验线索分别呈现。",
-    ) +
-    `<div class="notice ${f.failed || f.hours > 36 ? "warning" : ""}">最近采集检查：${esc(date(db.radar.checkedAt, true))}；最近至少一个信源成功：${esc(date(db.radar.lastSuccessfulAt, true))}。${f.total - f.failed}/${f.total} 个自动信源本轮成功。</div><div class="table-wrap"><table class="data-table"><thead><tr><th>信源 / 级别</th><th>关注范围</th><th>更新方式</th><th>最近状态</th></tr></thead><tbody>${db.sources
-      .map((s) => {
-        const h = db.radar.health.find((x) => x.id === s.id);
-        return `<tr><td>${link(s.home, s.name)}<small>${esc(s.tier)}</small></td><td>${esc(s.scope)}</td><td>${esc(s.type)}${s.auto ? "<small>每日自动检查</small>" : "<small>非自动采集</small>"}</td><td>${h ? `<span class="${h.state === "error" ? "warn" : ""}">${h.state === "ok" ? `成功 · ${h.matched} 条匹配` : "失败 · 保留缓存"}</span><small>${esc(date(h.checkedAt, true))}</small>${h.error ? `<small>${esc(h.error)}</small>` : ""}` : "按资料整理日期核对"}</td></tr>`;
-      })
-      .join(
-        "",
-      )}</tbody></table></div><section class="method"><h2>从来源到理解的处理规则</h2><div class="flow">${["公开信源", "范围筛选", "链接去重", "待核验雷达", "编辑精选 / 学习"].map((s, i) => `${i ? "<i>→</i>" : ""}<span>${s}</span>`).join("")}</div><h3>来源分级，不把官方公告当作效果证明</h3><p>官方一手用于确认发布方披露的行为；媒体作为补充线索，需回溯原始材料；组织案例记录资料年份。转载同一公告不算独立交叉核验。</p><h3>编辑精选：先确认发生了什么，再写为什么值得读</h3><p>每条包含事实、本站解读、适用边界与下一步问题。优先关注用户负担、技术和量产约束、团队协作、商业交付与验证证据。缺少证据的销量、市场份额、组织绩效不补写。</p><h3>自动雷达：标题筛选与链接去重</h3><p>每日计划北京时间 08:17 运行 GitHub Actions（可能延迟）。关键词规则筛选公开 RSS，保留来源原标题、日期和链接，不抓取或转载全文，不自动生成中文研判。缺日期、未来时间和超出 90 天窗口的条目不纳入。最多保留 400 条。每日索引按原文发布时间编排，不是人工研判日报。</p><h3>采集失败与没有内容是两回事</h3><p>失败记录错误并保留历史；所有信源失败也不伪装成“当天无新闻”。若超过 36 小时没有成功抓取，页面显示过期提示。精选超过 7 天未整理也会提醒。</p><h3>参考 AI HOT，保持独立品牌与实现</h3><p>参考其信源分级、去重、精选和可追溯阅读方法。本项目独立实现静态页面与定时采集，未运行 AI HOT 的数据库、模型双评分、语义事件聚类或后台。没有付费模型调用，也没有账号登录和跨设备同步。</p><div class="toolbar">${link("https://github.com/KKKKhazix/AIHOT", "AI HOT 项目介绍", "text-link")}${link("https://github.com/JordanFu/hardware-intelligence/actions", "查看采集与发布记录", "text-link")}${link("https://github.com/JordanFu/hardware-intelligence", "源代码与维护说明", "text-link")}</div></section><section class="method"><h2>你的数据与内容使用</h2><p>本站仅发布公开资料的独立摘要与原文链接。收藏、笔记与学习进度仅使用浏览器本地存储；清除浏览器数据会删除它们，请自行导出。站点无跟踪分析脚本，不读取私人文档或工作通讯。GitHub Pages 与外部来源按各自服务规则处理访问日志。</p></section>`
-  );
-}
 function search() {
   const q = query.trim().toLocaleLowerCase();
   const aliases = [
@@ -282,11 +296,14 @@ function search() {
   ];
   const terms = aliases.find((group) => group.includes(q)) || [q];
   const sets = [
-    ["编辑精选", db.curated.items],
+    ["中文整理", db.intelligence.items],
+    ["岗位与人才", db.recruitment.jobs],
+    ["全链路知识", db.valuechain.items],
+    ["初始精选", db.curated.items],
     ["组织案例", db.organizations],
     ["行业地图", db.landscape],
     ["学习路径", db.learning],
-    ["自动动态 · 待核验", db.radar.items],
+    ["自动动态 · 待摘要", db.radar.items.filter(n=>!n.brief)],
   ];
   let hits = [];
   for (const [type, items] of sets)
@@ -324,7 +341,7 @@ function render() {
   if (!db) return;
   nav();
   const views = {
-    briefing,
+    briefing, daily, valuechain, practices, recruitment,
     radar,
     landscape,
     organizations,
@@ -347,8 +364,11 @@ function openDetail(id) {
   }
   let html = "";
   const section = (title, body) => `<h3>${title}</h3><p>${esc(body)}</p>`;
+  if(n.brief) html += `<div class="notice"><strong>本文核心内容</strong><p>${esc(n.brief.lead)}</p><ul>${n.brief.points.map(p=>`<li>${esc(p)}</li>`).join('')}</ul></div><details><summary>原标题与整理信息</summary><p>${esc(n.originalTitle)}</p><p>${esc(n.status)} · ${esc(date(n.generatedAt,true))}</p><p>筛选分数 ${n.score}/100 · ${esc(n.selection.review.reason)}</p></details>`;
+  if(n.responsibilities) html+=section('岗位职责 · 整理',n.responsibilities.join('；'))+section('协作对象',n.interfaces.join('；'))+section('能力要求',n.requirements.join('；'))+section('人员决策待验证问题',n.decisionQuestion)+section('证据边界',n.boundary)+section('时间口径',`原文发布日期：${n.postedAt||'未标注'}；首次收录：${date(n.firstSeen,true)}；最近观察：${date(n.lastSeen,true)}；${n.access}`)+`<h3>职责版本与变化</h3>${n.versions.map(v=>`<p>${esc(date(v.observedAt,true))} · ${esc(v.access)} · ${esc(v.responsibilities.join('；'))}</p>`).join('')}`;
+  if(n.basics) html+=section('基础概念',n.basics)+section('输入与输出',n.flow)+section('团队接口',n.team)+section('指标口径',n.metrics)+section('常见误读',n.pitfall)+section('学习任务',n.exercise);
   if (n.facts) {
-    html += `<h3>可核对的公开事实</h3><ul>${n.facts.map((f) => `<li>${esc(f)}</li>`).join("")}</ul>`;
+    html += `<h3>可核对的公开事实</h3><ul>${n.facts.map((f) => `<li>${esc(typeof f==="string"?f:f.claim)}${typeof f==="object"?`<small> ${link(f.sourceUrl,f.locator)}</small>`:""}</li>`).join("")}</ul>`;
     if (n.mechanism) {
       html +=
         section("可借鉴机制 · 本站研究解读", n.mechanism) +
@@ -384,16 +404,18 @@ function openDetail(id) {
       section("本步产出", n.output) +
       `<a class="secondary" href="#learning" data-close>进入完整学习路径 ↗</a>`;
   }
+  const ev=n.eventId?db.intelligence.events.find(e=>e.id===n.eventId):null;
+  if(ev?.itemIds.length>1)html+=`<h3>同一事件的其他报道</h3><p class="small">${ev.itemIds.length} 篇报道，${ev.publisherGroups.length} 个发布方；同源报道不构成独立交叉核验。</p>${ev.itemIds.filter(id=>id!==n.id).map(id=>`<p><button class="text-link" data-detail="${id}">${esc(itemById(id)?.title)}</button></p>`).join('')}`;
   const sources =
-    n.sources ||
+    n.sources || (n.responsibilities?[{name:n.company+" 官方招聘",url:n.url,date:n.postedAt||"未标注；查阅时间见上方"}]:null) ||
     (n.sourceId
       ? [{ name: n.source, url: n.url, date: date(n.date) }]
       : n.source
         ? [n.source]
         : []);
-  html += `<h3>原始来源</h3>${sources.map((s) => `<a class="source-link" href="${esc(safeURL(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.name)} ↗<small>来源日期：${esc(s.date)} · 点击阅读原文</small></a>`).join("")}<h3><label for="research-note">我的研究笔记 · 仅保存在本机</label></h3><textarea id="research-note" data-note="${n.id}" placeholder="记下你的判断、疑问或下一步验证动作…" maxlength="10000" rows="4">${esc(local.notes[n.id] || "")}</textarea><div class="dialog-bottom">${saveButton(n.id, true)}<button class="secondary" data-save-note="${n.id}">保存笔记</button><button class="secondary" data-copy="${n.id}">复制条目链接</button></div>`;
+  html += `<h3>原始来源</h3>${sources.map((s) => `<a class="source-link" href="${esc(safeURL(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.name)} ↗<small>来源日期：${esc(s.date||s.publishedAt||"未标注")}${s.coverage?` · ${s.coverage==="body"?"已取得正文":"已取得正文片段"} · 查阅 ${esc(date(s.readAt,true))}`:""} · 点击阅读原文</small></a>`).join("")}<h3><label for="research-note">我的研究笔记 · 仅保存在本机</label></h3><textarea id="research-note" data-note="${n.id}" placeholder="记下你的判断、疑问或下一步验证动作…" maxlength="10000" rows="4">${esc(local.notes[n.id] || "")}</textarea><div class="dialog-bottom">${saveButton(n.id, true)}<button class="secondary" data-save-note="${n.id}">保存笔记</button><button class="secondary" data-copy="${n.id}">复制条目链接</button></div>`;
   $("#dialog-body").innerHTML =
-    `<div class="dialog-header"><span class="small">${esc(n.period || n.category || "研究资料")}${n.date ? " · " + esc(date(n.date)) : ""}</span><button class="icon-button" data-close aria-label="关闭详情">×</button></div><div class="dialog-content"><span class="tag">${esc(n.sourceId ? "自动发现 · 待核验" : n.label || n.kind || "学习框架")}</span><h2>${esc(n.title || n.name)}</h2>${html}</div>`;
+    `<div class="dialog-header"><span class="small">${esc(n.period || n.category || "研究资料")}${n.date ? " · " + esc(date(n.date)) : ""}</span><button class="icon-button" data-close aria-label="关闭详情">×</button></div><div class="dialog-content"><span class="tag">${esc(n.brief ? "AI 中文整理 · 非人工核验" : n.sourceId ? "自动发现 · 待摘要" : n.label || n.kind || "学习框架")}</span><h2>${esc(n.title || n.name)}</h2>${html}</div>`;
   focusBeforeDialog = document.activeElement;
   if (!$("#detail").open) $("#detail").showModal();
   $("#detail").scrollTop = 0;
@@ -500,6 +522,7 @@ function navigate() {
   } else {
     closeDetail();
     route = navs.some((n) => n[0] === path[0]) ? path[0] : "briefing";
+    chainStage = "全部";
     category = "全部";
     limit = 30;
     render();
@@ -526,6 +549,8 @@ document.addEventListener("click", async (e) => {
     $(".sidebar").classList.remove("open");
     $("#menu-toggle").setAttribute("aria-expanded", "false");
   }
+  if(b.dataset.stageScroll){e.preventDefault();document.getElementById(b.dataset.stageScroll)?.scrollIntoView({behavior:'smooth'});return;}
+  if(b.dataset.practiceStage){chainStage=b.dataset.practiceStage;route='practices';history.pushState(null,'','#practices');render();window.scrollTo({top:0});return;}
   if (b.dataset.detail) openDetail(b.dataset.detail);
   if (b.dataset.save) toggleSave(b.dataset.save);
   if (b.hasAttribute("data-close")) closeDetail();
@@ -585,6 +610,10 @@ document.addEventListener("click", async (e) => {
   }
 });
 document.addEventListener("change", (e) => {
+  if(e.target.id==='chain-stage'){chainStage=e.target.value;render();}
+  if(e.target.id==='domestic-only'){domesticOnly=e.target.checked;render();}
+  if(e.target.id==='edition-date'){editionDate=e.target.value;render();}
+  if(e.target.id==='job-family'){jobFamily=e.target.value;render();}
   if (e.target.id === "radar-date") {
     radarDay = e.target.value;
     limit = 30;
@@ -645,7 +674,7 @@ try {
     "learning",
     "sources",
     "radar",
-    "digests",
+    "digests", "intelligence", "daily", "industry", "valuechain", "recruitment",
   ];
   const values = await Promise.all(
     names.map(async (n) => {
@@ -655,6 +684,8 @@ try {
     }),
   );
   db = Object.fromEntries(names.map((n, i) => [n, values[i]]));
+  const enriched = new Map(db.intelligence.items.map(n=>[n.id,n]));
+  db.radar.items=db.radar.items.map(n=>({...n,...(enriched.get(n.id)||{})}));
   navigate();
 } catch (e) {
   $("#main").innerHTML = empty(

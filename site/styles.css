@@ -1443,3 +1443,24 @@ textarea::placeholder {
     justify-content: center;
   }
 }
+/* Full-chain research and evidence reading */
+#nav { overflow-y:auto; min-height:0; }
+.sidebar-bottom { margin-top:auto; padding-top:18px; }
+.nav-item { min-height:42px; }
+.overview-links { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:25px 0; }
+.overview-links a { border:1px solid var(--line,#dedfd8); padding:22px; border-radius:12px; display:flex; flex-direction:column; gap:12px; background:#f7f8f2; }
+.overview-links strong { font-size:21px; }
+.overview-links span { color:#626960; font-size:13px; }
+.chain-filter { flex-wrap:wrap; margin:22px 0; }
+.chain-filter label { display:flex; align-items:center; gap:10px; }
+.chain-filter input { accent-color:#176648; width:16px; height:16px; }
+.chain-map { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:#dce2d7; border:1px solid #dce2d7; margin:28px 0; }
+.chain-map a { padding:20px; background:#f4f7ee; display:flex; gap:12px; font-weight:600; }
+.chain-map span { color:#74816b; font-weight:400; }
+.map-card details { margin:18px 0; }
+.map-card { scroll-margin-top:90px; }
+.news-row .meta { flex-wrap:wrap; }
+.dialog-content small { display:block; margin-top:6px; font-size:12px; }
+.method > summary { cursor:pointer; font-size:19px; font-weight:600; }
+@media(max-height:850px) and (min-width:761px) { .sidebar-bottom { display:none; } }
+@media(max-width:760px) { .overview-links {grid-template-columns:1fr;} .overview-links a {padding:18px;flex-direction:row;align-items:center;justify-content:space-between;} .chain-map {grid-template-columns:repeat(2,1fr);} .chain-map a {font-size:13px;padding:16px 10px;} .sidebar-bottom {display:none;} }
