@@ -1,0 +1,537 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-11-06T07:45:08.434151+00:00",
+  "nodes": {
+    "chain-3": {
+      "attemptedAt": "2026-11-06T07:53:13.521723+00:00",
+      "status": "partial",
+      "assessment": "复查宇树官方供应商入口的登记步骤与采购纪律，补充供应商登记和资格认可的区分。当前证据只覆盖入口与行为规则，没有验证全部采购指标和内部执行。",
+      "gaps": [
+        "MOQ、交期、库存周转口径尚未完成独立来源复核。",
+        "未取得供应商资格审核标准、通过率或履约结果。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "exercise",
+        "pitfall",
+        "team"
+      ],
+      "evidence": [
+        {
+          "itemId": "unitree-supplier",
+          "title": "宇树供应商入口：登记流程与采购纪律分开看",
+          "facts": [
+            {
+              "claim": "官网列出登记步骤，并要求供应商主动申报关联关系。",
+              "sourceUrl": "https://www.unitree.com/cn/supplier/",
+              "locator": "正文职责 / 采购原则 / 项目说明段落"
+            }
+          ],
+          "boundary": "公开入口与规则，不是内部执行记录；审核标准、通过率、履约与员工后效未知。",
+          "sources": [
+            {
+              "url": "https://www.unitree.com/cn/supplier/",
+              "name": "宇树科技官方",
+              "publishedAt": null,
+              "publisherGroup": "宇树科技官方",
+              "role": "official",
+              "textHash": "4f637f53a915e7b5ae8195d85e32f4800f48c67d909e4ace6530e2ee2bcfa5f3",
+              "readAt": "2026-11-06T05:43:46.717180+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "unitree-supplier",
+          "url": "https://www.unitree.com/cn/supplier/",
+          "checkedAt": "2026-11-06T07:48:27.597929+00:00",
+          "state": "body",
+          "note": "本轮重新读取官方供应商页面；无发布日期，执行结果未知。"
+        }
+      ],
+      "reviewedAt": "2026-11-06T07:53:13.521723+00:00",
+      "patch": {
+        "basics": "MOQ 是最小订购量；交期包含采购、生产和运输，不能只看供应商承诺。 供应商登记仅是提交资料的入口，不能自动等同于资格审核通过或获得采购订单。",
+        "exercise": "选一颗关键器件，写出交期风险、替代验证要求和缺料升级路径。 再区分供应商资料登记、资格核验、质量验收和订单获取；无公开依据的门槛标为待核验。"
+      },
+      "lessons": [
+        {
+          "id": "supplier-registration-boundary",
+          "title": "把登记入口、行为规则和准入结果分开",
+          "learning": "宇树供应商页面同时公开登记步骤和关系申报等采购纪律。可借此检查供应商入口是否让外部合作方理解所需资料与行为边界。",
+          "application": "设计或评估供应商流程时，分别列清提交资料、资格核验和订单获取；公开入口不能替代后续验收证据。",
+          "boundary": "依据官方公开规则抽象的检查方法；没有证明审核结果、交易规模或采购效率。",
+          "itemIds": [
+            "unitree-supplier"
+          ],
+          "updatedAt": "2026-11-06T07:53:13.521723+00:00"
+        }
+      ],
+      "updatedAt": "2026-11-06T07:53:13.521723+00:00"
+    },
+    "chain-7": {
+      "attemptedAt": "2026-11-06T07:53:13.521723+00:00",
+      "status": "partial",
+      "assessment": "复核安克官方招聘索引中的生命周期测试职责，把服务范围补充到设备所有权变化与数据退出；这是岗位要求线索，未验证具体产品已实施。",
+      "gaps": [
+        "首次解决率口径及服务结果尚未取得独立数据核验。",
+        "具体产品支持周期、数据清除效果和退出承诺仍需产品文档验证。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "exercise",
+        "pitfall",
+        "team"
+      ],
+      "evidence": [
+        {
+          "itemId": "anker-security-job",
+          "title": "安克安全测试岗位：验证覆盖设备、应用、云与产品退出",
+          "facts": [
+            {
+              "claim": "岗位描述要求对设备、配套应用和云服务做安全测试。",
+              "sourceUrl": "https://career.anker-in.com/social/recruitment",
+              "locator": "正文职责 / 采购原则 / 项目说明段落"
+            }
+          ],
+          "boundary": "本次只取得官方页面搜索索引中的职责片段；动态页面返回空列表，不认定岗位关闭，也不推断编制数。",
+          "sources": [
+            {
+              "url": "https://career.anker-in.com/social/recruitment",
+              "name": "安克创新官方招聘",
+              "publishedAt": "2026-09-21",
+              "publisherGroup": "安克创新官方招聘",
+              "role": "official",
+              "textHash": "2730fb85749b6912cf13677440766503941272fa81a42bac28c18c4175540485",
+              "readAt": "2026-11-06T05:43:46.717180+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "anker-security-job",
+          "url": "https://career.anker-in.com/social/recruitment",
+          "checkedAt": "2026-11-06T07:48:27.597929+00:00",
+          "state": "index",
+          "note": "本轮重新检索官方招聘正文片段，列表混有多岗位，实时在招状态未知。"
+        }
+      ],
+      "reviewedAt": "2026-11-06T07:53:13.521723+00:00",
+      "patch": {
+        "basics": "OTA 是远程软件更新；支持周期、回滚和停止服务的安排也是产品承诺。 对互联设备，还应检查所有权转移、恢复出厂与退出时的数据处理；这些是从岗位职责提炼的验收问题，不能视为全行业已落实的规范。",
+        "exercise": "追踪一次服务事件，从用户发现到真正恢复使用，找出重复解释和重复操作。 补充一次设备转售或恢复出厂场景，列清设备、账号和云端数据的处理责任与验证证据。"
+      },
+      "lessons": [
+        {
+          "id": "lifecycle-ownership-tests",
+          "title": "服务验收延伸到设备转让与退出",
+          "learning": "安克安全测试岗位索引列出了转让、恢复出厂和转售等测试场景，为生命周期责任提供了具体观察入口。",
+          "application": "按使用、共享、转让、重置、退出梳理检查问题，追问设备端与云端分别由谁验收。",
+          "boundary": "岗位描述只证明其提出职责要求；实时在招状态、实现质量与测试覆盖率均未知。",
+          "itemIds": [
+            "anker-security-job"
+          ],
+          "updatedAt": "2026-11-06T07:53:13.521723+00:00"
+        }
+      ],
+      "updatedAt": "2026-11-06T07:53:13.521723+00:00"
+    },
+    "track-5": {
+      "attemptedAt": "2026-11-06T07:53:13.521723+00:00",
+      "status": "partial",
+      "assessment": "根据安克设备安全测试职责，补充产品工程地图中的设备、应用、云联动与生命周期退出约束；原有供应链、量产和交期维度继续保留。",
+      "gaps": [
+        "原有工程指标与各类 ODM / EMS 的责任边界尚待逐项来源复核。",
+        "岗位要求不能证明整个行业的组织形态或最佳实践成效。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "team"
+      ],
+      "evidence": [
+        {
+          "itemId": "anker-security-job",
+          "title": "安克安全测试岗位：验证覆盖设备、应用、云与产品退出",
+          "facts": [
+            {
+              "claim": "岗位描述要求对设备、配套应用和云服务做安全测试。",
+              "sourceUrl": "https://career.anker-in.com/social/recruitment",
+              "locator": "正文职责 / 采购原则 / 项目说明段落"
+            }
+          ],
+          "boundary": "本次只取得官方页面搜索索引中的职责片段；动态页面返回空列表，不认定岗位关闭，也不推断编制数。",
+          "sources": [
+            {
+              "url": "https://career.anker-in.com/social/recruitment",
+              "name": "安克创新官方招聘",
+              "publishedAt": "2026-09-21",
+              "publisherGroup": "安克创新官方招聘",
+              "role": "official",
+              "textHash": "2730fb85749b6912cf13677440766503941272fa81a42bac28c18c4175540485",
+              "readAt": "2026-11-06T05:43:46.717180+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "anker-security-job",
+          "url": "https://career.anker-in.com/social/recruitment",
+          "checkedAt": "2026-11-06T07:48:27.597929+00:00",
+          "state": "index",
+          "note": "本轮重新检索官方招聘正文片段，列表混有多岗位，实时在招状态未知。"
+        }
+      ],
+      "reviewedAt": "2026-11-06T07:53:13.521723+00:00",
+      "patch": {
+        "constraint": "成本、质量、交期、维修和供货风险；互联设备另需检查设备、应用、云的协同安全与退出时的数据处理。",
+        "team": "产品、系统工程、制造、采购、质量、法规与售后；涉及互联设备时，将应用、云服务与产品安全的验收接口纳入研究。"
+      },
+      "lessons": [
+        {
+          "id": "engineering-lifecycle-boundary",
+          "title": "工程交付的边界包括联网服务与产品退出",
+          "learning": "设备安全测试职责跨设备、应用和云，说明研究互联硬件的交付接口时，可以把软件服务与生命周期验证一起检查。",
+          "application": "绘制产品工程地图时增加设备、应用、云的依赖关系，并逐项询问验证责任；具体安排仍需核对企业资料。",
+          "boundary": "由一个官方招聘样本形成的研究提示，不是通用组织标准或实际完成结果。",
+          "itemIds": [
+            "anker-security-job"
+          ],
+          "updatedAt": "2026-11-06T07:53:13.521723+00:00"
+        }
+      ],
+      "updatedAt": "2026-11-06T07:53:13.521723+00:00"
+    }
+  },
+  "runs": [
+    {
+      "completedAt": "2026-11-06T07:53:13.521723+00:00",
+      "reviewedNodes": [
+        "chain-3",
+        "chain-7",
+        "track-5"
+      ],
+      "decisions": [
+        {
+          "itemId": "rss-bfc0b11493f1086c",
+          "hash": "5a09f37e781bbf73fb988fc069c85a998260649109b2905b7d4d320b2f5a42cb",
+          "decision": "hold",
+          "reason": "缺少一手工程材料与可比较结果，先保留制造实践线索，不升级为稳定知识结论。"
+        },
+        {
+          "itemId": "rss-1a47ee385dceb5a7",
+          "hash": "a3cafdb0afbcc77a63be1eeb4724ffe426ba2c86ad2ee7c3f03b0cc13a40c353",
+          "decision": "hold",
+          "reason": "产品架构披露可以辅助系统工程学习，但需先补充可迁移的接口与验证条件。"
+        },
+        {
+          "itemId": "rss-513daddc394daa3d",
+          "hash": "b05f7d3cdf5feebb0cbd23b3e0d3c7b9fdcc3be1f9453c5f3d07418a8f919960",
+          "decision": "hold",
+          "reason": "软件适配仍是计划，待核对实际发布结果后再更新生命周期知识。"
+        },
+        {
+          "itemId": "rss-6e8d8bda55a6a330",
+          "hash": "71e1ced6c52ef5affa541d9a866159ceb89a5e0340b9c74cb38a7c287a4943cd",
+          "decision": "hold",
+          "reason": "需要课程实施、设备维护和人员支持条件，暂不将案例愿景当作教育部署方法。"
+        },
+        {
+          "itemId": "bambu-service",
+          "hash": "3cbbfe11ad177493549216365d69d99c3bd1156a749eafaa5991e862e7f86b6f",
+          "decision": "hold",
+          "reason": "服务批次追溯有沉淀价值，下一轮需复核通知、交付和验收证据后补充质量节点。"
+        },
+        {
+          "itemId": "rss-7c6067afc189ee25",
+          "hash": "9440befaeec150b7ad3e3974b800182b5494a0c2ce2f73cc95ad8371e5489891",
+          "decision": "hold",
+          "reason": "现场制作案例需补充材料、验收与备件适用边界，暂留待核验队列。"
+        },
+        {
+          "itemId": "rss-fb9782751b5c994c",
+          "hash": "1e0ae17bfb9939ae9b338645fc1755a195011a6993e15b2f32beaf389871eb0f",
+          "decision": "hold",
+          "reason": "无障碍试点需要用户验证和可持续使用证据，暂不修订眼镜领域的通用结论。"
+        },
+        {
+          "itemId": "rss-faad85aca1cd6f8b",
+          "hash": "b19a113eaab0ff71e7dab6a41e18b6668710331ec588e0747d4d1bf6d790f03b",
+          "decision": "hold",
+          "reason": "新设备披露不足以改变领域知识，需补充材料安全、交付及验证约束。"
+        },
+        {
+          "itemId": "anker-security-job",
+          "hash": "16ae93e62d4a6b37a204c4009e886e3219d72f6408bd445642849e3dd66edcb8",
+          "decision": "integrated",
+          "reason": "已绑定知识补充和明确的适用边界，保留来源证据与未知项。"
+        },
+        {
+          "itemId": "anker-ifa",
+          "hash": "507fe6d9508cce480c798f24227d976de0cd350e748383a08a285cdad6589c9e",
+          "decision": "hold",
+          "reason": "场景演示与门店计划仍缺实际运营和人员负担证据，保留渠道复核任务。"
+        },
+        {
+          "itemId": "rss-73d3265f7743a41c",
+          "hash": "1cc48eae8f30fdaa86e7bb89d2bcbd32abe69a5e7de704a1e5d1641b3a1b3ca8",
+          "decision": "hold",
+          "reason": "设计活动仍需参与者需求验证与使用后反馈，暂不作为有效需求流程定论。"
+        },
+        {
+          "itemId": "rss-4e1438b07dbaee4a",
+          "hash": "6cea76eb0291f4d6a96239e65a1a650c8223186cca837cee408eb823a17183bf",
+          "decision": "hold",
+          "reason": "漏洞管理案例需补充受理、修复和对外通知的具体边界后才能沉淀方法。"
+        },
+        {
+          "itemId": "bambu-quality",
+          "hash": "371478ab802d11339dab7208bdb882e8a360766d9904dd7b64b97e32be5f99c5",
+          "decision": "hold",
+          "reason": "历史改进案例需要明确年份与可迁移条件，不能用作当前质量水平依据。"
+        },
+        {
+          "itemId": "unitree-supplier",
+          "hash": "d1c0fbe20456360c8c2929b0847cd251d16bf068c16265d555f94fdfd1f986e6",
+          "decision": "integrated",
+          "reason": "已绑定知识补充和明确的适用边界，保留来源证据与未知项。"
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "nodeId": "chain-3",
+      "reviewedAt": "2026-11-06T07:53:13.521723+00:00",
+      "status": "partial",
+      "assessment": "复查宇树官方供应商入口的登记步骤与采购纪律，补充供应商登记和资格认可的区分。当前证据只覆盖入口与行为规则，没有验证全部采购指标和内部执行。",
+      "gaps": [
+        "MOQ、交期、库存周转口径尚未完成独立来源复核。",
+        "未取得供应商资格审核标准、通过率或履约结果。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "exercise",
+        "pitfall",
+        "team"
+      ],
+      "changes": {
+        "basics": {
+          "before": "MOQ 是最小订购量；交期包含采购、生产和运输，不能只看供应商承诺。",
+          "after": "MOQ 是最小订购量；交期包含采购、生产和运输，不能只看供应商承诺。 供应商登记仅是提交资料的入口，不能自动等同于资格审核通过或获得采购订单。"
+        },
+        "exercise": {
+          "before": "选一颗关键器件，写出交期风险、替代验证要求和缺料升级路径。",
+          "after": "选一颗关键器件，写出交期风险、替代验证要求和缺料升级路径。 再区分供应商资料登记、资格核验、质量验收和订单获取；无公开依据的门槛标为待核验。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "supplier-registration-boundary",
+            "title": "把登记入口、行为规则和准入结果分开",
+            "learning": "宇树供应商页面同时公开登记步骤和关系申报等采购纪律。可借此检查供应商入口是否让外部合作方理解所需资料与行为边界。",
+            "application": "设计或评估供应商流程时，分别列清提交资料、资格核验和订单获取；公开入口不能替代后续验收证据。",
+            "boundary": "依据官方公开规则抽象的检查方法；没有证明审核结果、交易规模或采购效率。",
+            "itemIds": [
+              "unitree-supplier"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "unitree-supplier",
+          "title": "宇树供应商入口：登记流程与采购纪律分开看",
+          "facts": [
+            {
+              "claim": "官网列出登记步骤，并要求供应商主动申报关联关系。",
+              "sourceUrl": "https://www.unitree.com/cn/supplier/",
+              "locator": "正文职责 / 采购原则 / 项目说明段落"
+            }
+          ],
+          "boundary": "公开入口与规则，不是内部执行记录；审核标准、通过率、履约与员工后效未知。",
+          "sources": [
+            {
+              "url": "https://www.unitree.com/cn/supplier/",
+              "name": "宇树科技官方",
+              "publishedAt": null,
+              "publisherGroup": "宇树科技官方",
+              "role": "official",
+              "textHash": "4f637f53a915e7b5ae8195d85e32f4800f48c67d909e4ace6530e2ee2bcfa5f3",
+              "readAt": "2026-11-06T05:43:46.717180+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "unitree-supplier",
+          "url": "https://www.unitree.com/cn/supplier/",
+          "checkedAt": "2026-11-06T07:48:27.597929+00:00",
+          "state": "body",
+          "note": "本轮重新读取官方供应商页面；无发布日期，执行结果未知。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-7",
+      "reviewedAt": "2026-11-06T07:53:13.521723+00:00",
+      "status": "partial",
+      "assessment": "复核安克官方招聘索引中的生命周期测试职责，把服务范围补充到设备所有权变化与数据退出；这是岗位要求线索，未验证具体产品已实施。",
+      "gaps": [
+        "首次解决率口径及服务结果尚未取得独立数据核验。",
+        "具体产品支持周期、数据清除效果和退出承诺仍需产品文档验证。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "exercise",
+        "pitfall",
+        "team"
+      ],
+      "changes": {
+        "basics": {
+          "before": "OTA 是远程软件更新；支持周期、回滚和停止服务的安排也是产品承诺。",
+          "after": "OTA 是远程软件更新；支持周期、回滚和停止服务的安排也是产品承诺。 对互联设备，还应检查所有权转移、恢复出厂与退出时的数据处理；这些是从岗位职责提炼的验收问题，不能视为全行业已落实的规范。"
+        },
+        "exercise": {
+          "before": "追踪一次服务事件，从用户发现到真正恢复使用，找出重复解释和重复操作。",
+          "after": "追踪一次服务事件，从用户发现到真正恢复使用，找出重复解释和重复操作。 补充一次设备转售或恢复出厂场景，列清设备、账号和云端数据的处理责任与验证证据。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "lifecycle-ownership-tests",
+            "title": "服务验收延伸到设备转让与退出",
+            "learning": "安克安全测试岗位索引列出了转让、恢复出厂和转售等测试场景，为生命周期责任提供了具体观察入口。",
+            "application": "按使用、共享、转让、重置、退出梳理检查问题，追问设备端与云端分别由谁验收。",
+            "boundary": "岗位描述只证明其提出职责要求；实时在招状态、实现质量与测试覆盖率均未知。",
+            "itemIds": [
+              "anker-security-job"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "anker-security-job",
+          "title": "安克安全测试岗位：验证覆盖设备、应用、云与产品退出",
+          "facts": [
+            {
+              "claim": "岗位描述要求对设备、配套应用和云服务做安全测试。",
+              "sourceUrl": "https://career.anker-in.com/social/recruitment",
+              "locator": "正文职责 / 采购原则 / 项目说明段落"
+            }
+          ],
+          "boundary": "本次只取得官方页面搜索索引中的职责片段；动态页面返回空列表，不认定岗位关闭，也不推断编制数。",
+          "sources": [
+            {
+              "url": "https://career.anker-in.com/social/recruitment",
+              "name": "安克创新官方招聘",
+              "publishedAt": "2026-09-21",
+              "publisherGroup": "安克创新官方招聘",
+              "role": "official",
+              "textHash": "2730fb85749b6912cf13677440766503941272fa81a42bac28c18c4175540485",
+              "readAt": "2026-11-06T05:43:46.717180+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "anker-security-job",
+          "url": "https://career.anker-in.com/social/recruitment",
+          "checkedAt": "2026-11-06T07:48:27.597929+00:00",
+          "state": "index",
+          "note": "本轮重新检索官方招聘正文片段，列表混有多岗位，实时在招状态未知。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-5",
+      "reviewedAt": "2026-11-06T07:53:13.521723+00:00",
+      "status": "partial",
+      "assessment": "根据安克设备安全测试职责，补充产品工程地图中的设备、应用、云联动与生命周期退出约束；原有供应链、量产和交期维度继续保留。",
+      "gaps": [
+        "原有工程指标与各类 ODM / EMS 的责任边界尚待逐项来源复核。",
+        "岗位要求不能证明整个行业的组织形态或最佳实践成效。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "team"
+      ],
+      "changes": {
+        "constraint": {
+          "before": "成本、质量、交期、维修和供货风险",
+          "after": "成本、质量、交期、维修和供货风险；互联设备另需检查设备、应用、云的协同安全与退出时的数据处理。"
+        },
+        "team": {
+          "before": "产品、系统工程、制造、采购、质量、法规与售后",
+          "after": "产品、系统工程、制造、采购、质量、法规与售后；涉及互联设备时，将应用、云服务与产品安全的验收接口纳入研究。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "engineering-lifecycle-boundary",
+            "title": "工程交付的边界包括联网服务与产品退出",
+            "learning": "设备安全测试职责跨设备、应用和云，说明研究互联硬件的交付接口时，可以把软件服务与生命周期验证一起检查。",
+            "application": "绘制产品工程地图时增加设备、应用、云的依赖关系，并逐项询问验证责任；具体安排仍需核对企业资料。",
+            "boundary": "由一个官方招聘样本形成的研究提示，不是通用组织标准或实际完成结果。",
+            "itemIds": [
+              "anker-security-job"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "anker-security-job",
+          "title": "安克安全测试岗位：验证覆盖设备、应用、云与产品退出",
+          "facts": [
+            {
+              "claim": "岗位描述要求对设备、配套应用和云服务做安全测试。",
+              "sourceUrl": "https://career.anker-in.com/social/recruitment",
+              "locator": "正文职责 / 采购原则 / 项目说明段落"
+            }
+          ],
+          "boundary": "本次只取得官方页面搜索索引中的职责片段；动态页面返回空列表，不认定岗位关闭，也不推断编制数。",
+          "sources": [
+            {
+              "url": "https://career.anker-in.com/social/recruitment",
+              "name": "安克创新官方招聘",
+              "publishedAt": "2026-09-21",
+              "publisherGroup": "安克创新官方招聘",
+              "role": "official",
+              "textHash": "2730fb85749b6912cf13677440766503941272fa81a42bac28c18c4175540485",
+              "readAt": "2026-11-06T05:43:46.717180+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "anker-security-job",
+          "url": "https://career.anker-in.com/social/recruitment",
+          "checkedAt": "2026-11-06T07:48:27.597929+00:00",
+          "state": "index",
+          "note": "本轮重新检索官方招聘正文片段，列表混有多岗位，实时在招状态未知。"
+        }
+      ]
+    }
+  ]
+}

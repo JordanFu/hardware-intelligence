@@ -27,6 +27,8 @@ def build():
  (DIST/'data/digests.json').write_text(json.dumps(reports,ensure_ascii=False,indent=2)+'\n')
  from editorial import validate_artifacts
  validate_artifacts()
+ from knowledge import validate as validate_knowledge
+ validate_knowledge()
  for name in ['curated','organizations','landscape','learning','sources','intelligence','daily','recruitment','valuechain']:
   value=json.loads((SITE/f'data/{name}.json').read_text())
   assert value, name

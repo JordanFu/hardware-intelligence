@@ -1509,3 +1509,14 @@ textarea::placeholder {
  .timeline-extra summary span { display:block; margin-left:17px; }
  .timeline-day-head { margin-bottom:18px; }
 }
+
+.knowledge-note { border-top:1px solid var(--line); margin-top:22px; padding-top:20px; }
+.knowledge-overview { margin-top:18px; }
+.knowledge-lesson { padding:16px 0; border-bottom:1px solid var(--line); }
+.knowledge-lesson p { margin-top:8px; }
+.knowledge-links { display:flex; flex-direction:column; align-items:flex-start; gap:8px; margin-top:12px; font-size:12px; }
+.knowledge-links button { text-align:left; }
+.knowledge-review { margin:16px 0 0; }
+.knowledge-review summary { cursor:pointer; font-size:13px; font-weight:600; }
+.knowledge-review p { margin-top:12px; }
+.knowledge-revision { padding-top:12px; border-top:1px dashed var(--line); margin-top:16px; font-size:13px; }

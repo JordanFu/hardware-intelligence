@@ -1,14 +1,30 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "rssTimes": ["08:17", "18:17"],
+  "rssTimes": [
+    "08:17",
+    "18:17"
+  ],
   "editorialTime": "08:40",
   "recoveryTime": "18:40",
   "dueHour": 10,
   "cadence": "daily",
   "automationId": "automation-4",
   "scheduleVerifiedAt": "2026-11-06",
-  "requirements": {"domesticCompanies": 3, "nonResearchStages": 2, "recruitmentCompanies": 2},
+  "requirements": {
+    "domesticCompanies": 3,
+    "nonResearchStages": 2,
+    "recruitmentCompanies": 2
+  },
   "runtimeNote": "RSS 在 GitHub 云端运行；中文整理与岗位研究使用本地 Codex，需电脑和应用可用。调度可能延迟。",
-  "qualityNote": "每日更新实际扫描结果；无合格新内容不凑数。事实、分析、未知项分开，准确性依赖来源与复核，不能保证绝对无误。"
+  "qualityNote": "每日更新实际扫描结果；无合格新内容不凑数。事实、分析、未知项分开，准确性依赖来源与复核，不能保证绝对无误。",
+  "knowledge": {
+    "reviewIntervalDays": 7,
+    "dailyReviewMinimum": 3,
+    "pages": [
+      "valuechain",
+      "landscape"
+    ],
+    "policy": "每日处理新实践，轮换复核至少 3 个节点并覆盖两页；7 天内完整覆盖 8 个链路环节和 6 个领域。失败不刷新完整复核日期。"
+  }
 }
