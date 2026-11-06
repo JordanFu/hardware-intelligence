@@ -36,6 +36,9 @@ class EditorialTests(unittest.TestCase):
   read=dict(url='https://example.com/a',text=text,bodyStatus='body',readAt=self.clock.isoformat())
   entry=dict(id='test',eventId='test',developmentId='one',titleZh='测试公开的服务计划',brief=dict(lead='这是一项公开发布的服务替换计划，目前仅用于验证证据字段。',points=['公开说明提供替换计划。','缺少实际完成情况的证据。']),stages=['服务与生命周期'],domestic=True,publishedAt='2026-11-04',sources=[dict(readId='test',url=read['url'],publishedAt='2026-11-04',name='测试',publisherGroup='test',role='official')],facts=[dict(claim='公开说明了相关的替换服务计划。',readId='test',anchor='service replacement program',locator='正文第一段')],selection=dict(scores={k:20 for k in e.industry()['selection']['dimensions']},review=dict(decision='hold',reason='虽然得分充足，但证据范围有待人工复核。')),boundary='测试资料不能用作任何真实公司结论。',meaning='测试服务计划与质量协作之间的关系。',question='后续是否有完成情况的证据和结果？',eventReason='相同公司与服务替换计划属于同一事件。')
   self.assertFalse(e.validate_entry(entry,{'test':read})['selected'])
+  entry['publishedAt']='2026-11-03'
+  with self.assertRaises(ValueError):e.validate_entry(entry,{'test':read})
+  entry['publishedAt']='2026-11-04'
   entry['facts'][0]['anchor']='fabricated evidence anchor'
   with self.assertRaises(ValueError):e.validate_entry(entry,{'test':read})
 class RecruitmentTests(unittest.TestCase):

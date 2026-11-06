@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "timezone": "Asia/Shanghai",
+  "rssTimes": ["08:17", "18:17"],
+  "editorialTime": "08:40",
+  "recoveryTime": "18:40",
+  "dueHour": 10,
+  "cadence": "daily",
+  "automationId": "automation-4",
+  "scheduleVerifiedAt": "2026-11-06",
+  "requirements": {"domesticCompanies": 3, "nonResearchStages": 2, "recruitmentCompanies": 2},
+  "runtimeNote": "RSS 在 GitHub 云端运行；中文整理与岗位研究使用本地 Codex，需电脑和应用可用。调度可能延迟。",
+  "qualityNote": "每日更新实际扫描结果；无合格新内容不凑数。事实、分析、未知项分开，准确性依赖来源与复核，不能保证绝对无误。"
+}

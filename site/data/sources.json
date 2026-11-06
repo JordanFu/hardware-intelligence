@@ -158,5 +158,25 @@
     "scope": "产销研与组织实践",
     "auto": false,
     "research": true
+  },
+  {
+    "id": "unitree-supplier",
+    "name": "宇树供应商注册",
+    "home": "https://www.unitree.com/cn/supplier/",
+    "tier": "官方一手",
+    "type": "Codex 定时查阅",
+    "scope": "供应商准入、关联申报与采购协作",
+    "auto": false,
+    "research": true
+  },
+  {
+    "id": "anker-careers",
+    "name": "安克创新官方招聘",
+    "home": "https://career.anker-in.com/social/recruitment",
+    "tier": "官方一手",
+    "type": "Codex 定时查阅",
+    "scope": "岗位职责与跨环节接口；动态页及索引边界单列",
+    "auto": false,
+    "research": true
   }
 ]

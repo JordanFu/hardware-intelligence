@@ -4,7 +4,7 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron: "17 0 * * *"
+    - cron: "17 0,10 * * *"
 permissions:
   contents: write
   pages: write
@@ -14,6 +14,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build:
+    timeout-minutes: 15
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -40,11 +41,14 @@ jobs:
           fi
       - name: Build static publication
         run: python3 scripts/build.py
+      - name: Report content freshness separately from deployment
+        run: python3 scripts/health.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
   deploy:
+    timeout-minutes: 15
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-05T10:39:16.176722+00:00",
+  "checkedAt": "2026-11-06T05:43:46.753578+00:00",
   "jobs": [
     {
       "company": "DJI 大疆",
@@ -29,9 +29,9 @@
       "coverage": "正文片段/搜索索引；非完整岗位清单",
       "id": "job-4cd3223cfd1b1a22",
       "firstSeen": "2026-11-05T10:39:16.176722+00:00",
-      "lastSeen": "2026-11-05T10:39:16.176722+00:00",
-      "sourceHash": "ab537e55a7e2d54d54cc73353db58c4340054e285dc2b8d5c34265d865eba8e0",
-      "change": "首次收录基线",
+      "lastSeen": "2026-11-06T05:43:46.753578+00:00",
+      "sourceHash": "3c7262c6929eaa6729244db72bb09a7ac9fe8bd73dc87c76119dbacd42150e07",
+      "change": "持续可见",
       "versions": [
         {
           "observedAt": "2026-11-05T10:39:16.176722+00:00",
@@ -83,9 +83,9 @@
       "coverage": "正文片段/搜索索引；非完整岗位清单",
       "id": "job-2da99eb90de66e6f",
       "firstSeen": "2026-11-05T10:39:16.176722+00:00",
-      "lastSeen": "2026-11-05T10:39:16.176722+00:00",
-      "sourceHash": "ccad29ab175dd4074a9d8c11784fbcaff94ffb6dcfa381d2befcad9423c1e7b0",
-      "change": "首次收录基线",
+      "lastSeen": "2026-11-06T05:43:46.753578+00:00",
+      "sourceHash": "3c7262c6929eaa6729244db72bb09a7ac9fe8bd73dc87c76119dbacd42150e07",
+      "change": "持续可见",
       "versions": [
         {
           "observedAt": "2026-11-05T10:39:16.176722+00:00",
@@ -225,6 +225,63 @@
           ]
         }
       ]
+    },
+    {
+      "company": "安克创新",
+      "title": "Product Security Test Engineer — Connected Devices",
+      "family": "产品安全与生命周期",
+      "location": "Seattle；正文另列 Bellevue / San Jose，地点待核实",
+      "stages": [
+        "研发与系统",
+        "质量与合规",
+        "服务与生命周期"
+      ],
+      "url": "https://career.anker-in.com/social/recruitment",
+      "postedAt": "2026-09-21",
+      "access": "搜索索引可见",
+      "responsibilities": [
+        "对设备、配套应用和云服务进行安全验证，覆盖转让、恢复出厂及转售。"
+      ],
+      "interfaces": [
+        "第三方安全测试机构；产品和发布验收接口，具体汇报线未披露"
+      ],
+      "requirements": [
+        "按产品风险制定测试范围与通过条件，并形成自动回归覆盖"
+      ],
+      "decisionQuestion": "产品退出或转让时，设备、应用和云端由谁共同验收？",
+      "boundary": "官方搜索索引职责片段；动态列表直连为空，地点信息也需复核，不代表新增编制或当前仍在招。",
+      "postingId": null,
+      "locator": "Product Security Test Engineer — Connected Devices / Key Responsibilities",
+      "coverage": "官方搜索索引正文片段",
+      "id": "job-d5c2bc2731330b0e",
+      "firstSeen": "2026-11-06T05:43:46.753578+00:00",
+      "lastSeen": "2026-11-06T05:43:46.753578+00:00",
+      "sourceHash": "2730fb85749b6912cf13677440766503941272fa81a42bac28c18c4175540485",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-06T05:43:46.753578+00:00",
+          "sourceHash": "2730fb85749b6912cf13677440766503941272fa81a42bac28c18c4175540485",
+          "access": "搜索索引可见",
+          "title": "Product Security Test Engineer — Connected Devices",
+          "family": "产品安全与生命周期",
+          "location": "Seattle；正文另列 Bellevue / San Jose，地点待核实",
+          "responsibilities": [
+            "对设备、配套应用和云服务进行安全验证，覆盖转让、恢复出厂及转售。"
+          ],
+          "interfaces": [
+            "第三方安全测试机构；产品和发布验收接口，具体汇报线未披露"
+          ],
+          "requirements": [
+            "按产品风险制定测试范围与通过条件，并形成自动回归覆盖"
+          ],
+          "stages": [
+            "研发与系统",
+            "质量与合规",
+            "服务与生命周期"
+          ]
+        }
+      ]
     }
   ],
   "changes": [
@@ -259,6 +316,14 @@
       "fields": [],
       "before": {},
       "after": {}
+    },
+    {
+      "jobId": "job-d5c2bc2731330b0e",
+      "observedAt": "2026-11-06T05:43:46.753578+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
     }
   ],
   "scans": [
@@ -282,6 +347,27 @@
       "complete": false,
       "note": "旧版官网无日期岗位样本，不代表当前需求。",
       "checkedAt": "2026-11-05T10:39:16.176722+00:00"
+    },
+    {
+      "company": "DJI 大疆",
+      "state": "partial",
+      "complete": false,
+      "note": "本次索引复核两条既有岗位，未见职责实质改变，非完整目录。",
+      "checkedAt": "2026-11-06T05:43:46.753578+00:00"
+    },
+    {
+      "company": "安克创新",
+      "state": "partial",
+      "complete": false,
+      "note": "索引读取安全测试岗位，动态列表为空；首次入库旧日期岗位不计为新设。",
+      "checkedAt": "2026-11-06T05:43:46.753578+00:00"
+    },
+    {
+      "company": "宇树科技",
+      "state": "error",
+      "complete": false,
+      "note": "仅取到筛选框架，未得到岗位正文。",
+      "checkedAt": "2026-11-06T05:43:46.753578+00:00"
     }
   ],
   "insights": [

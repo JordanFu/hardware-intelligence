@@ -30,6 +30,8 @@ def build():
   items.append(f'<item><title>{html.escape(n["title"])}</title><link>{html.escape(url)}</link><guid>{url}</guid><description>{html.escape(n["summary"])}</description></item>')
  (DIST/'feed.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>硬件观测 · 编辑精选</title><link>'+base+'</link><description>可追溯的智能硬件情报</description>'+''.join(items)+'</channel></rss>')
  (DIST/'llms.txt').write_text('# 硬件观测 / Hardware Atlas\n\n公开的智能硬件学习与研究站。事实、解释和未知项分离。\n\n- '+base+'data/intelligence.json 中文摘要、事件、组织与实践证据\n- '+base+'data/daily.json 历史日报与扫描边界\n- '+base+'data/valuechain.json 产销研全链路学习框架\n- '+base+'data/recruitment.json 岗位职责、时间口径与版本记录\n- '+base+'data/curated.json 初始研究资料，含来源和边界\n- '+base+'data/radar.json 自动 RSS 发现；按 ID 与 intelligence.json 合并可读中文 brief\n- '+base+'data/organizations.json 组织案例，带历史时间边界\n- '+base+'data/learning.json 学习路径\n- '+base+'data/sources.json 信源配置\n\n无私有数据、无模型实时回答、无内部组织信息。\n')
+ from health import report
+ (DIST/'data/health.json').write_text(json.dumps(report(),ensure_ascii=False,indent=2)+'\n')
  (DIST/'.nojekyll').touch()
  print('Built static site:',len(curated['items']),'curated;',len(radar['items']),'radar;',len(groups),'daily indexes')
 if __name__=='__main__':build()

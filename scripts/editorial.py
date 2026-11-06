@@ -91,6 +91,8 @@ def validate_entry(entry,reads):
         valid_text(entry.get(field),field)
     if entry.get('publishedAt') and timestamp(entry['publishedAt'])>now():raise ValueError('Invalid publication date')
     if not entry.get('publishedAt') and entry.get('kind')!='常青资料':raise ValueError('Undated content must be evergreen')
+    dated=[s.get('publishedAt') for s in sources if s.get('publishedAt')]
+    if entry.get('publishedAt') and entry['publishedAt'] not in dated:raise ValueError('Article date must match a source publication date')
     # Only independently sourced outcomes may justify an outcome label; default is disclosure/practice lead.
     for org in entry.get('organization',[]):
         if org.get('kind') not in ('已披露机制','能力需求线索','研究问题'):raise ValueError('Invalid organization evidence type')
@@ -150,13 +152,40 @@ def make_digest(items,events,previous,run,clock=None):
         if publisher_counts.get(publisher,0)>=2:continue
         slots.append(i);publisher_counts[publisher]=publisher_counts.get(publisher,0)+1
         if len(slots)>=8:break
-    state='partial' if run.get('failedSources') else 'complete'
-    if not slots:state='partial' if run.get('failedSources') else ('no_new_qualifying_events' if run.get('successfulScan') else 'incomplete')
+    state='partial' if run.get('failedSources') or not run.get('coverageCheck',{'passed':True})['passed'] else 'complete'
+    if not slots:state='partial' if run.get('failedSources') or not run.get('coverageCheck',{'passed':True})['passed'] else ('no_new_qualifying_events' if run.get('successfulScan') else 'incomplete')
     return {'id':'daily-'+stamp,'date':stamp,'generatedAt':clock.isoformat(),'state':state,'bootstrap':bootstrap,'windowNote':'首次上线回补近 14 天；旧实践另列，不算当天新闻。' if bootstrap else '优先最近 72 小时的新事件；按北京时间出刊。7 期内同一进展不重复。','itemIds':[i['id'] for i in slots],'developmentKeys':[[i['eventId'],i['developmentId']] for i in slots],'reviewedCount':run['reviewedCount'],'failedSources':run.get('failedSources',[]),'coverage':run['coverage'],'knownGaps':run.get('knownGaps',[])}
+
+def assess_coverage(run,clock=None):
+    clock=clock or now();checks=run.get('sourceChecks',[])
+    if not checks:raise ValueError('Structured source checks are required')
+    company_names={c['name'] for c in industry()['companies']};stages=set(industry()['stages'])
+    usable=[]
+    for c in checks:
+        canonical(c['url']);valid_text(c.get('note'),'source check note')
+        if c.get('state') not in ('read','index','no_new','error'):raise ValueError('Invalid scan state')
+        if c.get('purpose') not in ('news','practice','recruitment'):raise ValueError('Invalid scan purpose')
+        if not set(c.get('stages',[]))<=stages:raise ValueError('Invalid scan stages')
+        checked=timestamp(c['checkedAt'])
+        if checked>clock+dt.timedelta(minutes=5) or checked.astimezone(TZ).date()!=clock.astimezone(TZ).date():raise ValueError('Scan must be checked today')
+        if c['state']!='error':usable.append(c)
+    companies={c.get('company') for c in usable}&company_names
+    nonrd=set().union(*(set(c['stages']) for c in usable))-{'研发与系统'} if usable else set()
+    recruiters={c.get('company') for c in usable if c['purpose']=='recruitment'}&company_names
+    req=load(DATA/'operations.json')['requirements']
+    reasons=[]
+    for count,key,label in [(len(companies),'domesticCompanies','国内公司'),(len(nonrd),'nonResearchStages','非研发环节'),(len(recruiters),'recruitmentCompanies','官方招聘公司')]:
+        if count<req[key]:reasons.append(f'{label} {count}/{req[key]}')
+    return {'passed':not reasons,'companies':sorted(companies),'stages':sorted(nonrd),'recruitmentCompanies':sorted(recruiters),'gaps':reasons,'usableSources':len(usable)}
 
 def publish(bundle_path):
     bundle=load(Path(bundle_path));reads={p.stem:load(p) for p in WORK.glob('*.json') if p.name not in ('queue.json','bundle.json')}
     run=bundle['run'];valid_text(run.get('coverage'),'coverage note')
+    run['coverageCheck']=assess_coverage(run)
+    run['successfulScan']=run['coverageCheck']['usableSources']>0
+    run['knownGaps']=list(dict.fromkeys(run.get('knownGaps',[])+run['coverageCheck']['gaps']))
+    failed=[c['note'] for c in run['sourceChecks'] if c['state']=='error']
+    run['failedSources']=list(dict.fromkeys(run.get('failedSources',[])+failed))
     entries=bundle['entries'];ids=[e['id'] for e in entries]
     if len(ids)!=len(set(ids)):raise ValueError('Duplicate batch')
     if not entries and not run.get('scannedSources'):raise ValueError('Empty scan needs source records')

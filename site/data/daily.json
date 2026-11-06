@@ -1,6 +1,39 @@
 {
   "editions": [
     {
+      "id": "daily-2026-11-06",
+      "date": "2026-11-06",
+      "generatedAt": "2026-11-06T05:43:46.748696+00:00",
+      "state": "partial",
+      "bootstrap": false,
+      "windowNote": "优先最近 72 小时的新事件；按北京时间出刊。7 期内同一进展不重复。",
+      "itemIds": [
+        "rss-513daddc394daa3d"
+      ],
+      "developmentKeys": [
+        [
+          "rss-513daddc394daa3d",
+          "initial"
+        ]
+      ],
+      "reviewedCount": 3,
+      "failedSources": [
+        "只能读取招聘筛选框架，未取得实际岗位职责；不能认为没有招聘。",
+        "curl: (28) Failed to connect to www.ithome.com port 443 after 12006 ms: Timeout was reached",
+        "curl: (28) Failed to connect to www.cnx-software.com port 443 after 12005 ms: Timeout was reached",
+        "curl: (28) Operation timed out after 35006 milliseconds with 0 bytes received",
+        "curl: (28) Failed to connect to www.cnx-software.com port 443 after 12006 ms: Timeout was reached",
+        "curl: (56) The requested URL returned error: 403",
+        "curl: (28) Operation timed out after 35005 milliseconds with 0 bytes received"
+      ],
+      "coverage": "今日复查 6 个 RSS，新增发现 2 条；研究覆盖宇树、小米、安克、大疆 4 家国内公司及供应链、质量、渠道、服务、经营环节。新增 3 篇中文整理；招聘完成两家公司索引片段复核，实时在招状态仍有缺口。",
+      "knownGaps": [
+        "宇树招聘动态列表未取得；不推断职位数量。",
+        "CNX 与三星部分正文不可读，保留待摘要。",
+        "新增常青机制和旧日期招聘资料单列，不冒充今日新闻。"
+      ]
+    },
+    {
       "id": "daily-2026-11-05",
       "date": "2026-11-05",
       "generatedAt": "2026-11-05T10:45:32.127823+00:00",
