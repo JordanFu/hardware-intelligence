@@ -132,7 +132,9 @@ def make_digest(items,events,previous,run,clock=None):
     prior=sorted([d for d in previous if d['date']<stamp],key=lambda d:d['date'],reverse=True)[:7]
     seen={tuple(p) for d in prior for p in d['developmentKeys']}
     previous_today=next((d for d in previous if d['date']==stamp),None)
-    if previous_today:return previous_today # published editions are immutable; corrections require explicit command/new record
+    recovering=previous_today and (previous_today['state']=='incomplete' or (previous_today.get('coverageCheck') or {}).get('passed') is False) and run.get('coverageCheck',{}).get('passed') is True
+    if previous_today and not recovering:return previous_today # completed editions remain immutable
+    if recovering:bootstrap=previous_today['bootstrap']
     byid={i['id']:i for i in items};candidates=[]
     for ev in events:
         eligible=[byid[x] for x in ev['itemIds'] if byid[x].get('selected') and byid[x].get('publishedAt')]
@@ -154,7 +156,11 @@ def make_digest(items,events,previous,run,clock=None):
         if len(slots)>=8:break
     state='partial' if run.get('failedSources') or not run.get('coverageCheck',{'passed':True})['passed'] else 'complete'
     if not slots:state='partial' if run.get('failedSources') or not run.get('coverageCheck',{'passed':True})['passed'] else ('no_new_qualifying_events' if run.get('successfulScan') else 'incomplete')
-    return {'id':'daily-'+stamp,'date':stamp,'generatedAt':clock.isoformat(),'state':state,'bootstrap':bootstrap,'windowNote':'首次上线回补近 14 天；旧实践另列，不算当天新闻。' if bootstrap else '优先最近 72 小时的新事件；按北京时间出刊。7 期内同一进展不重复。','itemIds':[i['id'] for i in slots],'developmentKeys':[[i['eventId'],i['developmentId']] for i in slots],'reviewedCount':run['reviewedCount'],'failedSources':run.get('failedSources',[]),'coverage':run['coverage'],'knownGaps':run.get('knownGaps',[])}
+    result={'id':'daily-'+stamp,'date':stamp,'generatedAt':clock.isoformat(),'state':state,'bootstrap':bootstrap,'windowNote':'首次上线回补近 14 天；旧实践另列，不算当天新闻。' if bootstrap else '优先最近 72 小时的新事件；按北京时间出刊。7 期内同一进展不重复。','itemIds':[i['id'] for i in slots],'developmentKeys':[[i['eventId'],i['developmentId']] for i in slots],'reviewedCount':run['reviewedCount'],'failedSources':run.get('failedSources',[]),'coverage':run['coverage'],'knownGaps':run.get('knownGaps',[]),'coverageCheck':run.get('coverageCheck')}
+    if recovering:
+        snapshot={k:v for k,v in previous_today.items() if k!='revisions'}
+        result['revisions']=previous_today.get('revisions',[])+[{'reason':'当天覆盖不足，补跑通过后更新；保留原版。','replacedAt':clock.isoformat(),'edition':snapshot}]
+    return result
 
 def assess_coverage(run,clock=None):
     clock=clock or now();checks=run.get('sourceChecks',[])
@@ -200,7 +206,7 @@ def publish(bundle_path):
     events=events_for(items);run={**run,'completedAt':now().isoformat(),'reviewedCount':len(checked),'selectedCount':sum(i['selected'] for i in checked)}
     result={'schemaVersion':1,'lastCompletedAt':run['completedAt'],'method':'Codex 初筛评分 + 逐条证据复核；非两个独立模型评分','items':items,'events':events,'runs':(old.get('runs',[])+[run])[-30:]}
     history=load(DATA/'daily.json',{'editions':[]});edition=make_digest(items,events,history['editions'],run)
-    if not any(d['date']==edition['date'] for d in history['editions']):history['editions'].insert(0,edition)
+    history['editions']=[edition]+[d for d in history['editions'] if d['date']!=edition['date']]
     history['editions']=history['editions'][:90]
     # All validation occurs before either public file is changed.
     write(DATA/'intelligence.json',result);write(DATA/'daily.json',history)

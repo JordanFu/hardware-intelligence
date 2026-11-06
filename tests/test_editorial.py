@@ -31,6 +31,13 @@ class EditorialTests(unittest.TestCase):
  def test_daily_cap_and_immutable(self):
   rows=[self.row(str(i),event=str(i)) for i in range(5)];d=self.digest(rows)
   self.assertEqual(len(d['itemIds']),2);self.assertEqual(self.digest([], [d]),d)
+ def test_incomplete_daily_recovers_with_preserved_revision(self):
+  self.run['coverageCheck']={'passed':False}
+  first=self.digest([]);self.assertEqual(first['state'],'partial')
+  self.run['coverageCheck']={'passed':True}
+  repaired=self.digest([self.row()],[first])
+  self.assertEqual(repaired['itemIds'],['a']);self.assertEqual(repaired['revisions'][0]['edition'],first)
+  self.assertEqual(self.digest([],[repaired]),repaired)
  def test_invalid_evidence_and_hold(self):
   text='A public company announced a service replacement program. '*6
   read=dict(url='https://example.com/a',text=text,bodyStatus='body',readAt=self.clock.isoformat())

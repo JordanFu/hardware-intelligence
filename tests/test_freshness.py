@@ -36,6 +36,9 @@ class HealthTests(unittest.TestCase):
  def test_all_jobs_failed_is_not_complete(self):
   for scan in self.files['recruitment']['scans']:scan['state']='error'
   result=self.report();self.assertTrue(result['needsEditorial']);self.assertFalse(result['parts']['recruitment']['today'])
+ def test_incomplete_edition_needs_recovery(self):
+  self.files['daily']['editions'][0]['coverageCheck']={'passed':False}
+  self.assertTrue(self.report()['needsEditorial'])
  def test_rss_failure_is_partial_not_current(self):
   self.files['radar']['health'][0]['state']='error'
   self.assertEqual(self.report()['state'],'partial')

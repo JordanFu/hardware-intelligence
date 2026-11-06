@@ -17,7 +17,7 @@ def report(data=DATA,clock=None):
   'rss':{'checkedAt':radar.get('checkedAt'),'lastSuccessAt':radar.get('lastSuccessfulAt'),'today':same_day(radar.get('checkedAt')),'successCount':sum(h['state']=='ok' for h in radar['health']),'sourceCount':len(radar['health'])},
   'editorial':{'checkedAt':intel.get('lastCompletedAt'),'today':scanned,'coveragePassed':covered,'sourceFailures':latest.get('failedSources',[]),'itemCount':len(intel['items'])},
   'recruitment':{'checkedAt':jobs.get('checkedAt'),'today':same_day(jobs.get('checkedAt')) and jobs_covered,'companiesChecked':sorted(job_companies),'jobCount':len(jobs['jobs'])},
-  'daily':{'date':edition['date'] if edition else None,'today':bool(edition),'state':edition['state'] if edition else 'missing','newEvents':len(edition['itemIds']) if edition else 0}}
+  'daily':{'date':edition['date'] if edition else None,'today':bool(edition) and edition['state']!='incomplete' and (edition.get('coverageCheck') or {}).get('passed') is not False,'state':edition['state'] if edition else 'missing','newEvents':len(edition['itemIds']) if edition else 0}}
  missing=[name for name,p in parts.items() if not p['today']]
  warnings=[]
  if missing:warnings.append('今日尚未完成：'+'、'.join(missing))
