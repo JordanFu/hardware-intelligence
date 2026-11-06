@@ -1,5 +1,6 @@
 import datetime as dt
 import html
+import hashlib
 import json
 import shutil
 from pathlib import Path
@@ -9,6 +10,12 @@ base='https://jordanfu.github.io/hardware-intelligence/'
 def build():
  if DIST.exists():shutil.rmtree(DIST)
  shutil.copytree(SITE,DIST)
+ # Keep markup and presentation in sync when browsers cache static assets.
+ index=(DIST/'index.html').read_text()
+ for asset in ('styles.css','app.js'):
+  revision=hashlib.sha256((DIST/asset).read_bytes()).hexdigest()[:12]
+  index=index.replace('"'+asset+'"','"'+asset+'?v='+revision+'"')
+ (DIST/'index.html').write_text(index)
  curated=json.loads((SITE/'data/curated.json').read_text())
  radar=json.loads((SITE/'data/radar.json').read_text())
  # A persistent archive lives in source; daily groups use publication dates in Asia/Shanghai.

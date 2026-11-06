@@ -34,7 +34,7 @@ try {
   storageOK = false;
 }
 let db,
-  route = "briefing",
+  route = "daily",
   category = "全部",
   radarDay = "全部",
   tier = "全部",
@@ -42,8 +42,8 @@ let db,
   query = "",
   focusBeforeDialog = null;
 const navs = [
+  ["daily", "每日时间线", "▤"],
   ["briefing", "中文精选", "◫"],
-  ["daily", "每日情报", "▤"],
   ["valuechain", "全链路知识", "↔"],
   ["practices", "实践观察", "◈"],
   ["recruitment", "岗位与人才", "⌕"],
@@ -80,13 +80,26 @@ function editorialFreshness() {
 function briefing() {
   const items=selectedEvents().filter(inScope).sort((a,b)=>(b.publishedAt||'').localeCompare(a.publishedAt||''));
   const lead=items[0];
-  return head('THE HARDWARE BRIEF','读懂产销研，也读懂组织。','从需求到研发、制造、销售与服务，读中文核心摘要，沿证据追踪真实变化。')+editorialFreshness()+`<div class="overview-links"><a href="#daily"><strong>日报</strong><span>近期进展，按事件去重 ↗</span></a><a href="#valuechain"><strong>全链路知识</strong><span>8 个环节，基础到实践 ↗</span></a><a href="#recruitment"><strong>岗位与人才</strong><span>职责、接口与变化线索 ↗</span></a></div>`+chainFilter()+(lead?`<article class="lead-card"><div class="lead-meta">本期阅读 · ${esc(lead.stages.join(' / '))}</div><h2>${esc(lead.title)}</h2><p>${esc(lead.brief.lead)}</p><div class="lead-bottom"><span>${esc(date(lead.publishedAt))} · ${esc(lead.sources[0].name)}</span><button class="primary" data-detail="${lead.id}">核心内容与证据 ↗</button></div></article>`:'')+`<div class="section-head"><h2>中文精选 · ${items.length} 个事件</h2><a href="#radar">全部动态 ↗</a></div><div class="news-list">${items.length?items.map(newsRow).join(''):empty('当前筛选无精选','调整环节，或查看知识地图。')}</div><details class="method"><summary>初始研究资料 · 按原始日期阅读</summary>${db.curated.items.map(newsRow).join('')}</details>`;
+  return head('THE HARDWARE BRIEF','读懂产销研，也读懂组织。','从需求到研发、制造、销售与服务，读中文核心摘要，沿证据追踪真实变化。')+editorialFreshness()+`<div class="overview-links"><a href="#daily"><strong>每日时间线</strong><span>按天回看，最新更新在前 ↗</span></a><a href="#valuechain"><strong>全链路知识</strong><span>8 个环节，基础到实践 ↗</span></a><a href="#recruitment"><strong>岗位与人才</strong><span>职责、接口与变化线索 ↗</span></a></div>`+chainFilter()+(lead?`<article class="lead-card"><div class="lead-meta">本期阅读 · ${esc(lead.stages.join(' / '))}</div><h2>${esc(lead.title)}</h2><p>${esc(lead.brief.lead)}</p><div class="lead-bottom"><span>${esc(date(lead.publishedAt))} · ${esc(lead.sources[0].name)}</span><button class="primary" data-detail="${lead.id}">核心内容与证据 ↗</button></div></article>`:'')+`<div class="section-head"><h2>中文精选 · ${items.length} 个事件</h2><a href="#radar">全部动态 ↗</a></div><div class="news-list">${items.length?items.map(newsRow).join(''):empty('当前筛选无精选','调整环节，或查看知识地图。')}</div><details class="method"><summary>初始研究资料 · 按原始日期阅读</summary>${db.curated.items.map(newsRow).join('')}</details>`;
 }
+let timelineLimit = 7;
 function daily() {
-  const editions=db.daily.editions;const d=editions.find(e=>e.date===editionDate)||editions[0];
-  const states={complete:'本轮扫描完成',partial:'部分来源未读到',incomplete:'未完成有效扫描',no_new_qualifying_events:'本轮扫描无新增入选事件'};
-  if(!d)return head('DAILY BRIEF','每日情报','尚未生成首期日报。');
-  return head('DAILY BRIEF','每日情报','一天一份可回看的阅读清单。旧案例留在实践库，同一进展七期内不重复。')+editorialFreshness()+`<div class="toolbar"><label for="edition-date">选择日报</label><select id="edition-date">${editions.map(e=>`<option ${e.date===d.date?'selected':''}>${e.date}</option>`).join('')}</select><span class="tag">${esc(states[d.state]||d.state)}</span></div><p>${esc(d.windowNote)}</p>${d.revisions?.length?`<p class="small">本期覆盖不足后已补跑，保留 ${d.revisions.length} 份原版记录。${link('https://jordanfu.github.io/hardware-intelligence/data/daily.json','查看修订记录')}</p>`:''}<div class="news-list">${d.itemIds.length?d.itemIds.map(itemById).filter(Boolean).map(newsRow).join(''):empty('本期没有入选条目','请结合下面的扫描状态阅读；这不代表行业没有变化。')}</div><section class="method"><h2>本期覆盖与证据空白</h2><p>${esc(d.coverage)}</p><p>完成正文整理 ${d.reviewedCount} 条 · 生成于 ${esc(date(d.generatedAt,true))}</p>${[...d.failedSources,...d.knownGaps].map(s=>`<p class="small">${esc(s)}</p>`).join('')}</section>`;
+  const editions=[...db.daily.editions].sort((a,b)=>b.date.localeCompare(a.date));
+  const visible=editionDate?editions.filter(d=>d.date===editionDate):editions.slice(0,timelineLimit);
+  const states={complete:'扫描完成',partial:'部分覆盖或读取有缺口',incomplete:'未完成有效扫描',no_new_qualifying_events:'已扫描 · 无新增入选事件'};
+  const today=day(Date.now());
+  if(!editions.length)return head('DAILY TIMELINE','每日情报时间线','尚未生成首期日报。');
+  return head('DAILY TIMELINE','沿时间，读懂行业变化。','按站点更新日期倒序阅读：先看每天精选，再看新整理的知识与岗位线索。条目保留原文日期，收录时间不等于事件发生时间。')+editorialFreshness()+
+    `<div class="timeline-toolbar"><div><strong>每日更新档案</strong><p class="small">北京时间 · ${editions.length} 天有记录 · 仅展示实际生成的日报</p></div><label for="edition-date">查看日期 <select id="edition-date"><option value="">全部日期 · 最新在前</option>${editions.map(d=>`<option value="${d.date}" ${editionDate===d.date?'selected':''}>${d.date}</option>`).join('')}</select></label>${editionDate?'<a class="text-link" href="#daily">返回完整时间线 ↗</a>':''}</div>`+
+    `<div class="daily-timeline">${visible.map(d=>{
+      const briefs=db.intelligence.items.filter(n=>n.generatedAt&&day(n.generatedAt)===d.date&&!d.itemIds.includes(n.id)).sort((a,b)=>Number(b.selected)-Number(a.selected));
+      const changes=db.recruitment.changes.filter(c=>day(c.observedAt)===d.date);
+      const weekday=new Intl.DateTimeFormat('zh-CN',{weekday:'long',timeZone:'Asia/Shanghai'}).format(new Date(d.date+'T12:00:00+08:00'));
+      return `<section class="timeline-day" aria-labelledby="day-${d.date}"><div class="timeline-date"><span>${d.date.slice(0,4)} / ${weekday}</span><h2 id="day-${d.date}"><a href="#daily/${d.date}"><time datetime="${d.date}">${d.date.slice(5).replace('-','.')}</time></a></h2>${d.date===today?'<span class="tag">今天</span>':''}<span class="small">站点更新日期</span></div><div class="timeline-body"><div class="timeline-day-head"><span class="tag ${d.state==='partial'||d.state==='incomplete'?'timeline-caution':''}">${esc(states[d.state]||d.state)}</span><span class="small">${d.itemIds.length} 条日报精选 · ${briefs.length} 篇补充整理 · ${changes.length} 条岗位观察</span></div><h3 class="timeline-label">当天阅读清单</h3><p class="small">${esc(d.windowNote)}</p><div class="news-list">${d.itemIds.length?d.itemIds.map(itemById).filter(Boolean).map(newsRow).join(''):empty('本期没有新增入选事件','保留当天的扫描结果，不用旧新闻补足条数。请查看本日覆盖说明。')}</div>
+      ${briefs.length?`<details class="timeline-extra"><summary>本日补充整理 <span>${briefs.length} 篇 · 知识、实践与组织线索</span></summary><p class="small">按中文整理日期归档，可能包含旧文、常青知识及未入选精选的资料。原文时间另列。</p>${briefs.map((n,i)=>`<div class="timeline-reading"><span class="small">${n.selected?'通过精选门槛':'补充资料 · 未入选精选'}${n.practices?.length?' · 含实践观察':''}${n.organization?.length?' · 含组织线索':''}</span>${newsRow(n,i)}</div>`).join('')}</details>`:''}
+      ${changes.length?`<details class="timeline-extra"><summary>岗位观察 <span>${changes.length} 条 · 收录与版本记录</span></summary><p class="small">首次收录不代表新设岗位；可见性变化不代表增编、裁撤或招满。详情保留职责版本与证据边界。</p>${changes.map(c=>{const j=itemById(c.jobId);if(!j)return '';const v=[...j.versions].reverse().find(v=>v.observedAt<=c.observedAt)||j;return `<article class="timeline-job"><div class="meta"><span class="tag">${esc(c.kind)}</span><span>${esc(j.company)}</span></div><button class="title-button" data-detail="${esc(j.id)}">${esc(v.title)}</button><p>${esc(v.responsibilities.join('；'))}</p><button class="text-link" data-detail="${esc(j.id)}">职责版本与来源 ↗</button></article>`}).join('')}</details>`:''}
+      <details class="timeline-extra timeline-evidence"><summary>本日覆盖与证据边界 <span>${d.failedSources.length?'存在读取失败':'查看检查范围'}</span></summary><p>${esc(d.coverage)}</p><p class="small">正文整理 ${d.reviewedCount} 条 · 日报生成于 ${esc(date(d.generatedAt,true))}</p>${[...d.failedSources,...d.knownGaps].map(x=>`<p class="small">${esc(x)}</p>`).join('')}${d.revisions?.length?`<p class="small">覆盖不足后已补跑，保留 ${d.revisions.length} 份原版。${link('https://jordanfu.github.io/hardware-intelligence/data/daily.json','查看修订记录')}</p>`:''}</details></div></section>`;
+    }).join('')}</div>${!visible.length?empty('该日期尚无日报记录','可以返回完整时间线查看已有内容。','<a class="secondary" href="#daily">返回完整时间线</a>'):''}${!editionDate&&editions.length>timelineLimit?'<button class="secondary load-more" data-timeline-more>继续查看更早 7 天 ↓</button>':''}`;
 }
 function valuechain() {
   return head('THE COMPLETE VALUE CHAIN','把产、销、研放在同一张图上。','每个环节都回答：输入是什么，向谁交付，如何判断完成。问题和反馈也会沿链路返回。')+`<div class="notice">${esc(db.valuechain.note)}</div><div class="chain-map">${db.valuechain.items.map((s,i)=>`<a href="#stage-${i+1}" data-stage-scroll="stage-${i+1}"><span>0${i+1}</span>${esc(s.name)}</a>`).join('')}</div><div class="grid-2">${db.valuechain.items.map((s,i)=>{const n=db.intelligence.items.filter(x=>x.selected).flatMap(x=>x.practices||[]).filter(p=>p.stages.includes(s.name)).length;return `<article class="map-card" id="stage-${i+1}"><span class="index">0${i+1} / ${esc(s.name)}</span><h2>${esc(s.title)}</h2><p class="chain">${esc(s.flow)}</p><h3>先理解</h3><p>${esc(s.basics)}</p><h3>团队接口</h3><p>${esc(s.team)}</p><h3>指标与常见误读</h3><p>${esc(s.metrics)}</p><p class="small">避免：${esc(s.pitfall)}</p><details><summary>用一个小任务学会</summary><p>${esc(s.exercise)}</p></details><div class="toolbar"><button class="secondary" data-detail="${s.referenceId}">看一个有来源的案例 ↗</button><button class="text-link" data-practice-stage="${esc(s.name)}">${n} 条实践线索 ↗</button></div></article>`}).join('')}</div>`;
@@ -187,7 +200,7 @@ function nav() {
 }
 function newsRow(n, index = 0) {
   const rich=!!n.brief, rss=!!n.sourceId;
-  return `<article class="news-row"><span class="news-number">${String(index+1).padStart(2,'0')}</span><div><div class="meta"><span class="tag">${esc(n.stages?.join(' / ')||n.category)}</span><span>${rich?'AI 中文整理':rss?'待摘要 · 未读正文':esc(n.kind||'研究资料')}</span><time>${esc(n.date?date(n.date):'原文未标日期')}</time></div><button class="title-button" data-detail="${esc(n.id)}">${esc(n.title)}</button><p>${esc(n.summary||(rss?'尚未取得可核对正文，暂不生成核心内容。可打开原始来源阅读。':''))}</p><div class="row-bottom"><span>${esc(n.sources?n.sources.map(s=>s.name).join(' / '):n.source)}</span><button class="text-link" data-detail="${esc(n.id)}">${rich?'核心内容 · 原始证据':'来源与阅读边界'} ↗</button></div></div>${saveButton(n.id)}</article>`;
+  return `<article class="news-row"><span class="news-number">${String(index+1).padStart(2,'0')}</span><div><div class="meta"><span class="tag">${esc(n.stages?.join(' / ')||n.category)}</span><span>${rich?'AI 中文整理':rss?'待摘要 · 未读正文':esc(n.kind||'研究资料')}</span><time>${esc(n.date?'原文 '+date(n.date):'原文未标日期')}</time></div><button class="title-button" data-detail="${esc(n.id)}">${esc(n.title)}</button><p>${esc(n.summary||(rss?'尚未取得可核对正文，暂不生成核心内容。可打开原始来源阅读。':''))}</p><div class="row-bottom"><span>${esc(n.sources?n.sources.map(s=>s.name).join(' / '):n.source)}</span><button class="text-link" data-detail="${esc(n.id)}">${rich?'核心内容 · 原始证据':'来源与阅读边界'} ↗</button></div></div>${saveButton(n.id)}</article>`;
 }
 function freshness() {
   const hours =
@@ -510,11 +523,11 @@ function closeDetail() {
 }
 function navigate() {
   if (!db) return;
-  let raw = location.hash.slice(1) || "briefing";
+  let raw = location.hash.slice(1) || "daily";
   try {
     raw = decodeURIComponent(raw);
   } catch {
-    raw = "briefing";
+    raw = "daily";
   }
   let path = raw.split("/");
   query = "";
@@ -525,7 +538,9 @@ function navigate() {
     openDetail(path[1]);
   } else {
     closeDetail();
-    route = navs.some((n) => n[0] === path[0]) ? path[0] : "briefing";
+    route = navs.some((n) => n[0] === path[0]) ? path[0] : "daily";
+    editionDate = route==='daily'&&/^\d{4}-\d{2}-\d{2}$/.test(path[1]||'')?path[1]:'';
+    timelineLimit = 7;
     chainStage = "全部";
     category = "全部";
     limit = 30;
@@ -563,6 +578,7 @@ document.addEventListener("click", async (e) => {
     limit = 30;
     render();
   }
+  if(b.hasAttribute("data-timeline-more")){timelineLimit+=7;render();}
   if (b.hasAttribute("data-more")) {
     limit += 30;
     render();
@@ -616,7 +632,7 @@ document.addEventListener("click", async (e) => {
 document.addEventListener("change", (e) => {
   if(e.target.id==='chain-stage'){chainStage=e.target.value;render();}
   if(e.target.id==='domestic-only'){domesticOnly=e.target.checked;render();}
-  if(e.target.id==='edition-date'){editionDate=e.target.value;render();}
+  if(e.target.id==='edition-date'){location.hash=e.target.value?'daily/'+e.target.value:'daily';}
   if(e.target.id==='job-family'){jobFamily=e.target.value;render();}
   if (e.target.id === "radar-date") {
     radarDay = e.target.value;
