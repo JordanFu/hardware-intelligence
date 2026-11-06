@@ -55,3 +55,9 @@ class KnowledgeTests(unittest.TestCase):
   self.assertEqual(k.plan(self.data,self.clock)['pendingCandidates'],[])
   d=load(self.data/'intelligence.json');row=next(i for i in d['items'] if i['id']=='unitree-supplier');row['facts'][0]['claim']+=' 新事实需重审。';write(self.data/'intelligence.json',d)
   self.assertIn('unitree-supplier',[i['itemId'] for i in k.plan(self.data,self.clock)['pendingCandidates']])
+
+ def test_withdrawn_evidence_requires_recheck(self):
+  write(self.data/'knowledge.json',self.merge())
+  d=load(self.data/'intelligence.json');d['items'][0]['selected']=False;write(self.data/'intelligence.json',d)
+  plan=k.plan(self.data,self.clock)
+  self.assertTrue(plan['needsKnowledge']);self.assertEqual(plan['invalidReferences'][0]['itemIds'],['unitree-supplier'])

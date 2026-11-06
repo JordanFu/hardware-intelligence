@@ -14,6 +14,9 @@ def plan(data=DATA,clock=None):
  clock=clock or now();config=load(data/'operations.json')['knowledge'];state=load(data/'knowledge.json');base=catalog(data)
  decisions={d['itemId']:d for run in state['runs'] for d in run['decisions']}
  pending=[{'itemId':key,'title':i['title'],'hash':digest(i)} for key,i in candidates(data).items() if decisions.get(key,{}).get('hash')!=digest(i)]
+ supported=set(candidates(data))
+ invalid=[{'nodeId':key,'itemIds':sorted(({e['itemId'] for e in n.get('evidence',[])}|{i for l in n.get('lessons',[]) for i in l['itemIds']})-supported)} for key,n in state['nodes'].items()]
+ invalid=[n for n in invalid if n['itemIds']]
  nodes=[]
  for key,item in base.items():
   record=state['nodes'].get(key,{})
@@ -23,7 +26,7 @@ def plan(data=DATA,clock=None):
  latest=state['runs'][-1] if state['runs'] else {}
  daily=bool(latest.get('completedAt')) and timestamp(latest['completedAt']).astimezone(TZ).date()==clock.astimezone(TZ).date()
  failed=[key for key,n in state['nodes'].items() if n['status']=='error' and timestamp(n['attemptedAt']).astimezone(TZ).date()==clock.astimezone(TZ).date()]
- return {'checkedAt':clock.isoformat(),'failedNodes':failed,'dailyChecked':daily,'pendingCandidates':pending,'heldCandidates':[{'itemId':k,'reason':v['reason']} for k,v in decisions.items() if v['decision']=='hold' and k in candidates(data)],'nodes':nodes,'overdueCount':sum(n['overdue'] for n in nodes),'needsKnowledge':not daily or bool(pending) or bool(failed) or any(n['overdue'] for n in nodes)}
+ return {'checkedAt':clock.isoformat(),'failedNodes':failed,'invalidReferences':invalid,'dailyChecked':daily,'pendingCandidates':pending,'heldCandidates':[{'itemId':k,'reason':v['reason']} for k,v in decisions.items() if v['decision']=='hold' and k in candidates(data)],'nodes':nodes,'overdueCount':sum(n['overdue'] for n in nodes),'needsKnowledge':not daily or bool(pending) or bool(failed) or bool(invalid) or any(n['overdue'] for n in nodes)}
 
 def merge(state,bundle,data=DATA,clock=None):
  clock=clock or now();stamp=clock.isoformat();base=catalog(data);items=candidates(data);out=copy.deepcopy(state)

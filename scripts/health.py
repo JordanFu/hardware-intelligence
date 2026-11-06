@@ -22,7 +22,7 @@ def report(data=DATA,clock=None):
  if config.get('knowledge'):
   from knowledge import plan
   knowledge=plan(data,clock)
-  parts['knowledge']={'today':knowledge['dailyChecked'],'pendingCandidates':len(knowledge['pendingCandidates']),'overdueNodes':knowledge['overdueCount'],'failedNodes':knowledge['failedNodes']}
+  parts['knowledge']={'today':knowledge['dailyChecked'],'pendingCandidates':len(knowledge['pendingCandidates']),'overdueNodes':knowledge['overdueCount'],'failedNodes':knowledge['failedNodes'],'invalidReferences':knowledge['invalidReferences']}
  missing=[name for name,p in parts.items() if not p['today']]
  warnings=[]
  if missing:warnings.append('今日尚未完成：'+'、'.join(missing))
@@ -30,6 +30,7 @@ def report(data=DATA,clock=None):
  if parts['rss']['successCount']<parts['rss']['sourceCount']:warnings.append('部分 RSS 失败，历史数据已保留。')
  if latest.get('failedSources'):warnings.append(f"正文查阅存在 {len(latest['failedSources'])} 条失败记录，未据此判断行业无新闻。")
  if knowledge and knowledge['needsKnowledge']:warnings.append('知识维护待处理：新实践 '+str(len(knowledge['pendingCandidates']))+' 条，逾期节点 '+str(knowledge['overdueCount'])+' 个。')
+ if knowledge and knowledge['invalidReferences']:warnings.append('部分知识依据已撤回或不再满足入选条件，需重新核验。')
  state='pending' if missing and local.hour<config['dueHour'] else 'overdue' if missing else 'partial' if warnings else 'current'
  return dict(schemaVersion=1,checkedAt=clock.isoformat(),date=today,state=state,needsEditorial=not(scanned and covered and parts['recruitment']['today'] and parts['daily']['today']),needsKnowledge=knowledge['needsKnowledge'] if knowledge else False,parts=parts,warnings=warnings,build={'runUrl':('https://github.com/'+os.environ['GITHUB_REPOSITORY']+'/actions/runs/'+os.environ['GITHUB_RUN_ID']) if os.getenv('GITHUB_RUN_ID') else None,'trigger':os.getenv('GITHUB_EVENT_NAME','local')})
 
