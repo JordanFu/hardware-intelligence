@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-06T05:43:46.753578+00:00",
+  "checkedAt": "2026-11-07T00:46:40.102998+00:00",
   "jobs": [
     {
       "company": "DJI 大疆",
@@ -255,9 +255,9 @@
       "coverage": "官方搜索索引正文片段",
       "id": "job-d5c2bc2731330b0e",
       "firstSeen": "2026-11-06T05:43:46.753578+00:00",
-      "lastSeen": "2026-11-06T05:43:46.753578+00:00",
+      "lastSeen": "2026-11-07T00:46:40.102998+00:00",
       "sourceHash": "2730fb85749b6912cf13677440766503941272fa81a42bac28c18c4175540485",
-      "change": "首次收录基线",
+      "change": "持续可见",
       "versions": [
         {
           "observedAt": "2026-11-06T05:43:46.753578+00:00",
@@ -279,6 +279,179 @@
             "研发与系统",
             "质量与合规",
             "服务与生命周期"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "石头科技",
+      "title": "NPI-PE",
+      "family": "供应链与制造质量",
+      "location": "深圳",
+      "stages": [
+        "研发与系统",
+        "制造与交付"
+      ],
+      "url": "https://mall.roborock.com/introduction/jobs",
+      "postedAt": null,
+      "access": "搜索索引可见",
+      "responsibilities": [
+        "参与架构、原型和结构评审，输出 DFX 报告。",
+        "开发组包流程、作业指导和设备治具清单。"
+      ],
+      "interfaces": [
+        "依据职责涉及设计、工厂与质量接口；正式汇报线及放行权未知。"
+      ],
+      "requirements": [
+        "本次索引未完整取得该岗位资格要求，不据相邻岗位拼接。"
+      ],
+      "decisionQuestion": "该岗位交付物由谁接收，设计变更与异常关闭由谁最终验收？",
+      "boundary": "官方搜索索引片段、无日期；直连和浏览器未呈现职责，首次收录不等于新设编制，也不能证明当前仍在招。",
+      "postingId": null,
+      "locator": "社招岗位 / NPI-PE",
+      "coverage": "官方搜索索引职责片段，非完整岗位目录",
+      "id": "job-36e2cf675ffce341",
+      "firstSeen": "2026-11-07T00:46:40.102998+00:00",
+      "lastSeen": "2026-11-07T00:46:40.102998+00:00",
+      "sourceHash": "1b83ecefa3a9444db1e7217ff692d6d0646346c080c46ac19e56b9d80df03192",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-07T00:46:40.102998+00:00",
+          "sourceHash": "1b83ecefa3a9444db1e7217ff692d6d0646346c080c46ac19e56b9d80df03192",
+          "access": "搜索索引可见",
+          "title": "NPI-PE",
+          "family": "供应链与制造质量",
+          "location": "深圳",
+          "responsibilities": [
+            "参与架构、原型和结构评审，输出 DFX 报告。",
+            "开发组包流程、作业指导和设备治具清单。"
+          ],
+          "interfaces": [
+            "依据职责涉及设计、工厂与质量接口；正式汇报线及放行权未知。"
+          ],
+          "requirements": [
+            "本次索引未完整取得该岗位资格要求，不据相邻岗位拼接。"
+          ],
+          "stages": [
+            "研发与系统",
+            "制造与交付"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "石头科技",
+      "title": "PQE",
+      "family": "供应链与制造质量",
+      "location": "深圳",
+      "stages": [
+        "制造与交付",
+        "质量与合规",
+        "服务与生命周期"
+      ],
+      "url": "https://mall.roborock.com/introduction/jobs",
+      "postedAt": null,
+      "access": "搜索索引可见",
+      "responsibilities": [
+        "负责试制到量产的整机质量、风险识别、现场异常和售后客诉处理。",
+        "负责代工厂运营监管、能力提升和系统规划。"
+      ],
+      "interfaces": [
+        "依据职责涉及设计、工厂与质量接口；正式汇报线及放行权未知。"
+      ],
+      "requirements": [
+        "本科以上；理解供应商、质量与制造运营体系，了解产品功能性能。"
+      ],
+      "decisionQuestion": "该岗位交付物由谁接收，设计变更与异常关闭由谁最终验收？",
+      "boundary": "官方搜索索引片段、无日期；直连和浏览器未呈现职责，首次收录不等于新设编制，也不能证明当前仍在招。",
+      "postingId": null,
+      "locator": "社招岗位 / PQE",
+      "coverage": "官方搜索索引职责片段，非完整岗位目录",
+      "id": "job-a958ebc943dd9d5f",
+      "firstSeen": "2026-11-07T00:46:40.102998+00:00",
+      "lastSeen": "2026-11-07T00:46:40.102998+00:00",
+      "sourceHash": "1b83ecefa3a9444db1e7217ff692d6d0646346c080c46ac19e56b9d80df03192",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-07T00:46:40.102998+00:00",
+          "sourceHash": "1b83ecefa3a9444db1e7217ff692d6d0646346c080c46ac19e56b9d80df03192",
+          "access": "搜索索引可见",
+          "title": "PQE",
+          "family": "供应链与制造质量",
+          "location": "深圳",
+          "responsibilities": [
+            "负责试制到量产的整机质量、风险识别、现场异常和售后客诉处理。",
+            "负责代工厂运营监管、能力提升和系统规划。"
+          ],
+          "interfaces": [
+            "依据职责涉及设计、工厂与质量接口；正式汇报线及放行权未知。"
+          ],
+          "requirements": [
+            "本科以上；理解供应商、质量与制造运营体系，了解产品功能性能。"
+          ],
+          "stages": [
+            "制造与交付",
+            "质量与合规",
+            "服务与生命周期"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "石头科技",
+      "title": "PQC",
+      "family": "供应链与制造质量",
+      "location": "深圳",
+      "stages": [
+        "制造与交付",
+        "质量与合规"
+      ],
+      "url": "https://mall.roborock.com/introduction/jobs",
+      "postedAt": null,
+      "access": "搜索索引可见",
+      "responsibilities": [
+        "监控工厂端出货质量并进行相关检测。",
+        "监督 EMS 制程操作、检测和改善闭环。"
+      ],
+      "interfaces": [
+        "依据职责涉及设计、工厂与质量接口；正式汇报线及放行权未知。"
+      ],
+      "requirements": [
+        "本科及以上理科背景；理解产品质量和工厂运营体系。"
+      ],
+      "decisionQuestion": "该岗位交付物由谁接收，设计变更与异常关闭由谁最终验收？",
+      "boundary": "官方搜索索引片段、无日期；直连和浏览器未呈现职责，首次收录不等于新设编制，也不能证明当前仍在招。",
+      "postingId": null,
+      "locator": "社招岗位 / PQC",
+      "coverage": "官方搜索索引职责片段，非完整岗位目录",
+      "id": "job-5f1eb752c3887477",
+      "firstSeen": "2026-11-07T00:46:40.102998+00:00",
+      "lastSeen": "2026-11-07T00:46:40.102998+00:00",
+      "sourceHash": "1b83ecefa3a9444db1e7217ff692d6d0646346c080c46ac19e56b9d80df03192",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-07T00:46:40.102998+00:00",
+          "sourceHash": "1b83ecefa3a9444db1e7217ff692d6d0646346c080c46ac19e56b9d80df03192",
+          "access": "搜索索引可见",
+          "title": "PQC",
+          "family": "供应链与制造质量",
+          "location": "深圳",
+          "responsibilities": [
+            "监控工厂端出货质量并进行相关检测。",
+            "监督 EMS 制程操作、检测和改善闭环。"
+          ],
+          "interfaces": [
+            "依据职责涉及设计、工厂与质量接口；正式汇报线及放行权未知。"
+          ],
+          "requirements": [
+            "本科及以上理科背景；理解产品质量和工厂运营体系。"
+          ],
+          "stages": [
+            "制造与交付",
+            "质量与合规"
           ]
         }
       ]
@@ -320,6 +493,30 @@
     {
       "jobId": "job-d5c2bc2731330b0e",
       "observedAt": "2026-11-06T05:43:46.753578+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-36e2cf675ffce341",
+      "observedAt": "2026-11-07T00:46:40.102998+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-a958ebc943dd9d5f",
+      "observedAt": "2026-11-07T00:46:40.102998+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-5f1eb752c3887477",
+      "observedAt": "2026-11-07T00:46:40.102998+00:00",
       "kind": "首次收录基线",
       "fields": [],
       "before": {},
@@ -368,6 +565,20 @@
       "complete": false,
       "note": "仅取到筛选框架，未得到岗位正文。",
       "checkedAt": "2026-11-06T05:43:46.753578+00:00"
+    },
+    {
+      "company": "石头科技",
+      "state": "partial",
+      "complete": false,
+      "note": "读取 NPI-PE、PQE、PQC 三条索引职责；无日期，仅建立岗位研究基线。",
+      "checkedAt": "2026-11-07T00:46:40.102998+00:00"
+    },
+    {
+      "company": "安克创新",
+      "state": "partial",
+      "complete": false,
+      "note": "复查已有安全测试岗位索引，职责摘要保持不变；不将同类带 US 前缀索引解释为新增编制。",
+      "checkedAt": "2026-11-07T00:46:40.102998+00:00"
     }
   ],
   "insights": [

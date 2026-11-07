@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-06T17:29:24.427141+00:00",
-  "lastSuccessfulAt": "2026-11-06T17:29:24.427141+00:00",
+  "checkedAt": "2026-11-07T00:41:06.440636+00:00",
+  "lastSuccessfulAt": "2026-11-07T00:41:06.440636+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-06T17:29:24.427141+00:00",
-      "lastSuccessAt": "2026-11-06T17:29:24.427141+00:00",
+      "checkedAt": "2026-11-07T00:41:06.440636+00:00",
+      "lastSuccessAt": "2026-11-07T00:41:06.440636+00:00",
       "received": 18,
       "matched": 0,
       "excluded": 18,
@@ -15,8 +15,8 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-06T17:29:24.427141+00:00",
-      "lastSuccessAt": "2026-11-06T17:29:24.427141+00:00",
+      "checkedAt": "2026-11-07T00:41:06.440636+00:00",
+      "lastSuccessAt": "2026-11-07T00:41:06.440636+00:00",
       "received": 50,
       "matched": 2,
       "excluded": 48,
@@ -25,8 +25,8 @@
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-06T17:29:24.427141+00:00",
-      "lastSuccessAt": "2026-11-06T17:29:24.427141+00:00",
+      "checkedAt": "2026-11-07T00:41:06.440636+00:00",
+      "lastSuccessAt": "2026-11-07T00:41:06.440636+00:00",
       "received": 10,
       "matched": 1,
       "excluded": 9,
@@ -35,8 +35,8 @@
     {
       "id": "bambu",
       "state": "ok",
-      "checkedAt": "2026-11-06T17:29:24.427141+00:00",
-      "lastSuccessAt": "2026-11-06T17:29:24.427141+00:00",
+      "checkedAt": "2026-11-07T00:41:06.440636+00:00",
+      "lastSuccessAt": "2026-11-07T00:41:06.440636+00:00",
       "received": 15,
       "matched": 15,
       "excluded": 0,
@@ -45,8 +45,8 @@
     {
       "id": "cnx",
       "state": "ok",
-      "checkedAt": "2026-11-06T17:29:24.427141+00:00",
-      "lastSuccessAt": "2026-11-06T17:29:24.427141+00:00",
+      "checkedAt": "2026-11-07T00:41:06.440636+00:00",
+      "lastSuccessAt": "2026-11-07T00:41:06.440636+00:00",
       "received": 32,
       "matched": 7,
       "excluded": 25,
@@ -55,15 +55,75 @@
     {
       "id": "ithome",
       "state": "ok",
-      "checkedAt": "2026-11-06T17:29:24.427141+00:00",
-      "lastSuccessAt": "2026-11-06T17:29:24.427141+00:00",
+      "checkedAt": "2026-11-07T00:41:06.440636+00:00",
+      "lastSuccessAt": "2026-11-07T00:41:06.440636+00:00",
       "received": 60,
-      "matched": 3,
-      "excluded": 57,
+      "matched": 7,
+      "excluded": 53,
       "error": null
     }
   ],
   "items": [
+    {
+      "id": "rss-5b626fd323987bb9",
+      "title": "工信部就机器人“身份证”暂行办法征求意见，全品类机器人“一机一码”",
+      "url": "https://www.ithome.com/1/023/625.htm",
+      "date": "2026-11-07T00:29:29+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-07T00:41:06.440636+00:00"
+    },
+    {
+      "id": "rss-6c87f60fb72ee2e9",
+      "title": "IT早报 1107：蔚来李斌再警示新能源车超重风险；字节出售沐瞳科技获市监总局批准；小米汽车成立国际业务部；比亚迪量产车全球首次突破 500km/h...",
+      "url": "https://www.ithome.com/1/023/622.htm",
+      "date": "2026-11-07T00:13:44+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "产品工程与量产",
+      "status": "待核验",
+      "discoveredAt": "2026-11-07T00:41:06.440636+00:00"
+    },
+    {
+      "id": "rss-586e2805c1171423",
+      "title": "消息称台积电考虑进军先进内存芯片制造，有望为英伟达打造 3D DRAM",
+      "url": "https://www.ithome.com/1/023/619.htm",
+      "date": "2026-11-06T23:59:05+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-07T00:41:06.440636+00:00"
+    },
+    {
+      "id": "rss-0fe99d40816b88dd",
+      "title": "文远知行创始人韩旭：希望四、五年内能坐上 Robotaxi 从广州直达香港",
+      "url": "https://www.ithome.com/1/023/611.htm",
+      "date": "2026-11-06T23:24:02+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-07T00:41:06.440636+00:00"
+    },
+    {
+      "id": "rss-f240faecf0cc621c",
+      "title": "谷歌母公司 Alphabet 斥资约 5.48 亿美元建仓高通，押注 AI 芯片新赛道",
+      "url": "https://www.ithome.com/1/023/607.htm",
+      "date": "2026-11-06T22:48:04+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-07T00:41:06.440636+00:00"
+    },
     {
       "id": "rss-b6632506c8110b10",
       "title": "《星闪短距与具身智能技术需求蓝皮书》正式上线，华为、中兴、鼎桥等参编",

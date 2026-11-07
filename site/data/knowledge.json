@@ -207,6 +207,242 @@
         }
       ],
       "updatedAt": "2026-11-06T07:53:13.521723+00:00"
+    },
+    "chain-1": {
+      "attemptedAt": "2026-11-07T00:47:27.698411+00:00",
+      "status": "partial",
+      "assessment": "本轮从同样尚未完整复核的节点中，优先选择新证据能支撑的需求、制造与智能家居字段；保留初始框架未获证据覆盖部分，不推进完整复核日期。",
+      "gaps": [
+        "尚未复核 JTBD 概念的基础来源与目标任务成功率的测量设计。",
+        "未获取实际反馈如何进入决策及实施后的用户结果。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "pitfall",
+        "team"
+      ],
+      "evidence": [
+        {
+          "itemId": "rss-9c9670520f9830f3",
+          "title": "MakerWorld 活动回顾：创作者反馈与实物履约仍需分别验证",
+          "facts": [
+            {
+              "claim": "活动发生于 2026 年 10 月 24 日。",
+              "sourceUrl": "https://blog.bambulab.com/first-time-together-makerworld-makers-from-across-the-u-s-meet-in-san-jose",
+              "locator": "活动时间 / Numbers that tell the story / Plans, tools and a few smaller updates"
+            },
+            {
+              "claim": "实物市场仍为测试版，打印与发货由当地打印农场承担。",
+              "sourceUrl": "https://blog.bambulab.com/first-time-together-makerworld-makers-from-across-the-u-s-meet-in-san-jose",
+              "locator": "活动时间 / Numbers that tell the story / Plans, tools and a few smaller updates"
+            },
+            {
+              "claim": "积分机制仍在调整，并邀请参与者提供反馈。",
+              "sourceUrl": "https://blog.bambulab.com/first-time-together-makerworld-makers-from-across-the-u-s-meet-in-san-jose",
+              "locator": "活动时间 / Numbers that tell the story / Plans, tools and a few smaller updates"
+            }
+          ],
+          "boundary": "企业活动回顾与创作者自述，非独立成效研究。10 月 24 日旧活动不进入当天新闻；市场仍为 beta，未披露履约一致性、分配公平性和员工后效。",
+          "sources": [
+            {
+              "url": "https://blog.bambulab.com/first-time-together-makerworld-makers-from-across-the-u-s-meet-in-san-jose",
+              "name": "Bambu Lab 官方博客",
+              "publishedAt": "2026-11-06T09:32:45+00:00",
+              "publisherGroup": "Bambu Lab 官方博客",
+              "role": "official",
+              "textHash": "082a461dca9355c9199446974fa64afca55bf824cc815472e930bdc666812102",
+              "readAt": "2026-11-07T00:41:38.813981+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "rss-9c9670520f9830f3",
+          "url": "https://blog.bambulab.com/first-time-together-makerworld-makers-from-across-the-u-s-meet-in-san-jose",
+          "checkedAt": "2026-11-07T00:47:27.610541+00:00",
+          "state": "body",
+          "note": "当天实际读取官方正文；只支持本次列明的知识范围。"
+        }
+      ],
+      "reviewedAt": "2026-11-07T00:47:27.698411+00:00",
+      "patch": {
+        "team": "用户研究、产品、销售、服务一起区分使用者、购买者与渠道反馈。 平台型硬件还需区分内容创作者、最终使用者与实体履约伙伴；活动意见是需求线索，不能替代使用验证。",
+        "exercise": "选一个产品，写出用户原流程、减少的步骤和可观察的验收条件。 对每条社区反馈补上样本人群、具体任务、拟改变的规则以及可验证结果；保留未被采纳的理由。"
+      },
+      "lessons": [
+        {
+          "id": "chain-1-rss-9c9670520f9830f3",
+          "title": "社区反馈需要转成可验证任务",
+          "learning": "拓竹活动回顾同时谈到积分反馈与实物打印。研究需求时应分别记录谁提出问题、谁实际使用、谁承担交付，避免把参与热度当成需求验证。",
+          "application": "用于连接创作者、设备用户与生产伙伴的平台；反馈需补充任务观察，活动样本不能代表全部用户。",
+          "boundary": "案例为 10 月 24 日活动的官方回顾，市场仍处 beta；没有证据证明反馈已改善任务成功率或创作者收入。",
+          "itemIds": [
+            "rss-9c9670520f9830f3"
+          ],
+          "updatedAt": "2026-11-07T00:47:27.698411+00:00"
+        }
+      ],
+      "updatedAt": "2026-11-07T00:47:27.698411+00:00"
+    },
+    "chain-4": {
+      "attemptedAt": "2026-11-07T00:47:27.698411+00:00",
+      "status": "partial",
+      "assessment": "本轮从同样尚未完整复核的节点中，优先选择新证据能支撑的需求、制造与智能家居字段；保留初始框架未获证据覆盖部分，不推进完整复核日期。",
+      "gaps": [
+        "尚缺当前可读职位正文、岗位变更历史及组织汇报线。",
+        "未完整复核工艺验证门槛、一次通过率口径与实际质量结果。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "exercise",
+        "team"
+      ],
+      "evidence": [
+        {
+          "itemId": "roborock-jobs",
+          "title": "石头岗位样本：NPI、PQE 与 PQC 的制造质量接口",
+          "facts": [
+            {
+              "claim": "NPI-PE 职责包含设计评审与工艺资料输出。",
+              "sourceUrl": "https://mall.roborock.com/introduction/jobs",
+              "locator": "社招岗位 / NPI-PE、PQE、PQC"
+            },
+            {
+              "claim": "PQE 职责覆盖试制、量产质量和代工厂管理。",
+              "sourceUrl": "https://mall.roborock.com/introduction/jobs",
+              "locator": "社招岗位 / NPI-PE、PQE、PQC"
+            },
+            {
+              "claim": "PQC 职责涉及出货质量和过程控制实施监督。",
+              "sourceUrl": "https://mall.roborock.com/introduction/jobs",
+              "locator": "社招岗位 / NPI-PE、PQE、PQC"
+            }
+          ],
+          "boundary": "当前只取得官方搜索索引职责片段；直连返回 JavaScript 框架，浏览器表格也未显示职责。无发布日期，非完整目录，当前在招与组织实际分工待核实。",
+          "sources": [
+            {
+              "url": "https://mall.roborock.com/introduction/jobs",
+              "name": "石头科技官方招聘",
+              "publishedAt": null,
+              "publisherGroup": "石头科技官方招聘",
+              "role": "official",
+              "textHash": "1b83ecefa3a9444db1e7217ff692d6d0646346c080c46ac19e56b9d80df03192",
+              "readAt": "2026-11-07T00:46:39.777224+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "roborock-jobs",
+          "url": "https://mall.roborock.com/introduction/jobs",
+          "checkedAt": "2026-11-07T00:47:27.610541+00:00",
+          "state": "index",
+          "note": "当天读取官方索引职责片段，直连未取得正文；不能据此做完整复核。"
+        }
+      ],
+      "reviewedAt": "2026-11-07T00:47:27.698411+00:00",
+      "patch": {
+        "team": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。 石头官方岗位索引提供一个职责样本：NPI-PE 准备设计评审和工艺资料，PQE 跟进试制量产及代工质量，PQC 关注出货与过程监督；实际决策权仍须项目证据。",
+        "exercise": "沿一次异常追到设计版本、工艺条件和责任人，定义复现与关闭标准。 把问题分别映射到设计评审、工艺文件、过程控制与出货验收的交付物，并核实谁有权放行，不能仅从岗位名称推定。"
+      },
+      "lessons": [
+        {
+          "id": "chain-4-roborock-jobs",
+          "title": "从交付物划清 NPI 与质量接口",
+          "learning": "岗位职责展示了不同阶段的工作重心，适合用来构造交接清单；人员数量、工作是否重叠及正式放行权仍未知。",
+          "application": "适用于有代工协同的新产品导入研究；先核对具体项目的评审文件、工艺版本和异常关闭记录。",
+          "boundary": "只读取无日期官方索引，非内部组织制度，也不是所有企业的标准岗位划分。",
+          "itemIds": [
+            "roborock-jobs"
+          ],
+          "updatedAt": "2026-11-07T00:47:27.698411+00:00"
+        }
+      ],
+      "updatedAt": "2026-11-07T00:47:27.698411+00:00"
+    },
+    "track-2": {
+      "attemptedAt": "2026-11-07T00:47:27.698411+00:00",
+      "status": "partial",
+      "assessment": "本轮从同样尚未完整复核的节点中，优先选择新证据能支撑的需求、制造与智能家居字段；保留初始框架未获证据覆盖部分，不推进完整复核日期。",
+      "gaps": [
+        "当前证据未覆盖所有观察企业、离线能力与多成员权限。",
+        "没有可比故障率、用户样本或售后效果，不能将该案例称为最佳实践。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "metrics",
+        "team"
+      ],
+      "evidence": [
+        {
+          "itemId": "aqara-matter-guide",
+          "title": "Aqara 排障指南：先定位设备、桥接与平台，再考虑重置",
+          "facts": [
+            {
+              "claim": "指南提醒先尝试非破坏性排查步骤，再考虑恢复出厂。",
+              "sourceUrl": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
+              "locator": "Check your setup / Before you reset / Device diagnostic logs"
+            },
+            {
+              "claim": "设备桥接不改变子设备原有连接方式。",
+              "sourceUrl": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
+              "locator": "Check your setup / Before you reset / Device diagnostic logs"
+            },
+            {
+              "claim": "诊断日志默认关闭，支持本地保存选项。",
+              "sourceUrl": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
+              "locator": "Check your setup / Before you reset / Device diagnostic logs"
+            }
+          ],
+          "boundary": "官方操作指南，适用性取决于具体型号、区域、固件与平台；没有用户样本或解决率，不能证明售后效率已改善。页面结构化发布日期为 11 月 4 日，修改时间另列，不算 11 月 7 日发布。",
+          "sources": [
+            {
+              "url": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
+              "name": "Aqara 官方帮助中心",
+              "publishedAt": "2026-11-04T01:54:57-05:00",
+              "publisherGroup": "Aqara 官方帮助中心",
+              "role": "official",
+              "textHash": "6dc0acfac9a43dc662d6019433f6d1ea502534481c84f85d84bc6155a711866d",
+              "readAt": "2026-11-07T00:43:45.211768+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "aqara-matter-guide",
+          "url": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
+          "checkedAt": "2026-11-07T00:47:27.610541+00:00",
+          "state": "body",
+          "note": "当天实际读取官方正文；只支持本次列明的知识范围。"
+        }
+      ],
+      "reviewedAt": "2026-11-07T00:47:27.698411+00:00",
+      "patch": {
+        "constraint": "互操作、断网可用性、安装和家人共同使用 须区分协议支持、具体功能暴露和接收平台能力；桥接并不把 Zigbee 子设备变成 Thread 设备，接入成功也不保证所有自动化可用。",
+        "team": "嵌入式、连接协议、云平台、客户端、认证与售后 售后交给协议、固件或平台团队的信息应包含型号/版本、连接路径、受影响范围和复现步骤；诊断日志按支持范围自愿启用，并保留本地保存选择。",
+        "metrics": "配网成功率；离线可用率；跨品牌联动失败率 观察时分别记录单设备、桥接路径和平台功能故障；固定型号、固件和平台组合后再比较，不能把重置后重新配网成功视为全部功能恢复。"
+      },
+      "lessons": [
+        {
+          "id": "track-2-aqara-matter-guide",
+          "title": "把智能家居故障按影响范围分流",
+          "learning": "Aqara 将单设备、多个 Thread 设备、桥接下全部设备与单平台失效分开检查。这一方法提示团队在升级故障前先定位范围，并保留仍可工作的配置。",
+          "application": "适用于官方指南覆盖的型号、区域、固件和平台；日志功能仅部分设备支持，不要求用户公开家庭网络信息。",
+          "boundary": "官方排障建议不证明实际解决率；上述指标分组是本站研究建议，不是行业标准。",
+          "itemIds": [
+            "aqara-matter-guide"
+          ],
+          "updatedAt": "2026-11-07T00:47:27.698411+00:00"
+        }
+      ],
+      "updatedAt": "2026-11-07T00:47:27.698411+00:00"
     }
   },
   "runs": [
@@ -301,6 +537,34 @@
           "hash": "d1c0fbe20456360c8c2929b0847cd251d16bf068c16265d555f94fdfd1f986e6",
           "decision": "integrated",
           "reason": "已绑定知识补充和明确的适用边界，保留来源证据与未知项。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-07T00:47:27.698411+00:00",
+      "reviewedNodes": [
+        "chain-1",
+        "chain-4",
+        "track-2"
+      ],
+      "decisions": [
+        {
+          "itemId": "rss-9c9670520f9830f3",
+          "hash": "f4f16d3150278166db4e54dde95e05464498dd56f7c292610ecbee398f98fb0e",
+          "decision": "integrated",
+          "reason": "作为历史案例沉淀反馈主体与任务验证问题；不声称活动或平台已获得效果。"
+        },
+        {
+          "itemId": "roborock-jobs",
+          "hash": "8d7f20f0840e4603dc909754b1c91c84821ba2cf11b60bb4b06e03bb32aec6ca",
+          "decision": "integrated",
+          "reason": "将索引中的制造岗位交付物转成接口核验问题；节点保持部分复核。"
+        },
+        {
+          "itemId": "aqara-matter-guide",
+          "hash": "c0167cd943b9e24e794deca4da4cbdd102f7cf8485a88f42865b5c7854b9b172",
+          "decision": "integrated",
+          "reason": "当前官方正文支持智能家居故障分流、适用边界与服务交接补充。"
         }
       ]
     }
@@ -530,6 +794,266 @@
           "checkedAt": "2026-11-06T07:48:27.597929+00:00",
           "state": "index",
           "note": "本轮重新检索官方招聘正文片段，列表混有多岗位，实时在招状态未知。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-1",
+      "reviewedAt": "2026-11-07T00:47:27.698411+00:00",
+      "status": "partial",
+      "assessment": "本轮从同样尚未完整复核的节点中，优先选择新证据能支撑的需求、制造与智能家居字段；保留初始框架未获证据覆盖部分，不推进完整复核日期。",
+      "gaps": [
+        "尚未复核 JTBD 概念的基础来源与目标任务成功率的测量设计。",
+        "未获取实际反馈如何进入决策及实施后的用户结果。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "pitfall",
+        "team"
+      ],
+      "changes": {
+        "team": {
+          "before": "用户研究、产品、销售、服务一起区分使用者、购买者与渠道反馈。",
+          "after": "用户研究、产品、销售、服务一起区分使用者、购买者与渠道反馈。 平台型硬件还需区分内容创作者、最终使用者与实体履约伙伴；活动意见是需求线索，不能替代使用验证。"
+        },
+        "exercise": {
+          "before": "选一个产品，写出用户原流程、减少的步骤和可观察的验收条件。",
+          "after": "选一个产品，写出用户原流程、减少的步骤和可观察的验收条件。 对每条社区反馈补上样本人群、具体任务、拟改变的规则以及可验证结果；保留未被采纳的理由。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "chain-1-rss-9c9670520f9830f3",
+            "title": "社区反馈需要转成可验证任务",
+            "learning": "拓竹活动回顾同时谈到积分反馈与实物打印。研究需求时应分别记录谁提出问题、谁实际使用、谁承担交付，避免把参与热度当成需求验证。",
+            "application": "用于连接创作者、设备用户与生产伙伴的平台；反馈需补充任务观察，活动样本不能代表全部用户。",
+            "boundary": "案例为 10 月 24 日活动的官方回顾，市场仍处 beta；没有证据证明反馈已改善任务成功率或创作者收入。",
+            "itemIds": [
+              "rss-9c9670520f9830f3"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "rss-9c9670520f9830f3",
+          "title": "MakerWorld 活动回顾：创作者反馈与实物履约仍需分别验证",
+          "facts": [
+            {
+              "claim": "活动发生于 2026 年 10 月 24 日。",
+              "sourceUrl": "https://blog.bambulab.com/first-time-together-makerworld-makers-from-across-the-u-s-meet-in-san-jose",
+              "locator": "活动时间 / Numbers that tell the story / Plans, tools and a few smaller updates"
+            },
+            {
+              "claim": "实物市场仍为测试版，打印与发货由当地打印农场承担。",
+              "sourceUrl": "https://blog.bambulab.com/first-time-together-makerworld-makers-from-across-the-u-s-meet-in-san-jose",
+              "locator": "活动时间 / Numbers that tell the story / Plans, tools and a few smaller updates"
+            },
+            {
+              "claim": "积分机制仍在调整，并邀请参与者提供反馈。",
+              "sourceUrl": "https://blog.bambulab.com/first-time-together-makerworld-makers-from-across-the-u-s-meet-in-san-jose",
+              "locator": "活动时间 / Numbers that tell the story / Plans, tools and a few smaller updates"
+            }
+          ],
+          "boundary": "企业活动回顾与创作者自述，非独立成效研究。10 月 24 日旧活动不进入当天新闻；市场仍为 beta，未披露履约一致性、分配公平性和员工后效。",
+          "sources": [
+            {
+              "url": "https://blog.bambulab.com/first-time-together-makerworld-makers-from-across-the-u-s-meet-in-san-jose",
+              "name": "Bambu Lab 官方博客",
+              "publishedAt": "2026-11-06T09:32:45+00:00",
+              "publisherGroup": "Bambu Lab 官方博客",
+              "role": "official",
+              "textHash": "082a461dca9355c9199446974fa64afca55bf824cc815472e930bdc666812102",
+              "readAt": "2026-11-07T00:41:38.813981+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "rss-9c9670520f9830f3",
+          "url": "https://blog.bambulab.com/first-time-together-makerworld-makers-from-across-the-u-s-meet-in-san-jose",
+          "checkedAt": "2026-11-07T00:47:27.610541+00:00",
+          "state": "body",
+          "note": "当天实际读取官方正文；只支持本次列明的知识范围。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-4",
+      "reviewedAt": "2026-11-07T00:47:27.698411+00:00",
+      "status": "partial",
+      "assessment": "本轮从同样尚未完整复核的节点中，优先选择新证据能支撑的需求、制造与智能家居字段；保留初始框架未获证据覆盖部分，不推进完整复核日期。",
+      "gaps": [
+        "尚缺当前可读职位正文、岗位变更历史及组织汇报线。",
+        "未完整复核工艺验证门槛、一次通过率口径与实际质量结果。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "exercise",
+        "team"
+      ],
+      "changes": {
+        "team": {
+          "before": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。",
+          "after": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。 石头官方岗位索引提供一个职责样本：NPI-PE 准备设计评审和工艺资料，PQE 跟进试制量产及代工质量，PQC 关注出货与过程监督；实际决策权仍须项目证据。"
+        },
+        "exercise": {
+          "before": "沿一次异常追到设计版本、工艺条件和责任人，定义复现与关闭标准。",
+          "after": "沿一次异常追到设计版本、工艺条件和责任人，定义复现与关闭标准。 把问题分别映射到设计评审、工艺文件、过程控制与出货验收的交付物，并核实谁有权放行，不能仅从岗位名称推定。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "chain-4-roborock-jobs",
+            "title": "从交付物划清 NPI 与质量接口",
+            "learning": "岗位职责展示了不同阶段的工作重心，适合用来构造交接清单；人员数量、工作是否重叠及正式放行权仍未知。",
+            "application": "适用于有代工协同的新产品导入研究；先核对具体项目的评审文件、工艺版本和异常关闭记录。",
+            "boundary": "只读取无日期官方索引，非内部组织制度，也不是所有企业的标准岗位划分。",
+            "itemIds": [
+              "roborock-jobs"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "roborock-jobs",
+          "title": "石头岗位样本：NPI、PQE 与 PQC 的制造质量接口",
+          "facts": [
+            {
+              "claim": "NPI-PE 职责包含设计评审与工艺资料输出。",
+              "sourceUrl": "https://mall.roborock.com/introduction/jobs",
+              "locator": "社招岗位 / NPI-PE、PQE、PQC"
+            },
+            {
+              "claim": "PQE 职责覆盖试制、量产质量和代工厂管理。",
+              "sourceUrl": "https://mall.roborock.com/introduction/jobs",
+              "locator": "社招岗位 / NPI-PE、PQE、PQC"
+            },
+            {
+              "claim": "PQC 职责涉及出货质量和过程控制实施监督。",
+              "sourceUrl": "https://mall.roborock.com/introduction/jobs",
+              "locator": "社招岗位 / NPI-PE、PQE、PQC"
+            }
+          ],
+          "boundary": "当前只取得官方搜索索引职责片段；直连返回 JavaScript 框架，浏览器表格也未显示职责。无发布日期，非完整目录，当前在招与组织实际分工待核实。",
+          "sources": [
+            {
+              "url": "https://mall.roborock.com/introduction/jobs",
+              "name": "石头科技官方招聘",
+              "publishedAt": null,
+              "publisherGroup": "石头科技官方招聘",
+              "role": "official",
+              "textHash": "1b83ecefa3a9444db1e7217ff692d6d0646346c080c46ac19e56b9d80df03192",
+              "readAt": "2026-11-07T00:46:39.777224+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "roborock-jobs",
+          "url": "https://mall.roborock.com/introduction/jobs",
+          "checkedAt": "2026-11-07T00:47:27.610541+00:00",
+          "state": "index",
+          "note": "当天读取官方索引职责片段，直连未取得正文；不能据此做完整复核。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-2",
+      "reviewedAt": "2026-11-07T00:47:27.698411+00:00",
+      "status": "partial",
+      "assessment": "本轮从同样尚未完整复核的节点中，优先选择新证据能支撑的需求、制造与智能家居字段；保留初始框架未获证据覆盖部分，不推进完整复核日期。",
+      "gaps": [
+        "当前证据未覆盖所有观察企业、离线能力与多成员权限。",
+        "没有可比故障率、用户样本或售后效果，不能将该案例称为最佳实践。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "metrics",
+        "team"
+      ],
+      "changes": {
+        "constraint": {
+          "before": "互操作、断网可用性、安装和家人共同使用",
+          "after": "互操作、断网可用性、安装和家人共同使用 须区分协议支持、具体功能暴露和接收平台能力；桥接并不把 Zigbee 子设备变成 Thread 设备，接入成功也不保证所有自动化可用。"
+        },
+        "team": {
+          "before": "嵌入式、连接协议、云平台、客户端、认证与售后",
+          "after": "嵌入式、连接协议、云平台、客户端、认证与售后 售后交给协议、固件或平台团队的信息应包含型号/版本、连接路径、受影响范围和复现步骤；诊断日志按支持范围自愿启用，并保留本地保存选择。"
+        },
+        "metrics": {
+          "before": "配网成功率；离线可用率；跨品牌联动失败率",
+          "after": "配网成功率；离线可用率；跨品牌联动失败率 观察时分别记录单设备、桥接路径和平台功能故障；固定型号、固件和平台组合后再比较，不能把重置后重新配网成功视为全部功能恢复。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "track-2-aqara-matter-guide",
+            "title": "把智能家居故障按影响范围分流",
+            "learning": "Aqara 将单设备、多个 Thread 设备、桥接下全部设备与单平台失效分开检查。这一方法提示团队在升级故障前先定位范围，并保留仍可工作的配置。",
+            "application": "适用于官方指南覆盖的型号、区域、固件和平台；日志功能仅部分设备支持，不要求用户公开家庭网络信息。",
+            "boundary": "官方排障建议不证明实际解决率；上述指标分组是本站研究建议，不是行业标准。",
+            "itemIds": [
+              "aqara-matter-guide"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "aqara-matter-guide",
+          "title": "Aqara 排障指南：先定位设备、桥接与平台，再考虑重置",
+          "facts": [
+            {
+              "claim": "指南提醒先尝试非破坏性排查步骤，再考虑恢复出厂。",
+              "sourceUrl": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
+              "locator": "Check your setup / Before you reset / Device diagnostic logs"
+            },
+            {
+              "claim": "设备桥接不改变子设备原有连接方式。",
+              "sourceUrl": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
+              "locator": "Check your setup / Before you reset / Device diagnostic logs"
+            },
+            {
+              "claim": "诊断日志默认关闭，支持本地保存选项。",
+              "sourceUrl": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
+              "locator": "Check your setup / Before you reset / Device diagnostic logs"
+            }
+          ],
+          "boundary": "官方操作指南，适用性取决于具体型号、区域、固件与平台；没有用户样本或解决率，不能证明售后效率已改善。页面结构化发布日期为 11 月 4 日，修改时间另列，不算 11 月 7 日发布。",
+          "sources": [
+            {
+              "url": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
+              "name": "Aqara 官方帮助中心",
+              "publishedAt": "2026-11-04T01:54:57-05:00",
+              "publisherGroup": "Aqara 官方帮助中心",
+              "role": "official",
+              "textHash": "6dc0acfac9a43dc662d6019433f6d1ea502534481c84f85d84bc6155a711866d",
+              "readAt": "2026-11-07T00:43:45.211768+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "aqara-matter-guide",
+          "url": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
+          "checkedAt": "2026-11-07T00:47:27.610541+00:00",
+          "state": "body",
+          "note": "当天实际读取官方正文；只支持本次列明的知识范围。"
         }
       ]
     }
