@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-08T05:59:47.384353+00:00",
-  "lastSuccessfulAt": "2026-11-08T05:59:47.384353+00:00",
+  "checkedAt": "2026-11-08T16:40:21.592680+00:00",
+  "lastSuccessfulAt": "2026-11-08T16:40:21.592680+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-08T05:59:47.384353+00:00",
-      "lastSuccessAt": "2026-11-08T05:59:47.384353+00:00",
+      "checkedAt": "2026-11-08T16:40:21.592680+00:00",
+      "lastSuccessAt": "2026-11-08T16:40:21.592680+00:00",
       "received": 18,
       "matched": 0,
       "excluded": 18,
@@ -15,8 +15,8 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-08T05:59:47.384353+00:00",
-      "lastSuccessAt": "2026-11-08T05:59:47.384353+00:00",
+      "checkedAt": "2026-11-08T16:40:21.592680+00:00",
+      "lastSuccessAt": "2026-11-08T16:40:21.592680+00:00",
       "received": 50,
       "matched": 2,
       "excluded": 48,
@@ -25,8 +25,8 @@
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-08T05:59:47.384353+00:00",
-      "lastSuccessAt": "2026-11-08T05:59:47.384353+00:00",
+      "checkedAt": "2026-11-08T16:40:21.592680+00:00",
+      "lastSuccessAt": "2026-11-08T16:40:21.592680+00:00",
       "received": 10,
       "matched": 1,
       "excluded": 9,
@@ -35,8 +35,8 @@
     {
       "id": "bambu",
       "state": "ok",
-      "checkedAt": "2026-11-08T05:59:47.384353+00:00",
-      "lastSuccessAt": "2026-11-08T05:59:47.384353+00:00",
+      "checkedAt": "2026-11-08T16:40:21.592680+00:00",
+      "lastSuccessAt": "2026-11-08T16:40:21.592680+00:00",
       "received": 15,
       "matched": 15,
       "excluded": 0,
@@ -45,22 +45,94 @@
     {
       "id": "cnx",
       "state": "error",
-      "checkedAt": "2026-11-08T05:59:47.384353+00:00",
+      "checkedAt": "2026-11-08T16:40:21.592680+00:00",
       "error": "curl: (22) The requested URL returned error: 403",
       "lastSuccessAt": "2026-11-07T05:57:51.855328+00:00"
     },
     {
       "id": "ithome",
       "state": "ok",
-      "checkedAt": "2026-11-08T05:59:47.384353+00:00",
-      "lastSuccessAt": "2026-11-08T05:59:47.384353+00:00",
+      "checkedAt": "2026-11-08T16:40:21.592680+00:00",
+      "lastSuccessAt": "2026-11-08T16:40:21.592680+00:00",
       "received": 60,
-      "matched": 3,
-      "excluded": 57,
+      "matched": 6,
+      "excluded": 54,
       "error": null
     }
   ],
   "items": [
+    {
+      "id": "rss-c11a8bc82c3f52a4",
+      "title": "亚马逊成立新团队专攻家用机器人，剑指“前所未有”的新产品",
+      "url": "https://www.ithome.com/1/024/012.htm",
+      "date": "2026-11-08T15:24:09+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-08T16:40:21.592680+00:00"
+    },
+    {
+      "id": "rss-82513fc2e96763fc",
+      "title": "支持米家：80°C 热水洗地 + 20000Pa 大吸力，友望 U280 扫拖机器人 1069 元新低",
+      "url": "https://www.ithome.com/1/023/995.htm",
+      "date": "2026-11-08T12:41:38+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-08T16:40:21.592680+00:00"
+    },
+    {
+      "id": "rss-f9d5711bdd53db03",
+      "title": "消息称摩托罗拉阔折叠手机 Razr Flex 27 会有国行版，搭载第五代骁龙 8 芯片",
+      "url": "https://www.ithome.com/1/023/978.htm",
+      "date": "2026-11-08T10:19:00+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-08T16:40:21.592680+00:00"
+    },
+    {
+      "id": "rss-d8f45d36052c434a",
+      "title": "首发 999 → 788 元：酷派 COOL X Wide 阔直板手机今日开售，搭载联发科曦力 G99 芯片",
+      "url": "https://www.ithome.com/1/023/969.htm",
+      "date": "2026-11-08T10:09:39+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-08T16:40:21.592680+00:00"
+    },
+    {
+      "id": "rss-362a641fdcf91891",
+      "title": "物理智能开源平台 Hitch Open 在进博会发布，142 拍刷新 AI 机器人乒乓对打世界纪录",
+      "url": "https://www.ithome.com/1/023/920.htm",
+      "date": "2026-11-08T08:21:42+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-08T16:40:21.592680+00:00"
+    },
+    {
+      "id": "rss-93555192f1a9c9e0",
+      "title": "上纬新材刘东方：当前启元机器人的月活超过 98%，平均每位用户每天交互 100 多次",
+      "url": "https://www.ithome.com/1/023/917.htm",
+      "date": "2026-11-08T08:02:58+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-08T16:40:21.592680+00:00"
+    },
     {
       "id": "rss-d6a855300ec0fdec",
       "title": "科学家研发石墨烯能量采集器：可从环境电磁辐射中“隔空取电”，为传感器供电",
