@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-08T00:50:54.595070+00:00",
-  "lastSuccessfulAt": "2026-11-08T00:50:54.595070+00:00",
+  "checkedAt": "2026-11-08T05:59:47.384353+00:00",
+  "lastSuccessfulAt": "2026-11-08T05:59:47.384353+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-08T00:50:54.595070+00:00",
-      "lastSuccessAt": "2026-11-08T00:50:54.595070+00:00",
+      "checkedAt": "2026-11-08T05:59:47.384353+00:00",
+      "lastSuccessAt": "2026-11-08T05:59:47.384353+00:00",
       "received": 18,
       "matched": 0,
       "excluded": 18,
@@ -15,8 +15,8 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-08T00:50:54.595070+00:00",
-      "lastSuccessAt": "2026-11-08T00:50:54.595070+00:00",
+      "checkedAt": "2026-11-08T05:59:47.384353+00:00",
+      "lastSuccessAt": "2026-11-08T05:59:47.384353+00:00",
       "received": 50,
       "matched": 2,
       "excluded": 48,
@@ -25,8 +25,8 @@
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-08T00:50:54.595070+00:00",
-      "lastSuccessAt": "2026-11-08T00:50:54.595070+00:00",
+      "checkedAt": "2026-11-08T05:59:47.384353+00:00",
+      "lastSuccessAt": "2026-11-08T05:59:47.384353+00:00",
       "received": 10,
       "matched": 1,
       "excluded": 9,
@@ -35,8 +35,8 @@
     {
       "id": "bambu",
       "state": "ok",
-      "checkedAt": "2026-11-08T00:50:54.595070+00:00",
-      "lastSuccessAt": "2026-11-08T00:50:54.595070+00:00",
+      "checkedAt": "2026-11-08T05:59:47.384353+00:00",
+      "lastSuccessAt": "2026-11-08T05:59:47.384353+00:00",
       "received": 15,
       "matched": 15,
       "excluded": 0,
@@ -45,22 +45,46 @@
     {
       "id": "cnx",
       "state": "error",
-      "checkedAt": "2026-11-08T00:50:54.595070+00:00",
+      "checkedAt": "2026-11-08T05:59:47.384353+00:00",
       "error": "curl: (22) The requested URL returned error: 403",
       "lastSuccessAt": "2026-11-07T05:57:51.855328+00:00"
     },
     {
       "id": "ithome",
       "state": "ok",
-      "checkedAt": "2026-11-08T00:50:54.595070+00:00",
-      "lastSuccessAt": "2026-11-08T00:50:54.595070+00:00",
+      "checkedAt": "2026-11-08T05:59:47.384353+00:00",
+      "lastSuccessAt": "2026-11-08T05:59:47.384353+00:00",
       "received": 60,
-      "matched": 4,
-      "excluded": 56,
+      "matched": 3,
+      "excluded": 57,
       "error": null
     }
   ],
   "items": [
+    {
+      "id": "rss-d6a855300ec0fdec",
+      "title": "科学家研发石墨烯能量采集器：可从环境电磁辐射中“隔空取电”，为传感器供电",
+      "url": "https://www.ithome.com/1/023/882.htm",
+      "date": "2026-11-08T04:33:18+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-08T05:59:47.384353+00:00"
+    },
+    {
+      "id": "rss-09f5046014d03c46",
+      "title": "今日宜休王腾澄清智能戒指材质争议：并非所有内塑胶方案都是智商税，请不要断章取义",
+      "url": "https://www.ithome.com/1/023/881.htm",
+      "date": "2026-11-08T04:21:03+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "可穿戴与眼镜",
+      "status": "待核验",
+      "discoveredAt": "2026-11-08T05:59:47.384353+00:00"
+    },
     {
       "id": "rss-2c4916c4be67d5e8",
       "title": "安卓阵营首款阔直板手机酷派 COOL X Wide 今日开售：999~1399 元，搭载联发科曦力 G99 芯片 + 720p 屏幕",
