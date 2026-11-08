@@ -1,6 +1,55 @@
 {
   "editions": [
     {
+      "id": "daily-2026-11-08",
+      "date": "2026-11-08",
+      "generatedAt": "2026-11-08T00:49:30.941668+00:00",
+      "state": "partial",
+      "bootstrap": false,
+      "windowNote": "优先最近 72 小时的新事件；按北京时间出刊。7 期内同一进展不重复。",
+      "itemIds": [],
+      "developmentKeys": [],
+      "reviewedCount": 8,
+      "failedSources": [
+        "CNX RSS：403，保留历史发现。",
+        "直连未取得可用正文，已保留官方搜索索引的明确岗位片段。",
+        "官网链接进入招聘系统后浏览器未呈现岗位正文，不解释为无岗位。",
+        "curl: (56) The requested URL returned error: 403",
+        "curl: (28) Operation timed out after 35006 milliseconds with 0 bytes received"
+      ],
+      "coverage": "6 个 RSS 中 5 个成功，CNX 返回 403；30 个候选有 12 个新读正文、10 个既有缓存和 8 个正文失败。本轮重点覆盖科沃斯、追觅、xTool，扫描两家公司官方岗位并核实域名归属。新增 8 篇中文整理；常青与旧日期资料不填充日报，新媒体线索保留待一手核验。",
+      "knownGaps": [
+        "追觅岗位仅索引可见，其他部分列表段落存在错位，未据此汇总职位总数。",
+        "科沃斯职位未给出日期和地点，不证明当前在招。",
+        "CNX RSS 及部分来源正文访问失败；旧缓存没有冒充今天重读。",
+        "知识节点只更新证据支持字段，未覆盖部分保留待核验。"
+      ],
+      "coverageCheck": {
+        "passed": true,
+        "companies": [
+          "xTool",
+          "宇树科技",
+          "科沃斯",
+          "追觅"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "科沃斯",
+          "追觅"
+        ],
+        "gaps": [],
+        "usableSources": 21
+      }
+    },
+    {
       "id": "daily-2026-11-07",
       "date": "2026-11-07",
       "generatedAt": "2026-11-07T00:46:39.991855+00:00",

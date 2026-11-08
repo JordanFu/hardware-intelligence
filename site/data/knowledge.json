@@ -443,6 +443,376 @@
         }
       ],
       "updatedAt": "2026-11-07T00:47:27.698411+00:00"
+    },
+    "chain-2": {
+      "attemptedAt": "2026-11-08T00:50:25.860268+00:00",
+      "status": "partial",
+      "assessment": "优先复核尚无完整复核记录的节点。根据今天实际读取的官方章节或岗位索引补充字段；其余概念、指标及运行效果保留缺口，不推进完整复核日期。",
+      "gaps": [
+        "BOM、EVT/DVT/PVT 的基础定义及特定项目门槛未在本轮全面复核。",
+        "真实端到端任务耗时、分位数与返工结果仍需实测。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "metrics",
+        "pitfall",
+        "team"
+      ],
+      "evidence": [
+        {
+          "itemId": "xtool-material-guide",
+          "title": "xTool 工艺指南：标称速度不等于实际加工速度",
+          "facts": [
+            {
+              "claim": "指南区分理论最高速度与实际加工速度。",
+              "sourceUrl": "https://support.xtool.com/article/1963",
+              "locator": "Processing speed"
+            },
+            {
+              "claim": "提高 LPI 通常需要更多加工时间。",
+              "sourceUrl": "https://support.xtool.com/article/1963",
+              "locator": "Software factors / LPI"
+            }
+          ],
+          "boundary": "官方指南是材料与参数的解释，不是独立性能测试；本次重点阅读原理和软硬件因素章节，不替代特定机型及材料的完整工艺验证。页面标注更新时间 2025-02-10，非今天新闻。",
+          "sources": [
+            {
+              "url": "https://support.xtool.com/article/1963",
+              "name": "xTool 官方支持",
+              "publishedAt": "2025-02-10",
+              "publisherGroup": "xTool 官方支持",
+              "role": "official",
+              "textHash": "537d4fc440f808cb3f120dca254fe396503a6faf0421ab5ad118b409e8e9c6c5",
+              "readAt": "2026-11-08T00:46:05.320925+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "xtool-material-guide",
+          "url": "https://support.xtool.com/article/1963",
+          "checkedAt": "2026-11-08T00:50:25.776128+00:00",
+          "state": "body",
+          "note": "当天读取当前官方正文的条目所列章节，仅支持本次复核字段。"
+        }
+      ],
+      "reviewedAt": "2026-11-08T00:50:25.860268+00:00",
+      "patch": {
+        "metrics": "任务延迟用同一输入、环境与分位数比较；不能只报告平均值或实验室峰值。 对加工设备还应固定材料、任务和成品质量条件，分别记录准备、加工与失败恢复耗时；标称最高运动速度不能直接折算真实产能。",
+        "exercise": "画一张从传感器到执行器的链路，给每个接口写清输入、输出与责任人。 用一个具体材料任务说明结构、光源和软件精细度如何共同影响结果，区分模块参数与整机交付指标。"
+      },
+      "lessons": [
+        {
+          "id": "chain-2-20261108",
+          "title": "用实际任务检验整机性能承诺",
+          "learning": "xTool 指南区分理论最高速度与材料加工速度，也指出精细度和时间的取舍。系统研发可据此检查各模块参数是否落到同一个任务验收口径。",
+          "application": "用于明确机型、材料和成品质量要求的比较；端到端耗时分组是本站研究建议，不是厂商已验证数据。",
+          "boundary": "依据官方解释性指南的相关章节；没有独立性能试验或生产数据。",
+          "itemIds": [
+            "xtool-material-guide"
+          ],
+          "updatedAt": "2026-11-08T00:50:25.860268+00:00"
+        }
+      ],
+      "updatedAt": "2026-11-08T00:50:25.860268+00:00"
+    },
+    "chain-5": {
+      "attemptedAt": "2026-11-08T00:50:25.860268+00:00",
+      "status": "partial",
+      "assessment": "优先复核尚无完整复核记录的节点。根据今天实际读取的官方章节或岗位索引补充字段；其余概念、指标及运行效果保留缺口，不推进完整复核日期。",
+      "gaps": [
+        "安全与可靠性、认证覆盖范围等基础概念仍需独立权威来源全面复核。",
+        "现场故障率及真实部署验收、培训结果未取得。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "flow",
+        "team"
+      ],
+      "evidence": [
+        {
+          "itemId": "xtool-safety",
+          "title": "xTool MetalFab 使用边界：培训、场地与安全责任也是交付条件",
+          "facts": [
+            {
+              "claim": "资料要求专业培训并指定合格的激光安全负责人。",
+              "sourceUrl": "https://support.xtool.com/article/2017",
+              "locator": "Laser safety / personnel requirements"
+            },
+            {
+              "claim": "资料要求建立激光受控区域。",
+              "sourceUrl": "https://support.xtool.com/article/2017",
+              "locator": "Laser safety / controlled area"
+            }
+          ],
+          "boundary": "仅归纳该产品官方说明中的组织和部署要求，非完整操作指导、认证结论或通用法规解释；不推广到其他 xTool 机型，不证明用户现场已经落实。日期为页面标注更新时间。",
+          "sources": [
+            {
+              "url": "https://support.xtool.com/article/2017",
+              "name": "xTool 官方支持",
+              "publishedAt": "2026-06-10",
+              "publisherGroup": "xTool 官方支持",
+              "role": "official",
+              "textHash": "3b1b8af7a56a868001a5b3547d5ad786c2e7d16229fbc75afcd2d9a7fcd7a036",
+              "readAt": "2026-11-08T00:46:05.270898+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "xtool-safety",
+          "url": "https://support.xtool.com/article/2017",
+          "checkedAt": "2026-11-08T00:50:25.776128+00:00",
+          "state": "body",
+          "note": "当天读取当前官方正文的条目所列章节，仅支持本次复核字段。"
+        }
+      ],
+      "reviewedAt": "2026-11-08T00:50:25.860268+00:00",
+      "patch": {
+        "flow": "风险识别与需求 → 验证证据、过程控制与上市条件 对有明确使用限制的设备，还要检查现场条件、训练和责任人员是否满足该型号说明，不能仅凭设备合格就认为现场可用。",
+        "team": "质量、安全、研发、制造与服务协同定义缺陷等级、放行权和整改验证。 MetalFab 官方资料要求指定激光安全负责人并限制进入受控区域的人员；这是特定产品的部署职责样本，不能替代其他产品的法规与风险评估。"
+      },
+      "lessons": [
+        {
+          "id": "chain-5-20261108",
+          "title": "产品说明中的使用前提需要有人验收",
+          "learning": "设备安全不仅涉及研发设计，还涉及交付后的场所、人员训练与责任角色。研究时应追踪这些条件由谁提供证据、由谁确认。",
+          "application": "仅作为该产品说明启发的交付责任核验问题；具体部署必须依据完整产品说明及适用要求。",
+          "boundary": "未进行现场安全评估，也未验证认证、法规符合性和实际执行效果；此补充不是操作指南。",
+          "itemIds": [
+            "xtool-safety"
+          ],
+          "updatedAt": "2026-11-08T00:50:25.860268+00:00"
+        }
+      ],
+      "updatedAt": "2026-11-08T00:50:25.860268+00:00"
+    },
+    "chain-8": {
+      "attemptedAt": "2026-11-08T00:50:25.860268+00:00",
+      "status": "partial",
+      "assessment": "优先复核尚无完整复核记录的节点。根据今天实际读取的官方章节或岗位索引补充字段；其余概念、指标及运行效果保留缺口，不推进完整复核日期。",
+      "gaps": [
+        "正式汇报线、预算权限及职责落地情况未知。",
+        "现金利润及组织效率测量口径没有在本轮完整复核。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "exercise",
+        "pitfall",
+        "team"
+      ],
+      "evidence": [
+        {
+          "itemId": "ecovacs-plm",
+          "title": "科沃斯产品线经理职责：规划延伸到老产品退市",
+          "facts": [
+            {
+              "claim": "职责明确要求制定老产品退市计划和流程。",
+              "sourceUrl": "https://mall.ecovacs.cn/job-detail-516.html",
+              "locator": "岗位职责第 5 项"
+            },
+            {
+              "claim": "任职要求同时涉及工厂新品推进与市场渠道。",
+              "sourceUrl": "https://mall.ecovacs.cn/job-detail-516.html",
+              "locator": "任职要求第 3–4 项"
+            }
+          ],
+          "boundary": "完整岗位正文可读，但发布日期、地点及当前招聘状态未明确；首次收录是研究基线，不能推断新增岗位、编制或实际决策权。",
+          "sources": [
+            {
+              "url": "https://mall.ecovacs.cn/job-detail-516.html",
+              "name": "科沃斯官方商城招聘",
+              "publishedAt": null,
+              "publisherGroup": "科沃斯官方商城招聘",
+              "role": "official",
+              "textHash": "d3e3ffe7578d2b742c6886d079150ba7025206634199d0f44d424a181e8f242b",
+              "readAt": "2026-11-08T00:45:06.901704+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "dreame-director",
+          "title": "追觅产品总监样本：产品路线、团队建设与经营责任相连",
+          "facts": [
+            {
+              "claim": "岗位要求管理产品生命周期及团队能力建设。",
+              "sourceUrl": "https://dreame.zhiye.com/jobs",
+              "locator": "产品总监 J58872 / 工作职责"
+            },
+            {
+              "claim": "岗位要求对产品部资源协调和经营指标负责。",
+              "sourceUrl": "https://dreame.zhiye.com/jobs",
+              "locator": "产品总监 J58872 / 工作职责第 6 项"
+            }
+          ],
+          "boundary": "官网已验证招聘系统归属，但当前正文页为空，仅使用搜索索引。列表部分其他岗位出现职责与资格错位，本条仅采用边界清楚的 J58872 段落；当前在招、人数及实际制度未知。",
+          "sources": [
+            {
+              "url": "https://dreame.zhiye.com/jobs",
+              "name": "追觅官方招聘",
+              "publishedAt": "2026-04-07",
+              "publisherGroup": "追觅官方招聘",
+              "role": "official",
+              "textHash": "e03e0387a35096a887e45ec2844f8e2ee0d8f3fd81c55b223c13d1a9d89a85f4",
+              "readAt": "2026-11-08T00:49:19.903614+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "ecovacs-plm",
+          "url": "https://mall.ecovacs.cn/job-detail-516.html",
+          "checkedAt": "2026-11-08T00:50:25.776128+00:00",
+          "state": "body",
+          "note": "当天读取当前官方正文的条目所列章节，仅支持本次复核字段。"
+        },
+        {
+          "itemId": "dreame-director",
+          "url": "https://dreame.zhiye.com/jobs",
+          "checkedAt": "2026-11-08T00:50:25.776128+00:00",
+          "state": "index",
+          "note": "当天读取官方索引中边界明确的产品总监段落，正文页不可用。"
+        }
+      ],
+      "reviewedAt": "2026-11-08T00:50:25.860268+00:00",
+      "patch": {
+        "team": "经营、产品线与专业职能明确谁决策、谁提供证据、谁对交付负责。 科沃斯岗位样本把退市纳入产品线职责，追觅索引把团队建设、资源协调与经营指标并列；研究时需进一步查明这些责任对应的预算、授权和跨部门接口。",
+        "exercise": "为一个跨团队取舍写清最终负责人、异议处理、所需证据和复盘窗口。 从一个新品上线或老产品退出案例，分别列出产品、制造、渠道与服务的交付物，核实谁能调配资源，谁承担未解决的用户问题。"
+      },
+      "lessons": [
+        {
+          "id": "chain-8-20261108",
+          "title": "把岗位责任翻译成决策权限问题",
+          "learning": "两份岗位资料可帮助识别产品负责人承担的跨度，但不能证明权责已经对等。人员决策前应核对实际授权、交接记录与业务阶段，而非按职位名判断能力缺口。",
+          "application": "用于岗位设计与访谈问题准备；只讨论角色要求，不对具体候选人作录用或绩效判断。",
+          "boundary": "科沃斯无日期完整正文、追觅旧日期搜索索引；都不是组织变动或真实编制缺口的证明。",
+          "itemIds": [
+            "ecovacs-plm",
+            "dreame-director"
+          ],
+          "updatedAt": "2026-11-08T00:50:25.860268+00:00"
+        }
+      ],
+      "updatedAt": "2026-11-08T00:50:25.860268+00:00"
+    },
+    "track-4": {
+      "attemptedAt": "2026-11-08T00:50:25.860268+00:00",
+      "status": "partial",
+      "assessment": "优先复核尚无完整复核记录的节点。根据今天实际读取的官方章节或岗位索引补充字段；其余概念、指标及运行效果保留缺口，不推进完整复核日期。",
+      "gaps": [
+        "尚未用当前正文完整复核拓竹和创想三维等观察对象。",
+        "实际任务成功率、维护成本和用户负担缺可比样本。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "metrics",
+        "team"
+      ],
+      "evidence": [
+        {
+          "itemId": "xtool-material-guide",
+          "title": "xTool 工艺指南：标称速度不等于实际加工速度",
+          "facts": [
+            {
+              "claim": "指南区分理论最高速度与实际加工速度。",
+              "sourceUrl": "https://support.xtool.com/article/1963",
+              "locator": "Processing speed"
+            },
+            {
+              "claim": "提高 LPI 通常需要更多加工时间。",
+              "sourceUrl": "https://support.xtool.com/article/1963",
+              "locator": "Software factors / LPI"
+            }
+          ],
+          "boundary": "官方指南是材料与参数的解释，不是独立性能测试；本次重点阅读原理和软硬件因素章节，不替代特定机型及材料的完整工艺验证。页面标注更新时间 2025-02-10，非今天新闻。",
+          "sources": [
+            {
+              "url": "https://support.xtool.com/article/1963",
+              "name": "xTool 官方支持",
+              "publishedAt": "2025-02-10",
+              "publisherGroup": "xTool 官方支持",
+              "role": "official",
+              "textHash": "537d4fc440f808cb3f120dca254fe396503a6faf0421ab5ad118b409e8e9c6c5",
+              "readAt": "2026-11-08T00:46:05.320925+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "xtool-safety",
+          "title": "xTool MetalFab 使用边界：培训、场地与安全责任也是交付条件",
+          "facts": [
+            {
+              "claim": "资料要求专业培训并指定合格的激光安全负责人。",
+              "sourceUrl": "https://support.xtool.com/article/2017",
+              "locator": "Laser safety / personnel requirements"
+            },
+            {
+              "claim": "资料要求建立激光受控区域。",
+              "sourceUrl": "https://support.xtool.com/article/2017",
+              "locator": "Laser safety / controlled area"
+            }
+          ],
+          "boundary": "仅归纳该产品官方说明中的组织和部署要求，非完整操作指导、认证结论或通用法规解释；不推广到其他 xTool 机型，不证明用户现场已经落实。日期为页面标注更新时间。",
+          "sources": [
+            {
+              "url": "https://support.xtool.com/article/2017",
+              "name": "xTool 官方支持",
+              "publishedAt": "2026-06-10",
+              "publisherGroup": "xTool 官方支持",
+              "role": "official",
+              "textHash": "3b1b8af7a56a868001a5b3547d5ad786c2e7d16229fbc75afcd2d9a7fcd7a036",
+              "readAt": "2026-11-08T00:46:05.270898+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "xtool-material-guide",
+          "url": "https://support.xtool.com/article/1963",
+          "checkedAt": "2026-11-08T00:50:25.776128+00:00",
+          "state": "body",
+          "note": "当天读取当前官方正文的条目所列章节，仅支持本次复核字段。"
+        },
+        {
+          "itemId": "xtool-safety",
+          "url": "https://support.xtool.com/article/2017",
+          "checkedAt": "2026-11-08T00:50:25.776128+00:00",
+          "state": "body",
+          "note": "当天读取当前官方正文的条目所列章节，仅支持本次复核字段。"
+        }
+      ],
+      "reviewedAt": "2026-11-08T00:50:25.860268+00:00",
+      "patch": {
+        "constraint": "良率、准备时间、耗材和失败恢复 制造工具不能只按峰值速度比较；需看材料适配、真实任务耗时和型号特定的部署条件。专业焊接设备的使用前提不得与桌面创作设备混同。",
+        "team": "运动控制、固件、结构、材料、切片软件、制造工程 涉及专业设备时，还需把现场交付、训练和安全责任接口纳入观察；具体职责取决于产品和使用场景。",
+        "metrics": "第一次任务成功率；准备时间；废料；维护成本 比较前固定机型、材料、任务与质量要求，另列准备、加工、维护和失败恢复时间；尚无跨企业统一实测数据。"
+      },
+      "lessons": [
+        {
+          "id": "track-4-20261108",
+          "title": "把加工能力与可部署条件分开比较",
+          "learning": "材料指南描述影响加工结果的多种因素，专业焊接设备说明则提出人员与场地要求。二者共同提醒：能完成演示不等于能在目标环境持续交付。",
+          "application": "用于制造与创作设备选题研究，按具体设备类别拆开比较；不是操作参数或安全验收清单。",
+          "boundary": "来源为单一企业的不同产品资料，不能上升为全行业最优实践或跨产品通用约束。",
+          "itemIds": [
+            "xtool-material-guide",
+            "xtool-safety"
+          ],
+          "updatedAt": "2026-11-08T00:50:25.860268+00:00"
+        }
+      ],
+      "updatedAt": "2026-11-08T00:50:25.860268+00:00"
     }
   },
   "runs": [
@@ -565,6 +935,47 @@
           "hash": "c0167cd943b9e24e794deca4da4cbdd102f7cf8485a88f42865b5c7854b9b172",
           "decision": "integrated",
           "reason": "当前官方正文支持智能家居故障分流、适用边界与服务交接补充。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-08T00:50:25.860268+00:00",
+      "reviewedNodes": [
+        "chain-2",
+        "chain-5",
+        "chain-8",
+        "track-4"
+      ],
+      "decisions": [
+        {
+          "itemId": "xtool-safety",
+          "hash": "1925719ecdb2d084eff5ba7c98cc139d49a3b25fc7c1b59292fb5fa14ede1803",
+          "decision": "integrated",
+          "reason": "沉淀为带适用条件的性能、部署或岗位权责核验问题；节点保持部分复核，不宣称实施效果。"
+        },
+        {
+          "itemId": "dreame-director",
+          "hash": "bb0879d04d0828c88c7cc4b46253373d1aee3bf387beb91fadbe519d7ecc8a39",
+          "decision": "integrated",
+          "reason": "沉淀为带适用条件的性能、部署或岗位权责核验问题；节点保持部分复核，不宣称实施效果。"
+        },
+        {
+          "itemId": "xtool-material-guide",
+          "hash": "a653ff04f6c8bdd0d1ed0e6d2803c4f982bcfd71415dfd40712a4df9f8547047",
+          "decision": "integrated",
+          "reason": "沉淀为带适用条件的性能、部署或岗位权责核验问题；节点保持部分复核，不宣称实施效果。"
+        },
+        {
+          "itemId": "ecovacs-plm",
+          "hash": "644adc567b890b547524055b2c13be88d0646d7c0bbc47a6266bb29dd6c44c9d",
+          "decision": "integrated",
+          "reason": "沉淀为带适用条件的性能、部署或岗位权责核验问题；节点保持部分复核，不宣称实施效果。"
+        },
+        {
+          "itemId": "xtool-aftersale",
+          "hash": "7b989a4b7eccf0e06720a15806afbb834c5d031cefec0cd70aceeec429c2b541",
+          "decision": "hold",
+          "reason": "保留英国售后流程线索，待补实际停产通知、渠道承诺与维修履约证据后复核渠道和服务节点。"
         }
       ]
     }
@@ -1054,6 +1465,407 @@
           "checkedAt": "2026-11-07T00:47:27.610541+00:00",
           "state": "body",
           "note": "当天实际读取官方正文；只支持本次列明的知识范围。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-2",
+      "reviewedAt": "2026-11-08T00:50:25.860268+00:00",
+      "status": "partial",
+      "assessment": "优先复核尚无完整复核记录的节点。根据今天实际读取的官方章节或岗位索引补充字段；其余概念、指标及运行效果保留缺口，不推进完整复核日期。",
+      "gaps": [
+        "BOM、EVT/DVT/PVT 的基础定义及特定项目门槛未在本轮全面复核。",
+        "真实端到端任务耗时、分位数与返工结果仍需实测。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "metrics",
+        "pitfall",
+        "team"
+      ],
+      "changes": {
+        "metrics": {
+          "before": "任务延迟用同一输入、环境与分位数比较；不能只报告平均值或实验室峰值。",
+          "after": "任务延迟用同一输入、环境与分位数比较；不能只报告平均值或实验室峰值。 对加工设备还应固定材料、任务和成品质量条件，分别记录准备、加工与失败恢复耗时；标称最高运动速度不能直接折算真实产能。"
+        },
+        "exercise": {
+          "before": "画一张从传感器到执行器的链路，给每个接口写清输入、输出与责任人。",
+          "after": "画一张从传感器到执行器的链路，给每个接口写清输入、输出与责任人。 用一个具体材料任务说明结构、光源和软件精细度如何共同影响结果，区分模块参数与整机交付指标。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "chain-2-20261108",
+            "title": "用实际任务检验整机性能承诺",
+            "learning": "xTool 指南区分理论最高速度与材料加工速度，也指出精细度和时间的取舍。系统研发可据此检查各模块参数是否落到同一个任务验收口径。",
+            "application": "用于明确机型、材料和成品质量要求的比较；端到端耗时分组是本站研究建议，不是厂商已验证数据。",
+            "boundary": "依据官方解释性指南的相关章节；没有独立性能试验或生产数据。",
+            "itemIds": [
+              "xtool-material-guide"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "xtool-material-guide",
+          "title": "xTool 工艺指南：标称速度不等于实际加工速度",
+          "facts": [
+            {
+              "claim": "指南区分理论最高速度与实际加工速度。",
+              "sourceUrl": "https://support.xtool.com/article/1963",
+              "locator": "Processing speed"
+            },
+            {
+              "claim": "提高 LPI 通常需要更多加工时间。",
+              "sourceUrl": "https://support.xtool.com/article/1963",
+              "locator": "Software factors / LPI"
+            }
+          ],
+          "boundary": "官方指南是材料与参数的解释，不是独立性能测试；本次重点阅读原理和软硬件因素章节，不替代特定机型及材料的完整工艺验证。页面标注更新时间 2025-02-10，非今天新闻。",
+          "sources": [
+            {
+              "url": "https://support.xtool.com/article/1963",
+              "name": "xTool 官方支持",
+              "publishedAt": "2025-02-10",
+              "publisherGroup": "xTool 官方支持",
+              "role": "official",
+              "textHash": "537d4fc440f808cb3f120dca254fe396503a6faf0421ab5ad118b409e8e9c6c5",
+              "readAt": "2026-11-08T00:46:05.320925+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "xtool-material-guide",
+          "url": "https://support.xtool.com/article/1963",
+          "checkedAt": "2026-11-08T00:50:25.776128+00:00",
+          "state": "body",
+          "note": "当天读取当前官方正文的条目所列章节，仅支持本次复核字段。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-5",
+      "reviewedAt": "2026-11-08T00:50:25.860268+00:00",
+      "status": "partial",
+      "assessment": "优先复核尚无完整复核记录的节点。根据今天实际读取的官方章节或岗位索引补充字段；其余概念、指标及运行效果保留缺口，不推进完整复核日期。",
+      "gaps": [
+        "安全与可靠性、认证覆盖范围等基础概念仍需独立权威来源全面复核。",
+        "现场故障率及真实部署验收、培训结果未取得。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "flow",
+        "team"
+      ],
+      "changes": {
+        "flow": {
+          "before": "风险识别与需求 → 验证证据、过程控制与上市条件",
+          "after": "风险识别与需求 → 验证证据、过程控制与上市条件 对有明确使用限制的设备，还要检查现场条件、训练和责任人员是否满足该型号说明，不能仅凭设备合格就认为现场可用。"
+        },
+        "team": {
+          "before": "质量、安全、研发、制造与服务协同定义缺陷等级、放行权和整改验证。",
+          "after": "质量、安全、研发、制造与服务协同定义缺陷等级、放行权和整改验证。 MetalFab 官方资料要求指定激光安全负责人并限制进入受控区域的人员；这是特定产品的部署职责样本，不能替代其他产品的法规与风险评估。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "chain-5-20261108",
+            "title": "产品说明中的使用前提需要有人验收",
+            "learning": "设备安全不仅涉及研发设计，还涉及交付后的场所、人员训练与责任角色。研究时应追踪这些条件由谁提供证据、由谁确认。",
+            "application": "仅作为该产品说明启发的交付责任核验问题；具体部署必须依据完整产品说明及适用要求。",
+            "boundary": "未进行现场安全评估，也未验证认证、法规符合性和实际执行效果；此补充不是操作指南。",
+            "itemIds": [
+              "xtool-safety"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "xtool-safety",
+          "title": "xTool MetalFab 使用边界：培训、场地与安全责任也是交付条件",
+          "facts": [
+            {
+              "claim": "资料要求专业培训并指定合格的激光安全负责人。",
+              "sourceUrl": "https://support.xtool.com/article/2017",
+              "locator": "Laser safety / personnel requirements"
+            },
+            {
+              "claim": "资料要求建立激光受控区域。",
+              "sourceUrl": "https://support.xtool.com/article/2017",
+              "locator": "Laser safety / controlled area"
+            }
+          ],
+          "boundary": "仅归纳该产品官方说明中的组织和部署要求，非完整操作指导、认证结论或通用法规解释；不推广到其他 xTool 机型，不证明用户现场已经落实。日期为页面标注更新时间。",
+          "sources": [
+            {
+              "url": "https://support.xtool.com/article/2017",
+              "name": "xTool 官方支持",
+              "publishedAt": "2026-06-10",
+              "publisherGroup": "xTool 官方支持",
+              "role": "official",
+              "textHash": "3b1b8af7a56a868001a5b3547d5ad786c2e7d16229fbc75afcd2d9a7fcd7a036",
+              "readAt": "2026-11-08T00:46:05.270898+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "xtool-safety",
+          "url": "https://support.xtool.com/article/2017",
+          "checkedAt": "2026-11-08T00:50:25.776128+00:00",
+          "state": "body",
+          "note": "当天读取当前官方正文的条目所列章节，仅支持本次复核字段。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-8",
+      "reviewedAt": "2026-11-08T00:50:25.860268+00:00",
+      "status": "partial",
+      "assessment": "优先复核尚无完整复核记录的节点。根据今天实际读取的官方章节或岗位索引补充字段；其余概念、指标及运行效果保留缺口，不推进完整复核日期。",
+      "gaps": [
+        "正式汇报线、预算权限及职责落地情况未知。",
+        "现金利润及组织效率测量口径没有在本轮完整复核。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "exercise",
+        "pitfall",
+        "team"
+      ],
+      "changes": {
+        "team": {
+          "before": "经营、产品线与专业职能明确谁决策、谁提供证据、谁对交付负责。",
+          "after": "经营、产品线与专业职能明确谁决策、谁提供证据、谁对交付负责。 科沃斯岗位样本把退市纳入产品线职责，追觅索引把团队建设、资源协调与经营指标并列；研究时需进一步查明这些责任对应的预算、授权和跨部门接口。"
+        },
+        "exercise": {
+          "before": "为一个跨团队取舍写清最终负责人、异议处理、所需证据和复盘窗口。",
+          "after": "为一个跨团队取舍写清最终负责人、异议处理、所需证据和复盘窗口。 从一个新品上线或老产品退出案例，分别列出产品、制造、渠道与服务的交付物，核实谁能调配资源，谁承担未解决的用户问题。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "chain-8-20261108",
+            "title": "把岗位责任翻译成决策权限问题",
+            "learning": "两份岗位资料可帮助识别产品负责人承担的跨度，但不能证明权责已经对等。人员决策前应核对实际授权、交接记录与业务阶段，而非按职位名判断能力缺口。",
+            "application": "用于岗位设计与访谈问题准备；只讨论角色要求，不对具体候选人作录用或绩效判断。",
+            "boundary": "科沃斯无日期完整正文、追觅旧日期搜索索引；都不是组织变动或真实编制缺口的证明。",
+            "itemIds": [
+              "ecovacs-plm",
+              "dreame-director"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "ecovacs-plm",
+          "title": "科沃斯产品线经理职责：规划延伸到老产品退市",
+          "facts": [
+            {
+              "claim": "职责明确要求制定老产品退市计划和流程。",
+              "sourceUrl": "https://mall.ecovacs.cn/job-detail-516.html",
+              "locator": "岗位职责第 5 项"
+            },
+            {
+              "claim": "任职要求同时涉及工厂新品推进与市场渠道。",
+              "sourceUrl": "https://mall.ecovacs.cn/job-detail-516.html",
+              "locator": "任职要求第 3–4 项"
+            }
+          ],
+          "boundary": "完整岗位正文可读，但发布日期、地点及当前招聘状态未明确；首次收录是研究基线，不能推断新增岗位、编制或实际决策权。",
+          "sources": [
+            {
+              "url": "https://mall.ecovacs.cn/job-detail-516.html",
+              "name": "科沃斯官方商城招聘",
+              "publishedAt": null,
+              "publisherGroup": "科沃斯官方商城招聘",
+              "role": "official",
+              "textHash": "d3e3ffe7578d2b742c6886d079150ba7025206634199d0f44d424a181e8f242b",
+              "readAt": "2026-11-08T00:45:06.901704+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "dreame-director",
+          "title": "追觅产品总监样本：产品路线、团队建设与经营责任相连",
+          "facts": [
+            {
+              "claim": "岗位要求管理产品生命周期及团队能力建设。",
+              "sourceUrl": "https://dreame.zhiye.com/jobs",
+              "locator": "产品总监 J58872 / 工作职责"
+            },
+            {
+              "claim": "岗位要求对产品部资源协调和经营指标负责。",
+              "sourceUrl": "https://dreame.zhiye.com/jobs",
+              "locator": "产品总监 J58872 / 工作职责第 6 项"
+            }
+          ],
+          "boundary": "官网已验证招聘系统归属，但当前正文页为空，仅使用搜索索引。列表部分其他岗位出现职责与资格错位，本条仅采用边界清楚的 J58872 段落；当前在招、人数及实际制度未知。",
+          "sources": [
+            {
+              "url": "https://dreame.zhiye.com/jobs",
+              "name": "追觅官方招聘",
+              "publishedAt": "2026-04-07",
+              "publisherGroup": "追觅官方招聘",
+              "role": "official",
+              "textHash": "e03e0387a35096a887e45ec2844f8e2ee0d8f3fd81c55b223c13d1a9d89a85f4",
+              "readAt": "2026-11-08T00:49:19.903614+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "ecovacs-plm",
+          "url": "https://mall.ecovacs.cn/job-detail-516.html",
+          "checkedAt": "2026-11-08T00:50:25.776128+00:00",
+          "state": "body",
+          "note": "当天读取当前官方正文的条目所列章节，仅支持本次复核字段。"
+        },
+        {
+          "itemId": "dreame-director",
+          "url": "https://dreame.zhiye.com/jobs",
+          "checkedAt": "2026-11-08T00:50:25.776128+00:00",
+          "state": "index",
+          "note": "当天读取官方索引中边界明确的产品总监段落，正文页不可用。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-4",
+      "reviewedAt": "2026-11-08T00:50:25.860268+00:00",
+      "status": "partial",
+      "assessment": "优先复核尚无完整复核记录的节点。根据今天实际读取的官方章节或岗位索引补充字段；其余概念、指标及运行效果保留缺口，不推进完整复核日期。",
+      "gaps": [
+        "尚未用当前正文完整复核拓竹和创想三维等观察对象。",
+        "实际任务成功率、维护成本和用户负担缺可比样本。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "metrics",
+        "team"
+      ],
+      "changes": {
+        "constraint": {
+          "before": "良率、准备时间、耗材和失败恢复",
+          "after": "良率、准备时间、耗材和失败恢复 制造工具不能只按峰值速度比较；需看材料适配、真实任务耗时和型号特定的部署条件。专业焊接设备的使用前提不得与桌面创作设备混同。"
+        },
+        "team": {
+          "before": "运动控制、固件、结构、材料、切片软件、制造工程",
+          "after": "运动控制、固件、结构、材料、切片软件、制造工程 涉及专业设备时，还需把现场交付、训练和安全责任接口纳入观察；具体职责取决于产品和使用场景。"
+        },
+        "metrics": {
+          "before": "第一次任务成功率；准备时间；废料；维护成本",
+          "after": "第一次任务成功率；准备时间；废料；维护成本 比较前固定机型、材料、任务与质量要求，另列准备、加工、维护和失败恢复时间；尚无跨企业统一实测数据。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "track-4-20261108",
+            "title": "把加工能力与可部署条件分开比较",
+            "learning": "材料指南描述影响加工结果的多种因素，专业焊接设备说明则提出人员与场地要求。二者共同提醒：能完成演示不等于能在目标环境持续交付。",
+            "application": "用于制造与创作设备选题研究，按具体设备类别拆开比较；不是操作参数或安全验收清单。",
+            "boundary": "来源为单一企业的不同产品资料，不能上升为全行业最优实践或跨产品通用约束。",
+            "itemIds": [
+              "xtool-material-guide",
+              "xtool-safety"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "xtool-material-guide",
+          "title": "xTool 工艺指南：标称速度不等于实际加工速度",
+          "facts": [
+            {
+              "claim": "指南区分理论最高速度与实际加工速度。",
+              "sourceUrl": "https://support.xtool.com/article/1963",
+              "locator": "Processing speed"
+            },
+            {
+              "claim": "提高 LPI 通常需要更多加工时间。",
+              "sourceUrl": "https://support.xtool.com/article/1963",
+              "locator": "Software factors / LPI"
+            }
+          ],
+          "boundary": "官方指南是材料与参数的解释，不是独立性能测试；本次重点阅读原理和软硬件因素章节，不替代特定机型及材料的完整工艺验证。页面标注更新时间 2025-02-10，非今天新闻。",
+          "sources": [
+            {
+              "url": "https://support.xtool.com/article/1963",
+              "name": "xTool 官方支持",
+              "publishedAt": "2025-02-10",
+              "publisherGroup": "xTool 官方支持",
+              "role": "official",
+              "textHash": "537d4fc440f808cb3f120dca254fe396503a6faf0421ab5ad118b409e8e9c6c5",
+              "readAt": "2026-11-08T00:46:05.320925+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "xtool-safety",
+          "title": "xTool MetalFab 使用边界：培训、场地与安全责任也是交付条件",
+          "facts": [
+            {
+              "claim": "资料要求专业培训并指定合格的激光安全负责人。",
+              "sourceUrl": "https://support.xtool.com/article/2017",
+              "locator": "Laser safety / personnel requirements"
+            },
+            {
+              "claim": "资料要求建立激光受控区域。",
+              "sourceUrl": "https://support.xtool.com/article/2017",
+              "locator": "Laser safety / controlled area"
+            }
+          ],
+          "boundary": "仅归纳该产品官方说明中的组织和部署要求，非完整操作指导、认证结论或通用法规解释；不推广到其他 xTool 机型，不证明用户现场已经落实。日期为页面标注更新时间。",
+          "sources": [
+            {
+              "url": "https://support.xtool.com/article/2017",
+              "name": "xTool 官方支持",
+              "publishedAt": "2026-06-10",
+              "publisherGroup": "xTool 官方支持",
+              "role": "official",
+              "textHash": "3b1b8af7a56a868001a5b3547d5ad786c2e7d16229fbc75afcd2d9a7fcd7a036",
+              "readAt": "2026-11-08T00:46:05.270898+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "xtool-material-guide",
+          "url": "https://support.xtool.com/article/1963",
+          "checkedAt": "2026-11-08T00:50:25.776128+00:00",
+          "state": "body",
+          "note": "当天读取当前官方正文的条目所列章节，仅支持本次复核字段。"
+        },
+        {
+          "itemId": "xtool-safety",
+          "url": "https://support.xtool.com/article/2017",
+          "checkedAt": "2026-11-08T00:50:25.776128+00:00",
+          "state": "body",
+          "note": "当天读取当前官方正文的条目所列章节，仅支持本次复核字段。"
         }
       ]
     }

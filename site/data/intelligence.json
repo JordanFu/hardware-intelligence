@@ -1,8 +1,146 @@
 {
   "schemaVersion": 1,
-  "lastCompletedAt": "2026-11-07T00:46:39.991304+00:00",
+  "lastCompletedAt": "2026-11-08T00:49:30.940621+00:00",
   "method": "Codex 初筛评分 + 逐条证据复核；非两个独立模型评分",
   "items": [
+    {
+      "id": "rss-c19c06e426fe3bff",
+      "eventId": "rss-c19c06e426fe3bff",
+      "developmentId": "initial",
+      "titleZh": "UNI-DOGGIE 报道：经销采购不能直接等同终端需求",
+      "originalTitle": "宇树科技联合巨星传奇发布首款消费级收藏机器狗 UNI-DOGGIE，首发价 43900 元",
+      "brief": {
+        "lead": "IT之家报道巨星传奇与宇树共同开发 UNI-DOGGIE，并称经销商采购 1000 台。这个数字提供渠道观察线索，但本次未取得交易公告、交付或终端销售证据，暂不进入精选。",
+        "points": [
+          "报道将 11 月 6 日发布与经销商首单放在一起介绍。",
+          "采购、交付、终端售出和持续使用是不同阶段，不能据此确认真实用户规模。"
+        ]
+      },
+      "stages": [
+        "需求与规划",
+        "渠道与销售",
+        "服务与生命周期"
+      ],
+      "domestic": true,
+      "companies": [
+        "宇树科技"
+      ],
+      "publishedAt": "2026-11-07T01:29:10+00:00",
+      "kind": "中文整理",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 18,
+          "增量信息": 15,
+          "证据质量": 12,
+          "机制清晰": 14,
+          "可行动性": 14
+        },
+        "review": {
+          "decision": "hold",
+          "reason": "第二遍核对原文锚点、来源、时间和适用条件；岗位与指南只证明公开要求，媒体结果缺一手核验则暂缓。"
+        }
+      },
+      "boundary": "媒体转述且缺本轮一手公告核验，保留为线索；不据计划、订单报道推断经营结果或人员决策。",
+      "meaning": "后续跟踪正式公告、实际交付与可比结果。",
+      "question": "有没有正式公告和后续履约数据，能区分计划与实际？",
+      "eventReason": "依据具体主体与行为去重；初见岗位、既有指南和近期报道分别保留原始日期。",
+      "facts": [
+        {
+          "claim": "报道将 11 月 6 日发布与经销商首单放在一起介绍。",
+          "sourceUrl": "https://www.ithome.com/1/023/636.htm",
+          "locator": "媒体正文主体"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.ithome.com/1/023/636.htm",
+          "name": "IT之家",
+          "publishedAt": "2026-11-07T01:29:10+00:00",
+          "publisherGroup": "IT之家",
+          "role": "media",
+          "textHash": "b32783fd45ebb9df6f14ef5922e05cb8874a226c4c7ac7438a2c1e3ebc3298aa",
+          "readAt": "2026-11-08T00:44:31.665383+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 73,
+      "selected": false,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-08T00:49:30.938454+00:00",
+      "sourceDate": "2026-11-07T01:29:10+00:00",
+      "date": "2026-11-07T01:29:10+00:00",
+      "title": "UNI-DOGGIE 报道：经销采购不能直接等同终端需求",
+      "summary": "IT之家报道巨星传奇与宇树共同开发 UNI-DOGGIE，并称经销商采购 1000 台。这个数字提供渠道观察线索，但本次未取得交易公告、交付或终端销售证据，暂不进入精选。"
+    },
+    {
+      "id": "rss-00dcf9de62050f60",
+      "eventId": "rss-00dcf9de62050f60",
+      "developmentId": "initial",
+      "titleZh": "Wing 新工厂报道：投资与岗位数仍是规划",
+      "originalTitle": "美国“空中外卖”竞争白热化：谷歌系 Wing 投资 1.25 亿美元建无人机厂，瞄准 270 家沃尔玛门店",
+      "brief": {
+        "lead": "IT之家转述 Wing 计划在两年内投资最高 1.25 亿美元建设并运营新工厂，并提出潜在制造能力和岗位数。原始公告本轮未找到，相关数字不能当作已经形成的产能或招聘缺口。",
+        "points": [
+          "报道给出投资上限、建设周期与潜在制造能力。",
+          "规划岗位并不等于已在招聘、已入职人数或制造效率提升。"
+        ]
+      },
+      "stages": [
+        "制造与交付",
+        "供应链与采购",
+        "经营与组织"
+      ],
+      "domestic": false,
+      "companies": [],
+      "publishedAt": "2026-11-07T00:48:43+00:00",
+      "kind": "中文整理",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 18,
+          "增量信息": 15,
+          "证据质量": 12,
+          "机制清晰": 14,
+          "可行动性": 14
+        },
+        "review": {
+          "decision": "hold",
+          "reason": "第二遍核对原文锚点、来源、时间和适用条件；岗位与指南只证明公开要求，媒体结果缺一手核验则暂缓。"
+        }
+      },
+      "boundary": "媒体转述且缺本轮一手公告核验，保留为线索；不据计划、订单报道推断经营结果或人员决策。",
+      "meaning": "后续跟踪正式公告、实际交付与可比结果。",
+      "question": "有没有正式公告和后续履约数据，能区分计划与实际？",
+      "eventReason": "依据具体主体与行为去重；初见岗位、既有指南和近期报道分别保留原始日期。",
+      "facts": [
+        {
+          "claim": "报道给出投资上限、建设周期与潜在制造能力。",
+          "sourceUrl": "https://www.ithome.com/1/023/629.htm",
+          "locator": "媒体正文主体"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.ithome.com/1/023/629.htm",
+          "name": "IT之家",
+          "publishedAt": "2026-11-07T00:48:43+00:00",
+          "publisherGroup": "IT之家",
+          "role": "media",
+          "textHash": "0649379769ec65c727d89587f8c543570d56effc0527cd5e052d69b7478534b7",
+          "readAt": "2026-11-08T00:44:31.875866+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 73,
+      "selected": false,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-08T00:49:30.938849+00:00",
+      "sourceDate": "2026-11-07T00:48:43+00:00",
+      "date": "2026-11-07T00:48:43+00:00",
+      "title": "Wing 新工厂报道：投资与岗位数仍是规划",
+      "summary": "IT之家转述 Wing 计划在两年内投资最高 1.25 亿美元建设并运营新工厂，并提出潜在制造能力和岗位数。原始公告本轮未找到，相关数字不能当作已经形成的产能或招聘缺口。"
+    },
     {
       "id": "rss-586e2805c1171423",
       "eventId": "rss-586e2805c1171423",
@@ -439,6 +577,83 @@
       "date": "2026-11-05T07:40:42+00:00",
       "title": "宇树谈机器人格斗：观赏性与稳定性并非同一指标",
       "summary": "IT之家转述王兴兴对机器人格斗的解释：更少摔倒可能降低观赏性，却反映了稳定性改善的追求。这是观点与演示信息，不是工业可靠性测试。"
+    },
+    {
+      "id": "halo-official",
+      "eventId": "halo-official",
+      "developmentId": "initial",
+      "titleZh": "HALO 项目：任务编排、动作生成与跟踪采用不同运行频率",
+      "originalTitle": "Perceptive Humanoid Motion from Simulation",
+      "brief": {
+        "lead": "HALO 原始项目页展示三个控制层：任务编排、动作生成和高频跟踪。研究重点是系统接口及算力分工；论文提交于 11 月 4 日，本次补读不把它刷新成 11 月 8 日的新事件。",
+        "points": [
+          "项目页把编排和生成放在背包计算单元，把跟踪放在嵌入式单元。",
+          "页面说明三个层级以不同频率运行；演示与设计披露不等于商业现场可靠性。"
+        ]
+      },
+      "stages": [
+        "研发与系统",
+        "制造与交付"
+      ],
+      "domestic": false,
+      "companies": [],
+      "publishedAt": "2026-11-04T18:55:33+00:00",
+      "kind": "中文整理",
+      "category": "机器人与无人机",
+      "selection": {
+        "scores": {
+          "相关性": 18,
+          "增量信息": 15,
+          "证据质量": 18,
+          "机制清晰": 18,
+          "可行动性": 15
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "第二遍核对原文锚点、来源、时间和适用条件；岗位与指南只证明公开要求，媒体结果缺一手核验则暂缓。"
+        }
+      },
+      "boundary": "本次读取项目正文及 arXiv 摘要和提交历史，未完整审阅论文、代码或复现实验；不采用媒体中的商业能力外推。",
+      "meaning": "可用于后续研究系统层级的输入输出与实时性分工。",
+      "question": "任务层、生成层与控制层各自的失败如何检测、恢复并验证？",
+      "eventReason": "依据具体主体与行为去重；初见岗位、既有指南和近期报道分别保留原始日期。",
+      "facts": [
+        {
+          "claim": "动作跟踪在嵌入式计算单元执行。",
+          "sourceUrl": "https://apple-aiml-research.github.io/ml-halo/",
+          "locator": "Onboard autonomy stack / Tracker"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://apple-aiml-research.github.io/ml-halo/",
+          "name": "Apple HALO 项目主页",
+          "publishedAt": null,
+          "publisherGroup": "Apple HALO 项目主页",
+          "role": "official",
+          "textHash": "f3e28c1a97ac954e66a5d7aa18c8fd77856876dd3bc5cb1036eb069a6a279c93",
+          "readAt": "2026-11-08T00:47:04.153142+00:00",
+          "coverage": "body"
+        },
+        {
+          "url": "https://arxiv.org/abs/2611.06908",
+          "name": "arXiv 原始摘要及提交历史",
+          "publishedAt": "2026-11-04T18:55:33+00:00",
+          "publisherGroup": "Apple HALO 研究团队",
+          "role": "research",
+          "textHash": "c6beba565ab0e162b748b39585dc2eb20c04794e84ca14991a8ea47a9fc24640",
+          "readAt": "2026-11-08T00:49:19.903614+00:00",
+          "coverage": "excerpt"
+        }
+      ],
+      "score": 84,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-08T00:49:30.939422+00:00",
+      "sourceDate": "2026-11-04T18:55:33+00:00",
+      "date": "2026-11-04T18:55:33+00:00",
+      "title": "HALO 项目：任务编排、动作生成与跟踪采用不同运行频率",
+      "summary": "HALO 原始项目页展示三个控制层：任务编排、动作生成和高频跟踪。研究重点是系统接口及算力分工；论文提交于 11 月 4 日，本次补读不把它刷新成 11 月 8 日的新事件。"
     },
     {
       "id": "aqara-matter-guide",
@@ -2140,6 +2355,321 @@
       "summary": "拓竹介绍设计师把凉鞋设计为一体打印的项目。这提供了数字设计与制造相连接的案例，不能据此认定耐用性或环境收益。"
     },
     {
+      "id": "xtool-safety",
+      "eventId": "xtool-safety",
+      "developmentId": "initial",
+      "titleZh": "xTool MetalFab 使用边界：培训、场地与安全责任也是交付条件",
+      "originalTitle": "Safety First (Important) for xTool MetalFab Laser Welder",
+      "brief": {
+        "lead": "xTool 的 MetalFab 焊接设备安全资料明确其专业用途，并要求训练、指定安全责任人员和受控区域。研究硬件商业化时，产品是否易操作与部署条件是否满足，需要分别核验。",
+        "points": [
+          "说明要求由接受焊接与激光安全培训的人员使用，并指定合格的激光安全负责人。",
+          "资料对场地、进入区域的人员和防护提出要求；设备功能演示不能替代部署验收。"
+        ]
+      },
+      "stages": [
+        "质量与合规",
+        "制造与交付",
+        "服务与生命周期",
+        "经营与组织"
+      ],
+      "domestic": true,
+      "companies": [
+        "xTool"
+      ],
+      "publishedAt": "2026-06-10",
+      "kind": "中文整理",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 15,
+          "证据质量": 18,
+          "机制清晰": 19,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "第二遍核对原文锚点、来源、时间和适用条件；岗位与指南只证明公开要求，媒体结果缺一手核验则暂缓。"
+        }
+      },
+      "boundary": "仅归纳该产品官方说明中的组织和部署要求，非完整操作指导、认证结论或通用法规解释；不推广到其他 xTool 机型，不证明用户现场已经落实。日期为页面标注更新时间。",
+      "meaning": "售前适配、交付、培训和服务需要共同核验使用场景，而非只交付机器。",
+      "question": "谁核验客户场地和培训条件，哪些不符合项会阻止交付验收？",
+      "eventReason": "依据具体主体与行为去重；初见岗位、既有指南和近期报道分别保留原始日期。",
+      "practices": [
+        {
+          "title": "把使用条件纳入部署交接",
+          "method": "在设备交付之外明确适用场所、人员训练、责任角色和控制条件。",
+          "conditions": "仅该设备说明覆盖的用途与环境；实际评估需完整说明和适用规范。",
+          "outcome": "本次证据证明公开要求或方法说明；实际执行、效果与人员负担尚无独立核验。",
+          "boundary": "仅归纳该产品官方说明中的组织和部署要求，非完整操作指导、认证结论或通用法规解释；不推广到其他 xTool 机型，不证明用户现场已经落实。日期为页面标注更新时间。",
+          "nextCheck": "查验具体部署的培训、场地和验收记录，不以说明书存在替代落实。",
+          "stages": [
+            "质量与合规",
+            "制造与交付",
+            "服务与生命周期",
+            "经营与组织"
+          ],
+          "evidenceLevel": "官方披露做法",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "organization": [
+        {
+          "kind": "已披露机制",
+          "title": "安全职责不仅在产品研发团队",
+          "observation": "说明对操作者、激光安全负责人和场地控制提出要求。",
+          "implication": "研究交付方、使用方和服务团队分别提供哪些验收证据。",
+          "boundary": "仅归纳该产品官方说明中的组织和部署要求，非完整操作指导、认证结论或通用法规解释；不推广到其他 xTool 机型，不证明用户现场已经落实。日期为页面标注更新时间。",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "资料要求专业培训并指定合格的激光安全负责人。",
+          "sourceUrl": "https://support.xtool.com/article/2017",
+          "locator": "Laser safety / personnel requirements"
+        },
+        {
+          "claim": "资料要求建立激光受控区域。",
+          "sourceUrl": "https://support.xtool.com/article/2017",
+          "locator": "Laser safety / controlled area"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://support.xtool.com/article/2017",
+          "name": "xTool 官方支持",
+          "publishedAt": "2026-06-10",
+          "publisherGroup": "xTool 官方支持",
+          "role": "official",
+          "textHash": "3b1b8af7a56a868001a5b3547d5ad786c2e7d16229fbc75afcd2d9a7fcd7a036",
+          "readAt": "2026-11-08T00:46:05.270898+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-08T00:49:30.934314+00:00",
+      "sourceDate": "2026-06-10",
+      "date": "2026-06-10",
+      "title": "xTool MetalFab 使用边界：培训、场地与安全责任也是交付条件",
+      "summary": "xTool 的 MetalFab 焊接设备安全资料明确其专业用途，并要求训练、指定安全责任人员和受控区域。研究硬件商业化时，产品是否易操作与部署条件是否满足，需要分别核验。"
+    },
+    {
+      "id": "dreame-director",
+      "eventId": "dreame-director",
+      "developmentId": "initial",
+      "titleZh": "追觅产品总监样本：产品路线、团队建设与经营责任相连",
+      "originalTitle": "追觅产品总监样本：产品路线、团队建设与经营责任相连",
+      "brief": {
+        "lead": "追觅官方招聘索引中的产品总监岗位，面向智能影像产品，职责包括路线规划、生命周期、团队建设和资源协调。索引日期为 4 月 7 日；本次作为职责样本补录，不作为团队近期扩张的证据。",
+        "points": [
+          "职责要求跟踪上线效果，并负责产品部资源协调及经营指标。",
+          "资格要求涉及产品开发、供应链和推广经验；实际预算与最终决策权未披露。"
+        ]
+      },
+      "stages": [
+        "需求与规划",
+        "供应链与采购",
+        "渠道与销售",
+        "经营与组织"
+      ],
+      "domestic": true,
+      "companies": [
+        "追觅"
+      ],
+      "publishedAt": "2026-04-07",
+      "kind": "中文整理",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 14,
+          "证据质量": 15,
+          "机制清晰": 18,
+          "可行动性": 16
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "第二遍核对原文锚点、来源、时间和适用条件；岗位与指南只证明公开要求，媒体结果缺一手核验则暂缓。"
+        }
+      },
+      "boundary": "官网已验证招聘系统归属，但当前正文页为空，仅使用搜索索引。列表部分其他岗位出现职责与资格错位，本条仅采用边界清楚的 J58872 段落；当前在招、人数及实际制度未知。",
+      "meaning": "岗位说明可用于识别能力组合，不能把能力要求视为团队已具备的能力。",
+      "question": "产品负责人能够调整哪些资源，经营责任与决策权限是否匹配？",
+      "eventReason": "依据具体主体与行为去重；初见岗位、既有指南和近期报道分别保留原始日期。",
+      "practices": [
+        {
+          "title": "把路线规划与资源责任一起核验",
+          "method": "从岗位描述提取产品路线、团队能力、资源协调与经营责任四组要求。",
+          "conditions": "产品线或业务负责人研究；需补实际授权与运行证据。",
+          "outcome": "本次证据证明公开要求或方法说明；实际执行、效果与人员负担尚无独立核验。",
+          "boundary": "官网已验证招聘系统归属，但当前正文页为空，仅使用搜索索引。列表部分其他岗位出现职责与资格错位，本条仅采用边界清楚的 J58872 段落；当前在招、人数及实际制度未知。",
+          "nextCheck": "核实预算权限、跨部门争议处理与员工实际负担。",
+          "stages": [
+            "需求与规划",
+            "供应链与采购",
+            "渠道与销售",
+            "经营与组织"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "organization": [
+        {
+          "kind": "能力需求线索",
+          "title": "经营责任需要对应资源权限",
+          "observation": "岗位同时要求路线规划、团队建设、资源协调和经营指标。",
+          "implication": "研究时应追问责任与权限是否对等，不把招聘措辞当作管理成效。",
+          "boundary": "官网已验证招聘系统归属，但当前正文页为空，仅使用搜索索引。列表部分其他岗位出现职责与资格错位，本条仅采用边界清楚的 J58872 段落；当前在招、人数及实际制度未知。",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "岗位要求管理产品生命周期及团队能力建设。",
+          "sourceUrl": "https://dreame.zhiye.com/jobs",
+          "locator": "产品总监 J58872 / 工作职责"
+        },
+        {
+          "claim": "岗位要求对产品部资源协调和经营指标负责。",
+          "sourceUrl": "https://dreame.zhiye.com/jobs",
+          "locator": "产品总监 J58872 / 工作职责第 6 项"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://dreame.zhiye.com/jobs",
+          "name": "追觅官方招聘",
+          "publishedAt": "2026-04-07",
+          "publisherGroup": "追觅官方招聘",
+          "role": "official",
+          "textHash": "e03e0387a35096a887e45ec2844f8e2ee0d8f3fd81c55b223c13d1a9d89a85f4",
+          "readAt": "2026-11-08T00:49:19.903614+00:00",
+          "coverage": "excerpt"
+        }
+      ],
+      "score": 82,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-08T00:49:30.928153+00:00",
+      "sourceDate": "2026-04-07",
+      "date": "2026-04-07",
+      "title": "追觅产品总监样本：产品路线、团队建设与经营责任相连",
+      "summary": "追觅官方招聘索引中的产品总监岗位，面向智能影像产品，职责包括路线规划、生命周期、团队建设和资源协调。索引日期为 4 月 7 日；本次作为职责样本补录，不作为团队近期扩张的证据。"
+    },
+    {
+      "id": "xtool-material-guide",
+      "eventId": "xtool-material-guide",
+      "developmentId": "initial",
+      "titleZh": "xTool 工艺指南：标称速度不等于实际加工速度",
+      "originalTitle": "Material Processing Guide",
+      "brief": {
+        "lead": "xTool 材料加工指南把材料、光源、焦点、运动结构和软件设置放在一起解释。对研发与产品团队，更有用的启发是固定任务条件后再谈性能，而不是直接把最高运动速度转成产能承诺。",
+        "points": [
+          "指南明确：理论最高工作速度不一定是材料加工速度。",
+          "实际加工速度取决于设备结构、功率和材料；图像精细度与加工时间也存在取舍。"
+        ]
+      },
+      "stages": [
+        "研发与系统",
+        "制造与交付",
+        "质量与合规"
+      ],
+      "domestic": true,
+      "companies": [
+        "xTool"
+      ],
+      "publishedAt": "2025-02-10",
+      "kind": "中文整理",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 18,
+          "增量信息": 14,
+          "证据质量": 18,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "第二遍核对原文锚点、来源、时间和适用条件；岗位与指南只证明公开要求，媒体结果缺一手核验则暂缓。"
+        }
+      },
+      "boundary": "官方指南是材料与参数的解释，不是独立性能测试；本次重点阅读原理和软硬件因素章节，不替代特定机型及材料的完整工艺验证。页面标注更新时间 2025-02-10，非今天新闻。",
+      "meaning": "将性能承诺转换成材料、任务、质量要求与时间的共同验收。",
+      "question": "参数表中的速度，是否包含准备、定位、多遍加工与失败恢复时间？",
+      "eventReason": "依据具体主体与行为去重；初见岗位、既有指南和近期报道分别保留原始日期。",
+      "practices": [
+        {
+          "title": "用任务条件约束性能比较",
+          "method": "把材料、设备结构、软件精细度和实际加工时间放入同一比较口径。",
+          "conditions": "针对明确型号和材料的加工任务；不得跨工况直接比较峰值。",
+          "outcome": "本次证据证明公开要求或方法说明；实际执行、效果与人员负担尚无独立核验。",
+          "boundary": "官方指南是材料与参数的解释，不是独立性能测试；本次重点阅读原理和软硬件因素章节，不替代特定机型及材料的完整工艺验证。页面标注更新时间 2025-02-10，非今天新闻。",
+          "nextCheck": "补充同一任务的端到端耗时、成品质量和返工数据。",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "evidenceLevel": "官方披露做法",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "指南区分理论最高速度与实际加工速度。",
+          "sourceUrl": "https://support.xtool.com/article/1963",
+          "locator": "Processing speed"
+        },
+        {
+          "claim": "提高 LPI 通常需要更多加工时间。",
+          "sourceUrl": "https://support.xtool.com/article/1963",
+          "locator": "Software factors / LPI"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://support.xtool.com/article/1963",
+          "name": "xTool 官方支持",
+          "publishedAt": "2025-02-10",
+          "publisherGroup": "xTool 官方支持",
+          "role": "official",
+          "textHash": "537d4fc440f808cb3f120dca254fe396503a6faf0421ab5ad118b409e8e9c6c5",
+          "readAt": "2026-11-08T00:46:05.320925+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 86,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-08T00:49:30.932142+00:00",
+      "sourceDate": "2025-02-10",
+      "date": "2025-02-10",
+      "title": "xTool 工艺指南：标称速度不等于实际加工速度",
+      "summary": "xTool 材料加工指南把材料、光源、焦点、运动结构和软件设置放在一起解释。对研发与产品团队，更有用的启发是固定任务条件后再谈性能，而不是直接把最高运动速度转成产能承诺。"
+    },
+    {
       "id": "bambu-quality",
       "eventId": "bambu-quality",
       "developmentId": "initial",
@@ -2584,9 +3114,244 @@
       "date": null,
       "title": "MakerWorld 活动回顾：创作者反馈与实物履约仍需分别验证",
       "summary": "拓竹 11 月 6 日博客回顾的是 10 月 24 日创作者聚会。文中介绍激励反馈、仍在测试的实物打印市场，以及封面与实际打印效果不符的问题。作为平台机制案例保存，不把聚会当成今日事件。"
+    },
+    {
+      "id": "ecovacs-plm",
+      "eventId": "ecovacs-plm",
+      "developmentId": "initial",
+      "titleZh": "科沃斯产品线经理职责：规划延伸到老产品退市",
+      "originalTitle": "科沃斯产品线经理职责：规划延伸到老产品退市",
+      "brief": {
+        "lead": "科沃斯官方商城的产品线经理页面，把中期规划、新品上市、迭代和老产品退市放在同一职责范围。它提示产品责任不止于发布，也需要处理退出；页面未标日期，不能判断近期组织变化。",
+        "points": [
+          "职责包含两到三年产品线规划、开发评估与新品上市支持。",
+          "岗位还要求制定老产品退市计划和流程，并了解工厂推进及渠道特点。"
+        ]
+      },
+      "stages": [
+        "需求与规划",
+        "制造与交付",
+        "渠道与销售",
+        "服务与生命周期",
+        "经营与组织"
+      ],
+      "domestic": true,
+      "companies": [
+        "科沃斯"
+      ],
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 15,
+          "证据质量": 18,
+          "机制清晰": 17,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "第二遍核对原文锚点、来源、时间和适用条件；岗位与指南只证明公开要求，媒体结果缺一手核验则暂缓。"
+        }
+      },
+      "boundary": "完整岗位正文可读，但发布日期、地点及当前招聘状态未明确；首次收录是研究基线，不能推断新增岗位、编制或实际决策权。",
+      "meaning": "可据此研究产品、渠道、制造与服务如何共同承担退出阶段的结果。",
+      "question": "退市时谁负责库存、备件、软件支持和用户通知，关闭标准是什么？",
+      "eventReason": "依据具体主体与行为去重；初见岗位、既有指南和近期报道分别保留原始日期。",
+      "practices": [
+        {
+          "title": "把产品退出纳入产品线责任",
+          "method": "在规划和上市职责之外明确老产品退市计划及流程。",
+          "conditions": "多代产品并行、渠道库存和售后支持仍存续的业务。",
+          "outcome": "本次证据证明公开要求或方法说明；实际执行、效果与人员负担尚无独立核验。",
+          "boundary": "完整岗位正文可读，但发布日期、地点及当前招聘状态未明确；首次收录是研究基线，不能推断新增岗位、编制或实际决策权。",
+          "nextCheck": "查验实际退市通知、库存处置和支持周期安排。",
+          "stages": [
+            "需求与规划",
+            "制造与交付",
+            "渠道与销售",
+            "服务与生命周期",
+            "经营与组织"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "organization": [
+        {
+          "kind": "能力需求线索",
+          "title": "产品线职责跨越上市与退出",
+          "observation": "官方职责同时列出产品规划、上市、迭代及退市。",
+          "implication": "可用具体退市案例核验产品经理与渠道、服务之间的权责。",
+          "boundary": "完整岗位正文可读，但发布日期、地点及当前招聘状态未明确；首次收录是研究基线，不能推断新增岗位、编制或实际决策权。",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "职责明确要求制定老产品退市计划和流程。",
+          "sourceUrl": "https://mall.ecovacs.cn/job-detail-516.html",
+          "locator": "岗位职责第 5 项"
+        },
+        {
+          "claim": "任职要求同时涉及工厂新品推进与市场渠道。",
+          "sourceUrl": "https://mall.ecovacs.cn/job-detail-516.html",
+          "locator": "任职要求第 3–4 项"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://mall.ecovacs.cn/job-detail-516.html",
+          "name": "科沃斯官方商城招聘",
+          "publishedAt": null,
+          "publisherGroup": "科沃斯官方商城招聘",
+          "role": "official",
+          "textHash": "d3e3ffe7578d2b742c6886d079150ba7025206634199d0f44d424a181e8f242b",
+          "readAt": "2026-11-08T00:45:06.901704+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 86,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-08T00:49:30.927721+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "科沃斯产品线经理职责：规划延伸到老产品退市",
+      "summary": "科沃斯官方商城的产品线经理页面，把中期规划、新品上市、迭代和老产品退市放在同一职责范围。它提示产品责任不止于发布，也需要处理退出；页面未标日期，不能判断近期组织变化。"
+    },
+    {
+      "id": "xtool-aftersale",
+      "eventId": "xtool-aftersale",
+      "developmentId": "initial",
+      "titleZh": "xTool 英国售后政策：远程诊断、返修与停产支持有不同接口",
+      "originalTitle": "Aftersale Policies",
+      "brief": {
+        "lead": "xTool 英国站售后政策先尝试远程诊断，再视情况转入本地维修；对停产产品还提到最终维修日期通知。它提供渠道与服务接口线索，但政策文本不能证明实际维修时效。",
+        "points": [
+          "申请服务需要购买凭证，远程无法解决时可能转本地维修。",
+          "停产支持通知与代理商承诺需要单独核对，不能将单一区域政策推广为全球承诺。"
+        ]
+      },
+      "stages": [
+        "渠道与销售",
+        "服务与生命周期",
+        "经营与组织"
+      ],
+      "domestic": true,
+      "companies": [
+        "xTool"
+      ],
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 18,
+          "增量信息": 14,
+          "证据质量": 18,
+          "机制清晰": 17,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "第二遍核对原文锚点、来源、时间和适用条件；岗位与指南只证明公开要求，媒体结果缺一手核验则暂缓。"
+        }
+      },
+      "boundary": "英国站当前政策，未标统一发布日期；本次只整理服务流程与停产通知，不判断条款的法律效力或跨地区适用性，合同、机型和当地规则仍需分别核对。",
+      "meaning": "研究渠道承诺与实际服务能力是否一致，尤其是退出期用户如何获得支持。",
+      "question": "代理商、服务中心和产品线之间，如何同步最终维修日期与用户告知？",
+      "eventReason": "依据具体主体与行为去重；初见岗位、既有指南和近期报道分别保留原始日期。",
+      "practices": [
+        {
+          "title": "把远程诊断、返修和退出通知分开管理",
+          "method": "按故障诊断、维修路径、停产支持分别识别信息与责任接口。",
+          "conditions": "仅针对具体地区、渠道与产品版本；不自动推广统一质保规则。",
+          "outcome": "本次证据证明公开要求或方法说明；实际执行、效果与人员负担尚无独立核验。",
+          "boundary": "英国站当前政策，未标统一发布日期；本次只整理服务流程与停产通知，不判断条款的法律效力或跨地区适用性，合同、机型和当地规则仍需分别核对。",
+          "nextCheck": "补充实际通知、维修记录和用户最终恢复使用的证据。",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期",
+            "经营与组织"
+          ],
+          "evidenceLevel": "官方披露做法",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "远程无法解决的问题可能需要送本地维修中心。",
+          "sourceUrl": "https://uk.xtool.com/pages/aftersale-policies",
+          "locator": "How to Obtain a Warranty Service"
+        },
+        {
+          "claim": "停产产品安排提到最终维修日期通知。",
+          "sourceUrl": "https://uk.xtool.com/pages/aftersale-policies",
+          "locator": "Special Notes"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://uk.xtool.com/pages/aftersale-policies",
+          "name": "xTool 官方支持",
+          "publishedAt": null,
+          "publisherGroup": "xTool 官方支持",
+          "role": "official",
+          "textHash": "6269b4a3d4d1a4540a5eb7672c87c865039d5fb2611703717f94e41e51be7483",
+          "readAt": "2026-11-08T00:45:12.666454+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 84,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-08T00:49:30.938055+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "xTool 英国售后政策：远程诊断、返修与停产支持有不同接口",
+      "summary": "xTool 英国站售后政策先尝试远程诊断，再视情况转入本地维修；对停产产品还提到最终维修日期通知。它提供渠道与服务接口线索，但政策文本不能证明实际维修时效。"
     }
   ],
   "events": [
+    {
+      "id": "rss-c19c06e426fe3bff",
+      "representativeId": "rss-c19c06e426fe3bff",
+      "itemIds": [
+        "rss-c19c06e426fe3bff"
+      ],
+      "publisherGroups": [
+        "IT之家"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": false
+    },
+    {
+      "id": "rss-00dcf9de62050f60",
+      "representativeId": "rss-00dcf9de62050f60",
+      "itemIds": [
+        "rss-00dcf9de62050f60"
+      ],
+      "publisherGroups": [
+        "IT之家"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": false
+    },
     {
       "id": "rss-586e2805c1171423",
       "representativeId": "rss-586e2805c1171423",
@@ -2670,6 +3435,21 @@
         "initial"
       ],
       "selected": false
+    },
+    {
+      "id": "halo-official",
+      "representativeId": "halo-official",
+      "itemIds": [
+        "halo-official"
+      ],
+      "publisherGroups": [
+        "Apple HALO 研究团队",
+        "Apple HALO 项目主页"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
     },
     {
       "id": "aqara-matter-guide",
@@ -2926,6 +3706,48 @@
       "selected": false
     },
     {
+      "id": "xtool-safety",
+      "representativeId": "xtool-safety",
+      "itemIds": [
+        "xtool-safety"
+      ],
+      "publisherGroups": [
+        "xTool 官方支持"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "dreame-director",
+      "representativeId": "dreame-director",
+      "itemIds": [
+        "dreame-director"
+      ],
+      "publisherGroups": [
+        "追觅官方招聘"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "xtool-material-guide",
+      "representativeId": "xtool-material-guide",
+      "itemIds": [
+        "xtool-material-guide"
+      ],
+      "publisherGroups": [
+        "xTool 官方支持"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
       "id": "bambu-quality",
       "representativeId": "bambu-quality",
       "itemIds": [
@@ -2975,6 +3797,34 @@
       ],
       "publisherGroups": [
         "Bambu Lab 官方博客"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "ecovacs-plm",
+      "representativeId": "ecovacs-plm",
+      "itemIds": [
+        "ecovacs-plm"
+      ],
+      "publisherGroups": [
+        "科沃斯官方商城招聘"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "xtool-aftersale",
+      "representativeId": "xtool-aftersale",
+      "itemIds": [
+        "xtool-aftersale"
+      ],
+      "publisherGroups": [
+        "xTool 官方支持"
       ],
       "developmentIds": [
         "initial"
@@ -3655,6 +4505,400 @@
       "completedAt": "2026-11-07T00:46:39.991304+00:00",
       "reviewedCount": 5,
       "selectedCount": 3
+    },
+    {
+      "coverage": "6 个 RSS 中 5 个成功，CNX 返回 403；30 个候选有 12 个新读正文、10 个既有缓存和 8 个正文失败。本轮重点覆盖科沃斯、追觅、xTool，扫描两家公司官方岗位并核实域名归属。新增 8 篇中文整理；常青与旧日期资料不填充日报，新媒体线索保留待一手核验。",
+      "sourceChecks": [
+        {
+          "url": "https://mall.ecovacs.cn/job-detail-516.html",
+          "company": "科沃斯",
+          "stages": [
+            "需求与规划",
+            "制造与交付",
+            "渠道与销售",
+            "服务与生命周期",
+            "经营与组织"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "note": "读取可见正文，按条目限定实际阅读章节及适用范围；原文日期保留。",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://dreame.zhiye.com/jobs",
+          "company": "追觅",
+          "stages": [
+            "需求与规划",
+            "供应链与采购",
+            "渠道与销售",
+            "经营与组织"
+          ],
+          "purpose": "recruitment",
+          "state": "index",
+          "note": "官网已验证 ATS 归属；索引中 J58872 段落可读，当前页面正文为空。",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://support.xtool.com/article/1963",
+          "company": "xTool",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "note": "读取可见正文，按条目限定实际阅读章节及适用范围；原文日期保留。",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://support.xtool.com/article/2017",
+          "company": "xTool",
+          "stages": [
+            "质量与合规",
+            "制造与交付",
+            "服务与生命周期",
+            "经营与组织"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "note": "读取可见正文，按条目限定实际阅读章节及适用范围；原文日期保留。",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://uk.xtool.com/pages/aftersale-policies",
+          "company": "xTool",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期",
+            "经营与组织"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "note": "读取可见正文，按条目限定实际阅读章节及适用范围；原文日期保留。",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/636.htm",
+          "company": "宇树科技",
+          "stages": [
+            "需求与规划",
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "读取可见正文，按条目限定实际阅读章节及适用范围；原文日期保留。",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/629.htm",
+          "company": null,
+          "stages": [
+            "制造与交付",
+            "供应链与采购",
+            "经营与组织"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "读取可见正文，按条目限定实际阅读章节及适用范围；原文日期保留。",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://apple-aiml-research.github.io/ml-halo/",
+          "company": null,
+          "stages": [
+            "研发与系统",
+            "制造与交付"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "读取可见正文，按条目限定实际阅读章节及适用范围；原文日期保留。",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://www.ecovacs.com/cn",
+          "company": "科沃斯",
+          "stages": [
+            "渠道与销售",
+            "经营与组织"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "note": "核对官网导航指向官方商城与招聘域名，补齐可信域名记录。",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://www.dreame.tech/",
+          "company": "追觅",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "note": "读取会员服务介绍并在浏览器核实招聘链接；服务宣传不作为实际履约证明。",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://dreame.zhiye.com/jobs",
+          "company": "追觅",
+          "stages": [
+            "需求与规划",
+            "经营与组织"
+          ],
+          "purpose": "recruitment",
+          "state": "error",
+          "note": "直连未取得可用正文，已保留官方搜索索引的明确岗位片段。",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://dreame.zhiye.com/social/jobs",
+          "company": "追觅",
+          "stages": [
+            "需求与规划",
+            "经营与组织"
+          ],
+          "purpose": "recruitment",
+          "state": "error",
+          "note": "官网链接进入招聘系统后浏览器未呈现岗位正文，不解释为无岗位。",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://arxiv.org/abs/2611.06908",
+          "company": null,
+          "stages": [
+            "研发与系统"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "只读取摘要和提交历史，核对原始提交日期；未完整阅读论文。",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/767.htm",
+          "company": null,
+          "stages": [
+            "研发与系统"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "实际读取正文并做选题判断；参数发布、个案、愿景及未核实的一手结果不自动进入精选。",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/829.htm",
+          "company": null,
+          "stages": [
+            "研发与系统"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "实际读取正文并做选题判断；参数发布、个案、愿景及未核实的一手结果不自动进入精选。",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/812.htm",
+          "company": null,
+          "stages": [
+            "研发与系统"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "实际读取正文并做选题判断；参数发布、个案、愿景及未核实的一手结果不自动进入精选。",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/799.htm",
+          "company": null,
+          "stages": [
+            "研发与系统"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "实际读取正文并做选题判断；参数发布、个案、愿景及未核实的一手结果不自动进入精选。",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/793.htm",
+          "company": null,
+          "stages": [
+            "研发与系统"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "实际读取正文并做选题判断；参数发布、个案、愿景及未核实的一手结果不自动进入精选。",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/788.htm",
+          "company": null,
+          "stages": [
+            "研发与系统"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "实际读取正文并做选题判断；参数发布、个案、愿景及未核实的一手结果不自动进入精选。",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/768.htm",
+          "company": null,
+          "stages": [
+            "研发与系统"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "实际读取正文并做选题判断；参数发布、个案、愿景及未核实的一手结果不自动进入精选。",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/675.htm",
+          "company": null,
+          "stages": [
+            "研发与系统"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "实际读取正文并做选题判断；参数发布、个案、愿景及未核实的一手结果不自动进入精选。",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/665.htm",
+          "company": null,
+          "stages": [
+            "研发与系统"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "实际读取正文并做选题判断；参数发布、个案、愿景及未核实的一手结果不自动进入精选。",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/653.htm",
+          "company": null,
+          "stages": [
+            "研发与系统"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "实际读取正文并做选题判断；参数发布、个案、愿景及未核实的一手结果不自动进入精选。",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/06/520-mhz-stm32h7p4-stm32h7p5-arm-cortex-m7-mcus-feature-hardware-signal-processor-hsp-optional-neural-art-npu",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "error",
+          "note": "curl: (56) The requested URL returned error: 403",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/05/altera-agilex-27-fpga-soc-family-features-up-to-17-6m-logic-elements-cortex-a720-a-520-cores-256-gbps-serdes-pcie-7-0",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "error",
+          "note": "curl: (56) The requested URL returned error: 403",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://news.samsung.com/global/upgraded-sleep-apnea-feature-now-available-on-galaxy-ring-following-regulatory-approvals-from-us-fda-and-korea-mfds",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "error",
+          "note": "curl: (28) Operation timed out after 35006 milliseconds with 0 bytes received",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/03/when-will-this-stop-the-raspberry-pi-5-16gb-sbc-now-sells-for-385",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "error",
+          "note": "curl: (56) The requested URL returned error: 403",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/02/banana-pi-bpi-m8-an-allwinner-a733-sbc-inspired-by-the-raspberry-pi-5-with-pcie-ffc-connector-ufs-module-socket",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "error",
+          "note": "curl: (56) The requested URL returned error: 403",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/10/28/lilygo-t-display-k230-risc-v-ai-dev-kit-features-amoled-lora-and-an-optional-keyboard",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "error",
+          "note": "curl: (56) The requested URL returned error: 403",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/10/27/rockchip-rk3576-powered-smarc-2-2-system-on-module-and-development-board-target-edge-ai-applications",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "error",
+          "note": "curl: (56) The requested URL returned error: 403",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/10/26/renesas-rx74m-and-rx74n-600mhz-industrial-mcus-with-rxv3e-core-embedded-mram-22nm-process",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "error",
+          "note": "curl: (56) The requested URL returned error: 403",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00"
+        }
+      ],
+      "knownGaps": [
+        "追觅岗位仅索引可见，其他部分列表段落存在错位，未据此汇总职位总数。",
+        "科沃斯职位未给出日期和地点，不证明当前在招。",
+        "CNX RSS 及部分来源正文访问失败；旧缓存没有冒充今天重读。",
+        "知识节点只更新证据支持字段，未覆盖部分保留待核验。"
+      ],
+      "failedSources": [
+        "CNX RSS：403，保留历史发现。",
+        "直连未取得可用正文，已保留官方搜索索引的明确岗位片段。",
+        "官网链接进入招聘系统后浏览器未呈现岗位正文，不解释为无岗位。",
+        "curl: (56) The requested URL returned error: 403",
+        "curl: (28) Operation timed out after 35006 milliseconds with 0 bytes received"
+      ],
+      "coverageCheck": {
+        "passed": true,
+        "companies": [
+          "xTool",
+          "宇树科技",
+          "科沃斯",
+          "追觅"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "科沃斯",
+          "追觅"
+        ],
+        "gaps": [],
+        "usableSources": 21
+      },
+      "successfulScan": true,
+      "completedAt": "2026-11-08T00:49:30.940621+00:00",
+      "reviewedCount": 8,
+      "selectedCount": 6
     }
   ]
 }

@@ -96,12 +96,21 @@
       ],
       "domains": [
         "dreame.tech",
-        "dreametech.com"
+        "dreametech.com",
+        "dreame.zhiye.com"
       ],
       "stages": [
         "研发与系统",
         "供应链与采购",
         "经营与组织"
+      ],
+      "domainEvidence": [
+        {
+          "domain": "dreame.zhiye.com",
+          "sourceUrl": "https://www.dreame.tech/",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00",
+          "note": "官网页脚社会招聘链接为 https://dreame.zhiye.com/social/jobs。"
+        }
       ]
     },
     {
@@ -114,12 +123,21 @@
       ],
       "domains": [
         "ecovacs.com",
-        "tineco.com"
+        "tineco.com",
+        "ecovacs.cn"
       ],
       "stages": [
         "制造与交付",
         "渠道与销售",
         "服务与生命周期"
+      ],
+      "domainEvidence": [
+        {
+          "domain": "ecovacs.cn",
+          "sourceUrl": "https://www.ecovacs.com/cn",
+          "checkedAt": "2026-11-08T00:49:19.903614+00:00",
+          "note": "官网链接到 mall.ecovacs.cn 商城和 hr.ecovacs.cn 招聘。"
+        }
       ]
     },
     {
