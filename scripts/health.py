@@ -23,6 +23,10 @@ def report(data=DATA,clock=None):
   from knowledge import plan
   knowledge=plan(data,clock)
   parts['knowledge']={'today':knowledge['dailyChecked'],'pendingCandidates':len(knowledge['pendingCandidates']),'overdueNodes':knowledge['overdueCount'],'failedNodes':knowledge['failedNodes'],'invalidReferences':knowledge['invalidReferences']}
+ education=None
+ if config.get('education'):
+  from education import plan as education_plan
+  education=education_plan(data,clock);parts['education']=education
  missing=[name for name,p in parts.items() if not p['today']]
  warnings=[]
  if missing:warnings.append('今日尚未完成：'+'、'.join(missing))
@@ -31,8 +35,9 @@ def report(data=DATA,clock=None):
  if latest.get('failedSources'):warnings.append(f"正文查阅存在 {len(latest['failedSources'])} 条失败记录，未据此判断行业无新闻。")
  if knowledge and knowledge['needsKnowledge']:warnings.append('知识维护待处理：新实践 '+str(len(knowledge['pendingCandidates']))+' 条，逾期节点 '+str(knowledge['overdueCount'])+' 个。')
  if knowledge and knowledge['invalidReferences']:warnings.append('部分知识依据已撤回或不再满足入选条件，需重新核验。')
+ if education and education['needsEducation']:warnings.append('学习硬件待补齐：逾期档案 '+str(len(education['overdueProfiles']))+' 个，未覆盖品类 '+str(len(education['uncoveredCategories']))+' 个'+('，核心竞品招聘复核已到期。' if education['needsRecruitment'] else '。'))
  state='pending' if missing and local.hour<config['dueHour'] else 'overdue' if missing else 'partial' if warnings else 'current'
- return dict(schemaVersion=1,checkedAt=clock.isoformat(),date=today,state=state,needsEditorial=not(scanned and covered and parts['recruitment']['today'] and parts['daily']['today']),needsKnowledge=knowledge['needsKnowledge'] if knowledge else False,parts=parts,warnings=warnings,build={'runUrl':('https://github.com/'+os.environ['GITHUB_REPOSITORY']+'/actions/runs/'+os.environ['GITHUB_RUN_ID']) if os.getenv('GITHUB_RUN_ID') else None,'trigger':os.getenv('GITHUB_EVENT_NAME','local')})
+ return dict(schemaVersion=1,checkedAt=clock.isoformat(),date=today,state=state,needsEditorial=not(scanned and covered and parts['recruitment']['today'] and parts['daily']['today']),needsEducation=education['needsEducation'] if education else False,needsKnowledge=knowledge['needsKnowledge'] if knowledge else False,parts=parts,warnings=warnings,build={'runUrl':('https://github.com/'+os.environ['GITHUB_REPOSITORY']+'/actions/runs/'+os.environ['GITHUB_RUN_ID']) if os.getenv('GITHUB_RUN_ID') else None,'trigger':os.getenv('GITHUB_EVENT_NAME','local')})
 
 if __name__=='__main__':
  value=report();print(json.dumps(value,ensure_ascii=False,indent=2))

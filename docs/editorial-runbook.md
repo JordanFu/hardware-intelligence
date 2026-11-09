@@ -21,7 +21,8 @@
 9. 岗位研究每轮检查至少两家公司的官方岗位，轮换覆盖行业目录。优先追踪已有岗位，再补充供应链、制造、质量、渠道、服务、经营岗位，避免只看算法。公开职位以公司+岗位 ID 去重；缺少 ID 时按公司+原始职位名+地点。记录实际看到的职责、要求、接口及源页面日期；初见不是新增岗位，广告数不是人数。职责整理要保持旧口径，只有原文实质改变才改字段，避免改写摘要制造差分。异地重复发布保留来源而不推断多个编制。未取得完整列表不得 complete:true；明确关闭必须有正文证据。旧版/无日期页面只作职责参考。
 10. 生成 bundle 并运行下面的发布命令。每日最多 8 个事件，同发布方最多 2 个；近 7 期同一进展排除，后续普通窗口为 72 小时。首期可回补 14 天并注明。历史实践不填充日报。同日重复执行保持覆盖已达标的日报不变；覆盖不足或 incomplete 的当天记录可在补跑通过后更新，程序在 revisions 保留旧版、修订时间和原因；若发现错误，明确记录修订原因后修正原始记录和该期条目，禁止静默改历史。
 11. 按 [知识维护规则](knowledge-runbook.md) 执行知识候选处理和轮换复核，更新全链路知识与行业地图；运行 `python3 scripts/knowledge.py prepare/publish/validate` 对应步骤。每天至少 3 个节点覆盖两页，7 天覆盖全目录；无实质变化只记录复核。然后执行测试与构建，检查实际内容和公开文件差异。只提交 `site/data/*.json` 及必要的已授权维护文件；不得提交 work/、完整原文、私人路径或凭据。`git add` 明确列文件，不使用全盘 add。无内容变化时记录 no-op，不强行造新闻。
-12. 提交并推送 main；若云端采集先产生提交，在本次改动已提交且工作树干净的前提下 rebase origin/main，保留云端 radar 与本次整理数据。冲突按证据处理，不覆盖用户编辑。通过 `gh run list/view` 等待对应 Pages 发布结果；访问线上 `data/intelligence.json`、`data/daily.json`、`data/recruitment.json` 、`data/health.json`、`data/knowledge.json` 与知识页面验证。提交成功、流水线成功与线上更新分别记录。
+12. 按 [学习硬件研究规则](education-runbook.md) 运行 education prepare/publish/validate，维护五品类竞品、原文 brief 和职责观察。晚间同时检查 health.needsEducation；核心公司当日覆盖不足、品类未覆盖或档案逾期不能结束为健康检查。
+13. 提交并推送 main；若云端采集先产生提交，在本次改动已提交且工作树干净的前提下 rebase origin/main，保留云端 radar 与本次整理数据。冲突按证据处理，不覆盖用户编辑。通过 `gh run list/view` 等待对应 Pages 发布结果；访问线上 `data/intelligence.json`、`data/daily.json`、`data/recruitment.json` 、`data/health.json`、`data/knowledge.json` 、`data/education.json` 与学习硬件、知识页面验证。提交成功、流水线成功与线上更新分别记录。
 
 ## 工作数据契约
 

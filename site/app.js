@@ -1,3 +1,4 @@
+import { educationMatches } from './education.js';
 const $ = (s, root = document) => root.querySelector(s);
 const esc = (value) =>
   String(value ?? "").replace(
@@ -44,6 +45,7 @@ let db,
 const navs = [
   ["daily", "每日时间线", "▤"],
   ["briefing", "中文精选", "◫"],
+  ["education", "学习硬件", "▧"],
   ["valuechain", "全链路知识", "↔"],
   ["practices", "实践观察", "◈"],
   ["recruitment", "岗位与人才", "⌕"],
@@ -56,6 +58,7 @@ const navs = [
 ];
 const categories = [
   "全部",
+  "学习硬件",
   "可穿戴与眼镜",
   "机器人与无人机",
   "智能家居",
@@ -77,10 +80,36 @@ function editorialFreshness() {
  const state=done?(run.failedSources?.length?'今日已扫描 · 部分来源不可读':'今日扫描已完成'):'今日更新尚未完成';
  return `<div class="notice ${!done||old||run.failedSources?.length?'warning':''}"><strong>${esc(state)}</strong><p>最近中文整理 ${esc(date(t,true))} · 日报 ${hasDaily?'已有今日记录':'尚无今日记录'} · 岗位 ${jobsToday?'今日已检查':'待检查'}</p><p>每日 ${esc(op.editorialTime)} 更新，${esc(op.recoveryTime)} 检查并补跑；${esc(op.runtimeNote)} ${old?'当前资料已超过 36 小时。':''}</p><a href="#sources">查看实际来源、覆盖与失败记录 ↗</a></div>`;
 }
+document.addEventListener('click', e=>{
+ const categoryButton=e.target.closest('[data-education-category]');
+ if(categoryButton){location.hash='education/'+categoryButton.dataset.educationCategory+'/'+encodeURIComponent(educationCompany);}
+ const profileButton=e.target.closest('[data-education-profile]');if(profileButton){const p=db.education.profiles.find(p=>p.id===profileButton.dataset.educationProfile);if(p)location.hash='education/'+p.categoryIds[0]+'/'+encodeURIComponent(p.company);}
+ const scroll=e.target.closest('[data-education-scroll]');if(scroll){e.preventDefault();document.getElementById(scroll.dataset.educationScroll)?.scrollIntoView({behavior:'smooth',block:'start'});}
+});
+let educationCategory='all',educationCompany='all';
+const eduDimensions={product:'产品与场景',content:'内容与服务',channel:'渠道与权益',delivery:'供应链、质量与交付',organization:'组织与岗位'};
+function education() {
+ const d=db.education,cat=d.categories.find(c=>c.id===educationCategory),profiles=d.profiles.filter(p=>(!cat||p.categoryIds.includes(cat.id))&&(educationCompany==='all'||p.company===educationCompany));
+ const scoped=n=>educationMatches(n,educationCategory,educationCompany,d.profiles);
+ const items=db.intelligence.items.filter(n=>n.selected&&scoped(n)).sort((a,b)=>(b.publishedAt||b.generatedAt).localeCompare(a.publishedAt||a.generatedAt));
+ const jobs=db.recruitment.jobs.filter(scoped),health=db.health.parts.education||{},recent=d.runs.at(-1),updated=profiles.map(p=>p.updatedAt).filter(Boolean).sort().at(-1);
+ return head('LEARNING HARDWARE','学习硬件 · 从竞品看完整业务。','围绕五个品类，连接产品、内容、渠道、交付与组织。国内核心看作业帮、科大讯飞、猿辅导；小天才、华为及海外案例提供相邻场景参照。')+
+ `<p class="small">最近扫描 ${recent?esc(date(recent.completedAt,true)):'待执行'} · ${health.needsEducation?'存在待补跑或逾期复核任务':'本轮覆盖检查通过'} · 档案中的未知项仍需继续研究</p><div class="education-tabs" role="group" aria-label="学习硬件品类">${[{id:'all',name:'全部品类'},...d.categories].map(c=>`<button class="${educationCategory===c.id?'active':''}" data-education-category="${c.id}" aria-pressed="${educationCategory===c.id}">${esc(c.name)}</button>`).join('')}</div>
+ <div class="toolbar"><label>观察公司 <select id="education-company"><option value="all">全部公司</option>${[...new Set(d.profiles.map(p=>p.company))].map(c=>`<option ${c===educationCompany?'selected':''}>${esc(c)}</option>`).join('')}</select></label><span class="small">${profiles.length} 份品类档案 · 内容更新 ${updated?esc(date(updated)):'暂无'}</span></div>
+ ${cat?`<section class="education-focus"><span class="eyebrow">${esc(cat.name)} / 观察方法</span><h2>${esc(cat.flow)}</h2><p>${esc(cat.scope)}</p><div class="grid-2"><div><h3>带着这三个问题看竞品</h3><ul>${cat.questions.map(q=>`<li>${esc(q)}</li>`).join('')}</ul></div><div><h3>怎样判断实际价值</h3><p>${esc(cat.metrics)}</p><p class="small">本站研究问题与指标建议，尚不是行业标准。</p></div></div></section>`:`<div class="education-lanes">${d.categories.map(c=>`<button data-education-category="${c.id}"><strong>${esc(c.name)}</strong><span>${esc(c.flow)}</span></button>`).join('')}</div>`}
+ ${educationCategory==='recorder'||educationCategory==='all'?`<aside class="notice"><strong>对照参考：${esc(d.reference.name)}</strong><p>${esc(d.reference.status)}。${esc(d.reference.boundary)}</p><p class="small">比较顺序：采集与拾音 → 转写 → 有原文依据的整理 → 检索、导出与后续使用；同时核对费用、配额、权限和数据迁移。</p></aside>`:''}
+ <div class="section-head"><h2>竞品档案</h2><span class="small">公开披露与研究问题分开 · 按品类阅读</span></div>
+ <div class="grid-2">${profiles.map(p=>`<article class="org-card education-profile" id="edu-${esc(p.id)}"><div class="meta"><span class="tag">${esc(p.tier)}</span><span>${p.categoryIds.map(id=>esc(d.categories.find(c=>c.id===id).name)).join(' / ')}</span></div><h2>${esc(p.company)}</h2><p class="education-brief">${esc(p.brief.lead)}</p><h3>本文核心内容</h3><ul>${p.brief.points.map(t=>`<li>${esc(t)}</li>`).join('')}</ul><details><summary>沿产销研看业务与团队</summary><dl>${Object.entries(eduDimensions).map(([key,label])=>`<dt>${label}</dt><dd>${esc(p.dimensions[key])}</dd>`).join('')}</dl><p class="small">团队问题是待验证的研究方向，不代表这些公司已经采用相应组织设计。</p></details><details><summary>原始依据与证据边界</summary>${p.facts.map(f=>`<p class="small">公开披露：${esc(f.claim)} · ${esc(f.locator)}</p>`).join('')}${p.sources.map(s=>`<p>${link(s.url,s.title)}<br><span class="small">${s.role==='developer'?'开发者自述':'官方披露'} · 原文 ${esc(s.publishedAt||'未标日期')} · 查阅 ${esc(date(s.readAt,true))} · ${s.coverage==='excerpt'?'正文片段':'正文'}</span></p>`).join('')}<p>${esc(p.boundary)}</p>${p.gaps.map(g=>`<p class="small">待核验：${esc(g)}</p>`).join('')}</details><p class="small education-dates">内容更新 ${esc(date(p.updatedAt))} · 资料复核 ${esc(date(p.reviewedAt))}${p.lastReviewStatus==='error'?' · 最近复核受阻，保留历史':''}</p></article>`).join('')||empty('该组合尚无已核验档案','请选择其他公司或品类；没有档案不代表该公司没有相关业务。')}</div>
+ <section class="education-comparison"><div class="section-head"><h2>横向比较：已知与待核验</h2><span class="small">不做无证据排名</span></div><div class="table-scroll"><table><thead><tr><th>公司 / 品类</th>${Object.values(eduDimensions).map(x=>`<th>${x}</th>`).join('')}</tr></thead><tbody>${profiles.map(p=>`<tr><th scope="row"><a href="#edu-${esc(p.id)}" data-education-scroll="edu-${esc(p.id)}">${esc(p.company)}</a><br><span class="small">${p.categoryIds.map(id=>esc(d.categories.find(c=>c.id===id).name)).join(' / ')}</span></th>${Object.keys(eduDimensions).map(k=>`<td>${esc(p.dimensions[k])}</td>`).join('')}</tr>`).join('')}</tbody></table></div></section>
+ <div class="section-head"><h2>后续动态与中文 brief</h2><a href="#daily">全站每日时间线 ↗</a></div><p class="small">这里自动汇入通过既有筛选的相关事件；按原文日期阅读。上方首次建档和旧资料复核不冒充今日新闻。</p><div class="news-list">${items.length?items.map(newsRow).join(''):empty('尚无符合当前条件的新事件','本期先提供有来源的竞品基线，后续每日扫描持续补充。')}</div>
+ <div class="section-head"><h2>团队与岗位线索</h2><a href="#recruitment">完整岗位观察 ↗</a></div>${jobs.length?jobs.map(j=>`<article class="timeline-job"><span class="tag">${esc(j.company)}</span><button class="title-button" data-detail="${esc(j.id)}">${esc(j.title)}</button><p>${esc(j.responsibilities.join('；'))}</p></article>`).join(''):empty('尚未取得这些业务的可用岗位职责正文','不把公司其他业务的招聘混入本品类；后续追踪教研、内容、算法、硬件、供应链、渠道和服务职责。广告数不能等同于人数或缺口。')}
+ <details class="method"><summary>更新记录、来源失败与下一轮任务</summary><p>每日 ${esc(db.operations.editorialTime)} 轮换扫描至少两家核心竞品；${esc(db.operations.recoveryTime)} 检查并补跑。7 天复核五个品类与全部档案，海外资料每周复核。运行依赖本机 Codex 与网络可用。</p><p>今日核心覆盖：${esc((health.coreCompaniesChecked||[]).join('、')||'待检查')}。${health.needsEducation?'仍有学习硬件维护任务待处理。':'当前学习硬件维护检查已通过。'} 内容不变只记录复核，失败不推进有效复核时间。</p><p class="small">核心竞品岗位正文：本周 ${esc((health.recruitmentCompaniesChecked||[]).join('、')||'尚待补充')}；首轮期限 ${esc(date(health.firstRecruitmentDueAt))}。招聘缺口不影响阅读现有产品档案，但到期后会触发补跑。</p>${d.runs.slice(-7).reverse().map(r=>`<article class="knowledge-revision"><h3>${esc(date(r.completedAt,true))}</h3><p>${esc(r.summary)}</p><details><summary>逐来源查阅状态</summary>${r.checks.map(c=>`<p class="small">${esc(c.company)} · ${esc(c.state)} · ${esc(date(c.checkedAt,true))} ${link(c.url,c.name)}<br>${esc(c.note)}</p>`).join('')}</details></article>`).join('')}<details><summary>档案修订依据与前后内容</summary>${d.history.slice(-30).reverse().map(h=>`<div class="knowledge-revision"><strong>${esc(d.profiles.find(p=>p.id===h.profileId)?.company||h.profileId)} · ${esc(date(h.reviewedAt,true))}</strong><p>${esc(h.assessment)}</p><p class="small">${Object.keys(h.changes).length?'实质修改：'+Object.keys(h.changes).map(k=>esc(eduDimensions[k]||({brief:'核心摘要',dimensions:'业务维度',facts:'事实',sources:'来源',boundary:'边界',gaps:'未知项',categoryIds:'品类'}[k]||k))).join('、'):'复核未改变内容'}</p></div>`).join('')}<p>${link('https://jordanfu.github.io/hardware-intelligence/data/education.json','完整修改前后记录')}</p></details></details>`;
+}
+
 function briefing() {
   const items=selectedEvents().filter(inScope).sort((a,b)=>(b.publishedAt||'').localeCompare(a.publishedAt||''));
   const lead=items[0];
-  return head('THE HARDWARE BRIEF','读懂产销研，也读懂组织。','从需求到研发、制造、销售与服务，读中文核心摘要，沿证据追踪真实变化。')+editorialFreshness()+`<div class="overview-links"><a href="#daily"><strong>每日时间线</strong><span>按天回看，最新更新在前 ↗</span></a><a href="#valuechain"><strong>全链路知识</strong><span>8 个环节，基础到实践 ↗</span></a><a href="#recruitment"><strong>岗位与人才</strong><span>职责、接口与变化线索 ↗</span></a></div>`+chainFilter()+(lead?`<article class="lead-card"><div class="lead-meta">本期阅读 · ${esc(lead.stages.join(' / '))}</div><h2>${esc(lead.title)}</h2><p>${esc(lead.brief.lead)}</p><div class="lead-bottom"><span>${esc(date(lead.publishedAt))} · ${esc(lead.sources[0].name)}</span><button class="primary" data-detail="${lead.id}">核心内容与证据 ↗</button></div></article>`:'')+`<div class="section-head"><h2>中文精选 · ${items.length} 个事件</h2><a href="#radar">全部动态 ↗</a></div><div class="news-list">${items.length?items.map(newsRow).join(''):empty('当前筛选无精选','调整环节，或查看知识地图。')}</div><details class="method"><summary>初始研究资料 · 按原始日期阅读</summary>${db.curated.items.map(newsRow).join('')}</details>`;
+  return head('THE HARDWARE BRIEF','读懂产销研，也读懂组织。','从需求到研发、制造、销售与服务，读中文核心摘要，沿证据追踪真实变化。')+editorialFreshness()+`<div class="overview-links"><a href="#education"><strong>学习硬件</strong><span>五个品类，沿完整业务看竞品 ↗</span></a><a href="#daily"><strong>每日时间线</strong><span>按天回看，最新更新在前 ↗</span></a><a href="#valuechain"><strong>全链路知识</strong><span>8 个环节，基础到实践 ↗</span></a><a href="#recruitment"><strong>岗位与人才</strong><span>职责、接口与变化线索 ↗</span></a></div>`+chainFilter()+(lead?`<article class="lead-card"><div class="lead-meta">本期阅读 · ${esc(lead.stages.join(' / '))}</div><h2>${esc(lead.title)}</h2><p>${esc(lead.brief.lead)}</p><div class="lead-bottom"><span>${esc(date(lead.publishedAt))} · ${esc(lead.sources[0].name)}</span><button class="primary" data-detail="${lead.id}">核心内容与证据 ↗</button></div></article>`:'')+`<div class="section-head"><h2>中文精选 · ${items.length} 个事件</h2><a href="#radar">全部动态 ↗</a></div><div class="news-list">${items.length?items.map(newsRow).join(''):empty('当前筛选无精选','调整环节，或查看知识地图。')}</div><details class="method"><summary>初始研究资料 · 按原始日期阅读</summary>${db.curated.items.map(newsRow).join('')}</details>`;
 }
 let timelineLimit = 7;
 function daily() {
@@ -94,12 +123,14 @@ function daily() {
     `<div class="daily-timeline">${visible.map(d=>{
       const briefs=db.intelligence.items.filter(n=>n.generatedAt&&day(n.generatedAt)===d.date&&!d.itemIds.includes(n.id)).sort((a,b)=>Number(b.selected)-Number(a.selected));
       const changes=db.recruitment.changes.filter(c=>day(c.observedAt)===d.date);
+      const educationChanges=db.education.history.filter(h=>day(h.reviewedAt)===d.date&&Object.keys(h.changes).length);
       const knowledgeChanges=db.knowledge.history.filter(h=>day(h.reviewedAt)===d.date&&(Object.keys(h.changes).length||h.lessonChanges.length));
       const weekday=new Intl.DateTimeFormat('zh-CN',{weekday:'long',timeZone:'Asia/Shanghai'}).format(new Date(d.date+'T12:00:00+08:00'));
       return `<section class="timeline-day" aria-labelledby="day-${d.date}"><div class="timeline-date"><span>${d.date.slice(0,4)} / ${weekday}</span><h2 id="day-${d.date}"><a href="#daily/${d.date}"><time datetime="${d.date}">${d.date.slice(5).replace('-','.')}</time></a></h2>${d.date===today?'<span class="tag">今天</span>':''}<span class="small">站点更新日期</span></div><div class="timeline-body"><div class="timeline-day-head"><span class="tag ${d.state==='partial'||d.state==='incomplete'?'timeline-caution':''}">${esc(states[d.state]||d.state)}</span><span class="small">${d.itemIds.length} 条日报精选 · ${briefs.length} 篇补充整理 · ${changes.length} 条岗位观察${knowledgeChanges.length?` · ${knowledgeChanges.length} 条知识修订`:""}</span></div><h3 class="timeline-label">当天阅读清单</h3><p class="small">${esc(d.windowNote)}</p><div class="news-list">${d.itemIds.length?d.itemIds.map(itemById).filter(Boolean).map(newsRow).join(''):empty('本期没有新增入选事件','保留当天的扫描结果，不用旧新闻补足条数。请查看本日覆盖说明。')}</div>
       ${briefs.length?`<details class="timeline-extra"><summary>本日补充整理 <span>${briefs.length} 篇 · 知识、实践与组织线索</span></summary><p class="small">按中文整理日期归档，可能包含旧文、常青知识及未入选精选的资料。原文时间另列。</p>${briefs.map((n,i)=>`<div class="timeline-reading"><span class="small">${n.selected?'通过精选门槛':'补充资料 · 未入选精选'}${n.practices?.length?' · 含实践观察':''}${n.organization?.length?' · 含组织线索':''}</span>${newsRow(n,i)}</div>`).join('')}</details>`:''}
       ${changes.length?`<details class="timeline-extra"><summary>岗位观察 <span>${changes.length} 条 · 收录与版本记录</span></summary><p class="small">首次收录不代表新设岗位；可见性变化不代表增编、裁撤或招满。详情保留职责版本与证据边界。</p>${changes.map(c=>{const j=itemById(c.jobId);if(!j)return '';const v=[...j.versions].reverse().find(v=>v.observedAt<=c.observedAt)||j;return `<article class="timeline-job"><div class="meta"><span class="tag">${esc(c.kind)}</span><span>${esc(j.company)}</span></div><button class="title-button" data-detail="${esc(j.id)}">${esc(v.title)}</button><p>${esc(v.responsibilities.join('；'))}</p><button class="text-link" data-detail="${esc(j.id)}">职责版本与来源 ↗</button></article>`}).join('')}</details>`:''}
       ${knowledgeChanges.length?`<details class="timeline-extra"><summary>知识与行业地图更新 <span>${knowledgeChanges.length} 条 · 查看沉淀与修订</span></summary>${knowledgeChanges.map(h=>{const n=[...db.valuechain.items,...db.landscape].find(n=>n.id===h.nodeId);return `<p><a class="text-link" href="#${h.nodeId.startsWith('chain')?'valuechain':'landscape'}">${esc(n?.name||h.nodeId)} ↗</a> · ${Object.keys(h.changes).length} 项字段修订 · ${h.lessonChanges.length} 条知识补充</p>`}).join('')}<p class="small">按实际修改时间记录；仅复核、内容未变的轮次不计为知识更新。</p></details>`:''}
+      ${educationChanges.length?`<details class="timeline-extra"><summary>学习硬件研究更新 <span>${educationChanges.length} 份档案 · 实际整理时间</span></summary><p class="small">新增资料基线或档案修订，可能引用历史材料，不计作当天新品新闻。</p>${educationChanges.map(h=>{const p=db.education.profiles.find(p=>p.id===h.profileId);return p?`<p><a href="#education/${p.categoryIds[0]}/${encodeURIComponent(p.company)}">${esc(p.company)} · ${p.categoryIds.map(id=>esc(db.education.categories.find(c=>c.id===id).name)).join(' / ')} ↗</a></p>`:''}).join('')}</details>`:''}
       <details class="timeline-extra timeline-evidence"><summary>本日覆盖与证据边界 <span>${d.failedSources.length?'存在读取失败':'查看检查范围'}</span></summary><p>${esc(d.coverage)}</p><p class="small">正文整理 ${d.reviewedCount} 条 · 日报生成于 ${esc(date(d.generatedAt,true))}</p>${[...d.failedSources,...d.knownGaps].map(x=>`<p class="small">${esc(x)}</p>`).join('')}${d.revisions?.length?`<p class="small">覆盖不足后已补跑，保留 ${d.revisions.length} 份原版。${link('https://jordanfu.github.io/hardware-intelligence/data/daily.json','查看修订记录')}</p>`:''}</details></div></section>`;
     }).join('')}</div>${!visible.length?empty('该日期尚无日报记录','可以返回完整时间线查看已有内容。','<a class="secondary" href="#daily">返回完整时间线</a>'):''}${!editionDate&&editions.length>timelineLimit?'<button class="secondary load-more" data-timeline-more>继续查看更早 7 天 ↓</button>':''}`;
 }
@@ -119,7 +150,7 @@ function knowledgePanel(id) {
  return `<div class="knowledge-note"><div class="meta"><span class="tag">${esc(state)}</span></div><p class="small">内容更新：${n.updatedAt?esc(date(n.updatedAt,true)):'尚无修订'}<br>最近复核：${n.reviewedAt?esc(date(n.reviewedAt,true)):'尚无有效复核'} · 复核期限：${esc(date(due))}</p>${n.lessons.map(l=>`<article class="knowledge-lesson"><h3>${esc(l.title)}</h3><p>${esc(l.learning)}</p><p><strong>怎样使用：</strong>${esc(l.application)}</p><p class="small">${esc(l.boundary)}</p><div class="knowledge-links">${l.itemIds.map(i=>{const a=itemById(i);return a?`<button class="text-link" data-detail="${esc(i)}">依据：${esc(a.title)} ↗</button>${a.sources.map(x=>link(x.url,x.name)).join(' · ')}`:''}).join('')}</div></article>`).join('')}<details class="knowledge-review"><summary>复核依据与修改记录</summary><p>${esc(n.assessment)}</p><p class="small">已检查：${n.reviewedFields.map(f=>esc(knowledgeFields[f])).join('、')||'尚未完成'}。未覆盖字段仍按原始框架阅读。</p>${(n.sourceChecks||[]).map(c=>`<p class="small">依据查阅 ${esc(date(c.checkedAt,true))} · ${esc({body:'正文',index:'索引片段',cached:'本地缓存',error:'访问失败'}[c.state])} · ${esc(c.note)}</p>`).join('')}${n.gaps.map(g=>`<p class="small">待核验：${esc(g)}</p>`).join('')}${n.evidence.map(e=>`<p class="small">${esc(e.title)} · ${esc(e.boundary)} ${e.sources.map(x=>link(x.url,x.name)+'（原文 '+esc(x.publishedAt?date(x.publishedAt):'未标日期')+'）').join(' / ')}</p>`).join('')}${history.map(h=>`<div class="knowledge-revision"><p class="small">${esc(date(h.reviewedAt,true))}</p>${Object.entries(h.changes).map(([f,c])=>`<p><strong>${esc(knowledgeFields[f])}</strong><br>原：${esc(c.before)}<br>现：${esc(c.after)}</p>`).join('')}${h.lessonChanges.length?`<p class="small">沉淀 / 修订 ${h.lessonChanges.length} 条知识补充。</p>`:''}</div>`).join('')}</details></div>`;
 }
 function valuechain() {
-  return head('THE COMPLETE VALUE CHAIN','把产、销、研放在同一张图上。','每个环节都回答：输入是什么，向谁交付，如何判断完成。问题和反馈也会沿链路返回。')+knowledgeOverview(db.valuechain.items.map(n=>n.id))+`<div class="notice">${esc(db.valuechain.note)}</div><div class="chain-map">${db.valuechain.items.map((s,i)=>`<a href="#stage-${i+1}" data-stage-scroll="stage-${i+1}"><span>0${i+1}</span>${esc(s.name)}</a>`).join('')}</div><div class="grid-2">${db.valuechain.items.map((s,i)=>{const n=db.intelligence.items.filter(x=>x.selected).flatMap(x=>x.practices||[]).filter(p=>p.stages.includes(s.name)).length;return `<article class="map-card" id="stage-${i+1}"><span class="index">0${i+1} / ${esc(s.name)}</span><h2>${esc(s.title)}</h2><p class="chain">${esc(s.flow)}</p><h3>先理解</h3><p>${esc(s.basics)}</p><h3>团队接口</h3><p>${esc(s.team)}</p><h3>指标与常见误读</h3><p>${esc(s.metrics)}</p><p class="small">避免：${esc(s.pitfall)}</p><details><summary>用一个小任务学会</summary><p>${esc(s.exercise)}</p></details><div class="toolbar"><button class="secondary" data-detail="${s.referenceId}">看一个有来源的案例 ↗</button><button class="text-link" data-practice-stage="${esc(s.name)}">${n} 条实践线索 ↗</button></div>${knowledgePanel(s.id)}</article>`}).join('')}</div>`;
+  return '<div class="notice"><a href="#education">学习硬件专题 ↗</a> · 用学习机、手表、阅读器、词典笔和录音设备，观察这条链路中的具体问题。</div>'+head('THE COMPLETE VALUE CHAIN','把产、销、研放在同一张图上。','每个环节都回答：输入是什么，向谁交付，如何判断完成。问题和反馈也会沿链路返回。')+knowledgeOverview(db.valuechain.items.map(n=>n.id))+`<div class="notice">${esc(db.valuechain.note)}</div><div class="chain-map">${db.valuechain.items.map((s,i)=>`<a href="#stage-${i+1}" data-stage-scroll="stage-${i+1}"><span>0${i+1}</span>${esc(s.name)}</a>`).join('')}</div><div class="grid-2">${db.valuechain.items.map((s,i)=>{const n=db.intelligence.items.filter(x=>x.selected).flatMap(x=>x.practices||[]).filter(p=>p.stages.includes(s.name)).length;return `<article class="map-card" id="stage-${i+1}"><span class="index">0${i+1} / ${esc(s.name)}</span><h2>${esc(s.title)}</h2><p class="chain">${esc(s.flow)}</p><h3>先理解</h3><p>${esc(s.basics)}</p><h3>团队接口</h3><p>${esc(s.team)}</p><h3>指标与常见误读</h3><p>${esc(s.metrics)}</p><p class="small">避免：${esc(s.pitfall)}</p><details><summary>用一个小任务学会</summary><p>${esc(s.exercise)}</p></details><div class="toolbar"><button class="secondary" data-detail="${s.referenceId}">看一个有来源的案例 ↗</button><button class="text-link" data-practice-stage="${esc(s.name)}">${n} 条实践线索 ↗</button></div>${knowledgePanel(s.id)}</article>`}).join('')}</div>`;
 }
 function practiceCards(items) {return items.flatMap(n=>(n.practices||[]).filter(p=>chainStage==='全部'||p.stages.includes(chainStage)).map(p=>`<article class="org-card"><div class="meta"><span class="tag">${esc(p.evidenceLevel)}</span><time>${esc(n.publishedAt?date(n.publishedAt):'原文未标日期')}</time></div><h2>${esc(p.title)}</h2><p>${esc(p.method)}</p><h3>适用条件</h3><p>${esc(p.conditions)}</p><h3>结果证据</h3><p>${esc(p.outcome)}</p><p class="small">${esc(p.boundary)}</p><h3>下一步核验</h3><p>${esc(p.nextCheck)}</p><button class="secondary" data-detail="${n.id}">原文事实与来源 ↗</button></article>`)).join('');}
 function practices() {
@@ -330,6 +361,7 @@ function search() {
   ];
   const terms = aliases.find((group) => group.includes(q)) || [q];
   const sets = [
+    ["学习硬件", db.education.profiles.map(p=>({...p,title:p.company+' · '+p.categoryIds.map(id=>db.education.categories.find(c=>c.id===id).name).join(' / '),summary:p.brief.lead}))],
     ["中文整理", db.intelligence.items],
     ["岗位与人才", db.recruitment.jobs],
     ["全链路知识", db.valuechain.items],
@@ -361,7 +393,7 @@ function search() {
             .slice(0, 100)
             .map(
               ({ type, item }) =>
-                `<button class="search-result" data-detail="${item.id}"><div class="result-type">${esc(type)}</div><strong>${esc(item.title || item.name)}</strong><p>${esc(item.summary || item.subtitle || item.constraint || item.source || "")}</p></button>`,
+                `<button class="search-result" ${type==='学习硬件'?`data-education-profile="${item.id}"`:`data-detail="${item.id}"`}><div class="result-type">${esc(type)}</div><strong>${esc(item.title || item.name)}</strong><p>${esc(item.summary || item.subtitle || item.constraint || item.source || "")}</p></button>`,
             )
             .join("")
         : empty(
@@ -375,7 +407,7 @@ function render() {
   if (!db) return;
   nav();
   const views = {
-    briefing, daily, valuechain, practices, recruitment,
+    briefing, daily, education, valuechain, practices, recruitment,
     radar,
     landscape,
     organizations,
@@ -556,6 +588,7 @@ function navigate() {
   } else {
     closeDetail();
     route = navs.some((n) => n[0] === path[0]) ? path[0] : "daily";
+    if(route==='education'){educationCategory=db.education.categories.some(c=>c.id===path[1])?path[1]:'all';educationCompany=db.education.profiles.some(p=>p.company===path[2])?path[2]:'all';}
     editionDate = route==='daily'&&/^\d{4}-\d{2}-\d{2}$/.test(path[1]||'')?path[1]:'';
     timelineLimit = 7;
     chainStage = "全部";
@@ -647,6 +680,7 @@ document.addEventListener("click", async (e) => {
   }
 });
 document.addEventListener("change", (e) => {
+  if(e.target.id==='education-company'){location.hash='education/'+educationCategory+'/'+encodeURIComponent(e.target.value);}
   if(e.target.id==='chain-stage'){chainStage=e.target.value;render();}
   if(e.target.id==='domestic-only'){domesticOnly=e.target.checked;render();}
   if(e.target.id==='edition-date'){location.hash=e.target.value?'daily/'+e.target.value:'daily';}
@@ -711,7 +745,7 @@ try {
     "learning",
     "sources",
     "radar",
-    "digests", "intelligence", "daily", "industry", "valuechain", "recruitment", "operations", "health", "knowledge",
+    "digests", "intelligence", "daily", "industry", "valuechain", "recruitment", "operations", "health", "knowledge", "education",
   ];
   const values = await Promise.all(
     names.map(async (n) => {

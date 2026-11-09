@@ -10,7 +10,7 @@
   "dueHour": 10,
   "cadence": "daily",
   "automationId": "automation-4",
-  "scheduleVerifiedAt": "2026-11-06",
+  "scheduleVerifiedAt": "2026-11-09",
   "requirements": {
     "domesticCompanies": 3,
     "nonResearchStages": 2,
@@ -26,5 +26,17 @@
       "landscape"
     ],
     "policy": "每日处理新实践，轮换复核至少 3 个节点并覆盖两页；7 天内完整覆盖 8 个链路环节和 6 个领域。失败不刷新完整复核日期。"
+  },
+  "education": {
+    "dailyCoreCompanies": 2,
+    "reviewIntervalDays": 7,
+    "categories": [
+      "tablet",
+      "watch",
+      "reader",
+      "pen",
+      "recorder"
+    ],
+    "policy": "每日轮换查阅至少两家核心竞品；7天覆盖五个品类及全部竞品档案，海外每周复核。正文不足保留缺口；内容更新与复核时间分开。"
   }
 }

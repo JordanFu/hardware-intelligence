@@ -31,7 +31,10 @@ def merge(previous,batch,clock=None):
         key=obs['company']+'|'+(obs.get('postingId') or obs['title']+'|'+obs['location'])
         jid='job-'+hashlib.sha256(key.encode()).hexdigest()[:16]
         if jid in seen:raise ValueError('Duplicate job observation')
-        seen.add(jid);old=jobs.get(jid);public={k:v for k,v in obs.items() if k in {'company','title','family','location','stages','url','postedAt','access','responsibilities','interfaces','requirements','decisionQuestion','boundary','postingId','locator','coverage'}}
+        if obs.get('educationCategories') is not None:
+            from education import CATEGORIES
+            if not isinstance(obs['educationCategories'],list) or not obs['educationCategories'] or not set(obs['educationCategories'])<=CATEGORIES:raise ValueError('Unknown education category')
+        seen.add(jid);old=jobs.get(jid);public={k:v for k,v in obs.items() if k in {'educationCategories','company','title','family','location','stages','url','postedAt','access','responsibilities','interfaces','requirements','decisionQuestion','boundary','postingId','locator','coverage'}}
         bodyhash=hashlib.sha256(read['text'].encode()).hexdigest()
         public.update(id=jid,firstSeen=old['firstSeen'] if old else clock,lastSeen=clock,sourceHash=bodyhash)
         changed=[f for f in FIELDS if old and old[f]!=obs[f]]

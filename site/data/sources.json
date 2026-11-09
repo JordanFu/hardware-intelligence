@@ -178,5 +178,105 @@
     "scope": "岗位职责与跨环节接口；动态页及索引边界单列",
     "auto": false,
     "research": true
+  },
+  {
+    "id": "edu-zuoyebang",
+    "name": "作业帮智能 · 品牌介绍",
+    "url": "https://smart.zuoyebang.com/about",
+    "home": "https://smart.zuoyebang.com/about",
+    "tier": "官方一手",
+    "type": "网页",
+    "scope": "学习硬件 · 作业帮",
+    "auto": false
+  },
+  {
+    "id": "edu-iflytek",
+    "name": "科大讯飞 · AI学习机",
+    "url": "https://edu.iflytek.com/solution/family/learning-pad",
+    "home": "https://edu.iflytek.com/solution/family/learning-pad",
+    "tier": "官方一手",
+    "type": "网页",
+    "scope": "学习硬件 · 科大讯飞",
+    "auto": false
+  },
+  {
+    "id": "edu-yuan-app",
+    "name": "小猿智能设备 · App Store开发者说明",
+    "url": "https://apps.apple.com/cn/app/id6738277050",
+    "home": "https://apps.apple.com/cn/app/id6738277050",
+    "tier": "开发者披露",
+    "type": "网页",
+    "scope": "学习硬件 · 猿辅导（小猿）",
+    "auto": false
+  },
+  {
+    "id": "edu-okii",
+    "name": "小天才 · 常见问题",
+    "url": "https://www.okii.com/html/pc/service/service_question.html",
+    "home": "https://www.okii.com/html/pc/service/service_question.html",
+    "tier": "官方一手",
+    "type": "网页",
+    "scope": "学习硬件 · 小天才",
+    "auto": false
+  },
+  {
+    "id": "edu-huawei",
+    "name": "华为 · 平板教育空间使用指南",
+    "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+    "home": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+    "tier": "官方一手",
+    "type": "网页",
+    "scope": "学习硬件 · 华为",
+    "auto": false
+  },
+  {
+    "id": "edu-amazon",
+    "name": "Amazon · Kids Tablets介绍",
+    "url": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
+    "home": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
+    "tier": "官方一手",
+    "type": "网页",
+    "scope": "学习硬件 · Amazon",
+    "auto": false
+  },
+  {
+    "id": "edu-kindle",
+    "name": "Amazon · Kindle Kids常见问题",
+    "url": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
+    "home": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
+    "tier": "官方一手",
+    "type": "网页",
+    "scope": "学习硬件 · Amazon",
+    "auto": false
+  },
+  {
+    "id": "edu-leapfrog",
+    "name": "LeapFrog · Tablet family",
+    "url": "https://www.leapfrog.com/en-us/products/tablet-family?bmLocale=en_US",
+    "home": "https://www.leapfrog.com/en-us/products/tablet-family?bmLocale=en_US",
+    "tier": "官方一手",
+    "type": "网页",
+    "scope": "学习硬件 · LeapFrog",
+    "auto": false
+  },
+  {
+    "id": "edu-pen",
+    "name": "科大讯飞 · AI翻译笔",
+    "url": "https://edu.iflytek.com/solution/family/transpen",
+    "home": "https://edu.iflytek.com/solution/family/transpen",
+    "tier": "官方一手",
+    "type": "网页",
+    "scope": "学习硬件 · 科大讯飞",
+    "auto": false
+  },
+  {
+    "id": "edu-dingtalk",
+    "name": "钉钉 · AI应用服务市场",
+    "url": "https://aihub.dingtalk.com/",
+    "home": "https://aihub.dingtalk.com/",
+    "tier": "官方一手",
+    "type": "网页",
+    "scope": "学习硬件 · 钉钉",
+    "auto": false
   }
 ]

@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'site/data'
 UTC = dt.timezone.utc
 RULES = [
+ ('学习硬件', r'学习机|学练机|学习平板|儿童手表|电话手表|词典笔|扫描笔|电子阅读器|电纸书|AI.?录音|智能录音|钉钉.?A1|DingTalk.?A1|Kindle|LeapPad|作业帮.*硬件|小猿.*硬件'),
  ('可穿戴与眼镜', r'\b(glasses|wearable|galaxy ring|galaxy watch|smartwatch|headset|earbuds)\b|眼镜|可穿戴|智能手表|智能戒指|耳机'),
  ('机器人与无人机', r'robot|humanoid|drone|isaac|gr00t|机器人|无人机|具身|机器狗'),
  ('智能家居', r'smart home|smartthings|\bmatter\b|homekit|home assistant|智能家居|扫地|智能门锁'),

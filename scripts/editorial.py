@@ -103,7 +103,10 @@ def validate_entry(entry,reads):
         if not set(practice.get('stages',[]))<=set(entry['stages']) or not practice.get('stages'):raise ValueError('Practice stage invalid')
         if not practice.get('factIndexes') or any(type(i)!=int or i<0 or i>=len(facts) for i in practice['factIndexes']):raise ValueError('Practice needs facts')
         if practice.get('evidenceLevel') not in ('官方披露做法','历史案例','实践线索','独立结果待核验'):raise ValueError('Do not claim best practice without evidence')
-    allowed={'id','eventId','developmentId','titleZh','originalTitle','brief','stages','domestic','companies','selection','boundary','meaning','question','eventReason','publishedAt','kind','category','organization','practices','newDevelopment','developmentReason'}
+    if entry.get('educationCategories') is not None:
+        from education import CATEGORIES
+        if not isinstance(entry['educationCategories'],list) or not entry['educationCategories'] or not set(entry['educationCategories'])<=CATEGORIES:raise ValueError('Unknown education category')
+    allowed={'educationCategories','id','eventId','developmentId','titleZh','originalTitle','brief','stages','domestic','companies','selection','boundary','meaning','question','eventReason','publishedAt','kind','category','organization','practices','newDevelopment','developmentReason'}
     if entry.get('newDevelopment'):valid_text(entry.get('developmentReason'),'new development evidence',20)
     result={k:v for k,v in entry.items() if k in allowed}
     result['facts']=[{'claim':f['claim'],'sourceUrl':reads[f['readId']]['url'],'locator':f['locator']} for f in facts]

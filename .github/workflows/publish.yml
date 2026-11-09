@@ -30,6 +30,7 @@ jobs:
         run: |
           python3 -m unittest discover -s tests -v
           node --check site/app.js
+          node --test tests/education.test.mjs
       - name: Save discovery history
         run: |
           git config user.name 'github-actions[bot]'

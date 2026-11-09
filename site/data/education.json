@@ -1,0 +1,1624 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-11-09T02:06:02.575877+00:00",
+  "categories": [
+    {
+      "id": "tablet",
+      "name": "学习机",
+      "flow": "学情诊断 → 内容讲解 → 练习反馈",
+      "scope": "按学段、学科、教材、机型核对覆盖；比较家长介入成本和错题反馈，不以题库量或功能数量代替学习效果。",
+      "questions": [
+        "诊断是否可解释",
+        "内容如何更新与纠错",
+        "设备、教研、算法、家长端谁负责"
+      ],
+      "metrics": "完成一次学练任务的成功率；家长介入时长；内容纠错周期。学习增益需可比前后测。"
+    },
+    {
+      "id": "watch",
+      "name": "儿童手表",
+      "flow": "沟通与陪伴 → 家庭协同 → 服务支持",
+      "scope": "观察儿童与家长双方的使用负担、绑定与权限、网络和售后约束；不能将定位、社交或管控功能直接等同于学习价值。",
+      "questions": [
+        "多监护人权限如何划分",
+        "离线与跨设备失效如何处理",
+        "通信、App、服务之间如何协作"
+      ],
+      "metrics": "联系任务成功率；绑定失败率；问题解决时长。须说明网络、设备版本和样本。"
+    },
+    {
+      "id": "reader",
+      "name": "阅读器",
+      "flow": "内容获取 → 连续阅读 → 查词与整理",
+      "scope": "区分专用阅读器与通用平板；观察书库、版权、文件兼容、标注导出与订阅权益。国内掌阅、文石列为下一轮补充对象，尚无本期可用正文。",
+      "questions": [
+        "书籍与个人文件能否顺畅进入",
+        "阅读与笔记如何迁移",
+        "内容采购和硬件迭代如何配合"
+      ],
+      "metrics": "阅读任务完成率；导入、查词和导出失败率；续订与售后原因。阅读时长不是理解能力证明。"
+    },
+    {
+      "id": "pen",
+      "name": "词典笔",
+      "flow": "扫描识别 → 查词解释 → 跟读与巩固",
+      "scope": "按纸张、字体、语言、联网条件和型号比较；看查询之后能否衔接学习，词库量不代表识别效果或掌握程度。",
+      "questions": [
+        "离线词库与在线服务边界",
+        "查询如何进入复习",
+        "OCR、词典授权、语音评测接口"
+      ],
+      "metrics": "真实页面的识别正确率；查词耗时；误识别纠正成本。准确率需保留测试条件。"
+    },
+    {
+      "id": "recorder",
+      "name": "AI录音设备",
+      "flow": "录音 → 转写 → 整理 → 检索与行动",
+      "scope": "以钉钉 DingTalk A1 一类设备为观察对象，对照参考 Xnote；比较一段信息最终能否被找回、核对、导出和使用。",
+      "questions": [
+        "摘要能否回到原录音证据",
+        "权益、配额和设备成本如何组合",
+        "端侧硬件、语音、知识整理和工作流谁负责"
+      ],
+      "metrics": "不同环境下转写错误；摘要可追溯性；整理后任务完成率；人工纠错时长。须保留版本、语言和套餐条件。"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "zuoyebang-tablet",
+      "company": "作业帮",
+      "tier": "核心竞品",
+      "categoryIds": [
+        "tablet"
+      ],
+      "brief": {
+        "lead": "作业帮将学习内容、学情数据与 AIGC 结合，提出跨产品的智能学习系统。这里能研究的是内容与硬件如何衔接，尚不能验证提分结果。",
+        "points": [
+          "官网将教研内容、学情数据和 AI 能力作为硬件体系的基础。",
+          "“聪明学系统”被描述为贯穿其智能学习产品的能力层。"
+        ]
+      },
+      "dimensions": {
+        "product": "智能学习硬件体系；具体机型、学段和配置需逐项核验。",
+        "content": "跨产品内容与学情数据能力是官网披露的方向。",
+        "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
+        "delivery": "未取得该产品的供应链、制造质量和售后结果资料。",
+        "organization": "研究问题：共用系统、内容维护与各产品团队如何划分责任？未取得实际组织接口制度。"
+      },
+      "boundary": "无日期品牌介绍；不采用缺少口径的销量、专利或人才比例宣称，不把生态规划等同于已实现效果。",
+      "gaps": [
+        "当前业务组织图、编制与净增岗位未披露。",
+        "本资料不提供可比的学习或工作成效验证。"
+      ],
+      "sources": [
+        {
+          "id": "edu-zuoyebang",
+          "title": "作业帮智能 · 品牌介绍",
+          "url": "https://smart.zuoyebang.com/about",
+          "publishedAt": null,
+          "role": "official",
+          "readAt": "2026-11-09T01:53:06.944392+00:00",
+          "coverage": "body",
+          "textHash": "ae6909cb8ab9f6a5934791f6cdb9f0a83ad756fd48dbf4fd7ad5f78af164509c"
+        }
+      ],
+      "facts": [
+        {
+          "sourceId": "edu-zuoyebang",
+          "claim": "官网披露内容、数据和 AIGC 的组合及跨产品系统。",
+          "locator": "品牌介绍 / 聪明学系统"
+        }
+      ],
+      "updatedAt": "2026-11-09T02:07:26.706398+00:00",
+      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "lastReviewStatus": "reviewed",
+      "aliases": [
+        "作业帮"
+      ]
+    },
+    {
+      "id": "iflytek-tablet",
+      "company": "科大讯飞",
+      "tier": "核心竞品",
+      "categoryIds": [
+        "tablet"
+      ],
+      "brief": {
+        "lead": "讯飞官方描述了诊断、规划、讲解与练习的闭环，同时在脚注明确功能适用范围。比较时应先核对学段和机型，再讨论能力差异。",
+        "points": [
+          "“测—学—练”连接薄弱项识别、错题讲解和后续练习。",
+          "官网注明规划学仅支持初中数学 AI 精准学，部分功能与资源还受学科、教材、机型限制。"
+        ]
+      },
+      "dimensions": {
+        "product": "自主学习场景；不能将单一机型功能扩展到全产品线。",
+        "content": "资源与学情诊断相连；需核验本地教材覆盖与持续更新条件。",
+        "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
+        "delivery": "未取得该产品的供应链、制造质量和售后结果资料。",
+        "organization": "研究问题：教研定义知识点、算法诊断和产品反馈之间如何验收？官网功能页未披露团队边界。"
+      },
+      "boundary": "功能页是厂商披露；没有可比实验或员工后效，不据此认定学习效果或组织效率提升。",
+      "gaps": [
+        "当前业务组织图、编制与净增岗位未披露。",
+        "本资料不提供可比的学习或工作成效验证。"
+      ],
+      "sources": [
+        {
+          "id": "edu-iflytek",
+          "title": "科大讯飞 · AI学习机",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "publishedAt": null,
+          "role": "official",
+          "readAt": "2026-11-09T01:53:07.386728+00:00",
+          "coverage": "body",
+          "textHash": "b6c8337120e8b2b8964a9f48b5d4eb716fa654142a0765f49205455d7b5f8540"
+        }
+      ],
+      "facts": [
+        {
+          "sourceId": "edu-iflytek",
+          "claim": "官网描述测、学、练的流程。",
+          "locator": "AI 1对1精准学"
+        },
+        {
+          "sourceId": "edu-iflytek",
+          "claim": "规划学有初中数学适用限制。",
+          "locator": "功能脚注"
+        }
+      ],
+      "updatedAt": "2026-11-09T02:07:26.706398+00:00",
+      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "lastReviewStatus": "reviewed",
+      "aliases": [
+        "科大讯飞",
+        "讯飞"
+      ]
+    },
+    {
+      "id": "yuan-tablet",
+      "company": "猿辅导（小猿）",
+      "tier": "核心竞品",
+      "categoryIds": [
+        "tablet"
+      ],
+      "brief": {
+        "lead": "小猿家长端把设备使用时间、答案访问、学习轨迹和家庭设备管理放在一起。它提供了观察“孩子端—家长端—硬件”关系的具体入口。",
+        "points": [
+          "开发者说明支持时长约定、答案管控和学习轨迹。",
+          "说明列出小猿智能练习本、学练机与 AI 学习机为配合使用的硬件。"
+        ]
+      },
+      "dimensions": {
+        "product": "硬件与家长 App 配合；本次核对的是 App 管理能力。",
+        "content": "观察使用轨迹如何支持家长协助，不能将使用时间当成掌握程度。",
+        "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
+        "delivery": "未取得该产品的供应链、制造质量和售后结果资料。",
+        "organization": "研究问题：家长端权限、设备账号与学习记录发生冲突时由哪个团队承接？实际职责待招聘或制度验证。"
+      },
+      "boundary": "App Store为开发者自述，非 Apple 独立验证；不引用个人评论、不据 App 功能推断每台设备的完整能力。",
+      "gaps": [
+        "当前业务组织图、编制与净增岗位未披露。",
+        "本资料不提供可比的学习或工作成效验证。"
+      ],
+      "sources": [
+        {
+          "id": "edu-yuan-app",
+          "title": "小猿智能设备 · App Store开发者说明",
+          "url": "https://apps.apple.com/cn/app/id6738277050",
+          "publishedAt": null,
+          "role": "developer",
+          "readAt": "2026-11-09T01:53:07.639373+00:00",
+          "coverage": "body",
+          "textHash": "1a547813912936ea0c0d5606026cc9935eea499423944682eae3dcf8962f2e11"
+        }
+      ],
+      "facts": [
+        {
+          "sourceId": "edu-yuan-app",
+          "claim": "家长端可管理时间、答案查看及多孩子多设备。",
+          "locator": "开发者功能说明"
+        },
+        {
+          "sourceId": "edu-yuan-app",
+          "claim": "开发者列明配合使用的三类小猿硬件。",
+          "locator": "使用说明"
+        }
+      ],
+      "updatedAt": "2026-11-09T02:07:26.706398+00:00",
+      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "lastReviewStatus": "reviewed",
+      "aliases": [
+        "猿辅导",
+        "小猿",
+        "猿力"
+      ]
+    },
+    {
+      "id": "okii-watch",
+      "company": "小天才",
+      "tier": "相邻场景",
+      "categoryIds": [
+        "watch"
+      ],
+      "brief": {
+        "lead": "小天才的官方支持文档呈现了绑定、家庭成员和设备设置等服务问题。儿童手表竞争也涉及家庭协同与售后解释成本，不能只比较硬件参数。",
+        "points": [
+          "支持文档按电话手表、儿童平板区分问题，阅读时必须保留设备类别。",
+          "电话手表定时开关机涉及设备联网与手表端确认条件。"
+        ]
+      },
+      "dimensions": {
+        "product": "儿童通信与家庭协同；具体手表型号与功能需另核。",
+        "content": "本资料不是学习内容库说明，不能据此推断课程或学习功能。",
+        "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
+        "delivery": "已读售后 FAQ 中的设置条件；维修网络、质量结果与供应商责任仍待核验。",
+        "organization": "研究问题：手机 App、设备端状态和客服解释如何协同？FAQ 不证明现有组织结构。"
+      },
+      "boundary": "官网 FAQ 未标发布日期；儿童平板的家庭绑定规则不外推到全部手表型号。",
+      "gaps": [
+        "当前业务组织图、编制与净增岗位未披露。",
+        "本资料不提供可比的学习或工作成效验证。"
+      ],
+      "sources": [
+        {
+          "id": "edu-okii",
+          "title": "小天才 · 常见问题",
+          "url": "https://www.okii.com/html/pc/service/service_question.html",
+          "publishedAt": null,
+          "role": "official",
+          "readAt": "2026-11-09T02:00:20.378566+00:00",
+          "coverage": "body",
+          "textHash": "af30d4cb563b6c7addbb400c277d9581cde06225a32736444b1e9c8cab6be5e5"
+        }
+      ],
+      "facts": [
+        {
+          "sourceId": "edu-okii",
+          "claim": "电话手表的定时开关机需要关注网络与手表端确认。",
+          "locator": "电话手表 / 定时开关机问题"
+        }
+      ],
+      "updatedAt": "2026-11-09T02:07:26.706398+00:00",
+      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "lastReviewStatus": "reviewed",
+      "aliases": [
+        "小天才"
+      ]
+    },
+    {
+      "id": "huawei-tablet",
+      "company": "华为",
+      "tier": "相邻场景",
+      "categoryIds": [
+        "tablet"
+      ],
+      "brief": {
+        "lead": "华为教育空间是在平板上建立学习与家长管理入口的一种做法。它适合研究通用硬件怎样承载教育场景，不能与专用学习机直接等同。",
+        "points": [
+          "本次支持页标示适用 HUAWEI MatePad Edge、HarmonyOS 6.1。",
+          "教育空间可管理使用时间、应用和可访问内容。"
+        ]
+      },
+      "dimensions": {
+        "product": "通用平板中的教育空间，按页面适用型号与系统阅读。",
+        "content": "教育空间与内容权限；课程质量和完整收费权益未核验。",
+        "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
+        "delivery": "未取得该产品的供应链、制造质量和售后结果资料。",
+        "organization": "研究问题：系统权限、教育应用与家长支持之间如何分责？未取得团队资料。"
+      },
+      "boundary": "仅使用本次支持页覆盖的版本，不混用旧 EMUI 或旧版 HarmonyOS 说明，也不推定所有平板均已支持。",
+      "gaps": [
+        "当前业务组织图、编制与净增岗位未披露。",
+        "本资料不提供可比的学习或工作成效验证。"
+      ],
+      "sources": [
+        {
+          "id": "edu-huawei",
+          "title": "华为 · 平板教育空间使用指南",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+          "publishedAt": null,
+          "role": "official",
+          "readAt": "2026-11-09T02:00:22.874623+00:00",
+          "coverage": "body",
+          "textHash": "17dca06954d13a3c2041c544db30b358ff84cd4c74c2c587677f06ec3a00007a"
+        }
+      ],
+      "facts": [
+        {
+          "sourceId": "edu-huawei",
+          "claim": "教育空间支持时间、应用和内容管控。",
+          "locator": "使用指南"
+        },
+        {
+          "sourceId": "edu-huawei",
+          "claim": "本页有具体产品与系统适用范围。",
+          "locator": "适用产品 / 适用版本"
+        }
+      ],
+      "updatedAt": "2026-11-09T02:07:26.706398+00:00",
+      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "lastReviewStatus": "reviewed",
+      "aliases": [
+        "华为",
+        "Huawei"
+      ]
+    },
+    {
+      "id": "amazon-tablet",
+      "company": "Amazon",
+      "tier": "海外参照",
+      "categoryIds": [
+        "tablet"
+      ],
+      "brief": {
+        "lead": "Amazon 的儿童平板把设备、内容订阅和家长控制组合销售。可借鉴的观察角度是权益与生命周期服务如何跟随硬件，而非把海外内容直接映射到国内教材。",
+        "points": [
+          "页面介绍随设备提供一年 Kids+ 以及预装 Parent Dashboard。",
+          "家长可控制屏幕时间与内容访问；新页面描述的是 Android 平板组合。"
+        ]
+      },
+      "dimensions": {
+        "product": "儿童通用平板，独立于 Kindle 专用阅读器。",
+        "content": "内容订阅和家长管理并存；国内版权、教材、服务可用性未核验。",
+        "channel": "官网披露硬件与一年 Kids+ 的组合；期满费用、区域和具体订单权益需另核。",
+        "delivery": "本页披露一年有限保修；不能沿用旧 Fire Kids 的其他保障条件。",
+        "organization": "研究问题：硬件团队、内容授权、订阅续费与家长支持如何衔接？本页未披露组织图。"
+      },
+      "boundary": "海外市场厂商介绍；不把新 Android 型号与旧 Fire 型号的保修、平台或权益混为一谈。",
+      "gaps": [
+        "当前业务组织图、编制与净增岗位未披露。",
+        "本资料不提供可比的学习或工作成效验证。"
+      ],
+      "sources": [
+        {
+          "id": "edu-amazon",
+          "title": "Amazon · Kids Tablets介绍",
+          "url": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
+          "publishedAt": null,
+          "role": "official",
+          "readAt": "2026-11-09T01:53:08.282199+00:00",
+          "coverage": "body",
+          "textHash": "50c937b1d45b7532e4329f253470834f9c588240c9a2ac9f42e74aa40f8f54f0"
+        }
+      ],
+      "facts": [
+        {
+          "sourceId": "edu-amazon",
+          "claim": "设备组合包含一年 Kids+ 订阅。",
+          "locator": "Ready-to-go bundles"
+        },
+        {
+          "sourceId": "edu-amazon",
+          "claim": "Parent Dashboard支持家长管理。",
+          "locator": "How the Parent Dashboard keeps parents connected"
+        }
+      ],
+      "updatedAt": "2026-11-09T02:07:26.706398+00:00",
+      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "lastReviewStatus": "reviewed",
+      "aliases": [
+        "Amazon"
+      ]
+    },
+    {
+      "id": "kindle-reader",
+      "company": "Amazon",
+      "tier": "海外参照",
+      "categoryIds": [
+        "reader"
+      ],
+      "brief": {
+        "lead": "Kindle Kids把专注阅读、内容访问和词汇工具结合，适合研究“读—查—复习”的衔接。官方说明同时给出了语言、地区与订阅的限制。",
+        "points": [
+          "Word Wise 在此文中的适用范围为美国英语；查过的词可进入 Vocabulary Builder。",
+          "设备组合含六或十二个月 Kids+，与在普通 Kindle 上创建儿童档案的权益不同。"
+        ]
+      },
+      "dimensions": {
+        "product": "专用阅读器，不将 Fire 或 Kids Tablet 通用平板当作同一品类。",
+        "content": "书库、词典与词汇复习衔接；中文内容授权及国内服务适用性待核验。",
+        "channel": "Kids+包含期随设备组合不同；普通 Kindle 儿童档案需另行获取内容。",
+        "delivery": "未取得该产品的供应链、制造质量和售后结果资料。",
+        "organization": "研究问题：内容采购、阅读体验、家长端和订阅服务如何分责？未取得岗位证据。"
+      },
+      "boundary": "原文2026-03-13发布，并注明2026-09-01更新；本文是历史资料复核，不是今日新品。语言、地区、机型和权益均需保留。",
+      "gaps": [
+        "当前业务组织图、编制与净增岗位未披露。",
+        "本资料不提供可比的学习或工作成效验证。"
+      ],
+      "sources": [
+        {
+          "id": "edu-kindle",
+          "title": "Amazon · Kindle Kids常见问题",
+          "url": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
+          "publishedAt": "2026-03-13",
+          "role": "official",
+          "readAt": "2026-11-09T02:06:02.575877+00:00",
+          "coverage": "excerpt",
+          "textHash": "e179f989cfbfe8f8536eb7d1ae760ec025b4a141fd112eb2d316a807699a16ff"
+        }
+      ],
+      "facts": [
+        {
+          "sourceId": "edu-kindle",
+          "claim": "Word Wise的语言地区范围与词汇整理机制均有说明。",
+          "locator": "第2问 / Vocabulary tools"
+        },
+        {
+          "sourceId": "edu-kindle",
+          "claim": "Kids设备组合的订阅时长有区别。",
+          "locator": "第1问 / Kindle Kids devices"
+        }
+      ],
+      "updatedAt": "2026-11-09T02:07:26.706398+00:00",
+      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "lastReviewStatus": "reviewed",
+      "aliases": [
+        "Amazon"
+      ]
+    },
+    {
+      "id": "leapfrog-tablet",
+      "company": "LeapFrog",
+      "tier": "海外参照",
+      "categoryIds": [
+        "tablet"
+      ],
+      "brief": {
+        "lead": "LeapPad Academy 的页面把预装内容、额外内容商店和限期试用分开列出。它提供了观察硬件、教研审核与内容付费如何组合的海外案例。",
+        "points": [
+          "该设备页面列出预装应用、另购 App Center 内容与三个月 Academy 试用。",
+          "官网说明其教育团队审核 LeapFrog 内容；这不等于学习结果已被独立验证。"
+        ]
+      },
+      "dimensions": {
+        "product": "儿童学习平板；页面未标日期，不认定为当前新品。",
+        "content": "教研审核与内容售卖并存；不把试用期当作长期免费权益。",
+        "channel": "预装内容 + 另售应用内容 + 限期试用；仅按所读设备页口径。",
+        "delivery": "未取得该产品的供应链、制造质量和售后结果资料。",
+        "organization": "已披露教育团队审核内容；团队规模、汇报线、审核标准和后效未披露。"
+      },
+      "boundary": "美国页面的设备组合；其他订阅入口试用时长可能不同，不能跨页面拼接套餐。",
+      "gaps": [
+        "当前业务组织图、编制与净增岗位未披露。",
+        "本资料不提供可比的学习或工作成效验证。"
+      ],
+      "sources": [
+        {
+          "id": "edu-leapfrog",
+          "title": "LeapFrog · Tablet family",
+          "url": "https://www.leapfrog.com/en-us/products/tablet-family?bmLocale=en_US",
+          "publishedAt": null,
+          "role": "official",
+          "readAt": "2026-11-09T01:55:24.145324+00:00",
+          "coverage": "body",
+          "textHash": "af60a8332d19c4c6a3ee3cff221db49b62a5645876d73ff341da1658810d4c14"
+        }
+      ],
+      "facts": [
+        {
+          "sourceId": "edu-leapfrog",
+          "claim": "设备页区分预装、另购与三个月试用。",
+          "locator": "LeapPad Academy"
+        },
+        {
+          "sourceId": "edu-leapfrog",
+          "claim": "官网披露教育团队审核内容。",
+          "locator": "页面脚注"
+        }
+      ],
+      "updatedAt": "2026-11-09T02:07:26.706398+00:00",
+      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "lastReviewStatus": "reviewed",
+      "aliases": [
+        "LeapFrog"
+      ]
+    },
+    {
+      "id": "iflytek-pen",
+      "company": "科大讯飞",
+      "tier": "核心竞品",
+      "categoryIds": [
+        "pen"
+      ],
+      "brief": {
+        "lead": "讯飞翻译笔页面把扫描查词延伸到发音、跟读和同步学习，并区分 P20 与 P20 Plus 的定位。应沿具体型号比较任务链，避免把一个型号的功能写成全系列能力。",
+        "points": [
+          "页面描述扫描单词查词、标准发音、跟读评测与课文朗读。",
+          "P20 Plus 说明提到扩展知识、语法解析和作文批改；不外推到所有词典笔。"
+        ]
+      },
+      "dimensions": {
+        "product": "词典笔 / 翻译笔，核对型号与使用条件。",
+        "content": "辞典、识别和跟读能力衔接；离线范围与授权期限待核验。",
+        "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
+        "delivery": "未取得该产品的供应链、制造质量和售后结果资料。",
+        "organization": "研究问题：OCR错误、词条内容错误和语音评测争议分别由谁负责？岗位边界待核验。"
+      },
+      "boundary": "当前仅阅读官网产品段落；未标发布日期，不能证明仍售状态，也没有真实场景识别准确率测试。",
+      "gaps": [
+        "当前业务组织图、编制与净增岗位未披露。",
+        "本资料不提供可比的学习或工作成效验证。"
+      ],
+      "sources": [
+        {
+          "id": "edu-pen",
+          "title": "科大讯飞 · AI翻译笔",
+          "url": "https://edu.iflytek.com/solution/family/transpen",
+          "publishedAt": null,
+          "role": "official",
+          "readAt": "2026-11-09T02:06:02.575877+00:00",
+          "coverage": "excerpt",
+          "textHash": "aa2e39bd9d86fad201c3e50266ec60727f8cd4e2460c625dd55877ff73dac5ec"
+        }
+      ],
+      "facts": [
+        {
+          "sourceId": "edu-pen",
+          "claim": "页面披露扫描查词、发音和跟读功能。",
+          "locator": "课本同步学"
+        },
+        {
+          "sourceId": "edu-pen",
+          "claim": "P20 Plus与P20的说明不同。",
+          "locator": "产品介绍"
+        }
+      ],
+      "updatedAt": "2026-11-09T02:07:26.706398+00:00",
+      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "lastReviewStatus": "reviewed",
+      "aliases": [
+        "科大讯飞",
+        "讯飞"
+      ]
+    },
+    {
+      "id": "dingtalk-recorder",
+      "company": "钉钉",
+      "tier": "场景对照",
+      "categoryIds": [
+        "recorder"
+      ],
+      "brief": {
+        "lead": "钉钉官方市场把 A1 录音设备与日历、纪要、待办相连，呈现“采集之后进入工作流”的设计。对照录音设备时，可从这条链路检查信息能否真正被继续使用。",
+        "points": [
+          "官方市场显示 DingTalk A1 / A1 Pro 等硬件入口。",
+          "钉钉发布的“会议自动驾驶”说明描述日程感知、A1录音、纪要、行动项与待办的连接。"
+        ]
+      },
+      "dimensions": {
+        "product": "AI录音设备及配套应用，按具体设备和软件版本核验。",
+        "content": "纪要与行动项连接；原音追溯、检索、导出与配额需实测。",
+        "channel": "市场显示硬件与应用入口；实际成交、软件套餐及长期使用成本待核验。",
+        "delivery": "未取得该产品的供应链、制造质量和售后结果资料。",
+        "organization": "研究问题：设备、语音服务、纪要质量和工作流连接分别由谁负责？这是接口问题，不是组织事实。"
+      },
+      "boundary": "仅为官方市场披露的功能和技能说明；未执行录音或工作流、未验证兼容性与成效，不能当作默认自动执行能力。",
+      "gaps": [
+        "当前业务组织图、编制与净增岗位未披露。",
+        "本资料不提供可比的学习或工作成效验证。"
+      ],
+      "sources": [
+        {
+          "id": "edu-dingtalk",
+          "title": "钉钉 · AI应用服务市场",
+          "url": "https://aihub.dingtalk.com/",
+          "publishedAt": null,
+          "role": "official",
+          "readAt": "2026-11-09T02:06:02.575877+00:00",
+          "coverage": "excerpt",
+          "textHash": "474811e1038c01d951cca0fa5ca81b745e142c647c42f951152a4a390ccdc790"
+        }
+      ],
+      "facts": [
+        {
+          "sourceId": "edu-dingtalk",
+          "claim": "官方市场展示A1硬件入口。",
+          "locator": "AI硬件"
+        },
+        {
+          "sourceId": "edu-dingtalk",
+          "claim": "钉钉发布的技能描述录音后生成纪要、提取行动项并创建待办。",
+          "locator": "技能 / 会议自动驾驶"
+        }
+      ],
+      "updatedAt": "2026-11-09T02:07:26.706398+00:00",
+      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "lastReviewStatus": "reviewed",
+      "aliases": [
+        "钉钉",
+        "DingTalk"
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "completedAt": "2026-11-09T02:07:26.706398+00:00",
+      "summary": "建立五品类、八家公司、十份资料档案的首轮基线；原文日期与本次收录日期分开。未核验供应链内部机制、团队编制和可比成效；阅读器的国内厂商资料待补。",
+      "checks": [
+        {
+          "company": "作业帮",
+          "url": "https://smart.zuoyebang.com/about",
+          "name": "作业帮智能 · 品牌介绍",
+          "state": "body",
+          "checkedAt": "2026-11-09T01:53:06.944392+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "实际读取公开正文；未标日期的材料作为常青基线。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "name": "科大讯飞 · AI学习机",
+          "state": "body",
+          "checkedAt": "2026-11-09T01:53:07.386728+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "实际读取公开正文；未标日期的材料作为常青基线。"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://apps.apple.com/cn/app/id6738277050",
+          "name": "小猿智能设备 · App Store开发者说明",
+          "state": "body",
+          "checkedAt": "2026-11-09T01:53:07.639373+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "实际读取公开正文；未标日期的材料作为常青基线。"
+        },
+        {
+          "company": "小天才",
+          "url": "https://www.okii.com/html/pc/service/service_question.html",
+          "name": "小天才 · 常见问题",
+          "state": "body",
+          "checkedAt": "2026-11-09T02:00:20.378566+00:00",
+          "categoryIds": [
+            "watch"
+          ],
+          "note": "实际读取公开正文；未标日期的材料作为常青基线。"
+        },
+        {
+          "company": "华为",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+          "name": "华为 · 平板教育空间使用指南",
+          "state": "body",
+          "checkedAt": "2026-11-09T02:00:22.874623+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "实际读取公开正文；未标日期的材料作为常青基线。"
+        },
+        {
+          "company": "Amazon",
+          "url": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
+          "name": "Amazon · Kids Tablets介绍",
+          "state": "body",
+          "checkedAt": "2026-11-09T01:53:08.282199+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "实际读取公开正文；未标日期的材料作为常青基线。"
+        },
+        {
+          "company": "Amazon",
+          "url": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
+          "name": "Amazon · Kindle Kids常见问题",
+          "state": "excerpt",
+          "checkedAt": "2026-11-09T02:06:02.575877+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "note": "实际读取公开正文片段；仅覆盖所列段落。"
+        },
+        {
+          "company": "LeapFrog",
+          "url": "https://www.leapfrog.com/en-us/products/tablet-family?bmLocale=en_US",
+          "name": "LeapFrog · Tablet family",
+          "state": "body",
+          "checkedAt": "2026-11-09T01:55:24.145324+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "实际读取公开正文；未标日期的材料作为常青基线。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://edu.iflytek.com/solution/family/transpen",
+          "name": "科大讯飞 · AI翻译笔",
+          "state": "excerpt",
+          "checkedAt": "2026-11-09T02:06:02.575877+00:00",
+          "categoryIds": [
+            "pen"
+          ],
+          "note": "实际读取公开正文片段；仅覆盖所列段落。"
+        },
+        {
+          "company": "钉钉",
+          "url": "https://aihub.dingtalk.com/",
+          "name": "钉钉 · AI应用服务市场",
+          "state": "excerpt",
+          "checkedAt": "2026-11-09T02:06:02.575877+00:00",
+          "categoryIds": [
+            "recorder"
+          ],
+          "note": "实际读取公开正文片段；仅覆盖所列段落。"
+        },
+        {
+          "company": "钉钉",
+          "url": "https://aihub.dingtalk.com/",
+          "name": "首轮读取失败记录",
+          "state": "error",
+          "checkedAt": "2026-11-09T02:06:02.575877+00:00",
+          "categoryIds": [
+            "recorder"
+          ],
+          "note": "静态抓取无可用正文；随后浏览器读取公开市场片段成功，未执行页面技能。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://www.iflytek.com/en/Public/Uploads/uploadfile/files/20230811/x10pen.pdf",
+          "name": "首轮读取失败记录",
+          "state": "error",
+          "checkedAt": "2026-11-09T02:06:02.575877+00:00",
+          "categoryIds": [
+            "pen"
+          ],
+          "note": "直接请求返回403；未用未读PDF推断产品参数，改读官网翻译笔介绍。"
+        },
+        {
+          "company": "小天才",
+          "url": "https://www.okii.com/html/pc/service/service_question.html",
+          "name": "首轮读取失败记录",
+          "state": "error",
+          "checkedAt": "2026-11-09T02:06:02.575877+00:00",
+          "categoryIds": [
+            "watch"
+          ],
+          "note": "首轮连接超时；后续重试取得正文。"
+        },
+        {
+          "company": "华为",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+          "name": "首轮读取失败记录",
+          "state": "error",
+          "checkedAt": "2026-11-09T02:06:02.575877+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "首轮连接超时；后续重试取得正文。"
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "profileId": "zuoyebang-tablet",
+      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "status": "reviewed",
+      "assessment": "首次建立资料基线；逐项核对本资料可支持内容，其余维度明确保留未知。不是全面验证或新品发布。",
+      "changes": {
+        "brief": {
+          "before": {
+            "lead": "首轮研究尚未写入；取得可核对的公开正文后补充事实与边界。",
+            "points": [
+              "暂不推断产品功能或实际效果。",
+              "保留后续研究入口和缺失范围。"
+            ]
+          },
+          "after": {
+            "lead": "作业帮将学习内容、学情数据与 AIGC 结合，提出跨产品的智能学习系统。这里能研究的是内容与硬件如何衔接，尚不能验证提分结果。",
+            "points": [
+              "官网将教研内容、学情数据和 AI 能力作为硬件体系的基础。",
+              "“聪明学系统”被描述为贯穿其智能学习产品的能力层。"
+            ]
+          }
+        },
+        "dimensions": {
+          "before": {
+            "channel": "待补充",
+            "delivery": "待补充",
+            "content": "待补充",
+            "product": "待补充",
+            "organization": "待补充"
+          },
+          "after": {
+            "product": "智能学习硬件体系；具体机型、学段和配置需逐项核验。",
+            "content": "跨产品内容与学情数据能力是官网披露的方向。",
+            "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
+            "delivery": "未取得该产品的供应链、制造质量和售后结果资料。",
+            "organization": "研究问题：共用系统、内容维护与各产品团队如何划分责任？未取得实际组织接口制度。"
+          }
+        },
+        "boundary": {
+          "before": "待原文核验",
+          "after": "无日期品牌介绍；不采用缺少口径的销量、专利或人才比例宣称，不把生态规划等同于已实现效果。"
+        },
+        "gaps": {
+          "before": [
+            "待原文核验"
+          ],
+          "after": [
+            "当前业务组织图、编制与净增岗位未披露。",
+            "本资料不提供可比的学习或工作成效验证。"
+          ]
+        },
+        "sources": {
+          "before": [],
+          "after": [
+            {
+              "id": "edu-zuoyebang",
+              "title": "作业帮智能 · 品牌介绍",
+              "url": "https://smart.zuoyebang.com/about",
+              "publishedAt": null,
+              "role": "official",
+              "readAt": "2026-11-09T01:53:06.944392+00:00",
+              "coverage": "body",
+              "textHash": "ae6909cb8ab9f6a5934791f6cdb9f0a83ad756fd48dbf4fd7ad5f78af164509c"
+            }
+          ]
+        },
+        "facts": {
+          "before": [],
+          "after": [
+            {
+              "sourceId": "edu-zuoyebang",
+              "claim": "官网披露内容、数据和 AIGC 的组合及跨产品系统。",
+              "locator": "品牌介绍 / 聪明学系统"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "profileId": "iflytek-tablet",
+      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "status": "reviewed",
+      "assessment": "首次建立资料基线；逐项核对本资料可支持内容，其余维度明确保留未知。不是全面验证或新品发布。",
+      "changes": {
+        "brief": {
+          "before": {
+            "lead": "首轮研究尚未写入；取得可核对的公开正文后补充事实与边界。",
+            "points": [
+              "暂不推断产品功能或实际效果。",
+              "保留后续研究入口和缺失范围。"
+            ]
+          },
+          "after": {
+            "lead": "讯飞官方描述了诊断、规划、讲解与练习的闭环，同时在脚注明确功能适用范围。比较时应先核对学段和机型，再讨论能力差异。",
+            "points": [
+              "“测—学—练”连接薄弱项识别、错题讲解和后续练习。",
+              "官网注明规划学仅支持初中数学 AI 精准学，部分功能与资源还受学科、教材、机型限制。"
+            ]
+          }
+        },
+        "dimensions": {
+          "before": {
+            "channel": "待补充",
+            "delivery": "待补充",
+            "content": "待补充",
+            "product": "待补充",
+            "organization": "待补充"
+          },
+          "after": {
+            "product": "自主学习场景；不能将单一机型功能扩展到全产品线。",
+            "content": "资源与学情诊断相连；需核验本地教材覆盖与持续更新条件。",
+            "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
+            "delivery": "未取得该产品的供应链、制造质量和售后结果资料。",
+            "organization": "研究问题：教研定义知识点、算法诊断和产品反馈之间如何验收？官网功能页未披露团队边界。"
+          }
+        },
+        "boundary": {
+          "before": "待原文核验",
+          "after": "功能页是厂商披露；没有可比实验或员工后效，不据此认定学习效果或组织效率提升。"
+        },
+        "gaps": {
+          "before": [
+            "待原文核验"
+          ],
+          "after": [
+            "当前业务组织图、编制与净增岗位未披露。",
+            "本资料不提供可比的学习或工作成效验证。"
+          ]
+        },
+        "sources": {
+          "before": [],
+          "after": [
+            {
+              "id": "edu-iflytek",
+              "title": "科大讯飞 · AI学习机",
+              "url": "https://edu.iflytek.com/solution/family/learning-pad",
+              "publishedAt": null,
+              "role": "official",
+              "readAt": "2026-11-09T01:53:07.386728+00:00",
+              "coverage": "body",
+              "textHash": "b6c8337120e8b2b8964a9f48b5d4eb716fa654142a0765f49205455d7b5f8540"
+            }
+          ]
+        },
+        "facts": {
+          "before": [],
+          "after": [
+            {
+              "sourceId": "edu-iflytek",
+              "claim": "官网描述测、学、练的流程。",
+              "locator": "AI 1对1精准学"
+            },
+            {
+              "sourceId": "edu-iflytek",
+              "claim": "规划学有初中数学适用限制。",
+              "locator": "功能脚注"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "profileId": "yuan-tablet",
+      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "status": "reviewed",
+      "assessment": "首次建立资料基线；逐项核对本资料可支持内容，其余维度明确保留未知。不是全面验证或新品发布。",
+      "changes": {
+        "brief": {
+          "before": {
+            "lead": "首轮研究尚未写入；取得可核对的公开正文后补充事实与边界。",
+            "points": [
+              "暂不推断产品功能或实际效果。",
+              "保留后续研究入口和缺失范围。"
+            ]
+          },
+          "after": {
+            "lead": "小猿家长端把设备使用时间、答案访问、学习轨迹和家庭设备管理放在一起。它提供了观察“孩子端—家长端—硬件”关系的具体入口。",
+            "points": [
+              "开发者说明支持时长约定、答案管控和学习轨迹。",
+              "说明列出小猿智能练习本、学练机与 AI 学习机为配合使用的硬件。"
+            ]
+          }
+        },
+        "dimensions": {
+          "before": {
+            "channel": "待补充",
+            "delivery": "待补充",
+            "content": "待补充",
+            "product": "待补充",
+            "organization": "待补充"
+          },
+          "after": {
+            "product": "硬件与家长 App 配合；本次核对的是 App 管理能力。",
+            "content": "观察使用轨迹如何支持家长协助，不能将使用时间当成掌握程度。",
+            "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
+            "delivery": "未取得该产品的供应链、制造质量和售后结果资料。",
+            "organization": "研究问题：家长端权限、设备账号与学习记录发生冲突时由哪个团队承接？实际职责待招聘或制度验证。"
+          }
+        },
+        "boundary": {
+          "before": "待原文核验",
+          "after": "App Store为开发者自述，非 Apple 独立验证；不引用个人评论、不据 App 功能推断每台设备的完整能力。"
+        },
+        "gaps": {
+          "before": [
+            "待原文核验"
+          ],
+          "after": [
+            "当前业务组织图、编制与净增岗位未披露。",
+            "本资料不提供可比的学习或工作成效验证。"
+          ]
+        },
+        "sources": {
+          "before": [],
+          "after": [
+            {
+              "id": "edu-yuan-app",
+              "title": "小猿智能设备 · App Store开发者说明",
+              "url": "https://apps.apple.com/cn/app/id6738277050",
+              "publishedAt": null,
+              "role": "developer",
+              "readAt": "2026-11-09T01:53:07.639373+00:00",
+              "coverage": "body",
+              "textHash": "1a547813912936ea0c0d5606026cc9935eea499423944682eae3dcf8962f2e11"
+            }
+          ]
+        },
+        "facts": {
+          "before": [],
+          "after": [
+            {
+              "sourceId": "edu-yuan-app",
+              "claim": "家长端可管理时间、答案查看及多孩子多设备。",
+              "locator": "开发者功能说明"
+            },
+            {
+              "sourceId": "edu-yuan-app",
+              "claim": "开发者列明配合使用的三类小猿硬件。",
+              "locator": "使用说明"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "profileId": "okii-watch",
+      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "status": "reviewed",
+      "assessment": "首次建立资料基线；逐项核对本资料可支持内容，其余维度明确保留未知。不是全面验证或新品发布。",
+      "changes": {
+        "brief": {
+          "before": {
+            "lead": "首轮研究尚未写入；取得可核对的公开正文后补充事实与边界。",
+            "points": [
+              "暂不推断产品功能或实际效果。",
+              "保留后续研究入口和缺失范围。"
+            ]
+          },
+          "after": {
+            "lead": "小天才的官方支持文档呈现了绑定、家庭成员和设备设置等服务问题。儿童手表竞争也涉及家庭协同与售后解释成本，不能只比较硬件参数。",
+            "points": [
+              "支持文档按电话手表、儿童平板区分问题，阅读时必须保留设备类别。",
+              "电话手表定时开关机涉及设备联网与手表端确认条件。"
+            ]
+          }
+        },
+        "dimensions": {
+          "before": {
+            "channel": "待补充",
+            "delivery": "待补充",
+            "content": "待补充",
+            "product": "待补充",
+            "organization": "待补充"
+          },
+          "after": {
+            "product": "儿童通信与家庭协同；具体手表型号与功能需另核。",
+            "content": "本资料不是学习内容库说明，不能据此推断课程或学习功能。",
+            "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
+            "delivery": "已读售后 FAQ 中的设置条件；维修网络、质量结果与供应商责任仍待核验。",
+            "organization": "研究问题：手机 App、设备端状态和客服解释如何协同？FAQ 不证明现有组织结构。"
+          }
+        },
+        "boundary": {
+          "before": "待原文核验",
+          "after": "官网 FAQ 未标发布日期；儿童平板的家庭绑定规则不外推到全部手表型号。"
+        },
+        "gaps": {
+          "before": [
+            "待原文核验"
+          ],
+          "after": [
+            "当前业务组织图、编制与净增岗位未披露。",
+            "本资料不提供可比的学习或工作成效验证。"
+          ]
+        },
+        "sources": {
+          "before": [],
+          "after": [
+            {
+              "id": "edu-okii",
+              "title": "小天才 · 常见问题",
+              "url": "https://www.okii.com/html/pc/service/service_question.html",
+              "publishedAt": null,
+              "role": "official",
+              "readAt": "2026-11-09T02:00:20.378566+00:00",
+              "coverage": "body",
+              "textHash": "af30d4cb563b6c7addbb400c277d9581cde06225a32736444b1e9c8cab6be5e5"
+            }
+          ]
+        },
+        "facts": {
+          "before": [],
+          "after": [
+            {
+              "sourceId": "edu-okii",
+              "claim": "电话手表的定时开关机需要关注网络与手表端确认。",
+              "locator": "电话手表 / 定时开关机问题"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "profileId": "huawei-tablet",
+      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "status": "reviewed",
+      "assessment": "首次建立资料基线；逐项核对本资料可支持内容，其余维度明确保留未知。不是全面验证或新品发布。",
+      "changes": {
+        "brief": {
+          "before": {
+            "lead": "首轮研究尚未写入；取得可核对的公开正文后补充事实与边界。",
+            "points": [
+              "暂不推断产品功能或实际效果。",
+              "保留后续研究入口和缺失范围。"
+            ]
+          },
+          "after": {
+            "lead": "华为教育空间是在平板上建立学习与家长管理入口的一种做法。它适合研究通用硬件怎样承载教育场景，不能与专用学习机直接等同。",
+            "points": [
+              "本次支持页标示适用 HUAWEI MatePad Edge、HarmonyOS 6.1。",
+              "教育空间可管理使用时间、应用和可访问内容。"
+            ]
+          }
+        },
+        "dimensions": {
+          "before": {
+            "channel": "待补充",
+            "delivery": "待补充",
+            "content": "待补充",
+            "product": "待补充",
+            "organization": "待补充"
+          },
+          "after": {
+            "product": "通用平板中的教育空间，按页面适用型号与系统阅读。",
+            "content": "教育空间与内容权限；课程质量和完整收费权益未核验。",
+            "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
+            "delivery": "未取得该产品的供应链、制造质量和售后结果资料。",
+            "organization": "研究问题：系统权限、教育应用与家长支持之间如何分责？未取得团队资料。"
+          }
+        },
+        "boundary": {
+          "before": "待原文核验",
+          "after": "仅使用本次支持页覆盖的版本，不混用旧 EMUI 或旧版 HarmonyOS 说明，也不推定所有平板均已支持。"
+        },
+        "gaps": {
+          "before": [
+            "待原文核验"
+          ],
+          "after": [
+            "当前业务组织图、编制与净增岗位未披露。",
+            "本资料不提供可比的学习或工作成效验证。"
+          ]
+        },
+        "sources": {
+          "before": [],
+          "after": [
+            {
+              "id": "edu-huawei",
+              "title": "华为 · 平板教育空间使用指南",
+              "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+              "publishedAt": null,
+              "role": "official",
+              "readAt": "2026-11-09T02:00:22.874623+00:00",
+              "coverage": "body",
+              "textHash": "17dca06954d13a3c2041c544db30b358ff84cd4c74c2c587677f06ec3a00007a"
+            }
+          ]
+        },
+        "facts": {
+          "before": [],
+          "after": [
+            {
+              "sourceId": "edu-huawei",
+              "claim": "教育空间支持时间、应用和内容管控。",
+              "locator": "使用指南"
+            },
+            {
+              "sourceId": "edu-huawei",
+              "claim": "本页有具体产品与系统适用范围。",
+              "locator": "适用产品 / 适用版本"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "profileId": "amazon-tablet",
+      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "status": "reviewed",
+      "assessment": "首次建立资料基线；逐项核对本资料可支持内容，其余维度明确保留未知。不是全面验证或新品发布。",
+      "changes": {
+        "brief": {
+          "before": {
+            "lead": "首轮研究尚未写入；取得可核对的公开正文后补充事实与边界。",
+            "points": [
+              "暂不推断产品功能或实际效果。",
+              "保留后续研究入口和缺失范围。"
+            ]
+          },
+          "after": {
+            "lead": "Amazon 的儿童平板把设备、内容订阅和家长控制组合销售。可借鉴的观察角度是权益与生命周期服务如何跟随硬件，而非把海外内容直接映射到国内教材。",
+            "points": [
+              "页面介绍随设备提供一年 Kids+ 以及预装 Parent Dashboard。",
+              "家长可控制屏幕时间与内容访问；新页面描述的是 Android 平板组合。"
+            ]
+          }
+        },
+        "dimensions": {
+          "before": {
+            "channel": "待补充",
+            "delivery": "待补充",
+            "content": "待补充",
+            "product": "待补充",
+            "organization": "待补充"
+          },
+          "after": {
+            "product": "儿童通用平板，独立于 Kindle 专用阅读器。",
+            "content": "内容订阅和家长管理并存；国内版权、教材、服务可用性未核验。",
+            "channel": "官网披露硬件与一年 Kids+ 的组合；期满费用、区域和具体订单权益需另核。",
+            "delivery": "本页披露一年有限保修；不能沿用旧 Fire Kids 的其他保障条件。",
+            "organization": "研究问题：硬件团队、内容授权、订阅续费与家长支持如何衔接？本页未披露组织图。"
+          }
+        },
+        "boundary": {
+          "before": "待原文核验",
+          "after": "海外市场厂商介绍；不把新 Android 型号与旧 Fire 型号的保修、平台或权益混为一谈。"
+        },
+        "gaps": {
+          "before": [
+            "待原文核验"
+          ],
+          "after": [
+            "当前业务组织图、编制与净增岗位未披露。",
+            "本资料不提供可比的学习或工作成效验证。"
+          ]
+        },
+        "sources": {
+          "before": [],
+          "after": [
+            {
+              "id": "edu-amazon",
+              "title": "Amazon · Kids Tablets介绍",
+              "url": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
+              "publishedAt": null,
+              "role": "official",
+              "readAt": "2026-11-09T01:53:08.282199+00:00",
+              "coverage": "body",
+              "textHash": "50c937b1d45b7532e4329f253470834f9c588240c9a2ac9f42e74aa40f8f54f0"
+            }
+          ]
+        },
+        "facts": {
+          "before": [],
+          "after": [
+            {
+              "sourceId": "edu-amazon",
+              "claim": "设备组合包含一年 Kids+ 订阅。",
+              "locator": "Ready-to-go bundles"
+            },
+            {
+              "sourceId": "edu-amazon",
+              "claim": "Parent Dashboard支持家长管理。",
+              "locator": "How the Parent Dashboard keeps parents connected"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "profileId": "kindle-reader",
+      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "status": "reviewed",
+      "assessment": "首次建立资料基线；逐项核对本资料可支持内容，其余维度明确保留未知。不是全面验证或新品发布。",
+      "changes": {
+        "brief": {
+          "before": {
+            "lead": "首轮研究尚未写入；取得可核对的公开正文后补充事实与边界。",
+            "points": [
+              "暂不推断产品功能或实际效果。",
+              "保留后续研究入口和缺失范围。"
+            ]
+          },
+          "after": {
+            "lead": "Kindle Kids把专注阅读、内容访问和词汇工具结合，适合研究“读—查—复习”的衔接。官方说明同时给出了语言、地区与订阅的限制。",
+            "points": [
+              "Word Wise 在此文中的适用范围为美国英语；查过的词可进入 Vocabulary Builder。",
+              "设备组合含六或十二个月 Kids+，与在普通 Kindle 上创建儿童档案的权益不同。"
+            ]
+          }
+        },
+        "dimensions": {
+          "before": {
+            "channel": "待补充",
+            "delivery": "待补充",
+            "content": "待补充",
+            "product": "待补充",
+            "organization": "待补充"
+          },
+          "after": {
+            "product": "专用阅读器，不将 Fire 或 Kids Tablet 通用平板当作同一品类。",
+            "content": "书库、词典与词汇复习衔接；中文内容授权及国内服务适用性待核验。",
+            "channel": "Kids+包含期随设备组合不同；普通 Kindle 儿童档案需另行获取内容。",
+            "delivery": "未取得该产品的供应链、制造质量和售后结果资料。",
+            "organization": "研究问题：内容采购、阅读体验、家长端和订阅服务如何分责？未取得岗位证据。"
+          }
+        },
+        "boundary": {
+          "before": "待原文核验",
+          "after": "原文2026-03-13发布，并注明2026-09-01更新；本文是历史资料复核，不是今日新品。语言、地区、机型和权益均需保留。"
+        },
+        "gaps": {
+          "before": [
+            "待原文核验"
+          ],
+          "after": [
+            "当前业务组织图、编制与净增岗位未披露。",
+            "本资料不提供可比的学习或工作成效验证。"
+          ]
+        },
+        "sources": {
+          "before": [],
+          "after": [
+            {
+              "id": "edu-kindle",
+              "title": "Amazon · Kindle Kids常见问题",
+              "url": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
+              "publishedAt": "2026-03-13",
+              "role": "official",
+              "readAt": "2026-11-09T02:06:02.575877+00:00",
+              "coverage": "excerpt",
+              "textHash": "e179f989cfbfe8f8536eb7d1ae760ec025b4a141fd112eb2d316a807699a16ff"
+            }
+          ]
+        },
+        "facts": {
+          "before": [],
+          "after": [
+            {
+              "sourceId": "edu-kindle",
+              "claim": "Word Wise的语言地区范围与词汇整理机制均有说明。",
+              "locator": "第2问 / Vocabulary tools"
+            },
+            {
+              "sourceId": "edu-kindle",
+              "claim": "Kids设备组合的订阅时长有区别。",
+              "locator": "第1问 / Kindle Kids devices"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "profileId": "leapfrog-tablet",
+      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "status": "reviewed",
+      "assessment": "首次建立资料基线；逐项核对本资料可支持内容，其余维度明确保留未知。不是全面验证或新品发布。",
+      "changes": {
+        "brief": {
+          "before": {
+            "lead": "首轮研究尚未写入；取得可核对的公开正文后补充事实与边界。",
+            "points": [
+              "暂不推断产品功能或实际效果。",
+              "保留后续研究入口和缺失范围。"
+            ]
+          },
+          "after": {
+            "lead": "LeapPad Academy 的页面把预装内容、额外内容商店和限期试用分开列出。它提供了观察硬件、教研审核与内容付费如何组合的海外案例。",
+            "points": [
+              "该设备页面列出预装应用、另购 App Center 内容与三个月 Academy 试用。",
+              "官网说明其教育团队审核 LeapFrog 内容；这不等于学习结果已被独立验证。"
+            ]
+          }
+        },
+        "dimensions": {
+          "before": {
+            "channel": "待补充",
+            "delivery": "待补充",
+            "content": "待补充",
+            "product": "待补充",
+            "organization": "待补充"
+          },
+          "after": {
+            "product": "儿童学习平板；页面未标日期，不认定为当前新品。",
+            "content": "教研审核与内容售卖并存；不把试用期当作长期免费权益。",
+            "channel": "预装内容 + 另售应用内容 + 限期试用；仅按所读设备页口径。",
+            "delivery": "未取得该产品的供应链、制造质量和售后结果资料。",
+            "organization": "已披露教育团队审核内容；团队规模、汇报线、审核标准和后效未披露。"
+          }
+        },
+        "boundary": {
+          "before": "待原文核验",
+          "after": "美国页面的设备组合；其他订阅入口试用时长可能不同，不能跨页面拼接套餐。"
+        },
+        "gaps": {
+          "before": [
+            "待原文核验"
+          ],
+          "after": [
+            "当前业务组织图、编制与净增岗位未披露。",
+            "本资料不提供可比的学习或工作成效验证。"
+          ]
+        },
+        "sources": {
+          "before": [],
+          "after": [
+            {
+              "id": "edu-leapfrog",
+              "title": "LeapFrog · Tablet family",
+              "url": "https://www.leapfrog.com/en-us/products/tablet-family?bmLocale=en_US",
+              "publishedAt": null,
+              "role": "official",
+              "readAt": "2026-11-09T01:55:24.145324+00:00",
+              "coverage": "body",
+              "textHash": "af60a8332d19c4c6a3ee3cff221db49b62a5645876d73ff341da1658810d4c14"
+            }
+          ]
+        },
+        "facts": {
+          "before": [],
+          "after": [
+            {
+              "sourceId": "edu-leapfrog",
+              "claim": "设备页区分预装、另购与三个月试用。",
+              "locator": "LeapPad Academy"
+            },
+            {
+              "sourceId": "edu-leapfrog",
+              "claim": "官网披露教育团队审核内容。",
+              "locator": "页面脚注"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "profileId": "iflytek-pen",
+      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "status": "reviewed",
+      "assessment": "首次建立资料基线；逐项核对本资料可支持内容，其余维度明确保留未知。不是全面验证或新品发布。",
+      "changes": {
+        "brief": {
+          "before": {
+            "lead": "首轮研究尚未写入；取得可核对的公开正文后补充事实与边界。",
+            "points": [
+              "暂不推断产品功能或实际效果。",
+              "保留后续研究入口和缺失范围。"
+            ]
+          },
+          "after": {
+            "lead": "讯飞翻译笔页面把扫描查词延伸到发音、跟读和同步学习，并区分 P20 与 P20 Plus 的定位。应沿具体型号比较任务链，避免把一个型号的功能写成全系列能力。",
+            "points": [
+              "页面描述扫描单词查词、标准发音、跟读评测与课文朗读。",
+              "P20 Plus 说明提到扩展知识、语法解析和作文批改；不外推到所有词典笔。"
+            ]
+          }
+        },
+        "dimensions": {
+          "before": {
+            "channel": "待补充",
+            "delivery": "待补充",
+            "content": "待补充",
+            "product": "待补充",
+            "organization": "待补充"
+          },
+          "after": {
+            "product": "词典笔 / 翻译笔，核对型号与使用条件。",
+            "content": "辞典、识别和跟读能力衔接；离线范围与授权期限待核验。",
+            "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
+            "delivery": "未取得该产品的供应链、制造质量和售后结果资料。",
+            "organization": "研究问题：OCR错误、词条内容错误和语音评测争议分别由谁负责？岗位边界待核验。"
+          }
+        },
+        "boundary": {
+          "before": "待原文核验",
+          "after": "当前仅阅读官网产品段落；未标发布日期，不能证明仍售状态，也没有真实场景识别准确率测试。"
+        },
+        "gaps": {
+          "before": [
+            "待原文核验"
+          ],
+          "after": [
+            "当前业务组织图、编制与净增岗位未披露。",
+            "本资料不提供可比的学习或工作成效验证。"
+          ]
+        },
+        "sources": {
+          "before": [],
+          "after": [
+            {
+              "id": "edu-pen",
+              "title": "科大讯飞 · AI翻译笔",
+              "url": "https://edu.iflytek.com/solution/family/transpen",
+              "publishedAt": null,
+              "role": "official",
+              "readAt": "2026-11-09T02:06:02.575877+00:00",
+              "coverage": "excerpt",
+              "textHash": "aa2e39bd9d86fad201c3e50266ec60727f8cd4e2460c625dd55877ff73dac5ec"
+            }
+          ]
+        },
+        "facts": {
+          "before": [],
+          "after": [
+            {
+              "sourceId": "edu-pen",
+              "claim": "页面披露扫描查词、发音和跟读功能。",
+              "locator": "课本同步学"
+            },
+            {
+              "sourceId": "edu-pen",
+              "claim": "P20 Plus与P20的说明不同。",
+              "locator": "产品介绍"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "profileId": "dingtalk-recorder",
+      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "status": "reviewed",
+      "assessment": "首次建立资料基线；逐项核对本资料可支持内容，其余维度明确保留未知。不是全面验证或新品发布。",
+      "changes": {
+        "brief": {
+          "before": {
+            "lead": "首轮研究尚未写入；取得可核对的公开正文后补充事实与边界。",
+            "points": [
+              "暂不推断产品功能或实际效果。",
+              "保留后续研究入口和缺失范围。"
+            ]
+          },
+          "after": {
+            "lead": "钉钉官方市场把 A1 录音设备与日历、纪要、待办相连，呈现“采集之后进入工作流”的设计。对照录音设备时，可从这条链路检查信息能否真正被继续使用。",
+            "points": [
+              "官方市场显示 DingTalk A1 / A1 Pro 等硬件入口。",
+              "钉钉发布的“会议自动驾驶”说明描述日程感知、A1录音、纪要、行动项与待办的连接。"
+            ]
+          }
+        },
+        "dimensions": {
+          "before": {
+            "channel": "待补充",
+            "delivery": "待补充",
+            "content": "待补充",
+            "product": "待补充",
+            "organization": "待补充"
+          },
+          "after": {
+            "product": "AI录音设备及配套应用，按具体设备和软件版本核验。",
+            "content": "纪要与行动项连接；原音追溯、检索、导出与配额需实测。",
+            "channel": "市场显示硬件与应用入口；实际成交、软件套餐及长期使用成本待核验。",
+            "delivery": "未取得该产品的供应链、制造质量和售后结果资料。",
+            "organization": "研究问题：设备、语音服务、纪要质量和工作流连接分别由谁负责？这是接口问题，不是组织事实。"
+          }
+        },
+        "boundary": {
+          "before": "待原文核验",
+          "after": "仅为官方市场披露的功能和技能说明；未执行录音或工作流、未验证兼容性与成效，不能当作默认自动执行能力。"
+        },
+        "gaps": {
+          "before": [
+            "待原文核验"
+          ],
+          "after": [
+            "当前业务组织图、编制与净增岗位未披露。",
+            "本资料不提供可比的学习或工作成效验证。"
+          ]
+        },
+        "sources": {
+          "before": [],
+          "after": [
+            {
+              "id": "edu-dingtalk",
+              "title": "钉钉 · AI应用服务市场",
+              "url": "https://aihub.dingtalk.com/",
+              "publishedAt": null,
+              "role": "official",
+              "readAt": "2026-11-09T02:06:02.575877+00:00",
+              "coverage": "excerpt",
+              "textHash": "474811e1038c01d951cca0fa5ca81b745e142c647c42f951152a4a390ccdc790"
+            }
+          ]
+        },
+        "facts": {
+          "before": [],
+          "after": [
+            {
+              "sourceId": "edu-dingtalk",
+              "claim": "官方市场展示A1硬件入口。",
+              "locator": "AI硬件"
+            },
+            {
+              "sourceId": "edu-dingtalk",
+              "claim": "钉钉发布的技能描述录音后生成纪要、提取行动项并创建待办。",
+              "locator": "技能 / 会议自动驾驶"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "reference": {
+    "name": "Xnote",
+    "categoryId": "recorder",
+    "status": "对照参考 · 具体型号和公开资料待确认",
+    "boundary": "暂不填写参数、价格或优劣结论；先沿相同任务链收集可核对材料。"
+  }
+}
