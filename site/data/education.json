@@ -791,6 +791,48 @@
           "note": "首轮连接超时；后续重试取得正文。"
         }
       ]
+    },
+    {
+      "completedAt": "2026-11-09T02:34:25.506645+00:00",
+      "summary": "补充三家核心公司的14份招聘职责基线和4组组织研究，直接学习硬件样本3份，其余共享或相邻业务逐条标界；作业帮供应链仍缺正文。",
+      "checks": [
+        {
+          "company": "作业帮",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/bce3303d-d5ee-41f0-b76f-30e4a45d7d43",
+          "name": "学习硬件岗位职责正文",
+          "purpose": "recruitment",
+          "state": "body",
+          "checkedAt": "2026-11-09T02:24:32.268Z",
+          "categoryIds": [
+            "watch"
+          ],
+          "note": "已读直接业务职责；仅用于岗位研究，本轮未宣称完整复核产品档案。"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "name": "学习硬件岗位职责正文",
+          "purpose": "recruitment",
+          "state": "body",
+          "checkedAt": "2026-11-09T02:22:58.105Z",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "已读直接业务职责；仅用于岗位研究，本轮未宣称完整复核产品档案。"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "name": "学习硬件岗位职责正文",
+          "purpose": "recruitment",
+          "state": "body",
+          "checkedAt": "2026-11-09T02:23:26.429Z",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "已读直接业务职责；仅用于岗位研究，本轮未宣称完整复核产品档案。"
+        }
+      ]
     }
   ],
   "history": [

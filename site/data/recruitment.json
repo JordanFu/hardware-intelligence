@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-09T00:50:02.355002+00:00",
+  "checkedAt": "2026-11-09T02:30:42.120805+00:00",
   "jobs": [
     {
       "company": "DJI 大疆",
@@ -638,6 +638,905 @@
           ]
         }
       ]
+    },
+    {
+      "company": "作业帮",
+      "postingId": "dcfceae0-9c23-47ba-aac8-1a3ccbb2142b",
+      "title": "教研实习生（D111221）",
+      "family": "教研",
+      "location": "北京市",
+      "stages": [
+        "需求与规划",
+        "研发与系统",
+        "质量与合规"
+      ],
+      "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/dcfceae0-9c23-47ba-aac8-1a3ccbb2142b",
+      "postedAt": "2026-11-06",
+      "access": "正文可见",
+      "responsibilities": [
+        "整理与审核题目、基础课件和教研材料"
+      ],
+      "interfaces": [
+        "原文：与主讲和教研沟通；未披露模型评测或硬件验收职责"
+      ],
+      "requirements": [
+        "本科及以上、理科背景、办公软件和细致校对能力"
+      ],
+      "decisionQuestion": "内容录入、学科审核和最终教学质量分别由谁验收？",
+      "boundary": "初中化学教学支持，正文未说明学习机归属；仅为公开职责基线，首次收录不等于新增岗位，页面可见不保证仍在招；人数、汇报线及实际成效未知。",
+      "locator": "岗位职责、任职要求及业务说明",
+      "coverage": "body",
+      "educationResearch": true,
+      "businessScope": "教育业务参考",
+      "scopeNote": "初中化学教学支持，正文未说明学习机归属",
+      "id": "job-d8e8f5d6a35caf48",
+      "firstSeen": "2026-11-09T02:30:42.120805+00:00",
+      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
+      "sourceHash": "d7b68ada5ddbcc15097905844c01d8a757e2ee61846c3229738943838b28536b",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-09T02:30:42.120805+00:00",
+          "sourceHash": "d7b68ada5ddbcc15097905844c01d8a757e2ee61846c3229738943838b28536b",
+          "access": "正文可见",
+          "title": "教研实习生（D111221）",
+          "family": "教研",
+          "location": "北京市",
+          "responsibilities": [
+            "整理与审核题目、基础课件和教研材料"
+          ],
+          "interfaces": [
+            "原文：与主讲和教研沟通；未披露模型评测或硬件验收职责"
+          ],
+          "requirements": [
+            "本科及以上、理科背景、办公软件和细致校对能力"
+          ],
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "businessScope": "教育业务参考",
+          "scopeNote": "初中化学教学支持，正文未说明学习机归属",
+          "educationCategories": null
+        }
+      ]
+    },
+    {
+      "company": "作业帮",
+      "postingId": "e6056b1d-580b-442d-a27f-9ab9f12cd4b1",
+      "title": "算法工程师（D110740）",
+      "family": "算法",
+      "location": "北京市",
+      "stages": [
+        "研发与系统",
+        "质量与合规"
+      ],
+      "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/e6056b1d-580b-442d-a27f-9ab9f12cd4b1",
+      "postedAt": "2026-10-12",
+      "access": "正文可见",
+      "responsibilities": [
+        "开发多传感器健康算法，处理信号干扰并推进低功耗设备量产验证"
+      ],
+      "interfaces": [
+        "原文：协同硬件、固件、产品、测试及医学/生理研究；研究判断：需分清传感质量与模型效果责任"
+      ],
+      "requirements": [
+        "传感算法、信号处理、嵌入式量产经验"
+      ],
+      "decisionQuestion": "健康算法岗位与教育算法是否共享资源？现有证据不能回答。",
+      "boundary": "穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队；仅为公开职责基线，首次收录不等于新增岗位，页面可见不保证仍在招；人数、汇报线及实际成效未知。",
+      "locator": "岗位职责、任职要求及业务说明",
+      "coverage": "body",
+      "educationResearch": true,
+      "businessScope": "相邻业务参考",
+      "scopeNote": "穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队",
+      "id": "job-dee6ed39b271d521",
+      "firstSeen": "2026-11-09T02:30:42.120805+00:00",
+      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
+      "sourceHash": "ec774ff059948139f334d111c0ebdf5f037bb9e1394bd22b232ede6039286c27",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-09T02:30:42.120805+00:00",
+          "sourceHash": "ec774ff059948139f334d111c0ebdf5f037bb9e1394bd22b232ede6039286c27",
+          "access": "正文可见",
+          "title": "算法工程师（D110740）",
+          "family": "算法",
+          "location": "北京市",
+          "responsibilities": [
+            "开发多传感器健康算法，处理信号干扰并推进低功耗设备量产验证"
+          ],
+          "interfaces": [
+            "原文：协同硬件、固件、产品、测试及医学/生理研究；研究判断：需分清传感质量与模型效果责任"
+          ],
+          "requirements": [
+            "传感算法、信号处理、嵌入式量产经验"
+          ],
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "businessScope": "相邻业务参考",
+          "scopeNote": "穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队",
+          "educationCategories": null
+        }
+      ]
+    },
+    {
+      "company": "作业帮",
+      "postingId": "bce3303d-d5ee-41f0-b76f-30e4a45d7d43",
+      "title": "硬件结构工程师（D110856）",
+      "family": "硬件",
+      "location": "原文未明确城市",
+      "stages": [
+        "研发与系统",
+        "制造与交付",
+        "质量与合规"
+      ],
+      "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/bce3303d-d5ee-41f0-b76f-30e4a45d7d43",
+      "postedAt": "2026-10-12",
+      "access": "正文可见",
+      "responsibilities": [
+        "规划结构与主板堆叠，综合空间、散热、防水、模具、量产和成本约束",
+        "处理可靠性问题并完成结构方案交付"
+      ],
+      "interfaces": [
+        "原文：结合ID需求，考虑屏幕、摄像头、音频、天线和射频布局；研究判断：结构方案需与电子设计和制造共同评审"
+      ],
+      "requirements": [
+        "穿戴结构经验、儿童手表机构设计、材料工艺与可靠性分析"
+      ],
+      "decisionQuestion": "结构规格由谁批准，量产可行性与用户体验冲突如何取舍？",
+      "boundary": "儿童手表/手环结构岗位；证明职责需求，不证明具体新品上市或项目进度；仅为公开职责基线，首次收录不等于新增岗位，页面可见不保证仍在招；人数、汇报线及实际成效未知。",
+      "locator": "岗位职责、任职要求及业务说明",
+      "coverage": "body",
+      "educationResearch": true,
+      "businessScope": "硬件直接相关",
+      "scopeNote": "儿童手表/手环结构岗位；证明职责需求，不证明具体新品上市或项目进度",
+      "educationCategories": [
+        "watch"
+      ],
+      "id": "job-f3f120078f21d7a5",
+      "firstSeen": "2026-11-09T02:30:42.120805+00:00",
+      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
+      "sourceHash": "2aa692aa2d334019f599a8c48b76d7b83861918e0cf7c1b14432eed8f44749b4",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-09T02:30:42.120805+00:00",
+          "sourceHash": "2aa692aa2d334019f599a8c48b76d7b83861918e0cf7c1b14432eed8f44749b4",
+          "access": "正文可见",
+          "title": "硬件结构工程师（D110856）",
+          "family": "硬件",
+          "location": "原文未明确城市",
+          "responsibilities": [
+            "规划结构与主板堆叠，综合空间、散热、防水、模具、量产和成本约束",
+            "处理可靠性问题并完成结构方案交付"
+          ],
+          "interfaces": [
+            "原文：结合ID需求，考虑屏幕、摄像头、音频、天线和射频布局；研究判断：结构方案需与电子设计和制造共同评审"
+          ],
+          "requirements": [
+            "穿戴结构经验、儿童手表机构设计、材料工艺与可靠性分析"
+          ],
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "businessScope": "硬件直接相关",
+          "scopeNote": "儿童手表/手环结构岗位；证明职责需求，不证明具体新品上市或项目进度",
+          "educationCategories": [
+            "watch"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "作业帮",
+      "postingId": "5c016df5-2a57-4758-b3e3-4a58eb276ffe",
+      "title": "渠道运营（D110568）",
+      "family": "渠道",
+      "location": "河南·郑州市",
+      "stages": [
+        "渠道与销售",
+        "服务与生命周期"
+      ],
+      "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/5c016df5-2a57-4758-b3e3-4a58eb276ffe",
+      "postedAt": "2026-09-17",
+      "access": "正文可见",
+      "responsibilities": [
+        "拓展及维护线上图书经销商和中盘客户，参与营销方案与销售反馈"
+      ],
+      "interfaces": [
+        "原文：配合产品、营销部门参与图书策划宣传；未披露学习机售后或门店管理职责"
+      ],
+      "requirements": [
+        "图书发行、经销商资源及电商销售流程经验"
+      ],
+      "decisionQuestion": "若研究硬件渠道，需要另补设备经销授权、库存与售后分工证据。",
+      "boundary": "教辅图书经销商渠道；不能作为学习机零售组织证据；仅为公开职责基线，首次收录不等于新增岗位，页面可见不保证仍在招；人数、汇报线及实际成效未知。",
+      "locator": "岗位职责、任职要求及业务说明",
+      "coverage": "body",
+      "educationResearch": true,
+      "businessScope": "相邻业务参考",
+      "scopeNote": "教辅图书经销商渠道；不能作为学习机零售组织证据",
+      "id": "job-a74c7e3ad3b31f9d",
+      "firstSeen": "2026-11-09T02:30:42.120805+00:00",
+      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
+      "sourceHash": "98a0344966764882bae28d2b897502c18914dab82cdfc25ad5a16e1d6f13429f",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-09T02:30:42.120805+00:00",
+          "sourceHash": "98a0344966764882bae28d2b897502c18914dab82cdfc25ad5a16e1d6f13429f",
+          "access": "正文可见",
+          "title": "渠道运营（D110568）",
+          "family": "渠道",
+          "location": "河南·郑州市",
+          "responsibilities": [
+            "拓展及维护线上图书经销商和中盘客户，参与营销方案与销售反馈"
+          ],
+          "interfaces": [
+            "原文：配合产品、营销部门参与图书策划宣传；未披露学习机售后或门店管理职责"
+          ],
+          "requirements": [
+            "图书发行、经销商资源及电商销售流程经验"
+          ],
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "businessScope": "相邻业务参考",
+          "scopeNote": "教辅图书经销商渠道；不能作为学习机零售组织证据",
+          "educationCategories": null
+        }
+      ]
+    },
+    {
+      "company": "科大讯飞",
+      "postingId": "b3cb393c-b37e-4b1a-a6bb-88af35871a09",
+      "title": "AI研究院-数学教研员（小\\初\\高）-合肥",
+      "family": "教研",
+      "location": "安徽省·合肥市",
+      "stages": [
+        "需求与规划",
+        "研发与系统",
+        "质量与合规"
+      ],
+      "url": "https://iflytek.zhiye.com/social/detail?jobAdId=b3cb393c-b37e-4b1a-a6bb-88af35871a09",
+      "postedAt": "2026-05-12",
+      "access": "正文可见",
+      "responsibilities": [
+        "编写学科解题思路，参与大模型标准、内容质检和供应商管理",
+        "岗位要求关注团队内容准确率与产量"
+      ],
+      "interfaces": [
+        "原文：教研参与标准及供应商管理；研究判断：学科正确性验收需与算法技术评测分开"
+      ],
+      "requirements": [
+        "学科基础、题库或教研经历、清晰的教学表达"
+      ],
+      "decisionQuestion": "谁决定学科正确性标准，质量与产量冲突时谁能停止交付？",
+      "boundary": "涉及理科学科和大模型内容标准，未限定学习机业务；仅为公开职责基线，首次收录不等于新增岗位，页面可见不保证仍在招；人数、汇报线及实际成效未知。",
+      "locator": "岗位职责、任职要求及业务说明",
+      "coverage": "body",
+      "educationResearch": true,
+      "businessScope": "教育业务参考",
+      "scopeNote": "涉及理科学科和大模型内容标准，未限定学习机业务",
+      "id": "job-72c2576db513719a",
+      "firstSeen": "2026-11-09T02:30:42.120805+00:00",
+      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
+      "sourceHash": "36c9c5a716698fc57bea892699ec42893e9dd1bf0d138db579138097c6407a78",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-09T02:30:42.120805+00:00",
+          "sourceHash": "36c9c5a716698fc57bea892699ec42893e9dd1bf0d138db579138097c6407a78",
+          "access": "正文可见",
+          "title": "AI研究院-数学教研员（小\\初\\高）-合肥",
+          "family": "教研",
+          "location": "安徽省·合肥市",
+          "responsibilities": [
+            "编写学科解题思路，参与大模型标准、内容质检和供应商管理",
+            "岗位要求关注团队内容准确率与产量"
+          ],
+          "interfaces": [
+            "原文：教研参与标准及供应商管理；研究判断：学科正确性验收需与算法技术评测分开"
+          ],
+          "requirements": [
+            "学科基础、题库或教研经历、清晰的教学表达"
+          ],
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "businessScope": "教育业务参考",
+          "scopeNote": "涉及理科学科和大模型内容标准，未限定学习机业务",
+          "educationCategories": null
+        }
+      ]
+    },
+    {
+      "company": "科大讯飞",
+      "postingId": "dc4e67cc-59ed-4a75-8b7a-e0d6ae6faaa9",
+      "title": "AI研究院-算法工程师-OCR方向(J14869)",
+      "family": "算法",
+      "location": "安徽省·合肥市",
+      "stages": [
+        "研发与系统",
+        "质量与合规"
+      ],
+      "url": "https://iflytek.zhiye.com/social/detail?jobAdId=dc4e67cc-59ed-4a75-8b7a-e0d6ae6faaa9",
+      "postedAt": "2026-11-06",
+      "access": "正文可见",
+      "responsibilities": [
+        "研究文字检测识别、文档理解和OCR大模型，优化数据与算法并解决落地问题"
+      ],
+      "interfaces": [
+        "原文：与团队合作推进落地；未披露与教研或设备团队的具体汇报和验收关系"
+      ],
+      "requirements": [
+        "硕士及以上、序列建模、编程及相关多模态研究经验"
+      ],
+      "decisionQuestion": "OCR错误由谁分级，识别性能如何转换为学习场景的质量门槛？",
+      "boundary": "集团统一招聘的OCR能力，未指定学习机或词典笔项目；仅为公开职责基线，首次收录不等于新增岗位，页面可见不保证仍在招；人数、汇报线及实际成效未知。",
+      "locator": "岗位职责、任职要求及业务说明",
+      "coverage": "body",
+      "educationResearch": true,
+      "businessScope": "公司共享能力",
+      "scopeNote": "集团统一招聘的OCR能力，未指定学习机或词典笔项目",
+      "id": "job-6ad13572c435cde0",
+      "firstSeen": "2026-11-09T02:30:42.120805+00:00",
+      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
+      "sourceHash": "46428c6fef15a49e07d70af7d8d0f94c1cd36347c94ff1a8705d6e3c8ba28011",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-09T02:30:42.120805+00:00",
+          "sourceHash": "46428c6fef15a49e07d70af7d8d0f94c1cd36347c94ff1a8705d6e3c8ba28011",
+          "access": "正文可见",
+          "title": "AI研究院-算法工程师-OCR方向(J14869)",
+          "family": "算法",
+          "location": "安徽省·合肥市",
+          "responsibilities": [
+            "研究文字检测识别、文档理解和OCR大模型，优化数据与算法并解决落地问题"
+          ],
+          "interfaces": [
+            "原文：与团队合作推进落地；未披露与教研或设备团队的具体汇报和验收关系"
+          ],
+          "requirements": [
+            "硕士及以上、序列建模、编程及相关多模态研究经验"
+          ],
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "businessScope": "公司共享能力",
+          "scopeNote": "集团统一招聘的OCR能力，未指定学习机或词典笔项目",
+          "educationCategories": null
+        }
+      ]
+    },
+    {
+      "company": "科大讯飞",
+      "postingId": "88077f48-0bb2-4ee9-9030-c28d04ca85ee",
+      "title": "中级硬件工程师",
+      "family": "硬件",
+      "location": "安徽省·合肥市",
+      "stages": [
+        "研发与系统",
+        "制造与交付",
+        "质量与合规"
+      ],
+      "url": "https://iflytek.zhiye.com/social/detail?jobAdId=88077f48-0bb2-4ee9-9030-c28d04ca85ee",
+      "postedAt": "2026-05-12",
+      "access": "正文可见",
+      "responsibilities": [
+        "通过失效根因推动设计改进，统筹售后硬件问题解决"
+      ],
+      "interfaces": [
+        "原文：从售后问题分析拉通研发质量改善；研究判断：需要售后复现、研发变更、质量验证三方闭环"
+      ],
+      "requirements": [
+        "硬件开发、测试维护、模数电及SI/PI经验"
+      ],
+      "decisionQuestion": "售后问题进入研发变更的门槛、优先级和关闭标准是什么？",
+      "boundary": "消费电子失效分析岗位，未限定学习机；仅为公开职责基线，首次收录不等于新增岗位，页面可见不保证仍在招；人数、汇报线及实际成效未知。",
+      "locator": "岗位职责、任职要求及业务说明",
+      "coverage": "body",
+      "educationResearch": true,
+      "businessScope": "公司共享能力",
+      "scopeNote": "消费电子失效分析岗位，未限定学习机",
+      "id": "job-797f93614cde9bde",
+      "firstSeen": "2026-11-09T02:30:42.120805+00:00",
+      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
+      "sourceHash": "e367857bfc7b181fd665537a96af5c9ec85c08605b3eea26e9d094639bc75bdb",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-09T02:30:42.120805+00:00",
+          "sourceHash": "e367857bfc7b181fd665537a96af5c9ec85c08605b3eea26e9d094639bc75bdb",
+          "access": "正文可见",
+          "title": "中级硬件工程师",
+          "family": "硬件",
+          "location": "安徽省·合肥市",
+          "responsibilities": [
+            "通过失效根因推动设计改进，统筹售后硬件问题解决"
+          ],
+          "interfaces": [
+            "原文：从售后问题分析拉通研发质量改善；研究判断：需要售后复现、研发变更、质量验证三方闭环"
+          ],
+          "requirements": [
+            "硬件开发、测试维护、模数电及SI/PI经验"
+          ],
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "businessScope": "公司共享能力",
+          "scopeNote": "消费电子失效分析岗位，未限定学习机",
+          "educationCategories": null
+        }
+      ]
+    },
+    {
+      "company": "科大讯飞",
+      "postingId": "51602eb0-837d-46d5-bda4-81629a65f559",
+      "title": "供应商管理工程师-硬件方向",
+      "family": "供应链",
+      "location": "广东省·深圳市",
+      "stages": [
+        "供应链与采购",
+        "制造与交付",
+        "服务与生命周期"
+      ],
+      "url": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
+      "postedAt": "2026-05-12",
+      "access": "正文可见",
+      "responsibilities": [
+        "建立供应商储备，负责寻源、导入、核价和研发样品交付",
+        "承担年度降本，预警合作风险并进行竞品成本分析"
+      ],
+      "interfaces": [
+        "原文：供应商资源到研发样品交付；研究判断：采购负责资源与商务，器件技术验收仍需另核研发和质量接口"
+      ],
+      "requirements": [
+        "消费电子寻源经验、模组及结构件资源、成本分析与谈判能力"
+      ],
+      "decisionQuestion": "降本指标是否附带质量和交期约束，样品转量产由谁放行？",
+      "boundary": "消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机；仅为公开职责基线，首次收录不等于新增岗位，页面可见不保证仍在招；人数、汇报线及实际成效未知。",
+      "locator": "岗位职责、任职要求及业务说明",
+      "coverage": "body",
+      "educationResearch": true,
+      "businessScope": "公司共享能力",
+      "scopeNote": "消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机",
+      "id": "job-64eaead4b243a34c",
+      "firstSeen": "2026-11-09T02:30:42.120805+00:00",
+      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
+      "sourceHash": "d367fee8f52072da2786051fc233e03f2d8bd9886ef73c5619bfbf8fe35f8c33",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-09T02:30:42.120805+00:00",
+          "sourceHash": "d367fee8f52072da2786051fc233e03f2d8bd9886ef73c5619bfbf8fe35f8c33",
+          "access": "正文可见",
+          "title": "供应商管理工程师-硬件方向",
+          "family": "供应链",
+          "location": "广东省·深圳市",
+          "responsibilities": [
+            "建立供应商储备，负责寻源、导入、核价和研发样品交付",
+            "承担年度降本，预警合作风险并进行竞品成本分析"
+          ],
+          "interfaces": [
+            "原文：供应商资源到研发样品交付；研究判断：采购负责资源与商务，器件技术验收仍需另核研发和质量接口"
+          ],
+          "requirements": [
+            "消费电子寻源经验、模组及结构件资源、成本分析与谈判能力"
+          ],
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "服务与生命周期"
+          ],
+          "businessScope": "公司共享能力",
+          "scopeNote": "消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机",
+          "educationCategories": null
+        }
+      ]
+    },
+    {
+      "company": "科大讯飞",
+      "postingId": "179aac28-bb83-4ed6-938e-25d57a57899b",
+      "title": "消费者BG-中级渠道经理-北京/上海/合肥",
+      "family": "渠道",
+      "location": "北京市（职责覆盖北京/上海/合肥）",
+      "stages": [
+        "渠道与销售",
+        "服务与生命周期"
+      ],
+      "url": "https://iflytek.zhiye.com/social/detail?jobAdId=179aac28-bb83-4ed6-938e-25d57a57899b",
+      "postedAt": "2026-05-12",
+      "access": "正文可见",
+      "responsibilities": [
+        "拓展授权渠道，开展培训、政策宣导、运营评估与销售数据分析"
+      ],
+      "interfaces": [
+        "原文：协同产品、营销、服务团队，连接消费者触达与售前售后"
+      ],
+      "requirements": [
+        "消费电子或ICT渠道经验、CRM及跨部门协调"
+      ],
+      "decisionQuestion": "渠道经理与服务团队如何划分售后承诺、库存与客户投诉责任？",
+      "boundary": "消费者业务渠道，未指明学习机产品线；仅为公开职责基线，首次收录不等于新增岗位，页面可见不保证仍在招；人数、汇报线及实际成效未知。",
+      "locator": "岗位职责、任职要求及业务说明",
+      "coverage": "body",
+      "educationResearch": true,
+      "businessScope": "公司共享能力",
+      "scopeNote": "消费者业务渠道，未指明学习机产品线",
+      "id": "job-c1045357d5154cb3",
+      "firstSeen": "2026-11-09T02:30:42.120805+00:00",
+      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
+      "sourceHash": "3815c59cfbe4945a2b8f22e6936f3d0feba47dfb25445f1b7845354b7d920229",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-09T02:30:42.120805+00:00",
+          "sourceHash": "3815c59cfbe4945a2b8f22e6936f3d0feba47dfb25445f1b7845354b7d920229",
+          "access": "正文可见",
+          "title": "消费者BG-中级渠道经理-北京/上海/合肥",
+          "family": "渠道",
+          "location": "北京市（职责覆盖北京/上海/合肥）",
+          "responsibilities": [
+            "拓展授权渠道，开展培训、政策宣导、运营评估与销售数据分析"
+          ],
+          "interfaces": [
+            "原文：协同产品、营销、服务团队，连接消费者触达与售前售后"
+          ],
+          "requirements": [
+            "消费电子或ICT渠道经验、CRM及跨部门协调"
+          ],
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "businessScope": "公司共享能力",
+          "scopeNote": "消费者业务渠道，未指明学习机产品线",
+          "educationCategories": null
+        }
+      ]
+    },
+    {
+      "company": "猿辅导（小猿）",
+      "postingId": "70dc09b3-4eef-444b-8b17-f31ad6614dcf",
+      "title": "2026届校招-AI产品教研",
+      "family": "教研",
+      "location": "原文未标地点",
+      "stages": [
+        "需求与规划",
+        "研发与系统",
+        "质量与合规"
+      ],
+      "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/70dc09b3-4eef-444b-8b17-f31ad6614dcf",
+      "postedAt": "2026-02-26",
+      "access": "正文可见",
+      "responsibilities": [
+        "参与教学资源、需求和产品设计，建设测试集与标注并反馈模型问题",
+        "参与模型调研、训练及提示词调试"
+      ],
+      "interfaces": [
+        "原文：连接教学团队和产品研发团队；研究判断：教研提供学习标准与失败样例，不由此推断承担底层模型研发所有权"
+      ],
+      "requirements": [
+        "本科及以上、AI相关背景优先、教学理解和跨团队沟通"
+      ],
+      "decisionQuestion": "教研测试集如何进入模型验收，教学价值和技术指标由谁共同签收？",
+      "boundary": "小学AIGC教育产品，正文未限定设备或学习机团队；仅为公开职责基线，首次收录不等于新增岗位，页面可见不保证仍在招；人数、汇报线及实际成效未知。",
+      "locator": "岗位职责、任职要求及业务说明",
+      "coverage": "body",
+      "educationResearch": true,
+      "businessScope": "教育业务参考",
+      "scopeNote": "小学AIGC教育产品，正文未限定设备或学习机团队",
+      "id": "job-03f79073b0d9a735",
+      "firstSeen": "2026-11-09T02:30:42.120805+00:00",
+      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
+      "sourceHash": "a8d3fae89f684f2c9f9f22d1ed143527dd44600eacdf871ecc8663a6b99f1855",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-09T02:30:42.120805+00:00",
+          "sourceHash": "a8d3fae89f684f2c9f9f22d1ed143527dd44600eacdf871ecc8663a6b99f1855",
+          "access": "正文可见",
+          "title": "2026届校招-AI产品教研",
+          "family": "教研",
+          "location": "原文未标地点",
+          "responsibilities": [
+            "参与教学资源、需求和产品设计，建设测试集与标注并反馈模型问题",
+            "参与模型调研、训练及提示词调试"
+          ],
+          "interfaces": [
+            "原文：连接教学团队和产品研发团队；研究判断：教研提供学习标准与失败样例，不由此推断承担底层模型研发所有权"
+          ],
+          "requirements": [
+            "本科及以上、AI相关背景优先、教学理解和跨团队沟通"
+          ],
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "businessScope": "教育业务参考",
+          "scopeNote": "小学AIGC教育产品，正文未限定设备或学习机团队",
+          "educationCategories": null
+        }
+      ]
+    },
+    {
+      "company": "猿辅导（小猿）",
+      "postingId": "5ecdce43-9ab2-48bb-ade9-ff021311daef",
+      "title": "算法实习生-多模态文档理解",
+      "family": "算法",
+      "location": "原文未标地点",
+      "stages": [
+        "研发与系统",
+        "质量与合规"
+      ],
+      "url": "https://app.mokahr.com/social-recruitment/fenbi/45505#/job/5ecdce43-9ab2-48bb-ade9-ff021311daef",
+      "postedAt": "2026-04-21",
+      "access": "正文可见",
+      "responsibilities": [
+        "提升手写、公式等复杂文本识别，参与训练数据质量优化",
+        "探索模型压缩、量化和蒸馏，支持轻量部署"
+      ],
+      "interfaces": [
+        "原文：模型与数据工程并行；研究判断：学科错例和部署约束需分别对接教学与工程团队，具体组织归属未知"
+      ],
+      "requirements": [
+        "在校硕士、Python/PyTorch、实验分析和相关研究能力"
+      ],
+      "decisionQuestion": "是否分别评估识别正确率、公式语义和部署开销，谁负责交接这些指标？",
+      "boundary": "基础研发部教育OCR能力，未说明专属学习机；仅为公开职责基线，首次收录不等于新增岗位，页面可见不保证仍在招；人数、汇报线及实际成效未知。",
+      "locator": "岗位职责、任职要求及业务说明",
+      "coverage": "body",
+      "educationResearch": true,
+      "businessScope": "教育业务参考",
+      "scopeNote": "基础研发部教育OCR能力，未说明专属学习机",
+      "id": "job-36588c371ea71881",
+      "firstSeen": "2026-11-09T02:30:42.120805+00:00",
+      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
+      "sourceHash": "86c0ef2be81ebb0dca088e7541417ff8ae75341b7a24a4d33823a3be06a78e11",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-09T02:30:42.120805+00:00",
+          "sourceHash": "86c0ef2be81ebb0dca088e7541417ff8ae75341b7a24a4d33823a3be06a78e11",
+          "access": "正文可见",
+          "title": "算法实习生-多模态文档理解",
+          "family": "算法",
+          "location": "原文未标地点",
+          "responsibilities": [
+            "提升手写、公式等复杂文本识别，参与训练数据质量优化",
+            "探索模型压缩、量化和蒸馏，支持轻量部署"
+          ],
+          "interfaces": [
+            "原文：模型与数据工程并行；研究判断：学科错例和部署约束需分别对接教学与工程团队，具体组织归属未知"
+          ],
+          "requirements": [
+            "在校硕士、Python/PyTorch、实验分析和相关研究能力"
+          ],
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "businessScope": "教育业务参考",
+          "scopeNote": "基础研发部教育OCR能力，未说明专属学习机",
+          "educationCategories": null
+        }
+      ]
+    },
+    {
+      "company": "猿辅导（小猿）",
+      "postingId": "2cc39ade-54ea-48f5-b68d-7c15e4046578",
+      "title": "2026届春招-硬件研发工程师",
+      "family": "硬件",
+      "location": "原文未标地点",
+      "stages": [
+        "研发与系统",
+        "制造与交付",
+        "质量与合规"
+      ],
+      "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+      "postedAt": "2026-03-04",
+      "access": "正文可见",
+      "responsibilities": [
+        "设计硬件架构、原理图和器件方案，完成模块到整机测试",
+        "定位设计、测试与试产故障并维护技术文档"
+      ],
+      "interfaces": [
+        "原文：参与PCB评审并跨团队达成硬件目标；研究判断：设计输出与试产缺陷需要可追踪交接"
+      ],
+      "requirements": [
+        "电子类专业、模数电、开发工具和硬件测试基础"
+      ],
+      "decisionQuestion": "设计、试产和量产问题的责任如何切换，谁维护最终变更记录？",
+      "boundary": "原文明确小猿产品及学习机、学练机业务，未划分具体型号；仅为公开职责基线，首次收录不等于新增岗位，页面可见不保证仍在招；人数、汇报线及实际成效未知。",
+      "locator": "岗位职责、任职要求及业务说明",
+      "coverage": "body",
+      "educationResearch": true,
+      "businessScope": "硬件直接相关",
+      "scopeNote": "原文明确小猿产品及学习机、学练机业务，未划分具体型号",
+      "educationCategories": [
+        "tablet"
+      ],
+      "id": "job-6c6331e12e6b4c66",
+      "firstSeen": "2026-11-09T02:30:42.120805+00:00",
+      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
+      "sourceHash": "2c8e92aeec8845f458bdc658e6f76ca865dda8ad852ef8c28ee8de426eea753f",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-09T02:30:42.120805+00:00",
+          "sourceHash": "2c8e92aeec8845f458bdc658e6f76ca865dda8ad852ef8c28ee8de426eea753f",
+          "access": "正文可见",
+          "title": "2026届春招-硬件研发工程师",
+          "family": "硬件",
+          "location": "原文未标地点",
+          "responsibilities": [
+            "设计硬件架构、原理图和器件方案，完成模块到整机测试",
+            "定位设计、测试与试产故障并维护技术文档"
+          ],
+          "interfaces": [
+            "原文：参与PCB评审并跨团队达成硬件目标；研究判断：设计输出与试产缺陷需要可追踪交接"
+          ],
+          "requirements": [
+            "电子类专业、模数电、开发工具和硬件测试基础"
+          ],
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "businessScope": "硬件直接相关",
+          "scopeNote": "原文明确小猿产品及学习机、学练机业务，未划分具体型号",
+          "educationCategories": [
+            "tablet"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "猿辅导（小猿）",
+      "postingId": "5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+      "title": "2026届春招-供应链运营管培生",
+      "family": "供应链",
+      "location": "深圳（正文岗位base地）",
+      "stages": [
+        "供应链与采购",
+        "制造与交付",
+        "服务与生命周期"
+      ],
+      "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+      "postedAt": "2026-03-11",
+      "access": "正文可见",
+      "responsibilities": [
+        "衔接销售计划采购配件赠品，跟进合同、采购和付款",
+        "管理工厂物料齐套、欠料与库存，协助学习机售后问题跟进"
+      ],
+      "interfaces": [
+        "原文：销售计划→供应商/工厂→售后；研究判断：三个接口可能由轮岗或协作完成，不能推断单人独立承担全部职能"
+      ],
+      "requirements": [
+        "供应链相关背景优先、ERP和数据分析能力"
+      ],
+      "decisionQuestion": "轮岗与固定责任各占多少，供应链与售后的问题关闭权归谁？",
+      "boundary": "正文明确学习机售后及小猿设备业务；管培生职责可能含轮岗，不能视为固定组织架构；仅为公开职责基线，首次收录不等于新增岗位，页面可见不保证仍在招；人数、汇报线及实际成效未知。",
+      "locator": "岗位职责、任职要求及业务说明",
+      "coverage": "body",
+      "educationResearch": true,
+      "businessScope": "硬件直接相关",
+      "scopeNote": "正文明确学习机售后及小猿设备业务；管培生职责可能含轮岗，不能视为固定组织架构",
+      "educationCategories": [
+        "tablet"
+      ],
+      "id": "job-547c6c04c9807a51",
+      "firstSeen": "2026-11-09T02:30:42.120805+00:00",
+      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
+      "sourceHash": "982ecc6cff1cfeb8d1a745669098f97d72ce74b99df011b75c55a1b7aeae3821",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-09T02:30:42.120805+00:00",
+          "sourceHash": "982ecc6cff1cfeb8d1a745669098f97d72ce74b99df011b75c55a1b7aeae3821",
+          "access": "正文可见",
+          "title": "2026届春招-供应链运营管培生",
+          "family": "供应链",
+          "location": "深圳（正文岗位base地）",
+          "responsibilities": [
+            "衔接销售计划采购配件赠品，跟进合同、采购和付款",
+            "管理工厂物料齐套、欠料与库存，协助学习机售后问题跟进"
+          ],
+          "interfaces": [
+            "原文：销售计划→供应商/工厂→售后；研究判断：三个接口可能由轮岗或协作完成，不能推断单人独立承担全部职能"
+          ],
+          "requirements": [
+            "供应链相关背景优先、ERP和数据分析能力"
+          ],
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "服务与生命周期"
+          ],
+          "businessScope": "硬件直接相关",
+          "scopeNote": "正文明确学习机售后及小猿设备业务；管培生职责可能含轮岗，不能视为固定组织架构",
+          "educationCategories": [
+            "tablet"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "猿辅导（小猿）",
+      "postingId": "e0ccd64d-0f72-49d3-a787-e87b44bac2d1",
+      "title": "直播运营负责人",
+      "family": "渠道",
+      "location": "原文未标地点",
+      "stages": [
+        "渠道与销售",
+        "服务与生命周期"
+      ],
+      "url": "https://app.mokahr.com/social-recruitment/fenbi/45505#/job/e0ccd64d-0f72-49d3-a787-e87b44bac2d1",
+      "postedAt": "2026-10-30",
+      "access": "正文可见",
+      "responsibilities": [
+        "统筹直播渠道策略、组品、内容与团队，联看成交、退款及履约成本"
+      ],
+      "interfaces": [
+        "原文：协同产品、教研、学管与后端销售；定价按审批边界落地，前端承诺需与交付一致"
+      ],
+      "requirements": [
+        "教育直播操盘、组品分析、团队管理及后端转化经验"
+      ],
+      "decisionQuestion": "渠道经营授权到哪里，退款与履约成本如何影响人员配置和销售承诺？",
+      "boundary": "海豚AI一对一教学服务，未提学习硬件销售；仅为公开职责基线，首次收录不等于新增岗位，页面可见不保证仍在招；人数、汇报线及实际成效未知。",
+      "locator": "岗位职责、任职要求及业务说明",
+      "coverage": "body",
+      "educationResearch": true,
+      "businessScope": "相邻业务参考",
+      "scopeNote": "海豚AI一对一教学服务，未提学习硬件销售",
+      "id": "job-1aaf56ee506f9b32",
+      "firstSeen": "2026-11-09T02:30:42.120805+00:00",
+      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
+      "sourceHash": "d02a538ee71836d31017d9e08d9cdd6bf927152a352e5f9836e50007bb6b4a71",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-09T02:30:42.120805+00:00",
+          "sourceHash": "d02a538ee71836d31017d9e08d9cdd6bf927152a352e5f9836e50007bb6b4a71",
+          "access": "正文可见",
+          "title": "直播运营负责人",
+          "family": "渠道",
+          "location": "原文未标地点",
+          "responsibilities": [
+            "统筹直播渠道策略、组品、内容与团队，联看成交、退款及履约成本"
+          ],
+          "interfaces": [
+            "原文：协同产品、教研、学管与后端销售；定价按审批边界落地，前端承诺需与交付一致"
+          ],
+          "requirements": [
+            "教育直播操盘、组品分析、团队管理及后端转化经验"
+          ],
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "businessScope": "相邻业务参考",
+          "scopeNote": "海豚AI一对一教学服务，未提学习硬件销售",
+          "educationCategories": null
+        }
+      ]
     }
   ],
   "changes": [
@@ -724,6 +1623,118 @@
     {
       "jobId": "job-ed1e44bd877f835f",
       "observedAt": "2026-11-09T00:50:02.355002+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-d8e8f5d6a35caf48",
+      "observedAt": "2026-11-09T02:30:42.120805+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-dee6ed39b271d521",
+      "observedAt": "2026-11-09T02:30:42.120805+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-f3f120078f21d7a5",
+      "observedAt": "2026-11-09T02:30:42.120805+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-a74c7e3ad3b31f9d",
+      "observedAt": "2026-11-09T02:30:42.120805+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-72c2576db513719a",
+      "observedAt": "2026-11-09T02:30:42.120805+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-6ad13572c435cde0",
+      "observedAt": "2026-11-09T02:30:42.120805+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-797f93614cde9bde",
+      "observedAt": "2026-11-09T02:30:42.120805+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-64eaead4b243a34c",
+      "observedAt": "2026-11-09T02:30:42.120805+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-c1045357d5154cb3",
+      "observedAt": "2026-11-09T02:30:42.120805+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-03f79073b0d9a735",
+      "observedAt": "2026-11-09T02:30:42.120805+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-36588c371ea71881",
+      "observedAt": "2026-11-09T02:30:42.120805+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-6c6331e12e6b4c66",
+      "observedAt": "2026-11-09T02:30:42.120805+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-547c6c04c9807a51",
+      "observedAt": "2026-11-09T02:30:42.120805+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-1aaf56ee506f9b32",
+      "observedAt": "2026-11-09T02:30:42.120805+00:00",
       "kind": "首次收录基线",
       "fields": [],
       "before": {},
@@ -828,6 +1839,206 @@
       "complete": false,
       "note": "招聘入口无可读岗位且官方链接归属未完整核验，不计可用观察。",
       "checkedAt": "2026-11-09T00:50:02.355002+00:00"
+    },
+    {
+      "company": "作业帮",
+      "state": "partial",
+      "complete": false,
+      "note": "完成五岗位族定向检索和正文样本核验；非完整招聘目录。业务归属逐岗位标注，硬件专属覆盖仍不完整。",
+      "familyChecks": [
+        {
+          "family": "教研",
+          "state": "body",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/dcfceae0-9c23-47ba-aac8-1a3ccbb2142b",
+          "jobIds": [
+            "job-d8e8f5d6a35caf48"
+          ],
+          "note": "初中化学教学支持，正文未说明学习机归属"
+        },
+        {
+          "family": "算法",
+          "state": "body",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/e6056b1d-580b-442d-a27f-9ab9f12cd4b1",
+          "jobIds": [
+            "job-dee6ed39b271d521"
+          ],
+          "note": "穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队"
+        },
+        {
+          "family": "硬件",
+          "state": "body",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/bce3303d-d5ee-41f0-b76f-30e4a45d7d43",
+          "jobIds": [
+            "job-f3f120078f21d7a5"
+          ],
+          "note": "儿童手表/手环结构岗位；证明职责需求，不证明具体新品上市或项目进度"
+        },
+        {
+          "family": "供应链",
+          "state": "index",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/jobs?keyword=%E4%BE%9B%E5%BA%94&page=1&anchorName=jobsList",
+          "jobIds": [],
+          "note": "当前租户关键词“供应”返回无匹配；未检查所有同义词及完整目录，不等于公司没有供应链岗位。"
+        },
+        {
+          "family": "渠道",
+          "state": "body",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/5c016df5-2a57-4758-b3e3-4a58eb276ffe",
+          "jobIds": [
+            "job-a74c7e3ad3b31f9d"
+          ],
+          "note": "教辅图书经销商渠道；不能作为学习机零售组织证据"
+        }
+      ],
+      "checkedAt": "2026-11-09T02:30:42.120805+00:00"
+    },
+    {
+      "company": "科大讯飞",
+      "state": "partial",
+      "complete": false,
+      "note": "完成五岗位族定向检索和正文样本核验；非完整招聘目录。业务归属逐岗位标注，硬件专属覆盖仍不完整。",
+      "familyChecks": [
+        {
+          "family": "教研",
+          "state": "body",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=b3cb393c-b37e-4b1a-a6bb-88af35871a09",
+          "jobIds": [
+            "job-72c2576db513719a"
+          ],
+          "note": "涉及理科学科和大模型内容标准，未限定学习机业务"
+        },
+        {
+          "family": "算法",
+          "state": "body",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=dc4e67cc-59ed-4a75-8b7a-e0d6ae6faaa9",
+          "jobIds": [
+            "job-6ad13572c435cde0"
+          ],
+          "note": "集团统一招聘的OCR能力，未指定学习机或词典笔项目"
+        },
+        {
+          "family": "硬件",
+          "state": "body",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=88077f48-0bb2-4ee9-9030-c28d04ca85ee",
+          "jobIds": [
+            "job-797f93614cde9bde"
+          ],
+          "note": "消费电子失效分析岗位，未限定学习机"
+        },
+        {
+          "family": "供应链",
+          "state": "body",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
+          "jobIds": [
+            "job-64eaead4b243a34c"
+          ],
+          "note": "消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机"
+        },
+        {
+          "family": "渠道",
+          "state": "body",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=179aac28-bb83-4ed6-938e-25d57a57899b",
+          "jobIds": [
+            "job-c1045357d5154cb3"
+          ],
+          "note": "消费者业务渠道，未指明学习机产品线"
+        }
+      ],
+      "checkedAt": "2026-11-09T02:30:42.120805+00:00"
+    },
+    {
+      "company": "猿辅导（小猿）",
+      "state": "partial",
+      "complete": false,
+      "note": "完成五岗位族定向检索和正文样本核验；非完整招聘目录。业务归属逐岗位标注，硬件专属覆盖仍不完整。",
+      "familyChecks": [
+        {
+          "family": "教研",
+          "state": "body",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/70dc09b3-4eef-444b-8b17-f31ad6614dcf",
+          "jobIds": [
+            "job-03f79073b0d9a735"
+          ],
+          "note": "小学AIGC教育产品，正文未限定设备或学习机团队"
+        },
+        {
+          "family": "算法",
+          "state": "body",
+          "url": "https://app.mokahr.com/social-recruitment/fenbi/45505#/job/5ecdce43-9ab2-48bb-ade9-ff021311daef",
+          "jobIds": [
+            "job-36588c371ea71881"
+          ],
+          "note": "基础研发部教育OCR能力，未说明专属学习机"
+        },
+        {
+          "family": "硬件",
+          "state": "body",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "jobIds": [
+            "job-6c6331e12e6b4c66"
+          ],
+          "note": "原文明确小猿产品及学习机、学练机业务，未划分具体型号"
+        },
+        {
+          "family": "供应链",
+          "state": "body",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "jobIds": [
+            "job-547c6c04c9807a51"
+          ],
+          "note": "正文明确学习机售后及小猿设备业务；管培生职责可能含轮岗，不能视为固定组织架构"
+        },
+        {
+          "family": "渠道",
+          "state": "body",
+          "url": "https://app.mokahr.com/social-recruitment/fenbi/45505#/job/e0ccd64d-0f72-49d3-a787-e87b44bac2d1",
+          "jobIds": [
+            "job-1aaf56ee506f9b32"
+          ],
+          "note": "海豚AI一对一教学服务，未提学习硬件销售"
+        }
+      ],
+      "checkedAt": "2026-11-09T02:30:42.120805+00:00"
+    },
+    {
+      "company": "作业帮",
+      "state": "error",
+      "complete": false,
+      "url": "https://app.mokahr.com/apply/zuoyebang/6346",
+      "note": "历史Moka入口返回HTTP错误；已改查当前品牌社会招聘租户。旧入口失败不等于停止招聘。",
+      "checkedAt": "2026-11-09T02:30:42.120805+00:00"
+    },
+    {
+      "company": "科大讯飞",
+      "url": "https://iflytek.zhiye.com/social/detail?jobAdId=3a9b2e5c-f007-4359-b744-5309e628f73d",
+      "state": "partial",
+      "complete": false,
+      "checkedAt": "2026-11-09T02:24:32.962Z",
+      "note": "企业客户与大模型渠道，非学习硬件零售，未纳入专题职责样本。"
+    },
+    {
+      "company": "作业帮",
+      "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/647a6fc6-f421-4a96-ad9a-788b5650c142",
+      "state": "partial",
+      "complete": false,
+      "checkedAt": "2026-11-09T02:26:25.148Z",
+      "note": "高中教培活动获客，非硬件渠道，未纳入专题职责样本。"
+    },
+    {
+      "company": "猿辅导（小猿）",
+      "url": "https://app.mokahr.com/social-recruitment/fenbi/45505#/jobs?keyword=%E6%B8%A0%E9%81%93&page=1&anchorName=jobsList",
+      "state": "partial",
+      "complete": false,
+      "checkedAt": "2026-11-09T02:25:30.484Z",
+      "note": "渠道检索含多种教育业务；目录不是完整岗位正文。"
+    },
+    {
+      "company": "作业帮",
+      "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/jobs?keyword=%E6%B8%A0%E9%81%93&page=1&anchorName=jobsList",
+      "state": "partial",
+      "complete": false,
+      "checkedAt": "2026-11-09T02:26:00.043Z",
+      "note": "渠道检索索引，后续读取图书渠道与教培推广正文核对归属。"
     }
   ],
   "insights": [
@@ -866,6 +2077,75 @@
         "job-3a0bbf257b108d20"
       ],
       "reviewedAt": "2026-11-05T10:39:16.176722+00:00"
+    },
+    {
+      "id": "edu-teaching-model",
+      "educationResearch": true,
+      "title": "教研与算法的交界：谁定义“答得对、教得懂”",
+      "jobIds": [
+        "job-72c2576db513719a",
+        "job-03f79073b0d9a735",
+        "job-36588c371ea71881"
+      ],
+      "finding": "讯飞教研涉及内容标准和质检；小猿AI产品教研涉及测试集与模型反馈，OCR岗位负责识别、数据与效率优化。",
+      "interpretation": "研究判断：教研与算法需要共享错例和验收口径，但教学正确性、模型指标与工程性能应分别明确责任。",
+      "alternative": "这些可能是多业务共享能力或校招培养任务，不足以证明学习机团队重组。",
+      "nextAction": "做人才访谈时索取一个错例从发现到关闭的流程，核对谁定标准、谁改模型、谁验证教学效果。",
+      "boundary": "上述岗位未全部限定硬件；不能推断真实汇报线、人员缺口或AI替代教师。",
+      "reviewedAt": "2026-11-09T02:30:42.120805+00:00",
+      "history": []
+    },
+    {
+      "id": "edu-zuo-scope",
+      "educationResearch": true,
+      "title": "作业帮：先分清儿童手表、健康穿戴和教学内容岗位",
+      "jobIds": [
+        "job-f3f120078f21d7a5",
+        "job-dee6ed39b271d521",
+        "job-d8e8f5d6a35caf48",
+        "job-a74c7e3ad3b31f9d"
+      ],
+      "finding": "结构岗位直接涉及儿童手表；算法样本涉及健康穿戴及女性生理；教研为化学教学支持，渠道样本为图书经销。",
+      "interpretation": "研究判断：同一品牌下需要分业务建立人才地图，儿童手表的结构与可靠性能力已有直接岗位证据。",
+      "alternative": "招聘可能跨业务或为储备需求，无法从并列职位证明这些人属于同一产品团队。",
+      "nextAction": "后续优先补学习机教研/算法、硬件供应链和零售岗位，查明产品线归属再比较配置。",
+      "boundary": "当前不能形成作业帮学习机全团队画像；没有已验证的新品上市、扩编或实际人才缺口结论。",
+      "reviewedAt": "2026-11-09T02:30:42.120805+00:00",
+      "history": []
+    },
+    {
+      "id": "edu-ifly-loop",
+      "educationResearch": true,
+      "title": "讯飞：供应资源、硬件失效与渠道服务形成可研究的交接链",
+      "jobIds": [
+        "job-64eaead4b243a34c",
+        "job-797f93614cde9bde",
+        "job-c1045357d5154cb3"
+      ],
+      "finding": "供应商岗位负责寻源核价与样品交付；硬件岗位负责售后失效反馈设计；渠道岗位连接产品、营销和服务。",
+      "interpretation": "研究判断：可沿样品验证、量产问题和售后反馈梳理人才接口，避免只比较研发岗位。",
+      "alternative": "三个岗位可能服务不同消费电子业务，不能拼成已经存在的学习机专属组织图。",
+      "nextAction": "核对供应商准入、变更放行、售后关闭三处的责任人、授权和支持资源。",
+      "boundary": "未取得真实流程、工作量、编制及用户结果，不能断言组织高效或人员不足。",
+      "reviewedAt": "2026-11-09T02:30:42.120805+00:00",
+      "history": []
+    },
+    {
+      "id": "edu-yuan-delivery",
+      "educationResearch": true,
+      "title": "小猿：学习机交付需要连接销售计划、物料和售后",
+      "jobIds": [
+        "job-6c6331e12e6b4c66",
+        "job-547c6c04c9807a51",
+        "job-1aaf56ee506f9b32"
+      ],
+      "finding": "小猿硬件工程师覆盖设计与试产；供应链管培生覆盖销售计划、物料齐套和学习机售后；另有海豚教学服务直播样本。",
+      "interpretation": "研究判断：硬件岗位设计应保留从研发问题到供货和售后的反馈接口；教学服务渠道只能作为比较参照。",
+      "alternative": "管培生可能分阶段轮岗；职责跨度不直接代表岗位过载或固定组织合并。",
+      "nextAction": "访谈核对轮岗周期、固定责任、可用支持及问题关闭权，再评估是否需要补充接口能力。",
+      "boundary": "直播岗位不属于已证实的学习机渠道；人员数量、汇报关系和组织变化仍待多期证据。",
+      "reviewedAt": "2026-11-09T02:30:42.120805+00:00",
+      "history": []
     }
   ]
 }

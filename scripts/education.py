@@ -19,8 +19,13 @@ def plan(data=DATA, clock=None):
     pending=[p['id'] for p in state['profiles'] if not p.get('facts')]
     recruiting={c['company'] for c in checks if c.get('purpose')=='recruitment' and c['state'] in ('body','excerpt') and recent(c['checkedAt'],7)} & core
     recruiting_due=not recent(state['startedAt'],7) and len(recruiting)<2
+    from recruitment import research_plan
+    workforce=research_plan(load(data/'recruitment.json',{}),clock,config['dailyRecruitmentCompanies']) if config.get('dailyRecruitmentCompanies') else None
+    if workforce:
+        recruiting_due=workforce['needsResearch']
+        recruiting={j['company'] for j in load(data/'recruitment.json',{}).get('jobs',[]) if j.get('educationResearch') and recent(j['lastSeen'],7)}
     daily=len(core&checked)>=config['dailyCoreCompanies']
-    return dict(today=daily,coreCompaniesChecked=sorted(core&checked),overdueProfiles=due,pendingProfiles=pending,recruitmentCompaniesChecked=sorted(recruiting),needsRecruitment=recruiting_due,firstRecruitmentDueAt=(timestamp(state['startedAt'])+dt.timedelta(days=7)).isoformat(),uncoveredCategories=sorted(CATEGORIES-covered),needsEducation=not daily or bool(due) or bool(pending) or bool(CATEGORIES-covered) or recruiting_due,checkedAt=max((c['checkedAt'] for c in checks),default=None))
+    return dict(workforce=workforce,today=daily,coreCompaniesChecked=sorted(core&checked),overdueProfiles=due,pendingProfiles=pending,recruitmentCompaniesChecked=sorted(recruiting),needsRecruitment=recruiting_due,firstRecruitmentDueAt=(timestamp(state['startedAt'])+dt.timedelta(days=7)).isoformat(),uncoveredCategories=sorted(CATEGORIES-covered),needsEducation=not daily or bool(due) or bool(pending) or bool(CATEGORIES-covered) or recruiting_due,checkedAt=max((c['checkedAt'] for c in checks),default=None))
 
 def validate(value=None,data=DATA):
     state=value or load(data/'education.json'); ids=set()

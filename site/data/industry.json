@@ -242,6 +242,15 @@
         "渠道与销售",
         "服务与生命周期",
         "经营与组织"
+      ],
+      "recruitmentSources": [
+        {
+          "host": "app.mokahr.com",
+          "path": "/social-recruitment/zuoyebang/41328",
+          "verifiedFrom": "https://app.mokahr.com/campus-recruitment/zuoyebang/39595",
+          "verifiedAt": "2026-11-09",
+          "note": "企业品牌校招站经社会招聘和硬件内容专项链接到该租户；校招入口由高校招聘公告交叉核对，当前主站未提供招聘反链。"
+        }
       ]
     },
     {
@@ -259,6 +268,15 @@
         "渠道与销售",
         "服务与生命周期",
         "经营与组织"
+      ],
+      "recruitmentSources": [
+        {
+          "host": "iflytek.zhiye.com",
+          "path": "/",
+          "verifiedFrom": "https://www.iflytek.com/cn/",
+          "verifiedAt": "2026-11-09",
+          "note": "官网加入讯飞链接指向此北森站点。"
+        }
       ]
     },
     {
@@ -278,6 +296,15 @@
         "渠道与销售",
         "服务与生命周期",
         "经营与组织"
+      ],
+      "recruitmentSources": [
+        {
+          "host": "app.mokahr.com",
+          "path": "/social-recruitment/fenbi/45505",
+          "verifiedFrom": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/",
+          "verifiedAt": "2026-11-09",
+          "note": "官方招聘域名的社会招聘链接；fenbi为该ATS租户路径，不凭租户名推断法律主体。"
+        }
       ]
     },
     {

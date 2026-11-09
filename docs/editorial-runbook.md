@@ -46,7 +46,7 @@
 - `scans`: 每项 `company`（industry.json 的标准名）, `state`（ok/partial/error）, `complete`（只有完整目录检查成功才 true）, `note`。
 - `observations`: `company`, `postingId`（有真实 ID 才填，列表页 ID 不是职位 ID）, `title`, `family`, `location`, `stages`, `url`, `postedAt`（不明为 null）, `access`（正文可见/搜索索引可见/明确关闭）, `responsibilities` 数组, `interfaces` 数组, `requirements` 数组, `decisionQuestion`, `boundary`, `readId`, `anchors` 数组, `locator`, `coverage`。
 - `closureEvidence`：仅明确关闭时提供、须命中原文。未见只是可见性变化，不代表裁撤/招满。保留首次观察、最近观察、正文哈希、职责历史与字段前后差异。
-- `insights`（可选但每轮复核）：每项含 `title`, `finding`, `interpretation`, `alternative`, `nextAction`, `boundary`, `jobIds`。必须引用已入库的岗位 ID，区分依据、研究解释、替代解释和下一步。没有新证据时保留原整理日期，不能伪造最新洞察。
+- `insights`（可选但每轮复核）：每项含稳定 `id`（推荐）, `title`, `finding`, `interpretation`, `alternative`, `nextAction`, `boundary`, `jobIds`。必须引用已入库的岗位 ID，区分依据、研究解释、替代解释和下一步。没有新证据时保留原整理日期，不能伪造最新洞察。按稳定 id（历史条目按标题）增量合并，保留其他观察和实质修订前内容。学习硬件额外按 education-runbook.md 执行三家公司与五岗位族复核。
 - 人员决策只给研究发现与问题：能力储备、岗位接口、可核验的面试追问；不依据招聘信息决定具体人的录用或绩效，不收集候选人信息。
 
 ```sh

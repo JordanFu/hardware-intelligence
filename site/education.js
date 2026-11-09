@@ -21,3 +21,8 @@ export function educationMatches(item,category='all',company='all',profiles=[]) 
  const names=item.companies||[item.company].filter(Boolean);
  return names.some(n=>n===company||aliases.includes(n)) || aliases.some(a=>[item.title,item.titleZh,item.originalTitle].filter(Boolean).join(' ').includes(a));
 }
+
+// Organizational comparisons deliberately retain a visible scope label; product feeds do not.
+export function educationResearchJobs(jobs,company='all') {
+ return jobs.filter(j=>j.educationResearch===true && (company==='all'||j.company===company));
+}

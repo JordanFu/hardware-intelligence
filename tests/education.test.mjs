@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {educationCategories,educationMatches} from '../site/education.js';
+import {educationCategories,educationMatches,educationResearchJobs} from '../site/education.js';
 test('diversified companies do not imply an education topic',()=>{
  for(const title of ['华为手机发布','Amazon云服务扩展','科大讯飞汽车语音系统'])assert.deepEqual(educationCategories({title}),[]);
  assert.equal(educationMatches({title:'华为手机',companies:['华为']},'all','华为'),false);
@@ -18,4 +18,12 @@ test('explicit evidence-backed scope and company aliases support generic job tit
  assert.equal(educationMatches(item,'tablet','猿辅导（小猿）',[]),true);
  assert.equal(educationMatches(item,'tablet','华为',[]),false);
  assert.equal(educationMatches({title:'小猿学习机'},'tablet','猿辅导（小猿）',[{company:'猿辅导（小猿）',aliases:['小猿','猿辅导']}]),true);
+});
+
+test('company research retains explicit shared scope without leaking into product news',()=>{
+ const j={company:'科大讯飞',title:'OCR算法工程师',educationResearch:true,businessScope:'公司共享能力'};
+ assert.equal(educationResearchJobs([j],'科大讯飞').length,1);
+ assert.equal(educationResearchJobs([j],'作业帮').length,0);
+ assert.equal(educationMatches(j,'tablet'),false);
+ assert.equal(educationResearchJobs([{company:'科大讯飞',title:'汽车算法工程师'}]).length,0);
 });

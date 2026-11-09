@@ -7,7 +7,7 @@ class EducationTests(unittest.TestCase):
  def setUp(self):
   self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup);self.data=Path(self.temp.name);self.work=self.data/'raw';self.work.mkdir()
   self.seed=load(edu.DATA/'education.json');self.clock=timestamp(self.seed['runs'][-1]['completedAt'])+dt.timedelta(hours=1)
-  write(self.data/'education.json',self.seed);write(self.data/'operations.json',load(edu.DATA/'operations.json'))
+  write(self.data/'recruitment.json',load(edu.DATA/'recruitment.json'));write(self.data/'education.json',self.seed);write(self.data/'operations.json',load(edu.DATA/'operations.json'))
   self.p=self.seed['profiles'][0];s=self.p['sources'][0]
   self.check=dict(company=self.p['company'],url=s['url'],name=s['title'],state='body',checkedAt=self.clock.isoformat(),categoryIds=self.p['categoryIds'],readId='fixture',note='Read actual public body')
   write(self.work/'fixture.json',dict(url=s['url'],text='Public evidence anchor. '*30,bodyStatus='body',readAt=self.clock.isoformat()))
