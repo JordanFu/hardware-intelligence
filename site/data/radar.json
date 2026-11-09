@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-09T00:51:19.908141+00:00",
-  "lastSuccessfulAt": "2026-11-09T00:51:19.908141+00:00",
+  "checkedAt": "2026-11-09T02:13:47.985411+00:00",
+  "lastSuccessfulAt": "2026-11-09T02:13:47.985411+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-09T00:51:19.908141+00:00",
-      "lastSuccessAt": "2026-11-09T00:51:19.908141+00:00",
+      "checkedAt": "2026-11-09T02:13:47.985411+00:00",
+      "lastSuccessAt": "2026-11-09T02:13:47.985411+00:00",
       "received": 18,
       "matched": 0,
       "excluded": 18,
@@ -15,8 +15,8 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-09T00:51:19.908141+00:00",
-      "lastSuccessAt": "2026-11-09T00:51:19.908141+00:00",
+      "checkedAt": "2026-11-09T02:13:47.985411+00:00",
+      "lastSuccessAt": "2026-11-09T02:13:47.985411+00:00",
       "received": 50,
       "matched": 2,
       "excluded": 48,
@@ -25,8 +25,8 @@
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-09T00:51:19.908141+00:00",
-      "lastSuccessAt": "2026-11-09T00:51:19.908141+00:00",
+      "checkedAt": "2026-11-09T02:13:47.985411+00:00",
+      "lastSuccessAt": "2026-11-09T02:13:47.985411+00:00",
       "received": 10,
       "matched": 1,
       "excluded": 9,
@@ -35,8 +35,8 @@
     {
       "id": "bambu",
       "state": "ok",
-      "checkedAt": "2026-11-09T00:51:19.908141+00:00",
-      "lastSuccessAt": "2026-11-09T00:51:19.908141+00:00",
+      "checkedAt": "2026-11-09T02:13:47.985411+00:00",
+      "lastSuccessAt": "2026-11-09T02:13:47.985411+00:00",
       "received": 15,
       "matched": 15,
       "excluded": 0,
@@ -45,22 +45,58 @@
     {
       "id": "cnx",
       "state": "error",
-      "checkedAt": "2026-11-09T00:51:19.908141+00:00",
+      "checkedAt": "2026-11-09T02:13:47.985411+00:00",
       "error": "curl: (22) The requested URL returned error: 403",
       "lastSuccessAt": "2026-11-07T05:57:51.855328+00:00"
     },
     {
       "id": "ithome",
       "state": "ok",
-      "checkedAt": "2026-11-09T00:51:19.908141+00:00",
-      "lastSuccessAt": "2026-11-09T00:51:19.908141+00:00",
+      "checkedAt": "2026-11-09T02:13:47.985411+00:00",
+      "lastSuccessAt": "2026-11-09T02:13:47.985411+00:00",
       "received": 60,
-      "matched": 4,
-      "excluded": 56,
+      "matched": 5,
+      "excluded": 55,
       "error": null
     }
   ],
   "items": [
+    {
+      "id": "rss-1980402a0da73126",
+      "title": "2027 款领克 08 EM-P 将支持选装 EVA 实体机器人，年内更新 FlymeAuto 2.5.0",
+      "url": "https://www.ithome.com/1/024/055.htm",
+      "date": "2026-11-09T01:53:50+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-09T02:13:47.985411+00:00"
+    },
+    {
+      "id": "rss-12c1d0c30da6dd00",
+      "title": "松下发布 RB-HJ800 耳机：100hr 长续航，支持 2 种折叠收纳方式",
+      "url": "https://www.ithome.com/1/024/050.htm",
+      "date": "2026-11-09T01:35:04+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "可穿戴与眼镜",
+      "status": "待核验",
+      "discoveredAt": "2026-11-09T02:13:47.985411+00:00"
+    },
+    {
+      "id": "rss-ee016486071d222f",
+      "title": "消息称三大存储器原厂与 SEMI 磋商机器人充电标准化，提升晶圆厂自动化水平",
+      "url": "https://www.ithome.com/1/024/046.htm",
+      "date": "2026-11-09T01:18:13+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-09T02:13:47.985411+00:00"
+    },
     {
       "id": "rss-c11a8bc82c3f52a4",
       "title": "亚马逊成立新团队专攻家用机器人，剑指“前所未有”的新产品",
