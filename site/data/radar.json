@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-09T02:36:54.254642+00:00",
-  "lastSuccessfulAt": "2026-11-09T02:36:54.254642+00:00",
+  "checkedAt": "2026-11-09T06:27:11.090980+00:00",
+  "lastSuccessfulAt": "2026-11-09T06:27:11.090980+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-09T02:36:54.254642+00:00",
-      "lastSuccessAt": "2026-11-09T02:36:54.254642+00:00",
+      "checkedAt": "2026-11-09T06:27:11.090980+00:00",
+      "lastSuccessAt": "2026-11-09T06:27:11.090980+00:00",
       "received": 18,
       "matched": 0,
       "excluded": 18,
@@ -15,8 +15,8 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-09T02:36:54.254642+00:00",
-      "lastSuccessAt": "2026-11-09T02:36:54.254642+00:00",
+      "checkedAt": "2026-11-09T06:27:11.090980+00:00",
+      "lastSuccessAt": "2026-11-09T06:27:11.090980+00:00",
       "received": 50,
       "matched": 2,
       "excluded": 48,
@@ -25,8 +25,8 @@
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-09T02:36:54.254642+00:00",
-      "lastSuccessAt": "2026-11-09T02:36:54.254642+00:00",
+      "checkedAt": "2026-11-09T06:27:11.090980+00:00",
+      "lastSuccessAt": "2026-11-09T06:27:11.090980+00:00",
       "received": 10,
       "matched": 1,
       "excluded": 9,
@@ -35,8 +35,8 @@
     {
       "id": "bambu",
       "state": "ok",
-      "checkedAt": "2026-11-09T02:36:54.254642+00:00",
-      "lastSuccessAt": "2026-11-09T02:36:54.254642+00:00",
+      "checkedAt": "2026-11-09T06:27:11.090980+00:00",
+      "lastSuccessAt": "2026-11-09T06:27:11.090980+00:00",
       "received": 15,
       "matched": 15,
       "excluded": 0,
@@ -45,22 +45,58 @@
     {
       "id": "cnx",
       "state": "error",
-      "checkedAt": "2026-11-09T02:36:54.254642+00:00",
+      "checkedAt": "2026-11-09T06:27:11.090980+00:00",
       "error": "curl: (22) The requested URL returned error: 403",
       "lastSuccessAt": "2026-11-07T05:57:51.855328+00:00"
     },
     {
       "id": "ithome",
       "state": "ok",
-      "checkedAt": "2026-11-09T02:36:54.254642+00:00",
-      "lastSuccessAt": "2026-11-09T02:36:54.254642+00:00",
+      "checkedAt": "2026-11-09T06:27:11.090980+00:00",
+      "lastSuccessAt": "2026-11-09T06:27:11.090980+00:00",
       "received": 60,
-      "matched": 6,
-      "excluded": 54,
+      "matched": 5,
+      "excluded": 55,
       "error": null
     }
   ],
   "items": [
+    {
+      "id": "rss-9ac155351da699e3",
+      "title": "OPPO Pad Air6 平板配置曝光：12.1 英寸 LCD 屏 + 天玑 7360 芯片， 11 月 16 日发布",
+      "url": "https://www.ithome.com/1/024/213.htm",
+      "date": "2026-11-09T05:43:16+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-09T06:27:11.090980+00:00"
+    },
+    {
+      "id": "rss-bde2b38dacc24117",
+      "title": "深圳成为全球消费级 3D 打印第一城",
+      "url": "https://www.ithome.com/1/024/102.htm",
+      "date": "2026-11-09T03:28:59+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "制造与创作",
+      "status": "待核验",
+      "discoveredAt": "2026-11-09T06:27:11.090980+00:00"
+    },
+    {
+      "id": "rss-9fcb6fd59673f7ee",
+      "title": "人民空军“新家伙”来了，我国攻击-11 无尾飞翼布局无人机大大方方展示",
+      "url": "https://www.ithome.com/1/024/088.htm",
+      "date": "2026-11-09T03:14:46+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-09T06:27:11.090980+00:00"
+    },
     {
       "id": "rss-eff5a7bd10fc428e",
       "title": "OPPO Watch 5 智能手表外观公布：主打轻薄方表形态，11 月 16 日发布",
