@@ -813,6 +813,441 @@
         }
       ],
       "updatedAt": "2026-11-08T00:50:25.860268+00:00"
+    },
+    "chain-6": {
+      "attemptedAt": "2026-11-09T00:50:51.394323+00:00",
+      "status": "partial",
+      "assessment": "本轮优先处理四个尚无复核记录的节点。按当前正文核对所列字段并补适用条件；剩余基础定义、指标与观察对象仍待系统复核，不推进完整复核日期。",
+      "gaps": [
+        "Sell-in、sell-through 与贡献利润的规范口径本轮未用独立权威资料完整复核。",
+        "未取得渠道预测、库存及退货分母和实际售后耗时。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "flow",
+        "pitfall",
+        "team"
+      ],
+      "evidence": [
+        {
+          "itemId": "xreal-warranty",
+          "title": "XREAL 服务条款样本：销售渠道与售后受理信息相连",
+          "facts": [
+            {
+              "claim": "条款只覆盖规定渠道及所支持地区。",
+              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+              "locator": "Scope"
+            },
+            {
+              "claim": "申请信息包含订单和故障设备序列号。",
+              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+              "locator": "Making a claim"
+            }
+          ],
+          "boundary": "本轮读取 Scope 与 Making a claim 等业务流程段落；这是厂商自述的商业保修流程样本，不是对法定权利或条款效力的法律判断。当前适用地区、机型和购买时间仍须逐案核对。",
+          "sources": [
+            {
+              "url": "https://us.shop.xreal.com/pages/warranty-policy",
+              "name": "XREAL 美国商城保修政策",
+              "publishedAt": "2024-04-08",
+              "publisherGroup": "XREAL 美国商城保修政策",
+              "role": "official",
+              "textHash": "f6d9abd8a0da1c0e46c8883c61dc2dcc1047721091f3eaef3a7b3eb81d86b685",
+              "readAt": "2026-11-09T00:46:58.382936+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "xreal-warranty",
+          "url": "https://us.shop.xreal.com/pages/warranty-policy",
+          "checkedAt": "2026-11-09T00:46:58.382936+00:00",
+          "state": "body",
+          "note": "实际读取当天当前正文的所述章节或一页公告；只支持本轮所列字段，不将相关链接等同全文复核。"
+        }
+      ],
+      "reviewedAt": "2026-11-09T00:50:51.394323+00:00",
+      "patch": {
+        "flow": "用户需求与库存 → 定价、渠道政策、交付承诺与终端反馈 还需核对销售主体、支持地区、购买凭证与设备序列号在售后受理中的衔接。",
+        "team": "销售、市场、计划、零售、财务对齐销售预测、货盘、促销与退货规则。 XREAL 的公开流程提示渠道与服务之间存在购买证据交接；研究时应确认能否复用已授权订单信息，减少用户重复提交。",
+        "exercise": "选一个销售活动，列出从备货到退货的责任与反馈，不只统计订单数。 选择一个具体渠道和地区，画出从购买承诺到问题处理的用户路径，记录需要重复提供的信息及尚未明确的责任。"
+      },
+      "lessons": [
+        {
+          "id": "chain-6-20261109",
+          "title": "渠道覆盖需要连同服务承诺一起看",
+          "learning": "XREAL 商业保修页面把渠道、地区和购买凭据作为受理条件。研究渠道时，不能仅统计销售触点，还要检查用户遇到问题后找谁、提供什么证据以及如何得到处理。",
+          "application": "用于具体机型、渠道和地区的服务路径比较；流程简化是研究建议，需在授权与必要数据范围内验证。",
+          "boundary": "来源为美国商城所展示的厂商政策，版本为 2024-04-08；不是法定权利解释，也未证明实际履约或满意度。",
+          "itemIds": [
+            "xreal-warranty"
+          ],
+          "updatedAt": "2026-11-09T00:50:51.394323+00:00"
+        }
+      ],
+      "updatedAt": "2026-11-09T00:50:51.394323+00:00"
+    },
+    "track-0": {
+      "attemptedAt": "2026-11-09T00:50:51.394323+00:00",
+      "status": "partial",
+      "assessment": "本轮优先处理四个尚无复核记录的节点。按当前正文核对所列字段并补适用条件；剩余基础定义、指标与观察对象仍待系统复核，不推进完整复核日期。",
+      "gaps": [
+        "Meta、Apple、Samsung 等初始观察对象尚未本轮逐一核查。",
+        "佩戴负担、续航、真实任务成功率及权限数据流均缺当前实测。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "examples",
+        "team"
+      ],
+      "evidence": [
+        {
+          "itemId": "rayneo-support",
+          "title": "雷鸟 iO 支持说明：离线功能仍依赖手机、版本与语言包",
+          "facts": [
+            {
+              "claim": "离线翻译需提前下载语言对。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "4.1 / Offline Translation"
+            },
+            {
+              "claim": "页面的权限细节仍标注待最终版本确认。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "1.2 / App Permissions"
+            }
+          ],
+          "boundary": "无明确发布日期；本次读取设置与字幕翻译相关章节，页面存在未完成占位说明。没有设备实测、权限清单或数据流审计，不能断言功能全在眼镜端或数据不出端。",
+          "sources": [
+            {
+              "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "name": "雷鸟官方支持",
+              "publishedAt": null,
+              "publisherGroup": "雷鸟官方支持",
+              "role": "official",
+              "textHash": "baf3fdfe5b2138279c70c0b231cb61d071a3d5438a304d2d85ce49ee4729dd3e",
+              "readAt": "2026-11-09T00:46:58.353783+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "xreal-warranty",
+          "title": "XREAL 服务条款样本：销售渠道与售后受理信息相连",
+          "facts": [
+            {
+              "claim": "条款只覆盖规定渠道及所支持地区。",
+              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+              "locator": "Scope"
+            },
+            {
+              "claim": "申请信息包含订单和故障设备序列号。",
+              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+              "locator": "Making a claim"
+            }
+          ],
+          "boundary": "本轮读取 Scope 与 Making a claim 等业务流程段落；这是厂商自述的商业保修流程样本，不是对法定权利或条款效力的法律判断。当前适用地区、机型和购买时间仍须逐案核对。",
+          "sources": [
+            {
+              "url": "https://us.shop.xreal.com/pages/warranty-policy",
+              "name": "XREAL 美国商城保修政策",
+              "publishedAt": "2024-04-08",
+              "publisherGroup": "XREAL 美国商城保修政策",
+              "role": "official",
+              "textHash": "f6d9abd8a0da1c0e46c8883c61dc2dcc1047721091f3eaef3a7b3eb81d86b685",
+              "readAt": "2026-11-09T00:46:58.382936+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "rayneo-support",
+          "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "checkedAt": "2026-11-09T00:46:58.353783+00:00",
+          "state": "body",
+          "note": "实际读取当天当前正文的所述章节或一页公告；只支持本轮所列字段，不将相关链接等同全文复核。"
+        },
+        {
+          "itemId": "xreal-warranty",
+          "url": "https://us.shop.xreal.com/pages/warranty-policy",
+          "checkedAt": "2026-11-09T00:46:58.382936+00:00",
+          "state": "body",
+          "note": "实际读取当天当前正文的所述章节或一页公告；只支持本轮所列字段，不将相关链接等同全文复核。"
+        }
+      ],
+      "reviewedAt": "2026-11-09T00:50:51.394323+00:00",
+      "patch": {
+        "examples": "Meta、Apple、Samsung、雷鸟；本轮新增 XREAL 作为渠道与服务研究对象，不构成排名。",
+        "constraint": "佩戴舒适度、续航、隐私和持续使用 离线能力需按字幕、翻译等具体任务核验手机依赖、App 版本和预下载资源；不能仅凭“离线”断言数据不出端。",
+        "team": "光学 / 声学、算法、工业设计、移动应用、健康验证 还需核对 App、渠道与服务团队如何共用版本化功能条件，避免销售承诺与实际使用前提脱节。"
+      },
+      "lessons": [
+        {
+          "id": "track-0-20261109",
+          "title": "眼镜体验由硬件、手机软件与服务共同决定",
+          "learning": "雷鸟支持说明显示离线字幕和翻译条件不同；XREAL 服务政策又限定渠道和地区。选型与行业研究应把功能条件和服务路径一起解释，不能将“眼镜有 AI”当作完整体验。",
+          "application": "适用于明确机型、版本与购买地区的比较；只研究功能依赖，不涉及视力健康诊断。",
+          "boundary": "雷鸟页面仍有系统版本和权限占位，且没有实机测试；XREAL 条款没有证明实际服务结果。",
+          "itemIds": [
+            "rayneo-support",
+            "xreal-warranty"
+          ],
+          "updatedAt": "2026-11-09T00:50:51.394323+00:00"
+        }
+      ],
+      "updatedAt": "2026-11-09T00:50:51.394323+00:00"
+    },
+    "track-1": {
+      "attemptedAt": "2026-11-09T00:50:51.394323+00:00",
+      "status": "partial",
+      "assessment": "本轮优先处理四个尚无复核记录的节点。按当前正文核对所列字段并补适用条件；剩余基础定义、指标与观察对象仍待系统复核，不推进完整复核日期。",
+      "gaps": [
+        "无人机、DJI 与初始 NVIDIA 生态观察对象尚未完整复核。",
+        "任务成功率、接管、恢复时间与现场工时仍缺统一测量协议及实测样本。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "examples",
+        "metrics"
+      ],
+      "evidence": [
+        {
+          "itemId": "swancor-announcement",
+          "title": "上纬新材披露启元机器人累计下线万台，商业化仍在验证",
+          "facts": [
+            {
+              "claim": "公司披露两款产品合计下线一万台。",
+              "sourceUrl": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-11/2026-11-09/12696266.PDF",
+              "locator": "公告第1页 / 业务进展"
+            },
+            {
+              "claim": "公司仍处于量产爬坡及商业化验证阶段。",
+              "sourceUrl": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-11/2026-11-09/12696266.PDF",
+              "locator": "公告第1页 / 风险提示"
+            },
+            {
+              "claim": "媒体转述企业负责人给出月活与交互频次，但本轮未见相应分母定义。",
+              "sourceUrl": "https://www.ithome.com/1/023/917.htm",
+              "locator": "媒体正文 / 刘东方发言"
+            }
+          ],
+          "boundary": "已读公司署名一页公告的新浪托管 PDF，并交叉核对公告索引日期；尚未回到交易所文件核验。数量与良率描述为公司披露，缺独立验收和交付数据；未据此作投资或人员规模判断。",
+          "sources": [
+            {
+              "url": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-11/2026-11-09/12696266.PDF",
+              "name": "上纬新材公告 2026-055（新浪托管 PDF）",
+              "publishedAt": "2026-11-09",
+              "publisherGroup": "上纬新材公告 2026-055（新浪托管 PDF）",
+              "role": "official",
+              "textHash": "607bb0d807dd408b118d5362fb073a46483f944aaa750091fe5b38b38e8b9240",
+              "readAt": "2026-11-09T00:50:02.116282+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://www.ithome.com/1/023/917.htm",
+              "name": "IT之家现场发言转述",
+              "publishedAt": "2026-11-08T08:02:58+00:00",
+              "publisherGroup": "启元万台下线活动转述",
+              "role": "media",
+              "textHash": "24981d5540e485660e0890a7dc78697150d9b543ce31524de4dc021435a5a44e",
+              "readAt": "2026-11-09T00:45:19.436862+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "halo-official",
+          "title": "HALO 项目：任务编排、动作生成与跟踪采用不同运行频率",
+          "facts": [
+            {
+              "claim": "动作跟踪在嵌入式计算单元执行。",
+              "sourceUrl": "https://apple-aiml-research.github.io/ml-halo/",
+              "locator": "Onboard autonomy stack / Tracker"
+            }
+          ],
+          "boundary": "本次读取项目正文及 arXiv 摘要和提交历史，未完整审阅论文、代码或复现实验；不采用媒体中的商业能力外推。",
+          "sources": [
+            {
+              "url": "https://apple-aiml-research.github.io/ml-halo/",
+              "name": "Apple HALO 项目主页",
+              "publishedAt": null,
+              "publisherGroup": "Apple HALO 项目主页",
+              "role": "official",
+              "textHash": "f3e28c1a97ac954e66a5d7aa18c8fd77856876dd3bc5cb1036eb069a6a279c93",
+              "readAt": "2026-11-09T00:46:57.560360+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://arxiv.org/abs/2611.06908",
+              "name": "arXiv 原始摘要及提交历史",
+              "publishedAt": "2026-11-04T18:55:33+00:00",
+              "publisherGroup": "Apple HALO 研究团队",
+              "role": "research",
+              "textHash": "c6beba565ab0e162b748b39585dc2eb20c04794e84ca14991a8ea47a9fc24640",
+              "readAt": "2026-11-08T00:49:19.903614+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "swancor-announcement",
+          "url": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-11/2026-11-09/12696266.PDF",
+          "checkedAt": "2026-11-09T00:50:02.116282+00:00",
+          "state": "body",
+          "note": "实际读取当天当前正文的所述章节或一页公告；只支持本轮所列字段，不将相关链接等同全文复核。"
+        },
+        {
+          "itemId": "halo-official",
+          "url": "https://apple-aiml-research.github.io/ml-halo/",
+          "checkedAt": "2026-11-09T00:46:57.560360+00:00",
+          "state": "body",
+          "note": "实际读取当天当前正文的所述章节或一页公告；只支持本轮所列字段，不将相关链接等同全文复核。"
+        }
+      ],
+      "reviewedAt": "2026-11-09T00:50:51.394323+00:00",
+      "patch": {
+        "examples": "DJI、宇树、NVIDIA 生态；新增上纬新材启元作为量产与商业化阶段观察对象，HALO 作为基于宇树 G1 的研究系统样本。",
+        "constraint": "真实环境中的安全、可靠性与维护成本 下线数量、交付数量和终端持续使用须分开；公司披露“良率良好”但未给分母时不能当作可比质量指标。",
+        "metrics": "任务成功率；人工接管频次；故障恢复时间；现场工时 使用频次另列统计对象、窗口与分母；高频交互不直接证明任务完成、人工负担减少或用户价值。"
+      },
+      "lessons": [
+        {
+          "id": "track-1-20261109",
+          "title": "把研究演示、量产和用户结果分层验证",
+          "learning": "HALO 披露研究控制层级，上纬新材公告披露制造进展并明确商业化仍在验证。它们支持不同阶段的问题，不能用演示成功推断批量可靠性，也不能用下线数量替代用户交付。",
+          "application": "用于机器人项目阶段和下一步证据需求的判断；不据公开材料对团队或具体人员作能力结论。",
+          "boundary": "公告来自新浪托管的公司署名 PDF，未回交易所核验；HALO 未完成论文审阅或复现实验；没有独立质量及终端结果。",
+          "itemIds": [
+            "swancor-announcement",
+            "halo-official"
+          ],
+          "updatedAt": "2026-11-09T00:50:51.394323+00:00"
+        }
+      ],
+      "updatedAt": "2026-11-09T00:50:51.394323+00:00"
+    },
+    "track-3": {
+      "attemptedAt": "2026-11-09T00:50:51.394323+00:00",
+      "status": "partial",
+      "assessment": "本轮优先处理四个尚无复核记录的节点。按当前正文核对所列字段并补适用条件；剩余基础定义、指标与观察对象仍待系统复核，不推进完整复核日期。",
+      "gaps": [
+        "初始 NVIDIA、Qualcomm、瑞芯微观察对象的当前产品和 SDK 未全面复核。",
+        "模型压缩、BSP、热设计和维护成本缺权威定义及可比实测。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "metrics",
+        "team"
+      ],
+      "evidence": [
+        {
+          "itemId": "halo-official",
+          "title": "HALO 项目：任务编排、动作生成与跟踪采用不同运行频率",
+          "facts": [
+            {
+              "claim": "动作跟踪在嵌入式计算单元执行。",
+              "sourceUrl": "https://apple-aiml-research.github.io/ml-halo/",
+              "locator": "Onboard autonomy stack / Tracker"
+            }
+          ],
+          "boundary": "本次读取项目正文及 arXiv 摘要和提交历史，未完整审阅论文、代码或复现实验；不采用媒体中的商业能力外推。",
+          "sources": [
+            {
+              "url": "https://apple-aiml-research.github.io/ml-halo/",
+              "name": "Apple HALO 项目主页",
+              "publishedAt": null,
+              "publisherGroup": "Apple HALO 项目主页",
+              "role": "official",
+              "textHash": "f3e28c1a97ac954e66a5d7aa18c8fd77856876dd3bc5cb1036eb069a6a279c93",
+              "readAt": "2026-11-09T00:46:57.560360+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://arxiv.org/abs/2611.06908",
+              "name": "arXiv 原始摘要及提交历史",
+              "publishedAt": "2026-11-04T18:55:33+00:00",
+              "publisherGroup": "Apple HALO 研究团队",
+              "role": "research",
+              "textHash": "c6beba565ab0e162b748b39585dc2eb20c04794e84ca14991a8ea47a9fc24640",
+              "readAt": "2026-11-08T00:49:19.903614+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        },
+        {
+          "itemId": "rayneo-support",
+          "title": "雷鸟 iO 支持说明：离线功能仍依赖手机、版本与语言包",
+          "facts": [
+            {
+              "claim": "离线翻译需提前下载语言对。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "4.1 / Offline Translation"
+            },
+            {
+              "claim": "页面的权限细节仍标注待最终版本确认。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "1.2 / App Permissions"
+            }
+          ],
+          "boundary": "无明确发布日期；本次读取设置与字幕翻译相关章节，页面存在未完成占位说明。没有设备实测、权限清单或数据流审计，不能断言功能全在眼镜端或数据不出端。",
+          "sources": [
+            {
+              "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "name": "雷鸟官方支持",
+              "publishedAt": null,
+              "publisherGroup": "雷鸟官方支持",
+              "role": "official",
+              "textHash": "baf3fdfe5b2138279c70c0b231cb61d071a3d5438a304d2d85ce49ee4729dd3e",
+              "readAt": "2026-11-09T00:46:58.353783+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "halo-official",
+          "url": "https://apple-aiml-research.github.io/ml-halo/",
+          "checkedAt": "2026-11-09T00:46:57.560360+00:00",
+          "state": "body",
+          "note": "实际读取当天当前正文的所述章节或一页公告；只支持本轮所列字段，不将相关链接等同全文复核。"
+        },
+        {
+          "itemId": "rayneo-support",
+          "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "checkedAt": "2026-11-09T00:46:58.353783+00:00",
+          "state": "body",
+          "note": "实际读取当天当前正文的所述章节或一页公告；只支持本轮所列字段，不将相关链接等同全文复核。"
+        }
+      ],
+      "reviewedAt": "2026-11-09T00:50:51.394323+00:00",
+      "patch": {
+        "chain": "芯片 / 模组 → SDK → 模型优化 → 整机集成 观察整机时还要区分任务编排、模型生成与低层跟踪分别运行于何处，并记录手机、机载或网络依赖。",
+        "metrics": "同一任务下的延迟、功耗、内存与准确性 不同层级运行频率不能直接替代端到端响应延迟；需固定任务、系统边界和设备版本，再测功耗、内存与效果。"
+      },
+      "lessons": [
+        {
+          "id": "track-3-20261109",
+          "title": "端侧不能只用一个芯片参数解释",
+          "learning": "HALO 把较低频的编排与生成放在背包计算单元，高频跟踪放在嵌入式单元；雷鸟离线能力仍有手机 App 与资源前提。算力研究需先明确系统边界，再谈端侧性能。",
+          "application": "用于具体系统的计算位置、接口和依赖梳理；HALO 是研究示例，雷鸟仅为功能条件样本。",
+          "boundary": "没有芯片级功耗、内存、延迟数据，也未验证离线功能的数据驻留位置；不能据此比较芯片优劣。",
+          "itemIds": [
+            "halo-official",
+            "rayneo-support"
+          ],
+          "updatedAt": "2026-11-09T00:50:51.394323+00:00"
+        }
+      ],
+      "updatedAt": "2026-11-09T00:50:51.394323+00:00"
     }
   },
   "runs": [
@@ -976,6 +1411,41 @@
           "hash": "7b989a4b7eccf0e06720a15806afbb834c5d031cefec0cd70aceeec429c2b541",
           "decision": "hold",
           "reason": "保留英国售后流程线索，待补实际停产通知、渠道承诺与维修履约证据后复核渠道和服务节点。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-09T00:50:51.394323+00:00",
+      "reviewedNodes": [
+        "chain-6",
+        "track-0",
+        "track-1",
+        "track-3"
+      ],
+      "decisions": [
+        {
+          "itemId": "swancor-announcement",
+          "hash": "1577a7c636c7d740b0d324f471a0410684a20cc422e9d23fab74c90393267917",
+          "decision": "integrated",
+          "reason": "将当前公开材料沉淀为带条件的渠道服务、功能依赖、系统边界或量产证据问题；不将案例升为行业标准，缺口保留。"
+        },
+        {
+          "itemId": "halo-official",
+          "hash": "2fca215a7e1d9125798589e595d0a06122ece0cec36ab4ed45ec71e1ccbdaba2",
+          "decision": "integrated",
+          "reason": "将当前公开材料沉淀为带条件的渠道服务、功能依赖、系统边界或量产证据问题；不将案例升为行业标准，缺口保留。"
+        },
+        {
+          "itemId": "xreal-warranty",
+          "hash": "3d5b2da26401828fc317a2b7f4aff4edc216c168761ae0a8140f43fcc4b7906b",
+          "decision": "integrated",
+          "reason": "将当前公开材料沉淀为带条件的渠道服务、功能依赖、系统边界或量产证据问题；不将案例升为行业标准，缺口保留。"
+        },
+        {
+          "itemId": "rayneo-support",
+          "hash": "f15fb5b8b63a1571d0441c91a1a85d2ae40d3b7c2247bcb51ba629256a74c06f",
+          "decision": "integrated",
+          "reason": "将当前公开材料沉淀为带条件的渠道服务、功能依赖、系统边界或量产证据问题；不将案例升为行业标准，缺口保留。"
         }
       ]
     }
@@ -1866,6 +2336,478 @@
           "checkedAt": "2026-11-08T00:50:25.776128+00:00",
           "state": "body",
           "note": "当天读取当前官方正文的条目所列章节，仅支持本次复核字段。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-6",
+      "reviewedAt": "2026-11-09T00:50:51.394323+00:00",
+      "status": "partial",
+      "assessment": "本轮优先处理四个尚无复核记录的节点。按当前正文核对所列字段并补适用条件；剩余基础定义、指标与观察对象仍待系统复核，不推进完整复核日期。",
+      "gaps": [
+        "Sell-in、sell-through 与贡献利润的规范口径本轮未用独立权威资料完整复核。",
+        "未取得渠道预测、库存及退货分母和实际售后耗时。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "flow",
+        "pitfall",
+        "team"
+      ],
+      "changes": {
+        "flow": {
+          "before": "用户需求与库存 → 定价、渠道政策、交付承诺与终端反馈",
+          "after": "用户需求与库存 → 定价、渠道政策、交付承诺与终端反馈 还需核对销售主体、支持地区、购买凭证与设备序列号在售后受理中的衔接。"
+        },
+        "team": {
+          "before": "销售、市场、计划、零售、财务对齐销售预测、货盘、促销与退货规则。",
+          "after": "销售、市场、计划、零售、财务对齐销售预测、货盘、促销与退货规则。 XREAL 的公开流程提示渠道与服务之间存在购买证据交接；研究时应确认能否复用已授权订单信息，减少用户重复提交。"
+        },
+        "exercise": {
+          "before": "选一个销售活动，列出从备货到退货的责任与反馈，不只统计订单数。",
+          "after": "选一个销售活动，列出从备货到退货的责任与反馈，不只统计订单数。 选择一个具体渠道和地区，画出从购买承诺到问题处理的用户路径，记录需要重复提供的信息及尚未明确的责任。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "chain-6-20261109",
+            "title": "渠道覆盖需要连同服务承诺一起看",
+            "learning": "XREAL 商业保修页面把渠道、地区和购买凭据作为受理条件。研究渠道时，不能仅统计销售触点，还要检查用户遇到问题后找谁、提供什么证据以及如何得到处理。",
+            "application": "用于具体机型、渠道和地区的服务路径比较；流程简化是研究建议，需在授权与必要数据范围内验证。",
+            "boundary": "来源为美国商城所展示的厂商政策，版本为 2024-04-08；不是法定权利解释，也未证明实际履约或满意度。",
+            "itemIds": [
+              "xreal-warranty"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "xreal-warranty",
+          "title": "XREAL 服务条款样本：销售渠道与售后受理信息相连",
+          "facts": [
+            {
+              "claim": "条款只覆盖规定渠道及所支持地区。",
+              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+              "locator": "Scope"
+            },
+            {
+              "claim": "申请信息包含订单和故障设备序列号。",
+              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+              "locator": "Making a claim"
+            }
+          ],
+          "boundary": "本轮读取 Scope 与 Making a claim 等业务流程段落；这是厂商自述的商业保修流程样本，不是对法定权利或条款效力的法律判断。当前适用地区、机型和购买时间仍须逐案核对。",
+          "sources": [
+            {
+              "url": "https://us.shop.xreal.com/pages/warranty-policy",
+              "name": "XREAL 美国商城保修政策",
+              "publishedAt": "2024-04-08",
+              "publisherGroup": "XREAL 美国商城保修政策",
+              "role": "official",
+              "textHash": "f6d9abd8a0da1c0e46c8883c61dc2dcc1047721091f3eaef3a7b3eb81d86b685",
+              "readAt": "2026-11-09T00:46:58.382936+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "xreal-warranty",
+          "url": "https://us.shop.xreal.com/pages/warranty-policy",
+          "checkedAt": "2026-11-09T00:46:58.382936+00:00",
+          "state": "body",
+          "note": "实际读取当天当前正文的所述章节或一页公告；只支持本轮所列字段，不将相关链接等同全文复核。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-0",
+      "reviewedAt": "2026-11-09T00:50:51.394323+00:00",
+      "status": "partial",
+      "assessment": "本轮优先处理四个尚无复核记录的节点。按当前正文核对所列字段并补适用条件；剩余基础定义、指标与观察对象仍待系统复核，不推进完整复核日期。",
+      "gaps": [
+        "Meta、Apple、Samsung 等初始观察对象尚未本轮逐一核查。",
+        "佩戴负担、续航、真实任务成功率及权限数据流均缺当前实测。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "examples",
+        "team"
+      ],
+      "changes": {
+        "examples": {
+          "before": "Meta、Apple、Samsung、雷鸟",
+          "after": "Meta、Apple、Samsung、雷鸟；本轮新增 XREAL 作为渠道与服务研究对象，不构成排名。"
+        },
+        "constraint": {
+          "before": "佩戴舒适度、续航、隐私和持续使用",
+          "after": "佩戴舒适度、续航、隐私和持续使用 离线能力需按字幕、翻译等具体任务核验手机依赖、App 版本和预下载资源；不能仅凭“离线”断言数据不出端。"
+        },
+        "team": {
+          "before": "光学 / 声学、算法、工业设计、移动应用、健康验证",
+          "after": "光学 / 声学、算法、工业设计、移动应用、健康验证 还需核对 App、渠道与服务团队如何共用版本化功能条件，避免销售承诺与实际使用前提脱节。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "track-0-20261109",
+            "title": "眼镜体验由硬件、手机软件与服务共同决定",
+            "learning": "雷鸟支持说明显示离线字幕和翻译条件不同；XREAL 服务政策又限定渠道和地区。选型与行业研究应把功能条件和服务路径一起解释，不能将“眼镜有 AI”当作完整体验。",
+            "application": "适用于明确机型、版本与购买地区的比较；只研究功能依赖，不涉及视力健康诊断。",
+            "boundary": "雷鸟页面仍有系统版本和权限占位，且没有实机测试；XREAL 条款没有证明实际服务结果。",
+            "itemIds": [
+              "rayneo-support",
+              "xreal-warranty"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "rayneo-support",
+          "title": "雷鸟 iO 支持说明：离线功能仍依赖手机、版本与语言包",
+          "facts": [
+            {
+              "claim": "离线翻译需提前下载语言对。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "4.1 / Offline Translation"
+            },
+            {
+              "claim": "页面的权限细节仍标注待最终版本确认。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "1.2 / App Permissions"
+            }
+          ],
+          "boundary": "无明确发布日期；本次读取设置与字幕翻译相关章节，页面存在未完成占位说明。没有设备实测、权限清单或数据流审计，不能断言功能全在眼镜端或数据不出端。",
+          "sources": [
+            {
+              "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "name": "雷鸟官方支持",
+              "publishedAt": null,
+              "publisherGroup": "雷鸟官方支持",
+              "role": "official",
+              "textHash": "baf3fdfe5b2138279c70c0b231cb61d071a3d5438a304d2d85ce49ee4729dd3e",
+              "readAt": "2026-11-09T00:46:58.353783+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "xreal-warranty",
+          "title": "XREAL 服务条款样本：销售渠道与售后受理信息相连",
+          "facts": [
+            {
+              "claim": "条款只覆盖规定渠道及所支持地区。",
+              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+              "locator": "Scope"
+            },
+            {
+              "claim": "申请信息包含订单和故障设备序列号。",
+              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+              "locator": "Making a claim"
+            }
+          ],
+          "boundary": "本轮读取 Scope 与 Making a claim 等业务流程段落；这是厂商自述的商业保修流程样本，不是对法定权利或条款效力的法律判断。当前适用地区、机型和购买时间仍须逐案核对。",
+          "sources": [
+            {
+              "url": "https://us.shop.xreal.com/pages/warranty-policy",
+              "name": "XREAL 美国商城保修政策",
+              "publishedAt": "2024-04-08",
+              "publisherGroup": "XREAL 美国商城保修政策",
+              "role": "official",
+              "textHash": "f6d9abd8a0da1c0e46c8883c61dc2dcc1047721091f3eaef3a7b3eb81d86b685",
+              "readAt": "2026-11-09T00:46:58.382936+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "rayneo-support",
+          "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "checkedAt": "2026-11-09T00:46:58.353783+00:00",
+          "state": "body",
+          "note": "实际读取当天当前正文的所述章节或一页公告；只支持本轮所列字段，不将相关链接等同全文复核。"
+        },
+        {
+          "itemId": "xreal-warranty",
+          "url": "https://us.shop.xreal.com/pages/warranty-policy",
+          "checkedAt": "2026-11-09T00:46:58.382936+00:00",
+          "state": "body",
+          "note": "实际读取当天当前正文的所述章节或一页公告；只支持本轮所列字段，不将相关链接等同全文复核。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-1",
+      "reviewedAt": "2026-11-09T00:50:51.394323+00:00",
+      "status": "partial",
+      "assessment": "本轮优先处理四个尚无复核记录的节点。按当前正文核对所列字段并补适用条件；剩余基础定义、指标与观察对象仍待系统复核，不推进完整复核日期。",
+      "gaps": [
+        "无人机、DJI 与初始 NVIDIA 生态观察对象尚未完整复核。",
+        "任务成功率、接管、恢复时间与现场工时仍缺统一测量协议及实测样本。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "examples",
+        "metrics"
+      ],
+      "changes": {
+        "examples": {
+          "before": "DJI、宇树、NVIDIA 生态",
+          "after": "DJI、宇树、NVIDIA 生态；新增上纬新材启元作为量产与商业化阶段观察对象，HALO 作为基于宇树 G1 的研究系统样本。"
+        },
+        "constraint": {
+          "before": "真实环境中的安全、可靠性与维护成本",
+          "after": "真实环境中的安全、可靠性与维护成本 下线数量、交付数量和终端持续使用须分开；公司披露“良率良好”但未给分母时不能当作可比质量指标。"
+        },
+        "metrics": {
+          "before": "任务成功率；人工接管频次；故障恢复时间；现场工时",
+          "after": "任务成功率；人工接管频次；故障恢复时间；现场工时 使用频次另列统计对象、窗口与分母；高频交互不直接证明任务完成、人工负担减少或用户价值。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "track-1-20261109",
+            "title": "把研究演示、量产和用户结果分层验证",
+            "learning": "HALO 披露研究控制层级，上纬新材公告披露制造进展并明确商业化仍在验证。它们支持不同阶段的问题，不能用演示成功推断批量可靠性，也不能用下线数量替代用户交付。",
+            "application": "用于机器人项目阶段和下一步证据需求的判断；不据公开材料对团队或具体人员作能力结论。",
+            "boundary": "公告来自新浪托管的公司署名 PDF，未回交易所核验；HALO 未完成论文审阅或复现实验；没有独立质量及终端结果。",
+            "itemIds": [
+              "swancor-announcement",
+              "halo-official"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "swancor-announcement",
+          "title": "上纬新材披露启元机器人累计下线万台，商业化仍在验证",
+          "facts": [
+            {
+              "claim": "公司披露两款产品合计下线一万台。",
+              "sourceUrl": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-11/2026-11-09/12696266.PDF",
+              "locator": "公告第1页 / 业务进展"
+            },
+            {
+              "claim": "公司仍处于量产爬坡及商业化验证阶段。",
+              "sourceUrl": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-11/2026-11-09/12696266.PDF",
+              "locator": "公告第1页 / 风险提示"
+            },
+            {
+              "claim": "媒体转述企业负责人给出月活与交互频次，但本轮未见相应分母定义。",
+              "sourceUrl": "https://www.ithome.com/1/023/917.htm",
+              "locator": "媒体正文 / 刘东方发言"
+            }
+          ],
+          "boundary": "已读公司署名一页公告的新浪托管 PDF，并交叉核对公告索引日期；尚未回到交易所文件核验。数量与良率描述为公司披露，缺独立验收和交付数据；未据此作投资或人员规模判断。",
+          "sources": [
+            {
+              "url": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-11/2026-11-09/12696266.PDF",
+              "name": "上纬新材公告 2026-055（新浪托管 PDF）",
+              "publishedAt": "2026-11-09",
+              "publisherGroup": "上纬新材公告 2026-055（新浪托管 PDF）",
+              "role": "official",
+              "textHash": "607bb0d807dd408b118d5362fb073a46483f944aaa750091fe5b38b38e8b9240",
+              "readAt": "2026-11-09T00:50:02.116282+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://www.ithome.com/1/023/917.htm",
+              "name": "IT之家现场发言转述",
+              "publishedAt": "2026-11-08T08:02:58+00:00",
+              "publisherGroup": "启元万台下线活动转述",
+              "role": "media",
+              "textHash": "24981d5540e485660e0890a7dc78697150d9b543ce31524de4dc021435a5a44e",
+              "readAt": "2026-11-09T00:45:19.436862+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "halo-official",
+          "title": "HALO 项目：任务编排、动作生成与跟踪采用不同运行频率",
+          "facts": [
+            {
+              "claim": "动作跟踪在嵌入式计算单元执行。",
+              "sourceUrl": "https://apple-aiml-research.github.io/ml-halo/",
+              "locator": "Onboard autonomy stack / Tracker"
+            }
+          ],
+          "boundary": "本次读取项目正文及 arXiv 摘要和提交历史，未完整审阅论文、代码或复现实验；不采用媒体中的商业能力外推。",
+          "sources": [
+            {
+              "url": "https://apple-aiml-research.github.io/ml-halo/",
+              "name": "Apple HALO 项目主页",
+              "publishedAt": null,
+              "publisherGroup": "Apple HALO 项目主页",
+              "role": "official",
+              "textHash": "f3e28c1a97ac954e66a5d7aa18c8fd77856876dd3bc5cb1036eb069a6a279c93",
+              "readAt": "2026-11-09T00:46:57.560360+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://arxiv.org/abs/2611.06908",
+              "name": "arXiv 原始摘要及提交历史",
+              "publishedAt": "2026-11-04T18:55:33+00:00",
+              "publisherGroup": "Apple HALO 研究团队",
+              "role": "research",
+              "textHash": "c6beba565ab0e162b748b39585dc2eb20c04794e84ca14991a8ea47a9fc24640",
+              "readAt": "2026-11-08T00:49:19.903614+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "swancor-announcement",
+          "url": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-11/2026-11-09/12696266.PDF",
+          "checkedAt": "2026-11-09T00:50:02.116282+00:00",
+          "state": "body",
+          "note": "实际读取当天当前正文的所述章节或一页公告；只支持本轮所列字段，不将相关链接等同全文复核。"
+        },
+        {
+          "itemId": "halo-official",
+          "url": "https://apple-aiml-research.github.io/ml-halo/",
+          "checkedAt": "2026-11-09T00:46:57.560360+00:00",
+          "state": "body",
+          "note": "实际读取当天当前正文的所述章节或一页公告；只支持本轮所列字段，不将相关链接等同全文复核。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-3",
+      "reviewedAt": "2026-11-09T00:50:51.394323+00:00",
+      "status": "partial",
+      "assessment": "本轮优先处理四个尚无复核记录的节点。按当前正文核对所列字段并补适用条件；剩余基础定义、指标与观察对象仍待系统复核，不推进完整复核日期。",
+      "gaps": [
+        "初始 NVIDIA、Qualcomm、瑞芯微观察对象的当前产品和 SDK 未全面复核。",
+        "模型压缩、BSP、热设计和维护成本缺权威定义及可比实测。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "metrics",
+        "team"
+      ],
+      "changes": {
+        "chain": {
+          "before": "芯片 / 模组 → SDK → 模型优化 → 整机集成",
+          "after": "芯片 / 模组 → SDK → 模型优化 → 整机集成 观察整机时还要区分任务编排、模型生成与低层跟踪分别运行于何处，并记录手机、机载或网络依赖。"
+        },
+        "metrics": {
+          "before": "同一任务下的延迟、功耗、内存与准确性",
+          "after": "同一任务下的延迟、功耗、内存与准确性 不同层级运行频率不能直接替代端到端响应延迟；需固定任务、系统边界和设备版本，再测功耗、内存与效果。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "track-3-20261109",
+            "title": "端侧不能只用一个芯片参数解释",
+            "learning": "HALO 把较低频的编排与生成放在背包计算单元，高频跟踪放在嵌入式单元；雷鸟离线能力仍有手机 App 与资源前提。算力研究需先明确系统边界，再谈端侧性能。",
+            "application": "用于具体系统的计算位置、接口和依赖梳理；HALO 是研究示例，雷鸟仅为功能条件样本。",
+            "boundary": "没有芯片级功耗、内存、延迟数据，也未验证离线功能的数据驻留位置；不能据此比较芯片优劣。",
+            "itemIds": [
+              "halo-official",
+              "rayneo-support"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "halo-official",
+          "title": "HALO 项目：任务编排、动作生成与跟踪采用不同运行频率",
+          "facts": [
+            {
+              "claim": "动作跟踪在嵌入式计算单元执行。",
+              "sourceUrl": "https://apple-aiml-research.github.io/ml-halo/",
+              "locator": "Onboard autonomy stack / Tracker"
+            }
+          ],
+          "boundary": "本次读取项目正文及 arXiv 摘要和提交历史，未完整审阅论文、代码或复现实验；不采用媒体中的商业能力外推。",
+          "sources": [
+            {
+              "url": "https://apple-aiml-research.github.io/ml-halo/",
+              "name": "Apple HALO 项目主页",
+              "publishedAt": null,
+              "publisherGroup": "Apple HALO 项目主页",
+              "role": "official",
+              "textHash": "f3e28c1a97ac954e66a5d7aa18c8fd77856876dd3bc5cb1036eb069a6a279c93",
+              "readAt": "2026-11-09T00:46:57.560360+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://arxiv.org/abs/2611.06908",
+              "name": "arXiv 原始摘要及提交历史",
+              "publishedAt": "2026-11-04T18:55:33+00:00",
+              "publisherGroup": "Apple HALO 研究团队",
+              "role": "research",
+              "textHash": "c6beba565ab0e162b748b39585dc2eb20c04794e84ca14991a8ea47a9fc24640",
+              "readAt": "2026-11-08T00:49:19.903614+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        },
+        {
+          "itemId": "rayneo-support",
+          "title": "雷鸟 iO 支持说明：离线功能仍依赖手机、版本与语言包",
+          "facts": [
+            {
+              "claim": "离线翻译需提前下载语言对。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "4.1 / Offline Translation"
+            },
+            {
+              "claim": "页面的权限细节仍标注待最终版本确认。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "1.2 / App Permissions"
+            }
+          ],
+          "boundary": "无明确发布日期；本次读取设置与字幕翻译相关章节，页面存在未完成占位说明。没有设备实测、权限清单或数据流审计，不能断言功能全在眼镜端或数据不出端。",
+          "sources": [
+            {
+              "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "name": "雷鸟官方支持",
+              "publishedAt": null,
+              "publisherGroup": "雷鸟官方支持",
+              "role": "official",
+              "textHash": "baf3fdfe5b2138279c70c0b231cb61d071a3d5438a304d2d85ce49ee4729dd3e",
+              "readAt": "2026-11-09T00:46:58.353783+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "halo-official",
+          "url": "https://apple-aiml-research.github.io/ml-halo/",
+          "checkedAt": "2026-11-09T00:46:57.560360+00:00",
+          "state": "body",
+          "note": "实际读取当天当前正文的所述章节或一页公告；只支持本轮所列字段，不将相关链接等同全文复核。"
+        },
+        {
+          "itemId": "rayneo-support",
+          "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "checkedAt": "2026-11-09T00:46:58.353783+00:00",
+          "state": "body",
+          "note": "实际读取当天当前正文的所述章节或一页公告；只支持本轮所列字段，不将相关链接等同全文复核。"
         }
       ]
     }

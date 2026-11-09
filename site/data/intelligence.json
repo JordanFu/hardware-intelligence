@@ -1,8 +1,190 @@
 {
   "schemaVersion": 1,
-  "lastCompletedAt": "2026-11-08T00:49:30.940621+00:00",
+  "lastCompletedAt": "2026-11-09T00:50:02.264209+00:00",
   "method": "Codex 初筛评分 + 逐条证据复核；非两个独立模型评分",
   "items": [
+    {
+      "id": "swancor-announcement",
+      "eventId": "swancor-q-10000-20261108",
+      "developmentId": "initial",
+      "titleZh": "上纬新材披露启元机器人累计下线万台，商业化仍在验证",
+      "originalTitle": "上纬新材料科技股份有限公司关于业务进展的公告",
+      "brief": {
+        "lead": "上纬新材 11 月 9 日公告披露，启元 Q1 与 T1 累计下线 1 万台，同时明确机器人收入占比较低、仍处于量产爬坡和商业化验证阶段。下线数量证明的是公司披露的制造进展，不能直接等同已交付、终端销量或盈利。",
+        "points": [
+          "公告列出良率波动、用户体验、订单转化与零部件供应链等后续风险，未给出具体良率。",
+          "媒体另引述月活和交互次数，但本公告没有这些指标及分母，不能用频次证明用户价值。"
+        ]
+      },
+      "stages": [
+        "制造与交付",
+        "质量与合规",
+        "渠道与销售",
+        "服务与生命周期",
+        "经营与组织"
+      ],
+      "domestic": true,
+      "companies": [
+        "上纬新材启元"
+      ],
+      "publishedAt": "2026-11-09",
+      "kind": "中文整理",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 20,
+          "增量信息": 18,
+          "证据质量": 18,
+          "机制清晰": 16,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐项核对原文、日期与主张边界；公告、岗位与支持说明分别理解，不以计划、频次或厂商陈述替代用户结果。"
+        }
+      },
+      "boundary": "已读公司署名一页公告的新浪托管 PDF，并交叉核对公告索引日期；尚未回到交易所文件核验。数量与良率描述为公司披露，缺独立验收和交付数据；未据此作投资或人员规模判断。",
+      "meaning": "把制造、交付、用户使用与商业结果分别追踪，避免万台里程碑遮住后续验证。",
+      "question": "已下线设备有多少交付到终端、稳定使用，哪些问题进入产品与服务闭环？",
+      "eventReason": "按主体与具体行为去重；常青指南及初见岗位不作为今日新闻，公告与同日媒体转述合并为同一进展。",
+      "practices": [
+        {
+          "title": "分开追踪下线、交付和商业化验证",
+          "method": "以公告披露的制造阶段为起点，另列终端交付、使用质量和商业验证的待证问题。",
+          "conditions": "机器人量产进展研究，统一对象、时间窗口与分母后才比较。",
+          "outcome": "本次只证明公开说明或要求；实施程度、可比成效及用户负担没有独立验证。",
+          "boundary": "已读公司署名一页公告的新浪托管 PDF，并交叉核对公告索引日期；尚未回到交易所文件核验。数量与良率描述为公司披露，缺独立验收和交付数据；未据此作投资或人员规模判断。",
+          "nextCheck": "寻找交付与售后资料，核对使用指标定义，避免用交互次数替代用户负担减少。",
+          "stages": [
+            "制造与交付",
+            "质量与合规",
+            "渠道与销售",
+            "服务与生命周期",
+            "经营与组织"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "公司披露两款产品合计下线一万台。",
+          "sourceUrl": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-11/2026-11-09/12696266.PDF",
+          "locator": "公告第1页 / 业务进展"
+        },
+        {
+          "claim": "公司仍处于量产爬坡及商业化验证阶段。",
+          "sourceUrl": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-11/2026-11-09/12696266.PDF",
+          "locator": "公告第1页 / 风险提示"
+        },
+        {
+          "claim": "媒体转述企业负责人给出月活与交互频次，但本轮未见相应分母定义。",
+          "sourceUrl": "https://www.ithome.com/1/023/917.htm",
+          "locator": "媒体正文 / 刘东方发言"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-11/2026-11-09/12696266.PDF",
+          "name": "上纬新材公告 2026-055（新浪托管 PDF）",
+          "publishedAt": "2026-11-09",
+          "publisherGroup": "上纬新材公告 2026-055（新浪托管 PDF）",
+          "role": "official",
+          "textHash": "607bb0d807dd408b118d5362fb073a46483f944aaa750091fe5b38b38e8b9240",
+          "readAt": "2026-11-09T00:50:02.116282+00:00",
+          "coverage": "body"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/917.htm",
+          "name": "IT之家现场发言转述",
+          "publishedAt": "2026-11-08T08:02:58+00:00",
+          "publisherGroup": "启元万台下线活动转述",
+          "role": "media",
+          "textHash": "24981d5540e485660e0890a7dc78697150d9b543ce31524de4dc021435a5a44e",
+          "readAt": "2026-11-09T00:45:19.436862+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-09T00:50:02.261098+00:00",
+      "sourceDate": "2026-11-09",
+      "date": "2026-11-09",
+      "title": "上纬新材披露启元机器人累计下线万台，商业化仍在验证",
+      "summary": "上纬新材 11 月 9 日公告披露，启元 Q1 与 T1 累计下线 1 万台，同时明确机器人收入占比较低、仍处于量产爬坡和商业化验证阶段。下线数量证明的是公司披露的制造进展，不能直接等同已交付、终端销量或盈利。"
+    },
+    {
+      "id": "rss-c11a8bc82c3f52a4",
+      "eventId": "rss-c11a8bc82c3f52a4",
+      "developmentId": "initial",
+      "titleZh": "亚马逊家庭机器人招聘报道：团队方向仍待原始证据",
+      "originalTitle": "亚马逊成立新团队专攻家用机器人",
+      "brief": {
+        "lead": "IT之家转述 CNBC 根据招聘信息与个人履历判断，亚马逊正组织新的家用机器人研发。报道提到的关键职位已撤下，本轮未读到原始岗位，因此只能作为组织研究线索，不能确认新团队规模、职责或具体产品。",
+        "points": [
+          "报道描绘适应家庭环境、自主活动的方向，但未明确产品任务与交付计划。",
+          "个人履历变化与职位撤下均不能单独证明扩招、裁员或团队整体迁移。"
+        ]
+      },
+      "stages": [
+        "研发与系统",
+        "经营与组织"
+      ],
+      "domestic": false,
+      "companies": [],
+      "publishedAt": "2026-11-08T15:24:09+00:00",
+      "kind": "中文整理",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 18,
+          "增量信息": 15,
+          "证据质量": 11,
+          "机制清晰": 12,
+          "可行动性": 14
+        },
+        "review": {
+          "decision": "hold",
+          "reason": "逐项核对原文、日期与主张边界；公告、岗位与支持说明分别理解，不以计划、频次或厂商陈述替代用户结果。"
+        }
+      },
+      "boundary": "仅媒体转述，未读原始招聘与 CNBC 全文；缺组织边界和正式公告，不进入精选。",
+      "meaning": "保留研究问题，待官方岗位或产品资料出现再判断。",
+      "question": "后续公开岗位是否能明确家庭场景任务、团队接口与验收责任？",
+      "eventReason": "按主体与具体行为去重；常青指南及初见岗位不作为今日新闻，公告与同日媒体转述合并为同一进展。",
+      "facts": [
+        {
+          "claim": "报道说明作为依据的一则招聘信息已撤下。",
+          "sourceUrl": "https://www.ithome.com/1/024/012.htm",
+          "locator": "媒体正文第2段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.ithome.com/1/024/012.htm",
+          "name": "IT之家转述 CNBC",
+          "publishedAt": "2026-11-08T15:24:09+00:00",
+          "publisherGroup": "IT之家转述 CNBC",
+          "role": "media",
+          "textHash": "c2bf7d9d11c65872a942d647af1e8d6783d498620142ca95bf2d5ed97508efbc",
+          "readAt": "2026-11-09T00:45:19.339428+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 70,
+      "selected": false,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-09T00:50:02.262171+00:00",
+      "sourceDate": "2026-11-08T15:24:09+00:00",
+      "date": "2026-11-08T15:24:09+00:00",
+      "title": "亚马逊家庭机器人招聘报道：团队方向仍待原始证据",
+      "summary": "IT之家转述 CNBC 根据招聘信息与个人履历判断，亚马逊正组织新的家用机器人研发。报道提到的关键职位已撤下，本轮未读到原始岗位，因此只能作为组织研究线索，不能确认新团队规模、职责或具体产品。"
+    },
     {
       "id": "rss-c19c06e426fe3bff",
       "eventId": "rss-c19c06e426fe3bff",
@@ -617,6 +799,24 @@
       "meaning": "可用于后续研究系统层级的输入输出与实时性分工。",
       "question": "任务层、生成层与控制层各自的失败如何检测、恢复并验证？",
       "eventReason": "依据具体主体与行为去重；初见岗位、既有指南和近期报道分别保留原始日期。",
+      "practices": [
+        {
+          "title": "把机器人端侧算力拆到系统层级",
+          "method": "按编排、动作生成和跟踪区分输入输出、计算位置与执行频率，再核验整个任务闭环。",
+          "conditions": "只用于 HALO 研究系统示例；不将研究演示推成商业机器人通用架构。",
+          "outcome": "本次只证明公开说明或要求；实施程度、可比成效及用户负担没有独立验证。",
+          "boundary": "本次读取项目正文及 arXiv 摘要和提交历史，未完整审阅论文、代码或复现实验；不采用媒体中的商业能力外推。",
+          "nextCheck": "补论文全文、实测延迟与失效恢复，并分别评估机载功耗、热约束与任务结果。",
+          "stages": [
+            "研发与系统",
+            "制造与交付"
+          ],
+          "evidenceLevel": "官方披露做法",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
       "facts": [
         {
           "claim": "动作跟踪在嵌入式计算单元执行。",
@@ -632,7 +832,7 @@
           "publisherGroup": "Apple HALO 项目主页",
           "role": "official",
           "textHash": "f3e28c1a97ac954e66a5d7aa18c8fd77856876dd3bc5cb1036eb069a6a279c93",
-          "readAt": "2026-11-08T00:47:04.153142+00:00",
+          "readAt": "2026-11-09T00:46:57.560360+00:00",
           "coverage": "body"
         },
         {
@@ -2670,6 +2870,101 @@
       "summary": "xTool 材料加工指南把材料、光源、焦点、运动结构和软件设置放在一起解释。对研发与产品团队，更有用的启发是固定任务条件后再谈性能，而不是直接把最高运动速度转成产能承诺。"
     },
     {
+      "id": "xreal-warranty",
+      "eventId": "xreal-warranty",
+      "developmentId": "initial",
+      "titleZh": "XREAL 服务条款样本：销售渠道与售后受理信息相连",
+      "originalTitle": "XREAL Limited Warranty Policy",
+      "brief": {
+        "lead": "XREAL 美国商城当前展示的保修政策版本为 2024 年 4 月。页面将授权渠道、支持地区和购买证明列入受理条件，并要求提供序列号与故障描述。对渠道研究，它提供了销售承诺如何衔接售后的样本，不是本日政策变更。",
+        "points": [
+          "条款限定适用渠道和地区，不能把某一商城承诺推广到所有跨境购买。",
+          "售后申请要求购买记录、设备序列号与问题证据；实际处理时效和用户恢复使用的结果未披露。"
+        ]
+      },
+      "stages": [
+        "渠道与销售",
+        "服务与生命周期",
+        "质量与合规"
+      ],
+      "domestic": true,
+      "companies": [
+        "XREAL"
+      ],
+      "publishedAt": "2024-04-08",
+      "kind": "中文整理",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 14,
+          "证据质量": 18,
+          "机制清晰": 17,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐项核对原文、日期与主张边界；公告、岗位与支持说明分别理解，不以计划、频次或厂商陈述替代用户结果。"
+        }
+      },
+      "boundary": "本轮读取 Scope 与 Making a claim 等业务流程段落；这是厂商自述的商业保修流程样本，不是对法定权利或条款效力的法律判断。当前适用地区、机型和购买时间仍须逐案核对。",
+      "meaning": "渠道覆盖应同时观察承诺主体、证据交接和服务覆盖，不只看门店或经销商数量。",
+      "question": "渠道订单信息能否减少用户在售后重复提交资料的负担？",
+      "eventReason": "按主体与具体行为去重；常青指南及初见岗位不作为今日新闻，公告与同日媒体转述合并为同一进展。",
+      "practices": [
+        {
+          "title": "把销售承诺与售后证据交接放在一起研究",
+          "method": "区分卖方、服务方及适用区域，核对购买凭据与设备身份如何在售后环节关联。",
+          "conditions": "具体地区和渠道的客户旅程研究；不得将商业保修规则等同消费者全部权利。",
+          "outcome": "本次只证明公开说明或要求；实施程度、可比成效及用户负担没有独立验证。",
+          "boundary": "本轮读取 Scope 与 Making a claim 等业务流程段落；这是厂商自述的商业保修流程样本，不是对法定权利或条款效力的法律判断。当前适用地区、机型和购买时间仍须逐案核对。",
+          "nextCheck": "补渠道实际流程、维修时效和用户重复提交情况。",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期",
+            "质量与合规"
+          ],
+          "evidenceLevel": "官方披露做法",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "条款只覆盖规定渠道及所支持地区。",
+          "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+          "locator": "Scope"
+        },
+        {
+          "claim": "申请信息包含订单和故障设备序列号。",
+          "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+          "locator": "Making a claim"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://us.shop.xreal.com/pages/warranty-policy",
+          "name": "XREAL 美国商城保修政策",
+          "publishedAt": "2024-04-08",
+          "publisherGroup": "XREAL 美国商城保修政策",
+          "role": "official",
+          "textHash": "f6d9abd8a0da1c0e46c8883c61dc2dcc1047721091f3eaef3a7b3eb81d86b685",
+          "readAt": "2026-11-09T00:46:58.382936+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 85,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-09T00:50:02.260232+00:00",
+      "sourceDate": "2024-04-08",
+      "date": "2024-04-08",
+      "title": "XREAL 服务条款样本：销售渠道与售后受理信息相连",
+      "summary": "XREAL 美国商城当前展示的保修政策版本为 2024 年 4 月。页面将授权渠道、支持地区和购买证明列入受理条件，并要求提供序列号与故障描述。对渠道研究，它提供了销售承诺如何衔接售后的样本，不是本日政策变更。"
+    },
+    {
       "id": "bambu-quality",
       "eventId": "bambu-quality",
       "developmentId": "initial",
@@ -3321,9 +3616,234 @@
       "date": null,
       "title": "xTool 英国售后政策：远程诊断、返修与停产支持有不同接口",
       "summary": "xTool 英国站售后政策先尝试远程诊断，再视情况转入本地维修；对停产产品还提到最终维修日期通知。它提供渠道与服务接口线索，但政策文本不能证明实际维修时效。"
+    },
+    {
+      "id": "rayneo-support",
+      "eventId": "rayneo-support",
+      "developmentId": "initial",
+      "titleZh": "雷鸟 iO 支持说明：离线功能仍依赖手机、版本与语言包",
+      "originalTitle": "Support RayNeo AI Glasses",
+      "brief": {
+        "lead": "雷鸟 iO 官方支持页把离线字幕和离线翻译分开：前者识别原语音，后者需要预先下载语言对。它说明“离线”是具体功能的网络条件，不等于眼镜脱离手机独立完成全部 AI；该页还有待确认占位内容，完整性需继续核验。",
+        "points": [
+          "页面要求离线功能使用对应 App 版本，并先下载所需翻译语言对。",
+          "字幕记录可保存为会话；最低系统版本及权限说明仍有待确认提示，不据此推断完整的数据处理方式。"
+        ]
+      },
+      "stages": [
+        "研发与系统",
+        "渠道与销售",
+        "服务与生命周期"
+      ],
+      "domestic": true,
+      "companies": [
+        "雷鸟创新"
+      ],
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 15,
+          "证据质量": 16,
+          "机制清晰": 17,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐项核对原文、日期与主张边界；公告、岗位与支持说明分别理解，不以计划、频次或厂商陈述替代用户结果。"
+        }
+      },
+      "boundary": "无明确发布日期；本次读取设置与字幕翻译相关章节，页面存在未完成占位说明。没有设备实测、权限清单或数据流审计，不能断言功能全在眼镜端或数据不出端。",
+      "meaning": "把销售承诺拆成眼镜、手机 App、语言包、网络和数据权限的可核验条件。",
+      "question": "产品、App、渠道和服务团队是否共用一份按版本维护的功能条件表？",
+      "eventReason": "按主体与具体行为去重；常青指南及初见岗位不作为今日新闻，公告与同日媒体转述合并为同一进展。",
+      "practices": [
+        {
+          "title": "以功能条件表约束离线能力承诺",
+          "method": "区分字幕与翻译、联网与断网、所需 App 版本和预下载资源；同时暴露尚未确认的说明。",
+          "conditions": "具体机型与地区版本的销售、交付和支持研究，不能跨机型外推。",
+          "outcome": "本次只证明公开说明或要求；实施程度、可比成效及用户负担没有独立验证。",
+          "boundary": "无明确发布日期；本次读取设置与字幕翻译相关章节，页面存在未完成占位说明。没有设备实测、权限清单或数据流审计，不能断言功能全在眼镜端或数据不出端。",
+          "nextCheck": "补实机断网测试、完整权限及数据流说明。",
+          "stages": [
+            "研发与系统",
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "evidenceLevel": "官方披露做法",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "organization": [
+        {
+          "kind": "研究问题",
+          "title": "“离线”承诺需要跨团队共同确认",
+          "observation": "官方支持说明同时涉及 App 版本、语言资源和手机联网状态。",
+          "implication": "建议研究谁维护版本条件、谁批准销售表述，以及功能失败如何交接；不推断已有组织机制。",
+          "boundary": "无明确发布日期；本次读取设置与字幕翻译相关章节，页面存在未完成占位说明。没有设备实测、权限清单或数据流审计，不能断言功能全在眼镜端或数据不出端。",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "离线翻译需提前下载语言对。",
+          "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "locator": "4.1 / Offline Translation"
+        },
+        {
+          "claim": "页面的权限细节仍标注待最终版本确认。",
+          "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "locator": "1.2 / App Permissions"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "name": "雷鸟官方支持",
+          "publishedAt": null,
+          "publisherGroup": "雷鸟官方支持",
+          "role": "official",
+          "textHash": "baf3fdfe5b2138279c70c0b231cb61d071a3d5438a304d2d85ce49ee4729dd3e",
+          "readAt": "2026-11-09T00:46:58.353783+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 84,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-09T00:50:02.258740+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "雷鸟 iO 支持说明：离线功能仍依赖手机、版本与语言包",
+      "summary": "雷鸟 iO 官方支持页把离线字幕和离线翻译分开：前者识别原语音，后者需要预先下载语言对。它说明“离线”是具体功能的网络条件，不等于眼镜脱离手机独立完成全部 AI；该页还有待确认占位内容，完整性需继续核验。"
+    },
+    {
+      "id": "roborock-procurement",
+      "eventId": "roborock-procurement",
+      "developmentId": "initial",
+      "titleZh": "石头科技采购职责样本：从下单延伸到库存与异常处理",
+      "originalTitle": "采购工程师",
+      "brief": {
+        "lead": "石头科技官方招聘索引中的采购工程师，职责跨越物料可获得性、采购订单跟踪、对账与采购风险。它给出采购岗位的接口线索；页面没有日期，仅建立职责基线，不能据此判断扩招或岗位缺口。",
+        "points": [
+          "岗位要求跟踪在途订单并处理执行异常，同时关注欠料、库存、呆滞和供应商风险。",
+          "任职要求包含电子行业采购或计划经验；IT 系统优化经历为优先项，不能据此确认已有系统改革。"
+        ]
+      },
+      "stages": [
+        "供应链与采购",
+        "制造与交付",
+        "经营与组织"
+      ],
+      "domestic": true,
+      "companies": [
+        "石头科技"
+      ],
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "组织与岗位",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 15,
+          "证据质量": 15,
+          "机制清晰": 18,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐项核对原文、日期与主张边界；公告、岗位与支持说明分别理解，不以计划、频次或厂商陈述替代用户结果。"
+        }
+      },
+      "boundary": "仅官方搜索索引，未取得当前动态页完整目录；岗位日期和编制未知，首次观察不是新增招聘。",
+      "meaning": "采购能力研究可围绕异常如何关闭、计划变更如何传递及库存责任划分展开。",
+      "question": "需求变化造成呆滞时，采购、计划和产品分别承担什么决策责任？",
+      "eventReason": "按主体与具体行为去重；常青指南及初见岗位不作为今日新闻，公告与同日媒体转述合并为同一进展。",
+      "organization": [
+        {
+          "kind": "能力需求线索",
+          "title": "采购、计划与财务接口值得核验",
+          "observation": "岗位把订单执行、对账、库存风险与异常处理放在同一职责范围。",
+          "implication": "形成访谈问题：谁修改需求与交付时间、谁确认库存责任、谁验收异常关闭；不能由广告推出正式权责结构。",
+          "boundary": "仅官方搜索索引，未取得当前动态页完整目录；岗位日期和编制未知，首次观察不是新增招聘。",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "职责包含订单下达、在途跟踪与对账。",
+          "sourceUrl": "https://mall.roborock.com/introduction/jobs",
+          "locator": "采购工程师 / 职位描述第4项"
+        },
+        {
+          "claim": "职责列明采购风险类别。",
+          "sourceUrl": "https://mall.roborock.com/introduction/jobs",
+          "locator": "采购工程师 / 职位描述第6项"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://mall.roborock.com/introduction/jobs",
+          "name": "石头科技官方招聘索引",
+          "publishedAt": null,
+          "publisherGroup": "石头科技官方招聘索引",
+          "role": "official",
+          "textHash": "4417b103c5975dfd648b94ac72251392a95570f52966ad2460438b7c0ad8123b",
+          "readAt": "2026-11-09T00:50:02.116282+00:00",
+          "coverage": "excerpt"
+        }
+      ],
+      "score": 84,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-09T00:50:02.260624+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "石头科技采购职责样本：从下单延伸到库存与异常处理",
+      "summary": "石头科技官方招聘索引中的采购工程师，职责跨越物料可获得性、采购订单跟踪、对账与采购风险。它给出采购岗位的接口线索；页面没有日期，仅建立职责基线，不能据此判断扩招或岗位缺口。"
     }
   ],
   "events": [
+    {
+      "id": "swancor-q-10000-20261108",
+      "representativeId": "swancor-announcement",
+      "itemIds": [
+        "swancor-announcement"
+      ],
+      "publisherGroups": [
+        "上纬新材公告 2026-055（新浪托管 PDF）",
+        "启元万台下线活动转述"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "rss-c11a8bc82c3f52a4",
+      "representativeId": "rss-c11a8bc82c3f52a4",
+      "itemIds": [
+        "rss-c11a8bc82c3f52a4"
+      ],
+      "publisherGroups": [
+        "IT之家转述 CNBC"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": false
+    },
     {
       "id": "rss-c19c06e426fe3bff",
       "representativeId": "rss-c19c06e426fe3bff",
@@ -3748,6 +4268,20 @@
       "selected": true
     },
     {
+      "id": "xreal-warranty",
+      "representativeId": "xreal-warranty",
+      "itemIds": [
+        "xreal-warranty"
+      ],
+      "publisherGroups": [
+        "XREAL 美国商城保修政策"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
       "id": "bambu-quality",
       "representativeId": "bambu-quality",
       "itemIds": [
@@ -3825,6 +4359,34 @@
       ],
       "publisherGroups": [
         "xTool 官方支持"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "rayneo-support",
+      "representativeId": "rayneo-support",
+      "itemIds": [
+        "rayneo-support"
+      ],
+      "publisherGroups": [
+        "雷鸟官方支持"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "roborock-procurement",
+      "representativeId": "roborock-procurement",
+      "itemIds": [
+        "roborock-procurement"
+      ],
+      "publisherGroups": [
+        "石头科技官方招聘索引"
       ],
       "developmentIds": [
         "initial"
@@ -4899,6 +5461,349 @@
       "completedAt": "2026-11-08T00:49:30.940621+00:00",
       "reviewedCount": 8,
       "selectedCount": 6
+    },
+    {
+      "coverage": "6 个 RSS 中 5 个成功；候选 30 篇中 8 篇新读、20 篇缓存、2 篇正文失败。重点查阅雷鸟、XREAL、影石，并补读科沃斯与石头岗位。新增 5 篇中文 brief，复核 HALO 并补系统分工实践；启元公告与同日媒体合并为一个新事件。岗位取得科沃斯正文与石头官方索引，影石和雷鸟 ATS 未取得职责，不把空列表当作零岗位。",
+      "sourceChecks": [
+        {
+          "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "company": "雷鸟创新",
+          "stages": [
+            "研发与系统",
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "note": "实际读取条目所注明章节；按原始日期、来源类型和适用条件整理。",
+          "checkedAt": "2026-11-09T00:46:58.353783+00:00"
+        },
+        {
+          "url": "https://us.shop.xreal.com/pages/warranty-policy",
+          "company": "XREAL",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期",
+            "质量与合规"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "note": "实际读取条目所注明章节；按原始日期、来源类型和适用条件整理。",
+          "checkedAt": "2026-11-09T00:46:58.382936+00:00"
+        },
+        {
+          "url": "https://mall.roborock.com/introduction/jobs",
+          "company": "石头科技",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "经营与组织"
+          ],
+          "purpose": "recruitment",
+          "state": "index",
+          "note": "实际读取条目所注明章节；按原始日期、来源类型和适用条件整理。",
+          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
+        },
+        {
+          "url": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-11/2026-11-09/12696266.PDF",
+          "company": "上纬新材启元",
+          "stages": [
+            "制造与交付",
+            "质量与合规",
+            "渠道与销售",
+            "服务与生命周期",
+            "经营与组织"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "note": "实际读取条目所注明章节；按原始日期、来源类型和适用条件整理。",
+          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
+        },
+        {
+          "url": "https://apple-aiml-research.github.io/ml-halo/",
+          "company": null,
+          "stages": [
+            "研发与系统",
+            "制造与交付"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "note": "实际读取条目所注明章节；按原始日期、来源类型和适用条件整理。",
+          "checkedAt": "2026-11-09T00:46:57.560360+00:00"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/012.htm",
+          "company": null,
+          "stages": [
+            "研发与系统",
+            "经营与组织"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "实际读取条目所注明章节；按原始日期、来源类型和适用条件整理。",
+          "checkedAt": "2026-11-09T00:45:19.339428+00:00"
+        },
+        {
+          "url": "https://www.insta360.com/cn/jobs",
+          "company": "影石创新",
+          "stages": [
+            "经营与组织",
+            "渠道与销售"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "note": "官方招聘主页可读，官网链接确认飞书 ATS；文化宣传未用于证明员工体验或组织效果。",
+          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
+        },
+        {
+          "url": "https://arashivision.jobs.feishu.cn/campus",
+          "company": "影石创新",
+          "stages": [
+            "经营与组织",
+            "供应链与采购"
+          ],
+          "purpose": "recruitment",
+          "state": "error",
+          "note": "浏览器仅呈现空列表框架，未取得职责正文；显示零不解释为公司没有招聘。",
+          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
+        },
+        {
+          "url": "https://arashivision.jobs.feishu.cn/social",
+          "company": "影石创新",
+          "stages": [
+            "经营与组织",
+            "供应链与采购"
+          ],
+          "purpose": "recruitment",
+          "state": "error",
+          "note": "浏览器仅呈现空列表框架，未取得职责正文；显示零不解释为公司没有招聘。",
+          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
+        },
+        {
+          "url": "https://leiniao-ibg.jobs.feishu.cn/",
+          "company": "雷鸟创新",
+          "stages": [
+            "经营与组织",
+            "渠道与销售"
+          ],
+          "purpose": "recruitment",
+          "state": "error",
+          "note": "公开页面无可读正文，且本轮未完成官网反向链接核验，不作为有效官方岗位观察。",
+          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
+        },
+        {
+          "url": "https://open.rayneo.cn/",
+          "company": "雷鸟创新",
+          "stages": [
+            "研发与系统",
+            "渠道与销售"
+          ],
+          "purpose": "practice",
+          "state": "error",
+          "note": "直连正文提取为空；搜索片段有开发者流程，但本轮未完成该域名归属核验，不用于知识修订。",
+          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
+        },
+        {
+          "url": "https://www.xreal.com/support",
+          "company": "XREAL",
+          "stages": [
+            "服务与生命周期",
+            "渠道与销售"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "note": "当前支持页导航到官方商城；读取服务入口，不把支持可用性理解为服务效果。",
+          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
+        },
+        {
+          "url": "https://mall.ecovacs.cn/job-detail-516.html",
+          "company": "科沃斯",
+          "stages": [
+            "需求与规划",
+            "渠道与销售",
+            "服务与生命周期",
+            "经营与组织"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "note": "重读已有产品线经理完整正文，职责未见变化，保留旧摘要与首次观察日期。",
+          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
+        },
+        {
+          "url": "https://money.finance.sina.com.cn/corp/go.php/vCB_AllBulletin/stockid/688585.phtml",
+          "company": null,
+          "stages": [
+            "制造与交付"
+          ],
+          "purpose": "news",
+          "state": "index",
+          "note": "读取公告索引并进入对应正文，核对公告日期和 PDF 链接。",
+          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
+        },
+        {
+          "url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12696266&stockid=688585",
+          "company": null,
+          "stages": [
+            "制造与交付",
+            "质量与合规"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "读取公司公告转存正文与所链接一页 PDF，保留尚未回交易所核验的边界。",
+          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/995.htm",
+          "company": null,
+          "stages": [
+            "研发与系统"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "读取新抓正文；营销价格、传闻、缺一手机制的演示不入精选，启元报道与公告合并去重。",
+          "checkedAt": "2026-11-09T00:45:19.336131+00:00"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/012.htm",
+          "company": null,
+          "stages": [
+            "研发与系统"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "读取新抓正文；营销价格、传闻、缺一手机制的演示不入精选，启元报道与公告合并去重。",
+          "checkedAt": "2026-11-09T00:45:19.339428+00:00"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/978.htm",
+          "company": null,
+          "stages": [
+            "研发与系统"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "读取新抓正文；营销价格、传闻、缺一手机制的演示不入精选，启元报道与公告合并去重。",
+          "checkedAt": "2026-11-09T00:45:19.331814+00:00"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/969.htm",
+          "company": null,
+          "stages": [
+            "研发与系统"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "读取新抓正文；营销价格、传闻、缺一手机制的演示不入精选，启元报道与公告合并去重。",
+          "checkedAt": "2026-11-09T00:45:19.343434+00:00"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/920.htm",
+          "company": null,
+          "stages": [
+            "研发与系统"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "读取新抓正文；营销价格、传闻、缺一手机制的演示不入精选，启元报道与公告合并去重。",
+          "checkedAt": "2026-11-09T00:45:19.440194+00:00"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/917.htm",
+          "company": null,
+          "stages": [
+            "制造与交付",
+            "服务与生命周期"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "读取新抓正文；营销价格、传闻、缺一手机制的演示不入精选，启元报道与公告合并去重。",
+          "checkedAt": "2026-11-09T00:45:19.436862+00:00"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/882.htm",
+          "company": null,
+          "stages": [
+            "研发与系统"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "读取新抓正文；营销价格、传闻、缺一手机制的演示不入精选，启元报道与公告合并去重。",
+          "checkedAt": "2026-11-09T00:45:19.453330+00:00"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/881.htm",
+          "company": null,
+          "stages": [
+            "研发与系统"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "note": "读取新抓正文；营销价格、传闻、缺一手机制的演示不入精选，启元报道与公告合并去重。",
+          "checkedAt": "2026-11-09T00:45:19.447003+00:00"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/06/520-mhz-stm32h7p4-stm32h7p5-arm-cortex-m7-mcus-feature-hardware-signal-processor-hsp-optional-neural-art-npu",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "error",
+          "note": "curl: (56) The requested URL returned error: 403",
+          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/05/altera-agilex-27-fpga-soc-family-features-up-to-17-6m-logic-elements-cortex-a720-a-520-cores-256-gbps-serdes-pcie-7-0",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "error",
+          "note": "curl: (56) The requested URL returned error: 403",
+          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
+        }
+      ],
+      "knownGaps": [
+        "影石、雷鸟新轮换招聘入口未取得岗位正文；以科沃斯重读和石头采购索引补足可用观察。",
+        "石头索引无日期，当前在招及人数未知。",
+        "雷鸟支持页有待确认占位，未形成完整权限与数据流证据。",
+        "启元公告为媒体托管原始 PDF，尚缺交易所回源；使用指标缺分母。",
+        "知识各节点按实际可核字段记录部分复核，首轮完整复核期限不因补充内容后移。"
+      ],
+      "failedSources": [
+        "CNX RSS：403，历史数据保留。",
+        "浏览器仅呈现空列表框架，未取得职责正文；显示零不解释为公司没有招聘。",
+        "公开页面无可读正文，且本轮未完成官网反向链接核验，不作为有效官方岗位观察。",
+        "直连正文提取为空；搜索片段有开发者流程，但本轮未完成该域名归属核验，不用于知识修订。",
+        "curl: (56) The requested URL returned error: 403"
+      ],
+      "coverageCheck": {
+        "passed": true,
+        "companies": [
+          "XREAL",
+          "影石创新",
+          "石头科技",
+          "科沃斯",
+          "雷鸟创新"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "影石创新",
+          "石头科技",
+          "科沃斯"
+        ],
+        "gaps": [],
+        "usableSources": 19
+      },
+      "successfulScan": true,
+      "completedAt": "2026-11-09T00:50:02.264209+00:00",
+      "reviewedCount": 6,
+      "selectedCount": 5
     }
   ]
 }
