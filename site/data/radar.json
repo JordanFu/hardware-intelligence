@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-09T02:13:47.985411+00:00",
-  "lastSuccessfulAt": "2026-11-09T02:13:47.985411+00:00",
+  "checkedAt": "2026-11-09T02:36:54.254642+00:00",
+  "lastSuccessfulAt": "2026-11-09T02:36:54.254642+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-09T02:13:47.985411+00:00",
-      "lastSuccessAt": "2026-11-09T02:13:47.985411+00:00",
+      "checkedAt": "2026-11-09T02:36:54.254642+00:00",
+      "lastSuccessAt": "2026-11-09T02:36:54.254642+00:00",
       "received": 18,
       "matched": 0,
       "excluded": 18,
@@ -15,8 +15,8 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-09T02:13:47.985411+00:00",
-      "lastSuccessAt": "2026-11-09T02:13:47.985411+00:00",
+      "checkedAt": "2026-11-09T02:36:54.254642+00:00",
+      "lastSuccessAt": "2026-11-09T02:36:54.254642+00:00",
       "received": 50,
       "matched": 2,
       "excluded": 48,
@@ -25,8 +25,8 @@
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-09T02:13:47.985411+00:00",
-      "lastSuccessAt": "2026-11-09T02:13:47.985411+00:00",
+      "checkedAt": "2026-11-09T02:36:54.254642+00:00",
+      "lastSuccessAt": "2026-11-09T02:36:54.254642+00:00",
       "received": 10,
       "matched": 1,
       "excluded": 9,
@@ -35,8 +35,8 @@
     {
       "id": "bambu",
       "state": "ok",
-      "checkedAt": "2026-11-09T02:13:47.985411+00:00",
-      "lastSuccessAt": "2026-11-09T02:13:47.985411+00:00",
+      "checkedAt": "2026-11-09T02:36:54.254642+00:00",
+      "lastSuccessAt": "2026-11-09T02:36:54.254642+00:00",
       "received": 15,
       "matched": 15,
       "excluded": 0,
@@ -45,22 +45,34 @@
     {
       "id": "cnx",
       "state": "error",
-      "checkedAt": "2026-11-09T02:13:47.985411+00:00",
+      "checkedAt": "2026-11-09T02:36:54.254642+00:00",
       "error": "curl: (22) The requested URL returned error: 403",
       "lastSuccessAt": "2026-11-07T05:57:51.855328+00:00"
     },
     {
       "id": "ithome",
       "state": "ok",
-      "checkedAt": "2026-11-09T02:13:47.985411+00:00",
-      "lastSuccessAt": "2026-11-09T02:13:47.985411+00:00",
+      "checkedAt": "2026-11-09T02:36:54.254642+00:00",
+      "lastSuccessAt": "2026-11-09T02:36:54.254642+00:00",
       "received": 60,
-      "matched": 5,
-      "excluded": 55,
+      "matched": 6,
+      "excluded": 54,
       "error": null
     }
   ],
   "items": [
+    {
+      "id": "rss-eff5a7bd10fc428e",
+      "title": "OPPO Watch 5 智能手表外观公布：主打轻薄方表形态，11 月 16 日发布",
+      "url": "https://www.ithome.com/1/024/060.htm",
+      "date": "2026-11-09T02:14:12+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "可穿戴与眼镜",
+      "status": "待核验",
+      "discoveredAt": "2026-11-09T02:36:54.254642+00:00"
+    },
     {
       "id": "rss-1980402a0da73126",
       "title": "2027 款领克 08 EM-P 将支持选装 EVA 实体机器人，年内更新 FlymeAuto 2.5.0",
