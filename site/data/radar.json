@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-10T00:47:53.734872+00:00",
-  "lastSuccessfulAt": "2026-11-10T00:47:53.734872+00:00",
+  "checkedAt": "2026-11-10T07:17:48.730401+00:00",
+  "lastSuccessfulAt": "2026-11-10T07:17:48.730401+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-10T00:47:53.734872+00:00",
-      "lastSuccessAt": "2026-11-10T00:47:53.734872+00:00",
+      "checkedAt": "2026-11-10T07:17:48.730401+00:00",
+      "lastSuccessAt": "2026-11-10T07:17:48.730401+00:00",
       "received": 18,
       "matched": 1,
       "excluded": 17,
@@ -15,8 +15,8 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-10T00:47:53.734872+00:00",
-      "lastSuccessAt": "2026-11-10T00:47:53.734872+00:00",
+      "checkedAt": "2026-11-10T07:17:48.730401+00:00",
+      "lastSuccessAt": "2026-11-10T07:17:48.730401+00:00",
       "received": 50,
       "matched": 2,
       "excluded": 48,
@@ -25,8 +25,8 @@
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-10T00:47:53.734872+00:00",
-      "lastSuccessAt": "2026-11-10T00:47:53.734872+00:00",
+      "checkedAt": "2026-11-10T07:17:48.730401+00:00",
+      "lastSuccessAt": "2026-11-10T07:17:48.730401+00:00",
       "received": 10,
       "matched": 0,
       "excluded": 10,
@@ -35,8 +35,8 @@
     {
       "id": "bambu",
       "state": "ok",
-      "checkedAt": "2026-11-10T00:47:53.734872+00:00",
-      "lastSuccessAt": "2026-11-10T00:47:53.734872+00:00",
+      "checkedAt": "2026-11-10T07:17:48.730401+00:00",
+      "lastSuccessAt": "2026-11-10T07:17:48.730401+00:00",
       "received": 15,
       "matched": 15,
       "excluded": 0,
@@ -45,22 +45,58 @@
     {
       "id": "cnx",
       "state": "error",
-      "checkedAt": "2026-11-10T00:47:53.734872+00:00",
+      "checkedAt": "2026-11-10T07:17:48.730401+00:00",
       "error": "curl: (22) The requested URL returned error: 403",
       "lastSuccessAt": "2026-11-07T05:57:51.855328+00:00"
     },
     {
       "id": "ithome",
       "state": "ok",
-      "checkedAt": "2026-11-10T00:47:53.734872+00:00",
-      "lastSuccessAt": "2026-11-10T00:47:53.734872+00:00",
+      "checkedAt": "2026-11-10T07:17:48.730401+00:00",
+      "lastSuccessAt": "2026-11-10T07:17:48.730401+00:00",
       "received": 60,
-      "matched": 4,
-      "excluded": 56,
+      "matched": 3,
+      "excluded": 57,
       "error": null
     }
   ],
   "items": [
+    {
+      "id": "rss-a70bc6fb0c668f75",
+      "title": "50℃ 热水喷淋定点拖地：小米米家扫拖机器人 7 Max 国补后 4999 → 3602 元",
+      "url": "https://www.ithome.com/1/024/828.htm",
+      "date": "2026-11-10T06:45:20+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-10T07:17:48.730401+00:00"
+    },
+    {
+      "id": "rss-bbf99c2ef902b640",
+      "title": "索尼预热国行版 MDR-3R 有线耳机，11 月 17 日发布",
+      "url": "https://www.ithome.com/1/024/797.htm",
+      "date": "2026-11-10T05:54:16+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "可穿戴与眼镜",
+      "status": "待核验",
+      "discoveredAt": "2026-11-10T07:17:48.730401+00:00"
+    },
+    {
+      "id": "rss-6b0745aef6b7a9bf",
+      "title": "华为 WATCH GT 7 智能手表首发三个月 1588 → 到手 999 元：41mm/46mm 可选",
+      "url": "https://www.ithome.com/1/024/755.htm",
+      "date": "2026-11-10T05:27:10+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "可穿戴与眼镜",
+      "status": "待核验",
+      "discoveredAt": "2026-11-10T07:17:48.730401+00:00"
+    },
     {
       "id": "rss-6e07690c27eb09da",
       "title": "Practice Makes Precise: At CoRL, NVIDIA and Partners Reveal How Robots Rehearse Delicate Work in Simulation",
