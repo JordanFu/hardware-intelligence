@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-09T02:30:42.120805+00:00",
+  "checkedAt": "2026-11-10T00:46:34.458995+00:00",
   "jobs": [
     {
       "company": "DJI 大疆",
@@ -1116,9 +1116,9 @@
       "scopeNote": "消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机",
       "id": "job-64eaead4b243a34c",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
+      "lastSeen": "2026-11-10T00:46:34.458995+00:00",
       "sourceHash": "d367fee8f52072da2786051fc233e03f2d8bd9886ef73c5619bfbf8fe35f8c33",
-      "change": "首次收录基线",
+      "change": "持续可见",
       "versions": [
         {
           "observedAt": "2026-11-09T02:30:42.120805+00:00",
@@ -1443,9 +1443,9 @@
       ],
       "id": "job-547c6c04c9807a51",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
+      "lastSeen": "2026-11-10T00:46:34.458995+00:00",
       "sourceHash": "982ecc6cff1cfeb8d1a745669098f97d72ce74b99df011b75c55a1b7aeae3821",
-      "change": "首次收录基线",
+      "change": "持续可见",
       "versions": [
         {
           "observedAt": "2026-11-09T02:30:42.120805+00:00",
@@ -2039,6 +2039,42 @@
       "complete": false,
       "checkedAt": "2026-11-09T02:26:00.043Z",
       "note": "渠道检索索引，后续读取图书渠道与教培推广正文核对归属。"
+    },
+    {
+      "company": "科大讯飞",
+      "state": "partial",
+      "complete": false,
+      "note": "本轮只复核既有供应链岗位正文，逐项职责、要求、地点及业务范围未见实质变化；非完整目录。",
+      "familyChecks": [
+        {
+          "family": "供应链",
+          "state": "body",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
+          "jobIds": [
+            "job-64eaead4b243a34c"
+          ],
+          "note": "消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机"
+        }
+      ],
+      "checkedAt": "2026-11-10T00:46:34.458995+00:00"
+    },
+    {
+      "company": "猿辅导（小猿）",
+      "state": "partial",
+      "complete": false,
+      "note": "本轮只复核既有供应链岗位正文，逐项职责、要求、地点及业务范围未见实质变化；非完整目录。",
+      "familyChecks": [
+        {
+          "family": "供应链",
+          "state": "body",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "jobIds": [
+            "job-547c6c04c9807a51"
+          ],
+          "note": "正文明确学习机售后及小猿设备业务；管培生职责可能含轮岗，不能视为固定组织架构"
+        }
+      ],
+      "checkedAt": "2026-11-10T00:46:34.458995+00:00"
     }
   ],
   "insights": [

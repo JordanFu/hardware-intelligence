@@ -167,7 +167,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "reviewedAt": "2026-11-10T00:46:34.547116+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "科大讯飞",
@@ -831,6 +831,36 @@
             "tablet"
           ],
           "note": "已读直接业务职责；仅用于岗位研究，本轮未宣称完整复核产品档案。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-10T00:46:34.547116+00:00",
+      "summary": "复核讯飞学习机功能页及小猿学习机供应链岗位，另在招聘职责矩阵独立复核讯飞共享供应链岗位。两份岗位未见实质变化，保留原版本；不将共享岗位贴成学习机专属团队。其余品类与档案继续按7天轮换，尚未到期。",
+      "checks": [
+        {
+          "company": "科大讯飞",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "name": "官方当前正文",
+          "state": "body",
+          "checkedAt": "2026-11-10T00:43:59.921804+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "product",
+          "note": "核对学习流程、功能限制与现有五维档案；没有新增供应链或组织实施证据。"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "name": "官方当前正文",
+          "state": "body",
+          "checkedAt": "2026-11-10T00:41:25.296Z",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "实际读取既有学习机供应链岗位；不以岗位复核代替整份产品档案复核。"
         }
       ]
     }
@@ -1655,6 +1685,13 @@
           ]
         }
       }
+    },
+    {
+      "profileId": "iflytek-tablet",
+      "reviewedAt": "2026-11-10T00:46:34.547116+00:00",
+      "status": "reviewed",
+      "assessment": "当前官网功能与脚注支持既有诊断—规划—讲解—练习概述；五个维度和未知项逐项核对，渠道、交付和组织仍未有新证据。档案无实质修改，只记录复核。",
+      "changes": {}
     }
   ],
   "reference": {

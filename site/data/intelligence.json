@@ -1,8 +1,221 @@
 {
   "schemaVersion": 1,
-  "lastCompletedAt": "2026-11-09T00:50:02.264209+00:00",
+  "lastCompletedAt": "2026-11-10T00:46:34.366452+00:00",
   "method": "Codex 初筛评分 + 逐条证据复核；非两个独立模型评分",
   "items": [
+    {
+      "id": "rss-6e07690c27eb09da",
+      "eventId": "rss-6e07690c27eb09da",
+      "developmentId": "initial",
+      "titleZh": "英伟达 CoRL 说明：从训练成功转向可重复的机器人评测",
+      "originalTitle": "Practice Makes Precise: At CoRL, NVIDIA and Partners Reveal How Robots Rehearse Delicate Work in Simulation",
+      "brief": {
+        "lead": "英伟达 11 月 9 日公布机器人模型、仿真和评测进展。对硬件团队更值得追踪的是评测如何暴露失败条件：Isaac Lab-Arena 用多种场景变化测试策略，DexBench 与 VABAR 按任务和难度组织验证。训练中表现好、至少成功一次和真实部署可靠，是不同层级的证据。",
+        "points": [
+          "厂商称 GR00T 2 在 50 个评测任务中有 40 个至少完成过一次；这不是每次执行的成功率。",
+          "官方介绍 DexBench 的四类场景与 VABAR 的任务变体，也介绍用失败反馈修改程序的 GaP 流程；本轮未复现实验。"
+        ]
+      },
+      "stages": [
+        "研发与系统",
+        "制造与交付",
+        "质量与合规"
+      ],
+      "domestic": false,
+      "companies": [],
+      "publishedAt": "2026-11-09T14:00:01+00:00",
+      "kind": "中文整理",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 18,
+          "证据质量": 18,
+          "机制清晰": 18,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "当前官方正文提供具体机制；将厂商披露、研发计划和待验证结果分开。没有独立实测，不采纳首创、无损或部署成熟的宣传结论。"
+        }
+      },
+      "boundary": "依据官方博客的模型、评测及程序编排章节，未审阅全部论文、测试集或实机日志。厂商和合作方披露不等于独立验证；预览版、探索应用不等于成熟生产部署。",
+      "meaning": "质量研究应保留任务定义、变体、试验次数和失败条件，避免把一次成功演示当作可靠交付。",
+      "question": "供应商展示成功率时，是否能交付失败样例、试验分母和恢复流程供工程团队复核？",
+      "eventReason": "以原始发布日期和具体进展去重，不将本日读取时间当作新闻日期。",
+      "practices": [
+        {
+          "title": "把失败条件带回下一轮机器人评测",
+          "method": "固定任务、难度与环境变化，记录导致失败的条件，再将其加入后续训练或程序修改的回归验证。",
+          "conditions": "仅作为机器人评测研究线索；需取得实际基准说明、数据和硬件部署条件。",
+          "outcome": "官方介绍评测框架与合作探索，本轮没有独立复现或现场可靠性结果。",
+          "boundary": "依据官方博客的模型、评测及程序编排章节，未审阅全部论文、测试集或实机日志。厂商和合作方披露不等于独立验证；预览版、探索应用不等于成熟生产部署。",
+          "nextCheck": "读取基准与论文，确认任务分母、变化范围及仿真到实机的对应关系。",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            1,
+            2
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "GR00T 2 披露的一个结果是部分任务至少完成一次。",
+          "sourceUrl": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl",
+          "locator": "World Action Models"
+        },
+        {
+          "claim": "评测分析用于找出导致失败的条件。",
+          "sourceUrl": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl",
+          "locator": "New Industrial Benchmarks"
+        },
+        {
+          "claim": "GaP 流程在仿真中测试程序并依据失败细化。",
+          "sourceUrl": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl",
+          "locator": "Agents Turn Skills Into Robot Programs"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl",
+          "name": "NVIDIA Blog",
+          "publishedAt": "2026-11-09T14:00:01+00:00",
+          "publisherGroup": "NVIDIA Blog",
+          "role": "official",
+          "textHash": "162b8d9ce2556f82ef40f360ee7b6ea7de854141e7fa2ff898d2548b1bd7889c",
+          "readAt": "2026-11-10T00:41:29.495429+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 90,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-10T00:46:34.364396+00:00",
+      "sourceDate": "2026-11-09T14:00:01+00:00",
+      "date": "2026-11-09T14:00:01+00:00",
+      "title": "英伟达 CoRL 说明：从训练成功转向可重复的机器人评测",
+      "summary": "英伟达 11 月 9 日公布机器人模型、仿真和评测进展。对硬件团队更值得追踪的是评测如何暴露失败条件：Isaac Lab-Arena 用多种场景变化测试策略，DexBench 与 VABAR 按任务和难度组织验证。训练中表现好、至少成功一次和真实部署可靠，是不同层级的证据。"
+    },
+    {
+      "id": "rss-1ec82521027135bf",
+      "eventId": "bambu-h3c-launch",
+      "developmentId": "mixed-layer-scheduling-20261109",
+      "titleZh": "拓竹解释 H3C 混合层高：把手工拆模型交给切片调度",
+      "originalTitle": "The \"Impossible\" Slice: how Bambu Lab H3C made mixed nozzles work on different layer heights",
+      "brief": {
+        "lead": "拓竹在 11 月 9 日的技术说明中，把混合喷嘴的问题拆为横向线宽与纵向层高。H3C 切片引擎用层带协调相邻区域：细喷嘴先完成多层，粗喷嘴在层带边界对齐。用户选择区域，软件负责层高对齐、换头和路径规划；减少操作的幅度还没有独立测量。",
+        "points": [
+          "该说明新增的是相邻表面区域的层高协调机制，沿用 H3C 发布事件，不重复计为新品发布。",
+          "碰撞避让、边界衔接与换头次数是同时需要验证的约束；文中对其他机型的支持仍属于开发计划。"
+        ]
+      },
+      "stages": [
+        "需求与规划",
+        "研发与系统",
+        "质量与合规"
+      ],
+      "domestic": true,
+      "companies": [
+        "Bambu Lab 拓竹"
+      ],
+      "publishedAt": "2026-11-09T10:48:22+00:00",
+      "kind": "中文整理",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 18,
+          "证据质量": 18,
+          "机制清晰": 18,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "当前官方正文提供具体机制；将厂商披露、研发计划和待验证结果分开。没有独立实测，不采纳首创、无损或部署成熟的宣传结论。"
+        }
+      },
+      "boundary": "已读厂商技术说明，未检查实现代码、版本发布记录或独立打印结果。不采纳“首款”“无妥协”等比较宣传，亦不把开发计划写成其他机型已经支持。",
+      "meaning": "工程研究可从用户少做的手工拆分、重复修改和返工步骤出发，再检查系统如何承担复杂度。",
+      "question": "模型改动后需要几步重新准备？路径失败、质量损失和总打印时间由什么测试共同约束？",
+      "eventReason": "以原始发布日期和具体进展去重，不将本日读取时间当作新闻日期。",
+      "newDevelopment": true,
+      "developmentReason": "11月9日官方技术说明新增动态层带、相邻区域层高对齐和路径调度细节，区别于此前整机发布与应用概览。",
+      "practices": [
+        {
+          "title": "用自动调度减少混合工艺的手工拆分",
+          "method": "把用户的区域选择与底层层高、换头和避让分开，由软件协调相邻区域；用形状修改后的重做步骤检验设计价值。",
+          "conditions": "仅用于该机型和切片功能的工程研究，需核对软件版本、材料和模型几何。",
+          "outcome": "官方说明了实现思路；实际步骤减少、打印用时和成功率尚无独立验证。",
+          "boundary": "已读厂商技术说明，未检查实现代码、版本发布记录或独立打印结果。不采纳“首款”“无妥协”等比较宣传，亦不把开发计划写成其他机型已经支持。",
+          "nextCheck": "用同一模型比较手工拆分与自动区域方案，记录准备步骤、修改返工、质量与总时长。",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "evidenceLevel": "官方披露做法",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "organization": [
+        {
+          "kind": "研究问题",
+          "title": "软件替用户处理复杂度，需要哪些验收接口",
+          "observation": "官方说明把区域选择、层高对齐、换头和避让串在同一功能流程中。",
+          "implication": "研究判断：产品验收应同时连接易用性、运动约束和成品质量；具体团队归属、汇报线和责任人未披露。",
+          "boundary": "不能由技术流程推断组织合并或人员调整；需另核岗位和项目责任资料。",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "切片引擎按动态层带组织不同喷嘴的层高。",
+          "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+          "locator": "Our art of bricklaying"
+        },
+        {
+          "claim": "用户可用涂色工具或修改器框选择区域。",
+          "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+          "locator": "Choose the region, hit Slice"
+        },
+        {
+          "claim": "其他三款设备的原生混合喷嘴支持仍在开发。",
+          "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+          "locator": "文末支持计划"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+          "name": "Bambu Lab Blog",
+          "publishedAt": "2026-11-09T10:48:22+00:00",
+          "publisherGroup": "Bambu Lab Blog",
+          "role": "official",
+          "textHash": "f0c113e14fc668a9ac0dce4c07738f2d80542ff98b6a16d8c3b95df805198df1",
+          "readAt": "2026-11-10T00:41:29.473888+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 90,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-10T00:46:34.362461+00:00",
+      "sourceDate": "2026-11-09T10:48:22+00:00",
+      "date": "2026-11-09T10:48:22+00:00",
+      "title": "拓竹解释 H3C 混合层高：把手工拆模型交给切片调度",
+      "summary": "拓竹在 11 月 9 日的技术说明中，把混合喷嘴的问题拆为横向线宽与纵向层高。H3C 切片引擎用层带协调相邻区域：细喷嘴先完成多层，粗喷嘴在层带边界对齐。用户选择区域，软件负责层高对齐、换头和路径规划；减少操作的幅度还没有独立测量。"
+    },
     {
       "id": "swancor-announcement",
       "eventId": "swancor-q-10000-20261108",
@@ -3816,6 +4029,39 @@
   ],
   "events": [
     {
+      "id": "rss-6e07690c27eb09da",
+      "representativeId": "rss-6e07690c27eb09da",
+      "itemIds": [
+        "rss-6e07690c27eb09da"
+      ],
+      "publisherGroups": [
+        "NVIDIA Blog"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "bambu-h3c-launch",
+      "representativeId": "rss-1ec82521027135bf",
+      "itemIds": [
+        "rss-1ec82521027135bf",
+        "rss-1a47ee385dceb5a7",
+        "rss-4019776eb7750381",
+        "rss-b827682b5c275113"
+      ],
+      "publisherGroups": [
+        "Bambu Lab",
+        "Bambu Lab Blog"
+      ],
+      "developmentIds": [
+        "initial",
+        "mixed-layer-scheduling-20261109"
+      ],
+      "selected": true
+    },
+    {
       "id": "swancor-q-10000-20261108",
       "representativeId": "swancor-announcement",
       "itemIds": [
@@ -3979,22 +4225,6 @@
       ],
       "publisherGroups": [
         "Aqara 官方帮助中心"
-      ],
-      "developmentIds": [
-        "initial"
-      ],
-      "selected": true
-    },
-    {
-      "id": "bambu-h3c-launch",
-      "representativeId": "rss-1a47ee385dceb5a7",
-      "itemIds": [
-        "rss-1a47ee385dceb5a7",
-        "rss-4019776eb7750381",
-        "rss-b827682b5c275113"
-      ],
-      "publisherGroups": [
-        "Bambu Lab"
       ],
       "developmentIds": [
         "initial"
@@ -5804,6 +6034,424 @@
       "completedAt": "2026-11-09T00:50:02.264209+00:00",
       "reviewedCount": 6,
       "selectedCount": 5
+    },
+    {
+      "coverage": "6个RSS源5个成功，共30条候选；本轮重点审阅2篇新官方技术正文并形成中文brief，余项按索引初筛。另查宇树采购、xTool售后、讯飞学习机功能和讯飞/小猿两份当前岗位正文，覆盖供应链、制造、质量、渠道、服务及组织。",
+      "sourceChecks": [
+        {
+          "url": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+          "company": "Bambu Lab 拓竹",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-10T00:41:29.473888+00:00",
+          "note": "读取当前技术正文；新层带说明沿用既有H3C事件，作为新的技术进展。"
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl",
+          "company": null,
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-10T00:41:29.495429+00:00",
+          "note": "读取模型、评测及程序编排章节；不以一次成功或训练表现替代部署可靠性。"
+        },
+        {
+          "url": "https://www.unitree.com/cn/supplier/",
+          "company": "宇树科技",
+          "stages": [
+            "供应链与采购",
+            "经营与组织"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-10T00:43:59.920916+00:00",
+          "note": "重读供应商登记步骤与采购纪律，没有看到资格审核结果或履约指标。"
+        },
+        {
+          "url": "https://uk.xtool.com/pages/aftersale-policies",
+          "company": "xTool",
+          "stages": [
+            "服务与生命周期",
+            "渠道与销售"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-10T00:44:05.472775+00:00",
+          "note": "重读英国站售后受理、远程排障、返修和停产通知章节；不作法律权利解释或跨地区推广。"
+        },
+        {
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "company": "科大讯飞",
+          "stages": [
+            "需求与规划",
+            "渠道与销售"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "checkedAt": "2026-11-10T00:43:59.921804+00:00",
+          "note": "当前学习机功能页；诊断闭环与学段机型限制仍可见，无日期，不作为新发布。"
+        },
+        {
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
+          "company": "科大讯飞",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "经营与组织"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "checkedAt": "2026-11-10T00:43:23.967Z",
+          "note": "同岗位ID当前完整职责与此前一致；消费电子共享能力，不强标学习机归属。"
+        },
+        {
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "company": "猿辅导（小猿）",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "服务与生命周期"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "checkedAt": "2026-11-10T00:41:25.296Z",
+          "note": "同岗位ID当前完整职责与此前一致，学习机售后归属明确；管培生跨度不等于组织合并。"
+        },
+        {
+          "url": "https://www.zuoyebang.com/question/index/homejobs",
+          "company": "作业帮",
+          "stages": [
+            "需求与规划"
+          ],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "定向搜索返回官网招聘索引，但未取得新的学习硬件供应链职责正文；缺口保留。"
+        },
+        {
+          "url": "https://edu.iflytek.com/cn/index/search/wd/%E5%AD%A6%E4%B9%A0%E6%9C%BA/p/1.html",
+          "company": "科大讯飞",
+          "stages": [
+            "需求与规划"
+          ],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "检索命中旧活动索引，不刷新成今日新闻。"
+        },
+        {
+          "url": "https://xykspt.yuanfudao.com/baike",
+          "company": "猿辅导（小猿）",
+          "stages": [
+            "需求与规划"
+          ],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "检索命中产品沿革页面；本轮只看索引，不据此新增产品结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/622.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/535.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/516.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/995.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/768.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/767.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/546.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/542.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/534.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/531.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/525.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/514.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/506.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/505.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/502.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/213.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/102.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/088.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/060.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/055.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/050.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/046.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/978.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/969.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/920.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/917.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/882.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/881.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-10T00:46:34.208656+00:00",
+          "note": "本轮候选标题初筛记录；下载或缓存不等于逐篇证据复核。价格促销、传闻、范围不符和待回源材料不写成已核验brief。"
+        }
+      ],
+      "knownGaps": [
+        "CNX RSS 403，保留历史内容。",
+        "学习硬件岗位两份均未见职责实质变化；共享能力与直接硬件岗位分开，不判断人数或扩编。",
+        "作业帮供应链直接岗位证据仍缺；本轮搜索未形成新岗位结论。",
+        "其他28条候选未逐篇完成本轮证据复核；索引初筛不能代替正文审阅。",
+        "知识节点继续标部分复核，基础指标与实际效果的未验证项不因访问成功而消失。"
+      ],
+      "failedSources": [
+        "CNX RSS：HTTP 403；本轮未取到新内容，历史保留。"
+      ],
+      "coverageCheck": {
+        "passed": true,
+        "companies": [
+          "Bambu Lab 拓竹",
+          "xTool",
+          "作业帮",
+          "宇树科技",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "gaps": [],
+        "usableSources": 38
+      },
+      "successfulScan": true,
+      "completedAt": "2026-11-10T00:46:34.366452+00:00",
+      "reviewedCount": 2,
+      "selectedCount": 2
     }
   ]
 }

@@ -3,12 +3,12 @@
   "startedAt": "2026-11-06T07:45:08.434151+00:00",
   "nodes": {
     "chain-3": {
-      "attemptedAt": "2026-11-06T07:53:13.521723+00:00",
+      "attemptedAt": "2026-11-10T00:47:16.938756+00:00",
       "status": "partial",
-      "assessment": "复查宇树官方供应商入口的登记步骤与采购纪律，补充供应商登记和资格认可的区分。当前证据只覆盖入口与行为规则，没有验证全部采购指标和内部执行。",
+      "assessment": "复核当前供应商登记五步与关联关系申报、保密及廉洁要求，对照已补充的登记/准入/订单区分仍成立；未发现支持修改知识字段的新内容，保留内容更新时间。",
       "gaps": [
-        "MOQ、交期、库存周转口径尚未完成独立来源复核。",
-        "未取得供应商资格审核标准、通过率或履约结果。"
+        "MOQ、交期与库存周转分母本轮仍缺独立定义核验，不据入口页面判断这些指标。",
+        "公开资料没有供应商审核标准、实际通过率、采购质量接口和履约结果。"
       ],
       "reviewedFields": [
         "basics",
@@ -46,12 +46,12 @@
         {
           "itemId": "unitree-supplier",
           "url": "https://www.unitree.com/cn/supplier/",
-          "checkedAt": "2026-11-06T07:48:27.597929+00:00",
+          "checkedAt": "2026-11-10T00:43:59.920916+00:00",
           "state": "body",
-          "note": "本轮重新读取官方供应商页面；无发布日期，执行结果未知。"
+          "note": "当天重新读取公开正文；仅支持本轮所列字段与研究提示，不把来源存在或访问成功当作成效验证。"
         }
       ],
-      "reviewedAt": "2026-11-06T07:53:13.521723+00:00",
+      "reviewedAt": "2026-11-10T00:47:16.938756+00:00",
       "patch": {
         "basics": "MOQ 是最小订购量；交期包含采购、生产和运输，不能只看供应商承诺。 供应商登记仅是提交资料的入口，不能自动等同于资格审核通过或获得采购订单。",
         "exercise": "选一颗关键器件，写出交期风险、替代验证要求和缺料升级路径。 再区分供应商资料登记、资格核验、质量验收和订单获取；无公开依据的门槛标为待核验。"
@@ -72,58 +72,64 @@
       "updatedAt": "2026-11-06T07:53:13.521723+00:00"
     },
     "chain-7": {
-      "attemptedAt": "2026-11-06T07:53:13.521723+00:00",
+      "attemptedAt": "2026-11-10T00:47:16.938756+00:00",
       "status": "partial",
-      "assessment": "复核安克官方招聘索引中的生命周期测试职责，把服务范围补充到设备所有权变化与数据退出；这是岗位要求线索，未验证具体产品已实施。",
+      "assessment": "读取英国站服务受理与停产通知章节，核对从线上排障到返修的流程边界。新增用户路径检查问题，不把商业条款当作实际履约或法定权利结论。",
       "gaps": [
-        "首次解决率口径及服务结果尚未取得独立数据核验。",
-        "具体产品支持周期、数据清除效果和退出承诺仍需产品文档验证。"
+        "首次解决率的窗口、排除项与重复联系归属仍需独立方法资料和实际数据。",
+        "没有具体停产产品通知、真实维修时长、备件供货与用户恢复使用结果。"
       ],
       "reviewedFields": [
-        "basics",
         "exercise",
+        "flow",
         "pitfall",
         "team"
       ],
       "evidence": [
         {
-          "itemId": "anker-security-job",
-          "title": "安克安全测试岗位：验证覆盖设备、应用、云与产品退出",
+          "itemId": "xtool-aftersale",
+          "title": "xTool 英国售后政策：远程诊断、返修与停产支持有不同接口",
           "facts": [
             {
-              "claim": "岗位描述要求对设备、配套应用和云服务做安全测试。",
-              "sourceUrl": "https://career.anker-in.com/social/recruitment",
-              "locator": "正文职责 / 采购原则 / 项目说明段落"
+              "claim": "远程无法解决的问题可能需要送本地维修中心。",
+              "sourceUrl": "https://uk.xtool.com/pages/aftersale-policies",
+              "locator": "How to Obtain a Warranty Service"
+            },
+            {
+              "claim": "停产产品安排提到最终维修日期通知。",
+              "sourceUrl": "https://uk.xtool.com/pages/aftersale-policies",
+              "locator": "Special Notes"
             }
           ],
-          "boundary": "本次只取得官方页面搜索索引中的职责片段；动态页面返回空列表，不认定岗位关闭，也不推断编制数。",
+          "boundary": "英国站当前政策，未标统一发布日期；本次只整理服务流程与停产通知，不判断条款的法律效力或跨地区适用性，合同、机型和当地规则仍需分别核对。",
           "sources": [
             {
-              "url": "https://career.anker-in.com/social/recruitment",
-              "name": "安克创新官方招聘",
-              "publishedAt": "2026-09-21",
-              "publisherGroup": "安克创新官方招聘",
+              "url": "https://uk.xtool.com/pages/aftersale-policies",
+              "name": "xTool 官方支持",
+              "publishedAt": null,
+              "publisherGroup": "xTool 官方支持",
               "role": "official",
-              "textHash": "2730fb85749b6912cf13677440766503941272fa81a42bac28c18c4175540485",
-              "readAt": "2026-11-06T05:43:46.717180+00:00",
-              "coverage": "excerpt"
+              "textHash": "6269b4a3d4d1a4540a5eb7672c87c865039d5fb2611703717f94e41e51be7483",
+              "readAt": "2026-11-08T00:45:12.666454+00:00",
+              "coverage": "body"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "anker-security-job",
-          "url": "https://career.anker-in.com/social/recruitment",
-          "checkedAt": "2026-11-06T07:48:27.597929+00:00",
-          "state": "index",
-          "note": "本轮重新检索官方招聘正文片段，列表混有多岗位，实时在招状态未知。"
+          "itemId": "xtool-aftersale",
+          "url": "https://uk.xtool.com/pages/aftersale-policies",
+          "checkedAt": "2026-11-10T00:44:05.472775+00:00",
+          "state": "body",
+          "note": "当天重新读取公开正文；仅支持本轮所列字段与研究提示，不把来源存在或访问成功当作成效验证。"
         }
       ],
-      "reviewedAt": "2026-11-06T07:53:13.521723+00:00",
+      "reviewedAt": "2026-11-10T00:47:16.938756+00:00",
       "patch": {
         "basics": "OTA 是远程软件更新；支持周期、回滚和停止服务的安排也是产品承诺。 对互联设备，还应检查所有权转移、恢复出厂与退出时的数据处理；这些是从岗位职责提炼的验收问题，不能视为全行业已落实的规范。",
-        "exercise": "追踪一次服务事件，从用户发现到真正恢复使用，找出重复解释和重复操作。 补充一次设备转售或恢复出厂场景，列清设备、账号和云端数据的处理责任与验证证据。"
+        "exercise": "追踪一次服务事件，从用户发现到真正恢复使用，找出重复解释和重复操作。 补充一次设备转售或恢复出厂场景，列清设备、账号和云端数据的处理责任与验证证据。 对返修场景增加购买证明、排障记录、寄送指引与恢复使用四步，检查哪些信息能在授权范围内复用，避免用户重复解释。",
+        "flow": "使用、故障与反馈 → 安装、维修、更新、备件与退出方案 服务研究还应区分线上排障、返修授权、运输维修以及停产通知四个节点，逐一确认交接资料与承诺主体。"
       },
       "lessons": [
         {
@@ -136,62 +142,87 @@
             "anker-security-job"
           ],
           "updatedAt": "2026-11-06T07:53:13.521723+00:00"
+        },
+        {
+          "id": "service-remote-repair-handoff",
+          "title": "服务流程要能从远程排障走到恢复使用",
+          "learning": "xTool英国站公开说明先尝试线上分析，无法远程解决时可能送当地维修中心；停产支持另有通知安排。可据此拆开服务入口、返修与退出三个问题，而不是只统计工单关闭。",
+          "application": "用于指定地区和产品的售后路径研究，核对购买证据、排障资料和设备状态如何交接；减少重复提交是待验证设计目标。",
+          "boundary": "这是厂商公开流程样本，没有实际时效、成功率或用户负担数据；条款效力、具体法定权利和其他地区政策均不在本次判断内。",
+          "itemIds": [
+            "xtool-aftersale"
+          ],
+          "updatedAt": "2026-11-10T00:47:16.938756+00:00"
         }
       ],
-      "updatedAt": "2026-11-06T07:53:13.521723+00:00"
+      "updatedAt": "2026-11-10T00:47:16.938756+00:00"
     },
     "track-5": {
-      "attemptedAt": "2026-11-06T07:53:13.521723+00:00",
+      "attemptedAt": "2026-11-10T00:47:16.938756+00:00",
       "status": "partial",
-      "assessment": "根据安克设备安全测试职责，补充产品工程地图中的设备、应用、云联动与生命周期退出约束；原有供应链、量产和交期维度继续保留。",
+      "assessment": "把拓竹新披露的混合层高机制补入工程地图：观察软件、机械约束与成品验收如何共同支撑操作简化。检查原有交付链与团队提示后予以保留，新增可测的用户返工维度。",
       "gaps": [
-        "原有工程指标与各类 ODM / EMS 的责任边界尚待逐项来源复核。",
-        "岗位要求不能证明整个行业的组织形态或最佳实践成效。"
+        "尚未完整核验ODM/EMS责任、良率与交期指标口径。",
+        "没有切片版本实测、路径失败率和同模型对照，不宣称首创或已证实效率提升。"
       ],
       "reviewedFields": [
         "chain",
         "constraint",
+        "examples",
+        "metrics",
         "team"
       ],
       "evidence": [
         {
-          "itemId": "anker-security-job",
-          "title": "安克安全测试岗位：验证覆盖设备、应用、云与产品退出",
+          "itemId": "rss-1ec82521027135bf",
+          "title": "拓竹解释 H3C 混合层高：把手工拆模型交给切片调度",
           "facts": [
             {
-              "claim": "岗位描述要求对设备、配套应用和云服务做安全测试。",
-              "sourceUrl": "https://career.anker-in.com/social/recruitment",
-              "locator": "正文职责 / 采购原则 / 项目说明段落"
+              "claim": "切片引擎按动态层带组织不同喷嘴的层高。",
+              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "locator": "Our art of bricklaying"
+            },
+            {
+              "claim": "用户可用涂色工具或修改器框选择区域。",
+              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "locator": "Choose the region, hit Slice"
+            },
+            {
+              "claim": "其他三款设备的原生混合喷嘴支持仍在开发。",
+              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "locator": "文末支持计划"
             }
           ],
-          "boundary": "本次只取得官方页面搜索索引中的职责片段；动态页面返回空列表，不认定岗位关闭，也不推断编制数。",
+          "boundary": "已读厂商技术说明，未检查实现代码、版本发布记录或独立打印结果。不采纳“首款”“无妥协”等比较宣传，亦不把开发计划写成其他机型已经支持。",
           "sources": [
             {
-              "url": "https://career.anker-in.com/social/recruitment",
-              "name": "安克创新官方招聘",
-              "publishedAt": "2026-09-21",
-              "publisherGroup": "安克创新官方招聘",
+              "url": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "name": "Bambu Lab Blog",
+              "publishedAt": "2026-11-09T10:48:22+00:00",
+              "publisherGroup": "Bambu Lab Blog",
               "role": "official",
-              "textHash": "2730fb85749b6912cf13677440766503941272fa81a42bac28c18c4175540485",
-              "readAt": "2026-11-06T05:43:46.717180+00:00",
-              "coverage": "excerpt"
+              "textHash": "f0c113e14fc668a9ac0dce4c07738f2d80542ff98b6a16d8c3b95df805198df1",
+              "readAt": "2026-11-10T00:41:29.473888+00:00",
+              "coverage": "body"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "anker-security-job",
-          "url": "https://career.anker-in.com/social/recruitment",
-          "checkedAt": "2026-11-06T07:48:27.597929+00:00",
-          "state": "index",
-          "note": "本轮重新检索官方招聘正文片段，列表混有多岗位，实时在招状态未知。"
+          "itemId": "rss-1ec82521027135bf",
+          "url": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+          "checkedAt": "2026-11-10T00:41:29.473888+00:00",
+          "state": "body",
+          "note": "当天重新读取公开正文；仅支持本轮所列字段与研究提示，不把来源存在或访问成功当作成效验证。"
         }
       ],
-      "reviewedAt": "2026-11-06T07:53:13.521723+00:00",
+      "reviewedAt": "2026-11-10T00:47:16.938756+00:00",
       "patch": {
-        "constraint": "成本、质量、交期、维修和供货风险；互联设备另需检查设备、应用、云的协同安全与退出时的数据处理。",
-        "team": "产品、系统工程、制造、采购、质量、法规与售后；涉及互联设备时，将应用、云服务与产品安全的验收接口纳入研究。"
+        "constraint": "成本、质量、交期、维修和供货风险；互联设备另需检查设备、应用、云的协同安全与退出时的数据处理。 混合工艺还需同时检查区域边界衔接、路径避让和切换开销，界面步骤减少不能掩盖质量约束。",
+        "team": "产品、系统工程、制造、采购、质量、法规与售后；涉及互联设备时，将应用、云服务与产品安全的验收接口纳入研究。",
+        "examples": "品牌方、ODM / EMS、模组供应商；拓竹H3C作为软硬件协同的观察样本，非行业排名。",
+        "metrics": "关键缺陷关闭率；良率；交期；返修原因；比较自动化功能时另记录用户准备步骤、设计修改后的重做次数、总加工时间与成品验收结果，不能只看算法速度。"
       },
       "lessons": [
         {
@@ -204,9 +235,20 @@
             "anker-security-job"
           ],
           "updatedAt": "2026-11-06T07:53:13.521723+00:00"
+        },
+        {
+          "id": "mixed-process-user-work",
+          "title": "用用户少做的准备与返工检验工程价值",
+          "learning": "H3C官方说明让用户选区域，由切片软件协调不同层高、换头与路径。可迁移的研究方法是先找到原本需要手工拆分和反复重做的步骤，再检验系统是否可靠接手。",
+          "application": "用于已有软硬件流程的改进研究：固定模型、材料和版本，对比准备操作、修改返工、失败率与最终质量。具体数值要靠实测。",
+          "boundary": "来源仅为厂商机制说明；未验证节省幅度、适用几何范围或其他设备已支持，不将单个案例升为行业最优实践。",
+          "itemIds": [
+            "rss-1ec82521027135bf"
+          ],
+          "updatedAt": "2026-11-10T00:47:16.938756+00:00"
         }
       ],
-      "updatedAt": "2026-11-06T07:53:13.521723+00:00"
+      "updatedAt": "2026-11-10T00:47:16.938756+00:00"
     },
     "chain-1": {
       "attemptedAt": "2026-11-07T00:47:27.698411+00:00",
@@ -1446,6 +1488,34 @@
           "hash": "f15fb5b8b63a1571d0441c91a1a85d2ae40d3b7c2247bcb51ba629256a74c06f",
           "decision": "integrated",
           "reason": "将当前公开材料沉淀为带条件的渠道服务、功能依赖、系统边界或量产证据问题；不将案例升为行业标准，缺口保留。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-10T00:47:16.938756+00:00",
+      "reviewedNodes": [
+        "chain-3",
+        "chain-7",
+        "track-5"
+      ],
+      "decisions": [
+        {
+          "itemId": "rss-1ec82521027135bf",
+          "hash": "e221964fd1cd1e54d879c4fee282c1a3ec47bccaf7e53713473d7ecff53f0b90",
+          "decision": "integrated",
+          "reason": "作为软硬件协同与减少用户返工的研究方法沉淀，保留缺乏实测、不可外推的边界。"
+        },
+        {
+          "itemId": "rss-6e07690c27eb09da",
+          "hash": "c48904777f9bd562e33799ea9f3d3f874ab6a702317d625057b9932df2a03f87",
+          "decision": "hold",
+          "reason": "公开博客提供评测线索，但本轮未读基准及论文全文；待核对任务分母、变体和实机对应后再修订机器人评测知识。"
+        },
+        {
+          "itemId": "xtool-aftersale",
+          "hash": "7b989a4b7eccf0e06720a15806afbb834c5d031cefec0cd70aceeec429c2b541",
+          "decision": "integrated",
+          "reason": "重读当前正文后，仅沉淀服务交接的检查问题；不将停产条款作为已履行的证据，具体通知与实际维修结果继续待核验。"
         }
       ]
     }
@@ -2808,6 +2878,231 @@
           "checkedAt": "2026-11-09T00:46:58.353783+00:00",
           "state": "body",
           "note": "实际读取当天当前正文的所述章节或一页公告；只支持本轮所列字段，不将相关链接等同全文复核。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-3",
+      "reviewedAt": "2026-11-10T00:47:16.938756+00:00",
+      "status": "partial",
+      "assessment": "复核当前供应商登记五步与关联关系申报、保密及廉洁要求，对照已补充的登记/准入/订单区分仍成立；未发现支持修改知识字段的新内容，保留内容更新时间。",
+      "gaps": [
+        "MOQ、交期与库存周转分母本轮仍缺独立定义核验，不据入口页面判断这些指标。",
+        "公开资料没有供应商审核标准、实际通过率、采购质量接口和履约结果。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "exercise",
+        "pitfall",
+        "team"
+      ],
+      "changes": {},
+      "lessonChanges": [],
+      "evidence": [
+        {
+          "itemId": "unitree-supplier",
+          "title": "宇树供应商入口：登记流程与采购纪律分开看",
+          "facts": [
+            {
+              "claim": "官网列出登记步骤，并要求供应商主动申报关联关系。",
+              "sourceUrl": "https://www.unitree.com/cn/supplier/",
+              "locator": "正文职责 / 采购原则 / 项目说明段落"
+            }
+          ],
+          "boundary": "公开入口与规则，不是内部执行记录；审核标准、通过率、履约与员工后效未知。",
+          "sources": [
+            {
+              "url": "https://www.unitree.com/cn/supplier/",
+              "name": "宇树科技官方",
+              "publishedAt": null,
+              "publisherGroup": "宇树科技官方",
+              "role": "official",
+              "textHash": "4f637f53a915e7b5ae8195d85e32f4800f48c67d909e4ace6530e2ee2bcfa5f3",
+              "readAt": "2026-11-06T05:43:46.717180+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "unitree-supplier",
+          "url": "https://www.unitree.com/cn/supplier/",
+          "checkedAt": "2026-11-10T00:43:59.920916+00:00",
+          "state": "body",
+          "note": "当天重新读取公开正文；仅支持本轮所列字段与研究提示，不把来源存在或访问成功当作成效验证。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-7",
+      "reviewedAt": "2026-11-10T00:47:16.938756+00:00",
+      "status": "partial",
+      "assessment": "读取英国站服务受理与停产通知章节，核对从线上排障到返修的流程边界。新增用户路径检查问题，不把商业条款当作实际履约或法定权利结论。",
+      "gaps": [
+        "首次解决率的窗口、排除项与重复联系归属仍需独立方法资料和实际数据。",
+        "没有具体停产产品通知、真实维修时长、备件供货与用户恢复使用结果。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "flow",
+        "pitfall",
+        "team"
+      ],
+      "changes": {
+        "flow": {
+          "before": "使用、故障与反馈 → 安装、维修、更新、备件与退出方案",
+          "after": "使用、故障与反馈 → 安装、维修、更新、备件与退出方案 服务研究还应区分线上排障、返修授权、运输维修以及停产通知四个节点，逐一确认交接资料与承诺主体。"
+        },
+        "exercise": {
+          "before": "追踪一次服务事件，从用户发现到真正恢复使用，找出重复解释和重复操作。 补充一次设备转售或恢复出厂场景，列清设备、账号和云端数据的处理责任与验证证据。",
+          "after": "追踪一次服务事件，从用户发现到真正恢复使用，找出重复解释和重复操作。 补充一次设备转售或恢复出厂场景，列清设备、账号和云端数据的处理责任与验证证据。 对返修场景增加购买证明、排障记录、寄送指引与恢复使用四步，检查哪些信息能在授权范围内复用，避免用户重复解释。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "service-remote-repair-handoff",
+            "title": "服务流程要能从远程排障走到恢复使用",
+            "learning": "xTool英国站公开说明先尝试线上分析，无法远程解决时可能送当地维修中心；停产支持另有通知安排。可据此拆开服务入口、返修与退出三个问题，而不是只统计工单关闭。",
+            "application": "用于指定地区和产品的售后路径研究，核对购买证据、排障资料和设备状态如何交接；减少重复提交是待验证设计目标。",
+            "boundary": "这是厂商公开流程样本，没有实际时效、成功率或用户负担数据；条款效力、具体法定权利和其他地区政策均不在本次判断内。",
+            "itemIds": [
+              "xtool-aftersale"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "xtool-aftersale",
+          "title": "xTool 英国售后政策：远程诊断、返修与停产支持有不同接口",
+          "facts": [
+            {
+              "claim": "远程无法解决的问题可能需要送本地维修中心。",
+              "sourceUrl": "https://uk.xtool.com/pages/aftersale-policies",
+              "locator": "How to Obtain a Warranty Service"
+            },
+            {
+              "claim": "停产产品安排提到最终维修日期通知。",
+              "sourceUrl": "https://uk.xtool.com/pages/aftersale-policies",
+              "locator": "Special Notes"
+            }
+          ],
+          "boundary": "英国站当前政策，未标统一发布日期；本次只整理服务流程与停产通知，不判断条款的法律效力或跨地区适用性，合同、机型和当地规则仍需分别核对。",
+          "sources": [
+            {
+              "url": "https://uk.xtool.com/pages/aftersale-policies",
+              "name": "xTool 官方支持",
+              "publishedAt": null,
+              "publisherGroup": "xTool 官方支持",
+              "role": "official",
+              "textHash": "6269b4a3d4d1a4540a5eb7672c87c865039d5fb2611703717f94e41e51be7483",
+              "readAt": "2026-11-08T00:45:12.666454+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "xtool-aftersale",
+          "url": "https://uk.xtool.com/pages/aftersale-policies",
+          "checkedAt": "2026-11-10T00:44:05.472775+00:00",
+          "state": "body",
+          "note": "当天重新读取公开正文；仅支持本轮所列字段与研究提示，不把来源存在或访问成功当作成效验证。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-5",
+      "reviewedAt": "2026-11-10T00:47:16.938756+00:00",
+      "status": "partial",
+      "assessment": "把拓竹新披露的混合层高机制补入工程地图：观察软件、机械约束与成品验收如何共同支撑操作简化。检查原有交付链与团队提示后予以保留，新增可测的用户返工维度。",
+      "gaps": [
+        "尚未完整核验ODM/EMS责任、良率与交期指标口径。",
+        "没有切片版本实测、路径失败率和同模型对照，不宣称首创或已证实效率提升。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "examples",
+        "metrics",
+        "team"
+      ],
+      "changes": {
+        "examples": {
+          "before": "品牌方、ODM / EMS、模组供应商",
+          "after": "品牌方、ODM / EMS、模组供应商；拓竹H3C作为软硬件协同的观察样本，非行业排名。"
+        },
+        "metrics": {
+          "before": "关键缺陷关闭率；良率；交期；返修原因",
+          "after": "关键缺陷关闭率；良率；交期；返修原因；比较自动化功能时另记录用户准备步骤、设计修改后的重做次数、总加工时间与成品验收结果，不能只看算法速度。"
+        },
+        "constraint": {
+          "before": "成本、质量、交期、维修和供货风险；互联设备另需检查设备、应用、云的协同安全与退出时的数据处理。",
+          "after": "成本、质量、交期、维修和供货风险；互联设备另需检查设备、应用、云的协同安全与退出时的数据处理。 混合工艺还需同时检查区域边界衔接、路径避让和切换开销，界面步骤减少不能掩盖质量约束。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "mixed-process-user-work",
+            "title": "用用户少做的准备与返工检验工程价值",
+            "learning": "H3C官方说明让用户选区域，由切片软件协调不同层高、换头与路径。可迁移的研究方法是先找到原本需要手工拆分和反复重做的步骤，再检验系统是否可靠接手。",
+            "application": "用于已有软硬件流程的改进研究：固定模型、材料和版本，对比准备操作、修改返工、失败率与最终质量。具体数值要靠实测。",
+            "boundary": "来源仅为厂商机制说明；未验证节省幅度、适用几何范围或其他设备已支持，不将单个案例升为行业最优实践。",
+            "itemIds": [
+              "rss-1ec82521027135bf"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "rss-1ec82521027135bf",
+          "title": "拓竹解释 H3C 混合层高：把手工拆模型交给切片调度",
+          "facts": [
+            {
+              "claim": "切片引擎按动态层带组织不同喷嘴的层高。",
+              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "locator": "Our art of bricklaying"
+            },
+            {
+              "claim": "用户可用涂色工具或修改器框选择区域。",
+              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "locator": "Choose the region, hit Slice"
+            },
+            {
+              "claim": "其他三款设备的原生混合喷嘴支持仍在开发。",
+              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "locator": "文末支持计划"
+            }
+          ],
+          "boundary": "已读厂商技术说明，未检查实现代码、版本发布记录或独立打印结果。不采纳“首款”“无妥协”等比较宣传，亦不把开发计划写成其他机型已经支持。",
+          "sources": [
+            {
+              "url": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "name": "Bambu Lab Blog",
+              "publishedAt": "2026-11-09T10:48:22+00:00",
+              "publisherGroup": "Bambu Lab Blog",
+              "role": "official",
+              "textHash": "f0c113e14fc668a9ac0dce4c07738f2d80542ff98b6a16d8c3b95df805198df1",
+              "readAt": "2026-11-10T00:41:29.473888+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "rss-1ec82521027135bf",
+          "url": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+          "checkedAt": "2026-11-10T00:41:29.473888+00:00",
+          "state": "body",
+          "note": "当天重新读取公开正文；仅支持本轮所列字段与研究提示，不把来源存在或访问成功当作成效验证。"
         }
       ]
     }
