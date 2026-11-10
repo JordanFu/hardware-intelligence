@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-10T07:17:48.730401+00:00",
-  "lastSuccessfulAt": "2026-11-10T07:17:48.730401+00:00",
+  "checkedAt": "2026-11-10T17:49:58.435991+00:00",
+  "lastSuccessfulAt": "2026-11-10T17:49:58.435991+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-10T07:17:48.730401+00:00",
-      "lastSuccessAt": "2026-11-10T07:17:48.730401+00:00",
+      "checkedAt": "2026-11-10T17:49:58.435991+00:00",
+      "lastSuccessAt": "2026-11-10T17:49:58.435991+00:00",
       "received": 18,
       "matched": 1,
       "excluded": 17,
@@ -15,8 +15,8 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-10T07:17:48.730401+00:00",
-      "lastSuccessAt": "2026-11-10T07:17:48.730401+00:00",
+      "checkedAt": "2026-11-10T17:49:58.435991+00:00",
+      "lastSuccessAt": "2026-11-10T17:49:58.435991+00:00",
       "received": 50,
       "matched": 2,
       "excluded": 48,
@@ -25,8 +25,8 @@
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-10T07:17:48.730401+00:00",
-      "lastSuccessAt": "2026-11-10T07:17:48.730401+00:00",
+      "checkedAt": "2026-11-10T17:49:58.435991+00:00",
+      "lastSuccessAt": "2026-11-10T17:49:58.435991+00:00",
       "received": 10,
       "matched": 0,
       "excluded": 10,
@@ -35,8 +35,8 @@
     {
       "id": "bambu",
       "state": "ok",
-      "checkedAt": "2026-11-10T07:17:48.730401+00:00",
-      "lastSuccessAt": "2026-11-10T07:17:48.730401+00:00",
+      "checkedAt": "2026-11-10T17:49:58.435991+00:00",
+      "lastSuccessAt": "2026-11-10T17:49:58.435991+00:00",
       "received": 15,
       "matched": 15,
       "excluded": 0,
@@ -45,22 +45,82 @@
     {
       "id": "cnx",
       "state": "error",
-      "checkedAt": "2026-11-10T07:17:48.730401+00:00",
+      "checkedAt": "2026-11-10T17:49:58.435991+00:00",
       "error": "curl: (22) The requested URL returned error: 403",
       "lastSuccessAt": "2026-11-07T05:57:51.855328+00:00"
     },
     {
       "id": "ithome",
       "state": "ok",
-      "checkedAt": "2026-11-10T07:17:48.730401+00:00",
-      "lastSuccessAt": "2026-11-10T07:17:48.730401+00:00",
+      "checkedAt": "2026-11-10T17:49:58.435991+00:00",
+      "lastSuccessAt": "2026-11-10T17:49:58.435991+00:00",
       "received": 60,
-      "matched": 3,
-      "excluded": 57,
+      "matched": 4,
+      "excluded": 56,
       "error": null
     }
   ],
   "items": [
+    {
+      "id": "rss-92802477f4b0bccd",
+      "title": "From Cars to Robotic Arms: Inspiring Young Engineers Through Hands-On STEM",
+      "url": "https://blog.bambulab.com/from-cars-to-robotic-arms-inspiring-young-engineers-through-hands-on-stem",
+      "date": "2026-11-10T13:41:35+00:00",
+      "sourceId": "bambu",
+      "source": "Bambu Lab Blog",
+      "tier": "官方一手",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-10T17:49:58.435991+00:00"
+    },
+    {
+      "id": "rss-2a773164117b724c",
+      "title": "京东自营 6799 → 5068 元：苹果 iPhone 17 国补好价，A19 芯片 + 256GB 储存",
+      "url": "https://www.ithome.com/1/025/155.htm",
+      "date": "2026-11-10T13:22:56+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-10T17:49:58.435991+00:00"
+    },
+    {
+      "id": "rss-8ef6a5260645af8a",
+      "title": "国补后 2899 → 1085 元：小米智能门锁 4 Pro 双摄版破冰新低，AI 掌静脉识别技术、天地双摄大屏猫眼",
+      "url": "https://www.ithome.com/1/025/152.htm",
+      "date": "2026-11-10T13:14:43+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "智能家居",
+      "status": "待核验",
+      "discoveredAt": "2026-11-10T17:49:58.435991+00:00"
+    },
+    {
+      "id": "rss-d2d6ec67efc8fefe",
+      "title": "升腾资讯 × 华为全球首发“双旗舰新品”：鸿蒙 HarmonyOS 台式机 + 笔记本，均搭载麒麟 X90 芯片",
+      "url": "https://www.ithome.com/1/025/146.htm",
+      "date": "2026-11-10T12:50:41+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-10T17:49:58.435991+00:00"
+    },
+    {
+      "id": "rss-f777526eb53e179f",
+      "title": "Figure AI 招聘夜班管理员照看人形机器人，时薪最高 45 美元",
+      "url": "https://www.ithome.com/1/025/140.htm",
+      "date": "2026-11-10T12:31:17+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-10T17:49:58.435991+00:00"
+    },
     {
       "id": "rss-a70bc6fb0c668f75",
       "title": "50℃ 热水喷淋定点拖地：小米米家扫拖机器人 7 Max 国补后 4999 → 3602 元",
