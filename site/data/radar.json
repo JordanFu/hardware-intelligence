@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-11T06:18:56.440805+00:00",
-  "lastSuccessfulAt": "2026-11-11T06:18:56.440805+00:00",
+  "checkedAt": "2026-11-11T17:53:33.030224+00:00",
+  "lastSuccessfulAt": "2026-11-11T17:53:33.030224+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-11T06:18:56.440805+00:00",
-      "lastSuccessAt": "2026-11-11T06:18:56.440805+00:00",
+      "checkedAt": "2026-11-11T17:53:33.030224+00:00",
+      "lastSuccessAt": "2026-11-11T17:53:33.030224+00:00",
       "received": 18,
       "matched": 1,
       "excluded": 17,
@@ -15,8 +15,8 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-11T06:18:56.440805+00:00",
-      "lastSuccessAt": "2026-11-11T06:18:56.440805+00:00",
+      "checkedAt": "2026-11-11T17:53:33.030224+00:00",
+      "lastSuccessAt": "2026-11-11T17:53:33.030224+00:00",
       "received": 50,
       "matched": 2,
       "excluded": 48,
@@ -25,8 +25,8 @@
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-11T06:18:56.440805+00:00",
-      "lastSuccessAt": "2026-11-11T06:18:56.440805+00:00",
+      "checkedAt": "2026-11-11T17:53:33.030224+00:00",
+      "lastSuccessAt": "2026-11-11T17:53:33.030224+00:00",
       "received": 10,
       "matched": 0,
       "excluded": 10,
@@ -35,8 +35,8 @@
     {
       "id": "bambu",
       "state": "ok",
-      "checkedAt": "2026-11-11T06:18:56.440805+00:00",
-      "lastSuccessAt": "2026-11-11T06:18:56.440805+00:00",
+      "checkedAt": "2026-11-11T17:53:33.030224+00:00",
+      "lastSuccessAt": "2026-11-11T17:53:33.030224+00:00",
       "received": 15,
       "matched": 15,
       "excluded": 0,
@@ -45,22 +45,82 @@
     {
       "id": "cnx",
       "state": "error",
-      "checkedAt": "2026-11-11T06:18:56.440805+00:00",
+      "checkedAt": "2026-11-11T17:53:33.030224+00:00",
       "error": "curl: (22) The requested URL returned error: 403",
       "lastSuccessAt": "2026-11-07T05:57:51.855328+00:00"
     },
     {
       "id": "ithome",
       "state": "ok",
-      "checkedAt": "2026-11-11T06:18:56.440805+00:00",
-      "lastSuccessAt": "2026-11-11T06:18:56.440805+00:00",
+      "checkedAt": "2026-11-11T17:53:33.030224+00:00",
+      "lastSuccessAt": "2026-11-11T17:53:33.030224+00:00",
       "received": 60,
-      "matched": 9,
-      "excluded": 51,
+      "matched": 4,
+      "excluded": 56,
       "error": null
     }
   ],
   "items": [
+    {
+      "id": "rss-a330bcddc7708c29",
+      "title": "沐曦和优必选联姻造具身芯片，消息称合资公司曦选创智融资 5 亿元",
+      "url": "https://www.ithome.com/1/025/807.htm",
+      "date": "2026-11-11T13:46:31+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-11T17:53:33.030224+00:00"
+    },
+    {
+      "id": "rss-d018222e33a6f4d8",
+      "title": "12+256G 版 2099 → 1695 元：一加 Turbo 6 国补直降，骁龙 8s / 7s Gen4 芯片、9000mAh 电池",
+      "url": "https://www.ithome.com/1/025/796.htm",
+      "date": "2026-11-11T13:17:18+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-11T17:53:33.030224+00:00"
+    },
+    {
+      "id": "rss-5209837e29dec035",
+      "title": "“玄龙”隐身性能达世界前列！我国攻击-11 察打一体无人机更多硬核实力揭秘，或改变未来战场形态",
+      "url": "https://www.ithome.com/1/025/769.htm",
+      "date": "2026-11-11T12:09:35+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-11T17:53:33.030224+00:00"
+    },
+    {
+      "id": "rss-291b95f3bcd0c66c",
+      "title": "任天堂又出手：GitHub 移除 144 个 Switch 破解芯片固件仓库",
+      "url": "https://www.ithome.com/1/025/768.htm",
+      "date": "2026-11-11T12:02:06+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-11T17:53:33.030224+00:00"
+    },
+    {
+      "id": "rss-71efdf861fff63c4",
+      "title": "Bambu Lab to present the Bambu Circle programme and showcase H3C and R1 at Formnext 2026",
+      "url": "https://blog.bambulab.com/bambu-lab-to-present-the-bambu-circle-programme-and-showcase-h3c-and-r1-at-formnext-2026",
+      "date": "2026-11-11T07:08:40+00:00",
+      "sourceId": "bambu",
+      "source": "Bambu Lab Blog",
+      "tier": "官方一手",
+      "category": "制造与创作",
+      "status": "待核验",
+      "discoveredAt": "2026-11-11T17:53:33.030224+00:00"
+    },
     {
       "id": "rss-8c6bab521e987a40",
       "title": "闪迪公布 eMMC 模组 iNAND CL EM181，面向嵌入式应用",
