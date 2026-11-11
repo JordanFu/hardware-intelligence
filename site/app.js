@@ -773,7 +773,7 @@ try {
   ];
   const values = await Promise.all(
     names.map(async (n) => {
-      const res = await fetch(`data/${n}.json`);
+      const res = await fetch(`data/${n}.json`, { cache: "no-cache" });
       if (!res.ok) throw new Error(`${n}: HTTP ${res.status}`);
       return res.json();
     }),
