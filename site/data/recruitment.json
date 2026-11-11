@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-10T00:46:34.458995+00:00",
+  "checkedAt": "2026-11-11T00:44:01.794961+00:00",
   "jobs": [
     {
       "company": "DJI 大疆",
@@ -799,9 +799,9 @@
       ],
       "id": "job-f3f120078f21d7a5",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
-      "sourceHash": "2aa692aa2d334019f599a8c48b76d7b83861918e0cf7c1b14432eed8f44749b4",
-      "change": "首次收录基线",
+      "lastSeen": "2026-11-11T00:44:01.794961+00:00",
+      "sourceHash": "46c4b89b0fcb4a5cea7922a0b2c6099c4e06f921f7fdd172d43a28ebc9686b3c",
+      "change": "持续可见",
       "versions": [
         {
           "observedAt": "2026-11-09T02:30:42.120805+00:00",
@@ -1373,9 +1373,9 @@
       ],
       "id": "job-6c6331e12e6b4c66",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
+      "lastSeen": "2026-11-11T00:44:01.794961+00:00",
       "sourceHash": "2c8e92aeec8845f458bdc658e6f76ca865dda8ad852ef8c28ee8de426eea753f",
-      "change": "首次收录基线",
+      "change": "持续可见",
       "versions": [
         {
           "observedAt": "2026-11-09T02:30:42.120805+00:00",
@@ -2075,6 +2075,42 @@
         }
       ],
       "checkedAt": "2026-11-10T00:46:34.458995+00:00"
+    },
+    {
+      "company": "作业帮",
+      "state": "partial",
+      "complete": false,
+      "note": "本轮仅复读既有硬件岗位职责、要求、接口及业务范围；未见实质变化，非完整目录。",
+      "familyChecks": [
+        {
+          "family": "硬件",
+          "state": "body",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/bce3303d-d5ee-41f0-b76f-30e4a45d7d43",
+          "jobIds": [
+            "job-f3f120078f21d7a5"
+          ],
+          "note": "儿童手表/手环结构岗位；证明职责需求，不证明具体新品上市或项目进度"
+        }
+      ],
+      "checkedAt": "2026-11-11T00:44:01.794961+00:00"
+    },
+    {
+      "company": "猿辅导（小猿）",
+      "state": "partial",
+      "complete": false,
+      "note": "本轮仅复读既有硬件岗位职责、要求、接口及业务范围；未见实质变化，非完整目录。",
+      "familyChecks": [
+        {
+          "family": "硬件",
+          "state": "body",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "jobIds": [
+            "job-6c6331e12e6b4c66"
+          ],
+          "note": "原文明确小猿产品及学习机、学练机业务，未划分具体型号"
+        }
+      ],
+      "checkedAt": "2026-11-11T00:44:01.794961+00:00"
     }
   ],
   "insights": [

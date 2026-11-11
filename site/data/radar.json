@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-10T17:49:58.435991+00:00",
-  "lastSuccessfulAt": "2026-11-10T17:49:58.435991+00:00",
+  "checkedAt": "2026-11-11T00:41:04.171142+00:00",
+  "lastSuccessfulAt": "2026-11-11T00:41:04.171142+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-10T17:49:58.435991+00:00",
-      "lastSuccessAt": "2026-11-10T17:49:58.435991+00:00",
+      "checkedAt": "2026-11-11T00:41:04.171142+00:00",
+      "lastSuccessAt": "2026-11-11T00:41:04.171142+00:00",
       "received": 18,
       "matched": 1,
       "excluded": 17,
@@ -15,8 +15,8 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-10T17:49:58.435991+00:00",
-      "lastSuccessAt": "2026-11-10T17:49:58.435991+00:00",
+      "checkedAt": "2026-11-11T00:41:04.171142+00:00",
+      "lastSuccessAt": "2026-11-11T00:41:04.171142+00:00",
       "received": 50,
       "matched": 2,
       "excluded": 48,
@@ -25,8 +25,8 @@
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-10T17:49:58.435991+00:00",
-      "lastSuccessAt": "2026-11-10T17:49:58.435991+00:00",
+      "checkedAt": "2026-11-11T00:41:04.171142+00:00",
+      "lastSuccessAt": "2026-11-11T00:41:04.171142+00:00",
       "received": 10,
       "matched": 0,
       "excluded": 10,
@@ -34,33 +34,66 @@
     },
     {
       "id": "bambu",
-      "state": "ok",
-      "checkedAt": "2026-11-10T17:49:58.435991+00:00",
-      "lastSuccessAt": "2026-11-10T17:49:58.435991+00:00",
-      "received": 15,
-      "matched": 15,
-      "excluded": 0,
-      "error": null
+      "state": "error",
+      "checkedAt": "2026-11-11T00:41:04.171142+00:00",
+      "error": "curl: (28) Connection timed out after 30009 milliseconds\ncurl: (28) Connection timed out after 30010 milliseconds",
+      "lastSuccessAt": "2026-11-10T17:49:58.435991+00:00"
     },
     {
       "id": "cnx",
       "state": "error",
-      "checkedAt": "2026-11-10T17:49:58.435991+00:00",
-      "error": "curl: (22) The requested URL returned error: 403",
+      "checkedAt": "2026-11-11T00:41:04.171142+00:00",
+      "error": "curl: (56) The requested URL returned error: 403",
       "lastSuccessAt": "2026-11-07T05:57:51.855328+00:00"
     },
     {
       "id": "ithome",
       "state": "ok",
-      "checkedAt": "2026-11-10T17:49:58.435991+00:00",
-      "lastSuccessAt": "2026-11-10T17:49:58.435991+00:00",
+      "checkedAt": "2026-11-11T00:41:04.171142+00:00",
+      "lastSuccessAt": "2026-11-11T00:41:04.171142+00:00",
       "received": 60,
-      "matched": 4,
-      "excluded": 56,
+      "matched": 3,
+      "excluded": 57,
       "error": null
     }
   ],
   "items": [
+    {
+      "id": "rss-248b1f8da2868e4e",
+      "title": "挑战微软 Win11：原生 AI 系统 KORA 登场，将率先适配高通骁龙 X2 Elite 芯片",
+      "url": "https://www.ithome.com/1/025/226.htm",
+      "date": "2026-11-11T00:27:15+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-11T00:41:04.171142+00:00"
+    },
+    {
+      "id": "rss-30ada58a34aada4f",
+      "title": "苹果为 AirPods 5/AirPods Pro 3 等耳机推送 9B47 固件更新",
+      "url": "https://www.ithome.com/1/025/210.htm",
+      "date": "2026-11-10T23:11:25+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "可穿戴与眼镜",
+      "status": "待核验",
+      "discoveredAt": "2026-11-11T00:41:04.171142+00:00"
+    },
+    {
+      "id": "rss-472bc7c1b688ce3b",
+      "title": "谷歌最强 VLA 机器人模型：Gemini Robotics 2.5 登场，会系蝴蝶结、已在奔驰生产线上岗",
+      "url": "https://www.ithome.com/1/025/188.htm",
+      "date": "2026-11-10T22:54:44+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-11T00:41:04.171142+00:00"
+    },
     {
       "id": "rss-92802477f4b0bccd",
       "title": "From Cars to Robotic Arms: Inspiring Young Engineers Through Hands-On STEM",

@@ -629,6 +629,65 @@
         "钉钉",
         "DingTalk"
       ]
+    },
+    {
+      "id": "boox-reading-workflow",
+      "company": "文石 BOOX",
+      "tier": "相邻场景",
+      "categoryIds": [
+        "reader"
+      ],
+      "aliases": [
+        "文石",
+        "BOOX"
+      ],
+      "brief": {
+        "lead": "BOOX 官方指南把阅读进度、批注等阅读数据同步与源文件上传分开，也提供本地书库备份。对阅读器研究，设备之外还要看账号、服务器、目录及版本条件，才能判断换设备后能否继续阅读。当前读取的是英文帮助页，不据此保证国内型号权益一致。",
+        "points": [
+          "指南要求同步使用同一账号、服务器与文件目录；服务器数据独立存放。",
+          "V4.1起可上传源文件；本地备份生成.booxc文件，迁移双方需为V4.1或以上。"
+        ]
+      },
+      "dimensions": {
+        "product": "阅读器与电子纸设备上的NeoReader阅读数据流程；不把全部BOOX设备视为同一型号。",
+        "content": "阅读进度、批注与源文件同步分开；所读英文指南不能证明中文书库及内容授权。",
+        "channel": "当前国内售价、渠道权益、账号地区与服务器适用性待核验。",
+        "delivery": "本地备份迁移须核对两端固件；实际恢复成功率、售后支持与硬件质量未知。",
+        "organization": "研究问题：设备阅读软件、账号云服务和客服如何交接同步失败？未取得组织与岗位证据。"
+      },
+      "boundary": "当前英文帮助页未标明确发布日期；机型、地区、账号体系、内容授权和成功率需分别核实，未进行设备迁移实测，不将V4.1能力称为今天新发布。",
+      "gaps": [
+        "国内具体型号、账号服务器与云服务权益待核验。",
+        "迁移成功率、内容授权、费用和支持周期未验证。",
+        "未取得教研、算法、硬件、供应链或渠道岗位及团队结构证据。"
+      ],
+      "sources": [
+        {
+          "id": "boox-sync",
+          "title": "BOOX Reading Data Syncing and Backup",
+          "url": "https://booxsupport.zendesk.com/hc/en-us/articles/25401838386196-Reading-Data-Syncing-and-Backup",
+          "publishedAt": null,
+          "role": "official",
+          "readAt": "2026-11-11T00:42:15.717Z",
+          "coverage": "body",
+          "textHash": "c58b7bb955f97d398fb5f6ba061577f1325caa7463800c74a623edbdd490e17b"
+        }
+      ],
+      "facts": [
+        {
+          "sourceId": "boox-sync",
+          "claim": "同步需要一致的账号与服务器。",
+          "locator": "Account, Server, and Directory"
+        },
+        {
+          "sourceId": "boox-sync",
+          "claim": "本地备份恢复有双方版本条件。",
+          "locator": "Local Library Backup"
+        }
+      ],
+      "updatedAt": "2026-11-11T00:44:01.882601+00:00",
+      "reviewedAt": "2026-11-11T00:44:01.882601+00:00",
+      "lastReviewStatus": "reviewed"
     }
   ],
   "runs": [
@@ -861,6 +920,58 @@
           ],
           "purpose": "recruitment",
           "note": "实际读取既有学习机供应链岗位；不以岗位复核代替整份产品档案复核。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-11T00:44:01.882601+00:00",
+      "summary": "复核作业帮儿童手表结构与小猿学习机硬件岗位，原职责版本未变；新增文石阅读数据与迁移档案，保留英文指南及国内适用性边界。掌阅与国内渠道权益仍待补充。",
+      "checks": [
+        {
+          "company": "作业帮",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/bce3303d-d5ee-41f0-b76f-30e4a45d7d43",
+          "name": "硬件结构工程师（D110856）",
+          "state": "body",
+          "checkedAt": "2026-11-11T00:41:21.640Z",
+          "categoryIds": [
+            "watch"
+          ],
+          "purpose": "recruitment",
+          "note": "儿童手表/手环结构岗位；证明职责需求，不证明具体新品上市或项目进度"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "name": "2026届春招-硬件研发工程师",
+          "state": "body",
+          "checkedAt": "2026-11-11T00:41:21.665Z",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "原文明确小猿产品及学习机、学练机业务，未划分具体型号"
+        },
+        {
+          "company": "文石 BOOX",
+          "url": "https://booxsupport.zendesk.com/hc/en-us/articles/25401838386196-Reading-Data-Syncing-and-Backup",
+          "name": "阅读数据同步与备份",
+          "state": "body",
+          "checkedAt": "2026-11-11T00:42:15.717Z",
+          "categoryIds": [
+            "reader"
+          ],
+          "note": "当前英文帮助页未标明确发布日期；机型、地区、账号体系、内容授权和成功率需分别核实，未进行设备迁移实测，不将V4.1能力称为今天新发布。"
+        },
+        {
+          "company": "文石 BOOX",
+          "url": "https://booxsupport.zendesk.com/hc/en-us/articles/25401838386196-Reading-Data-Syncing-and-Backup",
+          "name": "正文直连失败记录",
+          "state": "error",
+          "checkedAt": "2026-11-11T00:41:59.464558+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "note": "HTTP403；浏览器回源成功，两种访问状态分别保留。"
         }
       ]
     }
@@ -1692,6 +1803,88 @@
       "status": "reviewed",
       "assessment": "当前官网功能与脚注支持既有诊断—规划—讲解—练习概述；五个维度和未知项逐项核对，渠道、交付和组织仍未有新证据。档案无实质修改，只记录复核。",
       "changes": {}
+    },
+    {
+      "profileId": "boox-reading-workflow",
+      "reviewedAt": "2026-11-11T00:44:01.882601+00:00",
+      "status": "reviewed",
+      "assessment": "根据当前公开帮助正文建立任务流程档案；功能前提与五维未知项逐项标注，不以功能披露证明学习成效。",
+      "changes": {
+        "brief": {
+          "before": {
+            "lead": "等待本轮已核对正文建立公开资料档案，未核验的信息不填充。",
+            "points": [
+              "等待可核对的原始资料。",
+              "未知项保留，不猜测参数和结果。"
+            ]
+          },
+          "after": {
+            "lead": "BOOX 官方指南把阅读进度、批注等阅读数据同步与源文件上传分开，也提供本地书库备份。对阅读器研究，设备之外还要看账号、服务器、目录及版本条件，才能判断换设备后能否继续阅读。当前读取的是英文帮助页，不据此保证国内型号权益一致。",
+            "points": [
+              "指南要求同步使用同一账号、服务器与文件目录；服务器数据独立存放。",
+              "V4.1起可上传源文件；本地备份生成.booxc文件，迁移双方需为V4.1或以上。"
+            ]
+          }
+        },
+        "dimensions": {
+          "before": {
+            "content": "待核验",
+            "channel": "待核验",
+            "organization": "待核验",
+            "delivery": "待核验",
+            "product": "待核验"
+          },
+          "after": {
+            "product": "阅读器与电子纸设备上的NeoReader阅读数据流程；不把全部BOOX设备视为同一型号。",
+            "content": "阅读进度、批注与源文件同步分开；所读英文指南不能证明中文书库及内容授权。",
+            "channel": "当前国内售价、渠道权益、账号地区与服务器适用性待核验。",
+            "delivery": "本地备份迁移须核对两端固件；实际恢复成功率、售后支持与硬件质量未知。",
+            "organization": "研究问题：设备阅读软件、账号云服务和客服如何交接同步失败？未取得组织与岗位证据。"
+          }
+        },
+        "boundary": {
+          "before": "待核验",
+          "after": "当前英文帮助页未标明确发布日期；机型、地区、账号体系、内容授权和成功率需分别核实，未进行设备迁移实测，不将V4.1能力称为今天新发布。"
+        },
+        "gaps": {
+          "before": [],
+          "after": [
+            "国内具体型号、账号服务器与云服务权益待核验。",
+            "迁移成功率、内容授权、费用和支持周期未验证。",
+            "未取得教研、算法、硬件、供应链或渠道岗位及团队结构证据。"
+          ]
+        },
+        "sources": {
+          "before": [],
+          "after": [
+            {
+              "id": "boox-sync",
+              "title": "BOOX Reading Data Syncing and Backup",
+              "url": "https://booxsupport.zendesk.com/hc/en-us/articles/25401838386196-Reading-Data-Syncing-and-Backup",
+              "publishedAt": null,
+              "role": "official",
+              "readAt": "2026-11-11T00:42:15.717Z",
+              "coverage": "body",
+              "textHash": "c58b7bb955f97d398fb5f6ba061577f1325caa7463800c74a623edbdd490e17b"
+            }
+          ]
+        },
+        "facts": {
+          "before": [],
+          "after": [
+            {
+              "sourceId": "boox-sync",
+              "claim": "同步需要一致的账号与服务器。",
+              "locator": "Account, Server, and Directory"
+            },
+            {
+              "sourceId": "boox-sync",
+              "claim": "本地备份恢复有双方版本条件。",
+              "locator": "Local Library Backup"
+            }
+          ]
+        }
+      }
     }
   ],
   "reference": {

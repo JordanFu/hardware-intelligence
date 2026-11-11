@@ -251,12 +251,12 @@
       "updatedAt": "2026-11-10T00:47:16.938756+00:00"
     },
     "chain-1": {
-      "attemptedAt": "2026-11-07T00:47:27.698411+00:00",
+      "attemptedAt": "2026-11-11T00:46:33.899185+00:00",
       "status": "partial",
-      "assessment": "本轮从同样尚未完整复核的节点中，优先选择新证据能支撑的需求、制造与智能家居字段；保留初始框架未获证据覆盖部分，不推进完整复核日期。",
+      "assessment": "重新读取社区反馈、积分与实物市场测试版段落；现有需求样本和履约角色区分仍符合本文，没有实质字段变化。",
       "gaps": [
-        "尚未复核 JTBD 概念的基础来源与目标任务成功率的测量设计。",
-        "未获取实际反馈如何进入决策及实施后的用户结果。"
+        "JTBD 基础来源、目标任务成功率口径未完整核实。",
+        "活动参与者反馈不能代表全部用户，未取得采纳及使用结果。"
       ],
       "reviewedFields": [
         "exercise",
@@ -303,12 +303,12 @@
         {
           "itemId": "rss-9c9670520f9830f3",
           "url": "https://blog.bambulab.com/first-time-together-makerworld-makers-from-across-the-u-s-meet-in-san-jose",
-          "checkedAt": "2026-11-07T00:47:27.610541+00:00",
+          "checkedAt": "2026-11-11T00:41:49.517411+00:00",
           "state": "body",
-          "note": "当天实际读取官方正文；只支持本次列明的知识范围。"
+          "note": "本轮实际读取官方正文，按列明字段复核；未覆盖的字段继续保留缺口。"
         }
       ],
-      "reviewedAt": "2026-11-07T00:47:27.698411+00:00",
+      "reviewedAt": "2026-11-11T00:46:33.899185+00:00",
       "patch": {
         "team": "用户研究、产品、销售、服务一起区分使用者、购买者与渠道反馈。 平台型硬件还需区分内容创作者、最终使用者与实体履约伙伴；活动意见是需求线索，不能替代使用验证。",
         "exercise": "选一个产品，写出用户原流程、减少的步骤和可观察的验收条件。 对每条社区反馈补上样本人群、具体任务、拟改变的规则以及可验证结果；保留未被采纳的理由。"
@@ -329,67 +329,63 @@
       "updatedAt": "2026-11-07T00:47:27.698411+00:00"
     },
     "chain-4": {
-      "attemptedAt": "2026-11-07T00:47:27.698411+00:00",
+      "attemptedAt": "2026-11-11T00:46:33.899185+00:00",
       "status": "partial",
-      "assessment": "本轮从同样尚未完整复核的节点中，优先选择新证据能支撑的需求、制造与智能家居字段；保留初始框架未获证据覆盖部分，不推进完整复核日期。",
+      "assessment": "从历史质量更新中补充出厂测试与运输后验收的边界；仅更新制造学习任务，保留既有 NPI 与质量接口及其证据限制。",
       "gaps": [
-        "尚缺当前可读职位正文、岗位变更历史及组织汇报线。",
-        "未完整复核工艺验证门槛、一次通过率口径与实际质量结果。"
+        "工艺验证门槛和一次通过率尚缺明确口径。",
+        "既有石头岗位索引未在本轮取得当前正文；正式放行权与实际组织接口仍待核实。",
+        "历史改进措施的完成状态与同口径质量结果未知。"
       ],
       "reviewedFields": [
-        "basics",
         "exercise",
+        "flow",
         "team"
       ],
       "evidence": [
         {
-          "itemId": "roborock-jobs",
-          "title": "石头岗位样本：NPI、PQE 与 PQC 的制造质量接口",
+          "itemId": "bambu-quality",
+          "title": "历史案例：拓竹如何把客户问题反馈到制造与设计",
           "facts": [
             {
-              "claim": "NPI-PE 职责包含设计评审与工艺资料输出。",
-              "sourceUrl": "https://mall.roborock.com/introduction/jobs",
-              "locator": "社招岗位 / NPI-PE、PQE、PQC"
+              "claim": "2023 年公司披露增加客服人员，目标是缩短支持等待。",
+              "sourceUrl": "https://blog.bambulab.com/quality-assurance-and-operations-update/",
+              "locator": "正文定位：历史案例：拓竹如何把客户问题反馈到制造与设计"
             },
             {
-              "claim": "PQE 职责覆盖试制、量产质量和代工厂管理。",
-              "sourceUrl": "https://mall.roborock.com/introduction/jobs",
-              "locator": "社招岗位 / NPI-PE、PQE、PQC"
-            },
-            {
-              "claim": "PQC 职责涉及出货质量和过程控制实施监督。",
-              "sourceUrl": "https://mall.roborock.com/introduction/jobs",
-              "locator": "社招岗位 / NPI-PE、PQE、PQC"
+              "claim": "公司披露针对运输损伤调整包装及打印机结构。",
+              "sourceUrl": "https://blog.bambulab.com/quality-assurance-and-operations-update/",
+              "locator": "正文 Z-axis related issues 小节"
             }
           ],
-          "boundary": "当前只取得官方搜索索引职责片段；直连返回 JavaScript 框架，浏览器表格也未显示职责。无发布日期，非完整目录，当前在招与组织实际分工待核实。",
+          "boundary": "2023 年历史披露，不代表 2026 年组织或质量水平；没有可比结果，保留零效果结论。",
           "sources": [
             {
-              "url": "https://mall.roborock.com/introduction/jobs",
-              "name": "石头科技官方招聘",
-              "publishedAt": null,
-              "publisherGroup": "石头科技官方招聘",
+              "name": "Bambu Lab 官方",
+              "url": "https://blog.bambulab.com/quality-assurance-and-operations-update/",
+              "publishedAt": "2023-02-23T00:00:00Z",
+              "publisherGroup": "Bambu Lab",
               "role": "official",
-              "textHash": "1b83ecefa3a9444db1e7217ff692d6d0646346c080c46ac19e56b9d80df03192",
-              "readAt": "2026-11-07T00:46:39.777224+00:00",
-              "coverage": "excerpt"
+              "textHash": "bf9e90d4b7038f1f4d72fcc8fbc3ba2d76f04713a19107f4e3276cf7811f7118",
+              "readAt": "2026-11-05T10:27:56.463255+00:00",
+              "coverage": "body"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "roborock-jobs",
-          "url": "https://mall.roborock.com/introduction/jobs",
-          "checkedAt": "2026-11-07T00:47:27.610541+00:00",
-          "state": "index",
-          "note": "当天读取官方索引职责片段，直连未取得正文；不能据此做完整复核。"
+          "itemId": "bambu-quality",
+          "url": "https://blog.bambulab.com/quality-assurance-and-operations-update/",
+          "checkedAt": "2026-11-11T00:41:49.401507+00:00",
+          "state": "body",
+          "note": "本轮实际读取官方正文，按列明字段复核；未覆盖的字段继续保留缺口。"
         }
       ],
-      "reviewedAt": "2026-11-07T00:47:27.698411+00:00",
+      "reviewedAt": "2026-11-11T00:46:33.899185+00:00",
       "patch": {
         "team": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。 石头官方岗位索引提供一个职责样本：NPI-PE 准备设计评审和工艺资料，PQE 跟进试制量产及代工质量，PQC 关注出货与过程监督；实际决策权仍须项目证据。",
-        "exercise": "沿一次异常追到设计版本、工艺条件和责任人，定义复现与关闭标准。 把问题分别映射到设计评审、工艺文件、过程控制与出货验收的交付物，并核实谁有权放行，不能仅从岗位名称推定。"
+        "exercise": "沿一次异常追到设计版本、工艺条件和责任人，定义复现与关闭标准。 把问题分别映射到设计评审、工艺文件、过程控制与出货验收的交付物，并核实谁有权放行，不能仅从岗位名称推定。 对运输相关故障，分别核对出厂测试记录、包装与结构版本、运输条件及到货功能复现；出厂通过不能代替运输后验收。"
       },
       "lessons": [
         {
@@ -402,22 +398,32 @@
             "roborock-jobs"
           ],
           "updatedAt": "2026-11-07T00:47:27.698411+00:00"
+        },
+        {
+          "id": "manufacturing-transport-validation",
+          "title": "把出厂验证与运输后验收分开",
+          "learning": "拓竹 2023 年案例披露：部分设备出厂通过 Z 轴垂直度测试，运输后仍出现结构弯曲或轴承损伤；公司提到包装改进计划和底座模具调整。这提示制造交付研究应把工厂测试条件与物流后的失效条件分别记录。",
+          "application": "适用于具有运输机械损伤风险的硬件；先取得对应机型、批次、包装版本和可复现故障，再由制造、包装物流、质量及研发核对验收边界。这里提出的是待验证检查方法。",
+          "boundary": "2023 年 X1/P1P 相关历史官方披露；包装计划不等于已经完成验证。无同口径故障率和改进后数据，不能证明当前质量、行业通用标准或效果，也不能从案例推断组织汇报线。",
+          "itemIds": [
+            "bambu-quality"
+          ],
+          "updatedAt": "2026-11-11T00:46:33.899185+00:00"
         }
       ],
-      "updatedAt": "2026-11-07T00:47:27.698411+00:00"
+      "updatedAt": "2026-11-11T00:46:33.899185+00:00"
     },
     "track-2": {
-      "attemptedAt": "2026-11-07T00:47:27.698411+00:00",
+      "attemptedAt": "2026-11-11T00:46:33.899185+00:00",
       "status": "partial",
-      "assessment": "本轮从同样尚未完整复核的节点中，优先选择新证据能支撑的需求、制造与智能家居字段；保留初始框架未获证据覆盖部分，不推进完整复核日期。",
+      "assessment": "重新读取故障范围、桥接、跨平台功能及诊断日志正文；已有约束与交接内容无实质变化，保持内容更新时间。",
       "gaps": [
-        "当前证据未覆盖所有观察企业、离线能力与多成员权限。",
-        "没有可比故障率、用户样本或售后效果，不能将该案例称为最佳实践。"
+        "其他观察企业、离线能力、多成员权限未完整核实。",
+        "没有可比故障率、用户样本和售后改善数据。"
       ],
       "reviewedFields": [
         "chain",
         "constraint",
-        "metrics",
         "team"
       ],
       "evidence": [
@@ -460,12 +466,12 @@
         {
           "itemId": "aqara-matter-guide",
           "url": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
-          "checkedAt": "2026-11-07T00:47:27.610541+00:00",
+          "checkedAt": "2026-11-11T00:41:49.342246+00:00",
           "state": "body",
-          "note": "当天实际读取官方正文；只支持本次列明的知识范围。"
+          "note": "本轮实际读取官方正文，按列明字段复核；未覆盖的字段继续保留缺口。"
         }
       ],
-      "reviewedAt": "2026-11-07T00:47:27.698411+00:00",
+      "reviewedAt": "2026-11-11T00:46:33.899185+00:00",
       "patch": {
         "constraint": "互操作、断网可用性、安装和家人共同使用 须区分协议支持、具体功能暴露和接收平台能力；桥接并不把 Zigbee 子设备变成 Thread 设备，接入成功也不保证所有自动化可用。",
         "team": "嵌入式、连接协议、云平台、客户端、认证与售后 售后交给协议、固件或平台团队的信息应包含型号/版本、连接路径、受影响范围和复现步骤；诊断日志按支持范围自愿启用，并保留本地保存选择。",
@@ -1516,6 +1522,28 @@
           "hash": "7b989a4b7eccf0e06720a15806afbb834c5d031cefec0cd70aceeec429c2b541",
           "decision": "integrated",
           "reason": "重读当前正文后，仅沉淀服务交接的检查问题；不将停产条款作为已履行的证据，具体通知与实际维修结果继续待核验。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-11T00:46:33.899185+00:00",
+      "reviewedNodes": [
+        "chain-1",
+        "chain-4",
+        "track-2"
+      ],
+      "decisions": [
+        {
+          "itemId": "bambu-quality",
+          "hash": "371478ab802d11339dab7208bdb882e8a360766d9904dd7b64b97e32be5f99c5",
+          "decision": "integrated",
+          "reason": "本轮读取历史正文，明确 2023 年及 X1/P1P 适用范围；仅沉淀出厂测试与运输后验收的区分和检查问题，不推断当前质量及改进成效。"
+        },
+        {
+          "itemId": "day11-boox-browser",
+          "hash": "e7193b80f5e923eac4833d2d102eab991d4e31924d67f79d217eff9f0668e31f",
+          "decision": "hold",
+          "reason": "官方英文说明可补充文石阅读器档案，但同步、备份与迁移的国内具体型号、区域账户和固件适配仍需实机或对应文档核对；暂不提升为通用知识方法。"
         }
       ]
     }
@@ -3103,6 +3131,207 @@
           "checkedAt": "2026-11-10T00:41:29.473888+00:00",
           "state": "body",
           "note": "当天重新读取公开正文；仅支持本轮所列字段与研究提示，不把来源存在或访问成功当作成效验证。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-1",
+      "reviewedAt": "2026-11-11T00:46:33.899185+00:00",
+      "status": "partial",
+      "assessment": "重新读取社区反馈、积分与实物市场测试版段落；现有需求样本和履约角色区分仍符合本文，没有实质字段变化。",
+      "gaps": [
+        "JTBD 基础来源、目标任务成功率口径未完整核实。",
+        "活动参与者反馈不能代表全部用户，未取得采纳及使用结果。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "pitfall",
+        "team"
+      ],
+      "changes": {},
+      "lessonChanges": [],
+      "evidence": [
+        {
+          "itemId": "rss-9c9670520f9830f3",
+          "title": "MakerWorld 活动回顾：创作者反馈与实物履约仍需分别验证",
+          "facts": [
+            {
+              "claim": "活动发生于 2026 年 10 月 24 日。",
+              "sourceUrl": "https://blog.bambulab.com/first-time-together-makerworld-makers-from-across-the-u-s-meet-in-san-jose",
+              "locator": "活动时间 / Numbers that tell the story / Plans, tools and a few smaller updates"
+            },
+            {
+              "claim": "实物市场仍为测试版，打印与发货由当地打印农场承担。",
+              "sourceUrl": "https://blog.bambulab.com/first-time-together-makerworld-makers-from-across-the-u-s-meet-in-san-jose",
+              "locator": "活动时间 / Numbers that tell the story / Plans, tools and a few smaller updates"
+            },
+            {
+              "claim": "积分机制仍在调整，并邀请参与者提供反馈。",
+              "sourceUrl": "https://blog.bambulab.com/first-time-together-makerworld-makers-from-across-the-u-s-meet-in-san-jose",
+              "locator": "活动时间 / Numbers that tell the story / Plans, tools and a few smaller updates"
+            }
+          ],
+          "boundary": "企业活动回顾与创作者自述，非独立成效研究。10 月 24 日旧活动不进入当天新闻；市场仍为 beta，未披露履约一致性、分配公平性和员工后效。",
+          "sources": [
+            {
+              "url": "https://blog.bambulab.com/first-time-together-makerworld-makers-from-across-the-u-s-meet-in-san-jose",
+              "name": "Bambu Lab 官方博客",
+              "publishedAt": "2026-11-06T09:32:45+00:00",
+              "publisherGroup": "Bambu Lab 官方博客",
+              "role": "official",
+              "textHash": "082a461dca9355c9199446974fa64afca55bf824cc815472e930bdc666812102",
+              "readAt": "2026-11-07T00:41:38.813981+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "rss-9c9670520f9830f3",
+          "url": "https://blog.bambulab.com/first-time-together-makerworld-makers-from-across-the-u-s-meet-in-san-jose",
+          "checkedAt": "2026-11-11T00:41:49.517411+00:00",
+          "state": "body",
+          "note": "本轮实际读取官方正文，按列明字段复核；未覆盖的字段继续保留缺口。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-4",
+      "reviewedAt": "2026-11-11T00:46:33.899185+00:00",
+      "status": "partial",
+      "assessment": "从历史质量更新中补充出厂测试与运输后验收的边界；仅更新制造学习任务，保留既有 NPI 与质量接口及其证据限制。",
+      "gaps": [
+        "工艺验证门槛和一次通过率尚缺明确口径。",
+        "既有石头岗位索引未在本轮取得当前正文；正式放行权与实际组织接口仍待核实。",
+        "历史改进措施的完成状态与同口径质量结果未知。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "flow",
+        "team"
+      ],
+      "changes": {
+        "exercise": {
+          "before": "沿一次异常追到设计版本、工艺条件和责任人，定义复现与关闭标准。 把问题分别映射到设计评审、工艺文件、过程控制与出货验收的交付物，并核实谁有权放行，不能仅从岗位名称推定。",
+          "after": "沿一次异常追到设计版本、工艺条件和责任人，定义复现与关闭标准。 把问题分别映射到设计评审、工艺文件、过程控制与出货验收的交付物，并核实谁有权放行，不能仅从岗位名称推定。 对运输相关故障，分别核对出厂测试记录、包装与结构版本、运输条件及到货功能复现；出厂通过不能代替运输后验收。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "manufacturing-transport-validation",
+            "title": "把出厂验证与运输后验收分开",
+            "learning": "拓竹 2023 年案例披露：部分设备出厂通过 Z 轴垂直度测试，运输后仍出现结构弯曲或轴承损伤；公司提到包装改进计划和底座模具调整。这提示制造交付研究应把工厂测试条件与物流后的失效条件分别记录。",
+            "application": "适用于具有运输机械损伤风险的硬件；先取得对应机型、批次、包装版本和可复现故障，再由制造、包装物流、质量及研发核对验收边界。这里提出的是待验证检查方法。",
+            "boundary": "2023 年 X1/P1P 相关历史官方披露；包装计划不等于已经完成验证。无同口径故障率和改进后数据，不能证明当前质量、行业通用标准或效果，也不能从案例推断组织汇报线。",
+            "itemIds": [
+              "bambu-quality"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "bambu-quality",
+          "title": "历史案例：拓竹如何把客户问题反馈到制造与设计",
+          "facts": [
+            {
+              "claim": "2023 年公司披露增加客服人员，目标是缩短支持等待。",
+              "sourceUrl": "https://blog.bambulab.com/quality-assurance-and-operations-update/",
+              "locator": "正文定位：历史案例：拓竹如何把客户问题反馈到制造与设计"
+            },
+            {
+              "claim": "公司披露针对运输损伤调整包装及打印机结构。",
+              "sourceUrl": "https://blog.bambulab.com/quality-assurance-and-operations-update/",
+              "locator": "正文 Z-axis related issues 小节"
+            }
+          ],
+          "boundary": "2023 年历史披露，不代表 2026 年组织或质量水平；没有可比结果，保留零效果结论。",
+          "sources": [
+            {
+              "name": "Bambu Lab 官方",
+              "url": "https://blog.bambulab.com/quality-assurance-and-operations-update/",
+              "publishedAt": "2023-02-23T00:00:00Z",
+              "publisherGroup": "Bambu Lab",
+              "role": "official",
+              "textHash": "bf9e90d4b7038f1f4d72fcc8fbc3ba2d76f04713a19107f4e3276cf7811f7118",
+              "readAt": "2026-11-05T10:27:56.463255+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "bambu-quality",
+          "url": "https://blog.bambulab.com/quality-assurance-and-operations-update/",
+          "checkedAt": "2026-11-11T00:41:49.401507+00:00",
+          "state": "body",
+          "note": "本轮实际读取官方正文，按列明字段复核；未覆盖的字段继续保留缺口。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-2",
+      "reviewedAt": "2026-11-11T00:46:33.899185+00:00",
+      "status": "partial",
+      "assessment": "重新读取故障范围、桥接、跨平台功能及诊断日志正文；已有约束与交接内容无实质变化，保持内容更新时间。",
+      "gaps": [
+        "其他观察企业、离线能力、多成员权限未完整核实。",
+        "没有可比故障率、用户样本和售后改善数据。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "team"
+      ],
+      "changes": {},
+      "lessonChanges": [],
+      "evidence": [
+        {
+          "itemId": "aqara-matter-guide",
+          "title": "Aqara 排障指南：先定位设备、桥接与平台，再考虑重置",
+          "facts": [
+            {
+              "claim": "指南提醒先尝试非破坏性排查步骤，再考虑恢复出厂。",
+              "sourceUrl": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
+              "locator": "Check your setup / Before you reset / Device diagnostic logs"
+            },
+            {
+              "claim": "设备桥接不改变子设备原有连接方式。",
+              "sourceUrl": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
+              "locator": "Check your setup / Before you reset / Device diagnostic logs"
+            },
+            {
+              "claim": "诊断日志默认关闭，支持本地保存选项。",
+              "sourceUrl": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
+              "locator": "Check your setup / Before you reset / Device diagnostic logs"
+            }
+          ],
+          "boundary": "官方操作指南，适用性取决于具体型号、区域、固件与平台；没有用户样本或解决率，不能证明售后效率已改善。页面结构化发布日期为 11 月 4 日，修改时间另列，不算 11 月 7 日发布。",
+          "sources": [
+            {
+              "url": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
+              "name": "Aqara 官方帮助中心",
+              "publishedAt": "2026-11-04T01:54:57-05:00",
+              "publisherGroup": "Aqara 官方帮助中心",
+              "role": "official",
+              "textHash": "6dc0acfac9a43dc662d6019433f6d1ea502534481c84f85d84bc6155a711866d",
+              "readAt": "2026-11-07T00:43:45.211768+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "aqara-matter-guide",
+          "url": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
+          "checkedAt": "2026-11-11T00:41:49.342246+00:00",
+          "state": "body",
+          "note": "本轮实际读取官方正文，按列明字段复核；未覆盖的字段继续保留缺口。"
         }
       ]
     }

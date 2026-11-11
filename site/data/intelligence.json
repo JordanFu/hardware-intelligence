@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastCompletedAt": "2026-11-10T00:46:34.366452+00:00",
+  "lastCompletedAt": "2026-11-11T00:45:55.209301+00:00",
   "method": "Codex 初筛评分 + 逐条证据复核；非两个独立模型评分",
   "items": [
     {
@@ -4025,6 +4025,197 @@
       "date": null,
       "title": "石头科技采购职责样本：从下单延伸到库存与异常处理",
       "summary": "石头科技官方招聘索引中的采购工程师，职责跨越物料可获得性、采购订单跟踪、对账与采购风险。它给出采购岗位的接口线索；页面没有日期，仅建立职责基线，不能据此判断扩招或岗位缺口。"
+    },
+    {
+      "id": "day11-boox-browser",
+      "eventId": "day11-boox-browser",
+      "developmentId": "initial",
+      "titleZh": "文石阅读器资料补充：同步、备份与迁移是三件事",
+      "originalTitle": "文石阅读器资料补充：同步、备份与迁移是三件事",
+      "brief": {
+        "lead": "BOOX 官方指南把阅读进度、批注等阅读数据同步与源文件上传分开，也提供本地书库备份。对阅读器研究，设备之外还要看账号、服务器、目录及版本条件，才能判断换设备后能否继续阅读。当前读取的是英文帮助页，不据此保证国内型号权益一致。",
+        "points": [
+          "指南要求同步使用同一账号、服务器与文件目录；服务器数据独立存放。",
+          "V4.1起可上传源文件；本地备份生成.booxc文件，迁移双方需为V4.1或以上。"
+        ]
+      },
+      "stages": [
+        "研发与系统",
+        "服务与生命周期",
+        "渠道与销售"
+      ],
+      "domestic": true,
+      "companies": [
+        "文石 BOOX"
+      ],
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "学习硬件",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 16,
+          "证据质量": 17,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "当前正文支持具体流程或职责；逐条锚点核验，不以首次发现、页面更新时间或媒体报道日期冒充岗位/功能发布日期。"
+        }
+      },
+      "boundary": "当前英文帮助页未标明确发布日期；机型、地区、账号体系、内容授权和成功率需分别核实，未进行设备迁移实测，不将V4.1能力称为今天新发布。",
+      "meaning": "比较阅读器时，把已购买内容、阅读进度和笔记能否带走一起核验。",
+      "question": "设备、账号和云服务分别由谁负责迁移失败，用户是否需要重复整理笔记？",
+      "eventReason": "首次收录无明确发布日期的职责或指南，作为资料补充，不计为当天新事件。",
+      "educationCategories": [
+        "reader"
+      ],
+      "practices": [
+        {
+          "title": "分别核验阅读数据同步与源文件迁移",
+          "method": "按阅读数据、书籍源文件、本地备份拆开检查迁移条件，并核对两端版本与账号服务器。",
+          "conditions": "仅适用于指南描述的BOOX功能；具体国内设备、地区和内容授权要另核。",
+          "outcome": "官方披露功能和前提，没有用户迁移成功率或节省时间证据。",
+          "boundary": "当前英文帮助页未标明确发布日期；机型、地区、账号体系、内容授权和成功率需分别核实，未进行设备迁移实测，不将V4.1能力称为今天新发布。",
+          "nextCheck": "补国内型号说明及迁移测试，再决定是否修订通用生命周期知识。",
+          "stages": [
+            "研发与系统",
+            "服务与生命周期",
+            "渠道与销售"
+          ],
+          "evidenceLevel": "官方披露做法",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "同步需要一致的账号与服务器。",
+          "sourceUrl": "https://booxsupport.zendesk.com/hc/en-us/articles/25401838386196-Reading-Data-Syncing-and-Backup",
+          "locator": "Account, Server, and Directory"
+        },
+        {
+          "claim": "本地备份恢复有双方版本条件。",
+          "sourceUrl": "https://booxsupport.zendesk.com/hc/en-us/articles/25401838386196-Reading-Data-Syncing-and-Backup",
+          "locator": "Local Library Backup"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://booxsupport.zendesk.com/hc/en-us/articles/25401838386196-Reading-Data-Syncing-and-Backup",
+          "name": "BOOX 官方帮助中心",
+          "publishedAt": null,
+          "publisherGroup": "BOOX",
+          "role": "official",
+          "textHash": "c58b7bb955f97d398fb5f6ba061577f1325caa7463800c74a623edbdd490e17b",
+          "readAt": "2026-11-11T00:42:15.717Z",
+          "coverage": "body"
+        }
+      ],
+      "score": 88,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-11T00:45:55.206005+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "文石阅读器资料补充：同步、备份与迁移是三件事",
+      "summary": "BOOX 官方指南把阅读进度、批注等阅读数据同步与源文件上传分开，也提供本地书库备份。对阅读器研究，设备之外还要看账号、服务器、目录及版本条件，才能判断换设备后能否继续阅读。当前读取的是英文帮助页，不据此保证国内型号权益一致。"
+    },
+    {
+      "id": "day11-figure",
+      "eventId": "day11-figure",
+      "developmentId": "initial",
+      "titleZh": "Figure 夜班岗位：自主机器人仍需停机决策与交班接口",
+      "originalTitle": "Figure 夜班岗位：自主机器人仍需停机决策与交班接口",
+      "brief": {
+        "lead": "Figure 当前夜班协调员正文要求安排操作员、追踪机器人运行与任务交付，并在故障、安全疑虑或运营阻碍时决定继续、调整或停机。它提供的是部署阶段的人机协作职责样本，不能证明净增岗位、替代人数或人员配置是否充足。",
+        "points": [
+          "岗位把问题升级、工程工单与班次交接列为职责，明确部分时段工程支持有限。",
+          "正文对培训时间和雇佣形式存在不同表述，需向招聘方确认；不把这种不一致解释为组织变动。"
+        ]
+      },
+      "stages": [
+        "制造与交付",
+        "质量与合规",
+        "服务与生命周期",
+        "经营与组织"
+      ],
+      "domestic": false,
+      "companies": [],
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "组织与岗位",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 16,
+          "证据质量": 17,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "当前正文支持具体流程或职责；逐条锚点核验，不以首次发现、页面更新时间或媒体报道日期冒充岗位/功能发布日期。"
+        }
+      },
+      "boundary": "已读当前招聘正文并与11月10日媒体线索对照；职位正文无明确发布日期。职责是期望，不代表实际制度已落实，未取得工作量、支持资源、员工体验或机器人可靠性数据。",
+      "meaning": "机器人部署的组织研究要同时检查一线停止权、工程支持和交接质量，不把人工值守简单归为自动化失败或效率提升。",
+      "question": "值班人员能否在安全或质量风险下停止任务，是否有可用的工程支持与合理休息安排？",
+      "eventReason": "首次收录无明确发布日期的职责或指南，作为资料补充，不计为当天新事件。",
+      "organization": [
+        {
+          "kind": "能力需求线索",
+          "title": "机器人值守需要异常决策与工程支持",
+          "observation": "职位正文列出停机判断、工单升级和结构化交班，且说明部分时段工程支持有限。",
+          "implication": "研究判断：人员决策先核对异常量、停止权和支持覆盖，再讨论人数；单份职责跨度不能证明过载或岗位合并。",
+          "boundary": "已读当前招聘正文并与11月10日媒体线索对照；职位正文无明确发布日期。职责是期望，不代表实际制度已落实，未取得工作量、支持资源、员工体验或机器人可靠性数据。",
+          "factIndexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "岗位要求根据异常决定继续、调整或停机。",
+          "sourceUrl": "https://job-boards.greenhouse.io/figureai/jobs/4727582006",
+          "locator": "Responsibilities"
+        },
+        {
+          "claim": "岗位要求进行结构化交班。",
+          "sourceUrl": "https://job-boards.greenhouse.io/figureai/jobs/4727582006",
+          "locator": "Responsibilities"
+        },
+        {
+          "claim": "部分时段工程支持有限。",
+          "sourceUrl": "https://job-boards.greenhouse.io/figureai/jobs/4727582006",
+          "locator": "岗位介绍"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://job-boards.greenhouse.io/figureai/jobs/4727582006",
+          "name": "Figure 招聘正文",
+          "publishedAt": null,
+          "publisherGroup": "Figure",
+          "role": "official",
+          "textHash": "6d1900b004bae51258e844b7dddf885e96611f51afe376e49813e6cc5358ebb3",
+          "readAt": "2026-11-11T00:42:48.788011+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 88,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-11T00:45:55.206965+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "Figure 夜班岗位：自主机器人仍需停机决策与交班接口",
+      "summary": "Figure 当前夜班协调员正文要求安排操作员、追踪机器人运行与任务交付，并在故障、安全疑虑或运营阻碍时决定继续、调整或停机。它提供的是部署阶段的人机协作职责样本，不能证明净增岗位、替代人数或人员配置是否充足。"
     }
   ],
   "events": [
@@ -4617,6 +4808,34 @@
       ],
       "publisherGroups": [
         "石头科技官方招聘索引"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "day11-boox-browser",
+      "representativeId": "day11-boox-browser",
+      "itemIds": [
+        "day11-boox-browser"
+      ],
+      "publisherGroups": [
+        "BOOX"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "day11-figure",
+      "representativeId": "day11-figure",
+      "itemIds": [
+        "day11-figure"
+      ],
+      "publisherGroups": [
+        "Figure"
       ],
       "developmentIds": [
         "initial"
@@ -6450,6 +6669,428 @@
       },
       "successfulScan": true,
       "completedAt": "2026-11-10T00:46:34.366452+00:00",
+      "reviewedCount": 2,
+      "selectedCount": 2
+    },
+    {
+      "coverage": "6个RSS源4个成功；30条候选初筛，重点读取Figure招聘报道并回源岗位、拓竹STEM回顾。新增BOOX阅读同步与Figure夜班职责两篇常青brief；查阅作业帮、小猿、绿米及拓竹当前正文，覆盖制造、质量、渠道、服务和组织。无已核实的新事件，不用旧资料填日报。",
+      "sourceChecks": [
+        {
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/bce3303d-d5ee-41f0-b76f-30e4a45d7d43",
+          "company": "作业帮",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "checkedAt": "2026-11-11T00:41:21.640Z",
+          "note": "复读同ID儿童手表结构职责，与既有版本逐项相同；未明确城市。"
+        },
+        {
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "company": "猿辅导（小猿）",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "checkedAt": "2026-11-11T00:41:21.665Z",
+          "note": "复读同ID硬件设计、测试、试产职责，与既有版本相同。"
+        },
+        {
+          "url": "https://booxsupport.zendesk.com/hc/en-us/articles/25401838386196-Reading-Data-Syncing-and-Backup",
+          "company": null,
+          "stages": [
+            "研发与系统",
+            "服务与生命周期",
+            "渠道与销售"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-11T00:42:15.717Z",
+          "note": "实际浏览器读取英文官方指南；直连403另留失败记录。"
+        },
+        {
+          "url": "https://job-boards.greenhouse.io/figureai/jobs/4727582006",
+          "company": null,
+          "stages": [
+            "制造与交付",
+            "质量与合规",
+            "服务与生命周期",
+            "经营与组织"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "checkedAt": "2026-11-11T00:42:48.788011+00:00",
+          "note": "阅读当前完整职责；培训段落时间不一致，保留待确认。"
+        },
+        {
+          "url": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
+          "company": "绿米 Aqara",
+          "stages": [
+            "研发与系统",
+            "服务与生命周期",
+            "质量与合规"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-11T00:41:49.342246+00:00",
+          "note": "重读故障分流、桥接与功能兼容、重置及日志段落，不扩大到所有设备。"
+        },
+        {
+          "url": "https://blog.bambulab.com/quality-assurance-and-operations-update/",
+          "company": "Bambu Lab 拓竹",
+          "stages": [
+            "制造与交付",
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-11T00:41:49.401507+00:00",
+          "note": "重读历史X1/P1P质量说明的出厂测试、运输问题与包装改动；不当作当前故障率。"
+        },
+        {
+          "url": "https://blog.bambulab.com/first-time-together-makerworld-makers-from-across-the-u-s-meet-in-san-jose",
+          "company": "Bambu Lab 拓竹",
+          "stages": [
+            "需求与规划",
+            "渠道与销售",
+            "经营与组织"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-11T00:41:49.517411+00:00",
+          "note": "重读10月24日活动回顾中的创作者反馈与实物履约机制，未发现支持更新既有结论的新证据。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/140.htm",
+          "company": null,
+          "stages": [
+            "经营与组织",
+            "服务与生命周期"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "checkedAt": "2026-11-11T00:42:05.792317+00:00",
+          "note": "读取媒体正文后回源岗位；媒体日期不作为职位发布日期。"
+        },
+        {
+          "url": "https://blog.bambulab.com/from-cars-to-robotic-arms-inspiring-young-engineers-through-hands-on-stem",
+          "company": "Bambu Lab 拓竹",
+          "stages": [
+            "需求与规划",
+            "研发与系统"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "checkedAt": "2026-11-11T00:42:06.246390+00:00",
+          "note": "读取学校大使自述工作坊，属于过去数月的案例且缺学习效果测量；不作为当日新活动。"
+        },
+        {
+          "url": "https://booxsupport.zendesk.com/hc/en-us/articles/25401838386196-Reading-Data-Syncing-and-Backup",
+          "company": null,
+          "stages": [
+            "服务与生命周期"
+          ],
+          "purpose": "practice",
+          "state": "error",
+          "checkedAt": "2026-11-11T00:41:59.464558+00:00",
+          "note": "直连正文返回403；已用浏览器读到正文，保留原失败而不推断内容不存在。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/622.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/152.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/146.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/828.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/755.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/535.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/516.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/995.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/768.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/767.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/546.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/226.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/210.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/188.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/155.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/797.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/542.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/534.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/531.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/525.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/514.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/506.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/505.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/502.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/213.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/102.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/088.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/060.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
+          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
+        }
+      ],
+      "knownGaps": [
+        "本轮拓竹RSS超时、CNX403；直接博客正文可读不代表RSS已恢复。",
+        "28条候选未逐篇完成正文复核；没有合格新事件是本轮筛选结果，不是行业无动态。",
+        "作业帮供应链专属正文缺口仍在；两份硬件岗位未见职责变化。",
+        "知识节点仍为部分复核，不推进完整复核期限。"
+      ],
+      "failedSources": [
+        "Bambu RSS连接超时，历史保留。",
+        "CNX RSS返回403，历史保留。",
+        "直连正文返回403；已用浏览器读到正文，保留原失败而不推断内容不存在。"
+      ],
+      "coverageCheck": {
+        "passed": true,
+        "companies": [
+          "Bambu Lab 拓竹",
+          "作业帮",
+          "猿辅导（小猿）",
+          "绿米 Aqara"
+        ],
+        "stages": [
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "作业帮",
+          "猿辅导（小猿）"
+        ],
+        "gaps": [],
+        "usableSources": 37
+      },
+      "successfulScan": true,
+      "completedAt": "2026-11-11T00:45:55.209301+00:00",
       "reviewedCount": 2,
       "selectedCount": 2
     }
