@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-12T07:10:14.681336+00:00",
-  "lastSuccessfulAt": "2026-11-12T07:10:14.681336+00:00",
+  "checkedAt": "2026-11-12T18:19:20.958714+00:00",
+  "lastSuccessfulAt": "2026-11-12T18:19:20.958714+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-12T07:10:14.681336+00:00",
-      "lastSuccessAt": "2026-11-12T07:10:14.681336+00:00",
+      "checkedAt": "2026-11-12T18:19:20.958714+00:00",
+      "lastSuccessAt": "2026-11-12T18:19:20.958714+00:00",
       "received": 18,
       "matched": 1,
       "excluded": 17,
@@ -15,8 +15,8 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-12T07:10:14.681336+00:00",
-      "lastSuccessAt": "2026-11-12T07:10:14.681336+00:00",
+      "checkedAt": "2026-11-12T18:19:20.958714+00:00",
+      "lastSuccessAt": "2026-11-12T18:19:20.958714+00:00",
       "received": 50,
       "matched": 2,
       "excluded": 48,
@@ -25,8 +25,8 @@
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-12T07:10:14.681336+00:00",
-      "lastSuccessAt": "2026-11-12T07:10:14.681336+00:00",
+      "checkedAt": "2026-11-12T18:19:20.958714+00:00",
+      "lastSuccessAt": "2026-11-12T18:19:20.958714+00:00",
       "received": 10,
       "matched": 0,
       "excluded": 10,
@@ -35,8 +35,8 @@
     {
       "id": "bambu",
       "state": "ok",
-      "checkedAt": "2026-11-12T07:10:14.681336+00:00",
-      "lastSuccessAt": "2026-11-12T07:10:14.681336+00:00",
+      "checkedAt": "2026-11-12T18:19:20.958714+00:00",
+      "lastSuccessAt": "2026-11-12T18:19:20.958714+00:00",
       "received": 15,
       "matched": 15,
       "excluded": 0,
@@ -45,19 +45,106 @@
     {
       "id": "cnx",
       "state": "error",
-      "checkedAt": "2026-11-12T07:10:14.681336+00:00",
+      "checkedAt": "2026-11-12T18:19:20.958714+00:00",
       "error": "curl: (22) The requested URL returned error: 403",
       "lastSuccessAt": "2026-11-07T05:57:51.855328+00:00"
     },
     {
       "id": "ithome",
-      "state": "error",
-      "checkedAt": "2026-11-12T07:10:14.681336+00:00",
-      "error": "curl: (22) The requested URL returned error: 404",
-      "lastSuccessAt": "2026-11-12T00:56:29.543500+00:00"
+      "state": "ok",
+      "checkedAt": "2026-11-12T18:19:20.958714+00:00",
+      "lastSuccessAt": "2026-11-12T18:19:20.958714+00:00",
+      "received": 60,
+      "matched": 6,
+      "excluded": 54,
+      "error": null
     }
   ],
   "items": [
+    {
+      "id": "rss-d03abba1f2efb5a9",
+      "title": "谷歌为 Android XR 智能眼镜推出全面隐私保护措施：录制指示灯、人脸模糊与数据即删",
+      "url": "https://www.ithome.com/1/026/430.htm",
+      "date": "2026-11-12T14:53:08+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "可穿戴与眼镜",
+      "status": "待核验",
+      "discoveredAt": "2026-11-12T18:19:20.958714+00:00"
+    },
+    {
+      "id": "rss-6b24bae773e174a8",
+      "title": "三星首款智能眼镜 Intelligent Eyewear 开启预售：搭载 Android XR 系统，395 美元起",
+      "url": "https://www.ithome.com/1/026/422.htm",
+      "date": "2026-11-12T14:30:16+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "可穿戴与眼镜",
+      "status": "待核验",
+      "discoveredAt": "2026-11-12T18:19:20.958714+00:00"
+    },
+    {
+      "id": "rss-61b3b492a65e9cd3",
+      "title": "100 分贝噪音中也能揪出人声：NTT 推出可穿戴麦克风 SonoVo Stick，2.4 万日元",
+      "url": "https://www.ithome.com/1/026/392.htm",
+      "date": "2026-11-12T13:38:57+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "可穿戴与眼镜",
+      "status": "待核验",
+      "discoveredAt": "2026-11-12T18:19:20.958714+00:00"
+    },
+    {
+      "id": "rss-5e973475b9bd6bfc",
+      "title": "广汽埃安 Ray 7 车型上市：华为 192 线激光雷达、搭文远知行 L4 级 Robotaxi 同源大模型，限时价 11.47 万元起",
+      "url": "https://www.ithome.com/1/026/385.htm",
+      "date": "2026-11-12T13:05:37+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-12T18:19:20.958714+00:00"
+    },
+    {
+      "id": "rss-27e90efe77e42a2b",
+      "title": "上下水版 2999 → 678 元：科沃斯全能基站扫拖机器人“地宝 mini2”破冰新低",
+      "url": "https://www.ithome.com/1/026/367.htm",
+      "date": "2026-11-12T11:58:23+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-12T18:19:20.958714+00:00"
+    },
+    {
+      "id": "rss-fdbca3f85968d8bd",
+      "title": "摩根大通：到 2030 年，美国人形机器人产量将达 30 万至 40 万台",
+      "url": "https://www.ithome.com/1/026/334.htm",
+      "date": "2026-11-12T10:21:04+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-12T18:19:20.958714+00:00"
+    },
+    {
+      "id": "rss-73679a0244d41f07",
+      "title": "Just Make Things: MakerWorld’s first official merch collection goes live on crowdfunding",
+      "url": "https://blog.bambulab.com/just-make-things-makerworlds-first-official-merch-collection-goes-live-on-crowdfunding",
+      "date": "2026-11-12T08:27:17+00:00",
+      "sourceId": "bambu",
+      "source": "Bambu Lab Blog",
+      "tier": "官方一手",
+      "category": "制造与创作",
+      "status": "待核验",
+      "discoveredAt": "2026-11-12T18:19:20.958714+00:00"
+    },
     {
       "id": "rss-91ef97e4a7a4ab25",
       "title": "桃色丑闻重创 AI 芯片巨头：黄仁勋第二段婚外情曝光，英伟达盘后股价重挫逾 9%",
