@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-12T00:52:58.339045+00:00",
-  "lastSuccessfulAt": "2026-11-12T00:52:58.339045+00:00",
+  "checkedAt": "2026-11-12T00:54:46.813833+00:00",
+  "lastSuccessfulAt": "2026-11-12T00:54:46.813833+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-12T00:52:58.339045+00:00",
-      "lastSuccessAt": "2026-11-12T00:52:58.339045+00:00",
+      "checkedAt": "2026-11-12T00:54:46.813833+00:00",
+      "lastSuccessAt": "2026-11-12T00:54:46.813833+00:00",
       "received": 18,
       "matched": 1,
       "excluded": 17,
@@ -15,8 +15,8 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-12T00:52:58.339045+00:00",
-      "lastSuccessAt": "2026-11-12T00:52:58.339045+00:00",
+      "checkedAt": "2026-11-12T00:54:46.813833+00:00",
+      "lastSuccessAt": "2026-11-12T00:54:46.813833+00:00",
       "received": 50,
       "matched": 2,
       "excluded": 48,
@@ -25,8 +25,8 @@
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-12T00:52:58.339045+00:00",
-      "lastSuccessAt": "2026-11-12T00:52:58.339045+00:00",
+      "checkedAt": "2026-11-12T00:54:46.813833+00:00",
+      "lastSuccessAt": "2026-11-12T00:54:46.813833+00:00",
       "received": 10,
       "matched": 0,
       "excluded": 10,
@@ -35,8 +35,8 @@
     {
       "id": "bambu",
       "state": "ok",
-      "checkedAt": "2026-11-12T00:52:58.339045+00:00",
-      "lastSuccessAt": "2026-11-12T00:52:58.339045+00:00",
+      "checkedAt": "2026-11-12T00:54:46.813833+00:00",
+      "lastSuccessAt": "2026-11-12T00:54:46.813833+00:00",
       "received": 15,
       "matched": 15,
       "excluded": 0,
@@ -45,15 +45,15 @@
     {
       "id": "cnx",
       "state": "error",
-      "checkedAt": "2026-11-12T00:52:58.339045+00:00",
+      "checkedAt": "2026-11-12T00:54:46.813833+00:00",
       "error": "curl: (22) The requested URL returned error: 403",
       "lastSuccessAt": "2026-11-07T05:57:51.855328+00:00"
     },
     {
       "id": "ithome",
       "state": "ok",
-      "checkedAt": "2026-11-12T00:52:58.339045+00:00",
-      "lastSuccessAt": "2026-11-12T00:52:58.339045+00:00",
+      "checkedAt": "2026-11-12T00:54:46.813833+00:00",
+      "lastSuccessAt": "2026-11-12T00:54:46.813833+00:00",
       "received": 60,
       "matched": 4,
       "excluded": 56,
