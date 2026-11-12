@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-12T00:42:45.537778+00:00",
-  "lastSuccessfulAt": "2026-11-12T00:42:45.537778+00:00",
+  "checkedAt": "2026-11-12T00:51:54.143860+00:00",
+  "lastSuccessfulAt": "2026-11-12T00:51:54.143860+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-12T00:42:45.537778+00:00",
-      "lastSuccessAt": "2026-11-12T00:42:45.537778+00:00",
+      "checkedAt": "2026-11-12T00:51:54.143860+00:00",
+      "lastSuccessAt": "2026-11-12T00:51:54.143860+00:00",
       "received": 18,
       "matched": 1,
       "excluded": 17,
@@ -15,8 +15,8 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-12T00:42:45.537778+00:00",
-      "lastSuccessAt": "2026-11-12T00:42:45.537778+00:00",
+      "checkedAt": "2026-11-12T00:51:54.143860+00:00",
+      "lastSuccessAt": "2026-11-12T00:51:54.143860+00:00",
       "received": 50,
       "matched": 2,
       "excluded": 48,
@@ -25,8 +25,8 @@
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-12T00:42:45.537778+00:00",
-      "lastSuccessAt": "2026-11-12T00:42:45.537778+00:00",
+      "checkedAt": "2026-11-12T00:51:54.143860+00:00",
+      "lastSuccessAt": "2026-11-12T00:51:54.143860+00:00",
       "received": 10,
       "matched": 0,
       "excluded": 10,
@@ -35,8 +35,8 @@
     {
       "id": "bambu",
       "state": "ok",
-      "checkedAt": "2026-11-12T00:42:45.537778+00:00",
-      "lastSuccessAt": "2026-11-12T00:42:45.537778+00:00",
+      "checkedAt": "2026-11-12T00:51:54.143860+00:00",
+      "lastSuccessAt": "2026-11-12T00:51:54.143860+00:00",
       "received": 15,
       "matched": 15,
       "excluded": 0,
@@ -45,22 +45,34 @@
     {
       "id": "cnx",
       "state": "error",
-      "checkedAt": "2026-11-12T00:42:45.537778+00:00",
-      "error": "curl: (28) Connection timed out after 30010 milliseconds\ncurl: (56) The requested URL returned error: 403",
+      "checkedAt": "2026-11-12T00:51:54.143860+00:00",
+      "error": "curl: (22) The requested URL returned error: 403",
       "lastSuccessAt": "2026-11-07T05:57:51.855328+00:00"
     },
     {
       "id": "ithome",
       "state": "ok",
-      "checkedAt": "2026-11-12T00:42:45.537778+00:00",
-      "lastSuccessAt": "2026-11-12T00:42:45.537778+00:00",
+      "checkedAt": "2026-11-12T00:51:54.143860+00:00",
+      "lastSuccessAt": "2026-11-12T00:51:54.143860+00:00",
       "received": 60,
-      "matched": 3,
-      "excluded": 57,
+      "matched": 4,
+      "excluded": 56,
       "error": null
     }
   ],
   "items": [
+    {
+      "id": "rss-91ef97e4a7a4ab25",
+      "title": "桃色丑闻重创 AI 芯片巨头：黄仁勋第二段婚外情曝光，英伟达盘后股价重挫逾 9%",
+      "url": "https://www.ithome.com/1/025/855.htm",
+      "date": "2026-11-12T00:36:34+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-12T00:51:54.143860+00:00"
+    },
     {
       "id": "rss-c6f9fd1064889700",
       "title": "消息称富士 X-T6 相机搭载全新 4000 万像素传感器",
