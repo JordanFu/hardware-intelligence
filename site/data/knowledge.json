@@ -493,12 +493,12 @@
       "updatedAt": "2026-11-07T00:47:27.698411+00:00"
     },
     "chain-2": {
-      "attemptedAt": "2026-11-08T00:50:25.860268+00:00",
+      "attemptedAt": "2026-11-12T00:51:00.108633+00:00",
       "status": "partial",
-      "assessment": "优先复核尚无完整复核记录的节点。根据今天实际读取的官方章节或岗位索引补充字段；其余概念、指标及运行效果保留缺口，不推进完整复核日期。",
+      "assessment": "重新读取原理、速度、结构及软件精细度章节，既有任务条件和模块参数区分仍成立，无实质内容变化；直连超时后浏览器取得正文。",
       "gaps": [
-        "BOM、EVT/DVT/PVT 的基础定义及特定项目门槛未在本轮全面复核。",
-        "真实端到端任务耗时、分位数与返工结果仍需实测。"
+        "BOM、EVT/DVT/PVT基础定义及特定项目门槛未全面核验。",
+        "端到端耗时、分位数和返工结果仍无独立测试。"
       ],
       "reviewedFields": [
         "exercise",
@@ -541,12 +541,12 @@
         {
           "itemId": "xtool-material-guide",
           "url": "https://support.xtool.com/article/1963",
-          "checkedAt": "2026-11-08T00:50:25.776128+00:00",
+          "checkedAt": "2026-11-12T00:49:03.733Z",
           "state": "body",
-          "note": "当天读取当前官方正文的条目所列章节，仅支持本次复核字段。"
+          "note": "当日实际读取当前正文所列章节；仅复核列明字段，未覆盖部分不延期。"
         }
       ],
-      "reviewedAt": "2026-11-08T00:50:25.860268+00:00",
+      "reviewedAt": "2026-11-12T00:51:00.108633+00:00",
       "patch": {
         "metrics": "任务延迟用同一输入、环境与分位数比较；不能只报告平均值或实验室峰值。 对加工设备还应固定材料、任务和成品质量条件，分别记录准备、加工与失败恢复耗时；标称最高运动速度不能直接折算真实产能。",
         "exercise": "画一张从传感器到执行器的链路，给每个接口写清输入、输出与责任人。 用一个具体材料任务说明结构、光源和软件精细度如何共同影响结果，区分模块参数与整机交付指标。"
@@ -567,12 +567,12 @@
       "updatedAt": "2026-11-08T00:50:25.860268+00:00"
     },
     "chain-5": {
-      "attemptedAt": "2026-11-08T00:50:25.860268+00:00",
+      "attemptedAt": "2026-11-12T00:51:00.108633+00:00",
       "status": "partial",
-      "assessment": "优先复核尚无完整复核记录的节点。根据今天实际读取的官方章节或岗位索引补充字段；其余概念、指标及运行效果保留缺口，不推进完整复核日期。",
+      "assessment": "重读MetalFab专业训练、责任人员及受控场所前提，现有交付责任边界仍符合该型号说明，无实质变化；不延伸到通用认证或法规。",
       "gaps": [
-        "安全与可靠性、认证覆盖范围等基础概念仍需独立权威来源全面复核。",
-        "现场故障率及真实部署验收、培训结果未取得。"
+        "可靠性、安全及认证范围基础概念未完成独立权威复核。",
+        "实际部署验收、训练效果及故障率没有当前结果证据。"
       ],
       "reviewedFields": [
         "exercise",
@@ -614,12 +614,12 @@
         {
           "itemId": "xtool-safety",
           "url": "https://support.xtool.com/article/2017",
-          "checkedAt": "2026-11-08T00:50:25.776128+00:00",
+          "checkedAt": "2026-11-12T00:44:21.766994+00:00",
           "state": "body",
-          "note": "当天读取当前官方正文的条目所列章节，仅支持本次复核字段。"
+          "note": "当日实际读取当前正文所列章节；仅复核列明字段，未覆盖部分不延期。"
         }
       ],
-      "reviewedAt": "2026-11-08T00:50:25.860268+00:00",
+      "reviewedAt": "2026-11-12T00:51:00.108633+00:00",
       "patch": {
         "flow": "风险识别与需求 → 验证证据、过程控制与上市条件 对有明确使用限制的设备，还要检查现场条件、训练和责任人员是否满足该型号说明，不能仅凭设备合格就认为现场可用。",
         "team": "质量、安全、研发、制造与服务协同定义缺陷等级、放行权和整改验证。 MetalFab 官方资料要求指定激光安全负责人并限制进入受控区域的人员；这是特定产品的部署职责样本，不能替代其他产品的法规与风险评估。"
@@ -751,16 +751,18 @@
       "updatedAt": "2026-11-08T00:50:25.860268+00:00"
     },
     "track-4": {
-      "attemptedAt": "2026-11-08T00:50:25.860268+00:00",
+      "attemptedAt": "2026-11-12T00:51:00.108633+00:00",
       "status": "partial",
-      "assessment": "优先复核尚无完整复核记录的节点。根据今天实际读取的官方章节或岗位索引补充字段；其余概念、指标及运行效果保留缺口，不推进完整复核日期。",
+      "assessment": "复核xTool加工指标与部署条件，拓竹新增本地伙伴计划提示服务网络需跟踪；尚无已落实服务结果，不修改通用价值链或将计划写成最佳实践。",
       "gaps": [
-        "尚未用当前正文完整复核拓竹和创想三维等观察对象。",
-        "实际任务成功率、维护成本和用户负担缺可比样本。"
+        "创想三维观察对象未取得本轮当前正文。",
+        "拓竹伙伴合同、维修验收、备件和服务结果尚未披露。",
+        "跨企业任务成功率、维护成本及人员负担缺可比样本。"
       ],
       "reviewedFields": [
         "chain",
         "constraint",
+        "examples",
         "metrics",
         "team"
       ],
@@ -822,25 +824,66 @@
               "coverage": "body"
             }
           ]
+        },
+        {
+          "itemId": "rss-71efdf861fff63c4",
+          "title": "拓竹 Bambu Circle：把维修、零售和培训纳入本地伙伴计划",
+          "facts": [
+            {
+              "claim": "官方宣布计划以荷兰试点启动。",
+              "sourceUrl": "https://blog.bambulab.com/bambu-lab-to-present-the-bambu-circle-programme-and-showcase-h3c-and-r1-at-formnext-2026",
+              "locator": "Bambu Circle: 3D printing as a local business"
+            },
+            {
+              "claim": "拓竹计划负责协调、培训与认证；伙伴服务包括本地维修、零售、打印及培训。",
+              "sourceUrl": "https://blog.bambulab.com/bambu-lab-to-present-the-bambu-circle-programme-and-showcase-h3c-and-r1-at-formnext-2026",
+              "locator": "Bambu Circle / partner scope"
+            },
+            {
+              "claim": "公告将德国和法国的扩展安排在2027年初。",
+              "sourceUrl": "https://blog.bambulab.com/bambu-lab-to-present-the-bambu-circle-programme-and-showcase-h3c-and-r1-at-formnext-2026",
+              "locator": "European rollout"
+            }
+          ],
+          "boundary": "官方公告描述荷兰试点及欧洲扩展计划；Formnext展示尚未发生，2027年德国、法国扩展和一小时服务覆盖均不是已实现结果。未取得伙伴合同、收入、维修验收、用户结果或实际人员配置。",
+          "sources": [
+            {
+              "url": "https://blog.bambulab.com/bambu-lab-to-present-the-bambu-circle-programme-and-showcase-h3c-and-r1-at-formnext-2026",
+              "name": "Bambu Lab 官方博客",
+              "publishedAt": "2026-11-11T07:08:40+00:00",
+              "publisherGroup": "Bambu Lab",
+              "role": "official",
+              "textHash": "7ffe818eb103a8e3c23e4cf1509de907761030d9ab0772d611607d283491c3f4",
+              "readAt": "2026-11-12T00:44:21.766218+00:00",
+              "coverage": "body"
+            }
+          ]
         }
       ],
       "sourceChecks": [
         {
           "itemId": "xtool-material-guide",
           "url": "https://support.xtool.com/article/1963",
-          "checkedAt": "2026-11-08T00:50:25.776128+00:00",
+          "checkedAt": "2026-11-12T00:49:03.733Z",
           "state": "body",
-          "note": "当天读取当前官方正文的条目所列章节，仅支持本次复核字段。"
+          "note": "当日实际读取当前正文所列章节；仅复核列明字段，未覆盖部分不延期。"
         },
         {
           "itemId": "xtool-safety",
           "url": "https://support.xtool.com/article/2017",
-          "checkedAt": "2026-11-08T00:50:25.776128+00:00",
+          "checkedAt": "2026-11-12T00:44:21.766994+00:00",
           "state": "body",
-          "note": "当天读取当前官方正文的条目所列章节，仅支持本次复核字段。"
+          "note": "当日实际读取当前正文所列章节；仅复核列明字段，未覆盖部分不延期。"
+        },
+        {
+          "itemId": "rss-71efdf861fff63c4",
+          "url": "https://blog.bambulab.com/bambu-lab-to-present-the-bambu-circle-programme-and-showcase-h3c-and-r1-at-formnext-2026",
+          "checkedAt": "2026-11-12T00:44:21.766218+00:00",
+          "state": "body",
+          "note": "当日实际读取当前正文所列章节；仅复核列明字段，未覆盖部分不延期。"
         }
       ],
-      "reviewedAt": "2026-11-08T00:50:25.860268+00:00",
+      "reviewedAt": "2026-11-12T00:51:00.108633+00:00",
       "patch": {
         "constraint": "良率、准备时间、耗材和失败恢复 制造工具不能只按峰值速度比较；需看材料适配、真实任务耗时和型号特定的部署条件。专业焊接设备的使用前提不得与桌面创作设备混同。",
         "team": "运动控制、固件、结构、材料、切片软件、制造工程 涉及专业设备时，还需把现场交付、训练和安全责任接口纳入观察；具体职责取决于产品和使用场景。",
@@ -1544,6 +1587,22 @@
           "hash": "e7193b80f5e923eac4833d2d102eab991d4e31924d67f79d217eff9f0668e31f",
           "decision": "hold",
           "reason": "官方英文说明可补充文石阅读器档案，但同步、备份与迁移的国内具体型号、区域账户和固件适配仍需实机或对应文档核对；暂不提升为通用知识方法。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-12T00:51:00.108633+00:00",
+      "reviewedNodes": [
+        "chain-2",
+        "chain-5",
+        "track-4"
+      ],
+      "decisions": [
+        {
+          "itemId": "rss-71efdf861fff63c4",
+          "hash": "643a07d3a5bd9b0ec0aeba7af0ff10f261d08099d705ce6f7120a02e1924b32f",
+          "decision": "hold",
+          "reason": "试点公告具有渠道与售后接口观察价值，但伙伴授权、维修验收、备件和实际服务结果尚缺。暂保留为跟踪线索，待正式条款或试点结果后沉淀，不把计划升级为通用实践。"
         }
       ]
     }
@@ -3332,6 +3391,258 @@
           "checkedAt": "2026-11-11T00:41:49.342246+00:00",
           "state": "body",
           "note": "本轮实际读取官方正文，按列明字段复核；未覆盖的字段继续保留缺口。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-2",
+      "reviewedAt": "2026-11-12T00:51:00.108633+00:00",
+      "status": "partial",
+      "assessment": "重新读取原理、速度、结构及软件精细度章节，既有任务条件和模块参数区分仍成立，无实质内容变化；直连超时后浏览器取得正文。",
+      "gaps": [
+        "BOM、EVT/DVT/PVT基础定义及特定项目门槛未全面核验。",
+        "端到端耗时、分位数和返工结果仍无独立测试。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "metrics",
+        "pitfall",
+        "team"
+      ],
+      "changes": {},
+      "lessonChanges": [],
+      "evidence": [
+        {
+          "itemId": "xtool-material-guide",
+          "title": "xTool 工艺指南：标称速度不等于实际加工速度",
+          "facts": [
+            {
+              "claim": "指南区分理论最高速度与实际加工速度。",
+              "sourceUrl": "https://support.xtool.com/article/1963",
+              "locator": "Processing speed"
+            },
+            {
+              "claim": "提高 LPI 通常需要更多加工时间。",
+              "sourceUrl": "https://support.xtool.com/article/1963",
+              "locator": "Software factors / LPI"
+            }
+          ],
+          "boundary": "官方指南是材料与参数的解释，不是独立性能测试；本次重点阅读原理和软硬件因素章节，不替代特定机型及材料的完整工艺验证。页面标注更新时间 2025-02-10，非今天新闻。",
+          "sources": [
+            {
+              "url": "https://support.xtool.com/article/1963",
+              "name": "xTool 官方支持",
+              "publishedAt": "2025-02-10",
+              "publisherGroup": "xTool 官方支持",
+              "role": "official",
+              "textHash": "537d4fc440f808cb3f120dca254fe396503a6faf0421ab5ad118b409e8e9c6c5",
+              "readAt": "2026-11-08T00:46:05.320925+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "xtool-material-guide",
+          "url": "https://support.xtool.com/article/1963",
+          "checkedAt": "2026-11-12T00:49:03.733Z",
+          "state": "body",
+          "note": "当日实际读取当前正文所列章节；仅复核列明字段，未覆盖部分不延期。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-5",
+      "reviewedAt": "2026-11-12T00:51:00.108633+00:00",
+      "status": "partial",
+      "assessment": "重读MetalFab专业训练、责任人员及受控场所前提，现有交付责任边界仍符合该型号说明，无实质变化；不延伸到通用认证或法规。",
+      "gaps": [
+        "可靠性、安全及认证范围基础概念未完成独立权威复核。",
+        "实际部署验收、训练效果及故障率没有当前结果证据。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "flow",
+        "team"
+      ],
+      "changes": {},
+      "lessonChanges": [],
+      "evidence": [
+        {
+          "itemId": "xtool-safety",
+          "title": "xTool MetalFab 使用边界：培训、场地与安全责任也是交付条件",
+          "facts": [
+            {
+              "claim": "资料要求专业培训并指定合格的激光安全负责人。",
+              "sourceUrl": "https://support.xtool.com/article/2017",
+              "locator": "Laser safety / personnel requirements"
+            },
+            {
+              "claim": "资料要求建立激光受控区域。",
+              "sourceUrl": "https://support.xtool.com/article/2017",
+              "locator": "Laser safety / controlled area"
+            }
+          ],
+          "boundary": "仅归纳该产品官方说明中的组织和部署要求，非完整操作指导、认证结论或通用法规解释；不推广到其他 xTool 机型，不证明用户现场已经落实。日期为页面标注更新时间。",
+          "sources": [
+            {
+              "url": "https://support.xtool.com/article/2017",
+              "name": "xTool 官方支持",
+              "publishedAt": "2026-06-10",
+              "publisherGroup": "xTool 官方支持",
+              "role": "official",
+              "textHash": "3b1b8af7a56a868001a5b3547d5ad786c2e7d16229fbc75afcd2d9a7fcd7a036",
+              "readAt": "2026-11-08T00:46:05.270898+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "xtool-safety",
+          "url": "https://support.xtool.com/article/2017",
+          "checkedAt": "2026-11-12T00:44:21.766994+00:00",
+          "state": "body",
+          "note": "当日实际读取当前正文所列章节；仅复核列明字段，未覆盖部分不延期。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-4",
+      "reviewedAt": "2026-11-12T00:51:00.108633+00:00",
+      "status": "partial",
+      "assessment": "复核xTool加工指标与部署条件，拓竹新增本地伙伴计划提示服务网络需跟踪；尚无已落实服务结果，不修改通用价值链或将计划写成最佳实践。",
+      "gaps": [
+        "创想三维观察对象未取得本轮当前正文。",
+        "拓竹伙伴合同、维修验收、备件和服务结果尚未披露。",
+        "跨企业任务成功率、维护成本及人员负担缺可比样本。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "examples",
+        "metrics",
+        "team"
+      ],
+      "changes": {},
+      "lessonChanges": [],
+      "evidence": [
+        {
+          "itemId": "xtool-material-guide",
+          "title": "xTool 工艺指南：标称速度不等于实际加工速度",
+          "facts": [
+            {
+              "claim": "指南区分理论最高速度与实际加工速度。",
+              "sourceUrl": "https://support.xtool.com/article/1963",
+              "locator": "Processing speed"
+            },
+            {
+              "claim": "提高 LPI 通常需要更多加工时间。",
+              "sourceUrl": "https://support.xtool.com/article/1963",
+              "locator": "Software factors / LPI"
+            }
+          ],
+          "boundary": "官方指南是材料与参数的解释，不是独立性能测试；本次重点阅读原理和软硬件因素章节，不替代特定机型及材料的完整工艺验证。页面标注更新时间 2025-02-10，非今天新闻。",
+          "sources": [
+            {
+              "url": "https://support.xtool.com/article/1963",
+              "name": "xTool 官方支持",
+              "publishedAt": "2025-02-10",
+              "publisherGroup": "xTool 官方支持",
+              "role": "official",
+              "textHash": "537d4fc440f808cb3f120dca254fe396503a6faf0421ab5ad118b409e8e9c6c5",
+              "readAt": "2026-11-08T00:46:05.320925+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "xtool-safety",
+          "title": "xTool MetalFab 使用边界：培训、场地与安全责任也是交付条件",
+          "facts": [
+            {
+              "claim": "资料要求专业培训并指定合格的激光安全负责人。",
+              "sourceUrl": "https://support.xtool.com/article/2017",
+              "locator": "Laser safety / personnel requirements"
+            },
+            {
+              "claim": "资料要求建立激光受控区域。",
+              "sourceUrl": "https://support.xtool.com/article/2017",
+              "locator": "Laser safety / controlled area"
+            }
+          ],
+          "boundary": "仅归纳该产品官方说明中的组织和部署要求，非完整操作指导、认证结论或通用法规解释；不推广到其他 xTool 机型，不证明用户现场已经落实。日期为页面标注更新时间。",
+          "sources": [
+            {
+              "url": "https://support.xtool.com/article/2017",
+              "name": "xTool 官方支持",
+              "publishedAt": "2026-06-10",
+              "publisherGroup": "xTool 官方支持",
+              "role": "official",
+              "textHash": "3b1b8af7a56a868001a5b3547d5ad786c2e7d16229fbc75afcd2d9a7fcd7a036",
+              "readAt": "2026-11-08T00:46:05.270898+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "rss-71efdf861fff63c4",
+          "title": "拓竹 Bambu Circle：把维修、零售和培训纳入本地伙伴计划",
+          "facts": [
+            {
+              "claim": "官方宣布计划以荷兰试点启动。",
+              "sourceUrl": "https://blog.bambulab.com/bambu-lab-to-present-the-bambu-circle-programme-and-showcase-h3c-and-r1-at-formnext-2026",
+              "locator": "Bambu Circle: 3D printing as a local business"
+            },
+            {
+              "claim": "拓竹计划负责协调、培训与认证；伙伴服务包括本地维修、零售、打印及培训。",
+              "sourceUrl": "https://blog.bambulab.com/bambu-lab-to-present-the-bambu-circle-programme-and-showcase-h3c-and-r1-at-formnext-2026",
+              "locator": "Bambu Circle / partner scope"
+            },
+            {
+              "claim": "公告将德国和法国的扩展安排在2027年初。",
+              "sourceUrl": "https://blog.bambulab.com/bambu-lab-to-present-the-bambu-circle-programme-and-showcase-h3c-and-r1-at-formnext-2026",
+              "locator": "European rollout"
+            }
+          ],
+          "boundary": "官方公告描述荷兰试点及欧洲扩展计划；Formnext展示尚未发生，2027年德国、法国扩展和一小时服务覆盖均不是已实现结果。未取得伙伴合同、收入、维修验收、用户结果或实际人员配置。",
+          "sources": [
+            {
+              "url": "https://blog.bambulab.com/bambu-lab-to-present-the-bambu-circle-programme-and-showcase-h3c-and-r1-at-formnext-2026",
+              "name": "Bambu Lab 官方博客",
+              "publishedAt": "2026-11-11T07:08:40+00:00",
+              "publisherGroup": "Bambu Lab",
+              "role": "official",
+              "textHash": "7ffe818eb103a8e3c23e4cf1509de907761030d9ab0772d611607d283491c3f4",
+              "readAt": "2026-11-12T00:44:21.766218+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "xtool-material-guide",
+          "url": "https://support.xtool.com/article/1963",
+          "checkedAt": "2026-11-12T00:49:03.733Z",
+          "state": "body",
+          "note": "当日实际读取当前正文所列章节；仅复核列明字段，未覆盖部分不延期。"
+        },
+        {
+          "itemId": "xtool-safety",
+          "url": "https://support.xtool.com/article/2017",
+          "checkedAt": "2026-11-12T00:44:21.766994+00:00",
+          "state": "body",
+          "note": "当日实际读取当前正文所列章节；仅复核列明字段，未覆盖部分不延期。"
+        },
+        {
+          "itemId": "rss-71efdf861fff63c4",
+          "url": "https://blog.bambulab.com/bambu-lab-to-present-the-bambu-circle-programme-and-showcase-h3c-and-r1-at-formnext-2026",
+          "checkedAt": "2026-11-12T00:44:21.766218+00:00",
+          "state": "body",
+          "note": "当日实际读取当前正文所列章节；仅复核列明字段，未覆盖部分不延期。"
         }
       ]
     }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-11T00:44:01.794961+00:00",
+  "checkedAt": "2026-11-12T00:50:37.226067+00:00",
   "jobs": [
     {
       "company": "DJI 大疆",
@@ -652,7 +652,7 @@
       ],
       "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/dcfceae0-9c23-47ba-aac8-1a3ccbb2142b",
       "postedAt": "2026-11-06",
-      "access": "正文可见",
+      "access": "明确关闭",
       "responsibilities": [
         "整理与审核题目、基础课件和教研材料"
       ],
@@ -663,7 +663,7 @@
         "本科及以上、理科背景、办公软件和细致校对能力"
       ],
       "decisionQuestion": "内容录入、学科审核和最终教学质量分别由谁验收？",
-      "boundary": "初中化学教学支持，正文未说明学习机归属；仅为公开职责基线，首次收录不等于新增岗位，页面可见不保证仍在招；人数、汇报线及实际成效未知。",
+      "boundary": "初中化学教学支持，正文未说明学习机归属；仅为公开职责基线，首次收录不等于新增岗位，页面可见不保证仍在招；人数、汇报线及实际成效未知。 2026-11-12来源明确显示停止招聘；此处保留上次可见的职责作为历史参考，关闭原因未知。",
       "locator": "岗位职责、任职要求及业务说明",
       "coverage": "body",
       "educationResearch": true,
@@ -671,14 +671,39 @@
       "scopeNote": "初中化学教学支持，正文未说明学习机归属",
       "id": "job-d8e8f5d6a35caf48",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
-      "sourceHash": "d7b68ada5ddbcc15097905844c01d8a757e2ee61846c3229738943838b28536b",
-      "change": "首次收录基线",
+      "lastSeen": "2026-11-12T00:50:37.226067+00:00",
+      "sourceHash": "28fb20bccaec30ca069fd9c4c307b705e1a1a965da68388447cf15a85b9ca549",
+      "change": "来源明确关闭",
       "versions": [
         {
           "observedAt": "2026-11-09T02:30:42.120805+00:00",
           "sourceHash": "d7b68ada5ddbcc15097905844c01d8a757e2ee61846c3229738943838b28536b",
           "access": "正文可见",
+          "title": "教研实习生（D111221）",
+          "family": "教研",
+          "location": "北京市",
+          "responsibilities": [
+            "整理与审核题目、基础课件和教研材料"
+          ],
+          "interfaces": [
+            "原文：与主讲和教研沟通；未披露模型评测或硬件验收职责"
+          ],
+          "requirements": [
+            "本科及以上、理科背景、办公软件和细致校对能力"
+          ],
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "businessScope": "教育业务参考",
+          "scopeNote": "初中化学教学支持，正文未说明学习机归属",
+          "educationCategories": null
+        },
+        {
+          "observedAt": "2026-11-12T00:50:37.226067+00:00",
+          "sourceHash": "28fb20bccaec30ca069fd9c4c307b705e1a1a965da68388447cf15a85b9ca549",
+          "access": "明确关闭",
           "title": "教研实习生（D111221）",
           "family": "教研",
           "location": "北京市",
@@ -927,9 +952,9 @@
       "scopeNote": "涉及理科学科和大模型内容标准，未限定学习机业务",
       "id": "job-72c2576db513719a",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
+      "lastSeen": "2026-11-12T00:50:37.226067+00:00",
       "sourceHash": "36c9c5a716698fc57bea892699ec42893e9dd1bf0d138db579138097c6407a78",
-      "change": "首次收录基线",
+      "change": "持续可见",
       "versions": [
         {
           "observedAt": "2026-11-09T02:30:42.120805+00:00",
@@ -1537,6 +1562,73 @@
           "educationCategories": null
         }
       ]
+    },
+    {
+      "company": "作业帮",
+      "postingId": "0223c4d9-1a3a-4d44-b3da-ce58723e1311",
+      "title": "题库教研（D111300）",
+      "family": "教研",
+      "location": "西安（职责正文；列表地点为其他）",
+      "stages": [
+        "需求与规划",
+        "研发与系统",
+        "质量与合规"
+      ],
+      "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/0223c4d9-1a3a-4d44-b3da-ce58723e1311",
+      "postedAt": "2026-11-11",
+      "access": "正文可见",
+      "responsibilities": [
+        "审核、评估对应学科题目，分析答案错误并反馈管理人员",
+        "按产品及业务需求对接业务方，提出功能优化建议"
+      ],
+      "interfaces": [
+        "原文：错误分析反馈管理人员，产品建议对接业务方；最终内容放行权及模型接口未披露"
+      ],
+      "requirements": [
+        "学科基础及家教、答题经验优先，熟悉初高中教材优先",
+        "办公软件、学习能力、细节校对和执行能力"
+      ],
+      "decisionQuestion": "题目错误从审核到修正如何关闭，谁对学科正确性和产品采纳分别负责？",
+      "boundary": "实习岗位正文为教育内容参考，未证明学习机归属；学段和地点表述存在不一致，需向招聘方核实。不同岗位ID之间不视为替岗，首次收录不等于新增编制，人数、工作量及实际权限未知。",
+      "locator": "岗位职责、任职要求及业务说明",
+      "coverage": "body",
+      "educationResearch": true,
+      "businessScope": "教育业务参考",
+      "scopeNote": "题库教研审核与业务反馈，未披露硬件品类；正文岗位名为小数教研，要求却写初高中教材，学段边界待确认。",
+      "id": "job-412d1d016a91f620",
+      "firstSeen": "2026-11-12T00:50:37.226067+00:00",
+      "lastSeen": "2026-11-12T00:50:37.226067+00:00",
+      "sourceHash": "09a97edfe7628d536cd8c7c73e1d8519fd5c1fd5c36e5e527666029b4afc8427",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-12T00:50:37.226067+00:00",
+          "sourceHash": "09a97edfe7628d536cd8c7c73e1d8519fd5c1fd5c36e5e527666029b4afc8427",
+          "access": "正文可见",
+          "title": "题库教研（D111300）",
+          "family": "教研",
+          "location": "西安（职责正文；列表地点为其他）",
+          "responsibilities": [
+            "审核、评估对应学科题目，分析答案错误并反馈管理人员",
+            "按产品及业务需求对接业务方，提出功能优化建议"
+          ],
+          "interfaces": [
+            "原文：错误分析反馈管理人员，产品建议对接业务方；最终内容放行权及模型接口未披露"
+          ],
+          "requirements": [
+            "学科基础及家教、答题经验优先，熟悉初高中教材优先",
+            "办公软件、学习能力、细节校对和执行能力"
+          ],
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "businessScope": "教育业务参考",
+          "scopeNote": "题库教研审核与业务反馈，未披露硬件品类；正文岗位名为小数教研，要求却写初高中教材，学段边界待确认。",
+          "educationCategories": null
+        }
+      ]
     }
   ],
   "changes": [
@@ -1735,6 +1827,22 @@
     {
       "jobId": "job-1aaf56ee506f9b32",
       "observedAt": "2026-11-09T02:30:42.120805+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-d8e8f5d6a35caf48",
+      "observedAt": "2026-11-12T00:50:37.226067+00:00",
+      "kind": "来源明确关闭",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-412d1d016a91f620",
+      "observedAt": "2026-11-12T00:50:37.226067+00:00",
       "kind": "首次收录基线",
       "fields": [],
       "before": {},
@@ -2111,6 +2219,49 @@
         }
       ],
       "checkedAt": "2026-11-11T00:44:01.794961+00:00"
+    },
+    {
+      "company": "作业帮",
+      "state": "partial",
+      "complete": false,
+      "note": "当前教研岗位定向复核；不是完整目录，不能从岗位增减推断编制。",
+      "familyChecks": [
+        {
+          "family": "教研",
+          "state": "body",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/0223c4d9-1a3a-4d44-b3da-ce58723e1311",
+          "jobIds": [
+            "job-412d1d016a91f620"
+          ],
+          "note": "题库教研审核与业务反馈，未披露硬件品类；正文岗位名为小数教研，要求却写初高中教材，学段边界待确认。"
+        },
+        {
+          "family": "供应链",
+          "state": "index",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/jobs?keyword=%E9%87%87%E8%B4%AD&page=1&anchorName=jobsList",
+          "note": "当前关键词采购无匹配；未覆盖全目录，不能视为无岗或缺口消失。",
+          "jobIds": []
+        }
+      ],
+      "checkedAt": "2026-11-12T00:50:37.226067+00:00"
+    },
+    {
+      "company": "科大讯飞",
+      "state": "partial",
+      "complete": false,
+      "note": "当前教研岗位定向复核；不是完整目录，不能从岗位增减推断编制。",
+      "familyChecks": [
+        {
+          "family": "教研",
+          "state": "body",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=b3cb393c-b37e-4b1a-a6bb-88af35871a09",
+          "jobIds": [
+            "job-72c2576db513719a"
+          ],
+          "note": "涉及理科学科和大模型内容标准，未限定学习机业务"
+        }
+      ],
+      "checkedAt": "2026-11-12T00:50:37.226067+00:00"
     }
   ],
   "insights": [
@@ -2175,15 +2326,34 @@
         "job-f3f120078f21d7a5",
         "job-dee6ed39b271d521",
         "job-d8e8f5d6a35caf48",
-        "job-a74c7e3ad3b31f9d"
+        "job-a74c7e3ad3b31f9d",
+        "job-412d1d016a91f620"
       ],
-      "finding": "结构岗位直接涉及儿童手表；算法样本涉及健康穿戴及女性生理；教研为化学教学支持，渠道样本为图书经销。",
+      "finding": "结构样本直接涉及儿童手表；算法样本涉及健康穿戴，渠道样本为图书经销。原化学教研实习岗位于11月12日明确停止招聘；另一个11月11日发布的题库教研岗位涉及题目审核、错因反馈和产品优化建议，仍未说明硬件归属。",
       "interpretation": "研究判断：同一品牌下需要分业务建立人才地图，儿童手表的结构与可靠性能力已有直接岗位证据。",
       "alternative": "招聘可能跨业务或为储备需求，无法从并列职位证明这些人属于同一产品团队。",
       "nextAction": "后续优先补学习机教研/算法、硬件供应链和零售岗位，查明产品线归属再比较配置。",
-      "boundary": "当前不能形成作业帮学习机全团队画像；没有已验证的新品上市、扩编或实际人才缺口结论。",
-      "reviewedAt": "2026-11-09T02:30:42.120805+00:00",
-      "history": []
+      "boundary": "当前不能形成作业帮学习机全团队画像。明确关闭与新收录是不同岗位ID的独立事实，不能解释为替岗、扩编或缩编；旧岗位职责保留为历史参考，学段及最终放行权待核实。",
+      "reviewedAt": "2026-11-12T00:50:37.226067+00:00",
+      "history": [
+        {
+          "id": "edu-zuo-scope",
+          "educationResearch": true,
+          "title": "作业帮：先分清儿童手表、健康穿戴和教学内容岗位",
+          "jobIds": [
+            "job-f3f120078f21d7a5",
+            "job-dee6ed39b271d521",
+            "job-d8e8f5d6a35caf48",
+            "job-a74c7e3ad3b31f9d"
+          ],
+          "finding": "结构岗位直接涉及儿童手表；算法样本涉及健康穿戴及女性生理；教研为化学教学支持，渠道样本为图书经销。",
+          "interpretation": "研究判断：同一品牌下需要分业务建立人才地图，儿童手表的结构与可靠性能力已有直接岗位证据。",
+          "alternative": "招聘可能跨业务或为储备需求，无法从并列职位证明这些人属于同一产品团队。",
+          "nextAction": "后续优先补学习机教研/算法、硬件供应链和零售岗位，查明产品线归属再比较配置。",
+          "boundary": "当前不能形成作业帮学习机全团队画像；没有已验证的新品上市、扩编或实际人才缺口结论。",
+          "reviewedAt": "2026-11-09T02:30:42.120805+00:00"
+        }
+      ]
     },
     {
       "id": "edu-ifly-loop",

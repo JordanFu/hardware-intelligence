@@ -974,6 +974,60 @@
           "note": "HTTP403；浏览器回源成功，两种访问状态分别保留。"
         }
       ]
+    },
+    {
+      "completedAt": "2026-11-12T00:51:14.659134+00:00",
+      "summary": "完成作业帮、讯飞当前教研职责复核：作业帮旧教研实习岗明确关闭，另一题库教研岗首次收录；讯飞同ID职责未变。修订作业帮组织观察并保留旧版，未推断团队扩缩。采购检索与掌阅阅读器资料仍有缺口，现有产品档案无证据支持实质变更。 掌阅尚未有合格档案，访问失败保存在当日日报来源检查中。",
+      "checks": [
+        {
+          "company": "作业帮",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/0223c4d9-1a3a-4d44-b3da-ce58723e1311",
+          "name": "题库教研（D111300）",
+          "state": "body",
+          "checkedAt": "2026-11-12T00:44:31.317Z",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "学习硬件研究的教育业务参照；题库教研审核与业务反馈，未披露硬件品类；正文岗位名为小数教研，要求却写初高中教材，学段边界待确认。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=b3cb393c-b37e-4b1a-a6bb-88af35871a09",
+          "name": "AI研究院-数学教研员（小\\初\\高）-合肥",
+          "state": "body",
+          "checkedAt": "2026-11-12T00:43:54.099Z",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "学习硬件研究的教育业务参照；涉及理科学科和大模型内容标准，未限定学习机业务"
+        },
+        {
+          "company": "作业帮",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/jobs?keyword=%E9%87%87%E8%B4%AD&page=1&anchorName=jobsList",
+          "name": "采购关键词定向检索",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:45:17.988Z",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "未匹配正文，保留供应链证据缺口。"
+        },
+        {
+          "company": "作业帮",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/dcfceae0-9c23-47ba-aac8-1a3ccbb2142b",
+          "name": "既有教研岗位关闭状态",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:43:54.124Z",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "页面明确停止招聘，仅复核可见性；历史职责保留，不能推断关闭原因或团队缩减。 此处仅记状态信息，不计入当前职责正文覆盖；原文与关闭证据见岗位记录。"
+        }
+      ]
     }
   ],
   "history": [

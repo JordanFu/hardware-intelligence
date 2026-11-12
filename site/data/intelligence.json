@@ -1,8 +1,123 @@
 {
   "schemaVersion": 1,
-  "lastCompletedAt": "2026-11-11T00:45:55.209301+00:00",
+  "lastCompletedAt": "2026-11-12T00:50:31.662425+00:00",
   "method": "Codex 初筛评分 + 逐条证据复核；非两个独立模型评分",
   "items": [
+    {
+      "id": "rss-71efdf861fff63c4",
+      "eventId": "bambu-circle-europe-pilot",
+      "developmentId": "announcement-20261111",
+      "titleZh": "拓竹 Bambu Circle：把维修、零售和培训纳入本地伙伴计划",
+      "originalTitle": "Bambu Lab to present the Bambu Circle programme and showcase H3C and R1 at Formnext 2026",
+      "brief": {
+        "lead": "拓竹宣布 Bambu Circle 本地授权伙伴计划，将先在荷兰试点，由公司负责协调、培训和认证，伙伴可提供维修、小型零售、打印及培训服务。对智能硬件研究，这条新闻的重点是渠道与售后如何连接；欧洲覆盖和伙伴收益仍属于待验证目标。",
+        "points": [
+          "官方计划在11月17日至20日Formnext展会介绍完整方案，已提供欧洲伙伴候补登记。",
+          "计划先荷兰试点，2027年初扩展德国和法国；具体入选条件、服务责任和经济回报仍需后续规则。"
+        ]
+      },
+      "stages": [
+        "渠道与销售",
+        "服务与生命周期",
+        "经营与组织"
+      ],
+      "domestic": true,
+      "companies": [
+        "Bambu Lab 拓竹"
+      ],
+      "publishedAt": "2026-11-11T07:08:40+00:00",
+      "kind": "行业动态",
+      "category": "制造与创作",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 18,
+          "证据质量": 18,
+          "机制清晰": 17,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "读取官方全文，具体新增进展是本地授权伙伴试点计划，区别于既有H3C和R1发布；日期核对官方RSS，计划与结果分开。"
+        }
+      },
+      "boundary": "官方公告描述荷兰试点及欧洲扩展计划；Formnext展示尚未发生，2027年德国、法国扩展和一小时服务覆盖均不是已实现结果。未取得伙伴合同、收入、维修验收、用户结果或实际人员配置。",
+      "meaning": "研究硬件渠道时，应同时核对伙伴服务范围、品牌培训认证、售后责任和备件支持，而不只记录门店或销量。",
+      "question": "伙伴遇到质保、维修返工和备件不足时，由谁承担成本、验收与用户沟通？",
+      "eventReason": "新增本地授权伙伴试点及扩展计划，与设备发布属于不同行动；不重复收录产品参数。",
+      "organization": [
+        {
+          "kind": "已披露机制",
+          "title": "品牌协调认证与本地伙伴服务的分工计划",
+          "observation": "公告把协调、培训和认证安排给拓竹，列出伙伴面向用户的维修、零售、打印和培训服务。",
+          "implication": "研究判断：可沿服务验收、备件、质保升级和伙伴支持梳理接口；正式授权与收益规则仍待核验。",
+          "boundary": "官方公告描述荷兰试点及欧洲扩展计划；Formnext展示尚未发生，2027年德国、法国扩展和一小时服务覆盖均不是已实现结果。未取得伙伴合同、收入、维修验收、用户结果或实际人员配置。",
+          "factIndexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "practices": [
+        {
+          "title": "本地伙伴同时承接渠道与服务的计划",
+          "method": "品牌计划组织培训认证，本地伙伴提供维修、零售和打印培训；跟踪正式协议及试点交付。",
+          "conditions": "荷兰试点与欧洲扩展计划，不能外推至中国市场或全部伙伴。",
+          "outcome": "仅有方案公告，没有覆盖率、伙伴收入或用户服务改善结果。",
+          "boundary": "官方公告描述荷兰试点及欧洲扩展计划；Formnext展示尚未发生，2027年德国、法国扩展和一小时服务覆盖均不是已实现结果。未取得伙伴合同、收入、维修验收、用户结果或实际人员配置。",
+          "nextCheck": "核对正式伙伴条款、质保边界、备件机制和试点实际交付，再判断可迁移内容。",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期",
+            "经营与组织"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "官方宣布计划以荷兰试点启动。",
+          "sourceUrl": "https://blog.bambulab.com/bambu-lab-to-present-the-bambu-circle-programme-and-showcase-h3c-and-r1-at-formnext-2026",
+          "locator": "Bambu Circle: 3D printing as a local business"
+        },
+        {
+          "claim": "拓竹计划负责协调、培训与认证；伙伴服务包括本地维修、零售、打印及培训。",
+          "sourceUrl": "https://blog.bambulab.com/bambu-lab-to-present-the-bambu-circle-programme-and-showcase-h3c-and-r1-at-formnext-2026",
+          "locator": "Bambu Circle / partner scope"
+        },
+        {
+          "claim": "公告将德国和法国的扩展安排在2027年初。",
+          "sourceUrl": "https://blog.bambulab.com/bambu-lab-to-present-the-bambu-circle-programme-and-showcase-h3c-and-r1-at-formnext-2026",
+          "locator": "European rollout"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://blog.bambulab.com/bambu-lab-to-present-the-bambu-circle-programme-and-showcase-h3c-and-r1-at-formnext-2026",
+          "name": "Bambu Lab 官方博客",
+          "publishedAt": "2026-11-11T07:08:40+00:00",
+          "publisherGroup": "Bambu Lab",
+          "role": "official",
+          "textHash": "7ffe818eb103a8e3c23e4cf1509de907761030d9ab0772d611607d283491c3f4",
+          "readAt": "2026-11-12T00:44:21.766218+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-12T00:50:31.659717+00:00",
+      "sourceDate": "2026-11-11T07:08:40+00:00",
+      "date": "2026-11-11T07:08:40+00:00",
+      "title": "拓竹 Bambu Circle：把维修、零售和培训纳入本地伙伴计划",
+      "summary": "拓竹宣布 Bambu Circle 本地授权伙伴计划，将先在荷兰试点，由公司负责协调、培训和认证，伙伴可提供维修、小型零售、打印及培训服务。对智能硬件研究，这条新闻的重点是渠道与售后如何连接；欧洲覆盖和伙伴收益仍属于待验证目标。"
+    },
     {
       "id": "rss-6e07690c27eb09da",
       "eventId": "rss-6e07690c27eb09da",
@@ -4220,6 +4335,20 @@
   ],
   "events": [
     {
+      "id": "bambu-circle-europe-pilot",
+      "representativeId": "rss-71efdf861fff63c4",
+      "itemIds": [
+        "rss-71efdf861fff63c4"
+      ],
+      "publisherGroups": [
+        "Bambu Lab"
+      ],
+      "developmentIds": [
+        "announcement-20261111"
+      ],
+      "selected": true
+    },
+    {
       "id": "rss-6e07690c27eb09da",
       "representativeId": "rss-6e07690c27eb09da",
       "itemIds": [
@@ -7093,6 +7222,465 @@
       "completedAt": "2026-11-11T00:45:55.209301+00:00",
       "reviewedCount": 2,
       "selectedCount": 2
+    },
+    {
+      "coverage": "6个RSS源5个成功；30条候选初筛，阅读全文确认1条拓竹本地伙伴新进展。实际查阅拓竹、xTool、作业帮和科大讯飞4家国内公司，覆盖制造、质量、渠道、服务与组织；2家核心竞品当前岗位正文。作业帮旧岗位明确关闭与另一岗位首次收录分别记录。",
+      "sourceChecks": [
+        {
+          "url": "https://blog.bambulab.com/bambu-lab-to-present-the-bambu-circle-programme-and-showcase-h3c-and-r1-at-formnext-2026",
+          "company": "Bambu Lab 拓竹",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期",
+            "经营与组织"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "checkedAt": "2026-11-12T00:44:21.766218+00:00",
+          "note": "实际阅读全文，区分计划、试点与待验证结果。"
+        },
+        {
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/0223c4d9-1a3a-4d44-b3da-ce58723e1311",
+          "company": "作业帮",
+          "stages": [
+            "研发与系统",
+            "质量与合规",
+            "经营与组织"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "checkedAt": "2026-11-12T00:44:31.317Z",
+          "note": "新岗位ID正文，教育业务参考，未证明学习机归属；不把首次收录当扩编。"
+        },
+        {
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/dcfceae0-9c23-47ba-aac8-1a3ccbb2142b",
+          "company": "作业帮",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "checkedAt": "2026-11-12T00:43:54.124Z",
+          "note": "既有岗位明确停止招聘，保留历史职责，不推断关闭原因。"
+        },
+        {
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=b3cb393c-b37e-4b1a-a6bb-88af35871a09",
+          "company": "科大讯飞",
+          "stages": [
+            "研发与系统",
+            "质量与合规",
+            "经营与组织"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "checkedAt": "2026-11-12T00:43:54.099Z",
+          "note": "同ID教研正文复核无实质变化；保持原职责版本。"
+        },
+        {
+          "url": "https://support.xtool.com/article/2017",
+          "company": "xTool",
+          "stages": [
+            "制造与交付",
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-12T00:44:21.766994+00:00",
+          "note": "复核人员培训、责任角色和场所前提，不将单型号说明推广为法规。"
+        },
+        {
+          "url": "https://support.xtool.com/article/1963",
+          "company": "xTool",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-12T00:49:03.733Z",
+          "note": "浏览器读取当前工艺指南，复核原理、速度与软件因素；直连超时分别保留。"
+        },
+        {
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/jobs?keyword=%E9%87%87%E8%B4%AD&page=1&anchorName=jobsList",
+          "company": "作业帮",
+          "stages": [
+            "供应链与采购"
+          ],
+          "purpose": "recruitment",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:45:17.988Z",
+          "note": "关键词采购返回暂无匹配职位；不是完整目录，不等于无供应链岗位。"
+        },
+        {
+          "url": "https://www.ireader.com/",
+          "company": null,
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "purpose": "practice",
+          "state": "error",
+          "checkedAt": "2026-11-12T00:45:17.989Z",
+          "note": "掌阅入口浏览器阻止访问，未取得硬件正文且未完成该入口硬件归属确认，不据此建档。"
+        },
+        {
+          "url": "https://support.xtool.com/article/1963",
+          "company": "xTool",
+          "stages": [
+            "研发与系统",
+            "制造与交付"
+          ],
+          "purpose": "practice",
+          "state": "error",
+          "checkedAt": "2026-11-12T00:44:21.766888+00:00",
+          "note": "直连连接超时，另用浏览器取得正文，保留失败。"
+        },
+        {
+          "url": "https://support.xtool.com/article/1963",
+          "company": "xTool",
+          "stages": [
+            "研发与系统",
+            "制造与交付"
+          ],
+          "purpose": "practice",
+          "state": "error",
+          "checkedAt": "2026-11-12T00:45:32.652109+00:00",
+          "note": "直连重试仍失败，不能据此推断材料不存在。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/622.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/331.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/152.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/146.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/828.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/755.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/535.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/516.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/995.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/768.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/767.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/546.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/838.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/807.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/796.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/769.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/768.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/434.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/432.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/401.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/399.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/398.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/333.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/308.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/295.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/226.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/210.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/188.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://blog.bambulab.com/from-cars-to-robotic-arms-inspiring-young-engineers-through-hands-on-stem",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-12T00:50:31.461860+00:00",
+          "note": "仅完成候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/838.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "error",
+          "checkedAt": "2026-11-12T00:43:34.206302+00:00",
+          "note": "自动正文读取连接超时，未完成浏览器补读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/796.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "error",
+          "checkedAt": "2026-11-12T00:43:34.206302+00:00",
+          "note": "自动正文读取连接超时，未完成浏览器补读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/768.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "error",
+          "checkedAt": "2026-11-12T00:43:34.206302+00:00",
+          "note": "自动正文读取连接超时，未完成浏览器补读。"
+        }
+      ],
+      "knownGaps": [
+        "29条候选未完成逐篇正文审核；未入选不表示行业没有其他动态。",
+        "作业帮采购关键词无匹配，仅记录检索范围；直接学习硬件供应链岗位缺口仍在。",
+        "掌阅入口访问受阻，未取得可支持国内阅读器档案的硬件正文。",
+        "知识3节点继续部分复核，完整基础定义、指标和实施结果仍有缺口。"
+      ],
+      "failedSources": [
+        "CNX RSS连接超时；3条IT之家候选正文连接超时。",
+        "xTool工艺指南直连及重试超时，浏览器已读到正文。",
+        "掌阅访问受浏览器阻止，未取得正文。",
+        "掌阅入口浏览器阻止访问，未取得硬件正文且未完成该入口硬件归属确认，不据此建档。",
+        "直连连接超时，另用浏览器取得正文，保留失败。",
+        "直连重试仍失败，不能据此推断材料不存在。",
+        "自动正文读取连接超时，未完成浏览器补读。"
+      ],
+      "coverageCheck": {
+        "passed": true,
+        "companies": [
+          "Bambu Lab 拓竹",
+          "xTool",
+          "作业帮",
+          "科大讯飞"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规"
+        ],
+        "recruitmentCompanies": [
+          "作业帮",
+          "科大讯飞"
+        ],
+        "gaps": [],
+        "usableSources": 36
+      },
+      "successfulScan": true,
+      "completedAt": "2026-11-12T00:50:31.662425+00:00",
+      "reviewedCount": 1,
+      "selectedCount": 1
     }
   ]
 }
