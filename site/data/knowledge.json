@@ -640,18 +640,19 @@
       "updatedAt": "2026-11-08T00:50:25.860268+00:00"
     },
     "chain-8": {
-      "attemptedAt": "2026-11-08T00:50:25.860268+00:00",
+      "attemptedAt": "2026-11-13T00:48:21.968448+00:00",
       "status": "partial",
-      "assessment": "优先复核尚无完整复核记录的节点。根据今天实际读取的官方章节或岗位索引补充字段；其余概念、指标及运行效果保留缺口，不推进完整复核日期。",
+      "assessment": "重读产品线经理生命周期、退市流程、工厂新品及渠道要求，已有跨团队责任问题仍成立。岗位期望不证明预算权限、汇报关系或实际人员负担，未改写未验证的组织结论。",
       "gaps": [
-        "正式汇报线、预算权限及职责落地情况未知。",
-        "现金利润及组织效率测量口径没有在本轮完整复核。"
+        "现金、利润与组织效率指标尚未完成权威口径复核。",
+        "追觅补充依据未取得本轮当前岗位正文，保持历史证据边界。"
       ],
       "reviewedFields": [
-        "basics",
         "exercise",
+        "flow",
         "pitfall",
-        "team"
+        "team",
+        "title"
       ],
       "evidence": [
         {
@@ -682,54 +683,18 @@
               "coverage": "body"
             }
           ]
-        },
-        {
-          "itemId": "dreame-director",
-          "title": "追觅产品总监样本：产品路线、团队建设与经营责任相连",
-          "facts": [
-            {
-              "claim": "岗位要求管理产品生命周期及团队能力建设。",
-              "sourceUrl": "https://dreame.zhiye.com/jobs",
-              "locator": "产品总监 J58872 / 工作职责"
-            },
-            {
-              "claim": "岗位要求对产品部资源协调和经营指标负责。",
-              "sourceUrl": "https://dreame.zhiye.com/jobs",
-              "locator": "产品总监 J58872 / 工作职责第 6 项"
-            }
-          ],
-          "boundary": "官网已验证招聘系统归属，但当前正文页为空，仅使用搜索索引。列表部分其他岗位出现职责与资格错位，本条仅采用边界清楚的 J58872 段落；当前在招、人数及实际制度未知。",
-          "sources": [
-            {
-              "url": "https://dreame.zhiye.com/jobs",
-              "name": "追觅官方招聘",
-              "publishedAt": "2026-04-07",
-              "publisherGroup": "追觅官方招聘",
-              "role": "official",
-              "textHash": "e03e0387a35096a887e45ec2844f8e2ee0d8f3fd81c55b223c13d1a9d89a85f4",
-              "readAt": "2026-11-08T00:49:19.903614+00:00",
-              "coverage": "excerpt"
-            }
-          ]
         }
       ],
       "sourceChecks": [
         {
           "itemId": "ecovacs-plm",
           "url": "https://mall.ecovacs.cn/job-detail-516.html",
-          "checkedAt": "2026-11-08T00:50:25.776128+00:00",
+          "checkedAt": "2026-11-13T00:44:17.411244+00:00",
           "state": "body",
-          "note": "当天读取当前官方正文的条目所列章节，仅支持本次复核字段。"
-        },
-        {
-          "itemId": "dreame-director",
-          "url": "https://dreame.zhiye.com/jobs",
-          "checkedAt": "2026-11-08T00:50:25.776128+00:00",
-          "state": "index",
-          "note": "当天读取官方索引中边界明确的产品总监段落，正文页不可用。"
+          "note": "实际复核所列章节与字段，未覆盖内容保留缺口；不延长完整复核期限。"
         }
       ],
-      "reviewedAt": "2026-11-08T00:50:25.860268+00:00",
+      "reviewedAt": "2026-11-13T00:48:21.968448+00:00",
       "patch": {
         "team": "经营、产品线与专业职能明确谁决策、谁提供证据、谁对交付负责。 科沃斯岗位样本把退市纳入产品线职责，追觅索引把团队建设、资源协调与经营指标并列；研究时需进一步查明这些责任对应的预算、授权和跨部门接口。",
         "exercise": "为一个跨团队取舍写清最终负责人、异议处理、所需证据和复盘窗口。 从一个新品上线或老产品退出案例，分别列出产品、制造、渠道与服务的交付物，核实谁能调配资源，谁承担未解决的用户问题。"
@@ -906,12 +871,12 @@
       "updatedAt": "2026-11-08T00:50:25.860268+00:00"
     },
     "chain-6": {
-      "attemptedAt": "2026-11-09T00:50:51.394323+00:00",
+      "attemptedAt": "2026-11-13T00:48:21.968448+00:00",
       "status": "partial",
-      "assessment": "本轮优先处理四个尚无复核记录的节点。按当前正文核对所列字段并补适用条件；剩余基础定义、指标与观察对象仍待系统复核，不推进完整复核日期。",
+      "assessment": "重读授权渠道、地区范围、购买证明和维修前备份要求，既有渠道到服务证据交接逻辑仍成立；仅为该品牌所披露条款，非通用法规或履约效果。",
       "gaps": [
-        "Sell-in、sell-through 与贡献利润的规范口径本轮未用独立权威资料完整复核。",
-        "未取得渠道预测、库存及退货分母和实际售后耗时。"
+        "sell-in、sell-through及贡献利润口径仍需权威来源复核。",
+        "预测、库存、退货及用户办理耗时缺少当前可比数据。"
       ],
       "reviewedFields": [
         "exercise",
@@ -954,12 +919,12 @@
         {
           "itemId": "xreal-warranty",
           "url": "https://us.shop.xreal.com/pages/warranty-policy",
-          "checkedAt": "2026-11-09T00:46:58.382936+00:00",
+          "checkedAt": "2026-11-13T00:45:13.304Z",
           "state": "body",
-          "note": "实际读取当天当前正文的所述章节或一页公告；只支持本轮所列字段，不将相关链接等同全文复核。"
+          "note": "实际复核所列章节与字段，未覆盖内容保留缺口；不延长完整复核期限。"
         }
       ],
-      "reviewedAt": "2026-11-09T00:50:51.394323+00:00",
+      "reviewedAt": "2026-11-13T00:48:21.968448+00:00",
       "patch": {
         "flow": "用户需求与库存 → 定价、渠道政策、交付承诺与终端反馈 还需核对销售主体、支持地区、购买凭证与设备序列号在售后受理中的衔接。",
         "team": "销售、市场、计划、零售、财务对齐销售预测、货盘、促销与退货规则。 XREAL 的公开流程提示渠道与服务之间存在购买证据交接；研究时应确认能否复用已授权订单信息，减少用户重复提交。",
@@ -981,17 +946,16 @@
       "updatedAt": "2026-11-09T00:50:51.394323+00:00"
     },
     "track-0": {
-      "attemptedAt": "2026-11-09T00:50:51.394323+00:00",
+      "attemptedAt": "2026-11-13T00:48:21.968448+00:00",
       "status": "partial",
-      "assessment": "本轮优先处理四个尚无复核记录的节点。按当前正文核对所列字段并补适用条件；剩余基础定义、指标与观察对象仍待系统复核，不推进完整复核日期。",
+      "assessment": "新增录音与Life Log保存机制的区分，明确文字记录和标签也需要核验。复核App版本条件、权限说明和服务入口；没有设备实测，不把官方说明当作完整隐私保障。",
       "gaps": [
-        "Meta、Apple、Samsung 等初始观察对象尚未本轮逐一核查。",
-        "佩戴负担、续航、真实任务成功率及权限数据流均缺当前实测。"
+        "Meta、Apple、Samsung观察对象未取得本轮当前正文。",
+        "真实任务成功率、佩戴负担及续航缺跨企业实测；雷鸟数据地点、期限和删除传播仍未知。"
       ],
       "reviewedFields": [
-        "chain",
         "constraint",
-        "examples",
+        "metrics",
         "team"
       ],
       "evidence": [
@@ -1020,6 +984,40 @@
               "role": "official",
               "textHash": "baf3fdfe5b2138279c70c0b231cb61d071a3d5438a304d2d85ce49ee4729dd3e",
               "readAt": "2026-11-09T00:46:58.353783+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "rayneo-recording-boundaries",
+          "title": "雷鸟录音与 Life Log：不保存音频，不等于不保留个人记录",
+          "facts": [
+            {
+              "claim": "Voice Memo录音结束后自动保存，可在Sessions回看转写与摘要。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "4.2 Voice Memo & AI Summary"
+            },
+            {
+              "claim": "Life Log不保留原始音频，但保留对话生成的文字记录。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "6.2 Life Log Data Storage"
+            },
+            {
+              "claim": "长期个人标签支持用户手动删除和更正。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "6.3 Manage Personal Profile Tags"
+            }
+          ],
+          "boundary": "无明确发布日期，按常青资料整理；只证明官方支持页对具体功能的描述，未做设备实测、后台审计或删除验证。文字、摘要和标签也可能承载个人信息；数据处理地点、保留时长、第三方模型范围及删除传播均未知。",
+          "sources": [
+            {
+              "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "name": "雷鸟创新官方资料",
+              "publishedAt": null,
+              "publisherGroup": "雷鸟创新",
+              "role": "official",
+              "textHash": "35478d807b7223713b5a12ff2473e1636ba03032ed0a7b3603156eca477e6da0",
+              "readAt": "2026-11-13T00:44:17.412588+00:00",
               "coverage": "body"
             }
           ]
@@ -1058,22 +1056,29 @@
         {
           "itemId": "rayneo-support",
           "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
-          "checkedAt": "2026-11-09T00:46:58.353783+00:00",
+          "checkedAt": "2026-11-13T00:44:17.412588+00:00",
           "state": "body",
-          "note": "实际读取当天当前正文的所述章节或一页公告；只支持本轮所列字段，不将相关链接等同全文复核。"
+          "note": "实际复核所列章节与字段，未覆盖内容保留缺口；不延长完整复核期限。"
+        },
+        {
+          "itemId": "rayneo-recording-boundaries",
+          "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "checkedAt": "2026-11-13T00:44:17.412588+00:00",
+          "state": "body",
+          "note": "实际复核所列章节与字段，未覆盖内容保留缺口；不延长完整复核期限。"
         },
         {
           "itemId": "xreal-warranty",
           "url": "https://us.shop.xreal.com/pages/warranty-policy",
-          "checkedAt": "2026-11-09T00:46:58.382936+00:00",
+          "checkedAt": "2026-11-13T00:45:13.304Z",
           "state": "body",
-          "note": "实际读取当天当前正文的所述章节或一页公告；只支持本轮所列字段，不将相关链接等同全文复核。"
+          "note": "实际复核所列章节与字段，未覆盖内容保留缺口；不延长完整复核期限。"
         }
       ],
-      "reviewedAt": "2026-11-09T00:50:51.394323+00:00",
+      "reviewedAt": "2026-11-13T00:48:21.968448+00:00",
       "patch": {
         "examples": "Meta、Apple、Samsung、雷鸟；本轮新增 XREAL 作为渠道与服务研究对象，不构成排名。",
-        "constraint": "佩戴舒适度、续航、隐私和持续使用 离线能力需按字幕、翻译等具体任务核验手机依赖、App 版本和预下载资源；不能仅凭“离线”断言数据不出端。",
+        "constraint": "佩戴舒适度、续航、隐私和持续使用 离线能力需按字幕、翻译等具体任务核验手机依赖、App 版本和预下载资源；不能仅凭“离线”断言数据不出端。 记录功能还应分别核对音频、转写、摘要与标签：雷鸟Life Log声明不存原始音频，但仍保留文字，不能据此推断没有个人数据留存。",
         "team": "光学 / 声学、算法、工业设计、移动应用、健康验证 还需核对 App、渠道与服务团队如何共用版本化功能条件，避免销售承诺与实际使用前提脱节。"
       },
       "lessons": [
@@ -1088,9 +1093,20 @@
             "xreal-warranty"
           ],
           "updatedAt": "2026-11-09T00:50:51.394323+00:00"
+        },
+        {
+          "id": "track-0-recording-data-boundaries",
+          "title": "“无音频留存”仍需追踪文字、摘要和标签",
+          "learning": "雷鸟支持页对Voice Memo与Life Log使用不同保存描述；一项功能不保留音频，不能替代对其余数据的核验。",
+          "application": "研究带录音、摘要或长期记忆的设备时，按数据类型列出生成、保存、访问、删除和第三方处理；优先核对用户能看懂并控制的实际操作。",
+          "boundary": "仅基于雷鸟iO当前支持说明，未验证实机、服务器、删除传播及人员流程。本文方法是研究解释，不是合规判断或行业最佳实践。",
+          "itemIds": [
+            "rayneo-recording-boundaries"
+          ],
+          "updatedAt": "2026-11-13T00:48:21.968448+00:00"
         }
       ],
-      "updatedAt": "2026-11-09T00:50:51.394323+00:00"
+      "updatedAt": "2026-11-13T00:48:21.968448+00:00"
     },
     "track-1": {
       "attemptedAt": "2026-11-09T00:50:51.394323+00:00",
@@ -1603,6 +1619,112 @@
           "hash": "643a07d3a5bd9b0ec0aeba7af0ff10f261d08099d705ce6f7120a02e1924b32f",
           "decision": "hold",
           "reason": "试点公告具有渠道与售后接口观察价值，但伙伴授权、维修验收、备件和实际服务结果尚缺。暂保留为跟踪线索，待正式条款或试点结果后沉淀，不把计划升级为通用实践。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-13T00:48:21.968448+00:00",
+      "reviewedNodes": [
+        "chain-8",
+        "chain-6",
+        "track-0"
+      ],
+      "decisions": [
+        {
+          "itemId": "rayneo-recording-boundaries",
+          "hash": "3e6203dfc15144b848ddd30a9da74b993635a01e8cc42e22e093088d6b56ece3",
+          "decision": "integrated",
+          "reason": "沉淀为按功能与数据类型核对保存承诺的研究方法，并明确缺少实测、数据流和删除验证；不升级为厂商已实现隐私收益或行业标准。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-13T00:49:25.848024+00:00",
+      "reviewedNodes": [],
+      "decisions": [
+        {
+          "itemId": "rss-bfc0b11493f1086c",
+          "hash": "5a09f37e781bbf73fb988fc069c85a998260649109b2905b7d4d320b2f5a42cb",
+          "decision": "hold",
+          "reason": "周度重审既有证据档案（本次未重新读取该来源正文，不刷新来源日期）：现有证据只有媒体所述视觉平台与轨迹调整，尚不能提炼专项团队接口或稳定的工艺验收方法；需一手工程说明。"
+        },
+        {
+          "itemId": "rss-1a47ee385dceb5a7",
+          "hash": "a3cafdb0afbcc77a63be1eeb4724ffe426ba2c86ad2ee7c3f03b0cc13a40c353",
+          "decision": "hold",
+          "reason": "周度重审既有证据档案（本次未重新读取该来源正文，不刷新来源日期）：九工具独立料路是架构事实，仍缺接口约束和对照测试，暂不转写为多材料系统设计原则。"
+        },
+        {
+          "itemId": "rss-513daddc394daa3d",
+          "hash": "b05f7d3cdf5feebb0cbd23b3e0d3c7b9fdcc3be1f9453c5f3d07418a8f919960",
+          "decision": "hold",
+          "reason": "周度重审既有证据档案（本次未重新读取该来源正文，不刷新来源日期）：适配时间表依旧只能支持计划事实；需核对实际固件发布、配置范围与兼容说明。"
+        },
+        {
+          "itemId": "rss-6e8d8bda55a6a330",
+          "hash": "71e1ced6c52ef5affa541d9a866159ceb89a5e0340b9c74cb38a7c287a4943cd",
+          "decision": "hold",
+          "reason": "周度重审既有证据档案（本次未重新读取该来源正文，不刷新来源日期）：课程愿景不能支持课程部署方法；缺老师工作、设备维护及持续使用前提。"
+        },
+        {
+          "itemId": "bambu-service",
+          "hash": "3cbbfe11ad177493549216365d69d99c3bd1156a749eafaa5991e862e7f86b6f",
+          "decision": "hold",
+          "reason": "周度重审既有证据档案（本次未重新读取该来源正文，不刷新来源日期）：批次与数量不确定性已记录，但交付和验收证据缺口仍在，不能推断维修效果。"
+        },
+        {
+          "itemId": "rss-7c6067afc189ee25",
+          "hash": "9440befaeec150b7ad3e3974b800182b5494a0c2ce2f73cc95ad8371e5489891",
+          "decision": "hold",
+          "reason": "周度重审既有证据档案（本次未重新读取该来源正文，不刷新来源日期）：补给困难可解释现场打印动机，不能证明打印件满足现场验收及材料边界。"
+        },
+        {
+          "itemId": "rss-fb9782751b5c994c",
+          "hash": "1e0ae17bfb9939ae9b338645fc1755a195011a6993e15b2f32beaf389871eb0f",
+          "decision": "hold",
+          "reason": "周度重审既有证据档案（本次未重新读取该来源正文，不刷新来源日期）：既有应用连接与无障碍试点不等于已验证使用收益；仍需用户验证与持续服务条件。"
+        },
+        {
+          "itemId": "rss-faad85aca1cd6f8b",
+          "hash": "b19a113eaab0ff71e7dab6a41e18b6668710331ec588e0747d4d1bf6d790f03b",
+          "decision": "hold",
+          "reason": "周度重审既有证据档案（本次未重新读取该来源正文，不刷新来源日期）：设备功率和用途不支撑通用安全、材料或交付规范，需对应说明与验证条件。"
+        },
+        {
+          "itemId": "anker-ifa",
+          "hash": "507fe6d9508cce480c798f24227d976de0cd350e748383a08a285cdad6589c9e",
+          "decision": "hold",
+          "reason": "周度重审既有证据档案（本次未重新读取该来源正文，不刷新来源日期）：品牌与门店陈列计划可作观察，但不证明内部组织合并或跨品类服务已落地。"
+        },
+        {
+          "itemId": "rss-73d3265f7743a41c",
+          "hash": "1cc48eae8f30fdaa86e7bb89d2bcbd32abe69a5e7de704a1e5d1641b3a1b3ca8",
+          "decision": "hold",
+          "reason": "周度重审既有证据档案（本次未重新读取该来源正文，不刷新来源日期）：多项需求组织设计是活动事实，缺使用后反馈与需求验收，不能断言需求流程有效。"
+        },
+        {
+          "itemId": "rss-4e1438b07dbaee4a",
+          "hash": "6cea76eb0291f4d6a96239e65a1a650c8223186cca837cee408eb823a17183bf",
+          "decision": "hold",
+          "reason": "周度重审既有证据档案（本次未重新读取该来源正文，不刷新来源日期）：工程处理与流程重做尚缺受理、修复、通知责任的具体接口，维持暂缓。"
+        },
+        {
+          "itemId": "rss-6e07690c27eb09da",
+          "hash": "c48904777f9bd562e33799ea9f3d3f874ab6a702317d625057b9932df2a03f87",
+          "decision": "hold",
+          "reason": "周度重审既有证据档案（本次未重新读取该来源正文，不刷新来源日期）：博客披露至少一次成功与失败分析，仍需基准论文和任务分母支持通用评测口径。"
+        },
+        {
+          "itemId": "day11-boox-browser",
+          "hash": "e7193b80f5e923eac4833d2d102eab991d4e31924d67f79d217eff9f0668e31f",
+          "decision": "hold",
+          "reason": "周度重审既有证据档案（本次未重新读取该来源正文，不刷新来源日期）：账号服务器和版本前提值得对照，但国内型号与账户范围仍不清楚，暂不跨机型推广。"
+        },
+        {
+          "itemId": "rss-71efdf861fff63c4",
+          "hash": "643a07d3a5bd9b0ec0aeba7af0ff10f261d08099d705ce6f7120a02e1924b32f",
+          "decision": "hold",
+          "reason": "周度重审既有证据档案（本次未重新读取该来源正文，不刷新来源日期）：荷兰伙伴试点和后续扩展仍是计划，缺正式授权、备件及验收规则。"
         }
       ]
     }
@@ -3643,6 +3765,276 @@
           "checkedAt": "2026-11-12T00:44:21.766218+00:00",
           "state": "body",
           "note": "当日实际读取当前正文所列章节；仅复核列明字段，未覆盖部分不延期。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-8",
+      "reviewedAt": "2026-11-13T00:48:21.968448+00:00",
+      "status": "partial",
+      "assessment": "重读产品线经理生命周期、退市流程、工厂新品及渠道要求，已有跨团队责任问题仍成立。岗位期望不证明预算权限、汇报关系或实际人员负担，未改写未验证的组织结论。",
+      "gaps": [
+        "现金、利润与组织效率指标尚未完成权威口径复核。",
+        "追觅补充依据未取得本轮当前岗位正文，保持历史证据边界。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "flow",
+        "pitfall",
+        "team",
+        "title"
+      ],
+      "changes": {},
+      "lessonChanges": [],
+      "evidence": [
+        {
+          "itemId": "ecovacs-plm",
+          "title": "科沃斯产品线经理职责：规划延伸到老产品退市",
+          "facts": [
+            {
+              "claim": "职责明确要求制定老产品退市计划和流程。",
+              "sourceUrl": "https://mall.ecovacs.cn/job-detail-516.html",
+              "locator": "岗位职责第 5 项"
+            },
+            {
+              "claim": "任职要求同时涉及工厂新品推进与市场渠道。",
+              "sourceUrl": "https://mall.ecovacs.cn/job-detail-516.html",
+              "locator": "任职要求第 3–4 项"
+            }
+          ],
+          "boundary": "完整岗位正文可读，但发布日期、地点及当前招聘状态未明确；首次收录是研究基线，不能推断新增岗位、编制或实际决策权。",
+          "sources": [
+            {
+              "url": "https://mall.ecovacs.cn/job-detail-516.html",
+              "name": "科沃斯官方商城招聘",
+              "publishedAt": null,
+              "publisherGroup": "科沃斯官方商城招聘",
+              "role": "official",
+              "textHash": "d3e3ffe7578d2b742c6886d079150ba7025206634199d0f44d424a181e8f242b",
+              "readAt": "2026-11-08T00:45:06.901704+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "ecovacs-plm",
+          "url": "https://mall.ecovacs.cn/job-detail-516.html",
+          "checkedAt": "2026-11-13T00:44:17.411244+00:00",
+          "state": "body",
+          "note": "实际复核所列章节与字段，未覆盖内容保留缺口；不延长完整复核期限。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-6",
+      "reviewedAt": "2026-11-13T00:48:21.968448+00:00",
+      "status": "partial",
+      "assessment": "重读授权渠道、地区范围、购买证明和维修前备份要求，既有渠道到服务证据交接逻辑仍成立；仅为该品牌所披露条款，非通用法规或履约效果。",
+      "gaps": [
+        "sell-in、sell-through及贡献利润口径仍需权威来源复核。",
+        "预测、库存、退货及用户办理耗时缺少当前可比数据。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "flow",
+        "pitfall",
+        "team"
+      ],
+      "changes": {},
+      "lessonChanges": [],
+      "evidence": [
+        {
+          "itemId": "xreal-warranty",
+          "title": "XREAL 服务条款样本：销售渠道与售后受理信息相连",
+          "facts": [
+            {
+              "claim": "条款只覆盖规定渠道及所支持地区。",
+              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+              "locator": "Scope"
+            },
+            {
+              "claim": "申请信息包含订单和故障设备序列号。",
+              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+              "locator": "Making a claim"
+            }
+          ],
+          "boundary": "本轮读取 Scope 与 Making a claim 等业务流程段落；这是厂商自述的商业保修流程样本，不是对法定权利或条款效力的法律判断。当前适用地区、机型和购买时间仍须逐案核对。",
+          "sources": [
+            {
+              "url": "https://us.shop.xreal.com/pages/warranty-policy",
+              "name": "XREAL 美国商城保修政策",
+              "publishedAt": "2024-04-08",
+              "publisherGroup": "XREAL 美国商城保修政策",
+              "role": "official",
+              "textHash": "f6d9abd8a0da1c0e46c8883c61dc2dcc1047721091f3eaef3a7b3eb81d86b685",
+              "readAt": "2026-11-09T00:46:58.382936+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "xreal-warranty",
+          "url": "https://us.shop.xreal.com/pages/warranty-policy",
+          "checkedAt": "2026-11-13T00:45:13.304Z",
+          "state": "body",
+          "note": "实际复核所列章节与字段，未覆盖内容保留缺口；不延长完整复核期限。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-0",
+      "reviewedAt": "2026-11-13T00:48:21.968448+00:00",
+      "status": "partial",
+      "assessment": "新增录音与Life Log保存机制的区分，明确文字记录和标签也需要核验。复核App版本条件、权限说明和服务入口；没有设备实测，不把官方说明当作完整隐私保障。",
+      "gaps": [
+        "Meta、Apple、Samsung观察对象未取得本轮当前正文。",
+        "真实任务成功率、佩戴负担及续航缺跨企业实测；雷鸟数据地点、期限和删除传播仍未知。"
+      ],
+      "reviewedFields": [
+        "constraint",
+        "metrics",
+        "team"
+      ],
+      "changes": {
+        "constraint": {
+          "before": "佩戴舒适度、续航、隐私和持续使用 离线能力需按字幕、翻译等具体任务核验手机依赖、App 版本和预下载资源；不能仅凭“离线”断言数据不出端。",
+          "after": "佩戴舒适度、续航、隐私和持续使用 离线能力需按字幕、翻译等具体任务核验手机依赖、App 版本和预下载资源；不能仅凭“离线”断言数据不出端。 记录功能还应分别核对音频、转写、摘要与标签：雷鸟Life Log声明不存原始音频，但仍保留文字，不能据此推断没有个人数据留存。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "track-0-recording-data-boundaries",
+            "title": "“无音频留存”仍需追踪文字、摘要和标签",
+            "learning": "雷鸟支持页对Voice Memo与Life Log使用不同保存描述；一项功能不保留音频，不能替代对其余数据的核验。",
+            "application": "研究带录音、摘要或长期记忆的设备时，按数据类型列出生成、保存、访问、删除和第三方处理；优先核对用户能看懂并控制的实际操作。",
+            "boundary": "仅基于雷鸟iO当前支持说明，未验证实机、服务器、删除传播及人员流程。本文方法是研究解释，不是合规判断或行业最佳实践。",
+            "itemIds": [
+              "rayneo-recording-boundaries"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "rayneo-support",
+          "title": "雷鸟 iO 支持说明：离线功能仍依赖手机、版本与语言包",
+          "facts": [
+            {
+              "claim": "离线翻译需提前下载语言对。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "4.1 / Offline Translation"
+            },
+            {
+              "claim": "页面的权限细节仍标注待最终版本确认。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "1.2 / App Permissions"
+            }
+          ],
+          "boundary": "无明确发布日期；本次读取设置与字幕翻译相关章节，页面存在未完成占位说明。没有设备实测、权限清单或数据流审计，不能断言功能全在眼镜端或数据不出端。",
+          "sources": [
+            {
+              "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "name": "雷鸟官方支持",
+              "publishedAt": null,
+              "publisherGroup": "雷鸟官方支持",
+              "role": "official",
+              "textHash": "baf3fdfe5b2138279c70c0b231cb61d071a3d5438a304d2d85ce49ee4729dd3e",
+              "readAt": "2026-11-09T00:46:58.353783+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "rayneo-recording-boundaries",
+          "title": "雷鸟录音与 Life Log：不保存音频，不等于不保留个人记录",
+          "facts": [
+            {
+              "claim": "Voice Memo录音结束后自动保存，可在Sessions回看转写与摘要。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "4.2 Voice Memo & AI Summary"
+            },
+            {
+              "claim": "Life Log不保留原始音频，但保留对话生成的文字记录。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "6.2 Life Log Data Storage"
+            },
+            {
+              "claim": "长期个人标签支持用户手动删除和更正。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "6.3 Manage Personal Profile Tags"
+            }
+          ],
+          "boundary": "无明确发布日期，按常青资料整理；只证明官方支持页对具体功能的描述，未做设备实测、后台审计或删除验证。文字、摘要和标签也可能承载个人信息；数据处理地点、保留时长、第三方模型范围及删除传播均未知。",
+          "sources": [
+            {
+              "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "name": "雷鸟创新官方资料",
+              "publishedAt": null,
+              "publisherGroup": "雷鸟创新",
+              "role": "official",
+              "textHash": "35478d807b7223713b5a12ff2473e1636ba03032ed0a7b3603156eca477e6da0",
+              "readAt": "2026-11-13T00:44:17.412588+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "xreal-warranty",
+          "title": "XREAL 服务条款样本：销售渠道与售后受理信息相连",
+          "facts": [
+            {
+              "claim": "条款只覆盖规定渠道及所支持地区。",
+              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+              "locator": "Scope"
+            },
+            {
+              "claim": "申请信息包含订单和故障设备序列号。",
+              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+              "locator": "Making a claim"
+            }
+          ],
+          "boundary": "本轮读取 Scope 与 Making a claim 等业务流程段落；这是厂商自述的商业保修流程样本，不是对法定权利或条款效力的法律判断。当前适用地区、机型和购买时间仍须逐案核对。",
+          "sources": [
+            {
+              "url": "https://us.shop.xreal.com/pages/warranty-policy",
+              "name": "XREAL 美国商城保修政策",
+              "publishedAt": "2024-04-08",
+              "publisherGroup": "XREAL 美国商城保修政策",
+              "role": "official",
+              "textHash": "f6d9abd8a0da1c0e46c8883c61dc2dcc1047721091f3eaef3a7b3eb81d86b685",
+              "readAt": "2026-11-09T00:46:58.382936+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "rayneo-support",
+          "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "checkedAt": "2026-11-13T00:44:17.412588+00:00",
+          "state": "body",
+          "note": "实际复核所列章节与字段，未覆盖内容保留缺口；不延长完整复核期限。"
+        },
+        {
+          "itemId": "rayneo-recording-boundaries",
+          "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "checkedAt": "2026-11-13T00:44:17.412588+00:00",
+          "state": "body",
+          "note": "实际复核所列章节与字段，未覆盖内容保留缺口；不延长完整复核期限。"
+        },
+        {
+          "itemId": "xreal-warranty",
+          "url": "https://us.shop.xreal.com/pages/warranty-policy",
+          "checkedAt": "2026-11-13T00:45:13.304Z",
+          "state": "body",
+          "note": "实际复核所列章节与字段，未覆盖内容保留缺口；不延长完整复核期限。"
         }
       ]
     }

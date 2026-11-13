@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-12T18:19:20.958714+00:00",
-  "lastSuccessfulAt": "2026-11-12T18:19:20.958714+00:00",
+  "checkedAt": "2026-11-13T00:40:22.965606+00:00",
+  "lastSuccessfulAt": "2026-11-13T00:40:22.965606+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-12T18:19:20.958714+00:00",
-      "lastSuccessAt": "2026-11-12T18:19:20.958714+00:00",
+      "checkedAt": "2026-11-13T00:40:22.965606+00:00",
+      "lastSuccessAt": "2026-11-13T00:40:22.965606+00:00",
       "received": 18,
       "matched": 1,
       "excluded": 17,
@@ -15,8 +15,8 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-12T18:19:20.958714+00:00",
-      "lastSuccessAt": "2026-11-12T18:19:20.958714+00:00",
+      "checkedAt": "2026-11-13T00:40:22.965606+00:00",
+      "lastSuccessAt": "2026-11-13T00:40:22.965606+00:00",
       "received": 50,
       "matched": 2,
       "excluded": 48,
@@ -25,8 +25,8 @@
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-12T18:19:20.958714+00:00",
-      "lastSuccessAt": "2026-11-12T18:19:20.958714+00:00",
+      "checkedAt": "2026-11-13T00:40:22.965606+00:00",
+      "lastSuccessAt": "2026-11-13T00:40:22.965606+00:00",
       "received": 10,
       "matched": 0,
       "excluded": 10,
@@ -35,8 +35,8 @@
     {
       "id": "bambu",
       "state": "ok",
-      "checkedAt": "2026-11-12T18:19:20.958714+00:00",
-      "lastSuccessAt": "2026-11-12T18:19:20.958714+00:00",
+      "checkedAt": "2026-11-13T00:40:22.965606+00:00",
+      "lastSuccessAt": "2026-11-13T00:40:22.965606+00:00",
       "received": 15,
       "matched": 15,
       "excluded": 0,
@@ -45,22 +45,58 @@
     {
       "id": "cnx",
       "state": "error",
-      "checkedAt": "2026-11-12T18:19:20.958714+00:00",
-      "error": "curl: (22) The requested URL returned error: 403",
+      "checkedAt": "2026-11-13T00:40:22.965606+00:00",
+      "error": "curl: (56) The requested URL returned error: 403",
       "lastSuccessAt": "2026-11-07T05:57:51.855328+00:00"
     },
     {
       "id": "ithome",
       "state": "ok",
-      "checkedAt": "2026-11-12T18:19:20.958714+00:00",
-      "lastSuccessAt": "2026-11-12T18:19:20.958714+00:00",
+      "checkedAt": "2026-11-13T00:40:22.965606+00:00",
+      "lastSuccessAt": "2026-11-13T00:40:22.965606+00:00",
       "received": 60,
-      "matched": 6,
-      "excluded": 54,
+      "matched": 8,
+      "excluded": 52,
       "error": null
     }
   ],
   "items": [
+    {
+      "id": "rss-3724755674f6ed64",
+      "title": "贾跃亭法拉第未来 FFR 机器人业务 2026 年前九个月收入约 230 万美元，计划 2027 年一季度进入芝加哥和达拉斯",
+      "url": "https://www.ithome.com/1/026/471.htm",
+      "date": "2026-11-13T00:04:39+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-13T00:40:22.965606+00:00"
+    },
+    {
+      "id": "rss-bf4cdfae1c41d026",
+      "title": "华为智能门锁 2 系列全新升级鸿蒙 7.0：新增回家抓拍、通话变声等",
+      "url": "https://www.ithome.com/1/026/468.htm",
+      "date": "2026-11-12T23:52:42+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "智能家居",
+      "status": "待核验",
+      "discoveredAt": "2026-11-13T00:40:22.965606+00:00"
+    },
+    {
+      "id": "rss-8b610ab241a9c18a",
+      "title": "不止测体脂：三星 Galaxy Watch 智能手表新专利，可监测腹部脂肪",
+      "url": "https://www.ithome.com/1/026/463.htm",
+      "date": "2026-11-12T23:31:27+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "可穿戴与眼镜",
+      "status": "待核验",
+      "discoveredAt": "2026-11-13T00:40:22.965606+00:00"
+    },
     {
       "id": "rss-d03abba1f2efb5a9",
       "title": "谷歌为 Android XR 智能眼镜推出全面隐私保护措施：录制指示灯、人脸模糊与数据即删",

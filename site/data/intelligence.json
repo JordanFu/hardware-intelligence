@@ -1,8 +1,82 @@
 {
   "schemaVersion": 1,
-  "lastCompletedAt": "2026-11-12T00:50:31.662425+00:00",
+  "lastCompletedAt": "2026-11-13T00:47:36.014024+00:00",
   "method": "Codex 初筛评分 + 逐条证据复核；非两个独立模型评分",
   "items": [
+    {
+      "id": "rss-73679a0244d41f07",
+      "eventId": "rss-73679a0244d41f07",
+      "developmentId": "initial",
+      "titleZh": "MakerWorld 推出首批周边众筹，暂不纳入硬件精选",
+      "originalTitle": "MakerWorld 推出首批周边众筹，暂不纳入硬件精选",
+      "brief": {
+        "lead": "MakerWorld于11月12日发布首批卫衣和T恤周边众筹，首轮截至11月26日。文章也介绍创作者众筹、佣金和订阅等变现渠道，但主要新增内容是品牌周边活动，未提供可验证的硬件研发、制造或组织变化，因此仅保留中文阅读摘要，不进入每日精选。",
+        "points": [
+          "周边通过MakerWorld众筹功能推出；活动结束不等于产品交付完成。",
+          "文中平台募资、收益和成功率为官方自述，缺少完整口径和独立核验，不用作创作者普遍收益或经营成效依据。"
+        ]
+      },
+      "stages": [
+        "渠道与销售",
+        "经营与组织"
+      ],
+      "domestic": true,
+      "companies": [
+        "Bambu Lab 拓竹"
+      ],
+      "publishedAt": "2026-11-12",
+      "kind": "行业动态",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 11,
+          "增量信息": 10,
+          "证据质量": 16,
+          "机制清晰": 10,
+          "可行动性": 8
+        },
+        "review": {
+          "decision": "hold",
+          "reason": "正文已读，但新增重点为周边营销；缺少硬件产销研或组织机制增量，不为填充日报放宽筛选。"
+        }
+      },
+      "eventReason": "同一主体与具体机制去重；无日期支持资料不作为今日新闻。",
+      "boundary": "厂商宣传文章，不据平台总量或头部收入推断典型创作者收益；未查阅具体众筹交付与退款条款。",
+      "meaning": "保留社区商业化观察线索，等待明确的创作者规则或交付责任变化。",
+      "question": "创作者收益、退款和交付责任的统计口径与分工是否有正式规则？",
+      "facts": [
+        {
+          "claim": "官方文章宣布首批卫衣、T恤周边通过众筹推出。",
+          "sourceUrl": "https://blog.bambulab.com/just-make-things-makerworlds-first-official-merch-collection-goes-live-on-crowdfunding/",
+          "locator": "开篇活动介绍"
+        },
+        {
+          "claim": "首轮众筹截至11月26日。",
+          "sourceUrl": "https://blog.bambulab.com/just-make-things-makerworlds-first-official-merch-collection-goes-live-on-crowdfunding/",
+          "locator": "开篇活动介绍"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://blog.bambulab.com/just-make-things-makerworlds-first-official-merch-collection-goes-live-on-crowdfunding/",
+          "name": "Bambu Lab 拓竹官方资料",
+          "publishedAt": "2026-11-12",
+          "publisherGroup": "Bambu Lab 拓竹",
+          "role": "official",
+          "textHash": "d504f381d4af91f1a83642b2026c63c91f5250eaf2013c436db514563d9d8bfb",
+          "readAt": "2026-11-13T00:45:40.844Z",
+          "coverage": "body"
+        }
+      ],
+      "score": 55,
+      "selected": false,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-13T00:47:36.011233+00:00",
+      "sourceDate": "2026-11-12",
+      "date": "2026-11-12",
+      "title": "MakerWorld 推出首批周边众筹，暂不纳入硬件精选",
+      "summary": "MakerWorld于11月12日发布首批卫衣和T恤周边众筹，首轮截至11月26日。文章也介绍创作者众筹、佣金和订阅等变现渠道，但主要新增内容是品牌周边活动，未提供可验证的硬件研发、制造或组织变化，因此仅保留中文阅读摘要，不进入每日精选。"
+    },
     {
       "id": "rss-71efdf861fff63c4",
       "eventId": "bambu-circle-europe-pilot",
@@ -4331,9 +4405,138 @@
       "date": null,
       "title": "Figure 夜班岗位：自主机器人仍需停机决策与交班接口",
       "summary": "Figure 当前夜班协调员正文要求安排操作员、追踪机器人运行与任务交付，并在故障、安全疑虑或运营阻碍时决定继续、调整或停机。它提供的是部署阶段的人机协作职责样本，不能证明净增岗位、替代人数或人员配置是否充足。"
+    },
+    {
+      "id": "rayneo-recording-boundaries",
+      "eventId": "rayneo-recording-boundaries",
+      "developmentId": "initial",
+      "titleZh": "雷鸟录音与 Life Log：不保存音频，不等于不保留个人记录",
+      "originalTitle": "雷鸟录音与 Life Log：不保存音频，不等于不保留个人记录",
+      "brief": {
+        "lead": "雷鸟 iO 支持页区分了两套记录流程：Voice Memo 录音结束后自动保存，并提供转写与摘要；Life Log 则声明不保留原始音频、保留对话生成的文字记录。研究录音设备时，应逐功能核对数据类型、保存方式和用户控制，不能把一项功能的说明套到全部设备数据。",
+        "points": [
+          "官方说明 Voice Memo 可以回看转写、AI摘要，并重新生成摘要；录音开始有白色指示灯。",
+          "Life Log 的“不存原始音频”仍包含文字记录；个人标签可手动删除或更正，不等于全部数据删除机制已验证。"
+        ]
+      },
+      "stages": [
+        "研发与系统",
+        "质量与合规",
+        "服务与生命周期"
+      ],
+      "domestic": true,
+      "companies": [
+        "雷鸟创新"
+      ],
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 18,
+          "机制清晰": 18,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "读取当前官方说明，事实与研究解释分开，保留适用范围与未知项。"
+        }
+      },
+      "eventReason": "同一主体与具体机制去重；无日期支持资料不作为今日新闻。",
+      "boundary": "无明确发布日期，按常青资料整理；只证明官方支持页对具体功能的描述，未做设备实测、后台审计或删除验证。文字、摘要和标签也可能承载个人信息；数据处理地点、保留时长、第三方模型范围及删除传播均未知。",
+      "meaning": "将录音、转写、摘要、个人标签分开建立数据说明及验收问题，减少用户对“无音频留存”的误解。",
+      "question": "删除一次会话后，转写、摘要、标签和第三方副本是否同步删除，由谁验证？",
+      "practices": [
+        {
+          "title": "按功能和数据类型核对记录设备的保存承诺",
+          "method": "逐项区分Voice Memo录音、Life Log文字、AI摘要与个人标签，核对每项控制和未知处理环节。",
+          "conditions": "适用于带记录、摘要或长期记忆功能的设备研究；具体说明只适用于雷鸟iO当前支持页。",
+          "outcome": "官方披露不同保存机制，没有独立验证删除效果、隐私收益或用户负担改善。",
+          "boundary": "无明确发布日期，按常青资料整理；只证明官方支持页对具体功能的描述，未做设备实测、后台审计或删除验证。文字、摘要和标签也可能承载个人信息；数据处理地点、保留时长、第三方模型范围及删除传播均未知。",
+          "nextCheck": "核对实际版本的数据导出、删除传播、保留期限和第三方模型处理说明。",
+          "stages": [
+            "研发与系统",
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "evidenceLevel": "官方披露做法",
+          "factIndexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "organization": [
+        {
+          "kind": "研究问题",
+          "title": "记录、摘要与标签需要共同的数据说明",
+          "observation": "同一支持页对录音、文字和个人标签列出不同保存与控制描述。",
+          "implication": "研究判断：需核对产品、App、模型服务和客服是否共用数据清单与删除验收规则；正文不能证明这些团队已有此机制。",
+          "boundary": "无明确发布日期，按常青资料整理；只证明官方支持页对具体功能的描述，未做设备实测、后台审计或删除验证。文字、摘要和标签也可能承载个人信息；数据处理地点、保留时长、第三方模型范围及删除传播均未知。",
+          "factIndexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "Voice Memo录音结束后自动保存，可在Sessions回看转写与摘要。",
+          "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "locator": "4.2 Voice Memo & AI Summary"
+        },
+        {
+          "claim": "Life Log不保留原始音频，但保留对话生成的文字记录。",
+          "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "locator": "6.2 Life Log Data Storage"
+        },
+        {
+          "claim": "长期个人标签支持用户手动删除和更正。",
+          "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "locator": "6.3 Manage Personal Profile Tags"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "name": "雷鸟创新官方资料",
+          "publishedAt": null,
+          "publisherGroup": "雷鸟创新",
+          "role": "official",
+          "textHash": "35478d807b7223713b5a12ff2473e1636ba03032ed0a7b3603156eca477e6da0",
+          "readAt": "2026-11-13T00:44:17.412588+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-13T00:47:36.008799+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "雷鸟录音与 Life Log：不保存音频，不等于不保留个人记录",
+      "summary": "雷鸟 iO 支持页区分了两套记录流程：Voice Memo 录音结束后自动保存，并提供转写与摘要；Life Log 则声明不保留原始音频、保留对话生成的文字记录。研究录音设备时，应逐功能核对数据类型、保存方式和用户控制，不能把一项功能的说明套到全部设备数据。"
     }
   ],
   "events": [
+    {
+      "id": "rss-73679a0244d41f07",
+      "representativeId": "rss-73679a0244d41f07",
+      "itemIds": [
+        "rss-73679a0244d41f07"
+      ],
+      "publisherGroups": [
+        "Bambu Lab 拓竹"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": false
+    },
     {
       "id": "bambu-circle-europe-pilot",
       "representativeId": "rss-71efdf861fff63c4",
@@ -4965,6 +5168,20 @@
       ],
       "publisherGroups": [
         "Figure"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "rayneo-recording-boundaries",
+      "representativeId": "rayneo-recording-boundaries",
+      "itemIds": [
+        "rayneo-recording-boundaries"
+      ],
+      "publisherGroups": [
+        "雷鸟创新"
       ],
       "developmentIds": [
         "initial"
@@ -7680,6 +7897,446 @@
       "successfulScan": true,
       "completedAt": "2026-11-12T00:50:31.662425+00:00",
       "reviewedCount": 1,
+      "selectedCount": 1
+    },
+    {
+      "coverage": "6个RSS源5个成功，30条候选初筛；实际读取讯飞、小猿、科沃斯、雷鸟、XREAL、拓竹6家国内公司的岗位或官方资料，覆盖渠道、服务、质量与组织等非研发环节。2家核心竞品3个当前岗位正文；新增1篇雷鸟常青brief，拓竹周边候选经正文审核暂不入选。当天没有合格的新事件入选。",
+      "sourceChecks": [
+        {
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=179aac28-bb83-4ed6-938e-25d57a57899b",
+          "company": "科大讯飞",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期",
+            "经营与组织"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "checkedAt": "2026-11-13T00:43:32.873Z",
+          "note": "同ID当前正文，消费者BG渠道共享能力，未限定学习机；职责未变。"
+        },
+        {
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/70dc09b3-4eef-444b-8b17-f31ad6614dcf",
+          "company": "猿辅导（小猿）",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "checkedAt": "2026-11-13T00:43:41.535Z",
+          "note": "同ID教研正文，教育业务参考；测试集与模型反馈接口未变。"
+        },
+        {
+          "url": "https://app.mokahr.com/social-recruitment/fenbi/45505#/job/e0ccd64d-0f72-49d3-a787-e87b44bac2d1",
+          "company": "猿辅导（小猿）",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期",
+            "经营与组织"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "checkedAt": "2026-11-13T00:43:49.627Z",
+          "note": "海豚AI一对一相邻业务，未提硬件销售；当前显示11月9日发布日期，职责无实质变化，不据日期变化推断重开或扩编。"
+        },
+        {
+          "url": "https://mall.ecovacs.cn/job-detail-516.html",
+          "company": "科沃斯",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "渠道与销售",
+            "服务与生命周期",
+            "经营与组织"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-13T00:44:17.411244+00:00",
+          "note": "产品线经理正文可见，含退市计划和工厂新品接口；无发布日期，非新增招聘事件。"
+        },
+        {
+          "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "company": "雷鸟创新",
+          "stages": [
+            "研发与系统",
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-13T00:44:17.412588+00:00",
+          "note": "实际读取字幕翻译、录音、Life Log、数据控制和故障处理章节；形成明确限定的保存机制补充。"
+        },
+        {
+          "url": "https://us.shop.xreal.com/pages/warranty-policy",
+          "company": "XREAL",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-13T00:45:13.304Z",
+          "note": "浏览器读取地区、授权渠道、维修处理及购买证明条款；2024年版本，不作为新政策或法律建议。"
+        },
+        {
+          "url": "https://blog.bambulab.com/just-make-things-makerworlds-first-official-merch-collection-goes-live-on-crowdfunding/",
+          "company": "Bambu Lab 拓竹",
+          "stages": [
+            "渠道与销售",
+            "经营与组织"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "checkedAt": "2026-11-13T00:45:40.844Z",
+          "note": "阅读全文后不入选，新增周边活动与硬件全链路研究关联有限。"
+        },
+        {
+          "url": "https://ireader.jd.com/",
+          "company": null,
+          "stages": [
+            "渠道与销售"
+          ],
+          "purpose": "practice",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:44:17.415999+00:00",
+          "note": "掌阅iReader京东自营旗舰店可读到分类与型号索引，未取得产品正文和专属服务条款；不建立空档案。"
+        },
+        {
+          "url": "https://us.shop.xreal.com/pages/warranty-policy",
+          "company": "XREAL",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "purpose": "practice",
+          "state": "error",
+          "checkedAt": "2026-11-13T00:44:17.412459+00:00",
+          "note": "直连连接超时，浏览器已补读，失败保留。"
+        },
+        {
+          "url": "https://blog.bambulab.com/just-make-things-makerworlds-first-official-merch-collection-goes-live-on-crowdfunding",
+          "company": "Bambu Lab 拓竹",
+          "stages": [
+            "渠道与销售",
+            "经营与组织"
+          ],
+          "purpose": "news",
+          "state": "error",
+          "checkedAt": "2026-11-13T00:44:17.412724+00:00",
+          "note": "直连连接超时，浏览器已补读，失败保留。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/622.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/468.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/385.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/367.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/331.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/152.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/146.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/828.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/755.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/535.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/516.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/995.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/768.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/767.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/546.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/471.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/463.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/430.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/422.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/392.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/334.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/855.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/838.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/807.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/796.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/769.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/768.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/434.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/432.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-13T00:47:25.565698+00:00",
+          "note": "候选标题初筛；自动下载或既有缓存不等于本轮阅读全文，不据标题生成摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/334.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "error",
+          "checkedAt": "2026-11-13T00:41:12.595958+00:00",
+          "note": "候选自动正文读取失败，未完成该篇浏览器补读；不认定内容不存在。"
+        }
+      ],
+      "knownGaps": [
+        "其余29条候选未完成逐篇正文审读；零入选不表示行业无新事件。",
+        "作业帮直接学习硬件供应链证据仍有缺口；本轮岗位样本不能代表三家公司完整组织。",
+        "掌阅仅取得店铺分类索引，产品与服务正文仍缺，不刷新有效产品日期。",
+        "知识节点按实际部分复核，首轮完整复核期限为今日15:45；基础定义及可比较指标仍有缺口。"
+      ],
+      "failedSources": [
+        "CNX RSS返回HTTP 403，沿用历史缓存；不认为无更新。",
+        "直连连接超时，浏览器已补读，失败保留。",
+        "候选自动正文读取失败，未完成该篇浏览器补读；不认定内容不存在。"
+      ],
+      "coverageCheck": {
+        "passed": true,
+        "companies": [
+          "Bambu Lab 拓竹",
+          "XREAL",
+          "猿辅导（小猿）",
+          "科大讯飞",
+          "科沃斯",
+          "雷鸟创新"
+        ],
+        "stages": [
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "gaps": [],
+        "usableSources": 37
+      },
+      "successfulScan": true,
+      "completedAt": "2026-11-13T00:47:36.014024+00:00",
+      "reviewedCount": 2,
       "selectedCount": 1
     }
   ]
