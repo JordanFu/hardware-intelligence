@@ -3,9 +3,9 @@
   "startedAt": "2026-11-06T07:45:08.434151+00:00",
   "nodes": {
     "chain-3": {
-      "attemptedAt": "2026-11-10T00:47:16.938756+00:00",
+      "attemptedAt": "2026-11-13T10:55:31.088703+00:00",
       "status": "partial",
-      "assessment": "复核当前供应商登记五步与关联关系申报、保密及廉洁要求，对照已补充的登记/准入/订单区分仍成立；未发现支持修改知识字段的新内容，保留内容更新时间。",
+      "assessment": "重读登记步骤与采购纪律，登记不等于准入的表述成立；未取得MOQ、交期、库存指标及实际审核证据。",
       "gaps": [
         "MOQ、交期与库存周转分母本轮仍缺独立定义核验，不据入口页面判断这些指标。",
         "公开资料没有供应商审核标准、实际通过率、采购质量接口和履约结果。"
@@ -46,12 +46,12 @@
         {
           "itemId": "unitree-supplier",
           "url": "https://www.unitree.com/cn/supplier/",
-          "checkedAt": "2026-11-10T00:43:59.920916+00:00",
+          "checkedAt": "2026-11-13T10:53:35.741372+00:00",
           "state": "body",
-          "note": "当天重新读取公开正文；仅支持本轮所列字段与研究提示，不把来源存在或访问成功当作成效验证。"
+          "note": "晚间实际读取列明章节，未把未读参数或其他观察企业算作完整复核。"
         }
       ],
-      "reviewedAt": "2026-11-10T00:47:16.938756+00:00",
+      "reviewedAt": "2026-11-13T10:55:31.088703+00:00",
       "patch": {
         "basics": "MOQ 是最小订购量；交期包含采购、生产和运输，不能只看供应商承诺。 供应商登记仅是提交资料的入口，不能自动等同于资格审核通过或获得采购订单。",
         "exercise": "选一颗关键器件，写出交期风险、替代验证要求和缺料升级路径。 再区分供应商资料登记、资格核验、质量验收和订单获取；无公开依据的门槛标为待核验。"
@@ -72,9 +72,9 @@
       "updatedAt": "2026-11-06T07:53:13.521723+00:00"
     },
     "chain-7": {
-      "attemptedAt": "2026-11-10T00:47:16.938756+00:00",
+      "attemptedAt": "2026-11-13T10:55:31.088703+00:00",
       "status": "partial",
-      "assessment": "读取英国站服务受理与停产通知章节，核对从线上排障到返修的流程边界。新增用户路径检查问题，不把商业条款当作实际履约或法定权利结论。",
+      "assessment": "重读线上分析、当地返修与停产通知条款，适用地区与维修流程边界未见实质变化；未取得首次解决率与实际恢复使用数据。",
       "gaps": [
         "首次解决率的窗口、排除项与重复联系归属仍需独立方法资料和实际数据。",
         "没有具体停产产品通知、真实维修时长、备件供货与用户恢复使用结果。"
@@ -120,12 +120,12 @@
         {
           "itemId": "xtool-aftersale",
           "url": "https://uk.xtool.com/pages/aftersale-policies",
-          "checkedAt": "2026-11-10T00:44:05.472775+00:00",
+          "checkedAt": "2026-11-13T10:53:35.741889+00:00",
           "state": "body",
-          "note": "当天重新读取公开正文；仅支持本轮所列字段与研究提示，不把来源存在或访问成功当作成效验证。"
+          "note": "晚间实际读取列明章节，未把未读参数或其他观察企业算作完整复核。"
         }
       ],
-      "reviewedAt": "2026-11-10T00:47:16.938756+00:00",
+      "reviewedAt": "2026-11-13T10:55:31.088703+00:00",
       "patch": {
         "basics": "OTA 是远程软件更新；支持周期、回滚和停止服务的安排也是产品承诺。 对互联设备，还应检查所有权转移、恢复出厂与退出时的数据处理；这些是从岗位职责提炼的验收问题，不能视为全行业已落实的规范。",
         "exercise": "追踪一次服务事件，从用户发现到真正恢复使用，找出重复解释和重复操作。 补充一次设备转售或恢复出厂场景，列清设备、账号和云端数据的处理责任与验证证据。 对返修场景增加购买证明、排障记录、寄送指引与恢复使用四步，检查哪些信息能在授权范围内复用，避免用户重复解释。",
@@ -158,9 +158,9 @@
       "updatedAt": "2026-11-10T00:47:16.938756+00:00"
     },
     "track-5": {
-      "attemptedAt": "2026-11-10T00:47:16.938756+00:00",
+      "attemptedAt": "2026-11-13T10:55:31.088703+00:00",
       "status": "partial",
-      "assessment": "把拓竹新披露的混合层高机制补入工程地图：观察软件、机械约束与成品验收如何共同支撑操作简化。检查原有交付链与团队提示后予以保留，新增可测的用户返工维度。",
+      "assessment": "重读层带调度及用户选择区域的机制章节，原有验收问题仍成立；未做切片实测，ODM/EMS和良率交期口径仍待核验。",
       "gaps": [
         "尚未完整核验ODM/EMS责任、良率与交期指标口径。",
         "没有切片版本实测、路径失败率和同模型对照，不宣称首创或已证实效率提升。"
@@ -168,7 +168,6 @@
       "reviewedFields": [
         "chain",
         "constraint",
-        "examples",
         "metrics",
         "team"
       ],
@@ -212,12 +211,12 @@
         {
           "itemId": "rss-1ec82521027135bf",
           "url": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
-          "checkedAt": "2026-11-10T00:41:29.473888+00:00",
+          "checkedAt": "2026-11-13T10:53:35.742130+00:00",
           "state": "body",
-          "note": "当天重新读取公开正文；仅支持本轮所列字段与研究提示，不把来源存在或访问成功当作成效验证。"
+          "note": "晚间实际读取列明章节，未把未读参数或其他观察企业算作完整复核。"
         }
       ],
-      "reviewedAt": "2026-11-10T00:47:16.938756+00:00",
+      "reviewedAt": "2026-11-13T10:55:31.088703+00:00",
       "patch": {
         "constraint": "成本、质量、交期、维修和供货风险；互联设备另需检查设备、应用、云的协同安全与退出时的数据处理。 混合工艺还需同时检查区域边界衔接、路径避让和切换开销，界面步骤减少不能掩盖质量约束。",
         "team": "产品、系统工程、制造、采购、质量、法规与售后；涉及互联设备时，将应用、云服务与产品安全的验收接口纳入研究。",
@@ -329,63 +328,63 @@
       "updatedAt": "2026-11-07T00:47:27.698411+00:00"
     },
     "chain-4": {
-      "attemptedAt": "2026-11-11T00:46:33.899185+00:00",
+      "attemptedAt": "2026-11-13T10:55:31.088703+00:00",
       "status": "partial",
-      "assessment": "从历史质量更新中补充出厂测试与运输后验收的边界；仅更新制造学习任务，保留既有 NPI 与质量接口及其证据限制。",
+      "assessment": "补齐一次通过率定义：不仅排除返工，也排除复测等再次处理；其他制造基础与企业实施情况仍未完整核实。",
       "gaps": [
-        "工艺验证门槛和一次通过率尚缺明确口径。",
-        "既有石头岗位索引未在本轮取得当前正文；正式放行权与实际组织接口仍待核实。",
-        "历史改进措施的完成状态与同口径质量结果未知。"
+        "NPI、DFM基础与具体工艺验证门槛仍缺完整依据。",
+        "石头岗位未取得当前正文，正式放行权与组织接口未知。",
+        "历史质量措施完成状态与实际质量结果未知。"
       ],
       "reviewedFields": [
-        "exercise",
-        "flow",
-        "team"
+        "metrics",
+        "pitfall"
       ],
       "evidence": [
         {
-          "itemId": "bambu-quality",
-          "title": "历史案例：拓竹如何把客户问题反馈到制造与设计",
+          "itemId": "asq-first-pass-yield",
+          "title": "一次通过率：返测通过也不能算首次合格",
           "facts": [
             {
-              "claim": "2023 年公司披露增加客服人员，目标是缩短支持等待。",
-              "sourceUrl": "https://blog.bambulab.com/quality-assurance-and-operations-update/",
-              "locator": "正文定位：历史案例：拓竹如何把客户问题反馈到制造与设计"
+              "claim": "ASQ将复测、重跑和线外维修排除在首次通过范围之外。",
+              "sourceUrl": "https://asq.org/quality-resources/quality-glossary",
+              "locator": "First pass yield (FPY) 词条"
             },
             {
-              "claim": "公司披露针对运输损伤调整包装及打印机结构。",
-              "sourceUrl": "https://blog.bambulab.com/quality-assurance-and-operations-update/",
-              "locator": "正文 Z-axis related issues 小节"
+              "claim": "该定义以进入过程的单位总数作为分母。",
+              "sourceUrl": "https://asq.org/quality-resources/quality-glossary",
+              "locator": "First pass yield (FPY) 计算说明"
             }
           ],
-          "boundary": "2023 年历史披露，不代表 2026 年组织或质量水平；没有可比结果，保留零效果结论。",
+          "boundary": "基于ASQ词条正文抽取片段，直连返回403；非完整标准审阅。定义不能证明某家企业指标正确、流程已执行或人员效率提高。",
           "sources": [
             {
-              "name": "Bambu Lab 官方",
-              "url": "https://blog.bambulab.com/quality-assurance-and-operations-update/",
-              "publishedAt": "2023-02-23T00:00:00Z",
-              "publisherGroup": "Bambu Lab",
+              "url": "https://asq.org/quality-resources/quality-glossary",
+              "name": "ASQ 质量术语表",
+              "publisherGroup": "ASQ",
               "role": "official",
-              "textHash": "bf9e90d4b7038f1f4d72fcc8fbc3ba2d76f04713a19107f4e3276cf7811f7118",
-              "readAt": "2026-11-05T10:27:56.463255+00:00",
-              "coverage": "body"
+              "publishedAt": null,
+              "textHash": "e6f483441c3f191b0c65e237d5c0623526fde1d6ebb8ea63f7bfc382795d01a7",
+              "readAt": "2026-11-13T10:54:53.488096+00:00",
+              "coverage": "excerpt"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "bambu-quality",
-          "url": "https://blog.bambulab.com/quality-assurance-and-operations-update/",
-          "checkedAt": "2026-11-11T00:41:49.401507+00:00",
-          "state": "body",
-          "note": "本轮实际读取官方正文，按列明字段复核；未覆盖的字段继续保留缺口。"
+          "itemId": "asq-first-pass-yield",
+          "url": "https://asq.org/quality-resources/quality-glossary",
+          "checkedAt": "2026-11-13T10:54:53.488096+00:00",
+          "state": "index",
+          "note": "Web正文抽取定位到FPY词条片段；直连403，仅用于指标字段，不计作完整正文复核。"
         }
       ],
-      "reviewedAt": "2026-11-11T00:46:33.899185+00:00",
+      "reviewedAt": "2026-11-13T10:55:31.088703+00:00",
       "patch": {
         "team": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。 石头官方岗位索引提供一个职责样本：NPI-PE 准备设计评审和工艺资料，PQE 跟进试制量产及代工质量，PQC 关注出货与过程监督；实际决策权仍须项目证据。",
-        "exercise": "沿一次异常追到设计版本、工艺条件和责任人，定义复现与关闭标准。 把问题分别映射到设计评审、工艺文件、过程控制与出货验收的交付物，并核实谁有权放行，不能仅从岗位名称推定。 对运输相关故障，分别核对出厂测试记录、包装与结构版本、运输条件及到货功能复现；出厂通过不能代替运输后验收。"
+        "exercise": "沿一次异常追到设计版本、工艺条件和责任人，定义复现与关闭标准。 把问题分别映射到设计评审、工艺文件、过程控制与出货验收的交付物，并核实谁有权放行，不能仅从岗位名称推定。 对运输相关故障，分别核对出厂测试记录、包装与结构版本、运输条件及到货功能复现；出厂通过不能代替运输后验收。",
+        "metrics": "一次通过率 = 首次完成该过程并满足质量要求、无需复测或返工等再次处理的单位数 / 进入该过程的单位总数。须固定工序、批次、期间及缺陷规则；不能用返工后最终合格率替代。"
       },
       "lessons": [
         {
@@ -409,14 +408,25 @@
             "bambu-quality"
           ],
           "updatedAt": "2026-11-11T00:46:33.899185+00:00"
+        },
+        {
+          "id": "chain-4-first-pass-boundary",
+          "title": "首次合格与返测后合格分开统计",
+          "learning": "ASQ的FPY词条明确排除重跑、复测及转线维修等情形，提示仅写“未经返工”可能漏掉复测。",
+          "application": "比较制造质量时先核对产品唯一标识、第一次检测结果和再次处理记录，并固定过程与投入批次。",
+          "boundary": "仅核验词条定义；上述记录检查是研究方法，不证明厂商已执行、数据准确或效率改善。",
+          "itemIds": [
+            "asq-first-pass-yield"
+          ],
+          "updatedAt": "2026-11-13T10:55:31.088703+00:00"
         }
       ],
-      "updatedAt": "2026-11-11T00:46:33.899185+00:00"
+      "updatedAt": "2026-11-13T10:55:31.088703+00:00"
     },
     "track-2": {
-      "attemptedAt": "2026-11-11T00:46:33.899185+00:00",
+      "attemptedAt": "2026-11-13T10:55:31.088703+00:00",
       "status": "partial",
-      "assessment": "重新读取故障范围、桥接、跨平台功能及诊断日志正文；已有约束与交接内容无实质变化，保持内容更新时间。",
+      "assessment": "重读桥接、功能差异、恢复出厂及诊断日志章节，继续保留平台、型号和版本适用条件，不能据支持指南推断所有观察企业能力。",
       "gaps": [
         "其他观察企业、离线能力、多成员权限未完整核实。",
         "没有可比故障率、用户样本和售后改善数据。"
@@ -466,12 +476,12 @@
         {
           "itemId": "aqara-matter-guide",
           "url": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
-          "checkedAt": "2026-11-11T00:41:49.342246+00:00",
+          "checkedAt": "2026-11-13T10:53:35.742297+00:00",
           "state": "body",
-          "note": "本轮实际读取官方正文，按列明字段复核；未覆盖的字段继续保留缺口。"
+          "note": "晚间实际读取列明章节，未把未读参数或其他观察企业算作完整复核。"
         }
       ],
-      "reviewedAt": "2026-11-11T00:46:33.899185+00:00",
+      "reviewedAt": "2026-11-13T10:55:31.088703+00:00",
       "patch": {
         "constraint": "互操作、断网可用性、安装和家人共同使用 须区分协议支持、具体功能暴露和接收平台能力；桥接并不把 Zigbee 子设备变成 Thread 设备，接入成功也不保证所有自动化可用。",
         "team": "嵌入式、连接协议、云平台、客户端、认证与售后 售后交给协议、固件或平台团队的信息应包含型号/版本、连接路径、受影响范围和复现步骤；诊断日志按支持范围自愿启用，并保留本地保存选择。",
@@ -1725,6 +1735,24 @@
           "hash": "643a07d3a5bd9b0ec0aeba7af0ff10f261d08099d705ce6f7120a02e1924b32f",
           "decision": "hold",
           "reason": "周度重审既有证据档案（本次未重新读取该来源正文，不刷新来源日期）：荷兰伙伴试点和后续扩展仍是计划，缺正式授权、备件及验收规则。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-13T10:55:31.088703+00:00",
+      "reviewedNodes": [
+        "chain-3",
+        "chain-7",
+        "track-5",
+        "track-2",
+        "chain-4"
+      ],
+      "decisions": [
+        {
+          "itemId": "asq-first-pass-yield",
+          "hash": "f2951241da3d4f4e4307bdd9a9ea9f0965490aae7c1071e74b2bc4543c08f53f",
+          "decision": "integrated",
+          "reason": "补齐制造节点FPY定义中的复测与分母边界；基于词条片段，不将其他字段或节点标为完整复核。"
         }
       ]
     }
@@ -4035,6 +4063,318 @@
           "checkedAt": "2026-11-13T00:45:13.304Z",
           "state": "body",
           "note": "实际复核所列章节与字段，未覆盖内容保留缺口；不延长完整复核期限。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-3",
+      "reviewedAt": "2026-11-13T10:55:31.088703+00:00",
+      "status": "partial",
+      "assessment": "重读登记步骤与采购纪律，登记不等于准入的表述成立；未取得MOQ、交期、库存指标及实际审核证据。",
+      "gaps": [
+        "MOQ、交期与库存周转分母本轮仍缺独立定义核验，不据入口页面判断这些指标。",
+        "公开资料没有供应商审核标准、实际通过率、采购质量接口和履约结果。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "exercise",
+        "pitfall",
+        "team"
+      ],
+      "changes": {},
+      "lessonChanges": [],
+      "evidence": [
+        {
+          "itemId": "unitree-supplier",
+          "title": "宇树供应商入口：登记流程与采购纪律分开看",
+          "facts": [
+            {
+              "claim": "官网列出登记步骤，并要求供应商主动申报关联关系。",
+              "sourceUrl": "https://www.unitree.com/cn/supplier/",
+              "locator": "正文职责 / 采购原则 / 项目说明段落"
+            }
+          ],
+          "boundary": "公开入口与规则，不是内部执行记录；审核标准、通过率、履约与员工后效未知。",
+          "sources": [
+            {
+              "url": "https://www.unitree.com/cn/supplier/",
+              "name": "宇树科技官方",
+              "publishedAt": null,
+              "publisherGroup": "宇树科技官方",
+              "role": "official",
+              "textHash": "4f637f53a915e7b5ae8195d85e32f4800f48c67d909e4ace6530e2ee2bcfa5f3",
+              "readAt": "2026-11-06T05:43:46.717180+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "unitree-supplier",
+          "url": "https://www.unitree.com/cn/supplier/",
+          "checkedAt": "2026-11-13T10:53:35.741372+00:00",
+          "state": "body",
+          "note": "晚间实际读取列明章节，未把未读参数或其他观察企业算作完整复核。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-7",
+      "reviewedAt": "2026-11-13T10:55:31.088703+00:00",
+      "status": "partial",
+      "assessment": "重读线上分析、当地返修与停产通知条款，适用地区与维修流程边界未见实质变化；未取得首次解决率与实际恢复使用数据。",
+      "gaps": [
+        "首次解决率的窗口、排除项与重复联系归属仍需独立方法资料和实际数据。",
+        "没有具体停产产品通知、真实维修时长、备件供货与用户恢复使用结果。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "flow",
+        "pitfall",
+        "team"
+      ],
+      "changes": {},
+      "lessonChanges": [],
+      "evidence": [
+        {
+          "itemId": "xtool-aftersale",
+          "title": "xTool 英国售后政策：远程诊断、返修与停产支持有不同接口",
+          "facts": [
+            {
+              "claim": "远程无法解决的问题可能需要送本地维修中心。",
+              "sourceUrl": "https://uk.xtool.com/pages/aftersale-policies",
+              "locator": "How to Obtain a Warranty Service"
+            },
+            {
+              "claim": "停产产品安排提到最终维修日期通知。",
+              "sourceUrl": "https://uk.xtool.com/pages/aftersale-policies",
+              "locator": "Special Notes"
+            }
+          ],
+          "boundary": "英国站当前政策，未标统一发布日期；本次只整理服务流程与停产通知，不判断条款的法律效力或跨地区适用性，合同、机型和当地规则仍需分别核对。",
+          "sources": [
+            {
+              "url": "https://uk.xtool.com/pages/aftersale-policies",
+              "name": "xTool 官方支持",
+              "publishedAt": null,
+              "publisherGroup": "xTool 官方支持",
+              "role": "official",
+              "textHash": "6269b4a3d4d1a4540a5eb7672c87c865039d5fb2611703717f94e41e51be7483",
+              "readAt": "2026-11-08T00:45:12.666454+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "xtool-aftersale",
+          "url": "https://uk.xtool.com/pages/aftersale-policies",
+          "checkedAt": "2026-11-13T10:53:35.741889+00:00",
+          "state": "body",
+          "note": "晚间实际读取列明章节，未把未读参数或其他观察企业算作完整复核。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-5",
+      "reviewedAt": "2026-11-13T10:55:31.088703+00:00",
+      "status": "partial",
+      "assessment": "重读层带调度及用户选择区域的机制章节，原有验收问题仍成立；未做切片实测，ODM/EMS和良率交期口径仍待核验。",
+      "gaps": [
+        "尚未完整核验ODM/EMS责任、良率与交期指标口径。",
+        "没有切片版本实测、路径失败率和同模型对照，不宣称首创或已证实效率提升。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "metrics",
+        "team"
+      ],
+      "changes": {},
+      "lessonChanges": [],
+      "evidence": [
+        {
+          "itemId": "rss-1ec82521027135bf",
+          "title": "拓竹解释 H3C 混合层高：把手工拆模型交给切片调度",
+          "facts": [
+            {
+              "claim": "切片引擎按动态层带组织不同喷嘴的层高。",
+              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "locator": "Our art of bricklaying"
+            },
+            {
+              "claim": "用户可用涂色工具或修改器框选择区域。",
+              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "locator": "Choose the region, hit Slice"
+            },
+            {
+              "claim": "其他三款设备的原生混合喷嘴支持仍在开发。",
+              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "locator": "文末支持计划"
+            }
+          ],
+          "boundary": "已读厂商技术说明，未检查实现代码、版本发布记录或独立打印结果。不采纳“首款”“无妥协”等比较宣传，亦不把开发计划写成其他机型已经支持。",
+          "sources": [
+            {
+              "url": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "name": "Bambu Lab Blog",
+              "publishedAt": "2026-11-09T10:48:22+00:00",
+              "publisherGroup": "Bambu Lab Blog",
+              "role": "official",
+              "textHash": "f0c113e14fc668a9ac0dce4c07738f2d80542ff98b6a16d8c3b95df805198df1",
+              "readAt": "2026-11-10T00:41:29.473888+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "rss-1ec82521027135bf",
+          "url": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+          "checkedAt": "2026-11-13T10:53:35.742130+00:00",
+          "state": "body",
+          "note": "晚间实际读取列明章节，未把未读参数或其他观察企业算作完整复核。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-2",
+      "reviewedAt": "2026-11-13T10:55:31.088703+00:00",
+      "status": "partial",
+      "assessment": "重读桥接、功能差异、恢复出厂及诊断日志章节，继续保留平台、型号和版本适用条件，不能据支持指南推断所有观察企业能力。",
+      "gaps": [
+        "其他观察企业、离线能力、多成员权限未完整核实。",
+        "没有可比故障率、用户样本和售后改善数据。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "team"
+      ],
+      "changes": {},
+      "lessonChanges": [],
+      "evidence": [
+        {
+          "itemId": "aqara-matter-guide",
+          "title": "Aqara 排障指南：先定位设备、桥接与平台，再考虑重置",
+          "facts": [
+            {
+              "claim": "指南提醒先尝试非破坏性排查步骤，再考虑恢复出厂。",
+              "sourceUrl": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
+              "locator": "Check your setup / Before you reset / Device diagnostic logs"
+            },
+            {
+              "claim": "设备桥接不改变子设备原有连接方式。",
+              "sourceUrl": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
+              "locator": "Check your setup / Before you reset / Device diagnostic logs"
+            },
+            {
+              "claim": "诊断日志默认关闭，支持本地保存选项。",
+              "sourceUrl": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
+              "locator": "Check your setup / Before you reset / Device diagnostic logs"
+            }
+          ],
+          "boundary": "官方操作指南，适用性取决于具体型号、区域、固件与平台；没有用户样本或解决率，不能证明售后效率已改善。页面结构化发布日期为 11 月 4 日，修改时间另列，不算 11 月 7 日发布。",
+          "sources": [
+            {
+              "url": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
+              "name": "Aqara 官方帮助中心",
+              "publishedAt": "2026-11-04T01:54:57-05:00",
+              "publisherGroup": "Aqara 官方帮助中心",
+              "role": "official",
+              "textHash": "6dc0acfac9a43dc662d6019433f6d1ea502534481c84f85d84bc6155a711866d",
+              "readAt": "2026-11-07T00:43:45.211768+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "aqara-matter-guide",
+          "url": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
+          "checkedAt": "2026-11-13T10:53:35.742297+00:00",
+          "state": "body",
+          "note": "晚间实际读取列明章节，未把未读参数或其他观察企业算作完整复核。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-4",
+      "reviewedAt": "2026-11-13T10:55:31.088703+00:00",
+      "status": "partial",
+      "assessment": "补齐一次通过率定义：不仅排除返工，也排除复测等再次处理；其他制造基础与企业实施情况仍未完整核实。",
+      "gaps": [
+        "NPI、DFM基础与具体工艺验证门槛仍缺完整依据。",
+        "石头岗位未取得当前正文，正式放行权与组织接口未知。",
+        "历史质量措施完成状态与实际质量结果未知。"
+      ],
+      "reviewedFields": [
+        "metrics",
+        "pitfall"
+      ],
+      "changes": {
+        "metrics": {
+          "before": "一次通过率 = 未经返工通过该工序的件数 / 进入该工序件数；注明工序、批次和期间。",
+          "after": "一次通过率 = 首次完成该过程并满足质量要求、无需复测或返工等再次处理的单位数 / 进入该过程的单位总数。须固定工序、批次、期间及缺陷规则；不能用返工后最终合格率替代。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "chain-4-first-pass-boundary",
+            "title": "首次合格与返测后合格分开统计",
+            "learning": "ASQ的FPY词条明确排除重跑、复测及转线维修等情形，提示仅写“未经返工”可能漏掉复测。",
+            "application": "比较制造质量时先核对产品唯一标识、第一次检测结果和再次处理记录，并固定过程与投入批次。",
+            "boundary": "仅核验词条定义；上述记录检查是研究方法，不证明厂商已执行、数据准确或效率改善。",
+            "itemIds": [
+              "asq-first-pass-yield"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "asq-first-pass-yield",
+          "title": "一次通过率：返测通过也不能算首次合格",
+          "facts": [
+            {
+              "claim": "ASQ将复测、重跑和线外维修排除在首次通过范围之外。",
+              "sourceUrl": "https://asq.org/quality-resources/quality-glossary",
+              "locator": "First pass yield (FPY) 词条"
+            },
+            {
+              "claim": "该定义以进入过程的单位总数作为分母。",
+              "sourceUrl": "https://asq.org/quality-resources/quality-glossary",
+              "locator": "First pass yield (FPY) 计算说明"
+            }
+          ],
+          "boundary": "基于ASQ词条正文抽取片段，直连返回403；非完整标准审阅。定义不能证明某家企业指标正确、流程已执行或人员效率提高。",
+          "sources": [
+            {
+              "url": "https://asq.org/quality-resources/quality-glossary",
+              "name": "ASQ 质量术语表",
+              "publisherGroup": "ASQ",
+              "role": "official",
+              "publishedAt": null,
+              "textHash": "e6f483441c3f191b0c65e237d5c0623526fde1d6ebb8ea63f7bfc382795d01a7",
+              "readAt": "2026-11-13T10:54:53.488096+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "asq-first-pass-yield",
+          "url": "https://asq.org/quality-resources/quality-glossary",
+          "checkedAt": "2026-11-13T10:54:53.488096+00:00",
+          "state": "index",
+          "note": "Web正文抽取定位到FPY词条片段；直连403，仅用于指标字段，不计作完整正文复核。"
         }
       ]
     }
