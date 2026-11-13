@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-13T00:49:56.047400+00:00",
-  "lastSuccessfulAt": "2026-11-13T00:49:56.047400+00:00",
+  "checkedAt": "2026-11-13T06:45:02.689041+00:00",
+  "lastSuccessfulAt": "2026-11-13T06:45:02.689041+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-13T00:49:56.047400+00:00",
-      "lastSuccessAt": "2026-11-13T00:49:56.047400+00:00",
+      "checkedAt": "2026-11-13T06:45:02.689041+00:00",
+      "lastSuccessAt": "2026-11-13T06:45:02.689041+00:00",
       "received": 18,
       "matched": 1,
       "excluded": 17,
@@ -15,8 +15,8 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-13T00:49:56.047400+00:00",
-      "lastSuccessAt": "2026-11-13T00:49:56.047400+00:00",
+      "checkedAt": "2026-11-13T06:45:02.689041+00:00",
+      "lastSuccessAt": "2026-11-13T06:45:02.689041+00:00",
       "received": 50,
       "matched": 2,
       "excluded": 48,
@@ -25,8 +25,8 @@
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-13T00:49:56.047400+00:00",
-      "lastSuccessAt": "2026-11-13T00:49:56.047400+00:00",
+      "checkedAt": "2026-11-13T06:45:02.689041+00:00",
+      "lastSuccessAt": "2026-11-13T06:45:02.689041+00:00",
       "received": 10,
       "matched": 0,
       "excluded": 10,
@@ -35,8 +35,8 @@
     {
       "id": "bambu",
       "state": "ok",
-      "checkedAt": "2026-11-13T00:49:56.047400+00:00",
-      "lastSuccessAt": "2026-11-13T00:49:56.047400+00:00",
+      "checkedAt": "2026-11-13T06:45:02.689041+00:00",
+      "lastSuccessAt": "2026-11-13T06:45:02.689041+00:00",
       "received": 15,
       "matched": 15,
       "excluded": 0,
@@ -45,25 +45,85 @@
     {
       "id": "cnx",
       "state": "ok",
-      "checkedAt": "2026-11-13T00:49:56.047400+00:00",
-      "lastSuccessAt": "2026-11-13T00:49:56.047400+00:00",
+      "checkedAt": "2026-11-13T06:45:02.689041+00:00",
+      "lastSuccessAt": "2026-11-13T06:45:02.689041+00:00",
       "received": 32,
-      "matched": 4,
-      "excluded": 28,
+      "matched": 5,
+      "excluded": 27,
       "error": null
     },
     {
       "id": "ithome",
       "state": "ok",
-      "checkedAt": "2026-11-13T00:49:56.047400+00:00",
-      "lastSuccessAt": "2026-11-13T00:49:56.047400+00:00",
+      "checkedAt": "2026-11-13T06:45:02.689041+00:00",
+      "lastSuccessAt": "2026-11-13T06:45:02.689041+00:00",
       "received": 60,
-      "matched": 8,
-      "excluded": 52,
+      "matched": 4,
+      "excluded": 56,
       "error": null
     }
   ],
   "items": [
+    {
+      "id": "rss-f68518a228a90486",
+      "title": "海康威视：海康机器人已完成股份制改制及上市辅导备案",
+      "url": "https://www.ithome.com/1/026/667.htm",
+      "date": "2026-11-13T04:16:39+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-13T06:45:02.689041+00:00"
+    },
+    {
+      "id": "rss-826e476a8d54b1d1",
+      "title": "主导苹果 M1 芯片的传奇架构师谈 AI 电力危机：用造 iPhone 芯片的“抠门”哲学建超算",
+      "url": "https://www.ithome.com/1/026/591.htm",
+      "date": "2026-11-13T03:33:29+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-13T06:45:02.689041+00:00"
+    },
+    {
+      "id": "rss-41db2b4e04b679dd",
+      "title": "Home Assistant-compatible ESP32 4-channel PWM fan controller is designed for server racks and NAS systems",
+      "url": "https://www.cnx-software.com/2026/11/13/home-assistant-compatible-esp32-4-channel-pwm-fan-controller-is-designed-for-server-racks-and-nas-systems",
+      "date": "2026-11-13T03:16:49+00:00",
+      "sourceId": "cnx",
+      "source": "CNX Software",
+      "tier": "媒体补充",
+      "category": "智能家居",
+      "status": "待核验",
+      "discoveredAt": "2026-11-13T06:45:02.689041+00:00"
+    },
+    {
+      "id": "rss-8d0cb5ce5dffb868",
+      "title": "黄仁勋离任后谁来接英伟达 CEO？曝苹果 Mac 芯片负责人斯鲁吉纳入考察范围",
+      "url": "https://www.ithome.com/1/026/555.htm",
+      "date": "2026-11-13T02:59:18+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-13T06:45:02.689041+00:00"
+    },
+    {
+      "id": "rss-796604a1204663c8",
+      "title": "Axelera AI 公布数据中心级 AIPU 芯片 Titania 架构，2027Q3 投产",
+      "url": "https://www.ithome.com/1/026/544.htm",
+      "date": "2026-11-13T02:56:08+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-13T06:45:02.689041+00:00"
+    },
     {
       "id": "rss-3724755674f6ed64",
       "title": "贾跃亭法拉第未来 FFR 机器人业务 2026 年前九个月收入约 230 万美元，计划 2027 年一季度进入芝加哥和达拉斯",
