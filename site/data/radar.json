@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-13T10:55:48.480167+00:00",
-  "lastSuccessfulAt": "2026-11-13T10:55:48.480167+00:00",
+  "checkedAt": "2026-11-13T17:44:03.507624+00:00",
+  "lastSuccessfulAt": "2026-11-13T17:44:03.507624+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-13T10:55:48.480167+00:00",
-      "lastSuccessAt": "2026-11-13T10:55:48.480167+00:00",
+      "checkedAt": "2026-11-13T17:44:03.507624+00:00",
+      "lastSuccessAt": "2026-11-13T17:44:03.507624+00:00",
       "received": 18,
       "matched": 1,
       "excluded": 17,
@@ -15,8 +15,8 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-13T10:55:48.480167+00:00",
-      "lastSuccessAt": "2026-11-13T10:55:48.480167+00:00",
+      "checkedAt": "2026-11-13T17:44:03.507624+00:00",
+      "lastSuccessAt": "2026-11-13T17:44:03.507624+00:00",
       "received": 50,
       "matched": 2,
       "excluded": 48,
@@ -25,8 +25,8 @@
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-13T10:55:48.480167+00:00",
-      "lastSuccessAt": "2026-11-13T10:55:48.480167+00:00",
+      "checkedAt": "2026-11-13T17:44:03.507624+00:00",
+      "lastSuccessAt": "2026-11-13T17:44:03.507624+00:00",
       "received": 10,
       "matched": 0,
       "excluded": 10,
@@ -35,8 +35,8 @@
     {
       "id": "bambu",
       "state": "ok",
-      "checkedAt": "2026-11-13T10:55:48.480167+00:00",
-      "lastSuccessAt": "2026-11-13T10:55:48.480167+00:00",
+      "checkedAt": "2026-11-13T17:44:03.507624+00:00",
+      "lastSuccessAt": "2026-11-13T17:44:03.507624+00:00",
       "received": 15,
       "matched": 15,
       "excluded": 0,
@@ -45,8 +45,8 @@
     {
       "id": "cnx",
       "state": "ok",
-      "checkedAt": "2026-11-13T10:55:48.480167+00:00",
-      "lastSuccessAt": "2026-11-13T10:55:48.480167+00:00",
+      "checkedAt": "2026-11-13T17:44:03.507624+00:00",
+      "lastSuccessAt": "2026-11-13T17:44:03.507624+00:00",
       "received": 32,
       "matched": 6,
       "excluded": 26,
@@ -55,15 +55,51 @@
     {
       "id": "ithome",
       "state": "ok",
-      "checkedAt": "2026-11-13T10:55:48.480167+00:00",
-      "lastSuccessAt": "2026-11-13T10:55:48.480167+00:00",
+      "checkedAt": "2026-11-13T17:44:03.507624+00:00",
+      "lastSuccessAt": "2026-11-13T17:44:03.507624+00:00",
       "received": 60,
-      "matched": 5,
-      "excluded": 55,
+      "matched": 3,
+      "excluded": 57,
       "error": null
     }
   ],
   "items": [
+    {
+      "id": "rss-a8b1e36ae2b19427",
+      "title": "华为麒麟 9050 系列芯片新一代灵犀 CPU 详细信息公开：9 核 16 线程并行调度，支持内存压缩加速",
+      "url": "https://www.ithome.com/1/026/993.htm",
+      "date": "2026-11-13T15:47:34+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-13T17:44:03.507624+00:00"
+    },
+    {
+      "id": "rss-e12b3a682ef07114",
+      "title": "新紫光集团与北汽集团成立联合创新中心，围绕 SoC 芯片、智能座舱等合作",
+      "url": "https://www.ithome.com/1/026/954.htm",
+      "date": "2026-11-13T13:45:37+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-13T17:44:03.507624+00:00"
+    },
+    {
+      "id": "rss-9965fee6112979ab",
+      "title": "Gentle Monster / Warby Parker 将于下月推出 Android XR 智能眼镜：均搭载高通 AR1 芯片，接入谷歌 Gemini",
+      "url": "https://www.ithome.com/1/026/931.htm",
+      "date": "2026-11-13T11:07:01+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "可穿戴与眼镜",
+      "status": "待核验",
+      "discoveredAt": "2026-11-13T17:44:03.507624+00:00"
+    },
     {
       "id": "rss-d864e9e71ee33dd0",
       "title": "Vantron unveils i.MX 952 SMARC system-on-module for Edge AI Vision and Industrial HMI at Electronica 2026",
