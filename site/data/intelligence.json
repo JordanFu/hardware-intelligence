@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastCompletedAt": "2026-11-14T00:44:11.050463+00:00",
+  "lastCompletedAt": "2026-11-14T00:45:36.190896+00:00",
   "method": "Codex 初筛评分 + 逐条证据复核；非两个独立模型评分",
   "items": [
     {
@@ -3371,7 +3371,7 @@
       "eventId": "jetson-power-budget",
       "developmentId": "initial",
       "titleZh": "端侧性能比较需要同时记录功耗模式与温度",
-      "originalTitle": "端侧性能比较需要同时记录功耗模式与温度",
+      "originalTitle": "Power Optimization with NVIDIA Jetson",
       "brief": {
         "lead": "NVIDIA的Jetson技术文章说明，功耗模式会改变可用核心与频率，监测工具可记录资源使用、温度和功耗。因此同一模型的性能不能脱离设备功耗配置讨论。文章发表于2023年，本轮作为基础知识补充，不作为今日芯片新品消息。",
         "points": [
@@ -4716,7 +4716,7 @@
       "eventId": "jtbd-circumstances",
       "developmentId": "initial",
       "titleZh": "需求研究先问具体处境与进步，不能只列功能",
-      "originalTitle": "需求研究先问具体处境与进步，不能只列功能",
+      "originalTitle": "Jobs to Be Done Theory",
       "brief": {
         "lead": "Christensen Institute将JTBD解释为人在特定处境下想取得的进步，涉及功能、社会与情感维度。它提供需求研究的概念依据；应用到学习硬件时，仍需实际访谈和任务观察验证，不能由理论直接断言学生或家长需要什么。",
         "points": [
@@ -9635,6 +9635,469 @@
       },
       "successfulScan": true,
       "completedAt": "2026-11-14T00:44:11.050463+00:00",
+      "reviewedCount": 2,
+      "selectedCount": 2
+    },
+    {
+      "coverage": "6个RSS源5个成功，30条候选初筛；实际读取作业帮、讯飞、宇树、科沃斯4家国内公司正文，覆盖采购、质量、渠道、服务与组织。复核2家核心竞品算法岗位；新增JTBD与Jetson功耗2篇常青brief，今日无合格新事件入选。",
+      "sourceChecks": [
+        {
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/e6056b1d-580b-442d-a27f-9ab9f12cd4b1",
+          "company": "作业帮",
+          "stages": [
+            "研发与系统",
+            "质量与合规",
+            "经营与组织"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "checkedAt": "2026-11-14T00:40:06.098Z",
+          "note": "同ID当前正文；健康穿戴相邻业务，职责未变，不能归为学习硬件算法。"
+        },
+        {
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=dc4e67cc-59ed-4a75-8b7a-e0d6ae6faaa9",
+          "company": "科大讯飞",
+          "stages": [
+            "研发与系统",
+            "质量与合规",
+            "经营与组织"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "checkedAt": "2026-11-14T00:40:34.429Z",
+          "note": "同ID当前OCR正文；公司共享能力，职责未变，无学习机专属范围。"
+        },
+        {
+          "url": "https://www.unitree.com/cn/supplier/",
+          "company": "宇树科技",
+          "stages": [
+            "供应链与采购",
+            "质量与合规",
+            "经营与组织"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-14T00:40:45.885393+00:00",
+          "note": "实际读取采购纪律和供应商登记步骤；登记不等于准入或订单。"
+        },
+        {
+          "url": "https://mall.ecovacs.cn/job-detail-516.html",
+          "company": "科沃斯",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "渠道与销售",
+            "服务与生命周期",
+            "经营与组织"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-14T00:40:45.885518+00:00",
+          "note": "实际读取产品线经理职责与要求，含生命周期、退市、工厂和渠道接口；无当前招聘发布日期，不推断新增缺口。"
+        },
+        {
+          "url": "https://apple-aiml-research.github.io/ml-halo/",
+          "company": null,
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-14T00:40:45.888485+00:00",
+          "note": "实际读取控制层级与训练说明；研究系统非商业部署成效。"
+        },
+        {
+          "url": "https://developer.nvidia.com/blog/power-optimization-with-nvidia-jetson/",
+          "company": null,
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-14T00:40:45.885147+00:00",
+          "note": "已读人工署名正文，未把页面AI摘要单独当依据；2023年常青资料。"
+        },
+        {
+          "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+          "company": null,
+          "stages": [
+            "需求与规划"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "仅读取Web提取的定义片段，未核验视频与案例。"
+        },
+        {
+          "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+          "company": null,
+          "stages": [
+            "需求与规划"
+          ],
+          "purpose": "practice",
+          "state": "error",
+          "checkedAt": "2026-11-14T00:40:45.884594+00:00",
+          "note": "直连超时，保留失败；Web定义片段补读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/622.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/993.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/757.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/468.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/385.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/367.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/331.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/152.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/146.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/828.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/755.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/535.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/516.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/995.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/768.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/767.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/546.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/004.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/954.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/931.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/13/vantron-i-mx-952-smarc-system-on-module-for-edge-ai-vision-and-industrial-hmi",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/839.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/815.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/814.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/791.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/667.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/591.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/13/home-assistant-compatible-esp32-4-channel-pwm-fan-controller-is-designed-for-server-racks-and-nas-systems",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/555.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/544.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/757.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "error",
+          "checkedAt": "2026-11-14T00:40:25.609494+00:00",
+          "note": "自动正文读取失败，本轮未补读该候选，保留覆盖缺口。"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/13/vantron-i-mx-952-smarc-system-on-module-for-edge-ai-vision-and-industrial-hmi",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "error",
+          "checkedAt": "2026-11-14T00:40:25.609494+00:00",
+          "note": "自动正文读取失败，本轮未补读该候选，保留覆盖缺口。"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/13/home-assistant-compatible-esp32-4-channel-pwm-fan-controller-is-designed-for-server-racks-and-nas-systems",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "error",
+          "checkedAt": "2026-11-14T00:40:25.609494+00:00",
+          "note": "自动正文读取失败，本轮未补读该候选，保留覆盖缺口。"
+        },
+        {
+          "url": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-04-29/6982b351-77aa-4dc6-93df-4f4d3fe4e9bd.PDF",
+          "company": "科大讯飞",
+          "stages": [
+            "经营与组织"
+          ],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "国内公司搜索命中报告索引，本轮未读PDF正文，不生成财务或经营结论。"
+        },
+        {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-22/1225493227.PDF",
+          "company": "科沃斯",
+          "stages": [
+            "经营与组织"
+          ],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "note": "国内公司搜索命中报告索引，本轮未读PDF正文，不生成财务或经营结论。"
+        }
+      ],
+      "knownGaps": [
+        "30条候选未完成逐篇正文审核，零入选不表示行业无新事件。",
+        "作业帮算法样本为健康穿戴、讯飞为共享OCR；学习硬件专属算法与供应链证据仍不足。",
+        "14个知识节点完整复核已逾期；本轮仅更新实际有依据的概念和指标条件，不延长完整复核期限。",
+        "搜索命中的讯飞、科沃斯报告仅作索引线索，尚未读PDF正文。"
+      ],
+      "failedSources": [
+        "CNX RSS超时及HTTP 403，保留历史缓存。",
+        "Christensen Institute直连超时，仅Web定义片段可读。",
+        "直连超时，保留失败；Web定义片段补读。",
+        "自动正文读取失败，本轮未补读该候选，保留覆盖缺口。"
+      ],
+      "coverageCheck": {
+        "passed": true,
+        "companies": [
+          "作业帮",
+          "宇树科技",
+          "科大讯飞",
+          "科沃斯"
+        ],
+        "stages": [
+          "供应链与采购",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "作业帮",
+          "科大讯飞"
+        ],
+        "gaps": [],
+        "usableSources": 39
+      },
+      "successfulScan": true,
+      "completedAt": "2026-11-14T00:45:36.190896+00:00",
       "reviewedCount": 2,
       "selectedCount": 2
     }

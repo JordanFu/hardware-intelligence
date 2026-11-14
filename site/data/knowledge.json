@@ -250,7 +250,7 @@
       "updatedAt": "2026-11-10T00:47:16.938756+00:00"
     },
     "chain-1": {
-      "attemptedAt": "2026-11-14T00:44:51.090797+00:00",
+      "attemptedAt": "2026-11-14T00:45:44.030212+00:00",
       "status": "partial",
       "assessment": "补齐JTBD基础定义的来源，并将需求假设和已验证需求区分；只读定义片段，没有完整核验任务指标与用户结果。",
       "gaps": [
@@ -301,7 +301,7 @@
           "note": "只复核列明字段，片段不算完整正文；未读字段与观察对象继续保留缺口。"
         }
       ],
-      "reviewedAt": "2026-11-14T00:44:51.090797+00:00",
+      "reviewedAt": "2026-11-14T00:45:44.030212+00:00",
       "patch": {
         "team": "用户研究、产品、销售、服务一起区分使用者、购买者与渠道反馈。 平台型硬件还需区分内容创作者、最终使用者与实体履约伙伴；活动意见是需求线索，不能替代使用验证。",
         "exercise": "选一个产品，写出用户原流程、减少的步骤和可观察的验收条件。 对每条社区反馈补上样本人群、具体任务、拟改变的规则以及可验证结果；保留未被采纳的理由。",
@@ -1125,7 +1125,7 @@
       "updatedAt": "2026-11-13T00:48:21.968448+00:00"
     },
     "track-1": {
-      "attemptedAt": "2026-11-14T00:44:51.090797+00:00",
+      "attemptedAt": "2026-11-14T00:45:44.030212+00:00",
       "status": "partial",
       "assessment": "重新读取HALO编排、生成、跟踪和训练正文；不同层级频率不能替代端到端延迟，研究演示不能证明量产安全和现场负担改善。原整理仍成立，不制造内容更新。",
       "gaps": [
@@ -1182,7 +1182,7 @@
           "note": "只复核列明字段，片段不算完整正文；未读字段与观察对象继续保留缺口。"
         }
       ],
-      "reviewedAt": "2026-11-14T00:44:51.090797+00:00",
+      "reviewedAt": "2026-11-14T00:45:44.030212+00:00",
       "patch": {
         "examples": "DJI、宇树、NVIDIA 生态；新增上纬新材启元作为量产与商业化阶段观察对象，HALO 作为基于宇树 G1 的研究系统样本。",
         "constraint": "真实环境中的安全、可靠性与维护成本 下线数量、交付数量和终端持续使用须分开；公司披露“良率良好”但未给分母时不能当作可比质量指标。",
@@ -1205,7 +1205,7 @@
       "updatedAt": "2026-11-09T00:50:51.394323+00:00"
     },
     "track-3": {
-      "attemptedAt": "2026-11-14T00:44:51.090797+00:00",
+      "attemptedAt": "2026-11-14T00:45:44.030212+00:00",
       "status": "partial",
       "assessment": "补充功耗模式、温度和测量边界对性能比较的限制；旧平台文章只能提供研究方法，当前全部产品与SDK仍待复核。",
       "gaps": [
@@ -1261,7 +1261,7 @@
           "note": "只复核列明字段，片段不算完整正文；未读字段与观察对象继续保留缺口。"
         }
       ],
-      "reviewedAt": "2026-11-14T00:44:51.090797+00:00",
+      "reviewedAt": "2026-11-14T00:45:44.030212+00:00",
       "patch": {
         "chain": "芯片 / 模组 → SDK → 模型优化 → 整机集成 观察整机时还要区分任务编排、模型生成与低层跟踪分别运行于何处，并记录手机、机载或网络依赖。",
         "metrics": "同一任务下的延迟、功耗、内存与准确性 不同层级运行频率不能直接替代端到端响应延迟；需固定任务、系统边界和设备版本，再测功耗、内存与效果。 对Jetson样本还应记录功耗模式、核心/频率配置和温度日志；模组监测功耗不等于整机功耗，配置与散热条件不同的成绩不能直接比较。"
@@ -1700,6 +1700,28 @@
         {
           "itemId": "jetson-power-budget",
           "hash": "6a8fd78693af0a87978e8ad9c33a6142e04e4f0c4646466dd0937e9dee560dc4",
+          "decision": "integrated",
+          "reason": "补功耗测试条件与测量范围，保留旧版本限制，不推广为最优实践。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-14T00:45:44.030212+00:00",
+      "reviewedNodes": [
+        "chain-1",
+        "track-3",
+        "track-1"
+      ],
+      "decisions": [
+        {
+          "itemId": "jtbd-circumstances",
+          "hash": "206f6cf66ee28b67036134c8fa346960bc1b90489327f473137b3627692e0c5d",
+          "decision": "integrated",
+          "reason": "沉淀需求概念与应用边界，仅基于定义片段，不标为完整复核。"
+        },
+        {
+          "itemId": "jetson-power-budget",
+          "hash": "31740d2cea34028d0ca473e2287e457c03dc3d96e2e38a456a7b5fd83e1ed2a7",
           "decision": "integrated",
           "reason": "补功耗测试条件与测量范围，保留旧版本限制，不推广为最优实践。"
         }
@@ -4485,6 +4507,185 @@
     {
       "nodeId": "track-1",
       "reviewedAt": "2026-11-14T00:44:51.090797+00:00",
+      "status": "partial",
+      "assessment": "重新读取HALO编排、生成、跟踪和训练正文；不同层级频率不能替代端到端延迟，研究演示不能证明量产安全和现场负担改善。原整理仍成立，不制造内容更新。",
+      "gaps": [
+        "无人机、DJI 与初始 NVIDIA 生态观察对象尚未完整复核。",
+        "任务成功率、接管、恢复时间与现场工时仍缺统一测量协议及实测样本。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "metrics"
+      ],
+      "changes": {},
+      "lessonChanges": [],
+      "evidence": [
+        {
+          "itemId": "halo-official",
+          "title": "HALO 项目：任务编排、动作生成与跟踪采用不同运行频率",
+          "facts": [
+            {
+              "claim": "动作跟踪在嵌入式计算单元执行。",
+              "sourceUrl": "https://apple-aiml-research.github.io/ml-halo/",
+              "locator": "Onboard autonomy stack / Tracker"
+            }
+          ],
+          "boundary": "本次读取项目正文及 arXiv 摘要和提交历史，未完整审阅论文、代码或复现实验；不采用媒体中的商业能力外推。",
+          "sources": [
+            {
+              "url": "https://apple-aiml-research.github.io/ml-halo/",
+              "name": "Apple HALO 项目主页",
+              "publishedAt": null,
+              "publisherGroup": "Apple HALO 项目主页",
+              "role": "official",
+              "textHash": "f3e28c1a97ac954e66a5d7aa18c8fd77856876dd3bc5cb1036eb069a6a279c93",
+              "readAt": "2026-11-09T00:46:57.560360+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://arxiv.org/abs/2611.06908",
+              "name": "arXiv 原始摘要及提交历史",
+              "publishedAt": "2026-11-04T18:55:33+00:00",
+              "publisherGroup": "Apple HALO 研究团队",
+              "role": "research",
+              "textHash": "c6beba565ab0e162b748b39585dc2eb20c04794e84ca14991a8ea47a9fc24640",
+              "readAt": "2026-11-08T00:49:19.903614+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "halo-official",
+          "url": "https://apple-aiml-research.github.io/ml-halo/",
+          "checkedAt": "2026-11-14T00:40:45.888485+00:00",
+          "state": "body",
+          "note": "只复核列明字段，片段不算完整正文；未读字段与观察对象继续保留缺口。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-1",
+      "reviewedAt": "2026-11-14T00:45:44.030212+00:00",
+      "status": "partial",
+      "assessment": "补齐JTBD基础定义的来源，并将需求假设和已验证需求区分；只读定义片段，没有完整核验任务指标与用户结果。",
+      "gaps": [
+        "目标任务成功率的测量协议仍未完整核实。",
+        "活动反馈不能代表全部用户，采纳与使用结果仍未知；原有团队接口未完成本轮全字段复核。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "exercise"
+      ],
+      "changes": {},
+      "lessonChanges": [],
+      "evidence": [
+        {
+          "itemId": "jtbd-circumstances",
+          "title": "需求研究先问具体处境与进步，不能只列功能",
+          "facts": [
+            {
+              "claim": "JTBD包含功能、社会和情感维度。",
+              "sourceUrl": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+              "locator": "Definition段落"
+            },
+            {
+              "claim": "概念强调特定处境下希望取得的进步。",
+              "sourceUrl": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+              "locator": "Definition段落"
+            }
+          ],
+          "boundary": "仅取得当前网页Definition片段；不等于完整方法论审阅，不据此推断国内硬件用户需求或企业成效。",
+          "sources": [
+            {
+              "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+              "name": "Christensen Institute官方资料",
+              "publishedAt": null,
+              "publisherGroup": "Christensen Institute",
+              "role": "official",
+              "textHash": "9c6f1c198d595232cfb7db26736e7eeb03427a2ad9d4ca423c90b149bd6361e9",
+              "readAt": "2026-11-14T00:44:10.709041+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "jtbd-circumstances",
+          "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
+          "state": "index",
+          "note": "只复核列明字段，片段不算完整正文；未读字段与观察对象继续保留缺口。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-3",
+      "reviewedAt": "2026-11-14T00:45:44.030212+00:00",
+      "status": "partial",
+      "assessment": "补充功耗模式、温度和测量边界对性能比较的限制；旧平台文章只能提供研究方法，当前全部产品与SDK仍待复核。",
+      "gaps": [
+        "Qualcomm、瑞芯微及NVIDIA当前全部产品与SDK未全面复核。",
+        "模型压缩、BSP、维护成本及整机可比实测仍缺完整依据。"
+      ],
+      "reviewedFields": [
+        "constraint",
+        "metrics"
+      ],
+      "changes": {},
+      "lessonChanges": [],
+      "evidence": [
+        {
+          "itemId": "jetson-power-budget",
+          "title": "端侧性能比较需要同时记录功耗模式与温度",
+          "facts": [
+            {
+              "claim": "文章说明功耗模式由nvpmodel设置。",
+              "sourceUrl": "https://developer.nvidia.com/blog/power-optimization-with-nvidia-jetson/",
+              "locator": "Jetson power modes"
+            },
+            {
+              "claim": "Power GUI可记录功耗相关日志。",
+              "sourceUrl": "https://developer.nvidia.com/blog/power-optimization-with-nvidia-jetson/",
+              "locator": "Jetson Power GUI"
+            },
+            {
+              "claim": "Tegrastats也提供温度信息。",
+              "sourceUrl": "https://developer.nvidia.com/blog/power-optimization-with-nvidia-jetson/",
+              "locator": "Tegrastats"
+            }
+          ],
+          "boundary": "2023年平台技术文章；未验证当前所有JetPack版本和模组，未进行实测。不把模组功耗当整机墙上功耗，不推断节能比例或芯片优劣。",
+          "sources": [
+            {
+              "url": "https://developer.nvidia.com/blog/power-optimization-with-nvidia-jetson/",
+              "name": "NVIDIA官方资料",
+              "publishedAt": "2023-10-05",
+              "publisherGroup": "NVIDIA",
+              "role": "official",
+              "textHash": "f82284c71c1f2fc8e4993982daca0112deb71f2e35992ed1ea3d73b8c7d2d290",
+              "readAt": "2026-11-14T00:40:45.885147+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "jetson-power-budget",
+          "url": "https://developer.nvidia.com/blog/power-optimization-with-nvidia-jetson/",
+          "checkedAt": "2026-11-14T00:40:45.885147+00:00",
+          "state": "body",
+          "note": "只复核列明字段，片段不算完整正文；未读字段与观察对象继续保留缺口。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-1",
+      "reviewedAt": "2026-11-14T00:45:44.030212+00:00",
       "status": "partial",
       "assessment": "重新读取HALO编排、生成、跟踪和训练正文；不同层级频率不能替代端到端延迟，研究演示不能证明量产安全和现场负担改善。原整理仍成立，不制造内容更新。",
       "gaps": [
