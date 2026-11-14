@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-14T00:45:54.945690+00:00",
-  "lastSuccessfulAt": "2026-11-14T00:45:54.945690+00:00",
+  "checkedAt": "2026-11-14T06:22:19.461057+00:00",
+  "lastSuccessfulAt": "2026-11-14T06:22:19.461057+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-14T00:45:54.945690+00:00",
-      "lastSuccessAt": "2026-11-14T00:45:54.945690+00:00",
+      "checkedAt": "2026-11-14T06:22:19.461057+00:00",
+      "lastSuccessAt": "2026-11-14T06:22:19.461057+00:00",
       "received": 18,
       "matched": 1,
       "excluded": 17,
@@ -15,8 +15,8 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-14T00:45:54.945690+00:00",
-      "lastSuccessAt": "2026-11-14T00:45:54.945690+00:00",
+      "checkedAt": "2026-11-14T06:22:19.461057+00:00",
+      "lastSuccessAt": "2026-11-14T06:22:19.461057+00:00",
       "received": 50,
       "matched": 2,
       "excluded": 48,
@@ -25,8 +25,8 @@
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-14T00:45:54.945690+00:00",
-      "lastSuccessAt": "2026-11-14T00:45:54.945690+00:00",
+      "checkedAt": "2026-11-14T06:22:19.461057+00:00",
+      "lastSuccessAt": "2026-11-14T06:22:19.461057+00:00",
       "received": 10,
       "matched": 0,
       "excluded": 10,
@@ -35,8 +35,8 @@
     {
       "id": "bambu",
       "state": "ok",
-      "checkedAt": "2026-11-14T00:45:54.945690+00:00",
-      "lastSuccessAt": "2026-11-14T00:45:54.945690+00:00",
+      "checkedAt": "2026-11-14T06:22:19.461057+00:00",
+      "lastSuccessAt": "2026-11-14T06:22:19.461057+00:00",
       "received": 15,
       "matched": 15,
       "excluded": 0,
@@ -45,8 +45,8 @@
     {
       "id": "cnx",
       "state": "ok",
-      "checkedAt": "2026-11-14T00:45:54.945690+00:00",
-      "lastSuccessAt": "2026-11-14T00:45:54.945690+00:00",
+      "checkedAt": "2026-11-14T06:22:19.461057+00:00",
+      "lastSuccessAt": "2026-11-14T06:22:19.461057+00:00",
       "received": 32,
       "matched": 6,
       "excluded": 26,
@@ -55,15 +55,75 @@
     {
       "id": "ithome",
       "state": "ok",
-      "checkedAt": "2026-11-14T00:45:54.945690+00:00",
-      "lastSuccessAt": "2026-11-14T00:45:54.945690+00:00",
+      "checkedAt": "2026-11-14T06:22:19.461057+00:00",
+      "lastSuccessAt": "2026-11-14T06:22:19.461057+00:00",
       "received": 60,
-      "matched": 3,
-      "excluded": 57,
+      "matched": 5,
+      "excluded": 55,
       "error": null
     }
   ],
   "items": [
+    {
+      "id": "rss-e2d946528a29423f",
+      "title": "荣耀被曝测试多款豪威影像传感器，“最顶”主摄为 2 亿像素 OVB0D",
+      "url": "https://www.ithome.com/1/027/067.htm",
+      "date": "2026-11-14T03:03:47+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-14T06:22:19.461057+00:00"
+    },
+    {
+      "id": "rss-ce1e945a88042cdb",
+      "title": "“苹果最暗产品”：苹果首款智能家居中枢 HomeView 屏幕最低仅 0.3 尼特",
+      "url": "https://www.ithome.com/1/027/066.htm",
+      "date": "2026-11-14T02:57:26+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "智能家居",
+      "status": "待核验",
+      "discoveredAt": "2026-11-14T06:22:19.461057+00:00"
+    },
+    {
+      "id": "rss-53abe376e61be0a3",
+      "title": "配 A20 芯片：古尔曼重申苹果 iPhone 18/18e 明年春季将登场",
+      "url": "https://www.ithome.com/1/027/057.htm",
+      "date": "2026-11-14T02:26:45+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-14T06:22:19.461057+00:00"
+    },
+    {
+      "id": "rss-e26f57105203bc06",
+      "title": "苹果首款智能家居中枢 HomeView 开售：戴墨镜可能认不出你",
+      "url": "https://www.ithome.com/1/027/043.htm",
+      "date": "2026-11-14T01:34:41+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "智能家居",
+      "status": "待核验",
+      "discoveredAt": "2026-11-14T06:22:19.461057+00:00"
+    },
+    {
+      "id": "rss-33bd1fdbaa528611",
+      "title": "拜雅推出 4 款新 Pro X 限量黑色特别版耳机，售价 1499 元起",
+      "url": "https://www.ithome.com/1/027/031.htm",
+      "date": "2026-11-14T00:44:52+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "可穿戴与眼镜",
+      "status": "待核验",
+      "discoveredAt": "2026-11-14T06:22:19.461057+00:00"
+    },
     {
       "id": "rss-27db6612d1e993e7",
       "title": "要让 GPT-6 Astra 等通用 AI 当机器人“大脑”：OpenAI 宣布重组具身智能团队",
