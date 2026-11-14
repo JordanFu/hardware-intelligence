@@ -1070,6 +1070,36 @@
           "note": "学习硬件研究的有边界参照：海豚AI一对一教学服务，未提学习硬件销售"
         }
       ]
+    },
+    {
+      "completedAt": "2026-11-14T00:44:11.145511+00:00",
+      "summary": "复核作业帮健康穿戴算法与讯飞OCR同ID岗位，职责无实质变化，保留相邻业务和共享能力边界。未据此推断学习硬件编制、汇报线或人员缺口。产品档案本轮无新正文增量，不推进内容日期。",
+      "checks": [
+        {
+          "company": "作业帮",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/e6056b1d-580b-442d-a27f-9ab9f12cd4b1",
+          "name": "算法工程师（D110740）",
+          "state": "body",
+          "checkedAt": "2026-11-14T00:40:06.098Z",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "有边界的组织研究参照：穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=dc4e67cc-59ed-4a75-8b7a-e0d6ae6faaa9",
+          "name": "AI研究院-算法工程师-OCR方向(J14869)",
+          "state": "body",
+          "checkedAt": "2026-11-14T00:40:34.429Z",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "有边界的组织研究参照：集团统一招聘的OCR能力，未指定学习机或词典笔项目"
+        }
+      ]
     }
   ],
   "history": [

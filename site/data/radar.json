@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-13T17:44:03.507624+00:00",
-  "lastSuccessfulAt": "2026-11-13T17:44:03.507624+00:00",
+  "checkedAt": "2026-11-14T00:39:37.078546+00:00",
+  "lastSuccessfulAt": "2026-11-14T00:39:37.078546+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-13T17:44:03.507624+00:00",
-      "lastSuccessAt": "2026-11-13T17:44:03.507624+00:00",
+      "checkedAt": "2026-11-14T00:39:37.078546+00:00",
+      "lastSuccessAt": "2026-11-14T00:39:37.078546+00:00",
       "received": 18,
       "matched": 1,
       "excluded": 17,
@@ -15,8 +15,8 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-13T17:44:03.507624+00:00",
-      "lastSuccessAt": "2026-11-13T17:44:03.507624+00:00",
+      "checkedAt": "2026-11-14T00:39:37.078546+00:00",
+      "lastSuccessAt": "2026-11-14T00:39:37.078546+00:00",
       "received": 50,
       "matched": 2,
       "excluded": 48,
@@ -25,8 +25,8 @@
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-13T17:44:03.507624+00:00",
-      "lastSuccessAt": "2026-11-13T17:44:03.507624+00:00",
+      "checkedAt": "2026-11-14T00:39:37.078546+00:00",
+      "lastSuccessAt": "2026-11-14T00:39:37.078546+00:00",
       "received": 10,
       "matched": 0,
       "excluded": 10,
@@ -35,8 +35,8 @@
     {
       "id": "bambu",
       "state": "ok",
-      "checkedAt": "2026-11-13T17:44:03.507624+00:00",
-      "lastSuccessAt": "2026-11-13T17:44:03.507624+00:00",
+      "checkedAt": "2026-11-14T00:39:37.078546+00:00",
+      "lastSuccessAt": "2026-11-14T00:39:37.078546+00:00",
       "received": 15,
       "matched": 15,
       "excluded": 0,
@@ -44,19 +44,16 @@
     },
     {
       "id": "cnx",
-      "state": "ok",
-      "checkedAt": "2026-11-13T17:44:03.507624+00:00",
-      "lastSuccessAt": "2026-11-13T17:44:03.507624+00:00",
-      "received": 32,
-      "matched": 6,
-      "excluded": 26,
-      "error": null
+      "state": "error",
+      "checkedAt": "2026-11-14T00:39:37.078546+00:00",
+      "error": "curl: (28) Connection timed out after 30004 milliseconds\ncurl: (56) The requested URL returned error: 403",
+      "lastSuccessAt": "2026-11-13T17:44:03.507624+00:00"
     },
     {
       "id": "ithome",
       "state": "ok",
-      "checkedAt": "2026-11-13T17:44:03.507624+00:00",
-      "lastSuccessAt": "2026-11-13T17:44:03.507624+00:00",
+      "checkedAt": "2026-11-14T00:39:37.078546+00:00",
+      "lastSuccessAt": "2026-11-14T00:39:37.078546+00:00",
       "received": 60,
       "matched": 3,
       "excluded": 57,
@@ -64,6 +61,18 @@
     }
   ],
   "items": [
+    {
+      "id": "rss-27db6612d1e993e7",
+      "title": "要让 GPT-6 Astra 等通用 AI 当机器人“大脑”：OpenAI 宣布重组具身智能团队",
+      "url": "https://www.ithome.com/1/027/004.htm",
+      "date": "2026-11-13T23:17:38+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-14T00:39:37.078546+00:00"
+    },
     {
       "id": "rss-a8b1e36ae2b19427",
       "title": "华为麒麟 9050 系列芯片新一代灵犀 CPU 详细信息公开：9 核 16 线程并行调度，支持内存压缩加速",

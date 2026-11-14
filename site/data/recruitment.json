@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-13T00:47:25.669231+00:00",
+  "checkedAt": "2026-11-14T00:44:10.803458+00:00",
   "jobs": [
     {
       "company": "DJI 大疆",
@@ -758,9 +758,9 @@
       "scopeNote": "穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队",
       "id": "job-dee6ed39b271d521",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
-      "sourceHash": "ec774ff059948139f334d111c0ebdf5f037bb9e1394bd22b232ede6039286c27",
-      "change": "首次收录基线",
+      "lastSeen": "2026-11-14T00:44:10.803458+00:00",
+      "sourceHash": "1ddb39d34e36e78cc72a716b5df3460edb6eac972572daf52a3d4de7ea10748f",
+      "change": "持续可见",
       "versions": [
         {
           "observedAt": "2026-11-09T02:30:42.120805+00:00",
@@ -1015,9 +1015,9 @@
       "scopeNote": "集团统一招聘的OCR能力，未指定学习机或词典笔项目",
       "id": "job-6ad13572c435cde0",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
+      "lastSeen": "2026-11-14T00:44:10.803458+00:00",
       "sourceHash": "46428c6fef15a49e07d70af7d8d0f94c1cd36347c94ff1a8705d6e3c8ba28011",
-      "change": "首次收录基线",
+      "change": "持续可见",
       "versions": [
         {
           "observedAt": "2026-11-09T02:30:42.120805+00:00",
@@ -2307,6 +2307,42 @@
         }
       ],
       "checkedAt": "2026-11-13T00:47:25.669231+00:00"
+    },
+    {
+      "company": "作业帮",
+      "state": "partial",
+      "complete": false,
+      "note": "同ID定向复核，职责未变；非完整岗位目录。",
+      "familyChecks": [
+        {
+          "family": "算法",
+          "state": "body",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/e6056b1d-580b-442d-a27f-9ab9f12cd4b1",
+          "jobIds": [
+            "job-dee6ed39b271d521"
+          ],
+          "note": "穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队；当前正文未见实质变化。"
+        }
+      ],
+      "checkedAt": "2026-11-14T00:44:10.803458+00:00"
+    },
+    {
+      "company": "科大讯飞",
+      "state": "partial",
+      "complete": false,
+      "note": "同ID定向复核，职责未变；非完整岗位目录。",
+      "familyChecks": [
+        {
+          "family": "算法",
+          "state": "body",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=dc4e67cc-59ed-4a75-8b7a-e0d6ae6faaa9",
+          "jobIds": [
+            "job-6ad13572c435cde0"
+          ],
+          "note": "集团统一招聘的OCR能力，未指定学习机或词典笔项目；当前正文未见实质变化。"
+        }
+      ],
+      "checkedAt": "2026-11-14T00:44:10.803458+00:00"
     }
   ],
   "insights": [
