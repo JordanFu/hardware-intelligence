@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-14T00:44:10.803458+00:00",
+  "checkedAt": "2026-11-14T10:44:31.902746+00:00",
   "jobs": [
     {
       "company": "DJI 大疆",
@@ -1077,9 +1077,9 @@
       "scopeNote": "消费电子失效分析岗位，未限定学习机",
       "id": "job-797f93614cde9bde",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
+      "lastSeen": "2026-11-14T10:44:31.902746+00:00",
       "sourceHash": "e367857bfc7b181fd665537a96af5c9ec85c08605b3eea26e9d094639bc75bdb",
-      "change": "首次收录基线",
+      "change": "持续可见",
       "versions": [
         {
           "observedAt": "2026-11-09T02:30:42.120805+00:00",
@@ -1398,7 +1398,7 @@
       ],
       "id": "job-6c6331e12e6b4c66",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-11T00:44:01.794961+00:00",
+      "lastSeen": "2026-11-14T10:44:31.902746+00:00",
       "sourceHash": "2c8e92aeec8845f458bdc658e6f76ca865dda8ad852ef8c28ee8de426eea753f",
       "change": "持续可见",
       "versions": [
@@ -2343,6 +2343,42 @@
         }
       ],
       "checkedAt": "2026-11-14T00:44:10.803458+00:00"
+    },
+    {
+      "company": "科大讯飞",
+      "state": "partial",
+      "complete": false,
+      "note": "复查同ID硬件岗位，职责和业务归属未变；未扫描完整目录。",
+      "familyChecks": [
+        {
+          "family": "硬件",
+          "state": "body",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=88077f48-0bb2-4ee9-9030-c28d04ca85ee",
+          "jobIds": [
+            "job-797f93614cde9bde"
+          ],
+          "note": "消费电子失效分析岗位，未限定学习机；本轮未见实质职责变化。"
+        }
+      ],
+      "checkedAt": "2026-11-14T10:44:31.902746+00:00"
+    },
+    {
+      "company": "猿辅导（小猿）",
+      "state": "partial",
+      "complete": false,
+      "note": "复查同ID硬件岗位，职责和业务归属未变；未扫描完整目录。",
+      "familyChecks": [
+        {
+          "family": "硬件",
+          "state": "body",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "jobIds": [
+            "job-6c6331e12e6b4c66"
+          ],
+          "note": "原文明确小猿产品及学习机、学练机业务，未划分具体型号；本轮未见实质职责变化。"
+        }
+      ],
+      "checkedAt": "2026-11-14T10:44:31.902746+00:00"
     }
   ],
   "insights": [

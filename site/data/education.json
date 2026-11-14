@@ -1100,6 +1100,36 @@
           "note": "有边界的组织研究参照：集团统一招聘的OCR能力，未指定学习机或词典笔项目"
         }
       ]
+    },
+    {
+      "completedAt": "2026-11-14T10:44:32.222866+00:00",
+      "summary": "晚间复查讯飞硬件失效分析、小猿硬件研发同ID正文，职责与业务归属保持原整理。无产品档案增量，不刷新产品内容日期。",
+      "checks": [
+        {
+          "company": "科大讯飞",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=88077f48-0bb2-4ee9-9030-c28d04ca85ee",
+          "name": "中级硬件工程师",
+          "state": "body",
+          "checkedAt": "2026-11-14T10:43:07.220Z",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "消费电子失效分析岗位，未限定学习机"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "name": "2026届春招-硬件研发工程师",
+          "state": "body",
+          "checkedAt": "2026-11-14T10:43:19.225Z",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "原文明确小猿产品及学习机、学练机业务，未划分具体型号"
+        }
+      ]
     }
   ],
   "history": [

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastCompletedAt": "2026-11-14T00:45:36.190896+00:00",
+  "lastCompletedAt": "2026-11-14T10:44:32.128066+00:00",
   "method": "Codex 初筛评分 + 逐条证据复核；非两个独立模型评分",
   "items": [
     {
@@ -4801,6 +4801,196 @@
       "date": null,
       "title": "需求研究先问具体处境与进步，不能只列功能",
       "summary": "Christensen Institute将JTBD解释为人在特定处境下想取得的进步，涉及功能、社会与情感维度。它提供需求研究的概念依据；应用到学习硬件时，仍需实际访谈和任务观察验证，不能由理论直接断言学生或家长需要什么。"
+    },
+    {
+      "id": "nist-quality-reliability",
+      "eventId": "nist-quality-reliability",
+      "developmentId": "initial",
+      "titleZh": "初始合格不等于长期可靠：质量比较需要时间轴",
+      "originalTitle": "8.1.1.1. Quality versus reliability",
+      "brief": {
+        "lead": "NIST统计手册区分了开始使用时是否符合要求，与产品运行一段时间后是否仍符合要求。研究智能硬件质量时，出厂合格率和使用后的失效表现需要分别记录，不能由一次终检通过推断整个使用周期可靠。",
+        "points": [
+          "开始使用时的质量评价有前提：产品规格充分反映客户要求。",
+          "长期可靠性需要随时间描述失效，不能只给一个不带使用时长的缺陷比例。"
+        ]
+      },
+      "stages": [
+        "制造与交付",
+        "质量与合规",
+        "服务与生命周期"
+      ],
+      "domestic": false,
+      "companies": [
+        "NIST"
+      ],
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 18,
+          "机制清晰": 18,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "读取当前官方说明，事实与研究解释分开，保留适用范围与未知项。"
+        }
+      },
+      "eventReason": "同一主体与具体机制去重；无日期支持资料不作为今日新闻。",
+      "boundary": "读取当前NIST手册概念页；不是对某款设备的测试结论，也未核验安全、认证范围或企业失效率。",
+      "meaning": "把出厂问题与使用后失效分别建证据，避免混用质量指标。",
+      "question": "样本从何时开始计时、经历哪些使用条件，失效定义和观察窗口是否一致？",
+      "practices": [
+        {
+          "title": "把初始符合性与使用期失效分开观察",
+          "method": "分别描述初始验收和随使用时间变化的失效；测量前明确规格、时间及样本。",
+          "conditions": "质量与可靠性研究的基础区分，具体产品仍需独立测试协议。",
+          "outcome": "概念依据，不含企业实测或改善成效。",
+          "boundary": "读取当前NIST手册概念页；不是对某款设备的测试结论，也未核验安全、认证范围或企业失效率。",
+          "nextCheck": "核对使用暴露、失效定义与样本退出记录，另查安全和认证依据。",
+          "stages": [
+            "制造与交付",
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "NIST将开始使用时的要求符合性与后续可靠性区分。",
+          "sourceUrl": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr111.htm",
+          "locator": "8.1.1.1 Quality versus reliability"
+        },
+        {
+          "claim": "描述可靠性失效需要考虑随时间变化的模型。",
+          "sourceUrl": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr111.htm",
+          "locator": "Life distributions model fraction fallout over time"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr111.htm",
+          "name": "NIST官方资料",
+          "publishedAt": null,
+          "publisherGroup": "NIST",
+          "role": "official",
+          "textHash": "08a695b6e0122ad8c6ae2abbfde2eef9fb59bbe0ebc5c305ba6458ae2b92f100",
+          "readAt": "2026-11-14T10:42:24.849067+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-14T10:44:32.123356+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "初始合格不等于长期可靠：质量比较需要时间轴",
+      "summary": "NIST统计手册区分了开始使用时是否符合要求，与产品运行一段时间后是否仍符合要求。研究智能硬件质量时，出厂合格率和使用后的失效表现需要分别记录，不能由一次终检通过推断整个使用周期可靠。"
+    },
+    {
+      "id": "protolabs-dfm-review",
+      "eventId": "protolabs-dfm-review",
+      "developmentId": "initial",
+      "titleZh": "DFM反馈是工艺适配检查，不能代替产品验收",
+      "originalTitle": "Manufacturing Analysis",
+      "brief": {
+        "lead": "Protolabs帮助页说明，其DFM分析针对CAD几何给出制造反馈，分析变量随制造服务变化。平台也提供几何修订建议供用户接受或拒绝。这是设计到制造的接口样本，不能证明整机功能、可靠性或量产良率已达标。",
+        "points": [
+          "壁厚、拔模等属于工艺相关反馈，不能脱离所选制造方式解释。",
+          "自动提出修订后仍有审核选择；实际收益未在本轮独立验证。"
+        ]
+      },
+      "stages": [
+        "研发与系统",
+        "制造与交付",
+        "质量与合规"
+      ],
+      "domestic": false,
+      "companies": [
+        "Protolabs"
+      ],
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 18,
+          "机制清晰": 18,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "读取当前官方说明，事实与研究解释分开，保留适用范围与未知项。"
+        }
+      },
+      "eventReason": "同一主体与具体机制去重；无日期支持资料不作为今日新闻。",
+      "boundary": "单一制造商的平台说明，不是行业标准；没有上传模型、测试流程或验证成本及交期收益。文中ODM指按需制造，不应读作原始设计制造商。",
+      "meaning": "将工艺适配建议与设计责任、产品验证分别确认。",
+      "question": "谁核对修订后的功能要求、图纸版本及试产结果？",
+      "practices": [
+        {
+          "title": "工艺反馈与设计审批分别保留",
+          "method": "确认工艺限制，再由设计责任人审查修订建议；另行验证产品。",
+          "conditions": "具体制造服务的设计协同样本。",
+          "outcome": "仅披露反馈和审批入口，未验证质量提升。",
+          "boundary": "单一制造商的平台说明，不是行业标准；没有上传模型、测试流程或验证成本及交期收益。文中ODM指按需制造，不应读作原始设计制造商。",
+          "nextCheck": "核对版本、责任人及验证记录。",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "evidenceLevel": "官方披露做法",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "分析变量取决于使用的制造服务。",
+          "sourceUrl": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+          "locator": "Interpreting Color Indicators"
+        },
+        {
+          "claim": "用户可以拒绝平台建议的几何修改。",
+          "sourceUrl": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+          "locator": "Molding: Protolabs Proposed Revisions"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+          "name": "Protolabs官方资料",
+          "publishedAt": null,
+          "publisherGroup": "Protolabs",
+          "role": "official",
+          "textHash": "dbe84cd321515ad683fdc1ff377547d7ed6a456bcf7c93e7e64efb1766b8cc5a",
+          "readAt": "2026-11-14T10:42:24.851452+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-14T10:44:32.124161+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "DFM反馈是工艺适配检查，不能代替产品验收",
+      "summary": "Protolabs帮助页说明，其DFM分析针对CAD几何给出制造反馈，分析变量随制造服务变化。平台也提供几何修订建议供用户接受或拒绝。这是设计到制造的接口样本，不能证明整机功能、可靠性或量产良率已达标。"
     }
   ],
   "events": [
@@ -5505,6 +5695,34 @@
       ],
       "publisherGroups": [
         "Christensen Institute"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "nist-quality-reliability",
+      "representativeId": "nist-quality-reliability",
+      "itemIds": [
+        "nist-quality-reliability"
+      ],
+      "publisherGroups": [
+        "NIST"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "protolabs-dfm-review",
+      "representativeId": "protolabs-dfm-review",
+      "itemIds": [
+        "protolabs-dfm-review"
+      ],
+      "publisherGroups": [
+        "Protolabs"
       ],
       "developmentIds": [
         "initial"
@@ -10098,6 +10316,140 @@
       },
       "successfulScan": true,
       "completedAt": "2026-11-14T00:45:36.190896+00:00",
+      "reviewedCount": 2,
+      "selectedCount": 2
+    },
+    {
+      "coverage": "晚间定向补知识：实际读取科沃斯、宇树、讯飞、小猿4家国内公司资料，含3家公司岗位正文，覆盖制造、质量、采购、渠道及服务。另读NIST与Protolabs概念/平台资料；无新增新闻审核，不重写早间已通过覆盖的日报。",
+      "sourceChecks": [
+        {
+          "url": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr111.htm",
+          "company": null,
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-14T10:42:24.849067+00:00",
+          "note": "实际读取完整概念页，不外推企业结果。"
+        },
+        {
+          "url": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+          "company": null,
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-14T10:42:24.851452+00:00",
+          "note": "实际读取制造分析、工艺变量与建议修订审批章节。"
+        },
+        {
+          "url": "https://mall.roborock.com/introduction/jobs",
+          "company": "石头科技",
+          "stages": [
+            "制造与交付",
+            "质量与合规"
+          ],
+          "purpose": "recruitment",
+          "state": "error",
+          "checkedAt": "2026-11-14T10:42:24.853761+00:00",
+          "note": "直连没有取得可用正文；不当作无岗位。"
+        },
+        {
+          "url": "https://mall.ecovacs.cn/job-detail-516.html",
+          "company": "科沃斯",
+          "stages": [
+            "需求与规划",
+            "渠道与销售",
+            "服务与生命周期",
+            "经营与组织"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "checkedAt": "2026-11-14T10:42:24.853975+00:00",
+          "note": "产品线经理职责正文，未见发布日期；只作生命周期接口参考。"
+        },
+        {
+          "url": "https://www.unitree.com/cn/supplier/",
+          "company": "宇树科技",
+          "stages": [
+            "供应链与采购",
+            "质量与合规",
+            "经营与组织"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-14T10:42:24.854334+00:00",
+          "note": "实际读取供应商登记与采购纪律，不推断审核通过及订单。"
+        },
+        {
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=88077f48-0bb2-4ee9-9030-c28d04ca85ee",
+          "company": "科大讯飞",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "checkedAt": "2026-11-14T10:43:07.220Z",
+          "note": "复核同ID硬件失效分析岗位，职责未变，共享能力未限定学习机。"
+        },
+        {
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "company": "猿辅导（小猿）",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "checkedAt": "2026-11-14T10:43:19.225Z",
+          "note": "复核同ID小猿硬件研发岗位，职责未变；原文提学习机及学练机。"
+        }
+      ],
+      "knownGaps": [
+        "14节点完整复核仍逾期，只补本轮有依据的字段，不推进完整复核期限。",
+        "石头岗位未取得当前正文；讯飞岗位未限定学习硬件。",
+        "未进行产品实测，安全认证、完整工艺门槛和企业成效仍未知。"
+      ],
+      "failedSources": [
+        "石头官方招聘直连未取得可用正文。",
+        "直连没有取得可用正文；不当作无岗位。"
+      ],
+      "coverageCheck": {
+        "passed": true,
+        "companies": [
+          "宇树科技",
+          "猿辅导（小猿）",
+          "科大讯飞",
+          "科沃斯"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "猿辅导（小猿）",
+          "科大讯飞",
+          "科沃斯"
+        ],
+        "gaps": [],
+        "usableSources": 6
+      },
+      "successfulScan": true,
+      "completedAt": "2026-11-14T10:44:32.128066+00:00",
       "reviewedCount": 2,
       "selectedCount": 2
     }

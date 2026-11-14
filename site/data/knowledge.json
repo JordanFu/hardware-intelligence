@@ -158,9 +158,9 @@
       "updatedAt": "2026-11-10T00:47:16.938756+00:00"
     },
     "track-5": {
-      "attemptedAt": "2026-11-13T10:55:31.088703+00:00",
+      "attemptedAt": "2026-11-14T10:45:19.046215+00:00",
       "status": "partial",
-      "assessment": "重读层带调度及用户选择区域的机制章节，原有验收问题仍成立；未做切片实测，ODM/EMS和良率交期口径仍待核验。",
+      "assessment": "补设计建议到审批的接口问题，并澄清文中ODM缩写不表示原始设计制造商；原有ODM/EMS产业分工仍待核实。",
       "gaps": [
         "尚未完整核验ODM/EMS责任、良率与交期指标口径。",
         "没有切片版本实测、路径失败率和同模型对照，不宣称首创或已证实效率提升。"
@@ -168,40 +168,34 @@
       "reviewedFields": [
         "chain",
         "constraint",
-        "metrics",
         "team"
       ],
       "evidence": [
         {
-          "itemId": "rss-1ec82521027135bf",
-          "title": "拓竹解释 H3C 混合层高：把手工拆模型交给切片调度",
+          "itemId": "protolabs-dfm-review",
+          "title": "DFM反馈是工艺适配检查，不能代替产品验收",
           "facts": [
             {
-              "claim": "切片引擎按动态层带组织不同喷嘴的层高。",
-              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
-              "locator": "Our art of bricklaying"
+              "claim": "分析变量取决于使用的制造服务。",
+              "sourceUrl": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+              "locator": "Interpreting Color Indicators"
             },
             {
-              "claim": "用户可用涂色工具或修改器框选择区域。",
-              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
-              "locator": "Choose the region, hit Slice"
-            },
-            {
-              "claim": "其他三款设备的原生混合喷嘴支持仍在开发。",
-              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
-              "locator": "文末支持计划"
+              "claim": "用户可以拒绝平台建议的几何修改。",
+              "sourceUrl": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+              "locator": "Molding: Protolabs Proposed Revisions"
             }
           ],
-          "boundary": "已读厂商技术说明，未检查实现代码、版本发布记录或独立打印结果。不采纳“首款”“无妥协”等比较宣传，亦不把开发计划写成其他机型已经支持。",
+          "boundary": "单一制造商的平台说明，不是行业标准；没有上传模型、测试流程或验证成本及交期收益。文中ODM指按需制造，不应读作原始设计制造商。",
           "sources": [
             {
-              "url": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
-              "name": "Bambu Lab Blog",
-              "publishedAt": "2026-11-09T10:48:22+00:00",
-              "publisherGroup": "Bambu Lab Blog",
+              "url": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+              "name": "Protolabs官方资料",
+              "publishedAt": null,
+              "publisherGroup": "Protolabs",
               "role": "official",
-              "textHash": "f0c113e14fc668a9ac0dce4c07738f2d80542ff98b6a16d8c3b95df805198df1",
-              "readAt": "2026-11-10T00:41:29.473888+00:00",
+              "textHash": "dbe84cd321515ad683fdc1ff377547d7ed6a456bcf7c93e7e64efb1766b8cc5a",
+              "readAt": "2026-11-14T10:42:24.851452+00:00",
               "coverage": "body"
             }
           ]
@@ -209,14 +203,14 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "rss-1ec82521027135bf",
-          "url": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
-          "checkedAt": "2026-11-13T10:53:35.742130+00:00",
+          "itemId": "protolabs-dfm-review",
+          "url": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+          "checkedAt": "2026-11-14T10:42:24.851452+00:00",
           "state": "body",
-          "note": "晚间实际读取列明章节，未把未读参数或其他观察企业算作完整复核。"
+          "note": "本轮实际读取当前正文，支持列明字段；未覆盖字段保留缺口。"
         }
       ],
-      "reviewedAt": "2026-11-13T10:55:31.088703+00:00",
+      "reviewedAt": "2026-11-14T10:45:19.046215+00:00",
       "patch": {
         "constraint": "成本、质量、交期、维修和供货风险；互联设备另需检查设备、应用、云的协同安全与退出时的数据处理。 混合工艺还需同时检查区域边界衔接、路径避让和切换开销，界面步骤减少不能掩盖质量约束。",
         "team": "产品、系统工程、制造、采购、质量、法规与售后；涉及互联设备时，将应用、云服务与产品安全的验收接口纳入研究。",
@@ -245,9 +239,20 @@
             "rss-1ec82521027135bf"
           ],
           "updatedAt": "2026-11-10T00:47:16.938756+00:00"
+        },
+        {
+          "id": "track-5-dfm-approval",
+          "title": "自动修订建议仍需明确设计责任",
+          "learning": "平台提供接受或拒绝几何修订的选择。",
+          "application": "核对最终文件、设计责任及验证记录。",
+          "boundary": "不证明协作效率或人员负担改善；本文ODM为按需制造。",
+          "itemIds": [
+            "protolabs-dfm-review"
+          ],
+          "updatedAt": "2026-11-14T10:45:02.335802+00:00"
         }
       ],
-      "updatedAt": "2026-11-10T00:47:16.938756+00:00"
+      "updatedAt": "2026-11-14T10:45:02.335802+00:00"
     },
     "chain-1": {
       "attemptedAt": "2026-11-14T00:45:44.030212+00:00",
@@ -334,63 +339,65 @@
       "updatedAt": "2026-11-14T00:44:51.090797+00:00"
     },
     "chain-4": {
-      "attemptedAt": "2026-11-13T10:55:31.088703+00:00",
+      "attemptedAt": "2026-11-14T10:45:19.046215+00:00",
       "status": "partial",
-      "assessment": "补齐一次通过率定义：不仅排除返工，也排除复测等再次处理；其他制造基础与企业实施情况仍未完整核实。",
+      "assessment": "补DFM的工艺适配边界与审批责任；NPI及实际试产放行依据未补齐，不将节点标为完整复核。",
       "gaps": [
-        "NPI、DFM基础与具体工艺验证门槛仍缺完整依据。",
-        "石头岗位未取得当前正文，正式放行权与组织接口未知。",
-        "历史质量措施完成状态与实际质量结果未知。"
+        "NPI基础、具体工艺门槛和试产放行仍缺完整依据。",
+        "石头岗位当前正文未取得，既有职责样本保留历史边界。",
+        "历史质量措施完成状态与企业制造结果仍未知。"
       ],
       "reviewedFields": [
-        "metrics",
-        "pitfall"
+        "basics",
+        "pitfall",
+        "team"
       ],
       "evidence": [
         {
-          "itemId": "asq-first-pass-yield",
-          "title": "一次通过率：返测通过也不能算首次合格",
+          "itemId": "protolabs-dfm-review",
+          "title": "DFM反馈是工艺适配检查，不能代替产品验收",
           "facts": [
             {
-              "claim": "ASQ将复测、重跑和线外维修排除在首次通过范围之外。",
-              "sourceUrl": "https://asq.org/quality-resources/quality-glossary",
-              "locator": "First pass yield (FPY) 词条"
+              "claim": "分析变量取决于使用的制造服务。",
+              "sourceUrl": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+              "locator": "Interpreting Color Indicators"
             },
             {
-              "claim": "该定义以进入过程的单位总数作为分母。",
-              "sourceUrl": "https://asq.org/quality-resources/quality-glossary",
-              "locator": "First pass yield (FPY) 计算说明"
+              "claim": "用户可以拒绝平台建议的几何修改。",
+              "sourceUrl": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+              "locator": "Molding: Protolabs Proposed Revisions"
             }
           ],
-          "boundary": "基于ASQ词条正文抽取片段，直连返回403；非完整标准审阅。定义不能证明某家企业指标正确、流程已执行或人员效率提高。",
+          "boundary": "单一制造商的平台说明，不是行业标准；没有上传模型、测试流程或验证成本及交期收益。文中ODM指按需制造，不应读作原始设计制造商。",
           "sources": [
             {
-              "url": "https://asq.org/quality-resources/quality-glossary",
-              "name": "ASQ 质量术语表",
-              "publisherGroup": "ASQ",
-              "role": "official",
+              "url": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+              "name": "Protolabs官方资料",
               "publishedAt": null,
-              "textHash": "e6f483441c3f191b0c65e237d5c0623526fde1d6ebb8ea63f7bfc382795d01a7",
-              "readAt": "2026-11-13T10:54:53.488096+00:00",
-              "coverage": "excerpt"
+              "publisherGroup": "Protolabs",
+              "role": "official",
+              "textHash": "dbe84cd321515ad683fdc1ff377547d7ed6a456bcf7c93e7e64efb1766b8cc5a",
+              "readAt": "2026-11-14T10:42:24.851452+00:00",
+              "coverage": "body"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "asq-first-pass-yield",
-          "url": "https://asq.org/quality-resources/quality-glossary",
-          "checkedAt": "2026-11-13T10:54:53.488096+00:00",
-          "state": "index",
-          "note": "Web正文抽取定位到FPY词条片段；直连403，仅用于指标字段，不计作完整正文复核。"
+          "itemId": "protolabs-dfm-review",
+          "url": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+          "checkedAt": "2026-11-14T10:42:24.851452+00:00",
+          "state": "body",
+          "note": "本轮实际读取当前正文，支持列明字段；未覆盖字段保留缺口。"
         }
       ],
-      "reviewedAt": "2026-11-13T10:55:31.088703+00:00",
+      "reviewedAt": "2026-11-14T10:45:19.046215+00:00",
       "patch": {
         "team": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。 石头官方岗位索引提供一个职责样本：NPI-PE 准备设计评审和工艺资料，PQE 跟进试制量产及代工质量，PQC 关注出货与过程监督；实际决策权仍须项目证据。",
         "exercise": "沿一次异常追到设计版本、工艺条件和责任人，定义复现与关闭标准。 把问题分别映射到设计评审、工艺文件、过程控制与出货验收的交付物，并核实谁有权放行，不能仅从岗位名称推定。 对运输相关故障，分别核对出厂测试记录、包装与结构版本、运输条件及到货功能复现；出厂通过不能代替运输后验收。",
-        "metrics": "一次通过率 = 首次完成该过程并满足质量要求、无需复测或返工等再次处理的单位数 / 进入该过程的单位总数。须固定工序、批次、期间及缺陷规则；不能用返工后最终合格率替代。"
+        "metrics": "一次通过率 = 首次完成该过程并满足质量要求、无需复测或返工等再次处理的单位数 / 进入该过程的单位总数。须固定工序、批次、期间及缺陷规则；不能用返工后最终合格率替代。",
+        "basics": "NPI是新产品导入，具体门槛仍需项目定义。DFM关注设计与所选制造工艺的适配；例如Protolabs根据CAD几何提供反馈，分析变量随制造服务变化。几何可制造不等于整机功能、可靠性或量产良率已验证。"
       },
       "lessons": [
         {
@@ -425,9 +432,20 @@
             "asq-first-pass-yield"
           ],
           "updatedAt": "2026-11-13T10:55:31.088703+00:00"
+        },
+        {
+          "id": "chain-4-dfm-service-scope",
+          "title": "可制造性判断须注明工艺范围",
+          "learning": "制造分析的检查条件与所选工艺有关。",
+          "application": "评审时将工艺适配与产品验收分开。",
+          "boundary": "单个平台说明，非通用门槛；未验证实际质量结果。",
+          "itemIds": [
+            "protolabs-dfm-review"
+          ],
+          "updatedAt": "2026-11-14T10:45:02.335802+00:00"
         }
       ],
-      "updatedAt": "2026-11-13T10:55:31.088703+00:00"
+      "updatedAt": "2026-11-14T10:45:02.335802+00:00"
     },
     "track-2": {
       "attemptedAt": "2026-11-13T10:55:31.088703+00:00",
@@ -583,44 +601,44 @@
       "updatedAt": "2026-11-08T00:50:25.860268+00:00"
     },
     "chain-5": {
-      "attemptedAt": "2026-11-12T00:51:00.108633+00:00",
+      "attemptedAt": "2026-11-14T10:45:19.046215+00:00",
       "status": "partial",
-      "assessment": "重读MetalFab专业训练、责任人员及受控场所前提，现有交付责任边界仍符合该型号说明，无实质变化；不延伸到通用认证或法规。",
+      "assessment": "补质量与可靠性概念的时间边界；原有现场故障率需时间与样本的要求仍成立。安全、认证范围和部署结果尚未完整核验。",
       "gaps": [
-        "可靠性、安全及认证范围基础概念未完成独立权威复核。",
-        "实际部署验收、训练效果及故障率没有当前结果证据。"
+        "安全与认证范围仍缺完整权威依据；不能用可靠性定义代替安全验证。",
+        "部署验收、训练效果与企业故障率仍无当前结果证据。"
       ],
       "reviewedFields": [
-        "exercise",
-        "flow",
-        "team"
+        "basics",
+        "metrics",
+        "pitfall"
       ],
       "evidence": [
         {
-          "itemId": "xtool-safety",
-          "title": "xTool MetalFab 使用边界：培训、场地与安全责任也是交付条件",
+          "itemId": "nist-quality-reliability",
+          "title": "初始合格不等于长期可靠：质量比较需要时间轴",
           "facts": [
             {
-              "claim": "资料要求专业培训并指定合格的激光安全负责人。",
-              "sourceUrl": "https://support.xtool.com/article/2017",
-              "locator": "Laser safety / personnel requirements"
+              "claim": "NIST将开始使用时的要求符合性与后续可靠性区分。",
+              "sourceUrl": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr111.htm",
+              "locator": "8.1.1.1 Quality versus reliability"
             },
             {
-              "claim": "资料要求建立激光受控区域。",
-              "sourceUrl": "https://support.xtool.com/article/2017",
-              "locator": "Laser safety / controlled area"
+              "claim": "描述可靠性失效需要考虑随时间变化的模型。",
+              "sourceUrl": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr111.htm",
+              "locator": "Life distributions model fraction fallout over time"
             }
           ],
-          "boundary": "仅归纳该产品官方说明中的组织和部署要求，非完整操作指导、认证结论或通用法规解释；不推广到其他 xTool 机型，不证明用户现场已经落实。日期为页面标注更新时间。",
+          "boundary": "读取当前NIST手册概念页；不是对某款设备的测试结论，也未核验安全、认证范围或企业失效率。",
           "sources": [
             {
-              "url": "https://support.xtool.com/article/2017",
-              "name": "xTool 官方支持",
-              "publishedAt": "2026-06-10",
-              "publisherGroup": "xTool 官方支持",
+              "url": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr111.htm",
+              "name": "NIST官方资料",
+              "publishedAt": null,
+              "publisherGroup": "NIST",
               "role": "official",
-              "textHash": "3b1b8af7a56a868001a5b3547d5ad786c2e7d16229fbc75afcd2d9a7fcd7a036",
-              "readAt": "2026-11-08T00:46:05.270898+00:00",
+              "textHash": "08a695b6e0122ad8c6ae2abbfde2eef9fb59bbe0ebc5c305ba6458ae2b92f100",
+              "readAt": "2026-11-14T10:42:24.849067+00:00",
               "coverage": "body"
             }
           ]
@@ -628,17 +646,18 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "xtool-safety",
-          "url": "https://support.xtool.com/article/2017",
-          "checkedAt": "2026-11-12T00:44:21.766994+00:00",
+          "itemId": "nist-quality-reliability",
+          "url": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr111.htm",
+          "checkedAt": "2026-11-14T10:42:24.849067+00:00",
           "state": "body",
-          "note": "当日实际读取当前正文所列章节；仅复核列明字段，未覆盖部分不延期。"
+          "note": "本轮实际读取当前正文，支持列明字段；未覆盖字段保留缺口。"
         }
       ],
-      "reviewedAt": "2026-11-12T00:51:00.108633+00:00",
+      "reviewedAt": "2026-11-14T10:45:19.046215+00:00",
       "patch": {
         "flow": "风险识别与需求 → 验证证据、过程控制与上市条件 对有明确使用限制的设备，还要检查现场条件、训练和责任人员是否满足该型号说明，不能仅凭设备合格就认为现场可用。",
-        "team": "质量、安全、研发、制造与服务协同定义缺陷等级、放行权和整改验证。 MetalFab 官方资料要求指定激光安全负责人并限制进入受控区域的人员；这是特定产品的部署职责样本，不能替代其他产品的法规与风险评估。"
+        "team": "质量、安全、研发、制造与服务协同定义缺陷等级、放行权和整改验证。 MetalFab 官方资料要求指定激光安全负责人并限制进入受控区域的人员；这是特定产品的部署职责样本，不能替代其他产品的法规与风险评估。",
+        "basics": "初始质量关注开始使用时是否符合要求；可靠性关注运行一段时间后是否仍满足要求。初始合格不能证明使用期可靠。可靠性、安全与法规准入是不同问题；本轮仅核对初始质量与使用期可靠性的时间区分，安全及认证范围仍待专门复核。"
       },
       "lessons": [
         {
@@ -651,9 +670,20 @@
             "xtool-safety"
           ],
           "updatedAt": "2026-11-08T00:50:25.860268+00:00"
+        },
+        {
+          "id": "chain-5-quality-over-time",
+          "title": "出厂合格与使用期可靠分开取证",
+          "learning": "NIST将初始符合性与随使用时间发生的失效分开描述。",
+          "application": "研究硬件质量时记录验收时点、使用条件、失效定义与观察窗口，再比较同口径样本。",
+          "boundary": "概念页不提供企业实测；本文不能证明安全性、认证符合性或改进效果。",
+          "itemIds": [
+            "nist-quality-reliability"
+          ],
+          "updatedAt": "2026-11-14T10:45:02.335802+00:00"
         }
       ],
-      "updatedAt": "2026-11-08T00:50:25.860268+00:00"
+      "updatedAt": "2026-11-14T10:45:19.046215+00:00"
     },
     "chain-8": {
       "attemptedAt": "2026-11-13T00:48:21.968448+00:00",
@@ -1724,6 +1754,50 @@
           "hash": "31740d2cea34028d0ca473e2287e457c03dc3d96e2e38a456a7b5fd83e1ed2a7",
           "decision": "integrated",
           "reason": "补功耗测试条件与测量范围，保留旧版本限制，不推广为最优实践。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-14T10:45:02.335802+00:00",
+      "reviewedNodes": [
+        "chain-5",
+        "chain-4",
+        "track-5"
+      ],
+      "decisions": [
+        {
+          "itemId": "nist-quality-reliability",
+          "hash": "77043937f648fb7f592177cc6b63cba2c6d0224d0aa79883afcbd9b7585a6230",
+          "decision": "integrated",
+          "reason": "补齐初始质量与使用期可靠性的概念区分，不扩展到安全认证。"
+        },
+        {
+          "itemId": "protolabs-dfm-review",
+          "hash": "7ab7d5f93dacb7fcdead33b49d33c08841ebb494806ece4f861c31724706b6b7",
+          "decision": "integrated",
+          "reason": "补工艺适配范围与设计审批接口，保留单一供应商及无实测边界。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-14T10:45:19.046215+00:00",
+      "reviewedNodes": [
+        "chain-5",
+        "chain-4",
+        "track-5"
+      ],
+      "decisions": [
+        {
+          "itemId": "nist-quality-reliability",
+          "hash": "77043937f648fb7f592177cc6b63cba2c6d0224d0aa79883afcbd9b7585a6230",
+          "decision": "integrated",
+          "reason": "补齐初始质量与使用期可靠性的概念区分，不扩展到安全认证。"
+        },
+        {
+          "itemId": "protolabs-dfm-review",
+          "hash": "7ab7d5f93dacb7fcdead33b49d33c08841ebb494806ece4f861c31724706b6b7",
+          "decision": "integrated",
+          "reason": "补工艺适配范围与设计审批接口，保留单一供应商及无实测边界。"
         }
       ]
     }
@@ -4742,6 +4816,407 @@
           "checkedAt": "2026-11-14T00:40:45.888485+00:00",
           "state": "body",
           "note": "只复核列明字段，片段不算完整正文；未读字段与观察对象继续保留缺口。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-5",
+      "reviewedAt": "2026-11-14T10:45:02.335802+00:00",
+      "status": "partial",
+      "assessment": "补质量与可靠性概念的时间边界；原有现场故障率需时间与样本的要求仍成立。安全、认证范围和部署结果尚未完整核验。",
+      "gaps": [
+        "安全与认证范围仍缺完整权威依据；不能用可靠性定义代替安全验证。",
+        "部署验收、训练效果与企业故障率仍无当前结果证据。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "metrics",
+        "pitfall"
+      ],
+      "changes": {
+        "basics": {
+          "before": "可靠性与安全、法规准入是不同问题；认证只覆盖其规定的产品和测试范围。",
+          "after": "初始质量关注开始使用时是否符合要求；可靠性关注运行一段时间后是否仍满足要求。初始合格不能证明使用期可靠。可靠性、安全与法规准入是不同问题；本轮仅核对前两项的时间区分，安全及认证范围仍待专门复核。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "chain-5-quality-over-time",
+            "title": "出厂合格与使用期可靠分开取证",
+            "learning": "NIST将初始符合性与随使用时间发生的失效分开描述。",
+            "application": "研究硬件质量时记录验收时点、使用条件、失效定义与观察窗口，再比较同口径样本。",
+            "boundary": "概念页不提供企业实测；本文不能证明安全性、认证符合性或改进效果。",
+            "itemIds": [
+              "nist-quality-reliability"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "nist-quality-reliability",
+          "title": "初始合格不等于长期可靠：质量比较需要时间轴",
+          "facts": [
+            {
+              "claim": "NIST将开始使用时的要求符合性与后续可靠性区分。",
+              "sourceUrl": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr111.htm",
+              "locator": "8.1.1.1 Quality versus reliability"
+            },
+            {
+              "claim": "描述可靠性失效需要考虑随时间变化的模型。",
+              "sourceUrl": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr111.htm",
+              "locator": "Life distributions model fraction fallout over time"
+            }
+          ],
+          "boundary": "读取当前NIST手册概念页；不是对某款设备的测试结论，也未核验安全、认证范围或企业失效率。",
+          "sources": [
+            {
+              "url": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr111.htm",
+              "name": "NIST官方资料",
+              "publishedAt": null,
+              "publisherGroup": "NIST",
+              "role": "official",
+              "textHash": "08a695b6e0122ad8c6ae2abbfde2eef9fb59bbe0ebc5c305ba6458ae2b92f100",
+              "readAt": "2026-11-14T10:42:24.849067+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "nist-quality-reliability",
+          "url": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr111.htm",
+          "checkedAt": "2026-11-14T10:42:24.849067+00:00",
+          "state": "body",
+          "note": "本轮实际读取当前正文，支持列明字段；未覆盖字段保留缺口。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-4",
+      "reviewedAt": "2026-11-14T10:45:02.335802+00:00",
+      "status": "partial",
+      "assessment": "补DFM的工艺适配边界与审批责任；NPI及实际试产放行依据未补齐，不将节点标为完整复核。",
+      "gaps": [
+        "NPI基础、具体工艺门槛和试产放行仍缺完整依据。",
+        "石头岗位当前正文未取得，既有职责样本保留历史边界。",
+        "历史质量措施完成状态与企业制造结果仍未知。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "pitfall",
+        "team"
+      ],
+      "changes": {
+        "basics": {
+          "before": "NPI 是新产品导入；DFM 关注设计是否容易稳定制造，不能以一次样机成功替代。",
+          "after": "NPI是新产品导入，具体门槛仍需项目定义。DFM关注设计与所选制造工艺的适配；例如Protolabs根据CAD几何提供反馈，分析变量随制造服务变化。几何可制造不等于整机功能、可靠性或量产良率已验证。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "chain-4-dfm-service-scope",
+            "title": "可制造性判断须注明工艺范围",
+            "learning": "制造分析的检查条件与所选工艺有关。",
+            "application": "评审时将工艺适配与产品验收分开。",
+            "boundary": "单个平台说明，非通用门槛；未验证实际质量结果。",
+            "itemIds": [
+              "protolabs-dfm-review"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "protolabs-dfm-review",
+          "title": "DFM反馈是工艺适配检查，不能代替产品验收",
+          "facts": [
+            {
+              "claim": "分析变量取决于使用的制造服务。",
+              "sourceUrl": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+              "locator": "Interpreting Color Indicators"
+            },
+            {
+              "claim": "用户可以拒绝平台建议的几何修改。",
+              "sourceUrl": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+              "locator": "Molding: Protolabs Proposed Revisions"
+            }
+          ],
+          "boundary": "单一制造商的平台说明，不是行业标准；没有上传模型、测试流程或验证成本及交期收益。文中ODM指按需制造，不应读作原始设计制造商。",
+          "sources": [
+            {
+              "url": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+              "name": "Protolabs官方资料",
+              "publishedAt": null,
+              "publisherGroup": "Protolabs",
+              "role": "official",
+              "textHash": "dbe84cd321515ad683fdc1ff377547d7ed6a456bcf7c93e7e64efb1766b8cc5a",
+              "readAt": "2026-11-14T10:42:24.851452+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "protolabs-dfm-review",
+          "url": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+          "checkedAt": "2026-11-14T10:42:24.851452+00:00",
+          "state": "body",
+          "note": "本轮实际读取当前正文，支持列明字段；未覆盖字段保留缺口。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-5",
+      "reviewedAt": "2026-11-14T10:45:02.335802+00:00",
+      "status": "partial",
+      "assessment": "补设计建议到审批的接口问题，并澄清文中ODM缩写不表示原始设计制造商；原有ODM/EMS产业分工仍待核实。",
+      "gaps": [
+        "尚未完整核验ODM/EMS责任、良率与交期指标口径。",
+        "没有切片版本实测、路径失败率和同模型对照，不宣称首创或已证实效率提升。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "team"
+      ],
+      "changes": {},
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "track-5-dfm-approval",
+            "title": "自动修订建议仍需明确设计责任",
+            "learning": "平台提供接受或拒绝几何修订的选择。",
+            "application": "核对最终文件、设计责任及验证记录。",
+            "boundary": "不证明协作效率或人员负担改善；本文ODM为按需制造。",
+            "itemIds": [
+              "protolabs-dfm-review"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "protolabs-dfm-review",
+          "title": "DFM反馈是工艺适配检查，不能代替产品验收",
+          "facts": [
+            {
+              "claim": "分析变量取决于使用的制造服务。",
+              "sourceUrl": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+              "locator": "Interpreting Color Indicators"
+            },
+            {
+              "claim": "用户可以拒绝平台建议的几何修改。",
+              "sourceUrl": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+              "locator": "Molding: Protolabs Proposed Revisions"
+            }
+          ],
+          "boundary": "单一制造商的平台说明，不是行业标准；没有上传模型、测试流程或验证成本及交期收益。文中ODM指按需制造，不应读作原始设计制造商。",
+          "sources": [
+            {
+              "url": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+              "name": "Protolabs官方资料",
+              "publishedAt": null,
+              "publisherGroup": "Protolabs",
+              "role": "official",
+              "textHash": "dbe84cd321515ad683fdc1ff377547d7ed6a456bcf7c93e7e64efb1766b8cc5a",
+              "readAt": "2026-11-14T10:42:24.851452+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "protolabs-dfm-review",
+          "url": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+          "checkedAt": "2026-11-14T10:42:24.851452+00:00",
+          "state": "body",
+          "note": "本轮实际读取当前正文，支持列明字段；未覆盖字段保留缺口。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-5",
+      "reviewedAt": "2026-11-14T10:45:19.046215+00:00",
+      "status": "partial",
+      "assessment": "补质量与可靠性概念的时间边界；原有现场故障率需时间与样本的要求仍成立。安全、认证范围和部署结果尚未完整核验。",
+      "gaps": [
+        "安全与认证范围仍缺完整权威依据；不能用可靠性定义代替安全验证。",
+        "部署验收、训练效果与企业故障率仍无当前结果证据。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "metrics",
+        "pitfall"
+      ],
+      "changes": {
+        "basics": {
+          "before": "初始质量关注开始使用时是否符合要求；可靠性关注运行一段时间后是否仍满足要求。初始合格不能证明使用期可靠。可靠性、安全与法规准入是不同问题；本轮仅核对前两项的时间区分，安全及认证范围仍待专门复核。",
+          "after": "初始质量关注开始使用时是否符合要求；可靠性关注运行一段时间后是否仍满足要求。初始合格不能证明使用期可靠。可靠性、安全与法规准入是不同问题；本轮仅核对初始质量与使用期可靠性的时间区分，安全及认证范围仍待专门复核。"
+        }
+      },
+      "lessonChanges": [],
+      "evidence": [
+        {
+          "itemId": "nist-quality-reliability",
+          "title": "初始合格不等于长期可靠：质量比较需要时间轴",
+          "facts": [
+            {
+              "claim": "NIST将开始使用时的要求符合性与后续可靠性区分。",
+              "sourceUrl": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr111.htm",
+              "locator": "8.1.1.1 Quality versus reliability"
+            },
+            {
+              "claim": "描述可靠性失效需要考虑随时间变化的模型。",
+              "sourceUrl": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr111.htm",
+              "locator": "Life distributions model fraction fallout over time"
+            }
+          ],
+          "boundary": "读取当前NIST手册概念页；不是对某款设备的测试结论，也未核验安全、认证范围或企业失效率。",
+          "sources": [
+            {
+              "url": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr111.htm",
+              "name": "NIST官方资料",
+              "publishedAt": null,
+              "publisherGroup": "NIST",
+              "role": "official",
+              "textHash": "08a695b6e0122ad8c6ae2abbfde2eef9fb59bbe0ebc5c305ba6458ae2b92f100",
+              "readAt": "2026-11-14T10:42:24.849067+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "nist-quality-reliability",
+          "url": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr111.htm",
+          "checkedAt": "2026-11-14T10:42:24.849067+00:00",
+          "state": "body",
+          "note": "本轮实际读取当前正文，支持列明字段；未覆盖字段保留缺口。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-4",
+      "reviewedAt": "2026-11-14T10:45:19.046215+00:00",
+      "status": "partial",
+      "assessment": "补DFM的工艺适配边界与审批责任；NPI及实际试产放行依据未补齐，不将节点标为完整复核。",
+      "gaps": [
+        "NPI基础、具体工艺门槛和试产放行仍缺完整依据。",
+        "石头岗位当前正文未取得，既有职责样本保留历史边界。",
+        "历史质量措施完成状态与企业制造结果仍未知。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "pitfall",
+        "team"
+      ],
+      "changes": {},
+      "lessonChanges": [],
+      "evidence": [
+        {
+          "itemId": "protolabs-dfm-review",
+          "title": "DFM反馈是工艺适配检查，不能代替产品验收",
+          "facts": [
+            {
+              "claim": "分析变量取决于使用的制造服务。",
+              "sourceUrl": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+              "locator": "Interpreting Color Indicators"
+            },
+            {
+              "claim": "用户可以拒绝平台建议的几何修改。",
+              "sourceUrl": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+              "locator": "Molding: Protolabs Proposed Revisions"
+            }
+          ],
+          "boundary": "单一制造商的平台说明，不是行业标准；没有上传模型、测试流程或验证成本及交期收益。文中ODM指按需制造，不应读作原始设计制造商。",
+          "sources": [
+            {
+              "url": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+              "name": "Protolabs官方资料",
+              "publishedAt": null,
+              "publisherGroup": "Protolabs",
+              "role": "official",
+              "textHash": "dbe84cd321515ad683fdc1ff377547d7ed6a456bcf7c93e7e64efb1766b8cc5a",
+              "readAt": "2026-11-14T10:42:24.851452+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "protolabs-dfm-review",
+          "url": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+          "checkedAt": "2026-11-14T10:42:24.851452+00:00",
+          "state": "body",
+          "note": "本轮实际读取当前正文，支持列明字段；未覆盖字段保留缺口。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-5",
+      "reviewedAt": "2026-11-14T10:45:19.046215+00:00",
+      "status": "partial",
+      "assessment": "补设计建议到审批的接口问题，并澄清文中ODM缩写不表示原始设计制造商；原有ODM/EMS产业分工仍待核实。",
+      "gaps": [
+        "尚未完整核验ODM/EMS责任、良率与交期指标口径。",
+        "没有切片版本实测、路径失败率和同模型对照，不宣称首创或已证实效率提升。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "team"
+      ],
+      "changes": {},
+      "lessonChanges": [],
+      "evidence": [
+        {
+          "itemId": "protolabs-dfm-review",
+          "title": "DFM反馈是工艺适配检查，不能代替产品验收",
+          "facts": [
+            {
+              "claim": "分析变量取决于使用的制造服务。",
+              "sourceUrl": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+              "locator": "Interpreting Color Indicators"
+            },
+            {
+              "claim": "用户可以拒绝平台建议的几何修改。",
+              "sourceUrl": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+              "locator": "Molding: Protolabs Proposed Revisions"
+            }
+          ],
+          "boundary": "单一制造商的平台说明，不是行业标准；没有上传模型、测试流程或验证成本及交期收益。文中ODM指按需制造，不应读作原始设计制造商。",
+          "sources": [
+            {
+              "url": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+              "name": "Protolabs官方资料",
+              "publishedAt": null,
+              "publisherGroup": "Protolabs",
+              "role": "official",
+              "textHash": "dbe84cd321515ad683fdc1ff377547d7ed6a456bcf7c93e7e64efb1766b8cc5a",
+              "readAt": "2026-11-14T10:42:24.851452+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "protolabs-dfm-review",
+          "url": "https://www.protolabs.com/help-center/manufacturing-analysis/",
+          "checkedAt": "2026-11-14T10:42:24.851452+00:00",
+          "state": "body",
+          "note": "本轮实际读取当前正文，支持列明字段；未覆盖字段保留缺口。"
         }
       ]
     }
