@@ -707,21 +707,50 @@
       "updatedAt": "2026-11-14T10:45:19.046215+00:00"
     },
     "chain-8": {
-      "attemptedAt": "2026-11-13T00:48:21.968448+00:00",
+      "attemptedAt": "2026-11-15T10:41:33.649429+00:00",
       "status": "partial",
-      "assessment": "重读产品线经理生命周期、退市流程、工厂新品及渠道要求，已有跨团队责任问题仍成立。岗位期望不证明预算权限、汇报关系或实际人员负担，未改写未验证的组织结论。",
+      "assessment": "补利润与现金流基础区分；逐项对照科沃斯生命周期职责，不能据公开职责推断实际预算和授权。追觅仍为历史索引。",
       "gaps": [
-        "现金、利润与组织效率指标尚未完成权威口径复核。",
-        "追觅补充依据未取得本轮当前岗位正文，保持历史证据边界。"
+        "组织效率衡量与员工负担尚缺同口径可比结果；不把指标建议当企业事实。",
+        "追觅未取得本轮当前岗位正文，保持历史证据边界；本次SEC只核对基础段落，不是现行会计准则审查。"
       ],
       "reviewedFields": [
+        "basics",
         "exercise",
-        "flow",
+        "metrics",
         "pitfall",
-        "team",
-        "title"
+        "team"
       ],
       "evidence": [
+        {
+          "itemId": "sec-profit-cash-distinction",
+          "title": "理解硬件经营：利润与现金流要分开读",
+          "facts": [
+            {
+              "claim": "现金流量表报告现金流入与流出。",
+              "sourceUrl": "https://www.sec.gov/about/reports-publications/investorpubsbegfinstmtguide",
+              "locator": "Cash Flow Statements"
+            },
+            {
+              "claim": "现金流与净利润相关但不相等。",
+              "sourceUrl": "https://www.sec.gov/about/reports-publications/investorpubsbegfinstmtguide",
+              "locator": "Bringing It All Together"
+            }
+          ],
+          "boundary": "2007年官方入门教育材料；本轮读取工具提供相关正文段落，直连403。不是现行准则核验、具体企业经营结论或投资建议。",
+          "sources": [
+            {
+              "url": "https://www.sec.gov/about/reports-publications/investorpubsbegfinstmtguide",
+              "name": "SEC官方资料",
+              "publishedAt": null,
+              "publisherGroup": "SEC",
+              "role": "official",
+              "textHash": "a91653d8d59578b372a332444c7e90baa824ddcc3db1d8f511f8baa7863998f7",
+              "readAt": "2026-11-15T10:40:53.664874+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        },
         {
           "itemId": "ecovacs-plm",
           "title": "科沃斯产品线经理职责：规划延伸到老产品退市",
@@ -754,17 +783,25 @@
       ],
       "sourceChecks": [
         {
+          "itemId": "sec-profit-cash-distinction",
+          "url": "https://www.sec.gov/about/reports-publications/investorpubsbegfinstmtguide",
+          "checkedAt": "2026-11-15T10:40:53.664874+00:00",
+          "state": "index",
+          "note": "当前网页工具正文段落，不是整页全量复核；直连失败另有记录。"
+        },
+        {
           "itemId": "ecovacs-plm",
           "url": "https://mall.ecovacs.cn/job-detail-516.html",
-          "checkedAt": "2026-11-13T00:44:17.411244+00:00",
+          "checkedAt": "2026-11-15T10:39:05.972438+00:00",
           "state": "body",
-          "note": "实际复核所列章节与字段，未覆盖内容保留缺口；不延长完整复核期限。"
+          "note": "当前实际阅读相关正文；仅核验列明字段。"
         }
       ],
-      "reviewedAt": "2026-11-13T00:48:21.968448+00:00",
+      "reviewedAt": "2026-11-15T10:41:33.649429+00:00",
       "patch": {
         "team": "经营、产品线与专业职能明确谁决策、谁提供证据、谁对交付负责。 科沃斯岗位样本把退市纳入产品线职责，追觅索引把团队建设、资源协调与经营指标并列；研究时需进一步查明这些责任对应的预算、授权和跨部门接口。",
-        "exercise": "为一个跨团队取舍写清最终负责人、异议处理、所需证据和复盘窗口。 从一个新品上线或老产品退出案例，分别列出产品、制造、渠道与服务的交付物，核实谁能调配资源，谁承担未解决的用户问题。"
+        "exercise": "为一个跨团队取舍写清最终负责人、异议处理、所需证据和复盘窗口。 从一个新品上线或老产品退出案例，分别列出产品、制造、渠道与服务的交付物，核实谁能调配资源，谁承担未解决的用户问题。",
+        "metrics": "利润说明期间赚亏，现金流说明现金进出，并区分经营、投资与融资活动；有利润不等于同额现金流入。依据SEC历史入门资料，不是现行准则核验。组织研究另需观察交付质量、返工、员工负担和自主性，不能由单个财务指标推断组织效率。"
       },
       "lessons": [
         {
@@ -778,9 +815,20 @@
             "dreame-director"
           ],
           "updatedAt": "2026-11-08T00:50:25.860268+00:00"
+        },
+        {
+          "id": "sec-profit-cash-distinction-lesson",
+          "title": "利润与现金变化分别解释",
+          "learning": "现金流与净利润相关但不相等，现金来源还需区分经营、投资和融资。",
+          "application": "阅读硬件企业经营资料时先对齐期间与报表，并核对附注；此处不评价具体公司。",
+          "boundary": "历史教育资料只支持基础区别，不支持企业财务健康、人员配置或投资结论。",
+          "itemIds": [
+            "sec-profit-cash-distinction"
+          ],
+          "updatedAt": "2026-11-15T10:41:33.649429+00:00"
         }
       ],
-      "updatedAt": "2026-11-08T00:50:25.860268+00:00"
+      "updatedAt": "2026-11-15T10:41:33.649429+00:00"
     },
     "track-4": {
       "attemptedAt": "2026-11-15T00:45:02.865869+00:00",
@@ -871,20 +919,50 @@
       "updatedAt": "2026-11-15T00:45:02.865869+00:00"
     },
     "chain-6": {
-      "attemptedAt": "2026-11-13T00:48:21.968448+00:00",
+      "attemptedAt": "2026-11-15T10:41:33.649429+00:00",
       "status": "partial",
-      "assessment": "重读授权渠道、地区范围、购买证明和维修前备份要求，既有渠道到服务证据交接逻辑仍成立；仅为该品牌所披露条款，非通用法规或履约效果。",
+      "assessment": "复核渠道转化率分母与统计版本，XREAL渠道至售后证据接口仍成立；基础销售流量与贡献利润定义尚未全量补足。",
       "gaps": [
         "sell-in、sell-through及贡献利润口径仍需权威来源复核。",
-        "预测、库存、退货及用户办理耗时缺少当前可比数据。"
+        "预测、库存、退货及用户办理耗时缺少当前可比数据；不据本轮平台定义判断企业成效。"
       ],
       "reviewedFields": [
         "exercise",
         "flow",
+        "metrics",
         "pitfall",
         "team"
       ],
       "evidence": [
+        {
+          "itemId": "shopify-session-conversion",
+          "title": "渠道转化率先对齐分母：购买会话不等于订单数",
+          "facts": [
+            {
+              "claim": "平台区分购买会话数与订单数。",
+              "sourceUrl": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports",
+              "locator": "Conversion rate over time说明"
+            },
+            {
+              "claim": "漏斗步骤的转化率使用总会话作为分母。",
+              "sourceUrl": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports",
+              "locator": "Conversion rate breakdown"
+            }
+          ],
+          "boundary": "当前帮助页的网店统计说明，非国内公司实际销售数据；未核验商户配置、事件埋点、机器人过滤或跨期可比性。",
+          "sources": [
+            {
+              "url": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports",
+              "name": "Shopify官方资料",
+              "publishedAt": null,
+              "publisherGroup": "Shopify",
+              "role": "official",
+              "textHash": "839f261d11c1a49fce4e742038e2d3bc2b00deae2b52e82924c45fb0b4d02c08",
+              "readAt": "2026-11-15T10:39:05.971438+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
         {
           "itemId": "xreal-warranty",
           "title": "XREAL 服务条款样本：销售渠道与售后受理信息相连",
@@ -917,18 +995,26 @@
       ],
       "sourceChecks": [
         {
+          "itemId": "shopify-session-conversion",
+          "url": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports",
+          "checkedAt": "2026-11-15T10:39:05.971438+00:00",
+          "state": "body",
+          "note": "当前实际阅读相关正文；仅核验列明字段。"
+        },
+        {
           "itemId": "xreal-warranty",
           "url": "https://us.shop.xreal.com/pages/warranty-policy",
-          "checkedAt": "2026-11-13T00:45:13.304Z",
+          "checkedAt": "2026-11-15T10:39:05.974243+00:00",
           "state": "body",
-          "note": "实际复核所列章节与字段，未覆盖内容保留缺口；不延长完整复核期限。"
+          "note": "当前实际阅读相关正文；仅核验列明字段。"
         }
       ],
-      "reviewedAt": "2026-11-13T00:48:21.968448+00:00",
+      "reviewedAt": "2026-11-15T10:41:33.649429+00:00",
       "patch": {
         "flow": "用户需求与库存 → 定价、渠道政策、交付承诺与终端反馈 还需核对销售主体、支持地区、购买凭证与设备序列号在售后受理中的衔接。",
         "team": "销售、市场、计划、零售、财务对齐销售预测、货盘、促销与退货规则。 XREAL 的公开流程提示渠道与服务之间存在购买证据交接；研究时应确认能否复用已授权订单信息，减少用户重复提交。",
-        "exercise": "选一个销售活动，列出从备货到退货的责任与反馈，不只统计订单数。 选择一个具体渠道和地区，画出从购买承诺到问题处理的用户路径，记录需要重复提供的信息及尚未明确的责任。"
+        "exercise": "选一个销售活动，列出从备货到退货的责任与反馈，不只统计订单数。 选择一个具体渠道和地区，画出从购买承诺到问题处理的用户路径，记录需要重复提供的信息及尚未明确的责任。",
+        "metrics": "网店转化率先确认分母：Shopify以购买会话占总会话计算，同一会话可含多笔订单。比较时固定期间、漏斗路径、过滤与计量版本；不能直接套到门店或经销商。贡献利润的退货、服务和渠道费用归集口径仍待专门复核。"
       },
       "lessons": [
         {
@@ -941,24 +1027,66 @@
             "xreal-warranty"
           ],
           "updatedAt": "2026-11-09T00:50:51.394323+00:00"
+        },
+        {
+          "id": "shopify-session-conversion-lesson",
+          "title": "购买会话与订单数分开看",
+          "learning": "同一会话可能多次购买；开放与封闭漏斗的纳入条件也不同。",
+          "application": "解释渠道变化前核对分母、路径与统计版本；具体平台口径不能直接外推。",
+          "boundary": "帮助资料不证明任何企业销售改善，也不提供线下门店或设备激活率定义。",
+          "itemIds": [
+            "shopify-session-conversion"
+          ],
+          "updatedAt": "2026-11-15T10:41:33.649429+00:00"
         }
       ],
-      "updatedAt": "2026-11-09T00:50:51.394323+00:00"
+      "updatedAt": "2026-11-15T10:41:33.649429+00:00"
     },
     "track-0": {
-      "attemptedAt": "2026-11-13T00:48:21.968448+00:00",
+      "attemptedAt": "2026-11-15T10:41:33.649429+00:00",
       "status": "partial",
-      "assessment": "新增录音与Life Log保存机制的区分，明确文字记录和标签也需要核验。复核App版本条件、权限说明和服务入口；没有设备实测，不把官方说明当作完整隐私保障。",
+      "assessment": "复核雷鸟配对、记录与提词器说明及XREAL服务接口；补输入文件到可用内容的验收约束。未复核其他观察对象，不推进完整期限。",
       "gaps": [
         "Meta、Apple、Samsung观察对象未取得本轮当前正文。",
-        "真实任务成功率、佩戴负担及续航缺跨企业实测；雷鸟数据地点、期限和删除传播仍未知。"
+        "真实任务成功率、佩戴负担及续航缺跨企业实测；雷鸟数据地点、期限和删除传播仍未知。",
+        "雷鸟最低手机系统与权限细节仍有占位；文件导入内容保真未做实机测试。"
       ],
       "reviewedFields": [
+        "chain",
         "constraint",
         "metrics",
         "team"
       ],
       "evidence": [
+        {
+          "itemId": "rayneo-import-text-boundary",
+          "title": "雷鸟提词器：支持导入文件，不等于保留图文内容",
+          "facts": [
+            {
+              "claim": "导入只保留文字，会移除格式和图片。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "4.3 Teleprompter / Import Scripts"
+            },
+            {
+              "claim": "支持TXT、DOC、DOCX、PDF。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "4.3 Teleprompter / Import Scripts"
+            }
+          ],
+          "boundary": "官方使用说明的单一功能，未实测文档转换、公式或阅读效果；无发布日期，不是今日新增功能，也不证明雷鸟属于学习机竞品。",
+          "sources": [
+            {
+              "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "name": "雷鸟创新官方资料",
+              "publishedAt": null,
+              "publisherGroup": "雷鸟创新",
+              "role": "official",
+              "textHash": "35478d807b7223713b5a12ff2473e1636ba03032ed0a7b3603156eca477e6da0",
+              "readAt": "2026-11-15T10:39:05.972318+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
         {
           "itemId": "rayneo-support",
           "title": "雷鸟 iO 支持说明：离线功能仍依赖手机、版本与语言包",
@@ -1054,32 +1182,40 @@
       ],
       "sourceChecks": [
         {
+          "itemId": "rayneo-import-text-boundary",
+          "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "checkedAt": "2026-11-15T10:39:05.972318+00:00",
+          "state": "body",
+          "note": "当前实际阅读相关正文；仅核验列明字段。"
+        },
+        {
           "itemId": "rayneo-support",
           "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
-          "checkedAt": "2026-11-13T00:44:17.412588+00:00",
+          "checkedAt": "2026-11-15T10:39:05.972318+00:00",
           "state": "body",
-          "note": "实际复核所列章节与字段，未覆盖内容保留缺口；不延长完整复核期限。"
+          "note": "当前实际阅读相关正文；仅核验列明字段。"
         },
         {
           "itemId": "rayneo-recording-boundaries",
           "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
-          "checkedAt": "2026-11-13T00:44:17.412588+00:00",
+          "checkedAt": "2026-11-15T10:39:05.972318+00:00",
           "state": "body",
-          "note": "实际复核所列章节与字段，未覆盖内容保留缺口；不延长完整复核期限。"
+          "note": "当前实际阅读相关正文；仅核验列明字段。"
         },
         {
           "itemId": "xreal-warranty",
           "url": "https://us.shop.xreal.com/pages/warranty-policy",
-          "checkedAt": "2026-11-13T00:45:13.304Z",
+          "checkedAt": "2026-11-15T10:39:05.974243+00:00",
           "state": "body",
-          "note": "实际复核所列章节与字段，未覆盖内容保留缺口；不延长完整复核期限。"
+          "note": "当前实际阅读相关正文；仅核验列明字段。"
         }
       ],
-      "reviewedAt": "2026-11-13T00:48:21.968448+00:00",
+      "reviewedAt": "2026-11-15T10:41:33.649429+00:00",
       "patch": {
         "examples": "Meta、Apple、Samsung、雷鸟；本轮新增 XREAL 作为渠道与服务研究对象，不构成排名。",
         "constraint": "佩戴舒适度、续航、隐私和持续使用 离线能力需按字幕、翻译等具体任务核验手机依赖、App 版本和预下载资源；不能仅凭“离线”断言数据不出端。 记录功能还应分别核对音频、转写、摘要与标签：雷鸟Life Log声明不存原始音频，但仍保留文字，不能据此推断没有个人数据留存。",
-        "team": "光学 / 声学、算法、工业设计、移动应用、健康验证 还需核对 App、渠道与服务团队如何共用版本化功能条件，避免销售承诺与实际使用前提脱节。"
+        "team": "光学 / 声学、算法、工业设计、移动应用、健康验证 还需核对 App、渠道与服务团队如何共用版本化功能条件，避免销售承诺与实际使用前提脱节。",
+        "metrics": "完成一次真实任务的成功率；佩戴负担；续航；退货原因。文档类任务还需检查关键文字、图片与版式的保留情况及人工补做步骤；雷鸟提词器说明导入只留文字，支持格式数不能替代任务验收。"
       },
       "lessons": [
         {
@@ -1104,9 +1240,20 @@
             "rayneo-recording-boundaries"
           ],
           "updatedAt": "2026-11-13T00:48:21.968448+00:00"
+        },
+        {
+          "id": "rayneo-import-text-boundary-lesson",
+          "title": "文件能导入不等于内容完整可用",
+          "learning": "雷鸟提词器导入会移除格式与图片，只保留文字。",
+          "application": "比较带文档工作流的设备时，用获授权样本核对关键内容与补做步骤；具体结果需逐功能实测。",
+          "boundary": "单一功能官方说明，不推断其他设备转换效果或真实学习收益。",
+          "itemIds": [
+            "rayneo-import-text-boundary"
+          ],
+          "updatedAt": "2026-11-15T10:41:33.649429+00:00"
         }
       ],
-      "updatedAt": "2026-11-13T00:48:21.968448+00:00"
+      "updatedAt": "2026-11-15T10:41:33.649429+00:00"
     },
     "track-1": {
       "attemptedAt": "2026-11-14T00:45:44.030212+00:00",
@@ -1780,6 +1927,34 @@
           "hash": "7690d822a13bee2f393507d47cfc79b4f434f98c88ffc374eb2071d0c9d6a57f",
           "decision": "integrated",
           "reason": "补制造工具观察对象的售后接口，条款冲突与地区适用范围仍待核验。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-15T10:41:33.649429+00:00",
+      "reviewedNodes": [
+        "chain-6",
+        "chain-8",
+        "track-0"
+      ],
+      "decisions": [
+        {
+          "itemId": "shopify-session-conversion",
+          "hash": "accfc02a97d03833709f0ab44129ec85fa7463dec859a54141303f74ae5e687d",
+          "decision": "integrated",
+          "reason": "补渠道指标分母及版本边界，不外推所有渠道。"
+        },
+        {
+          "itemId": "sec-profit-cash-distinction",
+          "hash": "ea3d4b5b8d8e3d91946e6b94d9febe8a923726a6903dc4c66417ba4f5f13d253",
+          "decision": "integrated",
+          "reason": "补经营基础概念，历史资料与当前企业判断分开。"
+        },
+        {
+          "itemId": "rayneo-import-text-boundary",
+          "hash": "99ec402badca9d0404beec6b91aaa28253612f2fdbd42789a98bb7dfe1f26697",
+          "decision": "integrated",
+          "reason": "补可穿戴任务验收的内容保真问题，保持功能范围。"
         }
       ]
     }
@@ -5419,6 +5594,425 @@
           "checkedAt": "2026-11-15T00:41:20.685531+00:00",
           "state": "body",
           "note": "实际读取列明正文及版本条件；未覆盖字段和实测缺口继续保留。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-6",
+      "reviewedAt": "2026-11-15T10:41:33.649429+00:00",
+      "status": "partial",
+      "assessment": "复核渠道转化率分母与统计版本，XREAL渠道至售后证据接口仍成立；基础销售流量与贡献利润定义尚未全量补足。",
+      "gaps": [
+        "sell-in、sell-through及贡献利润口径仍需权威来源复核。",
+        "预测、库存、退货及用户办理耗时缺少当前可比数据；不据本轮平台定义判断企业成效。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "flow",
+        "metrics",
+        "pitfall",
+        "team"
+      ],
+      "changes": {
+        "metrics": {
+          "before": "渠道转化率须固定访问或线索分母；贡献利润须纳入退货、服务与渠道费用。",
+          "after": "网店转化率先确认分母：Shopify以购买会话占总会话计算，同一会话可含多笔订单。比较时固定期间、漏斗路径、过滤与计量版本；不能直接套到门店或经销商。贡献利润的退货、服务和渠道费用归集口径仍待专门复核。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "shopify-session-conversion-lesson",
+            "title": "购买会话与订单数分开看",
+            "learning": "同一会话可能多次购买；开放与封闭漏斗的纳入条件也不同。",
+            "application": "解释渠道变化前核对分母、路径与统计版本；具体平台口径不能直接外推。",
+            "boundary": "帮助资料不证明任何企业销售改善，也不提供线下门店或设备激活率定义。",
+            "itemIds": [
+              "shopify-session-conversion"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "shopify-session-conversion",
+          "title": "渠道转化率先对齐分母：购买会话不等于订单数",
+          "facts": [
+            {
+              "claim": "平台区分购买会话数与订单数。",
+              "sourceUrl": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports",
+              "locator": "Conversion rate over time说明"
+            },
+            {
+              "claim": "漏斗步骤的转化率使用总会话作为分母。",
+              "sourceUrl": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports",
+              "locator": "Conversion rate breakdown"
+            }
+          ],
+          "boundary": "当前帮助页的网店统计说明，非国内公司实际销售数据；未核验商户配置、事件埋点、机器人过滤或跨期可比性。",
+          "sources": [
+            {
+              "url": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports",
+              "name": "Shopify官方资料",
+              "publishedAt": null,
+              "publisherGroup": "Shopify",
+              "role": "official",
+              "textHash": "839f261d11c1a49fce4e742038e2d3bc2b00deae2b52e82924c45fb0b4d02c08",
+              "readAt": "2026-11-15T10:39:05.971438+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "xreal-warranty",
+          "title": "XREAL 服务条款样本：销售渠道与售后受理信息相连",
+          "facts": [
+            {
+              "claim": "条款只覆盖规定渠道及所支持地区。",
+              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+              "locator": "Scope"
+            },
+            {
+              "claim": "申请信息包含订单和故障设备序列号。",
+              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+              "locator": "Making a claim"
+            }
+          ],
+          "boundary": "本轮读取 Scope 与 Making a claim 等业务流程段落；这是厂商自述的商业保修流程样本，不是对法定权利或条款效力的法律判断。当前适用地区、机型和购买时间仍须逐案核对。",
+          "sources": [
+            {
+              "url": "https://us.shop.xreal.com/pages/warranty-policy",
+              "name": "XREAL 美国商城保修政策",
+              "publishedAt": "2024-04-08",
+              "publisherGroup": "XREAL 美国商城保修政策",
+              "role": "official",
+              "textHash": "f6d9abd8a0da1c0e46c8883c61dc2dcc1047721091f3eaef3a7b3eb81d86b685",
+              "readAt": "2026-11-09T00:46:58.382936+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "shopify-session-conversion",
+          "url": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports",
+          "checkedAt": "2026-11-15T10:39:05.971438+00:00",
+          "state": "body",
+          "note": "当前实际阅读相关正文；仅核验列明字段。"
+        },
+        {
+          "itemId": "xreal-warranty",
+          "url": "https://us.shop.xreal.com/pages/warranty-policy",
+          "checkedAt": "2026-11-15T10:39:05.974243+00:00",
+          "state": "body",
+          "note": "当前实际阅读相关正文；仅核验列明字段。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-8",
+      "reviewedAt": "2026-11-15T10:41:33.649429+00:00",
+      "status": "partial",
+      "assessment": "补利润与现金流基础区分；逐项对照科沃斯生命周期职责，不能据公开职责推断实际预算和授权。追觅仍为历史索引。",
+      "gaps": [
+        "组织效率衡量与员工负担尚缺同口径可比结果；不把指标建议当企业事实。",
+        "追觅未取得本轮当前岗位正文，保持历史证据边界；本次SEC只核对基础段落，不是现行会计准则审查。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "exercise",
+        "metrics",
+        "pitfall",
+        "team"
+      ],
+      "changes": {
+        "metrics": {
+          "before": "现金与利润分别看；组织效率要同时观察交付质量、返工、员工负担和自主性。",
+          "after": "利润说明期间赚亏，现金流说明现金进出，并区分经营、投资与融资活动；有利润不等于同额现金流入。依据SEC历史入门资料，不是现行准则核验。组织研究另需观察交付质量、返工、员工负担和自主性，不能由单个财务指标推断组织效率。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "sec-profit-cash-distinction-lesson",
+            "title": "利润与现金变化分别解释",
+            "learning": "现金流与净利润相关但不相等，现金来源还需区分经营、投资和融资。",
+            "application": "阅读硬件企业经营资料时先对齐期间与报表，并核对附注；此处不评价具体公司。",
+            "boundary": "历史教育资料只支持基础区别，不支持企业财务健康、人员配置或投资结论。",
+            "itemIds": [
+              "sec-profit-cash-distinction"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "sec-profit-cash-distinction",
+          "title": "理解硬件经营：利润与现金流要分开读",
+          "facts": [
+            {
+              "claim": "现金流量表报告现金流入与流出。",
+              "sourceUrl": "https://www.sec.gov/about/reports-publications/investorpubsbegfinstmtguide",
+              "locator": "Cash Flow Statements"
+            },
+            {
+              "claim": "现金流与净利润相关但不相等。",
+              "sourceUrl": "https://www.sec.gov/about/reports-publications/investorpubsbegfinstmtguide",
+              "locator": "Bringing It All Together"
+            }
+          ],
+          "boundary": "2007年官方入门教育材料；本轮读取工具提供相关正文段落，直连403。不是现行准则核验、具体企业经营结论或投资建议。",
+          "sources": [
+            {
+              "url": "https://www.sec.gov/about/reports-publications/investorpubsbegfinstmtguide",
+              "name": "SEC官方资料",
+              "publishedAt": null,
+              "publisherGroup": "SEC",
+              "role": "official",
+              "textHash": "a91653d8d59578b372a332444c7e90baa824ddcc3db1d8f511f8baa7863998f7",
+              "readAt": "2026-11-15T10:40:53.664874+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        },
+        {
+          "itemId": "ecovacs-plm",
+          "title": "科沃斯产品线经理职责：规划延伸到老产品退市",
+          "facts": [
+            {
+              "claim": "职责明确要求制定老产品退市计划和流程。",
+              "sourceUrl": "https://mall.ecovacs.cn/job-detail-516.html",
+              "locator": "岗位职责第 5 项"
+            },
+            {
+              "claim": "任职要求同时涉及工厂新品推进与市场渠道。",
+              "sourceUrl": "https://mall.ecovacs.cn/job-detail-516.html",
+              "locator": "任职要求第 3–4 项"
+            }
+          ],
+          "boundary": "完整岗位正文可读，但发布日期、地点及当前招聘状态未明确；首次收录是研究基线，不能推断新增岗位、编制或实际决策权。",
+          "sources": [
+            {
+              "url": "https://mall.ecovacs.cn/job-detail-516.html",
+              "name": "科沃斯官方商城招聘",
+              "publishedAt": null,
+              "publisherGroup": "科沃斯官方商城招聘",
+              "role": "official",
+              "textHash": "d3e3ffe7578d2b742c6886d079150ba7025206634199d0f44d424a181e8f242b",
+              "readAt": "2026-11-08T00:45:06.901704+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "sec-profit-cash-distinction",
+          "url": "https://www.sec.gov/about/reports-publications/investorpubsbegfinstmtguide",
+          "checkedAt": "2026-11-15T10:40:53.664874+00:00",
+          "state": "index",
+          "note": "当前网页工具正文段落，不是整页全量复核；直连失败另有记录。"
+        },
+        {
+          "itemId": "ecovacs-plm",
+          "url": "https://mall.ecovacs.cn/job-detail-516.html",
+          "checkedAt": "2026-11-15T10:39:05.972438+00:00",
+          "state": "body",
+          "note": "当前实际阅读相关正文；仅核验列明字段。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-0",
+      "reviewedAt": "2026-11-15T10:41:33.649429+00:00",
+      "status": "partial",
+      "assessment": "复核雷鸟配对、记录与提词器说明及XREAL服务接口；补输入文件到可用内容的验收约束。未复核其他观察对象，不推进完整期限。",
+      "gaps": [
+        "Meta、Apple、Samsung观察对象未取得本轮当前正文。",
+        "真实任务成功率、佩戴负担及续航缺跨企业实测；雷鸟数据地点、期限和删除传播仍未知。",
+        "雷鸟最低手机系统与权限细节仍有占位；文件导入内容保真未做实机测试。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "metrics",
+        "team"
+      ],
+      "changes": {
+        "metrics": {
+          "before": "完成一次真实任务的成功率；佩戴负担；续航；退货原因",
+          "after": "完成一次真实任务的成功率；佩戴负担；续航；退货原因。文档类任务还需检查关键文字、图片与版式的保留情况及人工补做步骤；雷鸟提词器说明导入只留文字，支持格式数不能替代任务验收。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "rayneo-import-text-boundary-lesson",
+            "title": "文件能导入不等于内容完整可用",
+            "learning": "雷鸟提词器导入会移除格式与图片，只保留文字。",
+            "application": "比较带文档工作流的设备时，用获授权样本核对关键内容与补做步骤；具体结果需逐功能实测。",
+            "boundary": "单一功能官方说明，不推断其他设备转换效果或真实学习收益。",
+            "itemIds": [
+              "rayneo-import-text-boundary"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "rayneo-import-text-boundary",
+          "title": "雷鸟提词器：支持导入文件，不等于保留图文内容",
+          "facts": [
+            {
+              "claim": "导入只保留文字，会移除格式和图片。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "4.3 Teleprompter / Import Scripts"
+            },
+            {
+              "claim": "支持TXT、DOC、DOCX、PDF。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "4.3 Teleprompter / Import Scripts"
+            }
+          ],
+          "boundary": "官方使用说明的单一功能，未实测文档转换、公式或阅读效果；无发布日期，不是今日新增功能，也不证明雷鸟属于学习机竞品。",
+          "sources": [
+            {
+              "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "name": "雷鸟创新官方资料",
+              "publishedAt": null,
+              "publisherGroup": "雷鸟创新",
+              "role": "official",
+              "textHash": "35478d807b7223713b5a12ff2473e1636ba03032ed0a7b3603156eca477e6da0",
+              "readAt": "2026-11-15T10:39:05.972318+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "rayneo-support",
+          "title": "雷鸟 iO 支持说明：离线功能仍依赖手机、版本与语言包",
+          "facts": [
+            {
+              "claim": "离线翻译需提前下载语言对。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "4.1 / Offline Translation"
+            },
+            {
+              "claim": "页面的权限细节仍标注待最终版本确认。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "1.2 / App Permissions"
+            }
+          ],
+          "boundary": "无明确发布日期；本次读取设置与字幕翻译相关章节，页面存在未完成占位说明。没有设备实测、权限清单或数据流审计，不能断言功能全在眼镜端或数据不出端。",
+          "sources": [
+            {
+              "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "name": "雷鸟官方支持",
+              "publishedAt": null,
+              "publisherGroup": "雷鸟官方支持",
+              "role": "official",
+              "textHash": "baf3fdfe5b2138279c70c0b231cb61d071a3d5438a304d2d85ce49ee4729dd3e",
+              "readAt": "2026-11-09T00:46:58.353783+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "rayneo-recording-boundaries",
+          "title": "雷鸟录音与 Life Log：不保存音频，不等于不保留个人记录",
+          "facts": [
+            {
+              "claim": "Voice Memo录音结束后自动保存，可在Sessions回看转写与摘要。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "4.2 Voice Memo & AI Summary"
+            },
+            {
+              "claim": "Life Log不保留原始音频，但保留对话生成的文字记录。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "6.2 Life Log Data Storage"
+            },
+            {
+              "claim": "长期个人标签支持用户手动删除和更正。",
+              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "locator": "6.3 Manage Personal Profile Tags"
+            }
+          ],
+          "boundary": "无明确发布日期，按常青资料整理；只证明官方支持页对具体功能的描述，未做设备实测、后台审计或删除验证。文字、摘要和标签也可能承载个人信息；数据处理地点、保留时长、第三方模型范围及删除传播均未知。",
+          "sources": [
+            {
+              "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+              "name": "雷鸟创新官方资料",
+              "publishedAt": null,
+              "publisherGroup": "雷鸟创新",
+              "role": "official",
+              "textHash": "35478d807b7223713b5a12ff2473e1636ba03032ed0a7b3603156eca477e6da0",
+              "readAt": "2026-11-13T00:44:17.412588+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "xreal-warranty",
+          "title": "XREAL 服务条款样本：销售渠道与售后受理信息相连",
+          "facts": [
+            {
+              "claim": "条款只覆盖规定渠道及所支持地区。",
+              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+              "locator": "Scope"
+            },
+            {
+              "claim": "申请信息包含订单和故障设备序列号。",
+              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+              "locator": "Making a claim"
+            }
+          ],
+          "boundary": "本轮读取 Scope 与 Making a claim 等业务流程段落；这是厂商自述的商业保修流程样本，不是对法定权利或条款效力的法律判断。当前适用地区、机型和购买时间仍须逐案核对。",
+          "sources": [
+            {
+              "url": "https://us.shop.xreal.com/pages/warranty-policy",
+              "name": "XREAL 美国商城保修政策",
+              "publishedAt": "2024-04-08",
+              "publisherGroup": "XREAL 美国商城保修政策",
+              "role": "official",
+              "textHash": "f6d9abd8a0da1c0e46c8883c61dc2dcc1047721091f3eaef3a7b3eb81d86b685",
+              "readAt": "2026-11-09T00:46:58.382936+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "rayneo-import-text-boundary",
+          "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "checkedAt": "2026-11-15T10:39:05.972318+00:00",
+          "state": "body",
+          "note": "当前实际阅读相关正文；仅核验列明字段。"
+        },
+        {
+          "itemId": "rayneo-support",
+          "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "checkedAt": "2026-11-15T10:39:05.972318+00:00",
+          "state": "body",
+          "note": "当前实际阅读相关正文；仅核验列明字段。"
+        },
+        {
+          "itemId": "rayneo-recording-boundaries",
+          "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "checkedAt": "2026-11-15T10:39:05.972318+00:00",
+          "state": "body",
+          "note": "当前实际阅读相关正文；仅核验列明字段。"
+        },
+        {
+          "itemId": "xreal-warranty",
+          "url": "https://us.shop.xreal.com/pages/warranty-policy",
+          "checkedAt": "2026-11-15T10:39:05.974243+00:00",
+          "state": "body",
+          "note": "当前实际阅读相关正文；仅核验列明字段。"
         }
       ]
     }

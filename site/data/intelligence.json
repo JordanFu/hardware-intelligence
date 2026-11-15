@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastCompletedAt": "2026-11-15T00:44:23.837310+00:00",
+  "lastCompletedAt": "2026-11-15T10:40:53.944345+00:00",
   "method": "Codex 初筛评分 + 逐条证据复核；非两个独立模型评分",
   "items": [
     {
@@ -5352,6 +5352,287 @@
       "date": null,
       "title": "华为教育空间：密码恢复涉及空间数据删除",
       "summary": "华为当前支持页说明，教育空间密码忘记后不支持找回，所列处理方式是删除空间后重新创建；删除会同时清除该空间的应用与数据，且不可恢复。这为学习硬件补充了一个服务研究问题：恢复访问与保留学习资料应分别核验。"
+    },
+    {
+      "id": "shopify-session-conversion",
+      "eventId": "shopify-session-conversion",
+      "developmentId": "initial",
+      "titleZh": "渠道转化率先对齐分母：购买会话不等于订单数",
+      "originalTitle": "Behavior reports",
+      "brief": {
+        "lead": "Shopify帮助页按完成购买的会话占全部会话来解释网店转化率。同一会话可以发生多次购买，所以订单数不一定等于购买会话数。其漏斗还区分开放路径与按顺序完成步骤的封闭路径，比较前需要核对设置。",
+        "points": [
+          "页面提醒2026年9月会话计量更新可能改变指标，不能直接解释成流量或客户行为变化。",
+          "这是一个平台的统计口径，不能直接套到线下门店、经销商进货或学习机激活。"
+        ]
+      },
+      "stages": [
+        "渠道与销售",
+        "经营与组织"
+      ],
+      "domestic": false,
+      "companies": [
+        "Shopify"
+      ],
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 18,
+          "机制清晰": 18,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "读取当前官方说明，事实与研究解释分开，保留适用范围与未知项。"
+        }
+      },
+      "eventReason": "同一主体与具体机制去重；无日期支持资料不作为今日新闻。",
+      "boundary": "当前帮助页的网店统计说明，非国内公司实际销售数据；未核验商户配置、事件埋点、机器人过滤或跨期可比性。",
+      "meaning": "把分母、路径和计量版本一并写入渠道指标，避免把统计变化当业务变化。",
+      "question": "同一渠道前后对比时，会话定义、漏斗顺序与过滤条件是否一致？",
+      "practices": [
+        {
+          "title": "对齐渠道转化率的分母与统计版本",
+          "method": "同时记录会话、购买会话、订单及开放/封闭漏斗设置。",
+          "conditions": "适用于同平台、同周期与配置的渠道研究；跨平台须另核定义。",
+          "outcome": "公开说明或概念依据，没有企业应用成效数据。",
+          "boundary": "当前帮助页的网店统计说明，非国内公司实际销售数据；未核验商户配置、事件埋点、机器人过滤或跨期可比性。",
+          "nextCheck": "同一渠道前后对比时，会话定义、漏斗顺序与过滤条件是否一致？",
+          "stages": [
+            "渠道与销售",
+            "经营与组织"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "平台区分购买会话数与订单数。",
+          "sourceUrl": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports",
+          "locator": "Conversion rate over time说明"
+        },
+        {
+          "claim": "漏斗步骤的转化率使用总会话作为分母。",
+          "sourceUrl": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports",
+          "locator": "Conversion rate breakdown"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports",
+          "name": "Shopify官方资料",
+          "publishedAt": null,
+          "publisherGroup": "Shopify",
+          "role": "official",
+          "textHash": "839f261d11c1a49fce4e742038e2d3bc2b00deae2b52e82924c45fb0b4d02c08",
+          "readAt": "2026-11-15T10:39:05.971438+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-15T10:40:53.935931+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "渠道转化率先对齐分母：购买会话不等于订单数",
+      "summary": "Shopify帮助页按完成购买的会话占全部会话来解释网店转化率。同一会话可以发生多次购买，所以订单数不一定等于购买会话数。其漏斗还区分开放路径与按顺序完成步骤的封闭路径，比较前需要核对设置。"
+    },
+    {
+      "id": "sec-profit-cash-distinction",
+      "eventId": "sec-profit-cash-distinction",
+      "developmentId": "initial",
+      "titleZh": "理解硬件经营：利润与现金流要分开读",
+      "originalTitle": "Beginners' Guide to Financial Statement",
+      "brief": {
+        "lead": "SEC财务报表入门资料区分利润与现金流：前者说明期间赚亏，后者解释现金进出，并分为经营、投资和融资活动。研究硬件公司的组织与经营时，可据此分开询问经营结果和现金占用，不能只看单个数字。",
+        "points": [
+          "资料发布日期为2007年2月4日，本次仅补基础概念。",
+          "没有分析任何企业财报，不据此判断偿债能力、融资需要或人员配置。"
+        ]
+      },
+      "stages": [
+        "经营与组织",
+        "供应链与采购"
+      ],
+      "domestic": false,
+      "companies": [
+        "SEC"
+      ],
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 18,
+          "机制清晰": 18,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "读取当前官方说明，事实与研究解释分开，保留适用范围与未知项。"
+        }
+      },
+      "eventReason": "同一主体与具体机制去重；无日期支持资料不作为今日新闻。",
+      "boundary": "2007年官方入门教育材料；本轮读取工具提供相关正文段落，直连403。不是现行准则核验、具体企业经营结论或投资建议。",
+      "meaning": "把利润与现金来源分别核对，避免从单个指标推出组织效率。",
+      "question": "现金变化来自经营、资产投入还是融资，是否与所讨论业务阶段相符？",
+      "practices": [
+        {
+          "title": "把利润与现金流拆成两个经营问题",
+          "method": "分别记录期间利润及经营、投资、融资现金变化。",
+          "conditions": "基础财务阅读框架，具体企业须查对应报表和附注。",
+          "outcome": "公开说明或概念依据，没有企业应用成效数据。",
+          "boundary": "2007年官方入门教育材料；本轮读取工具提供相关正文段落，直连403。不是现行准则核验、具体企业经营结论或投资建议。",
+          "nextCheck": "现金变化来自经营、资产投入还是融资，是否与所讨论业务阶段相符？",
+          "stages": [
+            "经营与组织",
+            "供应链与采购"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "现金流量表报告现金流入与流出。",
+          "sourceUrl": "https://www.sec.gov/about/reports-publications/investorpubsbegfinstmtguide",
+          "locator": "Cash Flow Statements"
+        },
+        {
+          "claim": "现金流与净利润相关但不相等。",
+          "sourceUrl": "https://www.sec.gov/about/reports-publications/investorpubsbegfinstmtguide",
+          "locator": "Bringing It All Together"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/about/reports-publications/investorpubsbegfinstmtguide",
+          "name": "SEC官方资料",
+          "publishedAt": null,
+          "publisherGroup": "SEC",
+          "role": "official",
+          "textHash": "a91653d8d59578b372a332444c7e90baa824ddcc3db1d8f511f8baa7863998f7",
+          "readAt": "2026-11-15T10:40:53.664874+00:00",
+          "coverage": "excerpt"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-15T10:40:53.936422+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "理解硬件经营：利润与现金流要分开读",
+      "summary": "SEC财务报表入门资料区分利润与现金流：前者说明期间赚亏，后者解释现金进出，并分为经营、投资和融资活动。研究硬件公司的组织与经营时，可据此分开询问经营结果和现金占用，不能只看单个数字。"
+    },
+    {
+      "id": "rayneo-import-text-boundary",
+      "eventId": "rayneo-import-text-boundary",
+      "developmentId": "initial",
+      "titleZh": "雷鸟提词器：支持导入文件，不等于保留图文内容",
+      "originalTitle": "RayNeo iO Support — Teleprompter import",
+      "brief": {
+        "lead": "雷鸟iO支持页列出提词器可导入TXT、DOC、DOCX和PDF，但同时说明导入会去除格式和图片，只保留文字。对需要图表、公式或版式的资料，文件能打开还不足以证明内容能完整使用。",
+        "points": [
+          "这是提词器导入流程的说明，不能外推为其他功能或所有设备的文档处理能力。",
+          "用于学习硬件对照时，应检查关键内容是否保留，以及用户还要补做多少整理。"
+        ]
+      },
+      "stages": [
+        "研发与系统",
+        "质量与合规",
+        "服务与生命周期"
+      ],
+      "domestic": true,
+      "companies": [
+        "雷鸟创新"
+      ],
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 18,
+          "机制清晰": 18,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "读取当前官方说明，事实与研究解释分开，保留适用范围与未知项。"
+        }
+      },
+      "eventReason": "同一主体与具体机制去重；无日期支持资料不作为今日新闻。",
+      "boundary": "官方使用说明的单一功能，未实测文档转换、公式或阅读效果；无发布日期，不是今日新增功能，也不证明雷鸟属于学习机竞品。",
+      "meaning": "比较输入兼容时检查内容保真与人工整理负担，而非只统计支持格式数。",
+      "question": "导入后的关键图表、公式、段落对应关系是否仍可用，失败由谁发现并修复？",
+      "practices": [
+        {
+          "title": "把文件可导入与内容可用分开验收",
+          "method": "用包含关键图文的授权样本检查导入后保留内容与补做步骤。",
+          "conditions": "仅以雷鸟提词器说明为案例，向其他设备迁移时重新验证。",
+          "outcome": "公开说明或概念依据，没有企业应用成效数据。",
+          "boundary": "官方使用说明的单一功能，未实测文档转换、公式或阅读效果；无发布日期，不是今日新增功能，也不证明雷鸟属于学习机竞品。",
+          "nextCheck": "导入后的关键图表、公式、段落对应关系是否仍可用，失败由谁发现并修复？",
+          "stages": [
+            "研发与系统",
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "导入只保留文字，会移除格式和图片。",
+          "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "locator": "4.3 Teleprompter / Import Scripts"
+        },
+        {
+          "claim": "支持TXT、DOC、DOCX、PDF。",
+          "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "locator": "4.3 Teleprompter / Import Scripts"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "name": "雷鸟创新官方资料",
+          "publishedAt": null,
+          "publisherGroup": "雷鸟创新",
+          "role": "official",
+          "textHash": "35478d807b7223713b5a12ff2473e1636ba03032ed0a7b3603156eca477e6da0",
+          "readAt": "2026-11-15T10:39:05.972318+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-15T10:40:53.940101+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "雷鸟提词器：支持导入文件，不等于保留图文内容",
+      "summary": "雷鸟iO支持页列出提词器可导入TXT、DOC、DOCX和PDF，但同时说明导入会去除格式和图片，只保留文字。对需要图表、公式或版式的资料，文件能打开还不足以证明内容能完整使用。"
     }
   ],
   "events": [
@@ -6140,6 +6421,48 @@
       ],
       "publisherGroups": [
         "华为"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "shopify-session-conversion",
+      "representativeId": "shopify-session-conversion",
+      "itemIds": [
+        "shopify-session-conversion"
+      ],
+      "publisherGroups": [
+        "Shopify"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "sec-profit-cash-distinction",
+      "representativeId": "sec-profit-cash-distinction",
+      "itemIds": [
+        "sec-profit-cash-distinction"
+      ],
+      "publisherGroups": [
+        "SEC"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "rayneo-import-text-boundary",
+      "representativeId": "rayneo-import-text-boundary",
+      "itemIds": [
+        "rayneo-import-text-boundary"
+      ],
+      "publisherGroups": [
+        "雷鸟创新"
       ],
       "developmentIds": [
         "initial"
@@ -11296,6 +11619,516 @@
       "successfulScan": true,
       "completedAt": "2026-11-15T00:44:23.837310+00:00",
       "reviewedCount": 4,
+      "selectedCount": 3
+    },
+    {
+      "coverage": "晚间补跑知识复核；沿用当天早晨实际完成且覆盖通过的三家公司岗位记录，不重复生成日报。晚间新读科沃斯产品线职责、雷鸟说明、XREAL服务条款，另读Shopify统计与SEC财务概念；补渠道、经营组织及可穿戴知识。未重新扫描全量RSS，不据此判断晚间无新事件。",
+      "sourceChecks": [
+        {
+          "url": "https://help.autodesk.com/cloudhelp/2026/ENU/Vault-General/files/GUID-86373139-0500-4B28-A5C3-DE80A53D1AF6.htm",
+          "company": null,
+          "stages": [
+            "研发与系统",
+            "供应链与采购",
+            "制造与交付"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-15T00:41:20.683346+00:00",
+          "note": "读取定义、能力与版本规则正文，未验证其他软件。"
+        },
+        {
+          "url": "https://store.creality.com/pages/return-policy",
+          "company": null,
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期",
+            "质量与合规"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-15T00:41:20.685531+00:00",
+          "note": "创想三维服务入口、诊断及退回条款；存在7/14天表述冲突。"
+        },
+        {
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+          "company": "华为",
+          "stages": [
+            "服务与生命周期",
+            "质量与合规"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-15T00:41:20.685838+00:00",
+          "note": "教育空间型号、版本、权限和重置章节，补数据影响边界。"
+        },
+        {
+          "url": "https://www.okii.com/html/pc/service/service_question.html",
+          "company": "小天才",
+          "stages": [
+            "服务与生命周期",
+            "质量与合规"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-15T00:41:20.687748+00:00",
+          "note": "复核手表设置与平板分类，原档案未变；不混用平板绑定条件。"
+        },
+        {
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/5c016df5-2a57-4758-b3e3-4a58eb276ffe",
+          "company": "作业帮",
+          "stages": [
+            "渠道与销售",
+            "经营与组织"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "checkedAt": "2026-11-15T00:42:47.104Z",
+          "note": "同ID图书渠道岗位，职责未变，相邻业务参考。"
+        },
+        {
+          "url": "https://app.mokahr.com/social-recruitment/fenbi/45505#/job/5ecdce43-9ab2-48bb-ade9-ff021311daef",
+          "company": "猿辅导（小猿）",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "checkedAt": "2026-11-15T00:42:47.111Z",
+          "note": "同ID教育OCR岗位，职责未变，未指定学习机。"
+        },
+        {
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
+          "company": "科大讯飞",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "经营与组织"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "checkedAt": "2026-11-15T00:42:47.129Z",
+          "note": "同ID消费电子供应商岗位，职责未变，未限定学习机。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/468.htm",
+          "company": "华为",
+          "stages": [
+            "研发与系统",
+            "服务与生命周期",
+            "质量与合规"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "checkedAt": "2026-11-15T00:42:19.250519+00:00",
+          "note": "读取媒体正文后暂缓入选，需官方升级说明。"
+        },
+        {
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/5c016df5-2a57-4758-b3e3-4a58eb276ffe",
+          "company": "作业帮",
+          "stages": [
+            "经营与组织"
+          ],
+          "purpose": "recruitment",
+          "state": "error",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "首次浏览器加载为空；刷新后取得当前正文，保留最初访问失败，不判为无岗。"
+        },
+        {
+          "url": "https://app.mokahr.com/social-recruitment/fenbi/45505#/job/5ecdce43-9ab2-48bb-ade9-ff021311daef",
+          "company": "猿辅导（小猿）",
+          "stages": [
+            "经营与组织"
+          ],
+          "purpose": "recruitment",
+          "state": "error",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "首次浏览器加载为空；刷新后取得当前正文，保留最初访问失败，不判为无岗。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/622.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/993.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/757.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/385.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/367.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/331.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/152.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/146.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/828.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/755.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/535.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/516.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/995.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/768.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/767.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/546.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/004.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/239.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/226.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/209.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/151.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/144.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/067.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/066.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/057.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/043.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/031.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/954.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/931.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-15T00:44:23.481800+00:00",
+          "note": "候选初筛；缓存或自动下载不算本轮正文阅读，不凭标题写摘要。"
+        },
+        {
+          "url": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports",
+          "company": null,
+          "stages": [
+            "渠道与销售",
+            "经营与组织"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-15T10:39:05.971438+00:00",
+          "note": "实际读取转化率定义、开放/封闭漏斗和会话更新提示。"
+        },
+        {
+          "url": "https://www.sec.gov/about/reports-publications/investorpubsbegfinstmtguide",
+          "company": null,
+          "stages": [
+            "经营与组织",
+            "供应链与采购"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-15T10:40:53.664874+00:00",
+          "note": "网页读取工具取得现金流与利润相关段落；2007年入门资料，非现行准则。"
+        },
+        {
+          "url": "https://mall.ecovacs.cn/job-detail-516.html",
+          "company": "科沃斯",
+          "stages": [
+            "研发与系统",
+            "渠道与销售",
+            "服务与生命周期",
+            "经营与组织"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "checkedAt": "2026-11-15T10:39:05.972438+00:00",
+          "note": "产品线经理当前正文含生命周期及退市职责；未标发布日期，不认定新增岗位。"
+        },
+        {
+          "url": "https://us.shop.xreal.com/pages/warranty-policy",
+          "company": "XREAL",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-15T10:39:05.974243+00:00",
+          "note": "复核服务适用地区、渠道及购买证明；非法律解释。"
+        },
+        {
+          "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
+          "company": "雷鸟创新",
+          "stages": [
+            "研发与系统",
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-15T10:39:05.972318+00:00",
+          "note": "实际审读安装配对、提词器导入、记录查询及数据章节；保留系统版本与权限占位缺口。"
+        },
+        {
+          "url": "https://www.sec.gov/about/reports-publications/investorpubsbegfinstmtguide",
+          "company": null,
+          "stages": [
+            "经营与组织"
+          ],
+          "purpose": "practice",
+          "state": "error",
+          "checkedAt": "2026-11-15T10:39:05.977068+00:00",
+          "note": "SEC直连HTTP403，另经网页读取工具取得指定正文段落；原失败保留。"
+        }
+      ],
+      "knownGaps": [
+        "其余29条候选未逐篇审读，零入选不表示行业无新事件。",
+        "作业帮渠道为图书业务、讯飞采购为共享能力、小猿算法未限定硬件，不能拼成学习机完整组织。",
+        "14个知识节点完整复核仍逾期；只更新有依据的字段。",
+        "创想三维退回条款有7天与14天冲突，地区和个案责任未核验。",
+        "晚间只补知识，未对新RSS候选逐篇审读。",
+        "渠道sell-in/sell-through、贡献利润口径和经营组织全部指标仍待完整复核。"
+      ],
+      "failedSources": [
+        "CNX RSS HTTP403，保留缓存。",
+        "作业帮、小猿首次加载为空，刷新后正文可读。",
+        "SEC直连HTTP403，网页读取工具补得指定正文段落。",
+        "首次浏览器加载为空；刷新后取得当前正文，保留最初访问失败，不判为无岗。",
+        "SEC直连HTTP403，另经网页读取工具取得指定正文段落；原失败保留。"
+      ],
+      "coverageCheck": {
+        "passed": true,
+        "companies": [
+          "XREAL",
+          "作业帮",
+          "华为",
+          "小天才",
+          "猿辅导（小猿）",
+          "科大讯飞",
+          "科沃斯",
+          "雷鸟创新"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规"
+        ],
+        "recruitmentCompanies": [
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞",
+          "科沃斯"
+        ],
+        "gaps": [],
+        "usableSources": 42
+      },
+      "successfulScan": true,
+      "completedAt": "2026-11-15T10:40:53.944345+00:00",
+      "reviewedCount": 3,
       "selectedCount": 3
     }
   ]
