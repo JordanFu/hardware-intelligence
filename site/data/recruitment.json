@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-14T10:44:31.902746+00:00",
+  "checkedAt": "2026-11-15T00:44:23.590600+00:00",
   "jobs": [
     {
       "company": "DJI 大疆",
@@ -889,9 +889,9 @@
       "scopeNote": "教辅图书经销商渠道；不能作为学习机零售组织证据",
       "id": "job-a74c7e3ad3b31f9d",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
-      "sourceHash": "98a0344966764882bae28d2b897502c18914dab82cdfc25ad5a16e1d6f13429f",
-      "change": "首次收录基线",
+      "lastSeen": "2026-11-15T00:44:23.590600+00:00",
+      "sourceHash": "6d8b6cc9b2fe10506cb9b61bf05c9729c6a672e8d17c5019d9b53e25b3ba728c",
+      "change": "持续可见",
       "versions": [
         {
           "observedAt": "2026-11-09T02:30:42.120805+00:00",
@@ -1141,7 +1141,7 @@
       "scopeNote": "消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机",
       "id": "job-64eaead4b243a34c",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-10T00:46:34.458995+00:00",
+      "lastSeen": "2026-11-15T00:44:23.590600+00:00",
       "sourceHash": "d367fee8f52072da2786051fc233e03f2d8bd9886ef73c5619bfbf8fe35f8c33",
       "change": "持续可见",
       "versions": [
@@ -1331,9 +1331,9 @@
       "scopeNote": "基础研发部教育OCR能力，未说明专属学习机",
       "id": "job-36588c371ea71881",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-09T02:30:42.120805+00:00",
+      "lastSeen": "2026-11-15T00:44:23.590600+00:00",
       "sourceHash": "86c0ef2be81ebb0dca088e7541417ff8ae75341b7a24a4d33823a3be06a78e11",
-      "change": "首次收录基线",
+      "change": "持续可见",
       "versions": [
         {
           "observedAt": "2026-11-09T02:30:42.120805+00:00",
@@ -2379,6 +2379,60 @@
         }
       ],
       "checkedAt": "2026-11-14T10:44:31.902746+00:00"
+    },
+    {
+      "company": "作业帮",
+      "state": "partial",
+      "complete": false,
+      "note": "同ID定向复核，原整理未变；非完整目录。",
+      "familyChecks": [
+        {
+          "family": "渠道",
+          "state": "body",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/5c016df5-2a57-4758-b3e3-4a58eb276ffe",
+          "jobIds": [
+            "job-a74c7e3ad3b31f9d"
+          ],
+          "note": "教辅图书经销商渠道；不能作为学习机零售组织证据；职责未见实质变化。"
+        }
+      ],
+      "checkedAt": "2026-11-15T00:44:23.590600+00:00"
+    },
+    {
+      "company": "猿辅导（小猿）",
+      "state": "partial",
+      "complete": false,
+      "note": "同ID定向复核，原整理未变；非完整目录。",
+      "familyChecks": [
+        {
+          "family": "算法",
+          "state": "body",
+          "url": "https://app.mokahr.com/social-recruitment/fenbi/45505#/job/5ecdce43-9ab2-48bb-ade9-ff021311daef",
+          "jobIds": [
+            "job-36588c371ea71881"
+          ],
+          "note": "基础研发部教育OCR能力，未说明专属学习机；职责未见实质变化。"
+        }
+      ],
+      "checkedAt": "2026-11-15T00:44:23.590600+00:00"
+    },
+    {
+      "company": "科大讯飞",
+      "state": "partial",
+      "complete": false,
+      "note": "同ID定向复核，原整理未变；非完整目录。",
+      "familyChecks": [
+        {
+          "family": "供应链",
+          "state": "body",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
+          "jobIds": [
+            "job-64eaead4b243a34c"
+          ],
+          "note": "消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机；职责未见实质变化。"
+        }
+      ],
+      "checkedAt": "2026-11-15T00:44:23.590600+00:00"
     }
   ],
   "insights": [

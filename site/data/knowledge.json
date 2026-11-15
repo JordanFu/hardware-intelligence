@@ -72,45 +72,45 @@
       "updatedAt": "2026-11-06T07:53:13.521723+00:00"
     },
     "chain-7": {
-      "attemptedAt": "2026-11-13T10:55:31.088703+00:00",
+      "attemptedAt": "2026-11-15T00:45:02.865869+00:00",
       "status": "partial",
-      "assessment": "重读线上分析、当地返修与停产通知条款，适用地区与维修流程边界未见实质变化；未取得首次解决率与实际恢复使用数据。",
+      "assessment": "补教育空间恢复访问与数据保留之间的边界；未验证备份方案，不据此推广所有学习设备的重置行为。",
       "gaps": [
         "首次解决率的窗口、排除项与重复联系归属仍需独立方法资料和实际数据。",
-        "没有具体停产产品通知、真实维修时长、备件供货与用户恢复使用结果。"
+        "没有具体停产产品通知、真实维修时长、备件供货与用户恢复使用结果。",
+        "华为该空间的备份、导出及具体学习应用资料范围未核实。"
       ],
       "reviewedFields": [
         "exercise",
         "flow",
-        "pitfall",
-        "team"
+        "pitfall"
       ],
       "evidence": [
         {
-          "itemId": "xtool-aftersale",
-          "title": "xTool 英国售后政策：远程诊断、返修与停产支持有不同接口",
+          "itemId": "huawei-education-reset-boundary",
+          "title": "华为教育空间：密码恢复涉及空间数据删除",
           "facts": [
             {
-              "claim": "远程无法解决的问题可能需要送本地维修中心。",
-              "sourceUrl": "https://uk.xtool.com/pages/aftersale-policies",
-              "locator": "How to Obtain a Warranty Service"
+              "claim": "指南说明忘记密码后不支持找回。",
+              "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+              "locator": "设置与重置密码"
             },
             {
-              "claim": "停产产品安排提到最终维修日期通知。",
-              "sourceUrl": "https://uk.xtool.com/pages/aftersale-policies",
-              "locator": "Special Notes"
+              "claim": "删除教育空间会同步删除其应用和数据且不可恢复。",
+              "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+              "locator": "重置密码提示"
             }
           ],
-          "boundary": "英国站当前政策，未标统一发布日期；本次只整理服务流程与停产通知，不判断条款的法律效力或跨地区适用性，合同、机型和当地规则仍需分别核对。",
+          "boundary": "无明确发布日期，按当前支持说明补充；未操作设备、删除数据或验证备份机制。不是今日新增功能，也不证明所有学习记录都会丢失。",
           "sources": [
             {
-              "url": "https://uk.xtool.com/pages/aftersale-policies",
-              "name": "xTool 官方支持",
+              "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+              "name": "华为官方资料",
               "publishedAt": null,
-              "publisherGroup": "xTool 官方支持",
+              "publisherGroup": "华为",
               "role": "official",
-              "textHash": "6269b4a3d4d1a4540a5eb7672c87c865039d5fb2611703717f94e41e51be7483",
-              "readAt": "2026-11-08T00:45:12.666454+00:00",
+              "textHash": "17dca06954d13a3c2041c544db30b358ff84cd4c74c2c587677f06ec3a00007a",
+              "readAt": "2026-11-15T00:41:20.685838+00:00",
               "coverage": "body"
             }
           ]
@@ -118,14 +118,14 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "xtool-aftersale",
-          "url": "https://uk.xtool.com/pages/aftersale-policies",
-          "checkedAt": "2026-11-13T10:53:35.741889+00:00",
+          "itemId": "huawei-education-reset-boundary",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+          "checkedAt": "2026-11-15T00:41:20.685838+00:00",
           "state": "body",
-          "note": "晚间实际读取列明章节，未把未读参数或其他观察企业算作完整复核。"
+          "note": "实际读取列明正文及版本条件；未覆盖字段和实测缺口继续保留。"
         }
       ],
-      "reviewedAt": "2026-11-13T10:55:31.088703+00:00",
+      "reviewedAt": "2026-11-15T00:45:02.865869+00:00",
       "patch": {
         "basics": "OTA 是远程软件更新；支持周期、回滚和停止服务的安排也是产品承诺。 对互联设备，还应检查所有权转移、恢复出厂与退出时的数据处理；这些是从岗位职责提炼的验收问题，不能视为全行业已落实的规范。",
         "exercise": "追踪一次服务事件，从用户发现到真正恢复使用，找出重复解释和重复操作。 补充一次设备转售或恢复出厂场景，列清设备、账号和云端数据的处理责任与验证证据。 对返修场景增加购买证明、排障记录、寄送指引与恢复使用四步，检查哪些信息能在授权范围内复用，避免用户重复解释。",
@@ -153,9 +153,20 @@
             "xtool-aftersale"
           ],
           "updatedAt": "2026-11-10T00:47:16.938756+00:00"
+        },
+        {
+          "id": "chain-7-education-reset-data",
+          "title": "恢复访问不能自动等同于资料恢复",
+          "learning": "华为所列密码处理方式涉及删除教育空间及数据。",
+          "application": "评估学习设备售后时，分别核对恢复访问、保留资料和告知影响的条件，避免只以能再次登录作为验收。",
+          "boundary": "限MatePad Edge和HarmonyOS 6.1支持说明，未实测；不判断其他备份渠道或全部学习记录的位置。",
+          "itemIds": [
+            "huawei-education-reset-boundary"
+          ],
+          "updatedAt": "2026-11-15T00:45:02.865869+00:00"
         }
       ],
-      "updatedAt": "2026-11-10T00:47:16.938756+00:00"
+      "updatedAt": "2026-11-15T00:45:02.865869+00:00"
     },
     "track-5": {
       "attemptedAt": "2026-11-14T10:45:19.046215+00:00",
@@ -527,45 +538,43 @@
       "updatedAt": "2026-11-07T00:47:27.698411+00:00"
     },
     "chain-2": {
-      "attemptedAt": "2026-11-12T00:51:00.108633+00:00",
+      "attemptedAt": "2026-11-15T00:45:02.865869+00:00",
       "status": "partial",
-      "assessment": "重新读取原理、速度、结构及软件精细度章节，既有任务条件和模块参数区分仍成立，无实质内容变化；直连超时后浏览器取得正文。",
+      "assessment": "补BOM的内容与版本状态依据；工具发布规则不替代企业变更权限，EVT/DVT/PVT及整机测量仍未完整核验。",
       "gaps": [
-        "BOM、EVT/DVT/PVT基础定义及特定项目门槛未全面核验。",
-        "端到端耗时、分位数和返工结果仍无独立测试。"
+        "EVT/DVT/PVT基础及特定项目放行门槛仍待全面核验。",
+        "端到端耗时、分位数和返工结果无独立测试；企业变更权限与各专业接口未完整复核。"
       ],
       "reviewedFields": [
-        "exercise",
-        "metrics",
-        "pitfall",
+        "basics",
         "team"
       ],
       "evidence": [
         {
-          "itemId": "xtool-material-guide",
-          "title": "xTool 工艺指南：标称速度不等于实际加工速度",
+          "itemId": "autodesk-bom-versions",
+          "title": "BOM不只列零件，还要保留数量、状态与版本",
           "facts": [
             {
-              "claim": "指南区分理论最高速度与实际加工速度。",
-              "sourceUrl": "https://support.xtool.com/article/1963",
-              "locator": "Processing speed"
+              "claim": "BOM包含编号、数量、描述及生命周期状态。",
+              "sourceUrl": "https://help.autodesk.com/cloudhelp/2026/ENU/Vault-General/files/GUID-86373139-0500-4B28-A5C3-DE80A53D1AF6.htm",
+              "locator": "BOM定义段落"
             },
             {
-              "claim": "提高 LPI 通常需要更多加工时间。",
-              "sourceUrl": "https://support.xtool.com/article/1963",
-              "locator": "Software factors / LPI"
+              "claim": "软件支持比较BOM修订。",
+              "sourceUrl": "https://help.autodesk.com/cloudhelp/2026/ENU/Vault-General/files/GUID-86373139-0500-4B28-A5C3-DE80A53D1AF6.htm",
+              "locator": "What Can I Do with BOMs"
             }
           ],
-          "boundary": "官方指南是材料与参数的解释，不是独立性能测试；本次重点阅读原理和软硬件因素章节，不替代特定机型及材料的完整工艺验证。页面标注更新时间 2025-02-10，非今天新闻。",
+          "boundary": "Vault 2026官方帮助资料；未操作软件或核验企业应用，不把物料清单当全部业务成本。",
           "sources": [
             {
-              "url": "https://support.xtool.com/article/1963",
-              "name": "xTool 官方支持",
-              "publishedAt": "2025-02-10",
-              "publisherGroup": "xTool 官方支持",
+              "url": "https://help.autodesk.com/cloudhelp/2026/ENU/Vault-General/files/GUID-86373139-0500-4B28-A5C3-DE80A53D1AF6.htm",
+              "name": "Autodesk官方资料",
+              "publishedAt": null,
+              "publisherGroup": "Autodesk",
               "role": "official",
-              "textHash": "537d4fc440f808cb3f120dca254fe396503a6faf0421ab5ad118b409e8e9c6c5",
-              "readAt": "2026-11-08T00:46:05.320925+00:00",
+              "textHash": "f263f5d8459b56a7c8835f90519eea854984605142ed10ff6fd76a10314da88c",
+              "readAt": "2026-11-15T00:41:20.683346+00:00",
               "coverage": "body"
             }
           ]
@@ -573,17 +582,18 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "xtool-material-guide",
-          "url": "https://support.xtool.com/article/1963",
-          "checkedAt": "2026-11-12T00:49:03.733Z",
+          "itemId": "autodesk-bom-versions",
+          "url": "https://help.autodesk.com/cloudhelp/2026/ENU/Vault-General/files/GUID-86373139-0500-4B28-A5C3-DE80A53D1AF6.htm",
+          "checkedAt": "2026-11-15T00:41:20.683346+00:00",
           "state": "body",
-          "note": "当日实际读取当前正文所列章节；仅复核列明字段，未覆盖部分不延期。"
+          "note": "实际读取列明正文及版本条件；未覆盖字段和实测缺口继续保留。"
         }
       ],
-      "reviewedAt": "2026-11-12T00:51:00.108633+00:00",
+      "reviewedAt": "2026-11-15T00:45:02.865869+00:00",
       "patch": {
         "metrics": "任务延迟用同一输入、环境与分位数比较；不能只报告平均值或实验室峰值。 对加工设备还应固定材料、任务和成品质量条件，分别记录准备、加工与失败恢复耗时；标称最高运动速度不能直接折算真实产能。",
-        "exercise": "画一张从传感器到执行器的链路，给每个接口写清输入、输出与责任人。 用一个具体材料任务说明结构、光源和软件精细度如何共同影响结果，区分模块参数与整机交付指标。"
+        "exercise": "画一张从传感器到执行器的链路，给每个接口写清输入、输出与责任人。 用一个具体材料任务说明结构、光源和软件精细度如何共同影响结果，区分模块参数与整机交付指标。",
+        "basics": "BOM是制造所需项目的汇总，可包含编号、数量、描述与生命周期状态；交接时还需核对版本。Autodesk Vault 2026提供修订比较，这是具体软件规则，不是所有企业的通用制度。BOM不能代替完整业务成本；EVT/DVT/PVT及具体门槛仍待专门复核。"
       },
       "lessons": [
         {
@@ -596,9 +606,20 @@
             "xtool-material-guide"
           ],
           "updatedAt": "2026-11-08T00:50:25.860268+00:00"
+        },
+        {
+          "id": "chain-2-bom-version-handoff",
+          "title": "交接BOM时同时确认版本与状态",
+          "learning": "Vault帮助页将状态与版本比较纳入BOM管理。",
+          "application": "研发和采购交接时核对采用的清单版本、数量及发布状态。",
+          "boundary": "软件能力不证明企业已实施或实际库存准确。",
+          "itemIds": [
+            "autodesk-bom-versions"
+          ],
+          "updatedAt": "2026-11-15T00:45:02.865869+00:00"
         }
       ],
-      "updatedAt": "2026-11-08T00:50:25.860268+00:00"
+      "updatedAt": "2026-11-15T00:45:02.865869+00:00"
     },
     "chain-5": {
       "attemptedAt": "2026-11-14T10:45:19.046215+00:00",
@@ -762,110 +783,46 @@
       "updatedAt": "2026-11-08T00:50:25.860268+00:00"
     },
     "track-4": {
-      "attemptedAt": "2026-11-12T00:51:00.108633+00:00",
+      "attemptedAt": "2026-11-15T00:45:02.865869+00:00",
       "status": "partial",
-      "assessment": "复核xTool加工指标与部署条件，拓竹新增本地伙伴计划提示服务网络需跟踪；尚无已落实服务结果，不修改通用价值链或将计划写成最佳实践。",
+      "assessment": "补创想三维当前可读售后流程资料；观察对象入口缺口得到补充，但其工艺、产品能力和服务结果仍未全面复核。",
       "gaps": [
-        "创想三维观察对象未取得本轮当前正文。",
-        "拓竹伙伴合同、维修验收、备件和服务结果尚未披露。",
+        "创想三维具体产品能力、质量数据及地区服务条款冲突仍待核验。",
+        "拓竹伙伴合同、维修验收、备件和服务结果仍缺证据。",
         "跨企业任务成功率、维护成本及人员负担缺可比样本。"
       ],
       "reviewedFields": [
         "chain",
         "constraint",
         "examples",
-        "metrics",
         "team"
       ],
       "evidence": [
         {
-          "itemId": "xtool-material-guide",
-          "title": "xTool 工艺指南：标称速度不等于实际加工速度",
+          "itemId": "creality-service-evidence",
+          "title": "创想三维售后：诊断材料与返寄确认也是交付接口",
           "facts": [
             {
-              "claim": "指南区分理论最高速度与实际加工速度。",
-              "sourceUrl": "https://support.xtool.com/article/1963",
-              "locator": "Processing speed"
+              "claim": "支持流程要求产品购买信息及故障图片或视频。",
+              "sourceUrl": "https://store.creality.com/pages/return-policy",
+              "locator": "Solutions Provided by Creality 3D"
             },
             {
-              "claim": "提高 LPI 通常需要更多加工时间。",
-              "sourceUrl": "https://support.xtool.com/article/1963",
-              "locator": "Software factors / LPI"
+              "claim": "寄回前需先联系客服发起退货。",
+              "sourceUrl": "https://store.creality.com/pages/return-policy",
+              "locator": "Return Address下方说明"
             }
           ],
-          "boundary": "官方指南是材料与参数的解释，不是独立性能测试；本次重点阅读原理和软硬件因素章节，不替代特定机型及材料的完整工艺验证。页面标注更新时间 2025-02-10，非今天新闻。",
+          "boundary": "海外商店披露的流程，地区、渠道、产品及条款版本均有限制；只审读服务入口、诊断与退回条款，非整页法务审查，不判断法定权利或实际履约。",
           "sources": [
             {
-              "url": "https://support.xtool.com/article/1963",
-              "name": "xTool 官方支持",
-              "publishedAt": "2025-02-10",
-              "publisherGroup": "xTool 官方支持",
+              "url": "https://store.creality.com/pages/return-policy",
+              "name": "创想三维官方资料",
+              "publishedAt": null,
+              "publisherGroup": "创想三维",
               "role": "official",
-              "textHash": "537d4fc440f808cb3f120dca254fe396503a6faf0421ab5ad118b409e8e9c6c5",
-              "readAt": "2026-11-08T00:46:05.320925+00:00",
-              "coverage": "body"
-            }
-          ]
-        },
-        {
-          "itemId": "xtool-safety",
-          "title": "xTool MetalFab 使用边界：培训、场地与安全责任也是交付条件",
-          "facts": [
-            {
-              "claim": "资料要求专业培训并指定合格的激光安全负责人。",
-              "sourceUrl": "https://support.xtool.com/article/2017",
-              "locator": "Laser safety / personnel requirements"
-            },
-            {
-              "claim": "资料要求建立激光受控区域。",
-              "sourceUrl": "https://support.xtool.com/article/2017",
-              "locator": "Laser safety / controlled area"
-            }
-          ],
-          "boundary": "仅归纳该产品官方说明中的组织和部署要求，非完整操作指导、认证结论或通用法规解释；不推广到其他 xTool 机型，不证明用户现场已经落实。日期为页面标注更新时间。",
-          "sources": [
-            {
-              "url": "https://support.xtool.com/article/2017",
-              "name": "xTool 官方支持",
-              "publishedAt": "2026-06-10",
-              "publisherGroup": "xTool 官方支持",
-              "role": "official",
-              "textHash": "3b1b8af7a56a868001a5b3547d5ad786c2e7d16229fbc75afcd2d9a7fcd7a036",
-              "readAt": "2026-11-08T00:46:05.270898+00:00",
-              "coverage": "body"
-            }
-          ]
-        },
-        {
-          "itemId": "rss-71efdf861fff63c4",
-          "title": "拓竹 Bambu Circle：把维修、零售和培训纳入本地伙伴计划",
-          "facts": [
-            {
-              "claim": "官方宣布计划以荷兰试点启动。",
-              "sourceUrl": "https://blog.bambulab.com/bambu-lab-to-present-the-bambu-circle-programme-and-showcase-h3c-and-r1-at-formnext-2026",
-              "locator": "Bambu Circle: 3D printing as a local business"
-            },
-            {
-              "claim": "拓竹计划负责协调、培训与认证；伙伴服务包括本地维修、零售、打印及培训。",
-              "sourceUrl": "https://blog.bambulab.com/bambu-lab-to-present-the-bambu-circle-programme-and-showcase-h3c-and-r1-at-formnext-2026",
-              "locator": "Bambu Circle / partner scope"
-            },
-            {
-              "claim": "公告将德国和法国的扩展安排在2027年初。",
-              "sourceUrl": "https://blog.bambulab.com/bambu-lab-to-present-the-bambu-circle-programme-and-showcase-h3c-and-r1-at-formnext-2026",
-              "locator": "European rollout"
-            }
-          ],
-          "boundary": "官方公告描述荷兰试点及欧洲扩展计划；Formnext展示尚未发生，2027年德国、法国扩展和一小时服务覆盖均不是已实现结果。未取得伙伴合同、收入、维修验收、用户结果或实际人员配置。",
-          "sources": [
-            {
-              "url": "https://blog.bambulab.com/bambu-lab-to-present-the-bambu-circle-programme-and-showcase-h3c-and-r1-at-formnext-2026",
-              "name": "Bambu Lab 官方博客",
-              "publishedAt": "2026-11-11T07:08:40+00:00",
-              "publisherGroup": "Bambu Lab",
-              "role": "official",
-              "textHash": "7ffe818eb103a8e3c23e4cf1509de907761030d9ab0772d611607d283491c3f4",
-              "readAt": "2026-11-12T00:44:21.766218+00:00",
+              "textHash": "855a4ed49f57aaac7be29d4685a8db6c360844614827305dfa06d47738a8e459",
+              "readAt": "2026-11-15T00:41:20.685531+00:00",
               "coverage": "body"
             }
           ]
@@ -873,28 +830,14 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "xtool-material-guide",
-          "url": "https://support.xtool.com/article/1963",
-          "checkedAt": "2026-11-12T00:49:03.733Z",
+          "itemId": "creality-service-evidence",
+          "url": "https://store.creality.com/pages/return-policy",
+          "checkedAt": "2026-11-15T00:41:20.685531+00:00",
           "state": "body",
-          "note": "当日实际读取当前正文所列章节；仅复核列明字段，未覆盖部分不延期。"
-        },
-        {
-          "itemId": "xtool-safety",
-          "url": "https://support.xtool.com/article/2017",
-          "checkedAt": "2026-11-12T00:44:21.766994+00:00",
-          "state": "body",
-          "note": "当日实际读取当前正文所列章节；仅复核列明字段，未覆盖部分不延期。"
-        },
-        {
-          "itemId": "rss-71efdf861fff63c4",
-          "url": "https://blog.bambulab.com/bambu-lab-to-present-the-bambu-circle-programme-and-showcase-h3c-and-r1-at-formnext-2026",
-          "checkedAt": "2026-11-12T00:44:21.766218+00:00",
-          "state": "body",
-          "note": "当日实际读取当前正文所列章节；仅复核列明字段，未覆盖部分不延期。"
+          "note": "实际读取列明正文及版本条件；未覆盖字段和实测缺口继续保留。"
         }
       ],
-      "reviewedAt": "2026-11-12T00:51:00.108633+00:00",
+      "reviewedAt": "2026-11-15T00:45:02.865869+00:00",
       "patch": {
         "constraint": "良率、准备时间、耗材和失败恢复 制造工具不能只按峰值速度比较；需看材料适配、真实任务耗时和型号特定的部署条件。专业焊接设备的使用前提不得与桌面创作设备混同。",
         "team": "运动控制、固件、结构、材料、切片软件、制造工程 涉及专业设备时，还需把现场交付、训练和安全责任接口纳入观察；具体职责取决于产品和使用场景。",
@@ -912,9 +855,20 @@
             "xtool-safety"
           ],
           "updatedAt": "2026-11-08T00:50:25.860268+00:00"
+        },
+        {
+          "id": "track-4-creality-service-handoff",
+          "title": "维修接口需连接故障、购买与返寄资料",
+          "learning": "创想三维公开说明先收集信息并诊断，返寄前另需联系客服。",
+          "application": "比较制造工具时核对销售渠道到售后的资料传递与确认步骤。",
+          "boundary": "海外商店2025年更新页，7/14天表述冲突未消除；未验证地区履约和用户耗时，不作法律判断。",
+          "itemIds": [
+            "creality-service-evidence"
+          ],
+          "updatedAt": "2026-11-15T00:45:02.865869+00:00"
         }
       ],
-      "updatedAt": "2026-11-08T00:50:25.860268+00:00"
+      "updatedAt": "2026-11-15T00:45:02.865869+00:00"
     },
     "chain-6": {
       "attemptedAt": "2026-11-13T00:48:21.968448+00:00",
@@ -1798,6 +1752,34 @@
           "hash": "7ab7d5f93dacb7fcdead33b49d33c08841ebb494806ece4f861c31724706b6b7",
           "decision": "integrated",
           "reason": "补工艺适配范围与设计审批接口，保留单一供应商及无实测边界。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-15T00:45:02.865869+00:00",
+      "reviewedNodes": [
+        "chain-2",
+        "chain-7",
+        "track-4"
+      ],
+      "decisions": [
+        {
+          "itemId": "autodesk-bom-versions",
+          "hash": "a52af163596cb954e892ecb491915ee4206ad5bfe48d44db1f30067698a1d746",
+          "decision": "integrated",
+          "reason": "补BOM概念与版本交接边界，软件规则不外推为企业制度。"
+        },
+        {
+          "itemId": "huawei-education-reset-boundary",
+          "hash": "02a144f6f409825b3319b269fa3e365db15e5ab3003495d6b6df99e238c4c7a1",
+          "decision": "integrated",
+          "reason": "沉淀恢复访问和资料保留的独立验收问题，保留型号版本限制。"
+        },
+        {
+          "itemId": "creality-service-evidence",
+          "hash": "7690d822a13bee2f393507d47cfc79b4f434f98c88ffc374eb2071d0c9d6a57f",
+          "decision": "integrated",
+          "reason": "补制造工具观察对象的售后接口，条款冲突与地区适用范围仍待核验。"
         }
       ]
     }
@@ -5217,6 +5199,226 @@
           "checkedAt": "2026-11-14T10:42:24.851452+00:00",
           "state": "body",
           "note": "本轮实际读取当前正文，支持列明字段；未覆盖字段保留缺口。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-2",
+      "reviewedAt": "2026-11-15T00:45:02.865869+00:00",
+      "status": "partial",
+      "assessment": "补BOM的内容与版本状态依据；工具发布规则不替代企业变更权限，EVT/DVT/PVT及整机测量仍未完整核验。",
+      "gaps": [
+        "EVT/DVT/PVT基础及特定项目放行门槛仍待全面核验。",
+        "端到端耗时、分位数和返工结果无独立测试；企业变更权限与各专业接口未完整复核。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "team"
+      ],
+      "changes": {
+        "basics": {
+          "before": "BOM 是物料清单，不能代替整项业务成本；EVT/DVT/PVT 通常指工程、设计、生产验证，门槛须由具体项目定义。",
+          "after": "BOM是制造所需项目的汇总，可包含编号、数量、描述与生命周期状态；交接时还需核对版本。Autodesk Vault 2026提供修订比较，这是具体软件规则，不是所有企业的通用制度。BOM不能代替完整业务成本；EVT/DVT/PVT及具体门槛仍待专门复核。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "chain-2-bom-version-handoff",
+            "title": "交接BOM时同时确认版本与状态",
+            "learning": "Vault帮助页将状态与版本比较纳入BOM管理。",
+            "application": "研发和采购交接时核对采用的清单版本、数量及发布状态。",
+            "boundary": "软件能力不证明企业已实施或实际库存准确。",
+            "itemIds": [
+              "autodesk-bom-versions"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "autodesk-bom-versions",
+          "title": "BOM不只列零件，还要保留数量、状态与版本",
+          "facts": [
+            {
+              "claim": "BOM包含编号、数量、描述及生命周期状态。",
+              "sourceUrl": "https://help.autodesk.com/cloudhelp/2026/ENU/Vault-General/files/GUID-86373139-0500-4B28-A5C3-DE80A53D1AF6.htm",
+              "locator": "BOM定义段落"
+            },
+            {
+              "claim": "软件支持比较BOM修订。",
+              "sourceUrl": "https://help.autodesk.com/cloudhelp/2026/ENU/Vault-General/files/GUID-86373139-0500-4B28-A5C3-DE80A53D1AF6.htm",
+              "locator": "What Can I Do with BOMs"
+            }
+          ],
+          "boundary": "Vault 2026官方帮助资料；未操作软件或核验企业应用，不把物料清单当全部业务成本。",
+          "sources": [
+            {
+              "url": "https://help.autodesk.com/cloudhelp/2026/ENU/Vault-General/files/GUID-86373139-0500-4B28-A5C3-DE80A53D1AF6.htm",
+              "name": "Autodesk官方资料",
+              "publishedAt": null,
+              "publisherGroup": "Autodesk",
+              "role": "official",
+              "textHash": "f263f5d8459b56a7c8835f90519eea854984605142ed10ff6fd76a10314da88c",
+              "readAt": "2026-11-15T00:41:20.683346+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "autodesk-bom-versions",
+          "url": "https://help.autodesk.com/cloudhelp/2026/ENU/Vault-General/files/GUID-86373139-0500-4B28-A5C3-DE80A53D1AF6.htm",
+          "checkedAt": "2026-11-15T00:41:20.683346+00:00",
+          "state": "body",
+          "note": "实际读取列明正文及版本条件；未覆盖字段和实测缺口继续保留。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-7",
+      "reviewedAt": "2026-11-15T00:45:02.865869+00:00",
+      "status": "partial",
+      "assessment": "补教育空间恢复访问与数据保留之间的边界；未验证备份方案，不据此推广所有学习设备的重置行为。",
+      "gaps": [
+        "首次解决率的窗口、排除项与重复联系归属仍需独立方法资料和实际数据。",
+        "没有具体停产产品通知、真实维修时长、备件供货与用户恢复使用结果。",
+        "华为该空间的备份、导出及具体学习应用资料范围未核实。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "flow",
+        "pitfall"
+      ],
+      "changes": {},
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "chain-7-education-reset-data",
+            "title": "恢复访问不能自动等同于资料恢复",
+            "learning": "华为所列密码处理方式涉及删除教育空间及数据。",
+            "application": "评估学习设备售后时，分别核对恢复访问、保留资料和告知影响的条件，避免只以能再次登录作为验收。",
+            "boundary": "限MatePad Edge和HarmonyOS 6.1支持说明，未实测；不判断其他备份渠道或全部学习记录的位置。",
+            "itemIds": [
+              "huawei-education-reset-boundary"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "huawei-education-reset-boundary",
+          "title": "华为教育空间：密码恢复涉及空间数据删除",
+          "facts": [
+            {
+              "claim": "指南说明忘记密码后不支持找回。",
+              "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+              "locator": "设置与重置密码"
+            },
+            {
+              "claim": "删除教育空间会同步删除其应用和数据且不可恢复。",
+              "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+              "locator": "重置密码提示"
+            }
+          ],
+          "boundary": "无明确发布日期，按当前支持说明补充；未操作设备、删除数据或验证备份机制。不是今日新增功能，也不证明所有学习记录都会丢失。",
+          "sources": [
+            {
+              "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+              "name": "华为官方资料",
+              "publishedAt": null,
+              "publisherGroup": "华为",
+              "role": "official",
+              "textHash": "17dca06954d13a3c2041c544db30b358ff84cd4c74c2c587677f06ec3a00007a",
+              "readAt": "2026-11-15T00:41:20.685838+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "huawei-education-reset-boundary",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+          "checkedAt": "2026-11-15T00:41:20.685838+00:00",
+          "state": "body",
+          "note": "实际读取列明正文及版本条件；未覆盖字段和实测缺口继续保留。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-4",
+      "reviewedAt": "2026-11-15T00:45:02.865869+00:00",
+      "status": "partial",
+      "assessment": "补创想三维当前可读售后流程资料；观察对象入口缺口得到补充，但其工艺、产品能力和服务结果仍未全面复核。",
+      "gaps": [
+        "创想三维具体产品能力、质量数据及地区服务条款冲突仍待核验。",
+        "拓竹伙伴合同、维修验收、备件和服务结果仍缺证据。",
+        "跨企业任务成功率、维护成本及人员负担缺可比样本。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "examples",
+        "team"
+      ],
+      "changes": {},
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "track-4-creality-service-handoff",
+            "title": "维修接口需连接故障、购买与返寄资料",
+            "learning": "创想三维公开说明先收集信息并诊断，返寄前另需联系客服。",
+            "application": "比较制造工具时核对销售渠道到售后的资料传递与确认步骤。",
+            "boundary": "海外商店2025年更新页，7/14天表述冲突未消除；未验证地区履约和用户耗时，不作法律判断。",
+            "itemIds": [
+              "creality-service-evidence"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "creality-service-evidence",
+          "title": "创想三维售后：诊断材料与返寄确认也是交付接口",
+          "facts": [
+            {
+              "claim": "支持流程要求产品购买信息及故障图片或视频。",
+              "sourceUrl": "https://store.creality.com/pages/return-policy",
+              "locator": "Solutions Provided by Creality 3D"
+            },
+            {
+              "claim": "寄回前需先联系客服发起退货。",
+              "sourceUrl": "https://store.creality.com/pages/return-policy",
+              "locator": "Return Address下方说明"
+            }
+          ],
+          "boundary": "海外商店披露的流程，地区、渠道、产品及条款版本均有限制；只审读服务入口、诊断与退回条款，非整页法务审查，不判断法定权利或实际履约。",
+          "sources": [
+            {
+              "url": "https://store.creality.com/pages/return-policy",
+              "name": "创想三维官方资料",
+              "publishedAt": null,
+              "publisherGroup": "创想三维",
+              "role": "official",
+              "textHash": "855a4ed49f57aaac7be29d4685a8db6c360844614827305dfa06d47738a8e459",
+              "readAt": "2026-11-15T00:41:20.685531+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "creality-service-evidence",
+          "url": "https://store.creality.com/pages/return-policy",
+          "checkedAt": "2026-11-15T00:41:20.685531+00:00",
+          "state": "body",
+          "note": "实际读取列明正文及版本条件；未覆盖字段和实测缺口继续保留。"
         }
       ]
     }

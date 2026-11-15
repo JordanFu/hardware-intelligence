@@ -279,7 +279,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "reviewedAt": "2026-11-15T00:44:23.933338+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "小天才"
@@ -303,7 +303,7 @@
         "product": "通用平板中的教育空间，按页面适用型号与系统阅读。",
         "content": "教育空间与内容权限；课程质量和完整收费权益未核验。",
         "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
-        "delivery": "未取得该产品的供应链、制造质量和售后结果资料。",
+        "delivery": "支持页说明忘记教育空间密码后通过删除空间重新创建；空间应用与数据同步删除且不可恢复。未核验备份导出、制造质量和实际服务结果。",
         "organization": "研究问题：系统权限、教育应用与家长支持之间如何分责？未取得团队资料。"
       },
       "boundary": "仅使用本次支持页覆盖的版本，不混用旧 EMUI 或旧版 HarmonyOS 说明，也不推定所有平板均已支持。",
@@ -318,7 +318,7 @@
           "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
           "publishedAt": null,
           "role": "official",
-          "readAt": "2026-11-09T02:00:22.874623+00:00",
+          "readAt": "2026-11-15T00:41:20.685838+00:00",
           "coverage": "body",
           "textHash": "17dca06954d13a3c2041c544db30b358ff84cd4c74c2c587677f06ec3a00007a"
         }
@@ -327,16 +327,21 @@
         {
           "sourceId": "edu-huawei",
           "claim": "教育空间支持时间、应用和内容管控。",
-          "locator": "使用指南"
+          "locator": "设置使用权限"
         },
         {
           "sourceId": "edu-huawei",
-          "claim": "本页有具体产品与系统适用范围。",
+          "claim": "本页适用MatePad Edge及HarmonyOS 6.1。",
           "locator": "适用产品 / 适用版本"
+        },
+        {
+          "sourceId": "edu-huawei",
+          "claim": "密码不支持找回，删除空间会删除应用和数据且不可恢复。",
+          "locator": "重置密码"
         }
       ],
-      "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "updatedAt": "2026-11-15T00:44:23.933338+00:00",
+      "reviewedAt": "2026-11-15T00:44:23.933338+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "华为",
@@ -1128,6 +1133,70 @@
           ],
           "purpose": "recruitment",
           "note": "原文明确小猿产品及学习机、学练机业务，未划分具体型号"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-15T00:44:23.933338+00:00",
+      "summary": "复核三家公司3个岗位，职责未变；复核华为和小天才支持档案，华为补空间重置的数据影响，小天才内容未变只记复核。",
+      "checks": [
+        {
+          "company": "作业帮",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/5c016df5-2a57-4758-b3e3-4a58eb276ffe",
+          "name": "渠道运营（D110568）",
+          "state": "body",
+          "checkedAt": "2026-11-15T00:42:47.104Z",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "教辅图书经销商渠道；不能作为学习机零售组织证据"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://app.mokahr.com/social-recruitment/fenbi/45505#/job/5ecdce43-9ab2-48bb-ade9-ff021311daef",
+          "name": "算法实习生-多模态文档理解",
+          "state": "body",
+          "checkedAt": "2026-11-15T00:42:47.111Z",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "基础研发部教育OCR能力，未说明专属学习机"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
+          "name": "供应商管理工程师-硬件方向",
+          "state": "body",
+          "checkedAt": "2026-11-15T00:42:47.129Z",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机"
+        },
+        {
+          "company": "华为",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+          "name": "华为官方支持",
+          "state": "body",
+          "checkedAt": "2026-11-15T00:41:20.685838+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "复核型号、版本、服务条件和原档案未知项。"
+        },
+        {
+          "company": "小天才",
+          "url": "https://www.okii.com/html/pc/service/service_question.html",
+          "name": "小天才官方支持",
+          "state": "body",
+          "checkedAt": "2026-11-15T00:41:20.687748+00:00",
+          "categoryIds": [
+            "watch"
+          ],
+          "note": "复核型号、版本、服务条件和原档案未知项。"
         }
       ]
     }
@@ -2041,6 +2110,68 @@
           ]
         }
       }
+    },
+    {
+      "profileId": "huawei-tablet",
+      "reviewedAt": "2026-11-15T00:44:23.933338+00:00",
+      "status": "reviewed",
+      "assessment": "复核现有型号与权限说明；补充密码恢复的数据影响，未声称这是今天发布的新功能。其他未知项保留。",
+      "changes": {
+        "dimensions": {
+          "before": {
+            "product": "通用平板中的教育空间，按页面适用型号与系统阅读。",
+            "content": "教育空间与内容权限；课程质量和完整收费权益未核验。",
+            "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
+            "delivery": "未取得该产品的供应链、制造质量和售后结果资料。",
+            "organization": "研究问题：系统权限、教育应用与家长支持之间如何分责？未取得团队资料。"
+          },
+          "after": {
+            "product": "通用平板中的教育空间，按页面适用型号与系统阅读。",
+            "content": "教育空间与内容权限；课程质量和完整收费权益未核验。",
+            "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
+            "delivery": "支持页说明忘记教育空间密码后通过删除空间重新创建；空间应用与数据同步删除且不可恢复。未核验备份导出、制造质量和实际服务结果。",
+            "organization": "研究问题：系统权限、教育应用与家长支持之间如何分责？未取得团队资料。"
+          }
+        },
+        "facts": {
+          "before": [
+            {
+              "sourceId": "edu-huawei",
+              "claim": "教育空间支持时间、应用和内容管控。",
+              "locator": "使用指南"
+            },
+            {
+              "sourceId": "edu-huawei",
+              "claim": "本页有具体产品与系统适用范围。",
+              "locator": "适用产品 / 适用版本"
+            }
+          ],
+          "after": [
+            {
+              "sourceId": "edu-huawei",
+              "claim": "教育空间支持时间、应用和内容管控。",
+              "locator": "设置使用权限"
+            },
+            {
+              "sourceId": "edu-huawei",
+              "claim": "本页适用MatePad Edge及HarmonyOS 6.1。",
+              "locator": "适用产品 / 适用版本"
+            },
+            {
+              "sourceId": "edu-huawei",
+              "claim": "密码不支持找回，删除空间会删除应用和数据且不可恢复。",
+              "locator": "重置密码"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "profileId": "okii-watch",
+      "reviewedAt": "2026-11-15T00:44:23.933338+00:00",
+      "status": "reviewed",
+      "assessment": "复核FAQ设备分类、定时开关机联网与手表确认条件，原档案表述和未知项仍成立，内容不变。",
+      "changes": {}
     }
   ],
   "reference": {
