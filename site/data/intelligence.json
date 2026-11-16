@@ -1,8 +1,83 @@
 {
   "schemaVersion": 1,
-  "lastCompletedAt": "2026-11-15T10:40:53.944345+00:00",
+  "lastCompletedAt": "2026-11-16T00:45:22.582197+00:00",
   "method": "Codex 初筛评分 + 逐条证据复核；非两个独立模型评分",
   "items": [
+    {
+      "id": "rss-4ecdc03c57ee0814",
+      "eventId": "rss-4ecdc03c57ee0814",
+      "developmentId": "initial",
+      "titleZh": "华为WATCH 5适配清单变化报道：先区分测试与正式支持",
+      "originalTitle": "华为WATCH 5适配清单变化报道：先区分测试与正式支持",
+      "brief": {
+        "lead": "IT之家11月15日报道华为WATCH 5暂从HarmonyOS 7适配列表移除，并转述11月11日官方Beta升级进展通报。本轮已读媒体正文，尚未直接核对最新官方清单与通报，因此保留待核验，不进入日报精选。",
+        "points": [
+          "清单变化和Beta测试进展不能直接解释成永久停止支持。",
+          "用户反馈和媒体转述不提供同口径故障率，也不能支持对研发人员的评价。"
+        ]
+      },
+      "stages": [
+        "研发与系统",
+        "质量与合规",
+        "服务与生命周期"
+      ],
+      "domestic": true,
+      "companies": [
+        "华为"
+      ],
+      "publishedAt": "2026-11-15T07:01:57+00:00",
+      "kind": "行业动态",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 17,
+          "增量信息": 15,
+          "证据质量": 13,
+          "机制清晰": 13,
+          "可行动性": 13
+        },
+        "review": {
+          "decision": "hold",
+          "reason": "媒体正文可读，缺本轮官方清单和通报直接核验，不用转述补齐发布判断。"
+        }
+      },
+      "eventReason": "同一主体与具体机制去重；无日期支持资料不作为今日新闻。",
+      "boundary": "单一媒体与其引用；未核对固件、设备实测和最新官方状态，不能推断永久取消支持或组织调整。",
+      "meaning": "固件研究区分测试资格、正式支持与实际推送。",
+      "question": "最新官方清单和升级通报是否明确恢复条件和适用版本？",
+      "facts": [
+        {
+          "claim": "媒体报道适配清单暂时移除相关手表。",
+          "sourceUrl": "https://www.ithome.com/1/027/336.htm",
+          "locator": "报道第二段"
+        },
+        {
+          "claim": "报道引述待测试验证后分批推送。",
+          "sourceUrl": "https://www.ithome.com/1/027/336.htm",
+          "locator": "引用官方通报段落"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.ithome.com/1/027/336.htm",
+          "name": "IT之家",
+          "publishedAt": "2026-11-15T07:01:57+00:00",
+          "publisherGroup": "IT之家",
+          "role": "media",
+          "textHash": "b5abefeff091ff9a0551505ef38958e325588027b10469f5d2963172a1dd8a3b",
+          "readAt": "2026-11-16T00:42:34.123693+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 71,
+      "selected": false,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-16T00:45:22.576919+00:00",
+      "sourceDate": "2026-11-15T07:01:57+00:00",
+      "date": "2026-11-15T07:01:57+00:00",
+      "title": "华为WATCH 5适配清单变化报道：先区分测试与正式支持",
+      "summary": "IT之家11月15日报道华为WATCH 5暂从HarmonyOS 7适配列表移除，并转述11月11日官方Beta升级进展通报。本轮已读媒体正文，尚未直接核对最新官方清单与通报，因此保留待核验，不进入日报精选。"
+    },
     {
       "id": "rss-bf4cdfae1c41d026",
       "eventId": "rss-bf4cdfae1c41d026",
@@ -5633,9 +5708,320 @@
       "date": null,
       "title": "雷鸟提词器：支持导入文件，不等于保留图文内容",
       "summary": "雷鸟iO支持页列出提词器可导入TXT、DOC、DOCX和PDF，但同时说明导入会去除格式和图片，只保留文字。对需要图表、公式或版式的资料，文件能打开还不足以证明内容能完整使用。"
+    },
+    {
+      "id": "aqara-m200-local-boundary",
+      "eventId": "aqara-m200-local-boundary",
+      "developmentId": "initial",
+      "titleZh": "Aqara M200：本地自动化与云端通知要分别核验",
+      "originalTitle": "Aqara M200：本地自动化与云端通知要分别核验",
+      "brief": {
+        "lead": "Aqara M200官方说明将部分自动化转到本地执行，但脚注仍明确云推送等功能需要云连接。它还分别承担Matter控制器、Thread边界路由与Aqara Zigbee桥接角色。研究智能家居时，需要按功能列清离线条件，不能只给整套系统贴一个“离线可用”标签。",
+        "points": [
+          "红外空调桥接有单台限制，多空调需另看Advanced Matter Bridging功能。",
+          "官方描述的稳定性与速度优势未在本轮独立测试，不作为跨品牌结果。"
+        ]
+      },
+      "stages": [
+        "研发与系统",
+        "质量与合规",
+        "服务与生命周期"
+      ],
+      "domestic": true,
+      "companies": [
+        "Aqara 绿米"
+      ],
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 18,
+          "机制清晰": 18,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "读取当前官方说明，事实与研究解释分开，保留适用范围与未知项。"
+        }
+      },
+      "eventReason": "同一主体与具体机制去重；无日期支持资料不作为今日新闻。",
+      "boundary": "无明确发布日期的具体型号说明；未实测断网、通知和第三方设备兼容性。不推广为所有网关能力或可靠性结论。",
+      "meaning": "将本地执行、手机通知和外部控制分开验收。",
+      "question": "断网后哪个触发器、动作和反馈还能完成，哪些需要网络恢复？",
+      "practices": [
+        {
+          "title": "逐项检查离线执行与反馈条件",
+          "method": "按触发、动作、状态反馈和云通知分别列前提。",
+          "conditions": "仅从M200说明提炼检查问题，各型号和生态须再核。",
+          "outcome": "公开使用说明或岗位要求，无独立业务结果。",
+          "boundary": "无明确发布日期的具体型号说明；未实测断网、通知和第三方设备兼容性。不推广为所有网关能力或可靠性结论。",
+          "nextCheck": "断网后哪个触发器、动作和反馈还能完成，哪些需要网络恢复？",
+          "stages": [
+            "研发与系统",
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "部分自动化如云推送仍依赖云连接。",
+          "sourceUrl": "https://www.aqara.com/en/product/hub-m200/",
+          "locator": "Simple Yet Powerful Automations脚注"
+        },
+        {
+          "claim": "空调模式桥接仅限一台红外空调。",
+          "sourceUrl": "https://www.aqara.com/en/product/hub-m200/",
+          "locator": "Universal IR Remote Control脚注"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.aqara.com/en/product/hub-m200/",
+          "name": "Aqara 绿米官方资料",
+          "publishedAt": null,
+          "publisherGroup": "Aqara 绿米",
+          "role": "official",
+          "textHash": "5eabaf79616b1698b683e17bd9f96736d9f2b86acfb253027da119b07644bad2",
+          "readAt": "2026-11-16T00:42:34.122918+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-16T00:45:22.573696+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "Aqara M200：本地自动化与云端通知要分别核验",
+      "summary": "Aqara M200官方说明将部分自动化转到本地执行，但脚注仍明确云推送等功能需要云连接。它还分别承担Matter控制器、Thread边界路由与Aqara Zigbee桥接角色。研究智能家居时，需要按功能列清离线条件，不能只给整套系统贴一个“离线可用”标签。"
+    },
+    {
+      "id": "yuan-supply-handoff",
+      "eventId": "yuan-supply-handoff",
+      "developmentId": "initial",
+      "titleZh": "小猿供应链职责样本：配件采购、物料齐套与售后反馈相连",
+      "originalTitle": "小猿供应链职责样本：配件采购、物料齐套与售后反馈相连",
+      "brief": {
+        "lead": "小猿供应链运营管培生的当前职责正文连接销售计划、配件赠品采购、工厂物料齐套与学习机售后反馈。这个样本可以帮助识别交接事项，但管培生可能轮岗，不能据岗位跨度认定单人承担全部工作。",
+        "points": [
+          "正文明确配件赠品的寻源、合同、采购和付款流程。",
+          "物料管理关注欠料、瓶颈、呆滞与不良库存；售后部分要求收集反馈并跟进。"
+        ]
+      },
+      "stages": [
+        "供应链与采购",
+        "制造与交付",
+        "服务与生命周期"
+      ],
+      "domestic": true,
+      "companies": [
+        "猿辅导（小猿）"
+      ],
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 18,
+          "机制清晰": 18,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "读取当前官方说明，事实与研究解释分开，保留适用范围与未知项。"
+        }
+      },
+      "eventReason": "同一主体与具体机制去重；无日期支持资料不作为今日新闻。",
+      "educationCategories": [
+        "tablet"
+      ],
+      "boundary": "岗位原始日期2026-03-11，本次为已有职责复核，不是新招聘；岗位未披露实际审批权、团队配置、轮岗安排或交付结果。",
+      "meaning": "把采购、制造供料与售后问题的交接记录连起来研究。",
+      "question": "欠料、质量异常和售后反馈分别由谁验收关闭，轮岗与固定责任如何区分？",
+      "practices": [
+        {
+          "title": "按交接物研究供应链岗位跨度",
+          "method": "将配件需求、采购记录、物料齐套、售后问题反馈分别标注交付者和验收者。",
+          "conditions": "学习机供应链管培岗位样本，需另核轮岗和正式授权。",
+          "outcome": "公开使用说明或岗位要求，无独立业务结果。",
+          "boundary": "岗位原始日期2026-03-11，本次为已有职责复核，不是新招聘；岗位未披露实际审批权、团队配置、轮岗安排或交付结果。",
+          "nextCheck": "欠料、质量异常和售后反馈分别由谁验收关闭，轮岗与固定责任如何区分？",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "服务与生命周期"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "采购职责连接销售计划和供应商。",
+          "sourceUrl": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "locator": "工作内容第1条"
+        },
+        {
+          "claim": "职责包含工厂物料齐套。",
+          "sourceUrl": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "locator": "工作内容第2条"
+        },
+        {
+          "claim": "岗位明确涉及学习机售后。",
+          "sourceUrl": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "locator": "工作内容第3条"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "name": "猿辅导（小猿）官方资料",
+          "publishedAt": null,
+          "publisherGroup": "猿辅导（小猿）",
+          "role": "official",
+          "textHash": "982ecc6cff1cfeb8d1a745669098f97d72ce74b99df011b75c55a1b7aeae3821",
+          "readAt": "2026-11-16T00:42:06.652Z",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-16T00:45:22.574897+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "小猿供应链职责样本：配件采购、物料齐套与售后反馈相连",
+      "summary": "小猿供应链运营管培生的当前职责正文连接销售计划、配件赠品采购、工厂物料齐套与学习机售后反馈。这个样本可以帮助识别交接事项，但管培生可能轮岗，不能据岗位跨度认定单人承担全部工作。"
+    },
+    {
+      "id": "kindle-parent-control-boundary",
+      "eventId": "kindle-parent-control-boundary",
+      "developmentId": "initial",
+      "titleZh": "Kindle儿童管理：儿童档案与设备本地限制不是同一套入口",
+      "originalTitle": "Kindle儿童管理：儿童档案与设备本地限制不是同一套入口",
+      "brief": {
+        "lead": "Amazon的Kindle Kids说明区分儿童档案与不创建儿童档案的本地家长控制：前者可使用Parent Dashboard管理，后者的设备限制不能通过该面板远程管理。研究学习硬件需求时，应分别确认孩子任务、家长操作入口和控制范围。",
+        "points": [
+          "普通Kindle添加儿童档案，与Kids设备组合的内容订阅权益不同。",
+          "这些管理功能不证明阅读时长增加或学习成效，不能代替儿童和家长的真实使用验证。"
+        ]
+      },
+      "stages": [
+        "需求与规划",
+        "服务与生命周期",
+        "渠道与销售"
+      ],
+      "domestic": false,
+      "companies": [
+        "Amazon"
+      ],
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 18,
+          "机制清晰": 18,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "读取当前官方说明，事实与研究解释分开，保留适用范围与未知项。"
+        }
+      },
+      "eventReason": "同一主体与具体机制去重；无日期支持资料不作为今日新闻。",
+      "educationCategories": [
+        "reader"
+      ],
+      "boundary": "原文注明2026-09-01更新，历史使用说明；型号、地区、订阅及账户条件有限制，未操作账户或设备。",
+      "meaning": "以具体入口与权限区分用户任务，避免将所有家长管理视为同一能力。",
+      "question": "家长要在设备上还是远程完成操作，孩子需要独立完成的任务是什么？",
+      "practices": [
+        {
+          "title": "区分使用者与管理者的操作入口",
+          "method": "分别记录孩子使用任务、家长控制入口及内容权益条件。",
+          "conditions": "Kindle历史说明启发的需求核验方法，不外推国内学习机。",
+          "outcome": "公开使用说明或岗位要求，无独立业务结果。",
+          "boundary": "原文注明2026-09-01更新，历史使用说明；型号、地区、订阅及账户条件有限制，未操作账户或设备。",
+          "nextCheck": "家长要在设备上还是远程完成操作，孩子需要独立完成的任务是什么？",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期",
+            "渠道与销售"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "设备本地家长控制不能经Parent Dashboard管理。",
+          "sourceUrl": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
+          "locator": "第1问Parental controls"
+        },
+        {
+          "claim": "普通Kindle儿童档案需另订阅或单独整理书库。",
+          "sourceUrl": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
+          "locator": "第1问Child profile"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
+          "name": "Amazon官方资料",
+          "publishedAt": null,
+          "publisherGroup": "Amazon",
+          "role": "official",
+          "textHash": "c6d3adb2824187d0a6f7e8aeba025277dba8353f752f0c3ec6dc4bd70863bb60",
+          "readAt": "2026-11-16T00:40:59.262031+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-16T00:45:22.576408+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "Kindle儿童管理：儿童档案与设备本地限制不是同一套入口",
+      "summary": "Amazon的Kindle Kids说明区分儿童档案与不创建儿童档案的本地家长控制：前者可使用Parent Dashboard管理，后者的设备限制不能通过该面板远程管理。研究学习硬件需求时，应分别确认孩子任务、家长操作入口和控制范围。"
     }
   ],
   "events": [
+    {
+      "id": "rss-4ecdc03c57ee0814",
+      "representativeId": "rss-4ecdc03c57ee0814",
+      "itemIds": [
+        "rss-4ecdc03c57ee0814"
+      ],
+      "publisherGroups": [
+        "IT之家"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": false
+    },
     {
       "id": "rss-bf4cdfae1c41d026",
       "representativeId": "rss-bf4cdfae1c41d026",
@@ -6463,6 +6849,48 @@
       ],
       "publisherGroups": [
         "雷鸟创新"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "aqara-m200-local-boundary",
+      "representativeId": "aqara-m200-local-boundary",
+      "itemIds": [
+        "aqara-m200-local-boundary"
+      ],
+      "publisherGroups": [
+        "Aqara 绿米"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "yuan-supply-handoff",
+      "representativeId": "yuan-supply-handoff",
+      "itemIds": [
+        "yuan-supply-handoff"
+      ],
+      "publisherGroups": [
+        "猿辅导（小猿）"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "kindle-parent-control-boundary",
+      "representativeId": "kindle-parent-control-boundary",
+      "itemIds": [
+        "kindle-parent-control-boundary"
+      ],
+      "publisherGroups": [
+        "Amazon"
       ],
       "developmentIds": [
         "initial"
@@ -12129,6 +12557,527 @@
       "successfulScan": true,
       "completedAt": "2026-11-15T10:40:53.944345+00:00",
       "reviewedCount": 3,
+      "selectedCount": 3
+    },
+    {
+      "coverage": "RSS5/6源成功、30候选初筛，实际读1条媒体新闻暂缓；三家核心竞品当前岗位正文、7份学习硬件档案，以及宇树、Aqara公开资料。覆盖采购、制造、质量、服务、渠道与组织；讯飞教研岗位保留实质前后版本，其余2岗位无变化。",
+      "sourceChecks": [
+        {
+          "url": "https://www.unitree.com/cn/supplier/",
+          "company": "宇树科技",
+          "stages": [
+            "供应链与采购",
+            "经营与组织"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-16T00:41:00.300162+00:00",
+          "note": "实际审读相关正文，按型号、岗位ID与原档案核对；资料不含独立成效验证。"
+        },
+        {
+          "url": "https://www.aqara.com/en/product/hub-m200/",
+          "company": "Aqara 绿米",
+          "stages": [
+            "研发与系统",
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-16T00:42:34.122918+00:00",
+          "note": "实际审读相关正文，按型号、岗位ID与原档案核对；资料不含独立成效验证。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/336.htm",
+          "company": "华为",
+          "stages": [
+            "研发与系统",
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "purpose": "news",
+          "state": "read",
+          "checkedAt": "2026-11-16T00:42:34.123693+00:00",
+          "note": "实际审读相关正文，按型号、岗位ID与原档案核对；资料不含独立成效验证。"
+        },
+        {
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/bce3303d-d5ee-41f0-b76f-30e4a45d7d43",
+          "company": "作业帮",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "checkedAt": "2026-11-16T00:42:06.661Z",
+          "note": "实际审读相关正文，按型号、岗位ID与原档案核对；资料不含独立成效验证。"
+        },
+        {
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "company": "猿辅导（小猿）",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "服务与生命周期"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "checkedAt": "2026-11-16T00:42:06.652Z",
+          "note": "实际审读相关正文，按型号、岗位ID与原档案核对；资料不含独立成效验证。"
+        },
+        {
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=b3cb393c-b37e-4b1a-a6bb-88af35871a09",
+          "company": "科大讯飞",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "checkedAt": "2026-11-16T00:42:06.670Z",
+          "note": "实际审读相关正文，按型号、岗位ID与原档案核对；资料不含独立成效验证。"
+        },
+        {
+          "url": "https://smart.zuoyebang.com/about",
+          "company": "作业帮",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期",
+            "渠道与销售"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-16T00:40:59.257530+00:00",
+          "note": "实际审读相关正文，按型号、岗位ID与原档案核对；资料不含独立成效验证。"
+        },
+        {
+          "url": "https://apps.apple.com/cn/app/id6738277050",
+          "company": "猿辅导（小猿）",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期",
+            "渠道与销售"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-16T00:40:59.259993+00:00",
+          "note": "实际审读相关正文，按型号、岗位ID与原档案核对；资料不含独立成效验证。"
+        },
+        {
+          "url": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
+          "company": null,
+          "stages": [
+            "需求与规划",
+            "服务与生命周期",
+            "渠道与销售"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-16T00:40:59.260331+00:00",
+          "note": "实际审读相关正文，按型号、岗位ID与原档案核对；资料不含独立成效验证。"
+        },
+        {
+          "url": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
+          "company": null,
+          "stages": [
+            "需求与规划",
+            "服务与生命周期",
+            "渠道与销售"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-16T00:40:59.262031+00:00",
+          "note": "实际审读相关正文，按型号、岗位ID与原档案核对；资料不含独立成效验证。"
+        },
+        {
+          "url": "https://www.leapfrog.com/en-us/products/tablet-family?bmLocale=en_US",
+          "company": null,
+          "stages": [
+            "需求与规划",
+            "服务与生命周期",
+            "渠道与销售"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-16T00:40:59.262438+00:00",
+          "note": "实际审读相关正文，按型号、岗位ID与原档案核对；资料不含独立成效验证。"
+        },
+        {
+          "url": "https://edu.iflytek.com/solution/family/transpen",
+          "company": "科大讯飞",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期",
+            "渠道与销售"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-16T00:42:06.691Z",
+          "note": "实际审读相关正文，按型号、岗位ID与原档案核对；资料不含独立成效验证。"
+        },
+        {
+          "url": "https://aihub.dingtalk.com/",
+          "company": null,
+          "stages": [
+            "需求与规划",
+            "服务与生命周期",
+            "渠道与销售"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-16T00:42:45.062Z",
+          "note": "实际审读相关正文，按型号、岗位ID与原档案核对；资料不含独立成效验证。"
+        },
+        {
+          "url": "https://edu.iflytek.com/solution/family/transpen",
+          "company": "科大讯飞",
+          "stages": [
+            "服务与生命周期"
+          ],
+          "purpose": "practice",
+          "state": "error",
+          "checkedAt": "2026-11-16T00:40:59.626051+00:00",
+          "note": "直连超时，浏览器已取得型号正文；保留失败。"
+        },
+        {
+          "url": "https://aihub.dingtalk.com/",
+          "company": null,
+          "stages": [
+            "服务与生命周期"
+          ],
+          "purpose": "practice",
+          "state": "error",
+          "checkedAt": "2026-11-16T00:41:00.149927+00:00",
+          "note": "静态提取无正文，浏览器市场说明可读；购买链接转登录页，未登录或取得商品正文。"
+        },
+        {
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "company": "猿辅导（小猿）",
+          "stages": [
+            "供应链与采购"
+          ],
+          "purpose": "recruitment",
+          "state": "error",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "首次浏览器为空，刷新后恢复当前正文，不据初次失败判定无岗。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/622.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/292.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/288.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/993.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/757.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/385.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/026/367.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/331.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/152.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/025/146.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/828.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/755.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/535.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/024/516.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/995.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/768.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/767.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/023/546.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/004.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/466.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/465.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/439.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/430.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/417.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/408.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/343.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/282.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/280.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/239.htm",
+          "company": null,
+          "stages": [],
+          "purpose": "news",
+          "state": "index",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "候选初筛，自动下载或历史缓存不等于本轮正文审读。"
+        },
+        {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-04-25/1225184807.PDF",
+          "company": null,
+          "stages": [
+            "经营与组织"
+          ],
+          "purpose": "practice",
+          "state": "read",
+          "checkedAt": "2026-11-16T00:45:22.220946+00:00",
+          "note": "掌阅2025年年报摘要第3页业务描述已读，主要涉及数字阅读与内容业务；不足以建立当前阅读器型号档案，不将App能力套到硬件。"
+        }
+      ],
+      "knownGaps": [
+        "其余候选未逐篇审读；零新事件入选不等于行业没有新闻。",
+        "14知识节点全字段复核仍有缺口；仅按实际证据推进。",
+        "掌阅年报摘要主要为内容业务，当前阅读器型号与服务正文仍缺，不能把App资料当硬件档案。",
+        "讯飞教研标题与正文的学段不一致，实际职责修改时间与学习机业务归属未知。"
+      ],
+      "failedSources": [
+        "CNX RSS HTTP403，保留缓存。",
+        "讯飞词典笔静态请求超时、钉钉静态页面无正文，浏览器已补读适用范围。",
+        "直连超时，浏览器已取得型号正文；保留失败。",
+        "静态提取无正文，浏览器市场说明可读；购买链接转登录页，未登录或取得商品正文。",
+        "首次浏览器为空，刷新后恢复当前正文，不据初次失败判定无岗。"
+      ],
+      "coverageCheck": {
+        "passed": true,
+        "companies": [
+          "作业帮",
+          "华为",
+          "宇树科技",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "gaps": [],
+        "usableSources": 43
+      },
+      "successfulScan": true,
+      "completedAt": "2026-11-16T00:45:22.582197+00:00",
+      "reviewedCount": 4,
       "selectedCount": 3
     }
   ]

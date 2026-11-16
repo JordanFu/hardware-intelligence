@@ -110,7 +110,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "reviewedAt": "2026-11-16T00:45:30.209427+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "作业帮"
@@ -225,7 +225,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "reviewedAt": "2026-11-16T00:45:30.209427+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "猿辅导",
@@ -399,7 +399,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "reviewedAt": "2026-11-16T00:45:30.209427+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "Amazon"
@@ -456,7 +456,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "reviewedAt": "2026-11-16T00:45:30.209427+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "Amazon"
@@ -513,7 +513,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "reviewedAt": "2026-11-16T00:45:30.209427+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "LeapFrog"
@@ -527,10 +527,10 @@
         "pen"
       ],
       "brief": {
-        "lead": "讯飞翻译笔页面把扫描查词延伸到发音、跟读和同步学习，并区分 P20 与 P20 Plus 的定位。应沿具体型号比较任务链，避免把一个型号的功能写成全系列能力。",
+        "lead": "讯飞官网当前可读段落区分P20与P20Plus：前者组合英语同步、语文辅助、词典与翻译，后者强调扩展知识、语法和作文批改。研究时应按型号核对能力，不能合并成全系列清单。",
         "points": [
-          "页面描述扫描单词查词、标准发音、跟读评测与课文朗读。",
-          "P20 Plus 说明提到扩展知识、语法解析和作文批改；不外推到所有词典笔。"
+          "官方将P20描述为面向3至10岁孩子的多功能学习笔。",
+          "P20Plus面向10岁以上，列出语法解析和作文批改等功能；年龄定位不等于效果验证。"
         ]
       },
       "dimensions": {
@@ -552,25 +552,25 @@
           "url": "https://edu.iflytek.com/solution/family/transpen",
           "publishedAt": null,
           "role": "official",
-          "readAt": "2026-11-09T02:06:02.575877+00:00",
-          "coverage": "excerpt",
-          "textHash": "aa2e39bd9d86fad201c3e50266ec60727f8cd4e2460c625dd55877ff73dac5ec"
+          "readAt": "2026-11-16T00:42:06.691Z",
+          "coverage": "body",
+          "textHash": "8f0706a31c0f7e6204ef115456be91b0ebf89273c0e726e2b92e7104e314ccaf"
         }
       ],
       "facts": [
         {
           "sourceId": "edu-pen",
-          "claim": "页面披露扫描查词、发音和跟读功能。",
-          "locator": "课本同步学"
+          "claim": "官网对P20和P20Plus的功能与年龄定位作区分。",
+          "locator": "产品介绍"
         },
         {
           "sourceId": "edu-pen",
-          "claim": "P20 Plus与P20的说明不同。",
+          "claim": "P20Plus说明列出语法解析和作文批改。",
           "locator": "产品介绍"
         }
       ],
-      "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "updatedAt": "2026-11-16T00:45:30.209427+00:00",
+      "reviewedAt": "2026-11-16T00:45:30.209427+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "科大讯飞",
@@ -628,7 +628,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-09T02:07:26.706398+00:00",
+      "reviewedAt": "2026-11-16T00:45:30.209427+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "钉钉",
@@ -1197,6 +1197,147 @@
             "watch"
           ],
           "note": "复核型号、版本、服务条件和原档案未知项。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-16T00:45:30.209427+00:00",
+      "summary": "复核7份原始竞品档案，词典笔按当前可读型号段落修订，其余保持内容日期；复核3家公司岗位，其中讯飞同ID教研正文变化留版本。海外三份档案本周复核已执行，掌阅硬件档案证据仍不足。",
+      "checks": [
+        {
+          "company": "作业帮",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/bce3303d-d5ee-41f0-b76f-30e4a45d7d43",
+          "name": "硬件结构工程师（D110856）",
+          "state": "body",
+          "checkedAt": "2026-11-16T00:42:06.661Z",
+          "categoryIds": [
+            "watch"
+          ],
+          "purpose": "recruitment",
+          "note": "儿童手表/手环结构岗位；证明职责需求，不证明具体新品上市或项目进度"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "name": "2026届春招-供应链运营管培生",
+          "state": "body",
+          "checkedAt": "2026-11-16T00:42:06.652Z",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "正文明确学习机售后及小猿设备业务；管培生职责可能含轮岗，不能视为固定组织架构"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=b3cb393c-b37e-4b1a-a6bb-88af35871a09",
+          "name": "AI研究院-数学教研员（小初）-合肥",
+          "state": "body",
+          "checkedAt": "2026-11-16T00:42:06.670Z",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "当前正文为学科资源标准、质量和产品研究；标题小初与正文初高中不一致，业务学段待核；未明确学习机；此标签仅为学习硬件研究检查方向，岗位本身未标注品类。"
+        },
+        {
+          "company": "作业帮",
+          "url": "https://smart.zuoyebang.com/about",
+          "name": "作业帮档案来源复核",
+          "state": "body",
+          "checkedAt": "2026-11-16T00:40:59.257530+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "重新读取原档案依据；不把旧材料包装为今日功能发布。"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://apps.apple.com/cn/app/id6738277050",
+          "name": "猿辅导（小猿）档案来源复核",
+          "state": "body",
+          "checkedAt": "2026-11-16T00:40:59.259993+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "重新读取原档案依据；不把旧材料包装为今日功能发布。"
+        },
+        {
+          "company": "Amazon",
+          "url": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
+          "name": "Amazon档案来源复核",
+          "state": "body",
+          "checkedAt": "2026-11-16T00:40:59.260331+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "重新读取原档案依据；不把旧材料包装为今日功能发布。"
+        },
+        {
+          "company": "Amazon",
+          "url": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
+          "name": "Amazon档案来源复核",
+          "state": "body",
+          "checkedAt": "2026-11-16T00:40:59.262031+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "note": "重新读取原档案依据；不把旧材料包装为今日功能发布。"
+        },
+        {
+          "company": "LeapFrog",
+          "url": "https://www.leapfrog.com/en-us/products/tablet-family?bmLocale=en_US",
+          "name": "LeapFrog档案来源复核",
+          "state": "body",
+          "checkedAt": "2026-11-16T00:40:59.262438+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "重新读取原档案依据；不把旧材料包装为今日功能发布。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://edu.iflytek.com/solution/family/transpen",
+          "name": "科大讯飞档案来源复核",
+          "state": "body",
+          "checkedAt": "2026-11-16T00:42:06.691Z",
+          "categoryIds": [
+            "pen"
+          ],
+          "note": "重新读取原档案依据；不把旧材料包装为今日功能发布。"
+        },
+        {
+          "company": "钉钉",
+          "url": "https://aihub.dingtalk.com/",
+          "name": "钉钉档案来源复核",
+          "state": "body",
+          "checkedAt": "2026-11-16T00:42:45.062Z",
+          "categoryIds": [
+            "recorder"
+          ],
+          "note": "对照原档案的产品、内容、渠道、交付和组织范围；未知项保留。市场页仅复核原有A1和工作流说明，未验证购买页。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://edu.iflytek.com/solution/family/transpen",
+          "name": "静态读取失败",
+          "state": "error",
+          "checkedAt": "2026-11-16T00:40:59.626051+00:00",
+          "categoryIds": [
+            "pen"
+          ],
+          "note": "直连超时，浏览器已取得型号正文；保留失败。"
+        },
+        {
+          "company": "钉钉",
+          "url": "https://aihub.dingtalk.com/",
+          "name": "静态读取失败",
+          "state": "error",
+          "checkedAt": "2026-11-16T00:41:00.149927+00:00",
+          "categoryIds": [
+            "recorder"
+          ],
+          "note": "静态提取无正文，浏览器市场说明可读；购买链接转登录页，未登录或取得商品正文。"
         }
       ]
     }
@@ -2171,6 +2312,98 @@
       "reviewedAt": "2026-11-15T00:44:23.933338+00:00",
       "status": "reviewed",
       "assessment": "复核FAQ设备分类、定时开关机联网与手表确认条件，原档案表述和未知项仍成立，内容不变。",
+      "changes": {}
+    },
+    {
+      "profileId": "zuoyebang-tablet",
+      "reviewedAt": "2026-11-16T00:45:30.209427+00:00",
+      "status": "reviewed",
+      "assessment": "重新对照原档案全部维度与未知项，既有可支持陈述未变，只记资料复核；不证明成效或全部产品能力。",
+      "changes": {}
+    },
+    {
+      "profileId": "yuan-tablet",
+      "reviewedAt": "2026-11-16T00:45:30.209427+00:00",
+      "status": "reviewed",
+      "assessment": "重新对照原档案全部维度与未知项，既有可支持陈述未变，只记资料复核；不证明成效或全部产品能力。",
+      "changes": {}
+    },
+    {
+      "profileId": "amazon-tablet",
+      "reviewedAt": "2026-11-16T00:45:30.209427+00:00",
+      "status": "reviewed",
+      "assessment": "重新对照原档案全部维度与未知项，既有可支持陈述未变，只记资料复核；不证明成效或全部产品能力。",
+      "changes": {}
+    },
+    {
+      "profileId": "kindle-reader",
+      "reviewedAt": "2026-11-16T00:45:30.209427+00:00",
+      "status": "reviewed",
+      "assessment": "重新对照原档案全部维度与未知项，既有可支持陈述未变，只记资料复核；不证明成效或全部产品能力。",
+      "changes": {}
+    },
+    {
+      "profileId": "leapfrog-tablet",
+      "reviewedAt": "2026-11-16T00:45:30.209427+00:00",
+      "status": "reviewed",
+      "assessment": "重新对照原档案全部维度与未知项，既有可支持陈述未变，只记资料复核；不证明成效或全部产品能力。",
+      "changes": {}
+    },
+    {
+      "profileId": "iflytek-pen",
+      "reviewedAt": "2026-11-16T00:45:30.209427+00:00",
+      "status": "reviewed",
+      "assessment": "本轮可读正文为型号定位段落；旧档案扫描与跟读表述未在此段重复确认，改为本轮直接支持的P20/P20Plus功能和年龄定位，不据此推断旧功能取消。",
+      "changes": {
+        "brief": {
+          "before": {
+            "lead": "讯飞翻译笔页面把扫描查词延伸到发音、跟读和同步学习，并区分 P20 与 P20 Plus 的定位。应沿具体型号比较任务链，避免把一个型号的功能写成全系列能力。",
+            "points": [
+              "页面描述扫描单词查词、标准发音、跟读评测与课文朗读。",
+              "P20 Plus 说明提到扩展知识、语法解析和作文批改；不外推到所有词典笔。"
+            ]
+          },
+          "after": {
+            "lead": "讯飞官网当前可读段落区分P20与P20Plus：前者组合英语同步、语文辅助、词典与翻译，后者强调扩展知识、语法和作文批改。研究时应按型号核对能力，不能合并成全系列清单。",
+            "points": [
+              "官方将P20描述为面向3至10岁孩子的多功能学习笔。",
+              "P20Plus面向10岁以上，列出语法解析和作文批改等功能；年龄定位不等于效果验证。"
+            ]
+          }
+        },
+        "facts": {
+          "before": [
+            {
+              "sourceId": "edu-pen",
+              "claim": "页面披露扫描查词、发音和跟读功能。",
+              "locator": "课本同步学"
+            },
+            {
+              "sourceId": "edu-pen",
+              "claim": "P20 Plus与P20的说明不同。",
+              "locator": "产品介绍"
+            }
+          ],
+          "after": [
+            {
+              "sourceId": "edu-pen",
+              "claim": "官网对P20和P20Plus的功能与年龄定位作区分。",
+              "locator": "产品介绍"
+            },
+            {
+              "sourceId": "edu-pen",
+              "claim": "P20Plus说明列出语法解析和作文批改。",
+              "locator": "产品介绍"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "profileId": "dingtalk-recorder",
+      "reviewedAt": "2026-11-16T00:45:30.209427+00:00",
+      "status": "reviewed",
+      "assessment": "重新对照原档案全部维度与未知项，既有可支持陈述未变，只记资料复核；不证明成效或全部产品能力。",
       "changes": {}
     }
   ],

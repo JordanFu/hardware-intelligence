@@ -3,16 +3,16 @@
   "startedAt": "2026-11-06T07:45:08.434151+00:00",
   "nodes": {
     "chain-3": {
-      "attemptedAt": "2026-11-13T10:55:31.088703+00:00",
+      "attemptedAt": "2026-11-16T00:46:03.708885+00:00",
       "status": "partial",
-      "assessment": "重读登记步骤与采购纪律，登记不等于准入的表述成立；未取得MOQ、交期、库存指标及实际审核证据。",
+      "assessment": "按最久未完整复核顺序检查供应链节点。宇树采购登记和纪律仍可读；小猿岗位补物料齐套、采购与售后接口。MOQ、交期和库存周转指标未取得本轮完整定义，不推进完整期限。",
       "gaps": [
         "MOQ、交期与库存周转分母本轮仍缺独立定义核验，不据入口页面判断这些指标。",
         "公开资料没有供应商审核标准、实际通过率、采购质量接口和履约结果。"
       ],
       "reviewedFields": [
-        "basics",
         "exercise",
+        "flow",
         "pitfall",
         "team"
       ],
@@ -40,21 +40,63 @@
               "coverage": "excerpt"
             }
           ]
+        },
+        {
+          "itemId": "yuan-supply-handoff",
+          "title": "小猿供应链职责样本：配件采购、物料齐套与售后反馈相连",
+          "facts": [
+            {
+              "claim": "采购职责连接销售计划和供应商。",
+              "sourceUrl": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+              "locator": "工作内容第1条"
+            },
+            {
+              "claim": "职责包含工厂物料齐套。",
+              "sourceUrl": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+              "locator": "工作内容第2条"
+            },
+            {
+              "claim": "岗位明确涉及学习机售后。",
+              "sourceUrl": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+              "locator": "工作内容第3条"
+            }
+          ],
+          "boundary": "岗位原始日期2026-03-11，本次为已有职责复核，不是新招聘；岗位未披露实际审批权、团队配置、轮岗安排或交付结果。",
+          "sources": [
+            {
+              "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+              "name": "猿辅导（小猿）官方资料",
+              "publishedAt": null,
+              "publisherGroup": "猿辅导（小猿）",
+              "role": "official",
+              "textHash": "982ecc6cff1cfeb8d1a745669098f97d72ce74b99df011b75c55a1b7aeae3821",
+              "readAt": "2026-11-16T00:42:06.652Z",
+              "coverage": "body"
+            }
+          ]
         }
       ],
       "sourceChecks": [
         {
           "itemId": "unitree-supplier",
           "url": "https://www.unitree.com/cn/supplier/",
-          "checkedAt": "2026-11-13T10:53:35.741372+00:00",
+          "checkedAt": "2026-11-16T00:41:00.300162+00:00",
           "state": "body",
-          "note": "晚间实际读取列明章节，未把未读参数或其他观察企业算作完整复核。"
+          "note": "当前实际正文；仅支持列明范围，未知结果未补成事实。"
+        },
+        {
+          "itemId": "yuan-supply-handoff",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "checkedAt": "2026-11-16T00:42:06.652Z",
+          "state": "body",
+          "note": "当前实际正文；仅支持列明范围，未知结果未补成事实。"
         }
       ],
-      "reviewedAt": "2026-11-13T10:55:31.088703+00:00",
+      "reviewedAt": "2026-11-16T00:46:03.708885+00:00",
       "patch": {
         "basics": "MOQ 是最小订购量；交期包含采购、生产和运输，不能只看供应商承诺。 供应商登记仅是提交资料的入口，不能自动等同于资格审核通过或获得采购订单。",
-        "exercise": "选一颗关键器件，写出交期风险、替代验证要求和缺料升级路径。 再区分供应商资料登记、资格核验、质量验收和订单获取；无公开依据的门槛标为待核验。"
+        "exercise": "选一颗关键器件，写出交期风险、替代验证要求和缺料升级路径。 再区分供应商资料登记、资格核验、质量验收和订单获取；无公开依据的门槛标为待核验。",
+        "team": "研发与采购共同明确替代料边界；供应商质量、计划、财务一起管理风险。小猿管培岗位另提供具体交接样本：销售计划提出配件需求，采购跟进合同和付款，工厂关注物料齐套，售后反馈问题；不能据此推断一人承担全部工作或拥有全部放行权。"
       },
       "lessons": [
         {
@@ -67,9 +109,20 @@
             "unitree-supplier"
           ],
           "updatedAt": "2026-11-06T07:53:13.521723+00:00"
+        },
+        {
+          "id": "yuan-supply-handoff-lesson",
+          "title": "采购、齐套与售后分别留交接证据",
+          "learning": "岗位正文把采购全流程、工厂欠料管理和学习机售后反馈列在一起。",
+          "application": "研究配件供应时分开核对需求确认、物料到齐及售后问题关闭，另问轮岗和实际审批权。",
+          "boundary": "公开岗位要求不是实际组织制度；未提供库存结果、采购质量或人员负担数据。",
+          "itemIds": [
+            "yuan-supply-handoff"
+          ],
+          "updatedAt": "2026-11-16T00:46:03.708885+00:00"
         }
       ],
-      "updatedAt": "2026-11-06T07:53:13.521723+00:00"
+      "updatedAt": "2026-11-16T00:46:03.708885+00:00"
     },
     "chain-7": {
       "attemptedAt": "2026-11-15T00:45:02.865869+00:00",
@@ -266,61 +319,63 @@
       "updatedAt": "2026-11-14T10:45:02.335802+00:00"
     },
     "chain-1": {
-      "attemptedAt": "2026-11-14T00:45:44.030212+00:00",
+      "attemptedAt": "2026-11-16T00:46:03.708885+00:00",
       "status": "partial",
-      "assessment": "补齐JTBD基础定义的来源，并将需求假设和已验证需求区分；只读定义片段，没有完整核验任务指标与用户结果。",
+      "assessment": "用儿童与家长不同入口复核需求角色及任务边界；原有任务成功率协议及完整团队接口仍未核验。",
       "gaps": [
         "目标任务成功率的测量协议仍未完整核实。",
         "活动反馈不能代表全部用户，采纳与使用结果仍未知；原有团队接口未完成本轮全字段复核。"
       ],
       "reviewedFields": [
-        "basics",
-        "exercise"
+        "exercise",
+        "flow",
+        "pitfall",
+        "team"
       ],
       "evidence": [
         {
-          "itemId": "jtbd-circumstances",
-          "title": "需求研究先问具体处境与进步，不能只列功能",
+          "itemId": "kindle-parent-control-boundary",
+          "title": "Kindle儿童管理：儿童档案与设备本地限制不是同一套入口",
           "facts": [
             {
-              "claim": "JTBD包含功能、社会和情感维度。",
-              "sourceUrl": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
-              "locator": "Definition段落"
+              "claim": "设备本地家长控制不能经Parent Dashboard管理。",
+              "sourceUrl": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
+              "locator": "第1问Parental controls"
             },
             {
-              "claim": "概念强调特定处境下希望取得的进步。",
-              "sourceUrl": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
-              "locator": "Definition段落"
+              "claim": "普通Kindle儿童档案需另订阅或单独整理书库。",
+              "sourceUrl": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
+              "locator": "第1问Child profile"
             }
           ],
-          "boundary": "仅取得当前网页Definition片段；不等于完整方法论审阅，不据此推断国内硬件用户需求或企业成效。",
+          "boundary": "原文注明2026-09-01更新，历史使用说明；型号、地区、订阅及账户条件有限制，未操作账户或设备。",
           "sources": [
             {
-              "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
-              "name": "Christensen Institute官方资料",
+              "url": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
+              "name": "Amazon官方资料",
               "publishedAt": null,
-              "publisherGroup": "Christensen Institute",
+              "publisherGroup": "Amazon",
               "role": "official",
-              "textHash": "9c6f1c198d595232cfb7db26736e7eeb03427a2ad9d4ca423c90b149bd6361e9",
-              "readAt": "2026-11-14T00:44:10.709041+00:00",
-              "coverage": "excerpt"
+              "textHash": "c6d3adb2824187d0a6f7e8aeba025277dba8353f752f0c3ec6dc4bd70863bb60",
+              "readAt": "2026-11-16T00:40:59.262031+00:00",
+              "coverage": "body"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "jtbd-circumstances",
-          "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "state": "index",
-          "note": "只复核列明字段，片段不算完整正文；未读字段与观察对象继续保留缺口。"
+          "itemId": "kindle-parent-control-boundary",
+          "url": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
+          "checkedAt": "2026-11-16T00:40:59.262031+00:00",
+          "state": "body",
+          "note": "当前实际正文；仅支持列明范围，未知结果未补成事实。"
         }
       ],
-      "reviewedAt": "2026-11-14T00:45:44.030212+00:00",
+      "reviewedAt": "2026-11-16T00:46:03.708885+00:00",
       "patch": {
         "team": "用户研究、产品、销售、服务一起区分使用者、购买者与渠道反馈。 平台型硬件还需区分内容创作者、最终使用者与实体履约伙伴；活动意见是需求线索，不能替代使用验证。",
-        "exercise": "选一个产品，写出用户原流程、减少的步骤和可观察的验收条件。 对每条社区反馈补上样本人群、具体任务、拟改变的规则以及可验证结果；保留未被采纳的理由。",
+        "exercise": "选一种学习设备，分别写出孩子要完成的学习任务、家长要完成的管理任务，以及操作入口和成功条件。Kindle说明区分儿童档案与设备本地限制，前者和后者的远程管理能力不同；实际需求仍需访谈与任务观察，不能由功能存在直接推断。",
         "basics": "JTBD：研究人在特定处境下想取得的进步，包含功能、社会和情感维度。功能清单或人群标签不能单独替代需求证据。此处仅核对Christensen Institute定义片段，具体用户需求仍需访谈与任务观察。"
       },
       "lessons": [
@@ -345,9 +400,20 @@
             "jtbd-circumstances"
           ],
           "updatedAt": "2026-11-14T00:44:51.090797+00:00"
+        },
+        {
+          "id": "kindle-parent-control-boundary-lesson",
+          "title": "同一家庭的使用者与管理者有不同任务",
+          "learning": "Kindle儿童档案与设备本地家长限制的管理入口不同。",
+          "application": "做需求研究时区分孩子独立使用、家长远程设置和内容权益，逐项观察是否能完成任务。",
+          "boundary": "历史海外使用说明，不证明家长负担或儿童学习效果，也不能直接套到国内设备。",
+          "itemIds": [
+            "kindle-parent-control-boundary"
+          ],
+          "updatedAt": "2026-11-16T00:46:03.708885+00:00"
         }
       ],
-      "updatedAt": "2026-11-14T00:44:51.090797+00:00"
+      "updatedAt": "2026-11-16T00:46:03.708885+00:00"
     },
     "chain-4": {
       "attemptedAt": "2026-11-14T10:45:19.046215+00:00",
@@ -459,9 +525,9 @@
       "updatedAt": "2026-11-14T10:45:02.335802+00:00"
     },
     "track-2": {
-      "attemptedAt": "2026-11-13T10:55:31.088703+00:00",
+      "attemptedAt": "2026-11-16T00:46:03.708885+00:00",
       "status": "partial",
-      "assessment": "重读桥接、功能差异、恢复出厂及诊断日志章节，继续保留平台、型号和版本适用条件，不能据支持指南推断所有观察企业能力。",
+      "assessment": "当前M200正文明确本地自动化与云推送例外；补逐功能验收范围，不把全部功能、生态或厂商可靠性宣称视为已验证。",
       "gaps": [
         "其他观察企业、离线能力、多成员权限未完整核实。",
         "没有可比故障率、用户样本和售后改善数据。"
@@ -469,39 +535,35 @@
       "reviewedFields": [
         "chain",
         "constraint",
+        "metrics",
         "team"
       ],
       "evidence": [
         {
-          "itemId": "aqara-matter-guide",
-          "title": "Aqara 排障指南：先定位设备、桥接与平台，再考虑重置",
+          "itemId": "aqara-m200-local-boundary",
+          "title": "Aqara M200：本地自动化与云端通知要分别核验",
           "facts": [
             {
-              "claim": "指南提醒先尝试非破坏性排查步骤，再考虑恢复出厂。",
-              "sourceUrl": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
-              "locator": "Check your setup / Before you reset / Device diagnostic logs"
+              "claim": "部分自动化如云推送仍依赖云连接。",
+              "sourceUrl": "https://www.aqara.com/en/product/hub-m200/",
+              "locator": "Simple Yet Powerful Automations脚注"
             },
             {
-              "claim": "设备桥接不改变子设备原有连接方式。",
-              "sourceUrl": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
-              "locator": "Check your setup / Before you reset / Device diagnostic logs"
-            },
-            {
-              "claim": "诊断日志默认关闭，支持本地保存选项。",
-              "sourceUrl": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
-              "locator": "Check your setup / Before you reset / Device diagnostic logs"
+              "claim": "空调模式桥接仅限一台红外空调。",
+              "sourceUrl": "https://www.aqara.com/en/product/hub-m200/",
+              "locator": "Universal IR Remote Control脚注"
             }
           ],
-          "boundary": "官方操作指南，适用性取决于具体型号、区域、固件与平台；没有用户样本或解决率，不能证明售后效率已改善。页面结构化发布日期为 11 月 4 日，修改时间另列，不算 11 月 7 日发布。",
+          "boundary": "无明确发布日期的具体型号说明；未实测断网、通知和第三方设备兼容性。不推广为所有网关能力或可靠性结论。",
           "sources": [
             {
-              "url": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
-              "name": "Aqara 官方帮助中心",
-              "publishedAt": "2026-11-04T01:54:57-05:00",
-              "publisherGroup": "Aqara 官方帮助中心",
+              "url": "https://www.aqara.com/en/product/hub-m200/",
+              "name": "Aqara 绿米官方资料",
+              "publishedAt": null,
+              "publisherGroup": "Aqara 绿米",
               "role": "official",
-              "textHash": "6dc0acfac9a43dc662d6019433f6d1ea502534481c84f85d84bc6155a711866d",
-              "readAt": "2026-11-07T00:43:45.211768+00:00",
+              "textHash": "5eabaf79616b1698b683e17bd9f96736d9f2b86acfb253027da119b07644bad2",
+              "readAt": "2026-11-16T00:42:34.122918+00:00",
               "coverage": "body"
             }
           ]
@@ -509,16 +571,16 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "aqara-matter-guide",
-          "url": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
-          "checkedAt": "2026-11-13T10:53:35.742297+00:00",
+          "itemId": "aqara-m200-local-boundary",
+          "url": "https://www.aqara.com/en/product/hub-m200/",
+          "checkedAt": "2026-11-16T00:42:34.122918+00:00",
           "state": "body",
-          "note": "晚间实际读取列明章节，未把未读参数或其他观察企业算作完整复核。"
+          "note": "当前实际正文；仅支持列明范围，未知结果未补成事实。"
         }
       ],
-      "reviewedAt": "2026-11-13T10:55:31.088703+00:00",
+      "reviewedAt": "2026-11-16T00:46:03.708885+00:00",
       "patch": {
-        "constraint": "互操作、断网可用性、安装和家人共同使用 须区分协议支持、具体功能暴露和接收平台能力；桥接并不把 Zigbee 子设备变成 Thread 设备，接入成功也不保证所有自动化可用。",
+        "constraint": "兼容性、配网成本、稳定性与家庭成员协同。离线范围须按触发、动作和反馈分别核对：Aqara M200说明部分自动化本地执行，但云推送仍需要云连接；不能据“本地自动化”承诺全部提醒和远程控制可用。",
         "team": "嵌入式、连接协议、云平台、客户端、认证与售后 售后交给协议、固件或平台团队的信息应包含型号/版本、连接路径、受影响范围和复现步骤；诊断日志按支持范围自愿启用，并保留本地保存选择。",
         "metrics": "配网成功率；离线可用率；跨品牌联动失败率 观察时分别记录单设备、桥接路径和平台功能故障；固定型号、固件和平台组合后再比较，不能把重置后重新配网成功视为全部功能恢复。"
       },
@@ -533,9 +595,20 @@
             "aqara-matter-guide"
           ],
           "updatedAt": "2026-11-07T00:47:27.698411+00:00"
+        },
+        {
+          "id": "aqara-m200-local-boundary-lesson",
+          "title": "离线执行与云端通知分别验证",
+          "learning": "M200的本地自动化说明同时保留云通知的网络前提。",
+          "application": "按明确型号与版本记录断网时触发器、动作、状态和通知的结果；不要只测动作成功。",
+          "boundary": "单一厂商说明，未做断网实测或跨生态比较，不构成行业最优结论。",
+          "itemIds": [
+            "aqara-m200-local-boundary"
+          ],
+          "updatedAt": "2026-11-16T00:46:03.708885+00:00"
         }
       ],
-      "updatedAt": "2026-11-07T00:47:27.698411+00:00"
+      "updatedAt": "2026-11-16T00:46:03.708885+00:00"
     },
     "chain-2": {
       "attemptedAt": "2026-11-15T00:45:02.865869+00:00",
@@ -1955,6 +2028,34 @@
           "hash": "99ec402badca9d0404beec6b91aaa28253612f2fdbd42789a98bb7dfe1f26697",
           "decision": "integrated",
           "reason": "补可穿戴任务验收的内容保真问题，保持功能范围。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-16T00:46:03.708885+00:00",
+      "reviewedNodes": [
+        "chain-3",
+        "track-2",
+        "chain-1"
+      ],
+      "decisions": [
+        {
+          "itemId": "yuan-supply-handoff",
+          "hash": "624ea1355a22b6378ca797fe33e981e42c27a27001452c6be4d4fac43e559bc4",
+          "decision": "integrated",
+          "reason": "补供应链交接样本，保留管培轮岗及实际权限未知。"
+        },
+        {
+          "itemId": "aqara-m200-local-boundary",
+          "hash": "a70fc856c134e9545a64ed02c809e1d93fec03316b51e0b24dec34bf31d9fd09",
+          "decision": "integrated",
+          "reason": "补逐功能离线边界，不推广全系统承诺。"
+        },
+        {
+          "itemId": "kindle-parent-control-boundary",
+          "hash": "385c2d7af1aa7fc929269d49d75edef6a3cbcddd3d2c5b7c67a6e31b61a9ec7b",
+          "decision": "integrated",
+          "reason": "补需求研究的家庭角色和操作入口区分，保留地区与版本条件。"
         }
       ]
     }
@@ -6013,6 +6114,273 @@
           "checkedAt": "2026-11-15T10:39:05.974243+00:00",
           "state": "body",
           "note": "当前实际阅读相关正文；仅核验列明字段。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-3",
+      "reviewedAt": "2026-11-16T00:46:03.708885+00:00",
+      "status": "partial",
+      "assessment": "按最久未完整复核顺序检查供应链节点。宇树采购登记和纪律仍可读；小猿岗位补物料齐套、采购与售后接口。MOQ、交期和库存周转指标未取得本轮完整定义，不推进完整期限。",
+      "gaps": [
+        "MOQ、交期与库存周转分母本轮仍缺独立定义核验，不据入口页面判断这些指标。",
+        "公开资料没有供应商审核标准、实际通过率、采购质量接口和履约结果。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "flow",
+        "pitfall",
+        "team"
+      ],
+      "changes": {
+        "team": {
+          "before": "研发与采购共同明确替代料边界；供应商质量、计划、财务一起管理风险。",
+          "after": "研发与采购共同明确替代料边界；供应商质量、计划、财务一起管理风险。小猿管培岗位另提供具体交接样本：销售计划提出配件需求，采购跟进合同和付款，工厂关注物料齐套，售后反馈问题；不能据此推断一人承担全部工作或拥有全部放行权。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "yuan-supply-handoff-lesson",
+            "title": "采购、齐套与售后分别留交接证据",
+            "learning": "岗位正文把采购全流程、工厂欠料管理和学习机售后反馈列在一起。",
+            "application": "研究配件供应时分开核对需求确认、物料到齐及售后问题关闭，另问轮岗和实际审批权。",
+            "boundary": "公开岗位要求不是实际组织制度；未提供库存结果、采购质量或人员负担数据。",
+            "itemIds": [
+              "yuan-supply-handoff"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "unitree-supplier",
+          "title": "宇树供应商入口：登记流程与采购纪律分开看",
+          "facts": [
+            {
+              "claim": "官网列出登记步骤，并要求供应商主动申报关联关系。",
+              "sourceUrl": "https://www.unitree.com/cn/supplier/",
+              "locator": "正文职责 / 采购原则 / 项目说明段落"
+            }
+          ],
+          "boundary": "公开入口与规则，不是内部执行记录；审核标准、通过率、履约与员工后效未知。",
+          "sources": [
+            {
+              "url": "https://www.unitree.com/cn/supplier/",
+              "name": "宇树科技官方",
+              "publishedAt": null,
+              "publisherGroup": "宇树科技官方",
+              "role": "official",
+              "textHash": "4f637f53a915e7b5ae8195d85e32f4800f48c67d909e4ace6530e2ee2bcfa5f3",
+              "readAt": "2026-11-06T05:43:46.717180+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        },
+        {
+          "itemId": "yuan-supply-handoff",
+          "title": "小猿供应链职责样本：配件采购、物料齐套与售后反馈相连",
+          "facts": [
+            {
+              "claim": "采购职责连接销售计划和供应商。",
+              "sourceUrl": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+              "locator": "工作内容第1条"
+            },
+            {
+              "claim": "职责包含工厂物料齐套。",
+              "sourceUrl": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+              "locator": "工作内容第2条"
+            },
+            {
+              "claim": "岗位明确涉及学习机售后。",
+              "sourceUrl": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+              "locator": "工作内容第3条"
+            }
+          ],
+          "boundary": "岗位原始日期2026-03-11，本次为已有职责复核，不是新招聘；岗位未披露实际审批权、团队配置、轮岗安排或交付结果。",
+          "sources": [
+            {
+              "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+              "name": "猿辅导（小猿）官方资料",
+              "publishedAt": null,
+              "publisherGroup": "猿辅导（小猿）",
+              "role": "official",
+              "textHash": "982ecc6cff1cfeb8d1a745669098f97d72ce74b99df011b75c55a1b7aeae3821",
+              "readAt": "2026-11-16T00:42:06.652Z",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "unitree-supplier",
+          "url": "https://www.unitree.com/cn/supplier/",
+          "checkedAt": "2026-11-16T00:41:00.300162+00:00",
+          "state": "body",
+          "note": "当前实际正文；仅支持列明范围，未知结果未补成事实。"
+        },
+        {
+          "itemId": "yuan-supply-handoff",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "checkedAt": "2026-11-16T00:42:06.652Z",
+          "state": "body",
+          "note": "当前实际正文；仅支持列明范围，未知结果未补成事实。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-2",
+      "reviewedAt": "2026-11-16T00:46:03.708885+00:00",
+      "status": "partial",
+      "assessment": "当前M200正文明确本地自动化与云推送例外；补逐功能验收范围，不把全部功能、生态或厂商可靠性宣称视为已验证。",
+      "gaps": [
+        "其他观察企业、离线能力、多成员权限未完整核实。",
+        "没有可比故障率、用户样本和售后改善数据。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "metrics",
+        "team"
+      ],
+      "changes": {
+        "constraint": {
+          "before": "互操作、断网可用性、安装和家人共同使用 须区分协议支持、具体功能暴露和接收平台能力；桥接并不把 Zigbee 子设备变成 Thread 设备，接入成功也不保证所有自动化可用。",
+          "after": "兼容性、配网成本、稳定性与家庭成员协同。离线范围须按触发、动作和反馈分别核对：Aqara M200说明部分自动化本地执行，但云推送仍需要云连接；不能据“本地自动化”承诺全部提醒和远程控制可用。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "aqara-m200-local-boundary-lesson",
+            "title": "离线执行与云端通知分别验证",
+            "learning": "M200的本地自动化说明同时保留云通知的网络前提。",
+            "application": "按明确型号与版本记录断网时触发器、动作、状态和通知的结果；不要只测动作成功。",
+            "boundary": "单一厂商说明，未做断网实测或跨生态比较，不构成行业最优结论。",
+            "itemIds": [
+              "aqara-m200-local-boundary"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "aqara-m200-local-boundary",
+          "title": "Aqara M200：本地自动化与云端通知要分别核验",
+          "facts": [
+            {
+              "claim": "部分自动化如云推送仍依赖云连接。",
+              "sourceUrl": "https://www.aqara.com/en/product/hub-m200/",
+              "locator": "Simple Yet Powerful Automations脚注"
+            },
+            {
+              "claim": "空调模式桥接仅限一台红外空调。",
+              "sourceUrl": "https://www.aqara.com/en/product/hub-m200/",
+              "locator": "Universal IR Remote Control脚注"
+            }
+          ],
+          "boundary": "无明确发布日期的具体型号说明；未实测断网、通知和第三方设备兼容性。不推广为所有网关能力或可靠性结论。",
+          "sources": [
+            {
+              "url": "https://www.aqara.com/en/product/hub-m200/",
+              "name": "Aqara 绿米官方资料",
+              "publishedAt": null,
+              "publisherGroup": "Aqara 绿米",
+              "role": "official",
+              "textHash": "5eabaf79616b1698b683e17bd9f96736d9f2b86acfb253027da119b07644bad2",
+              "readAt": "2026-11-16T00:42:34.122918+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "aqara-m200-local-boundary",
+          "url": "https://www.aqara.com/en/product/hub-m200/",
+          "checkedAt": "2026-11-16T00:42:34.122918+00:00",
+          "state": "body",
+          "note": "当前实际正文；仅支持列明范围，未知结果未补成事实。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-1",
+      "reviewedAt": "2026-11-16T00:46:03.708885+00:00",
+      "status": "partial",
+      "assessment": "用儿童与家长不同入口复核需求角色及任务边界；原有任务成功率协议及完整团队接口仍未核验。",
+      "gaps": [
+        "目标任务成功率的测量协议仍未完整核实。",
+        "活动反馈不能代表全部用户，采纳与使用结果仍未知；原有团队接口未完成本轮全字段复核。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "flow",
+        "pitfall",
+        "team"
+      ],
+      "changes": {
+        "exercise": {
+          "before": "选一个产品，写出用户原流程、减少的步骤和可观察的验收条件。 对每条社区反馈补上样本人群、具体任务、拟改变的规则以及可验证结果；保留未被采纳的理由。",
+          "after": "选一种学习设备，分别写出孩子要完成的学习任务、家长要完成的管理任务，以及操作入口和成功条件。Kindle说明区分儿童档案与设备本地限制，前者和后者的远程管理能力不同；实际需求仍需访谈与任务观察，不能由功能存在直接推断。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "kindle-parent-control-boundary-lesson",
+            "title": "同一家庭的使用者与管理者有不同任务",
+            "learning": "Kindle儿童档案与设备本地家长限制的管理入口不同。",
+            "application": "做需求研究时区分孩子独立使用、家长远程设置和内容权益，逐项观察是否能完成任务。",
+            "boundary": "历史海外使用说明，不证明家长负担或儿童学习效果，也不能直接套到国内设备。",
+            "itemIds": [
+              "kindle-parent-control-boundary"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "kindle-parent-control-boundary",
+          "title": "Kindle儿童管理：儿童档案与设备本地限制不是同一套入口",
+          "facts": [
+            {
+              "claim": "设备本地家长控制不能经Parent Dashboard管理。",
+              "sourceUrl": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
+              "locator": "第1问Parental controls"
+            },
+            {
+              "claim": "普通Kindle儿童档案需另订阅或单独整理书库。",
+              "sourceUrl": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
+              "locator": "第1问Child profile"
+            }
+          ],
+          "boundary": "原文注明2026-09-01更新，历史使用说明；型号、地区、订阅及账户条件有限制，未操作账户或设备。",
+          "sources": [
+            {
+              "url": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
+              "name": "Amazon官方资料",
+              "publishedAt": null,
+              "publisherGroup": "Amazon",
+              "role": "official",
+              "textHash": "c6d3adb2824187d0a6f7e8aeba025277dba8353f752f0c3ec6dc4bd70863bb60",
+              "readAt": "2026-11-16T00:40:59.262031+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "kindle-parent-control-boundary",
+          "url": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
+          "checkedAt": "2026-11-16T00:40:59.262031+00:00",
+          "state": "body",
+          "note": "当前实际正文；仅支持列明范围，未知结果未补成事实。"
         }
       ]
     }

@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-15T17:10:46.819478+00:00",
-  "lastSuccessfulAt": "2026-11-15T17:10:46.819478+00:00",
+  "checkedAt": "2026-11-16T00:40:46.335221+00:00",
+  "lastSuccessfulAt": "2026-11-16T00:40:46.335221+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-15T17:10:46.819478+00:00",
-      "lastSuccessAt": "2026-11-15T17:10:46.819478+00:00",
+      "checkedAt": "2026-11-16T00:40:46.335221+00:00",
+      "lastSuccessAt": "2026-11-16T00:40:46.335221+00:00",
       "received": 18,
       "matched": 1,
       "excluded": 17,
@@ -15,8 +15,8 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-15T17:10:46.819478+00:00",
-      "lastSuccessAt": "2026-11-15T17:10:46.819478+00:00",
+      "checkedAt": "2026-11-16T00:40:46.335221+00:00",
+      "lastSuccessAt": "2026-11-16T00:40:46.335221+00:00",
       "received": 50,
       "matched": 2,
       "excluded": 48,
@@ -25,8 +25,8 @@
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-15T17:10:46.819478+00:00",
-      "lastSuccessAt": "2026-11-15T17:10:46.819478+00:00",
+      "checkedAt": "2026-11-16T00:40:46.335221+00:00",
+      "lastSuccessAt": "2026-11-16T00:40:46.335221+00:00",
       "received": 10,
       "matched": 0,
       "excluded": 10,
@@ -35,8 +35,8 @@
     {
       "id": "bambu",
       "state": "ok",
-      "checkedAt": "2026-11-15T17:10:46.819478+00:00",
-      "lastSuccessAt": "2026-11-15T17:10:46.819478+00:00",
+      "checkedAt": "2026-11-16T00:40:46.335221+00:00",
+      "lastSuccessAt": "2026-11-16T00:40:46.335221+00:00",
       "received": 15,
       "matched": 15,
       "excluded": 0,
@@ -44,26 +44,47 @@
     },
     {
       "id": "cnx",
-      "state": "ok",
-      "checkedAt": "2026-11-15T17:10:46.819478+00:00",
-      "lastSuccessAt": "2026-11-15T17:10:46.819478+00:00",
-      "received": 32,
-      "matched": 6,
-      "excluded": 26,
-      "error": null
+      "state": "error",
+      "checkedAt": "2026-11-16T00:40:46.335221+00:00",
+      "error": "curl: (56) The requested URL returned error: 403",
+      "lastSuccessAt": "2026-11-15T17:10:46.819478+00:00"
     },
     {
       "id": "ithome",
       "state": "ok",
-      "checkedAt": "2026-11-15T17:10:46.819478+00:00",
-      "lastSuccessAt": "2026-11-15T17:10:46.819478+00:00",
+      "checkedAt": "2026-11-16T00:40:46.335221+00:00",
+      "lastSuccessAt": "2026-11-16T00:40:46.335221+00:00",
       "received": 60,
-      "matched": 4,
-      "excluded": 56,
+      "matched": 5,
+      "excluded": 55,
       "error": null
     }
   ],
   "items": [
+    {
+      "id": "rss-70499125febb3b1b",
+      "title": "古尔曼曝光苹果智能眼镜原型机：主打 Siri 语音交互，预计 WWDC2027 发布",
+      "url": "https://www.ithome.com/1/027/466.htm",
+      "date": "2026-11-15T23:04:30+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "可穿戴与眼镜",
+      "status": "待核验",
+      "discoveredAt": "2026-11-16T00:40:46.335221+00:00"
+    },
+    {
+      "id": "rss-67406cb35a366b51",
+      "title": "投资 19 亿美元：三星被曝将在美国为马斯克 SpaceX 生产卫星芯片，目标 2030 年投产",
+      "url": "https://www.ithome.com/1/027/465.htm",
+      "date": "2026-11-15T23:01:15+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-16T00:40:46.335221+00:00"
+    },
     {
       "id": "rss-d3a910362105829c",
       "title": "三星在部分区域提供基于联发科技曦力 G99+ 芯片的 Galaxy A18 智能手机",
