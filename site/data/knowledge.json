@@ -416,45 +416,82 @@
       "updatedAt": "2026-11-16T00:46:03.708885+00:00"
     },
     "chain-4": {
-      "attemptedAt": "2026-11-14T10:45:19.046215+00:00",
+      "attemptedAt": "2026-11-16T10:41:57.135139+00:00",
       "status": "partial",
-      "assessment": "补DFM的工艺适配边界与审批责任；NPI及实际试产放行依据未补齐，不将节点标为完整复核。",
+      "assessment": "本轮补齐原先不可读的NPI-PE、PQE、PQC正文，撤销该访问缺口；复核NPI阶段门的交付物与责任。没有重新核验FPY完整条目或真实试产门槛，仍为部分复核。",
       "gaps": [
-        "NPI基础、具体工艺门槛和试产放行仍缺完整依据。",
-        "石头岗位当前正文未取得，既有职责样本保留历史边界。",
+        "已取得石头职责正文；具体项目的试产门槛、正式放行权限与执行记录仍未核实。",
+        "本轮ASQ直连403，搜索只显示定义片段，未重新完整核验指标说明。",
         "历史质量措施完成状态与企业制造结果仍未知。"
       ],
       "reviewedFields": [
         "basics",
+        "exercise",
+        "flow",
         "pitfall",
-        "team"
+        "team",
+        "title"
       ],
       "evidence": [
         {
-          "itemId": "protolabs-dfm-review",
-          "title": "DFM反馈是工艺适配检查，不能代替产品验收",
+          "itemId": "roborock-jobs",
+          "title": "石头岗位样本：NPI、PQE 与 PQC 的制造质量接口",
           "facts": [
             {
-              "claim": "分析变量取决于使用的制造服务。",
-              "sourceUrl": "https://www.protolabs.com/help-center/manufacturing-analysis/",
-              "locator": "Interpreting Color Indicators"
+              "claim": "NPI-PE 职责包含设计评审与工艺资料输出。",
+              "sourceUrl": "https://mall.roborock.com/introduction/jobs",
+              "locator": "社招岗位 / NPI-PE、PQE、PQC"
             },
             {
-              "claim": "用户可以拒绝平台建议的几何修改。",
-              "sourceUrl": "https://www.protolabs.com/help-center/manufacturing-analysis/",
-              "locator": "Molding: Protolabs Proposed Revisions"
+              "claim": "PQE 职责覆盖试制、量产质量和代工厂管理。",
+              "sourceUrl": "https://mall.roborock.com/introduction/jobs",
+              "locator": "社招岗位 / NPI-PE、PQE、PQC"
+            },
+            {
+              "claim": "PQC 职责涉及出货质量和过程控制实施监督。",
+              "sourceUrl": "https://mall.roborock.com/introduction/jobs",
+              "locator": "社招岗位 / NPI-PE、PQE、PQC"
             }
           ],
-          "boundary": "单一制造商的平台说明，不是行业标准；没有上传模型、测试流程或验证成本及交期收益。文中ODM指按需制造，不应读作原始设计制造商。",
+          "boundary": "2026-11-16浏览器取得官方商城无日期岗位正文；职责与既有索引样本一致，不认定新增招聘或组织变化。页面另链招聘主站，未核实实时在招、完整目录、人数或实际放行权。",
           "sources": [
             {
-              "url": "https://www.protolabs.com/help-center/manufacturing-analysis/",
-              "name": "Protolabs官方资料",
+              "url": "https://mall.roborock.com/introduction/jobs",
+              "name": "石头科技官方招聘",
               "publishedAt": null,
-              "publisherGroup": "Protolabs",
+              "publisherGroup": "石头科技官方招聘",
               "role": "official",
-              "textHash": "dbe84cd321515ad683fdc1ff377547d7ed6a456bcf7c93e7e64efb1766b8cc5a",
-              "readAt": "2026-11-14T10:42:24.851452+00:00",
+              "textHash": "fd6fb53c7cd997c90a44bea1afcdf0dc656c7a16f4d734ba58a2102bf1e3c20d",
+              "readAt": "2026-11-16T10:38:42.192Z",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "autodesk-npi-deliverable-gates",
+          "title": "NPI阶段门：检查交付物与依赖，不只看进度完成",
+          "facts": [
+            {
+              "claim": "阶段门跟踪同时展示交付物、依赖和时长。",
+              "sourceUrl": "https://www.autodesk.com/industry/design-manufacturing/plm/npi-new-product-introduction",
+              "locator": "Maintain visibility"
+            },
+            {
+              "claim": "页面描述可配置任务责任。",
+              "sourceUrl": "https://www.autodesk.com/industry/design-manufacturing/plm/npi-new-product-introduction",
+              "locator": "Set and update teams and permissions"
+            }
+          ],
+          "boundary": "供应商的流程与软件能力说明，不是通用NPI标准；具体试产通过门槛、审批权和企业实施效果未知。",
+          "sources": [
+            {
+              "url": "https://www.autodesk.com/industry/design-manufacturing/plm/npi-new-product-introduction",
+              "name": "Autodesk官方资料",
+              "publishedAt": null,
+              "publisherGroup": "Autodesk",
+              "role": "official",
+              "textHash": "d048b68f69d61333e00991d6d3a3e76960adb85b8598f2759115aca5d07333f0",
+              "readAt": "2026-11-16T10:39:02.114Z",
               "coverage": "body"
             }
           ]
@@ -462,17 +499,24 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "protolabs-dfm-review",
-          "url": "https://www.protolabs.com/help-center/manufacturing-analysis/",
-          "checkedAt": "2026-11-14T10:42:24.851452+00:00",
+          "itemId": "roborock-jobs",
+          "url": "https://mall.roborock.com/introduction/jobs",
+          "checkedAt": "2026-11-16T10:38:42.192Z",
           "state": "body",
-          "note": "本轮实际读取当前正文，支持列明字段；未覆盖字段保留缺口。"
+          "note": "本轮实际读取正文，保留适用型号及资料性质；未执行软件或设备。"
+        },
+        {
+          "itemId": "autodesk-npi-deliverable-gates",
+          "url": "https://www.autodesk.com/industry/design-manufacturing/plm/npi-new-product-introduction",
+          "checkedAt": "2026-11-16T10:39:02.114Z",
+          "state": "body",
+          "note": "本轮实际读取正文，保留适用型号及资料性质；未执行软件或设备。"
         }
       ],
-      "reviewedAt": "2026-11-14T10:45:19.046215+00:00",
+      "reviewedAt": "2026-11-16T10:41:57.135139+00:00",
       "patch": {
-        "team": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。 石头官方岗位索引提供一个职责样本：NPI-PE 准备设计评审和工艺资料，PQE 跟进试制量产及代工质量，PQC 关注出货与过程监督；实际决策权仍须项目证据。",
-        "exercise": "沿一次异常追到设计版本、工艺条件和责任人，定义复现与关闭标准。 把问题分别映射到设计评审、工艺文件、过程控制与出货验收的交付物，并核实谁有权放行，不能仅从岗位名称推定。 对运输相关故障，分别核对出厂测试记录、包装与结构版本、运输条件及到货功能复现；出厂通过不能代替运输后验收。",
+        "team": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。石头商城岗位正文提供具体样本：NPI-PE输出DFX报告、组包流程、作业文件及治具要求；PQE衔接试制、量产、代工与售后质量；PQC监督出货及过程。正式放行权仍须项目证据。",
+        "exercise": "沿一次试产异常核对设计版本、工艺条件和关闭证据；为进入下一阶段列清交付物、依赖、验收人和未关闭问题。Autodesk阶段门说明可作为检查框架，系统状态完成不能替代实际验证。",
         "metrics": "一次通过率 = 首次完成该过程并满足质量要求、无需复测或返工等再次处理的单位数 / 进入该过程的单位总数。须固定工序、批次、期间及缺陷规则；不能用返工后最终合格率替代。",
         "basics": "NPI是新产品导入，具体门槛仍需项目定义。DFM关注设计与所选制造工艺的适配；例如Protolabs根据CAD几何提供反馈，分析变量随制造服务变化。几何可制造不等于整机功能、可靠性或量产良率已验证。"
       },
@@ -482,11 +526,11 @@
           "title": "从交付物划清 NPI 与质量接口",
           "learning": "岗位职责展示了不同阶段的工作重心，适合用来构造交接清单；人员数量、工作是否重叠及正式放行权仍未知。",
           "application": "适用于有代工协同的新产品导入研究；先核对具体项目的评审文件、工艺版本和异常关闭记录。",
-          "boundary": "只读取无日期官方索引，非内部组织制度，也不是所有企业的标准岗位划分。",
+          "boundary": "本轮已取得官方商城无日期职责正文，与原有样本一致；当前在招、正式放行权和实际制造结果仍未知，不是通用岗位制度。",
           "itemIds": [
             "roborock-jobs"
           ],
-          "updatedAt": "2026-11-07T00:47:27.698411+00:00"
+          "updatedAt": "2026-11-16T10:41:57.135139+00:00"
         },
         {
           "id": "manufacturing-transport-validation",
@@ -520,9 +564,21 @@
             "protolabs-dfm-review"
           ],
           "updatedAt": "2026-11-14T10:45:02.335802+00:00"
+        },
+        {
+          "id": "npi-gate-evidence",
+          "title": "阶段完成要对应交付物和验收证据",
+          "learning": "PLM说明同时列出阶段门、依赖与任务责任；石头岗位列明工艺资料及质量工作。",
+          "application": "导入评审时对照阶段所需资料和异常关闭记录，另行核对谁能放行。",
+          "boundary": "供应商软件说明和岗位要求，不能证明企业实施有效、员工负担减少或质量提升。",
+          "itemIds": [
+            "autodesk-npi-deliverable-gates",
+            "roborock-jobs"
+          ],
+          "updatedAt": "2026-11-16T10:41:57.135139+00:00"
         }
       ],
-      "updatedAt": "2026-11-14T10:45:02.335802+00:00"
+      "updatedAt": "2026-11-16T10:41:57.135139+00:00"
     },
     "track-2": {
       "attemptedAt": "2026-11-16T00:46:03.708885+00:00",
@@ -1329,9 +1385,9 @@
       "updatedAt": "2026-11-15T10:41:33.649429+00:00"
     },
     "track-1": {
-      "attemptedAt": "2026-11-14T00:45:44.030212+00:00",
+      "attemptedAt": "2026-11-16T10:41:57.135139+00:00",
       "status": "partial",
-      "assessment": "重新读取HALO编排、生成、跟踪和训练正文；不同层级频率不能替代端到端延迟，研究演示不能证明量产安全和现场负担改善。原整理仍成立，不制造内容更新。",
+      "assessment": "复核机器人从模型示例到实物控制的边界；宇树文档明确该控制程序仅为示例，补部署限制。DJI仅查到下载入口，未将其计为正文。",
       "gaps": [
         "无人机、DJI 与初始 NVIDIA 生态观察对象尚未完整复核。",
         "任务成功率、接管、恢复时间与现场工时仍缺统一测量协议及实测样本。"
@@ -1339,57 +1395,54 @@
       "reviewedFields": [
         "chain",
         "constraint",
-        "metrics"
+        "examples",
+        "team",
+        "title"
       ],
       "evidence": [
         {
-          "itemId": "halo-official",
-          "title": "HALO 项目：任务编排、动作生成与跟踪采用不同运行频率",
+          "itemId": "unitree-example-deployment-boundary",
+          "title": "宇树实物部署示例：能运行不等于稳定控制",
           "facts": [
             {
-              "claim": "动作跟踪在嵌入式计算单元执行。",
-              "sourceUrl": "https://apple-aiml-research.github.io/ml-halo/",
-              "locator": "Onboard autonomy stack / Tracker"
-            }
-          ],
-          "boundary": "本次读取项目正文及 arXiv 摘要和提交历史，未完整审阅论文、代码或复现实验；不采用媒体中的商业能力外推。",
-          "sources": [
-            {
-              "url": "https://apple-aiml-research.github.io/ml-halo/",
-              "name": "Apple HALO 项目主页",
-              "publishedAt": null,
-              "publisherGroup": "Apple HALO 项目主页",
-              "role": "official",
-              "textHash": "f3e28c1a97ac954e66a5d7aa18c8fd77856876dd3bc5cb1036eb069a6a279c93",
-              "readAt": "2026-11-09T00:46:57.560360+00:00",
-              "coverage": "body"
+              "claim": "官方声明示例部署不是稳定控制程序。",
+              "sourceUrl": "https://raw.githubusercontent.com/unitreerobotics/unitree_rl_gym/main/deploy/deploy_real/README.zh.md",
+              "locator": "注意段落"
             },
             {
-              "url": "https://arxiv.org/abs/2611.06908",
-              "name": "arXiv 原始摘要及提交历史",
-              "publishedAt": "2026-11-04T18:55:33+00:00",
-              "publisherGroup": "Apple HALO 研究团队",
-              "role": "research",
-              "textHash": "c6beba565ab0e162b748b39585dc2eb20c04794e84ca14991a8ea47a9fc24640",
-              "readAt": "2026-11-08T00:49:19.903614+00:00",
-              "coverage": "excerpt"
+              "claim": "配置文件按机器人型号区分。",
+              "sourceUrl": "https://raw.githubusercontent.com/unitreerobotics/unitree_rl_gym/main/deploy/deploy_real/README.zh.md",
+              "locator": "启动用法"
+            }
+          ],
+          "boundary": "官方开发示例，未标发布日期；不可当作生产操作指南或整机安全认证，不外推无人机、其他机型或真实任务成功率。",
+          "sources": [
+            {
+              "url": "https://raw.githubusercontent.com/unitreerobotics/unitree_rl_gym/main/deploy/deploy_real/README.zh.md",
+              "name": "宇树科技官方资料",
+              "publishedAt": null,
+              "publisherGroup": "宇树科技",
+              "role": "official",
+              "textHash": "39a7d10e572c4697e1b095a3f01d9258641de56dbd9c02905052b7bec7c0bfb2",
+              "readAt": "2026-11-16T10:37:42.035233+00:00",
+              "coverage": "body"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "halo-official",
-          "url": "https://apple-aiml-research.github.io/ml-halo/",
-          "checkedAt": "2026-11-14T00:40:45.888485+00:00",
+          "itemId": "unitree-example-deployment-boundary",
+          "url": "https://raw.githubusercontent.com/unitreerobotics/unitree_rl_gym/main/deploy/deploy_real/README.zh.md",
+          "checkedAt": "2026-11-16T10:37:42.035233+00:00",
           "state": "body",
-          "note": "只复核列明字段，片段不算完整正文；未读字段与观察对象继续保留缺口。"
+          "note": "本轮实际读取正文，保留适用型号及资料性质；未执行软件或设备。"
         }
       ],
-      "reviewedAt": "2026-11-14T00:45:44.030212+00:00",
+      "reviewedAt": "2026-11-16T10:41:57.135139+00:00",
       "patch": {
         "examples": "DJI、宇树、NVIDIA 生态；新增上纬新材启元作为量产与商业化阶段观察对象，HALO 作为基于宇树 G1 的研究系统样本。",
-        "constraint": "真实环境中的安全、可靠性与维护成本 下线数量、交付数量和终端持续使用须分开；公司披露“良率良好”但未给分母时不能当作可比质量指标。",
+        "constraint": "真实环境中的安全、可靠性与维护成本。宇树实物部署说明明确其程序仅为示例、不是稳定控制；模型能运行与业务可交付须分别取证，不能从演示外推任务可靠性。",
         "metrics": "任务成功率；人工接管频次；故障恢复时间；现场工时 使用频次另列统计对象、窗口与分母；高频交互不直接证明任务完成、人工负担减少或用户价值。"
       },
       "lessons": [
@@ -1404,53 +1457,67 @@
             "halo-official"
           ],
           "updatedAt": "2026-11-09T00:50:51.394323+00:00"
+        },
+        {
+          "id": "unitree-demo-production-boundary",
+          "title": "把可演示与稳定控制分开",
+          "learning": "官方部署示例限定了适用机器人与控制程序的性质。",
+          "application": "研究机器人部署时分别核对型号、配置、任务验收及异常恢复证据；不把文档摘要作为操作指南。",
+          "boundary": "未操作实机或评估安全，不能据示例判定商业交付能力或人员需求。",
+          "itemIds": [
+            "unitree-example-deployment-boundary"
+          ],
+          "updatedAt": "2026-11-16T10:41:57.135139+00:00"
         }
       ],
-      "updatedAt": "2026-11-09T00:50:51.394323+00:00"
+      "updatedAt": "2026-11-16T10:41:57.135139+00:00"
     },
     "track-3": {
-      "attemptedAt": "2026-11-14T00:45:44.030212+00:00",
+      "attemptedAt": "2026-11-16T10:41:57.135139+00:00",
       "status": "partial",
-      "assessment": "补充功耗模式、温度和测量边界对性能比较的限制；旧平台文章只能提供研究方法，当前全部产品与SDK仍待复核。",
+      "assessment": "补瑞芯微软件栈各层职责及Toolkit兼容边界；未取得芯片级测量和其他厂商全链资料，保留部分复核。",
       "gaps": [
-        "Qualcomm、瑞芯微及NVIDIA当前全部产品与SDK未全面复核。",
-        "模型压缩、BSP、维护成本及整机可比实测仍缺完整依据。"
+        "已补瑞芯微软件栈层次；Qualcomm、NVIDIA及各厂商具体型号和工具仍未全面复核。",
+        "模型压缩方法、BSP细节、维护成本及同任务整机测量仍缺完整依据。"
       ],
       "reviewedFields": [
+        "chain",
         "constraint",
-        "metrics"
+        "examples",
+        "team",
+        "title"
       ],
       "evidence": [
         {
-          "itemId": "jetson-power-budget",
-          "title": "端侧性能比较需要同时记录功耗模式与温度",
+          "itemId": "rknn-deployment-layers",
+          "title": "瑞芯微RKNN：模型转换、板端运行时与驱动各有接口",
           "facts": [
             {
-              "claim": "文章说明功耗模式由nvpmodel设置。",
-              "sourceUrl": "https://developer.nvidia.com/blog/power-optimization-with-nvidia-jetson/",
-              "locator": "Jetson power modes"
+              "claim": "工具链将模型转换与板端推理衔接。",
+              "sourceUrl": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
+              "locator": "Description"
             },
             {
-              "claim": "Power GUI可记录功耗相关日志。",
-              "sourceUrl": "https://developer.nvidia.com/blog/power-optimization-with-nvidia-jetson/",
-              "locator": "Jetson Power GUI"
+              "claim": "Toolkit2与旧版Toolkit不兼容。",
+              "sourceUrl": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
+              "locator": "Notes"
             },
             {
-              "claim": "Tegrastats也提供温度信息。",
-              "sourceUrl": "https://developer.nvidia.com/blog/power-optimization-with-nvidia-jetson/",
-              "locator": "Tegrastats"
+              "claim": "内核驱动负责与NPU硬件交互。",
+              "sourceUrl": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
+              "locator": "Description"
             }
           ],
-          "boundary": "2023年平台技术文章；未验证当前所有JetPack版本和模组，未进行实测。不把模组功耗当整机墙上功耗，不推断节能比例或芯片优劣。",
+          "boundary": "当前主分支说明，不是固定版本测试报告；不判断模型精度、耗电、延迟或人员效率。未安装或执行仓库代码。",
           "sources": [
             {
-              "url": "https://developer.nvidia.com/blog/power-optimization-with-nvidia-jetson/",
-              "name": "NVIDIA官方资料",
-              "publishedAt": "2023-10-05",
-              "publisherGroup": "NVIDIA",
+              "url": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
+              "name": "瑞芯微官方资料",
+              "publishedAt": null,
+              "publisherGroup": "瑞芯微",
               "role": "official",
-              "textHash": "f82284c71c1f2fc8e4993982daca0112deb71f2e35992ed1ea3d73b8c7d2d290",
-              "readAt": "2026-11-14T00:40:45.885147+00:00",
+              "textHash": "53b24cbf05a899e4296f5fdd060c662d204c7e687140305d655c1f05cac96550",
+              "readAt": "2026-11-16T10:37:42.034691+00:00",
               "coverage": "body"
             }
           ]
@@ -1458,17 +1525,18 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "jetson-power-budget",
-          "url": "https://developer.nvidia.com/blog/power-optimization-with-nvidia-jetson/",
-          "checkedAt": "2026-11-14T00:40:45.885147+00:00",
+          "itemId": "rknn-deployment-layers",
+          "url": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
+          "checkedAt": "2026-11-16T10:37:42.034691+00:00",
           "state": "body",
-          "note": "只复核列明字段，片段不算完整正文；未读字段与观察对象继续保留缺口。"
+          "note": "本轮实际读取正文，保留适用型号及资料性质；未执行软件或设备。"
         }
       ],
-      "reviewedAt": "2026-11-14T00:45:44.030212+00:00",
+      "reviewedAt": "2026-11-16T10:41:57.135139+00:00",
       "patch": {
-        "chain": "芯片 / 模组 → SDK → 模型优化 → 整机集成 观察整机时还要区分任务编排、模型生成与低层跟踪分别运行于何处，并记录手机、机载或网络依赖。",
-        "metrics": "同一任务下的延迟、功耗、内存与准确性 不同层级运行频率不能直接替代端到端响应延迟；需固定任务、系统边界和设备版本，再测功耗、内存与效果。 对Jetson样本还应记录功耗模式、核心/频率配置和温度日志；模组监测功耗不等于整机功耗，配置与散热条件不同的成绩不能直接比较。"
+        "chain": "芯片 / 模组 → SDK与模型转换 → 板端运行时和驱动 → 整机集成。RKNN示例把转换工具、Python或C/C++接口与NPU内核驱动分层；模型文件交接不能替代运行环境核对。",
+        "metrics": "同一任务下的延迟、功耗、内存与准确性 不同层级运行频率不能直接替代端到端响应延迟；需固定任务、系统边界和设备版本，再测功耗、内存与效果。 对Jetson样本还应记录功耗模式、核心/频率配置和温度日志；模组监测功耗不等于整机功耗，配置与散热条件不同的成绩不能直接比较。",
+        "team": "芯片 / BSP、模型压缩、系统软件、热设计、应用工程。研究接口：模型团队与板端团队应核对模型、转换工具、芯片、运行时和驱动版本；这是由RKNN分层形成的检查问题，不是公司组织图。"
       },
       "lessons": [
         {
@@ -1493,9 +1561,20 @@
             "jetson-power-budget"
           ],
           "updatedAt": "2026-11-14T00:44:51.090797+00:00"
+        },
+        {
+          "id": "rknn-model-runtime-handoff",
+          "title": "交接模型时同时核对运行环境",
+          "learning": "官方软件栈分别说明转换、板端接口和硬件驱动，且Toolkit2不兼容旧Toolkit。",
+          "application": "按模型与目标芯片记录工具链、运行时和驱动版本；变更后重新核对功能与整机测量。",
+          "boundary": "只审阅README，未运行SDK、测量精度或功耗；不能宣称跨版本兼容或效率提升。",
+          "itemIds": [
+            "rknn-deployment-layers"
+          ],
+          "updatedAt": "2026-11-16T10:41:57.135139+00:00"
         }
       ],
-      "updatedAt": "2026-11-14T00:44:51.090797+00:00"
+      "updatedAt": "2026-11-16T10:41:57.135139+00:00"
     }
   },
   "runs": [
@@ -2056,6 +2135,40 @@
           "hash": "385c2d7af1aa7fc929269d49d75edef6a3cbcddd3d2c5b7c67a6e31b61a9ec7b",
           "decision": "integrated",
           "reason": "补需求研究的家庭角色和操作入口区分，保留地区与版本条件。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-16T10:41:57.135139+00:00",
+      "reviewedNodes": [
+        "track-1",
+        "track-3",
+        "chain-4"
+      ],
+      "decisions": [
+        {
+          "itemId": "roborock-jobs",
+          "hash": "cfd2a7fbb9643eff35c99d3c15f696b62c2bfaec247554999517628196c19a98",
+          "decision": "integrated",
+          "reason": "同一职责样本补到正文，修正访问边界，不视为组织变化。"
+        },
+        {
+          "itemId": "rknn-deployment-layers",
+          "hash": "907978fe4c487c627cb8b36d7734236c48927d6531f900dbbc17ac9799d63e78",
+          "decision": "integrated",
+          "reason": "补模型、运行时和驱动的交接问题，保留版本与实测限制。"
+        },
+        {
+          "itemId": "unitree-example-deployment-boundary",
+          "hash": "429ab1fe344abf19182d98696876886f0758cd01afc609ec7620342ac543c959",
+          "decision": "integrated",
+          "reason": "补示例与稳定部署边界，不写成操作教程。"
+        },
+        {
+          "itemId": "autodesk-npi-deliverable-gates",
+          "hash": "4c9d957f67fa5ffda075f2ead18cc896abb49073b16df5366f8dd5cecc52c8db",
+          "decision": "integrated",
+          "reason": "补阶段门证据与责任问题，不采纳软件收益宣传。"
         }
       ]
     }
@@ -6381,6 +6494,320 @@
           "checkedAt": "2026-11-16T00:40:59.262031+00:00",
           "state": "body",
           "note": "当前实际正文；仅支持列明范围，未知结果未补成事实。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-1",
+      "reviewedAt": "2026-11-16T10:41:57.135139+00:00",
+      "status": "partial",
+      "assessment": "复核机器人从模型示例到实物控制的边界；宇树文档明确该控制程序仅为示例，补部署限制。DJI仅查到下载入口，未将其计为正文。",
+      "gaps": [
+        "无人机、DJI 与初始 NVIDIA 生态观察对象尚未完整复核。",
+        "任务成功率、接管、恢复时间与现场工时仍缺统一测量协议及实测样本。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "examples",
+        "team",
+        "title"
+      ],
+      "changes": {
+        "constraint": {
+          "before": "真实环境中的安全、可靠性与维护成本 下线数量、交付数量和终端持续使用须分开；公司披露“良率良好”但未给分母时不能当作可比质量指标。",
+          "after": "真实环境中的安全、可靠性与维护成本。宇树实物部署说明明确其程序仅为示例、不是稳定控制；模型能运行与业务可交付须分别取证，不能从演示外推任务可靠性。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "unitree-demo-production-boundary",
+            "title": "把可演示与稳定控制分开",
+            "learning": "官方部署示例限定了适用机器人与控制程序的性质。",
+            "application": "研究机器人部署时分别核对型号、配置、任务验收及异常恢复证据；不把文档摘要作为操作指南。",
+            "boundary": "未操作实机或评估安全，不能据示例判定商业交付能力或人员需求。",
+            "itemIds": [
+              "unitree-example-deployment-boundary"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "unitree-example-deployment-boundary",
+          "title": "宇树实物部署示例：能运行不等于稳定控制",
+          "facts": [
+            {
+              "claim": "官方声明示例部署不是稳定控制程序。",
+              "sourceUrl": "https://raw.githubusercontent.com/unitreerobotics/unitree_rl_gym/main/deploy/deploy_real/README.zh.md",
+              "locator": "注意段落"
+            },
+            {
+              "claim": "配置文件按机器人型号区分。",
+              "sourceUrl": "https://raw.githubusercontent.com/unitreerobotics/unitree_rl_gym/main/deploy/deploy_real/README.zh.md",
+              "locator": "启动用法"
+            }
+          ],
+          "boundary": "官方开发示例，未标发布日期；不可当作生产操作指南或整机安全认证，不外推无人机、其他机型或真实任务成功率。",
+          "sources": [
+            {
+              "url": "https://raw.githubusercontent.com/unitreerobotics/unitree_rl_gym/main/deploy/deploy_real/README.zh.md",
+              "name": "宇树科技官方资料",
+              "publishedAt": null,
+              "publisherGroup": "宇树科技",
+              "role": "official",
+              "textHash": "39a7d10e572c4697e1b095a3f01d9258641de56dbd9c02905052b7bec7c0bfb2",
+              "readAt": "2026-11-16T10:37:42.035233+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "unitree-example-deployment-boundary",
+          "url": "https://raw.githubusercontent.com/unitreerobotics/unitree_rl_gym/main/deploy/deploy_real/README.zh.md",
+          "checkedAt": "2026-11-16T10:37:42.035233+00:00",
+          "state": "body",
+          "note": "本轮实际读取正文，保留适用型号及资料性质；未执行软件或设备。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-3",
+      "reviewedAt": "2026-11-16T10:41:57.135139+00:00",
+      "status": "partial",
+      "assessment": "补瑞芯微软件栈各层职责及Toolkit兼容边界；未取得芯片级测量和其他厂商全链资料，保留部分复核。",
+      "gaps": [
+        "已补瑞芯微软件栈层次；Qualcomm、NVIDIA及各厂商具体型号和工具仍未全面复核。",
+        "模型压缩方法、BSP细节、维护成本及同任务整机测量仍缺完整依据。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "examples",
+        "team",
+        "title"
+      ],
+      "changes": {
+        "chain": {
+          "before": "芯片 / 模组 → SDK → 模型优化 → 整机集成 观察整机时还要区分任务编排、模型生成与低层跟踪分别运行于何处，并记录手机、机载或网络依赖。",
+          "after": "芯片 / 模组 → SDK与模型转换 → 板端运行时和驱动 → 整机集成。RKNN示例把转换工具、Python或C/C++接口与NPU内核驱动分层；模型文件交接不能替代运行环境核对。"
+        },
+        "team": {
+          "before": "芯片 / BSP、模型压缩、系统软件、热设计、应用工程",
+          "after": "芯片 / BSP、模型压缩、系统软件、热设计、应用工程。研究接口：模型团队与板端团队应核对模型、转换工具、芯片、运行时和驱动版本；这是由RKNN分层形成的检查问题，不是公司组织图。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "rknn-model-runtime-handoff",
+            "title": "交接模型时同时核对运行环境",
+            "learning": "官方软件栈分别说明转换、板端接口和硬件驱动，且Toolkit2不兼容旧Toolkit。",
+            "application": "按模型与目标芯片记录工具链、运行时和驱动版本；变更后重新核对功能与整机测量。",
+            "boundary": "只审阅README，未运行SDK、测量精度或功耗；不能宣称跨版本兼容或效率提升。",
+            "itemIds": [
+              "rknn-deployment-layers"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "rknn-deployment-layers",
+          "title": "瑞芯微RKNN：模型转换、板端运行时与驱动各有接口",
+          "facts": [
+            {
+              "claim": "工具链将模型转换与板端推理衔接。",
+              "sourceUrl": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
+              "locator": "Description"
+            },
+            {
+              "claim": "Toolkit2与旧版Toolkit不兼容。",
+              "sourceUrl": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
+              "locator": "Notes"
+            },
+            {
+              "claim": "内核驱动负责与NPU硬件交互。",
+              "sourceUrl": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
+              "locator": "Description"
+            }
+          ],
+          "boundary": "当前主分支说明，不是固定版本测试报告；不判断模型精度、耗电、延迟或人员效率。未安装或执行仓库代码。",
+          "sources": [
+            {
+              "url": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
+              "name": "瑞芯微官方资料",
+              "publishedAt": null,
+              "publisherGroup": "瑞芯微",
+              "role": "official",
+              "textHash": "53b24cbf05a899e4296f5fdd060c662d204c7e687140305d655c1f05cac96550",
+              "readAt": "2026-11-16T10:37:42.034691+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "rknn-deployment-layers",
+          "url": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
+          "checkedAt": "2026-11-16T10:37:42.034691+00:00",
+          "state": "body",
+          "note": "本轮实际读取正文，保留适用型号及资料性质；未执行软件或设备。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-4",
+      "reviewedAt": "2026-11-16T10:41:57.135139+00:00",
+      "status": "partial",
+      "assessment": "本轮补齐原先不可读的NPI-PE、PQE、PQC正文，撤销该访问缺口；复核NPI阶段门的交付物与责任。没有重新核验FPY完整条目或真实试产门槛，仍为部分复核。",
+      "gaps": [
+        "已取得石头职责正文；具体项目的试产门槛、正式放行权限与执行记录仍未核实。",
+        "本轮ASQ直连403，搜索只显示定义片段，未重新完整核验指标说明。",
+        "历史质量措施完成状态与企业制造结果仍未知。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "exercise",
+        "flow",
+        "pitfall",
+        "team",
+        "title"
+      ],
+      "changes": {
+        "team": {
+          "before": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。 石头官方岗位索引提供一个职责样本：NPI-PE 准备设计评审和工艺资料，PQE 跟进试制量产及代工质量，PQC 关注出货与过程监督；实际决策权仍须项目证据。",
+          "after": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。石头商城岗位正文提供具体样本：NPI-PE输出DFX报告、组包流程、作业文件及治具要求；PQE衔接试制、量产、代工与售后质量；PQC监督出货及过程。正式放行权仍须项目证据。"
+        },
+        "exercise": {
+          "before": "沿一次异常追到设计版本、工艺条件和责任人，定义复现与关闭标准。 把问题分别映射到设计评审、工艺文件、过程控制与出货验收的交付物，并核实谁有权放行，不能仅从岗位名称推定。 对运输相关故障，分别核对出厂测试记录、包装与结构版本、运输条件及到货功能复现；出厂通过不能代替运输后验收。",
+          "after": "沿一次试产异常核对设计版本、工艺条件和关闭证据；为进入下一阶段列清交付物、依赖、验收人和未关闭问题。Autodesk阶段门说明可作为检查框架，系统状态完成不能替代实际验证。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": {
+            "id": "chain-4-roborock-jobs",
+            "title": "从交付物划清 NPI 与质量接口",
+            "learning": "岗位职责展示了不同阶段的工作重心，适合用来构造交接清单；人员数量、工作是否重叠及正式放行权仍未知。",
+            "application": "适用于有代工协同的新产品导入研究；先核对具体项目的评审文件、工艺版本和异常关闭记录。",
+            "boundary": "只读取无日期官方索引，非内部组织制度，也不是所有企业的标准岗位划分。",
+            "itemIds": [
+              "roborock-jobs"
+            ],
+            "updatedAt": "2026-11-07T00:47:27.698411+00:00"
+          },
+          "after": {
+            "id": "chain-4-roborock-jobs",
+            "title": "从交付物划清 NPI 与质量接口",
+            "learning": "岗位职责展示了不同阶段的工作重心，适合用来构造交接清单；人员数量、工作是否重叠及正式放行权仍未知。",
+            "application": "适用于有代工协同的新产品导入研究；先核对具体项目的评审文件、工艺版本和异常关闭记录。",
+            "boundary": "本轮已取得官方商城无日期职责正文，与原有样本一致；当前在招、正式放行权和实际制造结果仍未知，不是通用岗位制度。",
+            "itemIds": [
+              "roborock-jobs"
+            ]
+          }
+        },
+        {
+          "before": null,
+          "after": {
+            "id": "npi-gate-evidence",
+            "title": "阶段完成要对应交付物和验收证据",
+            "learning": "PLM说明同时列出阶段门、依赖与任务责任；石头岗位列明工艺资料及质量工作。",
+            "application": "导入评审时对照阶段所需资料和异常关闭记录，另行核对谁能放行。",
+            "boundary": "供应商软件说明和岗位要求，不能证明企业实施有效、员工负担减少或质量提升。",
+            "itemIds": [
+              "autodesk-npi-deliverable-gates",
+              "roborock-jobs"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "roborock-jobs",
+          "title": "石头岗位样本：NPI、PQE 与 PQC 的制造质量接口",
+          "facts": [
+            {
+              "claim": "NPI-PE 职责包含设计评审与工艺资料输出。",
+              "sourceUrl": "https://mall.roborock.com/introduction/jobs",
+              "locator": "社招岗位 / NPI-PE、PQE、PQC"
+            },
+            {
+              "claim": "PQE 职责覆盖试制、量产质量和代工厂管理。",
+              "sourceUrl": "https://mall.roborock.com/introduction/jobs",
+              "locator": "社招岗位 / NPI-PE、PQE、PQC"
+            },
+            {
+              "claim": "PQC 职责涉及出货质量和过程控制实施监督。",
+              "sourceUrl": "https://mall.roborock.com/introduction/jobs",
+              "locator": "社招岗位 / NPI-PE、PQE、PQC"
+            }
+          ],
+          "boundary": "2026-11-16浏览器取得官方商城无日期岗位正文；职责与既有索引样本一致，不认定新增招聘或组织变化。页面另链招聘主站，未核实实时在招、完整目录、人数或实际放行权。",
+          "sources": [
+            {
+              "url": "https://mall.roborock.com/introduction/jobs",
+              "name": "石头科技官方招聘",
+              "publishedAt": null,
+              "publisherGroup": "石头科技官方招聘",
+              "role": "official",
+              "textHash": "fd6fb53c7cd997c90a44bea1afcdf0dc656c7a16f4d734ba58a2102bf1e3c20d",
+              "readAt": "2026-11-16T10:38:42.192Z",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "autodesk-npi-deliverable-gates",
+          "title": "NPI阶段门：检查交付物与依赖，不只看进度完成",
+          "facts": [
+            {
+              "claim": "阶段门跟踪同时展示交付物、依赖和时长。",
+              "sourceUrl": "https://www.autodesk.com/industry/design-manufacturing/plm/npi-new-product-introduction",
+              "locator": "Maintain visibility"
+            },
+            {
+              "claim": "页面描述可配置任务责任。",
+              "sourceUrl": "https://www.autodesk.com/industry/design-manufacturing/plm/npi-new-product-introduction",
+              "locator": "Set and update teams and permissions"
+            }
+          ],
+          "boundary": "供应商的流程与软件能力说明，不是通用NPI标准；具体试产通过门槛、审批权和企业实施效果未知。",
+          "sources": [
+            {
+              "url": "https://www.autodesk.com/industry/design-manufacturing/plm/npi-new-product-introduction",
+              "name": "Autodesk官方资料",
+              "publishedAt": null,
+              "publisherGroup": "Autodesk",
+              "role": "official",
+              "textHash": "d048b68f69d61333e00991d6d3a3e76960adb85b8598f2759115aca5d07333f0",
+              "readAt": "2026-11-16T10:39:02.114Z",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "roborock-jobs",
+          "url": "https://mall.roborock.com/introduction/jobs",
+          "checkedAt": "2026-11-16T10:38:42.192Z",
+          "state": "body",
+          "note": "本轮实际读取正文，保留适用型号及资料性质；未执行软件或设备。"
+        },
+        {
+          "itemId": "autodesk-npi-deliverable-gates",
+          "url": "https://www.autodesk.com/industry/design-manufacturing/plm/npi-new-product-introduction",
+          "checkedAt": "2026-11-16T10:39:02.114Z",
+          "state": "body",
+          "note": "本轮实际读取正文，保留适用型号及资料性质；未执行软件或设备。"
         }
       ]
     }
