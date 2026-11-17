@@ -14,10 +14,12 @@
   "requirements": {
     "domesticCompanies": 3,
     "nonResearchStages": 2,
-    "recruitmentCompanies": 2
+    "recruitmentCompanies": 2,
+    "newsBodies": 6,
+    "newsPublisherGroups": 3
   },
   "runtimeNote": "RSS 在 GitHub 云端运行；中文整理与岗位研究使用本地 Codex，需电脑和应用可用。调度可能延迟。",
-  "qualityNote": "每日更新实际扫描结果；无合格新内容不凑数。事实、分析、未知项分开，准确性依赖来源与复核，不能保证绝对无误。",
+  "qualityNote": "每日至少审读6篇近期新闻正文，覆盖3个发布方，保存正文锚点和筛选理由；不足须补跑。无合格新事件可以零入选，不能以标题扫描、下载或旧资料复核代替正文审读。事实、分析、未知项分开。",
   "knowledge": {
     "reviewIntervalDays": 7,
     "dailyReviewMinimum": 3,

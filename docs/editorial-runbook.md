@@ -31,7 +31,7 @@
 `work/editorial/bundle.json`：
 
 - `run`: `coverage`，`scannedSources`，`failedSources`，`knownGaps`，`sourceChecks`。覆盖描述写实际公司、环节、正文数量和空白。空批次必须有真实扫描记录；全部失败时 successfulScan=false。日报失败状态不能说无新闻。
-- `sourceChecks`：逐来源记录 `url`, `company`（行业目录标准名，无公司可为 null）, `name`, `purpose`（news/practice/recruitment）, `stages`, `state`（read/index/no_new/error）, `checkedAt`, `note`。必须是当天实际检查；no_new 仅表示所查页面未见新增，不代表全网无新闻。失败不计入覆盖。程序据此计算 `coverageCheck` 和 `successfulScan`，覆盖不足日报标 partial。
+- `sourceChecks`：逐来源记录 `url`, `company`（行业目录标准名，无公司可为 null）, `name`, `purpose`（news/practice/recruitment）, `stages`, `state`（read/index/no_new/error）, `checkedAt`, `note`。必须是当天实际检查；no_new 仅表示所查页面未见新增，不代表全网无新闻。仅 read 计入正文覆盖，index/no_new/error 不计入。程序据此计算 `coverageCheck` 和 `successfulScan`，覆盖不足日报标 partial。
 - 条目发布日期必须与至少一个来源原始日期一致，不允许将检查时间当作发布日期。
 - `entries`: 对照 `scripts/editorial.py::validate_entry`。主要字段：`id`, `eventId`, `developmentId`, `titleZh`, `originalTitle`, `brief:{lead,points}`, `stages`, `domestic`, `companies`, `publishedAt`, `kind`, `category`, `sources`, `facts`, `selection`, `boundary`, `meaning`, `question`, `eventReason`。
 - `sources`: `readId`, `name`, `url`, `publishedAt`（可 null）, `publisherGroup`, `role`（official/media/research）。官方域名与文章主体须核实，不把官方引用别人当成结果证明。
@@ -60,3 +60,12 @@ python3 scripts/health.py
 ```
 
 定时运行只更新本仓库及已授权 GitHub Pages。测试、正文访问或推送失败时保留上次可用版本并报告具体失败；不要用测试样例伪装真实研究或完成。首轮招聘只有基线，需后续真实观察才能形成趋势。
+
+## 近期新闻正文审读与当天阅读清单（2026-11-17 修正）
+
+- 公司/岗位/旧知识复核与新闻研究分别验收。每日至少审读 6 篇最近 72 小时内发布的新闻正文、覆盖 3 个发布方；转载沿原始发布方归组。新闻入选数不设保底。标题初筛、自动下载、索引、旧文与缓存均不能充当当天正文审读。6/3 是最低覆盖，不是达到后忽略重要候选的停止条件。
+- `prepare` 优先近期候选并轮流选择发布方，仍须主动搜索国内公司官方消息及供应链、制造、质量、渠道、服务，不能依赖单个 RSS。连续空日报必须扩大来源并复盘未读候选，不能重复复核旧岗位来结束任务。
+- 计入新闻覆盖的 `sourceChecks` 额外提供 `readId`、真实的 `publishedAt`、`publisherGroup` 和 `bodyReview:{decision,reason,anchor}`。decision 为 pass/hold/reject；reason 至少 12 字符，anchor 至少 12 字符且能在本次正文找到。本地正文必须本日实际取得，body 状态且至少 250 字符。正文为转载时可审读，但事件日期仍按原始行动判断，不能因转载重新进日报。程序核对 URL、锚点、时间，按 URL 去重；发布方归组及正文是否完整仍须研究者判断。
+- 公司、非研发环节及招聘覆盖只计 `state=read`；index/no_new/error 保留记录但不算正文覆盖。`coverageCheck.newsResearch` 不达标或缺失时，health.needsEditorial 必须为 true，晚间继续补读。达到最低覆盖仍不等于信息绝对准确。
+- 当天阅读清单分“近期动态”和默认展开的“今日深读·知识与实践”；后者仅展示今天实质新增且通过精选的资料，保留原始日期。未过精选的材料收在待核验区，不作为阅读推荐。新闻不足显示具体覆盖缺口，不能用巨幅空白替代可用内容。
+- 当天有遗漏或错误需要修订时，bundle.run 填至少 20 字符的 `revisionReason`，并通过当前覆盖检查；程序保留原版及修订理由。普通健康检查仍不重复改日报。历史日期不得伪造补跑或补填当天阅读记录。页面展示、当前数据、修订记录与线上 health 都须验证后才完成。

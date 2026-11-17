@@ -38,6 +38,18 @@ class EditorialTests(unittest.TestCase):
   repaired=self.digest([self.row()],[first])
   self.assertEqual(repaired['itemIds'],['a']);self.assertEqual(repaired['revisions'][0]['edition'],first)
   self.assertEqual(self.digest([],[repaired]),repaired)
+ def test_explicit_same_day_revision_preserves_empty_edition(self):
+  first=self.digest([])
+  self.run.update(coverageCheck={'passed':True},revisionReason='补读遗漏新闻正文后修订当天清单，保留原版便于核对。')
+  repaired=self.digest([self.row()],[first]);self.assertEqual(repaired['itemIds'],['a'])
+  self.assertEqual(repaired['revisions'][0]['edition'],first)
+  self.run['coverageCheck']['passed']=False
+  self.assertEqual(self.digest([],[repaired]),repaired)
+ def test_queue_diversity_and_recent_priority(self):
+  rows=[dict(id=str(i),title='小米供应链',date='2026-11-05T10:00:00Z',sourceId='one',url='https://one.example/'+str(i)) for i in range(40)]
+  rows.extend([dict(id='other',title='Hardware',date='2026-11-05T10:00:00Z',sourceId='two',url='https://two.example/a'),dict(id='old',title='小米供应链',date='2026-10-01',sourceId='three',url='https://three.example/a')])
+  result=e.candidate_queue(rows,set(),self.clock)
+  self.assertEqual(result[1]['id'],'other');self.assertNotIn('old',[i['id'] for i in result])
  def test_invalid_evidence_and_hold(self):
   text='A public company announced a service replacement program. '*6
   read=dict(url='https://example.com/a',text=text,bodyStatus='body',readAt=self.clock.isoformat())

@@ -34,14 +34,28 @@ def priority(item):
     chain=bool(re.search(r'供应|制造|质量|召回|售后|渠道|团队|组织|量产|supplier|quality|recall|manufactur|service notice',title))
     return (domestic,chain,item['date'])
 
+def candidate_queue(items,known,clock=None,limit=30):
+    """Recent candidates first; round-robin publishers so one feed cannot monopolize review."""
+    clock=clock or now();result=[]
+    available=[i for i in items if i['id'] not in known and timestamp(i['date'])<=clock]
+    for recent in (True,False):
+        groups={}
+        for i in sorted(available,key=priority,reverse=True):
+            if (dt.timedelta(0)<=clock-timestamp(i['date'])<=dt.timedelta(days=3))!=recent:continue
+            groups.setdefault(i.get('sourceId') or urlsplit(i['url']).netloc,[]).append(i)
+        while any(groups.values()) and len(result)<limit:
+            for rows in groups.values():
+                if rows and len(result)<limit:result.append(rows.pop(0))
+    return result
+
 def prepare():
     WORK.mkdir(parents=True,exist_ok=True)
     previous=load(DATA/'intelligence.json',{'items':[]});known={i['id'] for i in previous['items']}
-    allitems=load(DATA/'radar.json')['items'];items=sorted([i for i in allitems if i['id'] not in known],key=priority,reverse=True)[:30]
+    allitems=load(DATA/'radar.json')['items'];items=candidate_queue(allitems,known)
     def read(item):
         out=WORK/(item['id']+'.json')
         cached=load(out)
-        if cached and cached.get('text') and cached.get('url')==item['url']:return dict(id=item['id'],state='cached',path=str(out.relative_to(ROOT)))
+        if cached and cached.get('text') and cached.get('url')==item['url'] and cached.get('readAt') and timestamp(cached['readAt']).astimezone(TZ).date()==now().astimezone(TZ).date():return dict(id=item['id'],state='cached',path=str(out.relative_to(ROOT)))
         try:
             text=read_url(item['url']);payload={**item,'text':text,'bodyStatus':'body','readAt':now().isoformat(),'textHash':hashlib.sha256(text.encode()).hexdigest()};write(out,payload)
             return dict(id=item['id'],state='read',path=str(out.relative_to(ROOT)))
@@ -136,8 +150,10 @@ def make_digest(items,events,previous,run,clock=None):
     seen={tuple(p) for d in prior for p in d['developmentKeys']}
     previous_today=next((d for d in previous if d['date']==stamp),None)
     recovering=previous_today and (previous_today['state']=='incomplete' or (previous_today.get('coverageCheck') or {}).get('passed') is False) and run.get('coverageCheck',{}).get('passed') is True
-    if previous_today and not recovering:return previous_today # completed editions remain immutable
-    if recovering:bootstrap=previous_today['bootstrap']
+    revision=bool(previous_today and run.get('revisionReason') and run.get('coverageCheck',{}).get('passed') is True)
+    if revision:valid_text(run['revisionReason'],'edition revision reason',20)
+    if previous_today and not (recovering or revision):return previous_today # healthy no-op runs remain immutable
+    if recovering or revision:bootstrap=previous_today['bootstrap']
     byid={i['id']:i for i in items};candidates=[]
     for ev in events:
         eligible=[byid[x] for x in ev['itemIds'] if byid[x].get('selected') and byid[x].get('publishedAt')]
@@ -150,7 +166,7 @@ def make_digest(items,events,previous,run,clock=None):
         # A repeated event enters again only when its documented first-party action changes.
         if any(eid==ev['id'] for eid,_ in seen) and not (i.get('newDevelopment') and i['sources'][0]['role']=='official' and i.get('developmentReason')):continue
         candidates.append(i)
-    candidates.sort(key=lambda i:(not i['domestic'],-i['score'],i['publishedAt']),reverse=False)
+    candidates.sort(key=lambda i:(not i['domestic'],-i['score'],-timestamp(i['publishedAt']).timestamp()),reverse=False)
     slots=[];publisher_counts={}
     for i in candidates:
         publisher=i['sources'][0]['publisherGroup']
@@ -160,12 +176,12 @@ def make_digest(items,events,previous,run,clock=None):
     state='partial' if run.get('failedSources') or not run.get('coverageCheck',{'passed':True})['passed'] else 'complete'
     if not slots:state='partial' if run.get('failedSources') or not run.get('coverageCheck',{'passed':True})['passed'] else ('no_new_qualifying_events' if run.get('successfulScan') else 'incomplete')
     result={'id':'daily-'+stamp,'date':stamp,'generatedAt':clock.isoformat(),'state':state,'bootstrap':bootstrap,'windowNote':'首次上线回补近 14 天；旧实践另列，不算当天新闻。' if bootstrap else '优先最近 72 小时的新事件；按北京时间出刊。7 期内同一进展不重复。','itemIds':[i['id'] for i in slots],'developmentKeys':[[i['eventId'],i['developmentId']] for i in slots],'reviewedCount':run['reviewedCount'],'failedSources':run.get('failedSources',[]),'coverage':run['coverage'],'knownGaps':run.get('knownGaps',[]),'coverageCheck':run.get('coverageCheck')}
-    if recovering:
+    if recovering or revision:
         snapshot={k:v for k,v in previous_today.items() if k!='revisions'}
-        result['revisions']=previous_today.get('revisions',[])+[{'reason':'当天覆盖不足，补跑通过后更新；保留原版。','replacedAt':clock.isoformat(),'edition':snapshot}]
+        result['revisions']=previous_today.get('revisions',[])+[{'reason':run.get('revisionReason','当天覆盖不足，补跑通过后更新；保留原版。'),'replacedAt':clock.isoformat(),'edition':snapshot}]
     return result
 
-def assess_coverage(run,clock=None):
+def assess_coverage(run,clock=None,reads=None):
     clock=clock or now();checks=run.get('sourceChecks',[])
     if not checks:raise ValueError('Structured source checks are required')
     company_names={c['name'] for c in industry()['companies']};stages=set(industry()['stages'])
@@ -177,7 +193,7 @@ def assess_coverage(run,clock=None):
         if not set(c.get('stages',[]))<=stages:raise ValueError('Invalid scan stages')
         checked=timestamp(c['checkedAt'])
         if checked>clock+dt.timedelta(minutes=5) or checked.astimezone(TZ).date()!=clock.astimezone(TZ).date():raise ValueError('Scan must be checked today')
-        if c['state']!='error':usable.append(c)
+        if c['state']=='read':usable.append(c)
     companies={c.get('company') for c in usable}&company_names
     nonrd=set().union(*(set(c['stages']) for c in usable))-{'研发与系统'} if usable else set()
     recruiters={c.get('company') for c in usable if c['purpose']=='recruitment'}&company_names
@@ -185,12 +201,32 @@ def assess_coverage(run,clock=None):
     reasons=[]
     for count,key,label in [(len(companies),'domesticCompanies','国内公司'),(len(nonrd),'nonResearchStages','非研发环节'),(len(recruiters),'recruitmentCompanies','官方招聘公司')]:
         if count<req[key]:reasons.append(f'{label} {count}/{req[key]}')
-    return {'passed':not reasons,'companies':sorted(companies),'stages':sorted(nonrd),'recruitmentCompanies':sorted(recruiters),'gaps':reasons,'usableSources':len(usable)}
+    # Downloading a body is not reading it: require an explicit editorial decision and body anchor.
+    reviewed={};reads=reads or {}
+    for c in usable:
+        if c['purpose']!='news':continue
+        r=reads.get(c.get('readId'),{});review=c.get('bodyReview',{})
+        date=c.get('publishedAt')
+        if not date or not dt.timedelta(0)<=clock-timestamp(date)<=dt.timedelta(days=3):continue
+        if r.get('bodyStatus')!='body' or len(r.get('text',''))<250:continue
+        if canonical(r['url'])!=canonical(c['url']):raise ValueError('News review URL mismatch')
+        if timestamp(r['readAt']).astimezone(TZ).date()!=clock.astimezone(TZ).date():continue
+        if review.get('decision') not in ('pass','hold','reject'):continue
+        if len(review.get('reason',''))<12 or len(review.get('anchor',''))<12:continue
+        if normalize(review['anchor']) not in normalize(r['text']):raise ValueError('News review anchor not found')
+        if not c.get('publisherGroup'):continue
+        reviewed[canonical(c['url'])]=c
+    groups=sorted({c['publisherGroup'] for c in reviewed.values()})
+    minimum=req.get('newsBodies',6);group_min=req.get('newsPublisherGroups',3)
+    news={'passed':len(reviewed)>=minimum and len(groups)>=group_min,'bodyCount':len(reviewed),'publisherGroups':groups,'requiredBodies':minimum,'requiredPublisherGroups':group_min}
+    if len(reviewed)<minimum:reasons.append(f'近期新闻正文审读 {len(reviewed)}/{minimum}')
+    if len(groups)<group_min:reasons.append(f'新闻发布方 {len(groups)}/{group_min}')
+    return {'newsResearch':news,'passed':not reasons,'companies' :sorted(companies),'stages':sorted(nonrd),'recruitmentCompanies':sorted(recruiters),'gaps':reasons,'usableSources':len(usable)}
 
 def publish(bundle_path):
     bundle=load(Path(bundle_path));reads={p.stem:load(p) for p in WORK.glob('*.json') if p.name not in ('queue.json','bundle.json')}
     run=bundle['run'];valid_text(run.get('coverage'),'coverage note')
-    run['coverageCheck']=assess_coverage(run)
+    run['coverageCheck']=assess_coverage(run,reads=reads)
     run['successfulScan']=run['coverageCheck']['usableSources']>0
     run['knownGaps']=list(dict.fromkeys(run.get('knownGaps',[])+run['coverageCheck']['gaps']))
     failed=[c['note'] for c in run['sourceChecks'] if c['state']=='error']

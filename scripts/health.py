@@ -9,15 +9,16 @@ def report(data=DATA,clock=None):
  def same_day(value):return bool(value) and timestamp(value).astimezone(TZ).date()==local.date()
  latest=intel.get('runs',[])[-1] if intel.get('runs') else {}
  edition=next((x for x in daily['editions'] if x['date']==today),None)
- covered=latest.get('coverageCheck',{}).get('passed',False)
+ news_research=latest.get('coverageCheck',{}).get('newsResearch',{})
+ covered=latest.get('coverageCheck',{}).get('passed',False) and news_research.get('passed',False)
  scanned=same_day(intel.get('lastCompletedAt')) and latest.get('successfulScan') is True
  job_companies={s['company'] for s in jobs.get('scans',[]) if same_day(s.get('checkedAt')) and s['state']!='error'}
  jobs_covered=len(job_companies)>=config['requirements']['recruitmentCompanies']
  parts={
   'rss':{'checkedAt':radar.get('checkedAt'),'lastSuccessAt':radar.get('lastSuccessfulAt'),'today':same_day(radar.get('checkedAt')),'successCount':sum(h['state']=='ok' for h in radar['health']),'sourceCount':len(radar['health'])},
-  'editorial':{'checkedAt':intel.get('lastCompletedAt'),'today':scanned,'coveragePassed':covered,'sourceFailures':latest.get('failedSources',[]),'itemCount':len(intel['items'])},
+  'editorial':{'checkedAt':intel.get('lastCompletedAt'),'today':scanned,'coveragePassed':covered,'newsResearch':news_research,'sourceFailures':latest.get('failedSources',[]),'itemCount':len(intel['items'])},
   'recruitment':{'checkedAt':jobs.get('checkedAt'),'today':same_day(jobs.get('checkedAt')) and jobs_covered,'companiesChecked':sorted(job_companies),'jobCount':len(jobs['jobs'])},
-  'daily':{'date':edition['date'] if edition else None,'today':bool(edition) and edition['state']!='incomplete' and (edition.get('coverageCheck') or {}).get('passed') is not False,'state':edition['state'] if edition else 'missing','newEvents':len(edition['itemIds']) if edition else 0}}
+  'daily':{'date':edition['date'] if edition else None,'today':bool(edition) and edition['state']!='incomplete' and (edition.get('coverageCheck') or {}).get('passed') is True and (edition.get('coverageCheck') or {}).get('newsResearch',{}).get('passed') is True,'state':edition['state'] if edition else 'missing','newEvents':len(edition['itemIds']) if edition else 0}}
  knowledge=None
  if config.get('knowledge'):
   from knowledge import plan

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastCompletedAt": "2026-11-17T00:45:51.283338+00:00",
+  "lastCompletedAt": "2026-11-17T09:03:33.744763+00:00",
   "method": "Codex 初筛评分 + 逐条证据复核；非两个独立模型评分",
   "items": [
     {
@@ -77,6 +77,214 @@
       "date": "2026-11-17T00:09:07+00:00",
       "title": "儿童手表刷机风险报道：保留线索，等待原始调查与型号核验",
       "summary": "IT之家转述中国之声对儿童手表刷机服务的调查，涉及家长管理功能被绕过及数据风险。本轮读取了转载正文，未取得所引原始调查和厂商型号回应，因此保留中文摘要，不进入精选日报。"
+    },
+    {
+      "id": "caam-payment-review-20261116",
+      "eventId": "caam-payment-review-20261116",
+      "developmentId": "initial",
+      "titleZh": "供应商账期如何核实：中汽协拟对17家车企抽样核查",
+      "originalTitle": "中汽协将调研评估并公开17家车企账期情况",
+      "brief": {
+        "lead": "经济观察报报道，中汽协11月16日公布供应商账款支付调研评估安排，采用车企报送与供应商抽查。值得读的是核查过程：合同、验收、对账、发票与支付凭证需要对应，不能只看企业承诺。",
+        "points": [
+          "报道列明每家车企随机抽取不少于15家供应商；评估结果计划公开。",
+          "两篇报道对中小企业支付工具的表述不同，本清单不采用有争议的现金比例口径，需核对通知原文。"
+        ]
+      },
+      "stages": [
+        "供应链与采购",
+        "经营与组织"
+      ],
+      "domestic": true,
+      "companies": [
+        "小米"
+      ],
+      "publishedAt": "2026-11-16T22:31:00+08:00",
+      "kind": "新闻",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 17,
+          "增量信息": 17,
+          "证据质量": 18,
+          "机制清晰": 17,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐条阅读正文核对原始时间、行动与限制；媒体转述及计划状态明确标注。"
+        }
+      },
+      "boundary": "媒体报道，未读取协会通知原文；抽样与公开评估是机制安排，不证明17家企业已达标，也不是学习硬件行业统一规则。",
+      "meaning": "研究解释：采购、质量验收与财务对账的交接记录共同决定账期能否被核查。",
+      "question": "具体业务中，验收与对账争议如何影响付款起算和责任认定？",
+      "eventReason": "同一主体和具体行动归为同一事件；转述与补读不作为新进展。",
+      "facts": [
+        {
+          "claim": "报道描述通过供应商样本核对采购到付款的证据。",
+          "sourceUrl": "https://www.eeo.com.cn/2026/1116/1094497.shtml",
+          "locator": "来源正文对应段落"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.eeo.com.cn/2026/1116/1094497.shtml",
+          "name": "经济观察报",
+          "publishedAt": "2026-11-16T22:31:00+08:00",
+          "publisherGroup": "经济观察报",
+          "role": "media",
+          "textHash": "af1289ae24610dfd8c3554d95b551d250a7bed2d4344815cf878838e00cf4c6d",
+          "readAt": "2026-11-17T09:01:02.470741+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 86,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-17T09:03:33.737230+00:00",
+      "sourceDate": "2026-11-16T22:31:00+08:00",
+      "date": "2026-11-16T22:31:00+08:00",
+      "title": "供应商账期如何核实：中汽协拟对17家车企抽样核查",
+      "summary": "经济观察报报道，中汽协11月16日公布供应商账款支付调研评估安排，采用车企报送与供应商抽查。值得读的是核查过程：合同、验收、对账、发票与支付凭证需要对应，不能只看企业承诺。"
+    },
+    {
+      "id": "xpeng-iron-commercial-roadmap-20261116",
+      "eventId": "xpeng-iron-commercial-roadmap-20261116",
+      "developmentId": "initial",
+      "titleZh": "小鹏IRON商用路径：先在自有门店试用，再面向外部客户",
+      "brief": {
+        "lead": "IT之家转述蓝鲸对小鹏财报电话会的报道：何小鹏计划让首批量产机器人于2027年一季度进入部分门店试用，二季度面向外部商业客户正式发布。看点是试用场景、交付与销售能力被放在同一条路径上。",
+        "points": [
+          "报道援引管理层，把硬件本体、规模商业化、生产制造、销售和高质量数据并列为关键能力。",
+          "门店试用与外部发布均为未来计划，不能写成已经规模交付或已有客户效果。"
+        ]
+      },
+      "stages": [
+        "制造与交付",
+        "渠道与销售",
+        "经营与组织"
+      ],
+      "domestic": true,
+      "companies": [
+        "小鹏"
+      ],
+      "publishedAt": "2026-11-16T13:27:42+00:00",
+      "kind": "新闻",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 17,
+          "增量信息": 17,
+          "证据质量": 16,
+          "机制清晰": 17,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐条阅读正文核对原始时间、行动与限制；媒体转述及计划状态明确标注。"
+        }
+      },
+      "boundary": "二手转述，未取得电话会原始逐字稿；未核实量产数量、客户合同、团队编制和实际商业结果。",
+      "meaning": "研究解释：门店可作为试用与反馈场景，需继续观察售前、交付、服务和数据采集怎样衔接。",
+      "question": "试点到外部交付的验收标准、服务职责与数据使用授权分别由谁负责？",
+      "eventReason": "同一主体和具体行动归为同一事件；转述与补读不作为新进展。",
+      "facts": [
+        {
+          "claim": "媒体报道管理层提出先在部分门店试用的计划。",
+          "sourceUrl": "https://www.ithome.com/1/027/964.htm",
+          "locator": "来源正文对应段落"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.ithome.com/1/027/964.htm",
+          "name": "IT之家",
+          "publishedAt": "2026-11-16T13:27:42+00:00",
+          "publisherGroup": "IT之家",
+          "role": "media",
+          "textHash": "19ad921d21cfb44dfbe533f24f0e9cae222ae1f09dcd4b6b68dc701890e2ec10",
+          "readAt": "2026-11-17T09:00:12.958091+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 84,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-17T09:03:33.738283+00:00",
+      "sourceDate": "2026-11-16T13:27:42+00:00",
+      "date": "2026-11-16T13:27:42+00:00",
+      "title": "小鹏IRON商用路径：先在自有门店试用，再面向外部客户",
+      "summary": "IT之家转述蓝鲸对小鹏财报电话会的报道：何小鹏计划让首批量产机器人于2027年一季度进入部分门店试用，二季度面向外部商业客户正式发布。看点是试用场景、交付与销售能力被放在同一条路径上。"
+    },
+    {
+      "id": "skhynix-trinity-supplier-20261116",
+      "eventId": "skhynix-trinity-supplier-20261116",
+      "developmentId": "initial",
+      "titleZh": "SK海力士供应商计划：把研发预付、测试与量产连接起来",
+      "originalTitle": "SK Hynix to spend $1 billion over five years to support chip suppliers",
+      "brief": {
+        "lead": "路透社11月16日报道，SK海力士计划用五年投入1.4万亿韩元支持本土供应商，并参与建设接近商业产线条件的共享测试设施。核心机制是提前分担研发成本、提供验证条件，再衔接量产与销售。",
+        "points": [
+          "Trinity Fab计划2027年5月启用，由企业和政府共同出资；目前仍是建设及支持计划。",
+          "报道说初期研发成本最高可预付50%，测试设施由独立非营利基金会运营，以保护知识产权和敏感信息。"
+        ]
+      },
+      "stages": [
+        "供应链与采购",
+        "制造与交付",
+        "经营与组织"
+      ],
+      "domestic": false,
+      "companies": [
+        "SK海力士"
+      ],
+      "publishedAt": "2026-11-16T08:16:00+08:00",
+      "kind": "新闻",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 17,
+          "增量信息": 17,
+          "证据质量": 20,
+          "机制清晰": 17,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐条阅读正文核对原始时间、行动与限制；媒体转述及计划状态明确标注。"
+        }
+      },
+      "boundary": "媒体转述企业计划，未独立验证执行、资金实际支出或周期改善；晶圆产业的做法不能直接套用学习硬件供应链。",
+      "meaning": "研究解释：这里同时处理资金、验证设施和供应商信任三个协作条件，不能只理解为采购压价。",
+      "question": "可否核对后续开放条件、数据隔离规则和供应商验证周期？",
+      "eventReason": "同一主体和具体行动归为同一事件；转述与补读不作为新进展。",
+      "facts": [
+        {
+          "claim": "路透社转述共享测试设施计划交由独立非营利基金会运营，保护供应商敏感信息。",
+          "sourceUrl": "https://www.thestar.com.my/tech/tech-news/2026/11/16/sk-hynix-to-spend-1-billion-over-five-years-to-support-chip-suppliers",
+          "locator": "来源正文对应段落"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.thestar.com.my/tech/tech-news/2026/11/16/sk-hynix-to-spend-1-billion-over-five-years-to-support-chip-suppliers",
+          "name": "Reuters",
+          "publishedAt": "2026-11-16T08:16:00+08:00",
+          "publisherGroup": "Reuters",
+          "role": "media",
+          "textHash": "4a9cc47676d64ce0e5eace5a5d45a69bbaa4e2d695cc17e01acfdeddb07566bc",
+          "readAt": "2026-11-17T09:01:08.917436+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 88,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-17T09:03:33.737839+00:00",
+      "sourceDate": "2026-11-16T08:16:00+08:00",
+      "date": "2026-11-16T08:16:00+08:00",
+      "title": "SK海力士供应商计划：把研发预付、测试与量产连接起来",
+      "summary": "路透社11月16日报道，SK海力士计划用五年投入1.4万亿韩元支持本土供应商，并参与建设接近商业产线条件的共享测试设施。核心机制是提前分担研发成本、提供验证条件，再衔接量产与销售。"
     },
     {
       "id": "rss-4ecdc03c57ee0814",
@@ -416,6 +624,77 @@
       "date": "2026-11-11T07:08:40+00:00",
       "title": "拓竹 Bambu Circle：把维修、零售和培训纳入本地伙伴计划",
       "summary": "拓竹宣布 Bambu Circle 本地授权伙伴计划，将先在荷兰试点，由公司负责协调、培训和认证，伙伴可提供维修、小型零售、打印及培训服务。对智能硬件研究，这条新闻的重点是渠道与售后如何连接；欧洲覆盖和伙伴收益仍属于待验证目标。"
+    },
+    {
+      "id": "ha-aux2-product-tradeoffs-20261111",
+      "eventId": "ha-aux2-product-tradeoffs-20261111",
+      "developmentId": "initial",
+      "titleZh": "深读AUX-2：接口取舍、兼容验证与旧设备生命周期",
+      "originalTitle": "No device left behind: Home Assistant Connect AUX-2",
+      "brief": {
+        "lead": "Nabu Casa在11月11日的产品说明中解释，AUX-2从给无线适配器提供PoE的方案，逐步增加串口与音频等能力。文章不仅列参数，还交代成本约束、停止加功能的取舍，以及测试成熟度对宣传范围的影响。",
+        "points": [
+          "作者说明PoE占据较多硬件成本，因此增添接口的边际成本相对低；多次迭代后必须收住范围才能发货。",
+          "Z-Wave已测试数月；Zigbee仍需更多验证，Thread因网络时延问题尚未实现。不要把可尝试能力当成成熟支持。"
+        ]
+      },
+      "stages": [
+        "需求与规划",
+        "研发与系统",
+        "质量与合规",
+        "服务与生命周期"
+      ],
+      "domestic": false,
+      "companies": [
+        "Nabu Casa"
+      ],
+      "publishedAt": "2026-11-11T00:00:00+00:00",
+      "kind": "历史资料",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 17,
+          "增量信息": 17,
+          "证据质量": 19,
+          "机制清晰": 17,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐条阅读正文核对原始时间、行动与限制；媒体转述及计划状态明确标注。"
+        }
+      },
+      "boundary": "11月11日原始产品说明，作为今天补读的历史实践；企业自述不证明成本优势、可靠性或可持续效果已经独立验证。",
+      "meaning": "研究解释：产品需求边界、硬件成本与兼容测试共同限制发布范围，公开说明未成熟能力有助于减少交付误解。",
+      "question": "学习硬件的新功能能否同样区分已验证、试验中和未支持，并解释对应机型条件？",
+      "eventReason": "同一主体和具体行动归为同一事件；转述与补读不作为新进展。",
+      "facts": [
+        {
+          "claim": "产品经理解释必须停止继续增加接口，否则产品难以发货。",
+          "sourceUrl": "https://www.home-assistant.io/blog/2026/11/11/no-device-left-behind-home-assistant-connect-aux-2/",
+          "locator": "来源正文对应段落"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.home-assistant.io/blog/2026/11/11/no-device-left-behind-home-assistant-connect-aux-2/",
+          "name": "Nabu Casa",
+          "publishedAt": "2026-11-11T00:00:00+00:00",
+          "publisherGroup": "Nabu Casa",
+          "role": "official",
+          "textHash": "19e4f1c0897c5e85ddcb51c56582b61cb40c5df0eaa47b413af0d848d18dfdd3",
+          "readAt": "2026-11-17T09:01:07.736473+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 87,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-17T09:03:33.739369+00:00",
+      "sourceDate": "2026-11-11T00:00:00+00:00",
+      "date": "2026-11-11T00:00:00+00:00",
+      "title": "深读AUX-2：接口取舍、兼容验证与旧设备生命周期",
+      "summary": "Nabu Casa在11月11日的产品说明中解释，AUX-2从给无线适配器提供PoE的方案，逐步增加串口与音频等能力。文章不仅列参数，还交代成本约束、停止加功能的取舍，以及测试成熟度对宣传范围的影响。"
     },
     {
       "id": "rss-6e07690c27eb09da",
@@ -6589,6 +6868,48 @@
       "selected": false
     },
     {
+      "id": "caam-payment-review-20261116",
+      "representativeId": "caam-payment-review-20261116",
+      "itemIds": [
+        "caam-payment-review-20261116"
+      ],
+      "publisherGroups": [
+        "经济观察报"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "xpeng-iron-commercial-roadmap-20261116",
+      "representativeId": "xpeng-iron-commercial-roadmap-20261116",
+      "itemIds": [
+        "xpeng-iron-commercial-roadmap-20261116"
+      ],
+      "publisherGroups": [
+        "IT之家"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "skhynix-trinity-supplier-20261116",
+      "representativeId": "skhynix-trinity-supplier-20261116",
+      "itemIds": [
+        "skhynix-trinity-supplier-20261116"
+      ],
+      "publisherGroups": [
+        "Reuters"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
       "id": "rss-4ecdc03c57ee0814",
       "representativeId": "rss-4ecdc03c57ee0814",
       "itemIds": [
@@ -6641,6 +6962,20 @@
       ],
       "developmentIds": [
         "announcement-20261111"
+      ],
+      "selected": true
+    },
+    {
+      "id": "ha-aux2-product-tradeoffs-20261111",
+      "representativeId": "ha-aux2-product-tradeoffs-20261111",
+      "itemIds": [
+        "ha-aux2-product-tradeoffs-20261111"
+      ],
+      "publisherGroups": [
+        "Nabu Casa"
+      ],
+      "developmentIds": [
+        "initial"
       ],
       "selected": true
     },
@@ -14328,6 +14663,641 @@
       "completedAt": "2026-11-17T00:45:51.283338+00:00",
       "reviewedCount": 3,
       "selectedCount": 2
+    },
+    {
+      "coverage": "更正晨间研究不足：本轮实际阅读7篇近期新闻报道（3个发布方，转载归为同源），另读AUX-2历史产品原文、讯飞历史战报和雷鸟短讯。形成3条近期动态与1篇历史深读；复用今天早晨已经实际完成的三家核心竞品岗位记录，不重复宣称新岗位或重新检查。保留来源失败与争议口径。",
+      "revisionReason": "用户指出连续空日报后补做正文研究；原版仅1篇新闻审读且被旧完成条件放行，本次补充3条有证据的近期动态并保留晨间版本。",
+      "sourceChecks": [
+        {
+          "company": "作业帮",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/e6056b1d-580b-442d-a27f-9ab9f12cd4b1",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:42:44.120Z",
+          "note": "穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队；同ID职责复核未见实质变化。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
+          "purpose": "recruitment",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "服务与生命周期"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:42:44.135Z",
+          "note": "消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机；同ID职责复核未见实质变化。"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:42:44.150Z",
+          "note": "原文明确小猿产品及学习机、学练机业务，未划分具体型号；同ID职责复核未见实质变化。"
+        },
+        {
+          "company": null,
+          "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+          "purpose": "practice",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "实际阅读正文或已标明的PDF节选；未核实的实施与结果保留未知。"
+        },
+        {
+          "company": null,
+          "url": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:43:44.109079+00:00",
+          "note": "实际阅读正文或已标明的PDF节选；未核实的实施与结果保留未知。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/028/037.htm",
+          "purpose": "news",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:41:51.217104+00:00",
+          "note": "实际阅读正文或已标明的PDF节选；未核实的实施与结果保留未知。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:43:13.926Z",
+          "note": "实际阅读正文或已标明的PDF节选；未核实的实施与结果保留未知。"
+        },
+        {
+          "company": null,
+          "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+          "purpose": "practice",
+          "stages": [
+            "制造与交付",
+            "质量与合规"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "本地直接下载PDF超时；公开网页工具已读取指定页文本，未读完整文件。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/856.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/023/622.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/992.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/963.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/574.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/292.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/288.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/026/993.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/026/757.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/026/385.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/026/367.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/025/331.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/025/152.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/025/146.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/024/828.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/024/755.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/024/535.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/024/516.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/023/995.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/023/768.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/023/767.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/023/546.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/768.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/004.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/028/022.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/964.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/954.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/949.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/815.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://ireader.jd.com/",
+          "purpose": "practice",
+          "stages": [
+            "渠道与销售"
+          ],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "搜索仍只有店铺型号索引，未据此建立掌阅产品档案。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/856.htm",
+          "company": null,
+          "name": "IT之家",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "经营与组织"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:00:12.961520+00:00",
+          "readId": "repair-payment",
+          "publishedAt": "2026-11-16",
+          "publisherGroup": "IT之家",
+          "note": "两家媒体支付工具口径不同；采用经济观察报核查机制，具体支付口径暂缓。",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "两家媒体支付工具口径不同；采用经济观察报核查机制，具体支付口径暂缓。",
+            "anchor": "采取“车企定期报送 + 样本供应商抽查”相结合的方式进行"
+          }
+        },
+        {
+          "url": "https://www.ithome.com/1/027/768.htm",
+          "company": null,
+          "name": "Reuters",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "制造与交付"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:00:12.954442+00:00",
+          "readId": "repair-sk",
+          "publishedAt": "2026-11-16",
+          "publisherGroup": "Reuters",
+          "note": "这是路透社转载链，转读路透社署名正文，不作为独立发布方或第二事件。",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "这是路透社转载链，转读路透社署名正文，不作为独立发布方或第二事件。",
+            "anchor": "供应商扶持计划涵盖研发、测试、量产和销售四个阶段"
+          }
+        },
+        {
+          "url": "https://www.ithome.com/1/027/963.htm",
+          "company": null,
+          "name": "IT之家",
+          "purpose": "news",
+          "stages": [
+            "研发与系统",
+            "经营与组织"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:00:12.964710+00:00",
+          "readId": "repair-huawei",
+          "publishedAt": "2026-11-16",
+          "publisherGroup": "IT之家",
+          "note": "正文说明原文已在11月11日分享，是历史组织叙述；不把11月16日转述当成新组织变化。",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "正文说明原文已在11月11日分享，是历史组织叙述；不把11月16日转述当成新组织变化。",
+            "anchor": "华为官方 X 账号 11 月 11 日分享了"
+          }
+        },
+        {
+          "url": "https://www.ithome.com/1/027/964.htm",
+          "company": null,
+          "name": "IT之家",
+          "purpose": "news",
+          "stages": [
+            "制造与交付",
+            "渠道与销售",
+            "经营与组织"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:00:12.958091+00:00",
+          "readId": "repair-xpeng",
+          "publishedAt": "2026-11-16",
+          "publisherGroup": "IT之家",
+          "note": "有具体试用场景与商业发布节点；仅入选为媒体转述的未来计划，非量产结果。",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "有具体试用场景与商业发布节点；仅入选为媒体转述的未来计划，非量产结果。",
+            "anchor": "明年一季度，量产的首批机器人将进入小鹏的部分门店开启试用"
+          }
+        },
+        {
+          "url": "https://www.ithome.com/1/027/949.htm",
+          "company": null,
+          "name": "IT之家",
+          "purpose": "news",
+          "stages": [
+            "需求与规划",
+            "研发与系统"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:00:13.069050+00:00",
+          "readId": "repair-oppo",
+          "publishedAt": "2026-11-16",
+          "publisherGroup": "IT之家",
+          "note": "已读发布内容，主要为参数与营销功能；缺少独立效果及组织机制，本轮优先更具链路价值的内容。",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "已读发布内容，主要为参数与营销功能；缺少独立效果及组织机制，本轮优先更具链路价值的内容。",
+            "anchor": "OPPO Watch 5 支持 13 项睡眠监测"
+          }
+        },
+        {
+          "url": "https://www.eeo.com.cn/2026/1116/1094497.shtml",
+          "company": null,
+          "name": "经济观察报",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "经营与组织"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:01:02.470741+00:00",
+          "readId": "repair-eeo",
+          "publishedAt": "2026-11-16",
+          "publisherGroup": "经济观察报",
+          "note": "核对采购到支付的证据链，保留与其他报道支付口径冲突；不引用争议比例。",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "核对采购到支付的证据链，保留与其他报道支付口径冲突；不引用争议比例。",
+            "anchor": "合同、验收单、对账记录、发票、支付凭证"
+          }
+        },
+        {
+          "url": "https://www.thestar.com.my/tech/tech-news/2026/11/16/sk-hynix-to-spend-1-billion-over-five-years-to-support-chip-suppliers",
+          "company": null,
+          "name": "Reuters",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "经营与组织"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:01:08.917436+00:00",
+          "readId": "repair-reuters",
+          "publishedAt": "2026-11-16",
+          "publisherGroup": "Reuters",
+          "note": "直接阅读署名路透正文，计划、时间与机制明确；保留实施结果未知。",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "直接阅读署名路透正文，计划、时间与机制明确；保留实施结果未知。",
+            "anchor": "protect intellectual property and commercially sensitive information"
+          }
+        },
+        {
+          "url": "https://www.home-assistant.io/blog/2026/11/11/no-device-left-behind-home-assistant-connect-aux-2/",
+          "company": null,
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "渠道与销售"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:01:07.736473+00:00",
+          "note": "完整阅读11月11日原始产品说明，作为历史深读，不回填近期新闻。"
+        },
+        {
+          "url": "https://www.ebrun.com/ebrungo/zb/719981.shtml",
+          "company": null,
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "渠道与销售"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:01:02.717208+00:00",
+          "note": "阅读11月12日战报；为自动化快讯且缺少统计口径，不能当作独立份额证据或今天的新事件。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/288.htm",
+          "company": null,
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "渠道与销售"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:00:13.084293+00:00",
+          "note": "有效正文较短，内容为营销活动；未确认资金实际投入，暂不精选。"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/16/aaeon-boxer-8741ai-industrial-edge-ai-box-pc-nvidia-jetson-thor-t5000-with-dual-10gbe-and-four-5gbe-lan",
+          "company": null,
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-17T09:03:33.460861+00:00",
+          "note": "直接读取HTTP403；AUX-2已改读官方11月11日原文，不能按16日转载刷新事件日期。"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/16/69-home-assistant-connect-aux-2-offers-poe-audio-streaming-rs-232-control-bluetooth-proxy",
+          "company": null,
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-17T09:03:33.460861+00:00",
+          "note": "直接读取HTTP403；AUX-2已改读官方11月11日原文，不能按16日转载刷新事件日期。"
+        }
+      ],
+      "knownGaps": [
+        "协会通知、财报电话会原始正文未取得；具体支付口径存在报道差异，未下结论。",
+        "核心学习硬件本轮未确认72小时内新事件；讯飞11月12日战报不能当今日新闻。",
+        "知识节点完整复核仍有历史欠账，本次修复不冒充全站维护完成。"
+      ],
+      "failedSources": [
+        "CNX RSS超时后HTTP403，保留历史。",
+        "申报回复本地下载超时，已通过公开PDF文本读取指定页节选。",
+        "本地直接下载PDF超时；公开网页工具已读取指定页文本，未读完整文件。",
+        "直接读取HTTP403；AUX-2已改读官方11月11日原文，不能按16日转载刷新事件日期。"
+      ],
+      "coverageCheck": {
+        "newsResearch": {
+          "passed": true,
+          "bodyCount": 7,
+          "publisherGroups": [
+            "IT之家",
+            "Reuters",
+            "经济观察报"
+          ],
+          "requiredBodies": 6,
+          "requiredPublisherGroups": 3
+        },
+        "passed": true,
+        "companies": [
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "gaps": [],
+        "usableSources": 17
+      },
+      "successfulScan": true,
+      "completedAt": "2026-11-17T09:03:33.744763+00:00",
+      "reviewedCount": 4,
+      "selectedCount": 4
     }
   ]
 }
