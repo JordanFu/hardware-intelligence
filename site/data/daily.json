@@ -3,16 +3,21 @@
     {
       "id": "daily-2026-11-17",
       "date": "2026-11-17",
-      "generatedAt": "2026-11-17T09:03:33.745044+00:00",
+      "generatedAt": "2026-11-17T09:15:43.560664+00:00",
       "state": "partial",
       "bootstrap": false,
       "windowNote": "优先最近 72 小时的新事件；按北京时间出刊。7 期内同一进展不重复。",
       "itemIds": [
+        "dram-antitrust-dismissal-20261114",
         "caam-payment-review-20261116",
         "xpeng-iron-commercial-roadmap-20261116",
         "skhynix-trinity-supplier-20261116"
       ],
       "developmentKeys": [
+        [
+          "dram-antitrust-26-cv-06345",
+          "motion-denied-20261114"
+        ],
         [
           "caam-payment-review-20261116",
           "initial"
@@ -26,14 +31,15 @@
           "initial"
         ]
       ],
-      "reviewedCount": 4,
+      "reviewedCount": 1,
       "failedSources": [
         "CNX RSS超时后HTTP403，保留历史。",
         "申报回复本地下载超时，已通过公开PDF文本读取指定页节选。",
         "本地直接下载PDF超时；公开网页工具已读取指定页文本，未读完整文件。",
-        "直接读取HTTP403；AUX-2已改读官方11月11日原文，不能按16日转载刷新事件日期。"
+        "直接读取HTTP403；AUX-2已改读官方11月11日原文，不能按16日转载刷新事件日期。",
+        "本地curl读取Justia返回HTTP403，改用公开网页工具读取相关页。"
       ],
-      "coverage": "更正晨间研究不足：本轮实际阅读7篇近期新闻报道（3个发布方，转载归为同源），另读AUX-2历史产品原文、讯飞历史战报和雷鸟短讯。形成3条近期动态与1篇历史深读；复用今天早晨已经实际完成的三家核心竞品岗位记录，不重复宣称新岗位或重新检查。保留来源失败与争议口径。",
+      "coverage": "延续今日已完成的7篇新闻正文与核心竞品检查原时间戳，补读Tom's Hardware内存诉讼报道，并核对法院公开镜像第1、2、20页。累计8篇近期报道、4个发布方；原始法院节选单独列明，不充完整正文计数。补收1条全行业重大事件，保留此前3条动态。",
       "knownGaps": [
         "协会通知、财报电话会原始正文未取得；具体支付口径存在报道差异，未下结论。",
         "核心学习硬件本轮未确认72小时内新事件；讯飞11月12日战报不能当今日新闻。",
@@ -42,10 +48,11 @@
       "coverageCheck": {
         "newsResearch": {
           "passed": true,
-          "bodyCount": 7,
+          "bodyCount": 8,
           "publisherGroups": [
             "IT之家",
             "Reuters",
+            "Tom's Hardware",
             "经济观察报"
           ],
           "requiredBodies": 6,
@@ -72,7 +79,7 @@
           "科大讯飞"
         ],
         "gaps": [],
-        "usableSources": 17
+        "usableSources": 19
       },
       "revisions": [
         {
@@ -123,6 +130,85 @@
               ],
               "gaps": [],
               "usableSources": 37
+            }
+          }
+        },
+        {
+          "reason": "用户指出美国DRAM反垄断案漏报；补读报道和法院裁定相关页，新增全行业重要事件并置于清单首位，保留此前版本。",
+          "replacedAt": "2026-11-17T09:15:43.560664+00:00",
+          "edition": {
+            "id": "daily-2026-11-17",
+            "date": "2026-11-17",
+            "generatedAt": "2026-11-17T09:03:33.745044+00:00",
+            "state": "partial",
+            "bootstrap": false,
+            "windowNote": "优先最近 72 小时的新事件；按北京时间出刊。7 期内同一进展不重复。",
+            "itemIds": [
+              "caam-payment-review-20261116",
+              "xpeng-iron-commercial-roadmap-20261116",
+              "skhynix-trinity-supplier-20261116"
+            ],
+            "developmentKeys": [
+              [
+                "caam-payment-review-20261116",
+                "initial"
+              ],
+              [
+                "xpeng-iron-commercial-roadmap-20261116",
+                "initial"
+              ],
+              [
+                "skhynix-trinity-supplier-20261116",
+                "initial"
+              ]
+            ],
+            "reviewedCount": 4,
+            "failedSources": [
+              "CNX RSS超时后HTTP403，保留历史。",
+              "申报回复本地下载超时，已通过公开PDF文本读取指定页节选。",
+              "本地直接下载PDF超时；公开网页工具已读取指定页文本，未读完整文件。",
+              "直接读取HTTP403；AUX-2已改读官方11月11日原文，不能按16日转载刷新事件日期。"
+            ],
+            "coverage": "更正晨间研究不足：本轮实际阅读7篇近期新闻报道（3个发布方，转载归为同源），另读AUX-2历史产品原文、讯飞历史战报和雷鸟短讯。形成3条近期动态与1篇历史深读；复用今天早晨已经实际完成的三家核心竞品岗位记录，不重复宣称新岗位或重新检查。保留来源失败与争议口径。",
+            "knownGaps": [
+              "协会通知、财报电话会原始正文未取得；具体支付口径存在报道差异，未下结论。",
+              "核心学习硬件本轮未确认72小时内新事件；讯飞11月12日战报不能当今日新闻。",
+              "知识节点完整复核仍有历史欠账，本次修复不冒充全站维护完成。"
+            ],
+            "coverageCheck": {
+              "newsResearch": {
+                "passed": true,
+                "bodyCount": 7,
+                "publisherGroups": [
+                  "IT之家",
+                  "Reuters",
+                  "经济观察报"
+                ],
+                "requiredBodies": 6,
+                "requiredPublisherGroups": 3
+              },
+              "passed": true,
+              "companies": [
+                "作业帮",
+                "猿辅导（小猿）",
+                "科大讯飞"
+              ],
+              "stages": [
+                "供应链与采购",
+                "制造与交付",
+                "服务与生命周期",
+                "渠道与销售",
+                "经营与组织",
+                "质量与合规",
+                "需求与规划"
+              ],
+              "recruitmentCompanies": [
+                "作业帮",
+                "猿辅导（小猿）",
+                "科大讯飞"
+              ],
+              "gaps": [],
+              "usableSources": 17
             }
           }
         }

@@ -32,7 +32,9 @@ def normalize(text):return re.sub(r'\s+',' ',text).strip().lower()
 def priority(item):
     title=item.get('title','').lower();domestic=any(any(a.lower() in title for a in c['aliases']) for c in industry()['companies'])
     chain=bool(re.search(r'供应|制造|质量|召回|售后|渠道|团队|组织|量产|supplier|quality|recall|manufactur|service notice',title))
-    return (domestic,chain,item['date'])
+    upstream=bool(re.search(r'dram|ddr[3-6]|hbm|nand|semiconductor|chipmaker|内存|存储|供应链',title))
+    disruption=bool(re.search(r'price.fix|antitrust|lawsuit|shortage|export.control|sanction|capacity|反垄断|诉讼|起诉|短缺|涨价|断供|制裁|出口管制|产能',title))
+    return (upstream and disruption,domestic,chain,item['date'])
 
 def candidate_queue(items,known,clock=None,limit=30):
     """Recent candidates first; round-robin publishers so one feed cannot monopolize review."""
@@ -120,7 +122,10 @@ def validate_entry(entry,reads):
     if entry.get('educationCategories') is not None:
         from education import CATEGORIES
         if not isinstance(entry['educationCategories'],list) or not entry['educationCategories'] or not set(entry['educationCategories'])<=CATEGORIES:raise ValueError('Unknown education category')
-    allowed={'educationCategories','id','eventId','developmentId','titleZh','originalTitle','brief','stages','domestic','companies','selection','boundary','meaning','question','eventReason','publishedAt','kind','category','organization','practices','newDevelopment','developmentReason'}
+    if entry.get('impactLevel') is not None:
+        if entry['impactLevel']!='industry-wide':raise ValueError('Invalid impact level')
+        valid_text(entry.get('impactReason'),'industry impact reasoning',20,500)
+    allowed={'impactLevel','impactReason','educationCategories','id','eventId','developmentId','titleZh','originalTitle','brief','stages','domestic','companies','selection','boundary','meaning','question','eventReason','publishedAt','kind','category','organization','practices','newDevelopment','developmentReason'}
     if entry.get('newDevelopment'):valid_text(entry.get('developmentReason'),'new development evidence',20)
     result={k:v for k,v in entry.items() if k in allowed}
     result['facts']=[{'claim':f['claim'],'sourceUrl':reads[f['readId']]['url'],'locator':f['locator']} for f in facts]
@@ -166,7 +171,7 @@ def make_digest(items,events,previous,run,clock=None):
         # A repeated event enters again only when its documented first-party action changes.
         if any(eid==ev['id'] for eid,_ in seen) and not (i.get('newDevelopment') and i['sources'][0]['role']=='official' and i.get('developmentReason')):continue
         candidates.append(i)
-    candidates.sort(key=lambda i:(not i['domestic'],-i['score'],-timestamp(i['publishedAt']).timestamp()),reverse=False)
+    candidates.sort(key=lambda i:(i.get('impactLevel')!='industry-wide',not i['domestic'],-i['score'],-timestamp(i['publishedAt']).timestamp()),reverse=False)
     slots=[];publisher_counts={}
     for i in candidates:
         publisher=i['sources'][0]['publisherGroup']

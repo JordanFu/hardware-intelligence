@@ -19,6 +19,13 @@ class CollectionTests(unittest.TestCase):
   rows=[('Robot release','https://example.com/a','Thu, 05 Nov 2026 09:00:00 GMT'),('Robot future','https://example.com/future','Fri, 06 Nov 2026 09:00:00 GMT'),('Robot no date','https://example.com/nodate',''),('Robot old','https://example.com/old','Tue, 01 Jan 2019 09:00:00 GMT'),('Football results','https://example.com/ball','Thu, 05 Nov 2026 09:00:00 GMT')]
   data,total,rejected=c.parse_feed(self.feed(rows),self.source,self.now)
   self.assertEqual(total,5);self.assertEqual(len(data),1);self.assertEqual(rejected,4);self.assertEqual(data[0]['status'],'待核验')
+ def test_memory_supply_and_antitrust_are_discovered(self):
+  titles=['Judge denies motion to dismiss DRAM price-fixing lawsuit against Micron, Samsung and SK hynix','三星、SK海力士、美光遭内存反垄断诉讼','LPDDR5 supply shortage raises hardware costs','NAND capacity expansion delayed']
+  rows=[(t,'https://example.com/'+str(i),'Thu, 05 Nov 2026 09:00:00 GMT') for i,t in enumerate(titles)]
+  found,_,_=c.parse_feed(self.feed(rows),self.source,self.now)
+  self.assertEqual(len(found),4)
+  self.assertTrue(all(x['status']=='待核验' for x in found))
+  self.assertIsNone(c.category('Python memory leak debugging guide','test'))
  def test_canonical_preserves_article_query(self):
   self.assertEqual(c.canonical('https://EXAMPLE.com/news/?id=1&utm_source=x#top'),'https://example.com/news?id=1')
   with self.assertRaises(ValueError):c.canonical('javascript:alert(1)')

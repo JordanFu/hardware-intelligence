@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-17T09:06:24.028894+00:00",
-  "lastSuccessfulAt": "2026-11-17T09:06:24.028894+00:00",
+  "checkedAt": "2026-11-17T09:15:43.661305+00:00",
+  "lastSuccessfulAt": "2026-11-17T09:15:43.661305+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-17T09:06:24.028894+00:00",
-      "lastSuccessAt": "2026-11-17T09:06:24.028894+00:00",
+      "checkedAt": "2026-11-17T09:15:43.661305+00:00",
+      "lastSuccessAt": "2026-11-17T09:15:43.661305+00:00",
       "received": 18,
       "matched": 1,
       "excluded": 17,
@@ -15,18 +15,18 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-17T09:06:24.028894+00:00",
-      "lastSuccessAt": "2026-11-17T09:06:24.028894+00:00",
+      "checkedAt": "2026-11-17T09:15:43.661305+00:00",
+      "lastSuccessAt": "2026-11-17T09:15:43.661305+00:00",
       "received": 50,
-      "matched": 2,
-      "excluded": 48,
+      "matched": 4,
+      "excluded": 46,
       "error": null
     },
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-17T09:06:24.028894+00:00",
-      "lastSuccessAt": "2026-11-17T09:06:24.028894+00:00",
+      "checkedAt": "2026-11-17T09:15:43.661305+00:00",
+      "lastSuccessAt": "2026-11-17T09:15:43.661305+00:00",
       "received": 10,
       "matched": 0,
       "excluded": 10,
@@ -35,8 +35,8 @@
     {
       "id": "bambu",
       "state": "ok",
-      "checkedAt": "2026-11-17T09:06:24.028894+00:00",
-      "lastSuccessAt": "2026-11-17T09:06:24.028894+00:00",
+      "checkedAt": "2026-11-17T09:15:43.661305+00:00",
+      "lastSuccessAt": "2026-11-17T09:15:43.661305+00:00",
       "received": 15,
       "matched": 15,
       "excluded": 0,
@@ -44,26 +44,55 @@
     },
     {
       "id": "cnx",
-      "state": "ok",
-      "checkedAt": "2026-11-17T09:06:24.028894+00:00",
-      "lastSuccessAt": "2026-11-17T09:06:24.028894+00:00",
-      "received": 32,
-      "matched": 8,
-      "excluded": 24,
-      "error": null
+      "state": "error",
+      "checkedAt": "2026-11-17T09:15:43.661305+00:00",
+      "error": "curl: (56) The requested URL returned error: 403",
+      "lastSuccessAt": "2026-11-17T09:06:24.028894+00:00"
     },
     {
       "id": "ithome",
       "state": "ok",
-      "checkedAt": "2026-11-17T09:06:24.028894+00:00",
-      "lastSuccessAt": "2026-11-17T09:06:24.028894+00:00",
+      "checkedAt": "2026-11-17T09:15:43.661305+00:00",
+      "lastSuccessAt": "2026-11-17T09:15:43.661305+00:00",
       "received": 60,
-      "matched": 5,
-      "excluded": 55,
+      "matched": 8,
+      "excluded": 52,
+      "error": null
+    },
+    {
+      "id": "tomshardware",
+      "state": "ok",
+      "checkedAt": "2026-11-17T09:15:43.661305+00:00",
+      "lastSuccessAt": "2026-11-17T09:15:43.661305+00:00",
+      "received": 50,
+      "matched": 6,
+      "excluded": 44,
+      "error": null
+    },
+    {
+      "id": "trendforce",
+      "state": "ok",
+      "checkedAt": "2026-11-17T09:15:43.661305+00:00",
+      "lastSuccessAt": "2026-11-17T09:15:43.661305+00:00",
+      "received": 20,
+      "matched": 0,
+      "excluded": 20,
       "error": null
     }
   ],
   "items": [
+    {
+      "id": "rss-837bc0fbc35358a8",
+      "title": "传三星电子确定内存未来发展方向：HBM5 使用 D0a DRAM Die",
+      "url": "https://www.ithome.com/1/028/418.htm",
+      "date": "2026-11-17T09:03:56+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-17T09:15:43.661305+00:00"
+    },
     {
       "id": "rss-436067b43cda5aed",
       "title": "理想汽车 CEO 李想：会逐步开放马赫 M100 芯片的外供",
@@ -75,6 +104,18 @@
       "category": "端侧 AI 与芯片",
       "status": "待核验",
       "discoveredAt": "2026-11-17T09:06:24.028894+00:00"
+    },
+    {
+      "id": "rss-c0476af1332837e5",
+      "title": "消息称苹果破例与三星洽谈 DRAM 长期供货协议，已启动最后磋商",
+      "url": "https://www.ithome.com/1/028/325.htm",
+      "date": "2026-11-17T08:16:47+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-17T09:15:43.661305+00:00"
     },
     {
       "id": "rss-4f321c42f56d2fa3",
@@ -111,6 +152,18 @@
       "category": "机器人与无人机",
       "status": "待核验",
       "discoveredAt": "2026-11-17T07:54:51.858943+00:00"
+    },
+    {
+      "id": "rss-e1d065ff2c741137",
+      "title": "Marvell、Penguin 共推业界首款多机架光学 I/O 内存池，提供 HBM 级带宽",
+      "url": "https://www.ithome.com/1/028/261.htm",
+      "date": "2026-11-17T07:02:57+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-17T09:15:43.661305+00:00"
     },
     {
       "id": "rss-38e297648187baee",
@@ -267,6 +320,30 @@
       "category": "可穿戴与眼镜",
       "status": "待核验",
       "discoveredAt": "2026-11-16T20:28:41.194504+00:00"
+    },
+    {
+      "id": "rss-9dcc09a165c0d960",
+      "title": "Grab a beginner-friendly Anycubic 3D printer for under $300, back at its record-low price",
+      "url": "https://www.tomshardware.com/3d-printing/grab-a-beginner-friendly-anycubic-3d-printer-for-under-usd300-back-at-its-record-low-price-17-percent-discount-for-prime-subscribers-nets-you-a-4-5-star-multi-colored-filament-printer-with-auto-bed-leveling",
+      "date": "2026-11-16T12:00:00+00:00",
+      "sourceId": "tomshardware",
+      "source": "Tom's Hardware",
+      "tier": "媒体补充",
+      "category": "制造与创作",
+      "status": "待核验",
+      "discoveredAt": "2026-11-17T09:15:43.661305+00:00"
+    },
+    {
+      "id": "rss-5ab9ea2778eadbbe",
+      "title": "Grab a DDR5 gaming PC with a 10GB GPU for only $949",
+      "url": "https://www.tomshardware.com/desktops/gaming-pcs/grab-a-ddr5-gaming-pc-with-a-10gb-gpu-for-only-usd949-ibuypowers-slate-gaming-rig-features-an-intel-b570-graphics-card-and-16gb-of-ram",
+      "date": "2026-11-16T11:15:25+00:00",
+      "sourceId": "tomshardware",
+      "source": "Tom's Hardware",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-17T09:15:43.661305+00:00"
     },
     {
       "id": "rss-782547cb13d77c58",
@@ -435,6 +512,54 @@
       "category": "端侧 AI 与芯片",
       "status": "待核验",
       "discoveredAt": "2026-11-16T00:40:46.335221+00:00"
+    },
+    {
+      "id": "rss-6dcf7b8c2d8a6b27",
+      "title": "Judge denies motion to dismiss DRAM price-fixing lawsuit against Micron, Samsung, and SK hynix, finds evidence of DRAM collusion plausible after 500% price surge",
+      "url": "https://www.tomshardware.com/tech-industry/big-tech/judge-denies-motion-to-dismiss-dram-price-fixing-lawsuit-against-micron-samsung-and-sk-hynix-says-chipmakers-acted-like-hawks-flying-in-formation-finds-evidence-of-dram-collusion-plausible-after-500-percent-price-surge",
+      "date": "2026-11-15T15:09:50+00:00",
+      "sourceId": "tomshardware",
+      "source": "Tom's Hardware",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-17T09:15:43.661305+00:00"
+    },
+    {
+      "id": "rss-8ae272fae52129ff",
+      "title": "3D printing dev’s free tool unlocks curved printing along all three axes",
+      "url": "https://www.tomshardware.com/3d-printing/3d-printing-developer-creates-self-hostable-non-planar-printing-slicer-pancakeslicer-makes-non-planar-3d-printing-accessible-potentially-leading-to-rapid-community-development",
+      "date": "2026-11-15T15:00:00+00:00",
+      "sourceId": "tomshardware",
+      "source": "Tom's Hardware",
+      "tier": "媒体补充",
+      "category": "制造与创作",
+      "status": "待核验",
+      "discoveredAt": "2026-11-17T09:15:43.661305+00:00"
+    },
+    {
+      "id": "rss-b15e46707b05a47d",
+      "title": "Pentagon tests pack hunting with autonomous war robots",
+      "url": "https://www.tomshardware.com/tech-industry/drones/pentagon-tests-pack-hunting-with-autonomous-war-robots-darpa-experimented-with-four-drone-ground-vehicles-that-detected-tracked-and-engaged-simulated-threats",
+      "date": "2026-11-15T14:19:24+00:00",
+      "sourceId": "tomshardware",
+      "source": "Tom's Hardware",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-17T09:15:43.661305+00:00"
+    },
+    {
+      "id": "rss-d09f6eee8236c53a",
+      "title": "Modified Ender 3 becomes a $450 bioprinter for 3D printing engineered living materials",
+      "url": "https://www.tomshardware.com/3d-printing/university-of-rochester-researchers-made-a-3d-bioprinter-from-a-modified-ender-3-usd450-bioprinter-makes-engineered-living-material-research-accessible",
+      "date": "2026-11-15T13:00:00+00:00",
+      "sourceId": "tomshardware",
+      "source": "Tom's Hardware",
+      "tier": "媒体补充",
+      "category": "制造与创作",
+      "status": "待核验",
+      "discoveredAt": "2026-11-17T09:15:43.661305+00:00"
     },
     {
       "id": "rss-d3a910362105829c",
@@ -2271,6 +2396,30 @@
       "category": "制造与创作",
       "status": "待核验",
       "discoveredAt": "2026-11-05T10:09:34.748309+00:00"
+    },
+    {
+      "id": "rss-cfeb416b37cbfd9f",
+      "title": "Samsung and Mistral AI Announce Strategic Partnership for Intelligence-Driven Semiconductor Infrastructure",
+      "url": "https://news.samsung.com/global/samsung-and-mistral-ai-announce-strategic-partnership-for-intelligence-driven-semiconductor-infrastructure",
+      "date": "2026-09-09T01:00:00+00:00",
+      "sourceId": "samsung",
+      "source": "Samsung Newsroom",
+      "tier": "官方一手",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-17T09:15:43.661305+00:00"
+    },
+    {
+      "id": "rss-529511fd8ae19ed5",
+      "title": "Samsung Electronics and ASML Expand Strategic Collaboration for Next-Generation Semiconductor Manufacturing",
+      "url": "https://news.samsung.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing",
+      "date": "2026-09-08T15:03:00+00:00",
+      "sourceId": "samsung",
+      "source": "Samsung Newsroom",
+      "tier": "官方一手",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-17T09:15:43.661305+00:00"
     },
     {
       "id": "rss-4e1438b07dbaee4a",

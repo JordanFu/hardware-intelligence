@@ -50,6 +50,13 @@ class EditorialTests(unittest.TestCase):
   rows.extend([dict(id='other',title='Hardware',date='2026-11-05T10:00:00Z',sourceId='two',url='https://two.example/a'),dict(id='old',title='小米供应链',date='2026-10-01',sourceId='three',url='https://three.example/a')])
   result=e.candidate_queue(rows,set(),self.clock)
   self.assertEqual(result[1]['id'],'other');self.assertNotIn('old',[i['id'] for i in result])
+ def test_global_supply_shock_precedes_routine_domestic_news(self):
+  domestic=self.row('routine',event='routine',publisher='A');domestic['score']=98
+  major=self.row('dram',event='dram',publisher='Court');major.update(domestic=False,impactLevel='industry-wide',impactReason='Shared memory supply and procurement conditions affect many hardware manufacturers.')
+  self.assertEqual(self.digest([domestic,major])['itemIds'][0],'dram')
+  row=dict(id='dram',title='DRAM price-fixing lawsuit',date='2026-11-05T09:00:00Z',sourceId='one',url='https://one.example/dram')
+  local=dict(id='local',title='小米供应链新品',date='2026-11-05T10:00:00Z',sourceId='one',url='https://one.example/local')
+  self.assertEqual(e.candidate_queue([local,row],set(),self.clock)[0]['id'],'dram')
  def test_invalid_evidence_and_hold(self):
   text='A public company announced a service replacement program. '*6
   read=dict(url='https://example.com/a',text=text,bodyStatus='body',readAt=self.clock.isoformat())

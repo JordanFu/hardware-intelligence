@@ -278,5 +278,25 @@
     "type": "网页",
     "scope": "学习硬件 · 钉钉",
     "auto": false
+  },
+  {
+    "id": "tomshardware",
+    "name": "Tom's Hardware",
+    "url": "https://www.tomshardware.com/feeds.xml",
+    "home": "https://www.tomshardware.com/",
+    "tier": "媒体补充",
+    "type": "RSS",
+    "scope": "内存、半导体、上游供应与重大产业事件；诉讼回溯法院文件",
+    "auto": true
+  },
+  {
+    "id": "trendforce",
+    "name": "TrendForce News",
+    "url": "https://www.trendforce.com/news/feed/",
+    "home": "https://www.trendforce.com/news/",
+    "tier": "媒体补充",
+    "type": "RSS",
+    "scope": "存储供需、产能、价格与半导体产业链；转述需回溯原始发布方",
+    "auto": true
   }
 ]

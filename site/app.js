@@ -275,7 +275,7 @@ function nav() {
 }
 function newsRow(n, index = 0) {
   const rich=!!n.brief, rss=!!n.sourceId;
-  return `<article class="news-row"><span class="news-number">${String(index+1).padStart(2,'0')}</span><div><div class="meta"><span class="tag">${esc(n.stages?.join(' / ')||n.category)}</span><span>${rich?'AI 中文整理':rss?'待摘要 · 未读正文':esc(n.kind||'研究资料')}</span><time>${esc(n.date?'原文 '+date(n.date):'原文未标日期')}</time></div><button class="title-button" data-detail="${esc(n.id)}">${esc(n.title)}</button><p>${esc(n.summary||(rss?'尚未取得可核对正文，暂不生成核心内容。可打开原始来源阅读。':''))}</p><div class="row-bottom"><span>${esc(n.sources?n.sources.map(s=>s.name).join(' / '):n.source)}</span><button class="text-link" data-detail="${esc(n.id)}">${rich?'核心内容 · 原始证据':'来源与阅读边界'} ↗</button></div></div>${saveButton(n.id)}</article>`;
+  return `<article class="news-row"><span class="news-number">${String(index+1).padStart(2,'0')}</span><div><div class="meta">${n.impactLevel==='industry-wide'?'<span class="tag">全行业重要事件</span>':''}<span class="tag">${esc(n.stages?.join(' / ')||n.category)}</span><span>${rich?'AI 中文整理':rss?'待摘要 · 未读正文':esc(n.kind||'研究资料')}</span><time>${esc(n.date?'原文 '+date(n.date):'原文未标日期')}</time></div><button class="title-button" data-detail="${esc(n.id)}">${esc(n.title)}</button><p>${esc(n.summary||(rss?'尚未取得可核对正文，暂不生成核心内容。可打开原始来源阅读。':''))}</p><div class="row-bottom"><span>${esc(n.sources?n.sources.map(s=>s.name).join(' / '):n.source)}</span><button class="text-link" data-detail="${esc(n.id)}">${rich?'核心内容 · 原始证据':'来源与阅读边界'} ↗</button></div></div>${saveButton(n.id)}</article>`;
 }
 function freshness() {
   const hours =

@@ -21,7 +21,7 @@ RULES = [
  ('机器人与无人机', r'robot|humanoid|drone|isaac|gr00t|机器人|无人机|具身|机器狗'),
  ('智能家居', r'smart home|smartthings|\bmatter\b|homekit|home assistant|智能家居|扫地|智能门锁'),
  ('制造与创作', r'3d print|bambu|swaptek|makerworld|cnc|3d.?打印|拓竹|激光雕刻'),
- ('端侧 AI 与芯片', r'jetson|\bedge ai\b|embedded|microcontroller|\bfpga\b|\bsbc\b|\brisc-v\b|\bnpu\b|端侧|芯片|模组|开发板|传感器'),
+ ('端侧 AI 与芯片', r'\b(?:dram|sdram|lpddr\d*|ddr[3-6]|hbm\d*|nand|nor flash|semiconductor|chipmaker)\b|内存(?:行业|厂商|价格|涨价|降价|供给|供应|产能|反垄断|诉讼)|存储芯片|存储厂商|存储器|jetson|\bedge ai\b|embedded|microcontroller|\bfpga\b|\bsbc\b|\brisc-v\b|\bnpu\b|端侧|芯片|模组|开发板|传感器'),
 ]
 EXCLUDE = re.compile(r'black friday|coupon|discount|giveaway|抽奖|优惠券|限时直降', re.I)
 def canonical(url):

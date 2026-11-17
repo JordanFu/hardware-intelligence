@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastCompletedAt": "2026-11-17T09:03:33.744763+00:00",
+  "lastCompletedAt": "2026-11-17T09:15:43.560384+00:00",
   "method": "Codex 初筛评分 + 逐条证据复核；非两个独立模型评分",
   "items": [
     {
@@ -360,6 +360,100 @@
       "date": "2026-11-15T07:01:57+00:00",
       "title": "华为WATCH 5适配清单变化报道：先区分测试与正式支持",
       "summary": "IT之家11月15日报道华为WATCH 5暂从HarmonyOS 7适配列表移除，并转述11月11日官方Beta升级进展通报。本轮已读媒体正文，尚未直接核对最新官方清单与通报，因此保留待核验，不进入日报精选。"
+    },
+    {
+      "id": "dram-antitrust-dismissal-20261114",
+      "eventId": "dram-antitrust-26-cv-06345",
+      "developmentId": "motion-denied-20261114",
+      "titleZh": "美国DRAM反垄断案继续：法院拒绝三家内存厂商的驳回诉讼申请",
+      "originalTitle": "ORDER DENYING MOTION TO DISMISS — Case No. 26-cv-06345-NW",
+      "brief": {
+        "lead": "11月14日，美国加州北区联邦法院拒绝三星、SK海力士和美光要求驳回诉讼的动议。案件由17名消费者和小企业提出，争议涉及DRAM减产、向HBM转移及传统内存供给。这是允许诉讼继续的程序裁定，尚未认定合谋违法。",
+        "points": [
+          "原告指控协调限制供给；被告主张各自独立应对市场压力。双方解释仍需证据检验。",
+          "法院要求被告最迟12月7日答辩，案件管理会议定于2027年1月12日。",
+          "今天补收11月15日报道并回溯11月14日裁定，不把补收时间写成事件发生时间。"
+        ]
+      },
+      "stages": [
+        "供应链与采购",
+        "经营与组织"
+      ],
+      "domestic": false,
+      "companies": [
+        "三星",
+        "SK海力士",
+        "美光"
+      ],
+      "publishedAt": "2026-11-15",
+      "kind": "新闻",
+      "category": "端侧 AI 与芯片",
+      "impactLevel": "industry-wide",
+      "impactReason": "DRAM是多类硬件共用器件；争议涉及供给分配、采购条件与成本风险，学习硬件需结合具体料号和合同观察传导。",
+      "selection": {
+        "scores": {
+          "相关性": 20,
+          "增量信息": 19,
+          "证据质量": 19,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "回溯法院原文相关页，核对当事人和程序阶段；全球共用器件风险，应优先呈现。"
+        }
+      },
+      "boundary": "法院文件为公开镜像节选，非全案卷审阅。原告指控尚待证明；不是美国政府新起诉，也不是价格操纵定案。诉讼进展不能推出内存短期降价、供应恢复或某品牌成本必然变化。",
+      "meaning": "对学习硬件的研究意义：若机型采用相关DRAM/LPDDR，应联动观察采购报价与供货承诺、替代料认证周期、型号配置和毛利压力。这里只提出传导路径，尚未取得作业帮、讯飞或小猿具体订单与成本证据。",
+      "question": "后续答辩和法院进展如何？不同DRAM料号、合同周期与可替代供应商的变化，是否已传导至实际采购和产品配置？",
+      "eventReason": "同一美国DRAM反垄断案件，以11月14日撤诉动议裁定为本次进展；媒体转载归为同一事件。",
+      "facts": [
+        {
+          "claim": "原告为17名消费者和小企业；三家被告要求驳回诉讼。",
+          "sourceUrl": "https://docs.justia.com/cases/federal/district-courts/california/candce/5:2026cv06345/472931/68",
+          "locator": "裁定第1页：当事人与争议"
+        },
+        {
+          "claim": "法院拒绝驳回诉讼的动议，并规定答辩与案件管理会议时间。",
+          "sourceUrl": "https://docs.justia.com/cases/federal/district-courts/california/candce/5:2026cv06345/472931/68",
+          "locator": "裁定第20页：Conclusion"
+        },
+        {
+          "claim": "裁定说明，此阶段为评估撤诉请求而暂时接受充分陈述的指控，不等于事实认定。",
+          "sourceUrl": "https://docs.justia.com/cases/federal/district-courts/california/candce/5:2026cv06345/472931/68",
+          "locator": "裁定第2页脚注2及第20页审查标准"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://docs.justia.com/cases/federal/district-courts/california/candce/5:2026cv06345/472931/68",
+          "name": "加州北区联邦法院裁定 · Justia公开镜像（节选）",
+          "publishedAt": "2026-11-14",
+          "publisherGroup": "US District Court ND California",
+          "role": "official",
+          "textHash": "f773c08e2961361c0e6752a6bb69e78f2bd3c131fc24d2212e2eb298287b34b7",
+          "readAt": "2026-11-17T09:15:43.415230+00:00",
+          "coverage": "excerpt"
+        },
+        {
+          "url": "https://www.tomshardware.com/tech-industry/big-tech/judge-denies-motion-to-dismiss-dram-price-fixing-lawsuit-against-micron-samsung-and-sk-hynix-says-chipmakers-acted-like-hawks-flying-in-formation-finds-evidence-of-dram-collusion-plausible-after-500-percent-price-surge",
+          "name": "Tom's Hardware · 11月15日报道",
+          "publishedAt": "2026-11-15",
+          "publisherGroup": "Tom's Hardware",
+          "role": "media",
+          "textHash": "ffa428a6b29e00c4afe565f3723e9139a09fd9114d7c9e20a94522ecd8c7fc22",
+          "readAt": "2026-11-17T09:13:07.033240+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 94,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-17T09:15:43.554624+00:00",
+      "sourceDate": "2026-11-15",
+      "date": "2026-11-15",
+      "title": "美国DRAM反垄断案继续：法院拒绝三家内存厂商的驳回诉讼申请",
+      "summary": "11月14日，美国加州北区联邦法院拒绝三星、SK海力士和美光要求驳回诉讼的动议。案件由17名消费者和小企业提出，争议涉及DRAM减产、向HBM转移及传统内存供给。这是允许诉讼继续的程序裁定，尚未认定合谋违法。"
     },
     {
       "id": "rss-bf4cdfae1c41d026",
@@ -6922,6 +7016,21 @@
         "initial"
       ],
       "selected": false
+    },
+    {
+      "id": "dram-antitrust-26-cv-06345",
+      "representativeId": "dram-antitrust-dismissal-20261114",
+      "itemIds": [
+        "dram-antitrust-dismissal-20261114"
+      ],
+      "publisherGroups": [
+        "Tom's Hardware",
+        "US District Court ND California"
+      ],
+      "developmentIds": [
+        "motion-denied-20261114"
+      ],
+      "selected": true
     },
     {
       "id": "rss-bf4cdfae1c41d026",
@@ -15298,6 +15407,690 @@
       "completedAt": "2026-11-17T09:03:33.744763+00:00",
       "reviewedCount": 4,
       "selectedCount": 4
+    },
+    {
+      "coverage": "延续今日已完成的7篇新闻正文与核心竞品检查原时间戳，补读Tom's Hardware内存诉讼报道，并核对法院公开镜像第1、2、20页。累计8篇近期报道、4个发布方；原始法院节选单独列明，不充完整正文计数。补收1条全行业重大事件，保留此前3条动态。",
+      "revisionReason": "用户指出美国DRAM反垄断案漏报；补读报道和法院裁定相关页，新增全行业重要事件并置于清单首位，保留此前版本。",
+      "sourceChecks": [
+        {
+          "company": "作业帮",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/e6056b1d-580b-442d-a27f-9ab9f12cd4b1",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:42:44.120Z",
+          "note": "穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队；同ID职责复核未见实质变化。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
+          "purpose": "recruitment",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "服务与生命周期"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:42:44.135Z",
+          "note": "消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机；同ID职责复核未见实质变化。"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:42:44.150Z",
+          "note": "原文明确小猿产品及学习机、学练机业务，未划分具体型号；同ID职责复核未见实质变化。"
+        },
+        {
+          "company": null,
+          "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+          "purpose": "practice",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "实际阅读正文或已标明的PDF节选；未核实的实施与结果保留未知。"
+        },
+        {
+          "company": null,
+          "url": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:43:44.109079+00:00",
+          "note": "实际阅读正文或已标明的PDF节选；未核实的实施与结果保留未知。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/028/037.htm",
+          "purpose": "news",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:41:51.217104+00:00",
+          "note": "实际阅读正文或已标明的PDF节选；未核实的实施与结果保留未知。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:43:13.926Z",
+          "note": "实际阅读正文或已标明的PDF节选；未核实的实施与结果保留未知。"
+        },
+        {
+          "company": null,
+          "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+          "purpose": "practice",
+          "stages": [
+            "制造与交付",
+            "质量与合规"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "本地直接下载PDF超时；公开网页工具已读取指定页文本，未读完整文件。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/856.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/023/622.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/992.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/963.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/574.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/292.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/288.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/026/993.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/026/757.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/026/385.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/026/367.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/025/331.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/025/152.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/025/146.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/024/828.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/024/755.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/024/535.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/024/516.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/023/995.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/023/768.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/023/767.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/023/546.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/768.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/004.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/028/022.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/964.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/954.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/949.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/815.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://ireader.jd.com/",
+          "purpose": "practice",
+          "stages": [
+            "渠道与销售"
+          ],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "搜索仍只有店铺型号索引，未据此建立掌阅产品档案。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/856.htm",
+          "company": null,
+          "name": "IT之家",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "经营与组织"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:00:12.961520+00:00",
+          "readId": "repair-payment",
+          "publishedAt": "2026-11-16",
+          "publisherGroup": "IT之家",
+          "note": "两家媒体支付工具口径不同；采用经济观察报核查机制，具体支付口径暂缓。",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "两家媒体支付工具口径不同；采用经济观察报核查机制，具体支付口径暂缓。",
+            "anchor": "采取“车企定期报送 + 样本供应商抽查”相结合的方式进行"
+          }
+        },
+        {
+          "url": "https://www.ithome.com/1/027/768.htm",
+          "company": null,
+          "name": "Reuters",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "制造与交付"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:00:12.954442+00:00",
+          "readId": "repair-sk",
+          "publishedAt": "2026-11-16",
+          "publisherGroup": "Reuters",
+          "note": "这是路透社转载链，转读路透社署名正文，不作为独立发布方或第二事件。",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "这是路透社转载链，转读路透社署名正文，不作为独立发布方或第二事件。",
+            "anchor": "供应商扶持计划涵盖研发、测试、量产和销售四个阶段"
+          }
+        },
+        {
+          "url": "https://www.ithome.com/1/027/963.htm",
+          "company": null,
+          "name": "IT之家",
+          "purpose": "news",
+          "stages": [
+            "研发与系统",
+            "经营与组织"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:00:12.964710+00:00",
+          "readId": "repair-huawei",
+          "publishedAt": "2026-11-16",
+          "publisherGroup": "IT之家",
+          "note": "正文说明原文已在11月11日分享，是历史组织叙述；不把11月16日转述当成新组织变化。",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "正文说明原文已在11月11日分享，是历史组织叙述；不把11月16日转述当成新组织变化。",
+            "anchor": "华为官方 X 账号 11 月 11 日分享了"
+          }
+        },
+        {
+          "url": "https://www.ithome.com/1/027/964.htm",
+          "company": null,
+          "name": "IT之家",
+          "purpose": "news",
+          "stages": [
+            "制造与交付",
+            "渠道与销售",
+            "经营与组织"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:00:12.958091+00:00",
+          "readId": "repair-xpeng",
+          "publishedAt": "2026-11-16",
+          "publisherGroup": "IT之家",
+          "note": "有具体试用场景与商业发布节点；仅入选为媒体转述的未来计划，非量产结果。",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "有具体试用场景与商业发布节点；仅入选为媒体转述的未来计划，非量产结果。",
+            "anchor": "明年一季度，量产的首批机器人将进入小鹏的部分门店开启试用"
+          }
+        },
+        {
+          "url": "https://www.ithome.com/1/027/949.htm",
+          "company": null,
+          "name": "IT之家",
+          "purpose": "news",
+          "stages": [
+            "需求与规划",
+            "研发与系统"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:00:13.069050+00:00",
+          "readId": "repair-oppo",
+          "publishedAt": "2026-11-16",
+          "publisherGroup": "IT之家",
+          "note": "已读发布内容，主要为参数与营销功能；缺少独立效果及组织机制，本轮优先更具链路价值的内容。",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "已读发布内容，主要为参数与营销功能；缺少独立效果及组织机制，本轮优先更具链路价值的内容。",
+            "anchor": "OPPO Watch 5 支持 13 项睡眠监测"
+          }
+        },
+        {
+          "url": "https://www.eeo.com.cn/2026/1116/1094497.shtml",
+          "company": null,
+          "name": "经济观察报",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "经营与组织"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:01:02.470741+00:00",
+          "readId": "repair-eeo",
+          "publishedAt": "2026-11-16",
+          "publisherGroup": "经济观察报",
+          "note": "核对采购到支付的证据链，保留与其他报道支付口径冲突；不引用争议比例。",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "核对采购到支付的证据链，保留与其他报道支付口径冲突；不引用争议比例。",
+            "anchor": "合同、验收单、对账记录、发票、支付凭证"
+          }
+        },
+        {
+          "url": "https://www.thestar.com.my/tech/tech-news/2026/11/16/sk-hynix-to-spend-1-billion-over-five-years-to-support-chip-suppliers",
+          "company": null,
+          "name": "Reuters",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "经营与组织"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:01:08.917436+00:00",
+          "readId": "repair-reuters",
+          "publishedAt": "2026-11-16",
+          "publisherGroup": "Reuters",
+          "note": "直接阅读署名路透正文，计划、时间与机制明确；保留实施结果未知。",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "直接阅读署名路透正文，计划、时间与机制明确；保留实施结果未知。",
+            "anchor": "protect intellectual property and commercially sensitive information"
+          }
+        },
+        {
+          "url": "https://www.home-assistant.io/blog/2026/11/11/no-device-left-behind-home-assistant-connect-aux-2/",
+          "company": null,
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "渠道与销售"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:01:07.736473+00:00",
+          "note": "完整阅读11月11日原始产品说明，作为历史深读，不回填近期新闻。"
+        },
+        {
+          "url": "https://www.ebrun.com/ebrungo/zb/719981.shtml",
+          "company": null,
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "渠道与销售"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:01:02.717208+00:00",
+          "note": "阅读11月12日战报；为自动化快讯且缺少统计口径，不能当作独立份额证据或今天的新事件。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/288.htm",
+          "company": null,
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "渠道与销售"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:00:13.084293+00:00",
+          "note": "有效正文较短，内容为营销活动；未确认资金实际投入，暂不精选。"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/16/aaeon-boxer-8741ai-industrial-edge-ai-box-pc-nvidia-jetson-thor-t5000-with-dual-10gbe-and-four-5gbe-lan",
+          "company": null,
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-17T09:03:33.460861+00:00",
+          "note": "直接读取HTTP403；AUX-2已改读官方11月11日原文，不能按16日转载刷新事件日期。"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/16/69-home-assistant-connect-aux-2-offers-poe-audio-streaming-rs-232-control-bluetooth-proxy",
+          "company": null,
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-17T09:03:33.460861+00:00",
+          "note": "直接读取HTTP403；AUX-2已改读官方11月11日原文，不能按16日转载刷新事件日期。"
+        },
+        {
+          "url": "https://docs.justia.com/cases/federal/district-courts/california/candce/5:2026cv06345/472931/68",
+          "company": null,
+          "name": "法院裁定公开镜像",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "经营与组织"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-17T09:15:43.415230+00:00",
+          "note": "本地curl读取Justia返回HTTP403，改用公开网页工具读取相关页。"
+        },
+        {
+          "url": "https://docs.justia.com/cases/federal/district-courts/california/candce/5:2026cv06345/472931/68",
+          "company": null,
+          "name": "法院裁定公开镜像",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "经营与组织"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:15:43.415230+00:00",
+          "note": "实际核对第1、2、20页相关段落，记录为excerpt；不计完整新闻正文门槛。"
+        },
+        {
+          "url": "https://www.tomshardware.com/tech-industry/big-tech/judge-denies-motion-to-dismiss-dram-price-fixing-lawsuit-against-micron-samsung-and-sk-hynix-says-chipmakers-acted-like-hawks-flying-in-formation-finds-evidence-of-dram-collusion-plausible-after-500-percent-price-surge",
+          "company": null,
+          "name": "Tom's Hardware",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "经营与组织"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:13:07.033240+00:00",
+          "note": "阅读报道全文并回溯裁定；区分民事诉讼、撤诉动议与违法定案。",
+          "readId": "dram-toms",
+          "publishedAt": "2026-11-15",
+          "publisherGroup": "Tom's Hardware",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "全球DRAM供给与竞争争议影响硬件供应链；程序与指控边界已回溯原文核对。",
+            "anchor": "denied the companies’ motion"
+          }
+        }
+      ],
+      "knownGaps": [
+        "协会通知、财报电话会原始正文未取得；具体支付口径存在报道差异，未下结论。",
+        "核心学习硬件本轮未确认72小时内新事件；讯飞11月12日战报不能当今日新闻。",
+        "知识节点完整复核仍有历史欠账，本次修复不冒充全站维护完成。"
+      ],
+      "failedSources": [
+        "CNX RSS超时后HTTP403，保留历史。",
+        "申报回复本地下载超时，已通过公开PDF文本读取指定页节选。",
+        "本地直接下载PDF超时；公开网页工具已读取指定页文本，未读完整文件。",
+        "直接读取HTTP403；AUX-2已改读官方11月11日原文，不能按16日转载刷新事件日期。",
+        "本地curl读取Justia返回HTTP403，改用公开网页工具读取相关页。"
+      ],
+      "coverageCheck": {
+        "newsResearch": {
+          "passed": true,
+          "bodyCount": 8,
+          "publisherGroups": [
+            "IT之家",
+            "Reuters",
+            "Tom's Hardware",
+            "经济观察报"
+          ],
+          "requiredBodies": 6,
+          "requiredPublisherGroups": 3
+        },
+        "passed": true,
+        "companies": [
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "gaps": [],
+        "usableSources": 19
+      },
+      "successfulScan": true,
+      "reviewedCount": 1,
+      "selectedCount": 1,
+      "completedAt": "2026-11-17T09:15:43.560384+00:00"
     }
   ]
 }
