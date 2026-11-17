@@ -222,62 +222,64 @@
       "updatedAt": "2026-11-15T00:45:02.865869+00:00"
     },
     "track-5": {
-      "attemptedAt": "2026-11-14T10:45:19.046215+00:00",
+      "attemptedAt": "2026-11-17T00:46:36.326415+00:00",
       "status": "partial",
-      "assessment": "补设计建议到审批的接口问题，并澄清文中ODM缩写不表示原始设计制造商；原有ODM/EMS产业分工仍待核实。",
+      "assessment": "用国内智能笔企业案例补制造分工与参数权限；只支持企业披露的外协接口，ODM/EMS全行业职责及交期口径仍不完整。",
       "gaps": [
-        "尚未完整核验ODM/EMS责任、良率与交期指标口径。",
-        "没有切片版本实测、路径失败率和同模型对照，不宣称首创或已证实效率提升。"
+        "仅补单一企业外协责任案例，ODM/EMS通用分工及交期指标未全面复核。",
+        "既有混合工艺案例缺同模型实测，不能宣称效率提升。"
       ],
       "reviewedFields": [
         "chain",
         "constraint",
+        "examples",
+        "metrics",
         "team"
       ],
       "evidence": [
         {
-          "itemId": "protolabs-dfm-review",
-          "title": "DFM反馈是工艺适配检查，不能代替产品验收",
+          "itemId": "qfy-outsourcing-control",
+          "title": "智能笔外协案例：生产执行与工艺、质量责任分开看",
           "facts": [
             {
-              "claim": "分析变量取决于使用的制造服务。",
-              "sourceUrl": "https://www.protolabs.com/help-center/manufacturing-analysis/",
-              "locator": "Interpreting Color Indicators"
+              "claim": "公司披露全制程外协的技术与品控责任。",
+              "sourceUrl": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+              "locator": "回复第81至82页：全制程外协"
             },
             {
-              "claim": "用户可以拒绝平台建议的几何修改。",
-              "sourceUrl": "https://www.protolabs.com/help-center/manufacturing-analysis/",
-              "locator": "Molding: Protolabs Proposed Revisions"
+              "claim": "披露的生产直通率排除返工、返修和重工。",
+              "sourceUrl": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+              "locator": "回复第83页：生产直通率口径"
             }
           ],
-          "boundary": "单一制造商的平台说明，不是行业标准；没有上传模型、测试流程或验证成本及交期收益。文中ODM指按需制造，不应读作原始设计制造商。",
+          "boundary": "历史申报回复节选，未全文阅读或独立验证；智能笔供应商的做法不能归为客户品牌内部制度，也不证明当前良率和组织成效。",
           "sources": [
             {
-              "url": "https://www.protolabs.com/help-center/manufacturing-analysis/",
-              "name": "Protolabs官方资料",
+              "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+              "name": "千分一 · 第二轮审核问询回复（历史材料）",
               "publishedAt": null,
-              "publisherGroup": "Protolabs",
+              "publisherGroup": "千分一",
               "role": "official",
-              "textHash": "dbe84cd321515ad683fdc1ff377547d7ed6a456bcf7c93e7e64efb1766b8cc5a",
-              "readAt": "2026-11-14T10:42:24.851452+00:00",
-              "coverage": "body"
+              "textHash": "e4298694324f305b6e8fd7a9a9f248fca7b10d1a776417531750961f3a1bdfb1",
+              "readAt": "2026-11-17T00:45:51.020581+00:00",
+              "coverage": "excerpt"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "protolabs-dfm-review",
-          "url": "https://www.protolabs.com/help-center/manufacturing-analysis/",
-          "checkedAt": "2026-11-14T10:42:24.851452+00:00",
+          "itemId": "qfy-outsourcing-control",
+          "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
           "state": "body",
-          "note": "本轮实际读取当前正文，支持列明字段；未覆盖字段保留缺口。"
+          "note": "当前实际阅读指定章节；申报回复仅为节选，未读全篇或独立验证。"
         }
       ],
-      "reviewedAt": "2026-11-14T10:45:19.046215+00:00",
+      "reviewedAt": "2026-11-17T00:46:36.326415+00:00",
       "patch": {
         "constraint": "成本、质量、交期、维修和供货风险；互联设备另需检查设备、应用、云的协同安全与退出时的数据处理。 混合工艺还需同时检查区域边界衔接、路径避让和切换开销，界面步骤减少不能掩盖质量约束。",
-        "team": "产品、系统工程、制造、采购、质量、法规与售后；涉及互联设备时，将应用、云服务与产品安全的验收接口纳入研究。",
+        "team": "产品、系统工程、制造、采购、质量、法规与售后。研究外协时另核技术文件提供方、参数变更权、驻厂支持与验收记录；公司之间的边界不能由生产地点直接推断。",
         "examples": "品牌方、ODM / EMS、模组供应商；拓竹H3C作为软硬件协同的观察样本，非行业排名。",
         "metrics": "关键缺陷关闭率；良率；交期；返修原因；比较自动化功能时另记录用户准备步骤、设计修改后的重做次数、总加工时间与成品验收结果，不能只看算法速度。"
       },
@@ -314,9 +316,20 @@
             "protolabs-dfm-review"
           ],
           "updatedAt": "2026-11-14T10:45:02.335802+00:00"
+        },
+        {
+          "id": "outsourcing-authority-evidence",
+          "title": "外协执行与变更授权分别核对",
+          "learning": "外协地点本身不能说明设计和质量权责。",
+          "application": "把合同、工艺版本、批次问题和验收记录对应到具体协作方。",
+          "boundary": "由单一企业披露形成研究问题，未证明客户内部制度或人员配置。",
+          "itemIds": [
+            "qfy-outsourcing-control"
+          ],
+          "updatedAt": "2026-11-17T00:46:36.326415+00:00"
         }
       ],
-      "updatedAt": "2026-11-14T10:45:02.335802+00:00"
+      "updatedAt": "2026-11-17T00:46:36.326415+00:00"
     },
     "chain-1": {
       "attemptedAt": "2026-11-16T00:46:03.708885+00:00",
@@ -667,43 +680,52 @@
       "updatedAt": "2026-11-16T00:46:03.708885+00:00"
     },
     "chain-2": {
-      "attemptedAt": "2026-11-15T00:45:02.865869+00:00",
+      "attemptedAt": "2026-11-17T00:46:36.326415+00:00",
       "status": "partial",
-      "assessment": "补BOM的内容与版本状态依据；工具发布规则不替代企业变更权限，EVT/DVT/PVT及整机测量仍未完整核验。",
+      "assessment": "补EVT/DVT/PVT验证对象的概念区分，替换该基础缺口；不把厂商建议的数量和周期当通用门槛，整机指标和项目权限仍待核验。",
       "gaps": [
-        "EVT/DVT/PVT基础及特定项目放行门槛仍待全面核验。",
-        "端到端耗时、分位数和返工结果无独立测试；企业变更权限与各专业接口未完整复核。"
+        "已补三个阶段的概念区分；特定项目的放行权限、变更接口和退出条件仍待核验。",
+        "端到端延迟、分位数及返工结果缺独立测试；未完整复核整机指标。"
       ],
       "reviewedFields": [
         "basics",
-        "team"
+        "exercise",
+        "flow",
+        "pitfall",
+        "team",
+        "title"
       ],
       "evidence": [
         {
-          "itemId": "autodesk-bom-versions",
-          "title": "BOM不只列零件，还要保留数量、状态与版本",
+          "itemId": "formlabs-validation-stages",
+          "title": "EVT、DVT、PVT：先问这一轮验证什么",
           "facts": [
             {
-              "claim": "BOM包含编号、数量、描述及生命周期状态。",
-              "sourceUrl": "https://help.autodesk.com/cloudhelp/2026/ENU/Vault-General/files/GUID-86373139-0500-4B28-A5C3-DE80A53D1AF6.htm",
-              "locator": "BOM定义段落"
+              "claim": "EVT重点在关键功能范围与优化。",
+              "sourceUrl": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+              "locator": "Engineering Validation Test小节"
             },
             {
-              "claim": "软件支持比较BOM修订。",
-              "sourceUrl": "https://help.autodesk.com/cloudhelp/2026/ENU/Vault-General/files/GUID-86373139-0500-4B28-A5C3-DE80A53D1AF6.htm",
-              "locator": "What Can I Do with BOMs"
+              "claim": "DVT细化设计并走向量产线。",
+              "sourceUrl": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+              "locator": "Design Validation Test小节"
+            },
+            {
+              "claim": "PVT优化稳定生产装配线。",
+              "sourceUrl": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+              "locator": "Production Validation Test小节"
             }
           ],
-          "boundary": "Vault 2026官方帮助资料；未操作软件或核验企业应用，不把物料清单当全部业务成本。",
+          "boundary": "厂商解释性历史文章，不是统一标准；未照搬批量、时长和认证清单，未验证具体项目。各企业缩写和阶段门可能不同。",
           "sources": [
             {
-              "url": "https://help.autodesk.com/cloudhelp/2026/ENU/Vault-General/files/GUID-86373139-0500-4B28-A5C3-DE80A53D1AF6.htm",
-              "name": "Autodesk官方资料",
+              "url": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+              "name": "Formlabs官方资料",
               "publishedAt": null,
-              "publisherGroup": "Autodesk",
+              "publisherGroup": "Formlabs",
               "role": "official",
-              "textHash": "f263f5d8459b56a7c8835f90519eea854984605142ed10ff6fd76a10314da88c",
-              "readAt": "2026-11-15T00:41:20.683346+00:00",
+              "textHash": "7856a3f1fd83e2a96a89c35400d15609777010845e3054ec1bbc6b4f325a4942",
+              "readAt": "2026-11-17T00:43:44.109079+00:00",
               "coverage": "body"
             }
           ]
@@ -711,18 +733,18 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "autodesk-bom-versions",
-          "url": "https://help.autodesk.com/cloudhelp/2026/ENU/Vault-General/files/GUID-86373139-0500-4B28-A5C3-DE80A53D1AF6.htm",
-          "checkedAt": "2026-11-15T00:41:20.683346+00:00",
+          "itemId": "formlabs-validation-stages",
+          "url": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+          "checkedAt": "2026-11-17T00:43:44.109079+00:00",
           "state": "body",
-          "note": "实际读取列明正文及版本条件；未覆盖字段和实测缺口继续保留。"
+          "note": "当前实际阅读指定章节；申报回复仅为节选，未读全篇或独立验证。"
         }
       ],
-      "reviewedAt": "2026-11-15T00:45:02.865869+00:00",
+      "reviewedAt": "2026-11-17T00:46:36.326415+00:00",
       "patch": {
         "metrics": "任务延迟用同一输入、环境与分位数比较；不能只报告平均值或实验室峰值。 对加工设备还应固定材料、任务和成品质量条件，分别记录准备、加工与失败恢复耗时；标称最高运动速度不能直接折算真实产能。",
-        "exercise": "画一张从传感器到执行器的链路，给每个接口写清输入、输出与责任人。 用一个具体材料任务说明结构、光源和软件精细度如何共同影响结果，区分模块参数与整机交付指标。",
-        "basics": "BOM是制造所需项目的汇总，可包含编号、数量、描述与生命周期状态；交接时还需核对版本。Autodesk Vault 2026提供修订比较，这是具体软件规则，不是所有企业的通用制度。BOM不能代替完整业务成本；EVT/DVT/PVT及具体门槛仍待专门复核。"
+        "exercise": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。",
+        "basics": "BOM是制造所需项目的汇总，可包含编号、数量、描述与生命周期状态；交接时还需核对版本。Autodesk Vault 2026提供修订比较，这是具体软件规则，不是所有企业的通用制度。BOM不能代替完整业务成本；Formlabs解释中，EVT聚焦关键功能与可制造设计，DVT细化设计并测试接近量产的产品，PVT检验生产线稳定制造能力。缩写、样品数量、周期与退出条件须按项目定义。"
       },
       "lessons": [
         {
@@ -746,68 +768,81 @@
             "autodesk-bom-versions"
           ],
           "updatedAt": "2026-11-15T00:45:02.865869+00:00"
+        },
+        {
+          "id": "engineering-validation-object",
+          "title": "按验证对象理解研发阶段",
+          "learning": "功能、设计细节和制造过程需要不同证据。",
+          "application": "研究阶段评审时列清待验证风险、交付物和退出条件，再核对样品与工装状态。",
+          "boundary": "依据厂商解释性文章；不是统一行业标准，未实测项目或验证法规清单。",
+          "itemIds": [
+            "formlabs-validation-stages"
+          ],
+          "updatedAt": "2026-11-17T00:46:36.326415+00:00"
         }
       ],
-      "updatedAt": "2026-11-15T00:45:02.865869+00:00"
+      "updatedAt": "2026-11-17T00:46:36.326415+00:00"
     },
     "chain-5": {
-      "attemptedAt": "2026-11-14T10:45:19.046215+00:00",
+      "attemptedAt": "2026-11-17T00:46:36.326415+00:00",
       "status": "partial",
-      "assessment": "补质量与可靠性概念的时间边界；原有现场故障率需时间与样本的要求仍成立。安全、认证范围和部署结果尚未完整核验。",
+      "assessment": "补批次追溯及直通率边界；质量、安全与准入仍分开取证，未完成安全与认证复核。",
       "gaps": [
-        "安全与认证范围仍缺完整权威依据；不能用可靠性定义代替安全验证。",
-        "部署验收、训练效果与企业故障率仍无当前结果证据。"
+        "安全与认证范围仍缺完整权威依据。",
+        "现场故障与部署成效没有可比当前结果；本次仅核验制造指标的定义和追溯线索。"
       ],
       "reviewedFields": [
-        "basics",
+        "flow",
         "metrics",
-        "pitfall"
+        "pitfall",
+        "team"
       ],
       "evidence": [
         {
-          "itemId": "nist-quality-reliability",
-          "title": "初始合格不等于长期可靠：质量比较需要时间轴",
+          "itemId": "qfy-outsourcing-control",
+          "title": "智能笔外协案例：生产执行与工艺、质量责任分开看",
           "facts": [
             {
-              "claim": "NIST将开始使用时的要求符合性与后续可靠性区分。",
-              "sourceUrl": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr111.htm",
-              "locator": "8.1.1.1 Quality versus reliability"
+              "claim": "公司披露全制程外协的技术与品控责任。",
+              "sourceUrl": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+              "locator": "回复第81至82页：全制程外协"
             },
             {
-              "claim": "描述可靠性失效需要考虑随时间变化的模型。",
-              "sourceUrl": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr111.htm",
-              "locator": "Life distributions model fraction fallout over time"
+              "claim": "披露的生产直通率排除返工、返修和重工。",
+              "sourceUrl": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+              "locator": "回复第83页：生产直通率口径"
             }
           ],
-          "boundary": "读取当前NIST手册概念页；不是对某款设备的测试结论，也未核验安全、认证范围或企业失效率。",
+          "boundary": "历史申报回复节选，未全文阅读或独立验证；智能笔供应商的做法不能归为客户品牌内部制度，也不证明当前良率和组织成效。",
           "sources": [
             {
-              "url": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr111.htm",
-              "name": "NIST官方资料",
+              "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+              "name": "千分一 · 第二轮审核问询回复（历史材料）",
               "publishedAt": null,
-              "publisherGroup": "NIST",
+              "publisherGroup": "千分一",
               "role": "official",
-              "textHash": "08a695b6e0122ad8c6ae2abbfde2eef9fb59bbe0ebc5c305ba6458ae2b92f100",
-              "readAt": "2026-11-14T10:42:24.849067+00:00",
-              "coverage": "body"
+              "textHash": "e4298694324f305b6e8fd7a9a9f248fca7b10d1a776417531750961f3a1bdfb1",
+              "readAt": "2026-11-17T00:45:51.020581+00:00",
+              "coverage": "excerpt"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "nist-quality-reliability",
-          "url": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr111.htm",
-          "checkedAt": "2026-11-14T10:42:24.849067+00:00",
+          "itemId": "qfy-outsourcing-control",
+          "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
           "state": "body",
-          "note": "本轮实际读取当前正文，支持列明字段；未覆盖字段保留缺口。"
+          "note": "当前实际阅读指定章节；申报回复仅为节选，未读全篇或独立验证。"
         }
       ],
-      "reviewedAt": "2026-11-14T10:45:19.046215+00:00",
+      "reviewedAt": "2026-11-17T00:46:36.326415+00:00",
       "patch": {
         "flow": "风险识别与需求 → 验证证据、过程控制与上市条件 对有明确使用限制的设备，还要检查现场条件、训练和责任人员是否满足该型号说明，不能仅凭设备合格就认为现场可用。",
         "team": "质量、安全、研发、制造与服务协同定义缺陷等级、放行权和整改验证。 MetalFab 官方资料要求指定激光安全负责人并限制进入受控区域的人员；这是特定产品的部署职责样本，不能替代其他产品的法规与风险评估。",
-        "basics": "初始质量关注开始使用时是否符合要求；可靠性关注运行一段时间后是否仍满足要求。初始合格不能证明使用期可靠。可靠性、安全与法规准入是不同问题；本轮仅核对初始质量与使用期可靠性的时间区分，安全及认证范围仍待专门复核。"
+        "basics": "初始质量关注开始使用时是否符合要求；可靠性关注运行一段时间后是否仍满足要求。初始合格不能证明使用期可靠。可靠性、安全与法规准入是不同问题；本轮仅核对初始质量与使用期可靠性的时间区分，安全及认证范围仍待专门复核。",
+        "metrics": "生产直通率应明确工序范围、首次检验和返工排除规则；最终检验合格不等于全流程一次通过。现场故障率仍需同时记录样本、使用条件与时间窗。"
       },
       "lessons": [
         {
@@ -831,9 +866,20 @@
             "nist-quality-reliability"
           ],
           "updatedAt": "2026-11-14T10:45:02.335802+00:00"
+        },
+        {
+          "id": "quality-first-pass-scope",
+          "title": "区分一次通过与返工后合格",
+          "learning": "千分一披露的直通率排除返工、返修与重工。",
+          "application": "比较制造质量前先核对流程起止和返工口径。",
+          "boundary": "单一企业历史定义，不外推行业统一标准或当前结果。",
+          "itemIds": [
+            "qfy-outsourcing-control"
+          ],
+          "updatedAt": "2026-11-17T00:46:36.326415+00:00"
         }
       ],
-      "updatedAt": "2026-11-14T10:45:19.046215+00:00"
+      "updatedAt": "2026-11-17T00:46:36.326415+00:00"
     },
     "chain-8": {
       "attemptedAt": "2026-11-15T10:41:33.649429+00:00",
@@ -2169,6 +2215,28 @@
           "hash": "4c9d957f67fa5ffda075f2ead18cc896abb49073b16df5366f8dd5cecc52c8db",
           "decision": "integrated",
           "reason": "补阶段门证据与责任问题，不采纳软件收益宣传。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-17T00:46:36.326415+00:00",
+      "reviewedNodes": [
+        "chain-5",
+        "track-5",
+        "chain-2"
+      ],
+      "decisions": [
+        {
+          "itemId": "qfy-outsourcing-control",
+          "hash": "484dbd97dfd9e3c780176e054f3826c6a5b4a136b469263ad22a87f64bf8f4c1",
+          "decision": "integrated",
+          "reason": "沉淀外协责任与直通率口径问题，保留单一企业历史自述边界。"
+        },
+        {
+          "itemId": "formlabs-validation-stages",
+          "hash": "6f687b713d5f6e9d14d87f25d9f5f9585fb8633cedc87de8cbf0281ae8a6e89a",
+          "decision": "integrated",
+          "reason": "补验证阶段基础概念，不采纳通用批量、周期或认证结论。"
         }
       ]
     }
@@ -6808,6 +6876,249 @@
           "checkedAt": "2026-11-16T10:39:02.114Z",
           "state": "body",
           "note": "本轮实际读取正文，保留适用型号及资料性质；未执行软件或设备。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-5",
+      "reviewedAt": "2026-11-17T00:46:36.326415+00:00",
+      "status": "partial",
+      "assessment": "补批次追溯及直通率边界；质量、安全与准入仍分开取证，未完成安全与认证复核。",
+      "gaps": [
+        "安全与认证范围仍缺完整权威依据。",
+        "现场故障与部署成效没有可比当前结果；本次仅核验制造指标的定义和追溯线索。"
+      ],
+      "reviewedFields": [
+        "flow",
+        "metrics",
+        "pitfall",
+        "team"
+      ],
+      "changes": {
+        "metrics": {
+          "before": "现场故障率须说明时间窗、使用量、样本与失访；没有这些分母不比较高低。",
+          "after": "生产直通率应明确工序范围、首次检验和返工排除规则；最终检验合格不等于全流程一次通过。现场故障率仍需同时记录样本、使用条件与时间窗。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "quality-first-pass-scope",
+            "title": "区分一次通过与返工后合格",
+            "learning": "千分一披露的直通率排除返工、返修与重工。",
+            "application": "比较制造质量前先核对流程起止和返工口径。",
+            "boundary": "单一企业历史定义，不外推行业统一标准或当前结果。",
+            "itemIds": [
+              "qfy-outsourcing-control"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "qfy-outsourcing-control",
+          "title": "智能笔外协案例：生产执行与工艺、质量责任分开看",
+          "facts": [
+            {
+              "claim": "公司披露全制程外协的技术与品控责任。",
+              "sourceUrl": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+              "locator": "回复第81至82页：全制程外协"
+            },
+            {
+              "claim": "披露的生产直通率排除返工、返修和重工。",
+              "sourceUrl": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+              "locator": "回复第83页：生产直通率口径"
+            }
+          ],
+          "boundary": "历史申报回复节选，未全文阅读或独立验证；智能笔供应商的做法不能归为客户品牌内部制度，也不证明当前良率和组织成效。",
+          "sources": [
+            {
+              "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+              "name": "千分一 · 第二轮审核问询回复（历史材料）",
+              "publishedAt": null,
+              "publisherGroup": "千分一",
+              "role": "official",
+              "textHash": "e4298694324f305b6e8fd7a9a9f248fca7b10d1a776417531750961f3a1bdfb1",
+              "readAt": "2026-11-17T00:45:51.020581+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "qfy-outsourcing-control",
+          "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "state": "body",
+          "note": "当前实际阅读指定章节；申报回复仅为节选，未读全篇或独立验证。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-5",
+      "reviewedAt": "2026-11-17T00:46:36.326415+00:00",
+      "status": "partial",
+      "assessment": "用国内智能笔企业案例补制造分工与参数权限；只支持企业披露的外协接口，ODM/EMS全行业职责及交期口径仍不完整。",
+      "gaps": [
+        "仅补单一企业外协责任案例，ODM/EMS通用分工及交期指标未全面复核。",
+        "既有混合工艺案例缺同模型实测，不能宣称效率提升。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "examples",
+        "metrics",
+        "team"
+      ],
+      "changes": {
+        "team": {
+          "before": "产品、系统工程、制造、采购、质量、法规与售后；涉及互联设备时，将应用、云服务与产品安全的验收接口纳入研究。",
+          "after": "产品、系统工程、制造、采购、质量、法规与售后。研究外协时另核技术文件提供方、参数变更权、驻厂支持与验收记录；公司之间的边界不能由生产地点直接推断。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "outsourcing-authority-evidence",
+            "title": "外协执行与变更授权分别核对",
+            "learning": "外协地点本身不能说明设计和质量权责。",
+            "application": "把合同、工艺版本、批次问题和验收记录对应到具体协作方。",
+            "boundary": "由单一企业披露形成研究问题，未证明客户内部制度或人员配置。",
+            "itemIds": [
+              "qfy-outsourcing-control"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "qfy-outsourcing-control",
+          "title": "智能笔外协案例：生产执行与工艺、质量责任分开看",
+          "facts": [
+            {
+              "claim": "公司披露全制程外协的技术与品控责任。",
+              "sourceUrl": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+              "locator": "回复第81至82页：全制程外协"
+            },
+            {
+              "claim": "披露的生产直通率排除返工、返修和重工。",
+              "sourceUrl": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+              "locator": "回复第83页：生产直通率口径"
+            }
+          ],
+          "boundary": "历史申报回复节选，未全文阅读或独立验证；智能笔供应商的做法不能归为客户品牌内部制度，也不证明当前良率和组织成效。",
+          "sources": [
+            {
+              "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+              "name": "千分一 · 第二轮审核问询回复（历史材料）",
+              "publishedAt": null,
+              "publisherGroup": "千分一",
+              "role": "official",
+              "textHash": "e4298694324f305b6e8fd7a9a9f248fca7b10d1a776417531750961f3a1bdfb1",
+              "readAt": "2026-11-17T00:45:51.020581+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "qfy-outsourcing-control",
+          "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "state": "body",
+          "note": "当前实际阅读指定章节；申报回复仅为节选，未读全篇或独立验证。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-2",
+      "reviewedAt": "2026-11-17T00:46:36.326415+00:00",
+      "status": "partial",
+      "assessment": "补EVT/DVT/PVT验证对象的概念区分，替换该基础缺口；不把厂商建议的数量和周期当通用门槛，整机指标和项目权限仍待核验。",
+      "gaps": [
+        "已补三个阶段的概念区分；特定项目的放行权限、变更接口和退出条件仍待核验。",
+        "端到端延迟、分位数及返工结果缺独立测试；未完整复核整机指标。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "exercise",
+        "flow",
+        "pitfall",
+        "team",
+        "title"
+      ],
+      "changes": {
+        "basics": {
+          "before": "BOM是制造所需项目的汇总，可包含编号、数量、描述与生命周期状态；交接时还需核对版本。Autodesk Vault 2026提供修订比较，这是具体软件规则，不是所有企业的通用制度。BOM不能代替完整业务成本；EVT/DVT/PVT及具体门槛仍待专门复核。",
+          "after": "BOM是制造所需项目的汇总，可包含编号、数量、描述与生命周期状态；交接时还需核对版本。Autodesk Vault 2026提供修订比较，这是具体软件规则，不是所有企业的通用制度。BOM不能代替完整业务成本；Formlabs解释中，EVT聚焦关键功能与可制造设计，DVT细化设计并测试接近量产的产品，PVT检验生产线稳定制造能力。缩写、样品数量、周期与退出条件须按项目定义。"
+        },
+        "exercise": {
+          "before": "画一张从传感器到执行器的链路，给每个接口写清输入、输出与责任人。 用一个具体材料任务说明结构、光源和软件精细度如何共同影响结果，区分模块参数与整机交付指标。",
+          "after": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "engineering-validation-object",
+            "title": "按验证对象理解研发阶段",
+            "learning": "功能、设计细节和制造过程需要不同证据。",
+            "application": "研究阶段评审时列清待验证风险、交付物和退出条件，再核对样品与工装状态。",
+            "boundary": "依据厂商解释性文章；不是统一行业标准，未实测项目或验证法规清单。",
+            "itemIds": [
+              "formlabs-validation-stages"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "formlabs-validation-stages",
+          "title": "EVT、DVT、PVT：先问这一轮验证什么",
+          "facts": [
+            {
+              "claim": "EVT重点在关键功能范围与优化。",
+              "sourceUrl": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+              "locator": "Engineering Validation Test小节"
+            },
+            {
+              "claim": "DVT细化设计并走向量产线。",
+              "sourceUrl": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+              "locator": "Design Validation Test小节"
+            },
+            {
+              "claim": "PVT优化稳定生产装配线。",
+              "sourceUrl": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+              "locator": "Production Validation Test小节"
+            }
+          ],
+          "boundary": "厂商解释性历史文章，不是统一标准；未照搬批量、时长和认证清单，未验证具体项目。各企业缩写和阶段门可能不同。",
+          "sources": [
+            {
+              "url": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+              "name": "Formlabs官方资料",
+              "publishedAt": null,
+              "publisherGroup": "Formlabs",
+              "role": "official",
+              "textHash": "7856a3f1fd83e2a96a89c35400d15609777010845e3054ec1bbc6b4f325a4942",
+              "readAt": "2026-11-17T00:43:44.109079+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "formlabs-validation-stages",
+          "url": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+          "checkedAt": "2026-11-17T00:43:44.109079+00:00",
+          "state": "body",
+          "note": "当前实际阅读指定章节；申报回复仅为节选，未读全篇或独立验证。"
         }
       ]
     }

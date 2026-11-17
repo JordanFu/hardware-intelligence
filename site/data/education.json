@@ -124,10 +124,10 @@
         "tablet"
       ],
       "brief": {
-        "lead": "讯飞官方描述了诊断、规划、讲解与练习的闭环，同时在脚注明确功能适用范围。比较时应先核对学段和机型，再讨论能力差异。",
+        "lead": "讯飞学习机当前功能页介绍AI精准学与答疑辅导，并明确部分硬件、功能和资源取决于学段、学科、教材及机型。对比时需核对具体组合，不能把宣传页合并为全系列能力清单。",
         "points": [
-          "“测—学—练”连接薄弱项识别、错题讲解和后续练习。",
-          "官网注明规划学仅支持初中数学 AI 精准学，部分功能与资源还受学科、教材、机型限制。"
+          "官网面向幼、小、初、高的自主学习场景，列出精准学、答疑和互动课入口。",
+          "全科范围及部分科学学科有地区条件；本轮未实测学习效果或资源覆盖。"
         ]
       },
       "dimensions": {
@@ -149,25 +149,25 @@
           "url": "https://edu.iflytek.com/solution/family/learning-pad",
           "publishedAt": null,
           "role": "official",
-          "readAt": "2026-11-09T01:53:07.386728+00:00",
+          "readAt": "2026-11-17T00:43:13.926Z",
           "coverage": "body",
-          "textHash": "b6c8337120e8b2b8964a9f48b5d4eb716fa654142a0765f49205455d7b5f8540"
+          "textHash": "6808d6f9cfbab14a70d33234f0fac710b3f212b2c395dc3a7bc2da18df328ba8"
         }
       ],
       "facts": [
         {
           "sourceId": "edu-iflytek",
-          "claim": "官网描述测、学、练的流程。",
-          "locator": "AI 1对1精准学"
+          "claim": "当前页面介绍精准学、答疑和互动课。",
+          "locator": "页面首屏"
         },
         {
           "sourceId": "edu-iflytek",
-          "claim": "规划学有初中数学适用限制。",
+          "claim": "部分能力受学段、学科、教材与机型限制。",
           "locator": "功能脚注"
         }
       ],
-      "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-10T00:46:34.547116+00:00",
+      "updatedAt": "2026-11-17T00:46:36.233260+00:00",
+      "reviewedAt": "2026-11-17T00:46:36.233260+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "科大讯飞",
@@ -1340,6 +1340,59 @@
           "note": "静态提取无正文，浏览器市场说明可读；购买链接转登录页，未登录或取得商品正文。"
         }
       ]
+    },
+    {
+      "completedAt": "2026-11-17T00:46:36.233260+00:00",
+      "summary": "复核三家核心竞品三个同ID岗位，未见职责实质变化，不新增版本。讯飞学习机档案按当前可读文本收紧摘要，保留型号与效果边界。掌阅仍为索引缺口。",
+      "checks": [
+        {
+          "company": "作业帮",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/e6056b1d-580b-442d-a27f-9ab9f12cd4b1",
+          "name": "算法工程师（D110740）",
+          "state": "body",
+          "checkedAt": "2026-11-17T00:42:44.120Z",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "学习硬件研究方向标记不是岗位品类归属：穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
+          "name": "供应商管理工程师-硬件方向",
+          "state": "body",
+          "checkedAt": "2026-11-17T00:42:44.135Z",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "学习硬件研究方向标记不是岗位品类归属：消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "name": "2026届春招-硬件研发工程师",
+          "state": "body",
+          "checkedAt": "2026-11-17T00:42:44.150Z",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "学习硬件研究方向标记不是岗位品类归属：原文明确小猿产品及学习机、学练机业务，未划分具体型号"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "name": "AI学习机功能页",
+          "state": "body",
+          "checkedAt": "2026-11-17T00:43:13.926Z",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "当前可读文本未重复呈现旧档案测学练细节；按可直接支持的能力与适用限制修订，不据此断言旧功能取消。"
+        }
+      ]
     }
   ],
   "history": [
@@ -2405,6 +2458,56 @@
       "status": "reviewed",
       "assessment": "重新对照原档案全部维度与未知项，既有可支持陈述未变，只记资料复核；不证明成效或全部产品能力。",
       "changes": {}
+    },
+    {
+      "profileId": "iflytek-tablet",
+      "reviewedAt": "2026-11-17T00:46:36.233260+00:00",
+      "status": "reviewed",
+      "assessment": "核对当前可读文本，改为直接支持的精准学、答疑与学段/教材/机型限制；未重复核实旧测学练细节，不推断功能取消，组织、渠道与交付缺口保留。",
+      "changes": {
+        "brief": {
+          "before": {
+            "lead": "讯飞官方描述了诊断、规划、讲解与练习的闭环，同时在脚注明确功能适用范围。比较时应先核对学段和机型，再讨论能力差异。",
+            "points": [
+              "“测—学—练”连接薄弱项识别、错题讲解和后续练习。",
+              "官网注明规划学仅支持初中数学 AI 精准学，部分功能与资源还受学科、教材、机型限制。"
+            ]
+          },
+          "after": {
+            "lead": "讯飞学习机当前功能页介绍AI精准学与答疑辅导，并明确部分硬件、功能和资源取决于学段、学科、教材及机型。对比时需核对具体组合，不能把宣传页合并为全系列能力清单。",
+            "points": [
+              "官网面向幼、小、初、高的自主学习场景，列出精准学、答疑和互动课入口。",
+              "全科范围及部分科学学科有地区条件；本轮未实测学习效果或资源覆盖。"
+            ]
+          }
+        },
+        "facts": {
+          "before": [
+            {
+              "sourceId": "edu-iflytek",
+              "claim": "官网描述测、学、练的流程。",
+              "locator": "AI 1对1精准学"
+            },
+            {
+              "sourceId": "edu-iflytek",
+              "claim": "规划学有初中数学适用限制。",
+              "locator": "功能脚注"
+            }
+          ],
+          "after": [
+            {
+              "sourceId": "edu-iflytek",
+              "claim": "当前页面介绍精准学、答疑和互动课。",
+              "locator": "页面首屏"
+            },
+            {
+              "sourceId": "edu-iflytek",
+              "claim": "部分能力受学段、学科、教材与机型限制。",
+              "locator": "功能脚注"
+            }
+          ]
+        }
+      }
     }
   ],
   "reference": {

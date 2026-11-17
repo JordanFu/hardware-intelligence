@@ -1,8 +1,83 @@
 {
   "schemaVersion": 1,
-  "lastCompletedAt": "2026-11-16T10:41:56.818057+00:00",
+  "lastCompletedAt": "2026-11-17T00:45:51.283338+00:00",
   "method": "Codex 初筛评分 + 逐条证据复核；非两个独立模型评分",
   "items": [
+    {
+      "id": "rss-8f436ef391e4e973",
+      "eventId": "rss-8f436ef391e4e973",
+      "developmentId": "initial",
+      "titleZh": "儿童手表刷机风险报道：保留线索，等待原始调查与型号核验",
+      "originalTitle": "儿童手表刷机风险报道：保留线索，等待原始调查与型号核验",
+      "brief": {
+        "lead": "IT之家转述中国之声对儿童手表刷机服务的调查，涉及家长管理功能被绕过及数据风险。本轮读取了转载正文，未取得所引原始调查和厂商型号回应，因此保留中文摘要，不进入精选日报。",
+        "points": [
+          "报道描述第三方修改系统与安装应用的服务。",
+          "没有型号级验证和发生率，不能据此认定所有儿童手表存在相同问题。"
+        ]
+      },
+      "stages": [
+        "质量与合规",
+        "服务与生命周期"
+      ],
+      "domestic": true,
+      "companies": [],
+      "publishedAt": "2026-11-17T00:09:07+00:00",
+      "kind": "行业动态",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 16,
+          "证据质量": 12,
+          "机制清晰": 13,
+          "可行动性": 12
+        },
+        "review": {
+          "decision": "hold",
+          "reason": "仅取得转载，原始调查、型号及厂商回应尚未核验。"
+        }
+      },
+      "eventReason": "同一主体与具体机制去重；无日期支持资料不作为今日新闻。",
+      "educationCategories": [
+        "watch"
+      ],
+      "boundary": "单篇转述，未核实具体型号、漏洞或发生率；不提供刷机操作或法律结论。",
+      "meaning": "研究儿童设备时需检查系统完整性、家庭权限与服务恢复的接口。",
+      "question": "原始调查覆盖哪些型号，厂商如何确认和处理？",
+      "facts": [
+        {
+          "claim": "正文转述中国之声的调查。",
+          "sourceUrl": "https://www.ithome.com/1/028/037.htm",
+          "locator": "报道第二段"
+        },
+        {
+          "claim": "报道提到第三方应用安装。",
+          "sourceUrl": "https://www.ithome.com/1/028/037.htm",
+          "locator": "报道第一段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.ithome.com/1/028/037.htm",
+          "name": "IT之家（转述中国之声）",
+          "publishedAt": "2026-11-17T00:09:07+00:00",
+          "publisherGroup": "中国之声转载链",
+          "role": "media",
+          "textHash": "e3eac542da0127d5178f51a455b187f6e6c7204ed6a0660ae82c14ca8ba4e6fc",
+          "readAt": "2026-11-17T00:41:51.217104+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 72,
+      "selected": false,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-17T00:45:51.276635+00:00",
+      "sourceDate": "2026-11-17T00:09:07+00:00",
+      "date": "2026-11-17T00:09:07+00:00",
+      "title": "儿童手表刷机风险报道：保留线索，等待原始调查与型号核验",
+      "summary": "IT之家转述中国之声对儿童手表刷机服务的调查，涉及家长管理功能被绕过及数据风险。本轮读取了转载正文，未取得所引原始调查和厂商型号回应，因此保留中文摘要，不进入精选日报。"
+    },
     {
       "id": "rss-4ecdc03c57ee0814",
       "eventId": "rss-4ecdc03c57ee0814",
@@ -6298,9 +6373,221 @@
       "date": null,
       "title": "NPI阶段门：检查交付物与依赖，不只看进度完成",
       "summary": "Autodesk的NPI说明提供阶段门、交付物、依赖和任务责任的管理方式。它可以启发硬件导入时检查“准备交付什么、依赖谁、谁确认”，但软件显示完成不能替代制造试验与放行证据。"
+    },
+    {
+      "id": "qfy-outsourcing-control",
+      "eventId": "qfy-outsourcing-control",
+      "developmentId": "initial",
+      "titleZh": "智能笔外协案例：生产执行与工艺、质量责任分开看",
+      "originalTitle": "智能笔外协案例：生产执行与工艺、质量责任分开看",
+      "brief": {
+        "lead": "千分一的历史申报回复区分工序外协与全制程外协，并披露由自身提供工艺文件、派驻技术和品控人员。它提供了研究制造分工的具体线索，不能代表所有学习硬件厂商。",
+        "points": [
+          "外协生产仍需核对参数变更权限与批次追溯。",
+          "文中直通率排除返工、返修和重工，不能与最终合格率混用。"
+        ]
+      },
+      "stages": [
+        "供应链与采购",
+        "制造与交付",
+        "质量与合规"
+      ],
+      "domestic": true,
+      "companies": [
+        "千分一"
+      ],
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 18,
+          "机制清晰": 18,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "读取当前官方说明，事实与研究解释分开，保留适用范围与未知项。"
+        }
+      },
+      "eventReason": "同一主体与具体机制去重；无日期支持资料不作为今日新闻。",
+      "educationCategories": [
+        "tablet"
+      ],
+      "boundary": "历史申报回复节选，未全文阅读或独立验证；智能笔供应商的做法不能归为客户品牌内部制度，也不证明当前良率和组织成效。",
+      "meaning": "研究外协接口时，将执行、参数变更与质量验收分开核对。",
+      "question": "具体型号的变更记录、批次问题与验收责任能否对应？",
+      "practices": [
+        {
+          "title": "按交接证据核对外协责任",
+          "method": "对照工艺文件、变更权限与批次记录。",
+          "conditions": "单一智能笔供应商历史披露。",
+          "outcome": "企业自述，未独立审计本次摘录所述实施结果。",
+          "boundary": "历史申报回复节选，未全文阅读或独立验证；智能笔供应商的做法不能归为客户品牌内部制度，也不证明当前良率和组织成效。",
+          "nextCheck": "具体型号的变更记录、批次问题与验收责任能否对应？",
+          "stages": [
+            "制造与交付",
+            "质量与合规"
+          ],
+          "evidenceLevel": "历史案例",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "公司披露全制程外协的技术与品控责任。",
+          "sourceUrl": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+          "locator": "回复第81至82页：全制程外协"
+        },
+        {
+          "claim": "披露的生产直通率排除返工、返修和重工。",
+          "sourceUrl": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+          "locator": "回复第83页：生产直通率口径"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+          "name": "千分一 · 第二轮审核问询回复（历史材料）",
+          "publishedAt": null,
+          "publisherGroup": "千分一",
+          "role": "official",
+          "textHash": "e4298694324f305b6e8fd7a9a9f248fca7b10d1a776417531750961f3a1bdfb1",
+          "readAt": "2026-11-17T00:45:51.020581+00:00",
+          "coverage": "excerpt"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-17T00:45:51.273221+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "智能笔外协案例：生产执行与工艺、质量责任分开看",
+      "summary": "千分一的历史申报回复区分工序外协与全制程外协，并披露由自身提供工艺文件、派驻技术和品控人员。它提供了研究制造分工的具体线索，不能代表所有学习硬件厂商。"
+    },
+    {
+      "id": "formlabs-validation-stages",
+      "eventId": "formlabs-validation-stages",
+      "developmentId": "initial",
+      "titleZh": "EVT、DVT、PVT：先问这一轮验证什么",
+      "originalTitle": "Validation Testing in Product Development: From POC to EVT, DVT, PVT, and Mass Production",
+      "brief": {
+        "lead": "Formlabs的硬件开发说明区分三个验证重点：EVT使关键功能和可制造设计成形，DVT细化设计并验证接近量产的产品，PVT则检验生产线能否稳定制造。阶段名称只能帮助组织问题，不能代替项目自己的放行标准。",
+        "points": [
+          "DVT包含设计细节、工装和产品测试；具体测试项目取决于产品。",
+          "PVT关注产线、操作熟练度、废品与日产出等，样机能运行不能证明量产稳定。"
+        ]
+      },
+      "stages": [
+        "研发与系统",
+        "制造与交付",
+        "质量与合规"
+      ],
+      "domestic": false,
+      "companies": [
+        "Formlabs"
+      ],
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 18,
+          "机制清晰": 18,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "读取当前官方说明，事实与研究解释分开，保留适用范围与未知项。"
+        }
+      },
+      "eventReason": "同一主体与具体机制去重；无日期支持资料不作为今日新闻。",
+      "boundary": "厂商解释性历史文章，不是统一标准；未照搬批量、时长和认证清单，未验证具体项目。各企业缩写和阶段门可能不同。",
+      "meaning": "以待验证风险、样品状态、交付物和放行证据组织阶段评审。",
+      "question": "本阶段解决哪个风险、用什么证据退出，仍有哪些条件未满足？",
+      "practices": [
+        {
+          "title": "按验证对象定义研发阶段门",
+          "method": "分别核对关键功能、设计细节和量产过程。",
+          "conditions": "硬件研发的概念学习；具体项目另定门槛。",
+          "outcome": "解释性框架，无本项目实测。",
+          "boundary": "厂商解释性历史文章，不是统一标准；未照搬批量、时长和认证清单，未验证具体项目。各企业缩写和阶段门可能不同。",
+          "nextCheck": "本阶段解决哪个风险、用什么证据退出，仍有哪些条件未满足？",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "EVT重点在关键功能范围与优化。",
+          "sourceUrl": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+          "locator": "Engineering Validation Test小节"
+        },
+        {
+          "claim": "DVT细化设计并走向量产线。",
+          "sourceUrl": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+          "locator": "Design Validation Test小节"
+        },
+        {
+          "claim": "PVT优化稳定生产装配线。",
+          "sourceUrl": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+          "locator": "Production Validation Test小节"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+          "name": "Formlabs官方资料",
+          "publishedAt": null,
+          "publisherGroup": "Formlabs",
+          "role": "official",
+          "textHash": "7856a3f1fd83e2a96a89c35400d15609777010845e3054ec1bbc6b4f325a4942",
+          "readAt": "2026-11-17T00:43:44.109079+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-17T00:45:51.276148+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "EVT、DVT、PVT：先问这一轮验证什么",
+      "summary": "Formlabs的硬件开发说明区分三个验证重点：EVT使关键功能和可制造设计成形，DVT细化设计并验证接近量产的产品，PVT则检验生产线能否稳定制造。阶段名称只能帮助组织问题，不能代替项目自己的放行标准。"
     }
   ],
   "events": [
+    {
+      "id": "rss-8f436ef391e4e973",
+      "representativeId": "rss-8f436ef391e4e973",
+      "itemIds": [
+        "rss-8f436ef391e4e973"
+      ],
+      "publisherGroups": [
+        "中国之声转载链"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": false
+    },
     {
       "id": "rss-4ecdc03c57ee0814",
       "representativeId": "rss-4ecdc03c57ee0814",
@@ -7226,6 +7513,34 @@
       ],
       "publisherGroups": [
         "Autodesk"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "qfy-outsourcing-control",
+      "representativeId": "qfy-outsourcing-control",
+      "itemIds": [
+        "qfy-outsourcing-control"
+      ],
+      "publisherGroups": [
+        "千分一"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "formlabs-validation-stages",
+      "representativeId": "formlabs-validation-stages",
+      "itemIds": [
+        "formlabs-validation-stages"
+      ],
+      "publisherGroups": [
+        "Formlabs"
       ],
       "developmentIds": [
         "initial"
@@ -13597,6 +13912,422 @@
       "completedAt": "2026-11-16T10:41:56.818057+00:00",
       "reviewedCount": 4,
       "selectedCount": 4
+    },
+    {
+      "coverage": "6个RSS源5个成功；30候选初筛，实际审读儿童手表风险报道后暂缓。三家国内核心竞品各1个当前岗位，另读讯飞学习机、智能笔供应商申报节选及Formlabs验证阶段说明。覆盖采购、制造、质量、服务；新增2篇常青brief，0个合格新事件。",
+      "sourceChecks": [
+        {
+          "company": "作业帮",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/e6056b1d-580b-442d-a27f-9ab9f12cd4b1",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:42:44.120Z",
+          "note": "穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队；同ID职责复核未见实质变化。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
+          "purpose": "recruitment",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "服务与生命周期"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:42:44.135Z",
+          "note": "消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机；同ID职责复核未见实质变化。"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:42:44.150Z",
+          "note": "原文明确小猿产品及学习机、学练机业务，未划分具体型号；同ID职责复核未见实质变化。"
+        },
+        {
+          "company": null,
+          "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+          "purpose": "practice",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "实际阅读正文或已标明的PDF节选；未核实的实施与结果保留未知。"
+        },
+        {
+          "company": null,
+          "url": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:43:44.109079+00:00",
+          "note": "实际阅读正文或已标明的PDF节选；未核实的实施与结果保留未知。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/028/037.htm",
+          "purpose": "news",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:41:51.217104+00:00",
+          "note": "实际阅读正文或已标明的PDF节选；未核实的实施与结果保留未知。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:43:13.926Z",
+          "note": "实际阅读正文或已标明的PDF节选；未核实的实施与结果保留未知。"
+        },
+        {
+          "company": null,
+          "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+          "purpose": "practice",
+          "stages": [
+            "制造与交付",
+            "质量与合规"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "本地直接下载PDF超时；公开网页工具已读取指定页文本，未读完整文件。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/856.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/023/622.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/992.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/963.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/574.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/292.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/288.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/026/993.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/026/757.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/026/385.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/026/367.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/025/331.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/025/152.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/025/146.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/024/828.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/024/755.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/024/535.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/024/516.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/023/995.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/023/768.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/023/767.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/023/546.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/768.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/004.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/028/022.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/964.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/954.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/949.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/815.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://ireader.jd.com/",
+          "purpose": "practice",
+          "stages": [
+            "渠道与销售"
+          ],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "搜索仍只有店铺型号索引，未据此建立掌阅产品档案。"
+        }
+      ],
+      "knownGaps": [
+        "其余29候选未逐篇审读，零入选不等于无行业新闻。",
+        "作业帮直接学习硬件供应链仍缺可核验岗位；现有样本不代表完整组织。",
+        "掌阅阅读器当前产品与服务正文仍缺；型号索引不构成产品档案。",
+        "知识全字段复核仍有缺口，部分复核不重置期限。",
+        "儿童手表报道原始调查、型号与厂商回应未核实。"
+      ],
+      "failedSources": [
+        "CNX RSS超时后HTTP403，保留历史。",
+        "申报回复本地下载超时，已通过公开PDF文本读取指定页节选。",
+        "本地直接下载PDF超时；公开网页工具已读取指定页文本，未读完整文件。"
+      ],
+      "coverageCheck": {
+        "passed": true,
+        "companies": [
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "gaps": [],
+        "usableSources": 37
+      },
+      "successfulScan": true,
+      "completedAt": "2026-11-17T00:45:51.283338+00:00",
+      "reviewedCount": 3,
+      "selectedCount": 2
     }
   ]
 }

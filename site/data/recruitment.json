@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-16T00:45:22.323105+00:00",
+  "checkedAt": "2026-11-17T00:45:51.386437+00:00",
   "jobs": [
     {
       "company": "DJI 大疆",
@@ -758,8 +758,8 @@
       "scopeNote": "穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队",
       "id": "job-dee6ed39b271d521",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-14T00:44:10.803458+00:00",
-      "sourceHash": "1ddb39d34e36e78cc72a716b5df3460edb6eac972572daf52a3d4de7ea10748f",
+      "lastSeen": "2026-11-17T00:45:51.386437+00:00",
+      "sourceHash": "aeb7d4e49557155cbbead50c7a093dc07e2e5a7cb77848439a115659f6403172",
       "change": "持续可见",
       "versions": [
         {
@@ -1169,7 +1169,7 @@
       "scopeNote": "消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机",
       "id": "job-64eaead4b243a34c",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-15T00:44:23.590600+00:00",
+      "lastSeen": "2026-11-17T00:45:51.386437+00:00",
       "sourceHash": "d367fee8f52072da2786051fc233e03f2d8bd9886ef73c5619bfbf8fe35f8c33",
       "change": "持续可见",
       "versions": [
@@ -1426,7 +1426,7 @@
       ],
       "id": "job-6c6331e12e6b4c66",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-14T10:44:31.902746+00:00",
+      "lastSeen": "2026-11-17T00:45:51.386437+00:00",
       "sourceHash": "2c8e92aeec8845f458bdc658e6f76ca865dda8ad852ef8c28ee8de426eea753f",
       "change": "持续可见",
       "versions": [
@@ -2556,6 +2556,60 @@
         }
       ],
       "checkedAt": "2026-11-16T00:45:22.323105+00:00"
+    },
+    {
+      "company": "作业帮",
+      "state": "partial",
+      "complete": false,
+      "note": "本轮同ID正文职责、要求、地点和业务边界未见实质变化，保留原整理；非完整目录。",
+      "familyChecks": [
+        {
+          "family": "算法",
+          "state": "body",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/e6056b1d-580b-442d-a27f-9ab9f12cd4b1",
+          "note": "穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队",
+          "jobIds": [
+            "job-dee6ed39b271d521"
+          ]
+        }
+      ],
+      "checkedAt": "2026-11-17T00:45:51.386437+00:00"
+    },
+    {
+      "company": "科大讯飞",
+      "state": "partial",
+      "complete": false,
+      "note": "本轮同ID正文职责、要求、地点和业务边界未见实质变化，保留原整理；非完整目录。",
+      "familyChecks": [
+        {
+          "family": "供应链",
+          "state": "body",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
+          "note": "消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机",
+          "jobIds": [
+            "job-64eaead4b243a34c"
+          ]
+        }
+      ],
+      "checkedAt": "2026-11-17T00:45:51.386437+00:00"
+    },
+    {
+      "company": "猿辅导（小猿）",
+      "state": "partial",
+      "complete": false,
+      "note": "本轮同ID正文职责、要求、地点和业务边界未见实质变化，保留原整理；非完整目录。",
+      "familyChecks": [
+        {
+          "family": "硬件",
+          "state": "body",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "note": "原文明确小猿产品及学习机、学练机业务，未划分具体型号",
+          "jobIds": [
+            "job-6c6331e12e6b4c66"
+          ]
+        }
+      ],
+      "checkedAt": "2026-11-17T00:45:51.386437+00:00"
     }
   ],
   "insights": [

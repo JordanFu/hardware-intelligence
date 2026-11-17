@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-16T20:28:41.194504+00:00",
-  "lastSuccessfulAt": "2026-11-16T20:28:41.194504+00:00",
+  "checkedAt": "2026-11-17T00:41:19.407307+00:00",
+  "lastSuccessfulAt": "2026-11-17T00:41:19.407307+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-16T20:28:41.194504+00:00",
-      "lastSuccessAt": "2026-11-16T20:28:41.194504+00:00",
+      "checkedAt": "2026-11-17T00:41:19.407307+00:00",
+      "lastSuccessAt": "2026-11-17T00:41:19.407307+00:00",
       "received": 18,
       "matched": 1,
       "excluded": 17,
@@ -15,8 +15,8 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-16T20:28:41.194504+00:00",
-      "lastSuccessAt": "2026-11-16T20:28:41.194504+00:00",
+      "checkedAt": "2026-11-17T00:41:19.407307+00:00",
+      "lastSuccessAt": "2026-11-17T00:41:19.407307+00:00",
       "received": 50,
       "matched": 2,
       "excluded": 48,
@@ -25,8 +25,8 @@
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-16T20:28:41.194504+00:00",
-      "lastSuccessAt": "2026-11-16T20:28:41.194504+00:00",
+      "checkedAt": "2026-11-17T00:41:19.407307+00:00",
+      "lastSuccessAt": "2026-11-17T00:41:19.407307+00:00",
       "received": 10,
       "matched": 0,
       "excluded": 10,
@@ -35,8 +35,8 @@
     {
       "id": "bambu",
       "state": "ok",
-      "checkedAt": "2026-11-16T20:28:41.194504+00:00",
-      "lastSuccessAt": "2026-11-16T20:28:41.194504+00:00",
+      "checkedAt": "2026-11-17T00:41:19.407307+00:00",
+      "lastSuccessAt": "2026-11-17T00:41:19.407307+00:00",
       "received": 15,
       "matched": 15,
       "excluded": 0,
@@ -44,26 +44,47 @@
     },
     {
       "id": "cnx",
-      "state": "ok",
-      "checkedAt": "2026-11-16T20:28:41.194504+00:00",
-      "lastSuccessAt": "2026-11-16T20:28:41.194504+00:00",
-      "received": 32,
-      "matched": 7,
-      "excluded": 25,
-      "error": null
+      "state": "error",
+      "checkedAt": "2026-11-17T00:41:19.407307+00:00",
+      "error": "curl: (28) Connection timed out after 30002 milliseconds\ncurl: (56) The requested URL returned error: 403",
+      "lastSuccessAt": "2026-11-16T20:28:41.194504+00:00"
     },
     {
       "id": "ithome",
       "state": "ok",
-      "checkedAt": "2026-11-16T20:28:41.194504+00:00",
-      "lastSuccessAt": "2026-11-16T20:28:41.194504+00:00",
+      "checkedAt": "2026-11-17T00:41:19.407307+00:00",
+      "lastSuccessAt": "2026-11-17T00:41:19.407307+00:00",
       "received": 60,
-      "matched": 5,
-      "excluded": 55,
+      "matched": 6,
+      "excluded": 54,
       "error": null
     }
   ],
   "items": [
+    {
+      "id": "rss-8f436ef391e4e973",
+      "title": "几十元即可破解儿童电话手表，刷机多重安全风险不容忽视",
+      "url": "https://www.ithome.com/1/028/037.htm",
+      "date": "2026-11-17T00:09:07+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "学习硬件",
+      "status": "待核验",
+      "discoveredAt": "2026-11-17T00:41:19.407307+00:00"
+    },
+    {
+      "id": "rss-e1a88538de72484a",
+      "title": "美国推动全栈 AI / SI 技术出海：首批 33 个联盟获指定，覆盖芯片、模型及行业应用",
+      "url": "https://www.ithome.com/1/028/022.htm",
+      "date": "2026-11-16T23:01:32+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-17T00:41:19.407307+00:00"
+    },
     {
       "id": "rss-812b4c6960fb96b9",
       "title": "华为 WATCH Air 新款智能手表外观曝光：圆润机身 + 超轻薄设计，预装鸿蒙 HarmonyOS 系统",
