@@ -295,8 +295,9 @@
     "url": "https://www.trendforce.com/news/feed/",
     "home": "https://www.trendforce.com/news/",
     "tier": "媒体补充",
-    "type": "RSS",
-    "scope": "存储供需、产能、价格与半导体产业链；转述需回溯原始发布方",
-    "auto": true
+    "type": "Codex 定时查阅",
+    "scope": "存储供需、产能与价格；2026-11-17实查RSS最新为7月1日，主动查阅新闻正文，不把RSS可连通视作最新覆盖。",
+    "auto": false,
+    "research": true
   }
 ]
