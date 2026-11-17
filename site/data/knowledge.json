@@ -125,20 +125,50 @@
       "updatedAt": "2026-11-16T00:46:03.708885+00:00"
     },
     "chain-7": {
-      "attemptedAt": "2026-11-15T00:45:02.865869+00:00",
+      "attemptedAt": "2026-11-17T10:40:23.696029+00:00",
       "status": "partial",
-      "assessment": "补教育空间恢复访问与数据保留之间的边界；未验证备份方案，不据此推广所有学习设备的重置行为。",
+      "assessment": "补工单计数与用户结果的差异，重新核对华为教育空间重置的数据影响；尚缺跨工单问题关联、备份恢复与维修结果证据。",
       "gaps": [
-        "首次解决率的窗口、排除项与重复联系归属仍需独立方法资料和实际数据。",
-        "没有具体停产产品通知、真实维修时长、备件供货与用户恢复使用结果。",
-        "华为该空间的备份、导出及具体学习应用资料范围未核实。"
+        "本轮补平台计数定义，但跨工单重复联系归属、观察窗口及排除项仍需业务级定义。",
+        "没有设备停产通知、维修时效和恢复使用结果；华为该空间其他备份渠道仍未核实。"
       ],
       "reviewedFields": [
+        "basics",
         "exercise",
         "flow",
+        "metrics",
         "pitfall"
       ],
       "evidence": [
+        {
+          "itemId": "zendesk-one-touch-boundary",
+          "title": "服务指标：一次回复计数不等于用户已恢复使用",
+          "facts": [
+            {
+              "claim": "one-touch计数包含已解决或关闭、一次或零次客服回复的工单。",
+              "sourceUrl": "https://support.zendesk.com/hc/en-us/articles/4408820618266-How-are-one-touch-resolutions-calculated",
+              "locator": "How do I calculate one-touch tickets第一段"
+            },
+            {
+              "claim": "再次提问并得到客服回复后重新解决的工单不再计为one-touch。",
+              "sourceUrl": "https://support.zendesk.com/hc/en-us/articles/4408820618266-How-are-one-touch-resolutions-calculated",
+              "locator": "客户重新打开工单的说明"
+            }
+          ],
+          "boundary": "仅为Zendesk特定报表计数规则，不等于通用首次解决率，也不是用户效果或员工绩效结论。",
+          "sources": [
+            {
+              "url": "https://support.zendesk.com/hc/en-us/articles/4408820618266-How-are-one-touch-resolutions-calculated",
+              "name": "Zendesk官方帮助",
+              "publishedAt": null,
+              "publisherGroup": "Zendesk官方帮助",
+              "role": "official",
+              "textHash": "e5ead6bc771e2fb4a7bdbca70d688d4778b8a2415f91402a76525f947fe37498",
+              "readAt": "2026-11-17T10:38:27.685621+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
         {
           "itemId": "huawei-education-reset-boundary",
           "title": "华为教育空间：密码恢复涉及空间数据删除",
@@ -171,18 +201,27 @@
       ],
       "sourceChecks": [
         {
+          "itemId": "zendesk-one-touch-boundary",
+          "url": "https://support.zendesk.com/hc/en-us/articles/4408820618266-How-are-one-touch-resolutions-calculated",
+          "checkedAt": "2026-11-17T10:38:27.685621+00:00",
+          "state": "body",
+          "note": "本轮实际读取当前正文，复核所列字段；其余证据缺口继续公开，未刷新完整复核期限。"
+        },
+        {
           "itemId": "huawei-education-reset-boundary",
           "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
-          "checkedAt": "2026-11-15T00:41:20.685838+00:00",
+          "checkedAt": "2026-11-17T10:38:27.688631+00:00",
           "state": "body",
-          "note": "实际读取列明正文及版本条件；未覆盖字段和实测缺口继续保留。"
+          "note": "本轮实际读取当前正文，复核所列字段；其余证据缺口继续公开，未刷新完整复核期限。"
         }
       ],
-      "reviewedAt": "2026-11-15T00:45:02.865869+00:00",
+      "reviewedAt": "2026-11-17T10:40:23.696029+00:00",
       "patch": {
         "basics": "OTA 是远程软件更新；支持周期、回滚和停止服务的安排也是产品承诺。 对互联设备，还应检查所有权转移、恢复出厂与退出时的数据处理；这些是从岗位职责提炼的验收问题，不能视为全行业已落实的规范。",
         "exercise": "追踪一次服务事件，从用户发现到真正恢复使用，找出重复解释和重复操作。 补充一次设备转售或恢复出厂场景，列清设备、账号和云端数据的处理责任与验证证据。 对返修场景增加购买证明、排障记录、寄送指引与恢复使用四步，检查哪些信息能在授权范围内复用，避免用户重复解释。",
-        "flow": "使用、故障与反馈 → 安装、维修、更新、备件与退出方案 服务研究还应区分线上排障、返修授权、运输维修以及停产通知四个节点，逐一确认交接资料与承诺主体。"
+        "flow": "使用、故障与反馈 → 安装、维修、更新、备件与退出方案 服务研究还应区分线上排障、返修授权、运输维修以及停产通知四个节点，逐一确认交接资料与承诺主体。",
+        "metrics": "首次解决率须先声明问题范围、首次交互、重复联系窗口与分母。Zendesk one-touch还可包含零次回复且已解决或关闭的工单，是特定报表计数；不能直接等同设备恢复使用率或用户资料恢复率。",
+        "pitfall": "将工单关闭、一次回复或能再次登录当作问题解决；应分开核验重复求助、设备恢复使用与资料保留，不能通过减少必要沟通提高计数。"
       },
       "lessons": [
         {
@@ -217,9 +256,20 @@
             "huawei-education-reset-boundary"
           ],
           "updatedAt": "2026-11-15T00:45:02.865869+00:00"
+        },
+        {
+          "id": "service-one-touch-user-outcome",
+          "title": "工单计数与恢复使用分开验收",
+          "learning": "一次或零次回复加解决状态可以形成one-touch计数，但还不足以证明用户问题已消除。",
+          "application": "比较售后时同时检查问题归并、再次联系与恢复使用，避免给客服施加少回复的错误目标。",
+          "boundary": "仅依据Zendesk定义形成检查问题，无任何硬件公司实际服务数据。",
+          "itemIds": [
+            "zendesk-one-touch-boundary"
+          ],
+          "updatedAt": "2026-11-17T10:40:23.696029+00:00"
         }
       ],
-      "updatedAt": "2026-11-15T00:45:02.865869+00:00"
+      "updatedAt": "2026-11-17T10:40:23.696029+00:00"
     },
     "track-5": {
       "attemptedAt": "2026-11-17T00:46:36.326415+00:00",
@@ -1006,13 +1056,13 @@
       "updatedAt": "2026-11-15T10:41:33.649429+00:00"
     },
     "track-4": {
-      "attemptedAt": "2026-11-15T00:45:02.865869+00:00",
+      "attemptedAt": "2026-11-17T10:40:23.696029+00:00",
       "status": "partial",
-      "assessment": "补创想三维当前可读售后流程资料；观察对象入口缺口得到补充，但其工艺、产品能力和服务结果仍未全面复核。",
+      "assessment": "重新核对创想三维诊断资料、返寄确认及7/14天冲突，现有知识无需实质改写。拓竹排障页本轮读取失败，没有用旧缓存补齐产品与指标字段。",
       "gaps": [
-        "创想三维具体产品能力、质量数据及地区服务条款冲突仍待核验。",
-        "拓竹伙伴合同、维修验收、备件和服务结果仍缺证据。",
-        "跨企业任务成功率、维护成本及人员负担缺可比样本。"
+        "拓竹首层排障页网页读取返回402，未取得当前正文；具体工艺和验收条件未补齐。",
+        "创想三维确认后寄回时限仍有7/14天冲突，地区适用性及实际履约未验证。",
+        "跨企业首次任务成功率、准备与恢复时间、维护成本缺少同任务可比证据。"
       ],
       "reviewedFields": [
         "chain",
@@ -1055,12 +1105,12 @@
         {
           "itemId": "creality-service-evidence",
           "url": "https://store.creality.com/pages/return-policy",
-          "checkedAt": "2026-11-15T00:41:20.685531+00:00",
+          "checkedAt": "2026-11-17T10:38:27.688246+00:00",
           "state": "body",
-          "note": "实际读取列明正文及版本条件；未覆盖字段和实测缺口继续保留。"
+          "note": "本轮实际读取当前正文，复核所列字段；其余证据缺口继续公开，未刷新完整复核期限。"
         }
       ],
-      "reviewedAt": "2026-11-15T00:45:02.865869+00:00",
+      "reviewedAt": "2026-11-17T10:40:23.696029+00:00",
       "patch": {
         "constraint": "良率、准备时间、耗材和失败恢复 制造工具不能只按峰值速度比较；需看材料适配、真实任务耗时和型号特定的部署条件。专业焊接设备的使用前提不得与桌面创作设备混同。",
         "team": "运动控制、固件、结构、材料、切片软件、制造工程 涉及专业设备时，还需把现场交付、训练和安全责任接口纳入观察；具体职责取决于产品和使用场景。",
@@ -1094,75 +1144,55 @@
       "updatedAt": "2026-11-15T00:45:02.865869+00:00"
     },
     "chain-6": {
-      "attemptedAt": "2026-11-15T10:41:33.649429+00:00",
+      "attemptedAt": "2026-11-17T10:40:23.696029+00:00",
       "status": "partial",
-      "assessment": "复核渠道转化率分母与统计版本，XREAL渠道至售后证据接口仍成立；基础销售流量与贡献利润定义尚未全量补足。",
+      "assessment": "补售罄率与库存计量版本，保留渠道进货、利润和具体企业结果缺口；没有用平台销售数替代终端用户需求。",
       "gaps": [
-        "sell-in、sell-through及贡献利润口径仍需权威来源复核。",
-        "预测、库存、退货及用户办理耗时缺少当前可比数据；不据本轮平台定义判断企业成效。"
+        "sell-in与多级经销渠道的统一归集、贡献利润成本范围仍待专门复核。",
+        "未读取商户实际配置和企业库存数据；不能推断任何企业压货、滞销或利润变化。"
       ],
       "reviewedFields": [
+        "basics",
         "exercise",
-        "flow",
         "metrics",
-        "pitfall",
-        "team"
+        "pitfall"
       ],
       "evidence": [
         {
-          "itemId": "shopify-session-conversion",
-          "title": "渠道转化率先对齐分母：购买会话不等于订单数",
+          "itemId": "shopify-sellthrough-inventory-scope",
+          "title": "渠道指标：售罄率需要同时记录库存口径与统计版本",
           "facts": [
             {
-              "claim": "平台区分购买会话数与订单数。",
-              "sourceUrl": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports",
-              "locator": "Conversion rate over time说明"
+              "claim": "售罄率分母是售出数量与剩余库存之和。",
+              "sourceUrl": "https://help.shopify.com/en/manual/products/analytics",
+              "locator": "Analytics bar指标定义表"
             },
             {
-              "claim": "漏斗步骤的转化率使用总会话作为分母。",
-              "sourceUrl": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports",
-              "locator": "Conversion rate breakdown"
+              "claim": "2026年10月1日及以后使用在手量；之前历史数据保持可售量口径。",
+              "sourceUrl": "https://changelog.shopify.com/posts/inventory-reports-now-show-on-hand-quantity",
+              "locator": "变更记录末段"
             }
           ],
-          "boundary": "当前帮助页的网店统计说明，非国内公司实际销售数据；未核验商户配置、事件埋点、机器人过滤或跨期可比性。",
+          "boundary": "这是平台定义及8月公布的历史变更，非今日新闻；没有核对商户配置或任何硬件公司的销量、库存、渠道进货和利润。",
           "sources": [
             {
-              "url": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports",
-              "name": "Shopify官方资料",
+              "url": "https://help.shopify.com/en/manual/products/analytics",
+              "name": "Shopify官方帮助",
               "publishedAt": null,
-              "publisherGroup": "Shopify",
+              "publisherGroup": "Shopify官方帮助",
               "role": "official",
-              "textHash": "839f261d11c1a49fce4e742038e2d3bc2b00deae2b52e82924c45fb0b4d02c08",
-              "readAt": "2026-11-15T10:39:05.971438+00:00",
+              "textHash": "6cba734d4c70e5d1285c8132fd6101af9aec251e38485ccb838ffee5ef956ea4",
+              "readAt": "2026-11-17T10:38:27.686369+00:00",
               "coverage": "body"
-            }
-          ]
-        },
-        {
-          "itemId": "xreal-warranty",
-          "title": "XREAL 服务条款样本：销售渠道与售后受理信息相连",
-          "facts": [
-            {
-              "claim": "条款只覆盖规定渠道及所支持地区。",
-              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
-              "locator": "Scope"
             },
             {
-              "claim": "申请信息包含订单和故障设备序列号。",
-              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
-              "locator": "Making a claim"
-            }
-          ],
-          "boundary": "本轮读取 Scope 与 Making a claim 等业务流程段落；这是厂商自述的商业保修流程样本，不是对法定权利或条款效力的法律判断。当前适用地区、机型和购买时间仍须逐案核对。",
-          "sources": [
-            {
-              "url": "https://us.shop.xreal.com/pages/warranty-policy",
-              "name": "XREAL 美国商城保修政策",
-              "publishedAt": "2024-04-08",
-              "publisherGroup": "XREAL 美国商城保修政策",
+              "url": "https://changelog.shopify.com/posts/inventory-reports-now-show-on-hand-quantity",
+              "name": "Shopify官方变更记录",
+              "publishedAt": "2026-08-14",
+              "publisherGroup": "Shopify官方变更记录",
               "role": "official",
-              "textHash": "f6d9abd8a0da1c0e46c8883c61dc2dcc1047721091f3eaef3a7b3eb81d86b685",
-              "readAt": "2026-11-09T00:46:58.382936+00:00",
+              "textHash": "53f6e0690fc14827e5b3020224247daead21db2f55280b3ded21a7f2a9ac6de3",
+              "readAt": "2026-11-17T10:38:27.686547+00:00",
               "coverage": "body"
             }
           ]
@@ -1170,26 +1200,26 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "shopify-session-conversion",
-          "url": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports",
-          "checkedAt": "2026-11-15T10:39:05.971438+00:00",
+          "itemId": "shopify-sellthrough-inventory-scope",
+          "url": "https://help.shopify.com/en/manual/products/analytics",
+          "checkedAt": "2026-11-17T10:38:27.686369+00:00",
           "state": "body",
-          "note": "当前实际阅读相关正文；仅核验列明字段。"
+          "note": "本轮实际读取当前正文，复核所列字段；其余证据缺口继续公开，未刷新完整复核期限。"
         },
         {
-          "itemId": "xreal-warranty",
-          "url": "https://us.shop.xreal.com/pages/warranty-policy",
-          "checkedAt": "2026-11-15T10:39:05.974243+00:00",
+          "itemId": "shopify-sellthrough-inventory-scope",
+          "url": "https://changelog.shopify.com/posts/inventory-reports-now-show-on-hand-quantity",
+          "checkedAt": "2026-11-17T10:38:27.686547+00:00",
           "state": "body",
-          "note": "当前实际阅读相关正文；仅核验列明字段。"
+          "note": "实际阅读8月发布的库存模型变更正文；10月起适用，历史数据不回写，非今日新增事件。"
         }
       ],
-      "reviewedAt": "2026-11-15T10:41:33.649429+00:00",
+      "reviewedAt": "2026-11-17T10:40:23.696029+00:00",
       "patch": {
         "flow": "用户需求与库存 → 定价、渠道政策、交付承诺与终端反馈 还需核对销售主体、支持地区、购买凭证与设备序列号在售后受理中的衔接。",
         "team": "销售、市场、计划、零售、财务对齐销售预测、货盘、促销与退货规则。 XREAL 的公开流程提示渠道与服务之间存在购买证据交接；研究时应确认能否复用已授权订单信息，减少用户重复提交。",
-        "exercise": "选一个销售活动，列出从备货到退货的责任与反馈，不只统计订单数。 选择一个具体渠道和地区，画出从购买承诺到问题处理的用户路径，记录需要重复提供的信息及尚未明确的责任。",
-        "metrics": "网店转化率先确认分母：Shopify以购买会话占总会话计算，同一会话可含多笔订单。比较时固定期间、漏斗路径、过滤与计量版本；不能直接套到门店或经销商。贡献利润的退货、服务和渠道费用归集口径仍待专门复核。"
+        "exercise": "选一个销售活动，列出从备货到退货的责任与反馈，不只统计订单数。 选择一个具体渠道和地区，画出从购买承诺到问题处理的用户路径，记录需要重复提供的信息及尚未明确的责任。 对一次售罄率变化另列统计窗口、库存范围及模型版本，先排除统计变更再讨论备货和促销。",
+        "metrics": "网店转化率先确认分母：Shopify以购买会话占总会话计算，同一会话可含多笔订单。比较时固定期间、漏斗路径、过滤与计量版本；不能直接套到门店或经销商。贡献利润的退货、服务和渠道费用归集口径仍待专门复核。 售罄率另核库存分母：Shopify示例为售出数量/（售出数量+期末库存）；其2026年10月1日库存模型改变，跨期不能直接解释为经营变化。"
       },
       "lessons": [
         {
@@ -1213,9 +1243,20 @@
             "shopify-session-conversion"
           ],
           "updatedAt": "2026-11-15T10:41:33.649429+00:00"
+        },
+        {
+          "id": "channel-sellthrough-version",
+          "title": "库存模型变化需要与销售变化区分",
+          "learning": "同名售罄率的库存分母可能随平台版本变化，历史数据不回写会影响前后对比。",
+          "application": "用于同平台渠道分析，固定期间和库存定义；跨渠道先核销售层级，不替代终端激活数据。",
+          "boundary": "平台定义与历史变更说明，不证明国内厂商实际采用或库存改善。",
+          "itemIds": [
+            "shopify-sellthrough-inventory-scope"
+          ],
+          "updatedAt": "2026-11-17T10:40:23.696029+00:00"
         }
       ],
-      "updatedAt": "2026-11-15T10:41:33.649429+00:00"
+      "updatedAt": "2026-11-17T10:40:23.696029+00:00"
     },
     "track-0": {
       "attemptedAt": "2026-11-15T10:41:33.649429+00:00",
@@ -2237,6 +2278,28 @@
           "hash": "6f687b713d5f6e9d14d87f25d9f5f9585fb8633cedc87de8cbf0281ae8a6e89a",
           "decision": "integrated",
           "reason": "补验证阶段基础概念，不采纳通用批量、周期或认证结论。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-17T10:40:23.696029+00:00",
+      "reviewedNodes": [
+        "chain-7",
+        "track-4",
+        "chain-6"
+      ],
+      "decisions": [
+        {
+          "itemId": "zendesk-one-touch-boundary",
+          "hash": "219df478e1fdced7ec1d996e930475971ed7b4cb9fb6a623a3caaf2d1d6ca0e1",
+          "decision": "integrated",
+          "reason": "补服务计量的系统状态边界，不据报表替代用户恢复使用结果。"
+        },
+        {
+          "itemId": "shopify-sellthrough-inventory-scope",
+          "hash": "59015095751e79fa0cc68abd2513bf289f6cfb40b129e68290ec3f3663150214",
+          "decision": "integrated",
+          "reason": "补渠道库存分母与历史版本变化，不外推企业销量或库存结论。"
         }
       ]
     }
@@ -7119,6 +7182,281 @@
           "checkedAt": "2026-11-17T00:43:44.109079+00:00",
           "state": "body",
           "note": "当前实际阅读指定章节；申报回复仅为节选，未读全篇或独立验证。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-7",
+      "reviewedAt": "2026-11-17T10:40:23.696029+00:00",
+      "status": "partial",
+      "assessment": "补工单计数与用户结果的差异，重新核对华为教育空间重置的数据影响；尚缺跨工单问题关联、备份恢复与维修结果证据。",
+      "gaps": [
+        "本轮补平台计数定义，但跨工单重复联系归属、观察窗口及排除项仍需业务级定义。",
+        "没有设备停产通知、维修时效和恢复使用结果；华为该空间其他备份渠道仍未核实。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "exercise",
+        "flow",
+        "metrics",
+        "pitfall"
+      ],
+      "changes": {
+        "metrics": {
+          "before": "首次解决率 = 无需再联系且问题已解决的工单 / 约定范围工单；不能用关闭工单数代替。",
+          "after": "首次解决率须先声明问题范围、首次交互、重复联系窗口与分母。Zendesk one-touch还可包含零次回复且已解决或关闭的工单，是特定报表计数；不能直接等同设备恢复使用率或用户资料恢复率。"
+        },
+        "pitfall": {
+          "before": "将工单关闭当作问题解决；只缩短客服时间而增加用户返工。",
+          "after": "将工单关闭、一次回复或能再次登录当作问题解决；应分开核验重复求助、设备恢复使用与资料保留，不能通过减少必要沟通提高计数。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "service-one-touch-user-outcome",
+            "title": "工单计数与恢复使用分开验收",
+            "learning": "一次或零次回复加解决状态可以形成one-touch计数，但还不足以证明用户问题已消除。",
+            "application": "比较售后时同时检查问题归并、再次联系与恢复使用，避免给客服施加少回复的错误目标。",
+            "boundary": "仅依据Zendesk定义形成检查问题，无任何硬件公司实际服务数据。",
+            "itemIds": [
+              "zendesk-one-touch-boundary"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "zendesk-one-touch-boundary",
+          "title": "服务指标：一次回复计数不等于用户已恢复使用",
+          "facts": [
+            {
+              "claim": "one-touch计数包含已解决或关闭、一次或零次客服回复的工单。",
+              "sourceUrl": "https://support.zendesk.com/hc/en-us/articles/4408820618266-How-are-one-touch-resolutions-calculated",
+              "locator": "How do I calculate one-touch tickets第一段"
+            },
+            {
+              "claim": "再次提问并得到客服回复后重新解决的工单不再计为one-touch。",
+              "sourceUrl": "https://support.zendesk.com/hc/en-us/articles/4408820618266-How-are-one-touch-resolutions-calculated",
+              "locator": "客户重新打开工单的说明"
+            }
+          ],
+          "boundary": "仅为Zendesk特定报表计数规则，不等于通用首次解决率，也不是用户效果或员工绩效结论。",
+          "sources": [
+            {
+              "url": "https://support.zendesk.com/hc/en-us/articles/4408820618266-How-are-one-touch-resolutions-calculated",
+              "name": "Zendesk官方帮助",
+              "publishedAt": null,
+              "publisherGroup": "Zendesk官方帮助",
+              "role": "official",
+              "textHash": "e5ead6bc771e2fb4a7bdbca70d688d4778b8a2415f91402a76525f947fe37498",
+              "readAt": "2026-11-17T10:38:27.685621+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "huawei-education-reset-boundary",
+          "title": "华为教育空间：密码恢复涉及空间数据删除",
+          "facts": [
+            {
+              "claim": "指南说明忘记密码后不支持找回。",
+              "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+              "locator": "设置与重置密码"
+            },
+            {
+              "claim": "删除教育空间会同步删除其应用和数据且不可恢复。",
+              "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+              "locator": "重置密码提示"
+            }
+          ],
+          "boundary": "无明确发布日期，按当前支持说明补充；未操作设备、删除数据或验证备份机制。不是今日新增功能，也不证明所有学习记录都会丢失。",
+          "sources": [
+            {
+              "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+              "name": "华为官方资料",
+              "publishedAt": null,
+              "publisherGroup": "华为",
+              "role": "official",
+              "textHash": "17dca06954d13a3c2041c544db30b358ff84cd4c74c2c587677f06ec3a00007a",
+              "readAt": "2026-11-15T00:41:20.685838+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "zendesk-one-touch-boundary",
+          "url": "https://support.zendesk.com/hc/en-us/articles/4408820618266-How-are-one-touch-resolutions-calculated",
+          "checkedAt": "2026-11-17T10:38:27.685621+00:00",
+          "state": "body",
+          "note": "本轮实际读取当前正文，复核所列字段；其余证据缺口继续公开，未刷新完整复核期限。"
+        },
+        {
+          "itemId": "huawei-education-reset-boundary",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+          "checkedAt": "2026-11-17T10:38:27.688631+00:00",
+          "state": "body",
+          "note": "本轮实际读取当前正文，复核所列字段；其余证据缺口继续公开，未刷新完整复核期限。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-4",
+      "reviewedAt": "2026-11-17T10:40:23.696029+00:00",
+      "status": "partial",
+      "assessment": "重新核对创想三维诊断资料、返寄确认及7/14天冲突，现有知识无需实质改写。拓竹排障页本轮读取失败，没有用旧缓存补齐产品与指标字段。",
+      "gaps": [
+        "拓竹首层排障页网页读取返回402，未取得当前正文；具体工艺和验收条件未补齐。",
+        "创想三维确认后寄回时限仍有7/14天冲突，地区适用性及实际履约未验证。",
+        "跨企业首次任务成功率、准备与恢复时间、维护成本缺少同任务可比证据。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "examples",
+        "team"
+      ],
+      "changes": {},
+      "lessonChanges": [],
+      "evidence": [
+        {
+          "itemId": "creality-service-evidence",
+          "title": "创想三维售后：诊断材料与返寄确认也是交付接口",
+          "facts": [
+            {
+              "claim": "支持流程要求产品购买信息及故障图片或视频。",
+              "sourceUrl": "https://store.creality.com/pages/return-policy",
+              "locator": "Solutions Provided by Creality 3D"
+            },
+            {
+              "claim": "寄回前需先联系客服发起退货。",
+              "sourceUrl": "https://store.creality.com/pages/return-policy",
+              "locator": "Return Address下方说明"
+            }
+          ],
+          "boundary": "海外商店披露的流程，地区、渠道、产品及条款版本均有限制；只审读服务入口、诊断与退回条款，非整页法务审查，不判断法定权利或实际履约。",
+          "sources": [
+            {
+              "url": "https://store.creality.com/pages/return-policy",
+              "name": "创想三维官方资料",
+              "publishedAt": null,
+              "publisherGroup": "创想三维",
+              "role": "official",
+              "textHash": "855a4ed49f57aaac7be29d4685a8db6c360844614827305dfa06d47738a8e459",
+              "readAt": "2026-11-15T00:41:20.685531+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "creality-service-evidence",
+          "url": "https://store.creality.com/pages/return-policy",
+          "checkedAt": "2026-11-17T10:38:27.688246+00:00",
+          "state": "body",
+          "note": "本轮实际读取当前正文，复核所列字段；其余证据缺口继续公开，未刷新完整复核期限。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-6",
+      "reviewedAt": "2026-11-17T10:40:23.696029+00:00",
+      "status": "partial",
+      "assessment": "补售罄率与库存计量版本，保留渠道进货、利润和具体企业结果缺口；没有用平台销售数替代终端用户需求。",
+      "gaps": [
+        "sell-in与多级经销渠道的统一归集、贡献利润成本范围仍待专门复核。",
+        "未读取商户实际配置和企业库存数据；不能推断任何企业压货、滞销或利润变化。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "exercise",
+        "metrics",
+        "pitfall"
+      ],
+      "changes": {
+        "metrics": {
+          "before": "网店转化率先确认分母：Shopify以购买会话占总会话计算，同一会话可含多笔订单。比较时固定期间、漏斗路径、过滤与计量版本；不能直接套到门店或经销商。贡献利润的退货、服务和渠道费用归集口径仍待专门复核。",
+          "after": "网店转化率先确认分母：Shopify以购买会话占总会话计算，同一会话可含多笔订单。比较时固定期间、漏斗路径、过滤与计量版本；不能直接套到门店或经销商。贡献利润的退货、服务和渠道费用归集口径仍待专门复核。 售罄率另核库存分母：Shopify示例为售出数量/（售出数量+期末库存）；其2026年10月1日库存模型改变，跨期不能直接解释为经营变化。"
+        },
+        "exercise": {
+          "before": "选一个销售活动，列出从备货到退货的责任与反馈，不只统计订单数。 选择一个具体渠道和地区，画出从购买承诺到问题处理的用户路径，记录需要重复提供的信息及尚未明确的责任。",
+          "after": "选一个销售活动，列出从备货到退货的责任与反馈，不只统计订单数。 选择一个具体渠道和地区，画出从购买承诺到问题处理的用户路径，记录需要重复提供的信息及尚未明确的责任。 对一次售罄率变化另列统计窗口、库存范围及模型版本，先排除统计变更再讨论备货和促销。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "channel-sellthrough-version",
+            "title": "库存模型变化需要与销售变化区分",
+            "learning": "同名售罄率的库存分母可能随平台版本变化，历史数据不回写会影响前后对比。",
+            "application": "用于同平台渠道分析，固定期间和库存定义；跨渠道先核销售层级，不替代终端激活数据。",
+            "boundary": "平台定义与历史变更说明，不证明国内厂商实际采用或库存改善。",
+            "itemIds": [
+              "shopify-sellthrough-inventory-scope"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "shopify-sellthrough-inventory-scope",
+          "title": "渠道指标：售罄率需要同时记录库存口径与统计版本",
+          "facts": [
+            {
+              "claim": "售罄率分母是售出数量与剩余库存之和。",
+              "sourceUrl": "https://help.shopify.com/en/manual/products/analytics",
+              "locator": "Analytics bar指标定义表"
+            },
+            {
+              "claim": "2026年10月1日及以后使用在手量；之前历史数据保持可售量口径。",
+              "sourceUrl": "https://changelog.shopify.com/posts/inventory-reports-now-show-on-hand-quantity",
+              "locator": "变更记录末段"
+            }
+          ],
+          "boundary": "这是平台定义及8月公布的历史变更，非今日新闻；没有核对商户配置或任何硬件公司的销量、库存、渠道进货和利润。",
+          "sources": [
+            {
+              "url": "https://help.shopify.com/en/manual/products/analytics",
+              "name": "Shopify官方帮助",
+              "publishedAt": null,
+              "publisherGroup": "Shopify官方帮助",
+              "role": "official",
+              "textHash": "6cba734d4c70e5d1285c8132fd6101af9aec251e38485ccb838ffee5ef956ea4",
+              "readAt": "2026-11-17T10:38:27.686369+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://changelog.shopify.com/posts/inventory-reports-now-show-on-hand-quantity",
+              "name": "Shopify官方变更记录",
+              "publishedAt": "2026-08-14",
+              "publisherGroup": "Shopify官方变更记录",
+              "role": "official",
+              "textHash": "53f6e0690fc14827e5b3020224247daead21db2f55280b3ded21a7f2a9ac6de3",
+              "readAt": "2026-11-17T10:38:27.686547+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "shopify-sellthrough-inventory-scope",
+          "url": "https://help.shopify.com/en/manual/products/analytics",
+          "checkedAt": "2026-11-17T10:38:27.686369+00:00",
+          "state": "body",
+          "note": "本轮实际读取当前正文，复核所列字段；其余证据缺口继续公开，未刷新完整复核期限。"
+        },
+        {
+          "itemId": "shopify-sellthrough-inventory-scope",
+          "url": "https://changelog.shopify.com/posts/inventory-reports-now-show-on-hand-quantity",
+          "checkedAt": "2026-11-17T10:38:27.686547+00:00",
+          "state": "body",
+          "note": "实际阅读8月发布的库存模型变更正文；10月起适用，历史数据不回写，非今日新增事件。"
         }
       ]
     }

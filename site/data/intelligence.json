@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastCompletedAt": "2026-11-17T09:15:43.560384+00:00",
+  "lastCompletedAt": "2026-11-17T10:39:43.295004+00:00",
   "method": "Codex 初筛评分 + 逐条证据复核；非两个独立模型评分",
   "items": [
     {
@@ -6944,6 +6944,196 @@
       "date": null,
       "title": "EVT、DVT、PVT：先问这一轮验证什么",
       "summary": "Formlabs的硬件开发说明区分三个验证重点：EVT使关键功能和可制造设计成形，DVT细化设计并验证接近量产的产品，PVT则检验生产线能否稳定制造。阶段名称只能帮助组织问题，不能代替项目自己的放行标准。"
+    },
+    {
+      "id": "zendesk-one-touch-boundary",
+      "eventId": "zendesk-one-touch-boundary",
+      "developmentId": "initial",
+      "titleZh": "服务指标：一次回复计数不等于用户已恢复使用",
+      "originalTitle": "服务指标：一次回复计数不等于用户已恢复使用",
+      "brief": {
+        "lead": "Zendesk的one-touch计数允许一次或零次客服回复、且工单处于已解决或关闭状态。它衡量的是工单交互与状态，不能单凭这个数认定硬件故障已排除或资料已恢复。",
+        "points": [
+          "客户重新提问且客服再次回复并解决时，不再计为one-touch；单纯致谢而客服不再回复则仍可计入。",
+          "本页未规定跨工单重复求助的统一关联窗口；比较前仍需补问题归并与用户恢复使用证据。"
+        ]
+      },
+      "stages": [
+        "服务与生命周期"
+      ],
+      "domestic": false,
+      "companies": [],
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 18,
+          "增量信息": 17,
+          "证据质量": 19,
+          "机制清晰": 18,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐项核对官方指标说明；平台定义与本站研究问题分开，不作硬件企业业绩或服务效果判断。"
+        }
+      },
+      "boundary": "仅为Zendesk特定报表计数规则，不等于通用首次解决率，也不是用户效果或员工绩效结论。",
+      "meaning": "比较指标前核对分母、状态和版本，避免把系统计数当作用户或业务结果。",
+      "question": "是否能在最小必要数据范围内识别同一问题的重复联系，并核对恢复使用？",
+      "eventReason": "常青知识补充，保留原始日期；本轮不新增新闻事件或重写已完成日报。",
+      "practices": [
+        {
+          "title": "服务指标：一次回复计数不等于用户已恢复使用",
+          "method": "Zendesk的one-touch计数允许一次或零次客服回复、且工单处于已解决或关闭状态。它衡量的是工单交互与状态，不能单凭这个数认定硬件故障已排除或资料已恢复。",
+          "conditions": "仅用于同平台同口径研究；跨平台需另核定义。",
+          "outcome": "官方定义，无国内硬件公司的实施与成效数据。",
+          "boundary": "仅为Zendesk特定报表计数规则，不等于通用首次解决率，也不是用户效果或员工绩效结论。",
+          "nextCheck": "是否能在最小必要数据范围内识别同一问题的重复联系，并核对恢复使用？",
+          "stages": [
+            "服务与生命周期"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "one-touch计数包含已解决或关闭、一次或零次客服回复的工单。",
+          "sourceUrl": "https://support.zendesk.com/hc/en-us/articles/4408820618266-How-are-one-touch-resolutions-calculated",
+          "locator": "How do I calculate one-touch tickets第一段"
+        },
+        {
+          "claim": "再次提问并得到客服回复后重新解决的工单不再计为one-touch。",
+          "sourceUrl": "https://support.zendesk.com/hc/en-us/articles/4408820618266-How-are-one-touch-resolutions-calculated",
+          "locator": "客户重新打开工单的说明"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://support.zendesk.com/hc/en-us/articles/4408820618266-How-are-one-touch-resolutions-calculated",
+          "name": "Zendesk官方帮助",
+          "publishedAt": null,
+          "publisherGroup": "Zendesk官方帮助",
+          "role": "official",
+          "textHash": "e5ead6bc771e2fb4a7bdbca70d688d4778b8a2415f91402a76525f947fe37498",
+          "readAt": "2026-11-17T10:38:27.685621+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-17T10:39:43.288512+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "服务指标：一次回复计数不等于用户已恢复使用",
+      "summary": "Zendesk的one-touch计数允许一次或零次客服回复、且工单处于已解决或关闭状态。它衡量的是工单交互与状态，不能单凭这个数认定硬件故障已排除或资料已恢复。"
+    },
+    {
+      "id": "shopify-sellthrough-inventory-scope",
+      "eventId": "shopify-sellthrough-inventory-scope",
+      "developmentId": "initial",
+      "titleZh": "渠道指标：售罄率需要同时记录库存口径与统计版本",
+      "originalTitle": "渠道指标：售罄率需要同时记录库存口径与统计版本",
+      "brief": {
+        "lead": "Shopify产品分析把售罄率定义为售出数量除以售出数量与剩余库存之和。其变更说明又指出，2026年10月1日起库存模型从可售量改为实物在手量，历史数据不回写。跨期对比前必须先检查计量变化。",
+        "points": [
+          "产品概览使用最近可用30天，通常有约两天处理延迟，应以报告标注期间为准。",
+          "在手量包含已分配给未完成订单及暂不可售的实物；不能把报表库存上升直接归因为滞销，也不能把售罄率当成终端设备激活率。"
+        ]
+      },
+      "stages": [
+        "渠道与销售",
+        "经营与组织"
+      ],
+      "domestic": false,
+      "companies": [],
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "产品工程与量产",
+      "selection": {
+        "scores": {
+          "相关性": 18,
+          "增量信息": 17,
+          "证据质量": 19,
+          "机制清晰": 18,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐项核对官方指标说明；平台定义与本站研究问题分开，不作硬件企业业绩或服务效果判断。"
+        }
+      },
+      "boundary": "这是平台定义及8月公布的历史变更，非今日新闻；没有核对商户配置或任何硬件公司的销量、库存、渠道进货和利润。",
+      "meaning": "比较指标前核对分母、状态和版本，避免把系统计数当作用户或业务结果。",
+      "question": "历史比较是否跨越库存模型变更，能否统一期间、库存范围与渠道层级？",
+      "eventReason": "常青知识补充，保留原始日期；本轮不新增新闻事件或重写已完成日报。",
+      "practices": [
+        {
+          "title": "渠道指标：售罄率需要同时记录库存口径与统计版本",
+          "method": "Shopify产品分析把售罄率定义为售出数量除以售出数量与剩余库存之和。其变更说明又指出，2026年10月1日起库存模型从可售量改为实物在手量，历史数据不回写。跨期对比前必须先检查计量变化。",
+          "conditions": "仅用于同平台同口径研究；跨平台需另核定义。",
+          "outcome": "官方定义，无国内硬件公司的实施与成效数据。",
+          "boundary": "这是平台定义及8月公布的历史变更，非今日新闻；没有核对商户配置或任何硬件公司的销量、库存、渠道进货和利润。",
+          "nextCheck": "历史比较是否跨越库存模型变更，能否统一期间、库存范围与渠道层级？",
+          "stages": [
+            "渠道与销售",
+            "经营与组织"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "售罄率分母是售出数量与剩余库存之和。",
+          "sourceUrl": "https://help.shopify.com/en/manual/products/analytics",
+          "locator": "Analytics bar指标定义表"
+        },
+        {
+          "claim": "2026年10月1日及以后使用在手量；之前历史数据保持可售量口径。",
+          "sourceUrl": "https://changelog.shopify.com/posts/inventory-reports-now-show-on-hand-quantity",
+          "locator": "变更记录末段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://help.shopify.com/en/manual/products/analytics",
+          "name": "Shopify官方帮助",
+          "publishedAt": null,
+          "publisherGroup": "Shopify官方帮助",
+          "role": "official",
+          "textHash": "6cba734d4c70e5d1285c8132fd6101af9aec251e38485ccb838ffee5ef956ea4",
+          "readAt": "2026-11-17T10:38:27.686369+00:00",
+          "coverage": "body"
+        },
+        {
+          "url": "https://changelog.shopify.com/posts/inventory-reports-now-show-on-hand-quantity",
+          "name": "Shopify官方变更记录",
+          "publishedAt": "2026-08-14",
+          "publisherGroup": "Shopify官方变更记录",
+          "role": "official",
+          "textHash": "53f6e0690fc14827e5b3020224247daead21db2f55280b3ded21a7f2a9ac6de3",
+          "readAt": "2026-11-17T10:38:27.686547+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-17T10:39:43.289159+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "渠道指标：售罄率需要同时记录库存口径与统计版本",
+      "summary": "Shopify产品分析把售罄率定义为售出数量除以售出数量与剩余库存之和。其变更说明又指出，2026年10月1日起库存模型从可售量改为实物在手量，历史数据不回写。跨期对比前必须先检查计量变化。"
     }
   ],
   "events": [
@@ -7985,6 +8175,35 @@
       ],
       "publisherGroups": [
         "Formlabs"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "zendesk-one-touch-boundary",
+      "representativeId": "zendesk-one-touch-boundary",
+      "itemIds": [
+        "zendesk-one-touch-boundary"
+      ],
+      "publisherGroups": [
+        "Zendesk官方帮助"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "shopify-sellthrough-inventory-scope",
+      "representativeId": "shopify-sellthrough-inventory-scope",
+      "itemIds": [
+        "shopify-sellthrough-inventory-scope"
+      ],
+      "publisherGroups": [
+        "Shopify官方变更记录",
+        "Shopify官方帮助"
       ],
       "developmentIds": [
         "initial"
@@ -16091,6 +16310,769 @@
       "reviewedCount": 1,
       "selectedCount": 1,
       "completedAt": "2026-11-17T09:15:43.560384+00:00"
+    },
+    {
+      "coverage": "晚间仅补知识指标依据；沿用今日已完成的8篇新闻、4个发布方及三家公司岗位正文记录，保留其实际查阅时间，不重复生成日报。新增服务计量、渠道库存口径正文，并复核创想三维售后与华为教育空间资料。",
+      "sourceChecks": [
+        {
+          "company": "作业帮",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/e6056b1d-580b-442d-a27f-9ab9f12cd4b1",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:42:44.120Z",
+          "note": "穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队；同ID职责复核未见实质变化。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
+          "purpose": "recruitment",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "服务与生命周期"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:42:44.135Z",
+          "note": "消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机；同ID职责复核未见实质变化。"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:42:44.150Z",
+          "note": "原文明确小猿产品及学习机、学练机业务，未划分具体型号；同ID职责复核未见实质变化。"
+        },
+        {
+          "company": null,
+          "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+          "purpose": "practice",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "实际阅读正文或已标明的PDF节选；未核实的实施与结果保留未知。"
+        },
+        {
+          "company": null,
+          "url": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:43:44.109079+00:00",
+          "note": "实际阅读正文或已标明的PDF节选；未核实的实施与结果保留未知。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/028/037.htm",
+          "purpose": "news",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:41:51.217104+00:00",
+          "note": "实际阅读正文或已标明的PDF节选；未核实的实施与结果保留未知。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T00:43:13.926Z",
+          "note": "实际阅读正文或已标明的PDF节选；未核实的实施与结果保留未知。"
+        },
+        {
+          "company": null,
+          "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+          "purpose": "practice",
+          "stages": [
+            "制造与交付",
+            "质量与合规"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "本地直接下载PDF超时；公开网页工具已读取指定页文本，未读完整文件。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/856.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/023/622.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/992.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/963.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/574.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/292.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/288.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/026/993.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/026/757.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/026/385.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/026/367.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/025/331.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/025/152.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/025/146.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/024/828.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/024/755.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/024/535.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/024/516.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/023/995.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/023/768.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/023/767.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/023/546.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/768.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/004.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/028/022.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/964.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/954.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/949.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://www.ithome.com/1/027/815.htm",
+          "purpose": "news",
+          "stages": [],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "候选初筛，自动下载不代表本轮逐篇审读。"
+        },
+        {
+          "company": null,
+          "url": "https://ireader.jd.com/",
+          "purpose": "practice",
+          "stages": [
+            "渠道与销售"
+          ],
+          "state": "index",
+          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "note": "搜索仍只有店铺型号索引，未据此建立掌阅产品档案。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/856.htm",
+          "company": null,
+          "name": "IT之家",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "经营与组织"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:00:12.961520+00:00",
+          "readId": "repair-payment",
+          "publishedAt": "2026-11-16",
+          "publisherGroup": "IT之家",
+          "note": "两家媒体支付工具口径不同；采用经济观察报核查机制，具体支付口径暂缓。",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "两家媒体支付工具口径不同；采用经济观察报核查机制，具体支付口径暂缓。",
+            "anchor": "采取“车企定期报送 + 样本供应商抽查”相结合的方式进行"
+          }
+        },
+        {
+          "url": "https://www.ithome.com/1/027/768.htm",
+          "company": null,
+          "name": "Reuters",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "制造与交付"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:00:12.954442+00:00",
+          "readId": "repair-sk",
+          "publishedAt": "2026-11-16",
+          "publisherGroup": "Reuters",
+          "note": "这是路透社转载链，转读路透社署名正文，不作为独立发布方或第二事件。",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "这是路透社转载链，转读路透社署名正文，不作为独立发布方或第二事件。",
+            "anchor": "供应商扶持计划涵盖研发、测试、量产和销售四个阶段"
+          }
+        },
+        {
+          "url": "https://www.ithome.com/1/027/963.htm",
+          "company": null,
+          "name": "IT之家",
+          "purpose": "news",
+          "stages": [
+            "研发与系统",
+            "经营与组织"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:00:12.964710+00:00",
+          "readId": "repair-huawei",
+          "publishedAt": "2026-11-16",
+          "publisherGroup": "IT之家",
+          "note": "正文说明原文已在11月11日分享，是历史组织叙述；不把11月16日转述当成新组织变化。",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "正文说明原文已在11月11日分享，是历史组织叙述；不把11月16日转述当成新组织变化。",
+            "anchor": "华为官方 X 账号 11 月 11 日分享了"
+          }
+        },
+        {
+          "url": "https://www.ithome.com/1/027/964.htm",
+          "company": null,
+          "name": "IT之家",
+          "purpose": "news",
+          "stages": [
+            "制造与交付",
+            "渠道与销售",
+            "经营与组织"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:00:12.958091+00:00",
+          "readId": "repair-xpeng",
+          "publishedAt": "2026-11-16",
+          "publisherGroup": "IT之家",
+          "note": "有具体试用场景与商业发布节点；仅入选为媒体转述的未来计划，非量产结果。",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "有具体试用场景与商业发布节点；仅入选为媒体转述的未来计划，非量产结果。",
+            "anchor": "明年一季度，量产的首批机器人将进入小鹏的部分门店开启试用"
+          }
+        },
+        {
+          "url": "https://www.ithome.com/1/027/949.htm",
+          "company": null,
+          "name": "IT之家",
+          "purpose": "news",
+          "stages": [
+            "需求与规划",
+            "研发与系统"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:00:13.069050+00:00",
+          "readId": "repair-oppo",
+          "publishedAt": "2026-11-16",
+          "publisherGroup": "IT之家",
+          "note": "已读发布内容，主要为参数与营销功能；缺少独立效果及组织机制，本轮优先更具链路价值的内容。",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "已读发布内容，主要为参数与营销功能；缺少独立效果及组织机制，本轮优先更具链路价值的内容。",
+            "anchor": "OPPO Watch 5 支持 13 项睡眠监测"
+          }
+        },
+        {
+          "url": "https://www.eeo.com.cn/2026/1116/1094497.shtml",
+          "company": null,
+          "name": "经济观察报",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "经营与组织"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:01:02.470741+00:00",
+          "readId": "repair-eeo",
+          "publishedAt": "2026-11-16",
+          "publisherGroup": "经济观察报",
+          "note": "核对采购到支付的证据链，保留与其他报道支付口径冲突；不引用争议比例。",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "核对采购到支付的证据链，保留与其他报道支付口径冲突；不引用争议比例。",
+            "anchor": "合同、验收单、对账记录、发票、支付凭证"
+          }
+        },
+        {
+          "url": "https://www.thestar.com.my/tech/tech-news/2026/11/16/sk-hynix-to-spend-1-billion-over-five-years-to-support-chip-suppliers",
+          "company": null,
+          "name": "Reuters",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "经营与组织"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:01:08.917436+00:00",
+          "readId": "repair-reuters",
+          "publishedAt": "2026-11-16",
+          "publisherGroup": "Reuters",
+          "note": "直接阅读署名路透正文，计划、时间与机制明确；保留实施结果未知。",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "直接阅读署名路透正文，计划、时间与机制明确；保留实施结果未知。",
+            "anchor": "protect intellectual property and commercially sensitive information"
+          }
+        },
+        {
+          "url": "https://www.home-assistant.io/blog/2026/11/11/no-device-left-behind-home-assistant-connect-aux-2/",
+          "company": null,
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "渠道与销售"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:01:07.736473+00:00",
+          "note": "完整阅读11月11日原始产品说明，作为历史深读，不回填近期新闻。"
+        },
+        {
+          "url": "https://www.ebrun.com/ebrungo/zb/719981.shtml",
+          "company": null,
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "渠道与销售"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:01:02.717208+00:00",
+          "note": "阅读11月12日战报；为自动化快讯且缺少统计口径，不能当作独立份额证据或今天的新事件。"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/288.htm",
+          "company": null,
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "渠道与销售"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:00:13.084293+00:00",
+          "note": "有效正文较短，内容为营销活动；未确认资金实际投入，暂不精选。"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/16/aaeon-boxer-8741ai-industrial-edge-ai-box-pc-nvidia-jetson-thor-t5000-with-dual-10gbe-and-four-5gbe-lan",
+          "company": null,
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-17T09:03:33.460861+00:00",
+          "note": "直接读取HTTP403；AUX-2已改读官方11月11日原文，不能按16日转载刷新事件日期。"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/16/69-home-assistant-connect-aux-2-offers-poe-audio-streaming-rs-232-control-bluetooth-proxy",
+          "company": null,
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-17T09:03:33.460861+00:00",
+          "note": "直接读取HTTP403；AUX-2已改读官方11月11日原文，不能按16日转载刷新事件日期。"
+        },
+        {
+          "url": "https://docs.justia.com/cases/federal/district-courts/california/candce/5:2026cv06345/472931/68",
+          "company": null,
+          "name": "法院裁定公开镜像",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "经营与组织"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-17T09:15:43.415230+00:00",
+          "note": "本地curl读取Justia返回HTTP403，改用公开网页工具读取相关页。"
+        },
+        {
+          "url": "https://docs.justia.com/cases/federal/district-courts/california/candce/5:2026cv06345/472931/68",
+          "company": null,
+          "name": "法院裁定公开镜像",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "经营与组织"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:15:43.415230+00:00",
+          "note": "实际核对第1、2、20页相关段落，记录为excerpt；不计完整新闻正文门槛。"
+        },
+        {
+          "url": "https://www.tomshardware.com/tech-industry/big-tech/judge-denies-motion-to-dismiss-dram-price-fixing-lawsuit-against-micron-samsung-and-sk-hynix-says-chipmakers-acted-like-hawks-flying-in-formation-finds-evidence-of-dram-collusion-plausible-after-500-percent-price-surge",
+          "company": null,
+          "name": "Tom's Hardware",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "经营与组织"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T09:13:07.033240+00:00",
+          "note": "阅读报道全文并回溯裁定；区分民事诉讼、撤诉动议与违法定案。",
+          "readId": "dram-toms",
+          "publishedAt": "2026-11-15",
+          "publisherGroup": "Tom's Hardware",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "全球DRAM供给与竞争争议影响硬件供应链；程序与指控边界已回溯原文核对。",
+            "anchor": "denied the companies’ motion"
+          }
+        },
+        {
+          "url": "https://support.zendesk.com/hc/en-us/articles/4408820618266-How-are-one-touch-resolutions-calculated",
+          "company": null,
+          "name": "even17-fcr",
+          "purpose": "practice",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T10:38:27.685621+00:00",
+          "note": "实际审读本次保存正文；常青资料和历史统计变更不计入近期新闻。"
+        },
+        {
+          "url": "https://help.shopify.com/en/manual/products/analytics",
+          "company": null,
+          "name": "even17-stock",
+          "purpose": "practice",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T10:38:27.686369+00:00",
+          "note": "实际审读本次保存正文；常青资料和历史统计变更不计入近期新闻。"
+        },
+        {
+          "url": "https://changelog.shopify.com/posts/inventory-reports-now-show-on-hand-quantity",
+          "company": null,
+          "name": "even17-stock-version",
+          "purpose": "practice",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T10:38:27.686547+00:00",
+          "note": "实际审读本次保存正文；常青资料和历史统计变更不计入近期新闻。"
+        },
+        {
+          "url": "https://store.creality.com/pages/return-policy",
+          "company": "创想三维",
+          "name": "even17-creality",
+          "purpose": "practice",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T10:38:27.688246+00:00",
+          "note": "实际审读本次保存正文；常青资料和历史统计变更不计入近期新闻。"
+        },
+        {
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+          "company": "华为",
+          "name": "even17-huawei",
+          "purpose": "practice",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-17T10:38:27.688631+00:00",
+          "note": "实际审读本次保存正文；常青资料和历史统计变更不计入近期新闻。"
+        },
+        {
+          "url": "https://wiki.bambulab.com/en/a1-mini/troubleshooting/print-issues-troubleshooting",
+          "company": "拓竹",
+          "name": "拓竹首层排障",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-17T10:39:42.998472+00:00",
+          "note": "网页读取返回402 Payment Required，未获得当前正文；未据此推断没有排障指南。"
+        }
+      ],
+      "knownGaps": [
+        "协会通知、财报电话会原始正文未取得；具体支付口径存在报道差异，未下结论。",
+        "核心学习硬件本轮未确认72小时内新事件；讯飞11月12日战报不能当今日新闻。",
+        "知识节点完整复核仍有历史欠账，本次修复不冒充全站维护完成。",
+        "知识节点尚未完整复核：本轮补服务与渠道指标定义，未取得制造工具可比结果和完整服务验收证据。"
+      ],
+      "failedSources": [
+        "CNX RSS超时后HTTP403，保留历史。",
+        "申报回复本地下载超时，已通过公开PDF文本读取指定页节选。",
+        "本地直接下载PDF超时；公开网页工具已读取指定页文本，未读完整文件。",
+        "直接读取HTTP403；AUX-2已改读官方11月11日原文，不能按16日转载刷新事件日期。",
+        "本地curl读取Justia返回HTTP403，改用公开网页工具读取相关页。",
+        "网页读取返回402 Payment Required，未获得当前正文；未据此推断没有排障指南。"
+      ],
+      "coverageCheck": {
+        "newsResearch": {
+          "passed": true,
+          "bodyCount": 8,
+          "publisherGroups": [
+            "IT之家",
+            "Reuters",
+            "Tom's Hardware",
+            "经济观察报"
+          ],
+          "requiredBodies": 6,
+          "requiredPublisherGroups": 3
+        },
+        "passed": true,
+        "companies": [
+          "作业帮",
+          "华为",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "gaps": [],
+        "usableSources": 24
+      },
+      "successfulScan": true,
+      "completedAt": "2026-11-17T10:39:43.295004+00:00",
+      "reviewedCount": 2,
+      "selectedCount": 2
     }
   ]
 }
