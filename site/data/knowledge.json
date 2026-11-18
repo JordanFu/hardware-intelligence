@@ -3,74 +3,42 @@
   "startedAt": "2026-11-06T07:45:08.434151+00:00",
   "nodes": {
     "chain-3": {
-      "attemptedAt": "2026-11-16T00:46:03.708885+00:00",
+      "attemptedAt": "2026-11-18T10:48:32.272337+00:00",
       "status": "partial",
-      "assessment": "按最久未完整复核顺序检查供应链节点。宇树采购登记和纪律仍可读；小猿岗位补物料齐套、采购与售后接口。MOQ、交期和库存周转指标未取得本轮完整定义，不推进完整期限。",
+      "assessment": "核对公开现货周报规格与取价周，补充采购报价比较条件。",
       "gaps": [
         "MOQ、交期与库存周转分母本轮仍缺独立定义核验，不据入口页面判断这些指标。",
         "公开资料没有供应商审核标准、实际通过率、采购质量接口和履约结果。"
       ],
       "reviewedFields": [
-        "exercise",
-        "flow",
-        "pitfall",
-        "team"
+        "metrics"
       ],
       "evidence": [
         {
-          "itemId": "unitree-supplier",
-          "title": "宇树供应商入口：登记流程与采购纪律分开看",
+          "itemId": "e18-spot",
+          "title": "内存采购怎么读报价：DDR4 现货回落，NAND 现货与合同价差扩大",
           "facts": [
             {
-              "claim": "官网列出登记步骤，并要求供应商主动申报关联关系。",
-              "sourceUrl": "https://www.unitree.com/cn/supplier/",
-              "locator": "正文职责 / 采购原则 / 项目说明段落"
-            }
-          ],
-          "boundary": "公开入口与规则，不是内部执行记录；审核标准、通过率、履约与员工后效未知。",
-          "sources": [
-            {
-              "url": "https://www.unitree.com/cn/supplier/",
-              "name": "宇树科技官方",
-              "publishedAt": null,
-              "publisherGroup": "宇树科技官方",
-              "role": "official",
-              "textHash": "4f637f53a915e7b5ae8195d85e32f4800f48c67d909e4ace6530e2ee2bcfa5f3",
-              "readAt": "2026-11-06T05:43:46.717180+00:00",
-              "coverage": "excerpt"
-            }
-          ]
-        },
-        {
-          "itemId": "yuan-supply-handoff",
-          "title": "小猿供应链职责样本：配件采购、物料齐套与售后反馈相连",
-          "facts": [
-            {
-              "claim": "采购职责连接销售计划和供应商。",
-              "sourceUrl": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
-              "locator": "工作内容第1条"
+              "claim": "该规格 DDR4 样本一周均价下降 1.43%。",
+              "sourceUrl": "https://www.trendforce.com/news/2026/11/18/insights-memory-spot-price-update-nand-spot-contract-price-gap-exceeds-20-amid-weak-demand/",
+              "locator": "DRAM Spot Price 段落"
             },
             {
-              "claim": "职责包含工厂物料齐套。",
-              "sourceUrl": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
-              "locator": "工作内容第2条"
-            },
-            {
-              "claim": "岗位明确涉及学习机售后。",
-              "sourceUrl": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
-              "locator": "工作内容第3条"
+              "claim": "机构观察到 NAND 现货与合同价差超过 20%。",
+              "sourceUrl": "https://www.trendforce.com/news/2026/11/18/insights-memory-spot-price-update-nand-spot-contract-price-gap-exceeds-20-amid-weak-demand/",
+              "locator": "NAND Flash Spot Price 段落"
             }
           ],
-          "boundary": "岗位原始日期2026-03-11，本次为已有职责复核，不是新招聘；岗位未披露实际审批权、团队配置、轮岗安排或交付结果。",
+          "boundary": "机构报价样本缺少终端品牌订单，未验证任何学习机的成交价。",
           "sources": [
             {
-              "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
-              "name": "猿辅导（小猿）官方资料",
-              "publishedAt": null,
-              "publisherGroup": "猿辅导（小猿）",
-              "role": "official",
-              "textHash": "982ecc6cff1cfeb8d1a745669098f97d72ce74b99df011b75c55a1b7aeae3821",
-              "readAt": "2026-11-16T00:42:06.652Z",
+              "url": "https://www.trendforce.com/news/2026/11/18/insights-memory-spot-price-update-nand-spot-contract-price-gap-exceeds-20-amid-weak-demand/",
+              "publisherGroup": "TrendForce",
+              "name": "TrendForce 公开现货周报",
+              "publishedAt": "2026-11-18",
+              "role": "research",
+              "textHash": "55827581cdadee2fead19bd9ca94ee8d9202615a345d9459390aed080bb31956",
+              "readAt": "2026-11-18T10:43:32.747849+00:00",
               "coverage": "body"
             }
           ]
@@ -78,21 +46,14 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "unitree-supplier",
-          "url": "https://www.unitree.com/cn/supplier/",
-          "checkedAt": "2026-11-16T00:41:00.300162+00:00",
+          "itemId": "e18-spot",
+          "url": "https://www.trendforce.com/news/2026/11/18/insights-memory-spot-price-update-nand-spot-contract-price-gap-exceeds-20-amid-weak-demand/",
+          "checkedAt": "2026-11-18T10:48:32.155367+00:00",
           "state": "body",
-          "note": "当前实际正文；仅支持列明范围，未知结果未补成事实。"
-        },
-        {
-          "itemId": "yuan-supply-handoff",
-          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
-          "checkedAt": "2026-11-16T00:42:06.652Z",
-          "state": "body",
-          "note": "当前实际正文；仅支持列明范围，未知结果未补成事实。"
+          "note": "核对公开现货周报规格与取价周，补充采购报价比较条件。"
         }
       ],
-      "reviewedAt": "2026-11-16T00:46:03.708885+00:00",
+      "reviewedAt": "2026-11-18T10:48:32.272337+00:00",
       "patch": {
         "basics": "MOQ 是最小订购量；交期包含采购、生产和运输，不能只看供应商承诺。 供应商登记仅是提交资料的入口，不能自动等同于资格审核通过或获得采购订单。",
         "exercise": "选一颗关键器件，写出交期风险、替代验证要求和缺料升级路径。 再区分供应商资料登记、资格核验、质量验收和订单获取；无公开依据的门槛标为待核验。",
@@ -120,9 +81,20 @@
             "yuan-supply-handoff"
           ],
           "updatedAt": "2026-11-16T00:46:03.708885+00:00"
+        },
+        {
+          "id": "chain-3-e18-spot",
+          "title": "用采购合同中的料号核对行情样本",
+          "learning": "现货周均价、合同交付价和整机物料成本有不同分母与时间窗口。看周报时先确认内存世代、规格、币种和取价日。",
+          "application": "核算学习机下一批成本时，从物料清单取料号和单机用量，再查该批次是否触发合同调价。",
+          "boundary": "机构市场样本缺少品牌实际合同。",
+          "itemIds": [
+            "e18-spot"
+          ],
+          "updatedAt": "2026-11-18T10:48:32.272337+00:00"
         }
       ],
-      "updatedAt": "2026-11-16T00:46:03.708885+00:00"
+      "updatedAt": "2026-11-18T10:48:32.272337+00:00"
     },
     "chain-7": {
       "attemptedAt": "2026-11-17T10:40:23.696029+00:00",
@@ -701,18 +673,15 @@
       "updatedAt": "2026-11-16T10:41:57.135139+00:00"
     },
     "track-2": {
-      "attemptedAt": "2026-11-16T00:46:03.708885+00:00",
+      "attemptedAt": "2026-11-18T10:48:32.272337+00:00",
       "status": "partial",
-      "assessment": "当前M200正文明确本地自动化与云推送例外；补逐功能验收范围，不把全部功能、生态或厂商可靠性宣称视为已验证。",
+      "assessment": "重新阅读 M200 对控制器和边界路由器的说明，补充现场诊断的两项检查。",
       "gaps": [
         "其他观察企业、离线能力、多成员权限未完整核实。",
         "没有可比故障率、用户样本和售后改善数据。"
       ],
       "reviewedFields": [
-        "chain",
-        "constraint",
-        "metrics",
-        "team"
+        "constraint"
       ],
       "evidence": [
         {
@@ -749,12 +718,12 @@
         {
           "itemId": "aqara-m200-local-boundary",
           "url": "https://www.aqara.com/en/product/hub-m200/",
-          "checkedAt": "2026-11-16T00:42:34.122918+00:00",
+          "checkedAt": "2026-11-18T10:48:32.155367+00:00",
           "state": "body",
-          "note": "当前实际正文；仅支持列明范围，未知结果未补成事实。"
+          "note": "重新阅读 M200 对控制器和边界路由器的说明，补充现场诊断的两项检查。"
         }
       ],
-      "reviewedAt": "2026-11-16T00:46:03.708885+00:00",
+      "reviewedAt": "2026-11-18T10:48:32.272337+00:00",
       "patch": {
         "constraint": "兼容性、配网成本、稳定性与家庭成员协同。离线范围须按触发、动作和反馈分别核对：Aqara M200说明部分自动化本地执行，但云推送仍需要云连接；不能据“本地自动化”承诺全部提醒和远程控制可用。",
         "team": "嵌入式、连接协议、云平台、客户端、认证与售后 售后交给协议、固件或平台团队的信息应包含型号/版本、连接路径、受影响范围和复现步骤；诊断日志按支持范围自愿启用，并保留本地保存选择。",
@@ -782,9 +751,20 @@
             "aqara-m200-local-boundary"
           ],
           "updatedAt": "2026-11-16T00:46:03.708885+00:00"
+        },
+        {
+          "id": "track-2-aqara-m200-local-boundary",
+          "title": "把控制器和边界路由器写进不同的故障检查项",
+          "learning": "M200 的 Matter 控制器负责设备管理，Thread 边界路由器连接 Thread 与 Wi-Fi 或以太网。同一设备可以承担两项职责。",
+          "application": "若终端无法控制，先确定配网与链路是否可达，再检查控制器是否支持该类设备及对应功能。",
+          "boundary": "官网披露能力边界，尚无跨品牌组合实测。",
+          "itemIds": [
+            "aqara-m200-local-boundary"
+          ],
+          "updatedAt": "2026-11-18T10:48:32.272337+00:00"
         }
       ],
-      "updatedAt": "2026-11-16T00:46:03.708885+00:00"
+      "updatedAt": "2026-11-18T10:48:32.272337+00:00"
     },
     "chain-2": {
       "attemptedAt": "2026-11-17T00:46:36.326415+00:00",
@@ -891,60 +871,52 @@
       "updatedAt": "2026-11-17T00:46:36.326415+00:00"
     },
     "chain-5": {
-      "attemptedAt": "2026-11-17T00:46:36.326415+00:00",
+      "attemptedAt": "2026-11-18T10:48:32.272337+00:00",
       "status": "partial",
-      "assessment": "补批次追溯及直通率边界；质量、安全与准入仍分开取证，未完成安全与认证复核。",
+      "assessment": "依据作业帮该岗位职责，将变量与结果的映射纳入教学内容验收练习。",
       "gaps": [
         "安全与认证范围仍缺完整权威依据。",
         "现场故障与部署成效没有可比当前结果；本次仅核验制造指标的定义和追溯线索。"
       ],
       "reviewedFields": [
-        "flow",
-        "metrics",
-        "pitfall",
-        "team"
+        "exercise"
       ],
       "evidence": [
         {
-          "itemId": "qfy-outsourcing-control",
-          "title": "智能笔外协案例：生产执行与工艺、质量责任分开看",
+          "itemId": "e18-zuo",
+          "title": "教研如何把一道实验题交给研发验收",
           "facts": [
             {
-              "claim": "公司披露全制程外协的技术与品控责任。",
-              "sourceUrl": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
-              "locator": "回复第81至82页：全制程外协"
-            },
-            {
-              "claim": "披露的生产直通率排除返工、返修和重工。",
-              "sourceUrl": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
-              "locator": "回复第83页：生产直通率口径"
+              "claim": "该岗位须产出变量与结果映射、需求文档和验收标准。",
+              "sourceUrl": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/ecbe641a-b8c4-4a0f-ad07-1d3c4cb4e0ad",
+              "locator": "岗位职责第 4 至 5 项"
             }
           ],
-          "boundary": "历史申报回复节选，未全文阅读或独立验证；智能笔供应商的做法不能归为客户品牌内部制度，也不证明当前良率和组织成效。",
+          "boundary": "教育内容产品岗位，未披露硬件型号和最终放行人。效果与实际组织分工仍待项目资料。",
           "sources": [
             {
-              "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
-              "name": "千分一 · 第二轮审核问询回复（历史材料）",
-              "publishedAt": null,
-              "publisherGroup": "千分一",
+              "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/ecbe641a-b8c4-4a0f-ad07-1d3c4cb4e0ad",
+              "publisherGroup": "作业帮",
+              "name": "作业帮官方招聘 · 高中生物教研",
+              "publishedAt": "2026-11-17",
               "role": "official",
-              "textHash": "e4298694324f305b6e8fd7a9a9f248fca7b10d1a776417531750961f3a1bdfb1",
-              "readAt": "2026-11-17T00:45:51.020581+00:00",
-              "coverage": "excerpt"
+              "textHash": "ff7fdc8b679a2c20eca8fab152cca3fe0b4ffa4646be63142924a3c6ffc70533",
+              "readAt": "2026-11-18T10:46:04.176686+00:00",
+              "coverage": "body"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "qfy-outsourcing-control",
-          "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
-          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "itemId": "e18-zuo",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/ecbe641a-b8c4-4a0f-ad07-1d3c4cb4e0ad",
+          "checkedAt": "2026-11-18T10:48:32.155367+00:00",
           "state": "body",
-          "note": "当前实际阅读指定章节；申报回复仅为节选，未读全篇或独立验证。"
+          "note": "依据作业帮该岗位职责，将变量与结果的映射纳入教学内容验收练习。"
         }
       ],
-      "reviewedAt": "2026-11-17T00:46:36.326415+00:00",
+      "reviewedAt": "2026-11-18T10:48:32.272337+00:00",
       "patch": {
         "flow": "风险识别与需求 → 验证证据、过程控制与上市条件 对有明确使用限制的设备，还要检查现场条件、训练和责任人员是否满足该型号说明，不能仅凭设备合格就认为现场可用。",
         "team": "质量、安全、研发、制造与服务协同定义缺陷等级、放行权和整改验证。 MetalFab 官方资料要求指定激光安全负责人并限制进入受控区域的人员；这是特定产品的部署职责样本，不能替代其他产品的法规与风险评估。",
@@ -984,9 +956,20 @@
             "qfy-outsourcing-control"
           ],
           "updatedAt": "2026-11-17T00:46:36.326415+00:00"
+        },
+        {
+          "id": "chain-5-e18-zuo",
+          "title": "给仿真教学功能编写错误操作验收样例",
+          "learning": "教研要定义实验变量、预期结果、错误反馈与评价规则。可将一个常见错误作为完整用例，与研发、美术逐步核对反馈和评分。",
+          "application": "学习机迁移推演需额外明确触屏交互、内容版本与目标配置。",
+          "boundary": "岗位只指向教育产品，具体设备与最后签字人未知。",
+          "itemIds": [
+            "e18-zuo"
+          ],
+          "updatedAt": "2026-11-18T10:48:32.272337+00:00"
         }
       ],
-      "updatedAt": "2026-11-17T00:46:36.326415+00:00"
+      "updatedAt": "2026-11-18T10:48:32.272337+00:00"
     },
     "chain-8": {
       "attemptedAt": "2026-11-18T01:50:12.299573+00:00",
@@ -1308,113 +1291,18 @@
       "updatedAt": "2026-11-17T10:40:23.696029+00:00"
     },
     "track-0": {
-      "attemptedAt": "2026-11-15T10:41:33.649429+00:00",
+      "attemptedAt": "2026-11-18T10:48:32.272337+00:00",
       "status": "partial",
-      "assessment": "复核雷鸟配对、记录与提词器说明及XREAL服务接口；补输入文件到可用内容的验收约束。未复核其他观察对象，不推进完整期限。",
+      "assessment": "补查维修与未检出故障的收费条件，既有条款日期为2024年4月8日。",
       "gaps": [
         "Meta、Apple、Samsung观察对象未取得本轮当前正文。",
         "真实任务成功率、佩戴负担及续航缺跨企业实测；雷鸟数据地点、期限和删除传播仍未知。",
         "雷鸟最低手机系统与权限细节仍有占位；文件导入内容保真未做实机测试。"
       ],
       "reviewedFields": [
-        "chain",
-        "constraint",
-        "metrics",
-        "team"
+        "constraint"
       ],
       "evidence": [
-        {
-          "itemId": "rayneo-import-text-boundary",
-          "title": "雷鸟提词器：支持导入文件，不等于保留图文内容",
-          "facts": [
-            {
-              "claim": "导入只保留文字，会移除格式和图片。",
-              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
-              "locator": "4.3 Teleprompter / Import Scripts"
-            },
-            {
-              "claim": "支持TXT、DOC、DOCX、PDF。",
-              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
-              "locator": "4.3 Teleprompter / Import Scripts"
-            }
-          ],
-          "boundary": "官方使用说明的单一功能，未实测文档转换、公式或阅读效果；无发布日期，不是今日新增功能，也不证明雷鸟属于学习机竞品。",
-          "sources": [
-            {
-              "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
-              "name": "雷鸟创新官方资料",
-              "publishedAt": null,
-              "publisherGroup": "雷鸟创新",
-              "role": "official",
-              "textHash": "35478d807b7223713b5a12ff2473e1636ba03032ed0a7b3603156eca477e6da0",
-              "readAt": "2026-11-15T10:39:05.972318+00:00",
-              "coverage": "body"
-            }
-          ]
-        },
-        {
-          "itemId": "rayneo-support",
-          "title": "雷鸟 iO 支持说明：离线功能仍依赖手机、版本与语言包",
-          "facts": [
-            {
-              "claim": "离线翻译需提前下载语言对。",
-              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
-              "locator": "4.1 / Offline Translation"
-            },
-            {
-              "claim": "页面的权限细节仍标注待最终版本确认。",
-              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
-              "locator": "1.2 / App Permissions"
-            }
-          ],
-          "boundary": "无明确发布日期；本次读取设置与字幕翻译相关章节，页面存在未完成占位说明。没有设备实测、权限清单或数据流审计，不能断言功能全在眼镜端或数据不出端。",
-          "sources": [
-            {
-              "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
-              "name": "雷鸟官方支持",
-              "publishedAt": null,
-              "publisherGroup": "雷鸟官方支持",
-              "role": "official",
-              "textHash": "baf3fdfe5b2138279c70c0b231cb61d071a3d5438a304d2d85ce49ee4729dd3e",
-              "readAt": "2026-11-09T00:46:58.353783+00:00",
-              "coverage": "body"
-            }
-          ]
-        },
-        {
-          "itemId": "rayneo-recording-boundaries",
-          "title": "雷鸟录音与 Life Log：不保存音频，不等于不保留个人记录",
-          "facts": [
-            {
-              "claim": "Voice Memo录音结束后自动保存，可在Sessions回看转写与摘要。",
-              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
-              "locator": "4.2 Voice Memo & AI Summary"
-            },
-            {
-              "claim": "Life Log不保留原始音频，但保留对话生成的文字记录。",
-              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
-              "locator": "6.2 Life Log Data Storage"
-            },
-            {
-              "claim": "长期个人标签支持用户手动删除和更正。",
-              "sourceUrl": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
-              "locator": "6.3 Manage Personal Profile Tags"
-            }
-          ],
-          "boundary": "无明确发布日期，按常青资料整理；只证明官方支持页对具体功能的描述，未做设备实测、后台审计或删除验证。文字、摘要和标签也可能承载个人信息；数据处理地点、保留时长、第三方模型范围及删除传播均未知。",
-          "sources": [
-            {
-              "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
-              "name": "雷鸟创新官方资料",
-              "publishedAt": null,
-              "publisherGroup": "雷鸟创新",
-              "role": "official",
-              "textHash": "35478d807b7223713b5a12ff2473e1636ba03032ed0a7b3603156eca477e6da0",
-              "readAt": "2026-11-13T00:44:17.412588+00:00",
-              "coverage": "body"
-            }
-          ]
-        },
         {
           "itemId": "xreal-warranty",
           "title": "XREAL 服务条款样本：销售渠道与售后受理信息相连",
@@ -1447,35 +1335,14 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "rayneo-import-text-boundary",
-          "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
-          "checkedAt": "2026-11-15T10:39:05.972318+00:00",
-          "state": "body",
-          "note": "当前实际阅读相关正文；仅核验列明字段。"
-        },
-        {
-          "itemId": "rayneo-support",
-          "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
-          "checkedAt": "2026-11-15T10:39:05.972318+00:00",
-          "state": "body",
-          "note": "当前实际阅读相关正文；仅核验列明字段。"
-        },
-        {
-          "itemId": "rayneo-recording-boundaries",
-          "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
-          "checkedAt": "2026-11-15T10:39:05.972318+00:00",
-          "state": "body",
-          "note": "当前实际阅读相关正文；仅核验列明字段。"
-        },
-        {
           "itemId": "xreal-warranty",
           "url": "https://us.shop.xreal.com/pages/warranty-policy",
-          "checkedAt": "2026-11-15T10:39:05.974243+00:00",
+          "checkedAt": "2026-11-18T10:48:32.155367+00:00",
           "state": "body",
-          "note": "当前实际阅读相关正文；仅核验列明字段。"
+          "note": "补查维修与未检出故障的收费条件，既有条款日期为2024年4月8日。"
         }
       ],
-      "reviewedAt": "2026-11-15T10:41:33.649429+00:00",
+      "reviewedAt": "2026-11-18T10:48:32.272337+00:00",
       "patch": {
         "examples": "Meta、Apple、Samsung、雷鸟；本轮新增 XREAL 作为渠道与服务研究对象，不构成排名。",
         "constraint": "佩戴舒适度、续航、隐私和持续使用 离线能力需按字幕、翻译等具体任务核验手机依赖、App 版本和预下载资源；不能仅凭“离线”断言数据不出端。 记录功能还应分别核对音频、转写、摘要与标签：雷鸟Life Log声明不存原始音频，但仍保留文字，不能据此推断没有个人数据留存。",
@@ -1516,51 +1383,58 @@
             "rayneo-import-text-boundary"
           ],
           "updatedAt": "2026-11-15T10:41:33.649429+00:00"
+        },
+        {
+          "id": "track-0-xreal-warranty",
+          "title": "把保修申请、故障判定和返运费用分开记录",
+          "learning": "美国站 XREAL 条款列明，送检后未发现缺陷会产生运费与处理费。服务团队还需确认购买渠道、地区与设备身份。",
+          "application": "比较眼镜售后时，分别记录谁申请、谁检测、无故障时谁付费，再核对当地渠道的条款版本。",
+          "boundary": "美国站条款，实际个案收费与国内政策未知。",
+          "itemIds": [
+            "xreal-warranty"
+          ],
+          "updatedAt": "2026-11-18T10:48:32.272337+00:00"
         }
       ],
-      "updatedAt": "2026-11-15T10:41:33.649429+00:00"
+      "updatedAt": "2026-11-18T10:48:32.272337+00:00"
     },
     "track-1": {
-      "attemptedAt": "2026-11-16T10:41:57.135139+00:00",
+      "attemptedAt": "2026-11-18T10:48:32.272337+00:00",
       "status": "partial",
-      "assessment": "复核机器人从模型示例到实物控制的边界；宇树文档明确该控制程序仅为示例，补部署限制。DJI仅查到下载入口，未将其计为正文。",
+      "assessment": "核对合作方披露的巡检活动与后续验证计划，补充评价指标边界。",
       "gaps": [
         "无人机、DJI 与初始 NVIDIA 生态观察对象尚未完整复核。",
         "任务成功率、接管、恢复时间与现场工时仍缺统一测量协议及实测样本。"
       ],
       "reviewedFields": [
-        "chain",
-        "constraint",
-        "examples",
-        "team",
-        "title"
+        "metrics"
       ],
       "evidence": [
         {
-          "itemId": "unitree-example-deployment-boundary",
-          "title": "宇树实物部署示例：能运行不等于稳定控制",
+          "itemId": "e18-gf",
+          "title": "格罗方德将扩展 Spot 巡检，Atlas 先验证能否承担具体任务",
           "facts": [
             {
-              "claim": "官方声明示例部署不是稳定控制程序。",
-              "sourceUrl": "https://raw.githubusercontent.com/unitreerobotics/unitree_rl_gym/main/deploy/deploy_real/README.zh.md",
-              "locator": "注意段落"
+              "claim": "公告披露新加坡部署的巡检次数。",
+              "sourceUrl": "https://bostondynamics.com/news/boston-dynamics-globalfoundries-expand-robotics-collaboration/",
+              "locator": "新加坡既有部署段落"
             },
             {
-              "claim": "配置文件按机器人型号区分。",
-              "sourceUrl": "https://raw.githubusercontent.com/unitreerobotics/unitree_rl_gym/main/deploy/deploy_real/README.zh.md",
-              "locator": "启动用法"
+              "claim": "Atlas 现场测试计划于 2027 年初开始。",
+              "sourceUrl": "https://bostondynamics.com/news/boston-dynamics-globalfoundries-expand-robotics-collaboration/",
+              "locator": "现场测试及工作坊段落"
             }
           ],
-          "boundary": "官方开发示例，未标发布日期；不可当作生产操作指南或整机安全认证，不外推无人机、其他机型或真实任务成功率。",
+          "boundary": "数量与成功率为合作方披露。缺少误报、漏报与停机对照数据。",
           "sources": [
             {
-              "url": "https://raw.githubusercontent.com/unitreerobotics/unitree_rl_gym/main/deploy/deploy_real/README.zh.md",
-              "name": "宇树科技官方资料",
-              "publishedAt": null,
-              "publisherGroup": "宇树科技",
+              "url": "https://bostondynamics.com/news/boston-dynamics-globalfoundries-expand-robotics-collaboration/",
+              "publisherGroup": "Boston Dynamics",
+              "name": "Boston Dynamics 与 GF 合作公告",
+              "publishedAt": "2026-11-17",
               "role": "official",
-              "textHash": "39a7d10e572c4697e1b095a3f01d9258641de56dbd9c02905052b7bec7c0bfb2",
-              "readAt": "2026-11-16T10:37:42.035233+00:00",
+              "textHash": "f2827ae5bad630c50ad348bd8af98135741543d87cddc15f45d04c0947b19dd9",
+              "readAt": "2026-11-18T10:43:32.901730+00:00",
               "coverage": "body"
             }
           ]
@@ -1568,14 +1442,14 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "unitree-example-deployment-boundary",
-          "url": "https://raw.githubusercontent.com/unitreerobotics/unitree_rl_gym/main/deploy/deploy_real/README.zh.md",
-          "checkedAt": "2026-11-16T10:37:42.035233+00:00",
+          "itemId": "e18-gf",
+          "url": "https://bostondynamics.com/news/boston-dynamics-globalfoundries-expand-robotics-collaboration/",
+          "checkedAt": "2026-11-18T10:48:32.155367+00:00",
           "state": "body",
-          "note": "本轮实际读取正文，保留适用型号及资料性质；未执行软件或设备。"
+          "note": "核对合作方披露的巡检活动与后续验证计划，补充评价指标边界。"
         }
       ],
-      "reviewedAt": "2026-11-16T10:41:57.135139+00:00",
+      "reviewedAt": "2026-11-18T10:48:32.272337+00:00",
       "patch": {
         "examples": "DJI、宇树、NVIDIA 生态；新增上纬新材启元作为量产与商业化阶段观察对象，HALO 作为基于宇树 G1 的研究系统样本。",
         "constraint": "真实环境中的安全、可靠性与维护成本。宇树实物部署说明明确其程序仅为示例、不是稳定控制；模型能运行与业务可交付须分别取证，不能从演示外推任务可靠性。",
@@ -1604,9 +1478,20 @@
             "unitree-example-deployment-boundary"
           ],
           "updatedAt": "2026-11-16T10:41:57.135139+00:00"
+        },
+        {
+          "id": "track-1-e18-gf",
+          "title": "将巡检任务成功率与检出、修复分别计量",
+          "learning": "现场巡检可记录完成的任务次数、覆盖点位、异常检测准确性及处置时长。各项需要独立分母。",
+          "application": "已有路线适合先验证任务稳定性，新形态机器人还需验证具体任务与现场接入条件。",
+          "boundary": "合作方披露的数据未给出节省工时、漏检或停机改善的对照。",
+          "itemIds": [
+            "e18-gf"
+          ],
+          "updatedAt": "2026-11-18T10:48:32.272337+00:00"
         }
       ],
-      "updatedAt": "2026-11-16T10:41:57.135139+00:00"
+      "updatedAt": "2026-11-18T10:48:32.272337+00:00"
     },
     "track-3": {
       "attemptedAt": "2026-11-16T10:41:57.135139+00:00",
@@ -2365,6 +2250,36 @@
           "hash": "04e53d0a886a37179eeb351cc5ba967791f96b66fd6f6d7bbab6dc6e590576fb",
           "decision": "integrated",
           "reason": "两期采访提供具体的历史分工与续航目标取舍，迁移场景单独标注。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-18T10:48:32.272337+00:00",
+      "reviewedNodes": [
+        "track-0",
+        "track-2",
+        "chain-3",
+        "chain-5",
+        "track-1"
+      ],
+      "decisions": [
+        {
+          "itemId": "e18-spot",
+          "hash": "0e3172b8cbbb86fb5b533a214e2f36044ad2dcf0ce48486a7f0e16fd9c0b9156",
+          "decision": "integrated",
+          "reason": "核对公开现货周报规格与取价周，补充采购报价比较条件。"
+        },
+        {
+          "itemId": "e18-zuo",
+          "hash": "26d643863999a1b223cf97fd24599065d29e70d3e7fb25ca8080930e43caf100",
+          "decision": "integrated",
+          "reason": "依据作业帮该岗位职责，将变量与结果的映射纳入教学内容验收练习。"
+        },
+        {
+          "itemId": "e18-gf",
+          "hash": "1d133c2dc69b4d8021d6970ec82cf975a7fd01de562678800c8a1ddb4e77627f",
+          "decision": "integrated",
+          "reason": "核对合作方披露的巡检活动与后续验证计划，补充评价指标边界。"
         }
       ]
     }
@@ -7792,6 +7707,347 @@
           "checkedAt": "2026-11-18T01:48:50.283661+00:00",
           "state": "body",
           "note": "已读原发采访报道对应的车型、平台与产品线段落。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-0",
+      "reviewedAt": "2026-11-18T10:48:32.272337+00:00",
+      "status": "partial",
+      "assessment": "补查维修与未检出故障的收费条件，既有条款日期为2024年4月8日。",
+      "gaps": [
+        "Meta、Apple、Samsung观察对象未取得本轮当前正文。",
+        "真实任务成功率、佩戴负担及续航缺跨企业实测；雷鸟数据地点、期限和删除传播仍未知。",
+        "雷鸟最低手机系统与权限细节仍有占位；文件导入内容保真未做实机测试。"
+      ],
+      "reviewedFields": [
+        "constraint"
+      ],
+      "changes": {},
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "track-0-xreal-warranty",
+            "title": "把保修申请、故障判定和返运费用分开记录",
+            "learning": "美国站 XREAL 条款列明，送检后未发现缺陷会产生运费与处理费。服务团队还需确认购买渠道、地区与设备身份。",
+            "application": "比较眼镜售后时，分别记录谁申请、谁检测、无故障时谁付费，再核对当地渠道的条款版本。",
+            "boundary": "美国站条款，实际个案收费与国内政策未知。",
+            "itemIds": [
+              "xreal-warranty"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "xreal-warranty",
+          "title": "XREAL 服务条款样本：销售渠道与售后受理信息相连",
+          "facts": [
+            {
+              "claim": "条款只覆盖规定渠道及所支持地区。",
+              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+              "locator": "Scope"
+            },
+            {
+              "claim": "申请信息包含订单和故障设备序列号。",
+              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+              "locator": "Making a claim"
+            }
+          ],
+          "boundary": "本轮读取 Scope 与 Making a claim 等业务流程段落；这是厂商自述的商业保修流程样本，不是对法定权利或条款效力的法律判断。当前适用地区、机型和购买时间仍须逐案核对。",
+          "sources": [
+            {
+              "url": "https://us.shop.xreal.com/pages/warranty-policy",
+              "name": "XREAL 美国商城保修政策",
+              "publishedAt": "2024-04-08",
+              "publisherGroup": "XREAL 美国商城保修政策",
+              "role": "official",
+              "textHash": "f6d9abd8a0da1c0e46c8883c61dc2dcc1047721091f3eaef3a7b3eb81d86b685",
+              "readAt": "2026-11-09T00:46:58.382936+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "xreal-warranty",
+          "url": "https://us.shop.xreal.com/pages/warranty-policy",
+          "checkedAt": "2026-11-18T10:48:32.155367+00:00",
+          "state": "body",
+          "note": "补查维修与未检出故障的收费条件，既有条款日期为2024年4月8日。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-2",
+      "reviewedAt": "2026-11-18T10:48:32.272337+00:00",
+      "status": "partial",
+      "assessment": "重新阅读 M200 对控制器和边界路由器的说明，补充现场诊断的两项检查。",
+      "gaps": [
+        "其他观察企业、离线能力、多成员权限未完整核实。",
+        "没有可比故障率、用户样本和售后改善数据。"
+      ],
+      "reviewedFields": [
+        "constraint"
+      ],
+      "changes": {},
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "track-2-aqara-m200-local-boundary",
+            "title": "把控制器和边界路由器写进不同的故障检查项",
+            "learning": "M200 的 Matter 控制器负责设备管理，Thread 边界路由器连接 Thread 与 Wi-Fi 或以太网。同一设备可以承担两项职责。",
+            "application": "若终端无法控制，先确定配网与链路是否可达，再检查控制器是否支持该类设备及对应功能。",
+            "boundary": "官网披露能力边界，尚无跨品牌组合实测。",
+            "itemIds": [
+              "aqara-m200-local-boundary"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "aqara-m200-local-boundary",
+          "title": "Aqara M200：本地自动化与云端通知要分别核验",
+          "facts": [
+            {
+              "claim": "部分自动化如云推送仍依赖云连接。",
+              "sourceUrl": "https://www.aqara.com/en/product/hub-m200/",
+              "locator": "Simple Yet Powerful Automations脚注"
+            },
+            {
+              "claim": "空调模式桥接仅限一台红外空调。",
+              "sourceUrl": "https://www.aqara.com/en/product/hub-m200/",
+              "locator": "Universal IR Remote Control脚注"
+            }
+          ],
+          "boundary": "无明确发布日期的具体型号说明；未实测断网、通知和第三方设备兼容性。不推广为所有网关能力或可靠性结论。",
+          "sources": [
+            {
+              "url": "https://www.aqara.com/en/product/hub-m200/",
+              "name": "Aqara 绿米官方资料",
+              "publishedAt": null,
+              "publisherGroup": "Aqara 绿米",
+              "role": "official",
+              "textHash": "5eabaf79616b1698b683e17bd9f96736d9f2b86acfb253027da119b07644bad2",
+              "readAt": "2026-11-16T00:42:34.122918+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "aqara-m200-local-boundary",
+          "url": "https://www.aqara.com/en/product/hub-m200/",
+          "checkedAt": "2026-11-18T10:48:32.155367+00:00",
+          "state": "body",
+          "note": "重新阅读 M200 对控制器和边界路由器的说明，补充现场诊断的两项检查。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-3",
+      "reviewedAt": "2026-11-18T10:48:32.272337+00:00",
+      "status": "partial",
+      "assessment": "核对公开现货周报规格与取价周，补充采购报价比较条件。",
+      "gaps": [
+        "MOQ、交期与库存周转分母本轮仍缺独立定义核验，不据入口页面判断这些指标。",
+        "公开资料没有供应商审核标准、实际通过率、采购质量接口和履约结果。"
+      ],
+      "reviewedFields": [
+        "metrics"
+      ],
+      "changes": {},
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "chain-3-e18-spot",
+            "title": "用采购合同中的料号核对行情样本",
+            "learning": "现货周均价、合同交付价和整机物料成本有不同分母与时间窗口。看周报时先确认内存世代、规格、币种和取价日。",
+            "application": "核算学习机下一批成本时，从物料清单取料号和单机用量，再查该批次是否触发合同调价。",
+            "boundary": "机构市场样本缺少品牌实际合同。",
+            "itemIds": [
+              "e18-spot"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e18-spot",
+          "title": "内存采购怎么读报价：DDR4 现货回落，NAND 现货与合同价差扩大",
+          "facts": [
+            {
+              "claim": "该规格 DDR4 样本一周均价下降 1.43%。",
+              "sourceUrl": "https://www.trendforce.com/news/2026/11/18/insights-memory-spot-price-update-nand-spot-contract-price-gap-exceeds-20-amid-weak-demand/",
+              "locator": "DRAM Spot Price 段落"
+            },
+            {
+              "claim": "机构观察到 NAND 现货与合同价差超过 20%。",
+              "sourceUrl": "https://www.trendforce.com/news/2026/11/18/insights-memory-spot-price-update-nand-spot-contract-price-gap-exceeds-20-amid-weak-demand/",
+              "locator": "NAND Flash Spot Price 段落"
+            }
+          ],
+          "boundary": "机构报价样本缺少终端品牌订单，未验证任何学习机的成交价。",
+          "sources": [
+            {
+              "url": "https://www.trendforce.com/news/2026/11/18/insights-memory-spot-price-update-nand-spot-contract-price-gap-exceeds-20-amid-weak-demand/",
+              "publisherGroup": "TrendForce",
+              "name": "TrendForce 公开现货周报",
+              "publishedAt": "2026-11-18",
+              "role": "research",
+              "textHash": "55827581cdadee2fead19bd9ca94ee8d9202615a345d9459390aed080bb31956",
+              "readAt": "2026-11-18T10:43:32.747849+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e18-spot",
+          "url": "https://www.trendforce.com/news/2026/11/18/insights-memory-spot-price-update-nand-spot-contract-price-gap-exceeds-20-amid-weak-demand/",
+          "checkedAt": "2026-11-18T10:48:32.155367+00:00",
+          "state": "body",
+          "note": "核对公开现货周报规格与取价周，补充采购报价比较条件。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-5",
+      "reviewedAt": "2026-11-18T10:48:32.272337+00:00",
+      "status": "partial",
+      "assessment": "依据作业帮该岗位职责，将变量与结果的映射纳入教学内容验收练习。",
+      "gaps": [
+        "安全与认证范围仍缺完整权威依据。",
+        "现场故障与部署成效没有可比当前结果；本次仅核验制造指标的定义和追溯线索。"
+      ],
+      "reviewedFields": [
+        "exercise"
+      ],
+      "changes": {},
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "chain-5-e18-zuo",
+            "title": "给仿真教学功能编写错误操作验收样例",
+            "learning": "教研要定义实验变量、预期结果、错误反馈与评价规则。可将一个常见错误作为完整用例，与研发、美术逐步核对反馈和评分。",
+            "application": "学习机迁移推演需额外明确触屏交互、内容版本与目标配置。",
+            "boundary": "岗位只指向教育产品，具体设备与最后签字人未知。",
+            "itemIds": [
+              "e18-zuo"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e18-zuo",
+          "title": "教研如何把一道实验题交给研发验收",
+          "facts": [
+            {
+              "claim": "该岗位须产出变量与结果映射、需求文档和验收标准。",
+              "sourceUrl": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/ecbe641a-b8c4-4a0f-ad07-1d3c4cb4e0ad",
+              "locator": "岗位职责第 4 至 5 项"
+            }
+          ],
+          "boundary": "教育内容产品岗位，未披露硬件型号和最终放行人。效果与实际组织分工仍待项目资料。",
+          "sources": [
+            {
+              "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/ecbe641a-b8c4-4a0f-ad07-1d3c4cb4e0ad",
+              "publisherGroup": "作业帮",
+              "name": "作业帮官方招聘 · 高中生物教研",
+              "publishedAt": "2026-11-17",
+              "role": "official",
+              "textHash": "ff7fdc8b679a2c20eca8fab152cca3fe0b4ffa4646be63142924a3c6ffc70533",
+              "readAt": "2026-11-18T10:46:04.176686+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e18-zuo",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/ecbe641a-b8c4-4a0f-ad07-1d3c4cb4e0ad",
+          "checkedAt": "2026-11-18T10:48:32.155367+00:00",
+          "state": "body",
+          "note": "依据作业帮该岗位职责，将变量与结果的映射纳入教学内容验收练习。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-1",
+      "reviewedAt": "2026-11-18T10:48:32.272337+00:00",
+      "status": "partial",
+      "assessment": "核对合作方披露的巡检活动与后续验证计划，补充评价指标边界。",
+      "gaps": [
+        "无人机、DJI 与初始 NVIDIA 生态观察对象尚未完整复核。",
+        "任务成功率、接管、恢复时间与现场工时仍缺统一测量协议及实测样本。"
+      ],
+      "reviewedFields": [
+        "metrics"
+      ],
+      "changes": {},
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "track-1-e18-gf",
+            "title": "将巡检任务成功率与检出、修复分别计量",
+            "learning": "现场巡检可记录完成的任务次数、覆盖点位、异常检测准确性及处置时长。各项需要独立分母。",
+            "application": "已有路线适合先验证任务稳定性，新形态机器人还需验证具体任务与现场接入条件。",
+            "boundary": "合作方披露的数据未给出节省工时、漏检或停机改善的对照。",
+            "itemIds": [
+              "e18-gf"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e18-gf",
+          "title": "格罗方德将扩展 Spot 巡检，Atlas 先验证能否承担具体任务",
+          "facts": [
+            {
+              "claim": "公告披露新加坡部署的巡检次数。",
+              "sourceUrl": "https://bostondynamics.com/news/boston-dynamics-globalfoundries-expand-robotics-collaboration/",
+              "locator": "新加坡既有部署段落"
+            },
+            {
+              "claim": "Atlas 现场测试计划于 2027 年初开始。",
+              "sourceUrl": "https://bostondynamics.com/news/boston-dynamics-globalfoundries-expand-robotics-collaboration/",
+              "locator": "现场测试及工作坊段落"
+            }
+          ],
+          "boundary": "数量与成功率为合作方披露。缺少误报、漏报与停机对照数据。",
+          "sources": [
+            {
+              "url": "https://bostondynamics.com/news/boston-dynamics-globalfoundries-expand-robotics-collaboration/",
+              "publisherGroup": "Boston Dynamics",
+              "name": "Boston Dynamics 与 GF 合作公告",
+              "publishedAt": "2026-11-17",
+              "role": "official",
+              "textHash": "f2827ae5bad630c50ad348bd8af98135741543d87cddc15f45d04c0947b19dd9",
+              "readAt": "2026-11-18T10:43:32.901730+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e18-gf",
+          "url": "https://bostondynamics.com/news/boston-dynamics-globalfoundries-expand-robotics-collaboration/",
+          "checkedAt": "2026-11-18T10:48:32.155367+00:00",
+          "state": "body",
+          "note": "核对合作方披露的巡检活动与后续验证计划，补充评价指标边界。"
         }
       ]
     }

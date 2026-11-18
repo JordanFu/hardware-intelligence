@@ -650,7 +650,8 @@
         "lead": "BOOX 官方指南把阅读进度、批注等阅读数据同步与源文件上传分开，也提供本地书库备份。对阅读器研究，设备之外还要看账号、服务器、目录及版本条件，才能判断换设备后能否继续阅读。当前读取的是英文帮助页，不据此保证国内型号权益一致。",
         "points": [
           "指南要求同步使用同一账号、服务器与文件目录；服务器数据独立存放。",
-          "V4.1起可上传源文件；本地备份生成.booxc文件，迁移双方需为V4.1或以上。"
+          "V4.1起可上传源文件；本地备份生成.booxc文件，迁移双方需为V4.1或以上。",
+          "指南另列源文件云端上传条件，每个文档不超过 200 MB。"
         ]
       },
       "dimensions": {
@@ -673,9 +674,9 @@
           "url": "https://booxsupport.zendesk.com/hc/en-us/articles/25401838386196-Reading-Data-Syncing-and-Backup",
           "publishedAt": null,
           "role": "official",
-          "readAt": "2026-11-11T00:42:15.717Z",
+          "readAt": "2026-11-18T10:44:38.801288+00:00",
           "coverage": "body",
-          "textHash": "c58b7bb955f97d398fb5f6ba061577f1325caa7463800c74a623edbdd490e17b"
+          "textHash": "f5878541e54607720767a86acb2608994952f0e78cbe17e16172d680506a10f6"
         }
       ],
       "facts": [
@@ -688,10 +689,15 @@
           "sourceId": "boox-sync",
           "claim": "本地备份恢复有双方版本条件。",
           "locator": "Local Library Backup"
+        },
+        {
+          "sourceId": "boox-sync",
+          "claim": "指南另列源文件云端上传条件，每个文档不超过 200 MB。",
+          "locator": "Sync the Source File · Note"
         }
       ],
-      "updatedAt": "2026-11-11T00:44:01.882601+00:00",
-      "reviewedAt": "2026-11-11T00:44:01.882601+00:00",
+      "updatedAt": "2026-11-18T10:46:04.384492+00:00",
+      "reviewedAt": "2026-11-18T10:46:04.384492+00:00",
       "lastReviewStatus": "reviewed"
     }
   ],
@@ -1391,6 +1397,92 @@
             "tablet"
           ],
           "note": "当前可读文本未重复呈现旧档案测学练细节；按可直接支持的能力与适用限制修订，不据此断言旧功能取消。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-18T10:46:04.384492+00:00",
+      "summary": "三家核心竞品岗位实际审读。文石官方指南补记每个源文件上传上限。",
+      "checks": [
+        {
+          "company": "作业帮",
+          "name": "高中生物教研（D111404）",
+          "state": "body",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/ecbe641a-b8c4-4a0f-ad07-1d3c4cb4e0ad",
+          "checkedAt": "2026-11-18T10:46:04.176686+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "研究方向为学习机，岗位业务边界为：实验教学内容产品，未指定学习机或其他终端。"
+        },
+        {
+          "company": "科大讯飞",
+          "name": "消费者BG-中级渠道经理-北京/上海/合肥",
+          "state": "body",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=179aac28-bb83-4ed6-938e-25d57a57899b",
+          "checkedAt": "2026-11-18T10:46:04.176686+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "研究方向为学习机，岗位业务边界为：消费者业务渠道，未指明学习机产品线"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "name": "2026届校招-AI产品教研",
+          "state": "body",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/70dc09b3-4eef-444b-8b17-f31ad6614dcf",
+          "checkedAt": "2026-11-18T10:46:04.176686+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "研究方向为学习机，岗位业务边界为：小学AIGC教育产品，正文未限定设备或学习机团队"
+        },
+        {
+          "company": "文石 BOOX",
+          "name": "文石 BOOX官方说明",
+          "url": "https://booxsupport.zendesk.com/hc/en-us/articles/25401838386196-Reading-Data-Syncing-and-Backup",
+          "state": "body",
+          "checkedAt": "2026-11-18T10:44:38.801288+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "note": "核对账号、同服务器与文件目录条件、源文件上传上限及备份恢复。"
+        },
+        {
+          "company": "科大讯飞",
+          "name": "科大讯飞官方说明",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "state": "body",
+          "checkedAt": "2026-11-18T00:46:27.633194+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "学习内容受学段、学科和机型限制。"
+        },
+        {
+          "company": "作业帮",
+          "name": "作业帮官方说明",
+          "url": "https://smart.zuoyebang.com/about",
+          "state": "body",
+          "checkedAt": "2026-11-18T00:46:27.553953+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "品牌页说明硬件与内容定位，未给具体岗位分工。"
+        },
+        {
+          "company": "文石 BOOX",
+          "name": "文石英文帮助页",
+          "state": "error",
+          "url": "https://booxsupport.zendesk.com/hc/en-us/articles/25401838386196-Reading-Data-Syncing-and-Backup",
+          "categoryIds": [
+            "reader"
+          ],
+          "checkedAt": "2026-11-18T10:46:04.176686+00:00",
+          "note": "页面直连403，已改用帮助中心公开正文接口并核对网页文本。"
         }
       ]
     }
@@ -2504,6 +2596,62 @@
               "sourceId": "edu-iflytek",
               "claim": "部分能力受学段、学科、教材与机型限制。",
               "locator": "功能脚注"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "profileId": "boox-reading-workflow",
+      "reviewedAt": "2026-11-18T10:46:04.384492+00:00",
+      "status": "reviewed",
+      "assessment": "核对阅读进度、源文件上传和本地备份三条路径。上传大小限制仅对应指南中的源文件，不外推至本地书库。",
+      "changes": {
+        "brief": {
+          "before": {
+            "lead": "BOOX 官方指南把阅读进度、批注等阅读数据同步与源文件上传分开，也提供本地书库备份。对阅读器研究，设备之外还要看账号、服务器、目录及版本条件，才能判断换设备后能否继续阅读。当前读取的是英文帮助页，不据此保证国内型号权益一致。",
+            "points": [
+              "指南要求同步使用同一账号、服务器与文件目录；服务器数据独立存放。",
+              "V4.1起可上传源文件；本地备份生成.booxc文件，迁移双方需为V4.1或以上。"
+            ]
+          },
+          "after": {
+            "lead": "BOOX 官方指南把阅读进度、批注等阅读数据同步与源文件上传分开，也提供本地书库备份。对阅读器研究，设备之外还要看账号、服务器、目录及版本条件，才能判断换设备后能否继续阅读。当前读取的是英文帮助页，不据此保证国内型号权益一致。",
+            "points": [
+              "指南要求同步使用同一账号、服务器与文件目录；服务器数据独立存放。",
+              "V4.1起可上传源文件；本地备份生成.booxc文件，迁移双方需为V4.1或以上。",
+              "指南另列源文件云端上传条件，每个文档不超过 200 MB。"
+            ]
+          }
+        },
+        "facts": {
+          "before": [
+            {
+              "sourceId": "boox-sync",
+              "claim": "同步需要一致的账号与服务器。",
+              "locator": "Account, Server, and Directory"
+            },
+            {
+              "sourceId": "boox-sync",
+              "claim": "本地备份恢复有双方版本条件。",
+              "locator": "Local Library Backup"
+            }
+          ],
+          "after": [
+            {
+              "sourceId": "boox-sync",
+              "claim": "同步需要一致的账号与服务器。",
+              "locator": "Account, Server, and Directory"
+            },
+            {
+              "sourceId": "boox-sync",
+              "claim": "本地备份恢复有双方版本条件。",
+              "locator": "Local Library Backup"
+            },
+            {
+              "sourceId": "boox-sync",
+              "claim": "指南另列源文件云端上传条件，每个文档不超过 200 MB。",
+              "locator": "Sync the Source File · Note"
             }
           ]
         }

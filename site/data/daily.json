@@ -3,58 +3,155 @@
     {
       "id": "daily-2026-11-18",
       "date": "2026-11-18",
-      "generatedAt": "2026-11-18T01:49:56.829242+00:00",
+      "generatedAt": "2026-11-18T10:47:40.301694+00:00",
       "state": "partial",
       "bootstrap": false,
       "windowNote": "优先最近 72 小时的新事件；按北京时间出刊。7 期内同一进展不重复。",
       "itemIds": [
-        "honhai-sony-camera-agreement-20261117"
+        "e18-spot",
+        "e18-bis",
+        "honhai-sony-camera-agreement-20261117",
+        "e18-zuo",
+        "e18-gf"
       ],
       "developmentKeys": [
         [
+          "e18-spot",
+          "initial"
+        ],
+        [
+          "e18-bis",
+          "initial"
+        ],
+        [
           "honhai-sony-camera-agreement-20261117",
+          "initial"
+        ],
+        [
+          "e18-zuo",
+          "initial"
+        ],
+        [
+          "e18-gf",
           "initial"
         ]
       ],
-      "reviewedCount": 2,
-      "failedSources": [],
-      "coverage": "本轮专项核对理想汽车两份历史采访报道及鸿海当期签约公告，补充团队协作深读。",
+      "reviewedCount": 4,
+      "failedSources": [
+        "文石帮助页直连403，改读官方公开正文接口。",
+        "路透社通用汽车报道的转载页面直连403。"
+      ],
+      "coverage": "补读上游价格、监管和工厂自动化正文，核对三家学习硬件竞品官网岗位并补充教研交付物案例，沿用今日晨间鸿海公告与理想历史深读。",
       "knownGaps": [
-        "本轮为组织专题更新，日报完整新闻与招聘覆盖仍待补查。",
-        "国内公司 0/3",
-        "官方招聘公司 0/2",
-        "近期新闻正文审读 1/6",
-        "新闻发布方 1/3"
+        "内存案仅定位到已收录的11月14日裁定，未确认新裁定。",
+        "苹果内存长协未取得签约正文。出口规则新闻稿已核对，细则需另查。",
+        "学习硬件供应链专属岗位证据仍缺。旧知识节点的完整复核仍有积压。"
       ],
       "coverageCheck": {
         "newsResearch": {
-          "passed": false,
-          "bodyCount": 1,
+          "passed": true,
+          "bodyCount": 11,
           "publisherGroups": [
+            "AMD 公告转载链",
+            "Boston Dynamics",
+            "Seoul Economic Daily",
+            "TrendForce",
+            "ZDNET Korea",
+            "iFixit",
+            "美国商务部 BIS",
+            "长鑫业绩说明会",
+            "韩国每日经济",
             "鸿海"
           ],
           "requiredBodies": 6,
           "requiredPublisherGroups": 3
         },
-        "passed": false,
-        "companies": [],
+        "passed": true,
+        "companies": [
+          "XREAL",
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
         "stages": [
           "供应链与采购",
           "制造与交付",
           "服务与生命周期",
           "渠道与销售",
           "经营与组织",
+          "质量与合规",
           "需求与规划"
         ],
-        "recruitmentCompanies": [],
-        "gaps": [
-          "国内公司 0/3",
-          "官方招聘公司 0/2",
-          "近期新闻正文审读 1/6",
-          "新闻发布方 1/3"
+        "recruitmentCompanies": [
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
         ],
-        "usableSources": 3
-      }
+        "gaps": [],
+        "usableSources": 21
+      },
+      "revisions": [
+        {
+          "reason": "补齐早间专题更新缺少的近期新闻正文和三家公司岗位复核，保留晨间日报及已发表的协作深读。",
+          "replacedAt": "2026-11-18T10:47:40.301694+00:00",
+          "edition": {
+            "id": "daily-2026-11-18",
+            "date": "2026-11-18",
+            "generatedAt": "2026-11-18T01:49:56.829242+00:00",
+            "state": "partial",
+            "bootstrap": false,
+            "windowNote": "优先最近 72 小时的新事件；按北京时间出刊。7 期内同一进展不重复。",
+            "itemIds": [
+              "honhai-sony-camera-agreement-20261117"
+            ],
+            "developmentKeys": [
+              [
+                "honhai-sony-camera-agreement-20261117",
+                "initial"
+              ]
+            ],
+            "reviewedCount": 2,
+            "failedSources": [],
+            "coverage": "本轮专项核对理想汽车两份历史采访报道及鸿海当期签约公告，补充团队协作深读。",
+            "knownGaps": [
+              "本轮为组织专题更新，日报完整新闻与招聘覆盖仍待补查。",
+              "国内公司 0/3",
+              "官方招聘公司 0/2",
+              "近期新闻正文审读 1/6",
+              "新闻发布方 1/3"
+            ],
+            "coverageCheck": {
+              "newsResearch": {
+                "passed": false,
+                "bodyCount": 1,
+                "publisherGroups": [
+                  "鸿海"
+                ],
+                "requiredBodies": 6,
+                "requiredPublisherGroups": 3
+              },
+              "passed": false,
+              "companies": [],
+              "stages": [
+                "供应链与采购",
+                "制造与交付",
+                "服务与生命周期",
+                "渠道与销售",
+                "经营与组织",
+                "需求与规划"
+              ],
+              "recruitmentCompanies": [],
+              "gaps": [
+                "国内公司 0/3",
+                "官方招聘公司 0/2",
+                "近期新闻正文审读 1/6",
+                "新闻发布方 1/3"
+              ],
+              "usableSources": 3
+            }
+          }
+        }
+      ]
     },
     {
       "id": "daily-2026-11-17",

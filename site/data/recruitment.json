@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-17T00:45:51.386437+00:00",
+  "checkedAt": "2026-11-18T10:46:04.282488+00:00",
   "jobs": [
     {
       "company": "DJI 大疆",
@@ -1232,8 +1232,8 @@
       "scopeNote": "消费者业务渠道，未指明学习机产品线",
       "id": "job-c1045357d5154cb3",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-13T00:47:25.669231+00:00",
-      "sourceHash": "3815c59cfbe4945a2b8f22e6936f3d0feba47dfb25445f1b7845354b7d920229",
+      "lastSeen": "2026-11-18T10:46:04.282488+00:00",
+      "sourceHash": "3c604a23f2e6ab0b9b5eb519d90acf4f387b8f862dc3f57484f9cb2d78b31069",
       "change": "持续可见",
       "versions": [
         {
@@ -1295,8 +1295,8 @@
       "scopeNote": "小学AIGC教育产品，正文未限定设备或学习机团队",
       "id": "job-03f79073b0d9a735",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-13T00:47:25.669231+00:00",
-      "sourceHash": "a8d3fae89f684f2c9f9f22d1ed143527dd44600eacdf871ecc8663a6b99f1855",
+      "lastSeen": "2026-11-18T10:46:04.282488+00:00",
+      "sourceHash": "31b0aa1388030f182c0d3112850e6f0aa67586a93a4db6131fbceeb8e2aa7209",
       "change": "持续可见",
       "versions": [
         {
@@ -1657,6 +1657,73 @@
           "educationCategories": null
         }
       ]
+    },
+    {
+      "company": "作业帮",
+      "postingId": "ecbe641a-b8c4-4a0f-ad07-1d3c4cb4e0ad",
+      "title": "高中生物教研（D111404）",
+      "family": "教研",
+      "location": "北京市",
+      "stages": [
+        "需求与规划",
+        "研发与系统",
+        "质量与合规"
+      ],
+      "postedAt": "2026-11-17",
+      "access": "正文可见",
+      "responsibilities": [
+        "把实验命题与学习痛点转为仿真选题、交互反馈和评价规则，形成变量与结果的映射",
+        "统筹实验课程内容，编写需求和验收标准，跟踪上线后的使用数据"
+      ],
+      "interfaces": [
+        "与研发、美术和技术团队核对交互流程与验收标准"
+      ],
+      "requirements": [
+        "本科及以上，相关专业与至少三年经验，能够判断实验的科学性、安全性和可操作性",
+        "具备交互式内容设计与 AI 工具使用能力"
+      ],
+      "decisionQuestion": "谁负责判断模型反馈是否符合学科逻辑，谁有权冻结交互验收标准？",
+      "boundary": "官网职位指向教学仿真，未说明终端品类、审批权、编制或招聘原因。",
+      "businessScope": "教育业务参考",
+      "scopeNote": "实验教学内容产品，未指定学习机或其他终端。",
+      "educationResearch": true,
+      "coverage": "body",
+      "locator": "岗位职责第4至5条及职位要求",
+      "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/ecbe641a-b8c4-4a0f-ad07-1d3c4cb4e0ad",
+      "id": "job-dd7170f66b3021a8",
+      "firstSeen": "2026-11-18T10:46:04.282488+00:00",
+      "lastSeen": "2026-11-18T10:46:04.282488+00:00",
+      "sourceHash": "ff7fdc8b679a2c20eca8fab152cca3fe0b4ffa4646be63142924a3c6ffc70533",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-18T10:46:04.282488+00:00",
+          "sourceHash": "ff7fdc8b679a2c20eca8fab152cca3fe0b4ffa4646be63142924a3c6ffc70533",
+          "access": "正文可见",
+          "title": "高中生物教研（D111404）",
+          "family": "教研",
+          "location": "北京市",
+          "responsibilities": [
+            "把实验命题与学习痛点转为仿真选题、交互反馈和评价规则，形成变量与结果的映射",
+            "统筹实验课程内容，编写需求和验收标准，跟踪上线后的使用数据"
+          ],
+          "interfaces": [
+            "与研发、美术和技术团队核对交互流程与验收标准"
+          ],
+          "requirements": [
+            "本科及以上，相关专业与至少三年经验，能够判断实验的科学性、安全性和可操作性",
+            "具备交互式内容设计与 AI 工具使用能力"
+          ],
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "businessScope": "教育业务参考",
+          "scopeNote": "实验教学内容产品，未指定学习机或其他终端。",
+          "educationCategories": null
+        }
+      ]
     }
   ],
   "changes": [
@@ -1916,6 +1983,14 @@
         ],
         "scopeNote": "当前正文为学科资源标准、质量和产品研究；标题小初与正文初高中不一致，业务学段待核；未明确学习机"
       }
+    },
+    {
+      "jobId": "job-dd7170f66b3021a8",
+      "observedAt": "2026-11-18T10:46:04.282488+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
     }
   ],
   "scans": [
@@ -2610,6 +2685,60 @@
         }
       ],
       "checkedAt": "2026-11-17T00:45:51.386437+00:00"
+    },
+    {
+      "company": "作业帮",
+      "state": "partial",
+      "complete": false,
+      "note": "逐项查阅职位正文，未覆盖完整招聘目录。",
+      "familyChecks": [
+        {
+          "family": "教研",
+          "state": "body",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/ecbe641a-b8c4-4a0f-ad07-1d3c4cb4e0ad",
+          "note": "实验教学内容产品，未指定学习机或其他终端。",
+          "jobIds": [
+            "job-dd7170f66b3021a8"
+          ]
+        }
+      ],
+      "checkedAt": "2026-11-18T10:46:04.282488+00:00"
+    },
+    {
+      "company": "科大讯飞",
+      "state": "partial",
+      "complete": false,
+      "note": "逐项查阅职位正文，未覆盖完整招聘目录。",
+      "familyChecks": [
+        {
+          "family": "渠道",
+          "state": "body",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=179aac28-bb83-4ed6-938e-25d57a57899b",
+          "note": "消费者业务渠道，未指明学习机产品线",
+          "jobIds": [
+            "job-c1045357d5154cb3"
+          ]
+        }
+      ],
+      "checkedAt": "2026-11-18T10:46:04.282488+00:00"
+    },
+    {
+      "company": "猿辅导（小猿）",
+      "state": "partial",
+      "complete": false,
+      "note": "逐项查阅职位正文，未覆盖完整招聘目录。",
+      "familyChecks": [
+        {
+          "family": "教研",
+          "state": "body",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/70dc09b3-4eef-444b-8b17-f31ad6614dcf",
+          "note": "小学AIGC教育产品，正文未限定设备或学习机团队",
+          "jobIds": [
+            "job-03f79073b0d9a735"
+          ]
+        }
+      ],
+      "checkedAt": "2026-11-18T10:46:04.282488+00:00"
     }
   ],
   "insights": [
@@ -2750,6 +2879,22 @@
       "nextAction": "核对岗位实际学段、所属产品线、资源放行权与变更原因，再判断是否存在人员能力要求变化。",
       "boundary": "仅证明公开页面两个观察时点的差异；职位发布日期仍为2026-05-12，实际改动日未知。标题小初与正文初高中不一致，未确认学习硬件专属归属，不推断人数或组织调整。",
       "reviewedAt": "2026-11-16T00:45:22.323105+00:00",
+      "history": []
+    },
+    {
+      "id": "simulation-curriculum-acceptance",
+      "title": "教研怎样交付可验收的交互内容",
+      "finding": "作业帮职位写明仿真变量与结果映射、错误反馈及验收标准。小猿的教研职位列出模型测试集与问题反馈。",
+      "interpretation": "两种岗位都将学科判断转为研发可反复使用的检查材料，交付物分别对应交互仿真与生成模型。",
+      "alternative": "差异也可能来自各自产品阶段、学段与项目类型。",
+      "nextAction": "了解人员配置时可请项目方展示一条学科错误从发现到验收的记录，核对修改权和复验权。",
+      "boundary": "两份职位均未明确学习机归属，实际汇报线与人员缺口未知。",
+      "jobIds": [
+        "job-dd7170f66b3021a8",
+        "job-03f79073b0d9a735"
+      ],
+      "educationResearch": true,
+      "reviewedAt": "2026-11-18T10:46:04.282488+00:00",
       "history": []
     }
   ]

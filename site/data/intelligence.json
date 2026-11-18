@@ -1,8 +1,102 @@
 {
   "schemaVersion": 1,
-  "lastCompletedAt": "2026-11-18T01:49:56.828314+00:00",
+  "lastCompletedAt": "2026-11-18T10:47:40.301032+00:00",
   "method": "Codex 初筛评分 + 逐条证据复核；非两个独立模型评分",
   "items": [
+    {
+      "id": "e18-spot",
+      "eventId": "e18-spot",
+      "developmentId": "initial",
+      "titleZh": "内存采购怎么读报价：DDR4 现货回落，NAND 现货与合同价差扩大",
+      "originalTitle": "Memory Spot Price Update: NAND Spot-Contract Price Gap Exceeds 20% amid Weak Demand",
+      "companies": [
+        "TrendForce"
+      ],
+      "stages": [
+        "供应链与采购",
+        "经营与组织"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-18",
+      "kind": "新闻",
+      "category": "端侧 AI 与芯片",
+      "brief": {
+        "lead": "TrendForce 11 月 18 日的抽样显示，主流 DDR4 1G×8 3200MT/s 颗粒周均现货价从 44.89 美元降至 44.25 美元，品牌 DDR5 现货大致持平。NAND 渠道库存承压，观察到的现货与合同价差超过 20%。",
+        "points": [
+          "DDR4 数字针对单一规格和截至 11 月 17 日的一周。",
+          "学习机成本核算须先核对实际料号、采购量、合同定价周期及币种。"
+        ]
+      },
+      "boundary": "机构报价样本缺少终端品牌订单，未验证任何学习机的成交价。",
+      "meaning": "采购与产品核对物料预算时，应把对应规格的即期报价和本公司的交付合同分列，再判断差额何时可能影响整机成本。",
+      "question": "品牌采购的是哪一代内存？合同的价格调整窗口与下一批备货是否重合？",
+      "eventReason": "内存采购怎么读报价：DDR4 现货回落，NAND 现货与合同价差扩大",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 17,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐段复核业务范围、分工、发生时间与已知结果。"
+        }
+      },
+      "impactLevel": "industry-wide",
+      "impactReason": "采购与产品核对物料预算时，应把对应规格的即期报价和本公司的交付合同分列，再判断差额何时可能影响整机成本。",
+      "practices": [
+        {
+          "title": "以料号和合约周期解释采购价差",
+          "method": "采购与产品核对物料预算时，应把对应规格的即期报价和本公司的交付合同分列，再判断差额何时可能影响整机成本。",
+          "conditions": "学习机成本核算须先核对实际料号、采购量、合同定价周期及币种。",
+          "outcome": "机构报价样本缺少终端品牌订单，未验证任何学习机的成交价。",
+          "boundary": "机构报价样本缺少终端品牌订单，未验证任何学习机的成交价。",
+          "nextCheck": "品牌采购的是哪一代内存？合同的价格调整窗口与下一批备货是否重合？",
+          "stages": [
+            "供应链与采购",
+            "经营与组织"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "该规格 DDR4 样本一周均价下降 1.43%。",
+          "sourceUrl": "https://www.trendforce.com/news/2026/11/18/insights-memory-spot-price-update-nand-spot-contract-price-gap-exceeds-20-amid-weak-demand/",
+          "locator": "DRAM Spot Price 段落"
+        },
+        {
+          "claim": "机构观察到 NAND 现货与合同价差超过 20%。",
+          "sourceUrl": "https://www.trendforce.com/news/2026/11/18/insights-memory-spot-price-update-nand-spot-contract-price-gap-exceeds-20-amid-weak-demand/",
+          "locator": "NAND Flash Spot Price 段落"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.trendforce.com/news/2026/11/18/insights-memory-spot-price-update-nand-spot-contract-price-gap-exceeds-20-amid-weak-demand/",
+          "publisherGroup": "TrendForce",
+          "name": "TrendForce 公开现货周报",
+          "publishedAt": "2026-11-18",
+          "role": "research",
+          "textHash": "55827581cdadee2fead19bd9ca94ee8d9202615a345d9459390aed080bb31956",
+          "readAt": "2026-11-18T10:43:32.747849+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-18T10:47:40.292238+00:00",
+      "sourceDate": "2026-11-18",
+      "date": "2026-11-18",
+      "title": "内存采购怎么读报价：DDR4 现货回落，NAND 现货与合同价差扩大",
+      "summary": "TrendForce 11 月 18 日的抽样显示，主流 DDR4 1G×8 3200MT/s 颗粒周均现货价从 44.89 美元降至 44.25 美元，品牌 DDR5 现货大致持平。NAND 渠道库存承压，观察到的现货与合同价差超过 20%。"
+    },
     {
       "id": "rss-8f436ef391e4e973",
       "eventId": "rss-8f436ef391e4e973",
@@ -154,6 +248,202 @@
       "date": "2026-11-17",
       "title": "鸿海拟接手索尼车载相机模组业务，交接范围包括客户服务",
       "summary": "鸿海于 11 月 17 日宣布签署协议，拟以 72.4 亿日元收购索尼半导体解决方案的车载相机模组业务。协议把技术、客户关系与运营资源列入交接范围，双方将服务连续性和团队稳定列为初期工作重点。"
+    },
+    {
+      "id": "e18-gf",
+      "eventId": "e18-gf",
+      "developmentId": "initial",
+      "titleZh": "格罗方德将扩展 Spot 巡检，Atlas 先验证能否承担具体任务",
+      "originalTitle": "Boston Dynamics & GlobalFoundries Expand Robotics Collaboration",
+      "companies": [
+        "Boston Dynamics",
+        "GlobalFoundries"
+      ],
+      "stages": [
+        "制造与交付",
+        "质量与合规",
+        "经营与组织"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-17",
+      "kind": "新闻",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "格罗方德与波士顿动力公布两条不同进度的工作。已有运行数据的 Spot 巡检将向更多厂区推广，Atlas 则计划于 2027 年初进入现场测试，先评估可用任务、厂区准备情况和系统接入要求。",
+        "points": [
+          "公司披露新加坡两台 Spot 自 4 月以来完成逾 9 万次巡检。",
+          "复制巡检方案前须区分任务成功、故障识别、现场处置和停机结果。"
+        ]
+      },
+      "boundary": "数量与成功率为合作方披露。缺少误报、漏报与停机对照数据。",
+      "meaning": "工厂和设备团队扩点前可分别验收路线完成、异常发现和处理闭环，记录哪个环节仍由现场人员承担。",
+      "question": "怎样定义一次巡检成功，谁确认发现的异常已处置？",
+      "eventReason": "格罗方德将扩展 Spot 巡检，Atlas 先验证能否承担具体任务",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 17,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐段复核业务范围、分工、发生时间与已知结果。"
+        }
+      },
+      "practices": [
+        {
+          "title": "为巡检机器人分别验证任务完成和异常处置",
+          "method": "工厂和设备团队扩点前可分别验收路线完成、异常发现和处理闭环，记录哪个环节仍由现场人员承担。",
+          "conditions": "复制巡检方案前须区分任务成功、故障识别、现场处置和停机结果。",
+          "outcome": "数量与成功率为合作方披露。缺少误报、漏报与停机对照数据。",
+          "boundary": "数量与成功率为合作方披露。缺少误报、漏报与停机对照数据。",
+          "nextCheck": "怎样定义一次巡检成功，谁确认发现的异常已处置？",
+          "stages": [
+            "制造与交付",
+            "质量与合规",
+            "经营与组织"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "公告披露新加坡部署的巡检次数。",
+          "sourceUrl": "https://bostondynamics.com/news/boston-dynamics-globalfoundries-expand-robotics-collaboration/",
+          "locator": "新加坡既有部署段落"
+        },
+        {
+          "claim": "Atlas 现场测试计划于 2027 年初开始。",
+          "sourceUrl": "https://bostondynamics.com/news/boston-dynamics-globalfoundries-expand-robotics-collaboration/",
+          "locator": "现场测试及工作坊段落"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://bostondynamics.com/news/boston-dynamics-globalfoundries-expand-robotics-collaboration/",
+          "publisherGroup": "Boston Dynamics",
+          "name": "Boston Dynamics 与 GF 合作公告",
+          "publishedAt": "2026-11-17",
+          "role": "official",
+          "textHash": "f2827ae5bad630c50ad348bd8af98135741543d87cddc15f45d04c0947b19dd9",
+          "readAt": "2026-11-18T10:43:32.901730+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-18T10:47:40.293562+00:00",
+      "sourceDate": "2026-11-17",
+      "date": "2026-11-17",
+      "title": "格罗方德将扩展 Spot 巡检，Atlas 先验证能否承担具体任务",
+      "summary": "格罗方德与波士顿动力公布两条不同进度的工作。已有运行数据的 Spot 巡检将向更多厂区推广，Atlas 则计划于 2027 年初进入现场测试，先评估可用任务、厂区准备情况和系统接入要求。"
+    },
+    {
+      "id": "e18-zuo",
+      "eventId": "e18-zuo",
+      "developmentId": "initial",
+      "titleZh": "教研如何把一道实验题交给研发验收",
+      "originalTitle": "高中生物教研（D111404）",
+      "companies": [
+        "作业帮"
+      ],
+      "stages": [
+        "需求与规划",
+        "研发与系统",
+        "质量与合规"
+      ],
+      "domestic": true,
+      "publishedAt": "2026-11-17",
+      "kind": "岗位实践",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "作业帮的高中生物教研岗位把实验教学拆成可实现的交付物。教研选择仿真题目和粒度，设计变量与结果、错误反馈和评分规则，再与研发、美术及技术人员对照需求文档验收。",
+        "points": [
+          "公开岗位把交互设计与学科判断放在同一条职责链上，并要求跟进上线后的数据。",
+          "迁移到学习硬件时，可用一个错操作示例检查屏幕反馈、评分和教研预期是否一致。"
+        ]
+      },
+      "boundary": "教育内容产品岗位，未披露硬件型号和最终放行人。效果与实际组织分工仍待项目资料。",
+      "meaning": "教研把每个可操作变量、预期现象和错误反馈写成验收样例，研发实现后可逐项复测。这里是依据岗位职责作出的应用推演。",
+      "question": "教研验收发现错误时，谁决定调整学科规则、交互提示或实现？",
+      "eventReason": "教研如何把一道实验题交给研发验收",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 17,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐段复核业务范围、分工、发生时间与已知结果。"
+        }
+      },
+      "practices": [
+        {
+          "title": "将学科判断转成可复测的交互验收样例",
+          "method": "教研把每个可操作变量、预期现象和错误反馈写成验收样例，研发实现后可逐项复测。这里是依据岗位职责作出的应用推演。",
+          "conditions": "迁移到学习硬件时，可用一个错操作示例检查屏幕反馈、评分和教研预期是否一致。",
+          "outcome": "教育内容产品岗位，未披露硬件型号和最终放行人。效果与实际组织分工仍待项目资料。",
+          "boundary": "教育内容产品岗位，未披露硬件型号和最终放行人。效果与实际组织分工仍待项目资料。",
+          "nextCheck": "教研验收发现错误时，谁决定调整学科规则、交互提示或实现？",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "organization": [
+        {
+          "kind": "能力需求线索",
+          "title": "教研交出什么，研发才能验收",
+          "observation": "作业帮的高中生物教研岗位把实验教学拆成可实现的交付物。教研选择仿真题目和粒度，设计变量与结果、错误反馈和评分规则，再与研发、美术及技术人员对照需求文档验收。",
+          "implication": "教研验收发现错误时，谁决定调整学科规则、交互提示或实现？",
+          "boundary": "教育内容产品岗位，未披露硬件型号和最终放行人。效果与实际组织分工仍待项目资料。",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "该岗位须产出变量与结果映射、需求文档和验收标准。",
+          "sourceUrl": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/ecbe641a-b8c4-4a0f-ad07-1d3c4cb4e0ad",
+          "locator": "岗位职责第 4 至 5 项"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/ecbe641a-b8c4-4a0f-ad07-1d3c4cb4e0ad",
+          "publisherGroup": "作业帮",
+          "name": "作业帮官方招聘 · 高中生物教研",
+          "publishedAt": "2026-11-17",
+          "role": "official",
+          "textHash": "ff7fdc8b679a2c20eca8fab152cca3fe0b4ffa4646be63142924a3c6ffc70533",
+          "readAt": "2026-11-18T10:46:04.176686+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-18T10:47:40.294115+00:00",
+      "sourceDate": "2026-11-17",
+      "date": "2026-11-17",
+      "title": "教研如何把一道实验题交给研发验收",
+      "summary": "作业帮的高中生物教研岗位把实验教学拆成可实现的交付物。教研选择仿真题目和粒度，设计变量与结果、错误反馈和评分规则，再与研发、美术及技术人员对照需求文档验收。"
     },
     {
       "id": "caam-payment-review-20261116",
@@ -362,6 +652,77 @@
       "date": "2026-11-16T08:16:00+08:00",
       "title": "SK海力士供应商计划：把研发预付、测试与量产连接起来",
       "summary": "路透社11月16日报道，SK海力士计划用五年投入1.4万亿韩元支持本土供应商，并参与建设接近商业产线条件的共享测试设施。核心机制是提前分担研发成本、提供验证条件，再衔接量产与销售。"
+    },
+    {
+      "id": "e18-bis",
+      "eventId": "e18-bis",
+      "developmentId": "initial",
+      "titleZh": "美国 BIS 公布涉及高端芯片和服务器远程访问的临时最终规则",
+      "originalTitle": "BIS Issues Rule Addressing Remote Access to American Super Intelligence Technology",
+      "companies": [
+        "美国商务部"
+      ],
+      "stages": [
+        "供应链与采购",
+        "质量与合规"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-16",
+      "kind": "新闻",
+      "category": "端侧 AI 与芯片",
+      "brief": {
+        "lead": "美国商务部下属 BIS 于 11 月 16 日公告，对先进 SI 芯片和服务器的远程访问发布临时最终规则。公告关注借助第三国数据中心获得受限计算能力的情形。",
+        "points": [
+          "核查对象涉及远程算力的提供方式和客户访问关系。",
+          "企业适用范围、许可条件及生效节点需另查正式规则。"
+        ]
+      },
+      "boundary": "本轮核对主管机关新闻稿，尚未逐项核对法规正文和例外。",
+      "meaning": "对使用跨境云算力的硬件公司，算力服务的供应商、部署地点与访问主体是需要核实的合规接口。",
+      "question": "具体设备分类和服务安排落在哪一项适用条件？",
+      "eventReason": "美国 BIS 公布涉及高端芯片和服务器远程访问的临时最终规则",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 17,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐段复核业务范围、分工、发生时间与已知结果。"
+        }
+      },
+      "impactLevel": "industry-wide",
+      "impactReason": "对使用跨境云算力的硬件公司，算力服务的供应商、部署地点与访问主体是需要核实的合规接口。",
+      "facts": [
+        {
+          "claim": "BIS 公告明确指向高端芯片和服务器的远程访问。",
+          "sourceUrl": "https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology",
+          "locator": "公告首段及规则目的段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology",
+          "publisherGroup": "美国商务部 BIS",
+          "name": "BIS 新闻稿",
+          "publishedAt": "2026-11-16",
+          "role": "official",
+          "textHash": "d0be3587b296b923274feaaa63be60c32e9935c443313eb2b6a9943041e70226",
+          "readAt": "2026-11-18T10:44:23.308019+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-18T10:47:40.292759+00:00",
+      "sourceDate": "2026-11-16",
+      "date": "2026-11-16",
+      "title": "美国 BIS 公布涉及高端芯片和服务器远程访问的临时最终规则",
+      "summary": "美国商务部下属 BIS 于 11 月 16 日公告，对先进 SI 芯片和服务器的远程访问发布临时最终规则。公告关注借助第三国数据中心获得受限计算能力的情形。"
     },
     {
       "id": "rss-4ecdc03c57ee0814",
@@ -7342,6 +7703,20 @@
   ],
   "events": [
     {
+      "id": "e18-spot",
+      "representativeId": "e18-spot",
+      "itemIds": [
+        "e18-spot"
+      ],
+      "publisherGroups": [
+        "TrendForce"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
       "id": "rss-8f436ef391e4e973",
       "representativeId": "rss-8f436ef391e4e973",
       "itemIds": [
@@ -7363,6 +7738,34 @@
       ],
       "publisherGroups": [
         "鸿海"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "e18-gf",
+      "representativeId": "e18-gf",
+      "itemIds": [
+        "e18-gf"
+      ],
+      "publisherGroups": [
+        "Boston Dynamics"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "e18-zuo",
+      "representativeId": "e18-zuo",
+      "itemIds": [
+        "e18-zuo"
+      ],
+      "publisherGroups": [
+        "作业帮"
       ],
       "developmentIds": [
         "initial"
@@ -7405,6 +7808,20 @@
       ],
       "publisherGroups": [
         "Reuters"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "e18-bis",
+      "representativeId": "e18-bis",
+      "itemIds": [
+        "e18-bis"
+      ],
+      "publisherGroups": [
+        "美国商务部 BIS"
       ],
       "developmentIds": [
         "initial"
@@ -17405,6 +17822,440 @@
       "completedAt": "2026-11-18T01:49:56.828314+00:00",
       "reviewedCount": 2,
       "selectedCount": 2
+    },
+    {
+      "sourceChecks": [
+        {
+          "url": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+          "company": "理想汽车",
+          "name": "晚点 Auto 原创报道（新浪刊载）",
+          "purpose": "practice",
+          "stages": [
+            "经营与组织",
+            "需求与规划",
+            "研发与系统",
+            "渠道与销售"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-18T01:49:56.533562+00:00",
+          "note": "核对正文的责任接口、适用时期与已披露范围。"
+        },
+        {
+          "url": "https://www.36kr.com/p/3877919172047111",
+          "company": "理想汽车",
+          "name": "36氪汽车 · 肖漫",
+          "purpose": "practice",
+          "stages": [
+            "经营与组织",
+            "需求与规划",
+            "研发与系统",
+            "渠道与销售"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-18T01:49:56.533562+00:00",
+          "note": "核对正文的责任接口、适用时期与已披露范围。"
+        },
+        {
+          "url": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2157",
+          "company": "鸿海",
+          "name": "鸿海科技集团新闻稿",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "经营与组织",
+            "服务与生命周期"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-18T01:49:56.533562+00:00",
+          "note": "核对正文的责任接口、适用时期与已披露范围。",
+          "readId": "day18-foxconn",
+          "publishedAt": "2026-11-17",
+          "publisherGroup": "鸿海",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "公告明确区分签约、交割条件及双方要移交的客户服务范围。",
+            "anchor": "確保客戶服務不中斷及團隊穩定"
+          }
+        },
+        {
+          "company": "作业帮",
+          "name": "高中生物教研（D111404）",
+          "purpose": "recruitment",
+          "state": "read",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/ecbe641a-b8c4-4a0f-ad07-1d3c4cb4e0ad",
+          "checkedAt": "2026-11-18T10:46:04.176686+00:00",
+          "note": "实验教学内容产品，未指定学习机或其他终端。"
+        },
+        {
+          "company": "科大讯飞",
+          "name": "消费者BG-中级渠道经理-北京/上海/合肥",
+          "purpose": "recruitment",
+          "state": "read",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=179aac28-bb83-4ed6-938e-25d57a57899b",
+          "checkedAt": "2026-11-18T10:46:04.176686+00:00",
+          "note": "消费者业务渠道，未指明学习机产品线"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "name": "2026届校招-AI产品教研",
+          "purpose": "recruitment",
+          "state": "read",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/70dc09b3-4eef-444b-8b17-f31ad6614dcf",
+          "checkedAt": "2026-11-18T10:46:04.176686+00:00",
+          "note": "小学AIGC教育产品，正文未限定设备或学习机团队"
+        },
+        {
+          "company": "作业帮",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/dcfceae0-9c23-47ba-aac8-1a3ccbb2142b",
+          "name": "教研实习生（D111221）",
+          "checkedAt": "2026-11-18T10:46:04.176686+00:00",
+          "state": "no_new",
+          "purpose": "recruitment",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "同一岗位仍显示已停止招聘，延续11月12日记录。"
+        },
+        {
+          "company": "文石 BOOX",
+          "name": "文石 BOOX官方说明",
+          "url": "https://booxsupport.zendesk.com/hc/en-us/articles/25401838386196-Reading-Data-Syncing-and-Backup",
+          "state": "read",
+          "purpose": "practice",
+          "checkedAt": "2026-11-18T10:44:38.801288+00:00",
+          "stages": [
+            "服务与生命周期"
+          ],
+          "note": "核对账号、同服务器与文件目录条件、源文件上传上限及备份恢复。"
+        },
+        {
+          "company": "科大讯飞",
+          "name": "科大讯飞官方说明",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "state": "read",
+          "purpose": "practice",
+          "checkedAt": "2026-11-18T00:46:27.633194+00:00",
+          "stages": [
+            "服务与生命周期"
+          ],
+          "note": "学习内容受学段、学科和机型限制。"
+        },
+        {
+          "company": "作业帮",
+          "name": "作业帮官方说明",
+          "url": "https://smart.zuoyebang.com/about",
+          "state": "read",
+          "purpose": "practice",
+          "checkedAt": "2026-11-18T00:46:27.553953+00:00",
+          "stages": [
+            "服务与生命周期"
+          ],
+          "note": "品牌页说明硬件与内容定位，未给具体岗位分工。"
+        },
+        {
+          "name": "TrendForce",
+          "url": "https://www.trendforce.com/news/2026/11/18/insights-memory-spot-price-update-nand-spot-contract-price-gap-exceeds-20-amid-weak-demand/",
+          "readId": "e18-spot",
+          "company": null,
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "经营与组织"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-18T10:47:39.981566+00:00",
+          "publishedAt": "2026-11-18",
+          "publisherGroup": "TrendForce",
+          "note": "采购与产品核对物料预算时，应把对应规格的即期报价和本公司的交付合同分列，再判断差额何时可能影响整机成本。",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "采购与产品核对物料预算时，应把对应规格的即期报价和本公司的交付合同分列，再判断差额何时可能影响整机成本。",
+            "anchor": "slightly decreased by 1.43%"
+          }
+        },
+        {
+          "name": "美国商务部 BIS",
+          "url": "https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology",
+          "readId": "e18-bis",
+          "company": null,
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "质量与合规"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-18T10:47:39.981566+00:00",
+          "publishedAt": "2026-11-16",
+          "publisherGroup": "美国商务部 BIS",
+          "note": "对使用跨境云算力的硬件公司，算力服务的供应商、部署地点与访问主体是需要核实的合规接口。",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "对使用跨境云算力的硬件公司，算力服务的供应商、部署地点与访问主体是需要核实的合规接口。",
+            "anchor": "remote access to advanced super intelligence"
+          }
+        },
+        {
+          "name": "Boston Dynamics",
+          "url": "https://bostondynamics.com/news/boston-dynamics-globalfoundries-expand-robotics-collaboration/",
+          "readId": "e18-gf",
+          "company": null,
+          "purpose": "news",
+          "stages": [
+            "制造与交付",
+            "质量与合规",
+            "经营与组织"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-18T10:47:39.981566+00:00",
+          "publishedAt": "2026-11-17",
+          "publisherGroup": "Boston Dynamics",
+          "note": "工厂和设备团队扩点前可分别验收路线完成、异常发现和处理闭环，记录哪个环节仍由现场人员承担。",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "工厂和设备团队扩点前可分别验收路线完成、异常发现和处理闭环，记录哪个环节仍由现场人员承担。",
+            "anchor": "completed more than 90,000 inspections"
+          }
+        },
+        {
+          "name": "长鑫业绩说明会",
+          "url": "https://www.ithome.com/1/028/457.htm",
+          "readId": "day18-cx",
+          "company": null,
+          "purpose": "news",
+          "stages": [
+            "供应链与采购"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-18T10:47:39.981566+00:00",
+          "publishedAt": "2026-11-17",
+          "publisherGroup": "长鑫业绩说明会",
+          "note": "十月底投资者资料已提车载拓展，暂缓作为独立新量产事件。",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "十月底投资者资料已提车载拓展，暂缓作为独立新量产事件。",
+            "anchor": "正加快 LPDDR6 在车载场景的应用创新与拓展"
+          }
+        },
+        {
+          "name": "韩国每日经济",
+          "url": "https://www.ithome.com/1/028/325.htm",
+          "readId": "day18-apple",
+          "company": null,
+          "purpose": "news",
+          "stages": [
+            "供应链与采购"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-18T10:47:39.981566+00:00",
+          "publishedAt": "2026-11-17",
+          "publisherGroup": "韩国每日经济",
+          "note": "报道依据行业消息，未取得双方签约公告与合同数量，继续追踪。",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "报道依据行业消息，未取得双方签约公告与合同数量，继续追踪。",
+            "anchor": "三星电子与苹果即将达成 DRAM 内存芯片长期供货协议"
+          }
+        },
+        {
+          "name": "ZDNET Korea",
+          "url": "https://www.ithome.com/1/028/814.htm",
+          "readId": "rss-198fc1c0c428ccda",
+          "company": null,
+          "purpose": "news",
+          "stages": [
+            "供应链与采购"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-18T10:47:39.981566+00:00",
+          "publishedAt": "2026-11-18T06:33:46+00:00",
+          "publisherGroup": "ZDNET Korea",
+          "note": "是转述机构预测，席间投影片及其价格假设尚未完整核对。",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "是转述机构预测，席间投影片及其价格假设尚未完整核对。",
+            "anchor": "发布了对 2027 年存储半导体市场的展望"
+          }
+        },
+        {
+          "name": "长鑫业绩说明会",
+          "url": "https://www.ithome.com/1/028/819.htm",
+          "readId": "rss-33b3eb65eac2b05b",
+          "company": null,
+          "purpose": "news",
+          "stages": [
+            "供应链与采购"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-18T10:47:39.981566+00:00",
+          "publishedAt": "2026-11-18T06:44:51+00:00",
+          "publisherGroup": "长鑫业绩说明会",
+          "note": "会议披露协商进度，客户名称、签约数量与生效时间仍未知。",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "会议披露协商进度，客户名称、签约数量与生效时间仍未知。",
+            "anchor": "公司已与多家头部客户协商长期供货协议"
+          }
+        },
+        {
+          "name": "iFixit",
+          "url": "https://www.ithome.com/1/028/678.htm",
+          "readId": "rss-ec5b3a8afa8f9207",
+          "company": null,
+          "purpose": "news",
+          "stages": [
+            "供应链与采购"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-18T10:47:39.981566+00:00",
+          "publishedAt": "2026-11-18T02:56:14+00:00",
+          "publisherGroup": "iFixit",
+          "note": "报道给出拆解观察，缺原始维修指南和件级测试，列为服务线索。",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "报道给出拆解观察，缺原始维修指南和件级测试，列为服务线索。",
+            "anchor": "低音单元与主板之间的连接线长度非常有限"
+          }
+        },
+        {
+          "name": "AMD 公告转载链",
+          "url": "https://www.ithome.com/1/028/640.htm",
+          "readId": "rss-5b598c1d097ada70",
+          "company": null,
+          "purpose": "news",
+          "stages": [
+            "供应链与采购"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-18T10:47:39.981566+00:00",
+          "publishedAt": "2026-11-18T02:06:29+00:00",
+          "publisherGroup": "AMD 公告转载链",
+          "note": "收购消息与技术整合计划应分别核对，整合性能尚无对照数据。",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "收购消息与技术整合计划应分别核对，整合性能尚无对照数据。",
+            "anchor": "Taalas 采用了将 AI 模型“固化”到 ASIC 上的技术路线"
+          }
+        },
+        {
+          "name": "Seoul Economic Daily",
+          "url": "https://www.tomshardware.com/tech-industry/semiconductors/samsung-sk-hynix-and-micron-form-unlikely-alliance-to-standardize-robot-charging-as-chipmakers-push-toward-unmanned-chip-fabs-standard-specs-would-allow-manufacturer-agnostic-charging-equipment",
+          "readId": "rss-f7e2c0115e507304",
+          "company": null,
+          "purpose": "news",
+          "stages": [
+            "供应链与采购"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-18T10:47:39.981566+00:00",
+          "publishedAt": "2026-11-17T11:30:00+00:00",
+          "publisherGroup": "Seoul Economic Daily",
+          "note": "合作仍在讨论充电标准阶段，未取得已通过的规格版本。",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "合作仍在讨论充电标准阶段，未取得已通过的规格版本。",
+            "anchor": "formed an early-stage consultative body"
+          }
+        },
+        {
+          "company": "XREAL",
+          "name": "XREAL官方资料",
+          "url": "https://us.shop.xreal.com/pages/warranty-policy",
+          "checkedAt": "2026-11-18T10:47:39.981566+00:00",
+          "state": "read",
+          "purpose": "practice",
+          "stages": [
+            "服务与生命周期"
+          ],
+          "note": "复核服务适用条件、设备边界与当前公开说明。"
+        },
+        {
+          "company": "Aqara",
+          "name": "Aqara官方资料",
+          "url": "https://www.aqara.com/en/product/hub-m200/",
+          "checkedAt": "2026-11-18T10:47:39.981566+00:00",
+          "state": "read",
+          "purpose": "practice",
+          "stages": [
+            "服务与生命周期"
+          ],
+          "note": "复核服务适用条件、设备边界与当前公开说明。"
+        }
+      ],
+      "knownGaps": [
+        "内存案仅定位到已收录的11月14日裁定，未确认新裁定。",
+        "苹果内存长协未取得签约正文。出口规则新闻稿已核对，细则需另查。",
+        "学习硬件供应链专属岗位证据仍缺。旧知识节点的完整复核仍有积压。"
+      ],
+      "failedSources": [
+        "文石帮助页直连403，改读官方公开正文接口。",
+        "路透社通用汽车报道的转载页面直连403。"
+      ],
+      "coverage": "补读上游价格、监管和工厂自动化正文，核对三家学习硬件竞品官网岗位并补充教研交付物案例，沿用今日晨间鸿海公告与理想历史深读。",
+      "revisionReason": "补齐早间专题更新缺少的近期新闻正文和三家公司岗位复核，保留晨间日报及已发表的协作深读。",
+      "coverageCheck": {
+        "newsResearch": {
+          "passed": true,
+          "bodyCount": 11,
+          "publisherGroups": [
+            "AMD 公告转载链",
+            "Boston Dynamics",
+            "Seoul Economic Daily",
+            "TrendForce",
+            "ZDNET Korea",
+            "iFixit",
+            "美国商务部 BIS",
+            "长鑫业绩说明会",
+            "韩国每日经济",
+            "鸿海"
+          ],
+          "requiredBodies": 6,
+          "requiredPublisherGroups": 3
+        },
+        "passed": true,
+        "companies": [
+          "XREAL",
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "gaps": [],
+        "usableSources": 21
+      },
+      "successfulScan": true,
+      "completedAt": "2026-11-18T10:47:40.301032+00:00",
+      "reviewedCount": 4,
+      "selectedCount": 4
     }
   ]
 }
