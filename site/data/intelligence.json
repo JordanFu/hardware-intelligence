@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastCompletedAt": "2026-11-17T10:39:43.295004+00:00",
+  "lastCompletedAt": "2026-11-18T01:49:56.828314+00:00",
   "method": "Codex 初筛评分 + 逐条证据复核；非两个独立模型评分",
   "items": [
     {
@@ -77,6 +77,83 @@
       "date": "2026-11-17T00:09:07+00:00",
       "title": "儿童手表刷机风险报道：保留线索，等待原始调查与型号核验",
       "summary": "IT之家转述中国之声对儿童手表刷机服务的调查，涉及家长管理功能被绕过及数据风险。本轮读取了转载正文，未取得所引原始调查和厂商型号回应，因此保留中文摘要，不进入精选日报。"
+    },
+    {
+      "id": "honhai-sony-camera-agreement-20261117",
+      "eventId": "honhai-sony-camera-agreement-20261117",
+      "developmentId": "initial",
+      "titleZh": "鸿海拟接手索尼车载相机模组业务，交接范围包括客户服务",
+      "originalTitle": "鴻海簽署協議收購Sony半導體車載相機模組事業",
+      "companies": [
+        "鸿海",
+        "索尼"
+      ],
+      "stages": [
+        "供应链与采购",
+        "制造与交付",
+        "经营与组织",
+        "服务与生命周期"
+      ],
+      "domestic": true,
+      "publishedAt": "2026-11-17",
+      "kind": "新闻",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "鸿海于 11 月 17 日宣布签署协议，拟以 72.4 亿日元收购索尼半导体解决方案的车载相机模组业务。协议把技术、客户关系与运营资源列入交接范围，双方将服务连续性和团队稳定列为初期工作重点。",
+        "points": [
+          "本次金额涵盖相关业务，海外生产设备与存货另行处理。",
+          "双方预计满足审批等先决条件后于 2027 年 4 月底前交割。"
+        ]
+      },
+      "boundary": "当前可确认的是签约及计划，客户服务实际交接结果尚待披露。",
+      "meaning": "跟踪模组业务移交时，可分别核对谁承接车厂客户窗口、谁负责质量响应，以及设备和库存归属。",
+      "question": "交割后，客户的质量与服务问题由哪个窗口承接？",
+      "eventReason": "鸿海拟接手索尼车载相机模组业务，交接范围包括客户服务",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 17,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐段复核业务范围、分工、发生时间与已知结果。"
+        }
+      },
+      "facts": [
+        {
+          "claim": "公告列出客户关系、技术和运营资源的转移范围。",
+          "sourceUrl": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2157",
+          "locator": "公告首段与交易范围段"
+        },
+        {
+          "claim": "服务连续与团队稳定属于公告披露的交接原则。",
+          "sourceUrl": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2157",
+          "locator": "公告倒数第二段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2157",
+          "publisherGroup": "鸿海",
+          "name": "鸿海科技集团新闻稿",
+          "publishedAt": "2026-11-17",
+          "role": "official",
+          "textHash": "5e91fbfac83b2adc27f33544921abcc5ae203aee0a534b46756ad1943456d664",
+          "readAt": "2026-11-18T00:46:27.450639+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-18T01:49:56.821356+00:00",
+      "sourceDate": "2026-11-17",
+      "date": "2026-11-17",
+      "title": "鸿海拟接手索尼车载相机模组业务，交接范围包括客户服务",
+      "summary": "鸿海于 11 月 17 日宣布签署协议，拟以 72.4 亿日元收购索尼半导体解决方案的车载相机模组业务。协议把技术、客户关系与运营资源列入交接范围，双方将服务连续性和团队稳定列为初期工作重点。"
     },
     {
       "id": "caam-payment-review-20261116",
@@ -3870,6 +3947,133 @@
       "summary": "xTool 材料加工指南把材料、光源、焦点、运动结构和软件设置放在一起解释。对研发与产品团队，更有用的启发是固定任务条件后再谈性能，而不是直接把最高运动速度转成产能承诺。"
     },
     {
+      "id": "li-auto-pdt-pct-product-line",
+      "eventId": "li-auto-pdt-pct-product-line",
+      "developmentId": "initial",
+      "titleZh": "理想的 PDT 与 PCT 怎样围绕同一款车做取舍",
+      "originalTitle": "解读理想大调整：李想权力收窄，重心回归产品",
+      "companies": [
+        "理想汽车"
+      ],
+      "stages": [
+        "经营与组织",
+        "需求与规划",
+        "研发与系统",
+        "渠道与销售"
+      ],
+      "domestic": true,
+      "publishedAt": "2024-04-17",
+      "kind": "历史案例",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "做一款车时，车型团队关心续航能否打动买家，电动平台团队还要顾及多款车共用平台的成本。晚点 Auto 对 MEGA 的报道记录了双方共同确定续航目标的过程，也记录了理想如何把车型开发与上市经营放进同一条产品线。",
+        "points": [
+          "按当时的车型组队，PDT（产品开发团队）集合产品、研发、项目及财经代表。PCT（产品商业团队）集合零售、交付和品牌代表，PST（产品供应团队）协调供应链。",
+          "确定续航时，车型 PDT 和电动平台 PDT 要共同确认目标。车型竞争力和平台降本都影响规格，报道未披露最后由谁签字。",
+          "2024 年 4 月，车型 PDT 与商业 PCT 并入产品线。36氪在 2026 年 7 月又报道了部分产品定义职能拟并入研发的调整。理解当时的分工需要保留这两个时间点。"
+        ]
+      },
+      "boundary": "依据媒体采访与历史报道。具体签字权限、绩效权重、调整后的决策耗时和商业成效均缺少可比较数据。",
+      "meaning": "学习机推演：渠道希望把离线批改列为开学季卖点。教研提供典型题型和判分样例，算法与硬件用量产配置测准确率、时延和内存占用，采购核对料价及到货期。把可承诺题型、验证结果、增量成本和最晚定版日期写入同一次规格评审。若验证只覆盖部分题型，上市话术和演示脚本也应限定范围。",
+      "question": "当目标售价、识别效果和上市窗口无法同时满足，谁有权缩小承诺范围？用哪一次评审记录核对决定？",
+      "eventReason": "理想的 PDT 与 PCT 怎样围绕同一款车做取舍",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 17,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐段复核业务范围、分工、发生时间与已知结果。"
+        }
+      },
+      "organization": [
+        {
+          "kind": "已披露机制",
+          "title": "一款车型怎样同时使用开发、商业与供应能力",
+          "observation": "按当时的车型组队，PDT（产品开发团队）集合产品、研发、项目及财经代表。PCT（产品商业团队）集合零售、交付和品牌代表，PST（产品供应团队）协调供应链。",
+          "implication": "当目标售价、识别效果和上市窗口无法同时满足，谁有权缩小承诺范围？用哪一次评审记录核对决定？",
+          "boundary": "依据媒体采访与历史报道。具体签字权限、绩效权重、调整后的决策耗时和商业成效均缺少可比较数据。",
+          "factIndexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "practices": [
+        {
+          "title": "用同一份规格讨论单车价值和平台成本",
+          "method": "确定续航时，车型 PDT 和电动平台 PDT 要共同确认目标。车型竞争力和平台降本都影响规格，报道未披露最后由谁签字。",
+          "conditions": "适用于多个型号共用平台、某款产品希望提高规格的场景。",
+          "outcome": "采访说明双方共同确定目标，公开材料缺少决策周期与成本的前后对照。",
+          "boundary": "依据媒体采访与历史报道。具体签字权限、绩效权重、调整后的决策耗时和商业成效均缺少可比较数据。",
+          "nextCheck": "寻找规格评审记录、最终授权人及上市后的偏差复盘。",
+          "stages": [
+            "经营与组织",
+            "需求与规划",
+            "研发与系统",
+            "渠道与销售"
+          ],
+          "evidenceLevel": "历史案例",
+          "factIndexes": [
+            1,
+            2
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "MEGA 的开发、商业和供应团队分别吸收不同职能的代表。",
+          "sourceUrl": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+          "locator": "MEGA 组队实例段"
+        },
+        {
+          "claim": "受访负责人以续航举例，描述车型与电动平台共同确定目标。",
+          "sourceUrl": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+          "locator": "车型与平台协作段"
+        },
+        {
+          "claim": "报道回顾车型开发和商业团队在 2024 年合并，并在 2026 年披露部分产品定义团队拟调整。",
+          "sourceUrl": "https://www.36kr.com/p/3877919172047111",
+          "locator": "产品线沿革与调整动向段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+          "publisherGroup": "晚点 Auto",
+          "name": "晚点 Auto 原创报道（新浪刊载）",
+          "publishedAt": "2024-04-17",
+          "role": "media",
+          "textHash": "c6aa44493505970be42b191166307e294325e82c9a0d4de80f3cae97f0c1ba88",
+          "readAt": "2026-11-18T01:48:49.826902+00:00",
+          "coverage": "body"
+        },
+        {
+          "url": "https://www.36kr.com/p/3877919172047111",
+          "publisherGroup": "36氪",
+          "name": "36氪汽车 · 肖漫",
+          "publishedAt": "2026-07-03",
+          "role": "media",
+          "textHash": "528422366fee17a17ae9d847d00b162da9510b6e9f36d33678d1946e566ca015",
+          "readAt": "2026-11-18T01:48:50.283661+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-18T01:49:56.820667+00:00",
+      "sourceDate": "2024-04-17",
+      "date": "2024-04-17",
+      "title": "理想的 PDT 与 PCT 怎样围绕同一款车做取舍",
+      "summary": "做一款车时，车型团队关心续航能否打动买家，电动平台团队还要顾及多款车共用平台的成本。晚点 Auto 对 MEGA 的报道记录了双方共同确定续航目标的过程，也记录了理想如何把车型开发与上市经营放进同一条产品线。"
+    },
+    {
       "id": "xreal-warranty",
       "eventId": "xreal-warranty",
       "developmentId": "initial",
@@ -7152,6 +7356,20 @@
       "selected": false
     },
     {
+      "id": "honhai-sony-camera-agreement-20261117",
+      "representativeId": "honhai-sony-camera-agreement-20261117",
+      "itemIds": [
+        "honhai-sony-camera-agreement-20261117"
+      ],
+      "publisherGroups": [
+        "鸿海"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
       "id": "caam-payment-review-20261116",
       "representativeId": "caam-payment-review-20261116",
       "itemIds": [
@@ -7741,6 +7959,21 @@
       ],
       "publisherGroups": [
         "xTool 官方支持"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "li-auto-pdt-pct-product-line",
+      "representativeId": "li-auto-pdt-pct-product-line",
+      "itemIds": [
+        "li-auto-pdt-pct-product-line"
+      ],
+      "publisherGroups": [
+        "36氪",
+        "晚点 Auto"
       ],
       "developmentIds": [
         "initial"
@@ -17071,6 +17304,105 @@
       },
       "successfulScan": true,
       "completedAt": "2026-11-17T10:39:43.295004+00:00",
+      "reviewedCount": 2,
+      "selectedCount": 2
+    },
+    {
+      "coverage": "本轮专项核对理想汽车两份历史采访报道及鸿海当期签约公告，补充团队协作深读。",
+      "sourceChecks": [
+        {
+          "url": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+          "company": "理想汽车",
+          "name": "晚点 Auto 原创报道（新浪刊载）",
+          "purpose": "practice",
+          "stages": [
+            "经营与组织",
+            "需求与规划",
+            "研发与系统",
+            "渠道与销售"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-18T01:49:56.533562+00:00",
+          "note": "核对正文的责任接口、适用时期与已披露范围。"
+        },
+        {
+          "url": "https://www.36kr.com/p/3877919172047111",
+          "company": "理想汽车",
+          "name": "36氪汽车 · 肖漫",
+          "purpose": "practice",
+          "stages": [
+            "经营与组织",
+            "需求与规划",
+            "研发与系统",
+            "渠道与销售"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-18T01:49:56.533562+00:00",
+          "note": "核对正文的责任接口、适用时期与已披露范围。"
+        },
+        {
+          "url": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2157",
+          "company": "鸿海",
+          "name": "鸿海科技集团新闻稿",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "经营与组织",
+            "服务与生命周期"
+          ],
+          "state": "read",
+          "checkedAt": "2026-11-18T01:49:56.533562+00:00",
+          "note": "核对正文的责任接口、适用时期与已披露范围。",
+          "readId": "day18-foxconn",
+          "publishedAt": "2026-11-17",
+          "publisherGroup": "鸿海",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "公告明确区分签约、交割条件及双方要移交的客户服务范围。",
+            "anchor": "確保客戶服務不中斷及團隊穩定"
+          }
+        }
+      ],
+      "knownGaps": [
+        "本轮为组织专题更新，日报完整新闻与招聘覆盖仍待补查。",
+        "国内公司 0/3",
+        "官方招聘公司 0/2",
+        "近期新闻正文审读 1/6",
+        "新闻发布方 1/3"
+      ],
+      "failedSources": [],
+      "coverageCheck": {
+        "newsResearch": {
+          "passed": false,
+          "bodyCount": 1,
+          "publisherGroups": [
+            "鸿海"
+          ],
+          "requiredBodies": 6,
+          "requiredPublisherGroups": 3
+        },
+        "passed": false,
+        "companies": [],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [],
+        "gaps": [
+          "国内公司 0/3",
+          "官方招聘公司 0/2",
+          "近期新闻正文审读 1/6",
+          "新闻发布方 1/3"
+        ],
+        "usableSources": 3
+      },
+      "successfulScan": true,
+      "completedAt": "2026-11-18T01:49:56.828314+00:00",
       "reviewedCount": 2,
       "selectedCount": 2
     }

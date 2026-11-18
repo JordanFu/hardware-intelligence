@@ -272,61 +272,78 @@
       "updatedAt": "2026-11-17T10:40:23.696029+00:00"
     },
     "track-5": {
-      "attemptedAt": "2026-11-17T00:46:36.326415+00:00",
+      "attemptedAt": "2026-11-18T01:50:12.299573+00:00",
       "status": "partial",
-      "assessment": "用国内智能笔企业案例补制造分工与参数权限；只支持企业披露的外协接口，ODM/EMS全行业职责及交期口径仍不完整。",
+      "assessment": "共用平台怎样处理单一型号的例外。本轮以理想历史案例核对团队接口。",
       "gaps": [
-        "仅补单一企业外协责任案例，ODM/EMS通用分工及交期指标未全面复核。",
-        "既有混合工艺案例缺同模型实测，不能宣称效率提升。"
+        "原始签核授权、量产结果及其他字段仍需独立资料。"
       ],
       "reviewedFields": [
-        "chain",
-        "constraint",
-        "examples",
-        "metrics",
         "team"
       ],
       "evidence": [
         {
-          "itemId": "qfy-outsourcing-control",
-          "title": "智能笔外协案例：生产执行与工艺、质量责任分开看",
+          "itemId": "li-auto-pdt-pct-product-line",
+          "title": "理想的 PDT 与 PCT 怎样围绕同一款车做取舍",
           "facts": [
             {
-              "claim": "公司披露全制程外协的技术与品控责任。",
-              "sourceUrl": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
-              "locator": "回复第81至82页：全制程外协"
+              "claim": "MEGA 的开发、商业和供应团队分别吸收不同职能的代表。",
+              "sourceUrl": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+              "locator": "MEGA 组队实例段"
             },
             {
-              "claim": "披露的生产直通率排除返工、返修和重工。",
-              "sourceUrl": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
-              "locator": "回复第83页：生产直通率口径"
+              "claim": "受访负责人以续航举例，描述车型与电动平台共同确定目标。",
+              "sourceUrl": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+              "locator": "车型与平台协作段"
+            },
+            {
+              "claim": "报道回顾车型开发和商业团队在 2024 年合并，并在 2026 年披露部分产品定义团队拟调整。",
+              "sourceUrl": "https://www.36kr.com/p/3877919172047111",
+              "locator": "产品线沿革与调整动向段"
             }
           ],
-          "boundary": "历史申报回复节选，未全文阅读或独立验证；智能笔供应商的做法不能归为客户品牌内部制度，也不证明当前良率和组织成效。",
+          "boundary": "依据媒体采访与历史报道。具体签字权限、绩效权重、调整后的决策耗时和商业成效均缺少可比较数据。",
           "sources": [
             {
-              "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
-              "name": "千分一 · 第二轮审核问询回复（历史材料）",
-              "publishedAt": null,
-              "publisherGroup": "千分一",
-              "role": "official",
-              "textHash": "e4298694324f305b6e8fd7a9a9f248fca7b10d1a776417531750961f3a1bdfb1",
-              "readAt": "2026-11-17T00:45:51.020581+00:00",
-              "coverage": "excerpt"
+              "url": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+              "publisherGroup": "晚点 Auto",
+              "name": "晚点 Auto 原创报道（新浪刊载）",
+              "publishedAt": "2024-04-17",
+              "role": "media",
+              "textHash": "c6aa44493505970be42b191166307e294325e82c9a0d4de80f3cae97f0c1ba88",
+              "readAt": "2026-11-18T01:48:49.826902+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://www.36kr.com/p/3877919172047111",
+              "publisherGroup": "36氪",
+              "name": "36氪汽车 · 肖漫",
+              "publishedAt": "2026-07-03",
+              "role": "media",
+              "textHash": "528422366fee17a17ae9d847d00b162da9510b6e9f36d33678d1946e566ca015",
+              "readAt": "2026-11-18T01:48:50.283661+00:00",
+              "coverage": "body"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "qfy-outsourcing-control",
-          "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
-          "checkedAt": "2026-11-17T00:45:51.020581+00:00",
+          "itemId": "li-auto-pdt-pct-product-line",
+          "url": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+          "checkedAt": "2026-11-18T01:48:49.826902+00:00",
           "state": "body",
-          "note": "当前实际阅读指定章节；申报回复仅为节选，未读全篇或独立验证。"
+          "note": "已读原发采访报道对应的车型、平台与产品线段落。"
+        },
+        {
+          "itemId": "li-auto-pdt-pct-product-line",
+          "url": "https://www.36kr.com/p/3877919172047111",
+          "checkedAt": "2026-11-18T01:48:50.283661+00:00",
+          "state": "body",
+          "note": "已读原发采访报道对应的车型、平台与产品线段落。"
         }
       ],
-      "reviewedAt": "2026-11-17T00:46:36.326415+00:00",
+      "reviewedAt": "2026-11-18T01:50:12.299573+00:00",
       "patch": {
         "constraint": "成本、质量、交期、维修和供货风险；互联设备另需检查设备、应用、云的协同安全与退出时的数据处理。 混合工艺还需同时检查区域边界衔接、路径避让和切换开销，界面步骤减少不能掩盖质量约束。",
         "team": "产品、系统工程、制造、采购、质量、法规与售后。研究外协时另核技术文件提供方、参数变更权、驻厂支持与验收记录；公司之间的边界不能由生产地点直接推断。",
@@ -377,50 +394,72 @@
             "qfy-outsourcing-control"
           ],
           "updatedAt": "2026-11-17T00:46:36.326415+00:00"
+        },
+        {
+          "id": "track-5-product-decisions",
+          "title": "共用平台怎样处理单一型号的例外",
+          "learning": "把车型专属目标和跨型号约束写在同一份规格评审记录里，保留备选方案及需重新验证的条件。",
+          "application": "同一主板用于多款学习机时，可用离线批改作推演，检验加内存、缩小题型范围和推迟发布各自影响哪些团队。",
+          "boundary": "依据媒体采访与历史报道。具体签字权限、绩效权重、调整后的决策耗时和商业成效均缺少可比较数据。",
+          "itemIds": [
+            "li-auto-pdt-pct-product-line"
+          ],
+          "updatedAt": "2026-11-18T01:50:12.299573+00:00"
         }
       ],
-      "updatedAt": "2026-11-17T00:46:36.326415+00:00"
+      "updatedAt": "2026-11-18T01:50:12.299573+00:00"
     },
     "chain-1": {
-      "attemptedAt": "2026-11-16T00:46:03.708885+00:00",
+      "attemptedAt": "2026-11-18T01:50:12.299573+00:00",
       "status": "partial",
-      "assessment": "用儿童与家长不同入口复核需求角色及任务边界；原有任务成功率协议及完整团队接口仍未核验。",
+      "assessment": "把商业目标写成可验证的规格。本轮以理想历史案例核对团队接口。",
       "gaps": [
-        "目标任务成功率的测量协议仍未完整核实。",
-        "活动反馈不能代表全部用户，采纳与使用结果仍未知；原有团队接口未完成本轮全字段复核。"
+        "原始签核授权、量产结果及其他字段仍需独立资料。"
       ],
       "reviewedFields": [
-        "exercise",
-        "flow",
-        "pitfall",
         "team"
       ],
       "evidence": [
         {
-          "itemId": "kindle-parent-control-boundary",
-          "title": "Kindle儿童管理：儿童档案与设备本地限制不是同一套入口",
+          "itemId": "li-auto-pdt-pct-product-line",
+          "title": "理想的 PDT 与 PCT 怎样围绕同一款车做取舍",
           "facts": [
             {
-              "claim": "设备本地家长控制不能经Parent Dashboard管理。",
-              "sourceUrl": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
-              "locator": "第1问Parental controls"
+              "claim": "MEGA 的开发、商业和供应团队分别吸收不同职能的代表。",
+              "sourceUrl": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+              "locator": "MEGA 组队实例段"
             },
             {
-              "claim": "普通Kindle儿童档案需另订阅或单独整理书库。",
-              "sourceUrl": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
-              "locator": "第1问Child profile"
+              "claim": "受访负责人以续航举例，描述车型与电动平台共同确定目标。",
+              "sourceUrl": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+              "locator": "车型与平台协作段"
+            },
+            {
+              "claim": "报道回顾车型开发和商业团队在 2024 年合并，并在 2026 年披露部分产品定义团队拟调整。",
+              "sourceUrl": "https://www.36kr.com/p/3877919172047111",
+              "locator": "产品线沿革与调整动向段"
             }
           ],
-          "boundary": "原文注明2026-09-01更新，历史使用说明；型号、地区、订阅及账户条件有限制，未操作账户或设备。",
+          "boundary": "依据媒体采访与历史报道。具体签字权限、绩效权重、调整后的决策耗时和商业成效均缺少可比较数据。",
           "sources": [
             {
-              "url": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
-              "name": "Amazon官方资料",
-              "publishedAt": null,
-              "publisherGroup": "Amazon",
-              "role": "official",
-              "textHash": "c6d3adb2824187d0a6f7e8aeba025277dba8353f752f0c3ec6dc4bd70863bb60",
-              "readAt": "2026-11-16T00:40:59.262031+00:00",
+              "url": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+              "publisherGroup": "晚点 Auto",
+              "name": "晚点 Auto 原创报道（新浪刊载）",
+              "publishedAt": "2024-04-17",
+              "role": "media",
+              "textHash": "c6aa44493505970be42b191166307e294325e82c9a0d4de80f3cae97f0c1ba88",
+              "readAt": "2026-11-18T01:48:49.826902+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://www.36kr.com/p/3877919172047111",
+              "publisherGroup": "36氪",
+              "name": "36氪汽车 · 肖漫",
+              "publishedAt": "2026-07-03",
+              "role": "media",
+              "textHash": "528422366fee17a17ae9d847d00b162da9510b6e9f36d33678d1946e566ca015",
+              "readAt": "2026-11-18T01:48:50.283661+00:00",
               "coverage": "body"
             }
           ]
@@ -428,14 +467,21 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "kindle-parent-control-boundary",
-          "url": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
-          "checkedAt": "2026-11-16T00:40:59.262031+00:00",
+          "itemId": "li-auto-pdt-pct-product-line",
+          "url": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+          "checkedAt": "2026-11-18T01:48:49.826902+00:00",
           "state": "body",
-          "note": "当前实际正文；仅支持列明范围，未知结果未补成事实。"
+          "note": "已读原发采访报道对应的车型、平台与产品线段落。"
+        },
+        {
+          "itemId": "li-auto-pdt-pct-product-line",
+          "url": "https://www.36kr.com/p/3877919172047111",
+          "checkedAt": "2026-11-18T01:48:50.283661+00:00",
+          "state": "body",
+          "note": "已读原发采访报道对应的车型、平台与产品线段落。"
         }
       ],
-      "reviewedAt": "2026-11-16T00:46:03.708885+00:00",
+      "reviewedAt": "2026-11-18T01:50:12.299573+00:00",
       "patch": {
         "team": "用户研究、产品、销售、服务一起区分使用者、购买者与渠道反馈。 平台型硬件还需区分内容创作者、最终使用者与实体履约伙伴；活动意见是需求线索，不能替代使用验证。",
         "exercise": "选一种学习设备，分别写出孩子要完成的学习任务、家长要完成的管理任务，以及操作入口和成功条件。Kindle说明区分儿童档案与设备本地限制，前者和后者的远程管理能力不同；实际需求仍需访谈与任务观察，不能由功能存在直接推断。",
@@ -474,9 +520,20 @@
             "kindle-parent-control-boundary"
           ],
           "updatedAt": "2026-11-16T00:46:03.708885+00:00"
+        },
+        {
+          "id": "chain-1-product-decisions",
+          "title": "把商业目标写成可验证的规格",
+          "learning": "讨论产品目标时，同时记录目标人群想获得的体验、平台成本约束及可接受的备选规格。",
+          "application": "学习机立项推演中，教研可列出需离线批改的题型，研发在目标配置上验证，渠道据此限定上市承诺。",
+          "boundary": "依据媒体采访与历史报道。具体签字权限、绩效权重、调整后的决策耗时和商业成效均缺少可比较数据。",
+          "itemIds": [
+            "li-auto-pdt-pct-product-line"
+          ],
+          "updatedAt": "2026-11-18T01:50:12.299573+00:00"
         }
       ],
-      "updatedAt": "2026-11-16T00:46:03.708885+00:00"
+      "updatedAt": "2026-11-18T01:50:12.299573+00:00"
     },
     "chain-4": {
       "attemptedAt": "2026-11-16T10:41:57.135139+00:00",
@@ -932,75 +989,56 @@
       "updatedAt": "2026-11-17T00:46:36.326415+00:00"
     },
     "chain-8": {
-      "attemptedAt": "2026-11-15T10:41:33.649429+00:00",
+      "attemptedAt": "2026-11-18T01:50:12.299573+00:00",
       "status": "partial",
-      "assessment": "补利润与现金流基础区分；逐项对照科沃斯生命周期职责，不能据公开职责推断实际预算和授权。追觅仍为历史索引。",
+      "assessment": "围绕一个决定查清团队分工。本轮以理想历史案例核对团队接口。",
       "gaps": [
-        "组织效率衡量与员工负担尚缺同口径可比结果；不把指标建议当企业事实。",
-        "追觅未取得本轮当前岗位正文，保持历史证据边界；本次SEC只核对基础段落，不是现行会计准则审查。"
+        "原始签核授权、量产结果及其他字段仍需独立资料。"
       ],
       "reviewedFields": [
-        "basics",
-        "exercise",
-        "metrics",
-        "pitfall",
         "team"
       ],
       "evidence": [
         {
-          "itemId": "sec-profit-cash-distinction",
-          "title": "理解硬件经营：利润与现金流要分开读",
+          "itemId": "li-auto-pdt-pct-product-line",
+          "title": "理想的 PDT 与 PCT 怎样围绕同一款车做取舍",
           "facts": [
             {
-              "claim": "现金流量表报告现金流入与流出。",
-              "sourceUrl": "https://www.sec.gov/about/reports-publications/investorpubsbegfinstmtguide",
-              "locator": "Cash Flow Statements"
+              "claim": "MEGA 的开发、商业和供应团队分别吸收不同职能的代表。",
+              "sourceUrl": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+              "locator": "MEGA 组队实例段"
             },
             {
-              "claim": "现金流与净利润相关但不相等。",
-              "sourceUrl": "https://www.sec.gov/about/reports-publications/investorpubsbegfinstmtguide",
-              "locator": "Bringing It All Together"
-            }
-          ],
-          "boundary": "2007年官方入门教育材料；本轮读取工具提供相关正文段落，直连403。不是现行准则核验、具体企业经营结论或投资建议。",
-          "sources": [
-            {
-              "url": "https://www.sec.gov/about/reports-publications/investorpubsbegfinstmtguide",
-              "name": "SEC官方资料",
-              "publishedAt": null,
-              "publisherGroup": "SEC",
-              "role": "official",
-              "textHash": "a91653d8d59578b372a332444c7e90baa824ddcc3db1d8f511f8baa7863998f7",
-              "readAt": "2026-11-15T10:40:53.664874+00:00",
-              "coverage": "excerpt"
-            }
-          ]
-        },
-        {
-          "itemId": "ecovacs-plm",
-          "title": "科沃斯产品线经理职责：规划延伸到老产品退市",
-          "facts": [
-            {
-              "claim": "职责明确要求制定老产品退市计划和流程。",
-              "sourceUrl": "https://mall.ecovacs.cn/job-detail-516.html",
-              "locator": "岗位职责第 5 项"
+              "claim": "受访负责人以续航举例，描述车型与电动平台共同确定目标。",
+              "sourceUrl": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+              "locator": "车型与平台协作段"
             },
             {
-              "claim": "任职要求同时涉及工厂新品推进与市场渠道。",
-              "sourceUrl": "https://mall.ecovacs.cn/job-detail-516.html",
-              "locator": "任职要求第 3–4 项"
+              "claim": "报道回顾车型开发和商业团队在 2024 年合并，并在 2026 年披露部分产品定义团队拟调整。",
+              "sourceUrl": "https://www.36kr.com/p/3877919172047111",
+              "locator": "产品线沿革与调整动向段"
             }
           ],
-          "boundary": "完整岗位正文可读，但发布日期、地点及当前招聘状态未明确；首次收录是研究基线，不能推断新增岗位、编制或实际决策权。",
+          "boundary": "依据媒体采访与历史报道。具体签字权限、绩效权重、调整后的决策耗时和商业成效均缺少可比较数据。",
           "sources": [
             {
-              "url": "https://mall.ecovacs.cn/job-detail-516.html",
-              "name": "科沃斯官方商城招聘",
-              "publishedAt": null,
-              "publisherGroup": "科沃斯官方商城招聘",
-              "role": "official",
-              "textHash": "d3e3ffe7578d2b742c6886d079150ba7025206634199d0f44d424a181e8f242b",
-              "readAt": "2026-11-08T00:45:06.901704+00:00",
+              "url": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+              "publisherGroup": "晚点 Auto",
+              "name": "晚点 Auto 原创报道（新浪刊载）",
+              "publishedAt": "2024-04-17",
+              "role": "media",
+              "textHash": "c6aa44493505970be42b191166307e294325e82c9a0d4de80f3cae97f0c1ba88",
+              "readAt": "2026-11-18T01:48:49.826902+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://www.36kr.com/p/3877919172047111",
+              "publisherGroup": "36氪",
+              "name": "36氪汽车 · 肖漫",
+              "publishedAt": "2026-07-03",
+              "role": "media",
+              "textHash": "528422366fee17a17ae9d847d00b162da9510b6e9f36d33678d1946e566ca015",
+              "readAt": "2026-11-18T01:48:50.283661+00:00",
               "coverage": "body"
             }
           ]
@@ -1008,21 +1046,21 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "sec-profit-cash-distinction",
-          "url": "https://www.sec.gov/about/reports-publications/investorpubsbegfinstmtguide",
-          "checkedAt": "2026-11-15T10:40:53.664874+00:00",
-          "state": "index",
-          "note": "当前网页工具正文段落，不是整页全量复核；直连失败另有记录。"
+          "itemId": "li-auto-pdt-pct-product-line",
+          "url": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+          "checkedAt": "2026-11-18T01:48:49.826902+00:00",
+          "state": "body",
+          "note": "已读原发采访报道对应的车型、平台与产品线段落。"
         },
         {
-          "itemId": "ecovacs-plm",
-          "url": "https://mall.ecovacs.cn/job-detail-516.html",
-          "checkedAt": "2026-11-15T10:39:05.972438+00:00",
+          "itemId": "li-auto-pdt-pct-product-line",
+          "url": "https://www.36kr.com/p/3877919172047111",
+          "checkedAt": "2026-11-18T01:48:50.283661+00:00",
           "state": "body",
-          "note": "当前实际阅读相关正文；仅核验列明字段。"
+          "note": "已读原发采访报道对应的车型、平台与产品线段落。"
         }
       ],
-      "reviewedAt": "2026-11-15T10:41:33.649429+00:00",
+      "reviewedAt": "2026-11-18T01:50:12.299573+00:00",
       "patch": {
         "team": "经营、产品线与专业职能明确谁决策、谁提供证据、谁对交付负责。 科沃斯岗位样本把退市纳入产品线职责，追觅索引把团队建设、资源协调与经营指标并列；研究时需进一步查明这些责任对应的预算、授权和跨部门接口。",
         "exercise": "为一个跨团队取舍写清最终负责人、异议处理、所需证据和复盘窗口。 从一个新品上线或老产品退出案例，分别列出产品、制造、渠道与服务的交付物，核实谁能调配资源，谁承担未解决的用户问题。",
@@ -1051,9 +1089,20 @@
             "sec-profit-cash-distinction"
           ],
           "updatedAt": "2026-11-15T10:41:33.649429+00:00"
+        },
+        {
+          "id": "chain-8-product-decisions",
+          "title": "围绕一个决定查清团队分工",
+          "learning": "追踪一次规格取舍时，记录提出目标、测算成本、提供上市反馈以及作最终决定的角色。保留组织调整前后的日期。",
+          "application": "例如比较理想车型 PDT 与平台 PDT 对续航目标的约束，再核对车型 PDT 与商业 PCT 合并后的决策接口。",
+          "boundary": "依据媒体采访与历史报道。具体签字权限、绩效权重、调整后的决策耗时和商业成效均缺少可比较数据。",
+          "itemIds": [
+            "li-auto-pdt-pct-product-line"
+          ],
+          "updatedAt": "2026-11-18T01:50:12.299573+00:00"
         }
       ],
-      "updatedAt": "2026-11-15T10:41:33.649429+00:00"
+      "updatedAt": "2026-11-18T01:50:12.299573+00:00"
     },
     "track-4": {
       "attemptedAt": "2026-11-17T10:40:23.696029+00:00",
@@ -2300,6 +2349,22 @@
           "hash": "59015095751e79fa0cc68abd2513bf289f6cfb40b129e68290ec3f3663150214",
           "decision": "integrated",
           "reason": "补渠道库存分母与历史版本变化，不外推企业销量或库存结论。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-18T01:50:12.299573+00:00",
+      "reviewedNodes": [
+        "chain-1",
+        "chain-8",
+        "track-5"
+      ],
+      "decisions": [
+        {
+          "itemId": "li-auto-pdt-pct-product-line",
+          "hash": "04e53d0a886a37179eeb351cc5ba967791f96b66fd6f6d7bbab6dc6e590576fb",
+          "decision": "integrated",
+          "reason": "两期采访提供具体的历史分工与续航目标取舍，迁移场景单独标注。"
         }
       ]
     }
@@ -7457,6 +7522,276 @@
           "checkedAt": "2026-11-17T10:38:27.686547+00:00",
           "state": "body",
           "note": "实际阅读8月发布的库存模型变更正文；10月起适用，历史数据不回写，非今日新增事件。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-1",
+      "reviewedAt": "2026-11-18T01:50:12.299573+00:00",
+      "status": "partial",
+      "assessment": "把商业目标写成可验证的规格。本轮以理想历史案例核对团队接口。",
+      "gaps": [
+        "原始签核授权、量产结果及其他字段仍需独立资料。"
+      ],
+      "reviewedFields": [
+        "team"
+      ],
+      "changes": {},
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "chain-1-product-decisions",
+            "title": "把商业目标写成可验证的规格",
+            "learning": "讨论产品目标时，同时记录目标人群想获得的体验、平台成本约束及可接受的备选规格。",
+            "application": "学习机立项推演中，教研可列出需离线批改的题型，研发在目标配置上验证，渠道据此限定上市承诺。",
+            "boundary": "依据媒体采访与历史报道。具体签字权限、绩效权重、调整后的决策耗时和商业成效均缺少可比较数据。",
+            "itemIds": [
+              "li-auto-pdt-pct-product-line"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "li-auto-pdt-pct-product-line",
+          "title": "理想的 PDT 与 PCT 怎样围绕同一款车做取舍",
+          "facts": [
+            {
+              "claim": "MEGA 的开发、商业和供应团队分别吸收不同职能的代表。",
+              "sourceUrl": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+              "locator": "MEGA 组队实例段"
+            },
+            {
+              "claim": "受访负责人以续航举例，描述车型与电动平台共同确定目标。",
+              "sourceUrl": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+              "locator": "车型与平台协作段"
+            },
+            {
+              "claim": "报道回顾车型开发和商业团队在 2024 年合并，并在 2026 年披露部分产品定义团队拟调整。",
+              "sourceUrl": "https://www.36kr.com/p/3877919172047111",
+              "locator": "产品线沿革与调整动向段"
+            }
+          ],
+          "boundary": "依据媒体采访与历史报道。具体签字权限、绩效权重、调整后的决策耗时和商业成效均缺少可比较数据。",
+          "sources": [
+            {
+              "url": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+              "publisherGroup": "晚点 Auto",
+              "name": "晚点 Auto 原创报道（新浪刊载）",
+              "publishedAt": "2024-04-17",
+              "role": "media",
+              "textHash": "c6aa44493505970be42b191166307e294325e82c9a0d4de80f3cae97f0c1ba88",
+              "readAt": "2026-11-18T01:48:49.826902+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://www.36kr.com/p/3877919172047111",
+              "publisherGroup": "36氪",
+              "name": "36氪汽车 · 肖漫",
+              "publishedAt": "2026-07-03",
+              "role": "media",
+              "textHash": "528422366fee17a17ae9d847d00b162da9510b6e9f36d33678d1946e566ca015",
+              "readAt": "2026-11-18T01:48:50.283661+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "li-auto-pdt-pct-product-line",
+          "url": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+          "checkedAt": "2026-11-18T01:48:49.826902+00:00",
+          "state": "body",
+          "note": "已读原发采访报道对应的车型、平台与产品线段落。"
+        },
+        {
+          "itemId": "li-auto-pdt-pct-product-line",
+          "url": "https://www.36kr.com/p/3877919172047111",
+          "checkedAt": "2026-11-18T01:48:50.283661+00:00",
+          "state": "body",
+          "note": "已读原发采访报道对应的车型、平台与产品线段落。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-8",
+      "reviewedAt": "2026-11-18T01:50:12.299573+00:00",
+      "status": "partial",
+      "assessment": "围绕一个决定查清团队分工。本轮以理想历史案例核对团队接口。",
+      "gaps": [
+        "原始签核授权、量产结果及其他字段仍需独立资料。"
+      ],
+      "reviewedFields": [
+        "team"
+      ],
+      "changes": {},
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "chain-8-product-decisions",
+            "title": "围绕一个决定查清团队分工",
+            "learning": "追踪一次规格取舍时，记录提出目标、测算成本、提供上市反馈以及作最终决定的角色。保留组织调整前后的日期。",
+            "application": "例如比较理想车型 PDT 与平台 PDT 对续航目标的约束，再核对车型 PDT 与商业 PCT 合并后的决策接口。",
+            "boundary": "依据媒体采访与历史报道。具体签字权限、绩效权重、调整后的决策耗时和商业成效均缺少可比较数据。",
+            "itemIds": [
+              "li-auto-pdt-pct-product-line"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "li-auto-pdt-pct-product-line",
+          "title": "理想的 PDT 与 PCT 怎样围绕同一款车做取舍",
+          "facts": [
+            {
+              "claim": "MEGA 的开发、商业和供应团队分别吸收不同职能的代表。",
+              "sourceUrl": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+              "locator": "MEGA 组队实例段"
+            },
+            {
+              "claim": "受访负责人以续航举例，描述车型与电动平台共同确定目标。",
+              "sourceUrl": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+              "locator": "车型与平台协作段"
+            },
+            {
+              "claim": "报道回顾车型开发和商业团队在 2024 年合并，并在 2026 年披露部分产品定义团队拟调整。",
+              "sourceUrl": "https://www.36kr.com/p/3877919172047111",
+              "locator": "产品线沿革与调整动向段"
+            }
+          ],
+          "boundary": "依据媒体采访与历史报道。具体签字权限、绩效权重、调整后的决策耗时和商业成效均缺少可比较数据。",
+          "sources": [
+            {
+              "url": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+              "publisherGroup": "晚点 Auto",
+              "name": "晚点 Auto 原创报道（新浪刊载）",
+              "publishedAt": "2024-04-17",
+              "role": "media",
+              "textHash": "c6aa44493505970be42b191166307e294325e82c9a0d4de80f3cae97f0c1ba88",
+              "readAt": "2026-11-18T01:48:49.826902+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://www.36kr.com/p/3877919172047111",
+              "publisherGroup": "36氪",
+              "name": "36氪汽车 · 肖漫",
+              "publishedAt": "2026-07-03",
+              "role": "media",
+              "textHash": "528422366fee17a17ae9d847d00b162da9510b6e9f36d33678d1946e566ca015",
+              "readAt": "2026-11-18T01:48:50.283661+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "li-auto-pdt-pct-product-line",
+          "url": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+          "checkedAt": "2026-11-18T01:48:49.826902+00:00",
+          "state": "body",
+          "note": "已读原发采访报道对应的车型、平台与产品线段落。"
+        },
+        {
+          "itemId": "li-auto-pdt-pct-product-line",
+          "url": "https://www.36kr.com/p/3877919172047111",
+          "checkedAt": "2026-11-18T01:48:50.283661+00:00",
+          "state": "body",
+          "note": "已读原发采访报道对应的车型、平台与产品线段落。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-5",
+      "reviewedAt": "2026-11-18T01:50:12.299573+00:00",
+      "status": "partial",
+      "assessment": "共用平台怎样处理单一型号的例外。本轮以理想历史案例核对团队接口。",
+      "gaps": [
+        "原始签核授权、量产结果及其他字段仍需独立资料。"
+      ],
+      "reviewedFields": [
+        "team"
+      ],
+      "changes": {},
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "track-5-product-decisions",
+            "title": "共用平台怎样处理单一型号的例外",
+            "learning": "把车型专属目标和跨型号约束写在同一份规格评审记录里，保留备选方案及需重新验证的条件。",
+            "application": "同一主板用于多款学习机时，可用离线批改作推演，检验加内存、缩小题型范围和推迟发布各自影响哪些团队。",
+            "boundary": "依据媒体采访与历史报道。具体签字权限、绩效权重、调整后的决策耗时和商业成效均缺少可比较数据。",
+            "itemIds": [
+              "li-auto-pdt-pct-product-line"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "li-auto-pdt-pct-product-line",
+          "title": "理想的 PDT 与 PCT 怎样围绕同一款车做取舍",
+          "facts": [
+            {
+              "claim": "MEGA 的开发、商业和供应团队分别吸收不同职能的代表。",
+              "sourceUrl": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+              "locator": "MEGA 组队实例段"
+            },
+            {
+              "claim": "受访负责人以续航举例，描述车型与电动平台共同确定目标。",
+              "sourceUrl": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+              "locator": "车型与平台协作段"
+            },
+            {
+              "claim": "报道回顾车型开发和商业团队在 2024 年合并，并在 2026 年披露部分产品定义团队拟调整。",
+              "sourceUrl": "https://www.36kr.com/p/3877919172047111",
+              "locator": "产品线沿革与调整动向段"
+            }
+          ],
+          "boundary": "依据媒体采访与历史报道。具体签字权限、绩效权重、调整后的决策耗时和商业成效均缺少可比较数据。",
+          "sources": [
+            {
+              "url": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+              "publisherGroup": "晚点 Auto",
+              "name": "晚点 Auto 原创报道（新浪刊载）",
+              "publishedAt": "2024-04-17",
+              "role": "media",
+              "textHash": "c6aa44493505970be42b191166307e294325e82c9a0d4de80f3cae97f0c1ba88",
+              "readAt": "2026-11-18T01:48:49.826902+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://www.36kr.com/p/3877919172047111",
+              "publisherGroup": "36氪",
+              "name": "36氪汽车 · 肖漫",
+              "publishedAt": "2026-07-03",
+              "role": "media",
+              "textHash": "528422366fee17a17ae9d847d00b162da9510b6e9f36d33678d1946e566ca015",
+              "readAt": "2026-11-18T01:48:50.283661+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "li-auto-pdt-pct-product-line",
+          "url": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
+          "checkedAt": "2026-11-18T01:48:49.826902+00:00",
+          "state": "body",
+          "note": "已读原发采访报道对应的车型、平台与产品线段落。"
+        },
+        {
+          "itemId": "li-auto-pdt-pct-product-line",
+          "url": "https://www.36kr.com/p/3877919172047111",
+          "checkedAt": "2026-11-18T01:48:50.283661+00:00",
+          "state": "body",
+          "note": "已读原发采访报道对应的车型、平台与产品线段落。"
         }
       ]
     }
