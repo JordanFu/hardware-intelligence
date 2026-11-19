@@ -1,8 +1,90 @@
 {
   "schemaVersion": 1,
-  "lastCompletedAt": "2026-11-18T10:47:40.301032+00:00",
+  "lastCompletedAt": "2026-11-19T00:51:20.394110+00:00",
   "method": "Codex 初筛评分 + 逐条证据复核；非两个独立模型评分",
   "items": [
+    {
+      "id": "rss-cbe541898e205d5c",
+      "eventId": "rss-cbe541898e205d5c",
+      "developmentId": "initial",
+      "titleZh": "哈啰 Robotaxi 调整模型、评测与数据团队，量产交付另有负责人",
+      "originalTitle": "哈啰调整 Robotaxi 组织架构",
+      "companies": [
+        "哈啰"
+      ],
+      "stages": [
+        "经营与组织",
+        "研发与系统",
+        "制造与交付"
+      ],
+      "domestic": true,
+      "publishedAt": "2026-11-18T15:15:35+00:00",
+      "kind": "新闻",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "据 IT 之家转述蓝鲸汽车向哈啰确认的信息，模型开发、系统方案与评测、数据平台相关团队合并，由 CEO 负责新部门。CTO 负责 AI 原生车、二代车及量产工程交付。",
+        "points": [
+          "报道明确了工作范围和两条责任线。",
+          "仍需后续项目材料解释评测问题如何进入量产发布决策。"
+        ]
+      },
+      "boundary": "媒体转述公司确认，未取得内部文件，职责范围无法说明编制或效率变化。",
+      "meaning": "数据回流和量产交付落在不同责任线上。追踪项目时，可以核对谁提出问题、谁确认修复结果、谁批准装车。",
+      "question": "模型评测出现异常时，由谁判断是否影响车辆交付？",
+      "eventReason": "哈啰 Robotaxi 调整模型、评测与数据团队，量产交付另有负责人",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 17,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐段复核业务范围、分工、发生时间与已知结果。"
+        }
+      },
+      "organization": [
+        {
+          "title": "哈啰 Robotaxi 调整模型、评测与数据团队，量产交付另有负责人",
+          "kind": "研究问题",
+          "observation": "据 IT 之家转述蓝鲸汽车向哈啰确认的信息，模型开发、系统方案与评测、数据平台相关团队合并，由 CEO 负责新部门。CTO 负责 AI 原生车、二代车及量产工程交付。",
+          "implication": "数据回流和量产交付落在不同责任线上。追踪项目时，可以核对谁提出问题、谁确认修复结果、谁批准装车。",
+          "boundary": "媒体转述公司确认，未取得内部文件，职责范围无法说明编制或效率变化。",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "报道分别列出模型和数据工作、量产工程交付的负责人。",
+          "sourceUrl": "https://www.ithome.com/1/029/117.htm",
+          "locator": "组织调整报道第2至3段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.ithome.com/1/029/117.htm",
+          "publisherGroup": "蓝鲸汽车采访（IT之家转述）",
+          "name": "蓝鲸汽车采访（IT之家转述）",
+          "publishedAt": "2026-11-18T15:15:35+00:00",
+          "role": "media",
+          "textHash": "278028c238b3946134cd8343ddb549db8f86d5c8fa091e0b3a3ac0b1b1e95207",
+          "readAt": "2026-11-19T00:45:11.502913+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-19T00:51:20.383203+00:00",
+      "sourceDate": "2026-11-18T15:15:35+00:00",
+      "date": "2026-11-18T15:15:35+00:00",
+      "title": "哈啰 Robotaxi 调整模型、评测与数据团队，量产交付另有负责人",
+      "summary": "据 IT 之家转述蓝鲸汽车向哈啰确认的信息，模型开发、系统方案与评测、数据平台相关团队合并，由 CEO 负责新部门。CTO 负责 AI 原生车、二代车及量产工程交付。"
+    },
     {
       "id": "e18-spot",
       "eventId": "e18-spot",
@@ -96,6 +178,164 @@
       "date": "2026-11-18",
       "title": "内存采购怎么读报价：DDR4 现货回落，NAND 现货与合同价差扩大",
       "summary": "TrendForce 11 月 18 日的抽样显示，主流 DDR4 1G×8 3200MT/s 颗粒周均现货价从 44.89 美元降至 44.25 美元，品牌 DDR5 现货大致持平。NAND 渠道库存承压，观察到的现货与合同价差超过 20%。"
+    },
+    {
+      "id": "m19-intel",
+      "eventId": "m19-intel",
+      "developmentId": "initial",
+      "titleZh": "Azure 自研芯片公布封装选择，同时确认多年服务器 CPU 供应安排",
+      "originalTitle": "Microsoft and Intel deepen collaboration to deliver differentiated Azure infrastructure",
+      "companies": [
+        "英特尔",
+        "微软"
+      ],
+      "stages": [
+        "供应链与采购",
+        "研发与系统"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-18",
+      "kind": "新闻",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "英特尔与微软宣布扩大长期合作。Azure 自研芯片将采用英特尔 EMIB 封装，合作还确认了包含下一代 Diamond Rapids 在内的多年 Xeon 供给能力。",
+        "points": [
+          "封装技术选择面向微软自研芯片，CPU 供应安排对应另一类交付。",
+          "公告没有列出锁定的数量、单价或具体客户机型。"
+        ]
+      },
+      "boundary": "同一公告的不同事项不能合并成某款芯片已经量产的结论。",
+      "meaning": "分析关键器件合作时，分别记录已选技术、采购承诺及实际交货节点，才能比较剩余风险。",
+      "question": "哪一项技术已被选用，哪一项供货已有数量与批次？",
+      "eventReason": "Azure 自研芯片公布封装选择，同时确认多年服务器 CPU 供应安排",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 17,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐段复核业务范围、分工、发生时间与已知结果。"
+        }
+      },
+      "facts": [
+        {
+          "claim": "两家公司同时披露了封装方案和多年 CPU 供给安排。",
+          "sourceUrl": "https://www.intel.com/content/www/us/en/newsroom/news/corporate/microsoft-azure-infrastructure-collaboration.html",
+          "locator": "新闻稿开头合作范围段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.intel.com/content/www/us/en/newsroom/news/corporate/microsoft-azure-infrastructure-collaboration.html",
+          "publisherGroup": "Intel 与 Microsoft",
+          "name": "Intel 与 Microsoft",
+          "publishedAt": "2026-11-18",
+          "role": "official",
+          "textHash": "ffd64a178f55a8dcd30e87fd70eb03443d96686419e6789841c48ec6b510babd",
+          "readAt": "2026-11-19T00:46:46.438797+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-19T00:51:20.382775+00:00",
+      "sourceDate": "2026-11-18",
+      "date": "2026-11-18",
+      "title": "Azure 自研芯片公布封装选择，同时确认多年服务器 CPU 供应安排",
+      "summary": "英特尔与微软宣布扩大长期合作。Azure 自研芯片将采用英特尔 EMIB 封装，合作还确认了包含下一代 Diamond Rapids 在内的多年 Xeon 供给能力。"
+    },
+    {
+      "id": "m19-chip-web",
+      "eventId": "m19-chip-web",
+      "developmentId": "initial",
+      "titleZh": "芯片设计优化怎么验收：功能等价、模块面积和整片表现分开看",
+      "originalTitle": "Advancing chip design with OpenAI models",
+      "companies": [
+        "OpenAI",
+        "AMD"
+      ],
+      "stages": [
+        "研发与系统",
+        "质量与合规"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-18",
+      "kind": "新闻",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "OpenAI 披露了两类工程证据。在 Jalapeño 上，团队估计向量和矩阵单元的标准单元面积分别减少约 13% 和 10%；在 AMD 项目中，部分修改已进入送交制造的设计。",
+        "points": [
+          "对电路改写，团队用 EDA 工具核验模块行为并比较功耗、性能及面积。",
+          "开源处理器测试使用特定工作负载，作者指出部分功能可以省略，影响基准分数。"
+        ]
+      },
+      "boundary": "指标针对特定模块和测试基线；没有整机销量、整机能效或研发人力数据。",
+      "meaning": "先核对功能与原设计是否一致，再比较同一流程内的结果，最后单列实际送厂或硅片验证状态。",
+      "question": "哪些结果只见于工具，哪些已经在实际芯片上验证？",
+      "eventReason": "芯片设计优化怎么验收：功能等价、模块面积和整片表现分开看",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 17,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐段复核业务范围、分工、发生时间与已知结果。"
+        }
+      },
+      "practices": [
+        {
+          "title": "芯片设计优化怎么验收：功能等价、模块面积和整片表现分开看",
+          "method": "先核对功能与原设计是否一致，再比较同一流程内的结果，最后单列实际送厂或硅片验证状态。",
+          "conditions": "开源处理器测试使用特定工作负载，作者指出部分功能可以省略，影响基准分数。",
+          "outcome": "指标针对特定模块和测试基线；没有整机销量、整机能效或研发人力数据。",
+          "boundary": "指标针对特定模块和测试基线；没有整机销量、整机能效或研发人力数据。",
+          "nextCheck": "哪些结果只见于工具，哪些已经在实际芯片上验证？",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "技术报告说明了逐项改写后的功能验证环节。",
+          "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models/",
+          "locator": "Our collaboration with AMD 小节"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+          "publisherGroup": "OpenAI",
+          "name": "OpenAI",
+          "publishedAt": "2026-11-18",
+          "role": "official",
+          "textHash": "0baaa7c39d0ac1d402bfbc561fb7a1f9b186180e9057248eb96504ed6eb1f4c6",
+          "readAt": "2026-11-19T00:48:48+00:00",
+          "coverage": "excerpt"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-19T00:51:20.386195+00:00",
+      "sourceDate": "2026-11-18",
+      "date": "2026-11-18",
+      "title": "芯片设计优化怎么验收：功能等价、模块面积和整片表现分开看",
+      "summary": "OpenAI 披露了两类工程证据。在 Jalapeño 上，团队估计向量和矩阵单元的标准单元面积分别减少约 13% 和 10%；在 AMD 项目中，部分修改已进入送交制造的设计。"
     },
     {
       "id": "rss-8f436ef391e4e973",
@@ -446,6 +686,160 @@
       "summary": "作业帮的高中生物教研岗位把实验教学拆成可实现的交付物。教研选择仿真题目和粒度，设计变量与结果、错误反馈和评分规则，再与研发、美术及技术人员对照需求文档验收。"
     },
     {
+      "id": "m19-nvorders",
+      "eventId": "m19-nvorders",
+      "developmentId": "initial",
+      "titleZh": "英伟达按基板、封装和整机分开锁定产能",
+      "originalTitle": "NVIDIA Expands Commitments With Supply Chain Partners",
+      "companies": [
+        "英伟达",
+        "欣兴",
+        "鸿海"
+      ],
+      "stages": [
+        "供应链与采购",
+        "制造与交付"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-17",
+      "kind": "新闻",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "英伟达披露了分别面向基板、先进封装和系统生产的供应安排。欣兴面向英伟达的部分基板产能计划在桃园扩建；制造伙伴在供应的不同工序承担承诺。",
+        "points": [
+          "欣兴计划在 2027 年下半年开始生产，新增产能以 2028 年第三季度为目标。",
+          "签约产能、开始生产和达到目标产能属于三个时间点，实际出货量还要等生产数据。"
+        ]
+      },
+      "boundary": "数值与时间均来自公司计划，未取得产线验收或交付结果。",
+      "meaning": "共用供应商的客户判断交付风险时，需要定位受限工序和产能释放月份，再核对自己是否使用同一厂区和规格。",
+      "question": "瓶颈在基板、封装还是整机，何时有良率与可交付量？",
+      "eventReason": "英伟达按基板、封装和整机分开锁定产能",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 17,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐段复核业务范围、分工、发生时间与已知结果。"
+        }
+      },
+      "impactLevel": "industry-wide",
+      "impactReason": "共用供应商的客户判断交付风险时，需要定位受限工序和产能释放月份，再核对自己是否使用同一厂区和规格。",
+      "facts": [
+        {
+          "claim": "欣兴扩产设定了启动生产和形成新增产能两个节点。",
+          "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-expands-commitments-with-supply-chain-partners-to-support-ai-infrastructure-buildout",
+          "locator": "Increasing Substrate Capacity 小节"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-expands-commitments-with-supply-chain-partners-to-support-ai-infrastructure-buildout",
+          "publisherGroup": "NVIDIA",
+          "name": "NVIDIA",
+          "publishedAt": "2026-11-17",
+          "role": "official",
+          "textHash": "f5b078254001acf0d5cba2c06c0826836fac3505a3a65bb6cc505bd1582bd59e",
+          "readAt": "2026-11-19T00:48:04.471458+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-19T00:51:20.381655+00:00",
+      "sourceDate": "2026-11-17",
+      "date": "2026-11-17",
+      "title": "英伟达按基板、封装和整机分开锁定产能",
+      "summary": "英伟达披露了分别面向基板、先进封装和系统生产的供应安排。欣兴面向英伟达的部分基板产能计划在桃园扩建；制造伙伴在供应的不同工序承担承诺。"
+    },
+    {
+      "id": "m19-nvidia",
+      "eventId": "m19-nvidia",
+      "developmentId": "initial",
+      "titleZh": "英伟达明确出口合规的两条报告路径",
+      "originalTitle": "NVIDIA Board of Directors Establishes National Security and Export Control Oversight Committee",
+      "companies": [
+        "英伟达"
+      ],
+      "stages": [
+        "经营与组织",
+        "质量与合规"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-17",
+      "kind": "新闻",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "英伟达设立董事会常设委员会。现有国家安全与全球贸易合规团队的日常工作直接向委员会和临时首席执行官报告，委员会至少按季度开会。",
+        "points": [
+          "委员会负责监督相关政策、贸易风险及合规工作。",
+          "外部专家提供专业支持；具体交易的审批权限仍须看授权文件。"
+        ]
+      },
+      "boundary": "可确认汇报关系和会议频次，实际处置时间、授权限额与合规结果未知。",
+      "meaning": "跨境硬件业务可据此检查日常判断归谁、重大疑问怎样上报、谁保留审查记录。",
+      "question": "遇到交易例外时，谁能决定暂停出货？",
+      "eventReason": "英伟达明确出口合规的两条报告路径",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 17,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐段复核业务范围、分工、发生时间与已知结果。"
+        }
+      },
+      "organization": [
+        {
+          "title": "英伟达明确出口合规的两条报告路径",
+          "kind": "已披露机制",
+          "observation": "英伟达设立董事会常设委员会。现有国家安全与全球贸易合规团队的日常工作直接向委员会和临时首席执行官报告，委员会至少按季度开会。",
+          "implication": "跨境硬件业务可据此检查日常判断归谁、重大疑问怎样上报、谁保留审查记录。",
+          "boundary": "可确认汇报关系和会议频次，实际处置时间、授权限额与合规结果未知。",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "公告列出委员会最低会议频次和原有团队的汇报对象。",
+          "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
+          "locator": "公告委员会组成及职责段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
+          "publisherGroup": "NVIDIA",
+          "name": "NVIDIA",
+          "publishedAt": "2026-11-17",
+          "role": "official",
+          "textHash": "85b4df8ba9bdbabbbfbe647a512ddf8ab86db4d19e9b63085c0875ea9ef1badc",
+          "readAt": "2026-11-19T00:47:33.028973+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-19T00:51:20.382154+00:00",
+      "sourceDate": "2026-11-17",
+      "date": "2026-11-17",
+      "title": "英伟达明确出口合规的两条报告路径",
+      "summary": "英伟达设立董事会常设委员会。现有国家安全与全球贸易合规团队的日常工作直接向委员会和临时首席执行官报告，委员会至少按季度开会。"
+    },
+    {
       "id": "caam-payment-review-20261116",
       "eventId": "caam-payment-review-20261116",
       "developmentId": "initial",
@@ -513,6 +907,120 @@
       "date": "2026-11-16T22:31:00+08:00",
       "title": "供应商账期如何核实：中汽协拟对17家车企抽样核查",
       "summary": "经济观察报报道，中汽协11月16日公布供应商账款支付调研评估安排，采用车企报送与供应商抽查。值得读的是核查过程：合同、验收、对账、发票与支付凭证需要对应，不能只看企业承诺。"
+    },
+    {
+      "id": "m19-caam-web",
+      "eventId": "m19-caam-web",
+      "developmentId": "initial",
+      "titleZh": "车企承诺的付款账期，由谁拿凭证来核查？",
+      "originalTitle": "工信部相关负责人回应车企供应商账款支付调研评估",
+      "companies": [
+        "中国汽车工业协会"
+      ],
+      "stages": [
+        "供应链与采购",
+        "经营与组织"
+      ],
+      "domestic": true,
+      "publishedAt": "2026-11-16T17:00:00+08:00",
+      "kind": "新闻",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "工信部委托中汽协牵头核查车企付款情况。车企先报送数据，协会组织评估，主管部门按年公布结果，对账期异常或投诉较多的企业督促整改。",
+        "points": [
+          "协会通知的媒体报道列出 17 家重点车企，供应商样本用于交叉核对。",
+          "把这个办法用于硬件采购复盘时，可以从已验收订单抽样，分别查验收日、合同到期日和实际到账日。"
+        ]
+      },
+      "boundary": "这是汽车行业的安排，本次通知没有披露新一轮评估结果。",
+      "meaning": "采购有交付记录，财务有付款记录，供应商能核对到账情况。三方对同一订单核查，可以找出账期究竟从哪一天开始计算。",
+      "question": "一张发票对应多次验收时，账期和付款凭证怎样对应？",
+      "eventReason": "车企承诺的付款账期，由谁拿凭证来核查？",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 17,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐段复核业务范围、分工、发生时间与已知结果。"
+        }
+      },
+      "practices": [
+        {
+          "title": "车企承诺的付款账期，由谁拿凭证来核查？",
+          "method": "采购有交付记录，财务有付款记录，供应商能核对到账情况。三方对同一订单核查，可以找出账期究竟从哪一天开始计算。",
+          "conditions": "把这个办法用于硬件采购复盘时，可以从已验收订单抽样，分别查验收日、合同到期日和实际到账日。",
+          "outcome": "这是汽车行业的安排，本次通知没有披露新一轮评估结果。",
+          "boundary": "这是汽车行业的安排，本次通知没有披露新一轮评估结果。",
+          "nextCheck": "一张发票对应多次验收时，账期和付款凭证怎样对应？",
+          "stages": [
+            "供应链与采购",
+            "经营与组织"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "organization": [
+        {
+          "title": "车企承诺的付款账期，由谁拿凭证来核查？",
+          "kind": "已披露机制",
+          "observation": "工信部委托中汽协牵头核查车企付款情况。车企先报送数据，协会组织评估，主管部门按年公布结果，对账期异常或投诉较多的企业督促整改。",
+          "implication": "采购有交付记录，财务有付款记录，供应商能核对到账情况。三方对同一订单核查，可以找出账期究竟从哪一天开始计算。",
+          "boundary": "这是汽车行业的安排，本次通知没有披露新一轮评估结果。",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "主管部门披露由中汽协作为第三方牵头评估。",
+          "sourceUrl": "https://www.miit.gov.cn/xwfb/gxdt/sjdt/art/2026/art_732789a488cd4b7fb3dda4417d880ec9.html",
+          "locator": "负责人回应 · 评估分工段"
+        },
+        {
+          "claim": "报道记载每家企业随机抽取至少十五家供应商。",
+          "sourceUrl": "https://www.ithome.com/1/027/856.htm",
+          "locator": "样本供应商抽查段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.miit.gov.cn/xwfb/gxdt/sjdt/art/2026/art_732789a488cd4b7fb3dda4417d880ec9.html",
+          "publisherGroup": "工信部装备工业一司",
+          "name": "工信部装备工业一司",
+          "publishedAt": "2026-11-16T17:00:00+08:00",
+          "role": "official",
+          "textHash": "fe3ef0a353f4c271c278f81b8f45ca4de5ef4df76f17dd03cddb976e99bc0623",
+          "readAt": "2026-11-19T00:48:46+00:00",
+          "coverage": "body"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/856.htm",
+          "publisherGroup": "中国汽车工业协会",
+          "name": "IT之家转述协会通知",
+          "publishedAt": "2026-11-16T09:18:37+00:00",
+          "role": "media",
+          "textHash": "e75b46d440e4031efad58d179dc50c22ac1d793beeee74885efcb5e383800b3f",
+          "readAt": "2026-11-19T00:45:08.259628+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-19T00:51:20.380917+00:00",
+      "sourceDate": "2026-11-16T17:00:00+08:00",
+      "date": "2026-11-16T17:00:00+08:00",
+      "title": "车企承诺的付款账期，由谁拿凭证来核查？",
+      "summary": "工信部委托中汽协牵头核查车企付款情况。车企先报送数据，协会组织评估，主管部门按年公布结果，对账期异常或投诉较多的企业督促整改。"
     },
     {
       "id": "xpeng-iron-commercial-roadmap-20261116",
@@ -2199,6 +2707,93 @@
       "summary": "IT之家转述王兴兴对机器人格斗的解释：更少摔倒可能降低观赏性，却反映了稳定性改善的追求。这是观点与演示信息，不是工业可靠性测试。"
     },
     {
+      "id": "m19-bose",
+      "eventId": "m19-bose",
+      "developmentId": "initial",
+      "titleZh": "售后怎样找到需要召回的那块电池？",
+      "originalTitle": "Bose Recalls Lithium-Ion Battery Packs for S1 Pro and S1 Pro+",
+      "companies": [
+        "Bose"
+      ],
+      "stages": [
+        "质量与合规",
+        "服务与生命周期"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-05",
+      "kind": "历史案例",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "Bose 音箱召回用电池本体的序列号识别范围。同一电池可能随整机交付，也可能作为替换件单卖，只查整机订单会漏掉后一条路径。",
+        "points": [
+          "用户登记合格电池的序列号后，可获得免费替换件。",
+          "美国公告把旧电池处置单列出来，用户需向当地接收机构确认其接受被召回的电池。"
+        ]
+      },
+      "boundary": "这是特定产品和地区的历史召回；公告没有披露最终换件完成率。",
+      "meaning": "售后与质量共同定义受影响的零件标识，分别核对整机销售、单卖配件和替换件渠道；按识别、登记、换件三个阶段检查遗漏。",
+      "question": "当零件后来换装到另一台机器上，售后从哪里查到它？",
+      "eventReason": "售后怎样找到需要召回的那块电池？",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 17,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐段复核业务范围、分工、发生时间与已知结果。"
+        }
+      },
+      "practices": [
+        {
+          "title": "售后怎样找到需要召回的那块电池？",
+          "method": "售后与质量共同定义受影响的零件标识，分别核对整机销售、单卖配件和替换件渠道；按识别、登记、换件三个阶段检查遗漏。",
+          "conditions": "美国公告把旧电池处置单列出来，用户需向当地接收机构确认其接受被召回的电池。",
+          "outcome": "这是特定产品和地区的历史召回；公告没有披露最终换件完成率。",
+          "boundary": "这是特定产品和地区的历史召回；公告没有披露最终换件完成率。",
+          "nextCheck": "当零件后来换装到另一台机器上，售后从哪里查到它？",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "受影响电池亦以配件或替换件单卖。",
+          "sourceUrl": "https://www.cpsc.gov/Recalls/2027/Bose-Recalls-Lithium-Ion-Battery-Packs-for-S1-Pro-and-S1-Pro-Bluetooth-Speaker-Systems-Due-to-Risk-of-Injury-from-Fire-and-Overheating-Hazards",
+          "locator": "Description 与 Remedy 两节"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Recalls/2027/Bose-Recalls-Lithium-Ion-Battery-Packs-for-S1-Pro-and-S1-Pro-Bluetooth-Speaker-Systems-Due-to-Risk-of-Injury-from-Fire-and-Overheating-Hazards",
+          "publisherGroup": "美国消费品安全委员会",
+          "name": "美国消费品安全委员会",
+          "publishedAt": "2026-11-05",
+          "role": "official",
+          "textHash": "1b875d4bead108dc30b0fb9b43d13217afd6f2ae5e9971c41931b203a199ffe7",
+          "readAt": "2026-11-19T00:46:46.492408+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-19T00:51:20.383889+00:00",
+      "sourceDate": "2026-11-05",
+      "date": "2026-11-05",
+      "title": "售后怎样找到需要召回的那块电池？",
+      "summary": "Bose 音箱召回用电池本体的序列号识别范围。同一电池可能随整机交付，也可能作为替换件单卖，只查整机订单会漏掉后一条路径。"
+    },
+    {
       "id": "halo-official",
       "eventId": "halo-official",
       "developmentId": "initial",
@@ -3065,6 +3660,75 @@
       "date": "2026-10-19T09:33:00+00:00",
       "title": "家庭打印玩具案例：从个性化需求理解设备用途",
       "summary": "拓竹采访一位在家用 P2S 制作玩具的家长，展示家庭场景中的创作需求。这类故事可帮助发现用户任务，但不能代表普遍需求。"
+    },
+    {
+      "id": "m19-mof",
+      "eventId": "m19-mof",
+      "developmentId": "initial",
+      "titleZh": "无人机出口公告已于11月18日施行，交付前应核对哪一版资料？",
+      "originalTitle": "公告2026年第49号",
+      "companies": [
+        "商务部"
+      ],
+      "stages": [
+        "服务与生命周期",
+        "质量与合规"
+      ],
+      "domestic": true,
+      "publishedAt": "2026-10-19",
+      "kind": "历史案例",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "10 月 19 日发布的第 49 号公告于 11 月 18 日施行，相关管制清单同步更新。公告明确由出口经营者对申报信息的真实性负责。",
+        "points": [
+          "阅读时分别标记公告发布日期与正式实施日期。",
+          "向境外客户交付前，工程、商务与合规需要核实实际交付版本及对应文件。"
+        ]
+      },
+      "boundary": "只说明官方文件和生效日期；具体企业、型号、许可状态须逐项核实。",
+      "meaning": "对跨境交付的硬件，合同、工程版本与申报材料应能对应到同一批货，规则版本要与交付日期相符。",
+      "question": "已有合同在实施日期后交付时，谁负责重新核对材料？",
+      "eventReason": "无人机出口公告已于11月18日施行，交付前应核对哪一版资料？",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 17,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐段复核业务范围、分工、发生时间与已知结果。"
+        }
+      },
+      "facts": [
+        {
+          "claim": "公告列明实施日期与管制清单更新。",
+          "sourceUrl": "https://www.mofcom.gov.cn/zcfb/zc/art/2026/art_b2fa4e60bcd24bdf8c658e476b808785.html",
+          "locator": "公告第三、五项"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.mofcom.gov.cn/zcfb/zc/art/2026/art_b2fa4e60bcd24bdf8c658e476b808785.html",
+          "publisherGroup": "商务部等三部门",
+          "name": "商务部等三部门",
+          "publishedAt": "2026-10-19",
+          "role": "official",
+          "textHash": "c27493171c4290a16bad47549a43b843263701872dc88c63e072ae525fcaba45",
+          "readAt": "2026-11-19T00:48:04.215762+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-19T00:51:20.386746+00:00",
+      "sourceDate": "2026-10-19",
+      "date": "2026-10-19",
+      "title": "无人机出口公告已于11月18日施行，交付前应核对哪一版资料？",
+      "summary": "10 月 19 日发布的第 49 号公告于 11 月 18 日施行，相关管制清单同步更新。公告明确由出口经营者对申报信息的真实性负责。"
     },
     {
       "id": "rss-fb9782751b5c994c",
@@ -7699,9 +8363,115 @@
       "date": null,
       "title": "渠道指标：售罄率需要同时记录库存口径与统计版本",
       "summary": "Shopify产品分析把售罄率定义为售出数量除以售出数量与剩余库存之和。其变更说明又指出，2026年10月1日起库存模型从可售量改为实物在手量，历史数据不回写。跨期对比前必须先检查计量变化。"
+    },
+    {
+      "id": "m19-edu-watch",
+      "eventId": "m19-edu-watch",
+      "developmentId": "initial",
+      "titleZh": "家长点了保存，怎样确认儿童手表已经收到设置？",
+      "originalTitle": "小天才常见问题 · 定时开关机不同步",
+      "companies": [
+        "小天才"
+      ],
+      "stages": [
+        "质量与合规",
+        "服务与生命周期",
+        "研发与系统"
+      ],
+      "domestic": true,
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "小天才的定时开关机说明列出两端的确认动作：家长在 App 返回保存，开机联网的手表显示设置成功。客服还需要区分关机充电触发的自动开机。",
+        "points": [
+          "设置时手表需要开机且网络正常。",
+          "联调时可把 App 保存、手表确认和定时动作分开观察，再检查设备是否处在充电状态。"
+        ]
+      },
+      "boundary": "来源未标固件和型号；未披露通信协议、重试次数或送达率。",
+      "meaning": "家长端保存只说明操作已提交。用设备端可观察的确认作为验收点，客服才能定位设置停在手机还是手表。",
+      "question": "手表离线时 App 显示什么，重新联网后是否会补发设置？",
+      "eventReason": "家长点了保存，怎样确认儿童手表已经收到设置？",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 17,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐段复核业务范围、分工、发生时间与已知结果。"
+        }
+      },
+      "practices": [
+        {
+          "title": "家长点了保存，怎样确认儿童手表已经收到设置？",
+          "method": "家长端保存只说明操作已提交。用设备端可观察的确认作为验收点，客服才能定位设置停在手机还是手表。",
+          "conditions": "联调时可把 App 保存、手表确认和定时动作分开观察，再检查设备是否处在充电状态。",
+          "outcome": "来源未标固件和型号；未披露通信协议、重试次数或送达率。",
+          "boundary": "来源未标固件和型号；未披露通信协议、重试次数或送达率。",
+          "nextCheck": "手表离线时 App 显示什么，重新联网后是否会补发设置？",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期",
+            "研发与系统"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "educationCategories": [
+        "watch"
+      ],
+      "facts": [
+        {
+          "claim": "该 FAQ 要求以手表端的成功提示确认设置生效。",
+          "sourceUrl": "https://www.okii.com/html/pc/service/service_question.html",
+          "locator": "电话手表问题5 · 定时开关机不同步"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.okii.com/html/pc/service/service_question.html",
+          "publisherGroup": "小天才官方常见问题",
+          "name": "小天才官方常见问题",
+          "publishedAt": null,
+          "role": "official",
+          "textHash": "af30d4cb563b6c7addbb400c277d9581cde06225a32736444b1e9c8cab6be5e5",
+          "readAt": "2026-11-19T00:46:46.078402+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-19T00:51:20.385449+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "家长点了保存，怎样确认儿童手表已经收到设置？",
+      "summary": "小天才的定时开关机说明列出两端的确认动作：家长在 App 返回保存，开机联网的手表显示设置成功。客服还需要区分关机充电触发的自动开机。"
     }
   ],
   "events": [
+    {
+      "id": "rss-cbe541898e205d5c",
+      "representativeId": "rss-cbe541898e205d5c",
+      "itemIds": [
+        "rss-cbe541898e205d5c"
+      ],
+      "publisherGroups": [
+        "蓝鲸汽车采访（IT之家转述）"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
     {
       "id": "e18-spot",
       "representativeId": "e18-spot",
@@ -7710,6 +8480,34 @@
       ],
       "publisherGroups": [
         "TrendForce"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m19-intel",
+      "representativeId": "m19-intel",
+      "itemIds": [
+        "m19-intel"
+      ],
+      "publisherGroups": [
+        "Intel 与 Microsoft"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m19-chip-web",
+      "representativeId": "m19-chip-web",
+      "itemIds": [
+        "m19-chip-web"
+      ],
+      "publisherGroups": [
+        "OpenAI"
       ],
       "developmentIds": [
         "initial"
@@ -7773,6 +8571,34 @@
       "selected": true
     },
     {
+      "id": "m19-nvorders",
+      "representativeId": "m19-nvorders",
+      "itemIds": [
+        "m19-nvorders"
+      ],
+      "publisherGroups": [
+        "NVIDIA"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m19-nvidia",
+      "representativeId": "m19-nvidia",
+      "itemIds": [
+        "m19-nvidia"
+      ],
+      "publisherGroups": [
+        "NVIDIA"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
       "id": "caam-payment-review-20261116",
       "representativeId": "caam-payment-review-20261116",
       "itemIds": [
@@ -7780,6 +8606,21 @@
       ],
       "publisherGroups": [
         "经济观察报"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m19-caam-web",
+      "representativeId": "m19-caam-web",
+      "itemIds": [
+        "m19-caam-web"
+      ],
+      "publisherGroups": [
+        "中国汽车工业协会",
+        "工信部装备工业一司"
       ],
       "developmentIds": [
         "initial"
@@ -8088,6 +8929,20 @@
       "selected": false
     },
     {
+      "id": "m19-bose",
+      "representativeId": "m19-bose",
+      "itemIds": [
+        "m19-bose"
+      ],
+      "publisherGroups": [
+        "美国消费品安全委员会"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
       "id": "halo-official",
       "representativeId": "halo-official",
       "itemIds": [
@@ -8185,6 +9040,20 @@
         "initial"
       ],
       "selected": false
+    },
+    {
+      "id": "m19-mof",
+      "representativeId": "m19-mof",
+      "itemIds": [
+        "m19-mof"
+      ],
+      "publisherGroups": [
+        "商务部等三部门"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
     },
     {
       "id": "rss-fb9782751b5c994c",
@@ -8854,6 +9723,20 @@
       "publisherGroups": [
         "Shopify官方变更记录",
         "Shopify官方帮助"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m19-edu-watch",
+      "representativeId": "m19-edu-watch",
+      "itemIds": [
+        "m19-edu-watch"
+      ],
+      "publisherGroups": [
+        "小天才官方常见问题"
       ],
       "developmentIds": [
         "initial"
@@ -18256,6 +19139,543 @@
       "completedAt": "2026-11-18T10:47:40.301032+00:00",
       "reviewedCount": 4,
       "selectedCount": 4
+    },
+    {
+      "sourceChecks": [
+        {
+          "name": "工信部装备工业一司",
+          "url": "https://www.miit.gov.cn/xwfb/gxdt/sjdt/art/2026/art_732789a488cd4b7fb3dda4417d880ec9.html",
+          "checkedAt": "2026-11-19T00:48:46+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "经营与组织"
+          ],
+          "note": "采购有交付记录，财务有付款记录，供应商能核对到账情况。三方对同一订单核查，可以找出账期究竟从哪一天开始计算。",
+          "company": null,
+          "state": "read",
+          "readId": "m19-caam-web",
+          "publishedAt": "2026-11-16T17:00:00+08:00",
+          "publisherGroup": "工信部装备工业一司",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "采购有交付记录，财务有付款记录，供应商能核对到账情况。三方对同一订单核查，可以找出账期究竟从哪一天开始计算。",
+            "anchor": "我部委托中国汽车工业协会作为第三方机构牵头开展账期调研评估工作"
+          }
+        },
+        {
+          "name": "中国汽车工业协会",
+          "url": "https://www.ithome.com/1/027/856.htm",
+          "checkedAt": "2026-11-19T00:45:08.259628+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "经营与组织"
+          ],
+          "note": "媒体转述用于核对样本范围，政策依据另取主管部门原始回应。",
+          "company": null,
+          "state": "read",
+          "readId": "rss-782547cb13d77c58",
+          "publishedAt": "2026-11-16T09:18:37+00:00",
+          "publisherGroup": "中国汽车工业协会",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "媒体转述用于核对样本范围，政策依据另取主管部门原始回应。",
+            "anchor": "将从每家企业的供应商中随机抽取样本供应商"
+          }
+        },
+        {
+          "name": "NVIDIA",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-expands-commitments-with-supply-chain-partners-to-support-ai-infrastructure-buildout",
+          "checkedAt": "2026-11-19T00:48:04.471458+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "制造与交付"
+          ],
+          "note": "共用供应商的客户判断交付风险时，需要定位受限工序和产能释放月份，再核对自己是否使用同一厂区和规格。",
+          "company": null,
+          "state": "read",
+          "readId": "m19-nvorders",
+          "publishedAt": "2026-11-17",
+          "publisherGroup": "NVIDIA",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "共用供应商的客户判断交付风险时，需要定位受限工序和产能释放月份，再核对自己是否使用同一厂区和规格。",
+            "anchor": "with the additional capacity targeted for the third quarter of 2028"
+          }
+        },
+        {
+          "name": "NVIDIA",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
+          "checkedAt": "2026-11-19T00:47:33.028973+00:00",
+          "purpose": "news",
+          "stages": [
+            "经营与组织",
+            "质量与合规"
+          ],
+          "note": "跨境硬件业务可据此检查日常判断归谁、重大疑问怎样上报、谁保留审查记录。",
+          "company": null,
+          "state": "read",
+          "readId": "m19-nvidia",
+          "publishedAt": "2026-11-17",
+          "publisherGroup": "NVIDIA",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "跨境硬件业务可据此检查日常判断归谁、重大疑问怎样上报、谁保留审查记录。",
+            "anchor": "It will meet at least quarterly"
+          }
+        },
+        {
+          "name": "Intel 与 Microsoft",
+          "url": "https://www.intel.com/content/www/us/en/newsroom/news/corporate/microsoft-azure-infrastructure-collaboration.html",
+          "checkedAt": "2026-11-19T00:46:46.438797+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "研发与系统"
+          ],
+          "note": "分析关键器件合作时，分别记录已选技术、采购承诺及实际交货节点，才能比较剩余风险。",
+          "company": null,
+          "state": "read",
+          "readId": "m19-intel",
+          "publishedAt": "2026-11-18",
+          "publisherGroup": "Intel 与 Microsoft",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "分析关键器件合作时，分别记录已选技术、采购承诺及实际交货节点，才能比较剩余风险。",
+            "anchor": "the agreement confirms multi-year Intel® Xeon® supply capacity"
+          }
+        },
+        {
+          "name": "蓝鲸汽车采访（IT之家转述）",
+          "url": "https://www.ithome.com/1/029/117.htm",
+          "checkedAt": "2026-11-19T00:45:11.502913+00:00",
+          "purpose": "news",
+          "stages": [
+            "经营与组织",
+            "研发与系统",
+            "制造与交付"
+          ],
+          "note": "数据回流和量产交付落在不同责任线上。追踪项目时，可以核对谁提出问题、谁确认修复结果、谁批准装车。",
+          "company": null,
+          "state": "read",
+          "readId": "rss-cbe541898e205d5c",
+          "publishedAt": "2026-11-18T15:15:35+00:00",
+          "publisherGroup": "蓝鲸汽车采访（IT之家转述）",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "数据回流和量产交付落在不同责任线上。追踪项目时，可以核对谁提出问题、谁确认修复结果、谁批准装车。",
+            "anchor": "与此同时，AI 原生车、二代车和量产工程交付的相关业务"
+          }
+        },
+        {
+          "name": "美国消费品安全委员会",
+          "url": "https://www.cpsc.gov/Recalls/2027/Bose-Recalls-Lithium-Ion-Battery-Packs-for-S1-Pro-and-S1-Pro-Bluetooth-Speaker-Systems-Due-to-Risk-of-Injury-from-Fire-and-Overheating-Hazards",
+          "checkedAt": "2026-11-19T00:46:46.492408+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "note": "售后与质量共同定义受影响的零件标识，分别核对整机销售、单卖配件和替换件渠道；按识别、登记、换件三个阶段检查遗漏。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "小天才官方常见问题",
+          "url": "https://www.okii.com/html/pc/service/service_question.html",
+          "checkedAt": "2026-11-19T00:46:46.078402+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期",
+            "研发与系统"
+          ],
+          "note": "家长端保存只说明操作已提交。用设备端可观察的确认作为验收点，客服才能定位设置停在手机还是手表。",
+          "company": "小天才",
+          "state": "read"
+        },
+        {
+          "name": "人民日报采访",
+          "url": "https://www.ithome.com/1/028/669.htm",
+          "checkedAt": "2026-11-19T00:45:08.720397+00:00",
+          "purpose": "news",
+          "stages": [
+            "经营与组织"
+          ],
+          "note": "行业判断及远期展望，缺可核验的新产品交付。",
+          "company": null,
+          "state": "read",
+          "readId": "rss-3a2ad1fc35e82402",
+          "publishedAt": "2026-11-18T02:45:22+00:00",
+          "publisherGroup": "人民日报采访",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "行业判断及远期展望，缺可核验的新产品交付。",
+            "anchor": "“AI+ 手机”“AI+ 具身智能机器人”等领域有很大的想象空间"
+          }
+        },
+        {
+          "name": "华为升级通知",
+          "url": "https://www.ithome.com/1/029/128.htm",
+          "checkedAt": "2026-11-19T00:45:08.218983+00:00",
+          "purpose": "news",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "note": "仅限入选测试设备；保留更新条件，儿童手表不沿用这项功能。",
+          "company": null,
+          "state": "read",
+          "readId": "rss-d380bd9cbe5e924a",
+          "publishedAt": "2026-11-18T17:28:32+00:00",
+          "publisherGroup": "华为升级通知",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "仅限入选测试设备；保留更新条件，儿童手表不沿用这项功能。",
+            "anchor": "分批推送给花粉 Beta 版升级尝鲜报名入选成功"
+          }
+        },
+        {
+          "name": "TrendForce 现货调查",
+          "url": "https://www.tomshardware.com/pc-components/ssds/ssds-laptops-and-phones-may-get-cheaper-as-consumer-nand-spot-pricing-drops-20-percent-bank-of-america-expects-contract-price-drops-report-cites-oversupply-in-consumer-market-amid-declining-demand-and-growing-chinese-competition",
+          "checkedAt": "2026-11-19T00:45:09.697133+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购"
+          ],
+          "note": "比对昨日已刊现货调查，同一报价变化未再收录。",
+          "company": null,
+          "state": "read",
+          "readId": "rss-e84bdae393a59711",
+          "publishedAt": "2026-11-18T12:00:00+00:00",
+          "publisherGroup": "TrendForce 现货调查",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "比对昨日已刊现货调查，同一报价变化未再收录。",
+            "anchor": "ot sustain the steep price gains seen so"
+          }
+        },
+        {
+          "name": "OpenAI 技术报告",
+          "url": "https://www.ithome.com/1/029/135.htm",
+          "checkedAt": "2026-11-19T00:45:11.768834+00:00",
+          "purpose": "news",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "须区分模块面积与整芯片性能，已回溯原报告，选入工程验证观察。",
+          "company": null,
+          "state": "read",
+          "readId": "rss-87d0affedf1f2afe",
+          "publishedAt": "2026-11-18T23:07:38+00:00",
+          "publisherGroup": "OpenAI 技术报告",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "须区分模块面积与整芯片性能，已回溯原报告，选入工程验证观察。",
+            "anchor": "向量计算单元的标准单元面积减少约 13%"
+          }
+        },
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+          "checkedAt": "2026-11-19T00:48:48+00:00",
+          "purpose": "news",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "先核对功能与原设计是否一致，再比较同一流程内的结果，最后单列实际送厂或硅片验证状态。",
+          "company": null,
+          "state": "read",
+          "readId": "m19-chip-web",
+          "publishedAt": "2026-11-18",
+          "publisherGroup": "OpenAI",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "先核对功能与原设计是否一致，再比较同一流程内的结果，最后单列实际送厂或硅片验证状态。",
+            "anchor": "used Synopsys tools to verify that each rewrite preserved the block’s behavior"
+          }
+        },
+        {
+          "name": "商务部等三部门",
+          "url": "https://www.mofcom.gov.cn/zcfb/zc/art/2026/art_b2fa4e60bcd24bdf8c658e476b808785.html",
+          "checkedAt": "2026-11-19T00:48:04.215762+00:00",
+          "purpose": "practice",
+          "stages": [
+            "服务与生命周期",
+            "质量与合规"
+          ],
+          "note": "对跨境交付的硬件，合同、工程版本与申报材料应能对应到同一批货，规则版本要与交付日期相符。",
+          "company": "商务部",
+          "state": "read"
+        },
+        {
+          "name": "美国联邦公报预览",
+          "url": "https://public-inspection.federalregister.gov/2026-23529.pdf",
+          "checkedAt": "2026-11-19T00:46:47.656528+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规"
+          ],
+          "note": "实际阅读公开预览前三页，核对摘要和例外；全篇适用条件有待逐项核查。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "加州北区联邦法院第68号文件",
+          "url": "https://cases.justia.com/federal/district-courts/california/candce/5%3A2026cv06345/472931/68/0.pdf?ts=1794726473",
+          "checkedAt": "2026-11-19T00:48:51+00:00",
+          "purpose": "practice",
+          "stages": [
+            "供应链与采购",
+            "质量与合规"
+          ],
+          "note": "复读卷首案号及裁定范围；为此前11月14日同一程序性裁定，本轮未查得更新裁定。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "金杜研究 · 商务部网站各方观点",
+          "url": "https://exportcontrol.mofcom.gov.cn/article/zjsj/202610/1334.html",
+          "checkedAt": "2026-11-19T00:47:43.616586+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规"
+          ],
+          "note": "查阅实施日期的解读，具体发布依据回溯三部门第49号公告。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "上海证券报报道",
+          "url": "https://www.cnstock.com/commonDetail/829243",
+          "checkedAt": "2026-11-19T00:46:46.200685+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购"
+          ],
+          "note": "直连取得标题和站点导航，未取得可用于锚定的报道正文。",
+          "company": null,
+          "state": "index"
+        },
+        {
+          "name": "法院裁定镜像",
+          "url": "https://docs.justia.com/cases/federal/district-courts/california/candce/5:2026cv06345/472931/68",
+          "checkedAt": "2026-11-19T00:47:43.717953+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规"
+          ],
+          "note": "直连返回403，另读取法院文件公开镜像节选。",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "name": "OpenAI 技术报告直连",
+          "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+          "checkedAt": "2026-11-19T00:47:43.697433+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统"
+          ],
+          "note": "直连返回403，已改用公开网页阅读器核对报告正文。",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "name": "工信部直接访问",
+          "url": "https://www.miit.gov.cn/xwfb/gxdt/sjdt/art/2026/art_732789a488cd4b7fb3dda4417d880ec9.html",
+          "checkedAt": "2026-11-19T00:48:04.285467+00:00",
+          "purpose": "practice",
+          "stages": [
+            "供应链与采购"
+          ],
+          "note": "直连返回403，改用公开网页阅读器核对该原文。",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "company": null,
+          "url": "https://www.cnx-software.com/2026/11/17/review-seeed-studio-4-26-mono-and-7-3-color-e-paper-kit-with-opendisplay-and-home-assistant",
+          "name": "雷达候选正文",
+          "stages": [
+            "研发与系统"
+          ],
+          "purpose": "news",
+          "checkedAt": "2026-11-19T00:45:12.003025+00:00",
+          "state": "error",
+          "note": "本次抓取未取得候选正文：curl: (56) The requested URL returned error: 403\n"
+        },
+        {
+          "company": null,
+          "url": "https://www.cnx-software.com/2026/11/17/forlinx-ok8275aa-c-a-qualcomm-qcs8275-industrial-sbc-with-12gb-lpddr5-256gb-ufs-storage",
+          "name": "雷达候选正文",
+          "stages": [
+            "研发与系统"
+          ],
+          "purpose": "news",
+          "checkedAt": "2026-11-19T00:45:12.003025+00:00",
+          "state": "error",
+          "note": "本次抓取未取得候选正文：curl: (56) The requested URL returned error: 403\n"
+        },
+        {
+          "company": null,
+          "url": "https://www.cnx-software.com/2026/11/16/aaeon-boxer-8741ai-industrial-edge-ai-box-pc-nvidia-jetson-thor-t5000-with-dual-10gbe-and-four-5gbe-lan",
+          "name": "雷达候选正文",
+          "stages": [
+            "研发与系统"
+          ],
+          "purpose": "news",
+          "checkedAt": "2026-11-19T00:45:12.003025+00:00",
+          "state": "error",
+          "note": "本次抓取未取得候选正文：curl: (56) The requested URL returned error: 403\n"
+        },
+        {
+          "name": "2026届春招-供应链运营管培生",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "checkedAt": "2026-11-19T00:51:20.083131+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "服务与生命周期"
+          ],
+          "note": "正文明确学习机售后及小猿设备业务；管培生职责可能含轮岗，不能视为固定组织架构",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "供应商管理工程师-硬件方向",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
+          "checkedAt": "2026-11-19T00:51:20.083131+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "服务与生命周期"
+          ],
+          "note": "消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "高中生物教研（D111404）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/ecbe641a-b8c4-4a0f-ad07-1d3c4cb4e0ad",
+          "checkedAt": "2026-11-19T00:51:20.083131+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "实验教学内容产品，未指定学习机或其他终端。",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "硬件结构工程师（D110856）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/bce3303d-d5ee-41f0-b76f-30e4a45d7d43",
+          "checkedAt": "2026-11-19T00:51:20.083131+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "note": "该岗位页明确停止招聘；原有职责仅作历史参考，招聘原因和团队人员变化未知。",
+          "company": "作业帮",
+          "state": "no_new"
+        },
+        {
+          "name": "华为产品及支持资料",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+          "checkedAt": "2026-11-19T00:46:56.333622+00:00",
+          "purpose": "practice",
+          "stages": [
+            "服务与生命周期"
+          ],
+          "note": "复核平板适用版本、设置密码和删除教育空间的后果；此轮字段无实质变化。",
+          "company": "华为",
+          "state": "read"
+        },
+        {
+          "name": "科大讯飞产品及支持资料",
+          "url": "https://edu.iflytek.com/solution/family/transpen",
+          "checkedAt": "2026-11-19T00:46:46.550125+00:00",
+          "purpose": "practice",
+          "stages": [
+            "服务与生命周期"
+          ],
+          "note": "复核P20及P20Plus的年龄与功能差异；产品页未披露具体学科效果验证。",
+          "company": "科大讯飞",
+          "state": "read"
+        }
+      ],
+      "coverage": "审读采购付款、先进封装、半导体供应、合规与团队调整；三家教育企业核对原岗位。儿童手表与音箱召回整理为实践深读。",
+      "knownGaps": [
+        "DRAM案未检出新裁定；BIS仅复核预览前三页，不给特定交易结论。",
+        "未取得哈啰内部签核文件；作业帮儿童穿戴结构岗关闭原因未知。",
+        "儿童手表FAQ未披露离线重发策略、固件范围及成功率。"
+      ],
+      "failedSources": [
+        "法院裁定镜像：直连返回403，另读取法院文件公开镜像节选。",
+        "OpenAI 技术报告直连：直连返回403，已改用公开网页阅读器核对报告正文。",
+        "工信部直接访问：直连返回403，改用公开网页阅读器核对该原文。",
+        "雷达候选正文：本次抓取未取得候选正文：curl: (56) The requested URL returned error: 403\n",
+        "直连返回403，另读取法院文件公开镜像节选。",
+        "直连返回403，已改用公开网页阅读器核对报告正文。",
+        "直连返回403，改用公开网页阅读器核对该原文。",
+        "本次抓取未取得候选正文：curl: (56) The requested URL returned error: 403\n"
+      ],
+      "coverageCheck": {
+        "newsResearch": {
+          "passed": true,
+          "bodyCount": 10,
+          "publisherGroups": [
+            "Intel 与 Microsoft",
+            "NVIDIA",
+            "OpenAI 技术报告",
+            "TrendForce 现货调查",
+            "中国汽车工业协会",
+            "人民日报采访",
+            "华为升级通知",
+            "工信部装备工业一司",
+            "蓝鲸汽车采访（IT之家转述）"
+          ],
+          "requiredBodies": 6,
+          "requiredPublisherGroups": 3
+        },
+        "passed": true,
+        "companies": [
+          "作业帮",
+          "华为",
+          "小天才",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "gaps": [],
+        "usableSources": 22
+      },
+      "successfulScan": true,
+      "completedAt": "2026-11-19T00:51:20.394110+00:00",
+      "reviewedCount": 9,
+      "selectedCount": 9
     }
   ]
 }

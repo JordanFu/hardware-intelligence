@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-18T10:46:04.282488+00:00",
+  "checkedAt": "2026-11-19T00:53:22.847316+00:00",
   "jobs": [
     {
       "company": "DJI 大疆",
@@ -801,7 +801,7 @@
       ],
       "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/bce3303d-d5ee-41f0-b76f-30e4a45d7d43",
       "postedAt": "2026-10-12",
-      "access": "正文可见",
+      "access": "明确关闭",
       "responsibilities": [
         "规划结构与主板堆叠，综合空间、散热、防水、模具、量产和成本约束",
         "处理可靠性问题并完成结构方案交付"
@@ -814,8 +814,8 @@
       ],
       "decisionQuestion": "结构规格由谁批准，量产可行性与用户体验冲突如何取舍？",
       "boundary": "儿童手表/手环结构岗位；证明职责需求，不证明具体新品上市或项目进度；仅为公开职责基线，首次收录不等于新增岗位，页面可见不保证仍在招；人数、汇报线及实际成效未知。",
-      "locator": "岗位职责、任职要求及业务说明",
-      "coverage": "body",
+      "locator": "职位详情页停止招聘提示",
+      "coverage": "excerpt",
       "educationResearch": true,
       "businessScope": "硬件直接相关",
       "scopeNote": "儿童手表/手环结构岗位；证明职责需求，不证明具体新品上市或项目进度",
@@ -824,14 +824,42 @@
       ],
       "id": "job-f3f120078f21d7a5",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-16T00:45:22.323105+00:00",
-      "sourceHash": "e22153e9aa04535acf99b51606a0905db93812e8fa23fbfa9644c90cfa687461",
-      "change": "持续可见",
+      "lastSeen": "2026-11-19T00:51:20.508892+00:00",
+      "sourceHash": "d5225003b89967c8f0187e7a58b75e6d852e723c2bab65d1b080cc495fe18d92",
+      "change": "来源明确关闭",
       "versions": [
         {
           "observedAt": "2026-11-09T02:30:42.120805+00:00",
           "sourceHash": "2aa692aa2d334019f599a8c48b76d7b83861918e0cf7c1b14432eed8f44749b4",
           "access": "正文可见",
+          "title": "硬件结构工程师（D110856）",
+          "family": "硬件",
+          "location": "原文未明确城市",
+          "responsibilities": [
+            "规划结构与主板堆叠，综合空间、散热、防水、模具、量产和成本约束",
+            "处理可靠性问题并完成结构方案交付"
+          ],
+          "interfaces": [
+            "原文：结合ID需求，考虑屏幕、摄像头、音频、天线和射频布局；研究判断：结构方案需与电子设计和制造共同评审"
+          ],
+          "requirements": [
+            "穿戴结构经验、儿童手表机构设计、材料工艺与可靠性分析"
+          ],
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "businessScope": "硬件直接相关",
+          "scopeNote": "儿童手表/手环结构岗位；证明职责需求，不证明具体新品上市或项目进度",
+          "educationCategories": [
+            "watch"
+          ]
+        },
+        {
+          "observedAt": "2026-11-19T00:51:20.508892+00:00",
+          "sourceHash": "d5225003b89967c8f0187e7a58b75e6d852e723c2bab65d1b080cc495fe18d92",
+          "access": "明确关闭",
           "title": "硬件结构工程师（D110856）",
           "family": "硬件",
           "location": "原文未明确城市",
@@ -1169,8 +1197,8 @@
       "scopeNote": "消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机",
       "id": "job-64eaead4b243a34c",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-17T00:45:51.386437+00:00",
-      "sourceHash": "d367fee8f52072da2786051fc233e03f2d8bd9886ef73c5619bfbf8fe35f8c33",
+      "lastSeen": "2026-11-19T00:51:20.508892+00:00",
+      "sourceHash": "fc32c968c6516080df4a5638596a82519afa47511f4679f303f4738580448c3c",
       "change": "持续可见",
       "versions": [
         {
@@ -1496,8 +1524,8 @@
       ],
       "id": "job-547c6c04c9807a51",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-16T00:45:22.323105+00:00",
-      "sourceHash": "982ecc6cff1cfeb8d1a745669098f97d72ce74b99df011b75c55a1b7aeae3821",
+      "lastSeen": "2026-11-19T00:51:20.508892+00:00",
+      "sourceHash": "a35c80bf3d2f1ef8acdeab2de8f021288857226ce06dfba7b7f2bbf2ad781021",
       "change": "持续可见",
       "versions": [
         {
@@ -1692,9 +1720,9 @@
       "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/ecbe641a-b8c4-4a0f-ad07-1d3c4cb4e0ad",
       "id": "job-dd7170f66b3021a8",
       "firstSeen": "2026-11-18T10:46:04.282488+00:00",
-      "lastSeen": "2026-11-18T10:46:04.282488+00:00",
-      "sourceHash": "ff7fdc8b679a2c20eca8fab152cca3fe0b4ffa4646be63142924a3c6ffc70533",
-      "change": "首次收录基线",
+      "lastSeen": "2026-11-19T00:51:20.508892+00:00",
+      "sourceHash": "9f7aa1cf1f122e05319bee5665abe92d99d67edf2166739cd422cc2cf68cf4df",
+      "change": "持续可见",
       "versions": [
         {
           "observedAt": "2026-11-18T10:46:04.282488+00:00",
@@ -1988,6 +2016,14 @@
       "jobId": "job-dd7170f66b3021a8",
       "observedAt": "2026-11-18T10:46:04.282488+00:00",
       "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-f3f120078f21d7a5",
+      "observedAt": "2026-11-19T00:51:20.508892+00:00",
+      "kind": "来源明确关闭",
       "fields": [],
       "before": {},
       "after": {}
@@ -2739,6 +2775,83 @@
         }
       ],
       "checkedAt": "2026-11-18T10:46:04.282488+00:00"
+    },
+    {
+      "company": "猿辅导（小猿）",
+      "state": "partial",
+      "complete": false,
+      "note": "复核已知岗位ID，未遍历公司全部职位。",
+      "familyChecks": [
+        {
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "family": "供应链",
+          "state": "body",
+          "jobIds": [
+            "job-547c6c04c9807a51"
+          ],
+          "note": "正文明确学习机售后及小猿设备业务；管培生职责可能含轮岗，不能视为固定组织架构"
+        }
+      ],
+      "checkedAt": "2026-11-19T00:51:20.508892+00:00"
+    },
+    {
+      "company": "科大讯飞",
+      "state": "partial",
+      "complete": false,
+      "note": "复核已知岗位ID，未遍历公司全部职位。",
+      "familyChecks": [
+        {
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
+          "family": "供应链",
+          "state": "body",
+          "jobIds": [
+            "job-64eaead4b243a34c"
+          ],
+          "note": "消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机"
+        }
+      ],
+      "checkedAt": "2026-11-19T00:51:20.508892+00:00"
+    },
+    {
+      "company": "作业帮",
+      "state": "partial",
+      "complete": false,
+      "note": "复核已知岗位ID，未遍历公司全部职位。",
+      "familyChecks": [
+        {
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/ecbe641a-b8c4-4a0f-ad07-1d3c4cb4e0ad",
+          "family": "教研",
+          "state": "body",
+          "jobIds": [
+            "job-dd7170f66b3021a8"
+          ],
+          "note": "实验教学内容产品，未指定学习机或其他终端。"
+        },
+        {
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/bce3303d-d5ee-41f0-b76f-30e4a45d7d43",
+          "family": "硬件",
+          "state": "scope_gap",
+          "jobIds": [],
+          "note": "该岗位页明确停止招聘；原有职责仅作历史参考，招聘原因和团队人员变化未知。"
+        }
+      ],
+      "checkedAt": "2026-11-19T00:51:20.508892+00:00"
+    },
+    {
+      "company": "作业帮",
+      "state": "partial",
+      "complete": false,
+      "note": "作业帮已核验社招入口以采购检索，列表加载后显示暂无匹配职位；尚未取得学习硬件供应链岗位正文，不能推断实际编制。",
+      "familyChecks": [
+        {
+          "family": "供应链",
+          "state": "index",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/jobs?keyword=%E9%87%87%E8%B4%AD&page=1&anchorName=jobsList",
+          "note": "作业帮已核验社招入口以采购检索，列表加载后显示暂无匹配职位；尚未取得学习硬件供应链岗位正文，不能推断实际编制。",
+          "jobIds": []
+        }
+      ],
+      "checkedAt": "2026-11-19T00:53:22.847316+00:00"
     }
   ],
   "insights": [

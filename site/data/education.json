@@ -251,7 +251,7 @@
         "product": "儿童通信与家庭协同；具体手表型号与功能需另核。",
         "content": "本资料不是学习内容库说明，不能据此推断课程或学习功能。",
         "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
-        "delivery": "已读售后 FAQ 中的设置条件；维修网络、质量结果与供应商责任仍待核验。",
+        "delivery": "定时开关机需手表开机联网、App返回保存、手表端提示成功；手表关机充电会自动开机。售后可按这三个状态定位，具体固件与实际成功率待查。",
         "organization": "研究问题：手机 App、设备端状态和客服解释如何协同？FAQ 不证明现有组织结构。"
       },
       "boundary": "官网 FAQ 未标发布日期；儿童平板的家庭绑定规则不外推到全部手表型号。",
@@ -266,7 +266,7 @@
           "url": "https://www.okii.com/html/pc/service/service_question.html",
           "publishedAt": null,
           "role": "official",
-          "readAt": "2026-11-09T02:00:20.378566+00:00",
+          "readAt": "2026-11-19T00:46:46.078402+00:00",
           "coverage": "body",
           "textHash": "af30d4cb563b6c7addbb400c277d9581cde06225a32736444b1e9c8cab6be5e5"
         }
@@ -276,10 +276,15 @@
           "sourceId": "edu-okii",
           "claim": "电话手表的定时开关机需要关注网络与手表端确认。",
           "locator": "电话手表 / 定时开关机问题"
+        },
+        {
+          "sourceId": "edu-okii",
+          "claim": "FAQ 单列关机充电时的自动开机行为。",
+          "locator": "电话手表 · 定时开关机问题第4条"
         }
       ],
-      "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-15T00:44:23.933338+00:00",
+      "updatedAt": "2026-11-19T00:51:40.404223+00:00",
+      "reviewedAt": "2026-11-19T00:51:40.404223+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "小天才"
@@ -341,7 +346,7 @@
         }
       ],
       "updatedAt": "2026-11-15T00:44:23.933338+00:00",
-      "reviewedAt": "2026-11-15T00:44:23.933338+00:00",
+      "reviewedAt": "2026-11-19T00:51:40.404223+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "华为",
@@ -570,7 +575,7 @@
         }
       ],
       "updatedAt": "2026-11-16T00:45:30.209427+00:00",
-      "reviewedAt": "2026-11-16T00:45:30.209427+00:00",
+      "reviewedAt": "2026-11-19T00:51:40.404223+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "科大讯飞",
@@ -1483,6 +1488,57 @@
           ],
           "checkedAt": "2026-11-18T10:46:04.176686+00:00",
           "note": "页面直连403，已改用帮助中心公开正文接口并核对网页文本。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-19T00:51:40.404223+00:00",
+      "summary": "三家核心公司岗位正文已复核；作业帮一则历史儿童穿戴结构岗已明示停止招聘。小天才电话手表补充设备端设置确认。",
+      "checks": [
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "name": "2026届春招-供应链运营管培生",
+          "state": "body",
+          "checkedAt": "2026-11-19T00:51:20.083131+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "正文明确学习机售后及小猿设备业务；管培生职责可能含轮岗，不能视为固定组织架构"
+        },
+        {
+          "company": "小天才",
+          "name": "小天才 · 常见问题",
+          "url": "https://www.okii.com/html/pc/service/service_question.html",
+          "state": "body",
+          "checkedAt": "2026-11-19T00:46:46.078402+00:00",
+          "categoryIds": [
+            "watch"
+          ],
+          "note": "补充设置保存、设备回执和充电自动开机之间的排障边界。"
+        },
+        {
+          "company": "华为",
+          "name": "华为 · 平板教育空间使用指南",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+          "state": "body",
+          "checkedAt": "2026-11-19T00:46:56.333622+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "复核平板适用版本、设置密码和删除教育空间的后果；此轮字段无实质变化。"
+        },
+        {
+          "company": "科大讯飞",
+          "name": "科大讯飞 · AI翻译笔",
+          "url": "https://edu.iflytek.com/solution/family/transpen",
+          "state": "body",
+          "checkedAt": "2026-11-19T00:46:46.550125+00:00",
+          "categoryIds": [
+            "pen"
+          ],
+          "note": "复核P20及P20Plus的年龄与功能差异；产品页未披露具体学科效果验证。"
         }
       ]
     }
@@ -2656,6 +2712,65 @@
           ]
         }
       }
+    },
+    {
+      "profileId": "okii-watch",
+      "reviewedAt": "2026-11-19T00:51:40.404223+00:00",
+      "status": "reviewed",
+      "assessment": "补充设置保存、设备回执和充电自动开机之间的排障边界。",
+      "changes": {
+        "dimensions": {
+          "before": {
+            "product": "儿童通信与家庭协同；具体手表型号与功能需另核。",
+            "content": "本资料不是学习内容库说明，不能据此推断课程或学习功能。",
+            "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
+            "delivery": "已读售后 FAQ 中的设置条件；维修网络、质量结果与供应商责任仍待核验。",
+            "organization": "研究问题：手机 App、设备端状态和客服解释如何协同？FAQ 不证明现有组织结构。"
+          },
+          "after": {
+            "product": "儿童通信与家庭协同；具体手表型号与功能需另核。",
+            "content": "本资料不是学习内容库说明，不能据此推断课程或学习功能。",
+            "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
+            "delivery": "定时开关机需手表开机联网、App返回保存、手表端提示成功；手表关机充电会自动开机。售后可按这三个状态定位，具体固件与实际成功率待查。",
+            "organization": "研究问题：手机 App、设备端状态和客服解释如何协同？FAQ 不证明现有组织结构。"
+          }
+        },
+        "facts": {
+          "before": [
+            {
+              "sourceId": "edu-okii",
+              "claim": "电话手表的定时开关机需要关注网络与手表端确认。",
+              "locator": "电话手表 / 定时开关机问题"
+            }
+          ],
+          "after": [
+            {
+              "sourceId": "edu-okii",
+              "claim": "电话手表的定时开关机需要关注网络与手表端确认。",
+              "locator": "电话手表 / 定时开关机问题"
+            },
+            {
+              "sourceId": "edu-okii",
+              "claim": "FAQ 单列关机充电时的自动开机行为。",
+              "locator": "电话手表 · 定时开关机问题第4条"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "profileId": "huawei-tablet",
+      "reviewedAt": "2026-11-19T00:51:40.404223+00:00",
+      "status": "reviewed",
+      "assessment": "复核平板适用版本、设置密码和删除教育空间的后果；此轮字段无实质变化。",
+      "changes": {}
+    },
+    {
+      "profileId": "iflytek-pen",
+      "reviewedAt": "2026-11-19T00:51:40.404223+00:00",
+      "status": "reviewed",
+      "assessment": "复核P20及P20Plus的年龄与功能差异；产品页未披露具体学科效果验证。",
+      "changes": {}
     }
   ],
   "reference": {

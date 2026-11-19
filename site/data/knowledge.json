@@ -97,75 +97,40 @@
       "updatedAt": "2026-11-18T10:48:32.272337+00:00"
     },
     "chain-7": {
-      "attemptedAt": "2026-11-17T10:40:23.696029+00:00",
+      "attemptedAt": "2026-11-19T00:52:51.904150+00:00",
       "status": "partial",
-      "assessment": "补工单计数与用户结果的差异，重新核对华为教育空间重置的数据影响；尚缺跨工单问题关联、备份恢复与维修结果证据。",
+      "assessment": "按电池序列号连接整机销售与配件渠道。质量确认部件标识后，客服与渠道分别核对随附、单卖和换件路径，分开统计登记与实际替换。",
       "gaps": [
+        "缺少召回登记、寄发和最终处置各阶段完成数据。",
         "本轮补平台计数定义，但跨工单重复联系归属、观察窗口及排除项仍需业务级定义。",
         "没有设备停产通知、维修时效和恢复使用结果；华为该空间其他备份渠道仍未核实。"
       ],
       "reviewedFields": [
-        "basics",
-        "exercise",
         "flow",
         "metrics",
-        "pitfall"
+        "team"
       ],
       "evidence": [
         {
-          "itemId": "zendesk-one-touch-boundary",
-          "title": "服务指标：一次回复计数不等于用户已恢复使用",
+          "itemId": "m19-bose",
+          "title": "售后怎样找到需要召回的那块电池？",
           "facts": [
             {
-              "claim": "one-touch计数包含已解决或关闭、一次或零次客服回复的工单。",
-              "sourceUrl": "https://support.zendesk.com/hc/en-us/articles/4408820618266-How-are-one-touch-resolutions-calculated",
-              "locator": "How do I calculate one-touch tickets第一段"
-            },
-            {
-              "claim": "再次提问并得到客服回复后重新解决的工单不再计为one-touch。",
-              "sourceUrl": "https://support.zendesk.com/hc/en-us/articles/4408820618266-How-are-one-touch-resolutions-calculated",
-              "locator": "客户重新打开工单的说明"
+              "claim": "受影响电池亦以配件或替换件单卖。",
+              "sourceUrl": "https://www.cpsc.gov/Recalls/2027/Bose-Recalls-Lithium-Ion-Battery-Packs-for-S1-Pro-and-S1-Pro-Bluetooth-Speaker-Systems-Due-to-Risk-of-Injury-from-Fire-and-Overheating-Hazards",
+              "locator": "Description 与 Remedy 两节"
             }
           ],
-          "boundary": "仅为Zendesk特定报表计数规则，不等于通用首次解决率，也不是用户效果或员工绩效结论。",
+          "boundary": "这是特定产品和地区的历史召回；公告没有披露最终换件完成率。",
           "sources": [
             {
-              "url": "https://support.zendesk.com/hc/en-us/articles/4408820618266-How-are-one-touch-resolutions-calculated",
-              "name": "Zendesk官方帮助",
-              "publishedAt": null,
-              "publisherGroup": "Zendesk官方帮助",
+              "url": "https://www.cpsc.gov/Recalls/2027/Bose-Recalls-Lithium-Ion-Battery-Packs-for-S1-Pro-and-S1-Pro-Bluetooth-Speaker-Systems-Due-to-Risk-of-Injury-from-Fire-and-Overheating-Hazards",
+              "publisherGroup": "美国消费品安全委员会",
+              "name": "美国消费品安全委员会",
+              "publishedAt": "2026-11-05",
               "role": "official",
-              "textHash": "e5ead6bc771e2fb4a7bdbca70d688d4778b8a2415f91402a76525f947fe37498",
-              "readAt": "2026-11-17T10:38:27.685621+00:00",
-              "coverage": "body"
-            }
-          ]
-        },
-        {
-          "itemId": "huawei-education-reset-boundary",
-          "title": "华为教育空间：密码恢复涉及空间数据删除",
-          "facts": [
-            {
-              "claim": "指南说明忘记密码后不支持找回。",
-              "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
-              "locator": "设置与重置密码"
-            },
-            {
-              "claim": "删除教育空间会同步删除其应用和数据且不可恢复。",
-              "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
-              "locator": "重置密码提示"
-            }
-          ],
-          "boundary": "无明确发布日期，按当前支持说明补充；未操作设备、删除数据或验证备份机制。不是今日新增功能，也不证明所有学习记录都会丢失。",
-          "sources": [
-            {
-              "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
-              "name": "华为官方资料",
-              "publishedAt": null,
-              "publisherGroup": "华为",
-              "role": "official",
-              "textHash": "17dca06954d13a3c2041c544db30b358ff84cd4c74c2c587677f06ec3a00007a",
-              "readAt": "2026-11-15T00:41:20.685838+00:00",
+              "textHash": "1b875d4bead108dc30b0fb9b43d13217afd6f2ae5e9971c41931b203a199ffe7",
+              "readAt": "2026-11-19T00:46:46.492408+00:00",
               "coverage": "body"
             }
           ]
@@ -173,21 +138,14 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "zendesk-one-touch-boundary",
-          "url": "https://support.zendesk.com/hc/en-us/articles/4408820618266-How-are-one-touch-resolutions-calculated",
-          "checkedAt": "2026-11-17T10:38:27.685621+00:00",
+          "itemId": "m19-bose",
+          "url": "https://www.cpsc.gov/Recalls/2027/Bose-Recalls-Lithium-Ion-Battery-Packs-for-S1-Pro-and-S1-Pro-Bluetooth-Speaker-Systems-Due-to-Risk-of-Injury-from-Fire-and-Overheating-Hazards",
+          "checkedAt": "2026-11-19T00:46:46.492408+00:00",
           "state": "body",
-          "note": "本轮实际读取当前正文，复核所列字段；其余证据缺口继续公开，未刷新完整复核期限。"
-        },
-        {
-          "itemId": "huawei-education-reset-boundary",
-          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
-          "checkedAt": "2026-11-17T10:38:27.688631+00:00",
-          "state": "body",
-          "note": "本轮实际读取当前正文，复核所列字段；其余证据缺口继续公开，未刷新完整复核期限。"
+          "note": "实际复读原文，按原文范围检查。依据特定音箱电池的美国公告；当地回收接收条件与换件完成率需分别核查。"
         }
       ],
-      "reviewedAt": "2026-11-17T10:40:23.696029+00:00",
+      "reviewedAt": "2026-11-19T00:52:51.904150+00:00",
       "patch": {
         "basics": "OTA 是远程软件更新；支持周期、回滚和停止服务的安排也是产品承诺。 对互联设备，还应检查所有权转移、恢复出厂与退出时的数据处理；这些是从岗位职责提炼的验收问题，不能视为全行业已落实的规范。",
         "exercise": "追踪一次服务事件，从用户发现到真正恢复使用，找出重复解释和重复操作。 补充一次设备转售或恢复出厂场景，列清设备、账号和云端数据的处理责任与验证证据。 对返修场景增加购买证明、排障记录、寄送指引与恢复使用四步，检查哪些信息能在授权范围内复用，避免用户重复解释。",
@@ -239,9 +197,20 @@
             "zendesk-one-touch-boundary"
           ],
           "updatedAt": "2026-11-17T10:40:23.696029+00:00"
+        },
+        {
+          "id": "chain-7-m19-bose-nov19",
+          "title": "按电池序列号连接整机销售与配件渠道",
+          "learning": "同一款电池既可能随整机售出，也可能单卖或作为备件换入。仅凭购买音箱的订单定位召回对象会遗漏一部分人。",
+          "application": "质量确认部件标识后，客服与渠道分别核对随附、单卖和换件路径，分开统计登记与实际替换。",
+          "boundary": "依据特定音箱电池的美国公告；当地回收接收条件与换件完成率需分别核查。",
+          "itemIds": [
+            "m19-bose"
+          ],
+          "updatedAt": "2026-11-19T00:52:51.904150+00:00"
         }
       ],
-      "updatedAt": "2026-11-17T10:40:23.696029+00:00"
+      "updatedAt": "2026-11-19T00:52:51.904150+00:00"
     },
     "track-5": {
       "attemptedAt": "2026-11-18T01:50:12.299573+00:00",
@@ -508,82 +477,52 @@
       "updatedAt": "2026-11-18T01:50:12.299573+00:00"
     },
     "chain-4": {
-      "attemptedAt": "2026-11-16T10:41:57.135139+00:00",
+      "attemptedAt": "2026-11-19T00:52:51.904150+00:00",
       "status": "partial",
-      "assessment": "本轮补齐原先不可读的NPI-PE、PQE、PQC正文，撤销该访问缺口；复核NPI阶段门的交付物与责任。没有重新核验FPY完整条目或真实试产门槛，仍为部分复核。",
+      "assessment": "试产前先检查治具和测试台。为下一次试产记录治具版本、验证结果和试产批次，再与产线指标关联。",
       "gaps": [
+        "Autodesk NPI 页面直连403；当前案例没有具体项目的放行签字。",
         "已取得石头职责正文；具体项目的试产门槛、正式放行权限与执行记录仍未核实。",
         "本轮ASQ直连403，搜索只显示定义片段，未重新完整核验指标说明。",
         "历史质量措施完成状态与企业制造结果仍未知。"
       ],
       "reviewedFields": [
-        "basics",
         "exercise",
         "flow",
-        "pitfall",
-        "team",
-        "title"
+        "metrics",
+        "team"
       ],
       "evidence": [
         {
-          "itemId": "roborock-jobs",
-          "title": "石头岗位样本：NPI、PQE 与 PQC 的制造质量接口",
+          "itemId": "formlabs-validation-stages",
+          "title": "EVT、DVT、PVT：先问这一轮验证什么",
           "facts": [
             {
-              "claim": "NPI-PE 职责包含设计评审与工艺资料输出。",
-              "sourceUrl": "https://mall.roborock.com/introduction/jobs",
-              "locator": "社招岗位 / NPI-PE、PQE、PQC"
+              "claim": "EVT重点在关键功能范围与优化。",
+              "sourceUrl": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+              "locator": "Engineering Validation Test小节"
             },
             {
-              "claim": "PQE 职责覆盖试制、量产质量和代工厂管理。",
-              "sourceUrl": "https://mall.roborock.com/introduction/jobs",
-              "locator": "社招岗位 / NPI-PE、PQE、PQC"
+              "claim": "DVT细化设计并走向量产线。",
+              "sourceUrl": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+              "locator": "Design Validation Test小节"
             },
             {
-              "claim": "PQC 职责涉及出货质量和过程控制实施监督。",
-              "sourceUrl": "https://mall.roborock.com/introduction/jobs",
-              "locator": "社招岗位 / NPI-PE、PQE、PQC"
+              "claim": "PVT优化稳定生产装配线。",
+              "sourceUrl": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+              "locator": "Production Validation Test小节"
             }
           ],
-          "boundary": "2026-11-16浏览器取得官方商城无日期岗位正文；职责与既有索引样本一致，不认定新增招聘或组织变化。页面另链招聘主站，未核实实时在招、完整目录、人数或实际放行权。",
+          "boundary": "厂商解释性历史文章，不是统一标准；未照搬批量、时长和认证清单，未验证具体项目。各企业缩写和阶段门可能不同。",
           "sources": [
             {
-              "url": "https://mall.roborock.com/introduction/jobs",
-              "name": "石头科技官方招聘",
+              "url": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+              "name": "Formlabs官方资料",
               "publishedAt": null,
-              "publisherGroup": "石头科技官方招聘",
+              "publisherGroup": "Formlabs",
               "role": "official",
-              "textHash": "fd6fb53c7cd997c90a44bea1afcdf0dc656c7a16f4d734ba58a2102bf1e3c20d",
-              "readAt": "2026-11-16T10:38:42.192Z",
-              "coverage": "body"
-            }
-          ]
-        },
-        {
-          "itemId": "autodesk-npi-deliverable-gates",
-          "title": "NPI阶段门：检查交付物与依赖，不只看进度完成",
-          "facts": [
-            {
-              "claim": "阶段门跟踪同时展示交付物、依赖和时长。",
-              "sourceUrl": "https://www.autodesk.com/industry/design-manufacturing/plm/npi-new-product-introduction",
-              "locator": "Maintain visibility"
-            },
-            {
-              "claim": "页面描述可配置任务责任。",
-              "sourceUrl": "https://www.autodesk.com/industry/design-manufacturing/plm/npi-new-product-introduction",
-              "locator": "Set and update teams and permissions"
-            }
-          ],
-          "boundary": "供应商的流程与软件能力说明，不是通用NPI标准；具体试产通过门槛、审批权和企业实施效果未知。",
-          "sources": [
-            {
-              "url": "https://www.autodesk.com/industry/design-manufacturing/plm/npi-new-product-introduction",
-              "name": "Autodesk官方资料",
-              "publishedAt": null,
-              "publisherGroup": "Autodesk",
-              "role": "official",
-              "textHash": "d048b68f69d61333e00991d6d3a3e76960adb85b8598f2759115aca5d07333f0",
-              "readAt": "2026-11-16T10:39:02.114Z",
+              "textHash": "7856a3f1fd83e2a96a89c35400d15609777010845e3054ec1bbc6b4f325a4942",
+              "readAt": "2026-11-17T00:43:44.109079+00:00",
               "coverage": "body"
             }
           ]
@@ -591,26 +530,20 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "roborock-jobs",
-          "url": "https://mall.roborock.com/introduction/jobs",
-          "checkedAt": "2026-11-16T10:38:42.192Z",
+          "itemId": "formlabs-validation-stages",
+          "url": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+          "checkedAt": "2026-11-19T00:52:02.568508+00:00",
           "state": "body",
-          "note": "本轮实际读取正文，保留适用型号及资料性质；未执行软件或设备。"
-        },
-        {
-          "itemId": "autodesk-npi-deliverable-gates",
-          "url": "https://www.autodesk.com/industry/design-manufacturing/plm/npi-new-product-introduction",
-          "checkedAt": "2026-11-16T10:39:02.114Z",
-          "state": "body",
-          "note": "本轮实际读取正文，保留适用型号及资料性质；未执行软件或设备。"
+          "note": "实际复读原文，按原文范围检查。供应商方法说明，适用门槛依工艺设定，未提供学习硬件厂商的实际签字权限。"
         }
       ],
-      "reviewedAt": "2026-11-16T10:41:57.135139+00:00",
+      "reviewedAt": "2026-11-19T00:52:51.904150+00:00",
       "patch": {
         "team": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。石头商城岗位正文提供具体样本：NPI-PE输出DFX报告、组包流程、作业文件及治具要求；PQE衔接试制、量产、代工与售后质量；PQC监督出货及过程。正式放行权仍须项目证据。",
         "exercise": "沿一次试产异常核对设计版本、工艺条件和关闭证据；为进入下一阶段列清交付物、依赖、验收人和未关闭问题。Autodesk阶段门说明可作为检查框架，系统状态完成不能替代实际验证。",
         "metrics": "一次通过率 = 首次完成该过程并满足质量要求、无需复测或返工等再次处理的单位数 / 进入该过程的单位总数。须固定工序、批次、期间及缺陷规则；不能用返工后最终合格率替代。",
-        "basics": "NPI是新产品导入，具体门槛仍需项目定义。DFM关注设计与所选制造工艺的适配；例如Protolabs根据CAD几何提供反馈，分析变量随制造服务变化。几何可制造不等于整机功能、可靠性或量产良率已验证。"
+        "basics": "NPI是新产品导入，具体门槛仍需项目定义。DFM关注设计与所选制造工艺的适配；例如Protolabs根据CAD几何提供反馈，分析变量随制造服务变化。几何可制造不等于整机功能、可靠性或量产良率已验证。",
+        "flow": "验证通过的设计 → 就绪并经过验证的工装、夹具和测试台 → 试产检查产线节拍、报废与批次良率 → 稳定交付。具体试产准入条件按项目确定。"
       },
       "lessons": [
         {
@@ -668,9 +601,20 @@
             "roborock-jobs"
           ],
           "updatedAt": "2026-11-16T10:41:57.135139+00:00"
+        },
+        {
+          "id": "chain-4-formlabs-validation-stages-nov19",
+          "title": "试产前先检查治具和测试台",
+          "learning": "Formlabs 在试产段落列出治具、夹具和测试台应先就绪并经过验证。试产阶段再观察节拍、操作人员熟练度、报废与每日良率。",
+          "application": "为下一次试产记录治具版本、验证结果和试产批次，再与产线指标关联。",
+          "boundary": "供应商方法说明，适用门槛依工艺设定，未提供学习硬件厂商的实际签字权限。",
+          "itemIds": [
+            "formlabs-validation-stages"
+          ],
+          "updatedAt": "2026-11-19T00:52:51.904150+00:00"
         }
       ],
-      "updatedAt": "2026-11-16T10:41:57.135139+00:00"
+      "updatedAt": "2026-11-19T00:52:51.904150+00:00"
     },
     "track-2": {
       "attemptedAt": "2026-11-18T10:48:32.272337+00:00",
@@ -767,67 +711,54 @@
       "updatedAt": "2026-11-18T10:48:32.272337+00:00"
     },
     "chain-2": {
-      "attemptedAt": "2026-11-17T00:46:36.326415+00:00",
+      "attemptedAt": "2026-11-19T00:52:51.904150+00:00",
       "status": "partial",
-      "assessment": "补EVT/DVT/PVT验证对象的概念区分，替换该基础缺口；不把厂商建议的数量和周期当通用门槛，整机指标和项目权限仍待核验。",
+      "assessment": "检查优化成绩是否来自省去测试未覆盖的功能。审查设计替代方案时先建立功能保留清单，再在统一负载下比较。",
       "gaps": [
+        "验证某段 RTL 行为一致不能证明所有整机功能覆盖。",
         "已补三个阶段的概念区分；特定项目的放行权限、变更接口和退出条件仍待核验。",
         "端到端延迟、分位数及返工结果缺独立测试；未完整复核整机指标。"
       ],
       "reviewedFields": [
-        "basics",
         "exercise",
-        "flow",
-        "pitfall",
-        "team",
-        "title"
+        "pitfall"
       ],
       "evidence": [
         {
-          "itemId": "formlabs-validation-stages",
-          "title": "EVT、DVT、PVT：先问这一轮验证什么",
+          "itemId": "m19-chip-web",
+          "title": "芯片设计优化怎么验收：功能等价、模块面积和整片表现分开看",
           "facts": [
             {
-              "claim": "EVT重点在关键功能范围与优化。",
-              "sourceUrl": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
-              "locator": "Engineering Validation Test小节"
-            },
-            {
-              "claim": "DVT细化设计并走向量产线。",
-              "sourceUrl": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
-              "locator": "Design Validation Test小节"
-            },
-            {
-              "claim": "PVT优化稳定生产装配线。",
-              "sourceUrl": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
-              "locator": "Production Validation Test小节"
+              "claim": "技术报告说明了逐项改写后的功能验证环节。",
+              "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models/",
+              "locator": "Our collaboration with AMD 小节"
             }
           ],
-          "boundary": "厂商解释性历史文章，不是统一标准；未照搬批量、时长和认证清单，未验证具体项目。各企业缩写和阶段门可能不同。",
+          "boundary": "指标针对特定模块和测试基线；没有整机销量、整机能效或研发人力数据。",
           "sources": [
             {
-              "url": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
-              "name": "Formlabs官方资料",
-              "publishedAt": null,
-              "publisherGroup": "Formlabs",
+              "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+              "publisherGroup": "OpenAI",
+              "name": "OpenAI",
+              "publishedAt": "2026-11-18",
               "role": "official",
-              "textHash": "7856a3f1fd83e2a96a89c35400d15609777010845e3054ec1bbc6b4f325a4942",
-              "readAt": "2026-11-17T00:43:44.109079+00:00",
-              "coverage": "body"
+              "textHash": "0baaa7c39d0ac1d402bfbc561fb7a1f9b186180e9057248eb96504ed6eb1f4c6",
+              "readAt": "2026-11-19T00:48:48+00:00",
+              "coverage": "excerpt"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "formlabs-validation-stages",
-          "url": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
-          "checkedAt": "2026-11-17T00:43:44.109079+00:00",
+          "itemId": "m19-chip-web",
+          "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+          "checkedAt": "2026-11-19T00:48:48+00:00",
           "state": "body",
-          "note": "当前实际阅读指定章节；申报回复仅为节选，未读全篇或独立验证。"
+          "note": "已复读原报告生产芯片章节和测试限制。报告中的开源处理器基准限定任务和负载；未给具体硬件项目的放行权限。"
         }
       ],
-      "reviewedAt": "2026-11-17T00:46:36.326415+00:00",
+      "reviewedAt": "2026-11-19T00:52:51.904150+00:00",
       "patch": {
         "metrics": "任务延迟用同一输入、环境与分位数比较；不能只报告平均值或实验室峰值。 对加工设备还应固定材料、任务和成品质量条件，分别记录准备、加工与失败恢复耗时；标称最高运动速度不能直接折算真实产能。",
         "exercise": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。",
@@ -866,9 +797,20 @@
             "formlabs-validation-stages"
           ],
           "updatedAt": "2026-11-17T00:46:36.326415+00:00"
+        },
+        {
+          "id": "chain-2-m19-chip-web-nov19",
+          "title": "检查优化成绩是否来自省去测试未覆盖的功能",
+          "learning": "报告指出，从规格重设计处理器时，部分性能计数器和指令可以被省略。原用例得分可能受功能覆盖变化影响。",
+          "application": "审查设计替代方案时先建立功能保留清单，再在统一负载下比较。",
+          "boundary": "报告中的开源处理器基准限定任务和负载；未给具体硬件项目的放行权限。",
+          "itemIds": [
+            "m19-chip-web"
+          ],
+          "updatedAt": "2026-11-19T00:52:51.904150+00:00"
         }
       ],
-      "updatedAt": "2026-11-17T00:46:36.326415+00:00"
+      "updatedAt": "2026-11-19T00:52:51.904150+00:00"
     },
     "chain-5": {
       "attemptedAt": "2026-11-18T10:48:32.272337+00:00",
@@ -972,56 +914,54 @@
       "updatedAt": "2026-11-18T10:48:32.272337+00:00"
     },
     "chain-8": {
-      "attemptedAt": "2026-11-18T01:50:12.299573+00:00",
+      "attemptedAt": "2026-11-19T00:52:51.904150+00:00",
       "status": "partial",
-      "assessment": "围绕一个决定查清团队分工。本轮以理想历史案例核对团队接口。",
+      "assessment": "把付款承诺落到同一订单的三份凭证。对已验收订单抽样，保留付款方式、合同到期日、实际到账日和争议说明。",
       "gaps": [
+        "本轮未取得供应商逐笔到账样本及新一轮评估结果。",
         "原始签核授权、量产结果及其他字段仍需独立资料。"
       ],
       "reviewedFields": [
+        "flow",
+        "metrics",
         "team"
       ],
       "evidence": [
         {
-          "itemId": "li-auto-pdt-pct-product-line",
-          "title": "理想的 PDT 与 PCT 怎样围绕同一款车做取舍",
+          "itemId": "m19-caam-web",
+          "title": "车企承诺的付款账期，由谁拿凭证来核查？",
           "facts": [
             {
-              "claim": "MEGA 的开发、商业和供应团队分别吸收不同职能的代表。",
-              "sourceUrl": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
-              "locator": "MEGA 组队实例段"
+              "claim": "主管部门披露由中汽协作为第三方牵头评估。",
+              "sourceUrl": "https://www.miit.gov.cn/xwfb/gxdt/sjdt/art/2026/art_732789a488cd4b7fb3dda4417d880ec9.html",
+              "locator": "负责人回应 · 评估分工段"
             },
             {
-              "claim": "受访负责人以续航举例，描述车型与电动平台共同确定目标。",
-              "sourceUrl": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
-              "locator": "车型与平台协作段"
-            },
-            {
-              "claim": "报道回顾车型开发和商业团队在 2024 年合并，并在 2026 年披露部分产品定义团队拟调整。",
-              "sourceUrl": "https://www.36kr.com/p/3877919172047111",
-              "locator": "产品线沿革与调整动向段"
+              "claim": "报道记载每家企业随机抽取至少十五家供应商。",
+              "sourceUrl": "https://www.ithome.com/1/027/856.htm",
+              "locator": "样本供应商抽查段"
             }
           ],
-          "boundary": "依据媒体采访与历史报道。具体签字权限、绩效权重、调整后的决策耗时和商业成效均缺少可比较数据。",
+          "boundary": "这是汽车行业的安排，本次通知没有披露新一轮评估结果。",
           "sources": [
             {
-              "url": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
-              "publisherGroup": "晚点 Auto",
-              "name": "晚点 Auto 原创报道（新浪刊载）",
-              "publishedAt": "2024-04-17",
-              "role": "media",
-              "textHash": "c6aa44493505970be42b191166307e294325e82c9a0d4de80f3cae97f0c1ba88",
-              "readAt": "2026-11-18T01:48:49.826902+00:00",
+              "url": "https://www.miit.gov.cn/xwfb/gxdt/sjdt/art/2026/art_732789a488cd4b7fb3dda4417d880ec9.html",
+              "publisherGroup": "工信部装备工业一司",
+              "name": "工信部装备工业一司",
+              "publishedAt": "2026-11-16T17:00:00+08:00",
+              "role": "official",
+              "textHash": "fe3ef0a353f4c271c278f81b8f45ca4de5ef4df76f17dd03cddb976e99bc0623",
+              "readAt": "2026-11-19T00:48:46+00:00",
               "coverage": "body"
             },
             {
-              "url": "https://www.36kr.com/p/3877919172047111",
-              "publisherGroup": "36氪",
-              "name": "36氪汽车 · 肖漫",
-              "publishedAt": "2026-07-03",
+              "url": "https://www.ithome.com/1/027/856.htm",
+              "publisherGroup": "中国汽车工业协会",
+              "name": "IT之家转述协会通知",
+              "publishedAt": "2026-11-16T09:18:37+00:00",
               "role": "media",
-              "textHash": "528422366fee17a17ae9d847d00b162da9510b6e9f36d33678d1946e566ca015",
-              "readAt": "2026-11-18T01:48:50.283661+00:00",
+              "textHash": "e75b46d440e4031efad58d179dc50c22ac1d793beeee74885efcb5e383800b3f",
+              "readAt": "2026-11-19T00:45:08.259628+00:00",
               "coverage": "body"
             }
           ]
@@ -1029,21 +969,14 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "li-auto-pdt-pct-product-line",
-          "url": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
-          "checkedAt": "2026-11-18T01:48:49.826902+00:00",
+          "itemId": "m19-caam-web",
+          "url": "https://www.miit.gov.cn/xwfb/gxdt/sjdt/art/2026/art_732789a488cd4b7fb3dda4417d880ec9.html",
+          "checkedAt": "2026-11-19T00:48:46+00:00",
           "state": "body",
-          "note": "已读原发采访报道对应的车型、平台与产品线段落。"
-        },
-        {
-          "itemId": "li-auto-pdt-pct-product-line",
-          "url": "https://www.36kr.com/p/3877919172047111",
-          "checkedAt": "2026-11-18T01:48:50.283661+00:00",
-          "state": "body",
-          "note": "已读原发采访报道对应的车型、平台与产品线段落。"
+          "note": "实际复读原文，按原文范围检查。官方安排针对汽车行业，尚无证据证明某学习硬件公司采用相同制度。"
         }
       ],
-      "reviewedAt": "2026-11-18T01:50:12.299573+00:00",
+      "reviewedAt": "2026-11-19T00:52:51.904150+00:00",
       "patch": {
         "team": "经营、产品线与专业职能明确谁决策、谁提供证据、谁对交付负责。 科沃斯岗位样本把退市纳入产品线职责，追觅索引把团队建设、资源协调与经营指标并列；研究时需进一步查明这些责任对应的预算、授权和跨部门接口。",
         "exercise": "为一个跨团队取舍写清最终负责人、异议处理、所需证据和复盘窗口。 从一个新品上线或老产品退出案例，分别列出产品、制造、渠道与服务的交付物，核实谁能调配资源，谁承担未解决的用户问题。",
@@ -1083,9 +1016,20 @@
             "li-auto-pdt-pct-product-line"
           ],
           "updatedAt": "2026-11-18T01:50:12.299573+00:00"
+        },
+        {
+          "id": "chain-8-m19-caam-web-nov19",
+          "title": "把付款承诺落到同一订单的三份凭证",
+          "learning": "车企报送、协会评估与主管部门督导各有职责。对硬件企业的迁移思路，是让采购、财务和供应商对齐同一订单的验收、应付与到账记录。",
+          "application": "对已验收订单抽样，保留付款方式、合同到期日、实际到账日和争议说明。",
+          "boundary": "官方安排针对汽车行业，尚无证据证明某学习硬件公司采用相同制度。",
+          "itemIds": [
+            "m19-caam-web"
+          ],
+          "updatedAt": "2026-11-19T00:52:51.904150+00:00"
         }
       ],
-      "updatedAt": "2026-11-18T01:50:12.299573+00:00"
+      "updatedAt": "2026-11-19T00:52:51.904150+00:00"
     },
     "track-4": {
       "attemptedAt": "2026-11-17T10:40:23.696029+00:00",
@@ -1291,43 +1235,41 @@
       "updatedAt": "2026-11-17T10:40:23.696029+00:00"
     },
     "track-0": {
-      "attemptedAt": "2026-11-18T10:48:32.272337+00:00",
+      "attemptedAt": "2026-11-19T00:52:51.904150+00:00",
       "status": "partial",
-      "assessment": "补查维修与未检出故障的收费条件，既有条款日期为2024年4月8日。",
+      "assessment": "把手机保存与手表端确认设为两个检查点。测试一个家庭定时任务时，分别留下 App 保存、设备端提示与实际执行结果，再记录设备供电和网络状态。",
       "gaps": [
+        "FAQ 未解释设备离线时是否缓存或重发设置。",
         "Meta、Apple、Samsung观察对象未取得本轮当前正文。",
         "真实任务成功率、佩戴负担及续航缺跨企业实测；雷鸟数据地点、期限和删除传播仍未知。",
         "雷鸟最低手机系统与权限细节仍有占位；文件导入内容保真未做实机测试。"
       ],
       "reviewedFields": [
-        "constraint"
+        "constraint",
+        "metrics",
+        "team"
       ],
       "evidence": [
         {
-          "itemId": "xreal-warranty",
-          "title": "XREAL 服务条款样本：销售渠道与售后受理信息相连",
+          "itemId": "m19-edu-watch",
+          "title": "家长点了保存，怎样确认儿童手表已经收到设置？",
           "facts": [
             {
-              "claim": "条款只覆盖规定渠道及所支持地区。",
-              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
-              "locator": "Scope"
-            },
-            {
-              "claim": "申请信息包含订单和故障设备序列号。",
-              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
-              "locator": "Making a claim"
+              "claim": "该 FAQ 要求以手表端的成功提示确认设置生效。",
+              "sourceUrl": "https://www.okii.com/html/pc/service/service_question.html",
+              "locator": "电话手表问题5 · 定时开关机不同步"
             }
           ],
-          "boundary": "本轮读取 Scope 与 Making a claim 等业务流程段落；这是厂商自述的商业保修流程样本，不是对法定权利或条款效力的法律判断。当前适用地区、机型和购买时间仍须逐案核对。",
+          "boundary": "来源未标固件和型号；未披露通信协议、重试次数或送达率。",
           "sources": [
             {
-              "url": "https://us.shop.xreal.com/pages/warranty-policy",
-              "name": "XREAL 美国商城保修政策",
-              "publishedAt": "2024-04-08",
-              "publisherGroup": "XREAL 美国商城保修政策",
+              "url": "https://www.okii.com/html/pc/service/service_question.html",
+              "publisherGroup": "小天才官方常见问题",
+              "name": "小天才官方常见问题",
+              "publishedAt": null,
               "role": "official",
-              "textHash": "f6d9abd8a0da1c0e46c8883c61dc2dcc1047721091f3eaef3a7b3eb81d86b685",
-              "readAt": "2026-11-09T00:46:58.382936+00:00",
+              "textHash": "af30d4cb563b6c7addbb400c277d9581cde06225a32736444b1e9c8cab6be5e5",
+              "readAt": "2026-11-19T00:46:46.078402+00:00",
               "coverage": "body"
             }
           ]
@@ -1335,14 +1277,14 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "xreal-warranty",
-          "url": "https://us.shop.xreal.com/pages/warranty-policy",
-          "checkedAt": "2026-11-18T10:48:32.155367+00:00",
+          "itemId": "m19-edu-watch",
+          "url": "https://www.okii.com/html/pc/service/service_question.html",
+          "checkedAt": "2026-11-19T00:46:46.078402+00:00",
           "state": "body",
-          "note": "补查维修与未检出故障的收费条件，既有条款日期为2024年4月8日。"
+          "note": "实际复读原文，按原文范围检查。官网FAQ未指明固件型号，也未披露协议或实际成功率。"
         }
       ],
-      "reviewedAt": "2026-11-18T10:48:32.272337+00:00",
+      "reviewedAt": "2026-11-19T00:52:51.904150+00:00",
       "patch": {
         "examples": "Meta、Apple、Samsung、雷鸟；本轮新增 XREAL 作为渠道与服务研究对象，不构成排名。",
         "constraint": "佩戴舒适度、续航、隐私和持续使用 离线能力需按字幕、翻译等具体任务核验手机依赖、App 版本和预下载资源；不能仅凭“离线”断言数据不出端。 记录功能还应分别核对音频、转写、摘要与标签：雷鸟Life Log声明不存原始音频，但仍保留文字，不能据此推断没有个人数据留存。",
@@ -1394,9 +1336,20 @@
             "xreal-warranty"
           ],
           "updatedAt": "2026-11-18T10:48:32.272337+00:00"
+        },
+        {
+          "id": "track-0-m19-edu-watch-nov19",
+          "title": "把手机保存与手表端确认设为两个检查点",
+          "learning": "小天才要求在手表开机联网时保存定时设置，并以手表端成功提示确认生效。关机充电也会触发自动开机。",
+          "application": "测试一个家庭定时任务时，分别留下 App 保存、设备端提示与实际执行结果，再记录设备供电和网络状态。",
+          "boundary": "官网FAQ未指明固件型号，也未披露协议或实际成功率。",
+          "itemIds": [
+            "m19-edu-watch"
+          ],
+          "updatedAt": "2026-11-19T00:52:51.904150+00:00"
         }
       ],
-      "updatedAt": "2026-11-18T10:48:32.272337+00:00"
+      "updatedAt": "2026-11-19T00:52:51.904150+00:00"
     },
     "track-1": {
       "attemptedAt": "2026-11-18T10:48:32.272337+00:00",
@@ -1494,66 +1447,54 @@
       "updatedAt": "2026-11-18T10:48:32.272337+00:00"
     },
     "track-3": {
-      "attemptedAt": "2026-11-16T10:41:57.135139+00:00",
+      "attemptedAt": "2026-11-19T00:52:51.904150+00:00",
       "status": "partial",
-      "assessment": "补瑞芯微软件栈各层职责及Toolkit兼容边界；未取得芯片级测量和其他厂商全链资料，保留部分复核。",
+      "assessment": "电路面积读到哪个层级，就把结论限定在哪个层级。比对端侧方案时记录测量对象、基线和验证阶段，系统表现还需在同一终端任务上测量。",
       "gaps": [
+        "板端整机功耗和时延仍缺跨设备同任务实测。",
         "已补瑞芯微软件栈层次；Qualcomm、NVIDIA及各厂商具体型号和工具仍未全面复核。",
         "模型压缩方法、BSP细节、维护成本及同任务整机测量仍缺完整依据。"
       ],
       "reviewedFields": [
-        "chain",
         "constraint",
-        "examples",
-        "team",
-        "title"
+        "metrics"
       ],
       "evidence": [
         {
-          "itemId": "rknn-deployment-layers",
-          "title": "瑞芯微RKNN：模型转换、板端运行时与驱动各有接口",
+          "itemId": "m19-chip-web",
+          "title": "芯片设计优化怎么验收：功能等价、模块面积和整片表现分开看",
           "facts": [
             {
-              "claim": "工具链将模型转换与板端推理衔接。",
-              "sourceUrl": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
-              "locator": "Description"
-            },
-            {
-              "claim": "Toolkit2与旧版Toolkit不兼容。",
-              "sourceUrl": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
-              "locator": "Notes"
-            },
-            {
-              "claim": "内核驱动负责与NPU硬件交互。",
-              "sourceUrl": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
-              "locator": "Description"
+              "claim": "技术报告说明了逐项改写后的功能验证环节。",
+              "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models/",
+              "locator": "Our collaboration with AMD 小节"
             }
           ],
-          "boundary": "当前主分支说明，不是固定版本测试报告；不判断模型精度、耗电、延迟或人员效率。未安装或执行仓库代码。",
+          "boundary": "指标针对特定模块和测试基线；没有整机销量、整机能效或研发人力数据。",
           "sources": [
             {
-              "url": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
-              "name": "瑞芯微官方资料",
-              "publishedAt": null,
-              "publisherGroup": "瑞芯微",
+              "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+              "publisherGroup": "OpenAI",
+              "name": "OpenAI",
+              "publishedAt": "2026-11-18",
               "role": "official",
-              "textHash": "53b24cbf05a899e4296f5fdd060c662d204c7e687140305d655c1f05cac96550",
-              "readAt": "2026-11-16T10:37:42.034691+00:00",
-              "coverage": "body"
+              "textHash": "0baaa7c39d0ac1d402bfbc561fb7a1f9b186180e9057248eb96504ed6eb1f4c6",
+              "readAt": "2026-11-19T00:48:48+00:00",
+              "coverage": "excerpt"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "rknn-deployment-layers",
-          "url": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
-          "checkedAt": "2026-11-16T10:37:42.034691+00:00",
+          "itemId": "m19-chip-web",
+          "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+          "checkedAt": "2026-11-19T00:48:48+00:00",
           "state": "body",
-          "note": "本轮实际读取正文，保留适用型号及资料性质；未执行软件或设备。"
+          "note": "已复读原报告生产芯片章节和测试限制。案例涉及计算芯片，迁移至端侧仅作指标审阅方法。"
         }
       ],
-      "reviewedAt": "2026-11-16T10:41:57.135139+00:00",
+      "reviewedAt": "2026-11-19T00:52:51.904150+00:00",
       "patch": {
         "chain": "芯片 / 模组 → SDK与模型转换 → 板端运行时和驱动 → 整机集成。RKNN示例把转换工具、Python或C/C++接口与NPU内核驱动分层；模型文件交接不能替代运行环境核对。",
         "metrics": "同一任务下的延迟、功耗、内存与准确性 不同层级运行频率不能直接替代端到端响应延迟；需固定任务、系统边界和设备版本，再测功耗、内存与效果。 对Jetson样本还应记录功耗模式、核心/频率配置和温度日志；模组监测功耗不等于整机功耗，配置与散热条件不同的成绩不能直接比较。",
@@ -1593,9 +1534,20 @@
             "rknn-deployment-layers"
           ],
           "updatedAt": "2026-11-16T10:41:57.135139+00:00"
+        },
+        {
+          "id": "track-3-m19-chip-web-nov19",
+          "title": "电路面积读到哪个层级，就把结论限定在哪个层级",
+          "learning": "芯片报告给出的面积变化按向量或矩阵模块计量；功能等价、综合后的结果、送交制造和硅片验证是不同证据。",
+          "application": "比对端侧方案时记录测量对象、基线和验证阶段，系统表现还需在同一终端任务上测量。",
+          "boundary": "案例涉及计算芯片，迁移至端侧仅作指标审阅方法。",
+          "itemIds": [
+            "m19-chip-web"
+          ],
+          "updatedAt": "2026-11-19T00:52:51.904150+00:00"
         }
       ],
-      "updatedAt": "2026-11-16T10:41:57.135139+00:00"
+      "updatedAt": "2026-11-19T00:52:51.904150+00:00"
     }
   },
   "runs": [
@@ -2280,6 +2232,43 @@
           "hash": "1d133c2dc69b4d8021d6970ec82cf975a7fd01de562678800c8a1ddb4e77627f",
           "decision": "integrated",
           "reason": "核对合作方披露的巡检活动与后续验证计划，补充评价指标边界。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-19T00:52:51.904150+00:00",
+      "reviewedNodes": [
+        "chain-4",
+        "track-3",
+        "chain-2",
+        "chain-7",
+        "track-0",
+        "chain-8"
+      ],
+      "decisions": [
+        {
+          "itemId": "m19-chip-web",
+          "hash": "ce50f6175d9fd8e78c5dbcc72ca2f24181a0a3bb90e77213adea4a149f874c5d",
+          "decision": "integrated",
+          "reason": "芯片报告给出的面积变化按向量或矩阵模块计量；功能等价、综合后的结果、送交制造和硅片验证是不同证据。"
+        },
+        {
+          "itemId": "m19-bose",
+          "hash": "ccaa2a8cf91576b1a59a34792db9a41060f74dc34ce7f2cfe20263e6873bd7a2",
+          "decision": "integrated",
+          "reason": "同一款电池既可能随整机售出，也可能单卖或作为备件换入。仅凭购买音箱的订单定位召回对象会遗漏一部分人。"
+        },
+        {
+          "itemId": "m19-edu-watch",
+          "hash": "0f2b476ab21204db4ee44098b444e3934259aab7794410e33252e90004a0a8e1",
+          "decision": "integrated",
+          "reason": "小天才要求在手表开机联网时保存定时设置，并以手表端成功提示确认生效。关机充电也会触发自动开机。"
+        },
+        {
+          "itemId": "m19-caam-web",
+          "hash": "d3625ef10b04c2a72d1e9a2d2eea82e8078b6cf8bef0c35eb766be11e90ebf28",
+          "decision": "integrated",
+          "reason": "车企报送、协会评估与主管部门督导各有职责。对硬件企业的迁移思路，是让采购、财务和供应商对齐同一订单的验收、应付与到账记录。"
         }
       ]
     }
@@ -8048,6 +8037,438 @@
           "checkedAt": "2026-11-18T10:48:32.155367+00:00",
           "state": "body",
           "note": "核对合作方披露的巡检活动与后续验证计划，补充评价指标边界。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-4",
+      "reviewedAt": "2026-11-19T00:52:51.904150+00:00",
+      "status": "partial",
+      "assessment": "试产前先检查治具和测试台。为下一次试产记录治具版本、验证结果和试产批次，再与产线指标关联。",
+      "gaps": [
+        "Autodesk NPI 页面直连403；当前案例没有具体项目的放行签字。",
+        "已取得石头职责正文；具体项目的试产门槛、正式放行权限与执行记录仍未核实。",
+        "本轮ASQ直连403，搜索只显示定义片段，未重新完整核验指标说明。",
+        "历史质量措施完成状态与企业制造结果仍未知。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "flow",
+        "metrics",
+        "team"
+      ],
+      "changes": {
+        "flow": {
+          "before": "验证通过的设计 → 工艺、测试站、作业规范与稳定交付",
+          "after": "验证通过的设计 → 就绪并经过验证的工装、夹具和测试台 → 试产检查产线节拍、报废与批次良率 → 稳定交付。具体试产准入条件按项目确定。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "chain-4-formlabs-validation-stages-nov19",
+            "title": "试产前先检查治具和测试台",
+            "learning": "Formlabs 在试产段落列出治具、夹具和测试台应先就绪并经过验证。试产阶段再观察节拍、操作人员熟练度、报废与每日良率。",
+            "application": "为下一次试产记录治具版本、验证结果和试产批次，再与产线指标关联。",
+            "boundary": "供应商方法说明，适用门槛依工艺设定，未提供学习硬件厂商的实际签字权限。",
+            "itemIds": [
+              "formlabs-validation-stages"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "formlabs-validation-stages",
+          "title": "EVT、DVT、PVT：先问这一轮验证什么",
+          "facts": [
+            {
+              "claim": "EVT重点在关键功能范围与优化。",
+              "sourceUrl": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+              "locator": "Engineering Validation Test小节"
+            },
+            {
+              "claim": "DVT细化设计并走向量产线。",
+              "sourceUrl": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+              "locator": "Design Validation Test小节"
+            },
+            {
+              "claim": "PVT优化稳定生产装配线。",
+              "sourceUrl": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+              "locator": "Production Validation Test小节"
+            }
+          ],
+          "boundary": "厂商解释性历史文章，不是统一标准；未照搬批量、时长和认证清单，未验证具体项目。各企业缩写和阶段门可能不同。",
+          "sources": [
+            {
+              "url": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+              "name": "Formlabs官方资料",
+              "publishedAt": null,
+              "publisherGroup": "Formlabs",
+              "role": "official",
+              "textHash": "7856a3f1fd83e2a96a89c35400d15609777010845e3054ec1bbc6b4f325a4942",
+              "readAt": "2026-11-17T00:43:44.109079+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "formlabs-validation-stages",
+          "url": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+          "checkedAt": "2026-11-19T00:52:02.568508+00:00",
+          "state": "body",
+          "note": "实际复读原文，按原文范围检查。供应商方法说明，适用门槛依工艺设定，未提供学习硬件厂商的实际签字权限。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-3",
+      "reviewedAt": "2026-11-19T00:52:51.904150+00:00",
+      "status": "partial",
+      "assessment": "电路面积读到哪个层级，就把结论限定在哪个层级。比对端侧方案时记录测量对象、基线和验证阶段，系统表现还需在同一终端任务上测量。",
+      "gaps": [
+        "板端整机功耗和时延仍缺跨设备同任务实测。",
+        "已补瑞芯微软件栈层次；Qualcomm、NVIDIA及各厂商具体型号和工具仍未全面复核。",
+        "模型压缩方法、BSP细节、维护成本及同任务整机测量仍缺完整依据。"
+      ],
+      "reviewedFields": [
+        "constraint",
+        "metrics"
+      ],
+      "changes": {},
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "track-3-m19-chip-web-nov19",
+            "title": "电路面积读到哪个层级，就把结论限定在哪个层级",
+            "learning": "芯片报告给出的面积变化按向量或矩阵模块计量；功能等价、综合后的结果、送交制造和硅片验证是不同证据。",
+            "application": "比对端侧方案时记录测量对象、基线和验证阶段，系统表现还需在同一终端任务上测量。",
+            "boundary": "案例涉及计算芯片，迁移至端侧仅作指标审阅方法。",
+            "itemIds": [
+              "m19-chip-web"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m19-chip-web",
+          "title": "芯片设计优化怎么验收：功能等价、模块面积和整片表现分开看",
+          "facts": [
+            {
+              "claim": "技术报告说明了逐项改写后的功能验证环节。",
+              "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models/",
+              "locator": "Our collaboration with AMD 小节"
+            }
+          ],
+          "boundary": "指标针对特定模块和测试基线；没有整机销量、整机能效或研发人力数据。",
+          "sources": [
+            {
+              "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+              "publisherGroup": "OpenAI",
+              "name": "OpenAI",
+              "publishedAt": "2026-11-18",
+              "role": "official",
+              "textHash": "0baaa7c39d0ac1d402bfbc561fb7a1f9b186180e9057248eb96504ed6eb1f4c6",
+              "readAt": "2026-11-19T00:48:48+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m19-chip-web",
+          "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+          "checkedAt": "2026-11-19T00:48:48+00:00",
+          "state": "body",
+          "note": "已复读原报告生产芯片章节和测试限制。案例涉及计算芯片，迁移至端侧仅作指标审阅方法。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-2",
+      "reviewedAt": "2026-11-19T00:52:51.904150+00:00",
+      "status": "partial",
+      "assessment": "检查优化成绩是否来自省去测试未覆盖的功能。审查设计替代方案时先建立功能保留清单，再在统一负载下比较。",
+      "gaps": [
+        "验证某段 RTL 行为一致不能证明所有整机功能覆盖。",
+        "已补三个阶段的概念区分；特定项目的放行权限、变更接口和退出条件仍待核验。",
+        "端到端延迟、分位数及返工结果缺独立测试；未完整复核整机指标。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "pitfall"
+      ],
+      "changes": {},
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "chain-2-m19-chip-web-nov19",
+            "title": "检查优化成绩是否来自省去测试未覆盖的功能",
+            "learning": "报告指出，从规格重设计处理器时，部分性能计数器和指令可以被省略。原用例得分可能受功能覆盖变化影响。",
+            "application": "审查设计替代方案时先建立功能保留清单，再在统一负载下比较。",
+            "boundary": "报告中的开源处理器基准限定任务和负载；未给具体硬件项目的放行权限。",
+            "itemIds": [
+              "m19-chip-web"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m19-chip-web",
+          "title": "芯片设计优化怎么验收：功能等价、模块面积和整片表现分开看",
+          "facts": [
+            {
+              "claim": "技术报告说明了逐项改写后的功能验证环节。",
+              "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models/",
+              "locator": "Our collaboration with AMD 小节"
+            }
+          ],
+          "boundary": "指标针对特定模块和测试基线；没有整机销量、整机能效或研发人力数据。",
+          "sources": [
+            {
+              "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+              "publisherGroup": "OpenAI",
+              "name": "OpenAI",
+              "publishedAt": "2026-11-18",
+              "role": "official",
+              "textHash": "0baaa7c39d0ac1d402bfbc561fb7a1f9b186180e9057248eb96504ed6eb1f4c6",
+              "readAt": "2026-11-19T00:48:48+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m19-chip-web",
+          "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+          "checkedAt": "2026-11-19T00:48:48+00:00",
+          "state": "body",
+          "note": "已复读原报告生产芯片章节和测试限制。报告中的开源处理器基准限定任务和负载；未给具体硬件项目的放行权限。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-7",
+      "reviewedAt": "2026-11-19T00:52:51.904150+00:00",
+      "status": "partial",
+      "assessment": "按电池序列号连接整机销售与配件渠道。质量确认部件标识后，客服与渠道分别核对随附、单卖和换件路径，分开统计登记与实际替换。",
+      "gaps": [
+        "缺少召回登记、寄发和最终处置各阶段完成数据。",
+        "本轮补平台计数定义，但跨工单重复联系归属、观察窗口及排除项仍需业务级定义。",
+        "没有设备停产通知、维修时效和恢复使用结果；华为该空间其他备份渠道仍未核实。"
+      ],
+      "reviewedFields": [
+        "flow",
+        "metrics",
+        "team"
+      ],
+      "changes": {},
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "chain-7-m19-bose-nov19",
+            "title": "按电池序列号连接整机销售与配件渠道",
+            "learning": "同一款电池既可能随整机售出，也可能单卖或作为备件换入。仅凭购买音箱的订单定位召回对象会遗漏一部分人。",
+            "application": "质量确认部件标识后，客服与渠道分别核对随附、单卖和换件路径，分开统计登记与实际替换。",
+            "boundary": "依据特定音箱电池的美国公告；当地回收接收条件与换件完成率需分别核查。",
+            "itemIds": [
+              "m19-bose"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m19-bose",
+          "title": "售后怎样找到需要召回的那块电池？",
+          "facts": [
+            {
+              "claim": "受影响电池亦以配件或替换件单卖。",
+              "sourceUrl": "https://www.cpsc.gov/Recalls/2027/Bose-Recalls-Lithium-Ion-Battery-Packs-for-S1-Pro-and-S1-Pro-Bluetooth-Speaker-Systems-Due-to-Risk-of-Injury-from-Fire-and-Overheating-Hazards",
+              "locator": "Description 与 Remedy 两节"
+            }
+          ],
+          "boundary": "这是特定产品和地区的历史召回；公告没有披露最终换件完成率。",
+          "sources": [
+            {
+              "url": "https://www.cpsc.gov/Recalls/2027/Bose-Recalls-Lithium-Ion-Battery-Packs-for-S1-Pro-and-S1-Pro-Bluetooth-Speaker-Systems-Due-to-Risk-of-Injury-from-Fire-and-Overheating-Hazards",
+              "publisherGroup": "美国消费品安全委员会",
+              "name": "美国消费品安全委员会",
+              "publishedAt": "2026-11-05",
+              "role": "official",
+              "textHash": "1b875d4bead108dc30b0fb9b43d13217afd6f2ae5e9971c41931b203a199ffe7",
+              "readAt": "2026-11-19T00:46:46.492408+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m19-bose",
+          "url": "https://www.cpsc.gov/Recalls/2027/Bose-Recalls-Lithium-Ion-Battery-Packs-for-S1-Pro-and-S1-Pro-Bluetooth-Speaker-Systems-Due-to-Risk-of-Injury-from-Fire-and-Overheating-Hazards",
+          "checkedAt": "2026-11-19T00:46:46.492408+00:00",
+          "state": "body",
+          "note": "实际复读原文，按原文范围检查。依据特定音箱电池的美国公告；当地回收接收条件与换件完成率需分别核查。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-0",
+      "reviewedAt": "2026-11-19T00:52:51.904150+00:00",
+      "status": "partial",
+      "assessment": "把手机保存与手表端确认设为两个检查点。测试一个家庭定时任务时，分别留下 App 保存、设备端提示与实际执行结果，再记录设备供电和网络状态。",
+      "gaps": [
+        "FAQ 未解释设备离线时是否缓存或重发设置。",
+        "Meta、Apple、Samsung观察对象未取得本轮当前正文。",
+        "真实任务成功率、佩戴负担及续航缺跨企业实测；雷鸟数据地点、期限和删除传播仍未知。",
+        "雷鸟最低手机系统与权限细节仍有占位；文件导入内容保真未做实机测试。"
+      ],
+      "reviewedFields": [
+        "constraint",
+        "metrics",
+        "team"
+      ],
+      "changes": {},
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "track-0-m19-edu-watch-nov19",
+            "title": "把手机保存与手表端确认设为两个检查点",
+            "learning": "小天才要求在手表开机联网时保存定时设置，并以手表端成功提示确认生效。关机充电也会触发自动开机。",
+            "application": "测试一个家庭定时任务时，分别留下 App 保存、设备端提示与实际执行结果，再记录设备供电和网络状态。",
+            "boundary": "官网FAQ未指明固件型号，也未披露协议或实际成功率。",
+            "itemIds": [
+              "m19-edu-watch"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m19-edu-watch",
+          "title": "家长点了保存，怎样确认儿童手表已经收到设置？",
+          "facts": [
+            {
+              "claim": "该 FAQ 要求以手表端的成功提示确认设置生效。",
+              "sourceUrl": "https://www.okii.com/html/pc/service/service_question.html",
+              "locator": "电话手表问题5 · 定时开关机不同步"
+            }
+          ],
+          "boundary": "来源未标固件和型号；未披露通信协议、重试次数或送达率。",
+          "sources": [
+            {
+              "url": "https://www.okii.com/html/pc/service/service_question.html",
+              "publisherGroup": "小天才官方常见问题",
+              "name": "小天才官方常见问题",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "af30d4cb563b6c7addbb400c277d9581cde06225a32736444b1e9c8cab6be5e5",
+              "readAt": "2026-11-19T00:46:46.078402+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m19-edu-watch",
+          "url": "https://www.okii.com/html/pc/service/service_question.html",
+          "checkedAt": "2026-11-19T00:46:46.078402+00:00",
+          "state": "body",
+          "note": "实际复读原文，按原文范围检查。官网FAQ未指明固件型号，也未披露协议或实际成功率。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-8",
+      "reviewedAt": "2026-11-19T00:52:51.904150+00:00",
+      "status": "partial",
+      "assessment": "把付款承诺落到同一订单的三份凭证。对已验收订单抽样，保留付款方式、合同到期日、实际到账日和争议说明。",
+      "gaps": [
+        "本轮未取得供应商逐笔到账样本及新一轮评估结果。",
+        "原始签核授权、量产结果及其他字段仍需独立资料。"
+      ],
+      "reviewedFields": [
+        "flow",
+        "metrics",
+        "team"
+      ],
+      "changes": {},
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "chain-8-m19-caam-web-nov19",
+            "title": "把付款承诺落到同一订单的三份凭证",
+            "learning": "车企报送、协会评估与主管部门督导各有职责。对硬件企业的迁移思路，是让采购、财务和供应商对齐同一订单的验收、应付与到账记录。",
+            "application": "对已验收订单抽样，保留付款方式、合同到期日、实际到账日和争议说明。",
+            "boundary": "官方安排针对汽车行业，尚无证据证明某学习硬件公司采用相同制度。",
+            "itemIds": [
+              "m19-caam-web"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m19-caam-web",
+          "title": "车企承诺的付款账期，由谁拿凭证来核查？",
+          "facts": [
+            {
+              "claim": "主管部门披露由中汽协作为第三方牵头评估。",
+              "sourceUrl": "https://www.miit.gov.cn/xwfb/gxdt/sjdt/art/2026/art_732789a488cd4b7fb3dda4417d880ec9.html",
+              "locator": "负责人回应 · 评估分工段"
+            },
+            {
+              "claim": "报道记载每家企业随机抽取至少十五家供应商。",
+              "sourceUrl": "https://www.ithome.com/1/027/856.htm",
+              "locator": "样本供应商抽查段"
+            }
+          ],
+          "boundary": "这是汽车行业的安排，本次通知没有披露新一轮评估结果。",
+          "sources": [
+            {
+              "url": "https://www.miit.gov.cn/xwfb/gxdt/sjdt/art/2026/art_732789a488cd4b7fb3dda4417d880ec9.html",
+              "publisherGroup": "工信部装备工业一司",
+              "name": "工信部装备工业一司",
+              "publishedAt": "2026-11-16T17:00:00+08:00",
+              "role": "official",
+              "textHash": "fe3ef0a353f4c271c278f81b8f45ca4de5ef4df76f17dd03cddb976e99bc0623",
+              "readAt": "2026-11-19T00:48:46+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://www.ithome.com/1/027/856.htm",
+              "publisherGroup": "中国汽车工业协会",
+              "name": "IT之家转述协会通知",
+              "publishedAt": "2026-11-16T09:18:37+00:00",
+              "role": "media",
+              "textHash": "e75b46d440e4031efad58d179dc50c22ac1d793beeee74885efcb5e383800b3f",
+              "readAt": "2026-11-19T00:45:08.259628+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m19-caam-web",
+          "url": "https://www.miit.gov.cn/xwfb/gxdt/sjdt/art/2026/art_732789a488cd4b7fb3dda4417d880ec9.html",
+          "checkedAt": "2026-11-19T00:48:46+00:00",
+          "state": "body",
+          "note": "实际复读原文，按原文范围检查。官方安排针对汽车行业，尚无证据证明某学习硬件公司采用相同制度。"
         }
       ]
     }
