@@ -351,82 +351,129 @@
       "updatedAt": "2026-11-18T01:50:12.299573+00:00"
     },
     "chain-1": {
-      "attemptedAt": "2026-11-18T01:50:12.299573+00:00",
+      "attemptedAt": "2026-11-19T10:43:04.558764+00:00",
       "status": "partial",
-      "assessment": "把商业目标写成可验证的规格。本轮以理想历史案例核对团队接口。",
+      "assessment": "MakerWorld 活动安排合作机构用一个月打印入围模型，与任务简报中指明的使用者一起测试，并将反馈纳入评选。NN/g 给出了如何按任务结果记录完整与部分成功的方法。 活动公告披露的是测试安排。尚无完成率、最终改版或内部授权资料。",
       "gaps": [
         "原始签核授权、量产结果及其他字段仍需独立资料。"
       ],
       "reviewedFields": [
+        "basics",
+        "exercise",
         "team"
       ],
       "evidence": [
         {
-          "itemId": "li-auto-pdt-pct-product-line",
-          "title": "理想的 PDT 与 PCT 怎样围绕同一款车做取舍",
+          "itemId": "task-success-criteria",
+          "title": "孩子拍完题就算成功吗？教研和产品怎样约定一次任务的终点",
           "facts": [
             {
-              "claim": "MEGA 的开发、商业和供应团队分别吸收不同职能的代表。",
-              "sourceUrl": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
-              "locator": "MEGA 组队实例段"
+              "claim": "完成率按参与者能否完成指定任务计算。",
+              "sourceUrl": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
+              "locator": "Measuring Success"
             },
             {
-              "claim": "受访负责人以续航举例，描述车型与电动平台共同确定目标。",
-              "sourceUrl": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
-              "locator": "车型与平台协作段"
-            },
-            {
-              "claim": "报道回顾车型开发和商业团队在 2024 年合并，并在 2026 年披露部分产品定义团队拟调整。",
-              "sourceUrl": "https://www.36kr.com/p/3877919172047111",
-              "locator": "产品线沿革与调整动向段"
+              "claim": "遇到部分成功时，作者建议分级报告人数比例。",
+              "sourceUrl": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
+              "locator": "Reporting Levels of Success"
             }
           ],
-          "boundary": "依据媒体采访与历史报道。具体签字权限、绩效权重、调整后的决策耗时和商业成效均缺少可比较数据。",
+          "boundary": "原文用订花任务解释度量方法。拍题是学习硬件的应用示例，尚无竞品在这个任务上的测量结果或放行阈值。",
           "sources": [
             {
-              "url": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
-              "publisherGroup": "晚点 Auto",
-              "name": "晚点 Auto 原创报道（新浪刊载）",
-              "publishedAt": "2024-04-17",
-              "role": "media",
-              "textHash": "c6aa44493505970be42b191166307e294325e82c9a0d4de80f3cae97f0c1ba88",
-              "readAt": "2026-11-18T01:48:49.826902+00:00",
+              "url": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
+              "publisherGroup": "Nielsen Norman Group",
+              "name": "Jakob Nielsen 与 Raluca Budiu",
+              "publishedAt": "2001-02-17",
+              "role": "research",
+              "textHash": "cbe2047b44e0d15bb9a81b55a025eeb613a38c110a7c9adfe61742aa5d8ac7c3",
+              "readAt": "2026-11-19T10:39:23.443650+00:00",
               "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "rss-73d3265f7743a41c",
+          "title": "MakerWorld 无障碍设计活动：由合作机构带入真实需求",
+          "facts": [
+            {
+              "claim": "活动围绕多项具体需求组织社区设计。",
+              "sourceUrl": "https://blog.bambulab.com/seven-organizations-one-maker-community-3d-printing-in-the-service-of-accessibility",
+              "locator": "正文定位：MakerWorld 无障碍设计活动：由合作机构带入真实需求"
+            }
+          ],
+          "boundary": "企业自行披露，未经独立结果核验；不据此推断销量、利润或组织效果。",
+          "sources": [
+            {
+              "name": "Bambu Lab Blog",
+              "url": "https://blog.bambulab.com/seven-organizations-one-maker-community-3d-printing-in-the-service-of-accessibility",
+              "publishedAt": "2026-09-15T10:08:41+00:00",
+              "publisherGroup": "Bambu Lab",
+              "role": "official",
+              "textHash": "e7a2157a67676287a0074a646c03fe27c45537c0aac4385ad92fd14212332292",
+              "readAt": "2026-11-05T10:27:51.052599+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "jtbd-circumstances",
+          "title": "需求研究先问具体处境与进步，不能只列功能",
+          "facts": [
+            {
+              "claim": "JTBD包含功能、社会和情感维度。",
+              "sourceUrl": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+              "locator": "Definition段落"
             },
             {
-              "url": "https://www.36kr.com/p/3877919172047111",
-              "publisherGroup": "36氪",
-              "name": "36氪汽车 · 肖漫",
-              "publishedAt": "2026-07-03",
-              "role": "media",
-              "textHash": "528422366fee17a17ae9d847d00b162da9510b6e9f36d33678d1946e566ca015",
-              "readAt": "2026-11-18T01:48:50.283661+00:00",
-              "coverage": "body"
+              "claim": "概念强调特定处境下希望取得的进步。",
+              "sourceUrl": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+              "locator": "Definition段落"
+            }
+          ],
+          "boundary": "仅取得当前网页Definition片段；不等于完整方法论审阅，不据此推断国内硬件用户需求或企业成效。",
+          "sources": [
+            {
+              "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+              "name": "Christensen Institute官方资料",
+              "publishedAt": null,
+              "publisherGroup": "Christensen Institute",
+              "role": "official",
+              "textHash": "9c6f1c198d595232cfb7db26736e7eeb03427a2ad9d4ca423c90b149bd6361e9",
+              "readAt": "2026-11-14T00:44:10.709041+00:00",
+              "coverage": "excerpt"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "li-auto-pdt-pct-product-line",
-          "url": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
-          "checkedAt": "2026-11-18T01:48:49.826902+00:00",
+          "itemId": "task-success-criteria",
+          "url": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
+          "checkedAt": "2026-11-19T10:39:23.443650+00:00",
           "state": "body",
-          "note": "已读原发采访报道对应的车型、平台与产品线段落。"
+          "note": "复读当前正文，核对本条所涉及的具体环节。活动公告披露的是测试安排。尚无完成率、最终改版或内部授权资料。"
         },
         {
-          "itemId": "li-auto-pdt-pct-product-line",
-          "url": "https://www.36kr.com/p/3877919172047111",
-          "checkedAt": "2026-11-18T01:48:50.283661+00:00",
+          "itemId": "rss-73d3265f7743a41c",
+          "url": "https://blog.bambulab.com/seven-organizations-one-maker-community-3d-printing-in-the-service-of-accessibility",
+          "checkedAt": "2026-11-19T10:37:57.480501+00:00",
           "state": "body",
-          "note": "已读原发采访报道对应的车型、平台与产品线段落。"
+          "note": "复读当前正文，核对本条所涉及的具体环节。活动公告披露的是测试安排。尚无完成率、最终改版或内部授权资料。"
+        },
+        {
+          "itemId": "jtbd-circumstances",
+          "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+          "checkedAt": "2026-11-19T10:37:57.480363+00:00",
+          "state": "body",
+          "note": "复读当前正文，核对本条所涉及的具体环节。活动公告披露的是测试安排。尚无完成率、最终改版或内部授权资料。"
         }
       ],
-      "reviewedAt": "2026-11-18T01:50:12.299573+00:00",
+      "reviewedAt": "2026-11-19T10:43:04.558764+00:00",
       "patch": {
         "team": "用户研究、产品、销售、服务一起区分使用者、购买者与渠道反馈。 平台型硬件还需区分内容创作者、最终使用者与实体履约伙伴；活动意见是需求线索，不能替代使用验证。",
-        "exercise": "选一种学习设备，分别写出孩子要完成的学习任务、家长要完成的管理任务，以及操作入口和成功条件。Kindle说明区分儿童档案与设备本地限制，前者和后者的远程管理能力不同；实际需求仍需访谈与任务观察，不能由功能存在直接推断。",
-        "basics": "JTBD：研究人在特定处境下想取得的进步，包含功能、社会和情感维度。功能清单或人群标签不能单独替代需求证据。此处仅核对Christensen Institute定义片段，具体用户需求仍需访谈与任务观察。"
+        "exercise": "选一种学习设备，分别写出孩子要完成的学习任务、家长要完成的管理任务，以及操作入口和成功条件。Kindle说明区分儿童档案与设备本地限制，前者和后者的远程管理能力不同；实际需求仍需访谈与任务观察，不能由功能存在直接推断。 让参与者按相同条件尝试一次任务，记录人数、需要协助的环节和最终结果。",
+        "basics": "JTBD 关注人在具体处境下希望取得的进步，包含功能、社会和情感三个维度。访谈明确所求进步后，将其转成用户可完成、测试者可观察的任务；在参与者中分别报告完整成功和各类部分成功。"
       },
       "lessons": [
         {
@@ -472,9 +519,22 @@
             "li-auto-pdt-pct-product-line"
           ],
           "updatedAt": "2026-11-18T01:50:12.299573+00:00"
+        },
+        {
+          "id": "chain-1-nov19e-task-success-criteria",
+          "title": "在原型交给用户前写清验收任务",
+          "learning": "MakerWorld 活动安排合作机构用一个月打印入围模型，与任务简报中指明的使用者一起测试，并将反馈纳入评选。NN/g 给出了如何按任务结果记录完整与部分成功的方法。",
+          "application": "学习硬件试测可让产品与教研预先约定成功样例，测试人员按相同条件分别统计独立完成、需要协助和结果错误的人数；渠道演示记录保留为单独样本。",
+          "boundary": "活动公告披露的是测试安排。尚无完成率、最终改版或内部授权资料。",
+          "itemIds": [
+            "task-success-criteria",
+            "rss-73d3265f7743a41c",
+            "jtbd-circumstances"
+          ],
+          "updatedAt": "2026-11-19T10:43:04.558764+00:00"
         }
       ],
-      "updatedAt": "2026-11-18T01:50:12.299573+00:00"
+      "updatedAt": "2026-11-19T10:43:04.558764+00:00"
     },
     "chain-4": {
       "attemptedAt": "2026-11-19T00:52:51.904150+00:00",
@@ -1032,46 +1092,49 @@
       "updatedAt": "2026-11-19T00:52:51.904150+00:00"
     },
     "track-4": {
-      "attemptedAt": "2026-11-17T10:40:23.696029+00:00",
+      "attemptedAt": "2026-11-19T10:43:04.558764+00:00",
       "status": "partial",
-      "assessment": "重新核对创想三维诊断资料、返寄确认及7/14天冲突，现有知识无需实质改写。拓竹排障页本轮读取失败，没有用旧缓存补齐产品与指标字段。",
+      "assessment": "拓竹披露 H3C 切片软件分区分配喷嘴，让细喷嘴的多层与粗喷嘴的一层在同一高度带的边界会合，然后双方再向上推进。 依据单厂工程说明，尚缺相同工件、材料和质量要求下的跨机型测试。",
       "gaps": [
         "拓竹首层排障页网页读取返回402，未取得当前正文；具体工艺和验收条件未补齐。",
         "创想三维确认后寄回时限仍有7/14天冲突，地区适用性及实际履约未验证。",
         "跨企业首次任务成功率、准备与恢复时间、维护成本缺少同任务可比证据。"
       ],
       "reviewedFields": [
-        "chain",
         "constraint",
-        "examples",
-        "team"
+        "metrics"
       ],
       "evidence": [
         {
-          "itemId": "creality-service-evidence",
-          "title": "创想三维售后：诊断材料与返寄确认也是交付接口",
+          "itemId": "rss-1ec82521027135bf",
+          "title": "拓竹解释 H3C 混合层高：把手工拆模型交给切片调度",
           "facts": [
             {
-              "claim": "支持流程要求产品购买信息及故障图片或视频。",
-              "sourceUrl": "https://store.creality.com/pages/return-policy",
-              "locator": "Solutions Provided by Creality 3D"
+              "claim": "切片引擎按动态层带组织不同喷嘴的层高。",
+              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "locator": "Our art of bricklaying"
             },
             {
-              "claim": "寄回前需先联系客服发起退货。",
-              "sourceUrl": "https://store.creality.com/pages/return-policy",
-              "locator": "Return Address下方说明"
+              "claim": "用户可用涂色工具或修改器框选择区域。",
+              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "locator": "Choose the region, hit Slice"
+            },
+            {
+              "claim": "其他三款设备的原生混合喷嘴支持仍在开发。",
+              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "locator": "文末支持计划"
             }
           ],
-          "boundary": "海外商店披露的流程，地区、渠道、产品及条款版本均有限制；只审读服务入口、诊断与退回条款，非整页法务审查，不判断法定权利或实际履约。",
+          "boundary": "已读厂商技术说明，未检查实现代码、版本发布记录或独立打印结果。不采纳“首款”“无妥协”等比较宣传，亦不把开发计划写成其他机型已经支持。",
           "sources": [
             {
-              "url": "https://store.creality.com/pages/return-policy",
-              "name": "创想三维官方资料",
-              "publishedAt": null,
-              "publisherGroup": "创想三维",
+              "url": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "name": "Bambu Lab Blog",
+              "publishedAt": "2026-11-09T10:48:22+00:00",
+              "publisherGroup": "Bambu Lab Blog",
               "role": "official",
-              "textHash": "855a4ed49f57aaac7be29d4685a8db6c360844614827305dfa06d47738a8e459",
-              "readAt": "2026-11-15T00:41:20.685531+00:00",
+              "textHash": "f0c113e14fc668a9ac0dce4c07738f2d80542ff98b6a16d8c3b95df805198df1",
+              "readAt": "2026-11-10T00:41:29.473888+00:00",
               "coverage": "body"
             }
           ]
@@ -1079,16 +1142,16 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "creality-service-evidence",
-          "url": "https://store.creality.com/pages/return-policy",
-          "checkedAt": "2026-11-17T10:38:27.688246+00:00",
+          "itemId": "rss-1ec82521027135bf",
+          "url": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+          "checkedAt": "2026-11-19T10:37:58.039489+00:00",
           "state": "body",
-          "note": "本轮实际读取当前正文，复核所列字段；其余证据缺口继续公开，未刷新完整复核期限。"
+          "note": "复读当前正文，核对本条所涉及的具体环节。依据单厂工程说明，尚缺相同工件、材料和质量要求下的跨机型测试。"
         }
       ],
-      "reviewedAt": "2026-11-17T10:40:23.696029+00:00",
+      "reviewedAt": "2026-11-19T10:43:04.558764+00:00",
       "patch": {
-        "constraint": "良率、准备时间、耗材和失败恢复 制造工具不能只按峰值速度比较；需看材料适配、真实任务耗时和型号特定的部署条件。专业焊接设备的使用前提不得与桌面创作设备混同。",
+        "constraint": "良率、准备时间、耗材和失败恢复 制造工具不能只按峰值速度比较；需看材料适配、真实任务耗时和型号特定的部署条件。专业焊接设备的使用前提不得与桌面创作设备混同。 在混合喷嘴的同一件模型内，线宽和层高分别影响细节与节拍；两区应在高度带边界重新对齐。此约束来自拓竹 H3C 案例。",
         "team": "运动控制、固件、结构、材料、切片软件、制造工程 涉及专业设备时，还需把现场交付、训练和安全责任接口纳入观察；具体职责取决于产品和使用场景。",
         "metrics": "第一次任务成功率；准备时间；废料；维护成本 比较前固定机型、材料、任务与质量要求，另列准备、加工、维护和失败恢复时间；尚无跨企业统一实测数据。"
       },
@@ -1115,60 +1178,59 @@
             "creality-service-evidence"
           ],
           "updatedAt": "2026-11-15T00:45:02.865869+00:00"
+        },
+        {
+          "id": "track-4-nov19e-rss-1ec82521027135bf",
+          "title": "双喷嘴混合层高的验收点在哪里",
+          "learning": "拓竹披露 H3C 切片软件分区分配喷嘴，让细喷嘴的多层与粗喷嘴的一层在同一高度带的边界会合，然后双方再向上推进。",
+          "application": "试印同一包含细节区与大面积区的样件，固定材料与质量要求，记录分区边界是否对齐、细节保留、整件工时与失败重打。",
+          "boundary": "依据单厂工程说明，尚缺相同工件、材料和质量要求下的跨机型测试。",
+          "itemIds": [
+            "rss-1ec82521027135bf"
+          ],
+          "updatedAt": "2026-11-19T10:43:04.558764+00:00"
         }
       ],
-      "updatedAt": "2026-11-15T00:45:02.865869+00:00"
+      "updatedAt": "2026-11-19T10:43:04.558764+00:00"
     },
     "chain-6": {
-      "attemptedAt": "2026-11-17T10:40:23.696029+00:00",
+      "attemptedAt": "2026-11-19T10:43:04.558764+00:00",
       "status": "partial",
-      "assessment": "补售罄率与库存计量版本，保留渠道进货、利润和具体企业结果缺口；没有用平台销售数替代终端用户需求。",
+      "assessment": "Shopify 将利润统计限定在售出时已有成本的商品和规格，按净销售额纳入折扣和退款。缺成本的成交会让两张报表的统计范围不同。 说明只适用于该平台报表。具体商户成本、经销商售出数据和渠道费用归集尚未核实。",
       "gaps": [
         "sell-in与多级经销渠道的统一归集、贡献利润成本范围仍待专门复核。",
         "未读取商户实际配置和企业库存数据；不能推断任何企业压货、滞销或利润变化。"
       ],
       "reviewedFields": [
-        "basics",
         "exercise",
-        "metrics",
-        "pitfall"
+        "metrics"
       ],
       "evidence": [
         {
-          "itemId": "shopify-sellthrough-inventory-scope",
-          "title": "渠道指标：售罄率需要同时记录库存口径与统计版本",
+          "itemId": "shopify-profit-cost-coverage",
+          "title": "促销后这款学习机到底赚了多少？先查利润报表漏掉了哪些订单",
           "facts": [
             {
-              "claim": "售罄率分母是售出数量与剩余库存之和。",
-              "sourceUrl": "https://help.shopify.com/en/manual/products/analytics",
-              "locator": "Analytics bar指标定义表"
+              "claim": "商品或规格售出时已登记成本，才能进入利润统计。",
+              "sourceUrl": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
+              "locator": "Adding cost per item"
             },
             {
-              "claim": "2026年10月1日及以后使用在手量；之前历史数据保持可售量口径。",
-              "sourceUrl": "https://changelog.shopify.com/posts/inventory-reports-now-show-on-hand-quantity",
-              "locator": "变更记录末段"
+              "claim": "期间的折扣和退款会影响毛利率。",
+              "sourceUrl": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
+              "locator": "Discounts and refunds"
             }
           ],
-          "boundary": "这是平台定义及8月公布的历史变更，非今日新闻；没有核对商户配置或任何硬件公司的销量、库存、渠道进货和利润。",
+          "boundary": "依据 Shopify 自身报表说明。公开资料没有给出国内学习机厂商的实际成本、返利合同、平台账期或单台贡献利润。",
           "sources": [
             {
-              "url": "https://help.shopify.com/en/manual/products/analytics",
-              "name": "Shopify官方帮助",
+              "url": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
+              "publisherGroup": "Shopify",
+              "name": "Shopify 帮助中心",
               "publishedAt": null,
-              "publisherGroup": "Shopify官方帮助",
               "role": "official",
-              "textHash": "6cba734d4c70e5d1285c8132fd6101af9aec251e38485ccb838ffee5ef956ea4",
-              "readAt": "2026-11-17T10:38:27.686369+00:00",
-              "coverage": "body"
-            },
-            {
-              "url": "https://changelog.shopify.com/posts/inventory-reports-now-show-on-hand-quantity",
-              "name": "Shopify官方变更记录",
-              "publishedAt": "2026-08-14",
-              "publisherGroup": "Shopify官方变更记录",
-              "role": "official",
-              "textHash": "53f6e0690fc14827e5b3020224247daead21db2f55280b3ded21a7f2a9ac6de3",
-              "readAt": "2026-11-17T10:38:27.686547+00:00",
+              "textHash": "92598227f465721c412d7e62a7d2784258feb7af53950b9e0fe008dc604f63ac",
+              "readAt": "2026-11-19T10:39:23.445990+00:00",
               "coverage": "body"
             }
           ]
@@ -1176,26 +1238,19 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "shopify-sellthrough-inventory-scope",
-          "url": "https://help.shopify.com/en/manual/products/analytics",
-          "checkedAt": "2026-11-17T10:38:27.686369+00:00",
+          "itemId": "shopify-profit-cost-coverage",
+          "url": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
+          "checkedAt": "2026-11-19T10:39:23.445990+00:00",
           "state": "body",
-          "note": "本轮实际读取当前正文，复核所列字段；其余证据缺口继续公开，未刷新完整复核期限。"
-        },
-        {
-          "itemId": "shopify-sellthrough-inventory-scope",
-          "url": "https://changelog.shopify.com/posts/inventory-reports-now-show-on-hand-quantity",
-          "checkedAt": "2026-11-17T10:38:27.686547+00:00",
-          "state": "body",
-          "note": "实际阅读8月发布的库存模型变更正文；10月起适用，历史数据不回写，非今日新增事件。"
+          "note": "复读当前正文，核对本条所涉及的具体环节。说明只适用于该平台报表。具体商户成本、经销商售出数据和渠道费用归集尚未核实。"
         }
       ],
-      "reviewedAt": "2026-11-17T10:40:23.696029+00:00",
+      "reviewedAt": "2026-11-19T10:43:04.558764+00:00",
       "patch": {
         "flow": "用户需求与库存 → 定价、渠道政策、交付承诺与终端反馈 还需核对销售主体、支持地区、购买凭证与设备序列号在售后受理中的衔接。",
         "team": "销售、市场、计划、零售、财务对齐销售预测、货盘、促销与退货规则。 XREAL 的公开流程提示渠道与服务之间存在购买证据交接；研究时应确认能否复用已授权订单信息，减少用户重复提交。",
         "exercise": "选一个销售活动，列出从备货到退货的责任与反馈，不只统计订单数。 选择一个具体渠道和地区，画出从购买承诺到问题处理的用户路径，记录需要重复提供的信息及尚未明确的责任。 对一次售罄率变化另列统计窗口、库存范围及模型版本，先排除统计变更再讨论备货和促销。",
-        "metrics": "网店转化率先确认分母：Shopify以购买会话占总会话计算，同一会话可含多笔订单。比较时固定期间、漏斗路径、过滤与计量版本；不能直接套到门店或经销商。贡献利润的退货、服务和渠道费用归集口径仍待专门复核。 售罄率另核库存分母：Shopify示例为售出数量/（售出数量+期末库存）；其2026年10月1日库存模型改变，跨期不能直接解释为经营变化。"
+        "metrics": "网店转化率先确认分母：Shopify以购买会话占总会话计算，同一会话可含多笔订单。比较时固定期间、漏斗路径、过滤与计量版本；不能直接套到门店或经销商。贡献利润的退货、服务和渠道费用归集口径仍待专门复核。 售罄率另核库存分母：Shopify示例为售出数量/（售出数量+期末库存）；其2026年10月1日库存模型改变，跨期不能直接解释为经营变化。 利润对账另核售出时成本字段覆盖的规格，并按净销售额核对折扣、退款和缺成本成交金额。"
       },
       "lessons": [
         {
@@ -1230,9 +1285,20 @@
             "shopify-sellthrough-inventory-scope"
           ],
           "updatedAt": "2026-11-17T10:40:23.696029+00:00"
+        },
+        {
+          "id": "chain-6-nov19e-shopify-profit-cost-coverage",
+          "title": "销售与利润报表先对齐订单范围",
+          "learning": "Shopify 将利润统计限定在售出时已有成本的商品和规格，按净销售额纳入折扣和退款。缺成本的成交会让两张报表的统计范围不同。",
+          "application": "渠道提交活动订单、规格与退款，财务列出售出时已有成本的订单，单列缺成本成交金额。进一步讨论贡献利润前，再确认返利、履约和售后由谁承担。",
+          "boundary": "说明只适用于该平台报表。具体商户成本、经销商售出数据和渠道费用归集尚未核实。",
+          "itemIds": [
+            "shopify-profit-cost-coverage"
+          ],
+          "updatedAt": "2026-11-19T10:43:04.558764+00:00"
         }
       ],
-      "updatedAt": "2026-11-17T10:40:23.696029+00:00"
+      "updatedAt": "2026-11-19T10:43:04.558764+00:00"
     },
     "track-0": {
       "attemptedAt": "2026-11-19T00:52:51.904150+00:00",
@@ -2269,6 +2335,28 @@
           "hash": "d3625ef10b04c2a72d1e9a2d2eea82e8078b6cf8bef0c35eb766be11e90ebf28",
           "decision": "integrated",
           "reason": "车企报送、协会评估与主管部门督导各有职责。对硬件企业的迁移思路，是让采购、财务和供应商对齐同一订单的验收、应付与到账记录。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-19T10:43:04.558764+00:00",
+      "reviewedNodes": [
+        "chain-1",
+        "chain-6",
+        "track-4"
+      ],
+      "decisions": [
+        {
+          "itemId": "task-success-criteria",
+          "hash": "237109c52cee97bc601b6fb48e9fe9b3b1c372dd81362196871327c99b9eaa3e",
+          "decision": "integrated",
+          "reason": "MakerWorld 活动安排合作机构用一个月打印入围模型，与任务简报中指明的使用者一起测试，并将反馈纳入评选。NN/g 给出了如何按任务结果记录完整与部分成功的方法。"
+        },
+        {
+          "itemId": "shopify-profit-cost-coverage",
+          "hash": "1c0d378c2bb9ae28530c6bb5e424a7c5c1b59d68190ff911c61349f1ee34945f",
+          "decision": "integrated",
+          "reason": "Shopify 将利润统计限定在售出时已有成本的商品和规格，按净销售额纳入折扣和退款。缺成本的成交会让两张报表的统计范围不同。"
         }
       ]
     }
@@ -8469,6 +8557,310 @@
           "checkedAt": "2026-11-19T00:48:46+00:00",
           "state": "body",
           "note": "实际复读原文，按原文范围检查。官方安排针对汽车行业，尚无证据证明某学习硬件公司采用相同制度。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-1",
+      "reviewedAt": "2026-11-19T10:43:04.558764+00:00",
+      "status": "partial",
+      "assessment": "MakerWorld 活动安排合作机构用一个月打印入围模型，与任务简报中指明的使用者一起测试，并将反馈纳入评选。NN/g 给出了如何按任务结果记录完整与部分成功的方法。 活动公告披露的是测试安排。尚无完成率、最终改版或内部授权资料。",
+      "gaps": [
+        "原始签核授权、量产结果及其他字段仍需独立资料。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "exercise",
+        "team"
+      ],
+      "changes": {
+        "basics": {
+          "before": "JTBD：研究人在特定处境下想取得的进步，包含功能、社会和情感维度。功能清单或人群标签不能单独替代需求证据。此处仅核对Christensen Institute定义片段，具体用户需求仍需访谈与任务观察。",
+          "after": "JTBD 关注人在具体处境下希望取得的进步，包含功能、社会和情感三个维度。访谈明确所求进步后，将其转成用户可完成、测试者可观察的任务；在参与者中分别报告完整成功和各类部分成功。"
+        },
+        "exercise": {
+          "before": "选一种学习设备，分别写出孩子要完成的学习任务、家长要完成的管理任务，以及操作入口和成功条件。Kindle说明区分儿童档案与设备本地限制，前者和后者的远程管理能力不同；实际需求仍需访谈与任务观察，不能由功能存在直接推断。",
+          "after": "选一种学习设备，分别写出孩子要完成的学习任务、家长要完成的管理任务，以及操作入口和成功条件。Kindle说明区分儿童档案与设备本地限制，前者和后者的远程管理能力不同；实际需求仍需访谈与任务观察，不能由功能存在直接推断。 让参与者按相同条件尝试一次任务，记录人数、需要协助的环节和最终结果。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "chain-1-nov19e-task-success-criteria",
+            "title": "在原型交给用户前写清验收任务",
+            "learning": "MakerWorld 活动安排合作机构用一个月打印入围模型，与任务简报中指明的使用者一起测试，并将反馈纳入评选。NN/g 给出了如何按任务结果记录完整与部分成功的方法。",
+            "application": "学习硬件试测可让产品与教研预先约定成功样例，测试人员按相同条件分别统计独立完成、需要协助和结果错误的人数；渠道演示记录保留为单独样本。",
+            "boundary": "活动公告披露的是测试安排。尚无完成率、最终改版或内部授权资料。",
+            "itemIds": [
+              "task-success-criteria",
+              "rss-73d3265f7743a41c",
+              "jtbd-circumstances"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "task-success-criteria",
+          "title": "孩子拍完题就算成功吗？教研和产品怎样约定一次任务的终点",
+          "facts": [
+            {
+              "claim": "完成率按参与者能否完成指定任务计算。",
+              "sourceUrl": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
+              "locator": "Measuring Success"
+            },
+            {
+              "claim": "遇到部分成功时，作者建议分级报告人数比例。",
+              "sourceUrl": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
+              "locator": "Reporting Levels of Success"
+            }
+          ],
+          "boundary": "原文用订花任务解释度量方法。拍题是学习硬件的应用示例，尚无竞品在这个任务上的测量结果或放行阈值。",
+          "sources": [
+            {
+              "url": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
+              "publisherGroup": "Nielsen Norman Group",
+              "name": "Jakob Nielsen 与 Raluca Budiu",
+              "publishedAt": "2001-02-17",
+              "role": "research",
+              "textHash": "cbe2047b44e0d15bb9a81b55a025eeb613a38c110a7c9adfe61742aa5d8ac7c3",
+              "readAt": "2026-11-19T10:39:23.443650+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "rss-73d3265f7743a41c",
+          "title": "MakerWorld 无障碍设计活动：由合作机构带入真实需求",
+          "facts": [
+            {
+              "claim": "活动围绕多项具体需求组织社区设计。",
+              "sourceUrl": "https://blog.bambulab.com/seven-organizations-one-maker-community-3d-printing-in-the-service-of-accessibility",
+              "locator": "正文定位：MakerWorld 无障碍设计活动：由合作机构带入真实需求"
+            }
+          ],
+          "boundary": "企业自行披露，未经独立结果核验；不据此推断销量、利润或组织效果。",
+          "sources": [
+            {
+              "name": "Bambu Lab Blog",
+              "url": "https://blog.bambulab.com/seven-organizations-one-maker-community-3d-printing-in-the-service-of-accessibility",
+              "publishedAt": "2026-09-15T10:08:41+00:00",
+              "publisherGroup": "Bambu Lab",
+              "role": "official",
+              "textHash": "e7a2157a67676287a0074a646c03fe27c45537c0aac4385ad92fd14212332292",
+              "readAt": "2026-11-05T10:27:51.052599+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "jtbd-circumstances",
+          "title": "需求研究先问具体处境与进步，不能只列功能",
+          "facts": [
+            {
+              "claim": "JTBD包含功能、社会和情感维度。",
+              "sourceUrl": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+              "locator": "Definition段落"
+            },
+            {
+              "claim": "概念强调特定处境下希望取得的进步。",
+              "sourceUrl": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+              "locator": "Definition段落"
+            }
+          ],
+          "boundary": "仅取得当前网页Definition片段；不等于完整方法论审阅，不据此推断国内硬件用户需求或企业成效。",
+          "sources": [
+            {
+              "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+              "name": "Christensen Institute官方资料",
+              "publishedAt": null,
+              "publisherGroup": "Christensen Institute",
+              "role": "official",
+              "textHash": "9c6f1c198d595232cfb7db26736e7eeb03427a2ad9d4ca423c90b149bd6361e9",
+              "readAt": "2026-11-14T00:44:10.709041+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "task-success-criteria",
+          "url": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
+          "checkedAt": "2026-11-19T10:39:23.443650+00:00",
+          "state": "body",
+          "note": "复读当前正文，核对本条所涉及的具体环节。活动公告披露的是测试安排。尚无完成率、最终改版或内部授权资料。"
+        },
+        {
+          "itemId": "rss-73d3265f7743a41c",
+          "url": "https://blog.bambulab.com/seven-organizations-one-maker-community-3d-printing-in-the-service-of-accessibility",
+          "checkedAt": "2026-11-19T10:37:57.480501+00:00",
+          "state": "body",
+          "note": "复读当前正文，核对本条所涉及的具体环节。活动公告披露的是测试安排。尚无完成率、最终改版或内部授权资料。"
+        },
+        {
+          "itemId": "jtbd-circumstances",
+          "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+          "checkedAt": "2026-11-19T10:37:57.480363+00:00",
+          "state": "body",
+          "note": "复读当前正文，核对本条所涉及的具体环节。活动公告披露的是测试安排。尚无完成率、最终改版或内部授权资料。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-6",
+      "reviewedAt": "2026-11-19T10:43:04.558764+00:00",
+      "status": "partial",
+      "assessment": "Shopify 将利润统计限定在售出时已有成本的商品和规格，按净销售额纳入折扣和退款。缺成本的成交会让两张报表的统计范围不同。 说明只适用于该平台报表。具体商户成本、经销商售出数据和渠道费用归集尚未核实。",
+      "gaps": [
+        "sell-in与多级经销渠道的统一归集、贡献利润成本范围仍待专门复核。",
+        "未读取商户实际配置和企业库存数据；不能推断任何企业压货、滞销或利润变化。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "metrics"
+      ],
+      "changes": {
+        "metrics": {
+          "before": "网店转化率先确认分母：Shopify以购买会话占总会话计算，同一会话可含多笔订单。比较时固定期间、漏斗路径、过滤与计量版本；不能直接套到门店或经销商。贡献利润的退货、服务和渠道费用归集口径仍待专门复核。 售罄率另核库存分母：Shopify示例为售出数量/（售出数量+期末库存）；其2026年10月1日库存模型改变，跨期不能直接解释为经营变化。",
+          "after": "网店转化率先确认分母：Shopify以购买会话占总会话计算，同一会话可含多笔订单。比较时固定期间、漏斗路径、过滤与计量版本；不能直接套到门店或经销商。贡献利润的退货、服务和渠道费用归集口径仍待专门复核。 售罄率另核库存分母：Shopify示例为售出数量/（售出数量+期末库存）；其2026年10月1日库存模型改变，跨期不能直接解释为经营变化。 利润对账另核售出时成本字段覆盖的规格，并按净销售额核对折扣、退款和缺成本成交金额。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "chain-6-nov19e-shopify-profit-cost-coverage",
+            "title": "销售与利润报表先对齐订单范围",
+            "learning": "Shopify 将利润统计限定在售出时已有成本的商品和规格，按净销售额纳入折扣和退款。缺成本的成交会让两张报表的统计范围不同。",
+            "application": "渠道提交活动订单、规格与退款，财务列出售出时已有成本的订单，单列缺成本成交金额。进一步讨论贡献利润前，再确认返利、履约和售后由谁承担。",
+            "boundary": "说明只适用于该平台报表。具体商户成本、经销商售出数据和渠道费用归集尚未核实。",
+            "itemIds": [
+              "shopify-profit-cost-coverage"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "shopify-profit-cost-coverage",
+          "title": "促销后这款学习机到底赚了多少？先查利润报表漏掉了哪些订单",
+          "facts": [
+            {
+              "claim": "商品或规格售出时已登记成本，才能进入利润统计。",
+              "sourceUrl": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
+              "locator": "Adding cost per item"
+            },
+            {
+              "claim": "期间的折扣和退款会影响毛利率。",
+              "sourceUrl": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
+              "locator": "Discounts and refunds"
+            }
+          ],
+          "boundary": "依据 Shopify 自身报表说明。公开资料没有给出国内学习机厂商的实际成本、返利合同、平台账期或单台贡献利润。",
+          "sources": [
+            {
+              "url": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
+              "publisherGroup": "Shopify",
+              "name": "Shopify 帮助中心",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "92598227f465721c412d7e62a7d2784258feb7af53950b9e0fe008dc604f63ac",
+              "readAt": "2026-11-19T10:39:23.445990+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "shopify-profit-cost-coverage",
+          "url": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
+          "checkedAt": "2026-11-19T10:39:23.445990+00:00",
+          "state": "body",
+          "note": "复读当前正文，核对本条所涉及的具体环节。说明只适用于该平台报表。具体商户成本、经销商售出数据和渠道费用归集尚未核实。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-4",
+      "reviewedAt": "2026-11-19T10:43:04.558764+00:00",
+      "status": "partial",
+      "assessment": "拓竹披露 H3C 切片软件分区分配喷嘴，让细喷嘴的多层与粗喷嘴的一层在同一高度带的边界会合，然后双方再向上推进。 依据单厂工程说明，尚缺相同工件、材料和质量要求下的跨机型测试。",
+      "gaps": [
+        "拓竹首层排障页网页读取返回402，未取得当前正文；具体工艺和验收条件未补齐。",
+        "创想三维确认后寄回时限仍有7/14天冲突，地区适用性及实际履约未验证。",
+        "跨企业首次任务成功率、准备与恢复时间、维护成本缺少同任务可比证据。"
+      ],
+      "reviewedFields": [
+        "constraint",
+        "metrics"
+      ],
+      "changes": {
+        "constraint": {
+          "before": "良率、准备时间、耗材和失败恢复 制造工具不能只按峰值速度比较；需看材料适配、真实任务耗时和型号特定的部署条件。专业焊接设备的使用前提不得与桌面创作设备混同。",
+          "after": "良率、准备时间、耗材和失败恢复 制造工具不能只按峰值速度比较；需看材料适配、真实任务耗时和型号特定的部署条件。专业焊接设备的使用前提不得与桌面创作设备混同。 在混合喷嘴的同一件模型内，线宽和层高分别影响细节与节拍；两区应在高度带边界重新对齐。此约束来自拓竹 H3C 案例。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "track-4-nov19e-rss-1ec82521027135bf",
+            "title": "双喷嘴混合层高的验收点在哪里",
+            "learning": "拓竹披露 H3C 切片软件分区分配喷嘴，让细喷嘴的多层与粗喷嘴的一层在同一高度带的边界会合，然后双方再向上推进。",
+            "application": "试印同一包含细节区与大面积区的样件，固定材料与质量要求，记录分区边界是否对齐、细节保留、整件工时与失败重打。",
+            "boundary": "依据单厂工程说明，尚缺相同工件、材料和质量要求下的跨机型测试。",
+            "itemIds": [
+              "rss-1ec82521027135bf"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "rss-1ec82521027135bf",
+          "title": "拓竹解释 H3C 混合层高：把手工拆模型交给切片调度",
+          "facts": [
+            {
+              "claim": "切片引擎按动态层带组织不同喷嘴的层高。",
+              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "locator": "Our art of bricklaying"
+            },
+            {
+              "claim": "用户可用涂色工具或修改器框选择区域。",
+              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "locator": "Choose the region, hit Slice"
+            },
+            {
+              "claim": "其他三款设备的原生混合喷嘴支持仍在开发。",
+              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "locator": "文末支持计划"
+            }
+          ],
+          "boundary": "已读厂商技术说明，未检查实现代码、版本发布记录或独立打印结果。不采纳“首款”“无妥协”等比较宣传，亦不把开发计划写成其他机型已经支持。",
+          "sources": [
+            {
+              "url": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "name": "Bambu Lab Blog",
+              "publishedAt": "2026-11-09T10:48:22+00:00",
+              "publisherGroup": "Bambu Lab Blog",
+              "role": "official",
+              "textHash": "f0c113e14fc668a9ac0dce4c07738f2d80542ff98b6a16d8c3b95df805198df1",
+              "readAt": "2026-11-10T00:41:29.473888+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "rss-1ec82521027135bf",
+          "url": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+          "checkedAt": "2026-11-19T10:37:58.039489+00:00",
+          "state": "body",
+          "note": "复读当前正文，核对本条所涉及的具体环节。依据单厂工程说明，尚缺相同工件、材料和质量要求下的跨机型测试。"
         }
       ]
     }
