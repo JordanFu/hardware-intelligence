@@ -1,8 +1,414 @@
 {
   "schemaVersion": 1,
-  "lastCompletedAt": "2026-11-19T10:42:34.026721+00:00",
+  "lastCompletedAt": "2026-11-20T00:44:39.113051+00:00",
   "method": "Codex 初筛评分 + 逐条证据复核；非两个独立模型评分",
   "items": [
+    {
+      "id": "m20-mof",
+      "eventId": "m20-mof",
+      "developmentId": "initial",
+      "titleZh": "商务部公布前十个月重点平台智能眼镜销售额，同比翻倍",
+      "originalTitle": "商务部消费促进司负责人谈2026年1-10月我国消费市场情况",
+      "companies": [],
+      "stages": [
+        "渠道与销售",
+        "需求与规划"
+      ],
+      "domestic": true,
+      "publishedAt": "2026-11-19T16:18:00+08:00",
+      "kind": "新闻",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "商务部披露，1 至 10 月重点平台智能眼镜销售额同比增长一倍。外骨骼助力器和具身智能机器人在这一口径下也实现增长。",
+        "points": [
+          "同一段披露中，外骨骼助力器销售额同比增长 44.4%，具身智能机器人增长 25.2%。",
+          "限额以上单位通讯器材和文化办公用品是另一套统计对象，不能和重点平台智能设备数据相加。"
+        ]
+      },
+      "boundary": "未披露平台清单、绝对额、平均售价与销量，不能推出全渠道市场份额或某品牌销量变化。",
+      "meaning": "做渠道复盘时要同时记录统计主体、期间和单位，再判断销售额增长来自订单量、成交价还是产品结构。",
+      "question": "相同平台与型号的成交量、成交价和退货口径能否取得？",
+      "eventReason": "商务部公布前十个月重点平台智能眼镜销售额，同比翻倍",
+      "selection": {
+        "scores": {
+          "相关性": 18,
+          "增量信息": 18,
+          "证据质量": 20,
+          "机制清晰": 15,
+          "可行动性": 15
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "同比翻倍的指标限定为重点平台的智能眼镜销售金额。 未披露平台清单、绝对额、平均售价与销量，不能推出全渠道市场份额或某品牌销量变化。"
+        }
+      },
+      "practices": [
+        {
+          "title": "商务部公布前十个月重点平台智能眼镜销售额，同比翻倍",
+          "method": "做渠道复盘时要同时记录统计主体、期间和单位，再判断销售额增长来自订单量、成交价还是产品结构。",
+          "conditions": "限额以上单位通讯器材和文化办公用品是另一套统计对象，不能和重点平台智能设备数据相加。",
+          "outcome": "未披露平台清单、绝对额、平均售价与销量，不能推出全渠道市场份额或某品牌销量变化。",
+          "boundary": "未披露平台清单、绝对额、平均售价与销量，不能推出全渠道市场份额或某品牌销量变化。",
+          "nextCheck": "相同平台与型号的成交量、成交价和退货口径能否取得？",
+          "stages": [
+            "渠道与销售",
+            "需求与规划"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "同比翻倍的指标限定为重点平台的智能眼镜销售金额。",
+          "sourceUrl": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_0126b1d7c4124d7093738dafaf5ab667.html",
+          "locator": "第三部分 新型消费较快增长"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_0126b1d7c4124d7093738dafaf5ab667.html",
+          "publisherGroup": "商务部消费促进司",
+          "name": "商务部消费促进司",
+          "publishedAt": "2026-11-19T16:18:00+08:00",
+          "role": "official",
+          "textHash": "0bc4351d44ac2fc13f22b56e2f0457260cf9762841cd214fbcbbed11d09920bf",
+          "readAt": "2026-11-20T00:39:18.947749+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 86,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-20T00:43:29.285485+00:00",
+      "sourceDate": "2026-11-19T16:18:00+08:00",
+      "date": "2026-11-19T16:18:00+08:00",
+      "title": "商务部公布前十个月重点平台智能眼镜销售额，同比翻倍",
+      "summary": "商务部披露，1 至 10 月重点平台智能眼镜销售额同比增长一倍。外骨骼助力器和具身智能机器人在这一口径下也实现增长。"
+    },
+    {
+      "id": "m20-nand",
+      "eventId": "m20-nand",
+      "developmentId": "initial",
+      "titleZh": "NAND 现货与合约出现分化，采购预算该看哪个价格？",
+      "originalTitle": "NAND Flash Prices Set to Decline in 2027",
+      "companies": [
+        "TrendForce"
+      ],
+      "stages": [
+        "供应链与采购",
+        "需求与规划"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-19",
+      "kind": "新闻",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "集邦科技在 11 月 19 日的预测中调低了 NAND 合约价涨幅。它估计四季度合约价仍将环比上涨 8%–13%，而分销端现货已出现超过 20% 的回调。",
+        "points": [
+          "研究机构预计，中国云服务商削减的企业级 SSD 订单量可能超过北美新增需求，叠加供给扩大，2027 年一季度整体合约价预计环比持平至下跌 5%。",
+          "学习机采购可以把短期现货补单与下季度已签交付分开看，并向供应商确认容量、料号、币种与账期。"
+        ]
+      },
+      "boundary": "这是研究机构的市场估计。未取得学习机厂商的合同价，也没有证据把此次价格变化归因于 DRAM 诉讼。",
+      "meaning": "同一周的现货回落和当季合约价上涨可以并存。把两类报价列在同一张采购表时应注明采购层级、期间和交付条件。",
+      "question": "目前预测有多少容量已锁价？哪些规格需要在合同续签时重新报价？",
+      "eventReason": "NAND 现货与合约出现分化，采购预算该看哪个价格？",
+      "selection": {
+        "scores": {
+          "相关性": 20,
+          "增量信息": 19,
+          "证据质量": 17,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "集邦给出下一季度 NAND 合约价格预测区间。 这是研究机构的市场估计。未取得学习机厂商的合同价，也没有证据把此次价格变化归因于 DRAM 诉讼。"
+        }
+      },
+      "impactLevel": "industry-wide",
+      "impactReason": "同一周的现货回落和当季合约价上涨可以并存。把两类报价列在同一张采购表时应注明采购层级、期间和交付条件。",
+      "practices": [
+        {
+          "title": "NAND 现货与合约出现分化，采购预算该看哪个价格？",
+          "method": "同一周的现货回落和当季合约价上涨可以并存。把两类报价列在同一张采购表时应注明采购层级、期间和交付条件。",
+          "conditions": "学习机采购可以把短期现货补单与下季度已签交付分开看，并向供应商确认容量、料号、币种与账期。",
+          "outcome": "这是研究机构的市场估计。未取得学习机厂商的合同价，也没有证据把此次价格变化归因于 DRAM 诉讼。",
+          "boundary": "这是研究机构的市场估计。未取得学习机厂商的合同价，也没有证据把此次价格变化归因于 DRAM 诉讼。",
+          "nextCheck": "目前预测有多少容量已锁价？哪些规格需要在合同续签时重新报价？",
+          "stages": [
+            "供应链与采购",
+            "需求与规划"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "集邦给出下一季度 NAND 合约价格预测区间。",
+          "sourceUrl": "https://www.trendforce.com/presscenter/news/20261119-13314.html",
+          "locator": "Looking ahead to 2027 段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.trendforce.com/presscenter/news/20261119-13314.html",
+          "publisherGroup": "TrendForce",
+          "name": "TrendForce 存储产业调查原文",
+          "publishedAt": "2026-11-19",
+          "role": "research",
+          "textHash": "aaec68d6ba8382e7bb0338f8502448ba97deb2f34cff34051ba2f716edfd6738",
+          "readAt": "2026-11-20T00:37:58.409802+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 92,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-20T00:43:29.284435+00:00",
+      "sourceDate": "2026-11-19",
+      "date": "2026-11-19",
+      "title": "NAND 现货与合约出现分化，采购预算该看哪个价格？",
+      "summary": "集邦科技在 11 月 19 日的预测中调低了 NAND 合约价涨幅。它估计四季度合约价仍将环比上涨 8%–13%，而分销端现货已出现超过 20% 的回调。"
+    },
+    {
+      "id": "m20-gov",
+      "eventId": "e18-bis",
+      "developmentId": "published-effective",
+      "titleZh": "美国先进芯片远程算力规则正式刊登并于 11 月 19 日生效",
+      "originalTitle": "Addressing Remote Access to Advanced Semiconductors; Interim Final Rule",
+      "companies": [
+        "美国商务部"
+      ],
+      "stages": [
+        "供应链与采购",
+        "质量与合规",
+        "经营与组织"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-19",
+      "kind": "新闻",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "美国《联邦公报》正式刊登 BIS 临时最终规则。此前本站跟踪的是预发布文件，本次正式文本给出了生效日和公众意见截止日。",
+        "points": [
+          "生效日为 2026 年 11 月 19 日，意见须于 2027 年 1 月 19 日前送达 BIS。",
+          "该规则涉及特定先进计算器件和海外数据中心的远程算力供应。适用范围及例外需要按交易、最终用户和具体条款核对。"
+        ]
+      },
+      "boundary": "本次审读正式文本的摘要与日期段。没有核验某家厂商交易，也没有观察到特定客户已停供。",
+      "meaning": "供应商合规团队可用正式日期区分已生效义务和仍可提交意见的窗口，再按具体订单核对交付条件。",
+      "question": "正在交付的具体物项、用途和目的地是否落在文件所列范围内？",
+      "eventReason": "美国先进芯片远程算力规则正式刊登并于 11 月 19 日生效",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 20,
+          "机制清晰": 17,
+          "可行动性": 19
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "正式文件的日期段明确生效日。 本次审读正式文本的摘要与日期段。没有核验某家厂商交易，也没有观察到特定客户已停供。"
+        }
+      },
+      "impactLevel": "industry-wide",
+      "impactReason": "供应商合规团队可用正式日期区分已生效义务和仍可提交意见的窗口，再按具体订单核对交付条件。",
+      "newDevelopment": true,
+      "developmentReason": "相对11月预览文件，11月19日已正式刊登并生效，正式文本给出2027年1月19日意见截止时间。",
+      "facts": [
+        {
+          "claim": "正式文件的日期段明确生效日。",
+          "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-11-19/html/2026-23529.htm",
+          "locator": "联邦公报第 74970 页 DATES"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-2026-11-19/html/2026-23529.htm",
+          "publisherGroup": "美国商务部 BIS",
+          "name": "美国商务部 BIS",
+          "publishedAt": "2026-11-19",
+          "role": "official",
+          "textHash": "be25a586a22f1a8f43b7846d35ec48d1aad4873ebcedfe624899285b9bf2a385",
+          "readAt": "2026-11-20T00:39:55.447231+00:00",
+          "coverage": "excerpt"
+        }
+      ],
+      "score": 92,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-20T00:43:29.285026+00:00",
+      "sourceDate": "2026-11-19",
+      "date": "2026-11-19",
+      "title": "美国先进芯片远程算力规则正式刊登并于 11 月 19 日生效",
+      "summary": "美国《联邦公报》正式刊登 BIS 临时最终规则。此前本站跟踪的是预发布文件，本次正式文本给出了生效日和公众意见截止日。"
+    },
+    {
+      "id": "m20-tool",
+      "eventId": "m20-tool",
+      "developmentId": "initial",
+      "titleZh": "从数字卡尺到计算器，约 22.94 万件工具因纽扣电池可被儿童取出而召回",
+      "originalTitle": "Hultafors Group North America Recalls Lighted Portfolios, Angle Locators, Calipers and Calculators",
+      "companies": [
+        "Hultafors Group North America"
+      ],
+      "stages": [
+        "质量与合规",
+        "服务与生命周期",
+        "渠道与销售"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-19",
+      "kind": "新闻",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "CPSC 公告将多种工具纳入召回。儿童能接触到纽扣电池，产品和包装警示也有缺项。公告逐型号列出设备和包装上可用来识别它的位置。",
+        "points": [
+          "不同型号的标识可能在正面、背面或尺身。用户可以依据实物核对，再向召回方提交照片及处置声明。",
+          "经核验后，消费者按公告所列零售价获得虚拟礼品卡。公告列明当时未收到事故或伤害报告。"
+        ]
+      },
+      "boundary": "数量与处置安排限于该次美国召回。未披露已退款数量或全部消费者的实际处置结果。",
+      "meaning": "质量团队核定受影响型号之后，渠道和客服仍需能用顾客手上的实物辨认型号。可在放行记录里保留外观、型号位置与包装版次。",
+      "question": "丢弃包装后能否从实物识别型号？通知、登记、核验和退款分别有多少已完成？",
+      "eventReason": "从数字卡尺到计算器，约 22.94 万件工具因纽扣电池可被儿童取出而召回",
+      "selection": {
+        "scores": {
+          "相关性": 18,
+          "增量信息": 18,
+          "证据质量": 20,
+          "机制清晰": 19,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "召回方给出了产品和包装的型号识别依据。 数量与处置安排限于该次美国召回。未披露已退款数量或全部消费者的实际处置结果。"
+        }
+      },
+      "practices": [
+        {
+          "title": "从数字卡尺到计算器，约 22.94 万件工具因纽扣电池可被儿童取出而召回",
+          "method": "质量团队核定受影响型号之后，渠道和客服仍需能用顾客手上的实物辨认型号。可在放行记录里保留外观、型号位置与包装版次。",
+          "conditions": "经核验后，消费者按公告所列零售价获得虚拟礼品卡。公告列明当时未收到事故或伤害报告。",
+          "outcome": "数量与处置安排限于该次美国召回。未披露已退款数量或全部消费者的实际处置结果。",
+          "boundary": "数量与处置安排限于该次美国召回。未披露已退款数量或全部消费者的实际处置结果。",
+          "nextCheck": "丢弃包装后能否从实物识别型号？通知、登记、核验和退款分别有多少已完成？",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期",
+            "渠道与销售"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "召回方给出了产品和包装的型号识别依据。",
+          "sourceUrl": "https://www.cpsc.gov/Recalls/2027/Hultafors-Group-North-America-Recalls-Lighted-Portfolios-Angle-Locators-Calipers-and-Calculators-Due-to-Risk-of-Serious-Injury-or-Death-from-Battery-Ingestion-Violate-Mandatory-Standard-for-Consumer-Products-with-Button-Cell-Batteries",
+          "locator": "Recall Details 型号表与 Remedy"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Recalls/2027/Hultafors-Group-North-America-Recalls-Lighted-Portfolios-Angle-Locators-Calipers-and-Calculators-Due-to-Risk-of-Serious-Injury-or-Death-from-Battery-Ingestion-Violate-Mandatory-Standard-for-Consumer-Products-with-Button-Cell-Batteries",
+          "publisherGroup": "美国消费品安全委员会 CPSC",
+          "name": "美国消费品安全委员会 CPSC",
+          "publishedAt": "2026-11-19",
+          "role": "official",
+          "textHash": "dc8cad0341b0ee1a0f48a1dafa6cf419661a62aaf01107af5c84597ec45b407b",
+          "readAt": "2026-11-20T00:37:57.372356+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 93,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-20T00:43:29.286834+00:00",
+      "sourceDate": "2026-11-19",
+      "date": "2026-11-19",
+      "title": "从数字卡尺到计算器，约 22.94 万件工具因纽扣电池可被儿童取出而召回",
+      "summary": "CPSC 公告将多种工具纳入召回。儿童能接触到纽扣电池，产品和包装警示也有缺项。公告逐型号列出设备和包装上可用来识别它的位置。"
+    },
+    {
+      "id": "m20-battery",
+      "eventId": "m20-battery",
+      "developmentId": "initial",
+      "titleZh": "ororo 召回部分 PD10K-Pro 电池包，范围细到序列号前缀",
+      "originalTitle": "Ororo Recalls Rechargeable Lithium-Ion Battery Packs",
+      "companies": [
+        "ororo"
+      ],
+      "stages": [
+        "质量与合规",
+        "服务与生命周期"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-19",
+      "kind": "新闻",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "美国公告列出受影响的电池型号及四组序列号前缀。使用同一型号的用户可按电池背面的标识进一步判断，召回方要求停止使用涉召回电池并登记退款。",
+        "points": [
+          "公告涉及约 269 件美国售出产品，另有约 24 件在加拿大售出。",
+          "当时收到一宗过热报告，未报告人员受伤。登记后的安全处置按当地要求进行，公告提醒先确认回收点能否接收召回电池。"
+        ]
+      },
+      "boundary": "范围限该型号和指定序列号。公告数量是涉及的产品数量，未公布退款或处置完成率。",
+      "meaning": "客服核对具体电池标识后，再按购买地区提供对应的登记和安全处置说明。",
+      "question": "用户能否通过电池本体找到型号与序列号，登记之后如何核对处置与退款进度？",
+      "eventReason": "ororo 召回部分 PD10K-Pro 电池包，范围细到序列号前缀",
+      "selection": {
+        "scores": {
+          "相关性": 16,
+          "增量信息": 16,
+          "证据质量": 20,
+          "机制清晰": 16,
+          "可行动性": 16
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "公告给出电池型号和需进一步核对的序列号。 范围限该型号和指定序列号。公告数量是涉及的产品数量，未公布退款或处置完成率。"
+        }
+      },
+      "facts": [
+        {
+          "claim": "公告给出电池型号和需进一步核对的序列号。",
+          "sourceUrl": "https://www.cpsc.gov/Recalls/2027/Ororo-Recalls-Rechargeable-Lithium-Ion-Battery-Packs-Due-to-Risk-of-Serious-Injury-from-Fire-and-Burn-Hazards",
+          "locator": "Recall Details · Description"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Recalls/2027/Ororo-Recalls-Rechargeable-Lithium-Ion-Battery-Packs-Due-to-Risk-of-Serious-Injury-from-Fire-and-Burn-Hazards",
+          "publisherGroup": "美国消费品安全委员会 CPSC",
+          "name": "美国消费品安全委员会 CPSC",
+          "publishedAt": "2026-11-19",
+          "role": "official",
+          "textHash": "d1e9b611fea19e6626fb9f47c15865d5ec9ee4f0c1d00671848af0eb82d8fc1e",
+          "readAt": "2026-11-20T00:37:57.445251+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 84,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-20T00:43:29.290820+00:00",
+      "sourceDate": "2026-11-19",
+      "date": "2026-11-19",
+      "title": "ororo 召回部分 PD10K-Pro 电池包，范围细到序列号前缀",
+      "summary": "美国公告列出受影响的电池型号及四组序列号前缀。使用同一型号的用户可按电池背面的标识进一步判断，召回方要求停止使用涉召回电池并登记退款。"
+    },
     {
       "id": "rss-cbe541898e205d5c",
       "eventId": "rss-cbe541898e205d5c",
@@ -84,6 +490,75 @@
       "date": "2026-11-18T15:15:35+00:00",
       "title": "哈啰 Robotaxi 调整模型、评测与数据团队，量产交付另有负责人",
       "summary": "据 IT 之家转述蓝鲸汽车向哈啰确认的信息，模型开发、系统方案与评测、数据平台相关团队合并，由 CEO 负责新部门。CTO 负责 AI 原生车、二代车及量产工程交付。"
+    },
+    {
+      "id": "m20-jedec",
+      "eventId": "m20-jedec",
+      "developmentId": "initial",
+      "titleZh": "JEDEC 预告 DDR6 架构：总线加宽，整机收益仍需实测",
+      "originalTitle": "JEDEC Previews Next-Generation DDR6 DRAM",
+      "companies": [
+        "JEDEC"
+      ],
+      "stages": [
+        "研发与系统",
+        "供应链与采购"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-18T11:00:00-05:00",
+      "kind": "新闻",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "JEDEC 通过新闻稿披露仍在制定的 DDR6 设计计划。目标架构把数据总线从 64 扩到 96 条，并以更高数据速率提升带宽。",
+        "points": [
+          "计划中的 DDR6 RDIMM 起始速率为 12.8 GT/s，路线图延伸至 14.4 GT/s 及以上。",
+          "JEDEC 专门区分了带宽目标和应用性能。内存接口指标不能直接推算学习终端某一任务的耗时。"
+        ]
+      },
+      "boundary": "来源为 JEDEC 经 Business Wire 分发的原始声明。正式标准、具体供货期和终端收益尚待验证。",
+      "meaning": "做架构预研时可把草案参数、正式标准、供应商样片和自家任务测试分列，避免把带宽目标当采购承诺。",
+      "question": "何时有最终规范和可以按同一负载验证的整机样本？",
+      "eventReason": "JEDEC 预告 DDR6 架构：总线加宽，整机收益仍需实测",
+      "selection": {
+        "scores": {
+          "相关性": 18,
+          "增量信息": 18,
+          "证据质量": 19,
+          "机制清晰": 17,
+          "可行动性": 15
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "预告披露总线宽度从 64 增至 96。 来源为 JEDEC 经 Business Wire 分发的原始声明。正式标准、具体供货期和终端收益尚待验证。"
+        }
+      },
+      "facts": [
+        {
+          "claim": "预告披露总线宽度从 64 增至 96。",
+          "sourceUrl": "https://wgem.marketminute.com/article/bizwire-2026-11-18-jedec-previews-next-generation-ddr6-dram-higher-performance-greater-capacity-improved-power-efficiency-and-data-center-class-reliability",
+          "locator": "Wider bus 小节"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://wgem.marketminute.com/article/bizwire-2026-11-18-jedec-previews-next-generation-ddr6-dram-higher-performance-greater-capacity-improved-power-efficiency-and-data-center-class-reliability",
+          "publisherGroup": "JEDEC",
+          "name": "JEDEC 新闻稿（Business Wire 分发，WGEM 刊载）",
+          "publishedAt": "2026-11-18T11:00:00-05:00",
+          "role": "official",
+          "textHash": "d96bd7d421c7be9546ac261adf2ca4d77bb34e07359d966679746975e096460b",
+          "readAt": "2026-11-20T00:37:59.859693+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 87,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-20T00:43:29.286119+00:00",
+      "sourceDate": "2026-11-18T11:00:00-05:00",
+      "date": "2026-11-18T11:00:00-05:00",
+      "title": "JEDEC 预告 DDR6 架构：总线加宽，整机收益仍需实测",
+      "summary": "JEDEC 通过新闻稿披露仍在制定的 DDR6 设计计划。目标架构把数据总线从 64 扩到 96 条，并以更高数据速率提升带宽。"
     },
     {
       "id": "e18-spot",
@@ -336,6 +811,77 @@
       "date": "2026-11-18",
       "title": "芯片设计优化怎么验收：功能等价、模块面积和整片表现分开看",
       "summary": "OpenAI 披露了两类工程证据。在 Jalapeño 上，团队估计向量和矩阵单元的标准单元面积分别减少约 13% 和 10%；在 AMD 项目中，部分修改已进入送交制造的设计。"
+    },
+    {
+      "id": "m20-oled",
+      "eventId": "m20-oled",
+      "developmentId": "initial",
+      "titleZh": "三季度 OLED 显示器出货同比翻倍，三星份额下降但出货量相对平稳",
+      "originalTitle": "Global OLED Monitor Shipments Double YoY in 3Q26",
+      "companies": [
+        "华硕",
+        "微星",
+        "三星"
+      ],
+      "stages": [
+        "渠道与销售",
+        "供应链与采购"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-18",
+      "kind": "新闻",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "集邦调查显示，全球 OLED 显示器三季度出货环比增 13%，同比翻倍。上游面板供给充足，让更多品牌有货可出。",
+        "points": [
+          "华硕仍居首位，微星升至第二；三星以 11.3% 的份额居第三。",
+          "报告称三星前三季度出货相对平稳。整体市场扩张会稀释份额，单看排名容易误判自身销量。"
+        ]
+      },
+      "boundary": "研究机构的品牌出货估算；终端实销、库存和渠道利润未披露。",
+      "meaning": "复盘要同时看本品牌出货量、全市场出货量与渠道实销，分别核查变化的分子与分母。",
+      "question": "渠道实际售出量和库存能否与品牌发货按同一期间对上？",
+      "eventReason": "三季度 OLED 显示器出货同比翻倍，三星份额下降但出货量相对平稳",
+      "selection": {
+        "scores": {
+          "相关性": 17,
+          "增量信息": 17,
+          "证据质量": 17,
+          "机制清晰": 17,
+          "可行动性": 16
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "调查将三星份额下滑与整体市场扩张联系起来。 研究机构的品牌出货估算；终端实销、库存和渠道利润未披露。"
+        }
+      },
+      "facts": [
+        {
+          "claim": "调查将三星份额下滑与整体市场扩张联系起来。",
+          "sourceUrl": "https://www.trendforce.com/presscenter/news/20261118-13311.html",
+          "locator": "Samsung slipped to third place 段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.trendforce.com/presscenter/news/20261118-13311.html",
+          "publisherGroup": "TrendForce",
+          "name": "TrendForce",
+          "publishedAt": "2026-11-18",
+          "role": "research",
+          "textHash": "4d734723605bd4610a7c1a1b75f56e443b9176dfeebbbd42e12c8c4c5f8d4522",
+          "readAt": "2026-11-20T00:37:58.422932+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 84,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-20T00:43:29.287441+00:00",
+      "sourceDate": "2026-11-18",
+      "date": "2026-11-18",
+      "title": "三季度 OLED 显示器出货同比翻倍，三星份额下降但出货量相对平稳",
+      "summary": "集邦调查显示，全球 OLED 显示器三季度出货环比增 13%，同比翻倍。上游面板供给充足，让更多品牌有货可出。"
     },
     {
       "id": "rss-8f436ef391e4e973",
@@ -4877,6 +5423,110 @@
       "summary": "追觅官方招聘索引中的产品总监岗位，面向智能影像产品，职责包括路线规划、生命周期、团队建设和资源协调。索引日期为 4 月 7 日；本次作为职责样本补录，不作为团队近期扩张的证据。"
     },
     {
+      "id": "m20-job-6c6331e12e6b4c66",
+      "eventId": "m20-job-6c6331e12e6b4c66",
+      "developmentId": "initial",
+      "titleZh": "小猿硬件研发岗如何把一次试产故障带回设计评审",
+      "originalTitle": "2026届春招-硬件研发工程师",
+      "companies": [
+        "猿辅导（小猿）"
+      ],
+      "stages": [
+        "研发与系统",
+        "制造与交付",
+        "质量与合规"
+      ],
+      "domestic": true,
+      "publishedAt": "2026-03-04",
+      "kind": "历史案例",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "小猿这份岗位把器件选型、模块到整机测试、试产失效分析写进同一份职责。项目出现故障时，可以沿设计假设、测试记录与整改对策追查，而不仅记录一句“样机通过”。",
+        "points": [
+          "岗位要求设计和执行测试用例、分析结果，并参与 PCB Layout 等设计评审。",
+          "用于学习硬件时，可以选一个故障追问：在哪一级首次复现、改了什么、同一用例复测留下了什么证据。后一个问题是研究者的迁移示例。"
+        ]
+      },
+      "boundary": "历史春招岗位正文当前可读。岗位要求不能证明企业最终放行权限、团队人数、执行效果或特定型号使用了该流程。",
+      "meaning": "一次评审若同时保留故障发生层级、测试用例、设计改动和复测记录，测试和硬件团队就能核对同一个问题。",
+      "question": "谁决定试产异常可以放行？是否保留同配置复测和签字记录？",
+      "eventReason": "小猿硬件研发岗如何把一次试产故障带回设计评审",
+      "selection": {
+        "scores": {
+          "相关性": 20,
+          "增量信息": 16,
+          "证据质量": 18,
+          "机制清晰": 19,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "岗位明列试产问题的失效分析和整改职责。 历史春招岗位正文当前可读。岗位要求不能证明企业最终放行权限、团队人数、执行效果或特定型号使用了该流程。"
+        }
+      },
+      "practices": [
+        {
+          "title": "小猿硬件研发岗如何把一次试产故障带回设计评审",
+          "method": "一次评审若同时保留故障发生层级、测试用例、设计改动和复测记录，测试和硬件团队就能核对同一个问题。",
+          "conditions": "用于学习硬件时，可以选一个故障追问：在哪一级首次复现、改了什么、同一用例复测留下了什么证据。后一个问题是研究者的迁移示例。",
+          "outcome": "历史春招岗位正文当前可读。岗位要求不能证明企业最终放行权限、团队人数、执行效果或特定型号使用了该流程。",
+          "boundary": "历史春招岗位正文当前可读。岗位要求不能证明企业最终放行权限、团队人数、执行效果或特定型号使用了该流程。",
+          "nextCheck": "谁决定试产异常可以放行？是否保留同配置复测和签字记录？",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "organization": [
+        {
+          "title": "小猿硬件研发岗如何把一次试产故障带回设计评审",
+          "kind": "已披露机制",
+          "observation": "小猿这份岗位把器件选型、模块到整机测试、试产失效分析写进同一份职责。项目出现故障时，可以沿设计假设、测试记录与整改对策追查，而不仅记录一句“样机通过”。",
+          "implication": "一次评审若同时保留故障发生层级、测试用例、设计改动和复测记录，测试和硬件团队就能核对同一个问题。",
+          "boundary": "历史春招岗位正文当前可读。岗位要求不能证明企业最终放行权限、团队人数、执行效果或特定型号使用了该流程。",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "educationCategories": [
+        "tablet"
+      ],
+      "facts": [
+        {
+          "claim": "岗位明列试产问题的失效分析和整改职责。",
+          "sourceUrl": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "locator": "职位描述 · 工作内容"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "publisherGroup": "小猿官方校园招聘",
+          "name": "小猿官方校园招聘",
+          "publishedAt": "2026-03-04",
+          "role": "official",
+          "textHash": "2c8e92aeec8845f458bdc658e6f76ca865dda8ad852ef8c28ee8de426eea753f",
+          "readAt": "2026-11-20T00:38:04.217367+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 91,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-20T00:43:29.289394+00:00",
+      "sourceDate": "2026-03-04",
+      "date": "2026-03-04",
+      "title": "小猿硬件研发岗如何把一次试产故障带回设计评审",
+      "summary": "小猿这份岗位把器件选型、模块到整机测试、试产失效分析写进同一份职责。项目出现故障时，可以沿设计假设、测试记录与整改对策追查，而不仅记录一句“样机通过”。"
+    },
+    {
       "id": "xtool-material-guide",
       "eventId": "xtool-material-guide",
       "developmentId": "initial",
@@ -4970,6 +5620,98 @@
       "date": "2025-02-10",
       "title": "xTool 工艺指南：标称速度不等于实际加工速度",
       "summary": "xTool 材料加工指南把材料、光源、焦点、运动结构和软件设置放在一起解释。对研发与产品团队，更有用的启发是固定任务条件后再谈性能，而不是直接把最高运动速度转成产能承诺。"
+    },
+    {
+      "id": "m20-reader",
+      "eventId": "m20-reader",
+      "developmentId": "initial",
+      "titleZh": "阅读器换了账号，哪部分书还在？从掌阅旧版系统看同步验收",
+      "originalTitle": "掌阅 iReader 电纸书更新 SmartOS 2.4",
+      "companies": [
+        "掌阅"
+      ],
+      "stages": [
+        "需求与规划",
+        "服务与生命周期",
+        "研发与系统"
+      ],
+      "domestic": true,
+      "publishedAt": "2024-11-18T15:28:00+08:00",
+      "kind": "历史案例",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "2024 年的 SmartOS 2.4 更新说明把云同步限定在账号维度。书架里看得到一本书，并不能说明它已上传，也不能据此承诺换设备后一定找得回。",
+        "points": [
+          "报道列出私密书籍不上传，并说明可从书籍右上角查看上传状态。",
+          "交给测试与客服的样例可以覆盖同账号换机、切换账号、私密书和未上传的书。在每种情形分别核对源文件、账号和本地可读状态。"
+        ]
+      },
+      "boundary": "这是特定历史版本的媒体转述，未列出机型。当前固件行为、笔记能否恢复及恢复成功率待实测。",
+      "meaning": "设备、账号服务与客服需要共同确认用户究竟要找回哪本书、登录了哪个账号，以及文件是否曾经成功上传。",
+      "question": "换机前能否明确看到哪些文件已备份，哪些仍只在本机？",
+      "eventReason": "阅读器换了账号，哪部分书还在？从掌阅旧版系统看同步验收",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 15,
+          "证据质量": 15,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "当次报道明确区分按账号与按设备同步。 这是特定历史版本的媒体转述，未列出机型。当前固件行为、笔记能否恢复及恢复成功率待实测。"
+        }
+      },
+      "practices": [
+        {
+          "title": "阅读器换了账号，哪部分书还在？从掌阅旧版系统看同步验收",
+          "method": "设备、账号服务与客服需要共同确认用户究竟要找回哪本书、登录了哪个账号，以及文件是否曾经成功上传。",
+          "conditions": "交给测试与客服的样例可以覆盖同账号换机、切换账号、私密书和未上传的书。在每种情形分别核对源文件、账号和本地可读状态。",
+          "outcome": "这是特定历史版本的媒体转述，未列出机型。当前固件行为、笔记能否恢复及恢复成功率待实测。",
+          "boundary": "这是特定历史版本的媒体转述，未列出机型。当前固件行为、笔记能否恢复及恢复成功率待实测。",
+          "nextCheck": "换机前能否明确看到哪些文件已备份，哪些仍只在本机？",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期",
+            "研发与系统"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "educationCategories": [
+        "reader"
+      ],
+      "facts": [
+        {
+          "claim": "当次报道明确区分按账号与按设备同步。",
+          "sourceUrl": "https://m.ithome.com/html/811360.htm",
+          "locator": "多端同步新方案"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://m.ithome.com/html/811360.htm",
+          "publisherGroup": "掌阅 SmartOS 2.4 更新说明（IT之家整理）",
+          "name": "掌阅 SmartOS 2.4 更新说明（IT之家整理）",
+          "publishedAt": "2024-11-18T15:28:00+08:00",
+          "role": "media",
+          "textHash": "b94994dbe3a859cd3146a7261d9bdb131fb2d677a6fdf1de8a316b669e6f6007",
+          "readAt": "2026-11-20T00:39:18.905285+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 85,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-20T00:43:29.288905+00:00",
+      "sourceDate": "2024-11-18T15:28:00+08:00",
+      "date": "2024-11-18T15:28:00+08:00",
+      "title": "阅读器换了账号，哪部分书还在？从掌阅旧版系统看同步验收",
+      "summary": "2024 年的 SmartOS 2.4 更新说明把云同步限定在账号维度。书架里看得到一本书，并不能说明它已上传，也不能据此承诺换设备后一定找得回。"
     },
     {
       "id": "li-auto-pdt-pct-product-line",
@@ -8641,9 +9383,257 @@
       "date": null,
       "title": "促销后这款学习机到底赚了多少？先查利润报表漏掉了哪些订单",
       "summary": "渠道和财务核对促销毛利时，第一步是确认报表覆盖了哪些成交。Shopify 只统计售出时已记录单位成本的商品或规格，同期销售报表和利润报表因此可能出现不同的净销售额。"
+    },
+    {
+      "id": "m20-button",
+      "eventId": "m20-button",
+      "developmentId": "initial",
+      "titleZh": "电池仓过了测试，包装能出货吗？把结构验证与警示文案放进同一次放行评审",
+      "originalTitle": "Button Cell and Coin Battery Business Guidance",
+      "companies": [
+        "CPSC"
+      ],
+      "stages": [
+        "质量与合规",
+        "研发与系统",
+        "制造与交付"
+      ],
+      "domestic": false,
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "CPSC 的美国企业指南把防止儿童取出纽扣电池与提供警示列成不同要求。只看工程样机，可能漏掉量产包装和说明书。",
+        "points": [
+          "指南分别讨论可更换电池仓的开启方式、使用与滥用测试，以及包装、产品本体和说明书的警示。",
+          "质量评审核对结构样件、测试记录、包装主展示面和随附说明的版次。先确认电池类别、商品属性、销售地区及适用例外。"
+        ]
+      },
+      "boundary": "适用于指南界定的美国消费品范围，部分玩具及特定电池有不同适用条件。不能据此断定某款学习设备适用或通过认证。",
+      "meaning": "适用性确定后，结构工程、质量与包装团队分别拿出电池仓实物、测试记录与上市包材，在放行前核对各自版本。",
+      "question": "渠道改了包装或说明书版本后，由谁复核警示仍能在正常购买时被看到？",
+      "eventReason": "电池仓过了测试，包装能出货吗？把结构验证与警示文案放进同一次放行评审",
+      "selection": {
+        "scores": {
+          "相关性": 18,
+          "增量信息": 15,
+          "证据质量": 20,
+          "机制清晰": 19,
+          "可行动性": 20
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "指南将整机包装警示列为独立要求。 适用于指南界定的美国消费品范围，部分玩具及特定电池有不同适用条件。不能据此断定某款学习设备适用或通过认证。"
+        }
+      },
+      "practices": [
+        {
+          "title": "电池仓过了测试，包装能出货吗？把结构验证与警示文案放进同一次放行评审",
+          "method": "适用性确定后，结构工程、质量与包装团队分别拿出电池仓实物、测试记录与上市包材，在放行前核对各自版本。",
+          "conditions": "质量评审核对结构样件、测试记录、包装主展示面和随附说明的版次。先确认电池类别、商品属性、销售地区及适用例外。",
+          "outcome": "适用于指南界定的美国消费品范围，部分玩具及特定电池有不同适用条件。不能据此断定某款学习设备适用或通过认证。",
+          "boundary": "适用于指南界定的美国消费品范围，部分玩具及特定电池有不同适用条件。不能据此断定某款学习设备适用或通过认证。",
+          "nextCheck": "渠道改了包装或说明书版本后，由谁复核警示仍能在正常购买时被看到？",
+          "stages": [
+            "质量与合规",
+            "研发与系统",
+            "制造与交付"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "指南将整机包装警示列为独立要求。",
+          "sourceUrl": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Button-Cell-and-Coin-Battery",
+          "locator": "Products Containing or Designed to Use Button Cell or Coin Batteries 小节"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Button-Cell-and-Coin-Battery",
+          "publisherGroup": "美国消费品安全委员会 CPSC",
+          "name": "美国消费品安全委员会 CPSC",
+          "publishedAt": null,
+          "role": "official",
+          "textHash": "be4664ad3a096e45e9756ba65ab4fd6388484654b708226bc3a767889f8be8be",
+          "readAt": "2026-11-20T00:39:19.289751+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 92,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-20T00:43:29.290148+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "电池仓过了测试，包装能出货吗？把结构验证与警示文案放进同一次放行评审",
+      "summary": "CPSC 的美国企业指南把防止儿童取出纽扣电池与提供警示列成不同要求。只看工程样机，可能漏掉量产包装和说明书。"
+    },
+    {
+      "id": "m20-oracle",
+      "eventId": "m20-oracle",
+      "developmentId": "initial",
+      "titleZh": "同一批存货，采购和财务如何算出可比的周转次数？",
+      "originalTitle": "Merchandising Administration Batch: inv_turnover_rate",
+      "companies": [
+        "Oracle"
+      ],
+      "stages": [
+        "供应链与采购",
+        "渠道与销售"
+      ],
+      "domestic": false,
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "Oracle Retail 给出一个可以复算的成本口径：本期按成本计量的已售商品除以平均库存。该字段用期初与期末库存的简单平均作为分母。",
+        "points": [
+          "备货评审先约定期间、商品和仓库范围，再取同一范围的已售成本与库存成本。用零售成交额除库存成本会混进毛利变化。",
+          "如果促销前大量入库、期末又已出库，两个时点可能不能代表期间占用。可另看更密的库存快照，并注明与系统字段的差别。"
+        ]
+      },
+      "boundary": "取自指定零售系统的字段定义。未取得硬件企业使用哪些仓、在途库存或退货的内部口径，也未测算企业实际周转。",
+      "meaning": "财务和采购先交换分子、分母和库存截点；遇到月末清库时，复查日库存可帮助解释相同周转次数背后的备货差异。",
+      "question": "寄售、在途和退回待检的货是否落在双方同一统计范围？",
+      "eventReason": "同一批存货，采购和财务如何算出可比的周转次数？",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 17,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "官方指标表直接给出公式；学习硬件情境明确标为应用示例。"
+        }
+      },
+      "practices": [
+        {
+          "title": "同一批存货，采购和财务如何算出可比的周转次数？",
+          "method": "财务和采购先交换分子、分母和库存截点；遇到月末清库时，复查日库存可帮助解释相同周转次数背后的备货差异。",
+          "conditions": "如果促销前大量入库、期末又已出库，两个时点可能不能代表期间占用。可另看更密的库存快照，并注明与系统字段的差别。",
+          "outcome": "取自指定零售系统的字段定义。未取得硬件企业使用哪些仓、在途库存或退货的内部口径，也未测算企业实际周转。",
+          "boundary": "取自指定零售系统的字段定义。未取得硬件企业使用哪些仓、在途库存或退货的内部口径，也未测算企业实际周转。",
+          "nextCheck": "寄售、在途和退回待检的货是否落在双方同一统计范围？",
+          "stages": [
+            "供应链与采购",
+            "渠道与销售"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "系统指标表明确平均库存采用期初与期末的平均。",
+          "sourceUrl": "https://docs.oracle.com/en/industries/retail/retail-merchandising-foundation-cloud/latest/rmsoa/administration-batch.htm",
+          "locator": "指标表第148行 inv_turnover_rate"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://docs.oracle.com/en/industries/retail/retail-merchandising-foundation-cloud/latest/rmsoa/administration-batch.htm",
+          "publisherGroup": "Oracle Retail 官方文档",
+          "name": "Oracle Retail 官方文档",
+          "publishedAt": null,
+          "role": "official",
+          "textHash": "cd26c33c9139c2f2f052f3e6a01db1e6d7d4e637e7b0d3569901a12c5726616b",
+          "readAt": "2026-11-20T00:44:23.380734+00:00",
+          "coverage": "excerpt"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-20T00:44:39.105889+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "同一批存货，采购和财务如何算出可比的周转次数？",
+      "summary": "Oracle Retail 给出一个可以复算的成本口径：本期按成本计量的已售商品除以平均库存。该字段用期初与期末库存的简单平均作为分母。"
     }
   ],
   "events": [
+    {
+      "id": "m20-mof",
+      "representativeId": "m20-mof",
+      "itemIds": [
+        "m20-mof"
+      ],
+      "publisherGroups": [
+        "商务部消费促进司"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m20-nand",
+      "representativeId": "m20-nand",
+      "itemIds": [
+        "m20-nand"
+      ],
+      "publisherGroups": [
+        "TrendForce"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "e18-bis",
+      "representativeId": "m20-gov",
+      "itemIds": [
+        "m20-gov",
+        "e18-bis"
+      ],
+      "publisherGroups": [
+        "美国商务部 BIS"
+      ],
+      "developmentIds": [
+        "initial",
+        "published-effective"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m20-tool",
+      "representativeId": "m20-tool",
+      "itemIds": [
+        "m20-tool"
+      ],
+      "publisherGroups": [
+        "美国消费品安全委员会 CPSC"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m20-battery",
+      "representativeId": "m20-battery",
+      "itemIds": [
+        "m20-battery"
+      ],
+      "publisherGroups": [
+        "美国消费品安全委员会 CPSC"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
     {
       "id": "rss-cbe541898e205d5c",
       "representativeId": "rss-cbe541898e205d5c",
@@ -8652,6 +9642,20 @@
       ],
       "publisherGroups": [
         "蓝鲸汽车采访（IT之家转述）"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m20-jedec",
+      "representativeId": "m20-jedec",
+      "itemIds": [
+        "m20-jedec"
+      ],
+      "publisherGroups": [
+        "JEDEC"
       ],
       "developmentIds": [
         "initial"
@@ -8694,6 +9698,20 @@
       ],
       "publisherGroups": [
         "OpenAI"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m20-oled",
+      "representativeId": "m20-oled",
+      "itemIds": [
+        "m20-oled"
+      ],
+      "publisherGroups": [
+        "TrendForce"
       ],
       "developmentIds": [
         "initial"
@@ -8835,20 +9853,6 @@
       ],
       "publisherGroups": [
         "Reuters"
-      ],
-      "developmentIds": [
-        "initial"
-      ],
-      "selected": true
-    },
-    {
-      "id": "e18-bis",
-      "representativeId": "e18-bis",
-      "itemIds": [
-        "e18-bis"
-      ],
-      "publisherGroups": [
-        "美国商务部 BIS"
       ],
       "developmentIds": [
         "initial"
@@ -9424,6 +10428,20 @@
       "selected": true
     },
     {
+      "id": "m20-job-6c6331e12e6b4c66",
+      "representativeId": "m20-job-6c6331e12e6b4c66",
+      "itemIds": [
+        "m20-job-6c6331e12e6b4c66"
+      ],
+      "publisherGroups": [
+        "小猿官方校园招聘"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
       "id": "xtool-material-guide",
       "representativeId": "xtool-material-guide",
       "itemIds": [
@@ -9431,6 +10449,20 @@
       ],
       "publisherGroups": [
         "xTool 官方支持"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m20-reader",
+      "representativeId": "m20-reader",
+      "itemIds": [
+        "m20-reader"
+      ],
+      "publisherGroups": [
+        "掌阅 SmartOS 2.4 更新说明（IT之家整理）"
       ],
       "developmentIds": [
         "initial"
@@ -9951,6 +10983,34 @@
       ],
       "publisherGroups": [
         "Shopify"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m20-button",
+      "representativeId": "m20-button",
+      "itemIds": [
+        "m20-button"
+      ],
+      "publisherGroups": [
+        "美国消费品安全委员会 CPSC"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m20-oracle",
+      "representativeId": "m20-oracle",
+      "itemIds": [
+        "m20-oracle"
+      ],
+      "publisherGroups": [
+        "Oracle Retail 官方文档"
       ],
       "developmentIds": [
         "initial"
@@ -20667,6 +21727,1073 @@
       "completedAt": "2026-11-19T10:42:34.026721+00:00",
       "reviewedCount": 2,
       "selectedCount": 2
+    },
+    {
+      "sourceChecks": [
+        {
+          "name": "TrendForce",
+          "url": "https://www.trendforce.com/presscenter/news/20261119-13314.html",
+          "checkedAt": "2026-11-20T00:37:58.409802+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "需求与规划"
+          ],
+          "note": "同一周的现货回落和当季合约价上涨可以并存。把两类报价列在同一张采购表时应注明采购层级、期间和交付条件。",
+          "company": null,
+          "state": "read",
+          "readId": "m20-nand",
+          "publishedAt": "2026-11-19",
+          "publisherGroup": "TrendForce",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "同一周的现货回落和当季合约价上涨可以并存。把两类报价列在同一张采购表时应注明采购层级、期间和交付条件。",
+            "anchor": "overall NAND Flash contract prices will decline by 0–5% QoQ"
+          }
+        },
+        {
+          "name": "美国商务部 BIS",
+          "url": "https://www.govinfo.gov/content/pkg/FR-2026-11-19/html/2026-23529.htm",
+          "checkedAt": "2026-11-20T00:39:55.447231+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "质量与合规",
+            "经营与组织"
+          ],
+          "note": "供应商合规团队可用正式日期区分已生效义务和仍可提交意见的窗口，再按具体订单核对交付条件。",
+          "company": null,
+          "state": "read",
+          "readId": "m20-gov",
+          "publishedAt": "2026-11-19",
+          "publisherGroup": "美国商务部 BIS",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "供应商合规团队可用正式日期区分已生效义务和仍可提交意见的窗口，再按具体订单核对交付条件。",
+            "anchor": "This rule is effective November 19, 2026"
+          }
+        },
+        {
+          "name": "商务部消费促进司",
+          "url": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_0126b1d7c4124d7093738dafaf5ab667.html",
+          "checkedAt": "2026-11-20T00:39:18.947749+00:00",
+          "purpose": "news",
+          "stages": [
+            "渠道与销售",
+            "需求与规划"
+          ],
+          "note": "做渠道复盘时要同时记录统计主体、期间和单位，再判断销售额增长来自订单量、成交价还是产品结构。",
+          "company": null,
+          "state": "read",
+          "readId": "m20-mof",
+          "publishedAt": "2026-11-19T16:18:00+08:00",
+          "publisherGroup": "商务部消费促进司",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "做渠道复盘时要同时记录统计主体、期间和单位，再判断销售额增长来自订单量、成交价还是产品结构。",
+            "anchor": "重点平台智能眼镜销售额增长1倍"
+          }
+        },
+        {
+          "name": "JEDEC",
+          "url": "https://wgem.marketminute.com/article/bizwire-2026-11-18-jedec-previews-next-generation-ddr6-dram-higher-performance-greater-capacity-improved-power-efficiency-and-data-center-class-reliability",
+          "checkedAt": "2026-11-20T00:37:59.859693+00:00",
+          "purpose": "news",
+          "stages": [
+            "研发与系统",
+            "供应链与采购"
+          ],
+          "note": "做架构预研时可把草案参数、正式标准、供应商样片和自家任务测试分列，避免把带宽目标当采购承诺。",
+          "company": null,
+          "state": "read",
+          "readId": "m20-jedec",
+          "publishedAt": "2026-11-18T11:00:00-05:00",
+          "publisherGroup": "JEDEC",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "做架构预研时可把草案参数、正式标准、供应商样片和自家任务测试分列，避免把带宽目标当采购承诺。",
+            "anchor": "The data bus expands from 64 to 96 DQ"
+          }
+        },
+        {
+          "name": "美国消费品安全委员会 CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2027/Hultafors-Group-North-America-Recalls-Lighted-Portfolios-Angle-Locators-Calipers-and-Calculators-Due-to-Risk-of-Serious-Injury-or-Death-from-Battery-Ingestion-Violate-Mandatory-Standard-for-Consumer-Products-with-Button-Cell-Batteries",
+          "checkedAt": "2026-11-20T00:37:57.372356+00:00",
+          "purpose": "news",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期",
+            "渠道与销售"
+          ],
+          "note": "质量团队核定受影响型号之后，渠道和客服仍需能用顾客手上的实物辨认型号。可在放行记录里保留外观、型号位置与包装版次。",
+          "company": null,
+          "state": "read",
+          "readId": "m20-tool",
+          "publishedAt": "2026-11-19",
+          "publisherGroup": "美国消费品安全委员会 CPSC",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "质量团队核定受影响型号之后，渠道和客服仍需能用顾客手上的实物辨认型号。可在放行记录里保留外观、型号位置与包装版次。",
+            "anchor": "with the model numbers located on the unit and the package labeling"
+          }
+        },
+        {
+          "name": "TrendForce",
+          "url": "https://www.trendforce.com/presscenter/news/20261118-13311.html",
+          "checkedAt": "2026-11-20T00:37:58.422932+00:00",
+          "purpose": "news",
+          "stages": [
+            "渠道与销售",
+            "供应链与采购"
+          ],
+          "note": "复盘要同时看本品牌出货量、全市场出货量与渠道实销，分别核查变化的分子与分母。",
+          "company": null,
+          "state": "read",
+          "readId": "m20-oled",
+          "publishedAt": "2026-11-18",
+          "publisherGroup": "TrendForce",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "复盘要同时看本品牌出货量、全市场出货量与渠道实销，分别核查变化的分子与分母。",
+            "anchor": "its share was diluted by the rapid expansion of the overall market"
+          }
+        },
+        {
+          "name": "掌阅 SmartOS 2.4 更新说明（IT之家整理）",
+          "url": "https://m.ithome.com/html/811360.htm",
+          "checkedAt": "2026-11-20T00:39:18.905285+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期",
+            "研发与系统"
+          ],
+          "note": "设备、账号服务与客服需要共同确认用户究竟要找回哪本书、登录了哪个账号，以及文件是否曾经成功上传。",
+          "company": "掌阅",
+          "state": "read"
+        },
+        {
+          "name": "小猿官方校园招聘",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "checkedAt": "2026-11-20T00:38:04.217367+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "note": "一次评审若同时保留故障发生层级、测试用例、设计改动和复测记录，测试和硬件团队就能核对同一个问题。",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "美国消费品安全委员会 CPSC",
+          "url": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Button-Cell-and-Coin-Battery",
+          "checkedAt": "2026-11-20T00:39:19.289751+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规",
+            "研发与系统",
+            "制造与交付"
+          ],
+          "note": "适用性确定后，结构工程、质量与包装团队分别拿出电池仓实物、测试记录与上市包材，在放行前核对各自版本。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "之家网站",
+          "url": "https://www.ithome.com/1/029/574.htm",
+          "checkedAt": "2026-11-20T00:37:56.902048+00:00",
+          "purpose": "news",
+          "stages": [
+            "需求与规划",
+            "质量与合规"
+          ],
+          "note": "此文以产品推介为主，未提供可复核的证书范围、独立对照样本或新增事件，暂缓推荐。",
+          "company": "科大讯飞",
+          "state": "read",
+          "readId": "m20-eduarticle",
+          "publishedAt": "2026-11-19T17:51:43+08:00",
+          "publisherGroup": "之家网站",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "此文以产品推介为主，未提供可复核的证书范围、独立对照样本或新增事件，暂缓推荐。",
+            "anchor": "AI 识别受光线、字迹等客观条件影响"
+          }
+        },
+        {
+          "name": "王兴兴 APEC 现场发言",
+          "url": "https://www.ithome.com/1/028/220.htm",
+          "checkedAt": "2026-11-20T00:37:09.548200+00:00",
+          "purpose": "news",
+          "stages": [
+            "制造与交付",
+            "服务与生命周期"
+          ],
+          "note": "发言提出量产与售后的条件性挑战，未披露可核验的新订单或实施变动，保留线索。",
+          "company": "宇树科技",
+          "state": "read",
+          "readId": "rss-f14e49bf71aa943e",
+          "publishedAt": "2026-11-17T04:43:24+00:00",
+          "publisherGroup": "王兴兴 APEC 现场发言",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "发言提出量产与售后的条件性挑战，未披露可核验的新订单或实施变动，保留线索。",
+            "anchor": "它本身对机器人的生产制造、可靠性、售后服务都是很大的考验"
+          }
+        },
+        {
+          "name": "商务部消费促进司",
+          "url": "https://www.ithome.com/1/029/762.htm",
+          "checkedAt": "2026-11-20T00:37:09.657247+00:00",
+          "purpose": "news",
+          "stages": [
+            "渠道与销售"
+          ],
+          "note": "转载回溯商务部原文，同一统计发布采用原始出处及日期。",
+          "company": null,
+          "state": "read",
+          "readId": "rss-33f945417ce5deeb",
+          "publishedAt": "2026-11-20T00:00:26+00:00",
+          "publisherGroup": "商务部消费促进司",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "转载回溯商务部原文，同一统计发布采用原始出处及日期。",
+            "anchor": "重点平台智能眼镜销售额增长 1 倍"
+          }
+        },
+        {
+          "name": "美国消费品安全委员会 CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2027/Ororo-Recalls-Rechargeable-Lithium-Ion-Battery-Packs-Due-to-Risk-of-Serious-Injury-from-Fire-and-Burn-Hazards",
+          "checkedAt": "2026-11-20T00:37:57.445251+00:00",
+          "purpose": "news",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "note": "客服核对具体电池标识后，再按购买地区提供对应的登记和安全处置说明。",
+          "company": null,
+          "state": "read",
+          "readId": "m20-battery",
+          "publishedAt": "2026-11-19",
+          "publisherGroup": "美国消费品安全委员会 CPSC",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "客服核对具体电池标识后，再按购买地区提供对应的登记和安全处置说明。",
+            "anchor": "model PD10K-Pro"
+          }
+        },
+        {
+          "name": "算法实习生-多模态文档理解",
+          "url": "https://app.mokahr.com/social-recruitment/fenbi/45505#/job/5ecdce43-9ab2-48bb-ade9-ff021311daef",
+          "checkedAt": "2026-11-20T00:38:04.224956+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "基础研发部教育OCR能力，未说明专属学习机",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "算法工程师（D110740）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/e6056b1d-580b-442d-a27f-9ab9f12cd4b1",
+          "checkedAt": "2026-11-20T00:38:04.218670+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "题库教研（D111300）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/0223c4d9-1a3a-4d44-b3da-ce58723e1311",
+          "checkedAt": "2026-11-20T00:38:04.126313+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "题库教研审核与业务反馈，未披露硬件品类；正文岗位名为小数教研，要求却写初高中教材，学段边界待确认。",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "消费者BG-中级渠道经理-北京/上海/合肥",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=179aac28-bb83-4ed6-938e-25d57a57899b",
+          "checkedAt": "2026-11-20T00:38:04.128426+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "note": "消费者业务渠道，未指明学习机产品线",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "AI研究院-算法工程师-OCR方向(J14869)",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=dc4e67cc-59ed-4a75-8b7a-e0d6ae6faaa9",
+          "checkedAt": "2026-11-20T00:38:02.513083+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "集团统一招聘的OCR能力，未指定学习机或词典笔项目",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "2026届春招-硬件研发工程师",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "checkedAt": "2026-11-20T00:38:04.217367+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "note": "原文明确小猿产品及学习机、学练机业务，未划分具体型号",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "作业帮官方社招采购检索",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/jobs?keyword=%E9%87%87%E8%B4%AD&page=1&anchorName=jobsList",
+          "checkedAt": "2026-11-20T00:42:11.787636+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "供应链与采购"
+          ],
+          "note": "作业帮社招采购检索本次显示暂无匹配职位，仍缺直接的采购职责正文。",
+          "company": "作业帮",
+          "state": "index"
+        },
+        {
+          "name": "作业帮产品资料",
+          "url": "https://smart.zuoyebang.com/about",
+          "checkedAt": "2026-11-20T00:37:56.904169+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "官网仍以跨产品的聪明学系统解释内容与学情数据的关系，未提供单型号的验收指标。",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "科大讯飞产品资料",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "checkedAt": "2026-11-20T00:37:57.262464+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "厂商页面披露错因点拨、板书式答疑与推荐型号；没有同条件效果对照，本次保留原整理。",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "猿辅导（小猿）产品资料",
+          "url": "https://apps.apple.com/cn/app/id6738277050",
+          "checkedAt": "2026-11-20T00:37:57.767394+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "开发者说明涵盖家长端的时长、答案、家庭和设备管理。本次仅复核功能范围，未把商店评论当作厂商成效。",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "钉钉产品资料",
+          "url": "https://aihub.dingtalk.com/",
+          "checkedAt": "2026-11-20T00:37:56.906305+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "入口未返回足够正文，保留既有产品与 Xnote 对照边界。",
+          "company": "钉钉",
+          "state": "error"
+        },
+        {
+          "name": "JEDEC 官网",
+          "url": "https://www.jedec.org/news/pressreleases/jedec%C2%AE-previews-next-generation-ddr6-dram-higher-performance-greater-capacity",
+          "checkedAt": "2026-11-20T00:39:19.397268+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规"
+          ],
+          "note": "直连返回 403；已核对协会经 Business Wire 分发的完整新闻稿。",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "name": "美国 DRAM 案文书 68",
+          "url": "https://cases.justia.com/federal/district-courts/california/candce/5%3A2026cv06345/472931/68/0.pdf?ts=1794726473",
+          "checkedAt": "2026-11-20T00:40:16.145Z",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规"
+          ],
+          "note": "读取案号与裁定开头。仍是 11 月 14 日的程序裁定，本次查阅未发现更新的实质进展。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "BIS 预发布文件",
+          "url": "https://public-inspection.federalregister.gov/2026-23529.pdf",
+          "checkedAt": "2026-11-20T00:40:16.230Z",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规"
+          ],
+          "note": "复核预览摘要与后续正式公报的日期和文号。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "美国联邦公报正式日期段",
+          "url": "https://www.govinfo.gov/content/pkg/FR-2026-11-19/html/2026-23529.htm",
+          "checkedAt": "2026-11-20T00:39:55.447231+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规"
+          ],
+          "note": "针对文号、摘要及生效日复核，未通读全部条款。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/17/review-seeed-studio-4-26-mono-and-7-3-color-e-paper-kit-with-opendisplay-and-home-assistant",
+          "company": null,
+          "name": "RSS 候选抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-20T00:37:12.311803+00:00",
+          "note": "本次抓取未成功：curl: (56) The requested URL returned error: 403\n"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/17/forlinx-ok8275aa-c-a-qualcomm-qcs8275-industrial-sbc-with-12gb-lpddr5-256gb-ufs-storage",
+          "company": null,
+          "name": "RSS 候选抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-20T00:37:12.311803+00:00",
+          "note": "本次抓取未成功：curl: (56) The requested URL returned error: 403\n"
+        }
+      ],
+      "coverage": "审读存储价格、DDR6 预告、智能设备零售、OLED 出货、两起美国硬件召回及出口管制正式文件；另查三家学习硬件企业的六份岗位正文。",
+      "knownGaps": [
+        "DRAM 案本轮查阅仍是原程序裁定，未检出新的实体判断。",
+        "作业帮采购检索未取得岗位正文；钉钉产品入口未取得可用正文。",
+        "掌阅旧版本资料缺当前机型实测；学习机终端采购价、试产放行人及实际效果未披露。"
+      ],
+      "failedSources": [
+        "入口未返回足够正文，保留既有产品与 Xnote 对照边界。",
+        "直连返回 403；已核对协会经 Business Wire 分发的完整新闻稿。",
+        "本次抓取未成功：curl: (56) The requested URL returned error: 403\n"
+      ],
+      "coverageCheck": {
+        "newsResearch": {
+          "passed": true,
+          "bodyCount": 9,
+          "publisherGroups": [
+            "JEDEC",
+            "TrendForce",
+            "之家网站",
+            "商务部消费促进司",
+            "王兴兴 APEC 现场发言",
+            "美国消费品安全委员会 CPSC"
+          ],
+          "requiredBodies": 6,
+          "requiredPublisherGroups": 3
+        },
+        "passed": true,
+        "companies": [
+          "作业帮",
+          "宇树科技",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "gaps": [],
+        "usableSources": 25
+      },
+      "successfulScan": true,
+      "completedAt": "2026-11-20T00:43:29.298255+00:00",
+      "reviewedCount": 10,
+      "selectedCount": 10
+    },
+    {
+      "sourceChecks": [
+        {
+          "name": "TrendForce",
+          "url": "https://www.trendforce.com/presscenter/news/20261119-13314.html",
+          "checkedAt": "2026-11-20T00:37:58.409802+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "需求与规划"
+          ],
+          "note": "同一周的现货回落和当季合约价上涨可以并存。把两类报价列在同一张采购表时应注明采购层级、期间和交付条件。",
+          "company": null,
+          "state": "read",
+          "readId": "m20-nand",
+          "publishedAt": "2026-11-19",
+          "publisherGroup": "TrendForce",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "同一周的现货回落和当季合约价上涨可以并存。把两类报价列在同一张采购表时应注明采购层级、期间和交付条件。",
+            "anchor": "overall NAND Flash contract prices will decline by 0–5% QoQ"
+          }
+        },
+        {
+          "name": "美国商务部 BIS",
+          "url": "https://www.govinfo.gov/content/pkg/FR-2026-11-19/html/2026-23529.htm",
+          "checkedAt": "2026-11-20T00:39:55.447231+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "质量与合规",
+            "经营与组织"
+          ],
+          "note": "供应商合规团队可用正式日期区分已生效义务和仍可提交意见的窗口，再按具体订单核对交付条件。",
+          "company": null,
+          "state": "read",
+          "readId": "m20-gov",
+          "publishedAt": "2026-11-19",
+          "publisherGroup": "美国商务部 BIS",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "供应商合规团队可用正式日期区分已生效义务和仍可提交意见的窗口，再按具体订单核对交付条件。",
+            "anchor": "This rule is effective November 19, 2026"
+          }
+        },
+        {
+          "name": "商务部消费促进司",
+          "url": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_0126b1d7c4124d7093738dafaf5ab667.html",
+          "checkedAt": "2026-11-20T00:39:18.947749+00:00",
+          "purpose": "news",
+          "stages": [
+            "渠道与销售",
+            "需求与规划"
+          ],
+          "note": "做渠道复盘时要同时记录统计主体、期间和单位，再判断销售额增长来自订单量、成交价还是产品结构。",
+          "company": null,
+          "state": "read",
+          "readId": "m20-mof",
+          "publishedAt": "2026-11-19T16:18:00+08:00",
+          "publisherGroup": "商务部消费促进司",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "做渠道复盘时要同时记录统计主体、期间和单位，再判断销售额增长来自订单量、成交价还是产品结构。",
+            "anchor": "重点平台智能眼镜销售额增长1倍"
+          }
+        },
+        {
+          "name": "JEDEC",
+          "url": "https://wgem.marketminute.com/article/bizwire-2026-11-18-jedec-previews-next-generation-ddr6-dram-higher-performance-greater-capacity-improved-power-efficiency-and-data-center-class-reliability",
+          "checkedAt": "2026-11-20T00:37:59.859693+00:00",
+          "purpose": "news",
+          "stages": [
+            "研发与系统",
+            "供应链与采购"
+          ],
+          "note": "做架构预研时可把草案参数、正式标准、供应商样片和自家任务测试分列，避免把带宽目标当采购承诺。",
+          "company": null,
+          "state": "read",
+          "readId": "m20-jedec",
+          "publishedAt": "2026-11-18T11:00:00-05:00",
+          "publisherGroup": "JEDEC",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "做架构预研时可把草案参数、正式标准、供应商样片和自家任务测试分列，避免把带宽目标当采购承诺。",
+            "anchor": "The data bus expands from 64 to 96 DQ"
+          }
+        },
+        {
+          "name": "美国消费品安全委员会 CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2027/Hultafors-Group-North-America-Recalls-Lighted-Portfolios-Angle-Locators-Calipers-and-Calculators-Due-to-Risk-of-Serious-Injury-or-Death-from-Battery-Ingestion-Violate-Mandatory-Standard-for-Consumer-Products-with-Button-Cell-Batteries",
+          "checkedAt": "2026-11-20T00:37:57.372356+00:00",
+          "purpose": "news",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期",
+            "渠道与销售"
+          ],
+          "note": "质量团队核定受影响型号之后，渠道和客服仍需能用顾客手上的实物辨认型号。可在放行记录里保留外观、型号位置与包装版次。",
+          "company": null,
+          "state": "read",
+          "readId": "m20-tool",
+          "publishedAt": "2026-11-19",
+          "publisherGroup": "美国消费品安全委员会 CPSC",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "质量团队核定受影响型号之后，渠道和客服仍需能用顾客手上的实物辨认型号。可在放行记录里保留外观、型号位置与包装版次。",
+            "anchor": "with the model numbers located on the unit and the package labeling"
+          }
+        },
+        {
+          "name": "TrendForce",
+          "url": "https://www.trendforce.com/presscenter/news/20261118-13311.html",
+          "checkedAt": "2026-11-20T00:37:58.422932+00:00",
+          "purpose": "news",
+          "stages": [
+            "渠道与销售",
+            "供应链与采购"
+          ],
+          "note": "复盘要同时看本品牌出货量、全市场出货量与渠道实销，分别核查变化的分子与分母。",
+          "company": null,
+          "state": "read",
+          "readId": "m20-oled",
+          "publishedAt": "2026-11-18",
+          "publisherGroup": "TrendForce",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "复盘要同时看本品牌出货量、全市场出货量与渠道实销，分别核查变化的分子与分母。",
+            "anchor": "its share was diluted by the rapid expansion of the overall market"
+          }
+        },
+        {
+          "name": "掌阅 SmartOS 2.4 更新说明（IT之家整理）",
+          "url": "https://m.ithome.com/html/811360.htm",
+          "checkedAt": "2026-11-20T00:39:18.905285+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期",
+            "研发与系统"
+          ],
+          "note": "设备、账号服务与客服需要共同确认用户究竟要找回哪本书、登录了哪个账号，以及文件是否曾经成功上传。",
+          "company": "掌阅",
+          "state": "read"
+        },
+        {
+          "name": "小猿官方校园招聘",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "checkedAt": "2026-11-20T00:38:04.217367+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "note": "一次评审若同时保留故障发生层级、测试用例、设计改动和复测记录，测试和硬件团队就能核对同一个问题。",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "美国消费品安全委员会 CPSC",
+          "url": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Button-Cell-and-Coin-Battery",
+          "checkedAt": "2026-11-20T00:39:19.289751+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规",
+            "研发与系统",
+            "制造与交付"
+          ],
+          "note": "适用性确定后，结构工程、质量与包装团队分别拿出电池仓实物、测试记录与上市包材，在放行前核对各自版本。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "之家网站",
+          "url": "https://www.ithome.com/1/029/574.htm",
+          "checkedAt": "2026-11-20T00:37:56.902048+00:00",
+          "purpose": "news",
+          "stages": [
+            "需求与规划",
+            "质量与合规"
+          ],
+          "note": "此文以产品推介为主，未提供可复核的证书范围、独立对照样本或新增事件，暂缓推荐。",
+          "company": "科大讯飞",
+          "state": "read",
+          "readId": "m20-eduarticle",
+          "publishedAt": "2026-11-19T17:51:43+08:00",
+          "publisherGroup": "之家网站",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "此文以产品推介为主，未提供可复核的证书范围、独立对照样本或新增事件，暂缓推荐。",
+            "anchor": "AI 识别受光线、字迹等客观条件影响"
+          }
+        },
+        {
+          "name": "王兴兴 APEC 现场发言",
+          "url": "https://www.ithome.com/1/028/220.htm",
+          "checkedAt": "2026-11-20T00:37:09.548200+00:00",
+          "purpose": "news",
+          "stages": [
+            "制造与交付",
+            "服务与生命周期"
+          ],
+          "note": "发言提出量产与售后的条件性挑战，未披露可核验的新订单或实施变动，保留线索。",
+          "company": "宇树科技",
+          "state": "read",
+          "readId": "rss-f14e49bf71aa943e",
+          "publishedAt": "2026-11-17T04:43:24+00:00",
+          "publisherGroup": "王兴兴 APEC 现场发言",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "发言提出量产与售后的条件性挑战，未披露可核验的新订单或实施变动，保留线索。",
+            "anchor": "它本身对机器人的生产制造、可靠性、售后服务都是很大的考验"
+          }
+        },
+        {
+          "name": "商务部消费促进司",
+          "url": "https://www.ithome.com/1/029/762.htm",
+          "checkedAt": "2026-11-20T00:37:09.657247+00:00",
+          "purpose": "news",
+          "stages": [
+            "渠道与销售"
+          ],
+          "note": "转载回溯商务部原文，同一统计发布采用原始出处及日期。",
+          "company": null,
+          "state": "read",
+          "readId": "rss-33f945417ce5deeb",
+          "publishedAt": "2026-11-20T00:00:26+00:00",
+          "publisherGroup": "商务部消费促进司",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "转载回溯商务部原文，同一统计发布采用原始出处及日期。",
+            "anchor": "重点平台智能眼镜销售额增长 1 倍"
+          }
+        },
+        {
+          "name": "美国消费品安全委员会 CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2027/Ororo-Recalls-Rechargeable-Lithium-Ion-Battery-Packs-Due-to-Risk-of-Serious-Injury-from-Fire-and-Burn-Hazards",
+          "checkedAt": "2026-11-20T00:37:57.445251+00:00",
+          "purpose": "news",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "note": "客服核对具体电池标识后，再按购买地区提供对应的登记和安全处置说明。",
+          "company": null,
+          "state": "read",
+          "readId": "m20-battery",
+          "publishedAt": "2026-11-19",
+          "publisherGroup": "美国消费品安全委员会 CPSC",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "客服核对具体电池标识后，再按购买地区提供对应的登记和安全处置说明。",
+            "anchor": "model PD10K-Pro"
+          }
+        },
+        {
+          "name": "算法实习生-多模态文档理解",
+          "url": "https://app.mokahr.com/social-recruitment/fenbi/45505#/job/5ecdce43-9ab2-48bb-ade9-ff021311daef",
+          "checkedAt": "2026-11-20T00:38:04.224956+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "基础研发部教育OCR能力，未说明专属学习机",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "算法工程师（D110740）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/e6056b1d-580b-442d-a27f-9ab9f12cd4b1",
+          "checkedAt": "2026-11-20T00:38:04.218670+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "题库教研（D111300）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/0223c4d9-1a3a-4d44-b3da-ce58723e1311",
+          "checkedAt": "2026-11-20T00:38:04.126313+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "题库教研审核与业务反馈，未披露硬件品类；正文岗位名为小数教研，要求却写初高中教材，学段边界待确认。",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "消费者BG-中级渠道经理-北京/上海/合肥",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=179aac28-bb83-4ed6-938e-25d57a57899b",
+          "checkedAt": "2026-11-20T00:38:04.128426+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "note": "消费者业务渠道，未指明学习机产品线",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "AI研究院-算法工程师-OCR方向(J14869)",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=dc4e67cc-59ed-4a75-8b7a-e0d6ae6faaa9",
+          "checkedAt": "2026-11-20T00:38:02.513083+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "集团统一招聘的OCR能力，未指定学习机或词典笔项目",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "2026届春招-硬件研发工程师",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "checkedAt": "2026-11-20T00:38:04.217367+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "note": "原文明确小猿产品及学习机、学练机业务，未划分具体型号",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "作业帮官方社招采购检索",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/jobs?keyword=%E9%87%87%E8%B4%AD&page=1&anchorName=jobsList",
+          "checkedAt": "2026-11-20T00:42:11.787636+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "供应链与采购"
+          ],
+          "note": "作业帮社招采购检索本次显示暂无匹配职位，仍缺直接的采购职责正文。",
+          "company": "作业帮",
+          "state": "index"
+        },
+        {
+          "name": "作业帮产品资料",
+          "url": "https://smart.zuoyebang.com/about",
+          "checkedAt": "2026-11-20T00:37:56.904169+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "官网仍以跨产品的聪明学系统解释内容与学情数据的关系，未提供单型号的验收指标。",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "科大讯飞产品资料",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "checkedAt": "2026-11-20T00:37:57.262464+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "厂商页面披露错因点拨、板书式答疑与推荐型号；没有同条件效果对照，本次保留原整理。",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "猿辅导（小猿）产品资料",
+          "url": "https://apps.apple.com/cn/app/id6738277050",
+          "checkedAt": "2026-11-20T00:37:57.767394+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "开发者说明涵盖家长端的时长、答案、家庭和设备管理。本次仅复核功能范围，未把商店评论当作厂商成效。",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "钉钉产品资料",
+          "url": "https://aihub.dingtalk.com/",
+          "checkedAt": "2026-11-20T00:37:56.906305+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "入口未返回足够正文，保留既有产品与 Xnote 对照边界。",
+          "company": "钉钉",
+          "state": "error"
+        },
+        {
+          "name": "JEDEC 官网",
+          "url": "https://www.jedec.org/news/pressreleases/jedec%C2%AE-previews-next-generation-ddr6-dram-higher-performance-greater-capacity",
+          "checkedAt": "2026-11-20T00:39:19.397268+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规"
+          ],
+          "note": "直连返回 403；已核对协会经 Business Wire 分发的完整新闻稿。",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "name": "美国 DRAM 案文书 68",
+          "url": "https://cases.justia.com/federal/district-courts/california/candce/5%3A2026cv06345/472931/68/0.pdf?ts=1794726473",
+          "checkedAt": "2026-11-20T00:40:16.145Z",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规"
+          ],
+          "note": "读取案号与裁定开头。仍是 11 月 14 日的程序裁定，本次查阅未发现更新的实质进展。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "BIS 预发布文件",
+          "url": "https://public-inspection.federalregister.gov/2026-23529.pdf",
+          "checkedAt": "2026-11-20T00:40:16.230Z",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规"
+          ],
+          "note": "复核预览摘要与后续正式公报的日期和文号。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "美国联邦公报正式日期段",
+          "url": "https://www.govinfo.gov/content/pkg/FR-2026-11-19/html/2026-23529.htm",
+          "checkedAt": "2026-11-20T00:39:55.447231+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规"
+          ],
+          "note": "针对文号、摘要及生效日复核，未通读全部条款。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/17/review-seeed-studio-4-26-mono-and-7-3-color-e-paper-kit-with-opendisplay-and-home-assistant",
+          "company": null,
+          "name": "RSS 候选抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-20T00:37:12.311803+00:00",
+          "note": "本次抓取未成功：curl: (56) The requested URL returned error: 403\n"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/17/forlinx-ok8275aa-c-a-qualcomm-qcs8275-industrial-sbc-with-12gb-lpddr5-256gb-ufs-storage",
+          "company": null,
+          "name": "RSS 候选抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-20T00:37:12.311803+00:00",
+          "note": "本次抓取未成功：curl: (56) The requested URL returned error: 403\n"
+        },
+        {
+          "name": "Oracle Retail 官方文档",
+          "url": "https://docs.oracle.com/en/industries/retail/retail-merchandising-foundation-cloud/latest/rmsoa/administration-batch.htm",
+          "checkedAt": "2026-11-20T00:44:23.380734+00:00",
+          "purpose": "practice",
+          "stages": [
+            "供应链与采购",
+            "渠道与销售"
+          ],
+          "note": "财务和采购先交换分子、分母和库存截点；遇到月末清库时，复查日库存可帮助解释相同周转次数背后的备货差异。",
+          "company": null,
+          "state": "read"
+        }
+      ],
+      "coverage": "审读存储价格、DDR6 预告、智能设备零售、OLED 出货、两起美国硬件召回及出口管制正式文件；另查三家学习硬件企业的六份岗位正文。",
+      "knownGaps": [
+        "DRAM 案本轮查阅仍是原程序裁定，未检出新的实体判断。",
+        "作业帮采购检索未取得岗位正文；钉钉产品入口未取得可用正文。",
+        "掌阅旧版本资料缺当前机型实测；学习机终端采购价、试产放行人及实际效果未披露。"
+      ],
+      "failedSources": [
+        "入口未返回足够正文，保留既有产品与 Xnote 对照边界。",
+        "直连返回 403；已核对协会经 Business Wire 分发的完整新闻稿。",
+        "本次抓取未成功：curl: (56) The requested URL returned error: 403\n"
+      ],
+      "coverageCheck": {
+        "newsResearch": {
+          "passed": true,
+          "bodyCount": 9,
+          "publisherGroups": [
+            "JEDEC",
+            "TrendForce",
+            "之家网站",
+            "商务部消费促进司",
+            "王兴兴 APEC 现场发言",
+            "美国消费品安全委员会 CPSC"
+          ],
+          "requiredBodies": 6,
+          "requiredPublisherGroups": 3
+        },
+        "passed": true,
+        "companies": [
+          "作业帮",
+          "宇树科技",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "gaps": [],
+        "usableSources": 26
+      },
+      "successfulScan": true,
+      "completedAt": "2026-11-20T00:44:39.113051+00:00",
+      "reviewedCount": 1,
+      "selectedCount": 1
     }
   ]
 }

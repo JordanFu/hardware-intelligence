@@ -3,11 +3,11 @@
   "startedAt": "2026-11-06T07:45:08.434151+00:00",
   "nodes": {
     "chain-3": {
-      "attemptedAt": "2026-11-18T10:48:32.272337+00:00",
+      "attemptedAt": "2026-11-20T00:45:12.064804+00:00",
       "status": "partial",
-      "assessment": "核对公开现货周报规格与取价周，补充采购报价比较条件。",
+      "assessment": "Oracle 的两点均值能复算库存周转。集邦对 NAND 现货和四季度合约给出了不同方向的变化，说明采购预算还需区分采购层级。",
       "gaps": [
-        "MOQ、交期与库存周转分母本轮仍缺独立定义核验，不据入口页面判断这些指标。",
+        "已核对特定系统库存周转分母；MOQ、交期起止点及各企业的实际库存边界仍待核对。",
         "公开资料没有供应商审核标准、实际通过率、采购质量接口和履约结果。"
       ],
       "reviewedFields": [
@@ -15,30 +15,49 @@
       ],
       "evidence": [
         {
-          "itemId": "e18-spot",
-          "title": "内存采购怎么读报价：DDR4 现货回落，NAND 现货与合同价差扩大",
+          "itemId": "m20-oracle",
+          "title": "同一批存货，采购和财务如何算出可比的周转次数？",
           "facts": [
             {
-              "claim": "该规格 DDR4 样本一周均价下降 1.43%。",
-              "sourceUrl": "https://www.trendforce.com/news/2026/11/18/insights-memory-spot-price-update-nand-spot-contract-price-gap-exceeds-20-amid-weak-demand/",
-              "locator": "DRAM Spot Price 段落"
-            },
-            {
-              "claim": "机构观察到 NAND 现货与合同价差超过 20%。",
-              "sourceUrl": "https://www.trendforce.com/news/2026/11/18/insights-memory-spot-price-update-nand-spot-contract-price-gap-exceeds-20-amid-weak-demand/",
-              "locator": "NAND Flash Spot Price 段落"
+              "claim": "系统指标表明确平均库存采用期初与期末的平均。",
+              "sourceUrl": "https://docs.oracle.com/en/industries/retail/retail-merchandising-foundation-cloud/latest/rmsoa/administration-batch.htm",
+              "locator": "指标表第148行 inv_turnover_rate"
             }
           ],
-          "boundary": "机构报价样本缺少终端品牌订单，未验证任何学习机的成交价。",
+          "boundary": "取自指定零售系统的字段定义。未取得硬件企业使用哪些仓、在途库存或退货的内部口径，也未测算企业实际周转。",
           "sources": [
             {
-              "url": "https://www.trendforce.com/news/2026/11/18/insights-memory-spot-price-update-nand-spot-contract-price-gap-exceeds-20-amid-weak-demand/",
+              "url": "https://docs.oracle.com/en/industries/retail/retail-merchandising-foundation-cloud/latest/rmsoa/administration-batch.htm",
+              "publisherGroup": "Oracle Retail 官方文档",
+              "name": "Oracle Retail 官方文档",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "cd26c33c9139c2f2f052f3e6a01db1e6d7d4e637e7b0d3569901a12c5726616b",
+              "readAt": "2026-11-20T00:44:23.380734+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        },
+        {
+          "itemId": "m20-nand",
+          "title": "NAND 现货与合约出现分化，采购预算该看哪个价格？",
+          "facts": [
+            {
+              "claim": "集邦给出下一季度 NAND 合约价格预测区间。",
+              "sourceUrl": "https://www.trendforce.com/presscenter/news/20261119-13314.html",
+              "locator": "Looking ahead to 2027 段"
+            }
+          ],
+          "boundary": "这是研究机构的市场估计。未取得学习机厂商的合同价，也没有证据把此次价格变化归因于 DRAM 诉讼。",
+          "sources": [
+            {
+              "url": "https://www.trendforce.com/presscenter/news/20261119-13314.html",
               "publisherGroup": "TrendForce",
-              "name": "TrendForce 公开现货周报",
-              "publishedAt": "2026-11-18",
+              "name": "TrendForce 存储产业调查原文",
+              "publishedAt": "2026-11-19",
               "role": "research",
-              "textHash": "55827581cdadee2fead19bd9ca94ee8d9202615a345d9459390aed080bb31956",
-              "readAt": "2026-11-18T10:43:32.747849+00:00",
+              "textHash": "aaec68d6ba8382e7bb0338f8502448ba97deb2f34cff34051ba2f716edfd6738",
+              "readAt": "2026-11-20T00:37:58.409802+00:00",
               "coverage": "body"
             }
           ]
@@ -46,18 +65,26 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "e18-spot",
-          "url": "https://www.trendforce.com/news/2026/11/18/insights-memory-spot-price-update-nand-spot-contract-price-gap-exceeds-20-amid-weak-demand/",
-          "checkedAt": "2026-11-18T10:48:32.155367+00:00",
+          "itemId": "m20-oracle",
+          "url": "https://docs.oracle.com/en/industries/retail/retail-merchandising-foundation-cloud/latest/rmsoa/administration-batch.htm",
+          "checkedAt": "2026-11-20T00:44:23.380734+00:00",
           "state": "body",
-          "note": "核对公开现货周报规格与取价周，补充采购报价比较条件。"
+          "note": "原始表格第148行及相邻行节选；仅核对库存周转字段定义。两份资料分别说明软件字段和供需预测；具体学习硬件企业在途存货范围、成交价及周转结果未知。"
+        },
+        {
+          "itemId": "m20-nand",
+          "url": "https://www.trendforce.com/presscenter/news/20261119-13314.html",
+          "checkedAt": "2026-11-20T00:37:58.409802+00:00",
+          "state": "body",
+          "note": "复读当前可取得的来源正文，核对与本条相关的说明。两份资料分别说明软件字段和供需预测；具体学习硬件企业在途存货范围、成交价及周转结果未知。"
         }
       ],
-      "reviewedAt": "2026-11-18T10:48:32.272337+00:00",
+      "reviewedAt": "2026-11-20T00:45:12.064804+00:00",
       "patch": {
         "basics": "MOQ 是最小订购量；交期包含采购、生产和运输，不能只看供应商承诺。 供应商登记仅是提交资料的入口，不能自动等同于资格审核通过或获得采购订单。",
         "exercise": "选一颗关键器件，写出交期风险、替代验证要求和缺料升级路径。 再区分供应商资料登记、资格核验、质量验收和订单获取；无公开依据的门槛标为待核验。",
-        "team": "研发与采购共同明确替代料边界；供应商质量、计划、财务一起管理风险。小猿管培岗位另提供具体交接样本：销售计划提出配件需求，采购跟进合同和付款，工厂关注物料齐套，售后反馈问题；不能据此推断一人承担全部工作或拥有全部放行权。"
+        "team": "研发与采购共同明确替代料边界；供应商质量、计划、财务一起管理风险。小猿管培岗位另提供具体交接样本：销售计划提出配件需求，采购跟进合同和付款，工厂关注物料齐套，售后反馈问题；不能据此推断一人承担全部工作或拥有全部放行权。",
+        "metrics": "库存周转天数 = 期间平均库存成本 / 期间销售成本 × 期间天数；口径与周期一致。 库存周转须明确成本口径。Oracle Retail 的该指标用本期已售商品成本除以期初、期末库存成本的均值。另将存储现货报价与按季合约报价分列，不能直接跨口径比较。"
       },
       "lessons": [
         {
@@ -92,45 +119,55 @@
             "e18-spot"
           ],
           "updatedAt": "2026-11-18T10:48:32.272337+00:00"
+        },
+        {
+          "id": "nov20-chain-3",
+          "title": "把备货会上的价格、库存与周转放回各自的统计期间",
+          "learning": "Oracle 的两点均值能复算库存周转。集邦对 NAND 现货和四季度合约给出了不同方向的变化，说明采购预算还需区分采购层级。",
+          "application": "锁定同一料号、期间和成本计量范围，向财务确认期初期末存货，再与实际合同的交付窗口对照。",
+          "boundary": "两份资料分别说明软件字段和供需预测；具体学习硬件企业在途存货范围、成交价及周转结果未知。",
+          "itemIds": [
+            "m20-oracle",
+            "m20-nand"
+          ],
+          "updatedAt": "2026-11-20T00:45:12.064804+00:00"
         }
       ],
-      "updatedAt": "2026-11-18T10:48:32.272337+00:00"
+      "updatedAt": "2026-11-20T00:45:12.064804+00:00"
     },
     "chain-7": {
-      "attemptedAt": "2026-11-19T00:52:51.904150+00:00",
+      "attemptedAt": "2026-11-20T00:45:12.064804+00:00",
       "status": "partial",
-      "assessment": "按电池序列号连接整机销售与配件渠道。质量确认部件标识后，客服与渠道分别核对随附、单卖和换件路径，分开统计登记与实际替换。",
+      "assessment": "掌阅 SmartOS 2.4 的历史说明区分账号同步、私密书不上传和书架标识。",
       "gaps": [
         "缺少召回登记、寄发和最终处置各阶段完成数据。",
         "本轮补平台计数定义，但跨工单重复联系归属、观察窗口及排除项仍需业务级定义。",
         "没有设备停产通知、维修时效和恢复使用结果；华为该空间其他备份渠道仍未核实。"
       ],
       "reviewedFields": [
-        "flow",
-        "metrics",
-        "team"
+        "exercise"
       ],
       "evidence": [
         {
-          "itemId": "m19-bose",
-          "title": "售后怎样找到需要召回的那块电池？",
+          "itemId": "m20-reader",
+          "title": "阅读器换了账号，哪部分书还在？从掌阅旧版系统看同步验收",
           "facts": [
             {
-              "claim": "受影响电池亦以配件或替换件单卖。",
-              "sourceUrl": "https://www.cpsc.gov/Recalls/2027/Bose-Recalls-Lithium-Ion-Battery-Packs-for-S1-Pro-and-S1-Pro-Bluetooth-Speaker-Systems-Due-to-Risk-of-Injury-from-Fire-and-Overheating-Hazards",
-              "locator": "Description 与 Remedy 两节"
+              "claim": "当次报道明确区分按账号与按设备同步。",
+              "sourceUrl": "https://m.ithome.com/html/811360.htm",
+              "locator": "多端同步新方案"
             }
           ],
-          "boundary": "这是特定产品和地区的历史召回；公告没有披露最终换件完成率。",
+          "boundary": "这是特定历史版本的媒体转述，未列出机型。当前固件行为、笔记能否恢复及恢复成功率待实测。",
           "sources": [
             {
-              "url": "https://www.cpsc.gov/Recalls/2027/Bose-Recalls-Lithium-Ion-Battery-Packs-for-S1-Pro-and-S1-Pro-Bluetooth-Speaker-Systems-Due-to-Risk-of-Injury-from-Fire-and-Overheating-Hazards",
-              "publisherGroup": "美国消费品安全委员会",
-              "name": "美国消费品安全委员会",
-              "publishedAt": "2026-11-05",
-              "role": "official",
-              "textHash": "1b875d4bead108dc30b0fb9b43d13217afd6f2ae5e9971c41931b203a199ffe7",
-              "readAt": "2026-11-19T00:46:46.492408+00:00",
+              "url": "https://m.ithome.com/html/811360.htm",
+              "publisherGroup": "掌阅 SmartOS 2.4 更新说明（IT之家整理）",
+              "name": "掌阅 SmartOS 2.4 更新说明（IT之家整理）",
+              "publishedAt": "2024-11-18T15:28:00+08:00",
+              "role": "media",
+              "textHash": "b94994dbe3a859cd3146a7261d9bdb131fb2d677a6fdf1de8a316b669e6f6007",
+              "readAt": "2026-11-20T00:39:18.905285+00:00",
               "coverage": "body"
             }
           ]
@@ -138,17 +175,17 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "m19-bose",
-          "url": "https://www.cpsc.gov/Recalls/2027/Bose-Recalls-Lithium-Ion-Battery-Packs-for-S1-Pro-and-S1-Pro-Bluetooth-Speaker-Systems-Due-to-Risk-of-Injury-from-Fire-and-Overheating-Hazards",
-          "checkedAt": "2026-11-19T00:46:46.492408+00:00",
+          "itemId": "m20-reader",
+          "url": "https://m.ithome.com/html/811360.htm",
+          "checkedAt": "2026-11-20T00:39:18.905285+00:00",
           "state": "body",
-          "note": "实际复读原文，按原文范围检查。依据特定音箱电池的美国公告；当地回收接收条件与换件完成率需分别核查。"
+          "note": "复读当前可取得的来源正文，核对与本条相关的说明。历史媒体报道未列完整机型，也未验证现行固件、笔记恢复或成功率。"
         }
       ],
-      "reviewedAt": "2026-11-19T00:52:51.904150+00:00",
+      "reviewedAt": "2026-11-20T00:45:12.064804+00:00",
       "patch": {
         "basics": "OTA 是远程软件更新；支持周期、回滚和停止服务的安排也是产品承诺。 对互联设备，还应检查所有权转移、恢复出厂与退出时的数据处理；这些是从岗位职责提炼的验收问题，不能视为全行业已落实的规范。",
-        "exercise": "追踪一次服务事件，从用户发现到真正恢复使用，找出重复解释和重复操作。 补充一次设备转售或恢复出厂场景，列清设备、账号和云端数据的处理责任与验证证据。 对返修场景增加购买证明、排障记录、寄送指引与恢复使用四步，检查哪些信息能在授权范围内复用，避免用户重复解释。",
+        "exercise": "追踪一次服务事件，从用户发现到真正恢复使用，找出重复解释和重复操作。 补充一次设备转售或恢复出厂场景，列清设备、账号和云端数据的处理责任与验证证据。 对返修场景增加购买证明、排障记录、寄送指引与恢复使用四步，检查哪些信息能在授权范围内复用，避免用户重复解释。 阅读器迁移时核对账号、上传标志、私密设置与新设备本地可读状态；书架中的一条记录不能单独证明文件已经恢复。",
         "flow": "使用、故障与反馈 → 安装、维修、更新、备件与退出方案 服务研究还应区分线上排障、返修授权、运输维修以及停产通知四个节点，逐一确认交接资料与承诺主体。",
         "metrics": "首次解决率须先声明问题范围、首次交互、重复联系窗口与分母。Zendesk one-touch还可包含零次回复且已解决或关闭的工单，是特定报表计数；不能直接等同设备恢复使用率或用户资料恢复率。",
         "pitfall": "将工单关闭、一次回复或能再次登录当作问题解决；应分开核验重复求助、设备恢复使用与资料保留，不能通过减少必要沟通提高计数。"
@@ -208,14 +245,25 @@
             "m19-bose"
           ],
           "updatedAt": "2026-11-19T00:52:51.904150+00:00"
+        },
+        {
+          "id": "nov20-chain-7",
+          "title": "找回一本书，需要核对账号、云端副本与本机文件",
+          "learning": "掌阅 SmartOS 2.4 的历史说明区分账号同步、私密书不上传和书架标识。",
+          "application": "为换机用户分别核对旧设备上的文件、云端状态和目标设备是否可打开，再区分下载、权限或账号问题。",
+          "boundary": "历史媒体报道未列完整机型，也未验证现行固件、笔记恢复或成功率。",
+          "itemIds": [
+            "m20-reader"
+          ],
+          "updatedAt": "2026-11-20T00:45:12.064804+00:00"
         }
       ],
-      "updatedAt": "2026-11-19T00:52:51.904150+00:00"
+      "updatedAt": "2026-11-20T00:45:12.064804+00:00"
     },
     "track-5": {
-      "attemptedAt": "2026-11-18T01:50:12.299573+00:00",
+      "attemptedAt": "2026-11-20T00:45:12.064804+00:00",
       "status": "partial",
-      "assessment": "共用平台怎样处理单一型号的例外。本轮以理想历史案例核对团队接口。",
+      "assessment": "小猿把单元、板卡和整机测试列入硬件研发岗职责，也要求跟踪试产失效并提出整改。",
       "gaps": [
         "原始签核授权、量产结果及其他字段仍需独立资料。"
       ],
@@ -224,45 +272,25 @@
       ],
       "evidence": [
         {
-          "itemId": "li-auto-pdt-pct-product-line",
-          "title": "理想的 PDT 与 PCT 怎样围绕同一款车做取舍",
+          "itemId": "m20-job-6c6331e12e6b4c66",
+          "title": "小猿硬件研发岗如何把一次试产故障带回设计评审",
           "facts": [
             {
-              "claim": "MEGA 的开发、商业和供应团队分别吸收不同职能的代表。",
-              "sourceUrl": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
-              "locator": "MEGA 组队实例段"
-            },
-            {
-              "claim": "受访负责人以续航举例，描述车型与电动平台共同确定目标。",
-              "sourceUrl": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
-              "locator": "车型与平台协作段"
-            },
-            {
-              "claim": "报道回顾车型开发和商业团队在 2024 年合并，并在 2026 年披露部分产品定义团队拟调整。",
-              "sourceUrl": "https://www.36kr.com/p/3877919172047111",
-              "locator": "产品线沿革与调整动向段"
+              "claim": "岗位明列试产问题的失效分析和整改职责。",
+              "sourceUrl": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+              "locator": "职位描述 · 工作内容"
             }
           ],
-          "boundary": "依据媒体采访与历史报道。具体签字权限、绩效权重、调整后的决策耗时和商业成效均缺少可比较数据。",
+          "boundary": "历史春招岗位正文当前可读。岗位要求不能证明企业最终放行权限、团队人数、执行效果或特定型号使用了该流程。",
           "sources": [
             {
-              "url": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
-              "publisherGroup": "晚点 Auto",
-              "name": "晚点 Auto 原创报道（新浪刊载）",
-              "publishedAt": "2024-04-17",
-              "role": "media",
-              "textHash": "c6aa44493505970be42b191166307e294325e82c9a0d4de80f3cae97f0c1ba88",
-              "readAt": "2026-11-18T01:48:49.826902+00:00",
-              "coverage": "body"
-            },
-            {
-              "url": "https://www.36kr.com/p/3877919172047111",
-              "publisherGroup": "36氪",
-              "name": "36氪汽车 · 肖漫",
-              "publishedAt": "2026-07-03",
-              "role": "media",
-              "textHash": "528422366fee17a17ae9d847d00b162da9510b6e9f36d33678d1946e566ca015",
-              "readAt": "2026-11-18T01:48:50.283661+00:00",
+              "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+              "publisherGroup": "小猿官方校园招聘",
+              "name": "小猿官方校园招聘",
+              "publishedAt": "2026-03-04",
+              "role": "official",
+              "textHash": "2c8e92aeec8845f458bdc658e6f76ca865dda8ad852ef8c28ee8de426eea753f",
+              "readAt": "2026-11-20T00:38:04.217367+00:00",
               "coverage": "body"
             }
           ]
@@ -270,24 +298,17 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "li-auto-pdt-pct-product-line",
-          "url": "https://k.sina.com.cn/article_7294209083_1b2c4cc3b00101gcpi.html",
-          "checkedAt": "2026-11-18T01:48:49.826902+00:00",
+          "itemId": "m20-job-6c6331e12e6b4c66",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "checkedAt": "2026-11-20T00:38:04.217367+00:00",
           "state": "body",
-          "note": "已读原发采访报道对应的车型、平台与产品线段落。"
-        },
-        {
-          "itemId": "li-auto-pdt-pct-product-line",
-          "url": "https://www.36kr.com/p/3877919172047111",
-          "checkedAt": "2026-11-18T01:48:50.283661+00:00",
-          "state": "body",
-          "note": "已读原发采访报道对应的车型、平台与产品线段落。"
+          "note": "复读当前可取得的来源正文，核对与本条相关的说明。岗位说明揭示能力范围，未提供项目签核单、试产生效结果或专属岗位人数。"
         }
       ],
-      "reviewedAt": "2026-11-18T01:50:12.299573+00:00",
+      "reviewedAt": "2026-11-20T00:45:12.064804+00:00",
       "patch": {
         "constraint": "成本、质量、交期、维修和供货风险；互联设备另需检查设备、应用、云的协同安全与退出时的数据处理。 混合工艺还需同时检查区域边界衔接、路径避让和切换开销，界面步骤减少不能掩盖质量约束。",
-        "team": "产品、系统工程、制造、采购、质量、法规与售后。研究外协时另核技术文件提供方、参数变更权、驻厂支持与验收记录；公司之间的边界不能由生产地点直接推断。",
+        "team": "产品、系统工程、制造、采购、质量、法规与售后。研究外协时另核技术文件提供方、参数变更权、驻厂支持与验收记录；公司之间的边界不能由生产地点直接推断。 小猿历史岗位把测试用例、模块到整机定位、设计评审和试产整改列为同一岗位可参与的环节。责任接口要用项目记录另行确认。",
         "examples": "品牌方、ODM / EMS、模组供应商；拓竹H3C作为软硬件协同的观察样本，非行业排名。",
         "metrics": "关键缺陷关闭率；良率；交期；返修原因；比较自动化功能时另记录用户准备步骤、设计修改后的重做次数、总加工时间与成品验收结果，不能只看算法速度。"
       },
@@ -346,9 +367,20 @@
             "li-auto-pdt-pct-product-line"
           ],
           "updatedAt": "2026-11-18T01:50:12.299573+00:00"
+        },
+        {
+          "id": "nov20-track-5",
+          "title": "试产故障怎样回到设计评审",
+          "learning": "小猿把单元、板卡和整机测试列入硬件研发岗职责，也要求跟踪试产失效并提出整改。",
+          "application": "复盘一次异常，记录首次复现层级、改动版次、复测用例与实际放行人。",
+          "boundary": "岗位说明揭示能力范围，未提供项目签核单、试产生效结果或专属岗位人数。",
+          "itemIds": [
+            "m20-job-6c6331e12e6b4c66"
+          ],
+          "updatedAt": "2026-11-20T00:45:12.064804+00:00"
         }
       ],
-      "updatedAt": "2026-11-18T01:50:12.299573+00:00"
+      "updatedAt": "2026-11-20T00:45:12.064804+00:00"
     },
     "chain-1": {
       "attemptedAt": "2026-11-19T10:43:04.558764+00:00",
@@ -873,37 +905,61 @@
       "updatedAt": "2026-11-19T00:52:51.904150+00:00"
     },
     "chain-5": {
-      "attemptedAt": "2026-11-18T10:48:32.272337+00:00",
+      "attemptedAt": "2026-11-20T00:45:12.064804+00:00",
       "status": "partial",
-      "assessment": "依据作业帮该岗位职责，将变量与结果的映射纳入教学内容验收练习。",
+      "assessment": "CPSC 指南把电池仓防护与警示分列，工具召回公告同时指出电池易被接触和警示缺项。",
       "gaps": [
-        "安全与认证范围仍缺完整权威依据。",
+        "已核美国指南的纽扣电池范围及警示，其他市场和其他认证仍待对应依据。",
         "现场故障与部署成效没有可比当前结果；本次仅核验制造指标的定义和追溯线索。"
       ],
       "reviewedFields": [
-        "exercise"
+        "flow"
       ],
       "evidence": [
         {
-          "itemId": "e18-zuo",
-          "title": "教研如何把一道实验题交给研发验收",
+          "itemId": "m20-button",
+          "title": "电池仓过了测试，包装能出货吗？把结构验证与警示文案放进同一次放行评审",
           "facts": [
             {
-              "claim": "该岗位须产出变量与结果映射、需求文档和验收标准。",
-              "sourceUrl": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/ecbe641a-b8c4-4a0f-ad07-1d3c4cb4e0ad",
-              "locator": "岗位职责第 4 至 5 项"
+              "claim": "指南将整机包装警示列为独立要求。",
+              "sourceUrl": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Button-Cell-and-Coin-Battery",
+              "locator": "Products Containing or Designed to Use Button Cell or Coin Batteries 小节"
             }
           ],
-          "boundary": "教育内容产品岗位，未披露硬件型号和最终放行人。效果与实际组织分工仍待项目资料。",
+          "boundary": "适用于指南界定的美国消费品范围，部分玩具及特定电池有不同适用条件。不能据此断定某款学习设备适用或通过认证。",
           "sources": [
             {
-              "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/ecbe641a-b8c4-4a0f-ad07-1d3c4cb4e0ad",
-              "publisherGroup": "作业帮",
-              "name": "作业帮官方招聘 · 高中生物教研",
-              "publishedAt": "2026-11-17",
+              "url": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Button-Cell-and-Coin-Battery",
+              "publisherGroup": "美国消费品安全委员会 CPSC",
+              "name": "美国消费品安全委员会 CPSC",
+              "publishedAt": null,
               "role": "official",
-              "textHash": "ff7fdc8b679a2c20eca8fab152cca3fe0b4ffa4646be63142924a3c6ffc70533",
-              "readAt": "2026-11-18T10:46:04.176686+00:00",
+              "textHash": "be4664ad3a096e45e9756ba65ab4fd6388484654b708226bc3a767889f8be8be",
+              "readAt": "2026-11-20T00:39:19.289751+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "m20-tool",
+          "title": "从数字卡尺到计算器，约 22.94 万件工具因纽扣电池可被儿童取出而召回",
+          "facts": [
+            {
+              "claim": "召回方给出了产品和包装的型号识别依据。",
+              "sourceUrl": "https://www.cpsc.gov/Recalls/2027/Hultafors-Group-North-America-Recalls-Lighted-Portfolios-Angle-Locators-Calipers-and-Calculators-Due-to-Risk-of-Serious-Injury-or-Death-from-Battery-Ingestion-Violate-Mandatory-Standard-for-Consumer-Products-with-Button-Cell-Batteries",
+              "locator": "Recall Details 型号表与 Remedy"
+            }
+          ],
+          "boundary": "数量与处置安排限于该次美国召回。未披露已退款数量或全部消费者的实际处置结果。",
+          "sources": [
+            {
+              "url": "https://www.cpsc.gov/Recalls/2027/Hultafors-Group-North-America-Recalls-Lighted-Portfolios-Angle-Locators-Calipers-and-Calculators-Due-to-Risk-of-Serious-Injury-or-Death-from-Battery-Ingestion-Violate-Mandatory-Standard-for-Consumer-Products-with-Button-Cell-Batteries",
+              "publisherGroup": "美国消费品安全委员会 CPSC",
+              "name": "美国消费品安全委员会 CPSC",
+              "publishedAt": "2026-11-19",
+              "role": "official",
+              "textHash": "dc8cad0341b0ee1a0f48a1dafa6cf419661a62aaf01107af5c84597ec45b407b",
+              "readAt": "2026-11-20T00:37:57.372356+00:00",
               "coverage": "body"
             }
           ]
@@ -911,16 +967,23 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "e18-zuo",
-          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/ecbe641a-b8c4-4a0f-ad07-1d3c4cb4e0ad",
-          "checkedAt": "2026-11-18T10:48:32.155367+00:00",
+          "itemId": "m20-button",
+          "url": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Button-Cell-and-Coin-Battery",
+          "checkedAt": "2026-11-20T00:39:19.289751+00:00",
           "state": "body",
-          "note": "依据作业帮该岗位职责，将变量与结果的映射纳入教学内容验收练习。"
+          "note": "复读当前可取得的来源正文，核对与本条相关的说明。适用范围限于美国指南和公告涉及的类别；中国市场、其他电池与企业实际出货签核需分别核对。"
+        },
+        {
+          "itemId": "m20-tool",
+          "url": "https://www.cpsc.gov/Recalls/2027/Hultafors-Group-North-America-Recalls-Lighted-Portfolios-Angle-Locators-Calipers-and-Calculators-Due-to-Risk-of-Serious-Injury-or-Death-from-Battery-Ingestion-Violate-Mandatory-Standard-for-Consumer-Products-with-Button-Cell-Batteries",
+          "checkedAt": "2026-11-20T00:37:57.372356+00:00",
+          "state": "body",
+          "note": "复读当前可取得的来源正文，核对与本条相关的说明。适用范围限于美国指南和公告涉及的类别；中国市场、其他电池与企业实际出货签核需分别核对。"
         }
       ],
-      "reviewedAt": "2026-11-18T10:48:32.272337+00:00",
+      "reviewedAt": "2026-11-20T00:45:12.064804+00:00",
       "patch": {
-        "flow": "风险识别与需求 → 验证证据、过程控制与上市条件 对有明确使用限制的设备，还要检查现场条件、训练和责任人员是否满足该型号说明，不能仅凭设备合格就认为现场可用。",
+        "flow": "风险识别与需求 → 验证证据、过程控制与上市条件 对有明确使用限制的设备，还要检查现场条件、训练和责任人员是否满足该型号说明，不能仅凭设备合格就认为现场可用。 对适用美国纽扣电池要求的产品，出货评审同时核对电池仓样件、使用与滥用测试、实物及包装警示和随附说明；不同版本的包材分别检查。",
         "team": "质量、安全、研发、制造与服务协同定义缺陷等级、放行权和整改验证。 MetalFab 官方资料要求指定激光安全负责人并限制进入受控区域的人员；这是特定产品的部署职责样本，不能替代其他产品的法规与风险评估。",
         "basics": "初始质量关注开始使用时是否符合要求；可靠性关注运行一段时间后是否仍满足要求。初始合格不能证明使用期可靠。可靠性、安全与法规准入是不同问题；本轮仅核对初始质量与使用期可靠性的时间区分，安全及认证范围仍待专门复核。",
         "metrics": "生产直通率应明确工序范围、首次检验和返工排除规则；最终检验合格不等于全流程一次通过。现场故障率仍需同时记录样本、使用条件与时间窗。"
@@ -969,9 +1032,21 @@
             "e18-zuo"
           ],
           "updatedAt": "2026-11-18T10:48:32.272337+00:00"
+        },
+        {
+          "id": "nov20-chain-5",
+          "title": "结构样机通过后，包材与说明书仍有独立的放行依据",
+          "learning": "CPSC 指南把电池仓防护与警示分列，工具召回公告同时指出电池易被接触和警示缺项。",
+          "application": "先登记销售地区、商品及电池类别，再对照具体版本的样机、测试记录和包装主展示面；向售后提供从实物识别型号的方法。",
+          "boundary": "适用范围限于美国指南和公告涉及的类别；中国市场、其他电池与企业实际出货签核需分别核对。",
+          "itemIds": [
+            "m20-button",
+            "m20-tool"
+          ],
+          "updatedAt": "2026-11-20T00:45:12.064804+00:00"
         }
       ],
-      "updatedAt": "2026-11-18T10:48:32.272337+00:00"
+      "updatedAt": "2026-11-20T00:45:12.064804+00:00"
     },
     "chain-8": {
       "attemptedAt": "2026-11-19T00:52:51.904150+00:00",
@@ -1301,9 +1376,9 @@
       "updatedAt": "2026-11-19T10:43:04.558764+00:00"
     },
     "track-0": {
-      "attemptedAt": "2026-11-19T00:52:51.904150+00:00",
+      "attemptedAt": "2026-11-20T00:45:12.064804+00:00",
       "status": "partial",
-      "assessment": "把手机保存与手表端确认设为两个检查点。测试一个家庭定时任务时，分别留下 App 保存、设备端提示与实际执行结果，再记录设备供电和网络状态。",
+      "assessment": "商务部的前十个月数据统计重点平台的智能眼镜销售额，说明所覆盖渠道的交易金额变化。",
       "gaps": [
         "FAQ 未解释设备离线时是否缓存或重发设置。",
         "Meta、Apple、Samsung观察对象未取得本轮当前正文。",
@@ -1311,31 +1386,29 @@
         "雷鸟最低手机系统与权限细节仍有占位；文件导入内容保真未做实机测试。"
       ],
       "reviewedFields": [
-        "constraint",
-        "metrics",
-        "team"
+        "metrics"
       ],
       "evidence": [
         {
-          "itemId": "m19-edu-watch",
-          "title": "家长点了保存，怎样确认儿童手表已经收到设置？",
+          "itemId": "m20-mof",
+          "title": "商务部公布前十个月重点平台智能眼镜销售额，同比翻倍",
           "facts": [
             {
-              "claim": "该 FAQ 要求以手表端的成功提示确认设置生效。",
-              "sourceUrl": "https://www.okii.com/html/pc/service/service_question.html",
-              "locator": "电话手表问题5 · 定时开关机不同步"
+              "claim": "同比翻倍的指标限定为重点平台的智能眼镜销售金额。",
+              "sourceUrl": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_0126b1d7c4124d7093738dafaf5ab667.html",
+              "locator": "第三部分 新型消费较快增长"
             }
           ],
-          "boundary": "来源未标固件和型号；未披露通信协议、重试次数或送达率。",
+          "boundary": "未披露平台清单、绝对额、平均售价与销量，不能推出全渠道市场份额或某品牌销量变化。",
           "sources": [
             {
-              "url": "https://www.okii.com/html/pc/service/service_question.html",
-              "publisherGroup": "小天才官方常见问题",
-              "name": "小天才官方常见问题",
-              "publishedAt": null,
+              "url": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_0126b1d7c4124d7093738dafaf5ab667.html",
+              "publisherGroup": "商务部消费促进司",
+              "name": "商务部消费促进司",
+              "publishedAt": "2026-11-19T16:18:00+08:00",
               "role": "official",
-              "textHash": "af30d4cb563b6c7addbb400c277d9581cde06225a32736444b1e9c8cab6be5e5",
-              "readAt": "2026-11-19T00:46:46.078402+00:00",
+              "textHash": "0bc4351d44ac2fc13f22b56e2f0457260cf9762841cd214fbcbbed11d09920bf",
+              "readAt": "2026-11-20T00:39:18.947749+00:00",
               "coverage": "body"
             }
           ]
@@ -1343,19 +1416,19 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "m19-edu-watch",
-          "url": "https://www.okii.com/html/pc/service/service_question.html",
-          "checkedAt": "2026-11-19T00:46:46.078402+00:00",
+          "itemId": "m20-mof",
+          "url": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_0126b1d7c4124d7093738dafaf5ab667.html",
+          "checkedAt": "2026-11-20T00:39:18.947749+00:00",
           "state": "body",
-          "note": "实际复读原文，按原文范围检查。官网FAQ未指明固件型号，也未披露协议或实际成功率。"
+          "note": "复读当前可取得的来源正文，核对与本条相关的说明。未披露品牌和平台明细，无法据此判断具体产品的终端份额或使用成效。"
         }
       ],
-      "reviewedAt": "2026-11-19T00:52:51.904150+00:00",
+      "reviewedAt": "2026-11-20T00:45:12.064804+00:00",
       "patch": {
         "examples": "Meta、Apple、Samsung、雷鸟；本轮新增 XREAL 作为渠道与服务研究对象，不构成排名。",
         "constraint": "佩戴舒适度、续航、隐私和持续使用 离线能力需按字幕、翻译等具体任务核验手机依赖、App 版本和预下载资源；不能仅凭“离线”断言数据不出端。 记录功能还应分别核对音频、转写、摘要与标签：雷鸟Life Log声明不存原始音频，但仍保留文字，不能据此推断没有个人数据留存。",
         "team": "光学 / 声学、算法、工业设计、移动应用、健康验证 还需核对 App、渠道与服务团队如何共用版本化功能条件，避免销售承诺与实际使用前提脱节。",
-        "metrics": "完成一次真实任务的成功率；佩戴负担；续航；退货原因。文档类任务还需检查关键文字、图片与版式的保留情况及人工补做步骤；雷鸟提词器说明导入只留文字，支持格式数不能替代任务验收。"
+        "metrics": "完成一次真实任务的成功率；佩戴负担；续航；退货原因。文档类任务还需检查关键文字、图片与版式的保留情况及人工补做步骤；雷鸟提词器说明导入只留文字，支持格式数不能替代任务验收。 观察眼镜品类时同时记录销售额或台数、覆盖平台和统计期间，再用独立样本核对体验。"
       },
       "lessons": [
         {
@@ -1413,9 +1486,20 @@
             "m19-edu-watch"
           ],
           "updatedAt": "2026-11-19T00:52:51.904150+00:00"
+        },
+        {
+          "id": "nov20-track-0",
+          "title": "重点平台的销售额能回答哪一个问题",
+          "learning": "商务部的前十个月数据统计重点平台的智能眼镜销售额，说明所覆盖渠道的交易金额变化。",
+          "application": "分析品类机会时另查成交均价、销量和样本平台；将重复购买、佩戴负担和留存作为独立问题。",
+          "boundary": "未披露品牌和平台明细，无法据此判断具体产品的终端份额或使用成效。",
+          "itemIds": [
+            "m20-mof"
+          ],
+          "updatedAt": "2026-11-20T00:45:12.064804+00:00"
         }
       ],
-      "updatedAt": "2026-11-19T00:52:51.904150+00:00"
+      "updatedAt": "2026-11-20T00:45:12.064804+00:00"
     },
     "track-1": {
       "attemptedAt": "2026-11-18T10:48:32.272337+00:00",
@@ -2357,6 +2441,60 @@
           "hash": "1c0d378c2bb9ae28530c6bb5e424a7c5c1b59d68190ff911c61349f1ee34945f",
           "decision": "integrated",
           "reason": "Shopify 将利润统计限定在售出时已有成本的商品和规格，按净销售额纳入折扣和退款。缺成本的成交会让两张报表的统计范围不同。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-20T00:45:12.064804+00:00",
+      "reviewedNodes": [
+        "track-5",
+        "chain-3",
+        "chain-5",
+        "track-0",
+        "chain-7"
+      ],
+      "decisions": [
+        {
+          "itemId": "m20-job-6c6331e12e6b4c66",
+          "hash": "43db61cb9aff791fcd300266fc7ccbae045070e22b6fce8d03290635f9a9d96d",
+          "decision": "integrated",
+          "reason": "小猿把单元、板卡和整机测试列入硬件研发岗职责，也要求跟踪试产失效并提出整改。"
+        },
+        {
+          "itemId": "m20-oracle",
+          "hash": "783e7f207d41360e3d25f873670eaef14153a06ae2738a91efa5b98904b94b1e",
+          "decision": "integrated",
+          "reason": "Oracle 的两点均值能复算库存周转。集邦对 NAND 现货和四季度合约给出了不同方向的变化，说明采购预算还需区分采购层级。"
+        },
+        {
+          "itemId": "m20-nand",
+          "hash": "bbc63f135e5b7400100bfc580e291266235e36d1d8baa4c4979a38e767956173",
+          "decision": "integrated",
+          "reason": "Oracle 的两点均值能复算库存周转。集邦对 NAND 现货和四季度合约给出了不同方向的变化，说明采购预算还需区分采购层级。"
+        },
+        {
+          "itemId": "m20-button",
+          "hash": "3952d97d1aafe36400858a6b62fc0b780fe82b633350395791b44ac4fe17e535",
+          "decision": "integrated",
+          "reason": "CPSC 指南把电池仓防护与警示分列，工具召回公告同时指出电池易被接触和警示缺项。"
+        },
+        {
+          "itemId": "m20-tool",
+          "hash": "5768003953b50f382d4c57f8b378fed6923e1d7f50c5bc796e2190982ce0b1c1",
+          "decision": "integrated",
+          "reason": "CPSC 指南把电池仓防护与警示分列，工具召回公告同时指出电池易被接触和警示缺项。"
+        },
+        {
+          "itemId": "m20-mof",
+          "hash": "4898a735f4f30c5cf25392f39210629aabd063ac4e191cb129197ae0fd9f5f3e",
+          "decision": "integrated",
+          "reason": "商务部的前十个月数据统计重点平台的智能眼镜销售额，说明所覆盖渠道的交易金额变化。"
+        },
+        {
+          "itemId": "m20-reader",
+          "hash": "c4a1bef9d32e41e54b918db4d03a469d6d363aba84c1cedc70a6006430ffa5cf",
+          "decision": "integrated",
+          "reason": "掌阅 SmartOS 2.4 的历史说明区分账号同步、私密书不上传和书架标识。"
         }
       ]
     }
@@ -8861,6 +8999,417 @@
           "checkedAt": "2026-11-19T10:37:58.039489+00:00",
           "state": "body",
           "note": "复读当前正文，核对本条所涉及的具体环节。依据单厂工程说明，尚缺相同工件、材料和质量要求下的跨机型测试。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-5",
+      "reviewedAt": "2026-11-20T00:45:12.064804+00:00",
+      "status": "partial",
+      "assessment": "小猿把单元、板卡和整机测试列入硬件研发岗职责，也要求跟踪试产失效并提出整改。",
+      "gaps": [
+        "原始签核授权、量产结果及其他字段仍需独立资料。"
+      ],
+      "reviewedFields": [
+        "team"
+      ],
+      "changes": {
+        "team": {
+          "before": "产品、系统工程、制造、采购、质量、法规与售后。研究外协时另核技术文件提供方、参数变更权、驻厂支持与验收记录；公司之间的边界不能由生产地点直接推断。",
+          "after": "产品、系统工程、制造、采购、质量、法规与售后。研究外协时另核技术文件提供方、参数变更权、驻厂支持与验收记录；公司之间的边界不能由生产地点直接推断。 小猿历史岗位把测试用例、模块到整机定位、设计评审和试产整改列为同一岗位可参与的环节。责任接口要用项目记录另行确认。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "nov20-track-5",
+            "title": "试产故障怎样回到设计评审",
+            "learning": "小猿把单元、板卡和整机测试列入硬件研发岗职责，也要求跟踪试产失效并提出整改。",
+            "application": "复盘一次异常，记录首次复现层级、改动版次、复测用例与实际放行人。",
+            "boundary": "岗位说明揭示能力范围，未提供项目签核单、试产生效结果或专属岗位人数。",
+            "itemIds": [
+              "m20-job-6c6331e12e6b4c66"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m20-job-6c6331e12e6b4c66",
+          "title": "小猿硬件研发岗如何把一次试产故障带回设计评审",
+          "facts": [
+            {
+              "claim": "岗位明列试产问题的失效分析和整改职责。",
+              "sourceUrl": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+              "locator": "职位描述 · 工作内容"
+            }
+          ],
+          "boundary": "历史春招岗位正文当前可读。岗位要求不能证明企业最终放行权限、团队人数、执行效果或特定型号使用了该流程。",
+          "sources": [
+            {
+              "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+              "publisherGroup": "小猿官方校园招聘",
+              "name": "小猿官方校园招聘",
+              "publishedAt": "2026-03-04",
+              "role": "official",
+              "textHash": "2c8e92aeec8845f458bdc658e6f76ca865dda8ad852ef8c28ee8de426eea753f",
+              "readAt": "2026-11-20T00:38:04.217367+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m20-job-6c6331e12e6b4c66",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "checkedAt": "2026-11-20T00:38:04.217367+00:00",
+          "state": "body",
+          "note": "复读当前可取得的来源正文，核对与本条相关的说明。岗位说明揭示能力范围，未提供项目签核单、试产生效结果或专属岗位人数。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-3",
+      "reviewedAt": "2026-11-20T00:45:12.064804+00:00",
+      "status": "partial",
+      "assessment": "Oracle 的两点均值能复算库存周转。集邦对 NAND 现货和四季度合约给出了不同方向的变化，说明采购预算还需区分采购层级。",
+      "gaps": [
+        "已核对特定系统库存周转分母；MOQ、交期起止点及各企业的实际库存边界仍待核对。",
+        "公开资料没有供应商审核标准、实际通过率、采购质量接口和履约结果。"
+      ],
+      "reviewedFields": [
+        "metrics"
+      ],
+      "changes": {
+        "metrics": {
+          "before": "库存周转天数 = 期间平均库存成本 / 期间销售成本 × 期间天数；口径与周期一致。",
+          "after": "库存周转天数 = 期间平均库存成本 / 期间销售成本 × 期间天数；口径与周期一致。 库存周转须明确成本口径。Oracle Retail 的该指标用本期已售商品成本除以期初、期末库存成本的均值。另将存储现货报价与按季合约报价分列，不能直接跨口径比较。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "nov20-chain-3",
+            "title": "把备货会上的价格、库存与周转放回各自的统计期间",
+            "learning": "Oracle 的两点均值能复算库存周转。集邦对 NAND 现货和四季度合约给出了不同方向的变化，说明采购预算还需区分采购层级。",
+            "application": "锁定同一料号、期间和成本计量范围，向财务确认期初期末存货，再与实际合同的交付窗口对照。",
+            "boundary": "两份资料分别说明软件字段和供需预测；具体学习硬件企业在途存货范围、成交价及周转结果未知。",
+            "itemIds": [
+              "m20-oracle",
+              "m20-nand"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m20-oracle",
+          "title": "同一批存货，采购和财务如何算出可比的周转次数？",
+          "facts": [
+            {
+              "claim": "系统指标表明确平均库存采用期初与期末的平均。",
+              "sourceUrl": "https://docs.oracle.com/en/industries/retail/retail-merchandising-foundation-cloud/latest/rmsoa/administration-batch.htm",
+              "locator": "指标表第148行 inv_turnover_rate"
+            }
+          ],
+          "boundary": "取自指定零售系统的字段定义。未取得硬件企业使用哪些仓、在途库存或退货的内部口径，也未测算企业实际周转。",
+          "sources": [
+            {
+              "url": "https://docs.oracle.com/en/industries/retail/retail-merchandising-foundation-cloud/latest/rmsoa/administration-batch.htm",
+              "publisherGroup": "Oracle Retail 官方文档",
+              "name": "Oracle Retail 官方文档",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "cd26c33c9139c2f2f052f3e6a01db1e6d7d4e637e7b0d3569901a12c5726616b",
+              "readAt": "2026-11-20T00:44:23.380734+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        },
+        {
+          "itemId": "m20-nand",
+          "title": "NAND 现货与合约出现分化，采购预算该看哪个价格？",
+          "facts": [
+            {
+              "claim": "集邦给出下一季度 NAND 合约价格预测区间。",
+              "sourceUrl": "https://www.trendforce.com/presscenter/news/20261119-13314.html",
+              "locator": "Looking ahead to 2027 段"
+            }
+          ],
+          "boundary": "这是研究机构的市场估计。未取得学习机厂商的合同价，也没有证据把此次价格变化归因于 DRAM 诉讼。",
+          "sources": [
+            {
+              "url": "https://www.trendforce.com/presscenter/news/20261119-13314.html",
+              "publisherGroup": "TrendForce",
+              "name": "TrendForce 存储产业调查原文",
+              "publishedAt": "2026-11-19",
+              "role": "research",
+              "textHash": "aaec68d6ba8382e7bb0338f8502448ba97deb2f34cff34051ba2f716edfd6738",
+              "readAt": "2026-11-20T00:37:58.409802+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m20-oracle",
+          "url": "https://docs.oracle.com/en/industries/retail/retail-merchandising-foundation-cloud/latest/rmsoa/administration-batch.htm",
+          "checkedAt": "2026-11-20T00:44:23.380734+00:00",
+          "state": "body",
+          "note": "原始表格第148行及相邻行节选；仅核对库存周转字段定义。两份资料分别说明软件字段和供需预测；具体学习硬件企业在途存货范围、成交价及周转结果未知。"
+        },
+        {
+          "itemId": "m20-nand",
+          "url": "https://www.trendforce.com/presscenter/news/20261119-13314.html",
+          "checkedAt": "2026-11-20T00:37:58.409802+00:00",
+          "state": "body",
+          "note": "复读当前可取得的来源正文，核对与本条相关的说明。两份资料分别说明软件字段和供需预测；具体学习硬件企业在途存货范围、成交价及周转结果未知。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-5",
+      "reviewedAt": "2026-11-20T00:45:12.064804+00:00",
+      "status": "partial",
+      "assessment": "CPSC 指南把电池仓防护与警示分列，工具召回公告同时指出电池易被接触和警示缺项。",
+      "gaps": [
+        "已核美国指南的纽扣电池范围及警示，其他市场和其他认证仍待对应依据。",
+        "现场故障与部署成效没有可比当前结果；本次仅核验制造指标的定义和追溯线索。"
+      ],
+      "reviewedFields": [
+        "flow"
+      ],
+      "changes": {
+        "flow": {
+          "before": "风险识别与需求 → 验证证据、过程控制与上市条件 对有明确使用限制的设备，还要检查现场条件、训练和责任人员是否满足该型号说明，不能仅凭设备合格就认为现场可用。",
+          "after": "风险识别与需求 → 验证证据、过程控制与上市条件 对有明确使用限制的设备，还要检查现场条件、训练和责任人员是否满足该型号说明，不能仅凭设备合格就认为现场可用。 对适用美国纽扣电池要求的产品，出货评审同时核对电池仓样件、使用与滥用测试、实物及包装警示和随附说明；不同版本的包材分别检查。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "nov20-chain-5",
+            "title": "结构样机通过后，包材与说明书仍有独立的放行依据",
+            "learning": "CPSC 指南把电池仓防护与警示分列，工具召回公告同时指出电池易被接触和警示缺项。",
+            "application": "先登记销售地区、商品及电池类别，再对照具体版本的样机、测试记录和包装主展示面；向售后提供从实物识别型号的方法。",
+            "boundary": "适用范围限于美国指南和公告涉及的类别；中国市场、其他电池与企业实际出货签核需分别核对。",
+            "itemIds": [
+              "m20-button",
+              "m20-tool"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m20-button",
+          "title": "电池仓过了测试，包装能出货吗？把结构验证与警示文案放进同一次放行评审",
+          "facts": [
+            {
+              "claim": "指南将整机包装警示列为独立要求。",
+              "sourceUrl": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Button-Cell-and-Coin-Battery",
+              "locator": "Products Containing or Designed to Use Button Cell or Coin Batteries 小节"
+            }
+          ],
+          "boundary": "适用于指南界定的美国消费品范围，部分玩具及特定电池有不同适用条件。不能据此断定某款学习设备适用或通过认证。",
+          "sources": [
+            {
+              "url": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Button-Cell-and-Coin-Battery",
+              "publisherGroup": "美国消费品安全委员会 CPSC",
+              "name": "美国消费品安全委员会 CPSC",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "be4664ad3a096e45e9756ba65ab4fd6388484654b708226bc3a767889f8be8be",
+              "readAt": "2026-11-20T00:39:19.289751+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "m20-tool",
+          "title": "从数字卡尺到计算器，约 22.94 万件工具因纽扣电池可被儿童取出而召回",
+          "facts": [
+            {
+              "claim": "召回方给出了产品和包装的型号识别依据。",
+              "sourceUrl": "https://www.cpsc.gov/Recalls/2027/Hultafors-Group-North-America-Recalls-Lighted-Portfolios-Angle-Locators-Calipers-and-Calculators-Due-to-Risk-of-Serious-Injury-or-Death-from-Battery-Ingestion-Violate-Mandatory-Standard-for-Consumer-Products-with-Button-Cell-Batteries",
+              "locator": "Recall Details 型号表与 Remedy"
+            }
+          ],
+          "boundary": "数量与处置安排限于该次美国召回。未披露已退款数量或全部消费者的实际处置结果。",
+          "sources": [
+            {
+              "url": "https://www.cpsc.gov/Recalls/2027/Hultafors-Group-North-America-Recalls-Lighted-Portfolios-Angle-Locators-Calipers-and-Calculators-Due-to-Risk-of-Serious-Injury-or-Death-from-Battery-Ingestion-Violate-Mandatory-Standard-for-Consumer-Products-with-Button-Cell-Batteries",
+              "publisherGroup": "美国消费品安全委员会 CPSC",
+              "name": "美国消费品安全委员会 CPSC",
+              "publishedAt": "2026-11-19",
+              "role": "official",
+              "textHash": "dc8cad0341b0ee1a0f48a1dafa6cf419661a62aaf01107af5c84597ec45b407b",
+              "readAt": "2026-11-20T00:37:57.372356+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m20-button",
+          "url": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Button-Cell-and-Coin-Battery",
+          "checkedAt": "2026-11-20T00:39:19.289751+00:00",
+          "state": "body",
+          "note": "复读当前可取得的来源正文，核对与本条相关的说明。适用范围限于美国指南和公告涉及的类别；中国市场、其他电池与企业实际出货签核需分别核对。"
+        },
+        {
+          "itemId": "m20-tool",
+          "url": "https://www.cpsc.gov/Recalls/2027/Hultafors-Group-North-America-Recalls-Lighted-Portfolios-Angle-Locators-Calipers-and-Calculators-Due-to-Risk-of-Serious-Injury-or-Death-from-Battery-Ingestion-Violate-Mandatory-Standard-for-Consumer-Products-with-Button-Cell-Batteries",
+          "checkedAt": "2026-11-20T00:37:57.372356+00:00",
+          "state": "body",
+          "note": "复读当前可取得的来源正文，核对与本条相关的说明。适用范围限于美国指南和公告涉及的类别；中国市场、其他电池与企业实际出货签核需分别核对。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-0",
+      "reviewedAt": "2026-11-20T00:45:12.064804+00:00",
+      "status": "partial",
+      "assessment": "商务部的前十个月数据统计重点平台的智能眼镜销售额，说明所覆盖渠道的交易金额变化。",
+      "gaps": [
+        "FAQ 未解释设备离线时是否缓存或重发设置。",
+        "Meta、Apple、Samsung观察对象未取得本轮当前正文。",
+        "真实任务成功率、佩戴负担及续航缺跨企业实测；雷鸟数据地点、期限和删除传播仍未知。",
+        "雷鸟最低手机系统与权限细节仍有占位；文件导入内容保真未做实机测试。"
+      ],
+      "reviewedFields": [
+        "metrics"
+      ],
+      "changes": {
+        "metrics": {
+          "before": "完成一次真实任务的成功率；佩戴负担；续航；退货原因。文档类任务还需检查关键文字、图片与版式的保留情况及人工补做步骤；雷鸟提词器说明导入只留文字，支持格式数不能替代任务验收。",
+          "after": "完成一次真实任务的成功率；佩戴负担；续航；退货原因。文档类任务还需检查关键文字、图片与版式的保留情况及人工补做步骤；雷鸟提词器说明导入只留文字，支持格式数不能替代任务验收。 观察眼镜品类时同时记录销售额或台数、覆盖平台和统计期间，再用独立样本核对体验。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "nov20-track-0",
+            "title": "重点平台的销售额能回答哪一个问题",
+            "learning": "商务部的前十个月数据统计重点平台的智能眼镜销售额，说明所覆盖渠道的交易金额变化。",
+            "application": "分析品类机会时另查成交均价、销量和样本平台；将重复购买、佩戴负担和留存作为独立问题。",
+            "boundary": "未披露品牌和平台明细，无法据此判断具体产品的终端份额或使用成效。",
+            "itemIds": [
+              "m20-mof"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m20-mof",
+          "title": "商务部公布前十个月重点平台智能眼镜销售额，同比翻倍",
+          "facts": [
+            {
+              "claim": "同比翻倍的指标限定为重点平台的智能眼镜销售金额。",
+              "sourceUrl": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_0126b1d7c4124d7093738dafaf5ab667.html",
+              "locator": "第三部分 新型消费较快增长"
+            }
+          ],
+          "boundary": "未披露平台清单、绝对额、平均售价与销量，不能推出全渠道市场份额或某品牌销量变化。",
+          "sources": [
+            {
+              "url": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_0126b1d7c4124d7093738dafaf5ab667.html",
+              "publisherGroup": "商务部消费促进司",
+              "name": "商务部消费促进司",
+              "publishedAt": "2026-11-19T16:18:00+08:00",
+              "role": "official",
+              "textHash": "0bc4351d44ac2fc13f22b56e2f0457260cf9762841cd214fbcbbed11d09920bf",
+              "readAt": "2026-11-20T00:39:18.947749+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m20-mof",
+          "url": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_0126b1d7c4124d7093738dafaf5ab667.html",
+          "checkedAt": "2026-11-20T00:39:18.947749+00:00",
+          "state": "body",
+          "note": "复读当前可取得的来源正文，核对与本条相关的说明。未披露品牌和平台明细，无法据此判断具体产品的终端份额或使用成效。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-7",
+      "reviewedAt": "2026-11-20T00:45:12.064804+00:00",
+      "status": "partial",
+      "assessment": "掌阅 SmartOS 2.4 的历史说明区分账号同步、私密书不上传和书架标识。",
+      "gaps": [
+        "缺少召回登记、寄发和最终处置各阶段完成数据。",
+        "本轮补平台计数定义，但跨工单重复联系归属、观察窗口及排除项仍需业务级定义。",
+        "没有设备停产通知、维修时效和恢复使用结果；华为该空间其他备份渠道仍未核实。"
+      ],
+      "reviewedFields": [
+        "exercise"
+      ],
+      "changes": {
+        "exercise": {
+          "before": "追踪一次服务事件，从用户发现到真正恢复使用，找出重复解释和重复操作。 补充一次设备转售或恢复出厂场景，列清设备、账号和云端数据的处理责任与验证证据。 对返修场景增加购买证明、排障记录、寄送指引与恢复使用四步，检查哪些信息能在授权范围内复用，避免用户重复解释。",
+          "after": "追踪一次服务事件，从用户发现到真正恢复使用，找出重复解释和重复操作。 补充一次设备转售或恢复出厂场景，列清设备、账号和云端数据的处理责任与验证证据。 对返修场景增加购买证明、排障记录、寄送指引与恢复使用四步，检查哪些信息能在授权范围内复用，避免用户重复解释。 阅读器迁移时核对账号、上传标志、私密设置与新设备本地可读状态；书架中的一条记录不能单独证明文件已经恢复。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "nov20-chain-7",
+            "title": "找回一本书，需要核对账号、云端副本与本机文件",
+            "learning": "掌阅 SmartOS 2.4 的历史说明区分账号同步、私密书不上传和书架标识。",
+            "application": "为换机用户分别核对旧设备上的文件、云端状态和目标设备是否可打开，再区分下载、权限或账号问题。",
+            "boundary": "历史媒体报道未列完整机型，也未验证现行固件、笔记恢复或成功率。",
+            "itemIds": [
+              "m20-reader"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m20-reader",
+          "title": "阅读器换了账号，哪部分书还在？从掌阅旧版系统看同步验收",
+          "facts": [
+            {
+              "claim": "当次报道明确区分按账号与按设备同步。",
+              "sourceUrl": "https://m.ithome.com/html/811360.htm",
+              "locator": "多端同步新方案"
+            }
+          ],
+          "boundary": "这是特定历史版本的媒体转述，未列出机型。当前固件行为、笔记能否恢复及恢复成功率待实测。",
+          "sources": [
+            {
+              "url": "https://m.ithome.com/html/811360.htm",
+              "publisherGroup": "掌阅 SmartOS 2.4 更新说明（IT之家整理）",
+              "name": "掌阅 SmartOS 2.4 更新说明（IT之家整理）",
+              "publishedAt": "2024-11-18T15:28:00+08:00",
+              "role": "media",
+              "textHash": "b94994dbe3a859cd3146a7261d9bdb131fb2d677a6fdf1de8a316b669e6f6007",
+              "readAt": "2026-11-20T00:39:18.905285+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m20-reader",
+          "url": "https://m.ithome.com/html/811360.htm",
+          "checkedAt": "2026-11-20T00:39:18.905285+00:00",
+          "state": "body",
+          "note": "复读当前可取得的来源正文，核对与本条相关的说明。历史媒体报道未列完整机型，也未验证现行固件、笔记恢复或成功率。"
         }
       ]
     }

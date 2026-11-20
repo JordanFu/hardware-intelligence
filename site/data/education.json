@@ -110,7 +110,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-16T00:45:30.209427+00:00",
+      "reviewedAt": "2026-11-20T00:43:29.502492+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "作业帮"
@@ -167,7 +167,7 @@
         }
       ],
       "updatedAt": "2026-11-17T00:46:36.233260+00:00",
-      "reviewedAt": "2026-11-17T00:46:36.233260+00:00",
+      "reviewedAt": "2026-11-20T00:43:29.502492+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "科大讯飞",
@@ -225,7 +225,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-16T00:45:30.209427+00:00",
+      "reviewedAt": "2026-11-20T00:43:29.502492+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "猿辅导",
@@ -634,7 +634,7 @@
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
       "reviewedAt": "2026-11-16T00:45:30.209427+00:00",
-      "lastReviewStatus": "reviewed",
+      "lastReviewStatus": "error",
       "aliases": [
         "钉钉",
         "DingTalk"
@@ -703,6 +703,59 @@
       ],
       "updatedAt": "2026-11-18T10:46:04.384492+00:00",
       "reviewedAt": "2026-11-18T10:46:04.384492+00:00",
+      "lastReviewStatus": "reviewed"
+    },
+    {
+      "id": "ireader-smartos",
+      "company": "掌阅",
+      "tier": "相邻场景",
+      "categoryIds": [
+        "reader"
+      ],
+      "aliases": [
+        "掌阅",
+        "iReader"
+      ],
+      "brief": {
+        "lead": "2024 年的 SmartOS 2.4 更新说明把云同步限定在账号维度。书架里看得到一本书，并不能说明它已上传，也不能据此承诺换设备后一定找得回。",
+        "points": [
+          "报道列出私密书籍不上传，并说明可从书籍右上角查看上传状态。",
+          "交给测试与客服的样例可以覆盖同账号换机、切换账号、私密书和未上传的书。在每种情形分别核对源文件、账号和本地可读状态。"
+        ]
+      },
+      "dimensions": {
+        "product": "SmartOS 2.4 阅读器系统；当时报道未列出完整支持机型。",
+        "content": "按账号同步；私密书不上传，书架提供上传状态。未证实笔记与源文件共享同一恢复规则。",
+        "delivery": "迁移前可检查账号、私密设置及书架上传标识。具体固件上的恢复结果待复测。",
+        "channel": "2024 年资料未给出当前购买渠道、权益或售后期限。",
+        "organization": "可追查账号服务、设备书架与客服如何定位同步问题；公开材料未说明内部责任归属。"
+      },
+      "boundary": "这是特定历史版本的媒体转述，未列出机型。当前固件行为、笔记能否恢复及恢复成功率待实测。",
+      "gaps": [
+        "当前官方固件、可用机型与失败恢复方式待核对。",
+        "本次为媒体转述，未取得原厂该版本完整发布说明。"
+      ],
+      "sources": [
+        {
+          "id": "ireader-smartos2",
+          "url": "https://m.ithome.com/html/811360.htm",
+          "title": "IT之家整理掌阅 SmartOS 2.4 更新说明",
+          "publishedAt": "2024-11-18T15:28:00+08:00",
+          "role": "media",
+          "readAt": "2026-11-20T00:39:18.905285+00:00",
+          "coverage": "body",
+          "textHash": "b94994dbe3a859cd3146a7261d9bdb131fb2d677a6fdf1de8a316b669e6f6007"
+        }
+      ],
+      "facts": [
+        {
+          "sourceId": "ireader-smartos2",
+          "claim": "当次报道明确区分按账号与按设备同步。",
+          "locator": "多端同步新方案"
+        }
+      ],
+      "updatedAt": "2026-11-20T00:43:29.502492+00:00",
+      "reviewedAt": "2026-11-20T00:43:29.502492+00:00",
       "lastReviewStatus": "reviewed"
     }
   ],
@@ -1539,6 +1592,79 @@
             "pen"
           ],
           "note": "复核P20及P20Plus的年龄与功能差异；产品页未披露具体学科效果验证。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-20T00:43:29.502492+00:00",
+      "summary": "复读三家核心竞品资料及六份岗位正文，建立掌阅历史版本档案；钉钉入口未取得产品正文。",
+      "checks": [
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "name": "2026届春招-硬件研发工程师",
+          "state": "body",
+          "checkedAt": "2026-11-20T00:38:04.217367+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "原文明确小猿产品及学习机、学练机业务，未划分具体型号"
+        },
+        {
+          "company": "作业帮",
+          "name": "作业帮智能 · 品牌介绍",
+          "url": "https://smart.zuoyebang.com/about",
+          "state": "body",
+          "checkedAt": "2026-11-20T00:37:56.904169+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "官网仍以跨产品的聪明学系统解释内容与学情数据的关系，未提供单型号的验收指标。"
+        },
+        {
+          "company": "科大讯飞",
+          "name": "科大讯飞 · AI学习机",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "state": "body",
+          "checkedAt": "2026-11-20T00:37:57.262464+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "厂商页面披露错因点拨、板书式答疑与推荐型号；没有同条件效果对照，本次保留原整理。"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "name": "小猿智能设备 · App Store开发者说明",
+          "url": "https://apps.apple.com/cn/app/id6738277050",
+          "state": "body",
+          "checkedAt": "2026-11-20T00:37:57.767394+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "开发者说明涵盖家长端的时长、答案、家庭和设备管理。本次仅复核功能范围，未把商店评论当作厂商成效。"
+        },
+        {
+          "company": "钉钉",
+          "name": "钉钉 · AI应用服务市场",
+          "url": "https://aihub.dingtalk.com/",
+          "state": "error",
+          "checkedAt": "2026-11-20T00:37:56.906305+00:00",
+          "categoryIds": [
+            "recorder"
+          ],
+          "note": "入口未返回足够正文，保留既有产品与 Xnote 对照边界。"
+        },
+        {
+          "company": "掌阅",
+          "name": "SmartOS 2.4 发布报道",
+          "url": "https://m.ithome.com/html/811360.htm",
+          "state": "body",
+          "checkedAt": "2026-11-20T00:39:18.905285+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "note": "回看已注明日期的系统更新，区分账号同步、私密文件和书架上传状态。"
         }
       ]
     }
@@ -2771,6 +2897,110 @@
       "status": "reviewed",
       "assessment": "复核P20及P20Plus的年龄与功能差异；产品页未披露具体学科效果验证。",
       "changes": {}
+    },
+    {
+      "profileId": "zuoyebang-tablet",
+      "reviewedAt": "2026-11-20T00:43:29.502492+00:00",
+      "status": "reviewed",
+      "assessment": "官网仍以跨产品的聪明学系统解释内容与学情数据的关系，未提供单型号的验收指标。",
+      "changes": {}
+    },
+    {
+      "profileId": "iflytek-tablet",
+      "reviewedAt": "2026-11-20T00:43:29.502492+00:00",
+      "status": "reviewed",
+      "assessment": "厂商页面披露错因点拨、板书式答疑与推荐型号；没有同条件效果对照，本次保留原整理。",
+      "changes": {}
+    },
+    {
+      "profileId": "yuan-tablet",
+      "reviewedAt": "2026-11-20T00:43:29.502492+00:00",
+      "status": "reviewed",
+      "assessment": "开发者说明涵盖家长端的时长、答案、家庭和设备管理。本次仅复核功能范围，未把商店评论当作厂商成效。",
+      "changes": {}
+    },
+    {
+      "profileId": "dingtalk-recorder",
+      "reviewedAt": "2026-11-20T00:43:29.502492+00:00",
+      "status": "error",
+      "assessment": "入口未返回足够正文，保留既有产品与 Xnote 对照边界。",
+      "changes": {}
+    },
+    {
+      "profileId": "ireader-smartos",
+      "reviewedAt": "2026-11-20T00:43:29.502492+00:00",
+      "status": "reviewed",
+      "assessment": "建立有日期的掌阅阅读器系统历史档案，按软件版本注明边界。",
+      "changes": {
+        "brief": {
+          "before": {
+            "lead": "等待本轮已核对正文建立公开资料档案，未核验的信息不填充。",
+            "points": [
+              "等待可核对的原始资料。",
+              "未知项保留，不猜测参数和结果。"
+            ]
+          },
+          "after": {
+            "lead": "2024 年的 SmartOS 2.4 更新说明把云同步限定在账号维度。书架里看得到一本书，并不能说明它已上传，也不能据此承诺换设备后一定找得回。",
+            "points": [
+              "报道列出私密书籍不上传，并说明可从书籍右上角查看上传状态。",
+              "交给测试与客服的样例可以覆盖同账号换机、切换账号、私密书和未上传的书。在每种情形分别核对源文件、账号和本地可读状态。"
+            ]
+          }
+        },
+        "dimensions": {
+          "before": {
+            "channel": "待核验",
+            "product": "待核验",
+            "organization": "待核验",
+            "content": "待核验",
+            "delivery": "待核验"
+          },
+          "after": {
+            "product": "SmartOS 2.4 阅读器系统；当时报道未列出完整支持机型。",
+            "content": "按账号同步；私密书不上传，书架提供上传状态。未证实笔记与源文件共享同一恢复规则。",
+            "delivery": "迁移前可检查账号、私密设置及书架上传标识。具体固件上的恢复结果待复测。",
+            "channel": "2024 年资料未给出当前购买渠道、权益或售后期限。",
+            "organization": "可追查账号服务、设备书架与客服如何定位同步问题；公开材料未说明内部责任归属。"
+          }
+        },
+        "boundary": {
+          "before": "待核验",
+          "after": "这是特定历史版本的媒体转述，未列出机型。当前固件行为、笔记能否恢复及恢复成功率待实测。"
+        },
+        "gaps": {
+          "before": [],
+          "after": [
+            "当前官方固件、可用机型与失败恢复方式待核对。",
+            "本次为媒体转述，未取得原厂该版本完整发布说明。"
+          ]
+        },
+        "sources": {
+          "before": [],
+          "after": [
+            {
+              "id": "ireader-smartos2",
+              "url": "https://m.ithome.com/html/811360.htm",
+              "title": "IT之家整理掌阅 SmartOS 2.4 更新说明",
+              "publishedAt": "2024-11-18T15:28:00+08:00",
+              "role": "media",
+              "readAt": "2026-11-20T00:39:18.905285+00:00",
+              "coverage": "body",
+              "textHash": "b94994dbe3a859cd3146a7261d9bdb131fb2d677a6fdf1de8a316b669e6f6007"
+            }
+          ]
+        },
+        "facts": {
+          "before": [],
+          "after": [
+            {
+              "sourceId": "ireader-smartos2",
+              "claim": "当次报道明确区分按账号与按设备同步。",
+              "locator": "多端同步新方案"
+            }
+          ]
+        }
+      }
     }
   ],
   "reference": {

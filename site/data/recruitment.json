@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-19T00:53:22.847316+00:00",
+  "checkedAt": "2026-11-20T00:46:00.255230+00:00",
   "jobs": [
     {
       "company": "DJI 大疆",
@@ -758,8 +758,8 @@
       "scopeNote": "穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队",
       "id": "job-dee6ed39b271d521",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-17T00:45:51.386437+00:00",
-      "sourceHash": "aeb7d4e49557155cbbead50c7a093dc07e2e5a7cb77848439a115659f6403172",
+      "lastSeen": "2026-11-20T00:43:29.411258+00:00",
+      "sourceHash": "8bc7e173ba61b0587d25d5ca5d1e5e41170b3f6a5fb9a83a6cdf9d217e2a3d6c",
       "change": "持续可见",
       "versions": [
         {
@@ -1071,7 +1071,7 @@
       "scopeNote": "集团统一招聘的OCR能力，未指定学习机或词典笔项目",
       "id": "job-6ad13572c435cde0",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-14T00:44:10.803458+00:00",
+      "lastSeen": "2026-11-20T00:43:29.411258+00:00",
       "sourceHash": "46428c6fef15a49e07d70af7d8d0f94c1cd36347c94ff1a8705d6e3c8ba28011",
       "change": "持续可见",
       "versions": [
@@ -1260,8 +1260,8 @@
       "scopeNote": "消费者业务渠道，未指明学习机产品线",
       "id": "job-c1045357d5154cb3",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-18T10:46:04.282488+00:00",
-      "sourceHash": "3c604a23f2e6ab0b9b5eb519d90acf4f387b8f862dc3f57484f9cb2d78b31069",
+      "lastSeen": "2026-11-20T00:43:29.411258+00:00",
+      "sourceHash": "3815c59cfbe4945a2b8f22e6936f3d0feba47dfb25445f1b7845354b7d920229",
       "change": "持续可见",
       "versions": [
         {
@@ -1387,7 +1387,7 @@
       "scopeNote": "基础研发部教育OCR能力，未说明专属学习机",
       "id": "job-36588c371ea71881",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-15T00:44:23.590600+00:00",
+      "lastSeen": "2026-11-20T00:43:29.411258+00:00",
       "sourceHash": "86c0ef2be81ebb0dca088e7541417ff8ae75341b7a24a4d33823a3be06a78e11",
       "change": "持续可见",
       "versions": [
@@ -1454,7 +1454,7 @@
       ],
       "id": "job-6c6331e12e6b4c66",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-17T00:45:51.386437+00:00",
+      "lastSeen": "2026-11-20T00:43:29.411258+00:00",
       "sourceHash": "2c8e92aeec8845f458bdc658e6f76ca865dda8ad852ef8c28ee8de426eea753f",
       "change": "持续可见",
       "versions": [
@@ -1589,7 +1589,7 @@
       "scopeNote": "海豚AI一对一教学服务，未提学习硬件销售",
       "id": "job-1aaf56ee506f9b32",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-13T00:47:25.669231+00:00",
+      "lastSeen": "2026-11-20T00:46:00.255230+00:00",
       "sourceHash": "8aefda4323896674aa510d202168aad57e7cba4cd5e58eb1688b62e1ff678656",
       "change": "持续可见",
       "versions": [
@@ -1653,9 +1653,9 @@
       "scopeNote": "题库教研审核与业务反馈，未披露硬件品类；正文岗位名为小数教研，要求却写初高中教材，学段边界待确认。",
       "id": "job-412d1d016a91f620",
       "firstSeen": "2026-11-12T00:50:37.226067+00:00",
-      "lastSeen": "2026-11-12T00:50:37.226067+00:00",
-      "sourceHash": "09a97edfe7628d536cd8c7c73e1d8519fd5c1fd5c36e5e527666029b4afc8427",
-      "change": "首次收录基线",
+      "lastSeen": "2026-11-20T00:43:29.411258+00:00",
+      "sourceHash": "32858b097f46424470ed187d23ffc988958b5e32fecd1f6ba24c4e5a4b62f88d",
+      "change": "持续可见",
       "versions": [
         {
           "observedAt": "2026-11-12T00:50:37.226067+00:00",
@@ -2852,6 +2852,112 @@
         }
       ],
       "checkedAt": "2026-11-19T00:53:22.847316+00:00"
+    },
+    {
+      "company": "猿辅导（小猿）",
+      "state": "partial",
+      "complete": false,
+      "note": "按已核验企业招聘入口复查特定岗位ID，未遍历完整目录。",
+      "familyChecks": [
+        {
+          "url": "https://app.mokahr.com/social-recruitment/fenbi/45505#/job/5ecdce43-9ab2-48bb-ade9-ff021311daef",
+          "family": "算法",
+          "state": "body",
+          "jobIds": [
+            "job-36588c371ea71881"
+          ],
+          "note": "基础研发部教育OCR能力，未说明专属学习机"
+        },
+        {
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "family": "硬件",
+          "state": "body",
+          "jobIds": [
+            "job-6c6331e12e6b4c66"
+          ],
+          "note": "原文明确小猿产品及学习机、学练机业务，未划分具体型号"
+        }
+      ],
+      "checkedAt": "2026-11-20T00:43:29.411258+00:00"
+    },
+    {
+      "company": "作业帮",
+      "state": "partial",
+      "complete": false,
+      "note": "按已核验企业招聘入口复查特定岗位ID，未遍历完整目录。",
+      "familyChecks": [
+        {
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/e6056b1d-580b-442d-a27f-9ab9f12cd4b1",
+          "family": "算法",
+          "state": "body",
+          "jobIds": [
+            "job-dee6ed39b271d521"
+          ],
+          "note": "穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队"
+        },
+        {
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/0223c4d9-1a3a-4d44-b3da-ce58723e1311",
+          "family": "教研",
+          "state": "body",
+          "jobIds": [
+            "job-412d1d016a91f620"
+          ],
+          "note": "题库教研审核与业务反馈，未披露硬件品类；正文岗位名为小数教研，要求却写初高中教材，学段边界待确认。"
+        },
+        {
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/jobs?keyword=%E9%87%87%E8%B4%AD&page=1&anchorName=jobsList",
+          "family": "供应链",
+          "state": "index",
+          "jobIds": [],
+          "note": "作业帮社招采购检索本次显示暂无匹配职位，仍缺直接的采购职责正文。"
+        }
+      ],
+      "checkedAt": "2026-11-20T00:43:29.411258+00:00"
+    },
+    {
+      "company": "科大讯飞",
+      "state": "partial",
+      "complete": false,
+      "note": "按已核验企业招聘入口复查特定岗位ID，未遍历完整目录。",
+      "familyChecks": [
+        {
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=179aac28-bb83-4ed6-938e-25d57a57899b",
+          "family": "渠道",
+          "state": "body",
+          "jobIds": [
+            "job-c1045357d5154cb3"
+          ],
+          "note": "消费者业务渠道，未指明学习机产品线"
+        },
+        {
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=dc4e67cc-59ed-4a75-8b7a-e0d6ae6faaa9",
+          "family": "算法",
+          "state": "body",
+          "jobIds": [
+            "job-6ad13572c435cde0"
+          ],
+          "note": "集团统一招聘的OCR能力，未指定学习机或词典笔项目"
+        }
+      ],
+      "checkedAt": "2026-11-20T00:43:29.411258+00:00"
+    },
+    {
+      "company": "猿辅导（小猿）",
+      "state": "partial",
+      "complete": false,
+      "note": "在七日复核期限前单独回访同一海豚业务岗位，正文仍可读。",
+      "familyChecks": [
+        {
+          "url": "https://app.mokahr.com/social-recruitment/fenbi/45505#/job/e0ccd64d-0f72-49d3-a787-e87b44bac2d1",
+          "family": "渠道",
+          "state": "body",
+          "jobIds": [
+            "job-1aaf56ee506f9b32"
+          ],
+          "note": "海豚AI一对一教学服务，未提学习硬件销售"
+        }
+      ],
+      "checkedAt": "2026-11-20T00:46:00.255230+00:00"
     }
   ],
   "insights": [
@@ -3008,6 +3114,21 @@
       ],
       "educationResearch": true,
       "reviewedAt": "2026-11-18T10:46:04.282488+00:00",
+      "history": []
+    },
+    {
+      "id": "yuan-hardware-validation-handoff",
+      "title": "试产故障由谁定位，定位之后谁有权放行？",
+      "finding": "小猿硬件研发岗明列模块、板卡和整机测试，负责跟踪设计至试产的技术问题并提出整改对策。",
+      "interpretation": "测试设计与失效定位在这份招聘职责中相连；面试可以让候选人解释同一故障在不同层级的复现条件。",
+      "alternative": "这些内容也可能描述培养阶段会接触的工作，实际项目的测试和签核仍可由多人分担。",
+      "nextAction": "核对一次试产异常的用例、问题单、整改人和最终放行记录，分别确认技术定位与交付决策的责任。",
+      "boundary": "依据单份历史校招正文，未披露汇报线、签字权、实际工作量、编制或团队合并。",
+      "jobIds": [
+        "job-6c6331e12e6b4c66"
+      ],
+      "educationResearch": true,
+      "reviewedAt": "2026-11-20T00:43:29.411258+00:00",
       "history": []
     }
   ]

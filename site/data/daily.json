@@ -1,6 +1,104 @@
 {
   "editions": [
     {
+      "id": "daily-2026-11-20",
+      "date": "2026-11-20",
+      "generatedAt": "2026-11-20T00:43:29.299695+00:00",
+      "state": "partial",
+      "bootstrap": false,
+      "windowNote": "优先最近 72 小时的新事件；按北京时间出刊。7 期内同一进展不重复。",
+      "itemIds": [
+        "m20-nand",
+        "m20-gov",
+        "m20-mof",
+        "m20-tool",
+        "m20-jedec",
+        "m20-battery",
+        "m20-oled"
+      ],
+      "developmentKeys": [
+        [
+          "m20-nand",
+          "initial"
+        ],
+        [
+          "e18-bis",
+          "published-effective"
+        ],
+        [
+          "m20-mof",
+          "initial"
+        ],
+        [
+          "m20-tool",
+          "initial"
+        ],
+        [
+          "m20-jedec",
+          "initial"
+        ],
+        [
+          "m20-battery",
+          "initial"
+        ],
+        [
+          "m20-oled",
+          "initial"
+        ]
+      ],
+      "reviewedCount": 10,
+      "failedSources": [
+        "入口未返回足够正文，保留既有产品与 Xnote 对照边界。",
+        "直连返回 403；已核对协会经 Business Wire 分发的完整新闻稿。",
+        "本次抓取未成功：curl: (56) The requested URL returned error: 403\n"
+      ],
+      "coverage": "审读存储价格、DDR6 预告、智能设备零售、OLED 出货、两起美国硬件召回及出口管制正式文件；另查三家学习硬件企业的六份岗位正文。",
+      "knownGaps": [
+        "DRAM 案本轮查阅仍是原程序裁定，未检出新的实体判断。",
+        "作业帮采购检索未取得岗位正文；钉钉产品入口未取得可用正文。",
+        "掌阅旧版本资料缺当前机型实测；学习机终端采购价、试产放行人及实际效果未披露。"
+      ],
+      "coverageCheck": {
+        "newsResearch": {
+          "passed": true,
+          "bodyCount": 9,
+          "publisherGroups": [
+            "JEDEC",
+            "TrendForce",
+            "之家网站",
+            "商务部消费促进司",
+            "王兴兴 APEC 现场发言",
+            "美国消费品安全委员会 CPSC"
+          ],
+          "requiredBodies": 6,
+          "requiredPublisherGroups": 3
+        },
+        "passed": true,
+        "companies": [
+          "作业帮",
+          "宇树科技",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "gaps": [],
+        "usableSources": 25
+      }
+    },
+    {
       "id": "daily-2026-11-19",
       "date": "2026-11-19",
       "generatedAt": "2026-11-19T00:51:20.394959+00:00",
