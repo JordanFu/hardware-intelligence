@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-20T10:48:02.719418+00:00",
-  "lastSuccessfulAt": "2026-11-20T10:48:02.719418+00:00",
+  "checkedAt": "2026-11-20T18:36:55.534642+00:00",
+  "lastSuccessfulAt": "2026-11-20T18:36:55.534642+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-20T10:48:02.719418+00:00",
-      "lastSuccessAt": "2026-11-20T10:48:02.719418+00:00",
+      "checkedAt": "2026-11-20T18:36:55.534642+00:00",
+      "lastSuccessAt": "2026-11-20T18:36:55.534642+00:00",
       "received": 18,
       "matched": 0,
       "excluded": 18,
@@ -15,8 +15,8 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-20T10:48:02.719418+00:00",
-      "lastSuccessAt": "2026-11-20T10:48:02.719418+00:00",
+      "checkedAt": "2026-11-20T18:36:55.534642+00:00",
+      "lastSuccessAt": "2026-11-20T18:36:55.534642+00:00",
       "received": 50,
       "matched": 2,
       "excluded": 48,
@@ -25,8 +25,8 @@
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-20T10:48:02.719418+00:00",
-      "lastSuccessAt": "2026-11-20T10:48:02.719418+00:00",
+      "checkedAt": "2026-11-20T18:36:55.534642+00:00",
+      "lastSuccessAt": "2026-11-20T18:36:55.534642+00:00",
       "received": 10,
       "matched": 0,
       "excluded": 10,
@@ -35,8 +35,8 @@
     {
       "id": "bambu",
       "state": "ok",
-      "checkedAt": "2026-11-20T10:48:02.719418+00:00",
-      "lastSuccessAt": "2026-11-20T10:48:02.719418+00:00",
+      "checkedAt": "2026-11-20T18:36:55.534642+00:00",
+      "lastSuccessAt": "2026-11-20T18:36:55.534642+00:00",
       "received": 15,
       "matched": 15,
       "excluded": 0,
@@ -45,8 +45,8 @@
     {
       "id": "cnx",
       "state": "ok",
-      "checkedAt": "2026-11-20T10:48:02.719418+00:00",
-      "lastSuccessAt": "2026-11-20T10:48:02.719418+00:00",
+      "checkedAt": "2026-11-20T18:36:55.534642+00:00",
+      "lastSuccessAt": "2026-11-20T18:36:55.534642+00:00",
       "received": 32,
       "matched": 8,
       "excluded": 24,
@@ -55,25 +55,61 @@
     {
       "id": "ithome",
       "state": "ok",
-      "checkedAt": "2026-11-20T10:48:02.719418+00:00",
-      "lastSuccessAt": "2026-11-20T10:48:02.719418+00:00",
+      "checkedAt": "2026-11-20T18:36:55.534642+00:00",
+      "lastSuccessAt": "2026-11-20T18:36:55.534642+00:00",
       "received": 60,
-      "matched": 5,
-      "excluded": 55,
+      "matched": 3,
+      "excluded": 57,
       "error": null
     },
     {
       "id": "tomshardware",
       "state": "ok",
-      "checkedAt": "2026-11-20T10:48:02.719418+00:00",
-      "lastSuccessAt": "2026-11-20T10:48:02.719418+00:00",
+      "checkedAt": "2026-11-20T18:36:55.534642+00:00",
+      "lastSuccessAt": "2026-11-20T18:36:55.534642+00:00",
       "received": 50,
-      "matched": 6,
-      "excluded": 44,
+      "matched": 7,
+      "excluded": 43,
       "error": null
     }
   ],
   "items": [
+    {
+      "id": "rss-ba8275f4dc87a1d9",
+      "title": "Get 32GB of DDR5 RAM for $111 in this premium AM5 gaming bundle from Newegg",
+      "url": "https://www.tomshardware.com/pc-components/get-32gb-of-ddr5-ram-for-usd111-in-this-premium-am5-gaming-bundle-from-newegg-4-item-combo-includes-9950x3d-32gb-v-color-ddr5-ram-asus-rog-strix-x870e-e-gaming-motherboard-and-2tb-samsung-990-pro-ssd-for-only-usd1-549",
+      "date": "2026-11-20T14:30:06+00:00",
+      "sourceId": "tomshardware",
+      "source": "Tom's Hardware",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-20T18:36:55.534642+00:00"
+    },
+    {
+      "id": "rss-24d3826904f12648",
+      "title": "Phison details SSD with a built-in NPU and 64GB of memory that supports AI frameworks on the drive",
+      "url": "https://www.tomshardware.com/pc-components/ssds/phison-details-ssd-with-a-built-in-npu-and-64gb-of-memory-that-supports-pytorch-and-llama-cpp-running-on-the-drive-second-design-merges-fast-pslc-cache-and-qlc-capacity-behind-one-controller",
+      "date": "2026-11-20T14:00:00+00:00",
+      "sourceId": "tomshardware",
+      "source": "Tom's Hardware",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-20T18:36:55.534642+00:00"
+    },
+    {
+      "id": "rss-187d09cae944a5aa",
+      "title": "加州禁令引发连锁反应，Waymo 暂停全美 Robotaxi 高速公路服务",
+      "url": "https://www.ithome.com/1/030/241.htm",
+      "date": "2026-11-20T13:34:23+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-20T18:36:55.534642+00:00"
+    },
     {
       "id": "rss-722da1485b2ea609",
       "title": "AMD XDNA2 NPU 率先获得 Unsloth Desktop 适配，支持超百款智能体",
