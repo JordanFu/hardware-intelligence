@@ -709,42 +709,67 @@
       "updatedAt": "2026-11-19T00:52:51.904150+00:00"
     },
     "track-2": {
-      "attemptedAt": "2026-11-18T10:48:32.272337+00:00",
+      "attemptedAt": "2026-11-20T10:47:11.295604+00:00",
       "status": "partial",
-      "assessment": "重新阅读 M200 对控制器和边界路由器的说明，补充现场诊断的两项检查。",
+      "assessment": "小米支持页列出分享设备和邀请家庭成员的入口；三星美国站的邀请覆盖整个地点，由地点所有者移除成员；涂鸦 SDK 为家庭管理操作区分成员角色。",
       "gaps": [
-        "其他观察企业、离线能力、多成员权限未完整核实。",
+        "已核三份文档中的授权入口或角色；仍缺特定设备权限、离线撤权及跨平台实测。",
         "没有可比故障率、用户样本和售后改善数据。"
       ],
       "reviewedFields": [
-        "constraint"
+        "team"
       ],
       "evidence": [
         {
-          "itemId": "aqara-m200-local-boundary",
-          "title": "Aqara M200：本地自动化与云端通知要分别核验",
+          "itemId": "e20-mi",
+          "title": "给家人开设备权限，分享一台设备和加入整个家庭差在哪里？",
           "facts": [
             {
-              "claim": "部分自动化如云推送仍依赖云连接。",
-              "sourceUrl": "https://www.aqara.com/en/product/hub-m200/",
-              "locator": "Simple Yet Powerful Automations脚注"
+              "claim": "小米支持页分别说明设备卡片分享与邀请家庭成员这两条路径。",
+              "sourceUrl": "https://www.mi.com/global/support/article/KA-07429/",
+              "locator": "Method 1 / Method 3"
             },
             {
-              "claim": "空调模式桥接仅限一台红外空调。",
-              "sourceUrl": "https://www.aqara.com/en/product/hub-m200/",
-              "locator": "Universal IR Remote Control脚注"
+              "claim": "SmartThings 的邀请以地点为单位，只能由地点所有者移除成员。",
+              "sourceUrl": "https://www.samsung.com/us/support/answer/ANS10002634/",
+              "locator": "Invite members / View or remove members"
+            },
+            {
+              "claim": "家庭管理员可以添加普通成员，但不能删除整个家庭。",
+              "sourceUrl": "https://developer.tuya.com/en/docs/app-development/extension-family-member?id=Kcy2iwdhz60pm",
+              "locator": "Home Member Management · Member roles（2025-12-25 更新）"
             }
           ],
-          "boundary": "无明确发布日期的具体型号说明；未实测断网、通知和第三方设备兼容性。不推广为所有网关能力或可靠性结论。",
+          "boundary": "三份资料分别来自小米全球版说明、三星美国支持页和涂鸦 SDK。插件、地区、门锁等特定设备权限，以及撤销在离线设备上何时生效，仍需逐项核验。",
           "sources": [
             {
-              "url": "https://www.aqara.com/en/product/hub-m200/",
-              "name": "Aqara 绿米官方资料",
+              "url": "https://www.mi.com/global/support/article/KA-07429/",
+              "publisherGroup": "小米全球支持",
+              "name": "小米全球支持",
               "publishedAt": null,
-              "publisherGroup": "Aqara 绿米",
               "role": "official",
-              "textHash": "5eabaf79616b1698b683e17bd9f96736d9f2b86acfb253027da119b07644bad2",
-              "readAt": "2026-11-16T00:42:34.122918+00:00",
+              "textHash": "d29456e292cfb87704e1fe7d05cda807cf8dc2288fbaccde5087ee01d0eaac50",
+              "readAt": "2026-11-20T10:42:16.984424+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://www.samsung.com/us/support/answer/ANS10002634/",
+              "publisherGroup": "Samsung 美国支持",
+              "name": "Samsung 美国支持",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "e336a8fb80343eb6458527cb239d48aa4d2f546369a89e603292fa2c4007ace2",
+              "readAt": "2026-11-20T10:42:17.836170+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://developer.tuya.com/en/docs/app-development/extension-family-member?id=Kcy2iwdhz60pm",
+              "publisherGroup": "涂鸦 Smart App SDK",
+              "name": "涂鸦 Smart App SDK",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "991699639eb2465541f4c84e8753712d3a84cb1ca4cdb40d110279207828dd50",
+              "readAt": "2026-11-20T10:42:52.227992+00:00",
               "coverage": "body"
             }
           ]
@@ -752,17 +777,31 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "aqara-m200-local-boundary",
-          "url": "https://www.aqara.com/en/product/hub-m200/",
-          "checkedAt": "2026-11-18T10:48:32.155367+00:00",
+          "itemId": "e20-mi",
+          "url": "https://www.mi.com/global/support/article/KA-07429/",
+          "checkedAt": "2026-11-20T10:42:16.984424+00:00",
           "state": "body",
-          "note": "重新阅读 M200 对控制器和边界路由器的说明，补充现场诊断的两项检查。"
+          "note": "小米支持页列出分享设备和邀请家庭成员的入口；三星美国站的邀请覆盖整个地点，由地点所有者移除成员；涂鸦 SDK 为家庭管理操作区分成员角色。 平台、地区及设备插件不同，特定门锁授权和离线撤权生效时间须实测。"
+        },
+        {
+          "itemId": "e20-mi",
+          "url": "https://www.samsung.com/us/support/answer/ANS10002634/",
+          "checkedAt": "2026-11-20T10:42:17.836170+00:00",
+          "state": "body",
+          "note": "小米支持页列出分享设备和邀请家庭成员的入口；三星美国站的邀请覆盖整个地点，由地点所有者移除成员；涂鸦 SDK 为家庭管理操作区分成员角色。 平台、地区及设备插件不同，特定门锁授权和离线撤权生效时间须实测。"
+        },
+        {
+          "itemId": "e20-mi",
+          "url": "https://developer.tuya.com/en/docs/app-development/extension-family-member?id=Kcy2iwdhz60pm",
+          "checkedAt": "2026-11-20T10:42:52.227992+00:00",
+          "state": "body",
+          "note": "小米支持页列出分享设备和邀请家庭成员的入口；三星美国站的邀请覆盖整个地点，由地点所有者移除成员；涂鸦 SDK 为家庭管理操作区分成员角色。 平台、地区及设备插件不同，特定门锁授权和离线撤权生效时间须实测。"
         }
       ],
-      "reviewedAt": "2026-11-18T10:48:32.272337+00:00",
+      "reviewedAt": "2026-11-20T10:47:11.295604+00:00",
       "patch": {
         "constraint": "兼容性、配网成本、稳定性与家庭成员协同。离线范围须按触发、动作和反馈分别核对：Aqara M200说明部分自动化本地执行，但云推送仍需要云连接；不能据“本地自动化”承诺全部提醒和远程控制可用。",
-        "team": "嵌入式、连接协议、云平台、客户端、认证与售后 售后交给协议、固件或平台团队的信息应包含型号/版本、连接路径、受影响范围和复现步骤；诊断日志按支持范围自愿启用，并保留本地保存选择。",
+        "team": "嵌入式、连接协议、云平台、客户端、认证与售后 售后交给协议、固件或平台团队的信息应包含型号/版本、连接路径、受影响范围和复现步骤；诊断日志按支持范围自愿启用，并保留本地保存选择。 产品、客户端与售后可用临时照护者借用一台设备的情境，逐项核对邀约界面、可操作的设备、可执行的动作及回收权限的角色。",
         "metrics": "配网成功率；离线可用率；跨品牌联动失败率 观察时分别记录单设备、桥接路径和平台功能故障；固定型号、固件和平台组合后再比较，不能把重置后重新配网成功视为全部功能恢复。"
       },
       "lessons": [
@@ -798,61 +837,93 @@
             "aqara-m200-local-boundary"
           ],
           "updatedAt": "2026-11-18T10:48:32.272337+00:00"
+        },
+        {
+          "id": "e20-track-2",
+          "title": "家庭设备授权要问清对象、范围和撤销人",
+          "learning": "小米支持页列出分享设备和邀请家庭成员的入口；三星美国站的邀请覆盖整个地点，由地点所有者移除成员；涂鸦 SDK 为家庭管理操作区分成员角色。",
+          "application": "产品、客户端与售后可用临时照护者借用一台设备的情境，逐项核对邀约界面、可操作的设备、可执行的动作及回收权限的角色。",
+          "boundary": "平台、地区及设备插件不同，特定门锁授权和离线撤权生效时间须实测。",
+          "itemIds": [
+            "e20-mi"
+          ],
+          "updatedAt": "2026-11-20T10:47:11.295604+00:00"
         }
       ],
-      "updatedAt": "2026-11-18T10:48:32.272337+00:00"
+      "updatedAt": "2026-11-20T10:47:11.295604+00:00"
     },
     "chain-2": {
-      "attemptedAt": "2026-11-19T00:52:51.904150+00:00",
+      "attemptedAt": "2026-11-20T10:47:11.295604+00:00",
       "status": "partial",
-      "assessment": "检查优化成绩是否来自省去测试未覆盖的功能。审查设计替代方案时先建立功能保留清单，再在统一负载下比较。",
+      "assessment": "Android 回环测试记录从播放信号到采集端收到信号的时差。内置、模拟和 USB 路径单列，结果合并播放与采集耗时。",
       "gaps": [
         "验证某段 RTL 行为一致不能证明所有整机功能覆盖。",
         "已补三个阶段的概念区分；特定项目的放行权限、变更接口和退出条件仍待核验。",
-        "端到端延迟、分位数及返工结果缺独立测试；未完整复核整机指标。"
+        "已核 Android 音频回环的测量边界；实际学习机的端到端分位数、返工及整机验证数据待查。"
       ],
       "reviewedFields": [
-        "exercise",
-        "pitfall"
+        "metrics"
       ],
       "evidence": [
         {
-          "itemId": "m19-chip-web",
-          "title": "芯片设计优化怎么验收：功能等价、模块面积和整片表现分开看",
+          "itemId": "e20-android",
+          "title": "学习机跟读觉得慢，先量清楚是哪一段在等",
           "facts": [
             {
-              "claim": "技术报告说明了逐项改写后的功能验证环节。",
-              "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models/",
-              "locator": "Our collaboration with AMD 小节"
+              "claim": "回环测试定义了从播放开始到收到采集信号的时间区间。",
+              "sourceUrl": "https://source.android.com/docs/compatibility/cts/audio-loopback-latency",
+              "locator": "Audio loopback latency test · 开头与 Latency paths"
+            },
+            {
+              "claim": "测量可以比较输入和输出信号的时间偏移，结果合并输出与输入延迟。",
+              "sourceUrl": "https://source.android.com/docs/core/audio/latency/measure",
+              "locator": "Measure audio latency · Round-trip latency"
             }
           ],
-          "boundary": "指标针对特定模块和测试基线；没有整机销量、整机能效或研发人力数据。",
+          "boundary": "方法来自 Android 文档（更新于 2026-07-15）。本文没有测试具体学习机、词典笔或录音设备，也未核实任何厂商的实测成绩或交付标准。",
           "sources": [
             {
-              "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
-              "publisherGroup": "OpenAI",
-              "name": "OpenAI",
-              "publishedAt": "2026-11-18",
+              "url": "https://source.android.com/docs/compatibility/cts/audio-loopback-latency",
+              "publisherGroup": "Android 开源项目",
+              "name": "Android 开源项目",
+              "publishedAt": null,
               "role": "official",
-              "textHash": "0baaa7c39d0ac1d402bfbc561fb7a1f9b186180e9057248eb96504ed6eb1f4c6",
-              "readAt": "2026-11-19T00:48:48+00:00",
-              "coverage": "excerpt"
+              "textHash": "962bb59cbcbd30736de001bac4ca8edcd042ad858c8c0438dda1c13b29f21efd",
+              "readAt": "2026-11-20T10:42:17.952920+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://source.android.com/docs/core/audio/latency/measure",
+              "publisherGroup": "Android 开源项目",
+              "name": "Android 开源项目",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "fb31fe369b5306b09b91287c6f0f3ef0f570d5fd1c59af536d8acaeb3473b395",
+              "readAt": "2026-11-20T10:42:19.471647+00:00",
+              "coverage": "body"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "m19-chip-web",
-          "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
-          "checkedAt": "2026-11-19T00:48:48+00:00",
+          "itemId": "e20-android",
+          "url": "https://source.android.com/docs/compatibility/cts/audio-loopback-latency",
+          "checkedAt": "2026-11-20T10:42:17.952920+00:00",
           "state": "body",
-          "note": "已复读原报告生产芯片章节和测试限制。报告中的开源处理器基准限定任务和负载；未给具体硬件项目的放行权限。"
+          "note": "Android 回环测试记录从播放信号到采集端收到信号的时差。内置、模拟和 USB 路径单列，结果合并播放与采集耗时。 团队分工是迁移示例。Android 测试没有覆盖识别和界面，具体学习机实测、目标分位数及项目放行权限待查。"
+        },
+        {
+          "itemId": "e20-android",
+          "url": "https://source.android.com/docs/core/audio/latency/measure",
+          "checkedAt": "2026-11-20T10:42:19.471647+00:00",
+          "state": "body",
+          "note": "Android 回环测试记录从播放信号到采集端收到信号的时差。内置、模拟和 USB 路径单列，结果合并播放与采集耗时。 团队分工是迁移示例。Android 测试没有覆盖识别和界面，具体学习机实测、目标分位数及项目放行权限待查。"
         }
       ],
-      "reviewedAt": "2026-11-19T00:52:51.904150+00:00",
+      "reviewedAt": "2026-11-20T10:47:11.295604+00:00",
       "patch": {
-        "metrics": "任务延迟用同一输入、环境与分位数比较；不能只报告平均值或实验室峰值。 对加工设备还应固定材料、任务和成品质量条件，分别记录准备、加工与失败恢复耗时；标称最高运动速度不能直接折算真实产能。",
+        "metrics": "任务延迟用同一输入、环境与分位数比较；不能只报告平均值或实验室峰值。 对加工设备还应固定材料、任务和成品质量条件，分别记录准备、加工与失败恢复耗时；标称最高运动速度不能直接折算真实产能。 排查学习机跟读等待时，音频团队固定设备和音频路径测回环，应用与识别团队另记说完、识别完成和评分可见的时点，按相同输入比较。",
         "exercise": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。",
         "basics": "BOM是制造所需项目的汇总，可包含编号、数量、描述与生命周期状态；交接时还需核对版本。Autodesk Vault 2026提供修订比较，这是具体软件规则，不是所有企业的通用制度。BOM不能代替完整业务成本；Formlabs解释中，EVT聚焦关键功能与可制造设计，DVT细化设计并测试接近量产的产品，PVT检验生产线稳定制造能力。缩写、样品数量、周期与退出条件须按项目定义。"
       },
@@ -900,9 +971,20 @@
             "m19-chip-web"
           ],
           "updatedAt": "2026-11-19T00:52:51.904150+00:00"
+        },
+        {
+          "id": "e20-chain-2",
+          "title": "跟读评分慢，怎样划分音频与应用的测量责任",
+          "learning": "Android 回环测试记录从播放信号到采集端收到信号的时差。内置、模拟和 USB 路径单列，结果合并播放与采集耗时。",
+          "application": "排查学习机跟读等待时，音频团队固定设备和音频路径测回环，应用与识别团队另记说完、识别完成和评分可见的时点，按相同输入比较。",
+          "boundary": "团队分工是迁移示例。Android 测试没有覆盖识别和界面，具体学习机实测、目标分位数及项目放行权限待查。",
+          "itemIds": [
+            "e20-android"
+          ],
+          "updatedAt": "2026-11-20T10:47:11.295604+00:00"
         }
       ],
-      "updatedAt": "2026-11-19T00:52:51.904150+00:00"
+      "updatedAt": "2026-11-20T10:47:11.295604+00:00"
     },
     "chain-5": {
       "attemptedAt": "2026-11-20T00:45:12.064804+00:00",
@@ -1502,42 +1584,42 @@
       "updatedAt": "2026-11-20T00:45:12.064804+00:00"
     },
     "track-1": {
-      "attemptedAt": "2026-11-18T10:48:32.272337+00:00",
+      "attemptedAt": "2026-11-20T10:47:11.295604+00:00",
       "status": "partial",
-      "assessment": "核对合作方披露的巡检活动与后续验证计划，补充评价指标边界。",
+      "assessment": "大疆企业无人机保养支持页说明，客户可用工单号查看进度和报告。服务中心发现超出保养范围的损坏后，客户选择是否另行付费维修。",
       "gaps": [
-        "无人机、DJI 与初始 NVIDIA 生态观察对象尚未完整复核。",
+        "已核大疆企业保养的追加授权接口；其他无人机服务范围、机器人厂商的现场交付仍待核对。",
         "任务成功率、接管、恢复时间与现场工时仍缺统一测量协议及实测样本。"
       ],
       "reviewedFields": [
-        "metrics"
+        "team"
       ],
       "evidence": [
         {
-          "itemId": "e18-gf",
-          "title": "格罗方德将扩展 Spot 巡检，Atlas 先验证能否承担具体任务",
+          "itemId": "e20-dji",
+          "title": "大疆行业无人机送保养，发现另需付费的损坏时谁决定？",
           "facts": [
             {
-              "claim": "公告披露新加坡部署的巡检次数。",
-              "sourceUrl": "https://bostondynamics.com/news/boston-dynamics-globalfoundries-expand-robotics-collaboration/",
-              "locator": "新加坡既有部署段落"
+              "claim": "超出保养范围的损坏由客户选择是否另行付费维修。",
+              "sourceUrl": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
+              "locator": "How to Use Maintenance Service · Step 3"
             },
             {
-              "claim": "Atlas 现场测试计划于 2027 年初开始。",
-              "sourceUrl": "https://bostondynamics.com/news/boston-dynamics-globalfoundries-expand-robotics-collaboration/",
-              "locator": "现场测试及工作坊段落"
+              "claim": "申请后生成工单号，用户可查看进度并下载维护报告。",
+              "sourceUrl": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
+              "locator": "Service Progress Inquiry · Maintenance records"
             }
           ],
-          "boundary": "数量与成功率为合作方披露。缺少误报、漏报与停机对照数据。",
+          "boundary": "依据大疆英文支持页列明的企业机型和地区，未查得中国大陆统一的服务价格、周转时长或实际完成率。",
           "sources": [
             {
-              "url": "https://bostondynamics.com/news/boston-dynamics-globalfoundries-expand-robotics-collaboration/",
-              "publisherGroup": "Boston Dynamics",
-              "name": "Boston Dynamics 与 GF 合作公告",
-              "publishedAt": "2026-11-17",
+              "url": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
+              "publisherGroup": "大疆技术支持",
+              "name": "大疆技术支持",
+              "publishedAt": null,
               "role": "official",
-              "textHash": "f2827ae5bad630c50ad348bd8af98135741543d87cddc15f45d04c0947b19dd9",
-              "readAt": "2026-11-18T10:43:32.901730+00:00",
+              "textHash": "e0195372c19294852d06d4eb82cbb81d94c522c4a2a17d9e33b14e296abde504",
+              "readAt": "2026-11-20T10:42:17.557207+00:00",
               "coverage": "body"
             }
           ]
@@ -1545,18 +1627,19 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "e18-gf",
-          "url": "https://bostondynamics.com/news/boston-dynamics-globalfoundries-expand-robotics-collaboration/",
-          "checkedAt": "2026-11-18T10:48:32.155367+00:00",
+          "itemId": "e20-dji",
+          "url": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
+          "checkedAt": "2026-11-20T10:42:17.557207+00:00",
           "state": "body",
-          "note": "核对合作方披露的巡检活动与后续验证计划，补充评价指标边界。"
+          "note": "大疆企业无人机保养支持页说明，客户可用工单号查看进度和报告。服务中心发现超出保养范围的损坏后，客户选择是否另行付费维修。 依据大疆英文站所列企业机型及地区；实际作业时长、成本和完成率未知。"
         }
       ],
-      "reviewedAt": "2026-11-18T10:48:32.272337+00:00",
+      "reviewedAt": "2026-11-20T10:47:11.295604+00:00",
       "patch": {
         "examples": "DJI、宇树、NVIDIA 生态；新增上纬新材启元作为量产与商业化阶段观察对象，HALO 作为基于宇树 G1 的研究系统样本。",
         "constraint": "真实环境中的安全、可靠性与维护成本。宇树实物部署说明明确其程序仅为示例、不是稳定控制；模型能运行与业务可交付须分别取证，不能从演示外推任务可靠性。",
-        "metrics": "任务成功率；人工接管频次；故障恢复时间；现场工时 使用频次另列统计对象、窗口与分母；高频交互不直接证明任务完成、人工负担减少或用户价值。"
+        "metrics": "任务成功率；人工接管频次；故障恢复时间；现场工时 使用频次另列统计对象、窗口与分母；高频交互不直接证明任务完成、人工负担减少或用户价值。",
+        "team": "控制、感知、机械、电气、仿真、现场交付 交付团队复盘一次保养时，可用同一工单对照原授权、追加报价、客户决定和维护报告，分开记录等候用户与实际作业时间。"
       },
       "lessons": [
         {
@@ -1592,9 +1675,20 @@
             "e18-gf"
           ],
           "updatedAt": "2026-11-18T10:48:32.272337+00:00"
+        },
+        {
+          "id": "e20-track-1",
+          "title": "保养中发现额外损坏，谁决定继续维修",
+          "learning": "大疆企业无人机保养支持页说明，客户可用工单号查看进度和报告。服务中心发现超出保养范围的损坏后，客户选择是否另行付费维修。",
+          "application": "交付团队复盘一次保养时，可用同一工单对照原授权、追加报价、客户决定和维护报告，分开记录等候用户与实际作业时间。",
+          "boundary": "依据大疆英文站所列企业机型及地区；实际作业时长、成本和完成率未知。",
+          "itemIds": [
+            "e20-dji"
+          ],
+          "updatedAt": "2026-11-20T10:47:11.295604+00:00"
         }
       ],
-      "updatedAt": "2026-11-18T10:48:32.272337+00:00"
+      "updatedAt": "2026-11-20T10:47:11.295604+00:00"
     },
     "track-3": {
       "attemptedAt": "2026-11-19T00:52:51.904150+00:00",
@@ -2495,6 +2589,34 @@
           "hash": "c4a1bef9d32e41e54b918db4d03a469d6d363aba84c1cedc70a6006430ffa5cf",
           "decision": "integrated",
           "reason": "掌阅 SmartOS 2.4 的历史说明区分账号同步、私密书不上传和书架标识。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-20T10:47:11.295604+00:00",
+      "reviewedNodes": [
+        "track-1",
+        "track-2",
+        "chain-2"
+      ],
+      "decisions": [
+        {
+          "itemId": "e20-dji",
+          "hash": "8219c6e298e6f9c6dac7ac6f19dedf6fb8d3b007f3f7c79acbf40eb764594d7f",
+          "decision": "integrated",
+          "reason": "大疆企业无人机保养支持页说明，客户可用工单号查看进度和报告。服务中心发现超出保养范围的损坏后，客户选择是否另行付费维修。"
+        },
+        {
+          "itemId": "e20-mi",
+          "hash": "ed8d392414c380aeef5d316cf369fdf9b77d5707006f162df459d4c66259c2fc",
+          "decision": "integrated",
+          "reason": "小米支持页列出分享设备和邀请家庭成员的入口；三星美国站的邀请覆盖整个地点，由地点所有者移除成员；涂鸦 SDK 为家庭管理操作区分成员角色。"
+        },
+        {
+          "itemId": "e20-android",
+          "hash": "bcb8b310a15629be6c3a75bb49a450be613a023e760a273c4fd11518abc2e8f7",
+          "decision": "integrated",
+          "reason": "Android 回环测试记录从播放信号到采集端收到信号的时差。内置、模拟和 USB 路径单列，结果合并播放与采集耗时。"
         }
       ]
     }
@@ -9410,6 +9532,285 @@
           "checkedAt": "2026-11-20T00:39:18.905285+00:00",
           "state": "body",
           "note": "复读当前可取得的来源正文，核对与本条相关的说明。历史媒体报道未列完整机型，也未验证现行固件、笔记恢复或成功率。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-1",
+      "reviewedAt": "2026-11-20T10:47:11.295604+00:00",
+      "status": "partial",
+      "assessment": "大疆企业无人机保养支持页说明，客户可用工单号查看进度和报告。服务中心发现超出保养范围的损坏后，客户选择是否另行付费维修。",
+      "gaps": [
+        "已核大疆企业保养的追加授权接口；其他无人机服务范围、机器人厂商的现场交付仍待核对。",
+        "任务成功率、接管、恢复时间与现场工时仍缺统一测量协议及实测样本。"
+      ],
+      "reviewedFields": [
+        "team"
+      ],
+      "changes": {
+        "team": {
+          "before": "控制、感知、机械、电气、仿真、现场交付",
+          "after": "控制、感知、机械、电气、仿真、现场交付 交付团队复盘一次保养时，可用同一工单对照原授权、追加报价、客户决定和维护报告，分开记录等候用户与实际作业时间。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e20-track-1",
+            "title": "保养中发现额外损坏，谁决定继续维修",
+            "learning": "大疆企业无人机保养支持页说明，客户可用工单号查看进度和报告。服务中心发现超出保养范围的损坏后，客户选择是否另行付费维修。",
+            "application": "交付团队复盘一次保养时，可用同一工单对照原授权、追加报价、客户决定和维护报告，分开记录等候用户与实际作业时间。",
+            "boundary": "依据大疆英文站所列企业机型及地区；实际作业时长、成本和完成率未知。",
+            "itemIds": [
+              "e20-dji"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e20-dji",
+          "title": "大疆行业无人机送保养，发现另需付费的损坏时谁决定？",
+          "facts": [
+            {
+              "claim": "超出保养范围的损坏由客户选择是否另行付费维修。",
+              "sourceUrl": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
+              "locator": "How to Use Maintenance Service · Step 3"
+            },
+            {
+              "claim": "申请后生成工单号，用户可查看进度并下载维护报告。",
+              "sourceUrl": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
+              "locator": "Service Progress Inquiry · Maintenance records"
+            }
+          ],
+          "boundary": "依据大疆英文支持页列明的企业机型和地区，未查得中国大陆统一的服务价格、周转时长或实际完成率。",
+          "sources": [
+            {
+              "url": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
+              "publisherGroup": "大疆技术支持",
+              "name": "大疆技术支持",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "e0195372c19294852d06d4eb82cbb81d94c522c4a2a17d9e33b14e296abde504",
+              "readAt": "2026-11-20T10:42:17.557207+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e20-dji",
+          "url": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
+          "checkedAt": "2026-11-20T10:42:17.557207+00:00",
+          "state": "body",
+          "note": "大疆企业无人机保养支持页说明，客户可用工单号查看进度和报告。服务中心发现超出保养范围的损坏后，客户选择是否另行付费维修。 依据大疆英文站所列企业机型及地区；实际作业时长、成本和完成率未知。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-2",
+      "reviewedAt": "2026-11-20T10:47:11.295604+00:00",
+      "status": "partial",
+      "assessment": "小米支持页列出分享设备和邀请家庭成员的入口；三星美国站的邀请覆盖整个地点，由地点所有者移除成员；涂鸦 SDK 为家庭管理操作区分成员角色。",
+      "gaps": [
+        "已核三份文档中的授权入口或角色；仍缺特定设备权限、离线撤权及跨平台实测。",
+        "没有可比故障率、用户样本和售后改善数据。"
+      ],
+      "reviewedFields": [
+        "team"
+      ],
+      "changes": {
+        "team": {
+          "before": "嵌入式、连接协议、云平台、客户端、认证与售后 售后交给协议、固件或平台团队的信息应包含型号/版本、连接路径、受影响范围和复现步骤；诊断日志按支持范围自愿启用，并保留本地保存选择。",
+          "after": "嵌入式、连接协议、云平台、客户端、认证与售后 售后交给协议、固件或平台团队的信息应包含型号/版本、连接路径、受影响范围和复现步骤；诊断日志按支持范围自愿启用，并保留本地保存选择。 产品、客户端与售后可用临时照护者借用一台设备的情境，逐项核对邀约界面、可操作的设备、可执行的动作及回收权限的角色。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e20-track-2",
+            "title": "家庭设备授权要问清对象、范围和撤销人",
+            "learning": "小米支持页列出分享设备和邀请家庭成员的入口；三星美国站的邀请覆盖整个地点，由地点所有者移除成员；涂鸦 SDK 为家庭管理操作区分成员角色。",
+            "application": "产品、客户端与售后可用临时照护者借用一台设备的情境，逐项核对邀约界面、可操作的设备、可执行的动作及回收权限的角色。",
+            "boundary": "平台、地区及设备插件不同，特定门锁授权和离线撤权生效时间须实测。",
+            "itemIds": [
+              "e20-mi"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e20-mi",
+          "title": "给家人开设备权限，分享一台设备和加入整个家庭差在哪里？",
+          "facts": [
+            {
+              "claim": "小米支持页分别说明设备卡片分享与邀请家庭成员这两条路径。",
+              "sourceUrl": "https://www.mi.com/global/support/article/KA-07429/",
+              "locator": "Method 1 / Method 3"
+            },
+            {
+              "claim": "SmartThings 的邀请以地点为单位，只能由地点所有者移除成员。",
+              "sourceUrl": "https://www.samsung.com/us/support/answer/ANS10002634/",
+              "locator": "Invite members / View or remove members"
+            },
+            {
+              "claim": "家庭管理员可以添加普通成员，但不能删除整个家庭。",
+              "sourceUrl": "https://developer.tuya.com/en/docs/app-development/extension-family-member?id=Kcy2iwdhz60pm",
+              "locator": "Home Member Management · Member roles（2025-12-25 更新）"
+            }
+          ],
+          "boundary": "三份资料分别来自小米全球版说明、三星美国支持页和涂鸦 SDK。插件、地区、门锁等特定设备权限，以及撤销在离线设备上何时生效，仍需逐项核验。",
+          "sources": [
+            {
+              "url": "https://www.mi.com/global/support/article/KA-07429/",
+              "publisherGroup": "小米全球支持",
+              "name": "小米全球支持",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "d29456e292cfb87704e1fe7d05cda807cf8dc2288fbaccde5087ee01d0eaac50",
+              "readAt": "2026-11-20T10:42:16.984424+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://www.samsung.com/us/support/answer/ANS10002634/",
+              "publisherGroup": "Samsung 美国支持",
+              "name": "Samsung 美国支持",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "e336a8fb80343eb6458527cb239d48aa4d2f546369a89e603292fa2c4007ace2",
+              "readAt": "2026-11-20T10:42:17.836170+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://developer.tuya.com/en/docs/app-development/extension-family-member?id=Kcy2iwdhz60pm",
+              "publisherGroup": "涂鸦 Smart App SDK",
+              "name": "涂鸦 Smart App SDK",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "991699639eb2465541f4c84e8753712d3a84cb1ca4cdb40d110279207828dd50",
+              "readAt": "2026-11-20T10:42:52.227992+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e20-mi",
+          "url": "https://www.mi.com/global/support/article/KA-07429/",
+          "checkedAt": "2026-11-20T10:42:16.984424+00:00",
+          "state": "body",
+          "note": "小米支持页列出分享设备和邀请家庭成员的入口；三星美国站的邀请覆盖整个地点，由地点所有者移除成员；涂鸦 SDK 为家庭管理操作区分成员角色。 平台、地区及设备插件不同，特定门锁授权和离线撤权生效时间须实测。"
+        },
+        {
+          "itemId": "e20-mi",
+          "url": "https://www.samsung.com/us/support/answer/ANS10002634/",
+          "checkedAt": "2026-11-20T10:42:17.836170+00:00",
+          "state": "body",
+          "note": "小米支持页列出分享设备和邀请家庭成员的入口；三星美国站的邀请覆盖整个地点，由地点所有者移除成员；涂鸦 SDK 为家庭管理操作区分成员角色。 平台、地区及设备插件不同，特定门锁授权和离线撤权生效时间须实测。"
+        },
+        {
+          "itemId": "e20-mi",
+          "url": "https://developer.tuya.com/en/docs/app-development/extension-family-member?id=Kcy2iwdhz60pm",
+          "checkedAt": "2026-11-20T10:42:52.227992+00:00",
+          "state": "body",
+          "note": "小米支持页列出分享设备和邀请家庭成员的入口；三星美国站的邀请覆盖整个地点，由地点所有者移除成员；涂鸦 SDK 为家庭管理操作区分成员角色。 平台、地区及设备插件不同，特定门锁授权和离线撤权生效时间须实测。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-2",
+      "reviewedAt": "2026-11-20T10:47:11.295604+00:00",
+      "status": "partial",
+      "assessment": "Android 回环测试记录从播放信号到采集端收到信号的时差。内置、模拟和 USB 路径单列，结果合并播放与采集耗时。",
+      "gaps": [
+        "验证某段 RTL 行为一致不能证明所有整机功能覆盖。",
+        "已补三个阶段的概念区分；特定项目的放行权限、变更接口和退出条件仍待核验。",
+        "已核 Android 音频回环的测量边界；实际学习机的端到端分位数、返工及整机验证数据待查。"
+      ],
+      "reviewedFields": [
+        "metrics"
+      ],
+      "changes": {
+        "metrics": {
+          "before": "任务延迟用同一输入、环境与分位数比较；不能只报告平均值或实验室峰值。 对加工设备还应固定材料、任务和成品质量条件，分别记录准备、加工与失败恢复耗时；标称最高运动速度不能直接折算真实产能。",
+          "after": "任务延迟用同一输入、环境与分位数比较；不能只报告平均值或实验室峰值。 对加工设备还应固定材料、任务和成品质量条件，分别记录准备、加工与失败恢复耗时；标称最高运动速度不能直接折算真实产能。 排查学习机跟读等待时，音频团队固定设备和音频路径测回环，应用与识别团队另记说完、识别完成和评分可见的时点，按相同输入比较。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e20-chain-2",
+            "title": "跟读评分慢，怎样划分音频与应用的测量责任",
+            "learning": "Android 回环测试记录从播放信号到采集端收到信号的时差。内置、模拟和 USB 路径单列，结果合并播放与采集耗时。",
+            "application": "排查学习机跟读等待时，音频团队固定设备和音频路径测回环，应用与识别团队另记说完、识别完成和评分可见的时点，按相同输入比较。",
+            "boundary": "团队分工是迁移示例。Android 测试没有覆盖识别和界面，具体学习机实测、目标分位数及项目放行权限待查。",
+            "itemIds": [
+              "e20-android"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e20-android",
+          "title": "学习机跟读觉得慢，先量清楚是哪一段在等",
+          "facts": [
+            {
+              "claim": "回环测试定义了从播放开始到收到采集信号的时间区间。",
+              "sourceUrl": "https://source.android.com/docs/compatibility/cts/audio-loopback-latency",
+              "locator": "Audio loopback latency test · 开头与 Latency paths"
+            },
+            {
+              "claim": "测量可以比较输入和输出信号的时间偏移，结果合并输出与输入延迟。",
+              "sourceUrl": "https://source.android.com/docs/core/audio/latency/measure",
+              "locator": "Measure audio latency · Round-trip latency"
+            }
+          ],
+          "boundary": "方法来自 Android 文档（更新于 2026-07-15）。本文没有测试具体学习机、词典笔或录音设备，也未核实任何厂商的实测成绩或交付标准。",
+          "sources": [
+            {
+              "url": "https://source.android.com/docs/compatibility/cts/audio-loopback-latency",
+              "publisherGroup": "Android 开源项目",
+              "name": "Android 开源项目",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "962bb59cbcbd30736de001bac4ca8edcd042ad858c8c0438dda1c13b29f21efd",
+              "readAt": "2026-11-20T10:42:17.952920+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://source.android.com/docs/core/audio/latency/measure",
+              "publisherGroup": "Android 开源项目",
+              "name": "Android 开源项目",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "fb31fe369b5306b09b91287c6f0f3ef0f570d5fd1c59af536d8acaeb3473b395",
+              "readAt": "2026-11-20T10:42:19.471647+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e20-android",
+          "url": "https://source.android.com/docs/compatibility/cts/audio-loopback-latency",
+          "checkedAt": "2026-11-20T10:42:17.952920+00:00",
+          "state": "body",
+          "note": "Android 回环测试记录从播放信号到采集端收到信号的时差。内置、模拟和 USB 路径单列，结果合并播放与采集耗时。 团队分工是迁移示例。Android 测试没有覆盖识别和界面，具体学习机实测、目标分位数及项目放行权限待查。"
+        },
+        {
+          "itemId": "e20-android",
+          "url": "https://source.android.com/docs/core/audio/latency/measure",
+          "checkedAt": "2026-11-20T10:42:19.471647+00:00",
+          "state": "body",
+          "note": "Android 回环测试记录从播放信号到采集端收到信号的时差。内置、模拟和 USB 路径单列，结果合并播放与采集耗时。 团队分工是迁移示例。Android 测试没有覆盖识别和界面，具体学习机实测、目标分位数及项目放行权限待查。"
         }
       ]
     }

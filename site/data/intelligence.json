@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastCompletedAt": "2026-11-20T00:44:39.113051+00:00",
+  "lastCompletedAt": "2026-11-20T10:44:48.243563+00:00",
   "method": "Codex 初筛评分 + 逐条证据复核；非两个独立模型评分",
   "items": [
     {
@@ -9559,6 +9559,329 @@
       "date": null,
       "title": "同一批存货，采购和财务如何算出可比的周转次数？",
       "summary": "Oracle Retail 给出一个可以复算的成本口径：本期按成本计量的已售商品除以平均库存。该字段用期初与期末库存的简单平均作为分母。"
+    },
+    {
+      "id": "e20-dji",
+      "eventId": "e20-dji",
+      "developmentId": "initial",
+      "titleZh": "大疆行业无人机送保养，发现另需付费的损坏时谁决定？",
+      "originalTitle": "DJI Maintenance Program",
+      "companies": [
+        "大疆"
+      ],
+      "stages": [
+        "服务与生命周期",
+        "质量与合规",
+        "渠道与销售"
+      ],
+      "domestic": true,
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "服务与生命周期",
+      "brief": {
+        "lead": "大疆的企业无人机保养流程把两件事分开：客户先申请保养并取得工单号；服务中心收件检查后，若发现超出保养范围的损坏，再由客户选择是否接受付费维修。",
+        "points": [
+          "申请人可以凭工单号查进度，完成后可查看维护记录并下载维护报告。服务中心收件、发现损坏、客户确认、寄回和收件，是不同节点。",
+          "网页列有适用机型、服务档位和地区条件。售后复盘可分别看等候客户决定的时间和实际维修时间，不能只看工单从开到关用了多久。"
+        ]
+      },
+      "boundary": "依据大疆英文支持页列明的企业机型和地区，未查得中国大陆统一的服务价格、周转时长或实际完成率。",
+      "meaning": "若学习设备也有检测后追加收费，客服可在原工单中保留最初授权、超范围的问题、用户决定及最终报告，让家长能查到费用从哪里来。该情境是应用示例。",
+      "question": "怎样区分等待客户确认的时间和服务中心实际处理的时间？",
+      "eventReason": "大疆行业无人机送保养，发现另需付费的损坏时谁决定？",
+      "selection": {
+        "scores": {
+          "相关性": 18,
+          "增量信息": 16,
+          "证据质量": 19,
+          "机制清晰": 19,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "超出保养范围的损坏由客户选择是否另行付费维修。 依据大疆英文支持页列明的企业机型和地区，未查得中国大陆统一的服务价格、周转时长或实际完成率。"
+        }
+      },
+      "practices": [
+        {
+          "title": "大疆行业无人机送保养，发现另需付费的损坏时谁决定？",
+          "method": "若学习设备也有检测后追加收费，客服可在原工单中保留最初授权、超范围的问题、用户决定及最终报告，让家长能查到费用从哪里来。该情境是应用示例。",
+          "conditions": "适用于有明确保养范围、可能发生额外收费的服务。",
+          "outcome": "原文披露处理流程和查询入口，未给缩短维修时间的实测结果。",
+          "boundary": "依据大疆英文支持页列明的企业机型和地区，未查得中国大陆统一的服务价格、周转时长或实际完成率。",
+          "nextCheck": "怎样区分等待客户确认的时间和服务中心实际处理的时间？",
+          "stages": [
+            "服务与生命周期",
+            "质量与合规",
+            "渠道与销售"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "超出保养范围的损坏由客户选择是否另行付费维修。",
+          "sourceUrl": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
+          "locator": "How to Use Maintenance Service · Step 3"
+        },
+        {
+          "claim": "申请后生成工单号，用户可查看进度并下载维护报告。",
+          "sourceUrl": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
+          "locator": "Service Progress Inquiry · Maintenance records"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
+          "publisherGroup": "大疆技术支持",
+          "name": "大疆技术支持",
+          "publishedAt": null,
+          "role": "official",
+          "textHash": "e0195372c19294852d06d4eb82cbb81d94c522c4a2a17d9e33b14e296abde504",
+          "readAt": "2026-11-20T10:42:17.557207+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 90,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-20T10:44:48.233839+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "大疆行业无人机送保养，发现另需付费的损坏时谁决定？",
+      "summary": "大疆的企业无人机保养流程把两件事分开：客户先申请保养并取得工单号；服务中心收件检查后，若发现超出保养范围的损坏，再由客户选择是否接受付费维修。"
+    },
+    {
+      "id": "e20-mi",
+      "eventId": "e20-mi",
+      "developmentId": "initial",
+      "titleZh": "给家人开设备权限，分享一台设备和加入整个家庭差在哪里？",
+      "originalTitle": "How to share devices through the Xiaomi Home App?",
+      "companies": [
+        "小米",
+        "三星",
+        "涂鸦"
+      ],
+      "stages": [
+        "研发与系统",
+        "服务与生命周期",
+        "需求与规划"
+      ],
+      "domestic": true,
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "智能家居",
+      "brief": {
+        "lead": "小米文档给了设备卡片分享和邀请家庭成员两种入口。三星 SmartThings 的成员邀请面向整个地点，不能只邀请到其中一个房间。产品和客服要先弄清用户原本只想借用一台设备，还是希望共同管理一个家。",
+        "points": [
+          "三星说明，接受邀请后可以管理该地点内的设备，只有地点所有者能移除成员。小米的入口说明未给出各设备被分享后的完整权限。",
+          "涂鸦 Android SDK 把家庭成员管理分为所有者、管理员和普通成员。例如管理员可以增加普通成员，但不能删除家庭。这个说明限定在家庭管理接口。"
+        ]
+      },
+      "boundary": "三份资料分别来自小米全球版说明、三星美国支持页和涂鸦 SDK。插件、地区、门锁等特定设备权限，以及撤销在离线设备上何时生效，仍需逐项核验。",
+      "meaning": "设计共享功能时，把授权范围、允许的操作和撤销权分别列出。客服可以让用户核对当前账号、被邀请的对象和所属家庭，再复现问题。",
+      "question": "当临时成员只需要操作一台设备，邀请页面能否让双方看清范围，之后由谁撤销？",
+      "eventReason": "给家人开设备权限，分享一台设备和加入整个家庭差在哪里？",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 19,
+          "机制清晰": 19,
+          "可行动性": 19
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "小米支持页分别说明设备卡片分享与邀请家庭成员这两条路径。 三份资料分别来自小米全球版说明、三星美国支持页和涂鸦 SDK。插件、地区、门锁等特定设备权限，以及撤销在离线设备上何时生效，仍需逐项核验。"
+        }
+      },
+      "practices": [
+        {
+          "title": "给家人开设备权限，分享一台设备和加入整个家庭差在哪里？",
+          "method": "设计共享功能时，把授权范围、允许的操作和撤销权分别列出。客服可以让用户核对当前账号、被邀请的对象和所属家庭，再复现问题。",
+          "conditions": "适用于多成员共用设备，对比前先确认平台、地区、设备插件和角色。",
+          "outcome": "官方文档足以区分三种授权设计；缺少相同设备上的权限传播、售后和误操作实测。",
+          "boundary": "三份资料分别来自小米全球版说明、三星美国支持页和涂鸦 SDK。插件、地区、门锁等特定设备权限，以及撤销在离线设备上何时生效，仍需逐项核验。",
+          "nextCheck": "当临时成员只需要操作一台设备，邀请页面能否让双方看清范围，之后由谁撤销？",
+          "stages": [
+            "研发与系统",
+            "服务与生命周期",
+            "需求与规划"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "小米支持页分别说明设备卡片分享与邀请家庭成员这两条路径。",
+          "sourceUrl": "https://www.mi.com/global/support/article/KA-07429/",
+          "locator": "Method 1 / Method 3"
+        },
+        {
+          "claim": "SmartThings 的邀请以地点为单位，只能由地点所有者移除成员。",
+          "sourceUrl": "https://www.samsung.com/us/support/answer/ANS10002634/",
+          "locator": "Invite members / View or remove members"
+        },
+        {
+          "claim": "家庭管理员可以添加普通成员，但不能删除整个家庭。",
+          "sourceUrl": "https://developer.tuya.com/en/docs/app-development/extension-family-member?id=Kcy2iwdhz60pm",
+          "locator": "Home Member Management · Member roles（2025-12-25 更新）"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.mi.com/global/support/article/KA-07429/",
+          "publisherGroup": "小米全球支持",
+          "name": "小米全球支持",
+          "publishedAt": null,
+          "role": "official",
+          "textHash": "d29456e292cfb87704e1fe7d05cda807cf8dc2288fbaccde5087ee01d0eaac50",
+          "readAt": "2026-11-20T10:42:16.984424+00:00",
+          "coverage": "body"
+        },
+        {
+          "url": "https://www.samsung.com/us/support/answer/ANS10002634/",
+          "publisherGroup": "Samsung 美国支持",
+          "name": "Samsung 美国支持",
+          "publishedAt": null,
+          "role": "official",
+          "textHash": "e336a8fb80343eb6458527cb239d48aa4d2f546369a89e603292fa2c4007ace2",
+          "readAt": "2026-11-20T10:42:17.836170+00:00",
+          "coverage": "body"
+        },
+        {
+          "url": "https://developer.tuya.com/en/docs/app-development/extension-family-member?id=Kcy2iwdhz60pm",
+          "publisherGroup": "涂鸦 Smart App SDK",
+          "name": "涂鸦 Smart App SDK",
+          "publishedAt": null,
+          "role": "official",
+          "textHash": "991699639eb2465541f4c84e8753712d3a84cb1ca4cdb40d110279207828dd50",
+          "readAt": "2026-11-20T10:42:52.227992+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 93,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-20T10:44:48.235168+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "给家人开设备权限，分享一台设备和加入整个家庭差在哪里？",
+      "summary": "小米文档给了设备卡片分享和邀请家庭成员两种入口。三星 SmartThings 的成员邀请面向整个地点，不能只邀请到其中一个房间。产品和客服要先弄清用户原本只想借用一台设备，还是希望共同管理一个家。"
+    },
+    {
+      "id": "e20-android",
+      "eventId": "e20-android",
+      "developmentId": "initial",
+      "titleZh": "学习机跟读觉得慢，先量清楚是哪一段在等",
+      "originalTitle": "Audio loopback latency test",
+      "companies": [
+        "Android 开源项目"
+      ],
+      "stages": [
+        "研发与系统",
+        "质量与合规",
+        "需求与规划"
+      ],
+      "domestic": false,
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "Android 的音频回环测试从开始播放信号计到录音端收到该信号，得到播放与采集的往返时延。这个值无法单独指出是扬声器输出慢，还是麦克风采集慢，也没有覆盖语音识别与评分。",
+        "points": [
+          "Android 按内置扬声器与麦克风、模拟耳机插孔、USB 音频分别列出测试路径。手机和平板的内置路径有相应要求，其他类型设备和外接路径依适用条件判断。",
+          "迁移到学习机跟读时，硬件和音频团队先固定设备与路径测回环，应用团队另记录音结束、识别完成和评分可见的时刻。两组数据有不同起止点，不能把前者直接写成孩子等待反馈的时间。"
+        ]
+      },
+      "boundary": "方法来自 Android 文档（更新于 2026-07-15）。本文没有测试具体学习机、词典笔或录音设备，也未核实任何厂商的实测成绩或交付标准。",
+      "meaning": "遇到“反馈慢”时，先给每一段约定开始事件、结束事件、测试路径和设备配置，再决定由音频工程、识别还是应用团队继续排查。",
+      "question": "一次跟读从用户说完到看到评分经历了哪些等待？哪一段有能复查的时间戳？",
+      "eventReason": "学习机跟读觉得慢，先量清楚是哪一段在等",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 19,
+          "机制清晰": 19,
+          "可行动性": 19
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "回环测试定义了从播放开始到收到采集信号的时间区间。 方法来自 Android 文档（更新于 2026-07-15）。本文没有测试具体学习机、词典笔或录音设备，也未核实任何厂商的实测成绩或交付标准。"
+        }
+      },
+      "practices": [
+        {
+          "title": "学习机跟读觉得慢，先量清楚是哪一段在等",
+          "method": "遇到“反馈慢”时，先给每一段约定开始事件、结束事件、测试路径和设备配置，再决定由音频工程、识别还是应用团队继续排查。",
+          "conditions": "适用于能定义明确音频输出及采集输入的设备，测试时固定路由和配置。",
+          "outcome": "原文给测试方法及适用路由，实际教学反馈用时另需端到端测量。",
+          "boundary": "方法来自 Android 文档（更新于 2026-07-15）。本文没有测试具体学习机、词典笔或录音设备，也未核实任何厂商的实测成绩或交付标准。",
+          "nextCheck": "一次跟读从用户说完到看到评分经历了哪些等待？哪一段有能复查的时间戳？",
+          "stages": [
+            "研发与系统",
+            "质量与合规",
+            "需求与规划"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "回环测试定义了从播放开始到收到采集信号的时间区间。",
+          "sourceUrl": "https://source.android.com/docs/compatibility/cts/audio-loopback-latency",
+          "locator": "Audio loopback latency test · 开头与 Latency paths"
+        },
+        {
+          "claim": "测量可以比较输入和输出信号的时间偏移，结果合并输出与输入延迟。",
+          "sourceUrl": "https://source.android.com/docs/core/audio/latency/measure",
+          "locator": "Measure audio latency · Round-trip latency"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://source.android.com/docs/compatibility/cts/audio-loopback-latency",
+          "publisherGroup": "Android 开源项目",
+          "name": "Android 开源项目",
+          "publishedAt": null,
+          "role": "official",
+          "textHash": "962bb59cbcbd30736de001bac4ca8edcd042ad858c8c0438dda1c13b29f21efd",
+          "readAt": "2026-11-20T10:42:17.952920+00:00",
+          "coverage": "body"
+        },
+        {
+          "url": "https://source.android.com/docs/core/audio/latency/measure",
+          "publisherGroup": "Android 开源项目",
+          "name": "Android 开源项目",
+          "publishedAt": null,
+          "role": "official",
+          "textHash": "fb31fe369b5306b09b91287c6f0f3ef0f570d5fd1c59af536d8acaeb3473b395",
+          "readAt": "2026-11-20T10:42:19.471647+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 93,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-20T10:44:48.235968+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "学习机跟读觉得慢，先量清楚是哪一段在等",
+      "summary": "Android 的音频回环测试从开始播放信号计到录音端收到该信号，得到播放与采集的往返时延。这个值无法单独指出是扬声器输出慢，还是麦克风采集慢，也没有覆盖语音识别与评分。"
     }
   ],
   "events": [
@@ -11011,6 +11334,50 @@
       ],
       "publisherGroups": [
         "Oracle Retail 官方文档"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "e20-dji",
+      "representativeId": "e20-dji",
+      "itemIds": [
+        "e20-dji"
+      ],
+      "publisherGroups": [
+        "大疆技术支持"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "e20-mi",
+      "representativeId": "e20-mi",
+      "itemIds": [
+        "e20-mi"
+      ],
+      "publisherGroups": [
+        "Samsung 美国支持",
+        "小米全球支持",
+        "涂鸦 Smart App SDK"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "e20-android",
+      "representativeId": "e20-android",
+      "itemIds": [
+        "e20-android"
+      ],
+      "publisherGroups": [
+        "Android 开源项目"
       ],
       "developmentIds": [
         "initial"
@@ -22794,6 +23161,743 @@
       "completedAt": "2026-11-20T00:44:39.113051+00:00",
       "reviewedCount": 1,
       "selectedCount": 1
+    },
+    {
+      "sourceChecks": [
+        {
+          "name": "TrendForce",
+          "url": "https://www.trendforce.com/presscenter/news/20261119-13314.html",
+          "checkedAt": "2026-11-20T00:37:58.409802+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "需求与规划"
+          ],
+          "note": "同一周的现货回落和当季合约价上涨可以并存。把两类报价列在同一张采购表时应注明采购层级、期间和交付条件。",
+          "company": null,
+          "state": "read",
+          "readId": "m20-nand",
+          "publishedAt": "2026-11-19",
+          "publisherGroup": "TrendForce",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "同一周的现货回落和当季合约价上涨可以并存。把两类报价列在同一张采购表时应注明采购层级、期间和交付条件。",
+            "anchor": "overall NAND Flash contract prices will decline by 0–5% QoQ"
+          }
+        },
+        {
+          "name": "美国商务部 BIS",
+          "url": "https://www.govinfo.gov/content/pkg/FR-2026-11-19/html/2026-23529.htm",
+          "checkedAt": "2026-11-20T00:39:55.447231+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "质量与合规",
+            "经营与组织"
+          ],
+          "note": "供应商合规团队可用正式日期区分已生效义务和仍可提交意见的窗口，再按具体订单核对交付条件。",
+          "company": null,
+          "state": "read",
+          "readId": "m20-gov",
+          "publishedAt": "2026-11-19",
+          "publisherGroup": "美国商务部 BIS",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "供应商合规团队可用正式日期区分已生效义务和仍可提交意见的窗口，再按具体订单核对交付条件。",
+            "anchor": "This rule is effective November 19, 2026"
+          }
+        },
+        {
+          "name": "商务部消费促进司",
+          "url": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_0126b1d7c4124d7093738dafaf5ab667.html",
+          "checkedAt": "2026-11-20T00:39:18.947749+00:00",
+          "purpose": "news",
+          "stages": [
+            "渠道与销售",
+            "需求与规划"
+          ],
+          "note": "做渠道复盘时要同时记录统计主体、期间和单位，再判断销售额增长来自订单量、成交价还是产品结构。",
+          "company": null,
+          "state": "read",
+          "readId": "m20-mof",
+          "publishedAt": "2026-11-19T16:18:00+08:00",
+          "publisherGroup": "商务部消费促进司",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "做渠道复盘时要同时记录统计主体、期间和单位，再判断销售额增长来自订单量、成交价还是产品结构。",
+            "anchor": "重点平台智能眼镜销售额增长1倍"
+          }
+        },
+        {
+          "name": "JEDEC",
+          "url": "https://wgem.marketminute.com/article/bizwire-2026-11-18-jedec-previews-next-generation-ddr6-dram-higher-performance-greater-capacity-improved-power-efficiency-and-data-center-class-reliability",
+          "checkedAt": "2026-11-20T00:37:59.859693+00:00",
+          "purpose": "news",
+          "stages": [
+            "研发与系统",
+            "供应链与采购"
+          ],
+          "note": "做架构预研时可把草案参数、正式标准、供应商样片和自家任务测试分列，避免把带宽目标当采购承诺。",
+          "company": null,
+          "state": "read",
+          "readId": "m20-jedec",
+          "publishedAt": "2026-11-18T11:00:00-05:00",
+          "publisherGroup": "JEDEC",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "做架构预研时可把草案参数、正式标准、供应商样片和自家任务测试分列，避免把带宽目标当采购承诺。",
+            "anchor": "The data bus expands from 64 to 96 DQ"
+          }
+        },
+        {
+          "name": "美国消费品安全委员会 CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2027/Hultafors-Group-North-America-Recalls-Lighted-Portfolios-Angle-Locators-Calipers-and-Calculators-Due-to-Risk-of-Serious-Injury-or-Death-from-Battery-Ingestion-Violate-Mandatory-Standard-for-Consumer-Products-with-Button-Cell-Batteries",
+          "checkedAt": "2026-11-20T00:37:57.372356+00:00",
+          "purpose": "news",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期",
+            "渠道与销售"
+          ],
+          "note": "质量团队核定受影响型号之后，渠道和客服仍需能用顾客手上的实物辨认型号。可在放行记录里保留外观、型号位置与包装版次。",
+          "company": null,
+          "state": "read",
+          "readId": "m20-tool",
+          "publishedAt": "2026-11-19",
+          "publisherGroup": "美国消费品安全委员会 CPSC",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "质量团队核定受影响型号之后，渠道和客服仍需能用顾客手上的实物辨认型号。可在放行记录里保留外观、型号位置与包装版次。",
+            "anchor": "with the model numbers located on the unit and the package labeling"
+          }
+        },
+        {
+          "name": "TrendForce",
+          "url": "https://www.trendforce.com/presscenter/news/20261118-13311.html",
+          "checkedAt": "2026-11-20T00:37:58.422932+00:00",
+          "purpose": "news",
+          "stages": [
+            "渠道与销售",
+            "供应链与采购"
+          ],
+          "note": "复盘要同时看本品牌出货量、全市场出货量与渠道实销，分别核查变化的分子与分母。",
+          "company": null,
+          "state": "read",
+          "readId": "m20-oled",
+          "publishedAt": "2026-11-18",
+          "publisherGroup": "TrendForce",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "复盘要同时看本品牌出货量、全市场出货量与渠道实销，分别核查变化的分子与分母。",
+            "anchor": "its share was diluted by the rapid expansion of the overall market"
+          }
+        },
+        {
+          "name": "掌阅 SmartOS 2.4 更新说明（IT之家整理）",
+          "url": "https://m.ithome.com/html/811360.htm",
+          "checkedAt": "2026-11-20T00:39:18.905285+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期",
+            "研发与系统"
+          ],
+          "note": "设备、账号服务与客服需要共同确认用户究竟要找回哪本书、登录了哪个账号，以及文件是否曾经成功上传。",
+          "company": "掌阅",
+          "state": "read"
+        },
+        {
+          "name": "小猿官方校园招聘",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "checkedAt": "2026-11-20T00:38:04.217367+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "note": "一次评审若同时保留故障发生层级、测试用例、设计改动和复测记录，测试和硬件团队就能核对同一个问题。",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "美国消费品安全委员会 CPSC",
+          "url": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Button-Cell-and-Coin-Battery",
+          "checkedAt": "2026-11-20T00:39:19.289751+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规",
+            "研发与系统",
+            "制造与交付"
+          ],
+          "note": "适用性确定后，结构工程、质量与包装团队分别拿出电池仓实物、测试记录与上市包材，在放行前核对各自版本。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "之家网站",
+          "url": "https://www.ithome.com/1/029/574.htm",
+          "checkedAt": "2026-11-20T00:37:56.902048+00:00",
+          "purpose": "news",
+          "stages": [
+            "需求与规划",
+            "质量与合规"
+          ],
+          "note": "此文以产品推介为主，未提供可复核的证书范围、独立对照样本或新增事件，暂缓推荐。",
+          "company": "科大讯飞",
+          "state": "read",
+          "readId": "m20-eduarticle",
+          "publishedAt": "2026-11-19T17:51:43+08:00",
+          "publisherGroup": "之家网站",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "此文以产品推介为主，未提供可复核的证书范围、独立对照样本或新增事件，暂缓推荐。",
+            "anchor": "AI 识别受光线、字迹等客观条件影响"
+          }
+        },
+        {
+          "name": "王兴兴 APEC 现场发言",
+          "url": "https://www.ithome.com/1/028/220.htm",
+          "checkedAt": "2026-11-20T00:37:09.548200+00:00",
+          "purpose": "news",
+          "stages": [
+            "制造与交付",
+            "服务与生命周期"
+          ],
+          "note": "发言提出量产与售后的条件性挑战，未披露可核验的新订单或实施变动，保留线索。",
+          "company": "宇树科技",
+          "state": "read",
+          "readId": "rss-f14e49bf71aa943e",
+          "publishedAt": "2026-11-17T04:43:24+00:00",
+          "publisherGroup": "王兴兴 APEC 现场发言",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "发言提出量产与售后的条件性挑战，未披露可核验的新订单或实施变动，保留线索。",
+            "anchor": "它本身对机器人的生产制造、可靠性、售后服务都是很大的考验"
+          }
+        },
+        {
+          "name": "商务部消费促进司",
+          "url": "https://www.ithome.com/1/029/762.htm",
+          "checkedAt": "2026-11-20T00:37:09.657247+00:00",
+          "purpose": "news",
+          "stages": [
+            "渠道与销售"
+          ],
+          "note": "转载回溯商务部原文，同一统计发布采用原始出处及日期。",
+          "company": null,
+          "state": "read",
+          "readId": "rss-33f945417ce5deeb",
+          "publishedAt": "2026-11-20T00:00:26+00:00",
+          "publisherGroup": "商务部消费促进司",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "转载回溯商务部原文，同一统计发布采用原始出处及日期。",
+            "anchor": "重点平台智能眼镜销售额增长 1 倍"
+          }
+        },
+        {
+          "name": "美国消费品安全委员会 CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2027/Ororo-Recalls-Rechargeable-Lithium-Ion-Battery-Packs-Due-to-Risk-of-Serious-Injury-from-Fire-and-Burn-Hazards",
+          "checkedAt": "2026-11-20T00:37:57.445251+00:00",
+          "purpose": "news",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "note": "客服核对具体电池标识后，再按购买地区提供对应的登记和安全处置说明。",
+          "company": null,
+          "state": "read",
+          "readId": "m20-battery",
+          "publishedAt": "2026-11-19",
+          "publisherGroup": "美国消费品安全委员会 CPSC",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "客服核对具体电池标识后，再按购买地区提供对应的登记和安全处置说明。",
+            "anchor": "model PD10K-Pro"
+          }
+        },
+        {
+          "name": "算法实习生-多模态文档理解",
+          "url": "https://app.mokahr.com/social-recruitment/fenbi/45505#/job/5ecdce43-9ab2-48bb-ade9-ff021311daef",
+          "checkedAt": "2026-11-20T00:38:04.224956+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "基础研发部教育OCR能力，未说明专属学习机",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "算法工程师（D110740）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/e6056b1d-580b-442d-a27f-9ab9f12cd4b1",
+          "checkedAt": "2026-11-20T00:38:04.218670+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "题库教研（D111300）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/0223c4d9-1a3a-4d44-b3da-ce58723e1311",
+          "checkedAt": "2026-11-20T00:38:04.126313+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "题库教研审核与业务反馈，未披露硬件品类；正文岗位名为小数教研，要求却写初高中教材，学段边界待确认。",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "消费者BG-中级渠道经理-北京/上海/合肥",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=179aac28-bb83-4ed6-938e-25d57a57899b",
+          "checkedAt": "2026-11-20T00:38:04.128426+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "note": "消费者业务渠道，未指明学习机产品线",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "AI研究院-算法工程师-OCR方向(J14869)",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=dc4e67cc-59ed-4a75-8b7a-e0d6ae6faaa9",
+          "checkedAt": "2026-11-20T00:38:02.513083+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "集团统一招聘的OCR能力，未指定学习机或词典笔项目",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "2026届春招-硬件研发工程师",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "checkedAt": "2026-11-20T00:38:04.217367+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "note": "原文明确小猿产品及学习机、学练机业务，未划分具体型号",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "作业帮官方社招采购检索",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/jobs?keyword=%E9%87%87%E8%B4%AD&page=1&anchorName=jobsList",
+          "checkedAt": "2026-11-20T00:42:11.787636+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "供应链与采购"
+          ],
+          "note": "作业帮社招采购检索本次显示暂无匹配职位，仍缺直接的采购职责正文。",
+          "company": "作业帮",
+          "state": "index"
+        },
+        {
+          "name": "作业帮产品资料",
+          "url": "https://smart.zuoyebang.com/about",
+          "checkedAt": "2026-11-20T00:37:56.904169+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "官网仍以跨产品的聪明学系统解释内容与学情数据的关系，未提供单型号的验收指标。",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "科大讯飞产品资料",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "checkedAt": "2026-11-20T00:37:57.262464+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "厂商页面披露错因点拨、板书式答疑与推荐型号；没有同条件效果对照，本次保留原整理。",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "猿辅导（小猿）产品资料",
+          "url": "https://apps.apple.com/cn/app/id6738277050",
+          "checkedAt": "2026-11-20T00:37:57.767394+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "开发者说明涵盖家长端的时长、答案、家庭和设备管理。本次仅复核功能范围，未把商店评论当作厂商成效。",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "钉钉产品资料",
+          "url": "https://aihub.dingtalk.com/",
+          "checkedAt": "2026-11-20T00:37:56.906305+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "入口未返回足够正文，保留既有产品与 Xnote 对照边界。",
+          "company": "钉钉",
+          "state": "error"
+        },
+        {
+          "name": "JEDEC 官网",
+          "url": "https://www.jedec.org/news/pressreleases/jedec%C2%AE-previews-next-generation-ddr6-dram-higher-performance-greater-capacity",
+          "checkedAt": "2026-11-20T00:39:19.397268+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规"
+          ],
+          "note": "直连返回 403；已核对协会经 Business Wire 分发的完整新闻稿。",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "name": "美国 DRAM 案文书 68",
+          "url": "https://cases.justia.com/federal/district-courts/california/candce/5%3A2026cv06345/472931/68/0.pdf?ts=1794726473",
+          "checkedAt": "2026-11-20T00:40:16.145Z",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规"
+          ],
+          "note": "读取案号与裁定开头。仍是 11 月 14 日的程序裁定，本次查阅未发现更新的实质进展。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "BIS 预发布文件",
+          "url": "https://public-inspection.federalregister.gov/2026-23529.pdf",
+          "checkedAt": "2026-11-20T00:40:16.230Z",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规"
+          ],
+          "note": "复核预览摘要与后续正式公报的日期和文号。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "美国联邦公报正式日期段",
+          "url": "https://www.govinfo.gov/content/pkg/FR-2026-11-19/html/2026-23529.htm",
+          "checkedAt": "2026-11-20T00:39:55.447231+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规"
+          ],
+          "note": "针对文号、摘要及生效日复核，未通读全部条款。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/17/review-seeed-studio-4-26-mono-and-7-3-color-e-paper-kit-with-opendisplay-and-home-assistant",
+          "company": null,
+          "name": "RSS 候选抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-20T00:37:12.311803+00:00",
+          "note": "本次抓取未成功：curl: (56) The requested URL returned error: 403\n"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/17/forlinx-ok8275aa-c-a-qualcomm-qcs8275-industrial-sbc-with-12gb-lpddr5-256gb-ufs-storage",
+          "company": null,
+          "name": "RSS 候选抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-20T00:37:12.311803+00:00",
+          "note": "本次抓取未成功：curl: (56) The requested URL returned error: 403\n"
+        },
+        {
+          "name": "Oracle Retail 官方文档",
+          "url": "https://docs.oracle.com/en/industries/retail/retail-merchandising-foundation-cloud/latest/rmsoa/administration-batch.htm",
+          "checkedAt": "2026-11-20T00:44:23.380734+00:00",
+          "purpose": "practice",
+          "stages": [
+            "供应链与采购",
+            "渠道与销售"
+          ],
+          "note": "财务和采购先交换分子、分母和库存截点；遇到月末清库时，复查日库存可帮助解释相同周转次数背后的备货差异。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "大疆技术支持",
+          "url": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
+          "checkedAt": "2026-11-20T10:42:17.557207+00:00",
+          "purpose": "practice",
+          "stages": [
+            "服务与生命周期",
+            "质量与合规",
+            "渠道与销售"
+          ],
+          "note": "若学习设备也有检测后追加收费，客服可在原工单中保留最初授权、超范围的问题、用户决定及最终报告，让家长能查到费用从哪里来。该情境是应用示例。",
+          "company": "大疆",
+          "state": "read"
+        },
+        {
+          "name": "小米全球支持",
+          "url": "https://www.mi.com/global/support/article/KA-07429/",
+          "checkedAt": "2026-11-20T10:42:16.984424+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统",
+            "服务与生命周期",
+            "需求与规划"
+          ],
+          "note": "设计共享功能时，把授权范围、允许的操作和撤销权分别列出。客服可以让用户核对当前账号、被邀请的对象和所属家庭，再复现问题。",
+          "company": "小米",
+          "state": "read"
+        },
+        {
+          "name": "Samsung 美国支持",
+          "url": "https://www.samsung.com/us/support/answer/ANS10002634/",
+          "checkedAt": "2026-11-20T10:42:17.836170+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统",
+            "服务与生命周期",
+            "需求与规划"
+          ],
+          "note": "SmartThings 的邀请以地点为单位，只能由地点所有者移除成员。",
+          "company": "Samsung 美国支持",
+          "state": "read"
+        },
+        {
+          "name": "涂鸦 Smart App SDK",
+          "url": "https://developer.tuya.com/en/docs/app-development/extension-family-member?id=Kcy2iwdhz60pm",
+          "checkedAt": "2026-11-20T10:42:52.227992+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统",
+            "服务与生命周期",
+            "需求与规划"
+          ],
+          "note": "家庭管理员可以添加普通成员，但不能删除整个家庭。",
+          "company": "涂鸦 Smart App SDK",
+          "state": "read"
+        },
+        {
+          "name": "Android 开源项目",
+          "url": "https://source.android.com/docs/compatibility/cts/audio-loopback-latency",
+          "checkedAt": "2026-11-20T10:42:17.952920+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统",
+            "质量与合规",
+            "需求与规划"
+          ],
+          "note": "遇到“反馈慢”时，先给每一段约定开始事件、结束事件、测试路径和设备配置，再决定由音频工程、识别还是应用团队继续排查。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "Android 开源项目",
+          "url": "https://source.android.com/docs/core/audio/latency/measure",
+          "checkedAt": "2026-11-20T10:42:19.471647+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统",
+            "质量与合规",
+            "需求与规划"
+          ],
+          "note": "测量可以比较输入和输出信号的时间偏移，结果合并输出与输入延迟。",
+          "company": "Android 开源项目",
+          "state": "read"
+        },
+        {
+          "name": "DJI Enterprise",
+          "url": "https://enterprise-insights.dji.com/blog/introducing-djis-first-maintenance-service",
+          "checkedAt": "2026-11-20T10:42:17.758564+00:00",
+          "purpose": "practice",
+          "stages": [
+            "服务与生命周期"
+          ],
+          "note": "复读企业保养介绍，与当前支持页交叉核对服务分级。",
+          "company": "DJI Enterprise",
+          "state": "read"
+        },
+        {
+          "name": "涂鸦",
+          "url": "https://support.tuya.com/en/help/_detail/K9hutpxd9ov32",
+          "checkedAt": "2026-11-20T10:42:18.466208+00:00",
+          "purpose": "practice",
+          "stages": [
+            "服务与生命周期"
+          ],
+          "note": "原 FAQ 多次重定向，未取得正文，改查开发者平台的家庭成员管理说明。",
+          "company": "涂鸦",
+          "state": "error"
+        },
+        {
+          "name": "涂鸦",
+          "url": "https://developer.tuya.com/en/docs/iot/user-manual-for-tuya-smart-v3177?id=K9obrofrfk4sk",
+          "checkedAt": "2026-11-20T10:42:52.613527+00:00",
+          "purpose": "practice",
+          "stages": [
+            "服务与生命周期"
+          ],
+          "note": "核对应用手册的家庭消息与设备离线标记；手册未提供撤销权限到达离线设备的时延。",
+          "company": "涂鸦",
+          "state": "read"
+        },
+        {
+          "name": "NVIDIA 投资者关系",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Advances-Isaac-Platform-for-General-Purpose-Robotics-With-New-Reference-Humanoid-Frameworks-Simulation-Pipelines-and-Data/default.aspx",
+          "checkedAt": "2026-11-20T10:42:17.537701+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统"
+          ],
+          "note": "直接请求公告返回 403，通过网页阅读器另查公告部分段落。",
+          "company": "NVIDIA 投资者关系",
+          "state": "error"
+        },
+        {
+          "name": "NVIDIA 新闻室",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-advances-isaac-platform-for-general-purpose-robotics-with-new-reference-humanoid-frameworks-simulation-pipelines-and-data",
+          "checkedAt": "2026-11-20T10:42:52.942651+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统"
+          ],
+          "note": "页面仅返回其他公告的标题与日期；未用这一响应核验原公告。",
+          "company": "NVIDIA 新闻室",
+          "state": "index"
+        },
+        {
+          "name": "NVIDIA 投资者关系",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Advances-Isaac-Platform-for-General-Purpose-Robotics-With-New-Reference-Humanoid-Frameworks-Simulation-Pipelines-and-Data/default.aspx",
+          "checkedAt": "2026-11-20T10:43:29.609086+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统"
+          ],
+          "note": "网页工具读到 10 月 21 日公告的研究参考平台与仿真框架段落，按节选处理；未取得现场交付或跨平台成功率。",
+          "company": "NVIDIA 投资者关系",
+          "state": "read"
+        },
+        {
+          "name": "Aqara",
+          "url": "https://www.aqara.com/en/product/hub-m200/",
+          "checkedAt": "2026-11-20T10:42:17.309559+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统",
+            "服务与生命周期"
+          ],
+          "note": "复核 M200 对本地自动化与云端通知的区分，用于界定断网检查的范围。",
+          "company": "Aqara",
+          "state": "read"
+        },
+        {
+          "name": "宇树科技",
+          "url": "https://raw.githubusercontent.com/unitreerobotics/unitree_rl_gym/main/deploy/deploy_real/README.zh.md",
+          "checkedAt": "2026-11-20T10:42:16.964498+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统"
+          ],
+          "note": "复核示例程序及实物部署限制；没有任务接管率或售后人工记录。",
+          "company": "宇树科技",
+          "state": "read"
+        },
+        {
+          "name": "Formlabs",
+          "url": "https://formlabs.com/blog/validation-testing-product-development-poc-evt-dvt-pvt-mp/",
+          "checkedAt": "2026-11-20T10:42:17.801881+00:00",
+          "purpose": "practice",
+          "stages": [
+            "制造与交付",
+            "研发与系统"
+          ],
+          "note": "复核工程、设计与生产验证三个阶段的说明，未获学习机项目实际签字记录。",
+          "company": "Formlabs",
+          "state": "read"
+        }
+      ],
+      "coverage": "审读存储价格、DDR6 预告、智能设备零售、OLED 出货、两起美国硬件召回及出口管制正式文件；另查三家学习硬件企业的六份岗位正文。 晚间复读共享权限、设备保养和音频回环测试原文，补充知识深读。",
+      "knownGaps": [
+        "DRAM 案本轮查阅仍是原程序裁定，未检出新的实体判断。",
+        "作业帮采购检索未取得岗位正文；钉钉产品入口未取得可用正文。",
+        "掌阅旧版本资料缺当前机型实测；学习机终端采购价、试产放行人及实际效果未披露。",
+        "家庭成员撤销后断网设备的同步行为、无人机维修实际周转、学习机跟读的整机实测与项目签核仍缺证据。"
+      ],
+      "failedSources": [
+        "入口未返回足够正文，保留既有产品与 Xnote 对照边界。",
+        "直连返回 403；已核对协会经 Business Wire 分发的完整新闻稿。",
+        "本次抓取未成功：curl: (56) The requested URL returned error: 403\n",
+        "原 FAQ 多次重定向，未取得正文，改查开发者平台的家庭成员管理说明。",
+        "直接请求公告返回 403，通过网页阅读器另查公告部分段落。"
+      ],
+      "coverageCheck": {
+        "newsResearch": {
+          "passed": true,
+          "bodyCount": 8,
+          "publisherGroups": [
+            "JEDEC",
+            "TrendForce",
+            "之家网站",
+            "商务部消费促进司",
+            "美国消费品安全委员会 CPSC"
+          ],
+          "requiredBodies": 6,
+          "requiredPublisherGroups": 3
+        },
+        "passed": true,
+        "companies": [
+          "作业帮",
+          "宇树科技",
+          "小米",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "gaps": [],
+        "usableSources": 38
+      },
+      "successfulScan": true,
+      "completedAt": "2026-11-20T10:44:48.243563+00:00",
+      "reviewedCount": 3,
+      "selectedCount": 3
     }
   ]
 }
