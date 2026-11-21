@@ -38,6 +38,17 @@ class EducationTests(unittest.TestCase):
   with self.assertRaises(ValueError):edu.publish(b,self.data,self.work,self.clock)
   self.assertEqual(load(self.data/'education.json'),self.seed)
  def test_daily_and_weekly_gaps_remain_actionable(self):
+  from recruitment import EDUCATION_COMPANIES, ROLE_FAMILIES
+  stamp=self.clock.isoformat()
+  profiles=self.seed['profiles']
+  for profile in profiles:
+   profile['reviewedAt']=stamp
+  checks=[dict(company=p['company'],checkedAt=stamp,state='body',categoryIds=p['categoryIds']) for p in profiles]
+  self.seed['runs']=[dict(completedAt=stamp,checks=checks)]
+  write(self.data/'education.json',self.seed)
+  scans=[dict(company=company,checkedAt=stamp,familyChecks=[dict(family=family,state='body') for family in ROLE_FAMILIES]) for company in EDUCATION_COMPANIES]
+  jobs=[dict(company=company,educationResearch=True,access='正文可见',lastSeen=stamp) for company in EDUCATION_COMPANIES]
+  write(self.data/'recruitment.json',dict(jobs=jobs,scans=scans))
   current=edu.plan(self.data,self.clock);self.assertTrue(current['today']);self.assertFalse(current['needsEducation'])
   late=edu.plan(self.data,self.clock+dt.timedelta(days=8));self.assertTrue(late['needsEducation']);self.assertEqual(set(late['uncoveredCategories']),edu.CATEGORIES);self.assertEqual(len(late['overdueProfiles']),len(self.seed['profiles']))
 if __name__=='__main__':unittest.main()
