@@ -394,68 +394,43 @@
       "updatedAt": "2026-11-20T00:45:12.064804+00:00"
     },
     "chain-1": {
-      "attemptedAt": "2026-11-19T10:43:04.558764+00:00",
+      "attemptedAt": "2026-11-21T10:49:32.407137+00:00",
       "status": "partial",
-      "assessment": "MakerWorld 活动安排合作机构用一个月打印入围模型，与任务简报中指明的使用者一起测试，并将反馈纳入评选。NN/g 给出了如何按任务结果记录完整与部分成功的方法。 活动公告披露的是测试安排。尚无完成率、最终改版或内部授权资料。",
+      "assessment": "将触觉学习原型的早期决策与正式可用性评估分开，并复核任务成功率和 JTBD 的定义。",
       "gaps": [
-        "原始签核授权、量产结果及其他字段仍需独立资料。"
+        "已核实此研究原型的一次需求取舍；学习硬件企业的原始立项签核与量产后任务完成数据仍待查。"
       ],
       "reviewedFields": [
-        "basics",
         "exercise",
-        "team"
+        "flow"
       ],
       "evidence": [
         {
-          "itemId": "task-success-criteria",
-          "title": "孩子拍完题就算成功吗？教研和产品怎样约定一次任务的终点",
+          "itemId": "e21-tactile",
+          "title": "孩子摸着积木学空间关系，为什么把手持扫描器改成桌面底板？",
           "facts": [
             {
-              "claim": "完成率按参与者能否完成指定任务计算。",
-              "sourceUrl": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
-              "locator": "Measuring Success"
+              "claim": "作者写明改版和时间限制使原计划的正式评估未能完成。",
+              "sourceUrl": "https://researcharchive.wintec.ac.nz/id/eprint/8226/2/Elgee_vanTonder_Dissertation_Final.pdf",
+              "locator": "研究方法 · Usability Testing；设计反思 · Iteration, Feedback and Change"
             },
             {
-              "claim": "遇到部分成功时，作者建议分级报告人数比例。",
-              "sourceUrl": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
-              "locator": "Reporting Levels of Success"
+              "claim": "课堂中的触觉底板启发团队从手持设备转向固定底板。",
+              "sourceUrl": "https://researcharchive.wintec.ac.nz/id/eprint/8226/2/Elgee_vanTonder_Dissertation_Final.pdf",
+              "locator": "设计反思 · 课堂原型与底板"
             }
           ],
-          "boundary": "原文用订花任务解释度量方法。拍题是学习硬件的应用示例，尚无竞品在这个任务上的测量结果或放行阈值。",
+          "boundary": "依据 2026 年学位论文的方法和迭代段落；案例是辅助学习原型。未见量产、采购签核或真实课堂长期效果。",
           "sources": [
             {
-              "url": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
-              "publisherGroup": "Nielsen Norman Group",
-              "name": "Jakob Nielsen 与 Raluca Budiu",
-              "publishedAt": "2001-02-17",
+              "url": "https://researcharchive.wintec.ac.nz/id/eprint/8226/2/Elgee_vanTonder_Dissertation_Final.pdf",
+              "publisherGroup": "怀卡托理工学院研究档案 · 原研究论文",
+              "name": "怀卡托理工学院研究档案 · 原研究论文",
+              "publishedAt": "2026-06-12",
               "role": "research",
-              "textHash": "cbe2047b44e0d15bb9a81b55a025eeb613a38c110a7c9adfe61742aa5d8ac7c3",
-              "readAt": "2026-11-19T10:39:23.443650+00:00",
-              "coverage": "body"
-            }
-          ]
-        },
-        {
-          "itemId": "rss-73d3265f7743a41c",
-          "title": "MakerWorld 无障碍设计活动：由合作机构带入真实需求",
-          "facts": [
-            {
-              "claim": "活动围绕多项具体需求组织社区设计。",
-              "sourceUrl": "https://blog.bambulab.com/seven-organizations-one-maker-community-3d-printing-in-the-service-of-accessibility",
-              "locator": "正文定位：MakerWorld 无障碍设计活动：由合作机构带入真实需求"
-            }
-          ],
-          "boundary": "企业自行披露，未经独立结果核验；不据此推断销量、利润或组织效果。",
-          "sources": [
-            {
-              "name": "Bambu Lab Blog",
-              "url": "https://blog.bambulab.com/seven-organizations-one-maker-community-3d-printing-in-the-service-of-accessibility",
-              "publishedAt": "2026-09-15T10:08:41+00:00",
-              "publisherGroup": "Bambu Lab",
-              "role": "official",
-              "textHash": "e7a2157a67676287a0074a646c03fe27c45537c0aac4385ad92fd14212332292",
-              "readAt": "2026-11-05T10:27:51.052599+00:00",
-              "coverage": "body"
+              "textHash": "2dcf91cc93378d6dd7becbf7763dcf5081f8c920b5647f53e8dfeced75367867",
+              "readAt": "2026-11-21T10:45:28.120765+00:00",
+              "coverage": "excerpt"
             }
           ]
         },
@@ -487,36 +462,66 @@
               "coverage": "excerpt"
             }
           ]
+        },
+        {
+          "itemId": "task-success-criteria",
+          "title": "孩子拍完题就算成功吗？教研和产品怎样约定一次任务的终点",
+          "facts": [
+            {
+              "claim": "完成率按参与者能否完成指定任务计算。",
+              "sourceUrl": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
+              "locator": "Measuring Success"
+            },
+            {
+              "claim": "遇到部分成功时，作者建议分级报告人数比例。",
+              "sourceUrl": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
+              "locator": "Reporting Levels of Success"
+            }
+          ],
+          "boundary": "原文用订花任务解释度量方法。拍题是学习硬件的应用示例，尚无竞品在这个任务上的测量结果或放行阈值。",
+          "sources": [
+            {
+              "url": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
+              "publisherGroup": "Nielsen Norman Group",
+              "name": "Jakob Nielsen 与 Raluca Budiu",
+              "publishedAt": "2001-02-17",
+              "role": "research",
+              "textHash": "cbe2047b44e0d15bb9a81b55a025eeb613a38c110a7c9adfe61742aa5d8ac7c3",
+              "readAt": "2026-11-19T10:39:23.443650+00:00",
+              "coverage": "body"
+            }
+          ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "task-success-criteria",
-          "url": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
-          "checkedAt": "2026-11-19T10:39:23.443650+00:00",
+          "itemId": "e21-tactile",
+          "url": "https://researcharchive.wintec.ac.nz/id/eprint/8226/2/Elgee_vanTonder_Dissertation_Final.pdf",
+          "checkedAt": "2026-11-21T10:45:28.120765+00:00",
           "state": "body",
-          "note": "复读当前正文，核对本条所涉及的具体环节。活动公告披露的是测试安排。尚无完成率、最终改版或内部授权资料。"
-        },
-        {
-          "itemId": "rss-73d3265f7743a41c",
-          "url": "https://blog.bambulab.com/seven-organizations-one-maker-community-3d-printing-in-the-service-of-accessibility",
-          "checkedAt": "2026-11-19T10:37:57.480501+00:00",
-          "state": "body",
-          "note": "复读当前正文，核对本条所涉及的具体环节。活动公告披露的是测试安排。尚无完成率、最终改版或内部授权资料。"
+          "note": "本轮读取原文相关段落。核对研究方法和设计迭代小节，含未完成正式评估的说明。"
         },
         {
           "itemId": "jtbd-circumstances",
           "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
-          "checkedAt": "2026-11-19T10:37:57.480363+00:00",
+          "checkedAt": "2026-11-21T10:44:20.744664+00:00",
           "state": "body",
-          "note": "复读当前正文，核对本条所涉及的具体环节。活动公告披露的是测试安排。尚无完成率、最终改版或内部授权资料。"
+          "note": "本轮读取正文。核对具体处境、所求进步与功能社会情感维度。"
+        },
+        {
+          "itemId": "task-success-criteria",
+          "url": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
+          "checkedAt": "2026-11-21T10:44:20.091991+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对任务的完全成功和部分成功区别。"
         }
       ],
-      "reviewedAt": "2026-11-19T10:43:04.558764+00:00",
+      "reviewedAt": "2026-11-21T10:49:32.407137+00:00",
       "patch": {
         "team": "用户研究、产品、销售、服务一起区分使用者、购买者与渠道反馈。 平台型硬件还需区分内容创作者、最终使用者与实体履约伙伴；活动意见是需求线索，不能替代使用验证。",
-        "exercise": "选一种学习设备，分别写出孩子要完成的学习任务、家长要完成的管理任务，以及操作入口和成功条件。Kindle说明区分儿童档案与设备本地限制，前者和后者的远程管理能力不同；实际需求仍需访谈与任务观察，不能由功能存在直接推断。 让参与者按相同条件尝试一次任务，记录人数、需要协助的环节和最终结果。",
-        "basics": "JTBD 关注人在具体处境下希望取得的进步，包含功能、社会和情感三个维度。访谈明确所求进步后，将其转成用户可完成、测试者可观察的任务；在参与者中分别报告完整成功和各类部分成功。"
+        "exercise": "选一种学习设备，分别写出孩子要完成的学习任务、家长要完成的管理任务，以及操作入口和成功条件。Kindle说明区分儿童档案与设备本地限制，前者和后者的远程管理能力不同；实际需求仍需访谈与任务观察，不能由功能存在直接推断。 让参与者按相同条件尝试一次任务，记录人数、需要协助的环节和最终结果。 再标记改版后哪些环节仍未经独立完成测试。",
+        "basics": "JTBD 关注人在具体处境下希望取得的进步，包含功能、社会和情感三个维度。访谈明确所求进步后，将其转成用户可完成、测试者可观察的任务；在参与者中分别报告完整成功和各类部分成功。",
+        "flow": "用户任务、情境和替代方案 → 需求优先级与验收条件 早期试玩可以触发改版。将触发改版的观察和新版验收结果分别记录，正式评估未完成时保留待测任务。"
       },
       "lessons": [
         {
@@ -575,9 +580,20 @@
             "jtbd-circumstances"
           ],
           "updatedAt": "2026-11-19T10:43:04.558764+00:00"
+        },
+        {
+          "id": "e21-fixed-board",
+          "title": "一次试玩能决定改哪里，改完还要验证什么",
+          "learning": "在这项新西兰研究中，师生反馈和触觉试玩支持将手持扫描器改成固定底板。作者同时记录了正式评估未完成。",
+          "application": "学习设备需求评审保留三项记录：未提示时的真实操作困难、针对它修改哪一处、下一版用什么任务检查。记录教师或家长介入的时点。",
+          "boundary": "仅限该研究的迭代经验。项目未报告最终学习成效、产品商业放行或量产结果。",
+          "itemIds": [
+            "e21-tactile"
+          ],
+          "updatedAt": "2026-11-21T10:49:32.407137+00:00"
         }
       ],
-      "updatedAt": "2026-11-19T10:43:04.558764+00:00"
+      "updatedAt": "2026-11-21T10:49:32.407137+00:00"
     },
     "chain-4": {
       "attemptedAt": "2026-11-21T00:48:49.161188+00:00",
@@ -1326,19 +1342,57 @@
       "updatedAt": "2026-11-21T00:48:49.161188+00:00"
     },
     "track-4": {
-      "attemptedAt": "2026-11-19T10:43:04.558764+00:00",
+      "attemptedAt": "2026-11-21T10:49:32.407137+00:00",
       "status": "partial",
-      "assessment": "拓竹披露 H3C 切片软件分区分配喷嘴，让细喷嘴的多层与粗喷嘴的一层在同一高度带的边界会合，然后双方再向上推进。 依据单厂工程说明，尚缺相同工件、材料和质量要求下的跨机型测试。",
+      "assessment": "复核 K1 跳过对象的版本及操作限制，H2D 首层问题与 H3C 的多层高约束；另核海外商城退货规定。",
       "gaps": [
-        "拓竹首层排障页网页读取返回402，未取得当前正文；具体工艺和验收条件未补齐。",
-        "创想三维确认后寄回时限仍有7/14天冲突，地区适用性及实际履约未验证。",
-        "跨企业首次任务成功率、准备与恢复时间、维护成本缺少同任务可比证据。"
+        "创想三维海外商城确认退货后的寄回期限仍有 7/14 天两种表述，针对具体订单须核实。",
+        "跨企业同任务的首次成功率、准备和恢复时间及维护成本仍缺实测。"
       ],
       "reviewedFields": [
         "constraint",
         "metrics"
       ],
       "evidence": [
+        {
+          "itemId": "e21-creality",
+          "title": "同一盘模型坏了一个，怎样记录剩余件的交付？",
+          "facts": [
+            {
+              "claim": "在指定版本和多模型任务下可以跳过有问题的模型。",
+              "sourceUrl": "https://wiki.creality.com/en/k1-flagship-series/k1-series-general-documents/the-wrong-model-skips-function-guide",
+              "locator": "K1 系列问题模型跳过功能指引 · 开启条件及确认"
+            },
+            {
+              "claim": "H2D 手册记录首层过高可能降低附着，严重时发生移位或打印失败。",
+              "sourceUrl": "https://csm.bblcdn.com/hub/4668d0ca43994ff3bff4b37f1a65c2e7.pdf",
+              "locator": "第9章 §9.2 首层过高或过低"
+            }
+          ],
+          "boundary": "K1 的跳过功能和 H2D 的首层排障各自限定机型。没有同任务跨机测试，也未取得用户平均节省多少材料和时间的数据。",
+          "sources": [
+            {
+              "url": "https://wiki.creality.com/en/k1-flagship-series/k1-series-general-documents/the-wrong-model-skips-function-guide",
+              "publisherGroup": "创想三维 · K1 系列官方 Wiki",
+              "name": "创想三维 · K1 系列官方 Wiki",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "752e439639e367aff483dc57056664e1dfad94b28145e4b767868d3c142fba1f",
+              "readAt": "2026-11-21T10:44:14.537821+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://csm.bblcdn.com/hub/4668d0ca43994ff3bff4b37f1a65c2e7.pdf",
+              "publisherGroup": "拓竹 H2D 3D 打印用户手册",
+              "name": "拓竹 H2D 3D 打印用户手册",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "b8bd7b2d174d89cb7ac808ccb382d7502e7c0e94446175c37240f922c18b9a18",
+              "readAt": "2026-11-21T10:45:27.969384+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        },
         {
           "itemId": "rss-1ec82521027135bf",
           "title": "拓竹解释 H3C 混合层高：把手工拆模型交给切片调度",
@@ -1372,22 +1426,72 @@
               "coverage": "body"
             }
           ]
+        },
+        {
+          "itemId": "creality-service-evidence",
+          "title": "创想三维售后：诊断材料与返寄确认也是交付接口",
+          "facts": [
+            {
+              "claim": "支持流程要求产品购买信息及故障图片或视频。",
+              "sourceUrl": "https://store.creality.com/pages/return-policy",
+              "locator": "Solutions Provided by Creality 3D"
+            },
+            {
+              "claim": "寄回前需先联系客服发起退货。",
+              "sourceUrl": "https://store.creality.com/pages/return-policy",
+              "locator": "Return Address下方说明"
+            }
+          ],
+          "boundary": "海外商店披露的流程，地区、渠道、产品及条款版本均有限制；只审读服务入口、诊断与退回条款，非整页法务审查，不判断法定权利或实际履约。",
+          "sources": [
+            {
+              "url": "https://store.creality.com/pages/return-policy",
+              "name": "创想三维官方资料",
+              "publishedAt": null,
+              "publisherGroup": "创想三维",
+              "role": "official",
+              "textHash": "855a4ed49f57aaac7be29d4685a8db6c360844614827305dfa06d47738a8e459",
+              "readAt": "2026-11-15T00:41:20.685531+00:00",
+              "coverage": "body"
+            }
+          ]
         }
       ],
       "sourceChecks": [
         {
+          "itemId": "e21-creality",
+          "url": "https://wiki.creality.com/en/k1-flagship-series/k1-series-general-documents/the-wrong-model-skips-function-guide",
+          "checkedAt": "2026-11-21T10:44:14.537821+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对 K1 系列四项开启条件与跳过确认。"
+        },
+        {
+          "itemId": "e21-creality",
+          "url": "https://csm.bblcdn.com/hub/4668d0ca43994ff3bff4b37f1a65c2e7.pdf",
+          "checkedAt": "2026-11-21T10:45:27.969384+00:00",
+          "state": "body",
+          "note": "本轮读取原文相关段落。读取 H2D 第9章首层高度与成品或设备受影响的说明。"
+        },
+        {
           "itemId": "rss-1ec82521027135bf",
           "url": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
-          "checkedAt": "2026-11-19T10:37:58.039489+00:00",
+          "checkedAt": "2026-11-21T10:44:20.234667+00:00",
           "state": "body",
-          "note": "复读当前正文，核对本条所涉及的具体环节。依据单厂工程说明，尚缺相同工件、材料和质量要求下的跨机型测试。"
+          "note": "本轮读取正文。复核 H3C 打印样件的可变层高条件。"
+        },
+        {
+          "itemId": "creality-service-evidence",
+          "url": "https://store.creality.com/pages/return-policy",
+          "checkedAt": "2026-11-21T10:45:35.104887+00:00",
+          "state": "body",
+          "note": "本轮读取正文。复读商城退货条款：确认后寄回期限仍同时写有7天和14天。"
         }
       ],
-      "reviewedAt": "2026-11-19T10:43:04.558764+00:00",
+      "reviewedAt": "2026-11-21T10:49:32.407137+00:00",
       "patch": {
-        "constraint": "良率、准备时间、耗材和失败恢复 制造工具不能只按峰值速度比较；需看材料适配、真实任务耗时和型号特定的部署条件。专业焊接设备的使用前提不得与桌面创作设备混同。 在混合喷嘴的同一件模型内，线宽和层高分别影响细节与节拍；两区应在高度带边界重新对齐。此约束来自拓竹 H3C 案例。",
+        "constraint": "良率、准备时间、耗材和失败恢复 制造工具不能只按峰值速度比较；需看材料适配、真实任务耗时和型号特定的部署条件。专业焊接设备的使用前提不得与桌面创作设备混同。 在混合喷嘴的同一件模型内，线宽和层高分别影响细节与节拍；两区应在高度带边界重新对齐。此约束来自拓竹 H3C 案例。 H2D 手册说明首层过高可导致附着不良、移位，过低可损伤喷嘴或打印板。先判断故障影响一个对象还是整盘，再选择恢复方式。",
         "team": "运动控制、固件、结构、材料、切片软件、制造工程 涉及专业设备时，还需把现场交付、训练和安全责任接口纳入观察；具体职责取决于产品和使用场景。",
-        "metrics": "第一次任务成功率；准备时间；废料；维护成本 比较前固定机型、材料、任务与质量要求，另列准备、加工、维护和失败恢复时间；尚无跨企业统一实测数据。"
+        "metrics": "第一次任务成功率；准备时间；废料；维护成本 比较前固定机型、材料、任务与质量要求，另列准备、加工、维护和失败恢复时间；尚无跨企业统一实测数据。 同盘多件要分别记录计划件数、被跳过的对象、最终合格件和重做耗时。可继续执行整盘任务不能替代逐件验收。"
       },
       "lessons": [
         {
@@ -1423,23 +1527,96 @@
             "rss-1ec82521027135bf"
           ],
           "updatedAt": "2026-11-19T10:43:04.558764+00:00"
+        },
+        {
+          "id": "e21-batch-recovery",
+          "title": "同一盘打印有失败件，余件交付按件验收",
+          "learning": "K1 的跳过对象功能要求同盘多个模型、打印已开始且固件与切片版本符合条件。跳过问题件让其余对象继续，但仍要逐件验收。",
+          "application": "按一盘的计划件数、跳过件数、最终合格件数和重做耗时记录。遇到首层普遍异常，还需区分影响单件还是整盘。",
+          "boundary": "创想三维与拓竹各有机型限定；没有跨机型实测、实际交付率或节省工时的对比。",
+          "itemIds": [
+            "e21-creality"
+          ],
+          "updatedAt": "2026-11-21T10:49:32.407137+00:00"
         }
       ],
-      "updatedAt": "2026-11-19T10:43:04.558764+00:00"
+      "updatedAt": "2026-11-21T10:49:32.407137+00:00"
     },
     "chain-6": {
-      "attemptedAt": "2026-11-19T10:43:04.558764+00:00",
+      "attemptedAt": "2026-11-21T10:49:32.407137+00:00",
       "status": "partial",
-      "assessment": "Shopify 将利润统计限定在售出时已有成本的商品和规格，按净销售额纳入折扣和退款。缺成本的成交会让两张报表的统计范围不同。 说明只适用于该平台报表。具体商户成本、经销商售出数据和渠道费用归集尚未核实。",
+      "assessment": "读书郎财报说明外包运营的费用归类；罗技财报揭示不同交易层级均可能计入 sell-through；复读 Shopify 的贡献毛益定义。",
       "gaps": [
-        "sell-in与多级经销渠道的统一归集、贡献利润成本范围仍待专门复核。",
-        "未读取商户实际配置和企业库存数据；不能推断任何企业压货、滞销或利润变化。"
+        "已复核两个公司披露的渠道层级及贡献毛益的通常计算方式。读书郎单店合同的费率、退货分摊和各经销商终端动销台账本轮未取得，无法核算单店贡献。"
       ],
       "reviewedFields": [
-        "exercise",
+        "basics",
         "metrics"
       ],
       "evidence": [
+        {
+          "itemId": "e21-readboy",
+          "title": "学习机旗舰店谁来运营，渠道费用该算到哪一笔？",
+          "facts": [
+            {
+              "claim": "公司把旗舰店委托专业团队运营产生的承包商成本列入销售及经销开支增加的原因。",
+              "sourceUrl": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042200480.pdf",
+              "locator": "管理层讨论与分析 · 销售及经销开支，印刷页31"
+            },
+            {
+              "claim": "贡献毛益用对应范围内的销售收入减变动成本。",
+              "sourceUrl": "https://www.shopify.com/blog/what-is-contribution-margin",
+              "locator": "FAQ · What is the formula for contribution margin?"
+            }
+          ],
+          "boundary": "所读为公司年报相关段落和会计概念说明。未见店铺合同、单台学习机费用、家庭购买量或本次活动的贡献利润。",
+          "sources": [
+            {
+              "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042200480.pdf",
+              "publisherGroup": "读书郎教育控股 · 港交所披露",
+              "name": "读书郎教育控股 · 港交所披露",
+              "publishedAt": "2026-04-22",
+              "role": "official",
+              "textHash": "18a7e5a40e0d203fef565b976eebe7eb69344dd85fc1e9f72fb5248676ac191a",
+              "readAt": "2026-11-21T10:46:29.832822+00:00",
+              "coverage": "excerpt"
+            },
+            {
+              "url": "https://www.shopify.com/blog/what-is-contribution-margin",
+              "publisherGroup": "Shopify · 贡献毛益说明",
+              "name": "Shopify · 贡献毛益说明",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "4decc99a2edd9fd9f160704dc1beb3e337250e3273974b667299fee906d43da5",
+              "readAt": "2026-11-21T10:45:34.414496+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "e21-logi-web",
+          "title": "经销商说已经卖出，货究竟到了哪一级？",
+          "facts": [
+            {
+              "claim": "罗技将经销商卖给其客户的交易也计入所用 sell-through 数据。",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1032975/000103297526000021/logi-20260331.htm",
+              "locator": "风险因素 · sell-through 与渠道存货段"
+            }
+          ],
+          "boundary": "只核对所引年报段落；没有罗技或学习机厂商的逐笔零售数据，无法从这一披露推算终端销量。",
+          "sources": [
+            {
+              "url": "https://www.sec.gov/Archives/edgar/data/1032975/000103297526000021/logi-20260331.htm",
+              "publisherGroup": "罗技 · SEC 2026 财年 Form 10-K",
+              "name": "罗技 · SEC 2026 财年 Form 10-K",
+              "publishedAt": "2026-05-21",
+              "role": "official",
+              "textHash": "b9f5e063dc69b3637530419f246db67fafe04f1167aede52cdc11618e24efcbb",
+              "readAt": "2026-11-21T10:45:28.045786+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        },
         {
           "itemId": "shopify-profit-cost-coverage",
           "title": "促销后这款学习机到底赚了多少？先查利润报表漏掉了哪些订单",
@@ -1472,19 +1649,41 @@
       ],
       "sourceChecks": [
         {
+          "itemId": "e21-readboy",
+          "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042200480.pdf",
+          "checkedAt": "2026-11-21T10:46:29.832822+00:00",
+          "state": "body",
+          "note": "本轮读取原文相关段落。核对年报管理层讨论的渠道收入分类，以及销售及经销开支说明。"
+        },
+        {
+          "itemId": "e21-readboy",
+          "url": "https://www.shopify.com/blog/what-is-contribution-margin",
+          "checkedAt": "2026-11-21T10:45:34.414496+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对贡献金额与变动成本公式。"
+        },
+        {
+          "itemId": "e21-logi-web",
+          "url": "https://www.sec.gov/Archives/edgar/data/1032975/000103297526000021/logi-20260331.htm",
+          "checkedAt": "2026-11-21T10:45:28.045786+00:00",
+          "state": "body",
+          "note": "本轮读取原文相关段落。阅读 SEC 年报关于直销零售客户、经销客户及上报范围的定义。"
+        },
+        {
           "itemId": "shopify-profit-cost-coverage",
           "url": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
-          "checkedAt": "2026-11-19T10:39:23.445990+00:00",
+          "checkedAt": "2026-11-21T10:44:20.504273+00:00",
           "state": "body",
-          "note": "复读当前正文，核对本条所涉及的具体环节。说明只适用于该平台报表。具体商户成本、经销商售出数据和渠道费用归集尚未核实。"
+          "note": "本轮读取正文。复核售出商品成本字段与按商品统计毛利的报表条件。"
         }
       ],
-      "reviewedAt": "2026-11-19T10:43:04.558764+00:00",
+      "reviewedAt": "2026-11-21T10:49:32.407137+00:00",
       "patch": {
         "flow": "用户需求与库存 → 定价、渠道政策、交付承诺与终端反馈 还需核对销售主体、支持地区、购买凭证与设备序列号在售后受理中的衔接。",
         "team": "销售、市场、计划、零售、财务对齐销售预测、货盘、促销与退货规则。 XREAL 的公开流程提示渠道与服务之间存在购买证据交接；研究时应确认能否复用已授权订单信息，减少用户重复提交。",
         "exercise": "选一个销售活动，列出从备货到退货的责任与反馈，不只统计订单数。 选择一个具体渠道和地区，画出从购买承诺到问题处理的用户路径，记录需要重复提供的信息及尚未明确的责任。 对一次售罄率变化另列统计窗口、库存范围及模型版本，先排除统计变更再讨论备货和促销。",
-        "metrics": "网店转化率先确认分母：Shopify以购买会话占总会话计算，同一会话可含多笔订单。比较时固定期间、漏斗路径、过滤与计量版本；不能直接套到门店或经销商。贡献利润的退货、服务和渠道费用归集口径仍待专门复核。 售罄率另核库存分母：Shopify示例为售出数量/（售出数量+期末库存）；其2026年10月1日库存模型改变，跨期不能直接解释为经营变化。 利润对账另核售出时成本字段覆盖的规格，并按净销售额核对折扣、退款和缺成本成交金额。"
+        "metrics": "网店转化率先确认分母：Shopify以购买会话占总会话计算，同一会话可含多笔订单。比较时固定期间、漏斗路径、过滤与计量版本；不能直接套到门店或经销商。渠道贡献金额按同范围收入扣除变动成本；贡献率再除以该收入。先确认退款已冲减的项目，核对实际合同中按件和固定收费的部分。 售罄率另核库存分母：Shopify示例为售出数量/（售出数量+期末库存）；其2026年10月1日库存模型改变，跨期不能直接解释为经营变化。 利润对账另核售出时成本字段覆盖的规格，并按净销售额核对折扣、退款和缺成本成交金额。",
+        "basics": "Sell-in 记录供给方卖给渠道的交易。Sell-through 的下一手买方需按数据提供方确认：零售渠道可能报到消费者，多级经销也可能只报到下一家经销商或门店。汇总时应分开交易层级。"
       },
       "lessons": [
         {
@@ -1530,9 +1729,31 @@
             "shopify-profit-cost-coverage"
           ],
           "updatedAt": "2026-11-19T10:43:04.558764+00:00"
+        },
+        {
+          "id": "e21-readboy-channel",
+          "title": "学习机旗舰店的代运营费，如何进入渠道复盘",
+          "learning": "读书郎解释2025年销售及经销开支上升时，同时列到学习室伙伴招募、旗舰店运营承包商和市场推广；未列各店成本。",
+          "application": "以同一渠道和期间核对交易净额、退款和成本。把按月承包、按成交抽佣以及活动补贴分列，向财务核实合同条款及费用承担方。",
+          "boundary": "上市公司披露的是公司层面的费用解释；各渠道贡献利润仍须取得合同与对账数据。",
+          "itemIds": [
+            "e21-readboy"
+          ],
+          "updatedAt": "2026-11-21T10:49:32.407137+00:00"
+        },
+        {
+          "id": "e21-next-buyer",
+          "title": "先看下一手买家，再判断是不是终端销量",
+          "learning": "罗技明确区分零售商卖给消费者与经销商卖给下游客户的交易。各地及各期的数据覆盖也会变动。",
+          "application": "同一设备经过总代、门店和家庭时，分别标记交易层级；比较期间前核对报数伙伴。无法识别终端买方的数量单独列示。",
+          "boundary": "此定义属于罗技披露口径，不能替代其他企业各自的合同及统计定义。",
+          "itemIds": [
+            "e21-logi-web"
+          ],
+          "updatedAt": "2026-11-21T10:49:32.407137+00:00"
         }
       ],
-      "updatedAt": "2026-11-19T10:43:04.558764+00:00"
+      "updatedAt": "2026-11-21T10:49:32.407137+00:00"
     },
     "track-0": {
       "attemptedAt": "2026-11-20T00:45:12.064804+00:00",
@@ -2817,6 +3038,40 @@
           "hash": "643a07d3a5bd9b0ec0aeba7af0ff10f261d08099d705ce6f7120a02e1924b32f",
           "decision": "hold",
           "reason": "拓竹负责伙伴培训认证，计划含维修和培训。尚缺实际获认证的服务网点和用户交付结果。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-21T10:49:32.407137+00:00",
+      "reviewedNodes": [
+        "chain-1",
+        "chain-6",
+        "track-4"
+      ],
+      "decisions": [
+        {
+          "itemId": "e21-tactile",
+          "hash": "57e27d274e9724b32fd50098fe4342d79ad30a94588ea971a483636917601476",
+          "decision": "integrated",
+          "reason": "在这项新西兰研究中，师生反馈和触觉试玩支持将手持扫描器改成固定底板。作者同时记录了正式评估未完成。"
+        },
+        {
+          "itemId": "e21-readboy",
+          "hash": "b18eb538e8f691aa6addbd2ad3ce9a66a639b3726aade62f65e9440c91055e32",
+          "decision": "integrated",
+          "reason": "读书郎解释2025年销售及经销开支上升时，同时列到学习室伙伴招募、旗舰店运营承包商和市场推广；未列各店成本。"
+        },
+        {
+          "itemId": "e21-logi-web",
+          "hash": "ce774cbb4e70623e7f54a8f0d02e29cca9f62777b12bf5acee695af752ca53e9",
+          "decision": "integrated",
+          "reason": "罗技明确区分零售商卖给消费者与经销商卖给下游客户的交易。各地及各期的数据覆盖也会变动。"
+        },
+        {
+          "itemId": "e21-creality",
+          "hash": "5943556dd0c946f1b2c39dd84a0728b1cd9dbad2602209c758f7604c378c25bc",
+          "decision": "integrated",
+          "reason": "K1 的跳过对象功能要求同盘多个模型、打印已开始且固件与切片版本符合条件。跳过问题件让其余对象继续，但仍要逐件验收。"
         }
       ]
     }
@@ -10369,6 +10624,504 @@
           "checkedAt": "2026-11-21T00:47:20.730530+00:00",
           "state": "body",
           "note": "仅使用厂商置顶通知的批次、寄送计划和新送料器保修三段；排除论坛用户留言。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-1",
+      "reviewedAt": "2026-11-21T10:49:32.407137+00:00",
+      "status": "partial",
+      "assessment": "将触觉学习原型的早期决策与正式可用性评估分开，并复核任务成功率和 JTBD 的定义。",
+      "gaps": [
+        "已核实此研究原型的一次需求取舍；学习硬件企业的原始立项签核与量产后任务完成数据仍待查。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "flow"
+      ],
+      "changes": {
+        "flow": {
+          "before": "用户任务、情境和替代方案 → 需求优先级与验收条件",
+          "after": "用户任务、情境和替代方案 → 需求优先级与验收条件 早期试玩可以触发改版。将触发改版的观察和新版验收结果分别记录，正式评估未完成时保留待测任务。"
+        },
+        "exercise": {
+          "before": "选一种学习设备，分别写出孩子要完成的学习任务、家长要完成的管理任务，以及操作入口和成功条件。Kindle说明区分儿童档案与设备本地限制，前者和后者的远程管理能力不同；实际需求仍需访谈与任务观察，不能由功能存在直接推断。 让参与者按相同条件尝试一次任务，记录人数、需要协助的环节和最终结果。",
+          "after": "选一种学习设备，分别写出孩子要完成的学习任务、家长要完成的管理任务，以及操作入口和成功条件。Kindle说明区分儿童档案与设备本地限制，前者和后者的远程管理能力不同；实际需求仍需访谈与任务观察，不能由功能存在直接推断。 让参与者按相同条件尝试一次任务，记录人数、需要协助的环节和最终结果。 再标记改版后哪些环节仍未经独立完成测试。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e21-fixed-board",
+            "title": "一次试玩能决定改哪里，改完还要验证什么",
+            "learning": "在这项新西兰研究中，师生反馈和触觉试玩支持将手持扫描器改成固定底板。作者同时记录了正式评估未完成。",
+            "application": "学习设备需求评审保留三项记录：未提示时的真实操作困难、针对它修改哪一处、下一版用什么任务检查。记录教师或家长介入的时点。",
+            "boundary": "仅限该研究的迭代经验。项目未报告最终学习成效、产品商业放行或量产结果。",
+            "itemIds": [
+              "e21-tactile"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e21-tactile",
+          "title": "孩子摸着积木学空间关系，为什么把手持扫描器改成桌面底板？",
+          "facts": [
+            {
+              "claim": "作者写明改版和时间限制使原计划的正式评估未能完成。",
+              "sourceUrl": "https://researcharchive.wintec.ac.nz/id/eprint/8226/2/Elgee_vanTonder_Dissertation_Final.pdf",
+              "locator": "研究方法 · Usability Testing；设计反思 · Iteration, Feedback and Change"
+            },
+            {
+              "claim": "课堂中的触觉底板启发团队从手持设备转向固定底板。",
+              "sourceUrl": "https://researcharchive.wintec.ac.nz/id/eprint/8226/2/Elgee_vanTonder_Dissertation_Final.pdf",
+              "locator": "设计反思 · 课堂原型与底板"
+            }
+          ],
+          "boundary": "依据 2026 年学位论文的方法和迭代段落；案例是辅助学习原型。未见量产、采购签核或真实课堂长期效果。",
+          "sources": [
+            {
+              "url": "https://researcharchive.wintec.ac.nz/id/eprint/8226/2/Elgee_vanTonder_Dissertation_Final.pdf",
+              "publisherGroup": "怀卡托理工学院研究档案 · 原研究论文",
+              "name": "怀卡托理工学院研究档案 · 原研究论文",
+              "publishedAt": "2026-06-12",
+              "role": "research",
+              "textHash": "2dcf91cc93378d6dd7becbf7763dcf5081f8c920b5647f53e8dfeced75367867",
+              "readAt": "2026-11-21T10:45:28.120765+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        },
+        {
+          "itemId": "jtbd-circumstances",
+          "title": "需求研究先问具体处境与进步，不能只列功能",
+          "facts": [
+            {
+              "claim": "JTBD包含功能、社会和情感维度。",
+              "sourceUrl": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+              "locator": "Definition段落"
+            },
+            {
+              "claim": "概念强调特定处境下希望取得的进步。",
+              "sourceUrl": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+              "locator": "Definition段落"
+            }
+          ],
+          "boundary": "仅取得当前网页Definition片段；不等于完整方法论审阅，不据此推断国内硬件用户需求或企业成效。",
+          "sources": [
+            {
+              "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+              "name": "Christensen Institute官方资料",
+              "publishedAt": null,
+              "publisherGroup": "Christensen Institute",
+              "role": "official",
+              "textHash": "9c6f1c198d595232cfb7db26736e7eeb03427a2ad9d4ca423c90b149bd6361e9",
+              "readAt": "2026-11-14T00:44:10.709041+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        },
+        {
+          "itemId": "task-success-criteria",
+          "title": "孩子拍完题就算成功吗？教研和产品怎样约定一次任务的终点",
+          "facts": [
+            {
+              "claim": "完成率按参与者能否完成指定任务计算。",
+              "sourceUrl": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
+              "locator": "Measuring Success"
+            },
+            {
+              "claim": "遇到部分成功时，作者建议分级报告人数比例。",
+              "sourceUrl": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
+              "locator": "Reporting Levels of Success"
+            }
+          ],
+          "boundary": "原文用订花任务解释度量方法。拍题是学习硬件的应用示例，尚无竞品在这个任务上的测量结果或放行阈值。",
+          "sources": [
+            {
+              "url": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
+              "publisherGroup": "Nielsen Norman Group",
+              "name": "Jakob Nielsen 与 Raluca Budiu",
+              "publishedAt": "2001-02-17",
+              "role": "research",
+              "textHash": "cbe2047b44e0d15bb9a81b55a025eeb613a38c110a7c9adfe61742aa5d8ac7c3",
+              "readAt": "2026-11-19T10:39:23.443650+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e21-tactile",
+          "url": "https://researcharchive.wintec.ac.nz/id/eprint/8226/2/Elgee_vanTonder_Dissertation_Final.pdf",
+          "checkedAt": "2026-11-21T10:45:28.120765+00:00",
+          "state": "body",
+          "note": "本轮读取原文相关段落。核对研究方法和设计迭代小节，含未完成正式评估的说明。"
+        },
+        {
+          "itemId": "jtbd-circumstances",
+          "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+          "checkedAt": "2026-11-21T10:44:20.744664+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对具体处境、所求进步与功能社会情感维度。"
+        },
+        {
+          "itemId": "task-success-criteria",
+          "url": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
+          "checkedAt": "2026-11-21T10:44:20.091991+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对任务的完全成功和部分成功区别。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-6",
+      "reviewedAt": "2026-11-21T10:49:32.407137+00:00",
+      "status": "partial",
+      "assessment": "读书郎财报说明外包运营的费用归类；罗技财报揭示不同交易层级均可能计入 sell-through；复读 Shopify 的贡献毛益定义。",
+      "gaps": [
+        "已复核两个公司披露的渠道层级及贡献毛益的通常计算方式。读书郎单店合同的费率、退货分摊和各经销商终端动销台账本轮未取得，无法核算单店贡献。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "metrics"
+      ],
+      "changes": {
+        "basics": {
+          "before": "Sell-in 是进入渠道，sell-through 关注卖给终端；二者不能混为实际需求。",
+          "after": "Sell-in 记录供给方卖给渠道的交易。Sell-through 的下一手买方需按数据提供方确认：零售渠道可能报到消费者，多级经销也可能只报到下一家经销商或门店。汇总时应分开交易层级。"
+        },
+        "metrics": {
+          "before": "网店转化率先确认分母：Shopify以购买会话占总会话计算，同一会话可含多笔订单。比较时固定期间、漏斗路径、过滤与计量版本；不能直接套到门店或经销商。贡献利润的退货、服务和渠道费用归集口径仍待专门复核。 售罄率另核库存分母：Shopify示例为售出数量/（售出数量+期末库存）；其2026年10月1日库存模型改变，跨期不能直接解释为经营变化。 利润对账另核售出时成本字段覆盖的规格，并按净销售额核对折扣、退款和缺成本成交金额。",
+          "after": "网店转化率先确认分母：Shopify以购买会话占总会话计算，同一会话可含多笔订单。比较时固定期间、漏斗路径、过滤与计量版本；不能直接套到门店或经销商。渠道贡献金额按同范围收入扣除变动成本；贡献率再除以该收入。先确认退款已冲减的项目，核对实际合同中按件和固定收费的部分。 售罄率另核库存分母：Shopify示例为售出数量/（售出数量+期末库存）；其2026年10月1日库存模型改变，跨期不能直接解释为经营变化。 利润对账另核售出时成本字段覆盖的规格，并按净销售额核对折扣、退款和缺成本成交金额。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e21-readboy-channel",
+            "title": "学习机旗舰店的代运营费，如何进入渠道复盘",
+            "learning": "读书郎解释2025年销售及经销开支上升时，同时列到学习室伙伴招募、旗舰店运营承包商和市场推广；未列各店成本。",
+            "application": "以同一渠道和期间核对交易净额、退款和成本。把按月承包、按成交抽佣以及活动补贴分列，向财务核实合同条款及费用承担方。",
+            "boundary": "上市公司披露的是公司层面的费用解释；各渠道贡献利润仍须取得合同与对账数据。",
+            "itemIds": [
+              "e21-readboy"
+            ]
+          }
+        },
+        {
+          "before": null,
+          "after": {
+            "id": "e21-next-buyer",
+            "title": "先看下一手买家，再判断是不是终端销量",
+            "learning": "罗技明确区分零售商卖给消费者与经销商卖给下游客户的交易。各地及各期的数据覆盖也会变动。",
+            "application": "同一设备经过总代、门店和家庭时，分别标记交易层级；比较期间前核对报数伙伴。无法识别终端买方的数量单独列示。",
+            "boundary": "此定义属于罗技披露口径，不能替代其他企业各自的合同及统计定义。",
+            "itemIds": [
+              "e21-logi-web"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e21-readboy",
+          "title": "学习机旗舰店谁来运营，渠道费用该算到哪一笔？",
+          "facts": [
+            {
+              "claim": "公司把旗舰店委托专业团队运营产生的承包商成本列入销售及经销开支增加的原因。",
+              "sourceUrl": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042200480.pdf",
+              "locator": "管理层讨论与分析 · 销售及经销开支，印刷页31"
+            },
+            {
+              "claim": "贡献毛益用对应范围内的销售收入减变动成本。",
+              "sourceUrl": "https://www.shopify.com/blog/what-is-contribution-margin",
+              "locator": "FAQ · What is the formula for contribution margin?"
+            }
+          ],
+          "boundary": "所读为公司年报相关段落和会计概念说明。未见店铺合同、单台学习机费用、家庭购买量或本次活动的贡献利润。",
+          "sources": [
+            {
+              "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042200480.pdf",
+              "publisherGroup": "读书郎教育控股 · 港交所披露",
+              "name": "读书郎教育控股 · 港交所披露",
+              "publishedAt": "2026-04-22",
+              "role": "official",
+              "textHash": "18a7e5a40e0d203fef565b976eebe7eb69344dd85fc1e9f72fb5248676ac191a",
+              "readAt": "2026-11-21T10:46:29.832822+00:00",
+              "coverage": "excerpt"
+            },
+            {
+              "url": "https://www.shopify.com/blog/what-is-contribution-margin",
+              "publisherGroup": "Shopify · 贡献毛益说明",
+              "name": "Shopify · 贡献毛益说明",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "4decc99a2edd9fd9f160704dc1beb3e337250e3273974b667299fee906d43da5",
+              "readAt": "2026-11-21T10:45:34.414496+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "e21-logi-web",
+          "title": "经销商说已经卖出，货究竟到了哪一级？",
+          "facts": [
+            {
+              "claim": "罗技将经销商卖给其客户的交易也计入所用 sell-through 数据。",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1032975/000103297526000021/logi-20260331.htm",
+              "locator": "风险因素 · sell-through 与渠道存货段"
+            }
+          ],
+          "boundary": "只核对所引年报段落；没有罗技或学习机厂商的逐笔零售数据，无法从这一披露推算终端销量。",
+          "sources": [
+            {
+              "url": "https://www.sec.gov/Archives/edgar/data/1032975/000103297526000021/logi-20260331.htm",
+              "publisherGroup": "罗技 · SEC 2026 财年 Form 10-K",
+              "name": "罗技 · SEC 2026 财年 Form 10-K",
+              "publishedAt": "2026-05-21",
+              "role": "official",
+              "textHash": "b9f5e063dc69b3637530419f246db67fafe04f1167aede52cdc11618e24efcbb",
+              "readAt": "2026-11-21T10:45:28.045786+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        },
+        {
+          "itemId": "shopify-profit-cost-coverage",
+          "title": "促销后这款学习机到底赚了多少？先查利润报表漏掉了哪些订单",
+          "facts": [
+            {
+              "claim": "商品或规格售出时已登记成本，才能进入利润统计。",
+              "sourceUrl": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
+              "locator": "Adding cost per item"
+            },
+            {
+              "claim": "期间的折扣和退款会影响毛利率。",
+              "sourceUrl": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
+              "locator": "Discounts and refunds"
+            }
+          ],
+          "boundary": "依据 Shopify 自身报表说明。公开资料没有给出国内学习机厂商的实际成本、返利合同、平台账期或单台贡献利润。",
+          "sources": [
+            {
+              "url": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
+              "publisherGroup": "Shopify",
+              "name": "Shopify 帮助中心",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "92598227f465721c412d7e62a7d2784258feb7af53950b9e0fe008dc604f63ac",
+              "readAt": "2026-11-19T10:39:23.445990+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e21-readboy",
+          "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042200480.pdf",
+          "checkedAt": "2026-11-21T10:46:29.832822+00:00",
+          "state": "body",
+          "note": "本轮读取原文相关段落。核对年报管理层讨论的渠道收入分类，以及销售及经销开支说明。"
+        },
+        {
+          "itemId": "e21-readboy",
+          "url": "https://www.shopify.com/blog/what-is-contribution-margin",
+          "checkedAt": "2026-11-21T10:45:34.414496+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对贡献金额与变动成本公式。"
+        },
+        {
+          "itemId": "e21-logi-web",
+          "url": "https://www.sec.gov/Archives/edgar/data/1032975/000103297526000021/logi-20260331.htm",
+          "checkedAt": "2026-11-21T10:45:28.045786+00:00",
+          "state": "body",
+          "note": "本轮读取原文相关段落。阅读 SEC 年报关于直销零售客户、经销客户及上报范围的定义。"
+        },
+        {
+          "itemId": "shopify-profit-cost-coverage",
+          "url": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
+          "checkedAt": "2026-11-21T10:44:20.504273+00:00",
+          "state": "body",
+          "note": "本轮读取正文。复核售出商品成本字段与按商品统计毛利的报表条件。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-4",
+      "reviewedAt": "2026-11-21T10:49:32.407137+00:00",
+      "status": "partial",
+      "assessment": "复核 K1 跳过对象的版本及操作限制，H2D 首层问题与 H3C 的多层高约束；另核海外商城退货规定。",
+      "gaps": [
+        "创想三维海外商城确认退货后的寄回期限仍有 7/14 天两种表述，针对具体订单须核实。",
+        "跨企业同任务的首次成功率、准备和恢复时间及维护成本仍缺实测。"
+      ],
+      "reviewedFields": [
+        "constraint",
+        "metrics"
+      ],
+      "changes": {
+        "constraint": {
+          "before": "良率、准备时间、耗材和失败恢复 制造工具不能只按峰值速度比较；需看材料适配、真实任务耗时和型号特定的部署条件。专业焊接设备的使用前提不得与桌面创作设备混同。 在混合喷嘴的同一件模型内，线宽和层高分别影响细节与节拍；两区应在高度带边界重新对齐。此约束来自拓竹 H3C 案例。",
+          "after": "良率、准备时间、耗材和失败恢复 制造工具不能只按峰值速度比较；需看材料适配、真实任务耗时和型号特定的部署条件。专业焊接设备的使用前提不得与桌面创作设备混同。 在混合喷嘴的同一件模型内，线宽和层高分别影响细节与节拍；两区应在高度带边界重新对齐。此约束来自拓竹 H3C 案例。 H2D 手册说明首层过高可导致附着不良、移位，过低可损伤喷嘴或打印板。先判断故障影响一个对象还是整盘，再选择恢复方式。"
+        },
+        "metrics": {
+          "before": "第一次任务成功率；准备时间；废料；维护成本 比较前固定机型、材料、任务与质量要求，另列准备、加工、维护和失败恢复时间；尚无跨企业统一实测数据。",
+          "after": "第一次任务成功率；准备时间；废料；维护成本 比较前固定机型、材料、任务与质量要求，另列准备、加工、维护和失败恢复时间；尚无跨企业统一实测数据。 同盘多件要分别记录计划件数、被跳过的对象、最终合格件和重做耗时。可继续执行整盘任务不能替代逐件验收。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e21-batch-recovery",
+            "title": "同一盘打印有失败件，余件交付按件验收",
+            "learning": "K1 的跳过对象功能要求同盘多个模型、打印已开始且固件与切片版本符合条件。跳过问题件让其余对象继续，但仍要逐件验收。",
+            "application": "按一盘的计划件数、跳过件数、最终合格件数和重做耗时记录。遇到首层普遍异常，还需区分影响单件还是整盘。",
+            "boundary": "创想三维与拓竹各有机型限定；没有跨机型实测、实际交付率或节省工时的对比。",
+            "itemIds": [
+              "e21-creality"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e21-creality",
+          "title": "同一盘模型坏了一个，怎样记录剩余件的交付？",
+          "facts": [
+            {
+              "claim": "在指定版本和多模型任务下可以跳过有问题的模型。",
+              "sourceUrl": "https://wiki.creality.com/en/k1-flagship-series/k1-series-general-documents/the-wrong-model-skips-function-guide",
+              "locator": "K1 系列问题模型跳过功能指引 · 开启条件及确认"
+            },
+            {
+              "claim": "H2D 手册记录首层过高可能降低附着，严重时发生移位或打印失败。",
+              "sourceUrl": "https://csm.bblcdn.com/hub/4668d0ca43994ff3bff4b37f1a65c2e7.pdf",
+              "locator": "第9章 §9.2 首层过高或过低"
+            }
+          ],
+          "boundary": "K1 的跳过功能和 H2D 的首层排障各自限定机型。没有同任务跨机测试，也未取得用户平均节省多少材料和时间的数据。",
+          "sources": [
+            {
+              "url": "https://wiki.creality.com/en/k1-flagship-series/k1-series-general-documents/the-wrong-model-skips-function-guide",
+              "publisherGroup": "创想三维 · K1 系列官方 Wiki",
+              "name": "创想三维 · K1 系列官方 Wiki",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "752e439639e367aff483dc57056664e1dfad94b28145e4b767868d3c142fba1f",
+              "readAt": "2026-11-21T10:44:14.537821+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://csm.bblcdn.com/hub/4668d0ca43994ff3bff4b37f1a65c2e7.pdf",
+              "publisherGroup": "拓竹 H2D 3D 打印用户手册",
+              "name": "拓竹 H2D 3D 打印用户手册",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "b8bd7b2d174d89cb7ac808ccb382d7502e7c0e94446175c37240f922c18b9a18",
+              "readAt": "2026-11-21T10:45:27.969384+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        },
+        {
+          "itemId": "rss-1ec82521027135bf",
+          "title": "拓竹解释 H3C 混合层高：把手工拆模型交给切片调度",
+          "facts": [
+            {
+              "claim": "切片引擎按动态层带组织不同喷嘴的层高。",
+              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "locator": "Our art of bricklaying"
+            },
+            {
+              "claim": "用户可用涂色工具或修改器框选择区域。",
+              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "locator": "Choose the region, hit Slice"
+            },
+            {
+              "claim": "其他三款设备的原生混合喷嘴支持仍在开发。",
+              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "locator": "文末支持计划"
+            }
+          ],
+          "boundary": "已读厂商技术说明，未检查实现代码、版本发布记录或独立打印结果。不采纳“首款”“无妥协”等比较宣传，亦不把开发计划写成其他机型已经支持。",
+          "sources": [
+            {
+              "url": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+              "name": "Bambu Lab Blog",
+              "publishedAt": "2026-11-09T10:48:22+00:00",
+              "publisherGroup": "Bambu Lab Blog",
+              "role": "official",
+              "textHash": "f0c113e14fc668a9ac0dce4c07738f2d80542ff98b6a16d8c3b95df805198df1",
+              "readAt": "2026-11-10T00:41:29.473888+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "creality-service-evidence",
+          "title": "创想三维售后：诊断材料与返寄确认也是交付接口",
+          "facts": [
+            {
+              "claim": "支持流程要求产品购买信息及故障图片或视频。",
+              "sourceUrl": "https://store.creality.com/pages/return-policy",
+              "locator": "Solutions Provided by Creality 3D"
+            },
+            {
+              "claim": "寄回前需先联系客服发起退货。",
+              "sourceUrl": "https://store.creality.com/pages/return-policy",
+              "locator": "Return Address下方说明"
+            }
+          ],
+          "boundary": "海外商店披露的流程，地区、渠道、产品及条款版本均有限制；只审读服务入口、诊断与退回条款，非整页法务审查，不判断法定权利或实际履约。",
+          "sources": [
+            {
+              "url": "https://store.creality.com/pages/return-policy",
+              "name": "创想三维官方资料",
+              "publishedAt": null,
+              "publisherGroup": "创想三维",
+              "role": "official",
+              "textHash": "855a4ed49f57aaac7be29d4685a8db6c360844614827305dfa06d47738a8e459",
+              "readAt": "2026-11-15T00:41:20.685531+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e21-creality",
+          "url": "https://wiki.creality.com/en/k1-flagship-series/k1-series-general-documents/the-wrong-model-skips-function-guide",
+          "checkedAt": "2026-11-21T10:44:14.537821+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对 K1 系列四项开启条件与跳过确认。"
+        },
+        {
+          "itemId": "e21-creality",
+          "url": "https://csm.bblcdn.com/hub/4668d0ca43994ff3bff4b37f1a65c2e7.pdf",
+          "checkedAt": "2026-11-21T10:45:27.969384+00:00",
+          "state": "body",
+          "note": "本轮读取原文相关段落。读取 H2D 第9章首层高度与成品或设备受影响的说明。"
+        },
+        {
+          "itemId": "rss-1ec82521027135bf",
+          "url": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
+          "checkedAt": "2026-11-21T10:44:20.234667+00:00",
+          "state": "body",
+          "note": "本轮读取正文。复核 H3C 打印样件的可变层高条件。"
+        },
+        {
+          "itemId": "creality-service-evidence",
+          "url": "https://store.creality.com/pages/return-policy",
+          "checkedAt": "2026-11-21T10:45:35.104887+00:00",
+          "state": "body",
+          "note": "本轮读取正文。复读商城退货条款：确认后寄回期限仍同时写有7天和14天。"
         }
       ]
     }
