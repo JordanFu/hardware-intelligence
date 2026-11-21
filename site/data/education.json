@@ -110,7 +110,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-20T00:43:29.502492+00:00",
+      "reviewedAt": "2026-11-21T00:46:30.147094+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "作业帮"
@@ -167,7 +167,7 @@
         }
       ],
       "updatedAt": "2026-11-17T00:46:36.233260+00:00",
-      "reviewedAt": "2026-11-20T00:43:29.502492+00:00",
+      "reviewedAt": "2026-11-21T00:46:30.147094+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "科大讯飞",
@@ -225,7 +225,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-20T00:43:29.502492+00:00",
+      "reviewedAt": "2026-11-21T00:46:30.147094+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "猿辅导",
@@ -284,7 +284,7 @@
         }
       ],
       "updatedAt": "2026-11-19T00:51:40.404223+00:00",
-      "reviewedAt": "2026-11-19T00:51:40.404223+00:00",
+      "reviewedAt": "2026-11-21T00:46:30.147094+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "小天才"
@@ -461,7 +461,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-16T00:45:30.209427+00:00",
+      "reviewedAt": "2026-11-21T00:46:30.147094+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "Amazon"
@@ -540,7 +540,7 @@
       },
       "dimensions": {
         "product": "词典笔 / 翻译笔，核对型号与使用条件。",
-        "content": "辞典、识别和跟读能力衔接；离线范围与授权期限待核验。",
+        "content": "厂商区分扫单词查词义和发音、扫课文听标准朗读、跟读评测及复读。P20Plus 另列语法解析和作文批改；离线范围与授权期限仍待核对。",
         "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
         "delivery": "未取得该产品的供应链、制造质量和售后结果资料。",
         "organization": "研究问题：OCR错误、词条内容错误和语音评测争议分别由谁负责？岗位边界待核验。"
@@ -554,12 +554,12 @@
         {
           "id": "edu-pen",
           "title": "科大讯飞 · AI翻译笔",
-          "url": "https://edu.iflytek.com/solution/family/transpen",
-          "publishedAt": null,
           "role": "official",
-          "readAt": "2026-11-16T00:42:06.691Z",
+          "publishedAt": null,
+          "url": "https://edu.iflytek.com/solution/family/transpen",
+          "readAt": "2026-11-21T00:40:50.794817+00:00",
           "coverage": "body",
-          "textHash": "8f0706a31c0f7e6204ef115456be91b0ebf89273c0e726e2b92e7104e314ccaf"
+          "textHash": "68b9363863b5ebde5211bdc43897920e35379ebecadf175b65d1d7a0eaa0b1d2"
         }
       ],
       "facts": [
@@ -572,10 +572,15 @@
           "sourceId": "edu-pen",
           "claim": "P20Plus说明列出语法解析和作文批改。",
           "locator": "产品介绍"
+        },
+        {
+          "sourceId": "edu-pen",
+          "claim": "官网将扫课文播放标准朗读音频、跟读评测与复读列入课本同步能力。",
+          "locator": "应用价值 · 课本同步学"
         }
       ],
-      "updatedAt": "2026-11-16T00:45:30.209427+00:00",
-      "reviewedAt": "2026-11-19T00:51:40.404223+00:00",
+      "updatedAt": "2026-11-21T00:46:30.147094+00:00",
+      "reviewedAt": "2026-11-21T00:46:30.147094+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "科大讯飞",
@@ -702,7 +707,7 @@
         }
       ],
       "updatedAt": "2026-11-18T10:46:04.384492+00:00",
-      "reviewedAt": "2026-11-18T10:46:04.384492+00:00",
+      "reviewedAt": "2026-11-21T00:46:30.147094+00:00",
       "lastReviewStatus": "reviewed"
     },
     {
@@ -755,7 +760,7 @@
         }
       ],
       "updatedAt": "2026-11-20T00:43:29.502492+00:00",
-      "reviewedAt": "2026-11-20T00:43:29.502492+00:00",
+      "reviewedAt": "2026-11-21T00:46:30.147094+00:00",
       "lastReviewStatus": "reviewed"
     }
   ],
@@ -1665,6 +1670,132 @@
             "reader"
           ],
           "note": "回看已注明日期的系统更新，区分账号同步、私密文件和书架上传状态。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-21T00:46:30.147094+00:00",
+      "summary": "核对三家核心公司及手表、国内外阅读器资料。词典笔档案补录扫词与扫课文之后不同的学习动作，并保留型号和离线条件的限制。",
+      "checks": [
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "name": "2026届春招-供应链运营管培生",
+          "state": "body",
+          "checkedAt": "2026-11-21T00:40:58.494536+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "正文明确学习机售后及小猿设备业务；管培生职责可能含轮岗，不能视为固定组织架构"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "name": "2026届春招-硬件研发工程师",
+          "state": "body",
+          "checkedAt": "2026-11-21T00:40:57.768133+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "原文明确小猿产品及学习机、学练机业务，未划分具体型号"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://edu.iflytek.com/solution/family/transpen",
+          "name": "科大讯飞 · AI翻译笔",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-21T00:40:50.794817+00:00",
+          "categoryIds": [
+            "pen"
+          ],
+          "note": "核对 P20 与 P20Plus 的型号分工及扫描、跟读能力。标称识别速度和准确率未给可复现实验条件。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "name": "科大讯飞 · AI学习机",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-21T00:40:50.772716+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "核对按学段推荐的学习机功能及型号范围；未发现对应硬件新组织披露。"
+        },
+        {
+          "company": "作业帮",
+          "url": "https://smart.zuoyebang.com/about",
+          "name": "作业帮智能 · 品牌介绍",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-21T00:40:50.289124+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "品牌页说明教育内容、学情数据与智能学习系统关系；无独立型号交付或变化日期。"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://apps.apple.com/cn/app/id6738277050",
+          "name": "小猿智能设备 · App Store开发者说明",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-21T00:40:52.422013+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "核对开发者发布的家长端内容、设备与使用时长设置说明，用户评价未作为有效性证据。"
+        },
+        {
+          "company": "小天才",
+          "url": "https://www.okii.com/html/pc/service/service_question.html",
+          "name": "小天才 · 常见问题",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-21T00:40:50.298559+00:00",
+          "categoryIds": [
+            "watch"
+          ],
+          "note": "核对定时开关机需网络正常及表端确认；说明另有平板问答，仅使用手表小节。"
+        },
+        {
+          "company": "Amazon",
+          "url": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
+          "name": "Amazon · Kindle Kids常见问题",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-21T00:40:51.344659+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "note": "核对儿童账号的内容控制、阅读目标与设备就寝时间；未据厂商平均值判断个体学习成效。"
+        },
+        {
+          "company": "掌阅",
+          "url": "https://m.ithome.com/html/811360.htm",
+          "name": "IT之家整理掌阅 SmartOS 2.4 更新说明",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-21T00:40:50.418121+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "note": "复读 2024 年版本材料，区分文件上传与多端同步，仍缺当前固件范围。"
+        },
+        {
+          "company": "文石 BOOX",
+          "url": "https://booxsupport.zendesk.com/hc/en-us/articles/25401838386196-Reading-Data-Syncing-and-Backup",
+          "name": "BOOX Reading Data Syncing and Backup",
+          "purpose": "practice",
+          "state": "excerpt",
+          "checkedAt": "2026-11-21T00:43:52.506279+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "note": "直连403后读到官方文档的账号、服务器、目录和 V4.1 源文件上传说明；本轮只核对这些小节。"
         }
       ]
     }
@@ -3001,6 +3132,110 @@
           ]
         }
       }
+    },
+    {
+      "profileId": "iflytek-pen",
+      "reviewedAt": "2026-11-21T00:46:30.147094+00:00",
+      "status": "reviewed",
+      "assessment": "核对 P20 与 P20Plus 的型号分工及扫描、跟读能力。标称识别速度和准确率未给可复现实验条件。",
+      "changes": {
+        "dimensions": {
+          "before": {
+            "product": "词典笔 / 翻译笔，核对型号与使用条件。",
+            "content": "辞典、识别和跟读能力衔接；离线范围与授权期限待核验。",
+            "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
+            "delivery": "未取得该产品的供应链、制造质量和售后结果资料。",
+            "organization": "研究问题：OCR错误、词条内容错误和语音评测争议分别由谁负责？岗位边界待核验。"
+          },
+          "after": {
+            "product": "词典笔 / 翻译笔，核对型号与使用条件。",
+            "content": "厂商区分扫单词查词义和发音、扫课文听标准朗读、跟读评测及复读。P20Plus 另列语法解析和作文批改；离线范围与授权期限仍待核对。",
+            "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
+            "delivery": "未取得该产品的供应链、制造质量和售后结果资料。",
+            "organization": "研究问题：OCR错误、词条内容错误和语音评测争议分别由谁负责？岗位边界待核验。"
+          }
+        },
+        "facts": {
+          "before": [
+            {
+              "sourceId": "edu-pen",
+              "claim": "官网对P20和P20Plus的功能与年龄定位作区分。",
+              "locator": "产品介绍"
+            },
+            {
+              "sourceId": "edu-pen",
+              "claim": "P20Plus说明列出语法解析和作文批改。",
+              "locator": "产品介绍"
+            }
+          ],
+          "after": [
+            {
+              "sourceId": "edu-pen",
+              "claim": "官网对P20和P20Plus的功能与年龄定位作区分。",
+              "locator": "产品介绍"
+            },
+            {
+              "sourceId": "edu-pen",
+              "claim": "P20Plus说明列出语法解析和作文批改。",
+              "locator": "产品介绍"
+            },
+            {
+              "sourceId": "edu-pen",
+              "claim": "官网将扫课文播放标准朗读音频、跟读评测与复读列入课本同步能力。",
+              "locator": "应用价值 · 课本同步学"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "profileId": "iflytek-tablet",
+      "reviewedAt": "2026-11-21T00:46:30.147094+00:00",
+      "status": "reviewed",
+      "assessment": "核对按学段推荐的学习机功能及型号范围；未发现对应硬件新组织披露。",
+      "changes": {}
+    },
+    {
+      "profileId": "zuoyebang-tablet",
+      "reviewedAt": "2026-11-21T00:46:30.147094+00:00",
+      "status": "reviewed",
+      "assessment": "品牌页说明教育内容、学情数据与智能学习系统关系；无独立型号交付或变化日期。",
+      "changes": {}
+    },
+    {
+      "profileId": "yuan-tablet",
+      "reviewedAt": "2026-11-21T00:46:30.147094+00:00",
+      "status": "reviewed",
+      "assessment": "核对开发者发布的家长端内容、设备与使用时长设置说明，用户评价未作为有效性证据。",
+      "changes": {}
+    },
+    {
+      "profileId": "okii-watch",
+      "reviewedAt": "2026-11-21T00:46:30.147094+00:00",
+      "status": "reviewed",
+      "assessment": "核对定时开关机需网络正常及表端确认；说明另有平板问答，仅使用手表小节。",
+      "changes": {}
+    },
+    {
+      "profileId": "kindle-reader",
+      "reviewedAt": "2026-11-21T00:46:30.147094+00:00",
+      "status": "reviewed",
+      "assessment": "核对儿童账号的内容控制、阅读目标与设备就寝时间；未据厂商平均值判断个体学习成效。",
+      "changes": {}
+    },
+    {
+      "profileId": "ireader-smartos",
+      "reviewedAt": "2026-11-21T00:46:30.147094+00:00",
+      "status": "reviewed",
+      "assessment": "复读 2024 年版本材料，区分文件上传与多端同步，仍缺当前固件范围。",
+      "changes": {}
+    },
+    {
+      "profileId": "boox-reading-workflow",
+      "reviewedAt": "2026-11-21T00:46:30.147094+00:00",
+      "status": "reviewed",
+      "assessment": "直连403后读到官方文档的账号、服务器、目录和 V4.1 源文件上传说明；本轮只核对这些小节。",
+      "changes": {}
     }
   ],
   "reference": {

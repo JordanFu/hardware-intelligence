@@ -1,6 +1,112 @@
 {
   "editions": [
     {
+      "id": "daily-2026-11-21",
+      "date": "2026-11-21",
+      "generatedAt": "2026-11-21T00:48:02.262439+00:00",
+      "state": "partial",
+      "bootstrap": false,
+      "windowNote": "优先最近 72 小时的新事件；按北京时间出刊。7 期内同一进展不重复。",
+      "itemIds": [
+        "m21-reuters",
+        "m21-house",
+        "m21-lenovo-web",
+        "m21-pilot-web",
+        "m21-apollo",
+        "m21-spot-quote"
+      ],
+      "developmentKeys": [
+        [
+          "m21-reuters",
+          "initial"
+        ],
+        [
+          "m21-house",
+          "initial"
+        ],
+        [
+          "m21-lenovo-web",
+          "initial"
+        ],
+        [
+          "m21-pilot-web",
+          "initial"
+        ],
+        [
+          "m21-apollo",
+          "initial"
+        ],
+        [
+          "m21-spot-quote",
+          "initial"
+        ]
+      ],
+      "reviewedCount": 9,
+      "failedSources": [
+        "未取得本次直连正文。curl: (28) Failed to connect to news.lenovo.com port 443 after 12008 ms: Timeout was reached\n",
+        "未取得本次直连正文。curl: (22) The requested URL returned error: 403\n",
+        "未取得本次直连正文。No module named 'fitz'",
+        "未取得本次直连正文。curl: (56) The requested URL returned error: 403\n",
+        "未取得本次直连正文。curl: (56) The requested URL returned error: 404\n",
+        "未取得本次直连正文。curl: (28) Failed to connect to www.cpsc.gov port 443 after 12007 ms: Timeout was reached\n",
+        "抓取失败：curl: (28) Failed to connect to www.ithome.com port 443 after 12010 ms: Timeout was reached\n",
+        "抓取失败：curl: (56) The requested URL returned error: 403\n",
+        "抓取失败：curl: (28) Operation timed out after 35009 milliseconds with 0 bytes received\n",
+        "周度复查上期待核材料。原页面未能读取：curl: (56) The requested URL returned error: 404\n"
+      ],
+      "coverage": "审读芯片代工订单及出口许可、设备融资、联想服务收入和制造业试点，核对 DRAM 现货摘要与既有案件。十份岗位正文覆盖三家教育公司；样品验证及售后归属按岗位区分。",
+      "knownGaps": [
+        "DRAM 案仍只核到第68号程序裁定。现货摘要缺成交量与整机企业合同价。",
+        "台积电订单范围来自路透报道；未取得客户原函，三星具体订单情况也未核实。",
+        "作业帮采购岗位检索未匹配。讯飞未披露样品最终放行人；小猿岗位未披露实际库存或返工数据。",
+        "端侧基准缺具体学习设备的同条件实测和整机续航。"
+      ],
+      "coverageCheck": {
+        "newsResearch": {
+          "passed": true,
+          "bodyCount": 11,
+          "publisherGroups": [
+            "Apollo",
+            "IT之家",
+            "Intel 技术访谈",
+            "TrendForce",
+            "人民邮电报",
+            "卫报对 Waymo 的采访",
+            "美国众议院外交事务委员会主席办公室",
+            "美国消费品安全委员会 CPSC",
+            "群联 SC26 展示",
+            "路透社"
+          ],
+          "requiredBodies": 6,
+          "requiredPublisherGroups": 3
+        },
+        "passed": true,
+        "companies": [
+          "Bambu Lab 拓竹",
+          "作业帮",
+          "小天才",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "gaps": [],
+        "usableSources": 52
+      }
+    },
+    {
       "id": "daily-2026-11-20",
       "date": "2026-11-20",
       "generatedAt": "2026-11-20T00:43:29.299695+00:00",
