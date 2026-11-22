@@ -252,68 +252,58 @@
       "updatedAt": "2026-11-21T00:48:49.161188+00:00"
     },
     "track-5": {
-      "attemptedAt": "2026-11-22T00:51:32.465861+00:00",
+      "attemptedAt": "2026-11-22T10:42:39.386204+00:00",
       "status": "partial",
-      "assessment": "华为 OSTA 注释给出手机顶部的角度范围与正常交流人声的距离条件；这些条件会改变录音比较的含义。",
+      "assessment": "核对一次从首批客户试寄到扩大生产的实务决定，补充设计公差、包装和工厂窗口之间的取舍。",
       "gaps": [
-        "原始签核授权、量产结果及其他字段仍需独立资料。"
+        "已取得团队公开的实际投产决定，仍缺其内部签核与完整批次良率，其他项目的签核授权仍待核实。"
       ],
       "reviewedFields": [
-        "metrics"
+        "constraint"
       ],
       "evidence": [
         {
-          "itemId": "m22-osta-news",
-          "title": "华为星芒 O1 Pro 开放订购，指向收音有明确的角度与距离条件",
+          "itemId": "e22-novena",
+          "title": "十二台左右的试用机寄出后，Novena 团队凭什么启动数百台生产？",
           "facts": [
             {
-              "claim": "报道确认在中国商城可订购。",
-              "sourceUrl": "https://www.androidcentral.com/phones/huawei/is-wide-the-next-phone-craze-the-new-huawei-osta-o1-pro-looks-like-a-fat-iphone-air",
-              "locator": "报道，Android Central’s take 之前"
+              "claim": "团队在试寄桌面版后等待用户反馈，再作出扩大生产的决定。",
+              "sourceUrl": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
+              "locator": "原发项目更新，initial trial 及其后两段"
             },
             {
-              "claim": "厂商限定指向角度、拾音距离及环境条件。",
-              "sourceUrl": "https://consumer.huawei.com/cn/osta/phones/o1-pro/",
-              "locator": "产品注释18"
+              "claim": "首批反馈促成设计与装箱流程微调。",
+              "sourceUrl": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
+              "locator": "原发项目更新，首批试用反馈段"
             }
           ],
-          "boundary": "产品是手机；收音范围为厂商说明，未取得教室实测和转写错误率。Xnote 型号仍待核实。",
+          "boundary": "这是小批量开源计算设备项目；桌面版试寄与笔记本后续发运应分开。样本数和等待期属于当时这宗决定，不能当成学习机量产门槛。",
           "sources": [
             {
-              "url": "https://www.androidcentral.com/phones/huawei/is-wide-the-next-phone-craze-the-new-huawei-osta-o1-pro-looks-like-a-fat-iphone-air",
-              "publisherGroup": "Android Central",
-              "name": "Android Central",
-              "publishedAt": "2026-11-20T17:00:17Z",
-              "role": "media",
-              "textHash": "daa21999031b82be1e46bb34a032900fbb794e2b2e6e446258de5c63e56e9e47",
-              "readAt": "2026-11-22T00:44:43.666331+00:00",
-              "coverage": "body"
-            },
-            {
-              "url": "https://consumer.huawei.com/cn/osta/phones/o1-pro/",
-              "publisherGroup": "华为",
-              "name": "华为 OSTA O1 Pro 产品页",
-              "publishedAt": null,
+              "url": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
+              "publisherGroup": "Kosagi 项目团队",
+              "name": "Kosagi 项目团队",
+              "publishedAt": "2015-02-05",
               "role": "official",
-              "textHash": "c848aeb9134821ef2851267a9628b2079db53b7a6170ecb9cced7714e7fc18ad",
-              "readAt": "2026-11-22T00:44:44.465042+00:00",
-              "coverage": "body"
+              "textHash": "9051d92aab4abdf72668ab0f5dac533050d9cde298ab04dfcf3ce3dd09158979",
+              "readAt": "2026-11-22T10:41:46Z",
+              "coverage": "excerpt"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "m22-osta-news",
-          "url": "https://consumer.huawei.com/cn/osta/phones/o1-pro/",
-          "checkedAt": "2026-11-22T00:44:44.465042+00:00",
+          "itemId": "e22-novena",
+          "url": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
+          "checkedAt": "2026-11-22T10:41:46Z",
           "state": "body",
-          "note": "核对 OSTA 官网四麦克风部分和第18项注释。"
+          "note": "本轮读取原文相关段落。2015年2月5日原发试寄与投产决定段，网页可读节选。"
         }
       ],
-      "reviewedAt": "2026-11-22T00:51:32.465861+00:00",
+      "reviewedAt": "2026-11-22T10:42:39.386204+00:00",
       "patch": {
-        "constraint": "成本、质量、交期、维修和供货风险；互联设备另需检查设备、应用、云的协同安全与退出时的数据处理。 混合工艺还需同时检查区域边界衔接、路径避让和切换开销，界面步骤减少不能掩盖质量约束。",
+        "constraint": "成本、质量、交期、维修和供货风险；互联设备另需检查设备、应用、云的协同安全与退出时的数据处理。 混合工艺还需同时检查区域边界衔接、路径避让和切换开销，界面步骤减少不能掩盖质量约束。 试寄可以先检验结构与包装；是否扩大生产还要权衡反馈覆盖、工厂日历及继续等待的代价。",
         "team": "产品、系统工程、制造、采购、质量、法规与售后。研究外协时另核技术文件提供方、参数变更权、驻厂支持与验收记录；公司之间的边界不能由生产地点直接推断。 小猿历史岗位把测试用例、模块到整机定位、设计评审和试产整改列为同一岗位可参与的环节。责任接口要用项目记录另行确认。",
         "examples": "品牌方、ODM / EMS、模组供应商；拓竹H3C作为软硬件协同的观察样本，非行业排名。",
         "metrics": "关键缺陷关闭率；良率；交期；返修原因；比较自动化功能时另记录用户准备步骤、设计修改后的重做次数、总加工时间与成品验收结果，不能只看算法速度。 指向收音验收须固定讲话者角度和距离，记录干扰源位置、遮挡及原始音轨，再单独评估转写。"
@@ -395,9 +385,20 @@
             "m22-osta-news"
           ],
           "updatedAt": "2026-11-22T00:51:32.465861+00:00"
+        },
+        {
+          "id": "e22-pilot-window",
+          "title": "从试寄到扩大生产，评审前究竟验证了什么",
+          "learning": "Novena 团队披露先试寄约十二台桌面设备，等待约两周收到反馈，调整设计和装箱后才启动数百台生产；当时工厂临近春节停工。",
+          "application": "明确试寄的版本和用户范围，用反馈追到实际修改的图纸或装箱规程，再写明决定日期、工厂窗口与尚未覆盖的风险。",
+          "boundary": "该项目团队的原发记录可核对实际决定，未披露个人签字、完整返修数据或最终生产良率。",
+          "itemIds": [
+            "e22-novena"
+          ],
+          "updatedAt": "2026-11-22T10:42:39.386204+00:00"
         }
       ],
-      "updatedAt": "2026-11-22T00:51:32.465861+00:00"
+      "updatedAt": "2026-11-22T10:42:39.386204+00:00"
     },
     "chain-1": {
       "attemptedAt": "2026-11-22T00:51:32.465861+00:00",
@@ -535,13 +536,13 @@
       "updatedAt": "2026-11-22T00:51:32.465861+00:00"
     },
     "chain-4": {
-      "attemptedAt": "2026-11-21T00:48:49.161188+00:00",
+      "attemptedAt": "2026-11-22T10:42:39.386204+00:00",
       "status": "partial",
-      "assessment": "英特尔内存项目经理描述了原型、联合失效分析和固件调整的关系。ASQ 对一次通过率的定义还明确排除了返测和离线维修。",
+      "assessment": "复核试产问题由谁整改、如何决定二次试产，并对照工厂研究核查产线周良率与一次通过率的计数边界。",
       "gaps": [
-        "特定项目的试产门槛、最终签核与原始放行记录仍待核实。",
-        "已复核 ASQ 的 FPY 完整词条，仍缺厂商批次的首次、返测和最终良率台账。",
-        "历史质量措施完成状态与工厂成效仍未知。"
+        "已核企业制度中的整改归属、复验与例外审批，仍缺具体批次的原始签核记录。",
+        "已取得真实工厂的产线周统计，尚缺能逐件重算首次、返测及最终处置的批次流水。",
+        "未取得上述公司按同一口径披露的改进前后量产结果。"
       ],
       "reviewedFields": [
         "metrics",
@@ -549,69 +550,74 @@
       ],
       "evidence": [
         {
-          "itemId": "m21-intel",
-          "title": "处理器和内存都还在开发，第一批样品起不来时谁来定位？",
+          "itemId": "e22-fpy",
+          "title": "同一组装线的良率和一次通过率，为什么会相差这么多？",
           "facts": [
             {
-              "claim": "节目说明将平台与内存厂商的联合排查、失效分析和固件调整列为验证环节。",
-              "sourceUrl": "https://www.technology-news-channel.com/how-intel-validates-new-memory-inside-the-memory-stack-intel-technology/",
-              "locator": "节目说明第二段及 13:02、14:52 章节"
+              "claim": "该研究明确定义通过所有纳入测试站且从未返测的一次通过口径。",
+              "sourceUrl": "https://fsi-live.s3.us-west-1.amazonaws.com/s3fs-public/manufacturingproductivitywithworkerturnover1_0.pdf",
+              "locator": "PDF 第15页，公式（2）及脚注23、24"
             },
             {
-              "claim": "报道解释双方各自依赖对方的原型做平台验证。",
-              "sourceUrl": "https://www.ithome.com/1/030/299.htm",
-              "locator": "报道的并行开发段"
+              "claim": "表2按产线周给出平均良率和一次通过率。",
+              "sourceUrl": "https://fsi-live.s3.us-west-1.amazonaws.com/s3fs-public/manufacturingproductivitywithworkerturnover1_0.pdf",
+              "locator": "PDF 第16页，Table 2"
             }
           ],
-          "boundary": "核对了节目说明和章节，国内报道记载视频首发于11月17日；未取得内部失效记录、验收签字或良率数据。",
+          "boundary": "数字为论文的产线周样本汇总。一次通过率不是全部消费电子工厂的基准，不能据此推断最终报废率、个人绩效或学习机的典型良率。",
           "sources": [
             {
-              "url": "https://www.technology-news-channel.com/how-intel-validates-new-memory-inside-the-memory-stack-intel-technology/",
-              "publisherGroup": "Intel 节目说明（Technology News 刊载）",
-              "name": "Intel 节目说明（Technology News 刊载）",
-              "publishedAt": "2026-11-18",
-              "role": "media",
-              "textHash": "1c4e136a94c5b8cbaa60eea9eaaf97e31e0a94457cd087a7be67c575b43f1cb1",
-              "readAt": "2026-11-21T00:41:22.421056+00:00",
-              "coverage": "body"
-            },
-            {
-              "url": "https://www.ithome.com/1/030/299.htm",
-              "publisherGroup": "IT之家",
-              "name": "IT之家",
-              "publishedAt": "2026-11-20T23:55:09+00:00",
-              "role": "media",
-              "textHash": "d04e17def8afc3cb7ca6437b9beabaf749ad172964e11b17d68f79ff981dd4cc",
-              "readAt": "2026-11-21T00:40:27.473272+00:00",
-              "coverage": "body"
+              "url": "https://fsi-live.s3.us-west-1.amazonaws.com/s3fs-public/manufacturingproductivitywithworkerturnover1_0.pdf",
+              "publisherGroup": "Moon 等 · 斯坦福研究工作论文",
+              "name": "Moon 等 · 斯坦福研究工作论文",
+              "publishedAt": "2019-11-25",
+              "role": "research",
+              "textHash": "b912b993bfe395320b553fccef03d1938ed20aeb7a2039e4665a57bde85dedd7",
+              "readAt": "2026-11-22T10:39:10.735210+00:00",
+              "coverage": "excerpt"
             }
           ]
         },
         {
-          "itemId": "asq-first-pass-yield",
-          "title": "一次通过率：返测通过也不能算首次合格",
+          "itemId": "e22-invt",
+          "title": "试产问题关完了，谁来决定能否进入下一阶段？",
           "facts": [
             {
-              "claim": "ASQ将复测、重跑和线外维修排除在首次通过范围之外。",
-              "sourceUrl": "https://asq.org/quality-resources/quality-glossary",
-              "locator": "First pass yield (FPY) 词条"
+              "claim": "欣锐披露项目经理发起阶段评审、输出签审文件并跟踪阶段变更。",
+              "sourceUrl": "https://static.cninfo.com.cn/finalpage/2020-06-29/1207965722.PDF",
+              "locator": "申报稿 1-1-25，新产品导入试产"
             },
             {
-              "claim": "该定义以进入过程的单位总数作为分母。",
-              "sourceUrl": "https://asq.org/quality-resources/quality-glossary",
-              "locator": "First pass yield (FPY) 计算说明"
+              "claim": "崧盛披露两类问题分别由研发部和工程部改善，整改后评估是否二次试产。",
+              "sourceUrl": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202204/RAS_202204_00017F64A3CB7E3FE6D89ACBA93EA43F.pdf",
+              "locator": "修订稿 1-1-104，产品试产阶段"
+            },
+            {
+              "claim": "崧盛将验证后的问题关闭与仍有最终不合格项时的批准分开。",
+              "sourceUrl": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202204/RAS_202204_00017F64A3CB7E3FE6D89ACBA93EA43F.pdf",
+              "locator": "修订稿 1-1-104，产品验证阶段"
             }
           ],
-          "boundary": "基于ASQ词条正文抽取片段，直连返回403；非完整标准审阅。定义不能证明某家企业指标正确、流程已执行或人员效率提高。",
+          "boundary": "两家公司披露的是当时的流程。发起评审与最终签字权限须分别取证；两份材料均未给某款学习机的批次签字单或放行结果。",
           "sources": [
             {
-              "url": "https://asq.org/quality-resources/quality-glossary",
-              "name": "ASQ 质量术语表",
-              "publisherGroup": "ASQ",
+              "url": "https://static.cninfo.com.cn/finalpage/2020-06-29/1207965722.PDF",
+              "publisherGroup": "欣锐科技 · 募集说明书",
+              "name": "欣锐科技 · 募集说明书",
+              "publishedAt": "2020-06-29",
               "role": "official",
+              "textHash": "31d5024f089d0155ecabbe7cdc7bd628e77b2cfd165d6bfc272d03a1b20b59f3",
+              "readAt": "2026-11-22T10:38:11.668810+00:00",
+              "coverage": "excerpt"
+            },
+            {
+              "url": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202204/RAS_202204_00017F64A3CB7E3FE6D89ACBA93EA43F.pdf",
+              "publisherGroup": "崧盛股份",
+              "name": "崧盛股份 · 2022 年 3 月募集说明书修订稿",
               "publishedAt": null,
-              "textHash": "e6f483441c3f191b0c65e237d5c0623526fde1d6ebb8ea63f7bfc382795d01a7",
-              "readAt": "2026-11-13T10:54:53.488096+00:00",
+              "role": "official",
+              "textHash": "28003fea0ef101bceeb8fae85d8c830acec5c1c50a95adb2485ebea6eca4f28a",
+              "readAt": "2026-11-22T10:38:12.611450+00:00",
               "coverage": "excerpt"
             }
           ]
@@ -619,25 +625,25 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "m21-intel",
-          "url": "https://www.technology-news-channel.com/how-intel-validates-new-memory-inside-the-memory-stack-intel-technology/",
-          "checkedAt": "2026-11-21T00:41:22.421056+00:00",
+          "itemId": "e22-fpy",
+          "url": "https://fsi-live.s3.us-west-1.amazonaws.com/s3fs-public/manufacturingproductivitywithworkerturnover1_0.pdf",
+          "checkedAt": "2026-11-22T10:39:10.735210+00:00",
           "state": "body",
-          "note": "复读访谈节目说明及13:02联合定位章节。"
+          "note": "本轮读取原文相关段落。工作论文 PDF 第15–16页，公式2、脚注23及24、表2。"
         },
         {
-          "itemId": "asq-first-pass-yield",
-          "url": "https://asq.org/quality-resources/quality-glossary",
-          "checkedAt": "2026-11-21T00:44:12.380354+00:00",
+          "itemId": "e22-invt",
+          "url": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202204/RAS_202204_00017F64A3CB7E3FE6D89ACBA93EA43F.pdf",
+          "checkedAt": "2026-11-22T10:38:12.611450+00:00",
           "state": "body",
-          "note": "网页工具读取 FPY 词条的完整定义及计算式，仅核对此词条。"
+          "note": "本轮读取原文相关段落。募集说明书 1-1-104 验证和试产两节。"
         }
       ],
-      "reviewedAt": "2026-11-21T00:48:49.161188+00:00",
+      "reviewedAt": "2026-11-22T10:42:39.386204+00:00",
       "patch": {
-        "team": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。石头商城岗位正文提供具体样本：NPI-PE输出DFX报告、组包流程、作业文件及治具要求；PQE衔接试制、量产、代工与售后质量；PQC监督出货及过程。正式放行权仍须项目证据。 平台和内存可以同时开发。最初样品失效时保留样品编号、平台及固件版本，由能重现故障的一方与供应商交叉验证。",
+        "team": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。石头商城岗位正文提供具体样本：NPI-PE输出DFX报告、组包流程、作业文件及治具要求；PQE衔接试制、量产、代工与售后质量；PQC监督出货及过程。正式放行权仍须项目证据。 平台和内存可以同时开发。最初样品失效时保留样品编号、平台及固件版本，由能重现故障的一方与供应商交叉验证。 崧盛在试产中按设计缺陷和工艺缺陷分配整改，再评估是否二次试产；验证阶段仍有最终不合格项时另有批准要求。",
         "exercise": "沿一次试产异常核对设计版本、工艺条件和关闭证据；为进入下一阶段列清交付物、依赖、验收人和未关闭问题。Autodesk阶段门说明可作为检查框架，系统状态完成不能替代实际验证。",
-        "metrics": "一次通过率 = 首次完成该过程并满足质量要求、无需复测或返工等再次处理的单位数 / 进入该过程的单位总数。须固定工序、批次、期间及缺陷规则；不能用返工后最终合格率替代。 ASQ 将返测和离线维修也排除在首次合格之外。生产记录须保留首次判定，再单列返测或维修后的最终处置。",
+        "metrics": "一次通过率 = 首次完成该过程并满足质量要求、无需复测或返工等再次处理的单位数 / 进入该过程的单位总数。须固定工序、批次、期间及缺陷规则；不能用返工后最终合格率替代。 ASQ 将返测和离线维修也排除在首次合格之外。生产记录须保留首次判定，再单列返测或维修后的最终处置。 对多站产线还要说明是否按站点比例连乘，是否排除老化站，以及按批次还是按产线周汇总。",
         "basics": "NPI是新产品导入，具体门槛仍需项目定义。DFM关注设计与所选制造工艺的适配；例如Protolabs根据CAD几何提供反馈，分析变量随制造服务变化。几何可制造不等于整机功能、可靠性或量产良率已验证。",
         "flow": "验证通过的设计 → 就绪并经过验证的工装、夹具和测试台 → 试产检查产线节拍、报废与批次良率 → 稳定交付。具体试产准入条件按项目确定。"
       },
@@ -720,9 +726,31 @@
             "asq-first-pass-yield"
           ],
           "updatedAt": "2026-11-21T00:48:49.161188+00:00"
+        },
+        {
+          "id": "e22-line-week-yields",
+          "title": "一批货能交付，和一遍通过所有测试是两件事",
+          "learning": "消费电子工厂工作论文的表2给出平均产线周良率 93.4%、平均一次通过率 31.7%。后者按各站排除返测后的比例连乘，并排除了老化站。",
+          "application": "读工厂报告先核站点清单、复测规则和统计单位，再查同批次最终处置；两率的差值不能直接当报废率。",
+          "boundary": "匿名历史样本的汇总数，不是任一机型的目标值，未得到该批次逐件流水。",
+          "itemIds": [
+            "e22-fpy"
+          ],
+          "updatedAt": "2026-11-22T10:42:39.386204+00:00"
+        },
+        {
+          "id": "e22-trial-defects",
+          "title": "改完设计后，谁来判断是否还要再试产？",
+          "learning": "崧盛披露设计问题归研发，工艺问题归工程；整改后再评审要不要二次试产，并把试产样机交验证部。",
+          "application": "用同一缺陷编号核对责任归属、复验记录、二次试产决定及最终处置。",
+          "boundary": "两家企业给出各自流程；不能把验证阶段的例外审批解释为所有企业、所有量产批次的放行权。",
+          "itemIds": [
+            "e22-invt"
+          ],
+          "updatedAt": "2026-11-22T10:42:39.386204+00:00"
         }
       ],
-      "updatedAt": "2026-11-21T00:48:49.161188+00:00"
+      "updatedAt": "2026-11-22T10:42:39.386204+00:00"
     },
     "track-2": {
       "attemptedAt": "2026-11-22T00:51:32.465861+00:00",
@@ -837,79 +865,115 @@
       "updatedAt": "2026-11-22T00:51:32.465861+00:00"
     },
     "chain-2": {
-      "attemptedAt": "2026-11-20T10:47:11.295604+00:00",
+      "attemptedAt": "2026-11-22T10:42:39.386204+00:00",
       "status": "partial",
-      "assessment": "Android 回环测试记录从播放信号到采集端收到信号的时差。内置、模拟和 USB 路径单列，结果合并播放与采集耗时。",
+      "assessment": "核对研发向试产交接的输入文件、工程问题复验以及项目经理发起转阶段评审的职责，并用真实小批出货决定作对照。",
       "gaps": [
         "验证某段 RTL 行为一致不能证明所有整机功能覆盖。",
-        "已补三个阶段的概念区分；特定项目的放行权限、变更接口和退出条件仍待核验。",
+        "已核实两份历史案例中的转阶段接口，尚缺学习设备实际批次的签审文件和整机验证记录。",
         "已核 Android 音频回环的测量边界；实际学习机的端到端分位数、返工及整机验证数据待查。"
       ],
       "reviewedFields": [
-        "metrics"
+        "exercise",
+        "flow"
       ],
       "evidence": [
         {
-          "itemId": "e20-android",
-          "title": "学习机跟读觉得慢，先量清楚是哪一段在等",
+          "itemId": "e22-invt",
+          "title": "试产问题关完了，谁来决定能否进入下一阶段？",
           "facts": [
             {
-              "claim": "回环测试定义了从播放开始到收到采集信号的时间区间。",
-              "sourceUrl": "https://source.android.com/docs/compatibility/cts/audio-loopback-latency",
-              "locator": "Audio loopback latency test · 开头与 Latency paths"
+              "claim": "欣锐披露项目经理发起阶段评审、输出签审文件并跟踪阶段变更。",
+              "sourceUrl": "https://static.cninfo.com.cn/finalpage/2020-06-29/1207965722.PDF",
+              "locator": "申报稿 1-1-25，新产品导入试产"
             },
             {
-              "claim": "测量可以比较输入和输出信号的时间偏移，结果合并输出与输入延迟。",
-              "sourceUrl": "https://source.android.com/docs/core/audio/latency/measure",
-              "locator": "Measure audio latency · Round-trip latency"
+              "claim": "崧盛披露两类问题分别由研发部和工程部改善，整改后评估是否二次试产。",
+              "sourceUrl": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202204/RAS_202204_00017F64A3CB7E3FE6D89ACBA93EA43F.pdf",
+              "locator": "修订稿 1-1-104，产品试产阶段"
+            },
+            {
+              "claim": "崧盛将验证后的问题关闭与仍有最终不合格项时的批准分开。",
+              "sourceUrl": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202204/RAS_202204_00017F64A3CB7E3FE6D89ACBA93EA43F.pdf",
+              "locator": "修订稿 1-1-104，产品验证阶段"
             }
           ],
-          "boundary": "方法来自 Android 文档（更新于 2026-07-15）。本文没有测试具体学习机、词典笔或录音设备，也未核实任何厂商的实测成绩或交付标准。",
+          "boundary": "两家公司披露的是当时的流程。发起评审与最终签字权限须分别取证；两份材料均未给某款学习机的批次签字单或放行结果。",
           "sources": [
             {
-              "url": "https://source.android.com/docs/compatibility/cts/audio-loopback-latency",
-              "publisherGroup": "Android 开源项目",
-              "name": "Android 开源项目",
-              "publishedAt": null,
+              "url": "https://static.cninfo.com.cn/finalpage/2020-06-29/1207965722.PDF",
+              "publisherGroup": "欣锐科技 · 募集说明书",
+              "name": "欣锐科技 · 募集说明书",
+              "publishedAt": "2020-06-29",
               "role": "official",
-              "textHash": "962bb59cbcbd30736de001bac4ca8edcd042ad858c8c0438dda1c13b29f21efd",
-              "readAt": "2026-11-20T10:42:17.952920+00:00",
-              "coverage": "body"
+              "textHash": "31d5024f089d0155ecabbe7cdc7bd628e77b2cfd165d6bfc272d03a1b20b59f3",
+              "readAt": "2026-11-22T10:38:11.668810+00:00",
+              "coverage": "excerpt"
             },
             {
-              "url": "https://source.android.com/docs/core/audio/latency/measure",
-              "publisherGroup": "Android 开源项目",
-              "name": "Android 开源项目",
+              "url": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202204/RAS_202204_00017F64A3CB7E3FE6D89ACBA93EA43F.pdf",
+              "publisherGroup": "崧盛股份",
+              "name": "崧盛股份 · 2022 年 3 月募集说明书修订稿",
               "publishedAt": null,
               "role": "official",
-              "textHash": "fb31fe369b5306b09b91287c6f0f3ef0f570d5fd1c59af536d8acaeb3473b395",
-              "readAt": "2026-11-20T10:42:19.471647+00:00",
-              "coverage": "body"
+              "textHash": "28003fea0ef101bceeb8fae85d8c830acec5c1c50a95adb2485ebea6eca4f28a",
+              "readAt": "2026-11-22T10:38:12.611450+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        },
+        {
+          "itemId": "e22-novena",
+          "title": "十二台左右的试用机寄出后，Novena 团队凭什么启动数百台生产？",
+          "facts": [
+            {
+              "claim": "团队在试寄桌面版后等待用户反馈，再作出扩大生产的决定。",
+              "sourceUrl": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
+              "locator": "原发项目更新，initial trial 及其后两段"
+            },
+            {
+              "claim": "首批反馈促成设计与装箱流程微调。",
+              "sourceUrl": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
+              "locator": "原发项目更新，首批试用反馈段"
+            }
+          ],
+          "boundary": "这是小批量开源计算设备项目；桌面版试寄与笔记本后续发运应分开。样本数和等待期属于当时这宗决定，不能当成学习机量产门槛。",
+          "sources": [
+            {
+              "url": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
+              "publisherGroup": "Kosagi 项目团队",
+              "name": "Kosagi 项目团队",
+              "publishedAt": "2015-02-05",
+              "role": "official",
+              "textHash": "9051d92aab4abdf72668ab0f5dac533050d9cde298ab04dfcf3ce3dd09158979",
+              "readAt": "2026-11-22T10:41:46Z",
+              "coverage": "excerpt"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "e20-android",
-          "url": "https://source.android.com/docs/compatibility/cts/audio-loopback-latency",
-          "checkedAt": "2026-11-20T10:42:17.952920+00:00",
+          "itemId": "e22-invt",
+          "url": "https://static.cninfo.com.cn/finalpage/2020-06-29/1207965722.PDF",
+          "checkedAt": "2026-11-22T10:38:11.668810+00:00",
           "state": "body",
-          "note": "Android 回环测试记录从播放信号到采集端收到信号的时差。内置、模拟和 USB 路径单列，结果合并播放与采集耗时。 团队分工是迁移示例。Android 测试没有覆盖识别和界面，具体学习机实测、目标分位数及项目放行权限待查。"
+          "note": "本轮读取原文相关段落。申报稿 1-1-25 新产品导入试产。"
         },
         {
-          "itemId": "e20-android",
-          "url": "https://source.android.com/docs/core/audio/latency/measure",
-          "checkedAt": "2026-11-20T10:42:19.471647+00:00",
+          "itemId": "e22-novena",
+          "url": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
+          "checkedAt": "2026-11-22T10:41:46Z",
           "state": "body",
-          "note": "Android 回环测试记录从播放信号到采集端收到信号的时差。内置、模拟和 USB 路径单列，结果合并播放与采集耗时。 团队分工是迁移示例。Android 测试没有覆盖识别和界面，具体学习机实测、目标分位数及项目放行权限待查。"
+          "note": "本轮读取原文相关段落。项目团队公开的首批试寄与设计、装箱变化。"
         }
       ],
-      "reviewedAt": "2026-11-20T10:47:11.295604+00:00",
+      "reviewedAt": "2026-11-22T10:42:39.386204+00:00",
       "patch": {
         "metrics": "任务延迟用同一输入、环境与分位数比较；不能只报告平均值或实验室峰值。 对加工设备还应固定材料、任务和成品质量条件，分别记录准备、加工与失败恢复耗时；标称最高运动速度不能直接折算真实产能。 排查学习机跟读等待时，音频团队固定设备和音频路径测回环，应用与识别团队另记说完、识别完成和评分可见的时点，按相同输入比较。",
-        "exercise": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。",
-        "basics": "BOM是制造所需项目的汇总，可包含编号、数量、描述与生命周期状态；交接时还需核对版本。Autodesk Vault 2026提供修订比较，这是具体软件规则，不是所有企业的通用制度。BOM不能代替完整业务成本；Formlabs解释中，EVT聚焦关键功能与可制造设计，DVT细化设计并测试接近量产的产品，PVT检验生产线稳定制造能力。缩写、样品数量、周期与退出条件须按项目定义。"
+        "exercise": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。 把召开评审、形成签审文件、更新系统阶段分别落到材料和角色。",
+        "basics": "BOM是制造所需项目的汇总，可包含编号、数量、描述与生命周期状态；交接时还需核对版本。Autodesk Vault 2026提供修订比较，这是具体软件规则，不是所有企业的通用制度。BOM不能代替完整业务成本；Formlabs解释中，EVT聚焦关键功能与可制造设计，DVT细化设计并测试接近量产的产品，PVT检验生产线稳定制造能力。缩写、样品数量、周期与退出条件须按项目定义。",
+        "flow": "需求与成本边界 → 系统架构、接口与验证计划 转试产前明确将哪个版本的物料清单、规格书和结构图转换成生产规范，并记录问题关闭与阶段切换。"
       },
       "lessons": [
         {
@@ -966,9 +1030,20 @@
             "e20-android"
           ],
           "updatedAt": "2026-11-20T10:47:11.295604+00:00"
+        },
+        {
+          "id": "e22-design-handoff",
+          "title": "从样机转试产，要拿出哪些文件？",
+          "learning": "欣锐披露新产品导入部按研发文件组织验证，工艺组召集整改，项目经理发起转阶段评审、输出签审文件。",
+          "application": "复盘一个学习机版本时，把物料清单、规格、结构图与整改后的测试记录对应到同一版本。",
+          "boundary": "依据 2020 年车载电源企业的流程披露；学习机项目的签字人、端到端时延和实际放行需项目内核验。",
+          "itemIds": [
+            "e22-invt"
+          ],
+          "updatedAt": "2026-11-22T10:42:39.386204+00:00"
         }
       ],
-      "updatedAt": "2026-11-20T10:47:11.295604+00:00"
+      "updatedAt": "2026-11-22T10:42:39.386204+00:00"
     },
     "chain-5": {
       "attemptedAt": "2026-11-22T00:51:32.465861+00:00",
@@ -1780,42 +1855,43 @@
       "updatedAt": "2026-11-22T00:51:32.465861+00:00"
     },
     "track-1": {
-      "attemptedAt": "2026-11-20T10:47:11.295604+00:00",
+      "attemptedAt": "2026-11-22T10:42:39.386204+00:00",
       "status": "partial",
-      "assessment": "大疆企业无人机保养支持页说明，客户可用工单号查看进度和报告。服务中心发现超出保养范围的损坏后，客户选择是否另行付费维修。",
+      "assessment": "将机器人到点完成、识别误报和需要人工补做的真实残留分开，检查产品指南给出的交付接口与可观察结果。",
       "gaps": [
-        "已核大疆企业保养的追加授权接口；其他无人机服务范围、机器人厂商的现场交付仍待核对。",
-        "任务成功率、接管、恢复时间与现场工时仍缺统一测量协议及实测样本。"
+        "普渡已提供清洁人员接手的操作依据；仍缺单一站点的事件日志、人工耗时、复核后任务完成情况。",
+        "不同无人机保养范围与机器人跨厂商可比实测仍待核实。"
       ],
       "reviewedFields": [
+        "metrics",
         "team"
       ],
       "evidence": [
         {
-          "itemId": "e20-dji",
-          "title": "大疆行业无人机送保养，发现另需付费的损坏时谁决定？",
+          "itemId": "e22-pudu",
+          "title": "清洁机器人把地砖花纹认成污渍，现场人员该怎么接手？",
           "facts": [
             {
-              "claim": "超出保养范围的损坏由客户选择是否另行付费维修。",
-              "sourceUrl": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
-              "locator": "How to Use Maintenance Service · Step 3"
+              "claim": "指南将顽固污渍的现场确认与手动清洁交给清洁人员。",
+              "sourceUrl": "https://academy.pudutech.com/zh/docs/PUDU-CC1-Pro-cao-zuo-zhi-nan",
+              "locator": "4.9.1，09 人机协作－引导清洁"
             },
             {
-              "claim": "申请后生成工单号，用户可查看进度并下载维护报告。",
-              "sourceUrl": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
-              "locator": "Service Progress Inquiry · Maintenance records"
+              "claim": "手册允许通过手动校验或自动学习处理易被误识别的地面花纹。",
+              "sourceUrl": "https://academy.pudutech.com/zh/docs/PUDU-CC1-Pro-cao-zuo-zhi-nan",
+              "locator": "4.9.1，08 AI自动/手动豁免"
             }
           ],
-          "boundary": "依据大疆英文支持页列明的企业机型和地区，未查得中国大陆统一的服务价格、周转时长或实际完成率。",
+          "boundary": "来自型号 CCBC02、V5.0 操作指南；未取得现场清洁率、误检率或人工节省工时。",
           "sources": [
             {
-              "url": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
-              "publisherGroup": "大疆技术支持",
-              "name": "大疆技术支持",
-              "publishedAt": null,
+              "url": "https://academy.pudutech.com/zh/docs/PUDU-CC1-Pro-cao-zuo-zhi-nan",
+              "publisherGroup": "普渡学院",
+              "name": "普渡学院",
+              "publishedAt": "2026-03-13",
               "role": "official",
-              "textHash": "e0195372c19294852d06d4eb82cbb81d94c522c4a2a17d9e33b14e296abde504",
-              "readAt": "2026-11-20T10:42:17.557207+00:00",
+              "textHash": "538b0cd85ff2f2f296e1ca3fb9e6cab907463548852aec8a904b9eec9fd8390b",
+              "readAt": "2026-11-22T10:37:46.622174+00:00",
               "coverage": "body"
             }
           ]
@@ -1823,19 +1899,19 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "e20-dji",
-          "url": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
-          "checkedAt": "2026-11-20T10:42:17.557207+00:00",
+          "itemId": "e22-pudu",
+          "url": "https://academy.pudutech.com/zh/docs/PUDU-CC1-Pro-cao-zuo-zhi-nan",
+          "checkedAt": "2026-11-22T10:37:46.622174+00:00",
           "state": "body",
-          "note": "大疆企业无人机保养支持页说明，客户可用工单号查看进度和报告。服务中心发现超出保养范围的损坏后，客户选择是否另行付费维修。 依据大疆英文站所列企业机型及地区；实际作业时长、成本和完成率未知。"
+          "note": "本轮读取正文。V5.0 清洁设置中的误报豁免、引导清洁及协作清洁。"
         }
       ],
-      "reviewedAt": "2026-11-20T10:47:11.295604+00:00",
+      "reviewedAt": "2026-11-22T10:42:39.386204+00:00",
       "patch": {
         "examples": "DJI、宇树、NVIDIA 生态；新增上纬新材启元作为量产与商业化阶段观察对象，HALO 作为基于宇树 G1 的研究系统样本。",
         "constraint": "真实环境中的安全、可靠性与维护成本。宇树实物部署说明明确其程序仅为示例、不是稳定控制；模型能运行与业务可交付须分别取证，不能从演示外推任务可靠性。",
-        "metrics": "任务成功率；人工接管频次；故障恢复时间；现场工时 使用频次另列统计对象、窗口与分母；高频交互不直接证明任务完成、人工负担减少或用户价值。",
-        "team": "控制、感知、机械、电气、仿真、现场交付 交付团队复盘一次保养时，可用同一工单对照原授权、追加报价、客户决定和维护报告，分开记录等候用户与实际作业时间。"
+        "metrics": "任务成功率；人工接管频次；故障恢复时间；现场工时 使用频次另列统计对象、窗口与分母；高频交互不直接证明任务完成、人工负担减少或用户价值。 按同一批任务分列误报位置、真实残留、人工实际处理及用时，保留未处理项。",
+        "team": "控制、感知、机械、电气、仿真、现场交付 交付团队复盘一次保养时，可用同一工单对照原授权、追加报价、客户决定和维护报告，分开记录等候用户与实际作业时间。 普渡 CC1 Pro 把真实残留交由现场清洁人员确认和清理；对花纹等误报则另有豁免入口。"
       },
       "lessons": [
         {
@@ -1882,9 +1958,20 @@
             "e20-dji"
           ],
           "updatedAt": "2026-11-20T10:47:11.295604+00:00"
+        },
+        {
+          "id": "e22-pudu-guided-clean",
+          "title": "机器人到了现场，哪个动作还要由人完成？",
+          "learning": "CC1 Pro 的误报豁免针对易误识别的位置，引导清洁则把人带到真实残留处确认和手动清理。",
+          "application": "按任务编号和位置分别记录误报确认、真污渍处置及人工用时，抽查被豁免位置的后续表现。",
+          "boundary": "厂商操作指南描述功能；尚无独立的站点任务成功率与补洁工时。",
+          "itemIds": [
+            "e22-pudu"
+          ],
+          "updatedAt": "2026-11-22T10:42:39.386204+00:00"
         }
       ],
-      "updatedAt": "2026-11-20T10:47:11.295604+00:00"
+      "updatedAt": "2026-11-22T10:42:39.386204+00:00"
     },
     "track-3": {
       "attemptedAt": "2026-11-21T00:48:49.161188+00:00",
@@ -3019,6 +3106,41 @@
           "hash": "a6567bb225c238e0c87b440f05e10468c9d971b22fda75315b7aac8e083a0648",
           "decision": "integrated",
           "reason": "Amazon 的订阅目录预先筛选，另一条 Google Play 路径逐次要求家长批准。两条路径对应不同的验证步骤。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-22T10:42:39.386204+00:00",
+      "reviewedNodes": [
+        "chain-2",
+        "track-1",
+        "chain-4",
+        "track-5"
+      ],
+      "decisions": [
+        {
+          "itemId": "e22-invt",
+          "hash": "60302d73e7726acffb839c76fe6fd069f54ed40cbfba5268e381da9abed4094c",
+          "decision": "integrated",
+          "reason": "欣锐披露新产品导入部按研发文件组织验证，工艺组召集整改，项目经理发起转阶段评审、输出签审文件。"
+        },
+        {
+          "itemId": "e22-pudu",
+          "hash": "b1b2fd09d67b432cdedbe7f4b19e9046d6b2fc0bf32c3bd3e666b6b26ea40631",
+          "decision": "integrated",
+          "reason": "CC1 Pro 的误报豁免针对易误识别的位置，引导清洁则把人带到真实残留处确认和手动清理。"
+        },
+        {
+          "itemId": "e22-fpy",
+          "hash": "3943394168280489a28353e935f2552790466d389c989cfa2903563d0b6d6ad3",
+          "decision": "integrated",
+          "reason": "消费电子工厂工作论文的表2给出平均产线周良率 93.4%、平均一次通过率 31.7%。后者按各站排除返测后的比例连乘，并排除了老化站。"
+        },
+        {
+          "itemId": "e22-novena",
+          "hash": "25b04a2149171ef5d862607bde631c0d070d9e18a2818d1d0c1b76e3bca44c06",
+          "decision": "integrated",
+          "reason": "Novena 团队披露先试寄约十二台桌面设备，等待约两周收到反馈，调整设计和装箱后才启动数百台生产；当时工厂临近春节停工。"
         }
       ]
     }
@@ -11498,6 +11620,433 @@
           "checkedAt": "2026-11-22T00:43:22.108921+00:00",
           "state": "body",
           "note": "读取介绍中的 More in store with Kids+ and Google Play 小节。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-2",
+      "reviewedAt": "2026-11-22T10:42:39.386204+00:00",
+      "status": "partial",
+      "assessment": "核对研发向试产交接的输入文件、工程问题复验以及项目经理发起转阶段评审的职责，并用真实小批出货决定作对照。",
+      "gaps": [
+        "验证某段 RTL 行为一致不能证明所有整机功能覆盖。",
+        "已核实两份历史案例中的转阶段接口，尚缺学习设备实际批次的签审文件和整机验证记录。",
+        "已核 Android 音频回环的测量边界；实际学习机的端到端分位数、返工及整机验证数据待查。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "flow"
+      ],
+      "changes": {
+        "flow": {
+          "before": "需求与成本边界 → 系统架构、接口与验证计划",
+          "after": "需求与成本边界 → 系统架构、接口与验证计划 转试产前明确将哪个版本的物料清单、规格书和结构图转换成生产规范，并记录问题关闭与阶段切换。"
+        },
+        "exercise": {
+          "before": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。",
+          "after": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。 把召开评审、形成签审文件、更新系统阶段分别落到材料和角色。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e22-design-handoff",
+            "title": "从样机转试产，要拿出哪些文件？",
+            "learning": "欣锐披露新产品导入部按研发文件组织验证，工艺组召集整改，项目经理发起转阶段评审、输出签审文件。",
+            "application": "复盘一个学习机版本时，把物料清单、规格、结构图与整改后的测试记录对应到同一版本。",
+            "boundary": "依据 2020 年车载电源企业的流程披露；学习机项目的签字人、端到端时延和实际放行需项目内核验。",
+            "itemIds": [
+              "e22-invt"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e22-invt",
+          "title": "试产问题关完了，谁来决定能否进入下一阶段？",
+          "facts": [
+            {
+              "claim": "欣锐披露项目经理发起阶段评审、输出签审文件并跟踪阶段变更。",
+              "sourceUrl": "https://static.cninfo.com.cn/finalpage/2020-06-29/1207965722.PDF",
+              "locator": "申报稿 1-1-25，新产品导入试产"
+            },
+            {
+              "claim": "崧盛披露两类问题分别由研发部和工程部改善，整改后评估是否二次试产。",
+              "sourceUrl": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202204/RAS_202204_00017F64A3CB7E3FE6D89ACBA93EA43F.pdf",
+              "locator": "修订稿 1-1-104，产品试产阶段"
+            },
+            {
+              "claim": "崧盛将验证后的问题关闭与仍有最终不合格项时的批准分开。",
+              "sourceUrl": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202204/RAS_202204_00017F64A3CB7E3FE6D89ACBA93EA43F.pdf",
+              "locator": "修订稿 1-1-104，产品验证阶段"
+            }
+          ],
+          "boundary": "两家公司披露的是当时的流程。发起评审与最终签字权限须分别取证；两份材料均未给某款学习机的批次签字单或放行结果。",
+          "sources": [
+            {
+              "url": "https://static.cninfo.com.cn/finalpage/2020-06-29/1207965722.PDF",
+              "publisherGroup": "欣锐科技 · 募集说明书",
+              "name": "欣锐科技 · 募集说明书",
+              "publishedAt": "2020-06-29",
+              "role": "official",
+              "textHash": "31d5024f089d0155ecabbe7cdc7bd628e77b2cfd165d6bfc272d03a1b20b59f3",
+              "readAt": "2026-11-22T10:38:11.668810+00:00",
+              "coverage": "excerpt"
+            },
+            {
+              "url": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202204/RAS_202204_00017F64A3CB7E3FE6D89ACBA93EA43F.pdf",
+              "publisherGroup": "崧盛股份",
+              "name": "崧盛股份 · 2022 年 3 月募集说明书修订稿",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "28003fea0ef101bceeb8fae85d8c830acec5c1c50a95adb2485ebea6eca4f28a",
+              "readAt": "2026-11-22T10:38:12.611450+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        },
+        {
+          "itemId": "e22-novena",
+          "title": "十二台左右的试用机寄出后，Novena 团队凭什么启动数百台生产？",
+          "facts": [
+            {
+              "claim": "团队在试寄桌面版后等待用户反馈，再作出扩大生产的决定。",
+              "sourceUrl": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
+              "locator": "原发项目更新，initial trial 及其后两段"
+            },
+            {
+              "claim": "首批反馈促成设计与装箱流程微调。",
+              "sourceUrl": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
+              "locator": "原发项目更新，首批试用反馈段"
+            }
+          ],
+          "boundary": "这是小批量开源计算设备项目；桌面版试寄与笔记本后续发运应分开。样本数和等待期属于当时这宗决定，不能当成学习机量产门槛。",
+          "sources": [
+            {
+              "url": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
+              "publisherGroup": "Kosagi 项目团队",
+              "name": "Kosagi 项目团队",
+              "publishedAt": "2015-02-05",
+              "role": "official",
+              "textHash": "9051d92aab4abdf72668ab0f5dac533050d9cde298ab04dfcf3ce3dd09158979",
+              "readAt": "2026-11-22T10:41:46Z",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e22-invt",
+          "url": "https://static.cninfo.com.cn/finalpage/2020-06-29/1207965722.PDF",
+          "checkedAt": "2026-11-22T10:38:11.668810+00:00",
+          "state": "body",
+          "note": "本轮读取原文相关段落。申报稿 1-1-25 新产品导入试产。"
+        },
+        {
+          "itemId": "e22-novena",
+          "url": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
+          "checkedAt": "2026-11-22T10:41:46Z",
+          "state": "body",
+          "note": "本轮读取原文相关段落。项目团队公开的首批试寄与设计、装箱变化。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-1",
+      "reviewedAt": "2026-11-22T10:42:39.386204+00:00",
+      "status": "partial",
+      "assessment": "将机器人到点完成、识别误报和需要人工补做的真实残留分开，检查产品指南给出的交付接口与可观察结果。",
+      "gaps": [
+        "普渡已提供清洁人员接手的操作依据；仍缺单一站点的事件日志、人工耗时、复核后任务完成情况。",
+        "不同无人机保养范围与机器人跨厂商可比实测仍待核实。"
+      ],
+      "reviewedFields": [
+        "metrics",
+        "team"
+      ],
+      "changes": {
+        "team": {
+          "before": "控制、感知、机械、电气、仿真、现场交付 交付团队复盘一次保养时，可用同一工单对照原授权、追加报价、客户决定和维护报告，分开记录等候用户与实际作业时间。",
+          "after": "控制、感知、机械、电气、仿真、现场交付 交付团队复盘一次保养时，可用同一工单对照原授权、追加报价、客户决定和维护报告，分开记录等候用户与实际作业时间。 普渡 CC1 Pro 把真实残留交由现场清洁人员确认和清理；对花纹等误报则另有豁免入口。"
+        },
+        "metrics": {
+          "before": "任务成功率；人工接管频次；故障恢复时间；现场工时 使用频次另列统计对象、窗口与分母；高频交互不直接证明任务完成、人工负担减少或用户价值。",
+          "after": "任务成功率；人工接管频次；故障恢复时间；现场工时 使用频次另列统计对象、窗口与分母；高频交互不直接证明任务完成、人工负担减少或用户价值。 按同一批任务分列误报位置、真实残留、人工实际处理及用时，保留未处理项。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e22-pudu-guided-clean",
+            "title": "机器人到了现场，哪个动作还要由人完成？",
+            "learning": "CC1 Pro 的误报豁免针对易误识别的位置，引导清洁则把人带到真实残留处确认和手动清理。",
+            "application": "按任务编号和位置分别记录误报确认、真污渍处置及人工用时，抽查被豁免位置的后续表现。",
+            "boundary": "厂商操作指南描述功能；尚无独立的站点任务成功率与补洁工时。",
+            "itemIds": [
+              "e22-pudu"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e22-pudu",
+          "title": "清洁机器人把地砖花纹认成污渍，现场人员该怎么接手？",
+          "facts": [
+            {
+              "claim": "指南将顽固污渍的现场确认与手动清洁交给清洁人员。",
+              "sourceUrl": "https://academy.pudutech.com/zh/docs/PUDU-CC1-Pro-cao-zuo-zhi-nan",
+              "locator": "4.9.1，09 人机协作－引导清洁"
+            },
+            {
+              "claim": "手册允许通过手动校验或自动学习处理易被误识别的地面花纹。",
+              "sourceUrl": "https://academy.pudutech.com/zh/docs/PUDU-CC1-Pro-cao-zuo-zhi-nan",
+              "locator": "4.9.1，08 AI自动/手动豁免"
+            }
+          ],
+          "boundary": "来自型号 CCBC02、V5.0 操作指南；未取得现场清洁率、误检率或人工节省工时。",
+          "sources": [
+            {
+              "url": "https://academy.pudutech.com/zh/docs/PUDU-CC1-Pro-cao-zuo-zhi-nan",
+              "publisherGroup": "普渡学院",
+              "name": "普渡学院",
+              "publishedAt": "2026-03-13",
+              "role": "official",
+              "textHash": "538b0cd85ff2f2f296e1ca3fb9e6cab907463548852aec8a904b9eec9fd8390b",
+              "readAt": "2026-11-22T10:37:46.622174+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e22-pudu",
+          "url": "https://academy.pudutech.com/zh/docs/PUDU-CC1-Pro-cao-zuo-zhi-nan",
+          "checkedAt": "2026-11-22T10:37:46.622174+00:00",
+          "state": "body",
+          "note": "本轮读取正文。V5.0 清洁设置中的误报豁免、引导清洁及协作清洁。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-4",
+      "reviewedAt": "2026-11-22T10:42:39.386204+00:00",
+      "status": "partial",
+      "assessment": "复核试产问题由谁整改、如何决定二次试产，并对照工厂研究核查产线周良率与一次通过率的计数边界。",
+      "gaps": [
+        "已核企业制度中的整改归属、复验与例外审批，仍缺具体批次的原始签核记录。",
+        "已取得真实工厂的产线周统计，尚缺能逐件重算首次、返测及最终处置的批次流水。",
+        "未取得上述公司按同一口径披露的改进前后量产结果。"
+      ],
+      "reviewedFields": [
+        "metrics",
+        "team"
+      ],
+      "changes": {
+        "team": {
+          "before": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。石头商城岗位正文提供具体样本：NPI-PE输出DFX报告、组包流程、作业文件及治具要求；PQE衔接试制、量产、代工与售后质量；PQC监督出货及过程。正式放行权仍须项目证据。 平台和内存可以同时开发。最初样品失效时保留样品编号、平台及固件版本，由能重现故障的一方与供应商交叉验证。",
+          "after": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。石头商城岗位正文提供具体样本：NPI-PE输出DFX报告、组包流程、作业文件及治具要求；PQE衔接试制、量产、代工与售后质量；PQC监督出货及过程。正式放行权仍须项目证据。 平台和内存可以同时开发。最初样品失效时保留样品编号、平台及固件版本，由能重现故障的一方与供应商交叉验证。 崧盛在试产中按设计缺陷和工艺缺陷分配整改，再评估是否二次试产；验证阶段仍有最终不合格项时另有批准要求。"
+        },
+        "metrics": {
+          "before": "一次通过率 = 首次完成该过程并满足质量要求、无需复测或返工等再次处理的单位数 / 进入该过程的单位总数。须固定工序、批次、期间及缺陷规则；不能用返工后最终合格率替代。 ASQ 将返测和离线维修也排除在首次合格之外。生产记录须保留首次判定，再单列返测或维修后的最终处置。",
+          "after": "一次通过率 = 首次完成该过程并满足质量要求、无需复测或返工等再次处理的单位数 / 进入该过程的单位总数。须固定工序、批次、期间及缺陷规则；不能用返工后最终合格率替代。 ASQ 将返测和离线维修也排除在首次合格之外。生产记录须保留首次判定，再单列返测或维修后的最终处置。 对多站产线还要说明是否按站点比例连乘，是否排除老化站，以及按批次还是按产线周汇总。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e22-line-week-yields",
+            "title": "一批货能交付，和一遍通过所有测试是两件事",
+            "learning": "消费电子工厂工作论文的表2给出平均产线周良率 93.4%、平均一次通过率 31.7%。后者按各站排除返测后的比例连乘，并排除了老化站。",
+            "application": "读工厂报告先核站点清单、复测规则和统计单位，再查同批次最终处置；两率的差值不能直接当报废率。",
+            "boundary": "匿名历史样本的汇总数，不是任一机型的目标值，未得到该批次逐件流水。",
+            "itemIds": [
+              "e22-fpy"
+            ]
+          }
+        },
+        {
+          "before": null,
+          "after": {
+            "id": "e22-trial-defects",
+            "title": "改完设计后，谁来判断是否还要再试产？",
+            "learning": "崧盛披露设计问题归研发，工艺问题归工程；整改后再评审要不要二次试产，并把试产样机交验证部。",
+            "application": "用同一缺陷编号核对责任归属、复验记录、二次试产决定及最终处置。",
+            "boundary": "两家企业给出各自流程；不能把验证阶段的例外审批解释为所有企业、所有量产批次的放行权。",
+            "itemIds": [
+              "e22-invt"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e22-fpy",
+          "title": "同一组装线的良率和一次通过率，为什么会相差这么多？",
+          "facts": [
+            {
+              "claim": "该研究明确定义通过所有纳入测试站且从未返测的一次通过口径。",
+              "sourceUrl": "https://fsi-live.s3.us-west-1.amazonaws.com/s3fs-public/manufacturingproductivitywithworkerturnover1_0.pdf",
+              "locator": "PDF 第15页，公式（2）及脚注23、24"
+            },
+            {
+              "claim": "表2按产线周给出平均良率和一次通过率。",
+              "sourceUrl": "https://fsi-live.s3.us-west-1.amazonaws.com/s3fs-public/manufacturingproductivitywithworkerturnover1_0.pdf",
+              "locator": "PDF 第16页，Table 2"
+            }
+          ],
+          "boundary": "数字为论文的产线周样本汇总。一次通过率不是全部消费电子工厂的基准，不能据此推断最终报废率、个人绩效或学习机的典型良率。",
+          "sources": [
+            {
+              "url": "https://fsi-live.s3.us-west-1.amazonaws.com/s3fs-public/manufacturingproductivitywithworkerturnover1_0.pdf",
+              "publisherGroup": "Moon 等 · 斯坦福研究工作论文",
+              "name": "Moon 等 · 斯坦福研究工作论文",
+              "publishedAt": "2019-11-25",
+              "role": "research",
+              "textHash": "b912b993bfe395320b553fccef03d1938ed20aeb7a2039e4665a57bde85dedd7",
+              "readAt": "2026-11-22T10:39:10.735210+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        },
+        {
+          "itemId": "e22-invt",
+          "title": "试产问题关完了，谁来决定能否进入下一阶段？",
+          "facts": [
+            {
+              "claim": "欣锐披露项目经理发起阶段评审、输出签审文件并跟踪阶段变更。",
+              "sourceUrl": "https://static.cninfo.com.cn/finalpage/2020-06-29/1207965722.PDF",
+              "locator": "申报稿 1-1-25，新产品导入试产"
+            },
+            {
+              "claim": "崧盛披露两类问题分别由研发部和工程部改善，整改后评估是否二次试产。",
+              "sourceUrl": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202204/RAS_202204_00017F64A3CB7E3FE6D89ACBA93EA43F.pdf",
+              "locator": "修订稿 1-1-104，产品试产阶段"
+            },
+            {
+              "claim": "崧盛将验证后的问题关闭与仍有最终不合格项时的批准分开。",
+              "sourceUrl": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202204/RAS_202204_00017F64A3CB7E3FE6D89ACBA93EA43F.pdf",
+              "locator": "修订稿 1-1-104，产品验证阶段"
+            }
+          ],
+          "boundary": "两家公司披露的是当时的流程。发起评审与最终签字权限须分别取证；两份材料均未给某款学习机的批次签字单或放行结果。",
+          "sources": [
+            {
+              "url": "https://static.cninfo.com.cn/finalpage/2020-06-29/1207965722.PDF",
+              "publisherGroup": "欣锐科技 · 募集说明书",
+              "name": "欣锐科技 · 募集说明书",
+              "publishedAt": "2020-06-29",
+              "role": "official",
+              "textHash": "31d5024f089d0155ecabbe7cdc7bd628e77b2cfd165d6bfc272d03a1b20b59f3",
+              "readAt": "2026-11-22T10:38:11.668810+00:00",
+              "coverage": "excerpt"
+            },
+            {
+              "url": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202204/RAS_202204_00017F64A3CB7E3FE6D89ACBA93EA43F.pdf",
+              "publisherGroup": "崧盛股份",
+              "name": "崧盛股份 · 2022 年 3 月募集说明书修订稿",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "28003fea0ef101bceeb8fae85d8c830acec5c1c50a95adb2485ebea6eca4f28a",
+              "readAt": "2026-11-22T10:38:12.611450+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e22-fpy",
+          "url": "https://fsi-live.s3.us-west-1.amazonaws.com/s3fs-public/manufacturingproductivitywithworkerturnover1_0.pdf",
+          "checkedAt": "2026-11-22T10:39:10.735210+00:00",
+          "state": "body",
+          "note": "本轮读取原文相关段落。工作论文 PDF 第15–16页，公式2、脚注23及24、表2。"
+        },
+        {
+          "itemId": "e22-invt",
+          "url": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202204/RAS_202204_00017F64A3CB7E3FE6D89ACBA93EA43F.pdf",
+          "checkedAt": "2026-11-22T10:38:12.611450+00:00",
+          "state": "body",
+          "note": "本轮读取原文相关段落。募集说明书 1-1-104 验证和试产两节。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-5",
+      "reviewedAt": "2026-11-22T10:42:39.386204+00:00",
+      "status": "partial",
+      "assessment": "核对一次从首批客户试寄到扩大生产的实务决定，补充设计公差、包装和工厂窗口之间的取舍。",
+      "gaps": [
+        "已取得团队公开的实际投产决定，仍缺其内部签核与完整批次良率，其他项目的签核授权仍待核实。"
+      ],
+      "reviewedFields": [
+        "constraint"
+      ],
+      "changes": {
+        "constraint": {
+          "before": "成本、质量、交期、维修和供货风险；互联设备另需检查设备、应用、云的协同安全与退出时的数据处理。 混合工艺还需同时检查区域边界衔接、路径避让和切换开销，界面步骤减少不能掩盖质量约束。",
+          "after": "成本、质量、交期、维修和供货风险；互联设备另需检查设备、应用、云的协同安全与退出时的数据处理。 混合工艺还需同时检查区域边界衔接、路径避让和切换开销，界面步骤减少不能掩盖质量约束。 试寄可以先检验结构与包装；是否扩大生产还要权衡反馈覆盖、工厂日历及继续等待的代价。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e22-pilot-window",
+            "title": "从试寄到扩大生产，评审前究竟验证了什么",
+            "learning": "Novena 团队披露先试寄约十二台桌面设备，等待约两周收到反馈，调整设计和装箱后才启动数百台生产；当时工厂临近春节停工。",
+            "application": "明确试寄的版本和用户范围，用反馈追到实际修改的图纸或装箱规程，再写明决定日期、工厂窗口与尚未覆盖的风险。",
+            "boundary": "该项目团队的原发记录可核对实际决定，未披露个人签字、完整返修数据或最终生产良率。",
+            "itemIds": [
+              "e22-novena"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e22-novena",
+          "title": "十二台左右的试用机寄出后，Novena 团队凭什么启动数百台生产？",
+          "facts": [
+            {
+              "claim": "团队在试寄桌面版后等待用户反馈，再作出扩大生产的决定。",
+              "sourceUrl": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
+              "locator": "原发项目更新，initial trial 及其后两段"
+            },
+            {
+              "claim": "首批反馈促成设计与装箱流程微调。",
+              "sourceUrl": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
+              "locator": "原发项目更新，首批试用反馈段"
+            }
+          ],
+          "boundary": "这是小批量开源计算设备项目；桌面版试寄与笔记本后续发运应分开。样本数和等待期属于当时这宗决定，不能当成学习机量产门槛。",
+          "sources": [
+            {
+              "url": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
+              "publisherGroup": "Kosagi 项目团队",
+              "name": "Kosagi 项目团队",
+              "publishedAt": "2015-02-05",
+              "role": "official",
+              "textHash": "9051d92aab4abdf72668ab0f5dac533050d9cde298ab04dfcf3ce3dd09158979",
+              "readAt": "2026-11-22T10:41:46Z",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e22-novena",
+          "url": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
+          "checkedAt": "2026-11-22T10:41:46Z",
+          "state": "body",
+          "note": "本轮读取原文相关段落。2015年2月5日原发试寄与投产决定段，网页可读节选。"
         }
       ]
     }
