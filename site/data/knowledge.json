@@ -3,61 +3,37 @@
   "startedAt": "2026-11-06T07:45:08.434151+00:00",
   "nodes": {
     "chain-3": {
-      "attemptedAt": "2026-11-20T00:45:12.064804+00:00",
+      "attemptedAt": "2026-11-22T00:51:32.465861+00:00",
       "status": "partial",
-      "assessment": "Oracle 的两点均值能复算库存周转。集邦对 NAND 现货和四季度合约给出了不同方向的变化，说明采购预算还需区分采购层级。",
+      "assessment": "Oracle 的示例说明最小订购量可以推高建议单数量；固定批量倍数与上限是另外的参数。",
       "gaps": [
-        "已核对特定系统库存周转分母；MOQ、交期起止点及各企业的实际库存边界仍待核对。",
+        "补核 Oracle 26C 的 MOQ 计算；各企业实际参数、运输起止、库存边界仍待订单和台账核验。",
         "公开资料没有供应商审核标准、实际通过率、采购质量接口和履约结果。"
       ],
       "reviewedFields": [
-        "metrics"
+        "basics"
       ],
       "evidence": [
         {
-          "itemId": "m20-oracle",
-          "title": "同一批存货，采购和财务如何算出可比的周转次数？",
+          "itemId": "m22-moq",
+          "title": "净缺 100 件，为什么计划员看到一张 150 件的建议单？",
           "facts": [
             {
-              "claim": "系统指标表明确平均库存采用期初与期末的平均。",
-              "sourceUrl": "https://docs.oracle.com/en/industries/retail/retail-merchandising-foundation-cloud/latest/rmsoa/administration-batch.htm",
-              "locator": "指标表第148行 inv_turnover_rate"
+              "claim": "官方给出净需求 100 与最小订购量 150 的计算例。",
+              "sourceUrl": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26c/faupc/item-attributes-and-order-modifiers-for-supply-planning.html",
+              "locator": "Order Modifiers，Minimum Order Quantity 小节"
             }
           ],
-          "boundary": "取自指定零售系统的字段定义。未取得硬件企业使用哪些仓、在途库存或退货的内部口径，也未测算企业实际周转。",
+          "boundary": "仅核实该版本软件的计划规则。企业如何配置、供应商接受何种批量及最终采购量仍要看合同与实际订单。",
           "sources": [
             {
-              "url": "https://docs.oracle.com/en/industries/retail/retail-merchandising-foundation-cloud/latest/rmsoa/administration-batch.htm",
-              "publisherGroup": "Oracle Retail 官方文档",
-              "name": "Oracle Retail 官方文档",
+              "url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26c/faupc/item-attributes-and-order-modifiers-for-supply-planning.html",
+              "publisherGroup": "Oracle",
+              "name": "Oracle",
               "publishedAt": null,
               "role": "official",
-              "textHash": "cd26c33c9139c2f2f052f3e6a01db1e6d7d4e637e7b0d3569901a12c5726616b",
-              "readAt": "2026-11-20T00:44:23.380734+00:00",
-              "coverage": "excerpt"
-            }
-          ]
-        },
-        {
-          "itemId": "m20-nand",
-          "title": "NAND 现货与合约出现分化，采购预算该看哪个价格？",
-          "facts": [
-            {
-              "claim": "集邦给出下一季度 NAND 合约价格预测区间。",
-              "sourceUrl": "https://www.trendforce.com/presscenter/news/20261119-13314.html",
-              "locator": "Looking ahead to 2027 段"
-            }
-          ],
-          "boundary": "这是研究机构的市场估计。未取得学习机厂商的合同价，也没有证据把此次价格变化归因于 DRAM 诉讼。",
-          "sources": [
-            {
-              "url": "https://www.trendforce.com/presscenter/news/20261119-13314.html",
-              "publisherGroup": "TrendForce",
-              "name": "TrendForce 存储产业调查原文",
-              "publishedAt": "2026-11-19",
-              "role": "research",
-              "textHash": "aaec68d6ba8382e7bb0338f8502448ba97deb2f34cff34051ba2f716edfd6738",
-              "readAt": "2026-11-20T00:37:58.409802+00:00",
+              "textHash": "db2893ccf268a95d54a91a8c4a324695813562f12ceb6725405bdeb223d946cb",
+              "readAt": "2026-11-22T00:49:07.347292+00:00",
               "coverage": "body"
             }
           ]
@@ -65,23 +41,16 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "m20-oracle",
-          "url": "https://docs.oracle.com/en/industries/retail/retail-merchandising-foundation-cloud/latest/rmsoa/administration-batch.htm",
-          "checkedAt": "2026-11-20T00:44:23.380734+00:00",
+          "itemId": "m22-moq",
+          "url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26c/faupc/item-attributes-and-order-modifiers-for-supply-planning.html",
+          "checkedAt": "2026-11-22T00:49:07.347292+00:00",
           "state": "body",
-          "note": "原始表格第148行及相邻行节选；仅核对库存周转字段定义。两份资料分别说明软件字段和供需预测；具体学习硬件企业在途存货范围、成交价及周转结果未知。"
-        },
-        {
-          "itemId": "m20-nand",
-          "url": "https://www.trendforce.com/presscenter/news/20261119-13314.html",
-          "checkedAt": "2026-11-20T00:37:58.409802+00:00",
-          "state": "body",
-          "note": "复读当前可取得的来源正文，核对与本条相关的说明。两份资料分别说明软件字段和供需预测；具体学习硬件企业在途存货范围、成交价及周转结果未知。"
+          "note": "读取 Order Modifiers 表的计算顺序与最小订购量示例。"
         }
       ],
-      "reviewedAt": "2026-11-20T00:45:12.064804+00:00",
+      "reviewedAt": "2026-11-22T00:51:32.465861+00:00",
       "patch": {
-        "basics": "MOQ 是最小订购量；交期包含采购、生产和运输，不能只看供应商承诺。 供应商登记仅是提交资料的入口，不能自动等同于资格审核通过或获得采购订单。",
+        "basics": "MOQ 是最小订购量；交期包含采购、生产和运输，不能只看供应商承诺。 供应商登记仅是提交资料的入口，不能自动等同于资格审核通过或获得采购订单。 Oracle 26C 计划模块中，净需求 100 件且最小订购量设为 150 件，会产生 150 件的建议单；建议量与实际签约量要用单据另行核对。",
         "exercise": "选一颗关键器件，写出交期风险、替代验证要求和缺料升级路径。 再区分供应商资料登记、资格核验、质量验收和订单获取；无公开依据的门槛标为待核验。",
         "team": "研发与采购共同明确替代料边界；供应商质量、计划、财务一起管理风险。小猿管培岗位另提供具体交接样本：销售计划提出配件需求，采购跟进合同和付款，工厂关注物料齐套，售后反馈问题；不能据此推断一人承担全部工作或拥有全部放行权。",
         "metrics": "库存周转天数 = 期间平均库存成本 / 期间销售成本 × 期间天数；口径与周期一致。 库存周转须明确成本口径。Oracle Retail 的该指标用本期已售商品成本除以期初、期末库存成本的均值。另将存储现货报价与按季合约报价分列，不能直接跨口径比较。"
@@ -131,9 +100,20 @@
             "m20-nand"
           ],
           "updatedAt": "2026-11-20T00:45:12.064804+00:00"
+        },
+        {
+          "id": "m22-chain-3",
+          "title": "净缺口与采购建议相差的数量从何而来",
+          "learning": "Oracle 的示例说明最小订购量可以推高建议单数量；固定批量倍数与上限是另外的参数。",
+          "application": "用同一个学习机料号核对净需求、计划参数、发出的采购订单与到货入库，把多出的数量追到具体环节。",
+          "boundary": "仅适用该系统版本的示例，企业的供应合同、在用参数、交期和库存边界尚待查。",
+          "itemIds": [
+            "m22-moq"
+          ],
+          "updatedAt": "2026-11-22T00:51:32.465861+00:00"
         }
       ],
-      "updatedAt": "2026-11-20T00:45:12.064804+00:00"
+      "updatedAt": "2026-11-22T00:51:32.465861+00:00"
     },
     "chain-7": {
       "attemptedAt": "2026-11-21T00:48:49.161188+00:00",
@@ -272,36 +252,51 @@
       "updatedAt": "2026-11-21T00:48:49.161188+00:00"
     },
     "track-5": {
-      "attemptedAt": "2026-11-20T00:45:12.064804+00:00",
+      "attemptedAt": "2026-11-22T00:51:32.465861+00:00",
       "status": "partial",
-      "assessment": "小猿把单元、板卡和整机测试列入硬件研发岗职责，也要求跟踪试产失效并提出整改。",
+      "assessment": "华为 OSTA 注释给出手机顶部的角度范围与正常交流人声的距离条件；这些条件会改变录音比较的含义。",
       "gaps": [
         "原始签核授权、量产结果及其他字段仍需独立资料。"
       ],
       "reviewedFields": [
-        "team"
+        "metrics"
       ],
       "evidence": [
         {
-          "itemId": "m20-job-6c6331e12e6b4c66",
-          "title": "小猿硬件研发岗如何把一次试产故障带回设计评审",
+          "itemId": "m22-osta-news",
+          "title": "华为星芒 O1 Pro 开放订购，指向收音有明确的角度与距离条件",
           "facts": [
             {
-              "claim": "岗位明列试产问题的失效分析和整改职责。",
-              "sourceUrl": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
-              "locator": "职位描述 · 工作内容"
+              "claim": "报道确认在中国商城可订购。",
+              "sourceUrl": "https://www.androidcentral.com/phones/huawei/is-wide-the-next-phone-craze-the-new-huawei-osta-o1-pro-looks-like-a-fat-iphone-air",
+              "locator": "报道，Android Central’s take 之前"
+            },
+            {
+              "claim": "厂商限定指向角度、拾音距离及环境条件。",
+              "sourceUrl": "https://consumer.huawei.com/cn/osta/phones/o1-pro/",
+              "locator": "产品注释18"
             }
           ],
-          "boundary": "历史春招岗位正文当前可读。岗位要求不能证明企业最终放行权限、团队人数、执行效果或特定型号使用了该流程。",
+          "boundary": "产品是手机；收音范围为厂商说明，未取得教室实测和转写错误率。Xnote 型号仍待核实。",
           "sources": [
             {
-              "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
-              "publisherGroup": "小猿官方校园招聘",
-              "name": "小猿官方校园招聘",
-              "publishedAt": "2026-03-04",
+              "url": "https://www.androidcentral.com/phones/huawei/is-wide-the-next-phone-craze-the-new-huawei-osta-o1-pro-looks-like-a-fat-iphone-air",
+              "publisherGroup": "Android Central",
+              "name": "Android Central",
+              "publishedAt": "2026-11-20T17:00:17Z",
+              "role": "media",
+              "textHash": "daa21999031b82be1e46bb34a032900fbb794e2b2e6e446258de5c63e56e9e47",
+              "readAt": "2026-11-22T00:44:43.666331+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://consumer.huawei.com/cn/osta/phones/o1-pro/",
+              "publisherGroup": "华为",
+              "name": "华为 OSTA O1 Pro 产品页",
+              "publishedAt": null,
               "role": "official",
-              "textHash": "2c8e92aeec8845f458bdc658e6f76ca865dda8ad852ef8c28ee8de426eea753f",
-              "readAt": "2026-11-20T00:38:04.217367+00:00",
+              "textHash": "c848aeb9134821ef2851267a9628b2079db53b7a6170ecb9cced7714e7fc18ad",
+              "readAt": "2026-11-22T00:44:44.465042+00:00",
               "coverage": "body"
             }
           ]
@@ -309,19 +304,19 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "m20-job-6c6331e12e6b4c66",
-          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
-          "checkedAt": "2026-11-20T00:38:04.217367+00:00",
+          "itemId": "m22-osta-news",
+          "url": "https://consumer.huawei.com/cn/osta/phones/o1-pro/",
+          "checkedAt": "2026-11-22T00:44:44.465042+00:00",
           "state": "body",
-          "note": "复读当前可取得的来源正文，核对与本条相关的说明。岗位说明揭示能力范围，未提供项目签核单、试产生效结果或专属岗位人数。"
+          "note": "核对 OSTA 官网四麦克风部分和第18项注释。"
         }
       ],
-      "reviewedAt": "2026-11-20T00:45:12.064804+00:00",
+      "reviewedAt": "2026-11-22T00:51:32.465861+00:00",
       "patch": {
         "constraint": "成本、质量、交期、维修和供货风险；互联设备另需检查设备、应用、云的协同安全与退出时的数据处理。 混合工艺还需同时检查区域边界衔接、路径避让和切换开销，界面步骤减少不能掩盖质量约束。",
         "team": "产品、系统工程、制造、采购、质量、法规与售后。研究外协时另核技术文件提供方、参数变更权、驻厂支持与验收记录；公司之间的边界不能由生产地点直接推断。 小猿历史岗位把测试用例、模块到整机定位、设计评审和试产整改列为同一岗位可参与的环节。责任接口要用项目记录另行确认。",
         "examples": "品牌方、ODM / EMS、模组供应商；拓竹H3C作为软硬件协同的观察样本，非行业排名。",
-        "metrics": "关键缺陷关闭率；良率；交期；返修原因；比较自动化功能时另记录用户准备步骤、设计修改后的重做次数、总加工时间与成品验收结果，不能只看算法速度。"
+        "metrics": "关键缺陷关闭率；良率；交期；返修原因；比较自动化功能时另记录用户准备步骤、设计修改后的重做次数、总加工时间与成品验收结果，不能只看算法速度。 指向收音验收须固定讲话者角度和距离，记录干扰源位置、遮挡及原始音轨，再单独评估转写。"
       },
       "lessons": [
         {
@@ -389,105 +384,52 @@
             "m20-job-6c6331e12e6b4c66"
           ],
           "updatedAt": "2026-11-20T00:45:12.064804+00:00"
+        },
+        {
+          "id": "m22-track-5",
+          "title": "标称拾音距离怎样变成可复查的实验",
+          "learning": "华为 OSTA 注释给出手机顶部的角度范围与正常交流人声的距离条件；这些条件会改变录音比较的含义。",
+          "application": "设计同一音源的正面、侧面、有遮挡对照；语音识别和摘要分别验收，保留测试时的环境信息。",
+          "boundary": "厂商手机规格未代表录音设备或学习设备在教室的实测结果。",
+          "itemIds": [
+            "m22-osta-news"
+          ],
+          "updatedAt": "2026-11-22T00:51:32.465861+00:00"
         }
       ],
-      "updatedAt": "2026-11-20T00:45:12.064804+00:00"
+      "updatedAt": "2026-11-22T00:51:32.465861+00:00"
     },
     "chain-1": {
-      "attemptedAt": "2026-11-21T10:49:32.407137+00:00",
+      "attemptedAt": "2026-11-22T00:51:32.465861+00:00",
       "status": "partial",
-      "assessment": "将触觉学习原型的早期决策与正式可用性评估分开，并复核任务成功率和 JTBD 的定义。",
+      "assessment": "Amazon 的订阅目录预先筛选，另一条 Google Play 路径逐次要求家长批准。两条路径对应不同的验证步骤。",
       "gaps": [
         "已核实此研究原型的一次需求取舍；学习硬件企业的原始立项签核与量产后任务完成数据仍待查。"
       ],
       "reviewedFields": [
-        "exercise",
-        "flow"
+        "exercise"
       ],
       "evidence": [
         {
-          "itemId": "e21-tactile",
-          "title": "孩子摸着积木学空间关系，为什么把手持扫描器改成桌面底板？",
+          "itemId": "m22-amazon-tablet",
+          "title": "儿童平板开放应用商店后，每个下载由谁批准？",
           "facts": [
             {
-              "claim": "作者写明改版和时间限制使原计划的正式评估未能完成。",
-              "sourceUrl": "https://researcharchive.wintec.ac.nz/id/eprint/8226/2/Elgee_vanTonder_Dissertation_Final.pdf",
-              "locator": "研究方法 · Usability Testing；设计反思 · Iteration, Feedback and Change"
-            },
-            {
-              "claim": "课堂中的触觉底板启发团队从手持设备转向固定底板。",
-              "sourceUrl": "https://researcharchive.wintec.ac.nz/id/eprint/8226/2/Elgee_vanTonder_Dissertation_Final.pdf",
-              "locator": "设计反思 · 课堂原型与底板"
+              "claim": "公司说明 Google Play 下载须逐次经家长批准。",
+              "sourceUrl": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
+              "locator": "More in store with Kids+ and Google Play"
             }
           ],
-          "boundary": "依据 2026 年学位论文的方法和迭代段落；案例是辅助学习原型。未见量产、采购签核或真实课堂长期效果。",
+          "boundary": "只适用于该文所述 Android 儿童平板配置。不能推出国内教材审核机制、实际审核耗时或学习效果。",
           "sources": [
             {
-              "url": "https://researcharchive.wintec.ac.nz/id/eprint/8226/2/Elgee_vanTonder_Dissertation_Final.pdf",
-              "publisherGroup": "怀卡托理工学院研究档案 · 原研究论文",
-              "name": "怀卡托理工学院研究档案 · 原研究论文",
-              "publishedAt": "2026-06-12",
-              "role": "research",
-              "textHash": "2dcf91cc93378d6dd7becbf7763dcf5081f8c920b5647f53e8dfeced75367867",
-              "readAt": "2026-11-21T10:45:28.120765+00:00",
-              "coverage": "excerpt"
-            }
-          ]
-        },
-        {
-          "itemId": "jtbd-circumstances",
-          "title": "需求研究先问具体处境与进步，不能只列功能",
-          "facts": [
-            {
-              "claim": "JTBD包含功能、社会和情感维度。",
-              "sourceUrl": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
-              "locator": "Definition段落"
-            },
-            {
-              "claim": "概念强调特定处境下希望取得的进步。",
-              "sourceUrl": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
-              "locator": "Definition段落"
-            }
-          ],
-          "boundary": "仅取得当前网页Definition片段；不等于完整方法论审阅，不据此推断国内硬件用户需求或企业成效。",
-          "sources": [
-            {
-              "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
-              "name": "Christensen Institute官方资料",
-              "publishedAt": null,
-              "publisherGroup": "Christensen Institute",
+              "url": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
+              "publisherGroup": "Amazon 设备团队",
+              "name": "Amazon 设备团队",
+              "publishedAt": "2026-10-08T12:55:18.811Z",
               "role": "official",
-              "textHash": "9c6f1c198d595232cfb7db26736e7eeb03427a2ad9d4ca423c90b149bd6361e9",
-              "readAt": "2026-11-14T00:44:10.709041+00:00",
-              "coverage": "excerpt"
-            }
-          ]
-        },
-        {
-          "itemId": "task-success-criteria",
-          "title": "孩子拍完题就算成功吗？教研和产品怎样约定一次任务的终点",
-          "facts": [
-            {
-              "claim": "完成率按参与者能否完成指定任务计算。",
-              "sourceUrl": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
-              "locator": "Measuring Success"
-            },
-            {
-              "claim": "遇到部分成功时，作者建议分级报告人数比例。",
-              "sourceUrl": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
-              "locator": "Reporting Levels of Success"
-            }
-          ],
-          "boundary": "原文用订花任务解释度量方法。拍题是学习硬件的应用示例，尚无竞品在这个任务上的测量结果或放行阈值。",
-          "sources": [
-            {
-              "url": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
-              "publisherGroup": "Nielsen Norman Group",
-              "name": "Jakob Nielsen 与 Raluca Budiu",
-              "publishedAt": "2001-02-17",
-              "role": "research",
-              "textHash": "cbe2047b44e0d15bb9a81b55a025eeb613a38c110a7c9adfe61742aa5d8ac7c3",
-              "readAt": "2026-11-19T10:39:23.443650+00:00",
+              "textHash": "7244341529cc537468388b340f3b21c0a51fa91d9aaaa808d69d8d36d2a02efb",
+              "readAt": "2026-11-22T00:43:22.108921+00:00",
               "coverage": "body"
             }
           ]
@@ -495,31 +437,17 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "e21-tactile",
-          "url": "https://researcharchive.wintec.ac.nz/id/eprint/8226/2/Elgee_vanTonder_Dissertation_Final.pdf",
-          "checkedAt": "2026-11-21T10:45:28.120765+00:00",
+          "itemId": "m22-amazon-tablet",
+          "url": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
+          "checkedAt": "2026-11-22T00:43:22.108921+00:00",
           "state": "body",
-          "note": "本轮读取原文相关段落。核对研究方法和设计迭代小节，含未完成正式评估的说明。"
-        },
-        {
-          "itemId": "jtbd-circumstances",
-          "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
-          "checkedAt": "2026-11-21T10:44:20.744664+00:00",
-          "state": "body",
-          "note": "本轮读取正文。核对具体处境、所求进步与功能社会情感维度。"
-        },
-        {
-          "itemId": "task-success-criteria",
-          "url": "https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/",
-          "checkedAt": "2026-11-21T10:44:20.091991+00:00",
-          "state": "body",
-          "note": "本轮读取正文。核对任务的完全成功和部分成功区别。"
+          "note": "读取介绍中的 More in store with Kids+ and Google Play 小节。"
         }
       ],
-      "reviewedAt": "2026-11-21T10:49:32.407137+00:00",
+      "reviewedAt": "2026-11-22T00:51:32.465861+00:00",
       "patch": {
         "team": "用户研究、产品、销售、服务一起区分使用者、购买者与渠道反馈。 平台型硬件还需区分内容创作者、最终使用者与实体履约伙伴；活动意见是需求线索，不能替代使用验证。",
-        "exercise": "选一种学习设备，分别写出孩子要完成的学习任务、家长要完成的管理任务，以及操作入口和成功条件。Kindle说明区分儿童档案与设备本地限制，前者和后者的远程管理能力不同；实际需求仍需访谈与任务观察，不能由功能存在直接推断。 让参与者按相同条件尝试一次任务，记录人数、需要协助的环节和最终结果。 再标记改版后哪些环节仍未经独立完成测试。",
+        "exercise": "选一种学习设备，分别写出孩子要完成的学习任务、家长要完成的管理任务，以及操作入口和成功条件。Kindle说明区分儿童档案与设备本地限制，前者和后者的远程管理能力不同；实际需求仍需访谈与任务观察，不能由功能存在直接推断。 让参与者按相同条件尝试一次任务，记录人数、需要协助的环节和最终结果。 再标记改版后哪些环节仍未经独立完成测试。 为儿童设备写下载验收用例时，给出应用来源、儿童档案、批准人及拒绝后的可见状态。",
         "basics": "JTBD 关注人在具体处境下希望取得的进步，包含功能、社会和情感三个维度。访谈明确所求进步后，将其转成用户可完成、测试者可观察的任务；在参与者中分别报告完整成功和各类部分成功。",
         "flow": "用户任务、情境和替代方案 → 需求优先级与验收条件 早期试玩可以触发改版。将触发改版的观察和新版验收结果分别记录，正式评估未完成时保留待测任务。"
       },
@@ -591,9 +519,20 @@
             "e21-tactile"
           ],
           "updatedAt": "2026-11-21T10:49:32.407137+00:00"
+        },
+        {
+          "id": "m22-chain-1",
+          "title": "目录筛选与家庭逐次批准，怎样写成两组验收用例",
+          "learning": "Amazon 的订阅目录预先筛选，另一条 Google Play 路径逐次要求家长批准。两条路径对应不同的验证步骤。",
+          "application": "分别试订阅内内容、商店外部应用和家庭拒绝；记录每种情况下孩子与家长看到什么以及授权持续多久。",
+          "boundary": "仅限所述产品配置，跨档案效果、内容编辑权限与审核时效未知。",
+          "itemIds": [
+            "m22-amazon-tablet"
+          ],
+          "updatedAt": "2026-11-22T00:51:32.465861+00:00"
         }
       ],
-      "updatedAt": "2026-11-21T10:49:32.407137+00:00"
+      "updatedAt": "2026-11-22T00:51:32.465861+00:00"
     },
     "chain-4": {
       "attemptedAt": "2026-11-21T00:48:49.161188+00:00",
@@ -786,100 +725,57 @@
       "updatedAt": "2026-11-21T00:48:49.161188+00:00"
     },
     "track-2": {
-      "attemptedAt": "2026-11-20T10:47:11.295604+00:00",
+      "attemptedAt": "2026-11-22T00:51:32.465861+00:00",
       "status": "partial",
-      "assessment": "小米支持页列出分享设备和邀请家庭成员的入口；三星美国站的邀请覆盖整个地点，由地点所有者移除成员；涂鸦 SDK 为家庭管理操作区分成员角色。",
+      "assessment": "Nest 指南把自动迁移的视频历史与必须事先导出的旧网页片段区分，并为旧账号给出另一个期限。",
       "gaps": [
         "已核三份文档中的授权入口或角色；仍缺特定设备权限、离线撤权及跨平台实测。",
         "没有可比故障率、用户样本和售后改善数据。"
       ],
       "reviewedFields": [
-        "team"
+        "chain"
       ],
       "evidence": [
         {
-          "itemId": "e20-mi",
-          "title": "给家人开设备权限，分享一台设备和加入整个家庭差在哪里？",
+          "itemId": "m22-helpweb",
+          "title": "换控制应用时，设备、视频历史和手动保存的片段怎样分别交接？",
           "facts": [
             {
-              "claim": "小米支持页分别说明设备卡片分享与邀请家庭成员这两条路径。",
-              "sourceUrl": "https://www.mi.com/global/support/article/KA-07429/",
-              "locator": "Method 1 / Method 3"
-            },
-            {
-              "claim": "SmartThings 的邀请以地点为单位，只能由地点所有者移除成员。",
-              "sourceUrl": "https://www.samsung.com/us/support/answer/ANS10002634/",
-              "locator": "Invite members / View or remove members"
-            },
-            {
-              "claim": "家庭管理员可以添加普通成员，但不能删除整个家庭。",
-              "sourceUrl": "https://developer.tuya.com/en/docs/app-development/extension-family-member?id=Kcy2iwdhz60pm",
-              "locator": "Home Member Management · Member roles（2025-12-25 更新）"
+              "claim": "旧网页中保存的视频片段有单独的下载要求。",
+              "sourceUrl": "https://support.google.com/googlehome/answer/18959693?hl=en",
+              "locator": "平台支持页，Important dates 与 Download any saved video clips"
             }
           ],
-          "boundary": "三份资料分别来自小米全球版说明、三星美国支持页和涂鸦 SDK。插件、地区、门锁等特定设备权限，以及撤销在离线设备上何时生效，仍需逐项核验。",
+          "boundary": "厂商说明的是迁移计划；尚无完成率、遗失率或内部负责人。学习机部分为迁移验收推演。",
           "sources": [
             {
-              "url": "https://www.mi.com/global/support/article/KA-07429/",
-              "publisherGroup": "小米全球支持",
-              "name": "小米全球支持",
+              "url": "https://support.google.com/googlehome/answer/18959693?hl=en",
+              "publisherGroup": "Google Nest 支持",
+              "name": "Google Nest 支持",
               "publishedAt": null,
               "role": "official",
-              "textHash": "d29456e292cfb87704e1fe7d05cda807cf8dc2288fbaccde5087ee01d0eaac50",
-              "readAt": "2026-11-20T10:42:16.984424+00:00",
-              "coverage": "body"
-            },
-            {
-              "url": "https://www.samsung.com/us/support/answer/ANS10002634/",
-              "publisherGroup": "Samsung 美国支持",
-              "name": "Samsung 美国支持",
-              "publishedAt": null,
-              "role": "official",
-              "textHash": "e336a8fb80343eb6458527cb239d48aa4d2f546369a89e603292fa2c4007ace2",
-              "readAt": "2026-11-20T10:42:17.836170+00:00",
-              "coverage": "body"
-            },
-            {
-              "url": "https://developer.tuya.com/en/docs/app-development/extension-family-member?id=Kcy2iwdhz60pm",
-              "publisherGroup": "涂鸦 Smart App SDK",
-              "name": "涂鸦 Smart App SDK",
-              "publishedAt": null,
-              "role": "official",
-              "textHash": "991699639eb2465541f4c84e8753712d3a84cb1ca4cdb40d110279207828dd50",
-              "readAt": "2026-11-20T10:42:52.227992+00:00",
-              "coverage": "body"
+              "textHash": "87e958bcfb7f9bf0ab5ce7d67a6e1cff54e0dca4dfd2727e6281479a49e62837",
+              "readAt": "2026-11-22T00:44:42Z",
+              "coverage": "excerpt"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "e20-mi",
-          "url": "https://www.mi.com/global/support/article/KA-07429/",
-          "checkedAt": "2026-11-20T10:42:16.984424+00:00",
+          "itemId": "m22-helpweb",
+          "url": "https://support.google.com/googlehome/answer/18959693?hl=en",
+          "checkedAt": "2026-11-22T00:44:42Z",
           "state": "body",
-          "note": "小米支持页列出分享设备和邀请家庭成员的入口；三星美国站的邀请覆盖整个地点，由地点所有者移除成员；涂鸦 SDK 为家庭管理操作区分成员角色。 平台、地区及设备插件不同，特定门锁授权和离线撤权生效时间须实测。"
-        },
-        {
-          "itemId": "e20-mi",
-          "url": "https://www.samsung.com/us/support/answer/ANS10002634/",
-          "checkedAt": "2026-11-20T10:42:17.836170+00:00",
-          "state": "body",
-          "note": "小米支持页列出分享设备和邀请家庭成员的入口；三星美国站的邀请覆盖整个地点，由地点所有者移除成员；涂鸦 SDK 为家庭管理操作区分成员角色。 平台、地区及设备插件不同，特定门锁授权和离线撤权生效时间须实测。"
-        },
-        {
-          "itemId": "e20-mi",
-          "url": "https://developer.tuya.com/en/docs/app-development/extension-family-member?id=Kcy2iwdhz60pm",
-          "checkedAt": "2026-11-20T10:42:52.227992+00:00",
-          "state": "body",
-          "note": "小米支持页列出分享设备和邀请家庭成员的入口；三星美国站的邀请覆盖整个地点，由地点所有者移除成员；涂鸦 SDK 为家庭管理操作区分成员角色。 平台、地区及设备插件不同，特定门锁授权和离线撤权生效时间须实测。"
+          "note": "阅读官方指南 Important dates、旧网页片段下载和账号迁移相关段落。"
         }
       ],
-      "reviewedAt": "2026-11-20T10:47:11.295604+00:00",
+      "reviewedAt": "2026-11-22T00:51:32.465861+00:00",
       "patch": {
         "constraint": "兼容性、配网成本、稳定性与家庭成员协同。离线范围须按触发、动作和反馈分别核对：Aqara M200说明部分自动化本地执行，但云推送仍需要云连接；不能据“本地自动化”承诺全部提醒和远程控制可用。",
         "team": "嵌入式、连接协议、云平台、客户端、认证与售后 售后交给协议、固件或平台团队的信息应包含型号/版本、连接路径、受影响范围和复现步骤；诊断日志按支持范围自愿启用，并保留本地保存选择。 产品、客户端与售后可用临时照护者借用一台设备的情境，逐项核对邀约界面、可操作的设备、可执行的动作及回收权限的角色。",
-        "metrics": "配网成功率；离线可用率；跨品牌联动失败率 观察时分别记录单设备、桥接路径和平台功能故障；固定型号、固件和平台组合后再比较，不能把重置后重新配网成功视为全部功能恢复。"
+        "metrics": "配网成功率；离线可用率；跨品牌联动失败率 观察时分别记录单设备、桥接路径和平台功能故障；固定型号、固件和平台组合后再比较，不能把重置后重新配网成功视为全部功能恢复。",
+        "chain": "连接协议 → 设备与网关 → 场景联动 → 安装与售后 服务切换时，将设备控制、自动迁移的历史和需手动导出的文件分列。不同条目可能对应不同期限和操作人。"
       },
       "lessons": [
         {
@@ -925,9 +821,20 @@
             "e20-mi"
           ],
           "updatedAt": "2026-11-20T10:47:11.295604+00:00"
+        },
+        {
+          "id": "m22-track-2",
+          "title": "一套硬件换应用，为什么要列出两张数据清单",
+          "learning": "Nest 指南把自动迁移的视频历史与必须事先导出的旧网页片段区分，并为旧账号给出另一个期限。",
+          "application": "为支持的摄像头分别测试远程控制、事件历史和手动片段；客服向家庭提前说明需其操作的步骤。",
+          "boundary": "仅核官方迁移指南相关段落，未验证用户实际恢复情况或迁移成功率。",
+          "itemIds": [
+            "m22-helpweb"
+          ],
+          "updatedAt": "2026-11-22T00:51:32.465861+00:00"
         }
       ],
-      "updatedAt": "2026-11-20T10:47:11.295604+00:00"
+      "updatedAt": "2026-11-22T00:51:32.465861+00:00"
     },
     "chain-2": {
       "attemptedAt": "2026-11-20T10:47:11.295604+00:00",
@@ -1064,9 +971,9 @@
       "updatedAt": "2026-11-20T10:47:11.295604+00:00"
     },
     "chain-5": {
-      "attemptedAt": "2026-11-20T00:45:12.064804+00:00",
+      "attemptedAt": "2026-11-22T00:51:32.465861+00:00",
       "status": "partial",
-      "assessment": "CPSC 指南把电池仓防护与警示分列，工具召回公告同时指出电池易被接触和警示缺项。",
+      "assessment": "公告给出可被拉脱的小部件、包装标识、渠道与退款凭据要求，使产品识别和用户处置能够分别追踪。",
       "gaps": [
         "已核美国指南的纽扣电池范围及警示，其他市场和其他认证仍待对应依据。",
         "现场故障与部署成效没有可比当前结果；本次仅核验制造指标的定义和追溯线索。"
@@ -1076,49 +983,25 @@
       ],
       "evidence": [
         {
-          "itemId": "m20-button",
-          "title": "电池仓过了测试，包装能出货吗？把结构验证与警示文案放进同一次放行评审",
+          "itemId": "m22-magnet",
+          "title": "约十万件磁性玩具被召回，包装编码与退款凭据一并公布",
           "facts": [
             {
-              "claim": "指南将整机包装警示列为独立要求。",
-              "sourceUrl": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Button-Cell-and-Coin-Battery",
-              "locator": "Products Containing or Designed to Use Button Cell or Coin Batteries 小节"
+              "claim": "公告明确了拉开肢体与小磁体脱落的失效路径。",
+              "sourceUrl": "https://www.cpsc.gov/Recalls/2027/CHE-US-Recalls-Magnetic-Robot-Toys-Due-to-Risk-of-Serious-Injury-or-Death-from-Magnet-Ingestion-Violate-Mandatory-Standard-for-Toys",
+              "locator": "Hazard、Description、Remedy、Incidents/Injuries"
             }
           ],
-          "boundary": "适用于指南界定的美国消费品范围，部分玩具及特定电池有不同适用条件。不能据此断定某款学习设备适用或通过认证。",
+          "boundary": "规模是涉及召回的数量。实际触达、已退款和剩余在用数量尚未知。",
           "sources": [
             {
-              "url": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Button-Cell-and-Coin-Battery",
-              "publisherGroup": "美国消费品安全委员会 CPSC",
-              "name": "美国消费品安全委员会 CPSC",
-              "publishedAt": null,
-              "role": "official",
-              "textHash": "be4664ad3a096e45e9756ba65ab4fd6388484654b708226bc3a767889f8be8be",
-              "readAt": "2026-11-20T00:39:19.289751+00:00",
-              "coverage": "body"
-            }
-          ]
-        },
-        {
-          "itemId": "m20-tool",
-          "title": "从数字卡尺到计算器，约 22.94 万件工具因纽扣电池可被儿童取出而召回",
-          "facts": [
-            {
-              "claim": "召回方给出了产品和包装的型号识别依据。",
-              "sourceUrl": "https://www.cpsc.gov/Recalls/2027/Hultafors-Group-North-America-Recalls-Lighted-Portfolios-Angle-Locators-Calipers-and-Calculators-Due-to-Risk-of-Serious-Injury-or-Death-from-Battery-Ingestion-Violate-Mandatory-Standard-for-Consumer-Products-with-Button-Cell-Batteries",
-              "locator": "Recall Details 型号表与 Remedy"
-            }
-          ],
-          "boundary": "数量与处置安排限于该次美国召回。未披露已退款数量或全部消费者的实际处置结果。",
-          "sources": [
-            {
-              "url": "https://www.cpsc.gov/Recalls/2027/Hultafors-Group-North-America-Recalls-Lighted-Portfolios-Angle-Locators-Calipers-and-Calculators-Due-to-Risk-of-Serious-Injury-or-Death-from-Battery-Ingestion-Violate-Mandatory-Standard-for-Consumer-Products-with-Button-Cell-Batteries",
-              "publisherGroup": "美国消费品安全委员会 CPSC",
-              "name": "美国消费品安全委员会 CPSC",
+              "url": "https://www.cpsc.gov/Recalls/2027/CHE-US-Recalls-Magnetic-Robot-Toys-Due-to-Risk-of-Serious-Injury-or-Death-from-Magnet-Ingestion-Violate-Mandatory-Standard-for-Toys",
+              "publisherGroup": "美国消费品安全委员会",
+              "name": "美国消费品安全委员会",
               "publishedAt": "2026-11-19",
               "role": "official",
-              "textHash": "dc8cad0341b0ee1a0f48a1dafa6cf419661a62aaf01107af5c84597ec45b407b",
-              "readAt": "2026-11-20T00:37:57.372356+00:00",
+              "textHash": "b7b2524fc7cfd43f04eaad38f24917f858a25b624252b2e80373685781310a0e",
+              "readAt": "2026-11-22T00:47:27.326464+00:00",
               "coverage": "body"
             }
           ]
@@ -1126,23 +1009,16 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "m20-button",
-          "url": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Button-Cell-and-Coin-Battery",
-          "checkedAt": "2026-11-20T00:39:19.289751+00:00",
+          "itemId": "m22-magnet",
+          "url": "https://www.cpsc.gov/Recalls/2027/CHE-US-Recalls-Magnetic-Robot-Toys-Due-to-Risk-of-Serious-Injury-or-Death-from-Magnet-Ingestion-Violate-Mandatory-Standard-for-Toys",
+          "checkedAt": "2026-11-22T00:47:27.326464+00:00",
           "state": "body",
-          "note": "复读当前可取得的来源正文，核对与本条相关的说明。适用范围限于美国指南和公告涉及的类别；中国市场、其他电池与企业实际出货签核需分别核对。"
-        },
-        {
-          "itemId": "m20-tool",
-          "url": "https://www.cpsc.gov/Recalls/2027/Hultafors-Group-North-America-Recalls-Lighted-Portfolios-Angle-Locators-Calipers-and-Calculators-Due-to-Risk-of-Serious-Injury-or-Death-from-Battery-Ingestion-Violate-Mandatory-Standard-for-Consumer-Products-with-Button-Cell-Batteries",
-          "checkedAt": "2026-11-20T00:37:57.372356+00:00",
-          "state": "body",
-          "note": "复读当前可取得的来源正文，核对与本条相关的说明。适用范围限于美国指南和公告涉及的类别；中国市场、其他电池与企业实际出货签核需分别核对。"
+          "note": "读取美国召回公告的 Hazard、Description、Remedy 与 Units 段。"
         }
       ],
-      "reviewedAt": "2026-11-20T00:45:12.064804+00:00",
+      "reviewedAt": "2026-11-22T00:51:32.465861+00:00",
       "patch": {
-        "flow": "风险识别与需求 → 验证证据、过程控制与上市条件 对有明确使用限制的设备，还要检查现场条件、训练和责任人员是否满足该型号说明，不能仅凭设备合格就认为现场可用。 对适用美国纽扣电池要求的产品，出货评审同时核对电池仓样件、使用与滥用测试、实物及包装警示和随附说明；不同版本的包材分别检查。",
+        "flow": "风险识别与需求 → 验证证据、过程控制与上市条件 对有明确使用限制的设备，还要检查现场条件、训练和责任人员是否满足该型号说明，不能仅凭设备合格就认为现场可用。 对适用美国纽扣电池要求的产品，出货评审同时核对电池仓样件、使用与滥用测试、实物及包装警示和随附说明；不同版本的包材分别检查。 儿童可拆部件发生风险时，记录部件怎样脱落、包装识别码、销售渠道和售后处置凭证。分别记录涉及数量与已办理数量。",
         "team": "质量、安全、研发、制造与服务协同定义缺陷等级、放行权和整改验证。 MetalFab 官方资料要求指定激光安全负责人并限制进入受控区域的人员；这是特定产品的部署职责样本，不能替代其他产品的法规与风险评估。",
         "basics": "初始质量关注开始使用时是否符合要求；可靠性关注运行一段时间后是否仍满足要求。初始合格不能证明使用期可靠。可靠性、安全与法规准入是不同问题；本轮仅核对初始质量与使用期可靠性的时间区分，安全及认证范围仍待专门复核。",
         "metrics": "生产直通率应明确工序范围、首次检验和返工排除规则；最终检验合格不等于全流程一次通过。现场故障率仍需同时记录样本、使用条件与时间窗。"
@@ -1203,9 +1079,20 @@
             "m20-tool"
           ],
           "updatedAt": "2026-11-20T00:45:12.064804+00:00"
+        },
+        {
+          "id": "m22-chain-5",
+          "title": "从磁体脱落到退款，质量与售后分别要留什么",
+          "learning": "公告给出可被拉脱的小部件、包装标识、渠道与退款凭据要求，使产品识别和用户处置能够分别追踪。",
+          "application": "有小型可拆件的儿童硬件可沿质量问题单、包装标识、销售批次、通知和退款逐段复核。",
+          "boundary": "本案是特定玩具，未披露公司内部分工、办理比例或其他地区的标准。",
+          "itemIds": [
+            "m22-magnet"
+          ],
+          "updatedAt": "2026-11-22T00:51:32.465861+00:00"
         }
       ],
-      "updatedAt": "2026-11-20T00:45:12.064804+00:00"
+      "updatedAt": "2026-11-22T00:51:32.465861+00:00"
     },
     "chain-8": {
       "attemptedAt": "2026-11-21T00:48:49.161188+00:00",
@@ -1756,9 +1643,9 @@
       "updatedAt": "2026-11-21T10:49:32.407137+00:00"
     },
     "track-0": {
-      "attemptedAt": "2026-11-20T00:45:12.064804+00:00",
+      "attemptedAt": "2026-11-22T00:51:32.465861+00:00",
       "status": "partial",
-      "assessment": "商务部的前十个月数据统计重点平台的智能眼镜销售额，说明所覆盖渠道的交易金额变化。",
+      "assessment": "华为支持页建议设置后等 2 至 3 分钟检查，必要时分开排查应用版本、连通性与管理员账号。",
       "gaps": [
         "FAQ 未解释设备离线时是否缓存或重发设置。",
         "Meta、Apple、Samsung观察对象未取得本轮当前正文。",
@@ -1766,29 +1653,29 @@
         "雷鸟最低手机系统与权限细节仍有占位；文件导入内容保真未做实机测试。"
       ],
       "reviewedFields": [
-        "metrics"
+        "constraint"
       ],
       "evidence": [
         {
-          "itemId": "m20-mof",
-          "title": "商务部公布前十个月重点平台智能眼镜销售额，同比翻倍",
+          "itemId": "m22-watch",
+          "title": "家长已经设置上课禁用，怎样核对儿童手表是否收到？",
           "facts": [
             {
-              "claim": "同比翻倍的指标限定为重点平台的智能眼镜销售金额。",
-              "sourceUrl": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_0126b1d7c4124d7093738dafaf5ab667.html",
-              "locator": "第三部分 新型消费较快增长"
+              "claim": "指南规定设置后观察窗口，另列网络与管理员排查。",
+              "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn00734120/",
+              "locator": "开启或关闭上课禁用功能不生效"
             }
           ],
-          "boundary": "未披露平台清单、绝对额、平均售价与销量，不能推出全渠道市场份额或某品牌销量变化。",
+          "boundary": "该时长是排查建议，未披露离线指令缓存策略、服务时限或排障成功率。",
           "sources": [
             {
-              "url": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_0126b1d7c4124d7093738dafaf5ab667.html",
-              "publisherGroup": "商务部消费促进司",
-              "name": "商务部消费促进司",
-              "publishedAt": "2026-11-19T16:18:00+08:00",
+              "url": "https://consumer.huawei.com/cn/support/content/zh-cn00734120/",
+              "publisherGroup": "华为",
+              "name": "华为",
+              "publishedAt": null,
               "role": "official",
-              "textHash": "0bc4351d44ac2fc13f22b56e2f0457260cf9762841cd214fbcbbed11d09920bf",
-              "readAt": "2026-11-20T00:39:18.947749+00:00",
+              "textHash": "34a612ba6106caf6167f0bcacd7738ba5f14747374b73a98216e1ab685b42b38",
+              "readAt": "2026-11-22T00:50:11.374488+00:00",
               "coverage": "body"
             }
           ]
@@ -1796,17 +1683,17 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "m20-mof",
-          "url": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_0126b1d7c4124d7093738dafaf5ab667.html",
-          "checkedAt": "2026-11-20T00:39:18.947749+00:00",
+          "itemId": "m22-watch",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn00734120/",
+          "checkedAt": "2026-11-22T00:50:11.374488+00:00",
           "state": "body",
-          "note": "复读当前可取得的来源正文，核对与本条相关的说明。未披露品牌和平台明细，无法据此判断具体产品的终端份额或使用成效。"
+          "note": "读取上课禁用开启关闭不生效与非禁用时段无法退出两节。"
         }
       ],
-      "reviewedAt": "2026-11-20T00:45:12.064804+00:00",
+      "reviewedAt": "2026-11-22T00:51:32.465861+00:00",
       "patch": {
         "examples": "Meta、Apple、Samsung、雷鸟；本轮新增 XREAL 作为渠道与服务研究对象，不构成排名。",
-        "constraint": "佩戴舒适度、续航、隐私和持续使用 离线能力需按字幕、翻译等具体任务核验手机依赖、App 版本和预下载资源；不能仅凭“离线”断言数据不出端。 记录功能还应分别核对音频、转写、摘要与标签：雷鸟Life Log声明不存原始音频，但仍保留文字，不能据此推断没有个人数据留存。",
+        "constraint": "佩戴舒适度、续航、隐私和持续使用 离线能力需按字幕、翻译等具体任务核验手机依赖、App 版本和预下载资源；不能仅凭“离线”断言数据不出端。 记录功能还应分别核对音频、转写、摘要与标签：雷鸟Life Log声明不存原始音频，但仍保留文字，不能据此推断没有个人数据留存。 儿童手表的远程规则需观察表端状态。华为上课禁用排查先核对时段与节假日，再核网络并可更换管理员。",
         "team": "光学 / 声学、算法、工业设计、移动应用、健康验证 还需核对 App、渠道与服务团队如何共用版本化功能条件，避免销售承诺与实际使用前提脱节。",
         "metrics": "完成一次真实任务的成功率；佩戴负担；续航；退货原因。文档类任务还需检查关键文字、图片与版式的保留情况及人工补做步骤；雷鸟提词器说明导入只留文字，支持格式数不能替代任务验收。 观察眼镜品类时同时记录销售额或台数、覆盖平台和统计期间，再用独立样本核对体验。"
       },
@@ -1877,9 +1764,20 @@
             "m20-mof"
           ],
           "updatedAt": "2026-11-20T00:45:12.064804+00:00"
+        },
+        {
+          "id": "m22-track-0",
+          "title": "上课禁用已设置，怎样判断表端已生效",
+          "learning": "华为支持页建议设置后等 2 至 3 分钟检查，必要时分开排查应用版本、连通性与管理员账号。",
+          "application": "复核学习设备的远程管理时，固定规则和时间，分开记录控制端提交、表端联网、表端实际表现。",
+          "boundary": "仅为华为指南，离线缓存和补发机制仍需测试，不能直接套到小天才。",
+          "itemIds": [
+            "m22-watch"
+          ],
+          "updatedAt": "2026-11-22T00:51:32.465861+00:00"
         }
       ],
-      "updatedAt": "2026-11-20T00:45:12.064804+00:00"
+      "updatedAt": "2026-11-22T00:51:32.465861+00:00"
     },
     "track-1": {
       "attemptedAt": "2026-11-20T10:47:11.295604+00:00",
@@ -3072,6 +2970,55 @@
           "hash": "5943556dd0c946f1b2c39dd84a0728b1cd9dbad2602209c758f7604c378c25bc",
           "decision": "integrated",
           "reason": "K1 的跳过对象功能要求同盘多个模型、打印已开始且固件与切片版本符合条件。跳过问题件让其余对象继续，但仍要逐件验收。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-22T00:51:32.465861+00:00",
+      "reviewedNodes": [
+        "chain-3",
+        "chain-5",
+        "track-0",
+        "track-5",
+        "track-2",
+        "chain-1"
+      ],
+      "decisions": [
+        {
+          "itemId": "m22-moq",
+          "hash": "ee367bf8b472c49a18b48d699e3c2bb23dd51527d249af424e153461ad88f196",
+          "decision": "integrated",
+          "reason": "Oracle 的示例说明最小订购量可以推高建议单数量；固定批量倍数与上限是另外的参数。"
+        },
+        {
+          "itemId": "m22-magnet",
+          "hash": "5cd5f9159658c422b3c64f3cb265472141023731310b043ef872ac397d8dc451",
+          "decision": "integrated",
+          "reason": "公告给出可被拉脱的小部件、包装标识、渠道与退款凭据要求，使产品识别和用户处置能够分别追踪。"
+        },
+        {
+          "itemId": "m22-watch",
+          "hash": "db5531bd59002fe40504e52d5604fe02e1d20e48429d7f56935e3c72d8238c1d",
+          "decision": "integrated",
+          "reason": "华为支持页建议设置后等 2 至 3 分钟检查，必要时分开排查应用版本、连通性与管理员账号。"
+        },
+        {
+          "itemId": "m22-osta-news",
+          "hash": "2bf7b7642ae2ce2e8540e76785ea0c2e25f1ad565caf1e78da9d193d2937eaeb",
+          "decision": "integrated",
+          "reason": "华为 OSTA 注释给出手机顶部的角度范围与正常交流人声的距离条件；这些条件会改变录音比较的含义。"
+        },
+        {
+          "itemId": "m22-helpweb",
+          "hash": "8ba434b0cd3332ef44335a89bc756931d65631d319a332186530b69ab52c2cd3",
+          "decision": "integrated",
+          "reason": "Nest 指南把自动迁移的视频历史与必须事先导出的旧网页片段区分，并为旧账号给出另一个期限。"
+        },
+        {
+          "itemId": "m22-amazon-tablet",
+          "hash": "a6567bb225c238e0c87b440f05e10468c9d971b22fda75315b7aac8e083a0648",
+          "decision": "integrated",
+          "reason": "Amazon 的订阅目录预先筛选，另一条 Google Play 路径逐次要求家长批准。两条路径对应不同的验证步骤。"
         }
       ]
     }
@@ -11122,6 +11069,435 @@
           "checkedAt": "2026-11-21T10:45:35.104887+00:00",
           "state": "body",
           "note": "本轮读取正文。复读商城退货条款：确认后寄回期限仍同时写有7天和14天。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-3",
+      "reviewedAt": "2026-11-22T00:51:32.465861+00:00",
+      "status": "partial",
+      "assessment": "Oracle 的示例说明最小订购量可以推高建议单数量；固定批量倍数与上限是另外的参数。",
+      "gaps": [
+        "补核 Oracle 26C 的 MOQ 计算；各企业实际参数、运输起止、库存边界仍待订单和台账核验。",
+        "公开资料没有供应商审核标准、实际通过率、采购质量接口和履约结果。"
+      ],
+      "reviewedFields": [
+        "basics"
+      ],
+      "changes": {
+        "basics": {
+          "before": "MOQ 是最小订购量；交期包含采购、生产和运输，不能只看供应商承诺。 供应商登记仅是提交资料的入口，不能自动等同于资格审核通过或获得采购订单。",
+          "after": "MOQ 是最小订购量；交期包含采购、生产和运输，不能只看供应商承诺。 供应商登记仅是提交资料的入口，不能自动等同于资格审核通过或获得采购订单。 Oracle 26C 计划模块中，净需求 100 件且最小订购量设为 150 件，会产生 150 件的建议单；建议量与实际签约量要用单据另行核对。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m22-chain-3",
+            "title": "净缺口与采购建议相差的数量从何而来",
+            "learning": "Oracle 的示例说明最小订购量可以推高建议单数量；固定批量倍数与上限是另外的参数。",
+            "application": "用同一个学习机料号核对净需求、计划参数、发出的采购订单与到货入库，把多出的数量追到具体环节。",
+            "boundary": "仅适用该系统版本的示例，企业的供应合同、在用参数、交期和库存边界尚待查。",
+            "itemIds": [
+              "m22-moq"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m22-moq",
+          "title": "净缺 100 件，为什么计划员看到一张 150 件的建议单？",
+          "facts": [
+            {
+              "claim": "官方给出净需求 100 与最小订购量 150 的计算例。",
+              "sourceUrl": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26c/faupc/item-attributes-and-order-modifiers-for-supply-planning.html",
+              "locator": "Order Modifiers，Minimum Order Quantity 小节"
+            }
+          ],
+          "boundary": "仅核实该版本软件的计划规则。企业如何配置、供应商接受何种批量及最终采购量仍要看合同与实际订单。",
+          "sources": [
+            {
+              "url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26c/faupc/item-attributes-and-order-modifiers-for-supply-planning.html",
+              "publisherGroup": "Oracle",
+              "name": "Oracle",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "db2893ccf268a95d54a91a8c4a324695813562f12ceb6725405bdeb223d946cb",
+              "readAt": "2026-11-22T00:49:07.347292+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m22-moq",
+          "url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26c/faupc/item-attributes-and-order-modifiers-for-supply-planning.html",
+          "checkedAt": "2026-11-22T00:49:07.347292+00:00",
+          "state": "body",
+          "note": "读取 Order Modifiers 表的计算顺序与最小订购量示例。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-5",
+      "reviewedAt": "2026-11-22T00:51:32.465861+00:00",
+      "status": "partial",
+      "assessment": "公告给出可被拉脱的小部件、包装标识、渠道与退款凭据要求，使产品识别和用户处置能够分别追踪。",
+      "gaps": [
+        "已核美国指南的纽扣电池范围及警示，其他市场和其他认证仍待对应依据。",
+        "现场故障与部署成效没有可比当前结果；本次仅核验制造指标的定义和追溯线索。"
+      ],
+      "reviewedFields": [
+        "flow"
+      ],
+      "changes": {
+        "flow": {
+          "before": "风险识别与需求 → 验证证据、过程控制与上市条件 对有明确使用限制的设备，还要检查现场条件、训练和责任人员是否满足该型号说明，不能仅凭设备合格就认为现场可用。 对适用美国纽扣电池要求的产品，出货评审同时核对电池仓样件、使用与滥用测试、实物及包装警示和随附说明；不同版本的包材分别检查。",
+          "after": "风险识别与需求 → 验证证据、过程控制与上市条件 对有明确使用限制的设备，还要检查现场条件、训练和责任人员是否满足该型号说明，不能仅凭设备合格就认为现场可用。 对适用美国纽扣电池要求的产品，出货评审同时核对电池仓样件、使用与滥用测试、实物及包装警示和随附说明；不同版本的包材分别检查。 儿童可拆部件发生风险时，记录部件怎样脱落、包装识别码、销售渠道和售后处置凭证。分别记录涉及数量与已办理数量。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m22-chain-5",
+            "title": "从磁体脱落到退款，质量与售后分别要留什么",
+            "learning": "公告给出可被拉脱的小部件、包装标识、渠道与退款凭据要求，使产品识别和用户处置能够分别追踪。",
+            "application": "有小型可拆件的儿童硬件可沿质量问题单、包装标识、销售批次、通知和退款逐段复核。",
+            "boundary": "本案是特定玩具，未披露公司内部分工、办理比例或其他地区的标准。",
+            "itemIds": [
+              "m22-magnet"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m22-magnet",
+          "title": "约十万件磁性玩具被召回，包装编码与退款凭据一并公布",
+          "facts": [
+            {
+              "claim": "公告明确了拉开肢体与小磁体脱落的失效路径。",
+              "sourceUrl": "https://www.cpsc.gov/Recalls/2027/CHE-US-Recalls-Magnetic-Robot-Toys-Due-to-Risk-of-Serious-Injury-or-Death-from-Magnet-Ingestion-Violate-Mandatory-Standard-for-Toys",
+              "locator": "Hazard、Description、Remedy、Incidents/Injuries"
+            }
+          ],
+          "boundary": "规模是涉及召回的数量。实际触达、已退款和剩余在用数量尚未知。",
+          "sources": [
+            {
+              "url": "https://www.cpsc.gov/Recalls/2027/CHE-US-Recalls-Magnetic-Robot-Toys-Due-to-Risk-of-Serious-Injury-or-Death-from-Magnet-Ingestion-Violate-Mandatory-Standard-for-Toys",
+              "publisherGroup": "美国消费品安全委员会",
+              "name": "美国消费品安全委员会",
+              "publishedAt": "2026-11-19",
+              "role": "official",
+              "textHash": "b7b2524fc7cfd43f04eaad38f24917f858a25b624252b2e80373685781310a0e",
+              "readAt": "2026-11-22T00:47:27.326464+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m22-magnet",
+          "url": "https://www.cpsc.gov/Recalls/2027/CHE-US-Recalls-Magnetic-Robot-Toys-Due-to-Risk-of-Serious-Injury-or-Death-from-Magnet-Ingestion-Violate-Mandatory-Standard-for-Toys",
+          "checkedAt": "2026-11-22T00:47:27.326464+00:00",
+          "state": "body",
+          "note": "读取美国召回公告的 Hazard、Description、Remedy 与 Units 段。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-0",
+      "reviewedAt": "2026-11-22T00:51:32.465861+00:00",
+      "status": "partial",
+      "assessment": "华为支持页建议设置后等 2 至 3 分钟检查，必要时分开排查应用版本、连通性与管理员账号。",
+      "gaps": [
+        "FAQ 未解释设备离线时是否缓存或重发设置。",
+        "Meta、Apple、Samsung观察对象未取得本轮当前正文。",
+        "真实任务成功率、佩戴负担及续航缺跨企业实测；雷鸟数据地点、期限和删除传播仍未知。",
+        "雷鸟最低手机系统与权限细节仍有占位；文件导入内容保真未做实机测试。"
+      ],
+      "reviewedFields": [
+        "constraint"
+      ],
+      "changes": {
+        "constraint": {
+          "before": "佩戴舒适度、续航、隐私和持续使用 离线能力需按字幕、翻译等具体任务核验手机依赖、App 版本和预下载资源；不能仅凭“离线”断言数据不出端。 记录功能还应分别核对音频、转写、摘要与标签：雷鸟Life Log声明不存原始音频，但仍保留文字，不能据此推断没有个人数据留存。",
+          "after": "佩戴舒适度、续航、隐私和持续使用 离线能力需按字幕、翻译等具体任务核验手机依赖、App 版本和预下载资源；不能仅凭“离线”断言数据不出端。 记录功能还应分别核对音频、转写、摘要与标签：雷鸟Life Log声明不存原始音频，但仍保留文字，不能据此推断没有个人数据留存。 儿童手表的远程规则需观察表端状态。华为上课禁用排查先核对时段与节假日，再核网络并可更换管理员。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m22-track-0",
+            "title": "上课禁用已设置，怎样判断表端已生效",
+            "learning": "华为支持页建议设置后等 2 至 3 分钟检查，必要时分开排查应用版本、连通性与管理员账号。",
+            "application": "复核学习设备的远程管理时，固定规则和时间，分开记录控制端提交、表端联网、表端实际表现。",
+            "boundary": "仅为华为指南，离线缓存和补发机制仍需测试，不能直接套到小天才。",
+            "itemIds": [
+              "m22-watch"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m22-watch",
+          "title": "家长已经设置上课禁用，怎样核对儿童手表是否收到？",
+          "facts": [
+            {
+              "claim": "指南规定设置后观察窗口，另列网络与管理员排查。",
+              "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn00734120/",
+              "locator": "开启或关闭上课禁用功能不生效"
+            }
+          ],
+          "boundary": "该时长是排查建议，未披露离线指令缓存策略、服务时限或排障成功率。",
+          "sources": [
+            {
+              "url": "https://consumer.huawei.com/cn/support/content/zh-cn00734120/",
+              "publisherGroup": "华为",
+              "name": "华为",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "34a612ba6106caf6167f0bcacd7738ba5f14747374b73a98216e1ab685b42b38",
+              "readAt": "2026-11-22T00:50:11.374488+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m22-watch",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn00734120/",
+          "checkedAt": "2026-11-22T00:50:11.374488+00:00",
+          "state": "body",
+          "note": "读取上课禁用开启关闭不生效与非禁用时段无法退出两节。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-5",
+      "reviewedAt": "2026-11-22T00:51:32.465861+00:00",
+      "status": "partial",
+      "assessment": "华为 OSTA 注释给出手机顶部的角度范围与正常交流人声的距离条件；这些条件会改变录音比较的含义。",
+      "gaps": [
+        "原始签核授权、量产结果及其他字段仍需独立资料。"
+      ],
+      "reviewedFields": [
+        "metrics"
+      ],
+      "changes": {
+        "metrics": {
+          "before": "关键缺陷关闭率；良率；交期；返修原因；比较自动化功能时另记录用户准备步骤、设计修改后的重做次数、总加工时间与成品验收结果，不能只看算法速度。",
+          "after": "关键缺陷关闭率；良率；交期；返修原因；比较自动化功能时另记录用户准备步骤、设计修改后的重做次数、总加工时间与成品验收结果，不能只看算法速度。 指向收音验收须固定讲话者角度和距离，记录干扰源位置、遮挡及原始音轨，再单独评估转写。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m22-track-5",
+            "title": "标称拾音距离怎样变成可复查的实验",
+            "learning": "华为 OSTA 注释给出手机顶部的角度范围与正常交流人声的距离条件；这些条件会改变录音比较的含义。",
+            "application": "设计同一音源的正面、侧面、有遮挡对照；语音识别和摘要分别验收，保留测试时的环境信息。",
+            "boundary": "厂商手机规格未代表录音设备或学习设备在教室的实测结果。",
+            "itemIds": [
+              "m22-osta-news"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m22-osta-news",
+          "title": "华为星芒 O1 Pro 开放订购，指向收音有明确的角度与距离条件",
+          "facts": [
+            {
+              "claim": "报道确认在中国商城可订购。",
+              "sourceUrl": "https://www.androidcentral.com/phones/huawei/is-wide-the-next-phone-craze-the-new-huawei-osta-o1-pro-looks-like-a-fat-iphone-air",
+              "locator": "报道，Android Central’s take 之前"
+            },
+            {
+              "claim": "厂商限定指向角度、拾音距离及环境条件。",
+              "sourceUrl": "https://consumer.huawei.com/cn/osta/phones/o1-pro/",
+              "locator": "产品注释18"
+            }
+          ],
+          "boundary": "产品是手机；收音范围为厂商说明，未取得教室实测和转写错误率。Xnote 型号仍待核实。",
+          "sources": [
+            {
+              "url": "https://www.androidcentral.com/phones/huawei/is-wide-the-next-phone-craze-the-new-huawei-osta-o1-pro-looks-like-a-fat-iphone-air",
+              "publisherGroup": "Android Central",
+              "name": "Android Central",
+              "publishedAt": "2026-11-20T17:00:17Z",
+              "role": "media",
+              "textHash": "daa21999031b82be1e46bb34a032900fbb794e2b2e6e446258de5c63e56e9e47",
+              "readAt": "2026-11-22T00:44:43.666331+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://consumer.huawei.com/cn/osta/phones/o1-pro/",
+              "publisherGroup": "华为",
+              "name": "华为 OSTA O1 Pro 产品页",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "c848aeb9134821ef2851267a9628b2079db53b7a6170ecb9cced7714e7fc18ad",
+              "readAt": "2026-11-22T00:44:44.465042+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m22-osta-news",
+          "url": "https://consumer.huawei.com/cn/osta/phones/o1-pro/",
+          "checkedAt": "2026-11-22T00:44:44.465042+00:00",
+          "state": "body",
+          "note": "核对 OSTA 官网四麦克风部分和第18项注释。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-2",
+      "reviewedAt": "2026-11-22T00:51:32.465861+00:00",
+      "status": "partial",
+      "assessment": "Nest 指南把自动迁移的视频历史与必须事先导出的旧网页片段区分，并为旧账号给出另一个期限。",
+      "gaps": [
+        "已核三份文档中的授权入口或角色；仍缺特定设备权限、离线撤权及跨平台实测。",
+        "没有可比故障率、用户样本和售后改善数据。"
+      ],
+      "reviewedFields": [
+        "chain"
+      ],
+      "changes": {
+        "chain": {
+          "before": "连接协议 → 设备与网关 → 场景联动 → 安装与售后",
+          "after": "连接协议 → 设备与网关 → 场景联动 → 安装与售后 服务切换时，将设备控制、自动迁移的历史和需手动导出的文件分列。不同条目可能对应不同期限和操作人。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m22-track-2",
+            "title": "一套硬件换应用，为什么要列出两张数据清单",
+            "learning": "Nest 指南把自动迁移的视频历史与必须事先导出的旧网页片段区分，并为旧账号给出另一个期限。",
+            "application": "为支持的摄像头分别测试远程控制、事件历史和手动片段；客服向家庭提前说明需其操作的步骤。",
+            "boundary": "仅核官方迁移指南相关段落，未验证用户实际恢复情况或迁移成功率。",
+            "itemIds": [
+              "m22-helpweb"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m22-helpweb",
+          "title": "换控制应用时，设备、视频历史和手动保存的片段怎样分别交接？",
+          "facts": [
+            {
+              "claim": "旧网页中保存的视频片段有单独的下载要求。",
+              "sourceUrl": "https://support.google.com/googlehome/answer/18959693?hl=en",
+              "locator": "平台支持页，Important dates 与 Download any saved video clips"
+            }
+          ],
+          "boundary": "厂商说明的是迁移计划；尚无完成率、遗失率或内部负责人。学习机部分为迁移验收推演。",
+          "sources": [
+            {
+              "url": "https://support.google.com/googlehome/answer/18959693?hl=en",
+              "publisherGroup": "Google Nest 支持",
+              "name": "Google Nest 支持",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "87e958bcfb7f9bf0ab5ce7d67a6e1cff54e0dca4dfd2727e6281479a49e62837",
+              "readAt": "2026-11-22T00:44:42Z",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m22-helpweb",
+          "url": "https://support.google.com/googlehome/answer/18959693?hl=en",
+          "checkedAt": "2026-11-22T00:44:42Z",
+          "state": "body",
+          "note": "阅读官方指南 Important dates、旧网页片段下载和账号迁移相关段落。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-1",
+      "reviewedAt": "2026-11-22T00:51:32.465861+00:00",
+      "status": "partial",
+      "assessment": "Amazon 的订阅目录预先筛选，另一条 Google Play 路径逐次要求家长批准。两条路径对应不同的验证步骤。",
+      "gaps": [
+        "已核实此研究原型的一次需求取舍；学习硬件企业的原始立项签核与量产后任务完成数据仍待查。"
+      ],
+      "reviewedFields": [
+        "exercise"
+      ],
+      "changes": {
+        "exercise": {
+          "before": "选一种学习设备，分别写出孩子要完成的学习任务、家长要完成的管理任务，以及操作入口和成功条件。Kindle说明区分儿童档案与设备本地限制，前者和后者的远程管理能力不同；实际需求仍需访谈与任务观察，不能由功能存在直接推断。 让参与者按相同条件尝试一次任务，记录人数、需要协助的环节和最终结果。 再标记改版后哪些环节仍未经独立完成测试。",
+          "after": "选一种学习设备，分别写出孩子要完成的学习任务、家长要完成的管理任务，以及操作入口和成功条件。Kindle说明区分儿童档案与设备本地限制，前者和后者的远程管理能力不同；实际需求仍需访谈与任务观察，不能由功能存在直接推断。 让参与者按相同条件尝试一次任务，记录人数、需要协助的环节和最终结果。 再标记改版后哪些环节仍未经独立完成测试。 为儿童设备写下载验收用例时，给出应用来源、儿童档案、批准人及拒绝后的可见状态。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m22-chain-1",
+            "title": "目录筛选与家庭逐次批准，怎样写成两组验收用例",
+            "learning": "Amazon 的订阅目录预先筛选，另一条 Google Play 路径逐次要求家长批准。两条路径对应不同的验证步骤。",
+            "application": "分别试订阅内内容、商店外部应用和家庭拒绝；记录每种情况下孩子与家长看到什么以及授权持续多久。",
+            "boundary": "仅限所述产品配置，跨档案效果、内容编辑权限与审核时效未知。",
+            "itemIds": [
+              "m22-amazon-tablet"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m22-amazon-tablet",
+          "title": "儿童平板开放应用商店后，每个下载由谁批准？",
+          "facts": [
+            {
+              "claim": "公司说明 Google Play 下载须逐次经家长批准。",
+              "sourceUrl": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
+              "locator": "More in store with Kids+ and Google Play"
+            }
+          ],
+          "boundary": "只适用于该文所述 Android 儿童平板配置。不能推出国内教材审核机制、实际审核耗时或学习效果。",
+          "sources": [
+            {
+              "url": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
+              "publisherGroup": "Amazon 设备团队",
+              "name": "Amazon 设备团队",
+              "publishedAt": "2026-10-08T12:55:18.811Z",
+              "role": "official",
+              "textHash": "7244341529cc537468388b340f3b21c0a51fa91d9aaaa808d69d8d36d2a02efb",
+              "readAt": "2026-11-22T00:43:22.108921+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m22-amazon-tablet",
+          "url": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
+          "checkedAt": "2026-11-22T00:43:22.108921+00:00",
+          "state": "body",
+          "note": "读取介绍中的 More in store with Kids+ and Google Play 小节。"
         }
       ]
     }

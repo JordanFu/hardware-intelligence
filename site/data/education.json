@@ -110,7 +110,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-21T00:46:30.147094+00:00",
+      "reviewedAt": "2026-11-22T00:50:54.415164+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "作业帮"
@@ -167,7 +167,7 @@
         }
       ],
       "updatedAt": "2026-11-17T00:46:36.233260+00:00",
-      "reviewedAt": "2026-11-21T00:46:30.147094+00:00",
+      "reviewedAt": "2026-11-22T00:50:54.415164+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "科大讯飞",
@@ -225,7 +225,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-21T00:46:30.147094+00:00",
+      "reviewedAt": "2026-11-22T00:50:54.415164+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "猿辅导",
@@ -364,7 +364,9 @@
         "lead": "Amazon 的儿童平板把设备、内容订阅和家长控制组合销售。可借鉴的观察角度是权益与生命周期服务如何跟随硬件，而非把海外内容直接映射到国内教材。",
         "points": [
           "页面介绍随设备提供一年 Kids+ 以及预装 Parent Dashboard。",
-          "家长可控制屏幕时间与内容访问；新页面描述的是 Android 平板组合。"
+          "家长可控制屏幕时间与内容访问；新页面描述的是 Android 平板组合。",
+          "Kids+ 目录之外，家长可开放 Google Play，每次下载须经家长批准。",
+          "Kids+ 目录之外，家长可开放 Google Play，每次下载须经家长批准。"
         ]
       },
       "dimensions": {
@@ -384,11 +386,11 @@
           "id": "edu-amazon",
           "title": "Amazon · Kids Tablets介绍",
           "url": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
-          "publishedAt": null,
           "role": "official",
-          "readAt": "2026-11-09T01:53:08.282199+00:00",
+          "publishedAt": "2026-10-08T12:55:18.811Z",
+          "readAt": "2026-11-22T00:43:22.108921+00:00",
           "coverage": "body",
-          "textHash": "50c937b1d45b7532e4329f253470834f9c588240c9a2ac9f42e74aa40f8f54f0"
+          "textHash": "7244341529cc537468388b340f3b21c0a51fa91d9aaaa808d69d8d36d2a02efb"
         }
       ],
       "facts": [
@@ -401,10 +403,15 @@
           "sourceId": "edu-amazon",
           "claim": "Parent Dashboard支持家长管理。",
           "locator": "How the Parent Dashboard keeps parents connected"
+        },
+        {
+          "sourceId": "edu-amazon",
+          "claim": "家长通过控制面板管理 Google Play 访问，下载须逐次批准。",
+          "locator": "More in store with Kids+ and Google Play"
         }
       ],
-      "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-16T00:45:30.209427+00:00",
+      "updatedAt": "2026-11-22T00:50:54.415164+00:00",
+      "reviewedAt": "2026-11-22T00:50:54.415164+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "Amazon"
@@ -518,7 +525,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-16T00:45:30.209427+00:00",
+      "reviewedAt": "2026-11-22T00:50:54.415164+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "LeapFrog"
@@ -638,8 +645,8 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-16T00:45:30.209427+00:00",
-      "lastReviewStatus": "error",
+      "reviewedAt": "2026-11-22T00:50:54.415164+00:00",
+      "lastReviewStatus": "reviewed",
       "aliases": [
         "钉钉",
         "DingTalk"
@@ -760,7 +767,58 @@
         }
       ],
       "updatedAt": "2026-11-20T00:43:29.502492+00:00",
-      "reviewedAt": "2026-11-21T00:46:30.147094+00:00",
+      "reviewedAt": "2026-11-22T00:50:54.415164+00:00",
+      "lastReviewStatus": "reviewed"
+    },
+    {
+      "id": "huawei-watch-classmode",
+      "company": "华为",
+      "tier": "相邻场景",
+      "categoryIds": [
+        "watch"
+      ],
+      "aliases": [
+        "华为儿童手表上课禁用"
+      ],
+      "brief": {
+        "lead": "华为建议设置完成后等 2 至 3 分钟观察表端，再查智能关怀 App 能否定位、手表信号与网络。有多个管理员时，可以换一位操作以定位问题。",
+        "points": [
+          "先核对 App 版本、规则时段和是否跳过法定节假日，再看网络状态。",
+          "非禁用时间仍退不出时，指南要求检查 SIM 卡、移动数据等条件。客户记录可分开写设置提交、设备连通和表端结果。"
+        ]
+      },
+      "dimensions": {
+        "product": "智能关怀 App 设置上课禁用，排查涉及表端信号与 SIM 状态。",
+        "content": "指南说明自定义时段与跳过法定节假日的设置。",
+        "channel": "官网支持页提供操作与排障说明。",
+        "delivery": "建议等待 2 至 3 分钟检查表端，并排查网络，必要时换管理员尝试。",
+        "organization": "研究问题：当家长设置与表端状态不同步时，应用、设备与客服分别需要哪项回执？"
+      },
+      "boundary": "该时长是排查建议，未披露离线指令缓存策略、服务时限或排障成功率。",
+      "gaps": [
+        "缺离线重发或缓存策略及型号间的可比实测。"
+      ],
+      "sources": [
+        {
+          "id": "hua-watch-guide",
+          "role": "official",
+          "title": "华为儿童手表上课禁用异常排查",
+          "publishedAt": null,
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn00734120/",
+          "readAt": "2026-11-22T00:50:11.374488+00:00",
+          "coverage": "body",
+          "textHash": "34a612ba6106caf6167f0bcacd7738ba5f14747374b73a98216e1ab685b42b38"
+        }
+      ],
+      "facts": [
+        {
+          "sourceId": "hua-watch-guide",
+          "claim": "指南规定设置后观察窗口，另列网络与管理员排查。",
+          "locator": "开启或关闭上课禁用功能不生效"
+        }
+      ],
+      "updatedAt": "2026-11-22T00:50:54.415164+00:00",
+      "reviewedAt": "2026-11-22T00:50:54.415164+00:00",
       "lastReviewStatus": "reviewed"
     }
   ],
@@ -1796,6 +1854,132 @@
             "reader"
           ],
           "note": "直连403后读到官方文档的账号、服务器、目录和 V4.1 源文件上传说明；本轮只核对这些小节。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-22T00:50:54.415164+00:00",
+      "summary": "复核三家国内核心竞品及掌阅、钉钉、Amazon、LeapFrog，补录儿童平板的下载审批。岗位样本沿原 ID 核对，作业帮供应链仍缺可读匹配正文。 新增华为儿童手表上课模式排障档案。",
+      "checks": [
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "name": "2026届春招-供应链运营管培生",
+          "state": "body",
+          "checkedAt": "2026-11-22T00:43:29.216729+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "正文明确学习机售后及小猿设备业务；管培生职责可能含轮岗，不能视为固定组织架构。本次核对同一岗位的职责、要求和接口，未见实质修改。"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "name": "2026届春招-硬件研发工程师",
+          "state": "body",
+          "checkedAt": "2026-11-22T00:43:29.028899+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "原文明确小猿产品及学习机、学练机业务，未划分具体型号。本次核对同一岗位的职责、要求和接口，未见实质修改。"
+        },
+        {
+          "company": "作业帮",
+          "url": "https://smart.zuoyebang.com/about",
+          "name": "作业帮智能 · 品牌介绍",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-22T00:43:20.874140+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "复核品牌披露的学习内容、数据与硬件能力。品牌自述未列各型号的验证结果。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "name": "科大讯飞 · AI学习机",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-22T00:43:21.270212+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "核对分学段资料与精准学、答疑和互动课；仍缺独立效果验证。"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://apps.apple.com/cn/app/id6738277050",
+          "name": "小猿智能设备 · App Store开发者说明",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-22T00:43:22.146150+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "仅采用开发者关于家长端内容、设备与使用时长设置的说明。"
+        },
+        {
+          "company": "Amazon",
+          "url": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
+          "name": "Amazon · Kids Tablets介绍",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-22T00:43:22.108921+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "补上订阅外 Google Play 的逐次下载授权机制，以及家庭验收时要检查的分档案权限。"
+        },
+        {
+          "company": "LeapFrog",
+          "url": "https://www.leapfrog.com/en-us/products/tablet-family?bmLocale=en_US",
+          "name": "LeapFrog · Tablet family",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-22T00:43:22.252491+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "复读预装应用、家长管控和额外内容商店说明；预装和选购范围应分别核对。"
+        },
+        {
+          "company": "掌阅",
+          "url": "https://m.ithome.com/html/811360.htm",
+          "name": "IT之家整理掌阅 SmartOS 2.4 更新说明",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-22T00:43:20.903948+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "note": "复核 SmartOS 2.4 当年报道中云空间以账号同步、私密书不上传的边界。"
+        },
+        {
+          "company": "钉钉",
+          "url": "https://aihub.dingtalk.com/",
+          "name": "钉钉 · AI应用服务市场",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-22T00:47:05.938572+00:00",
+          "categoryIds": [
+            "recorder"
+          ],
+          "note": "市场页渲染后核对硬件入口、会议自动驾驶技能与行动项。官方描述尚未验证实际录音到待办的完成率。"
+        },
+        {
+          "company": "华为",
+          "name": "华为儿童手表上课禁用异常排查",
+          "purpose": "practice",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn00734120/",
+          "state": "body",
+          "checkedAt": "2026-11-22T00:50:11.374488+00:00",
+          "categoryIds": [
+            "watch"
+          ],
+          "note": "指南规定设置后观察窗口，另列网络与管理员排查。"
         }
       ]
     }
@@ -3236,6 +3420,206 @@
       "status": "reviewed",
       "assessment": "直连403后读到官方文档的账号、服务器、目录和 V4.1 源文件上传说明；本轮只核对这些小节。",
       "changes": {}
+    },
+    {
+      "profileId": "zuoyebang-tablet",
+      "reviewedAt": "2026-11-22T00:50:54.415164+00:00",
+      "status": "reviewed",
+      "assessment": "复核品牌披露的学习内容、数据与硬件能力。品牌自述未列各型号的验证结果。",
+      "changes": {}
+    },
+    {
+      "profileId": "iflytek-tablet",
+      "reviewedAt": "2026-11-22T00:50:54.415164+00:00",
+      "status": "reviewed",
+      "assessment": "核对分学段资料与精准学、答疑和互动课；仍缺独立效果验证。",
+      "changes": {}
+    },
+    {
+      "profileId": "yuan-tablet",
+      "reviewedAt": "2026-11-22T00:50:54.415164+00:00",
+      "status": "reviewed",
+      "assessment": "仅采用开发者关于家长端内容、设备与使用时长设置的说明。",
+      "changes": {}
+    },
+    {
+      "profileId": "amazon-tablet",
+      "reviewedAt": "2026-11-22T00:50:54.415164+00:00",
+      "status": "reviewed",
+      "assessment": "补上订阅外 Google Play 的逐次下载授权机制，以及家庭验收时要检查的分档案权限。",
+      "changes": {
+        "brief": {
+          "before": {
+            "lead": "Amazon 的儿童平板把设备、内容订阅和家长控制组合销售。可借鉴的观察角度是权益与生命周期服务如何跟随硬件，而非把海外内容直接映射到国内教材。",
+            "points": [
+              "页面介绍随设备提供一年 Kids+ 以及预装 Parent Dashboard。",
+              "家长可控制屏幕时间与内容访问；新页面描述的是 Android 平板组合。"
+            ]
+          },
+          "after": {
+            "lead": "Amazon 的儿童平板把设备、内容订阅和家长控制组合销售。可借鉴的观察角度是权益与生命周期服务如何跟随硬件，而非把海外内容直接映射到国内教材。",
+            "points": [
+              "页面介绍随设备提供一年 Kids+ 以及预装 Parent Dashboard。",
+              "家长可控制屏幕时间与内容访问；新页面描述的是 Android 平板组合。",
+              "Kids+ 目录之外，家长可开放 Google Play，每次下载须经家长批准。",
+              "Kids+ 目录之外，家长可开放 Google Play，每次下载须经家长批准。"
+            ]
+          }
+        },
+        "sources": {
+          "before": [
+            {
+              "id": "edu-amazon",
+              "title": "Amazon · Kids Tablets介绍",
+              "url": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
+              "publishedAt": null,
+              "role": "official",
+              "readAt": "2026-11-09T01:53:08.282199+00:00",
+              "coverage": "body",
+              "textHash": "50c937b1d45b7532e4329f253470834f9c588240c9a2ac9f42e74aa40f8f54f0"
+            }
+          ],
+          "after": [
+            {
+              "id": "edu-amazon",
+              "title": "Amazon · Kids Tablets介绍",
+              "url": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
+              "role": "official",
+              "publishedAt": "2026-10-08T12:55:18.811Z",
+              "readAt": "2026-11-22T00:43:22.108921+00:00",
+              "coverage": "body",
+              "textHash": "7244341529cc537468388b340f3b21c0a51fa91d9aaaa808d69d8d36d2a02efb"
+            }
+          ]
+        },
+        "facts": {
+          "before": [
+            {
+              "sourceId": "edu-amazon",
+              "claim": "设备组合包含一年 Kids+ 订阅。",
+              "locator": "Ready-to-go bundles"
+            },
+            {
+              "sourceId": "edu-amazon",
+              "claim": "Parent Dashboard支持家长管理。",
+              "locator": "How the Parent Dashboard keeps parents connected"
+            }
+          ],
+          "after": [
+            {
+              "sourceId": "edu-amazon",
+              "claim": "设备组合包含一年 Kids+ 订阅。",
+              "locator": "Ready-to-go bundles"
+            },
+            {
+              "sourceId": "edu-amazon",
+              "claim": "Parent Dashboard支持家长管理。",
+              "locator": "How the Parent Dashboard keeps parents connected"
+            },
+            {
+              "sourceId": "edu-amazon",
+              "claim": "家长通过控制面板管理 Google Play 访问，下载须逐次批准。",
+              "locator": "More in store with Kids+ and Google Play"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "profileId": "leapfrog-tablet",
+      "reviewedAt": "2026-11-22T00:50:54.415164+00:00",
+      "status": "reviewed",
+      "assessment": "复读预装应用、家长管控和额外内容商店说明；预装和选购范围应分别核对。",
+      "changes": {}
+    },
+    {
+      "profileId": "ireader-smartos",
+      "reviewedAt": "2026-11-22T00:50:54.415164+00:00",
+      "status": "reviewed",
+      "assessment": "复核 SmartOS 2.4 当年报道中云空间以账号同步、私密书不上传的边界。",
+      "changes": {}
+    },
+    {
+      "profileId": "dingtalk-recorder",
+      "reviewedAt": "2026-11-22T00:50:54.415164+00:00",
+      "status": "reviewed",
+      "assessment": "市场页渲染后核对硬件入口、会议自动驾驶技能与行动项。官方描述尚未验证实际录音到待办的完成率。",
+      "changes": {}
+    },
+    {
+      "profileId": "huawei-watch-classmode",
+      "reviewedAt": "2026-11-22T00:50:54.415164+00:00",
+      "status": "reviewed",
+      "assessment": "依据华为支持页整理上课模式异常排查与责任接口，记录仍缺的离线行为。",
+      "changes": {
+        "brief": {
+          "before": {
+            "lead": "等待本轮已核对正文建立公开资料档案，未核验的信息不填充。",
+            "points": [
+              "等待可核对的原始资料。",
+              "未知项保留，不猜测参数和结果。"
+            ]
+          },
+          "after": {
+            "lead": "华为建议设置完成后等 2 至 3 分钟观察表端，再查智能关怀 App 能否定位、手表信号与网络。有多个管理员时，可以换一位操作以定位问题。",
+            "points": [
+              "先核对 App 版本、规则时段和是否跳过法定节假日，再看网络状态。",
+              "非禁用时间仍退不出时，指南要求检查 SIM 卡、移动数据等条件。客户记录可分开写设置提交、设备连通和表端结果。"
+            ]
+          }
+        },
+        "dimensions": {
+          "before": {
+            "product": "待核验",
+            "delivery": "待核验",
+            "channel": "待核验",
+            "content": "待核验",
+            "organization": "待核验"
+          },
+          "after": {
+            "product": "智能关怀 App 设置上课禁用，排查涉及表端信号与 SIM 状态。",
+            "content": "指南说明自定义时段与跳过法定节假日的设置。",
+            "channel": "官网支持页提供操作与排障说明。",
+            "delivery": "建议等待 2 至 3 分钟检查表端，并排查网络，必要时换管理员尝试。",
+            "organization": "研究问题：当家长设置与表端状态不同步时，应用、设备与客服分别需要哪项回执？"
+          }
+        },
+        "boundary": {
+          "before": "待核验",
+          "after": "该时长是排查建议，未披露离线指令缓存策略、服务时限或排障成功率。"
+        },
+        "gaps": {
+          "before": [],
+          "after": [
+            "缺离线重发或缓存策略及型号间的可比实测。"
+          ]
+        },
+        "sources": {
+          "before": [],
+          "after": [
+            {
+              "id": "hua-watch-guide",
+              "role": "official",
+              "title": "华为儿童手表上课禁用异常排查",
+              "publishedAt": null,
+              "url": "https://consumer.huawei.com/cn/support/content/zh-cn00734120/",
+              "readAt": "2026-11-22T00:50:11.374488+00:00",
+              "coverage": "body",
+              "textHash": "34a612ba6106caf6167f0bcacd7738ba5f14747374b73a98216e1ab685b42b38"
+            }
+          ]
+        },
+        "facts": {
+          "before": [],
+          "after": [
+            {
+              "sourceId": "hua-watch-guide",
+              "claim": "指南规定设置后观察窗口，另列网络与管理员排查。",
+              "locator": "开启或关闭上课禁用功能不生效"
+            }
+          ]
+        }
+      }
     }
   ],
   "reference": {
