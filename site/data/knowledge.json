@@ -3,37 +3,68 @@
   "startedAt": "2026-11-06T07:45:08.434151+00:00",
   "nodes": {
     "chain-3": {
-      "attemptedAt": "2026-11-22T00:51:32.465861+00:00",
+      "attemptedAt": "2026-11-23T10:46:17.398881+00:00",
       "status": "partial",
-      "assessment": "Oracle 的示例说明最小订购量可以推高建议单数量；固定批量倍数与上限是另外的参数。",
+      "assessment": "对照 TI 当前申样 FAQ 与 2019 年具体 PCN，确认不同时间窗的起算事件。",
       "gaps": [
         "补核 Oracle 26C 的 MOQ 计算；各企业实际参数、运输起止、库存边界仍待订单和台账核验。",
         "公开资料没有供应商审核标准、实际通过率、采购质量接口和履约结果。"
       ],
       "reviewedFields": [
-        "basics"
+        "flow",
+        "team"
       ],
       "evidence": [
         {
-          "itemId": "m22-moq",
-          "title": "净缺 100 件，为什么计划员看到一张 150 件的建议单？",
+          "itemId": "e23-ti",
+          "title": "收到元器件变更通知后，留给采购申请样品的时间有多久？",
           "facts": [
             {
-              "claim": "官方给出净需求 100 与最小订购量 150 的计算例。",
-              "sourceUrl": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26c/faupc/item-attributes-and-order-modifiers-for-supply-planning.html",
-              "locator": "Order Modifiers，Minimum Order Quantity 小节"
+              "claim": "公司把收到通知列为可开始影响分析的节点。",
+              "sourceUrl": "https://www.ti.com/en-us/support/faqs/product-change-notifications/change-notification",
+              "locator": "TI 变更通知流程 FAQ"
+            },
+            {
+              "claim": "TI 允许在变更通知后六十天内申请样品。",
+              "sourceUrl": "https://www.ti.com/en-us/support/faqs/product-change-notifications/request-deadline",
+              "locator": "样品申请期限 FAQ"
+            },
+            {
+              "claim": "2019 年这份通知规定了 180 天样品评估期，并另外列出首次出货日期。",
+              "sourceUrl": "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/PCN20191104001.pdf",
+              "locator": "通知第1页收样起算说明及第3页日期表"
             }
           ],
-          "boundary": "仅核实该版本软件的计划规则。企业如何配置、供应商接受何种批量及最终采购量仍要看合同与实际订单。",
+          "boundary": "当前 FAQ 给出 60 天申样期。历史 PCN 另有 30 天申样、180 天评估的约定，两者适用时期不同；实际订单以对应通知和合同为依据。客户最终验证与量产批准结果未披露。",
           "sources": [
             {
-              "url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26c/faupc/item-attributes-and-order-modifiers-for-supply-planning.html",
-              "publisherGroup": "Oracle",
-              "name": "Oracle",
+              "url": "https://www.ti.com/en-us/support/faqs/product-change-notifications/change-notification",
+              "publisherGroup": "德州仪器",
+              "name": "德州仪器",
               "publishedAt": null,
               "role": "official",
-              "textHash": "db2893ccf268a95d54a91a8c4a324695813562f12ceb6725405bdeb223d946cb",
-              "readAt": "2026-11-22T00:49:07.347292+00:00",
+              "textHash": "df8186fd098e8dde09feb1f7ba2150664a9bc3bebc98fc96b048128173a5a2fc",
+              "readAt": "2026-11-23T10:40:28.331909+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://www.ti.com/en-us/support/faqs/product-change-notifications/request-deadline",
+              "publisherGroup": "德州仪器",
+              "name": "TI 样品申请期限 FAQ",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "d92be7bf5bc3020f864ada8f0c366a0ce1e5fa6431819af4fb34132b514bb460",
+              "readAt": "2026-11-23T10:40:27.841861+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/PCN20191104001.pdf",
+              "publisherGroup": "德州仪器",
+              "name": "TI 工艺变更通知 PCN 20191104001.1",
+              "publishedAt": "2019-12-05",
+              "role": "official",
+              "textHash": "8fc386359c82cbf54cd122ac65a7e1bd1c145fb7038aa69beb0431c3013b2fb9",
+              "readAt": "2026-11-23T10:44:53.578067+00:00",
               "coverage": "body"
             }
           ]
@@ -41,19 +72,34 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "m22-moq",
-          "url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26c/faupc/item-attributes-and-order-modifiers-for-supply-planning.html",
-          "checkedAt": "2026-11-22T00:49:07.347292+00:00",
+          "itemId": "e23-ti",
+          "url": "https://www.ti.com/en-us/support/faqs/product-change-notifications/change-notification",
+          "checkedAt": "2026-11-23T10:40:28.331909+00:00",
           "state": "body",
-          "note": "读取 Order Modifiers 表的计算顺序与最小订购量示例。"
+          "note": "本轮读取正文。账户通知与样品可用状态。"
+        },
+        {
+          "itemId": "e23-ti",
+          "url": "https://www.ti.com/en-us/support/faqs/product-change-notifications/request-deadline",
+          "checkedAt": "2026-11-23T10:40:27.841861+00:00",
+          "state": "body",
+          "note": "本轮读取正文。当前 FAQ 的 60 天申样期限。"
+        },
+        {
+          "itemId": "e23-ti",
+          "url": "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/PCN20191104001.pdf",
+          "checkedAt": "2026-11-23T10:44:53.578067+00:00",
+          "state": "body",
+          "note": "本轮读取正文。2019 年通知第1页确认与申样、第3页日期与评估期。"
         }
       ],
-      "reviewedAt": "2026-11-22T00:51:32.465861+00:00",
+      "reviewedAt": "2026-11-23T10:46:17.398881+00:00",
       "patch": {
         "basics": "MOQ 是最小订购量；交期包含采购、生产和运输，不能只看供应商承诺。 供应商登记仅是提交资料的入口，不能自动等同于资格审核通过或获得采购订单。 Oracle 26C 计划模块中，净需求 100 件且最小订购量设为 150 件，会产生 150 件的建议单；建议量与实际签约量要用单据另行核对。",
         "exercise": "选一颗关键器件，写出交期风险、替代验证要求和缺料升级路径。 再区分供应商资料登记、资格核验、质量验收和订单获取；无公开依据的门槛标为待核验。",
-        "team": "研发与采购共同明确替代料边界；供应商质量、计划、财务一起管理风险。小猿管培岗位另提供具体交接样本：销售计划提出配件需求，采购跟进合同和付款，工厂关注物料齐套，售后反馈问题；不能据此推断一人承担全部工作或拥有全部放行权。",
-        "metrics": "库存周转天数 = 期间平均库存成本 / 期间销售成本 × 期间天数；口径与周期一致。 库存周转须明确成本口径。Oracle Retail 的该指标用本期已售商品成本除以期初、期末库存成本的均值。另将存储现货报价与按季合约报价分列，不能直接跨口径比较。"
+        "team": "研发与采购共同明确替代料边界；供应商质量、计划、财务一起管理风险。小猿管培岗位另提供具体交接样本：销售计划提出配件需求，采购跟进合同和付款，工厂关注物料齐套，售后反馈问题；不能据此推断一人承担全部工作或拥有全部放行权。 采购核对具体通知与可订旧料，研发和质量核对样品及验证结论。放行责任需要项目授权文件。",
+        "metrics": "库存周转天数 = 期间平均库存成本 / 期间销售成本 × 期间天数；口径与周期一致。 库存周转须明确成本口径。Oracle Retail 的该指标用本期已售商品成本除以期初、期末库存成本的均值。另将存储现货报价与按季合约报价分列，不能直接跨口径比较。",
+        "flow": "预测与物料规格 → 合格供应、交期与库存方案 上游产品变更时，先核受影响料号、通知和实际到样日期，再分列申样期限、评估期限、拟首次出货、旧料末次订购。"
       },
       "lessons": [
         {
@@ -111,9 +157,20 @@
             "m22-moq"
           ],
           "updatedAt": "2026-11-22T00:51:32.465861+00:00"
+        },
+        {
+          "id": "e23-pcn",
+          "title": "拿到元件变更通知时该启动哪几个时钟",
+          "learning": "TI 当前 FAQ 给出 60 天申样；2019 年一份具体通知要求 30 天内申样，且将收到样品列为 180 天评估期的起点。",
+          "application": "把适用通知随料号归档，把收件、申样、到样、验证、放行和库存切换各自落实到日期及跟进人。",
+          "boundary": "历史通知不代表所有现行订单；未取得客户内部验证结论与量产批准。",
+          "itemIds": [
+            "e23-ti"
+          ],
+          "updatedAt": "2026-11-23T10:46:17.398881+00:00"
         }
       ],
-      "updatedAt": "2026-11-22T00:51:32.465861+00:00"
+      "updatedAt": "2026-11-23T10:46:17.398881+00:00"
     },
     "chain-7": {
       "attemptedAt": "2026-11-23T00:52:06.880964+00:00",
@@ -413,56 +470,63 @@
       "updatedAt": "2026-11-22T10:42:39.386204+00:00"
     },
     "chain-1": {
-      "attemptedAt": "2026-11-22T00:51:32.465861+00:00",
+      "attemptedAt": "2026-11-23T10:46:17.398881+00:00",
       "status": "partial",
-      "assessment": "Amazon 的订阅目录预先筛选，另一条 Google Play 路径逐次要求家长批准。两条路径对应不同的验证步骤。",
+      "assessment": "核对一项实际开展的学习笔对照研究，包括学生、启用功能、条件顺序、测验结果和推广边界。",
       "gaps": [
-        "已核实此研究原型的一次需求取舍；学习硬件企业的原始立项签核与量产后任务完成数据仍待查。"
+        "已核对阅读笔对照测验方法；国内学习硬件的原始立项签核及量产后同条件任务数据仍缺。"
       ],
       "reviewedFields": [
-        "exercise"
+        "exercise",
+        "metrics"
       ],
       "evidence": [
         {
-          "itemId": "m22-amazon-tablet",
-          "title": "儿童平板开放应用商店后，每个下载由谁批准？",
+          "itemId": "e23-reading",
+          "title": "一支笔能念出单词，怎样验证它真的帮孩子读懂了文章？",
           "facts": [
             {
-              "claim": "公司说明 Google Play 下载须逐次经家长批准。",
-              "sourceUrl": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
-              "locator": "More in store with Kids+ and Google Play"
+              "claim": "报告说明参与人数、年级及同一学生体验两种条件。",
+              "sourceUrl": "https://nceo.umn.edu/publications/OnlinePUbs/PARA/ReadingPen/index.htm",
+              "locator": "Discussion 首段；Methods 中的测验顺序"
+            },
+            {
+              "claim": "研究中的朗读条件没有启用词义功能。",
+              "sourceUrl": "https://nceo.umn.edu/publications/OnlinePUbs/PARA/ReadingPen/index.htm",
+              "locator": "Introduction 末段"
             }
           ],
-          "boundary": "只适用于该文所述 Android 儿童平板配置。不能推出国内教材审核机制、实际审核耗时或学习效果。",
+          "boundary": "美国特定学校样本和阅读测验，报告发表于 2010 年 2 月。不能由此推出今天国内词典笔的学习效果，也未能识别哪些学生会稳定获益。",
           "sources": [
             {
-              "url": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
-              "publisherGroup": "Amazon 设备团队",
-              "name": "Amazon 设备团队",
-              "publishedAt": "2026-10-08T12:55:18.811Z",
+              "url": "https://nceo.umn.edu/publications/OnlinePUbs/PARA/ReadingPen/index.htm",
+              "publisherGroup": "明尼苏达大学阅读测评研究团队",
+              "name": "明尼苏达大学阅读测评研究团队",
+              "publishedAt": null,
               "role": "official",
-              "textHash": "7244341529cc537468388b340f3b21c0a51fa91d9aaaa808d69d8d36d2a02efb",
-              "readAt": "2026-11-22T00:43:22.108921+00:00",
-              "coverage": "body"
+              "textHash": "5bf59800bd2a12527e4f1dd9fbb59c2780c3b53b08b1737e31bc431269079296",
+              "readAt": "2026-11-23T10:40:29.773545+00:00",
+              "coverage": "excerpt"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "m22-amazon-tablet",
-          "url": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
-          "checkedAt": "2026-11-22T00:43:22.108921+00:00",
+          "itemId": "e23-reading",
+          "url": "https://nceo.umn.edu/publications/OnlinePUbs/PARA/ReadingPen/index.htm",
+          "checkedAt": "2026-11-23T10:40:29.773545+00:00",
           "state": "body",
-          "note": "读取介绍中的 More in store with Kids+ and Google Play 小节。"
+          "note": "本轮读取原文相关段落。阅读研究方法、随机条件先后、结果与讨论段。"
         }
       ],
-      "reviewedAt": "2026-11-22T00:51:32.465861+00:00",
+      "reviewedAt": "2026-11-23T10:46:17.398881+00:00",
       "patch": {
         "team": "用户研究、产品、销售、服务一起区分使用者、购买者与渠道反馈。 平台型硬件还需区分内容创作者、最终使用者与实体履约伙伴；活动意见是需求线索，不能替代使用验证。",
-        "exercise": "选一种学习设备，分别写出孩子要完成的学习任务、家长要完成的管理任务，以及操作入口和成功条件。Kindle说明区分儿童档案与设备本地限制，前者和后者的远程管理能力不同；实际需求仍需访谈与任务观察，不能由功能存在直接推断。 让参与者按相同条件尝试一次任务，记录人数、需要协助的环节和最终结果。 再标记改版后哪些环节仍未经独立完成测试。 为儿童设备写下载验收用例时，给出应用来源、儿童档案、批准人及拒绝后的可见状态。",
+        "exercise": "选一种学习设备，分别写出孩子要完成的学习任务、家长要完成的管理任务，以及操作入口和成功条件。Kindle说明区分儿童档案与设备本地限制，前者和后者的远程管理能力不同；实际需求仍需访谈与任务观察，不能由功能存在直接推断。 让参与者按相同条件尝试一次任务，记录人数、需要协助的环节和最终结果。 再标记改版后哪些环节仍未经独立完成测试。 为儿童设备写下载验收用例时，给出应用来源、儿童档案、批准人及拒绝后的可见状态。 先写要检验的学习任务，再固定功能开关。为同一组学生安排可比较材料，交替不同条件的先后，检查情境是否足以解释观察到的变化。",
         "basics": "JTBD 关注人在具体处境下希望取得的进步，包含功能、社会和情感三个维度。访谈明确所求进步后，将其转成用户可完成、测试者可观察的任务；在参与者中分别报告完整成功和各类部分成功。",
-        "flow": "用户任务、情境和替代方案 → 需求优先级与验收条件 早期试玩可以触发改版。将触发改版的观察和新版验收结果分别记录，正式评估未完成时保留待测任务。"
+        "flow": "用户任务、情境和替代方案 → 需求优先级与验收条件 早期试玩可以触发改版。将触发改版的观察和新版验收结果分别记录，正式评估未完成时保留待测任务。",
+        "metrics": "目标任务完成率 = 在约定情境下完成任务的人次 / 尝试人次；明确人群、任务、时间。 评估辅助阅读时，分开报告扫词操作是否成功、用户主观反馈和教材理解测验结果；比较条件需说明是否启用朗读、释义等额外帮助。"
       },
       "lessons": [
         {
@@ -543,9 +607,20 @@
             "m22-amazon-tablet"
           ],
           "updatedAt": "2026-11-22T00:51:32.465861+00:00"
+        },
+        {
+          "id": "e23-reading-eval",
+          "title": "学生觉得笔有用，怎样验证是否读得更懂",
+          "learning": "研究把按需读词与查释义分开，记录同一学生在两种条件下的测验表现。学生个人反馈和整组测验结果分别报告。",
+          "application": "学习硬件试用前由教研明确目标能力和任务，产品锁定允许的辅助功能，再分别报告操作成功、主观反馈与任务成绩。",
+          "boundary": "美国 2010 年特定样本；无法推出国内产品成效或稳定受益人群。",
+          "itemIds": [
+            "e23-reading"
+          ],
+          "updatedAt": "2026-11-23T10:46:17.398881+00:00"
         }
       ],
-      "updatedAt": "2026-11-22T00:51:32.465861+00:00"
+      "updatedAt": "2026-11-23T10:46:17.398881+00:00"
     },
     "chain-4": {
       "attemptedAt": "2026-11-22T10:42:39.386204+00:00",
@@ -1058,37 +1133,38 @@
       "updatedAt": "2026-11-22T10:42:39.386204+00:00"
     },
     "chain-5": {
-      "attemptedAt": "2026-11-22T00:51:32.465861+00:00",
+      "attemptedAt": "2026-11-23T10:46:17.398881+00:00",
       "status": "partial",
-      "assessment": "公告给出可被拉脱的小部件、包装标识、渠道与退款凭据要求，使产品识别和用户处置能够分别追踪。",
+      "assessment": "补核国内智能眼镜以 OTA 作为召回补救的型号、风险环境、升级版本和触达渠道。",
       "gaps": [
         "已核美国指南的纽扣电池范围及警示，其他市场和其他认证仍待对应依据。",
         "现场故障与部署成效没有可比当前结果；本次仅核验制造指标的定义和追溯线索。"
       ],
       "reviewedFields": [
+        "exercise",
         "flow"
       ],
       "evidence": [
         {
-          "itemId": "m22-magnet",
-          "title": "约十万件磁性玩具被召回，包装编码与退款凭据一并公布",
+          "itemId": "e23-inmoweb",
+          "title": "通过 OTA 召回智能眼镜，怎样知道用户的设备完成了修复？",
           "facts": [
             {
-              "claim": "公告明确了拉开肢体与小磁体脱落的失效路径。",
-              "sourceUrl": "https://www.cpsc.gov/Recalls/2027/CHE-US-Recalls-Magnetic-Robot-Toys-Due-to-Risk-of-Serious-Injury-or-Death-from-Magnet-Ingestion-Violate-Mandatory-Standard-for-Toys",
-              "locator": "Hazard、Description、Remedy、Incidents/Injuries"
+              "claim": "公告明确固件版本与功耗管理修复路径。",
+              "sourceUrl": "https://www.samr.gov.cn/zlfzj/qxcpzh/zhdt/art/2026/art_86dbae86909d4a49b4eaa9f54c0f1ea5.html",
+              "locator": "召回公告第三段，补救措施"
             }
           ],
-          "boundary": "规模是涉及召回的数量。实际触达、已退款和剩余在用数量尚未知。",
+          "boundary": "4701 副是召回范围。公告未公布成功升级的数量、修复后的温升数据或事故率。",
           "sources": [
             {
-              "url": "https://www.cpsc.gov/Recalls/2027/CHE-US-Recalls-Magnetic-Robot-Toys-Due-to-Risk-of-Serious-Injury-or-Death-from-Magnet-Ingestion-Violate-Mandatory-Standard-for-Toys",
-              "publisherGroup": "美国消费品安全委员会",
-              "name": "美国消费品安全委员会",
-              "publishedAt": "2026-11-19",
+              "url": "https://www.samr.gov.cn/zlfzj/qxcpzh/zhdt/art/2026/art_86dbae86909d4a49b4eaa9f54c0f1ea5.html",
+              "publisherGroup": "市场监管总局质量发展局、召回中心",
+              "name": "市场监管总局质量发展局、召回中心",
+              "publishedAt": "2026-11-10T15:00:00+08:00",
               "role": "official",
-              "textHash": "b7b2524fc7cfd43f04eaad38f24917f858a25b624252b2e80373685781310a0e",
-              "readAt": "2026-11-22T00:47:27.326464+00:00",
+              "textHash": "d444cfb9da236cb9b7794eed4194060b5d4a7b2111e79181265543e24687d9f1",
+              "readAt": "2026-11-23T10:45:20.328944+00:00",
               "coverage": "body"
             }
           ]
@@ -1096,19 +1172,20 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "m22-magnet",
-          "url": "https://www.cpsc.gov/Recalls/2027/CHE-US-Recalls-Magnetic-Robot-Toys-Due-to-Risk-of-Serious-Injury-or-Death-from-Magnet-Ingestion-Violate-Mandatory-Standard-for-Toys",
-          "checkedAt": "2026-11-22T00:47:27.326464+00:00",
+          "itemId": "e23-inmoweb",
+          "url": "https://www.samr.gov.cn/zlfzj/qxcpzh/zhdt/art/2026/art_86dbae86909d4a49b4eaa9f54c0f1ea5.html",
+          "checkedAt": "2026-11-23T10:45:20.328944+00:00",
           "state": "body",
-          "note": "读取美国召回公告的 Hazard、Description、Remedy 与 Units 段。"
+          "note": "本轮读取正文。监管公告中的生产期间、过热条件、目标固件与系统通知。"
         }
       ],
-      "reviewedAt": "2026-11-22T00:51:32.465861+00:00",
+      "reviewedAt": "2026-11-23T10:46:17.398881+00:00",
       "patch": {
-        "flow": "风险识别与需求 → 验证证据、过程控制与上市条件 对有明确使用限制的设备，还要检查现场条件、训练和责任人员是否满足该型号说明，不能仅凭设备合格就认为现场可用。 对适用美国纽扣电池要求的产品，出货评审同时核对电池仓样件、使用与滥用测试、实物及包装警示和随附说明；不同版本的包材分别检查。 儿童可拆部件发生风险时，记录部件怎样脱落、包装识别码、销售渠道和售后处置凭证。分别记录涉及数量与已办理数量。",
+        "flow": "风险识别与需求 → 验证证据、过程控制与上市条件 对有明确使用限制的设备，还要检查现场条件、训练和责任人员是否满足该型号说明，不能仅凭设备合格就认为现场可用。 对适用美国纽扣电池要求的产品，出货评审同时核对电池仓样件、使用与滥用测试、实物及包装警示和随附说明；不同版本的包材分别检查。 儿童可拆部件发生风险时，记录部件怎样脱落、包装识别码、销售渠道和售后处置凭证。分别记录涉及数量与已办理数量。 固件升级作为召回措施时，登记涉及的序列或批次、设备实际版本、通知和升级回执，再验证修复后的风险。",
         "team": "质量、安全、研发、制造与服务协同定义缺陷等级、放行权和整改验证。 MetalFab 官方资料要求指定激光安全负责人并限制进入受控区域的人员；这是特定产品的部署职责样本，不能替代其他产品的法规与风险评估。",
         "basics": "初始质量关注开始使用时是否符合要求；可靠性关注运行一段时间后是否仍满足要求。初始合格不能证明使用期可靠。可靠性、安全与法规准入是不同问题；本轮仅核对初始质量与使用期可靠性的时间区分，安全及认证范围仍待专门复核。",
-        "metrics": "生产直通率应明确工序范围、首次检验和返工排除规则；最终检验合格不等于全流程一次通过。现场故障率仍需同时记录样本、使用条件与时间窗。"
+        "metrics": "生产直通率应明确工序范围、首次检验和返工排除规则；最终检验合格不等于全流程一次通过。现场故障率仍需同时记录样本、使用条件与时间窗。",
+        "exercise": "给一种故障写出发现、遏制、原因、纠正、复验及防复发的责任链。 从一个受影响设备出发核对旧版、更新是否成功、更新后的测试情境，以及更新失败时的服务入口。"
       },
       "lessons": [
         {
@@ -1177,9 +1254,20 @@
             "m22-magnet"
           ],
           "updatedAt": "2026-11-22T00:51:32.465861+00:00"
+        },
+        {
+          "id": "e23-ota-quality",
+          "title": "固件升级召回怎么检查到设备端",
+          "learning": "影目召回计划把风险定位到特定第三方应用和长时使用条件，给出目标版本并安排推送通知。",
+          "application": "分开核对通知到达、设备安装及更新后在可比条件下的验证结果。",
+          "boundary": "公告仅披露召回计划，没有升级成功率及修复后检测数据。",
+          "itemIds": [
+            "e23-inmoweb"
+          ],
+          "updatedAt": "2026-11-23T10:46:17.398881+00:00"
         }
       ],
-      "updatedAt": "2026-11-22T00:51:32.465861+00:00"
+      "updatedAt": "2026-11-23T10:46:17.398881+00:00"
     },
     "chain-8": {
       "attemptedAt": "2026-11-23T00:52:06.880964+00:00",
@@ -1306,9 +1394,9 @@
       "updatedAt": "2026-11-23T00:52:06.880964+00:00"
     },
     "track-4": {
-      "attemptedAt": "2026-11-21T10:49:32.407137+00:00",
+      "attemptedAt": "2026-11-23T10:46:17.398881+00:00",
       "status": "partial",
-      "assessment": "复核 K1 跳过对象的版本及操作限制，H2D 首层问题与 H3C 的多层高约束；另核海外商城退货规定。",
+      "assessment": "复核 H2D 手册中支撑接触面与后处理的取舍。英国商城条款另已核对，不能解答其他地区订单的办理期限。",
       "gaps": [
         "创想三维海外商城确认退货后的寄回期限仍有 7/14 天两种表述，针对具体订单须核实。",
         "跨企业同任务的首次成功率、准备和恢复时间及维护成本仍缺实测。"
@@ -1319,143 +1407,49 @@
       ],
       "evidence": [
         {
-          "itemId": "e21-creality",
-          "title": "同一盘模型坏了一个，怎样记录剩余件的交付？",
+          "itemId": "e23-h2d",
+          "title": "同一件打印样品，支撑好拆和表面合格如何同时验收？",
           "facts": [
             {
-              "claim": "在指定版本和多模型任务下可以跳过有问题的模型。",
-              "sourceUrl": "https://wiki.creality.com/en/k1-flagship-series/k1-series-general-documents/the-wrong-model-skips-function-guide",
-              "locator": "K1 系列问题模型跳过功能指引 · 开启条件及确认"
+              "claim": "手册同时要求关注水平距离和顶部垂直距离。",
+              "sourceUrl": "https://csm.bblcdn.com/hub/4668d0ca43994ff3bff4b37f1a65c2e7.pdf",
+              "locator": "H2D 手册 PDF 第67页，Support/Object XY Distance 与注意事项"
             },
             {
-              "claim": "H2D 手册记录首层过高可能降低附着，严重时发生移位或打印失败。",
+              "claim": "手册把拆支撑的等待时间列为影响后处理的条件。",
               "sourceUrl": "https://csm.bblcdn.com/hub/4668d0ca43994ff3bff4b37f1a65c2e7.pdf",
-              "locator": "第9章 §9.2 首层过高或过低"
+              "locator": "PDF 第67页，CAUTION 第二点"
             }
           ],
-          "boundary": "K1 的跳过功能和 H2D 的首层排障各自限定机型。没有同任务跨机测试，也未取得用户平均节省多少材料和时间的数据。",
+          "boundary": "手册给的是该机型的参数方向和建议窗口，没有跨机型良率或统一的最优参数。",
           "sources": [
-            {
-              "url": "https://wiki.creality.com/en/k1-flagship-series/k1-series-general-documents/the-wrong-model-skips-function-guide",
-              "publisherGroup": "创想三维 · K1 系列官方 Wiki",
-              "name": "创想三维 · K1 系列官方 Wiki",
-              "publishedAt": null,
-              "role": "official",
-              "textHash": "752e439639e367aff483dc57056664e1dfad94b28145e4b767868d3c142fba1f",
-              "readAt": "2026-11-21T10:44:14.537821+00:00",
-              "coverage": "body"
-            },
             {
               "url": "https://csm.bblcdn.com/hub/4668d0ca43994ff3bff4b37f1a65c2e7.pdf",
-              "publisherGroup": "拓竹 H2D 3D 打印用户手册",
-              "name": "拓竹 H2D 3D 打印用户手册",
+              "publisherGroup": "拓竹",
+              "name": "拓竹",
               "publishedAt": null,
               "role": "official",
-              "textHash": "b8bd7b2d174d89cb7ac808ccb382d7502e7c0e94446175c37240f922c18b9a18",
-              "readAt": "2026-11-21T10:45:27.969384+00:00",
+              "textHash": "f4d84995cea638ef1c1b3777182257fc1de9e56edfb3d5687f5e9ec827189ad0",
+              "readAt": "2026-11-23T10:40:31.245780+00:00",
               "coverage": "excerpt"
-            }
-          ]
-        },
-        {
-          "itemId": "rss-1ec82521027135bf",
-          "title": "拓竹解释 H3C 混合层高：把手工拆模型交给切片调度",
-          "facts": [
-            {
-              "claim": "切片引擎按动态层带组织不同喷嘴的层高。",
-              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
-              "locator": "Our art of bricklaying"
-            },
-            {
-              "claim": "用户可用涂色工具或修改器框选择区域。",
-              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
-              "locator": "Choose the region, hit Slice"
-            },
-            {
-              "claim": "其他三款设备的原生混合喷嘴支持仍在开发。",
-              "sourceUrl": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
-              "locator": "文末支持计划"
-            }
-          ],
-          "boundary": "已读厂商技术说明，未检查实现代码、版本发布记录或独立打印结果。不采纳“首款”“无妥协”等比较宣传，亦不把开发计划写成其他机型已经支持。",
-          "sources": [
-            {
-              "url": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
-              "name": "Bambu Lab Blog",
-              "publishedAt": "2026-11-09T10:48:22+00:00",
-              "publisherGroup": "Bambu Lab Blog",
-              "role": "official",
-              "textHash": "f0c113e14fc668a9ac0dce4c07738f2d80542ff98b6a16d8c3b95df805198df1",
-              "readAt": "2026-11-10T00:41:29.473888+00:00",
-              "coverage": "body"
-            }
-          ]
-        },
-        {
-          "itemId": "creality-service-evidence",
-          "title": "创想三维售后：诊断材料与返寄确认也是交付接口",
-          "facts": [
-            {
-              "claim": "支持流程要求产品购买信息及故障图片或视频。",
-              "sourceUrl": "https://store.creality.com/pages/return-policy",
-              "locator": "Solutions Provided by Creality 3D"
-            },
-            {
-              "claim": "寄回前需先联系客服发起退货。",
-              "sourceUrl": "https://store.creality.com/pages/return-policy",
-              "locator": "Return Address下方说明"
-            }
-          ],
-          "boundary": "海外商店披露的流程，地区、渠道、产品及条款版本均有限制；只审读服务入口、诊断与退回条款，非整页法务审查，不判断法定权利或实际履约。",
-          "sources": [
-            {
-              "url": "https://store.creality.com/pages/return-policy",
-              "name": "创想三维官方资料",
-              "publishedAt": null,
-              "publisherGroup": "创想三维",
-              "role": "official",
-              "textHash": "855a4ed49f57aaac7be29d4685a8db6c360844614827305dfa06d47738a8e459",
-              "readAt": "2026-11-15T00:41:20.685531+00:00",
-              "coverage": "body"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "e21-creality",
-          "url": "https://wiki.creality.com/en/k1-flagship-series/k1-series-general-documents/the-wrong-model-skips-function-guide",
-          "checkedAt": "2026-11-21T10:44:14.537821+00:00",
-          "state": "body",
-          "note": "本轮读取正文。核对 K1 系列四项开启条件与跳过确认。"
-        },
-        {
-          "itemId": "e21-creality",
+          "itemId": "e23-h2d",
           "url": "https://csm.bblcdn.com/hub/4668d0ca43994ff3bff4b37f1a65c2e7.pdf",
-          "checkedAt": "2026-11-21T10:45:27.969384+00:00",
+          "checkedAt": "2026-11-23T10:40:31.245780+00:00",
           "state": "body",
-          "note": "本轮读取原文相关段落。读取 H2D 第9章首层高度与成品或设备受影响的说明。"
-        },
-        {
-          "itemId": "rss-1ec82521027135bf",
-          "url": "https://blog.bambulab.com/the-impossible-slice-how-bambu-lab-h3c-made-mixed-nozzles-work-on-different-layer-heights",
-          "checkedAt": "2026-11-21T10:44:20.234667+00:00",
-          "state": "body",
-          "note": "本轮读取正文。复核 H3C 打印样件的可变层高条件。"
-        },
-        {
-          "itemId": "creality-service-evidence",
-          "url": "https://store.creality.com/pages/return-policy",
-          "checkedAt": "2026-11-21T10:45:35.104887+00:00",
-          "state": "body",
-          "note": "本轮读取正文。复读商城退货条款：确认后寄回期限仍同时写有7天和14天。"
+          "note": "本轮读取原文相关段落。PDF 第67页支撑顶部距离表、水平间距和注意事项。"
         }
       ],
-      "reviewedAt": "2026-11-21T10:49:32.407137+00:00",
+      "reviewedAt": "2026-11-23T10:46:17.398881+00:00",
       "patch": {
-        "constraint": "良率、准备时间、耗材和失败恢复 制造工具不能只按峰值速度比较；需看材料适配、真实任务耗时和型号特定的部署条件。专业焊接设备的使用前提不得与桌面创作设备混同。 在混合喷嘴的同一件模型内，线宽和层高分别影响细节与节拍；两区应在高度带边界重新对齐。此约束来自拓竹 H3C 案例。 H2D 手册说明首层过高可导致附着不良、移位，过低可损伤喷嘴或打印板。先判断故障影响一个对象还是整盘，再选择恢复方式。",
+        "constraint": "良率、准备时间、耗材和失败恢复 制造工具不能只按峰值速度比较；需看材料适配、真实任务耗时和型号特定的部署条件。专业焊接设备的使用前提不得与桌面创作设备混同。 在混合喷嘴的同一件模型内，线宽和层高分别影响细节与节拍；两区应在高度带边界重新对齐。此约束来自拓竹 H3C 案例。 H2D 手册说明首层过高可导致附着不良、移位，过低可损伤喷嘴或打印板。先判断故障影响一个对象还是整盘，再选择恢复方式。 对拓竹 H2D 带支撑模型，顶部与水平间距共同影响拆除难度和接触表面质量；吸湿材料还受完工至拆除的等待时间影响。",
         "team": "运动控制、固件、结构、材料、切片软件、制造工程 涉及专业设备时，还需把现场交付、训练和安全责任接口纳入观察；具体职责取决于产品和使用场景。",
-        "metrics": "第一次任务成功率；准备时间；废料；维护成本 比较前固定机型、材料、任务与质量要求，另列准备、加工、维护和失败恢复时间；尚无跨企业统一实测数据。 同盘多件要分别记录计划件数、被跳过的对象、最终合格件和重做耗时。可继续执行整盘任务不能替代逐件验收。"
+        "metrics": "第一次任务成功率；准备时间；废料；维护成本 比较前固定机型、材料、任务与质量要求，另列准备、加工、维护和失败恢复时间；尚无跨企业统一实测数据。 同盘多件要分别记录计划件数、被跳过的对象、最终合格件和重做耗时。可继续执行整盘任务不能替代逐件验收。 试样可记录间距、拆除等待时间、表面损伤和后处理耗时，在外观要求相同的条件下比较。"
       },
       "lessons": [
         {
@@ -1502,9 +1496,20 @@
             "e21-creality"
           ],
           "updatedAt": "2026-11-21T10:49:32.407137+00:00"
+        },
+        {
+          "id": "e23-support",
+          "title": "同一打印件要在何时验收表面",
+          "learning": "手册把接触面质量、拆支撑的难度与打印后的等待时间联系起来。",
+          "application": "固定零件与耗材，记录切片参数与拆除时点，对最终接触面做同口径外观验收。",
+          "boundary": "本例限于 H2D 带支撑打印；个别材料的推荐窗口和实际良率需另核。",
+          "itemIds": [
+            "e23-h2d"
+          ],
+          "updatedAt": "2026-11-23T10:46:17.398881+00:00"
         }
       ],
-      "updatedAt": "2026-11-21T10:49:32.407137+00:00"
+      "updatedAt": "2026-11-23T10:46:17.398881+00:00"
     },
     "chain-6": {
       "attemptedAt": "2026-11-23T00:52:06.880964+00:00",
@@ -1663,9 +1668,9 @@
       "updatedAt": "2026-11-23T00:52:06.880964+00:00"
     },
     "track-0": {
-      "attemptedAt": "2026-11-22T00:51:32.465861+00:00",
+      "attemptedAt": "2026-11-23T10:46:17.398881+00:00",
       "status": "partial",
-      "assessment": "华为支持页建议设置后等 2 至 3 分钟检查，必要时分开排查应用版本、连通性与管理员账号。",
+      "assessment": "核对眼镜与皮肤接触部位的风险条件，以及售后通知到设备更新之间的证据界限。",
       "gaps": [
         "FAQ 未解释设备离线时是否缓存或重发设置。",
         "Meta、Apple、Samsung观察对象未取得本轮当前正文。",
@@ -1677,25 +1682,25 @@
       ],
       "evidence": [
         {
-          "itemId": "m22-watch",
-          "title": "家长已经设置上课禁用，怎样核对儿童手表是否收到？",
+          "itemId": "e23-inmoweb",
+          "title": "通过 OTA 召回智能眼镜，怎样知道用户的设备完成了修复？",
           "facts": [
             {
-              "claim": "指南规定设置后观察窗口，另列网络与管理员排查。",
-              "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn00734120/",
-              "locator": "开启或关闭上课禁用功能不生效"
+              "claim": "公告明确固件版本与功耗管理修复路径。",
+              "sourceUrl": "https://www.samr.gov.cn/zlfzj/qxcpzh/zhdt/art/2026/art_86dbae86909d4a49b4eaa9f54c0f1ea5.html",
+              "locator": "召回公告第三段，补救措施"
             }
           ],
-          "boundary": "该时长是排查建议，未披露离线指令缓存策略、服务时限或排障成功率。",
+          "boundary": "4701 副是召回范围。公告未公布成功升级的数量、修复后的温升数据或事故率。",
           "sources": [
             {
-              "url": "https://consumer.huawei.com/cn/support/content/zh-cn00734120/",
-              "publisherGroup": "华为",
-              "name": "华为",
-              "publishedAt": null,
+              "url": "https://www.samr.gov.cn/zlfzj/qxcpzh/zhdt/art/2026/art_86dbae86909d4a49b4eaa9f54c0f1ea5.html",
+              "publisherGroup": "市场监管总局质量发展局、召回中心",
+              "name": "市场监管总局质量发展局、召回中心",
+              "publishedAt": "2026-11-10T15:00:00+08:00",
               "role": "official",
-              "textHash": "34a612ba6106caf6167f0bcacd7738ba5f14747374b73a98216e1ab685b42b38",
-              "readAt": "2026-11-22T00:50:11.374488+00:00",
+              "textHash": "d444cfb9da236cb9b7794eed4194060b5d4a7b2111e79181265543e24687d9f1",
+              "readAt": "2026-11-23T10:45:20.328944+00:00",
               "coverage": "body"
             }
           ]
@@ -1703,17 +1708,17 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "m22-watch",
-          "url": "https://consumer.huawei.com/cn/support/content/zh-cn00734120/",
-          "checkedAt": "2026-11-22T00:50:11.374488+00:00",
+          "itemId": "e23-inmoweb",
+          "url": "https://www.samr.gov.cn/zlfzj/qxcpzh/zhdt/art/2026/art_86dbae86909d4a49b4eaa9f54c0f1ea5.html",
+          "checkedAt": "2026-11-23T10:45:20.328944+00:00",
           "state": "body",
-          "note": "读取上课禁用开启关闭不生效与非禁用时段无法退出两节。"
+          "note": "本轮读取正文。复核公告所述左镜腿过热的使用条件和升级前提示。"
         }
       ],
-      "reviewedAt": "2026-11-22T00:51:32.465861+00:00",
+      "reviewedAt": "2026-11-23T10:46:17.398881+00:00",
       "patch": {
         "examples": "Meta、Apple、Samsung、雷鸟；本轮新增 XREAL 作为渠道与服务研究对象，不构成排名。",
-        "constraint": "佩戴舒适度、续航、隐私和持续使用 离线能力需按字幕、翻译等具体任务核验手机依赖、App 版本和预下载资源；不能仅凭“离线”断言数据不出端。 记录功能还应分别核对音频、转写、摘要与标签：雷鸟Life Log声明不存原始音频，但仍保留文字，不能据此推断没有个人数据留存。 儿童手表的远程规则需观察表端状态。华为上课禁用排查先核对时段与节假日，再核网络并可更换管理员。",
+        "constraint": "佩戴舒适度、续航、隐私和持续使用 离线能力需按字幕、翻译等具体任务核验手机依赖、App 版本和预下载资源；不能仅凭“离线”断言数据不出端。 记录功能还应分别核对音频、转写、摘要与标签：雷鸟Life Log声明不存原始音频，但仍保留文字，不能据此推断没有个人数据留存。 儿童手表的远程规则需观察表端状态。华为上课禁用排查先核对时段与节假日，再核网络并可更换管理员。 穿戴产品的热风险会随应用负载和使用时长变化。影目 AIR3 召回公告限定了受影响批次，并将长时间运行部分第三方应用与左镜腿可能过热联系起来。",
         "team": "光学 / 声学、算法、工业设计、移动应用、健康验证 还需核对 App、渠道与服务团队如何共用版本化功能条件，避免销售承诺与实际使用前提脱节。",
         "metrics": "完成一次真实任务的成功率；佩戴负担；续航；退货原因。文档类任务还需检查关键文字、图片与版式的保留情况及人工补做步骤；雷鸟提词器说明导入只留文字，支持格式数不能替代任务验收。 观察眼镜品类时同时记录销售额或台数、覆盖平台和统计期间，再用独立样本核对体验。"
       },
@@ -1795,9 +1800,20 @@
             "m22-watch"
           ],
           "updatedAt": "2026-11-22T00:51:32.465861+00:00"
+        },
+        {
+          "id": "e23-wearable-load",
+          "title": "评估眼镜发热要固定哪些使用条件",
+          "learning": "官方通报记录了软件负载、佩戴时间与局部热风险的关系。",
+          "application": "比较可穿戴设备时，分别记录设备型号、固件、应用和使用时长，再追踪相同条件的复测结果。",
+          "boundary": "仅涉及公告范围内产品，未公开温度实测、风险发生率或其他品牌结论。",
+          "itemIds": [
+            "e23-inmoweb"
+          ],
+          "updatedAt": "2026-11-23T10:46:17.398881+00:00"
         }
       ],
-      "updatedAt": "2026-11-22T00:51:32.465861+00:00"
+      "updatedAt": "2026-11-23T10:46:17.398881+00:00"
     },
     "track-1": {
       "attemptedAt": "2026-11-22T10:42:39.386204+00:00",
@@ -3134,6 +3150,42 @@
           "hash": "7e53e321bd0b54d66e7d1e6aeaa438fc10f073fed621a6ebfdf8304e04d46d01",
           "decision": "integrated",
           "reason": "有道三季度智能设备毛利率由 50.3% 降至 41.0%。公司解释为物料成本增加；同期网易披露调整 SKU 组合及推出两款笔。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-23T10:46:17.398881+00:00",
+      "reviewedNodes": [
+        "track-4",
+        "chain-1",
+        "chain-3",
+        "chain-5",
+        "track-0"
+      ],
+      "decisions": [
+        {
+          "itemId": "e23-h2d",
+          "hash": "8d5af60459b95ad3fc7aa03d0ff0e1e5763c351a66a7001c8a4fa4b3d6fac5dd",
+          "decision": "integrated",
+          "reason": "手册把接触面质量、拆支撑的难度与打印后的等待时间联系起来。"
+        },
+        {
+          "itemId": "e23-reading",
+          "hash": "85ff7b53a151ba6ae2adb950176c3dd7fbcf8f849b836f25341a92144f7ed861",
+          "decision": "integrated",
+          "reason": "研究把按需读词与查释义分开，记录同一学生在两种条件下的测验表现。学生个人反馈和整组测验结果分别报告。"
+        },
+        {
+          "itemId": "e23-ti",
+          "hash": "c72e8b94a2478e1abff5c80838d8e5edcfc6ed8aaba498a68814c9e461684433",
+          "decision": "integrated",
+          "reason": "TI 当前 FAQ 给出 60 天申样；2019 年一份具体通知要求 30 天内申样，且将收到样品列为 180 天评估期的起点。"
+        },
+        {
+          "itemId": "e23-inmoweb",
+          "hash": "e16636b5f5498abef46a798a63925a1b109047e4f0a691822bbfd1e893360a83",
+          "decision": "integrated",
+          "reason": "影目召回计划把风险定位到特定第三方应用和长时使用条件，给出目标版本并安排推送通知。"
         }
       ]
     }
@@ -12354,6 +12406,426 @@
           "checkedAt": "2026-11-23T00:50:15.390318+00:00",
           "state": "body",
           "note": "仅核对投资者演示中有道业务与两款笔的段落。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-4",
+      "reviewedAt": "2026-11-23T10:46:17.398881+00:00",
+      "status": "partial",
+      "assessment": "复核 H2D 手册中支撑接触面与后处理的取舍。英国商城条款另已核对，不能解答其他地区订单的办理期限。",
+      "gaps": [
+        "创想三维海外商城确认退货后的寄回期限仍有 7/14 天两种表述，针对具体订单须核实。",
+        "跨企业同任务的首次成功率、准备和恢复时间及维护成本仍缺实测。"
+      ],
+      "reviewedFields": [
+        "constraint",
+        "metrics"
+      ],
+      "changes": {
+        "constraint": {
+          "before": "良率、准备时间、耗材和失败恢复 制造工具不能只按峰值速度比较；需看材料适配、真实任务耗时和型号特定的部署条件。专业焊接设备的使用前提不得与桌面创作设备混同。 在混合喷嘴的同一件模型内，线宽和层高分别影响细节与节拍；两区应在高度带边界重新对齐。此约束来自拓竹 H3C 案例。 H2D 手册说明首层过高可导致附着不良、移位，过低可损伤喷嘴或打印板。先判断故障影响一个对象还是整盘，再选择恢复方式。",
+          "after": "良率、准备时间、耗材和失败恢复 制造工具不能只按峰值速度比较；需看材料适配、真实任务耗时和型号特定的部署条件。专业焊接设备的使用前提不得与桌面创作设备混同。 在混合喷嘴的同一件模型内，线宽和层高分别影响细节与节拍；两区应在高度带边界重新对齐。此约束来自拓竹 H3C 案例。 H2D 手册说明首层过高可导致附着不良、移位，过低可损伤喷嘴或打印板。先判断故障影响一个对象还是整盘，再选择恢复方式。 对拓竹 H2D 带支撑模型，顶部与水平间距共同影响拆除难度和接触表面质量；吸湿材料还受完工至拆除的等待时间影响。"
+        },
+        "metrics": {
+          "before": "第一次任务成功率；准备时间；废料；维护成本 比较前固定机型、材料、任务与质量要求，另列准备、加工、维护和失败恢复时间；尚无跨企业统一实测数据。 同盘多件要分别记录计划件数、被跳过的对象、最终合格件和重做耗时。可继续执行整盘任务不能替代逐件验收。",
+          "after": "第一次任务成功率；准备时间；废料；维护成本 比较前固定机型、材料、任务与质量要求，另列准备、加工、维护和失败恢复时间；尚无跨企业统一实测数据。 同盘多件要分别记录计划件数、被跳过的对象、最终合格件和重做耗时。可继续执行整盘任务不能替代逐件验收。 试样可记录间距、拆除等待时间、表面损伤和后处理耗时，在外观要求相同的条件下比较。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e23-support",
+            "title": "同一打印件要在何时验收表面",
+            "learning": "手册把接触面质量、拆支撑的难度与打印后的等待时间联系起来。",
+            "application": "固定零件与耗材，记录切片参数与拆除时点，对最终接触面做同口径外观验收。",
+            "boundary": "本例限于 H2D 带支撑打印；个别材料的推荐窗口和实际良率需另核。",
+            "itemIds": [
+              "e23-h2d"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e23-h2d",
+          "title": "同一件打印样品，支撑好拆和表面合格如何同时验收？",
+          "facts": [
+            {
+              "claim": "手册同时要求关注水平距离和顶部垂直距离。",
+              "sourceUrl": "https://csm.bblcdn.com/hub/4668d0ca43994ff3bff4b37f1a65c2e7.pdf",
+              "locator": "H2D 手册 PDF 第67页，Support/Object XY Distance 与注意事项"
+            },
+            {
+              "claim": "手册把拆支撑的等待时间列为影响后处理的条件。",
+              "sourceUrl": "https://csm.bblcdn.com/hub/4668d0ca43994ff3bff4b37f1a65c2e7.pdf",
+              "locator": "PDF 第67页，CAUTION 第二点"
+            }
+          ],
+          "boundary": "手册给的是该机型的参数方向和建议窗口，没有跨机型良率或统一的最优参数。",
+          "sources": [
+            {
+              "url": "https://csm.bblcdn.com/hub/4668d0ca43994ff3bff4b37f1a65c2e7.pdf",
+              "publisherGroup": "拓竹",
+              "name": "拓竹",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "f4d84995cea638ef1c1b3777182257fc1de9e56edfb3d5687f5e9ec827189ad0",
+              "readAt": "2026-11-23T10:40:31.245780+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e23-h2d",
+          "url": "https://csm.bblcdn.com/hub/4668d0ca43994ff3bff4b37f1a65c2e7.pdf",
+          "checkedAt": "2026-11-23T10:40:31.245780+00:00",
+          "state": "body",
+          "note": "本轮读取原文相关段落。PDF 第67页支撑顶部距离表、水平间距和注意事项。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-1",
+      "reviewedAt": "2026-11-23T10:46:17.398881+00:00",
+      "status": "partial",
+      "assessment": "核对一项实际开展的学习笔对照研究，包括学生、启用功能、条件顺序、测验结果和推广边界。",
+      "gaps": [
+        "已核对阅读笔对照测验方法；国内学习硬件的原始立项签核及量产后同条件任务数据仍缺。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "metrics"
+      ],
+      "changes": {
+        "metrics": {
+          "before": "目标任务完成率 = 在约定情境下完成任务的人次 / 尝试人次；明确人群、任务、时间。",
+          "after": "目标任务完成率 = 在约定情境下完成任务的人次 / 尝试人次；明确人群、任务、时间。 评估辅助阅读时，分开报告扫词操作是否成功、用户主观反馈和教材理解测验结果；比较条件需说明是否启用朗读、释义等额外帮助。"
+        },
+        "exercise": {
+          "before": "选一种学习设备，分别写出孩子要完成的学习任务、家长要完成的管理任务，以及操作入口和成功条件。Kindle说明区分儿童档案与设备本地限制，前者和后者的远程管理能力不同；实际需求仍需访谈与任务观察，不能由功能存在直接推断。 让参与者按相同条件尝试一次任务，记录人数、需要协助的环节和最终结果。 再标记改版后哪些环节仍未经独立完成测试。 为儿童设备写下载验收用例时，给出应用来源、儿童档案、批准人及拒绝后的可见状态。",
+          "after": "选一种学习设备，分别写出孩子要完成的学习任务、家长要完成的管理任务，以及操作入口和成功条件。Kindle说明区分儿童档案与设备本地限制，前者和后者的远程管理能力不同；实际需求仍需访谈与任务观察，不能由功能存在直接推断。 让参与者按相同条件尝试一次任务，记录人数、需要协助的环节和最终结果。 再标记改版后哪些环节仍未经独立完成测试。 为儿童设备写下载验收用例时，给出应用来源、儿童档案、批准人及拒绝后的可见状态。 先写要检验的学习任务，再固定功能开关。为同一组学生安排可比较材料，交替不同条件的先后，检查情境是否足以解释观察到的变化。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e23-reading-eval",
+            "title": "学生觉得笔有用，怎样验证是否读得更懂",
+            "learning": "研究把按需读词与查释义分开，记录同一学生在两种条件下的测验表现。学生个人反馈和整组测验结果分别报告。",
+            "application": "学习硬件试用前由教研明确目标能力和任务，产品锁定允许的辅助功能，再分别报告操作成功、主观反馈与任务成绩。",
+            "boundary": "美国 2010 年特定样本；无法推出国内产品成效或稳定受益人群。",
+            "itemIds": [
+              "e23-reading"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e23-reading",
+          "title": "一支笔能念出单词，怎样验证它真的帮孩子读懂了文章？",
+          "facts": [
+            {
+              "claim": "报告说明参与人数、年级及同一学生体验两种条件。",
+              "sourceUrl": "https://nceo.umn.edu/publications/OnlinePUbs/PARA/ReadingPen/index.htm",
+              "locator": "Discussion 首段；Methods 中的测验顺序"
+            },
+            {
+              "claim": "研究中的朗读条件没有启用词义功能。",
+              "sourceUrl": "https://nceo.umn.edu/publications/OnlinePUbs/PARA/ReadingPen/index.htm",
+              "locator": "Introduction 末段"
+            }
+          ],
+          "boundary": "美国特定学校样本和阅读测验，报告发表于 2010 年 2 月。不能由此推出今天国内词典笔的学习效果，也未能识别哪些学生会稳定获益。",
+          "sources": [
+            {
+              "url": "https://nceo.umn.edu/publications/OnlinePUbs/PARA/ReadingPen/index.htm",
+              "publisherGroup": "明尼苏达大学阅读测评研究团队",
+              "name": "明尼苏达大学阅读测评研究团队",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "5bf59800bd2a12527e4f1dd9fbb59c2780c3b53b08b1737e31bc431269079296",
+              "readAt": "2026-11-23T10:40:29.773545+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e23-reading",
+          "url": "https://nceo.umn.edu/publications/OnlinePUbs/PARA/ReadingPen/index.htm",
+          "checkedAt": "2026-11-23T10:40:29.773545+00:00",
+          "state": "body",
+          "note": "本轮读取原文相关段落。阅读研究方法、随机条件先后、结果与讨论段。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-3",
+      "reviewedAt": "2026-11-23T10:46:17.398881+00:00",
+      "status": "partial",
+      "assessment": "对照 TI 当前申样 FAQ 与 2019 年具体 PCN，确认不同时间窗的起算事件。",
+      "gaps": [
+        "补核 Oracle 26C 的 MOQ 计算；各企业实际参数、运输起止、库存边界仍待订单和台账核验。",
+        "公开资料没有供应商审核标准、实际通过率、采购质量接口和履约结果。"
+      ],
+      "reviewedFields": [
+        "flow",
+        "team"
+      ],
+      "changes": {
+        "flow": {
+          "before": "预测与物料规格 → 合格供应、交期与库存方案",
+          "after": "预测与物料规格 → 合格供应、交期与库存方案 上游产品变更时，先核受影响料号、通知和实际到样日期，再分列申样期限、评估期限、拟首次出货、旧料末次订购。"
+        },
+        "team": {
+          "before": "研发与采购共同明确替代料边界；供应商质量、计划、财务一起管理风险。小猿管培岗位另提供具体交接样本：销售计划提出配件需求，采购跟进合同和付款，工厂关注物料齐套，售后反馈问题；不能据此推断一人承担全部工作或拥有全部放行权。",
+          "after": "研发与采购共同明确替代料边界；供应商质量、计划、财务一起管理风险。小猿管培岗位另提供具体交接样本：销售计划提出配件需求，采购跟进合同和付款，工厂关注物料齐套，售后反馈问题；不能据此推断一人承担全部工作或拥有全部放行权。 采购核对具体通知与可订旧料，研发和质量核对样品及验证结论。放行责任需要项目授权文件。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e23-pcn",
+            "title": "拿到元件变更通知时该启动哪几个时钟",
+            "learning": "TI 当前 FAQ 给出 60 天申样；2019 年一份具体通知要求 30 天内申样，且将收到样品列为 180 天评估期的起点。",
+            "application": "把适用通知随料号归档，把收件、申样、到样、验证、放行和库存切换各自落实到日期及跟进人。",
+            "boundary": "历史通知不代表所有现行订单；未取得客户内部验证结论与量产批准。",
+            "itemIds": [
+              "e23-ti"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e23-ti",
+          "title": "收到元器件变更通知后，留给采购申请样品的时间有多久？",
+          "facts": [
+            {
+              "claim": "公司把收到通知列为可开始影响分析的节点。",
+              "sourceUrl": "https://www.ti.com/en-us/support/faqs/product-change-notifications/change-notification",
+              "locator": "TI 变更通知流程 FAQ"
+            },
+            {
+              "claim": "TI 允许在变更通知后六十天内申请样品。",
+              "sourceUrl": "https://www.ti.com/en-us/support/faqs/product-change-notifications/request-deadline",
+              "locator": "样品申请期限 FAQ"
+            },
+            {
+              "claim": "2019 年这份通知规定了 180 天样品评估期，并另外列出首次出货日期。",
+              "sourceUrl": "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/PCN20191104001.pdf",
+              "locator": "通知第1页收样起算说明及第3页日期表"
+            }
+          ],
+          "boundary": "当前 FAQ 给出 60 天申样期。历史 PCN 另有 30 天申样、180 天评估的约定，两者适用时期不同；实际订单以对应通知和合同为依据。客户最终验证与量产批准结果未披露。",
+          "sources": [
+            {
+              "url": "https://www.ti.com/en-us/support/faqs/product-change-notifications/change-notification",
+              "publisherGroup": "德州仪器",
+              "name": "德州仪器",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "df8186fd098e8dde09feb1f7ba2150664a9bc3bebc98fc96b048128173a5a2fc",
+              "readAt": "2026-11-23T10:40:28.331909+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://www.ti.com/en-us/support/faqs/product-change-notifications/request-deadline",
+              "publisherGroup": "德州仪器",
+              "name": "TI 样品申请期限 FAQ",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "d92be7bf5bc3020f864ada8f0c366a0ce1e5fa6431819af4fb34132b514bb460",
+              "readAt": "2026-11-23T10:40:27.841861+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/PCN20191104001.pdf",
+              "publisherGroup": "德州仪器",
+              "name": "TI 工艺变更通知 PCN 20191104001.1",
+              "publishedAt": "2019-12-05",
+              "role": "official",
+              "textHash": "8fc386359c82cbf54cd122ac65a7e1bd1c145fb7038aa69beb0431c3013b2fb9",
+              "readAt": "2026-11-23T10:44:53.578067+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e23-ti",
+          "url": "https://www.ti.com/en-us/support/faqs/product-change-notifications/change-notification",
+          "checkedAt": "2026-11-23T10:40:28.331909+00:00",
+          "state": "body",
+          "note": "本轮读取正文。账户通知与样品可用状态。"
+        },
+        {
+          "itemId": "e23-ti",
+          "url": "https://www.ti.com/en-us/support/faqs/product-change-notifications/request-deadline",
+          "checkedAt": "2026-11-23T10:40:27.841861+00:00",
+          "state": "body",
+          "note": "本轮读取正文。当前 FAQ 的 60 天申样期限。"
+        },
+        {
+          "itemId": "e23-ti",
+          "url": "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/PCN20191104001.pdf",
+          "checkedAt": "2026-11-23T10:44:53.578067+00:00",
+          "state": "body",
+          "note": "本轮读取正文。2019 年通知第1页确认与申样、第3页日期与评估期。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-5",
+      "reviewedAt": "2026-11-23T10:46:17.398881+00:00",
+      "status": "partial",
+      "assessment": "补核国内智能眼镜以 OTA 作为召回补救的型号、风险环境、升级版本和触达渠道。",
+      "gaps": [
+        "已核美国指南的纽扣电池范围及警示，其他市场和其他认证仍待对应依据。",
+        "现场故障与部署成效没有可比当前结果；本次仅核验制造指标的定义和追溯线索。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "flow"
+      ],
+      "changes": {
+        "flow": {
+          "before": "风险识别与需求 → 验证证据、过程控制与上市条件 对有明确使用限制的设备，还要检查现场条件、训练和责任人员是否满足该型号说明，不能仅凭设备合格就认为现场可用。 对适用美国纽扣电池要求的产品，出货评审同时核对电池仓样件、使用与滥用测试、实物及包装警示和随附说明；不同版本的包材分别检查。 儿童可拆部件发生风险时，记录部件怎样脱落、包装识别码、销售渠道和售后处置凭证。分别记录涉及数量与已办理数量。",
+          "after": "风险识别与需求 → 验证证据、过程控制与上市条件 对有明确使用限制的设备，还要检查现场条件、训练和责任人员是否满足该型号说明，不能仅凭设备合格就认为现场可用。 对适用美国纽扣电池要求的产品，出货评审同时核对电池仓样件、使用与滥用测试、实物及包装警示和随附说明；不同版本的包材分别检查。 儿童可拆部件发生风险时，记录部件怎样脱落、包装识别码、销售渠道和售后处置凭证。分别记录涉及数量与已办理数量。 固件升级作为召回措施时，登记涉及的序列或批次、设备实际版本、通知和升级回执，再验证修复后的风险。"
+        },
+        "exercise": {
+          "before": "给一种故障写出发现、遏制、原因、纠正、复验及防复发的责任链。",
+          "after": "给一种故障写出发现、遏制、原因、纠正、复验及防复发的责任链。 从一个受影响设备出发核对旧版、更新是否成功、更新后的测试情境，以及更新失败时的服务入口。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e23-ota-quality",
+            "title": "固件升级召回怎么检查到设备端",
+            "learning": "影目召回计划把风险定位到特定第三方应用和长时使用条件，给出目标版本并安排推送通知。",
+            "application": "分开核对通知到达、设备安装及更新后在可比条件下的验证结果。",
+            "boundary": "公告仅披露召回计划，没有升级成功率及修复后检测数据。",
+            "itemIds": [
+              "e23-inmoweb"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e23-inmoweb",
+          "title": "通过 OTA 召回智能眼镜，怎样知道用户的设备完成了修复？",
+          "facts": [
+            {
+              "claim": "公告明确固件版本与功耗管理修复路径。",
+              "sourceUrl": "https://www.samr.gov.cn/zlfzj/qxcpzh/zhdt/art/2026/art_86dbae86909d4a49b4eaa9f54c0f1ea5.html",
+              "locator": "召回公告第三段，补救措施"
+            }
+          ],
+          "boundary": "4701 副是召回范围。公告未公布成功升级的数量、修复后的温升数据或事故率。",
+          "sources": [
+            {
+              "url": "https://www.samr.gov.cn/zlfzj/qxcpzh/zhdt/art/2026/art_86dbae86909d4a49b4eaa9f54c0f1ea5.html",
+              "publisherGroup": "市场监管总局质量发展局、召回中心",
+              "name": "市场监管总局质量发展局、召回中心",
+              "publishedAt": "2026-11-10T15:00:00+08:00",
+              "role": "official",
+              "textHash": "d444cfb9da236cb9b7794eed4194060b5d4a7b2111e79181265543e24687d9f1",
+              "readAt": "2026-11-23T10:45:20.328944+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e23-inmoweb",
+          "url": "https://www.samr.gov.cn/zlfzj/qxcpzh/zhdt/art/2026/art_86dbae86909d4a49b4eaa9f54c0f1ea5.html",
+          "checkedAt": "2026-11-23T10:45:20.328944+00:00",
+          "state": "body",
+          "note": "本轮读取正文。监管公告中的生产期间、过热条件、目标固件与系统通知。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-0",
+      "reviewedAt": "2026-11-23T10:46:17.398881+00:00",
+      "status": "partial",
+      "assessment": "核对眼镜与皮肤接触部位的风险条件，以及售后通知到设备更新之间的证据界限。",
+      "gaps": [
+        "FAQ 未解释设备离线时是否缓存或重发设置。",
+        "Meta、Apple、Samsung观察对象未取得本轮当前正文。",
+        "真实任务成功率、佩戴负担及续航缺跨企业实测；雷鸟数据地点、期限和删除传播仍未知。",
+        "雷鸟最低手机系统与权限细节仍有占位；文件导入内容保真未做实机测试。"
+      ],
+      "reviewedFields": [
+        "constraint"
+      ],
+      "changes": {
+        "constraint": {
+          "before": "佩戴舒适度、续航、隐私和持续使用 离线能力需按字幕、翻译等具体任务核验手机依赖、App 版本和预下载资源；不能仅凭“离线”断言数据不出端。 记录功能还应分别核对音频、转写、摘要与标签：雷鸟Life Log声明不存原始音频，但仍保留文字，不能据此推断没有个人数据留存。 儿童手表的远程规则需观察表端状态。华为上课禁用排查先核对时段与节假日，再核网络并可更换管理员。",
+          "after": "佩戴舒适度、续航、隐私和持续使用 离线能力需按字幕、翻译等具体任务核验手机依赖、App 版本和预下载资源；不能仅凭“离线”断言数据不出端。 记录功能还应分别核对音频、转写、摘要与标签：雷鸟Life Log声明不存原始音频，但仍保留文字，不能据此推断没有个人数据留存。 儿童手表的远程规则需观察表端状态。华为上课禁用排查先核对时段与节假日，再核网络并可更换管理员。 穿戴产品的热风险会随应用负载和使用时长变化。影目 AIR3 召回公告限定了受影响批次，并将长时间运行部分第三方应用与左镜腿可能过热联系起来。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e23-wearable-load",
+            "title": "评估眼镜发热要固定哪些使用条件",
+            "learning": "官方通报记录了软件负载、佩戴时间与局部热风险的关系。",
+            "application": "比较可穿戴设备时，分别记录设备型号、固件、应用和使用时长，再追踪相同条件的复测结果。",
+            "boundary": "仅涉及公告范围内产品，未公开温度实测、风险发生率或其他品牌结论。",
+            "itemIds": [
+              "e23-inmoweb"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e23-inmoweb",
+          "title": "通过 OTA 召回智能眼镜，怎样知道用户的设备完成了修复？",
+          "facts": [
+            {
+              "claim": "公告明确固件版本与功耗管理修复路径。",
+              "sourceUrl": "https://www.samr.gov.cn/zlfzj/qxcpzh/zhdt/art/2026/art_86dbae86909d4a49b4eaa9f54c0f1ea5.html",
+              "locator": "召回公告第三段，补救措施"
+            }
+          ],
+          "boundary": "4701 副是召回范围。公告未公布成功升级的数量、修复后的温升数据或事故率。",
+          "sources": [
+            {
+              "url": "https://www.samr.gov.cn/zlfzj/qxcpzh/zhdt/art/2026/art_86dbae86909d4a49b4eaa9f54c0f1ea5.html",
+              "publisherGroup": "市场监管总局质量发展局、召回中心",
+              "name": "市场监管总局质量发展局、召回中心",
+              "publishedAt": "2026-11-10T15:00:00+08:00",
+              "role": "official",
+              "textHash": "d444cfb9da236cb9b7794eed4194060b5d4a7b2111e79181265543e24687d9f1",
+              "readAt": "2026-11-23T10:45:20.328944+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e23-inmoweb",
+          "url": "https://www.samr.gov.cn/zlfzj/qxcpzh/zhdt/art/2026/art_86dbae86909d4a49b4eaa9f54c0f1ea5.html",
+          "checkedAt": "2026-11-23T10:45:20.328944+00:00",
+          "state": "body",
+          "note": "本轮读取正文。复核公告所述左镜腿过热的使用条件和升级前提示。"
         }
       ]
     }
