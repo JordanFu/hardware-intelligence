@@ -116,38 +116,39 @@
       "updatedAt": "2026-11-22T00:51:32.465861+00:00"
     },
     "chain-7": {
-      "attemptedAt": "2026-11-21T00:48:49.161188+00:00",
+      "attemptedAt": "2026-11-23T00:52:06.880964+00:00",
       "status": "partial",
-      "assessment": "拓竹在 AMS 2 Pro 的服务通知中区分受影响的生产批次与确切故障数量，说明替换送料器自收货日起重新计算三个月保修。",
+      "assessment": "日本消费者厅列出安克 A1257 共 401,771 件，2026 年 11 月 19 日回收率为 55.8%。本次新报火灾仍待归因，公告另列。",
       "gaps": [
         "缺少召回登记、寄发和最终处置各阶段完成数据。",
         "本轮补平台计数定义，但跨工单重复联系归属、观察窗口及排除项仍需业务级定义。",
         "没有设备停产通知、维修时效和恢复使用结果；华为该空间其他备份渠道仍未核实。"
       ],
       "reviewedFields": [
-        "flow"
+        "flow",
+        "metrics"
       ],
       "evidence": [
         {
-          "itemId": "bambu-service",
-          "title": "拓竹 AMS 2 Pro 服务计划：从生产批次追到替换与保修",
+          "itemId": "m23-jp",
+          "title": "四十万件移动电源召回，一年多后怎样核对进度？",
           "facts": [
             {
-              "claim": "官方将问题关联到 2026 年 5—7 月生产批次，并称确切受影响数量尚不确定。",
-              "sourceUrl": "https://forum.bambulab.com/t/service-notice-for-ams-2-pro-feeder-unit/261618",
-              "locator": "正文定位：拓竹 AMS 2 Pro 服务计划：从生产批次追到替换与保修"
+              "claim": "公告给出回收进度与截止日期。",
+              "sourceUrl": "https://www.caa.go.jp/notice/assets/consumer_safety_cms202_261120_01.pdf",
+              "locator": "召回对象、回收率及事故件数注记"
             }
           ],
-          "boundary": "官方说明与用户讨论分开：不采信论坛回帖作为官方结论；缺少实际替换完成率、故障率分母与长期结果。",
+          "boundary": "比例限于这次召回。未披露逐台换货完成情况，新增火灾与原召回原因之间的关系尚在调查。",
           "sources": [
             {
-              "name": "Bambu Lab 官方",
-              "url": "https://forum.bambulab.com/t/service-notice-for-ams-2-pro-feeder-unit/261618",
-              "publishedAt": "2026-10-27T07:05:00Z",
-              "publisherGroup": "Bambu Lab",
+              "url": "https://www.caa.go.jp/notice/assets/consumer_safety_cms202_261120_01.pdf",
+              "publisherGroup": "日本消费者厅",
+              "name": "日本消费者厅",
+              "publishedAt": "2026-11-20",
               "role": "official",
-              "textHash": "1b0a1cbcb271b1a1ae9b359073cb826ff53960c8e70588c1452f12bc0f63e5f8",
-              "readAt": "2026-11-05T10:27:57.891947+00:00",
+              "textHash": "bb376bad595cf1c5d32f14331db3770d11df1448113d0cdbf6ff2fa31a07b7cf",
+              "readAt": "2026-11-23T00:43:04.742919+00:00",
               "coverage": "body"
             }
           ]
@@ -155,19 +156,19 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "bambu-service",
-          "url": "https://forum.bambulab.com/t/service-notice-for-ams-2-pro-feeder-unit/261618",
-          "checkedAt": "2026-11-21T00:47:20.730530+00:00",
+          "itemId": "m23-jp",
+          "url": "https://www.caa.go.jp/notice/assets/consumer_safety_cms202_261120_01.pdf",
+          "checkedAt": "2026-11-23T00:43:04.742919+00:00",
           "state": "body",
-          "note": "仅使用厂商置顶通知的批次、寄送计划和新送料器保修三段；排除论坛用户留言。"
+          "note": "核对召回启动日期、产品数量、回收率和事故计数脚注。"
         }
       ],
-      "reviewedAt": "2026-11-21T00:48:49.161188+00:00",
+      "reviewedAt": "2026-11-23T00:52:06.880964+00:00",
       "patch": {
         "basics": "OTA 是远程软件更新；支持周期、回滚和停止服务的安排也是产品承诺。 对互联设备，还应检查所有权转移、恢复出厂与退出时的数据处理；这些是从岗位职责提炼的验收问题，不能视为全行业已落实的规范。",
         "exercise": "追踪一次服务事件，从用户发现到真正恢复使用，找出重复解释和重复操作。 补充一次设备转售或恢复出厂场景，列清设备、账号和云端数据的处理责任与验证证据。 对返修场景增加购买证明、排障记录、寄送指引与恢复使用四步，检查哪些信息能在授权范围内复用，避免用户重复解释。 阅读器迁移时核对账号、上传标志、私密设置与新设备本地可读状态；书架中的一条记录不能单独证明文件已经恢复。",
-        "flow": "使用、故障与反馈 → 安装、维修、更新、备件与退出方案 服务研究还应区分线上排障、返修授权、运输维修以及停产通知四个节点，逐一确认交接资料与承诺主体。 更换部件的保修起点可与整机不同。核对受影响批次、部件实际签收日期及原机保修条款，并将发出、签收、用户换件和恢复使用分别记录。",
-        "metrics": "首次解决率须先声明问题范围、首次交互、重复联系窗口与分母。Zendesk one-touch还可包含零次回复且已解决或关闭的工单，是特定报表计数；不能直接等同设备恢复使用率或用户资料恢复率。",
+        "flow": "使用、故障与反馈 → 安装、维修、更新、备件与退出方案 服务研究还应区分线上排障、返修授权、运输维修以及停产通知四个节点，逐一确认交接资料与承诺主体。 更换部件的保修起点可与整机不同。核对受影响批次、部件实际签收日期及原机保修条款，并将发出、签收、用户换件和恢复使用分别记录。 本次新报事故的原因尚在调查时，对照公告注记，检查是否已计入同批产品的既有事故统计。",
+        "metrics": "首次解决率须先声明问题范围、首次交互、重复联系窗口与分母。Zendesk one-touch还可包含零次回复且已解决或关闭的工单，是特定报表计数；不能直接等同设备恢复使用率或用户资料恢复率。 跟踪召回时同时写明对象数量、统计截止日及实际回收率；通知、回收、换货、退款和确认事故分别计数。",
         "pitfall": "将工单关闭、一次回复或能再次登录当作问题解决；应分开核验重复求助、设备恢复使用与资料保留，不能通过减少必要沟通提高计数。"
       },
       "lessons": [
@@ -247,9 +248,20 @@
             "bambu-service"
           ],
           "updatedAt": "2026-11-21T00:48:49.161188+00:00"
+        },
+        {
+          "id": "m23-chain-7",
+          "title": "一年多后，召回进度该看哪个数字",
+          "learning": "日本消费者厅列出安克 A1257 共 401,771 件，2026 年 11 月 19 日回收率为 55.8%。本次新报火灾仍待归因，公告另列。",
+          "application": "用同一型号建立按日期统计的触达、回收和换货清单；复盘时保留每项计数的分母和纳入规则。",
+          "boundary": "仅限本次公告，未披露家庭是否仍在使用未回收设备，也无逐台换货或事故原因的最终结论。",
+          "itemIds": [
+            "m23-jp"
+          ],
+          "updatedAt": "2026-11-23T00:52:06.880964+00:00"
         }
       ],
-      "updatedAt": "2026-11-21T00:48:49.161188+00:00"
+      "updatedAt": "2026-11-23T00:52:06.880964+00:00"
     },
     "track-5": {
       "attemptedAt": "2026-11-22T10:42:39.386204+00:00",
@@ -1170,52 +1182,38 @@
       "updatedAt": "2026-11-22T00:51:32.465861+00:00"
     },
     "chain-8": {
-      "attemptedAt": "2026-11-21T00:48:49.161188+00:00",
+      "attemptedAt": "2026-11-23T00:52:06.880964+00:00",
       "status": "partial",
-      "assessment": "讯飞供应商管理岗连接核价、研发样品交付与年度降本；小猿岗位把工作落在工厂欠料及学习机售后协助。",
+      "assessment": "华为星芒上市时的采访分别披露品牌与社区运营、逐步独立的研发组织及预算、共用技术与售后。",
       "gaps": [
         "本轮未取得供应商逐笔到账样本及新一轮评估结果。",
         "原始签核授权、量产结果及其他字段仍需独立资料。"
       ],
       "reviewedFields": [
+        "exercise",
         "team"
       ],
       "evidence": [
         {
-          "itemId": "m21-job-64eaead4b243a34c",
-          "title": "新物料样品交给谁，年度降本又由谁跟踪？",
+          "itemId": "m23-osta",
+          "title": "新品牌成立时，哪些工作随星芒单列，哪些仍由华为提供？",
           "facts": [
             {
-              "claim": "讯飞岗位列出研发样品交付保障和新物料寻源、核价。",
-              "sourceUrl": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
-              "locator": "工作职责第 3、4 项"
-            },
-            {
-              "claim": "小猿岗位要求跟进工厂欠料和瓶颈物料，并协助学习机售后。",
-              "sourceUrl": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
-              "locator": "工作内容第 2、3 项"
+              "claim": "采访把已经独立的品牌运营、逐步独立的研发和共享售后分别说明。",
+              "sourceUrl": "https://www.nbd.com.cn/articles/2026-11-20/4653955.html",
+              "locator": "共享能力与研发预算段"
             }
           ],
-          "boundary": "讯飞正文涉及消费电子，未指定学习机专属团队；小猿为历史校招样本。两份职责无法确认汇报线、供应商放行权或实际节约金额。",
+          "boundary": "报道记录上市时的管理层说明。具体预算审批人、服务结算、跨团队时限与实际效果仍未知。",
           "sources": [
             {
-              "url": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
-              "publisherGroup": "科大讯飞官方招聘",
-              "name": "科大讯飞官方招聘",
-              "publishedAt": "2026-05-12",
-              "role": "official",
-              "textHash": "d367fee8f52072da2786051fc233e03f2d8bd9886ef73c5619bfbf8fe35f8c33",
-              "readAt": "2026-11-21T00:40:55.745605+00:00",
-              "coverage": "body"
-            },
-            {
-              "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
-              "publisherGroup": "小猿官方校招",
-              "name": "小猿官方校招",
-              "publishedAt": "2026-03-11",
-              "role": "official",
-              "textHash": "982ecc6cff1cfeb8d1a745669098f97d72ce74b99df011b75c55a1b7aeae3821",
-              "readAt": "2026-11-21T00:40:58.494536+00:00",
+              "url": "https://www.nbd.com.cn/articles/2026-11-20/4653955.html",
+              "publisherGroup": "每日经济新闻",
+              "name": "每日经济新闻",
+              "publishedAt": "2026-11-20T17:11:05+08:00",
+              "role": "media",
+              "textHash": "cf01073aa2392024697a4539cbb8463611293fae25da9eb6a03251462996758b",
+              "readAt": "2026-11-23T00:42:29.756045+00:00",
               "coverage": "body"
             }
           ]
@@ -1223,24 +1221,17 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "m21-job-64eaead4b243a34c",
-          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
-          "checkedAt": "2026-11-21T00:40:55.745605+00:00",
+          "itemId": "m23-osta",
+          "url": "https://www.nbd.com.cn/articles/2026-11-20/4653955.html",
+          "checkedAt": "2026-11-23T00:42:29.756045+00:00",
           "state": "body",
-          "note": "复核讯飞官方岗位的职责3至5。"
-        },
-        {
-          "itemId": "m21-job-64eaead4b243a34c",
-          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
-          "checkedAt": "2026-11-21T00:40:58.494536+00:00",
-          "state": "body",
-          "note": "复核小猿官方岗位第2、3项的欠料及售后职责。"
+          "note": "读取负责人介绍的新品牌研发、品牌社区、渠道及售后边界。"
         }
       ],
-      "reviewedAt": "2026-11-21T00:48:49.161188+00:00",
+      "reviewedAt": "2026-11-23T00:52:06.880964+00:00",
       "patch": {
-        "team": "经营、产品线与专业职能明确谁决策、谁提供证据、谁对交付负责。 科沃斯岗位样本把退市纳入产品线职责，追觅索引把团队建设、资源协调与经营指标并列；研究时需进一步查明这些责任对应的预算、授权和跨部门接口。 按一次具体物料变更区分寻源、核价、研发样品签收、样品验证和降本核算。供应商管理岗承担样品交付，最终验证与量产放行权需要单独查项目记录。",
-        "exercise": "为一个跨团队取舍写清最终负责人、异议处理、所需证据和复盘窗口。 从一个新品上线或老产品退出案例，分别列出产品、制造、渠道与服务的交付物，核实谁能调配资源，谁承担未解决的用户问题。",
+        "team": "经营、产品线与专业职能明确谁决策、谁提供证据、谁对交付负责。 科沃斯岗位样本把退市纳入产品线职责，追觅索引把团队建设、资源协调与经营指标并列；研究时需进一步查明这些责任对应的预算、授权和跨部门接口。 按一次具体物料变更区分寻源、核价、研发样品签收、样品验证和降本核算。供应商管理岗承担样品交付，最终验证与量产放行权需要单独查项目记录。 新品牌可以独立运营产品与社区、逐步建立研发预算，同时沿用母公司技术及售后。核实分工时把已经单列、正在调整和继续共用的能力分开标记。",
+        "exercise": "为一个跨团队取舍写清最终负责人、异议处理、所需证据和复盘窗口。 从一个新品上线或老产品退出案例，分别列出产品、制造、渠道与服务的交付物，核实谁能调配资源，谁承担未解决的用户问题。 选一个共用固件缺陷，沿品牌反馈、技术排期、用户通知和售后关闭追踪一遍；取一张真实问题单核对有权改优先级的人。",
         "metrics": "利润说明期间赚亏，现金流说明现金进出，并区分经营、投资与融资活动；有利润不等于同额现金流入。依据SEC历史入门资料，不是现行准则核验。组织研究另需观察交付质量、返工、员工负担和自主性，不能由单个财务指标推断组织效率。"
       },
       "lessons": [
@@ -1299,9 +1290,20 @@
             "m21-job-64eaead4b243a34c"
           ],
           "updatedAt": "2026-11-21T00:48:49.161188+00:00"
+        },
+        {
+          "id": "m23-chain-8",
+          "title": "新品牌共享技术和售后时，怎样查明谁接手问题",
+          "learning": "华为星芒上市时的采访分别披露品牌与社区运营、逐步独立的研发组织及预算、共用技术与售后。",
+          "application": "学习机若沿用平板平台，先标出独立产品决策和共用技术窗口，再用一次故障验证跨团队如何完成交接。",
+          "boundary": "采访未提供最终签字权、服务水平约定或组织调整后的业绩；学习机场景为迁移练习。",
+          "itemIds": [
+            "m23-osta"
+          ],
+          "updatedAt": "2026-11-23T00:52:06.880964+00:00"
         }
       ],
-      "updatedAt": "2026-11-21T00:48:49.161188+00:00"
+      "updatedAt": "2026-11-23T00:52:06.880964+00:00"
     },
     "track-4": {
       "attemptedAt": "2026-11-21T10:49:32.407137+00:00",
@@ -1505,146 +1507,78 @@
       "updatedAt": "2026-11-21T10:49:32.407137+00:00"
     },
     "chain-6": {
-      "attemptedAt": "2026-11-21T10:49:32.407137+00:00",
+      "attemptedAt": "2026-11-23T00:52:06.880964+00:00",
       "status": "partial",
-      "assessment": "读书郎财报说明外包运营的费用归类；罗技财报揭示不同交易层级均可能计入 sell-through；复读 Shopify 的贡献毛益定义。",
+      "assessment": "有道三季度智能设备毛利率由 50.3% 降至 41.0%。公司解释为物料成本增加；同期网易披露调整 SKU 组合及推出两款笔。",
       "gaps": [
         "已复核两个公司披露的渠道层级及贡献毛益的通常计算方式。读书郎单店合同的费率、退货分摊和各经销商终端动销台账本轮未取得，无法核算单店贡献。"
       ],
       "reviewedFields": [
-        "basics",
         "metrics"
       ],
       "evidence": [
         {
-          "itemId": "e21-readboy",
-          "title": "学习机旗舰店谁来运营，渠道费用该算到哪一笔？",
+          "itemId": "m23-ydft",
+          "title": "有道智能设备毛利率降至 41%，怎样追到成本和产品组合？",
           "facts": [
             {
-              "claim": "公司把旗舰店委托专业团队运营产生的承包商成本列入销售及经销开支增加的原因。",
-              "sourceUrl": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042200480.pdf",
-              "locator": "管理层讨论与分析 · 销售及经销开支，印刷页31"
+              "claim": "有道披露智能设备业务的毛利率与同比口径。",
+              "sourceUrl": "https://markets.ft.markitdigital.com/data/announce/detail?dockey=600-202611190400PR_NEWS_USPRX____CN02238-1",
+              "locator": "Gross Margin by business"
             },
             {
-              "claim": "贡献毛益用对应范围内的销售收入减变动成本。",
-              "sourceUrl": "https://www.shopify.com/blog/what-is-contribution-margin",
-              "locator": "FAQ · What is the formula for contribution margin?"
+              "claim": "演示列出词典笔型号和近期 SKU 调整。",
+              "sourceUrl": "https://ir.netease.com/static-files/4ce9997f-f8b2-4df7-a71e-a754261a5fb4",
+              "locator": "有道业务页 · Smart devices 段"
             }
           ],
-          "boundary": "所读为公司年报相关段落和会计概念说明。未见店铺合同、单台学习机费用、家庭购买量或本次活动的贡献利润。",
+          "boundary": "财报为未经审计的业务汇总，无法算出其中任何一支笔的利润，也不能定位某个零件涨价或个别团队的人员变化。",
           "sources": [
             {
-              "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042200480.pdf",
-              "publisherGroup": "读书郎教育控股 · 港交所披露",
-              "name": "读书郎教育控股 · 港交所披露",
-              "publishedAt": "2026-04-22",
+              "url": "https://markets.ft.markitdigital.com/data/announce/detail?dockey=600-202611190400PR_NEWS_USPRX____CN02238-1",
+              "publisherGroup": "有道（公司财报）",
+              "name": "有道（公司财报）",
+              "publishedAt": "2026-11-19",
               "role": "official",
-              "textHash": "18a7e5a40e0d203fef565b976eebe7eb69344dd85fc1e9f72fb5248676ac191a",
-              "readAt": "2026-11-21T10:46:29.832822+00:00",
-              "coverage": "excerpt"
+              "textHash": "40c398a58ed502614787cea88f119b921c881933b039792df29593a768e9217f",
+              "readAt": "2026-11-23T00:43:07.295939+00:00",
+              "coverage": "body"
             },
             {
-              "url": "https://www.shopify.com/blog/what-is-contribution-margin",
-              "publisherGroup": "Shopify · 贡献毛益说明",
-              "name": "Shopify · 贡献毛益说明",
+              "url": "https://ir.netease.com/static-files/4ce9997f-f8b2-4df7-a71e-a754261a5fb4",
+              "publisherGroup": "网易投资者关系",
+              "name": "网易三季度投资者演示 · 有道业务页",
               "publishedAt": null,
               "role": "official",
-              "textHash": "4decc99a2edd9fd9f160704dc1beb3e337250e3273974b667299fee906d43da5",
-              "readAt": "2026-11-21T10:45:34.414496+00:00",
-              "coverage": "body"
-            }
-          ]
-        },
-        {
-          "itemId": "e21-logi-web",
-          "title": "经销商说已经卖出，货究竟到了哪一级？",
-          "facts": [
-            {
-              "claim": "罗技将经销商卖给其客户的交易也计入所用 sell-through 数据。",
-              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1032975/000103297526000021/logi-20260331.htm",
-              "locator": "风险因素 · sell-through 与渠道存货段"
-            }
-          ],
-          "boundary": "只核对所引年报段落；没有罗技或学习机厂商的逐笔零售数据，无法从这一披露推算终端销量。",
-          "sources": [
-            {
-              "url": "https://www.sec.gov/Archives/edgar/data/1032975/000103297526000021/logi-20260331.htm",
-              "publisherGroup": "罗技 · SEC 2026 财年 Form 10-K",
-              "name": "罗技 · SEC 2026 财年 Form 10-K",
-              "publishedAt": "2026-05-21",
-              "role": "official",
-              "textHash": "b9f5e063dc69b3637530419f246db67fafe04f1167aede52cdc11618e24efcbb",
-              "readAt": "2026-11-21T10:45:28.045786+00:00",
+              "textHash": "c396a17e82bd2bad5fc7d27d50309524aa2e58134d8d753ee8c913a952f7e6df",
+              "readAt": "2026-11-23T00:50:15.390318+00:00",
               "coverage": "excerpt"
-            }
-          ]
-        },
-        {
-          "itemId": "shopify-profit-cost-coverage",
-          "title": "促销后这款学习机到底赚了多少？先查利润报表漏掉了哪些订单",
-          "facts": [
-            {
-              "claim": "商品或规格售出时已登记成本，才能进入利润统计。",
-              "sourceUrl": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
-              "locator": "Adding cost per item"
-            },
-            {
-              "claim": "期间的折扣和退款会影响毛利率。",
-              "sourceUrl": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
-              "locator": "Discounts and refunds"
-            }
-          ],
-          "boundary": "依据 Shopify 自身报表说明。公开资料没有给出国内学习机厂商的实际成本、返利合同、平台账期或单台贡献利润。",
-          "sources": [
-            {
-              "url": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
-              "publisherGroup": "Shopify",
-              "name": "Shopify 帮助中心",
-              "publishedAt": null,
-              "role": "official",
-              "textHash": "92598227f465721c412d7e62a7d2784258feb7af53950b9e0fe008dc604f63ac",
-              "readAt": "2026-11-19T10:39:23.445990+00:00",
-              "coverage": "body"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "e21-readboy",
-          "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042200480.pdf",
-          "checkedAt": "2026-11-21T10:46:29.832822+00:00",
+          "itemId": "m23-ydft",
+          "url": "https://markets.ft.markitdigital.com/data/announce/detail?dockey=600-202611190400PR_NEWS_USPRX____CN02238-1",
+          "checkedAt": "2026-11-23T00:43:07.295939+00:00",
           "state": "body",
-          "note": "本轮读取原文相关段落。核对年报管理层讨论的渠道收入分类，以及销售及经销开支说明。"
+          "note": "读取智能设备净收入、毛利率、材料成本解释。"
         },
         {
-          "itemId": "e21-readboy",
-          "url": "https://www.shopify.com/blog/what-is-contribution-margin",
-          "checkedAt": "2026-11-21T10:45:34.414496+00:00",
+          "itemId": "m23-ydft",
+          "url": "https://ir.netease.com/static-files/4ce9997f-f8b2-4df7-a71e-a754261a5fb4",
+          "checkedAt": "2026-11-23T00:50:15.390318+00:00",
           "state": "body",
-          "note": "本轮读取正文。核对贡献金额与变动成本公式。"
-        },
-        {
-          "itemId": "e21-logi-web",
-          "url": "https://www.sec.gov/Archives/edgar/data/1032975/000103297526000021/logi-20260331.htm",
-          "checkedAt": "2026-11-21T10:45:28.045786+00:00",
-          "state": "body",
-          "note": "本轮读取原文相关段落。阅读 SEC 年报关于直销零售客户、经销客户及上报范围的定义。"
-        },
-        {
-          "itemId": "shopify-profit-cost-coverage",
-          "url": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
-          "checkedAt": "2026-11-21T10:44:20.504273+00:00",
-          "state": "body",
-          "note": "本轮读取正文。复核售出商品成本字段与按商品统计毛利的报表条件。"
+          "note": "仅核对投资者演示中有道业务与两款笔的段落。"
         }
       ],
-      "reviewedAt": "2026-11-21T10:49:32.407137+00:00",
+      "reviewedAt": "2026-11-23T00:52:06.880964+00:00",
       "patch": {
         "flow": "用户需求与库存 → 定价、渠道政策、交付承诺与终端反馈 还需核对销售主体、支持地区、购买凭证与设备序列号在售后受理中的衔接。",
         "team": "销售、市场、计划、零售、财务对齐销售预测、货盘、促销与退货规则。 XREAL 的公开流程提示渠道与服务之间存在购买证据交接；研究时应确认能否复用已授权订单信息，减少用户重复提交。",
         "exercise": "选一个销售活动，列出从备货到退货的责任与反馈，不只统计订单数。 选择一个具体渠道和地区，画出从购买承诺到问题处理的用户路径，记录需要重复提供的信息及尚未明确的责任。 对一次售罄率变化另列统计窗口、库存范围及模型版本，先排除统计变更再讨论备货和促销。",
-        "metrics": "网店转化率先确认分母：Shopify以购买会话占总会话计算，同一会话可含多笔订单。比较时固定期间、漏斗路径、过滤与计量版本；不能直接套到门店或经销商。渠道贡献金额按同范围收入扣除变动成本；贡献率再除以该收入。先确认退款已冲减的项目，核对实际合同中按件和固定收费的部分。 售罄率另核库存分母：Shopify示例为售出数量/（售出数量+期末库存）；其2026年10月1日库存模型改变，跨期不能直接解释为经营变化。 利润对账另核售出时成本字段覆盖的规格，并按净销售额核对折扣、退款和缺成本成交金额。",
+        "metrics": "网店转化率先确认分母：Shopify以购买会话占总会话计算，同一会话可含多笔订单。比较时固定期间、漏斗路径、过滤与计量版本；不能直接套到门店或经销商。渠道贡献金额按同范围收入扣除变动成本；贡献率再除以该收入。先确认退款已冲减的项目，核对实际合同中按件和固定收费的部分。 售罄率另核库存分母：Shopify示例为售出数量/（售出数量+期末库存）；其2026年10月1日库存模型改变，跨期不能直接解释为经营变化。 利润对账另核售出时成本字段覆盖的规格，并按净销售额核对折扣、退款和缺成本成交金额。 产品组合变更时，经营复盘先标明收入和毛利的业务范围，再按机型、出货批次、物料成本与渠道折扣追溯。单个品类新增产品不等于该品类实现分部毛利。",
         "basics": "Sell-in 记录供给方卖给渠道的交易。Sell-through 的下一手买方需按数据提供方确认：零售渠道可能报到消费者，多级经销也可能只报到下一家经销商或门店。汇总时应分开交易层级。"
       },
       "lessons": [
@@ -1713,9 +1647,20 @@
             "e21-logi-web"
           ],
           "updatedAt": "2026-11-21T10:49:32.407137+00:00"
+        },
+        {
+          "id": "m23-chain-6",
+          "title": "上了两款新笔，能从业务毛利率算出一支笔的利润吗",
+          "learning": "有道三季度智能设备毛利率由 50.3% 降至 41.0%。公司解释为物料成本增加；同期网易披露调整 SKU 组合及推出两款笔。",
+          "application": "产品经理提供不同型号的销量结构，采购提供同期物料成本，财务对照收入确认及折扣；归因前核对样本是否同一批次。",
+          "boundary": "财报只到智能设备业务，产品材料只列型号；没有两款笔的单品收入、折扣和成本。",
+          "itemIds": [
+            "m23-ydft"
+          ],
+          "updatedAt": "2026-11-23T00:52:06.880964+00:00"
         }
       ],
-      "updatedAt": "2026-11-21T10:49:32.407137+00:00"
+      "updatedAt": "2026-11-23T00:52:06.880964+00:00"
     },
     "track-0": {
       "attemptedAt": "2026-11-22T00:51:32.465861+00:00",
@@ -1974,38 +1919,39 @@
       "updatedAt": "2026-11-22T10:42:39.386204+00:00"
     },
     "track-3": {
-      "attemptedAt": "2026-11-21T00:48:49.161188+00:00",
+      "attemptedAt": "2026-11-23T00:52:06.880964+00:00",
       "status": "partial",
-      "assessment": "MLCommons 为每项 Tiny 任务设质量目标，并用校准方法测被测设备功耗。",
+      "assessment": "MLCommons 同时说明了内存足够时的 CPU 运行条件和一个明确支持的 NPU 加速组合。",
       "gaps": [
         "已核 MLPerf Tiny 的单次推理质量和能耗边界；跨竞品、同任务整机功耗和时延仍缺实测。",
         "已补瑞芯微软件栈层次；Qualcomm、NVIDIA及各厂商具体型号和工具仍未全面复核。",
         "模型压缩方法、BSP细节、维护成本及同任务整机测量仍缺完整依据。"
       ],
       "reviewedFields": [
+        "constraint",
         "metrics"
       ],
       "evidence": [
         {
-          "itemId": "m21-tiny",
-          "title": "词典笔的端侧模型更快了，换了模型还能直接比吗？",
+          "itemId": "m23-ml",
+          "title": "设备能跑大模型，怎样核实评测实际用了哪块处理器？",
           "facts": [
             {
-              "claim": "每项任务有固定的质量目标。",
-              "sourceUrl": "https://mlcommons.org/2026/07/mlperf-tiny-v1-4-results/",
-              "locator": "What does MLPerf Tiny measure 小节"
+              "claim": "工作组区分 CPU 执行条件与当前支持的 NPU 加速组合。",
+              "sourceUrl": "https://mlcommons.org/2026/06/mlperf-mobile-v6/",
+              "locator": "LLM tests 的模型、数据及执行后端段"
             }
           ],
-          "boundary": "这是低功耗设备的基准方法。未测试某一品牌的词典笔，单次推理耗能也不能直接换算整机续航。",
+          "boundary": "特定版本的基准和支持范围；未提供本轮竞品在离线批改、录音摘要上的质量或续航。",
           "sources": [
             {
-              "url": "https://mlcommons.org/2026/07/mlperf-tiny-v1-4-results/",
+              "url": "https://mlcommons.org/2026/06/mlperf-mobile-v6/",
               "publisherGroup": "MLCommons",
               "name": "MLCommons",
-              "publishedAt": null,
+              "publishedAt": "2026-06-15",
               "role": "official",
-              "textHash": "15550482249298ea0d37bd902fd576a7f7a6a4b967f5e4a16d3d68ba66230469",
-              "readAt": "2026-11-21T00:40:51.829788+00:00",
+              "textHash": "b9fefda95a82d8e6e08167556eb10ba02bd0f770f1187d86007c14354db73311",
+              "readAt": "2026-11-23T00:42:05.690091+00:00",
               "coverage": "body"
             }
           ]
@@ -2013,18 +1959,19 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "m21-tiny",
-          "url": "https://mlcommons.org/2026/07/mlperf-tiny-v1-4-results/",
-          "checkedAt": "2026-11-21T00:40:51.829788+00:00",
+          "itemId": "m23-ml",
+          "url": "https://mlcommons.org/2026/06/mlperf-mobile-v6/",
+          "checkedAt": "2026-11-23T00:42:05.690091+00:00",
           "state": "body",
-          "note": "读取 v1.4 方法说明中的质量要求、设备电能测量和适用任务。"
+          "note": "复核 MLPerf Mobile v6.0 的任务、质量评估、处理器和模型限定。"
         }
       ],
-      "reviewedAt": "2026-11-21T00:48:49.161188+00:00",
+      "reviewedAt": "2026-11-23T00:52:06.880964+00:00",
       "patch": {
         "chain": "芯片 / 模组 → SDK与模型转换 → 板端运行时和驱动 → 整机集成。RKNN示例把转换工具、Python或C/C++接口与NPU内核驱动分层；模型文件交接不能替代运行环境核对。",
-        "metrics": "同一任务下的延迟、功耗、内存与准确性 不同层级运行频率不能直接替代端到端响应延迟；需固定任务、系统边界和设备版本，再测功耗、内存与效果。 对Jetson样本还应记录功耗模式、核心/频率配置和温度日志；模组监测功耗不等于整机功耗，配置与散热条件不同的成绩不能直接比较。 MLPerf Tiny 固定任务及质量门槛，再比较时延和单次推理能耗；说明测试集、负载、配置和测量范围。比较整机续航时还需连续使用和待机耗能。",
-        "team": "芯片 / BSP、模型压缩、系统软件、热设计、应用工程。研究接口：模型团队与板端团队应核对模型、转换工具、芯片、运行时和驱动版本；这是由RKNN分层形成的检查问题，不是公司组织图。"
+        "metrics": "同一任务下的延迟、功耗、内存与准确性 不同层级运行频率不能直接替代端到端响应延迟；需固定任务、系统边界和设备版本，再测功耗、内存与效果。 对Jetson样本还应记录功耗模式、核心/频率配置和温度日志；模组监测功耗不等于整机功耗，配置与散热条件不同的成绩不能直接比较。 MLPerf Tiny 固定任务及质量门槛，再比较时延和单次推理能耗；说明测试集、负载、配置和测量范围。比较整机续航时还需连续使用和待机耗能。 记录端侧语言模型测试所用数据集、准确性、模型大小与实际执行后端。相同芯片标称值不能替代运行配置。",
+        "team": "芯片 / BSP、模型压缩、系统软件、热设计、应用工程。研究接口：模型团队与板端团队应核对模型、转换工具、芯片、运行时和驱动版本；这是由RKNN分层形成的检查问题，不是公司组织图。",
+        "constraint": "延迟、内存、散热、能耗和模型持续维护 MLPerf Mobile v6.0 的语言模型任务可在内存足够时用 CPU 执行；NPU 加速覆盖特定模型与平台组合。"
       },
       "lessons": [
         {
@@ -2082,9 +2029,20 @@
             "m21-tiny"
           ],
           "updatedAt": "2026-11-21T00:48:49.161188+00:00"
+        },
+        {
+          "id": "m23-track-3",
+          "title": "怎样区分端侧模型跑通与加速器真正参与",
+          "learning": "MLCommons 同时说明了内存足够时的 CPU 运行条件和一个明确支持的 NPU 加速组合。",
+          "application": "词典笔或学习机评测时，先确认任务质量合格，再在相同模型和输入上记录 CPU/NPU 路径与耗时。",
+          "boundary": "基准版本限定。竞品设备的实际执行路径、持续负载下耗时及整机能耗仍待实测。",
+          "itemIds": [
+            "m23-ml"
+          ],
+          "updatedAt": "2026-11-23T00:52:06.880964+00:00"
         }
       ],
-      "updatedAt": "2026-11-21T00:48:49.161188+00:00"
+      "updatedAt": "2026-11-23T00:52:06.880964+00:00"
     }
   },
   "runs": [
@@ -3141,6 +3099,41 @@
           "hash": "25b04a2149171ef5d862607bde631c0d070d9e18a2818d1d0c1b76e3bca44c06",
           "decision": "integrated",
           "reason": "Novena 团队披露先试寄约十二台桌面设备，等待约两周收到反馈，调整设计和装箱后才启动数百台生产；当时工厂临近春节停工。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-23T00:52:06.880964+00:00",
+      "reviewedNodes": [
+        "chain-7",
+        "chain-8",
+        "track-3",
+        "chain-6"
+      ],
+      "decisions": [
+        {
+          "itemId": "m23-jp",
+          "hash": "57c0469f4b2b563679bff05e7b94ec72dde52e1e7d4cd98b05de58138aee4c5a",
+          "decision": "integrated",
+          "reason": "日本消费者厅列出安克 A1257 共 401,771 件，2026 年 11 月 19 日回收率为 55.8%。本次新报火灾仍待归因，公告另列。"
+        },
+        {
+          "itemId": "m23-osta",
+          "hash": "854c0cf789183c21ab07003d87d802a9155d45af219f864ac627f26c06a6beae",
+          "decision": "integrated",
+          "reason": "华为星芒上市时的采访分别披露品牌与社区运营、逐步独立的研发组织及预算、共用技术与售后。"
+        },
+        {
+          "itemId": "m23-ml",
+          "hash": "45294864cfb244b3b88221c1ed6de9b0e76c29256e4cf644dd3c0890b0d7a699",
+          "decision": "integrated",
+          "reason": "MLCommons 同时说明了内存足够时的 CPU 运行条件和一个明确支持的 NPU 加速组合。"
+        },
+        {
+          "itemId": "m23-ydft",
+          "hash": "7e53e321bd0b54d66e7d1e6aeaa438fc10f073fed621a6ebfdf8304e04d46d01",
+          "decision": "integrated",
+          "reason": "有道三季度智能设备毛利率由 50.3% 降至 41.0%。公司解释为物料成本增加；同期网易披露调整 SKU 组合及推出两款笔。"
         }
       ]
     }
@@ -12047,6 +12040,320 @@
           "checkedAt": "2026-11-22T10:41:46Z",
           "state": "body",
           "note": "本轮读取原文相关段落。2015年2月5日原发试寄与投产决定段，网页可读节选。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-7",
+      "reviewedAt": "2026-11-23T00:52:06.880964+00:00",
+      "status": "partial",
+      "assessment": "日本消费者厅列出安克 A1257 共 401,771 件，2026 年 11 月 19 日回收率为 55.8%。本次新报火灾仍待归因，公告另列。",
+      "gaps": [
+        "缺少召回登记、寄发和最终处置各阶段完成数据。",
+        "本轮补平台计数定义，但跨工单重复联系归属、观察窗口及排除项仍需业务级定义。",
+        "没有设备停产通知、维修时效和恢复使用结果；华为该空间其他备份渠道仍未核实。"
+      ],
+      "reviewedFields": [
+        "flow",
+        "metrics"
+      ],
+      "changes": {
+        "metrics": {
+          "before": "首次解决率须先声明问题范围、首次交互、重复联系窗口与分母。Zendesk one-touch还可包含零次回复且已解决或关闭的工单，是特定报表计数；不能直接等同设备恢复使用率或用户资料恢复率。",
+          "after": "首次解决率须先声明问题范围、首次交互、重复联系窗口与分母。Zendesk one-touch还可包含零次回复且已解决或关闭的工单，是特定报表计数；不能直接等同设备恢复使用率或用户资料恢复率。 跟踪召回时同时写明对象数量、统计截止日及实际回收率；通知、回收、换货、退款和确认事故分别计数。"
+        },
+        "flow": {
+          "before": "使用、故障与反馈 → 安装、维修、更新、备件与退出方案 服务研究还应区分线上排障、返修授权、运输维修以及停产通知四个节点，逐一确认交接资料与承诺主体。 更换部件的保修起点可与整机不同。核对受影响批次、部件实际签收日期及原机保修条款，并将发出、签收、用户换件和恢复使用分别记录。",
+          "after": "使用、故障与反馈 → 安装、维修、更新、备件与退出方案 服务研究还应区分线上排障、返修授权、运输维修以及停产通知四个节点，逐一确认交接资料与承诺主体。 更换部件的保修起点可与整机不同。核对受影响批次、部件实际签收日期及原机保修条款，并将发出、签收、用户换件和恢复使用分别记录。 本次新报事故的原因尚在调查时，对照公告注记，检查是否已计入同批产品的既有事故统计。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m23-chain-7",
+            "title": "一年多后，召回进度该看哪个数字",
+            "learning": "日本消费者厅列出安克 A1257 共 401,771 件，2026 年 11 月 19 日回收率为 55.8%。本次新报火灾仍待归因，公告另列。",
+            "application": "用同一型号建立按日期统计的触达、回收和换货清单；复盘时保留每项计数的分母和纳入规则。",
+            "boundary": "仅限本次公告，未披露家庭是否仍在使用未回收设备，也无逐台换货或事故原因的最终结论。",
+            "itemIds": [
+              "m23-jp"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m23-jp",
+          "title": "四十万件移动电源召回，一年多后怎样核对进度？",
+          "facts": [
+            {
+              "claim": "公告给出回收进度与截止日期。",
+              "sourceUrl": "https://www.caa.go.jp/notice/assets/consumer_safety_cms202_261120_01.pdf",
+              "locator": "召回对象、回收率及事故件数注记"
+            }
+          ],
+          "boundary": "比例限于这次召回。未披露逐台换货完成情况，新增火灾与原召回原因之间的关系尚在调查。",
+          "sources": [
+            {
+              "url": "https://www.caa.go.jp/notice/assets/consumer_safety_cms202_261120_01.pdf",
+              "publisherGroup": "日本消费者厅",
+              "name": "日本消费者厅",
+              "publishedAt": "2026-11-20",
+              "role": "official",
+              "textHash": "bb376bad595cf1c5d32f14331db3770d11df1448113d0cdbf6ff2fa31a07b7cf",
+              "readAt": "2026-11-23T00:43:04.742919+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m23-jp",
+          "url": "https://www.caa.go.jp/notice/assets/consumer_safety_cms202_261120_01.pdf",
+          "checkedAt": "2026-11-23T00:43:04.742919+00:00",
+          "state": "body",
+          "note": "核对召回启动日期、产品数量、回收率和事故计数脚注。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-8",
+      "reviewedAt": "2026-11-23T00:52:06.880964+00:00",
+      "status": "partial",
+      "assessment": "华为星芒上市时的采访分别披露品牌与社区运营、逐步独立的研发组织及预算、共用技术与售后。",
+      "gaps": [
+        "本轮未取得供应商逐笔到账样本及新一轮评估结果。",
+        "原始签核授权、量产结果及其他字段仍需独立资料。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "team"
+      ],
+      "changes": {
+        "team": {
+          "before": "经营、产品线与专业职能明确谁决策、谁提供证据、谁对交付负责。 科沃斯岗位样本把退市纳入产品线职责，追觅索引把团队建设、资源协调与经营指标并列；研究时需进一步查明这些责任对应的预算、授权和跨部门接口。 按一次具体物料变更区分寻源、核价、研发样品签收、样品验证和降本核算。供应商管理岗承担样品交付，最终验证与量产放行权需要单独查项目记录。",
+          "after": "经营、产品线与专业职能明确谁决策、谁提供证据、谁对交付负责。 科沃斯岗位样本把退市纳入产品线职责，追觅索引把团队建设、资源协调与经营指标并列；研究时需进一步查明这些责任对应的预算、授权和跨部门接口。 按一次具体物料变更区分寻源、核价、研发样品签收、样品验证和降本核算。供应商管理岗承担样品交付，最终验证与量产放行权需要单独查项目记录。 新品牌可以独立运营产品与社区、逐步建立研发预算，同时沿用母公司技术及售后。核实分工时把已经单列、正在调整和继续共用的能力分开标记。"
+        },
+        "exercise": {
+          "before": "为一个跨团队取舍写清最终负责人、异议处理、所需证据和复盘窗口。 从一个新品上线或老产品退出案例，分别列出产品、制造、渠道与服务的交付物，核实谁能调配资源，谁承担未解决的用户问题。",
+          "after": "为一个跨团队取舍写清最终负责人、异议处理、所需证据和复盘窗口。 从一个新品上线或老产品退出案例，分别列出产品、制造、渠道与服务的交付物，核实谁能调配资源，谁承担未解决的用户问题。 选一个共用固件缺陷，沿品牌反馈、技术排期、用户通知和售后关闭追踪一遍；取一张真实问题单核对有权改优先级的人。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m23-chain-8",
+            "title": "新品牌共享技术和售后时，怎样查明谁接手问题",
+            "learning": "华为星芒上市时的采访分别披露品牌与社区运营、逐步独立的研发组织及预算、共用技术与售后。",
+            "application": "学习机若沿用平板平台，先标出独立产品决策和共用技术窗口，再用一次故障验证跨团队如何完成交接。",
+            "boundary": "采访未提供最终签字权、服务水平约定或组织调整后的业绩；学习机场景为迁移练习。",
+            "itemIds": [
+              "m23-osta"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m23-osta",
+          "title": "新品牌成立时，哪些工作随星芒单列，哪些仍由华为提供？",
+          "facts": [
+            {
+              "claim": "采访把已经独立的品牌运营、逐步独立的研发和共享售后分别说明。",
+              "sourceUrl": "https://www.nbd.com.cn/articles/2026-11-20/4653955.html",
+              "locator": "共享能力与研发预算段"
+            }
+          ],
+          "boundary": "报道记录上市时的管理层说明。具体预算审批人、服务结算、跨团队时限与实际效果仍未知。",
+          "sources": [
+            {
+              "url": "https://www.nbd.com.cn/articles/2026-11-20/4653955.html",
+              "publisherGroup": "每日经济新闻",
+              "name": "每日经济新闻",
+              "publishedAt": "2026-11-20T17:11:05+08:00",
+              "role": "media",
+              "textHash": "cf01073aa2392024697a4539cbb8463611293fae25da9eb6a03251462996758b",
+              "readAt": "2026-11-23T00:42:29.756045+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m23-osta",
+          "url": "https://www.nbd.com.cn/articles/2026-11-20/4653955.html",
+          "checkedAt": "2026-11-23T00:42:29.756045+00:00",
+          "state": "body",
+          "note": "读取负责人介绍的新品牌研发、品牌社区、渠道及售后边界。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-3",
+      "reviewedAt": "2026-11-23T00:52:06.880964+00:00",
+      "status": "partial",
+      "assessment": "MLCommons 同时说明了内存足够时的 CPU 运行条件和一个明确支持的 NPU 加速组合。",
+      "gaps": [
+        "已核 MLPerf Tiny 的单次推理质量和能耗边界；跨竞品、同任务整机功耗和时延仍缺实测。",
+        "已补瑞芯微软件栈层次；Qualcomm、NVIDIA及各厂商具体型号和工具仍未全面复核。",
+        "模型压缩方法、BSP细节、维护成本及同任务整机测量仍缺完整依据。"
+      ],
+      "reviewedFields": [
+        "constraint",
+        "metrics"
+      ],
+      "changes": {
+        "metrics": {
+          "before": "同一任务下的延迟、功耗、内存与准确性 不同层级运行频率不能直接替代端到端响应延迟；需固定任务、系统边界和设备版本，再测功耗、内存与效果。 对Jetson样本还应记录功耗模式、核心/频率配置和温度日志；模组监测功耗不等于整机功耗，配置与散热条件不同的成绩不能直接比较。 MLPerf Tiny 固定任务及质量门槛，再比较时延和单次推理能耗；说明测试集、负载、配置和测量范围。比较整机续航时还需连续使用和待机耗能。",
+          "after": "同一任务下的延迟、功耗、内存与准确性 不同层级运行频率不能直接替代端到端响应延迟；需固定任务、系统边界和设备版本，再测功耗、内存与效果。 对Jetson样本还应记录功耗模式、核心/频率配置和温度日志；模组监测功耗不等于整机功耗，配置与散热条件不同的成绩不能直接比较。 MLPerf Tiny 固定任务及质量门槛，再比较时延和单次推理能耗；说明测试集、负载、配置和测量范围。比较整机续航时还需连续使用和待机耗能。 记录端侧语言模型测试所用数据集、准确性、模型大小与实际执行后端。相同芯片标称值不能替代运行配置。"
+        },
+        "constraint": {
+          "before": "延迟、内存、散热、能耗和模型持续维护",
+          "after": "延迟、内存、散热、能耗和模型持续维护 MLPerf Mobile v6.0 的语言模型任务可在内存足够时用 CPU 执行；NPU 加速覆盖特定模型与平台组合。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m23-track-3",
+            "title": "怎样区分端侧模型跑通与加速器真正参与",
+            "learning": "MLCommons 同时说明了内存足够时的 CPU 运行条件和一个明确支持的 NPU 加速组合。",
+            "application": "词典笔或学习机评测时，先确认任务质量合格，再在相同模型和输入上记录 CPU/NPU 路径与耗时。",
+            "boundary": "基准版本限定。竞品设备的实际执行路径、持续负载下耗时及整机能耗仍待实测。",
+            "itemIds": [
+              "m23-ml"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m23-ml",
+          "title": "设备能跑大模型，怎样核实评测实际用了哪块处理器？",
+          "facts": [
+            {
+              "claim": "工作组区分 CPU 执行条件与当前支持的 NPU 加速组合。",
+              "sourceUrl": "https://mlcommons.org/2026/06/mlperf-mobile-v6/",
+              "locator": "LLM tests 的模型、数据及执行后端段"
+            }
+          ],
+          "boundary": "特定版本的基准和支持范围；未提供本轮竞品在离线批改、录音摘要上的质量或续航。",
+          "sources": [
+            {
+              "url": "https://mlcommons.org/2026/06/mlperf-mobile-v6/",
+              "publisherGroup": "MLCommons",
+              "name": "MLCommons",
+              "publishedAt": "2026-06-15",
+              "role": "official",
+              "textHash": "b9fefda95a82d8e6e08167556eb10ba02bd0f770f1187d86007c14354db73311",
+              "readAt": "2026-11-23T00:42:05.690091+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m23-ml",
+          "url": "https://mlcommons.org/2026/06/mlperf-mobile-v6/",
+          "checkedAt": "2026-11-23T00:42:05.690091+00:00",
+          "state": "body",
+          "note": "复核 MLPerf Mobile v6.0 的任务、质量评估、处理器和模型限定。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-6",
+      "reviewedAt": "2026-11-23T00:52:06.880964+00:00",
+      "status": "partial",
+      "assessment": "有道三季度智能设备毛利率由 50.3% 降至 41.0%。公司解释为物料成本增加；同期网易披露调整 SKU 组合及推出两款笔。",
+      "gaps": [
+        "已复核两个公司披露的渠道层级及贡献毛益的通常计算方式。读书郎单店合同的费率、退货分摊和各经销商终端动销台账本轮未取得，无法核算单店贡献。"
+      ],
+      "reviewedFields": [
+        "metrics"
+      ],
+      "changes": {
+        "metrics": {
+          "before": "网店转化率先确认分母：Shopify以购买会话占总会话计算，同一会话可含多笔订单。比较时固定期间、漏斗路径、过滤与计量版本；不能直接套到门店或经销商。渠道贡献金额按同范围收入扣除变动成本；贡献率再除以该收入。先确认退款已冲减的项目，核对实际合同中按件和固定收费的部分。 售罄率另核库存分母：Shopify示例为售出数量/（售出数量+期末库存）；其2026年10月1日库存模型改变，跨期不能直接解释为经营变化。 利润对账另核售出时成本字段覆盖的规格，并按净销售额核对折扣、退款和缺成本成交金额。",
+          "after": "网店转化率先确认分母：Shopify以购买会话占总会话计算，同一会话可含多笔订单。比较时固定期间、漏斗路径、过滤与计量版本；不能直接套到门店或经销商。渠道贡献金额按同范围收入扣除变动成本；贡献率再除以该收入。先确认退款已冲减的项目，核对实际合同中按件和固定收费的部分。 售罄率另核库存分母：Shopify示例为售出数量/（售出数量+期末库存）；其2026年10月1日库存模型改变，跨期不能直接解释为经营变化。 利润对账另核售出时成本字段覆盖的规格，并按净销售额核对折扣、退款和缺成本成交金额。 产品组合变更时，经营复盘先标明收入和毛利的业务范围，再按机型、出货批次、物料成本与渠道折扣追溯。单个品类新增产品不等于该品类实现分部毛利。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m23-chain-6",
+            "title": "上了两款新笔，能从业务毛利率算出一支笔的利润吗",
+            "learning": "有道三季度智能设备毛利率由 50.3% 降至 41.0%。公司解释为物料成本增加；同期网易披露调整 SKU 组合及推出两款笔。",
+            "application": "产品经理提供不同型号的销量结构，采购提供同期物料成本，财务对照收入确认及折扣；归因前核对样本是否同一批次。",
+            "boundary": "财报只到智能设备业务，产品材料只列型号；没有两款笔的单品收入、折扣和成本。",
+            "itemIds": [
+              "m23-ydft"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m23-ydft",
+          "title": "有道智能设备毛利率降至 41%，怎样追到成本和产品组合？",
+          "facts": [
+            {
+              "claim": "有道披露智能设备业务的毛利率与同比口径。",
+              "sourceUrl": "https://markets.ft.markitdigital.com/data/announce/detail?dockey=600-202611190400PR_NEWS_USPRX____CN02238-1",
+              "locator": "Gross Margin by business"
+            },
+            {
+              "claim": "演示列出词典笔型号和近期 SKU 调整。",
+              "sourceUrl": "https://ir.netease.com/static-files/4ce9997f-f8b2-4df7-a71e-a754261a5fb4",
+              "locator": "有道业务页 · Smart devices 段"
+            }
+          ],
+          "boundary": "财报为未经审计的业务汇总，无法算出其中任何一支笔的利润，也不能定位某个零件涨价或个别团队的人员变化。",
+          "sources": [
+            {
+              "url": "https://markets.ft.markitdigital.com/data/announce/detail?dockey=600-202611190400PR_NEWS_USPRX____CN02238-1",
+              "publisherGroup": "有道（公司财报）",
+              "name": "有道（公司财报）",
+              "publishedAt": "2026-11-19",
+              "role": "official",
+              "textHash": "40c398a58ed502614787cea88f119b921c881933b039792df29593a768e9217f",
+              "readAt": "2026-11-23T00:43:07.295939+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://ir.netease.com/static-files/4ce9997f-f8b2-4df7-a71e-a754261a5fb4",
+              "publisherGroup": "网易投资者关系",
+              "name": "网易三季度投资者演示 · 有道业务页",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "c396a17e82bd2bad5fc7d27d50309524aa2e58134d8d753ee8c913a952f7e6df",
+              "readAt": "2026-11-23T00:50:15.390318+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m23-ydft",
+          "url": "https://markets.ft.markitdigital.com/data/announce/detail?dockey=600-202611190400PR_NEWS_USPRX____CN02238-1",
+          "checkedAt": "2026-11-23T00:43:07.295939+00:00",
+          "state": "body",
+          "note": "读取智能设备净收入、毛利率、材料成本解释。"
+        },
+        {
+          "itemId": "m23-ydft",
+          "url": "https://ir.netease.com/static-files/4ce9997f-f8b2-4df7-a71e-a754261a5fb4",
+          "checkedAt": "2026-11-23T00:50:15.390318+00:00",
+          "state": "body",
+          "note": "仅核对投资者演示中有道业务与两款笔的段落。"
         }
       ]
     }

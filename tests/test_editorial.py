@@ -14,6 +14,11 @@ class EditorialTests(unittest.TestCase):
  def test_event_publisher_dedup(self):
   rows=[self.row(),self.row('b')];events=e.events_for(rows)
   self.assertEqual(len(events),1);self.assertEqual(events[0]['publisherGroups'],['A']);self.assertEqual(len(self.digest(rows)['itemIds']),1)
+ def test_recent_case_stays_in_deep_reads(self):
+  news=self.row('report',date='2026-11-03')
+  case=dict(self.row('case',date='2026-11-04'),kind='历史案例')
+  evergreen=dict(self.row('guide',event='guide'),kind='常青资料')
+  self.assertEqual(self.digest([news,case,evergreen])['itemIds'],['report'])
  def test_latest_development_represents_event(self):
   old=self.row('old',date='2026-11-01');old['score']=99
   new=self.row('new',dev='two',date='2026-11-04')

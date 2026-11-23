@@ -161,7 +161,9 @@ def make_digest(items,events,previous,run,clock=None):
     if recovering or revision:bootstrap=previous_today['bootstrap']
     byid={i['id']:i for i in items};candidates=[]
     for ev in events:
-        eligible=[byid[x] for x in ev['itemIds'] if byid[x].get('selected') and byid[x].get('publishedAt')]
+        eligible=[byid[x] for x in ev['itemIds']
+                  if byid[x].get('selected') and byid[x].get('publishedAt')
+                  and byid[x].get('kind') not in ('历史案例','常青资料','历史资料','岗位实践')]
         eligible.sort(key=lambda x:x['publishedAt'],reverse=True)
         i=next((x for x in eligible if (ev['id'],x['developmentId']) not in seen),None)
         if not i:continue

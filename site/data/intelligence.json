@@ -1,8 +1,239 @@
 {
   "schemaVersion": 1,
-  "lastCompletedAt": "2026-11-22T10:41:47.320834+00:00",
+  "lastCompletedAt": "2026-11-23T00:51:52.459751+00:00",
   "method": "Codex 初筛评分 + 逐条证据复核；非两个独立模型评分",
   "items": [
+    {
+      "id": "m23-reprice",
+      "eventId": "m23-reprice",
+      "developmentId": "initial",
+      "titleZh": "从内存涨价到整机交付：多家服务器厂商被报道要求重谈签约价格",
+      "originalTitle": "Memory chip surge sends AI server costs soaring",
+      "companies": [
+        "联想",
+        "戴尔",
+        "慧与",
+        "超微电脑"
+      ],
+      "stages": [
+        "供应链与采购",
+        "经营与组织",
+        "制造与交付"
+      ],
+      "domestic": true,
+      "publishedAt": "2026-11-23T07:17:38+09:00",
+      "kind": "新闻",
+      "category": "供应链与采购",
+      "brief": {
+        "lead": "韩国先驱经济转述《金融时报》11 月 22 日报道，戴尔、慧与、联想和超微电脑等供应商被指在部分服务器合同签订数月后，交货时要求提高价格。风险从新采购报价延伸到了尚未交付的订单。",
+        "points": [
+          "报道援引交易机构的说法描述涨幅，适用范围是所述订单。预算复盘宜保留原合同、后续调价要求和实际付款三个金额。",
+          "爱尔兰高等法院涉及 XTX 和戴尔的争议早在 6 月已有庭审报道，争点包括双方是否约定固定价格。当事人的主张仍需结合合同和裁判核实。"
+        ]
+      },
+      "boundary": "媒体调查及当事人说法；未取得这些合同原件，无法确定每单是否调价成功，也不能据此推算学习机内存采购价。",
+      "meaning": "已签的服务器采购也可能出现价格争议。硬件采购可据此检查锁价条款、成本调整条件、交期和已付款，并记录谁能批准例外。",
+      "question": "哪些订单提出了追加报价，哪些经双方同意修改了合同？",
+      "eventReason": "从内存涨价到整机交付：多家服务器厂商被报道要求重谈签约价格",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 18,
+          "证据质量": 17,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐段复核业务范围、分工、发生时间与已知结果。"
+        }
+      },
+      "impactLevel": "industry-wide",
+      "impactReason": "已签的服务器采购也可能出现价格争议。硬件采购可据此检查锁价条款、成本调整条件、交期和已付款，并记录谁能批准例外。",
+      "facts": [
+        {
+          "claim": "报道将重新报价的时间放在签约后、交付时。",
+          "sourceUrl": "https://biz.heraldcorp.com/article/10945356",
+          "locator": "转述金融时报所访服务器供应商和客户段"
+        },
+        {
+          "claim": "六月庭审报道援引原告律师对固定价格与托管款的陈述。",
+          "sourceUrl": "https://www.irishtimes.com/crime-law/courts/2026/06/15/finnish-company-sues-dell-over-70m-price-increase-for-data-centre-servers/",
+          "locator": "庭审中原告律师陈述段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://biz.heraldcorp.com/article/10945356",
+          "publisherGroup": "金融时报（韩国先驱经济转述）",
+          "name": "金融时报（韩国先驱经济转述）",
+          "publishedAt": "2026-11-23T07:17:38+09:00",
+          "role": "media",
+          "textHash": "20ea76c3d74a5cd50b03869d427abb0beb6058cae08537579b8cc44819edacc0",
+          "readAt": "2026-11-23T00:49:43.235825+00:00",
+          "coverage": "body"
+        },
+        {
+          "url": "https://www.irishtimes.com/crime-law/courts/2026/06/15/finnish-company-sues-dell-over-70m-price-increase-for-data-centre-servers/",
+          "publisherGroup": "爱尔兰时报",
+          "name": "爱尔兰时报六月庭审报道",
+          "publishedAt": "2026-06-15",
+          "role": "media",
+          "textHash": "b4967e7deba7ec5f16ac47fb4158fc94da4643d18f098e9a4de8c08ce5e1bae4",
+          "readAt": "2026-11-23T00:49:45.212385+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 90,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-23T00:51:52.446697+00:00",
+      "sourceDate": "2026-11-23T07:17:38+09:00",
+      "date": "2026-11-23T07:17:38+09:00",
+      "title": "从内存涨价到整机交付：多家服务器厂商被报道要求重谈签约价格",
+      "summary": "韩国先驱经济转述《金融时报》11 月 22 日报道，戴尔、慧与、联想和超微电脑等供应商被指在部分服务器合同签订数月后，交货时要求提高价格。风险从新采购报价延伸到了尚未交付的订单。"
+    },
+    {
+      "id": "m23-server",
+      "eventId": "m23-server",
+      "developmentId": "initial",
+      "titleZh": "出口规则收紧后，至少两家服务器伙伴暂缓向东南亚交货",
+      "originalTitle": "Nvidia suppliers halt shipments to Southeast Asia as US tightens chip controls",
+      "companies": [
+        "英伟达"
+      ],
+      "stages": [
+        "质量与合规",
+        "供应链与采购",
+        "制造与交付"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-22T20:03:00+08:00",
+      "kind": "新闻",
+      "category": "供应链与采购",
+      "brief": {
+        "lead": "联合早报转述日经亚洲报道，至少两家英伟达服务器伙伴暂缓向东南亚客户交货。其中一家自 11 月 20 日暂停发货，另一家按法务意见重新检查产品是否合规。",
+        "points": [
+          "其中一家暂时不接受当地新客户订单。接单、审核及实物发运对应三个不同的进度。",
+          "对依赖这些服务器的机房，当前要核对的是具体产品、交易主体及未交订单的状态。"
+        ]
+      },
+      "boundary": "厂商未具名。没有逐单交付结果或官方认定，停发范围仅限报道所述伙伴。",
+      "meaning": "同一条出口规则会经供应商订单核查传导到交期；预计延期和实际延期要用订单分别核对。",
+      "question": "哪些既有订单完成核查并重新发运？",
+      "eventReason": "出口规则收紧后，至少两家服务器伙伴暂缓向东南亚交货",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 18,
+          "证据质量": 17,
+          "机制清晰": 18,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐段复核业务范围、分工、发生时间与已知结果。"
+        }
+      },
+      "impactLevel": "industry-wide",
+      "impactReason": "同一条出口规则会经供应商订单核查传导到交期；预计延期和实际延期要用订单分别核对。",
+      "facts": [
+        {
+          "claim": "报道记载一家供货商依据法务意见暂停交付并核对合规。",
+          "sourceUrl": "https://www.zaobao.com.sg/en/news/world/nvidia-suppliers-halt-shipments-southeast-asia-us-tightens-chip-controls",
+          "locator": "第二段转述日经采访"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.zaobao.com.sg/en/news/world/nvidia-suppliers-halt-shipments-southeast-asia-us-tightens-chip-controls",
+          "publisherGroup": "日经亚洲（联合早报转述）",
+          "name": "日经亚洲（联合早报转述）",
+          "publishedAt": "2026-11-22T20:03:00+08:00",
+          "role": "media",
+          "textHash": "f3580e5ea3b382a77e99e7cb7c5ab8b688dc09c48cadc37b4076fc854d96d46f",
+          "readAt": "2026-11-23T00:42:05.379527+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-23T00:51:52.440899+00:00",
+      "sourceDate": "2026-11-22T20:03:00+08:00",
+      "date": "2026-11-22T20:03:00+08:00",
+      "title": "出口规则收紧后，至少两家服务器伙伴暂缓向东南亚交货",
+      "summary": "联合早报转述日经亚洲报道，至少两家英伟达服务器伙伴暂缓向东南亚客户交货。其中一家自 11 月 20 日暂停发货，另一家按法务意见重新检查产品是否合规。"
+    },
+    {
+      "id": "m23-r3",
+      "eventId": "m23-r3",
+      "developmentId": "initial",
+      "titleZh": "国内智能眼镜三季度多卖了，零售额为何反而下降？",
+      "originalTitle": "洛图科技：中国智能眼镜三季度市场均价及分品类零售规模",
+      "companies": [
+        "洛图科技"
+      ],
+      "stages": [
+        "渠道与销售",
+        "经营与组织"
+      ],
+      "domestic": true,
+      "publishedAt": "2026-11-22T10:06:07+00:00",
+      "kind": "新闻",
+      "category": "可穿戴与眼镜",
+      "brief": {
+        "lead": "洛图科技估算，三季度国内智能眼镜全渠道售出 54.4 万台，同比增加 14.3%；零售额 8.4 亿元，同比下降 4.3%。平均售价降至 1542 元，同比下降 16.2%。",
+        "points": [
+          "口径合并了显示型 AR、音频和拍摄眼镜。三类平均售价分别为 2817、701 和 877 元。",
+          "判断销量上升能否带来更多收入，应同时检查各类销量占比和同类售价。公开报道不足以拆出两项各自的贡献。"
+        ]
+      },
+      "boundary": "依据机构估算；分渠道品牌数据和全渠道总量的分母不同，无法推算各厂商毛利。",
+      "meaning": "渠道和产品团队可以用相同品类、周期及渠道范围复核销量、收入和均价。",
+      "question": "价格变化有多少源于同类降价，有多少源于品类结构？",
+      "eventReason": "国内智能眼镜三季度多卖了，零售额为何反而下降？",
+      "selection": {
+        "scores": {
+          "相关性": 18,
+          "增量信息": 18,
+          "证据质量": 17,
+          "机制清晰": 17,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐段复核业务范围、分工、发生时间与已知结果。"
+        }
+      },
+      "facts": [
+        {
+          "claim": "零售量和零售额的同比方向不同。",
+          "sourceUrl": "https://www.ithome.com/1/030/683.htm",
+          "locator": "全渠道规模和分品类均价段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.ithome.com/1/030/683.htm",
+          "publisherGroup": "洛图科技（IT之家转述）",
+          "name": "洛图科技（IT之家转述）",
+          "publishedAt": "2026-11-22T10:06:07+00:00",
+          "role": "media",
+          "textHash": "8b9787769e3cfda95b3fe0920e1b0c5aa86f8d09c76a25b2230a7ccd796cb437",
+          "readAt": "2026-11-23T00:42:03.983967+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 87,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-23T00:51:52.441383+00:00",
+      "sourceDate": "2026-11-22T10:06:07+00:00",
+      "date": "2026-11-22T10:06:07+00:00",
+      "title": "国内智能眼镜三季度多卖了，零售额为何反而下降？",
+      "summary": "洛图科技估算，三季度国内智能眼镜全渠道售出 54.4 万台，同比增加 14.3%；零售额 8.4 亿元，同比下降 4.3%。平均售价降至 1542 元，同比下降 16.2%。"
+    },
     {
       "id": "m22-kr",
       "eventId": "m22-kr",
@@ -73,6 +304,179 @@
       "date": "2026-11-21",
       "title": "韩媒称三星部分客户希望把存储供货保障延长到 2031 年",
       "summary": "韩国 Economy Tribune 引述知情者称，三星未来三年的大部分存储产能已有合同覆盖，部分客户正在争取把保障期延长至 2031 年。"
+    },
+    {
+      "id": "m23-jd",
+      "eventId": "m23-jd",
+      "developmentId": "initial",
+      "titleZh": "京东与华为星芒披露三年渠道销售目标",
+      "originalTitle": "京东与华为星芒达成战略合作，三年销售目标700亿",
+      "companies": [
+        "京东",
+        "华为"
+      ],
+      "stages": [
+        "渠道与销售",
+        "经营与组织"
+      ],
+      "domestic": true,
+      "publishedAt": "2026-11-20T18:54:00+08:00",
+      "kind": "新闻",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "界面新闻转述京东消息，双方签署战略合作协议，设定未来三年星芒在京东的全品类销售额目标为 700 亿元。首款手机于 11 月 20 日开售。",
+        "points": [
+          "考核范围是星芒在京东的全品类业务，手机首销是一个独立节点。",
+          "观察协议兑现情况要看后续按渠道和时期披露的成交数据。"
+        ]
+      },
+      "boundary": "700 亿元为目标，未披露保底采购、已确认收入或渠道库存。",
+      "meaning": "拆开上市节点与多年渠道目标，才能判断团队承诺的是铺货、成交还是确认收入。",
+      "question": "是否披露分年度目标与退货后的销售口径？",
+      "eventReason": "京东与华为星芒披露三年渠道销售目标",
+      "selection": {
+        "scores": {
+          "相关性": 17,
+          "增量信息": 15,
+          "证据质量": 16,
+          "机制清晰": 17,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐段复核业务范围、分工、发生时间与已知结果。"
+        }
+      },
+      "facts": [
+        {
+          "claim": "报道给出合作期限、销售渠道及金额口径。",
+          "sourceUrl": "https://finance.eastmoney.com/a/202611203936242618.html",
+          "locator": "正文协议段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://finance.eastmoney.com/a/202611203936242618.html",
+          "publisherGroup": "京东（界面新闻转述）",
+          "name": "京东（界面新闻转述）",
+          "publishedAt": "2026-11-20T18:54:00+08:00",
+          "role": "media",
+          "textHash": "0233f4a813e1e39440b8af9dc8e8c16a68114911c4c455ccfeba1981d92b75ae",
+          "readAt": "2026-11-23T00:43:05.052938+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 82,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-23T00:51:52.441875+00:00",
+      "sourceDate": "2026-11-20T18:54:00+08:00",
+      "date": "2026-11-20T18:54:00+08:00",
+      "title": "京东与华为星芒披露三年渠道销售目标",
+      "summary": "界面新闻转述京东消息，双方签署战略合作协议，设定未来三年星芒在京东的全品类销售额目标为 700 亿元。首款手机于 11 月 20 日开售。"
+    },
+    {
+      "id": "m23-osta",
+      "eventId": "m23-osta",
+      "developmentId": "initial",
+      "titleZh": "新品牌成立时，哪些工作随星芒单列，哪些仍由华为提供？",
+      "originalTitle": "华为时隔6年再推手机子品牌：星芒不急于冲销量",
+      "companies": [
+        "华为"
+      ],
+      "stages": [
+        "经营与组织",
+        "研发与系统",
+        "渠道与销售",
+        "服务与生命周期"
+      ],
+      "domestic": true,
+      "publishedAt": "2026-11-20T17:11:05+08:00",
+      "kind": "历史案例",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "据每日经济新闻采访，星芒独立运营品牌、产品和社区，沿用华为的芯片、系统等技术及同源售后服务。负责人称研发团队正逐步独立，并配备相应组织和预算。",
+        "points": [
+          "上市初期以线上为主，也进入部分华为自有门店，线下承担新功能的体验展示。",
+          "迁移到学习机时，可以拿一个真实售后问题复盘：品牌团队收到了哪个班级的反馈，谁能改共用固件，哪个服务窗口把验证结果送回家庭？"
+        ]
+      },
+      "boundary": "报道记录上市时的管理层说明。具体预算审批人、服务结算、跨团队时限与实际效果仍未知。",
+      "meaning": "决定设独立团队时，先列哪些产品决策由它承担、哪些基础能力复用；对共用能力再指定问题回传与关闭的证据。",
+      "question": "产品与共用技术的优先级冲突时，谁能决定版本和交付时间？",
+      "eventReason": "新品牌成立时，哪些工作随星芒单列，哪些仍由华为提供？",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 19,
+          "证据质量": 17,
+          "机制清晰": 18,
+          "可行动性": 16
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐段复核业务范围、分工、发生时间与已知结果。"
+        }
+      },
+      "practices": [
+        {
+          "title": "新品牌成立时，哪些工作随星芒单列，哪些仍由华为提供？",
+          "method": "决定设独立团队时，先列哪些产品决策由它承担、哪些基础能力复用；对共用能力再指定问题回传与关闭的证据。",
+          "conditions": "迁移到学习机时，可以拿一个真实售后问题复盘：品牌团队收到了哪个班级的反馈，谁能改共用固件，哪个服务窗口把验证结果送回家庭？",
+          "outcome": "报道记录上市时的管理层说明。具体预算审批人、服务结算、跨团队时限与实际效果仍未知。",
+          "boundary": "报道记录上市时的管理层说明。具体预算审批人、服务结算、跨团队时限与实际效果仍未知。",
+          "nextCheck": "产品与共用技术的优先级冲突时，谁能决定版本和交付时间？",
+          "stages": [
+            "经营与组织",
+            "研发与系统",
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "organization": [
+        {
+          "title": "新品牌成立时，哪些工作随星芒单列，哪些仍由华为提供？",
+          "kind": "研究问题",
+          "observation": "据每日经济新闻采访，星芒独立运营品牌、产品和社区，沿用华为的芯片、系统等技术及同源售后服务。负责人称研发团队正逐步独立，并配备相应组织和预算。",
+          "implication": "决定设独立团队时，先列哪些产品决策由它承担、哪些基础能力复用；对共用能力再指定问题回传与关闭的证据。",
+          "boundary": "报道记录上市时的管理层说明。具体预算审批人、服务结算、跨团队时限与实际效果仍未知。",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "采访把已经独立的品牌运营、逐步独立的研发和共享售后分别说明。",
+          "sourceUrl": "https://www.nbd.com.cn/articles/2026-11-20/4653955.html",
+          "locator": "共享能力与研发预算段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.nbd.com.cn/articles/2026-11-20/4653955.html",
+          "publisherGroup": "每日经济新闻",
+          "name": "每日经济新闻",
+          "publishedAt": "2026-11-20T17:11:05+08:00",
+          "role": "media",
+          "textHash": "cf01073aa2392024697a4539cbb8463611293fae25da9eb6a03251462996758b",
+          "readAt": "2026-11-23T00:42:29.756045+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-23T00:51:52.442462+00:00",
+      "sourceDate": "2026-11-20T17:11:05+08:00",
+      "date": "2026-11-20T17:11:05+08:00",
+      "title": "新品牌成立时，哪些工作随星芒单列，哪些仍由华为提供？",
+      "summary": "据每日经济新闻采访，星芒独立运营品牌、产品和社区，沿用华为的芯片、系统等技术及同源售后服务。负责人称研发团队正逐步独立，并配备相应组织和预算。"
     },
     {
       "id": "m22-osta-news",
@@ -525,6 +929,93 @@
       "date": "2026-11-20",
       "title": "SK 海力士展示机架内共享缓存，验证对象从单块内存延伸到整套系统",
       "summary": "在 SC26 的 MARS 演示中，SK 海力士把 CXL 内存和混合内存组成共享池，尝试让同机架中的设备复用推理产生的 KV 缓存。"
+    },
+    {
+      "id": "m23-jp",
+      "eventId": "m23-jp",
+      "developmentId": "initial",
+      "titleZh": "四十万件移动电源召回，一年多后怎样核对进度？",
+      "originalTitle": "消費生活用製品の重大製品事故に係る公表について",
+      "companies": [
+        "安克日本"
+      ],
+      "stages": [
+        "质量与合规",
+        "服务与生命周期"
+      ],
+      "domestic": true,
+      "publishedAt": "2026-11-20",
+      "kind": "历史案例",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "日本消费者厅 11 月 20 日发布事故通报，并列出安克日本 A1257 移动电源的召回进度。2025 年 6 月 26 日启动回收和更换，截至 2026 年 11 月 19 日回收率为 55.8%，对象为 401,771 件。",
+        "points": [
+          "公告列有网站、新闻发布及直接通知等触达方式。通知发出、设备收到和替换件交付是三个可分开追踪的动作。",
+          "本次通报的 A202600920 火灾仍在调查，公告将其排除在既列的召回原因相关事故数之外。"
+        ]
+      },
+      "boundary": "比例限于这次召回。未披露逐台换货完成情况，新增火灾与原召回原因之间的关系尚在调查。",
+      "meaning": "售后和质量团队复盘同一批设备时，分别对齐召回对象、回收进度和已确认事故；给每个数字标明日期与分母。",
+      "question": "仍未回收的设备里，有多少能联系到原购买人？",
+      "eventReason": "四十万件移动电源召回，一年多后怎样核对进度？",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 19,
+          "证据质量": 19,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐段复核业务范围、分工、发生时间与已知结果。"
+        }
+      },
+      "practices": [
+        {
+          "title": "四十万件移动电源召回，一年多后怎样核对进度？",
+          "method": "售后和质量团队复盘同一批设备时，分别对齐召回对象、回收进度和已确认事故；给每个数字标明日期与分母。",
+          "conditions": "本次通报的 A202600920 火灾仍在调查，公告将其排除在既列的召回原因相关事故数之外。",
+          "outcome": "比例限于这次召回。未披露逐台换货完成情况，新增火灾与原召回原因之间的关系尚在调查。",
+          "boundary": "比例限于这次召回。未披露逐台换货完成情况，新增火灾与原召回原因之间的关系尚在调查。",
+          "nextCheck": "仍未回收的设备里，有多少能联系到原购买人？",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "公告给出回收进度与截止日期。",
+          "sourceUrl": "https://www.caa.go.jp/notice/assets/consumer_safety_cms202_261120_01.pdf",
+          "locator": "召回对象、回收率及事故件数注记"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.caa.go.jp/notice/assets/consumer_safety_cms202_261120_01.pdf",
+          "publisherGroup": "日本消费者厅",
+          "name": "日本消费者厅",
+          "publishedAt": "2026-11-20",
+          "role": "official",
+          "textHash": "bb376bad595cf1c5d32f14331db3770d11df1448113d0cdbf6ff2fa31a07b7cf",
+          "readAt": "2026-11-23T00:43:04.742919+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 93,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-23T00:51:52.443127+00:00",
+      "sourceDate": "2026-11-20",
+      "date": "2026-11-20",
+      "title": "四十万件移动电源召回，一年多后怎样核对进度？",
+      "summary": "日本消费者厅 11 月 20 日发布事故通报，并列出安克日本 A1257 移动电源的召回进度。2025 年 6 月 26 日启动回收和更换，截至 2026 年 11 月 19 日回收率为 55.8%，对象为 401,771 件。"
     },
     {
       "id": "m20-mof",
@@ -1249,6 +1740,113 @@
       "date": "2026-11-19",
       "title": "约十万件磁性玩具被召回，包装编码与退款凭据一并公布",
       "summary": "美国消费品安全委员会公布，CHE-US 召回约 101,282 件磁性人偶。手脚被拉开后，小磁体可能脱离，儿童误吞会有严重危险。"
+    },
+    {
+      "id": "m23-ydft",
+      "eventId": "m23-ydft",
+      "developmentId": "initial",
+      "titleZh": "有道智能设备毛利率降至 41%，怎样追到成本和产品组合？",
+      "originalTitle": "Youdao Reports Third Quarter 2026 Unaudited Financial Results",
+      "companies": [
+        "网易有道"
+      ],
+      "stages": [
+        "供应链与采购",
+        "经营与组织",
+        "渠道与销售"
+      ],
+      "domestic": true,
+      "publishedAt": "2026-11-19",
+      "kind": "历史案例",
+      "category": "学习硬件",
+      "brief": {
+        "lead": "有道披露，三季度智能设备收入 1.452 亿元，同比下降 40.9%；该业务毛利率由上年同期 50.3% 降至 41.0%。公司将收入下降主要归因于需求走弱，将毛利率下降主要归因于物料成本增加。",
+        "points": [
+          "网易投资者演示列出近期调整 SKU 组合，以及有道 AI 辅导笔 3、词典笔 A7S Pro 两款产品。",
+          "迁移到学习硬件经营复盘时，可以让产品、采购和财务用同一批次对照机型占比、物料成本和确认收入。"
+        ]
+      },
+      "boundary": "财报为未经审计的业务汇总，无法算出其中任何一支笔的利润，也不能定位某个零件涨价或个别团队的人员变化。",
+      "meaning": "当新机型推出而整体毛利率下降时，先用业务分部账解释变化，再检查同一机型的 BOM、折扣和售出数量。",
+      "question": "公司会否披露单一品类的收入及材料成本变化？",
+      "eventReason": "有道智能设备毛利率降至 41%，怎样追到成本和产品组合？",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 18,
+          "证据质量": 18,
+          "机制清晰": 19,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐段复核业务范围、分工、发生时间与已知结果。"
+        }
+      },
+      "practices": [
+        {
+          "title": "有道智能设备毛利率降至 41%，怎样追到成本和产品组合？",
+          "method": "当新机型推出而整体毛利率下降时，先用业务分部账解释变化，再检查同一机型的 BOM、折扣和售出数量。",
+          "conditions": "迁移到学习硬件经营复盘时，可以让产品、采购和财务用同一批次对照机型占比、物料成本和确认收入。",
+          "outcome": "财报为未经审计的业务汇总，无法算出其中任何一支笔的利润，也不能定位某个零件涨价或个别团队的人员变化。",
+          "boundary": "财报为未经审计的业务汇总，无法算出其中任何一支笔的利润，也不能定位某个零件涨价或个别团队的人员变化。",
+          "nextCheck": "公司会否披露单一品类的收入及材料成本变化？",
+          "stages": [
+            "供应链与采购",
+            "经营与组织",
+            "渠道与销售"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "educationCategories": [
+        "pen"
+      ],
+      "facts": [
+        {
+          "claim": "有道披露智能设备业务的毛利率与同比口径。",
+          "sourceUrl": "https://markets.ft.markitdigital.com/data/announce/detail?dockey=600-202611190400PR_NEWS_USPRX____CN02238-1",
+          "locator": "Gross Margin by business"
+        },
+        {
+          "claim": "演示列出词典笔型号和近期 SKU 调整。",
+          "sourceUrl": "https://ir.netease.com/static-files/4ce9997f-f8b2-4df7-a71e-a754261a5fb4",
+          "locator": "有道业务页 · Smart devices 段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://markets.ft.markitdigital.com/data/announce/detail?dockey=600-202611190400PR_NEWS_USPRX____CN02238-1",
+          "publisherGroup": "有道（公司财报）",
+          "name": "有道（公司财报）",
+          "publishedAt": "2026-11-19",
+          "role": "official",
+          "textHash": "40c398a58ed502614787cea88f119b921c881933b039792df29593a768e9217f",
+          "readAt": "2026-11-23T00:43:07.295939+00:00",
+          "coverage": "body"
+        },
+        {
+          "url": "https://ir.netease.com/static-files/4ce9997f-f8b2-4df7-a71e-a754261a5fb4",
+          "publisherGroup": "网易投资者关系",
+          "name": "网易三季度投资者演示 · 有道业务页",
+          "publishedAt": null,
+          "role": "official",
+          "textHash": "c396a17e82bd2bad5fc7d27d50309524aa2e58134d8d753ee8c913a952f7e6df",
+          "readAt": "2026-11-23T00:50:15.390318+00:00",
+          "coverage": "excerpt"
+        }
+      ],
+      "score": 92,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-23T00:51:52.445873+00:00",
+      "sourceDate": "2026-11-19",
+      "date": "2026-11-19",
+      "title": "有道智能设备毛利率降至 41%，怎样追到成本和产品组合？",
+      "summary": "有道披露，三季度智能设备收入 1.452 亿元，同比下降 40.9%；该业务毛利率由上年同期 50.3% 降至 41.0%。公司将收入下降主要归因于需求走弱，将毛利率下降主要归因于物料成本增加。"
     },
     {
       "id": "rss-cbe541898e205d5c",
@@ -6262,6 +6860,93 @@
       "date": "2026-08-26T08:44:11+00:00",
       "title": "设计师打印凉鞋案例：先理解制作约束与用途",
       "summary": "拓竹介绍设计师把凉鞋设计为一体打印的项目。这提供了数字设计与制造相连接的案例，不能据此认定耐用性或环境收益。"
+    },
+    {
+      "id": "m23-ml",
+      "eventId": "m23-ml",
+      "developmentId": "initial",
+      "titleZh": "设备能跑大模型，怎样核实评测实际用了哪块处理器？",
+      "originalTitle": "MLPerf Mobile v6.0",
+      "companies": [
+        "MLCommons"
+      ],
+      "stages": [
+        "研发与系统",
+        "质量与合规"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-06-15",
+      "kind": "历史案例",
+      "category": "端侧 AI 与芯片",
+      "brief": {
+        "lead": "MLPerf Mobile v6.0 为安卓设备加入端侧语言模型任务。内存足够时可走 CPU；本版明确支持的一个 NPU 加速组合，是骁龙 8 Elite Gen 5 运行 Llama 3.1 8B Instruct。",
+        "points": [
+          "测试用 TinyMMLU 和 IFEval 的任务评估性能与准确性。",
+          "比较两台设备前，记录模型版本、后端和质量结果。厂商标称支持 NPU 无法回答某个实际模型用了哪个后端。"
+        ]
+      },
+      "boundary": "特定版本的基准和支持范围；未提供本轮竞品在离线批改、录音摘要上的质量或续航。",
+      "meaning": "学习设备的算法与硬件团队先固定模型和任务，再将使用的后端写进测试记录，使性能差异可以复现。",
+      "question": "在目标学习机的同一任务下，质量达标时实际用了哪个后端？",
+      "eventReason": "设备能跑大模型，怎样核实评测实际用了哪块处理器？",
+      "selection": {
+        "scores": {
+          "相关性": 18,
+          "增量信息": 17,
+          "证据质量": 19,
+          "机制清晰": 18,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "逐段复核业务范围、分工、发生时间与已知结果。"
+        }
+      },
+      "practices": [
+        {
+          "title": "设备能跑大模型，怎样核实评测实际用了哪块处理器？",
+          "method": "学习设备的算法与硬件团队先固定模型和任务，再将使用的后端写进测试记录，使性能差异可以复现。",
+          "conditions": "比较两台设备前，记录模型版本、后端和质量结果。厂商标称支持 NPU 无法回答某个实际模型用了哪个后端。",
+          "outcome": "特定版本的基准和支持范围；未提供本轮竞品在离线批改、录音摘要上的质量或续航。",
+          "boundary": "特定版本的基准和支持范围；未提供本轮竞品在离线批改、录音摘要上的质量或续航。",
+          "nextCheck": "在目标学习机的同一任务下，质量达标时实际用了哪个后端？",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "工作组区分 CPU 执行条件与当前支持的 NPU 加速组合。",
+          "sourceUrl": "https://mlcommons.org/2026/06/mlperf-mobile-v6/",
+          "locator": "LLM tests 的模型、数据及执行后端段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://mlcommons.org/2026/06/mlperf-mobile-v6/",
+          "publisherGroup": "MLCommons",
+          "name": "MLCommons",
+          "publishedAt": "2026-06-15",
+          "role": "official",
+          "textHash": "b9fefda95a82d8e6e08167556eb10ba02bd0f770f1187d86007c14354db73311",
+          "readAt": "2026-11-23T00:42:05.690091+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 89,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-23T00:51:52.443678+00:00",
+      "sourceDate": "2026-06-15",
+      "date": "2026-06-15",
+      "title": "设备能跑大模型，怎样核实评测实际用了哪块处理器？",
+      "summary": "MLPerf Mobile v6.0 为安卓设备加入端侧语言模型任务。内存足够时可走 CPU；本版明确支持的一个 NPU 加速组合，是骁龙 8 Elite Gen 5 运行 Llama 3.1 8B Instruct。"
     },
     {
       "id": "e21-tactile",
@@ -12259,6 +12944,49 @@
   ],
   "events": [
     {
+      "id": "m23-reprice",
+      "representativeId": "m23-reprice",
+      "itemIds": [
+        "m23-reprice"
+      ],
+      "publisherGroups": [
+        "爱尔兰时报",
+        "金融时报（韩国先驱经济转述）"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m23-server",
+      "representativeId": "m23-server",
+      "itemIds": [
+        "m23-server"
+      ],
+      "publisherGroups": [
+        "日经亚洲（联合早报转述）"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m23-r3",
+      "representativeId": "m23-r3",
+      "itemIds": [
+        "m23-r3"
+      ],
+      "publisherGroups": [
+        "洛图科技（IT之家转述）"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
       "id": "m22-kr",
       "representativeId": "m22-kr",
       "itemIds": [
@@ -12266,6 +12994,34 @@
       ],
       "publisherGroups": [
         "Economy Tribune"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m23-jd",
+      "representativeId": "m23-jd",
+      "itemIds": [
+        "m23-jd"
+      ],
+      "publisherGroups": [
+        "京东（界面新闻转述）"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m23-osta",
+      "representativeId": "m23-osta",
+      "itemIds": [
+        "m23-osta"
+      ],
+      "publisherGroups": [
+        "每日经济新闻"
       ],
       "developmentIds": [
         "initial"
@@ -12351,6 +13107,20 @@
       ],
       "publisherGroups": [
         "SK 海力士"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m23-jp",
+      "representativeId": "m23-jp",
+      "itemIds": [
+        "m23-jp"
+      ],
+      "publisherGroups": [
+        "日本消费者厅"
       ],
       "developmentIds": [
         "initial"
@@ -12480,6 +13250,21 @@
       ],
       "publisherGroups": [
         "美国消费品安全委员会"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m23-ydft",
+      "representativeId": "m23-ydft",
+      "itemIds": [
+        "m23-ydft"
+      ],
+      "publisherGroups": [
+        "有道（公司财报）",
+        "网易投资者关系"
       ],
       "developmentIds": [
         "initial"
@@ -13279,6 +14064,20 @@
         "initial"
       ],
       "selected": false
+    },
+    {
+      "id": "m23-ml",
+      "representativeId": "m23-ml",
+      "itemIds": [
+        "m23-ml"
+      ],
+      "publisherGroups": [
+        "MLCommons"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
     },
     {
       "id": "e21-tactile",
@@ -14130,400 +14929,6 @@
     }
   ],
   "runs": [
-    {
-      "coverage": "6 个 RSS 抓取成功；23 个候选中 13 个取得正文、10 个访问受阻。重点读取 Aqara 官方服务指南、拓竹活动回顾，扫描石头与安克官方招聘索引；覆盖需求、制造、质量、渠道、服务与组织。新增 5 篇中文整理，其中 3 篇精选；旧活动与无日期岗位单列，近期媒体线索暂缓。",
-      "sourceChecks": [
-        {
-          "url": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
-          "company": "绿米 Aqara",
-          "stages": [
-            "研发与系统",
-            "质量与合规",
-            "服务与生命周期"
-          ],
-          "purpose": "practice",
-          "state": "read",
-          "note": "读取完整指南并核对页面原始发布日期，保留型号、平台与固件边界。",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://mall.roborock.com/introduction/jobs",
-          "company": "石头科技",
-          "stages": [
-            "研发与系统",
-            "制造与交付",
-            "质量与合规",
-            "服务与生命周期",
-            "经营与组织"
-          ],
-          "purpose": "recruitment",
-          "state": "index",
-          "note": "搜索索引可见三个供应链岗位的职责；直连与浏览器未显示职责，不能证明实时在招。",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://career.anker-in.com/social/recruitment",
-          "company": "安克创新",
-          "stages": [
-            "质量与合规",
-            "服务与生命周期",
-            "经营与组织"
-          ],
-          "purpose": "recruitment",
-          "state": "index",
-          "note": "重读旧安全测试岗位职责，无实质变化；另见同类带 US 前缀的索引，不按新编制计数。",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://mall.roborock.com/introduction/jobs",
-          "company": "石头科技",
-          "stages": [
-            "制造与交付",
-            "质量与合规"
-          ],
-          "purpose": "recruitment",
-          "state": "error",
-          "note": "直接 HTTP 仅返回 JavaScript 框架；浏览器表格未呈现职责，索引另行保留。",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://career.anker-in.com/social/recruitment",
-          "company": "安克创新",
-          "stages": [
-            "质量与合规",
-            "服务与生命周期"
-          ],
-          "purpose": "recruitment",
-          "state": "error",
-          "note": "直接页面只显示分类和空列表，不能解释为没有职位；以索引片段作有限复核。",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://www.xreal.com/career",
-          "company": "XREAL",
-          "stages": [
-            "研发与系统",
-            "供应链与采购",
-            "经营与组织"
-          ],
-          "purpose": "recruitment",
-          "state": "index",
-          "note": "官方页面列出职能方向，未给出具体职位职责；不新增岗位记录，不纳入两家公司职责扫描结论。",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://www.insta360.com/awards/vision-leica",
-          "company": "影石创新",
-          "stages": [
-            "渠道与销售"
-          ],
-          "purpose": "practice",
-          "state": "index",
-          "note": "搜索结果包含作品评选与提交规则，本轮未继续核对完整活动日期，不形成新闻或岗位结论。",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://linkcraft.agibot.com/?activityPage=page2&locale=zh-CN&page=activity",
-          "company": null,
-          "stages": [
-            "研发与系统"
-          ],
-          "purpose": "news",
-          "state": "index",
-          "note": "官方平台索引显示版本功能，但未核实产品发布日与现场交付；不用于补强媒体结果主张。",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://forum.aqara.com/t/troubleshooting-matter-a-field-guide/355291",
-          "company": "绿米 Aqara",
-          "stages": [
-            "服务与生命周期"
-          ],
-          "purpose": "practice",
-          "state": "index",
-          "note": "社区讨论只作为发现线索；正式摘要与知识以官方帮助中心正文为依据。",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/622.htm",
-          "company": null,
-          "stages": [
-            "研发与系统"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "note": "读取正文进行选题检查；活动回顾、传闻、综合早报、单纯参数/配色或缺少一手依据的材料不自动进入精选。",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/619.htm",
-          "company": null,
-          "stages": [
-            "研发与系统"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "note": "读取正文进行选题检查；活动回顾、传闻、综合早报、单纯参数/配色或缺少一手依据的材料不自动进入精选。",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/625.htm",
-          "company": null,
-          "stages": [
-            "研发与系统"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "note": "读取正文进行选题检查；活动回顾、传闻、综合早报、单纯参数/配色或缺少一手依据的材料不自动进入精选。",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/611.htm",
-          "company": null,
-          "stages": [
-            "研发与系统"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "note": "读取正文进行选题检查；活动回顾、传闻、综合早报、单纯参数/配色或缺少一手依据的材料不自动进入精选。",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/607.htm",
-          "company": null,
-          "stages": [
-            "研发与系统"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "note": "读取正文进行选题检查；活动回顾、传闻、综合早报、单纯参数/配色或缺少一手依据的材料不自动进入精选。",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/546.htm",
-          "company": null,
-          "stages": [
-            "研发与系统"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "note": "读取正文进行选题检查；活动回顾、传闻、综合早报、单纯参数/配色或缺少一手依据的材料不自动进入精选。",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/541.htm",
-          "company": null,
-          "stages": [
-            "研发与系统"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "note": "读取正文进行选题检查；活动回顾、传闻、综合早报、单纯参数/配色或缺少一手依据的材料不自动进入精选。",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://www.cnx-software.com/2026/11/06/520-mhz-stm32h7p4-stm32h7p5-arm-cortex-m7-mcus-feature-hardware-signal-processor-hsp-optional-neural-art-npu",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "error",
-          "note": "curl: (56) The requested URL returned error: 403",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/497.htm",
-          "company": null,
-          "stages": [
-            "研发与系统"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "note": "读取正文进行选题检查；活动回顾、传闻、综合早报、单纯参数/配色或缺少一手依据的材料不自动进入精选。",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://blog.bambulab.com/first-time-together-makerworld-makers-from-across-the-u-s-meet-in-san-jose",
-          "company": "Bambu Lab 拓竹",
-          "stages": [
-            "需求与规划",
-            "渠道与销售",
-            "经营与组织"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "note": "读取正文进行选题检查；活动回顾、传闻、综合早报、单纯参数/配色或缺少一手依据的材料不自动进入精选。",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/343.htm",
-          "company": null,
-          "stages": [
-            "研发与系统"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "note": "读取正文进行选题检查；活动回顾、传闻、综合早报、单纯参数/配色或缺少一手依据的材料不自动进入精选。",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/263.htm",
-          "company": null,
-          "stages": [
-            "研发与系统"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "note": "读取正文进行选题检查；活动回顾、传闻、综合早报、单纯参数/配色或缺少一手依据的材料不自动进入精选。",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/230.htm",
-          "company": null,
-          "stages": [
-            "研发与系统"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "note": "读取正文进行选题检查；活动回顾、传闻、综合早报、单纯参数/配色或缺少一手依据的材料不自动进入精选。",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/084.htm",
-          "company": null,
-          "stages": [
-            "研发与系统"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "note": "读取正文进行选题检查；活动回顾、传闻、综合早报、单纯参数/配色或缺少一手依据的材料不自动进入精选。",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://www.cnx-software.com/2026/11/05/altera-agilex-27-fpga-soc-family-features-up-to-17-6m-logic-elements-cortex-a720-a-520-cores-256-gbps-serdes-pcie-7-0",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "error",
-          "note": "curl: (56) The requested URL returned error: 403",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://news.samsung.com/global/upgraded-sleep-apnea-feature-now-available-on-galaxy-ring-following-regulatory-approvals-from-us-fda-and-korea-mfds",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "error",
-          "note": "curl: (28) Operation timed out after 35008 milliseconds with 0 bytes received",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://www.cnx-software.com/2026/11/03/when-will-this-stop-the-raspberry-pi-5-16gb-sbc-now-sells-for-385",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "error",
-          "note": "curl: (56) The requested URL returned error: 403",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://www.cnx-software.com/2026/11/02/banana-pi-bpi-m8-an-allwinner-a733-sbc-inspired-by-the-raspberry-pi-5-with-pcie-ffc-connector-ufs-module-socket",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "error",
-          "note": "curl: (56) The requested URL returned error: 403",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://www.cnx-software.com/2026/10/28/lilygo-t-display-k230-risc-v-ai-dev-kit-features-amoled-lora-and-an-optional-keyboard",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "error",
-          "note": "curl: (56) The requested URL returned error: 403",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://www.cnx-software.com/2026/10/27/rockchip-rk3576-powered-smarc-2-2-system-on-module-and-development-board-target-edge-ai-applications",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "error",
-          "note": "curl: (56) The requested URL returned error: 403",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://www.cnx-software.com/2026/10/26/renesas-rx74m-and-rx74n-600mhz-industrial-mcus-with-rxv3e-core-embedded-mram-22nm-process",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "error",
-          "note": "curl: (56) The requested URL returned error: 403",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://www.cnx-software.com/2026/10/23/roboparty-rp1-roboto-01-a-full-stack-open-source-humanoid-robot-with-up-to-30-degrees-of-freedom",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "error",
-          "note": "curl: (56) The requested URL returned error: 403",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        },
-        {
-          "url": "https://news.samsung.com/global/samsung-introduces-smartthings-now-in-new-platform-update-that-brings-more-intuitive-user-experiences",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "error",
-          "note": "curl: (28) Operation timed out after 35001 milliseconds with 0 bytes received",
-          "checkedAt": "2026-11-07T00:46:39.777224+00:00"
-        }
-      ],
-      "knownGaps": [
-        "招聘正文直连未成功，石头与安克仅为官方索引职责样本，非完整目录或当前在招证明。",
-        "10 个 RSS 正文访问失败，不能据此判断行业无动态。",
-        "知识节点只复核证据实际覆盖字段，完整指标口径与其他字段仍待后续核验。"
-      ],
-      "failedSources": [
-        "直接 HTTP 仅返回 JavaScript 框架；浏览器表格未呈现职责，索引另行保留。",
-        "直接页面只显示分类和空列表，不能解释为没有职位；以索引片段作有限复核。",
-        "curl: (56) The requested URL returned error: 403",
-        "curl: (28) Operation timed out after 35008 milliseconds with 0 bytes received",
-        "curl: (28) Operation timed out after 35001 milliseconds with 0 bytes received"
-      ],
-      "coverageCheck": {
-        "passed": true,
-        "companies": [
-          "Bambu Lab 拓竹",
-          "XREAL",
-          "安克创新",
-          "影石创新",
-          "石头科技",
-          "绿米 Aqara"
-        ],
-        "stages": [
-          "供应链与采购",
-          "制造与交付",
-          "服务与生命周期",
-          "渠道与销售",
-          "经营与组织",
-          "质量与合规",
-          "需求与规划"
-        ],
-        "recruitmentCompanies": [
-          "XREAL",
-          "安克创新",
-          "石头科技"
-        ],
-        "gaps": [],
-        "usableSources": 20
-      },
-      "successfulScan": true,
-      "completedAt": "2026-11-07T00:46:39.991304+00:00",
-      "reviewedCount": 5,
-      "selectedCount": 3
-    },
     {
       "coverage": "6 个 RSS 中 5 个成功，CNX 返回 403；30 个候选有 12 个新读正文、10 个既有缓存和 8 个正文失败。本轮重点覆盖科沃斯、追觅、xTool，扫描两家公司官方岗位并核实域名归属。新增 8 篇中文整理；常青与旧日期资料不填充日报，新媒体线索保留待一手核验。",
       "sourceChecks": [
@@ -30699,6 +31104,871 @@
       "completedAt": "2026-11-22T10:41:47.320834+00:00",
       "reviewedCount": 4,
       "selectedCount": 4
+    },
+    {
+      "coverage": "核对出口审查对两家服务器供应商交付的影响、华为星芒产品和渠道边界、国内智能眼镜零售、安克召回进度、有道学习笔和端侧评测。另核三家学习硬件企业十一个岗位的职责。 追溯服务器订单重新报价的行业调查及六月庭审报道，区分新增供货报道与历史诉讼。",
+      "sourceChecks": [
+        {
+          "name": "日经亚洲（联合早报转述）",
+          "url": "https://www.zaobao.com.sg/en/news/world/nvidia-suppliers-halt-shipments-southeast-asia-us-tightens-chip-controls",
+          "checkedAt": "2026-11-23T00:42:05.379527+00:00",
+          "purpose": "news",
+          "stages": [
+            "质量与合规",
+            "供应链与采购",
+            "制造与交付"
+          ],
+          "note": "同一条出口规则会经供应商订单核查传导到交期；预计延期和实际延期要用订单分别核对。",
+          "company": null,
+          "state": "read",
+          "readId": "m23-server",
+          "publishedAt": "2026-11-22T20:03:00+08:00",
+          "publisherGroup": "日经亚洲（联合早报转述）",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "同一条出口规则会经供应商订单核查传导到交期；预计延期和实际延期要用订单分别核对。",
+            "anchor": "on the advice of its legal department"
+          }
+        },
+        {
+          "name": "洛图科技（IT之家转述）",
+          "url": "https://www.ithome.com/1/030/683.htm",
+          "checkedAt": "2026-11-23T00:42:03.983967+00:00",
+          "purpose": "news",
+          "stages": [
+            "渠道与销售",
+            "经营与组织"
+          ],
+          "note": "渠道和产品团队可以用相同品类、周期及渠道范围复核销量、收入和均价。",
+          "company": null,
+          "state": "read",
+          "readId": "m23-r3",
+          "publishedAt": "2026-11-22T10:06:07+00:00",
+          "publisherGroup": "洛图科技（IT之家转述）",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "渠道和产品团队可以用相同品类、周期及渠道范围复核销量、收入和均价。",
+            "anchor": "全渠道零售量为 54.4 万台，同比增长 14.3%"
+          }
+        },
+        {
+          "name": "京东（界面新闻转述）",
+          "url": "https://finance.eastmoney.com/a/202611203936242618.html",
+          "checkedAt": "2026-11-23T00:43:05.052938+00:00",
+          "purpose": "news",
+          "stages": [
+            "渠道与销售",
+            "经营与组织"
+          ],
+          "note": "拆开上市节点与多年渠道目标，才能判断团队承诺的是铺货、成交还是确认收入。",
+          "company": null,
+          "state": "read",
+          "readId": "m23-jd",
+          "publishedAt": "2026-11-20T18:54:00+08:00",
+          "publisherGroup": "京东（界面新闻转述）",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "拆开上市节点与多年渠道目标，才能判断团队承诺的是铺货、成交还是确认收入。",
+            "anchor": "签署战略合作协议，明确未来三年"
+          }
+        },
+        {
+          "name": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-11-20/4653955.html",
+          "checkedAt": "2026-11-23T00:42:29.756045+00:00",
+          "purpose": "practice",
+          "stages": [
+            "经营与组织",
+            "研发与系统",
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "note": "决定设独立团队时，先列哪些产品决策由它承担、哪些基础能力复用；对共用能力再指定问题回传与关闭的证据。",
+          "company": "华为",
+          "state": "read"
+        },
+        {
+          "name": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-11-20/4653955.html",
+          "checkedAt": "2026-11-23T00:42:29.756045+00:00",
+          "purpose": "news",
+          "stages": [
+            "经营与组织",
+            "研发与系统"
+          ],
+          "note": "同次发布的产品已报道，本次保留独立研发与共享售后的机制深读。",
+          "company": "华为",
+          "state": "read",
+          "readId": "m23-osta",
+          "publishedAt": "2026-11-20T17:11:05+08:00",
+          "publisherGroup": "每日经济新闻",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "同次发布的产品已报道，本次保留独立研发与共享售后的机制深读。",
+            "anchor": "但拥有独立的品牌、产品和社区运营"
+          }
+        },
+        {
+          "name": "日本消费者厅",
+          "url": "https://www.caa.go.jp/notice/assets/consumer_safety_cms202_261120_01.pdf",
+          "checkedAt": "2026-11-23T00:43:04.742919+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "note": "售后和质量团队复盘同一批设备时，分别对齐召回对象、回收进度和已确认事故；给每个数字标明日期与分母。",
+          "company": "安克日本",
+          "state": "read"
+        },
+        {
+          "name": "MLCommons",
+          "url": "https://mlcommons.org/2026/06/mlperf-mobile-v6/",
+          "checkedAt": "2026-11-23T00:42:05.690091+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "学习设备的算法与硬件团队先固定模型和任务，再将使用的后端写进测试记录，使性能差异可以复现。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "有道（公司财报）",
+          "url": "https://markets.ft.markitdigital.com/data/announce/detail?dockey=600-202611190400PR_NEWS_USPRX____CN02238-1",
+          "checkedAt": "2026-11-23T00:43:07.295939+00:00",
+          "purpose": "practice",
+          "stages": [
+            "供应链与采购",
+            "经营与组织",
+            "渠道与销售"
+          ],
+          "note": "当新机型推出而整体毛利率下降时，先用业务分部账解释变化，再检查同一机型的 BOM、折扣和售出数量。",
+          "company": "网易有道",
+          "state": "read"
+        },
+        {
+          "name": "Nomadic",
+          "url": "https://www.ithome.com/1/030/708.htm",
+          "checkedAt": "2026-11-23T00:42:03.972126+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "制造与交付"
+          ],
+          "note": "审读企业展示与融资，电网现场效果缺独立运行数据，暂缓。",
+          "company": null,
+          "state": "read",
+          "readId": "m23-r1",
+          "publishedAt": "2026-11-22T12:56:39+00:00",
+          "publisherGroup": "Nomadic",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "审读企业展示与融资，电网现场效果缺独立运行数据，暂缓。",
+            "anchor": "同时宣布完成 600 万美元"
+          }
+        },
+        {
+          "name": "Nomadic",
+          "url": "https://www.tomshardware.com/tech-industry/drones/energy-companies-deploy-drones-that-can-be-recharged-by-straddling-power-lines-nomad-quadcopter-drones-can-monitor-the-grid-without-ever-returning-home",
+          "checkedAt": "2026-11-23T00:42:05.679596+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "制造与交付"
+          ],
+          "note": "同一企业演示的另一篇报道，去重保留原始事件。",
+          "company": null,
+          "state": "read",
+          "readId": "m23-r2",
+          "publishedAt": "2026-11-22T11:30:00+00:00",
+          "publisherGroup": "Nomadic",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "同一企业演示的另一篇报道，去重保留原始事件。",
+            "anchor": "The reference to measurements along the power grid"
+          }
+        },
+        {
+          "name": "Tom’s Hardware",
+          "url": "https://www.tomshardware.com/pc-components/get-32gb-of-ddr5-ram-for-usd111-in-this-premium-am5-gaming-bundle-from-newegg-4-item-combo-includes-9950x3d-32gb-v-color-ddr5-ram-asus-rog-strix-x870e-e-gaming-motherboard-and-2tb-samsung-990-pro-ssd-for-only-usd1-549",
+          "checkedAt": "2026-11-23T00:42:05.564125+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "制造与交付"
+          ],
+          "note": "四件套折扣无法当作普遍内存成交价格，保留观察。",
+          "company": null,
+          "state": "read",
+          "readId": "m23-r6",
+          "publishedAt": "2026-11-20T14:30:06+00:00",
+          "publisherGroup": "Tom’s Hardware",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "四件套折扣无法当作普遍内存成交价格，保留观察。",
+            "anchor": "This 4-item combo with its huge"
+          }
+        },
+        {
+          "name": "小米（IT之家转述）",
+          "url": "https://www.ithome.com/1/030/568.htm",
+          "checkedAt": "2026-11-23T00:43:04.969441+00:00",
+          "purpose": "news",
+          "stages": [
+            "渠道与销售",
+            "经营与组织"
+          ],
+          "note": "核对累计出货公告，未披露分期终端零售，不用于推断市场新增需求。",
+          "company": "小米",
+          "state": "read",
+          "readId": "m23-mi",
+          "publishedAt": "2026-11-22",
+          "publisherGroup": "小米（IT之家转述）",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "核对累计出货公告，未披露分期终端零售，不用于推断市场新增需求。",
+            "anchor": "截至目前全球出货量已超过 2.4 亿只"
+          }
+        },
+        {
+          "name": "供应商管理工程师-硬件方向",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
+          "checkedAt": "2026-11-23T00:42:09.158685+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "服务与生命周期"
+          ],
+          "note": "消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机。本次核对同一岗位的职责、要求和接口，未见实质修改。",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "2026届春招-供应链运营管培生",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "checkedAt": "2026-11-23T00:42:10.524756+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "服务与生命周期"
+          ],
+          "note": "正文明确学习机售后及小猿设备业务；管培生职责可能含轮岗，不能视为固定组织架构。本次核对同一岗位的职责、要求和接口，未见实质修改。",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "渠道运营（D110568）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/5c016df5-2a57-4758-b3e3-4a58eb276ffe",
+          "checkedAt": "2026-11-23T00:42:10.832296+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "note": "教辅图书经销商渠道；不能作为学习机零售组织证据。本次核对同一岗位的职责、要求和接口，未见实质修改。",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "2026届校招-AI产品教研",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/70dc09b3-4eef-444b-8b17-f31ad6614dcf",
+          "checkedAt": "2026-11-23T00:42:10.701844+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "小学AIGC教育产品，正文未限定设备或学习机团队。本次核对同一岗位的职责、要求和接口，未见实质修改。",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "算法实习生-多模态文档理解",
+          "url": "https://app.mokahr.com/social-recruitment/fenbi/45505#/job/5ecdce43-9ab2-48bb-ade9-ff021311daef",
+          "checkedAt": "2026-11-23T00:42:10.699794+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "基础研发部教育OCR能力，未说明专属学习机。本次核对同一岗位的职责、要求和接口，未见实质修改。",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "算法工程师（D110740）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/e6056b1d-580b-442d-a27f-9ab9f12cd4b1",
+          "checkedAt": "2026-11-23T00:42:11.281444+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队。本次核对同一岗位的职责、要求和接口，未见实质修改。",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "题库教研（D111300）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/0223c4d9-1a3a-4d44-b3da-ce58723e1311",
+          "checkedAt": "2026-11-23T00:42:11.136102+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "题库教研审核与业务反馈，未披露硬件品类；正文岗位名为小数教研，要求却写初高中教材，学段边界待确认。。本次核对同一岗位的职责、要求和接口，未见实质修改。",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "消费者BG-中级渠道经理-北京/上海/合肥",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=179aac28-bb83-4ed6-938e-25d57a57899b",
+          "checkedAt": "2026-11-23T00:42:08.172782+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "note": "消费者业务渠道，未指明学习机产品线。本次核对同一岗位的职责、要求和接口，未见实质修改。",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "AI研究院-算法工程师-OCR方向(J14869)",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=dc4e67cc-59ed-4a75-8b7a-e0d6ae6faaa9",
+          "checkedAt": "2026-11-23T00:42:08.055736+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "集团统一招聘的OCR能力，未指定学习机或词典笔项目。本次核对同一岗位的职责、要求和接口，未见实质修改。",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "2026届春招-硬件研发工程师",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "checkedAt": "2026-11-23T00:42:10.783764+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "note": "原文明确小猿产品及学习机、学练机业务，未划分具体型号。本次核对同一岗位的职责、要求和接口，未见实质修改。",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "作业帮采购检索",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/jobs?keyword=%E9%87%87%E8%B4%AD&page=1&anchorName=jobsList",
+          "checkedAt": "2026-11-23T00:42:18.735564+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "供应链与采购"
+          ],
+          "note": "作业帮采购检索仅取到列表框架，本次未核实采购岗位职责及去向。",
+          "company": "作业帮",
+          "state": "index"
+        },
+        {
+          "name": "作业帮 产品资料",
+          "url": "https://smart.zuoyebang.com/about",
+          "checkedAt": "2026-11-23T00:42:04.057186+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "复核公司对数据、学习内容与硬件能力的说明。",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "科大讯飞 产品资料",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "checkedAt": "2026-11-23T00:42:05.314043+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对学习机分学段资料、答疑和精准学。",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "猿辅导（小猿） 产品资料",
+          "url": "https://apps.apple.com/cn/app/id6738277050",
+          "checkedAt": "2026-11-23T00:42:06.459879+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对小猿家长端有关学习记录及时间设置的说明。",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "华为 产品资料",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+          "checkedAt": "2026-11-23T00:42:06.380811+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对教育中心儿童账号、密码及管控说明。",
+          "company": "华为",
+          "state": "read"
+        },
+        {
+          "name": "科大讯飞 产品资料",
+          "url": "https://edu.iflytek.com/solution/family/transpen",
+          "checkedAt": "2026-11-23T00:42:05.081627+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对官网查词、翻译与学习功能说明。",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "小天才 产品资料",
+          "url": "https://www.okii.com/html/pc/service/service_question.html",
+          "checkedAt": "2026-11-23T00:42:05.621280+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "复核官网家长端安装、版本与手表设置说明。",
+          "company": "小天才",
+          "state": "read"
+        },
+        {
+          "name": "掌阅 产品资料",
+          "url": "https://m.ithome.com/html/811360.htm",
+          "checkedAt": "2026-11-23T00:42:05.506697+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对掌阅公开阅读系统说明；功能描述限于列出的使用场景。",
+          "company": "掌阅",
+          "state": "read"
+        },
+        {
+          "name": "网易投资者关系演示",
+          "url": "https://ir.netease.com/static-files/4ce9997f-f8b2-4df7-a71e-a754261a5fb4",
+          "checkedAt": "2026-11-23T00:50:15.390318+00:00",
+          "purpose": "practice",
+          "stages": [
+            "供应链与采购",
+            "经营与组织"
+          ],
+          "note": "读取有道业务页，核对产品组合和两款笔的名称。",
+          "company": "网易有道",
+          "state": "read"
+        },
+        {
+          "name": "casrai.org",
+          "url": "https://casrai.org/news/dram-antitrust-motion-dismiss-denied-november-2026",
+          "checkedAt": "2026-11-23T00:42:05.582298+00:00",
+          "purpose": "news",
+          "stages": [
+            "质量与合规",
+            "供应链与采购"
+          ],
+          "note": "复核 DRAM 案的程序时间线。11 月 22 日网页更新仍指向 11 月 14 日裁定，未核到新裁判。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "api3.cls.cn",
+          "url": "https://api3.cls.cn/share/subject/1089?app=stib&os=android&selected=&source=&sv=144",
+          "checkedAt": "2026-11-23T00:42:30.700823+00:00",
+          "purpose": "news",
+          "stages": [
+            "质量与合规",
+            "供应链与采购"
+          ],
+          "note": "核对财联社关于服务器重新报价的快讯；爱尔兰合同争议早在六月已经报道，未取得当前合同条款和新增裁定。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "www.trendforce.com",
+          "url": "https://www.trendforce.com/presscenter/analysis",
+          "checkedAt": "2026-11-23T00:42:08.775084+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购"
+          ],
+          "note": "检查现货分析目录，单条历史报价未作为新行情。",
+          "company": null,
+          "state": "index"
+        },
+        {
+          "name": "www.cpsc.gov",
+          "url": "https://www.cpsc.gov/Recalls",
+          "checkedAt": "2026-11-23T00:42:05.954535+00:00",
+          "purpose": "news",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "note": "检查召回目录，未将目录作为新召回正文。",
+          "company": null,
+          "state": "index"
+        },
+        {
+          "name": "www.versalogic.com",
+          "url": "https://www.versalogic.com/blog/supply-chain-brief-memory-market-conditions-in-2026/",
+          "checkedAt": "2026-11-23T00:42:06.265138+00:00",
+          "purpose": "practice",
+          "stages": [
+            "供应链与采购"
+          ],
+          "note": "工控厂商的供货说明只支持自身产品，不足以证明行业整体价格变化。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "www.prnewswire.com",
+          "url": "https://www.prnewswire.com/news-releases/youdao-reports-third-quarter-2026-unaudited-financial-results-302945170.html",
+          "checkedAt": "2026-11-23T00:42:30.443853+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "note": "本轮直连失败：curl: (56) The requested URL returned error: 403\n",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "name": "www.samr.gov.cn",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/zlfzs/art/2025/art_cdc38c75aad549d88af6a4c71a4d0ad2.html",
+          "checkedAt": "2026-11-23T00:42:03.987227+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "note": "本轮直连失败：curl: (22) The requested URL returned error: 403\n",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "name": "law.justia.com",
+          "url": "https://law.justia.com/cases/federal/district-courts/california/candce/5:2026cv06345/472931/68/",
+          "checkedAt": "2026-11-23T00:42:31.605487+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "note": "本轮直连失败：curl: (56) The requested URL returned error: 403\n",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "name": "cases.justia.com",
+          "url": "https://cases.justia.com/federal/district-courts/california/candce/5%3A2026cv06345/472931/68/0.pdf?ts=1794739505",
+          "checkedAt": "2026-11-23T00:43:06.207879+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "note": "本轮直连失败：curl: (56) The requested URL returned error: 403\n",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "name": "apnews.com",
+          "url": "https://apnews.com/article/88142455395552afe74caec3399a648b",
+          "checkedAt": "2026-11-23T00:42:15.925840+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "note": "本轮直连失败：curl: (28) Failed to connect to apnews.com port 443 after 12010 ms: Timeout was reached\n",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "name": "booxsupport.zendesk.com",
+          "url": "https://booxsupport.zendesk.com/hc/en-us/articles/25401838386196-Reading-Data-Syncing-and-Backup",
+          "checkedAt": "2026-11-23T00:42:06.124434+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "note": "本轮直连失败：curl: (56) The requested URL returned error: 403\n",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "name": "help.boox.com",
+          "url": "https://help.boox.com/hc/en-us",
+          "checkedAt": "2026-11-23T00:42:30.902313+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "note": "本轮直连失败：curl: (56) The requested URL returned error: 404\n",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "url": "https://news.samsung.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing",
+          "company": null,
+          "name": "RSS 正文抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-23T00:42:03.946061+00:00",
+          "note": "抓取失败：curl: (28) Operation timed out after 35009 milliseconds with 0 bytes received\n"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/17/review-seeed-studio-4-26-mono-and-7-3-color-e-paper-kit-with-opendisplay-and-home-assistant",
+          "company": null,
+          "name": "RSS 正文抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-23T00:42:03.946061+00:00",
+          "note": "抓取失败：curl: (56) The requested URL returned error: 403\n"
+        },
+        {
+          "url": "https://news.samsung.com/global/upgraded-sleep-apnea-feature-now-available-on-galaxy-ring-following-regulatory-approvals-from-us-fda-and-korea-mfds",
+          "company": null,
+          "name": "RSS 正文抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-23T00:42:03.946061+00:00",
+          "note": "抓取失败：curl: (28) Operation timed out after 35009 milliseconds with 0 bytes received\n"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/17/forlinx-ok8275aa-c-a-qualcomm-qcs8275-industrial-sbc-with-12gb-lpddr5-256gb-ufs-storage",
+          "company": null,
+          "name": "RSS 正文抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-23T00:42:03.946061+00:00",
+          "note": "抓取失败：curl: (56) The requested URL returned error: 403\n"
+        },
+        {
+          "url": "https://news.samsung.com/global/samsung-introduces-smartthings-now-in-new-platform-update-that-brings-more-intuitive-user-experiences",
+          "company": null,
+          "name": "RSS 正文抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-23T00:42:03.946061+00:00",
+          "note": "抓取失败：curl: (28) Operation timed out after 35010 milliseconds with 0 bytes received\n"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/16/aaeon-boxer-8741ai-industrial-edge-ai-box-pc-nvidia-jetson-thor-t5000-with-dual-10gbe-and-four-5gbe-lan",
+          "company": null,
+          "name": "RSS 正文抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-23T00:42:03.946061+00:00",
+          "note": "抓取失败：curl: (56) The requested URL returned error: 403\n"
+        },
+        {
+          "url": "https://news.samsung.com/global/samsung-and-mistral-ai-announce-strategic-partnership-for-intelligence-driven-semiconductor-infrastructure",
+          "company": null,
+          "name": "RSS 正文抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-23T00:42:03.946061+00:00",
+          "note": "抓取失败：curl: (28) Operation timed out after 35003 milliseconds with 0 bytes received\n"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/16/69-home-assistant-connect-aux-2-offers-poe-audio-streaming-rs-232-control-bluetooth-proxy",
+          "company": null,
+          "name": "RSS 正文抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-23T00:42:03.946061+00:00",
+          "note": "抓取失败：curl: (56) The requested URL returned error: 403\n"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/13/vantron-i-mx-952-smarc-system-on-module-for-edge-ai-vision-and-industrial-hmi",
+          "company": null,
+          "name": "RSS 正文抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-23T00:42:03.946061+00:00",
+          "note": "抓取失败：curl: (56) The requested URL returned error: 403\n"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/13/home-assistant-compatible-esp32-4-channel-pwm-fan-controller-is-designed-for-server-racks-and-nas-systems",
+          "company": null,
+          "name": "RSS 正文抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-23T00:42:03.946061+00:00",
+          "note": "抓取失败：curl: (56) The requested URL returned error: 403\n"
+        },
+        {
+          "name": "金融时报（韩国先驱经济转述）",
+          "url": "https://biz.heraldcorp.com/article/10945356",
+          "checkedAt": "2026-11-23T00:49:43.235825+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "经营与组织",
+            "制造与交付"
+          ],
+          "note": "已签的服务器采购也可能出现价格争议。硬件采购可据此检查锁价条款、成本调整条件、交期和已付款，并记录谁能批准例外。",
+          "company": null,
+          "state": "read",
+          "readId": "m23-reprice",
+          "publishedAt": "2026-11-23T07:17:38+09:00",
+          "publisherGroup": "金融时报（韩国先驱经济转述）",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "已签的服务器采购也可能出现价格争议。硬件采购可据此检查锁价条款、成本调整条件、交期和已付款，并记录谁能批准例外。",
+            "anchor": "months after contracts were signed"
+          }
+        },
+        {
+          "name": "爱尔兰时报庭审报道",
+          "url": "https://www.irishtimes.com/crime-law/courts/2026/06/15/finnish-company-sues-dell-over-70m-price-increase-for-data-centre-servers/",
+          "checkedAt": "2026-11-23T00:49:45.212385+00:00",
+          "purpose": "practice",
+          "stages": [
+            "供应链与采购",
+            "质量与合规"
+          ],
+          "note": "核对六月已诉及托管款争议，未将旧案作为十一月新立案。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "AI研究院-数学教研员（小初）-合肥",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=b3cb393c-b37e-4b1a-a6bb-88af35871a09",
+          "company": "科大讯飞",
+          "purpose": "recruitment",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "该岗主导学科资源标准、把控规模化生产质量并做产品调研。与旧记录比较，职责边界未见实质变化；正文未明确分配到某款学习硬件。",
+          "state": "read",
+          "checkedAt": "2026-11-23T00:51:29.184189+00:00"
+        }
+      ],
+      "failedSources": [
+        "本轮直连失败：curl: (56) The requested URL returned error: 403\n",
+        "本轮直连失败：curl: (22) The requested URL returned error: 403\n",
+        "本轮直连失败：curl: (28) Failed to connect to apnews.com port 443 after 12010 ms: Timeout was reached\n",
+        "本轮直连失败：curl: (56) The requested URL returned error: 404\n",
+        "抓取失败：curl: (28) Operation timed out after 35009 milliseconds with 0 bytes received\n",
+        "抓取失败：curl: (56) The requested URL returned error: 403\n",
+        "抓取失败：curl: (28) Operation timed out after 35010 milliseconds with 0 bytes received\n",
+        "抓取失败：curl: (28) Operation timed out after 35003 milliseconds with 0 bytes received\n"
+      ],
+      "knownGaps": [
+        "DRAM 民事案未核实新的法院裁定；服务器重新报价的合同条件仍缺原件。",
+        "星芒研发预算审批人、共享售后考核方式及实际效果未知。",
+        "作业帮采购列表返回框架；文石帮助资料直连失败。"
+      ],
+      "coverageCheck": {
+        "newsResearch": {
+          "passed": true,
+          "bodyCount": 9,
+          "publisherGroups": [
+            "Nomadic",
+            "Tom’s Hardware",
+            "京东（界面新闻转述）",
+            "小米（IT之家转述）",
+            "日经亚洲（联合早报转述）",
+            "每日经济新闻",
+            "洛图科技（IT之家转述）",
+            "金融时报（韩国先驱经济转述）"
+          ],
+          "requiredBodies": 6,
+          "requiredPublisherGroups": 3
+        },
+        "passed": true,
+        "companies": [
+          "作业帮",
+          "华为",
+          "小天才",
+          "小米",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "gaps": [],
+        "usableSources": 36
+      },
+      "successfulScan": true,
+      "completedAt": "2026-11-23T00:51:52.459751+00:00",
+      "reviewedCount": 8,
+      "selectedCount": 8
     }
   ]
 }
