@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-24T09:53:43.288520+00:00",
-  "lastSuccessfulAt": "2026-11-24T09:53:43.288520+00:00",
+  "checkedAt": "2026-11-24T10:50:07.119590+00:00",
+  "lastSuccessfulAt": "2026-11-24T10:50:07.119590+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-24T09:53:43.288520+00:00",
-      "lastSuccessAt": "2026-11-24T09:53:43.288520+00:00",
+      "checkedAt": "2026-11-24T10:50:07.119590+00:00",
+      "lastSuccessAt": "2026-11-24T10:50:07.119590+00:00",
       "received": 18,
       "matched": 0,
       "excluded": 18,
@@ -15,8 +15,8 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-24T09:53:43.288520+00:00",
-      "lastSuccessAt": "2026-11-24T09:53:43.288520+00:00",
+      "checkedAt": "2026-11-24T10:50:07.119590+00:00",
+      "lastSuccessAt": "2026-11-24T10:50:07.119590+00:00",
       "received": 50,
       "matched": 3,
       "excluded": 47,
@@ -25,8 +25,8 @@
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-24T09:53:43.288520+00:00",
-      "lastSuccessAt": "2026-11-24T09:53:43.288520+00:00",
+      "checkedAt": "2026-11-24T10:50:07.119590+00:00",
+      "lastSuccessAt": "2026-11-24T10:50:07.119590+00:00",
       "received": 10,
       "matched": 0,
       "excluded": 10,
@@ -35,8 +35,8 @@
     {
       "id": "bambu",
       "state": "ok",
-      "checkedAt": "2026-11-24T09:53:43.288520+00:00",
-      "lastSuccessAt": "2026-11-24T09:53:43.288520+00:00",
+      "checkedAt": "2026-11-24T10:50:07.119590+00:00",
+      "lastSuccessAt": "2026-11-24T10:50:07.119590+00:00",
       "received": 15,
       "matched": 15,
       "excluded": 0,
@@ -45,8 +45,8 @@
     {
       "id": "cnx",
       "state": "ok",
-      "checkedAt": "2026-11-24T09:53:43.288520+00:00",
-      "lastSuccessAt": "2026-11-24T09:53:43.288520+00:00",
+      "checkedAt": "2026-11-24T10:50:07.119590+00:00",
+      "lastSuccessAt": "2026-11-24T10:50:07.119590+00:00",
       "received": 32,
       "matched": 11,
       "excluded": 21,
@@ -55,18 +55,18 @@
     {
       "id": "ithome",
       "state": "ok",
-      "checkedAt": "2026-11-24T09:53:43.288520+00:00",
-      "lastSuccessAt": "2026-11-24T09:53:43.288520+00:00",
+      "checkedAt": "2026-11-24T10:50:07.119590+00:00",
+      "lastSuccessAt": "2026-11-24T10:50:07.119590+00:00",
       "received": 60,
-      "matched": 10,
-      "excluded": 50,
+      "matched": 9,
+      "excluded": 51,
       "error": null
     },
     {
       "id": "tomshardware",
       "state": "ok",
-      "checkedAt": "2026-11-24T09:53:43.288520+00:00",
-      "lastSuccessAt": "2026-11-24T09:53:43.288520+00:00",
+      "checkedAt": "2026-11-24T10:50:07.119590+00:00",
+      "lastSuccessAt": "2026-11-24T10:50:07.119590+00:00",
       "received": 50,
       "matched": 4,
       "excluded": 46,
@@ -74,6 +74,18 @@
     }
   ],
   "items": [
+    {
+      "id": "rss-207950512c7c7d64",
+      "title": "小米集团 2026 年 Q3 业绩发布：单季营收站稳千亿、研发投入 92 亿元",
+      "url": "https://www.ithome.com/1/031/716.htm",
+      "date": "2026-11-24T09:42:54+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "产品工程与量产",
+      "status": "待核验",
+      "discoveredAt": "2026-11-24T10:50:07.119590+00:00"
+    },
     {
       "id": "rss-eb00d7fe0aea7dd7",
       "title": "华为最薄智能手表 WATCH Air 发布：6.9 毫米超薄机身，2499 元起",
