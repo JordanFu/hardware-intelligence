@@ -1,8 +1,239 @@
 {
   "schemaVersion": 1,
-  "lastCompletedAt": "2026-11-23T10:45:20.583447+00:00",
+  "lastCompletedAt": "2026-11-24T00:50:28.680826+00:00",
   "method": "Codex 初筛评分 + 逐条证据复核；非两个独立模型评分",
   "items": [
+    {
+      "id": "m24-mega",
+      "eventId": "m24-mega",
+      "developmentId": "initial",
+      "titleZh": "美国将东南亚七家实体列入出口管制清单，服务器订单需核对交易对象",
+      "originalTitle": "Additions to the Entity List · 2026-23999",
+      "companies": [
+        "Megaspeed"
+      ],
+      "stages": [
+        "质量与合规",
+        "供应链与采购",
+        "制造与交付"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-23T16:15:00-05:00",
+      "kind": "新闻",
+      "category": "供应链与采购",
+      "brief": {
+        "lead": "美国商务部工业与安全局公开查阅的最终规则列出马来西亚、新加坡和泰国的七家实体，包括数家 Megaspeed 相关实体。针对这些对象，受美国《出口管理条例》管辖的物项须申请许可，审查采用推定拒绝政策。",
+        "points": [
+          "文件于美东时间 11 月 23 日进入公开查阅，页末注明计划于 11 月 25 日刊登。适用对象以文件列出的实体、别名和物项范围为准。",
+          "客户在某国开展业务本身不足以判断一笔交易的状态。核查已签订单时，需把合同主体和实际收货方对照到具体条目。"
+        ]
+      },
+      "boundary": "文件陈述转移风险及许可政策；尚无逐单审批和交付数据。个案是否合规需结合实际交易。",
+      "meaning": "清单变化可能使服务器、部件与渠道商的未交订单进入额外审核，影响交货时间。",
+      "question": "有哪些已确认订单因交易对象重新核查而调整交期？",
+      "eventReason": "美国将东南亚七家实体列入出口管制清单，服务器订单需核对交易对象",
+      "selection": {
+        "scores": {
+          "相关性": 20,
+          "增量信息": 19,
+          "证据质量": 20,
+          "机制清晰": 19,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "BIS 明确本轮清单的实体数量和三个目的地。 文件陈述转移风险及许可政策；尚无逐单审批和交付数据。个案是否合规需结合实际交易。"
+        }
+      },
+      "impactLevel": "industry-wide",
+      "impactReason": "清单变化可能使服务器、部件与渠道商的未交订单进入额外审核，影响交货时间。",
+      "facts": [
+        {
+          "claim": "BIS 明确本轮清单的实体数量和三个目的地。",
+          "sourceUrl": "https://public-inspection.federalregister.gov/2026-23999.pdf",
+          "locator": "最终规则第1至3页及文件末尾登记时间"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://public-inspection.federalregister.gov/2026-23999.pdf",
+          "publisherGroup": "美国商务部工业与安全局",
+          "name": "美国商务部工业与安全局",
+          "publishedAt": "2026-11-23T16:15:00-05:00",
+          "role": "official",
+          "textHash": "41d8da3344411f894ec42b8316c0ee7e7de7fd0996e53cb8e3fbfec7d5b01c4c",
+          "readAt": "2026-11-24T00:44:55.916572+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 96,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-24T00:50:28.661242+00:00",
+      "sourceDate": "2026-11-23T16:15:00-05:00",
+      "date": "2026-11-23T16:15:00-05:00",
+      "title": "美国将东南亚七家实体列入出口管制清单，服务器订单需核对交易对象",
+      "summary": "美国商务部工业与安全局公开查阅的最终规则列出马来西亚、新加坡和泰国的七家实体，包括数家 Megaspeed 相关实体。针对这些对象，受美国《出口管理条例》管辖的物项须申请许可，审查采用推定拒绝政策。"
+    },
+    {
+      "id": "m24-r5",
+      "eventId": "m24-r5",
+      "developmentId": "initial",
+      "titleZh": "来酷助行设备上架预约，六类姿态识别将分步开放",
+      "originalTitle": "联想推出来酷外骨骼机器人行者 ONE 穿戴式助行设备，6999 元",
+      "companies": [
+        "联想来酷"
+      ],
+      "stages": [
+        "需求与规划",
+        "渠道与销售",
+        "制造与交付"
+      ],
+      "domestic": true,
+      "publishedAt": "2026-11-23T11:04:06+00:00",
+      "kind": "新闻",
+      "category": "机器人与无人机",
+      "brief": {
+        "lead": "联想来酷行者 ONE 在京东上架，报道列出的首发价为 6999 元，计划 11 月 28 日发售。商品资料把六类姿态识别标为陆续开放。",
+        "points": [
+          "首发计划、可选模式和后续开放能力应在门店演示与售后说明中分别列明。",
+          "报道给出的续航是三档助力下的理论值，实际表现还取决于工况。"
+        ]
+      },
+      "boundary": "渠道页面与报道能说明预告和价格，交付、后续开放日期与真实用户表现仍待验证。",
+      "meaning": "渠道培训时应标出样机当前能演示的功能和仍待发布的部分。",
+      "question": "首批交付设备开放了哪些模式，后续升级通过什么方式通知？",
+      "eventReason": "来酷助行设备上架预约，六类姿态识别将分步开放",
+      "selection": {
+        "scores": {
+          "相关性": 17,
+          "增量信息": 17,
+          "证据质量": 16,
+          "机制清晰": 15,
+          "可行动性": 16
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "报道保留了姿态识别分阶段开放的条件。 渠道页面与报道能说明预告和价格，交付、后续开放日期与真实用户表现仍待验证。"
+        }
+      },
+      "facts": [
+        {
+          "claim": "报道保留了姿态识别分阶段开放的条件。",
+          "sourceUrl": "https://www.ithome.com/1/031/160.htm",
+          "locator": "上架时间与姿态识别段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.ithome.com/1/031/160.htm",
+          "publisherGroup": "联想来酷（IT之家转述渠道资料）",
+          "name": "联想来酷（IT之家转述渠道资料）",
+          "publishedAt": "2026-11-23T11:04:06+00:00",
+          "role": "media",
+          "textHash": "bde9429cb56eaaae4165e60079558b1715726dbfe927ccc3c959896ac0f81125",
+          "readAt": "2026-11-24T00:42:16.330516+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 81,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-24T00:50:28.663415+00:00",
+      "sourceDate": "2026-11-23T11:04:06+00:00",
+      "date": "2026-11-23T11:04:06+00:00",
+      "title": "来酷助行设备上架预约，六类姿态识别将分步开放",
+      "summary": "联想来酷行者 ONE 在京东上架，报道列出的首发价为 6999 元，计划 11 月 28 日发售。商品资料把六类姿态识别标为陆续开放。"
+    },
+    {
+      "id": "m24-tagweb",
+      "eventId": "m24-tagweb",
+      "developmentId": "initial",
+      "titleZh": "定位标签离开手机蓝牙范围后，地图上的记录来自哪里？",
+      "originalTitle": "The Technology Behind More Precise Finding With Galaxy SmartTag3 and SmartThings",
+      "companies": [
+        "三星电子"
+      ],
+      "stages": [
+        "研发与系统",
+        "服务与生命周期",
+        "质量与合规"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-23T08:00:00+00:00",
+      "kind": "历史案例",
+      "category": "智能家居",
+      "brief": {
+        "lead": "三星的技术说明将近距离寻物与远距离发现分开。超出手机蓝牙范围后，开启离线查找的附近 Galaxy 设备可发现标签；SmartThings 展示过去七天的发现记录。",
+        "points": [
+          "用户看到的是被发现的位置，记录能否及时更新取决于附近是否有满足条件的设备。",
+          "遗失模式另有 NFC 联系入口，拾到者可以读取失主提供的联系信息与留言。"
+        ]
+      },
+      "boundary": "文档说明功能及历史范围，未公布各地区发现成功率或通知延时。",
+      "meaning": "客服排查时先问用户看的是附近指引、历史发现还是遗失联系信息，三者的数据和处理方式不同。",
+      "question": "稀疏设备环境中，界面是否显示最后一次被发现的时间？",
+      "eventReason": "定位标签离开手机蓝牙范围后，地图上的记录来自哪里？",
+      "selection": {
+        "scores": {
+          "相关性": 17,
+          "增量信息": 17,
+          "证据质量": 19,
+          "机制清晰": 18,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "官方说明将地图标记定义为标签被发现的位置，给出七天展示范围。 文档说明功能及历史范围，未公布各地区发现成功率或通知延时。"
+        }
+      },
+      "practices": [
+        {
+          "title": "定位标签离开手机蓝牙范围后，地图上的记录来自哪里？",
+          "method": "客服排查时先问用户看的是附近指引、历史发现还是遗失联系信息，三者的数据和处理方式不同。",
+          "conditions": "仅适用于官方列明的标签、平台和开启离线查找的附近设备。",
+          "outcome": "文档说明功能及历史范围，未公布各地区发现成功率或通知延时。",
+          "boundary": "文档说明功能及历史范围，未公布各地区发现成功率或通知延时。",
+          "nextCheck": "稀疏设备环境中，界面是否显示最后一次被发现的时间？",
+          "stages": [
+            "研发与系统",
+            "服务与生命周期",
+            "质量与合规"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "官方说明将地图标记定义为标签被发现的位置，给出七天展示范围。",
+          "sourceUrl": "https://news.samsung.com/global/the-technology-behind-more-precise-finding-with-galaxy-smarttag3-and-smartthings",
+          "locator": "Location History 与 Lost Mode 段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://news.samsung.com/global/the-technology-behind-more-precise-finding-with-galaxy-smarttag3-and-smartthings",
+          "publisherGroup": "三星电子",
+          "name": "三星电子",
+          "publishedAt": "2026-11-23T08:00:00+00:00",
+          "role": "official",
+          "textHash": "70cf52259d81c7ac827b6d3e699237972460b3d64b8ad50cad81999c9cfe000f",
+          "readAt": "2026-11-24T00:50:28.196272+00:00",
+          "coverage": "excerpt"
+        }
+      ],
+      "score": 88,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-24T00:50:28.669221+00:00",
+      "sourceDate": "2026-11-23T08:00:00+00:00",
+      "date": "2026-11-23T08:00:00+00:00",
+      "title": "定位标签离开手机蓝牙范围后，地图上的记录来自哪里？",
+      "summary": "三星的技术说明将近距离寻物与远距离发现分开。超出手机蓝牙范围后，开启离线查找的附近 Galaxy 设备可发现标签；SmartThings 展示过去七天的发现记录。"
+    },
     {
       "id": "m23-reprice",
       "eventId": "m23-reprice",
@@ -92,6 +323,258 @@
       "date": "2026-11-23T07:17:38+09:00",
       "title": "从内存涨价到整机交付：多家服务器厂商被报道要求重谈签约价格",
       "summary": "韩国先驱经济转述《金融时报》11 月 22 日报道，戴尔、慧与、联想和超微电脑等供应商被指在部分服务器合同签订数月后，交货时要求提高价格。风险从新采购报价延伸到了尚未交付的订单。"
+    },
+    {
+      "id": "m24-r13",
+      "eventId": "m24-r13",
+      "developmentId": "initial",
+      "titleZh": "自变量发布 WALL-OSS-1.0，分开报告仿真排名与真机成功率",
+      "originalTitle": "自变量发布具身基础模型 WALL-OSS-1.0，零样本真机成功率达 55.1%",
+      "companies": [
+        "自变量"
+      ],
+      "stages": [
+        "研发与系统",
+        "质量与合规"
+      ],
+      "domestic": true,
+      "publishedAt": "2026-11-23T06:06:12+00:00",
+      "kind": "新闻",
+      "category": "机器人与无人机",
+      "brief": {
+        "lead": "自变量于 11 月 23 日发布具身模型 WALL-OSS-1.0。报道列出两套结果：仿真榜单上的单模型排名，以及真机测试中零样本成功率可达 55.1%。",
+        "points": [
+          "训练分两阶段，先结合动作与多模态数据，再加入生成动作的模块。",
+          "要评估工厂能否采用，仍需了解现场任务范围、失败后的人工接手次数，以及在相同设备上的复测。"
+        ]
+      },
+      "boundary": "数字为团队披露的测试表现；不能外推工厂整班或任一具体任务的成功率。",
+      "meaning": "机器人评审可要求算法和现场团队分别提交实验记录、真实工况及人工接手记录。",
+      "question": "哪些失败样本来自感知、动作执行或现场条件差异？",
+      "eventReason": "自变量发布 WALL-OSS-1.0，分开报告仿真排名与真机成功率",
+      "selection": {
+        "scores": {
+          "相关性": 17,
+          "增量信息": 17,
+          "证据质量": 16,
+          "机制清晰": 16,
+          "可行动性": 16
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "报道清楚区分仿真排名和真机测试口径。 数字为团队披露的测试表现；不能外推工厂整班或任一具体任务的成功率。"
+        }
+      },
+      "facts": [
+        {
+          "claim": "报道清楚区分仿真排名和真机测试口径。",
+          "sourceUrl": "https://www.ithome.com/1/030/890.htm",
+          "locator": "模型训练与真机测试段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.ithome.com/1/030/890.htm",
+          "publisherGroup": "自变量（IT之家转述）",
+          "name": "自变量（IT之家转述）",
+          "publishedAt": "2026-11-23T06:06:12+00:00",
+          "role": "media",
+          "textHash": "f16682f63a23cec605f0c4d8e4e3b517f5362c2a13bc8475ae356090745e098d",
+          "readAt": "2026-11-24T00:42:16.363739+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 82,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-24T00:50:28.662974+00:00",
+      "sourceDate": "2026-11-23T06:06:12+00:00",
+      "date": "2026-11-23T06:06:12+00:00",
+      "title": "自变量发布 WALL-OSS-1.0，分开报告仿真排名与真机成功率",
+      "summary": "自变量于 11 月 23 日发布具身模型 WALL-OSS-1.0。报道列出两套结果：仿真榜单上的单模型排名，以及真机测试中零样本成功率可达 55.1%。"
+    },
+    {
+      "id": "m24-board",
+      "eventId": "m24-board",
+      "developmentId": "initial",
+      "titleZh": "思特威拟用银行贷款增资晶圆代工厂，董事会通过后还要看实际供货",
+      "originalTitle": "思特威对外投资公告 2026-053",
+      "companies": [
+        "思特威",
+        "武汉楚兴"
+      ],
+      "stages": [
+        "供应链与采购",
+        "制造与交付",
+        "经营与组织"
+      ],
+      "domestic": true,
+      "publishedAt": "2026-11-23",
+      "kind": "新闻",
+      "category": "供应链与采购",
+      "brief": {
+        "lead": "思特威披露董事会已审议通过，拟以 15 亿元向武汉楚兴增资，交易后持股 5.5880%。公司将保障高端 CMOS 图像传感器代工供应列为投资目的，资金来自银行贷款。",
+        "points": [
+          "公司称武汉楚兴尚处产能爬坡阶段，折旧摊销较高，短期可能继续亏损。",
+          "读这项投资要分别跟踪股权交割、产线爬坡和达标晶圆的实际交付。公告没有给出可分配给思特威的批次和交货数量。"
+        ]
+      },
+      "boundary": "董事会审议与拟取得股权已有公告，最终交割、客户良率和实际供应量仍待披露。",
+      "meaning": "影像设备团队估算上游供给时，可以先追溯代工厂扩产与资金来源，再以通过验证的批次和交货数据核对增量。",
+      "question": "什么时间起能观察到通过验证的高端传感器供货，而非只有资本投入？",
+      "eventReason": "思特威拟用银行贷款增资晶圆代工厂，董事会通过后还要看实际供货",
+      "selection": {
+        "scores": {
+          "相关性": 20,
+          "增量信息": 18,
+          "证据质量": 20,
+          "机制清晰": 18,
+          "可行动性": 19
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "公司披露本次增资的资金来源。 董事会审议与拟取得股权已有公告，最终交割、客户良率和实际供应量仍待披露。"
+        }
+      },
+      "practices": [
+        {
+          "title": "思特威拟用银行贷款增资晶圆代工厂，董事会通过后还要看实际供货",
+          "method": "影像设备团队估算上游供给时，可以先追溯代工厂扩产与资金来源，再以通过验证的批次和交货数据核对增量。",
+          "conditions": "适用于评估上游参股与供货保障关系，具体采购须有产能或合同依据。",
+          "outcome": "董事会审议与拟取得股权已有公告，最终交割、客户良率和实际供应量仍待披露。",
+          "boundary": "董事会审议与拟取得股权已有公告，最终交割、客户良率和实际供应量仍待披露。",
+          "nextCheck": "什么时间起能观察到通过验证的高端传感器供货，而非只有资本投入？",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "经营与组织"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "organization": [
+        {
+          "title": "思特威拟用银行贷款增资晶圆代工厂，董事会通过后还要看实际供货",
+          "kind": "已披露机制",
+          "observation": "思特威披露董事会已审议通过，拟以 15 亿元向武汉楚兴增资，交易后持股 5.5880%。公司将保障高端 CMOS 图像传感器代工供应列为投资目的，资金来自银行贷款。",
+          "implication": "影像设备团队估算上游供给时，可以先追溯代工厂扩产与资金来源，再以通过验证的批次和交货数据核对增量。",
+          "boundary": "董事会审议与拟取得股权已有公告，最终交割、客户良率和实际供应量仍待披露。",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "公司披露本次增资的资金来源。",
+          "sourceUrl": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12717868&stockid=688213",
+          "locator": "公司公告 2026-053 出资方式与重要风险提示"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12717868&stockid=688213",
+          "publisherGroup": "思特威（公司公告）",
+          "name": "思特威（公司公告）",
+          "publishedAt": "2026-11-23",
+          "role": "official",
+          "textHash": "ef73c07b2ed7a1baacf4f20a66b97237a010f4f68a2e4aa798583df24740dfc2",
+          "readAt": "2026-11-24T00:44:51.361611+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 95,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-24T00:50:28.661939+00:00",
+      "sourceDate": "2026-11-23",
+      "date": "2026-11-23",
+      "title": "思特威拟用银行贷款增资晶圆代工厂，董事会通过后还要看实际供货",
+      "summary": "思特威披露董事会已审议通过，拟以 15 亿元向武汉楚兴增资，交易后持股 5.5880%。公司将保障高端 CMOS 图像传感器代工供应列为投资目的，资金来自银行贷款。"
+    },
+    {
+      "id": "m24-nvpdf",
+      "eventId": "m24-nvpdf",
+      "developmentId": "initial",
+      "titleZh": "英伟达董事会恢复黄仁勋职务，独立委员会继续调查",
+      "originalTitle": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
+      "companies": [
+        "英伟达"
+      ],
+      "stages": [
+        "经营与组织",
+        "质量与合规"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-23",
+      "kind": "新闻",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "英伟达宣布，董事会一致表决恢复黄仁勋的总裁、首席执行官及董事职务，立即生效。Harvey Jones 留任董事长，临时履职的 Colette Kress 继续担任首席财务官。",
+        "points": [
+          "公司同时披露，独立董事组成的调查委员会已委聘独立律师，调查将继续。",
+          "在组织图上，应分别记录日常经营、董事长职责、调查和贸易合规监督各由谁承担。"
+        ]
+      },
+      "boundary": "公司公告确认任职和程序安排；没有披露调查最终结论或经营影响。",
+      "meaning": "跟踪组织变化时，任职生效日与调查结论发布日是两条时间线。",
+      "question": "独立委员会何时披露结论，是否进一步调整监督职责？",
+      "eventReason": "英伟达董事会恢复黄仁勋职务，独立委员会继续调查",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 20,
+          "证据质量": 20,
+          "机制清晰": 19,
+          "可行动性": 16
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "公告把经营负责人复职和董事长留任分别写明。 公司公告确认任职和程序安排；没有披露调查最终结论或经营影响。"
+        }
+      },
+      "organization": [
+        {
+          "title": "英伟达董事会恢复黄仁勋职务，独立委员会继续调查",
+          "kind": "已披露机制",
+          "observation": "英伟达宣布，董事会一致表决恢复黄仁勋的总裁、首席执行官及董事职务，立即生效。Harvey Jones 留任董事长，临时履职的 Colette Kress 继续担任首席财务官。",
+          "implication": "跟踪组织变化时，任职生效日与调查结论发布日是两条时间线。",
+          "boundary": "公司公告确认任职和程序安排；没有披露调查最终结论或经营影响。",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "公告把经营负责人复职和董事长留任分别写明。",
+          "sourceUrl": "https://nvidianews.nvidia.com/_gallery/download_pdf/6b04462d3d63321add7499dc/",
+          "locator": "董事会决定、董事长表述及后续调查段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://nvidianews.nvidia.com/_gallery/download_pdf/6b04462d3d63321add7499dc/",
+          "publisherGroup": "英伟达",
+          "name": "英伟达",
+          "publishedAt": "2026-11-23",
+          "role": "official",
+          "textHash": "c107c196725c64e435a99a59e8b5b66f3a5efd68548a494e94d8e2bad74bb880",
+          "readAt": "2026-11-24T00:45:23.446261+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 94,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-24T00:50:28.662509+00:00",
+      "sourceDate": "2026-11-23",
+      "date": "2026-11-23",
+      "title": "英伟达董事会恢复黄仁勋职务，独立委员会继续调查",
+      "summary": "英伟达宣布，董事会一致表决恢复黄仁勋的总裁、首席执行官及董事职务，立即生效。Harvey Jones 留任董事长，临时履职的 Colette Kress 继续担任首席财务官。"
     },
     {
       "id": "m23-server",
@@ -1847,6 +2330,95 @@
       "date": "2026-11-19",
       "title": "有道智能设备毛利率降至 41%，怎样追到成本和产品组合？",
       "summary": "有道披露，三季度智能设备收入 1.452 亿元，同比下降 40.9%；该业务毛利率由上年同期 50.3% 降至 41.0%。公司将收入下降主要归因于需求走弱，将毛利率下降主要归因于物料成本增加。"
+    },
+    {
+      "id": "m24-pcbweb",
+      "eventId": "m24-pcbweb",
+      "developmentId": "initial",
+      "titleZh": "高层板交期拉长时，为什么只盯制板厂产能还不够？",
+      "originalTitle": "Growing Shortages Across the PCB Supply Chain Threaten the Next Wave of AI and Electronics",
+      "companies": [
+        "全球电子协会"
+      ],
+      "stages": [
+        "供应链与采购",
+        "制造与交付"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-19",
+      "kind": "历史案例",
+      "category": "供应链与采购",
+      "brief": {
+        "lead": "全球电子协会在 11 月 19 日的行业提示中称，截至 9 月的一年内，所引订单指标增长 56.1%，出货增长 13.3%；高层板交期可达 16 至 20 周及以上。协会还提醒关注上游材料供应。",
+        "points": [
+          "先单列高层板、基材、铜箔等环节，再问制板厂瓶颈发生在哪道工序。不同产品不能共用一条交期假设。",
+          "订单增长、出货增长与特定客户实际收到的合格板量，对应三套不同的数据。"
+        ]
+      },
+      "boundary": "这是一份 11 月 19 日发布的行业风险提示；未披露学习机等具体订单的交付结果。",
+      "meaning": "共用电路板与材料的行业在评估交期时，既需核制板能力也要问上游基材是否可用。",
+      "question": "本公司使用的层数和材料中，哪一项已有厂商确认的交货时间？",
+      "eventReason": "高层板交期拉长时，为什么只盯制板厂产能还不够？",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 16,
+          "证据质量": 19,
+          "机制清晰": 19,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "协会披露了高层板交期范围。 这是一份 11 月 19 日发布的行业风险提示；未披露学习机等具体订单的交付结果。"
+        }
+      },
+      "impactLevel": "industry-wide",
+      "impactReason": "共用电路板与材料的行业在评估交期时，既需核制板能力也要问上游基材是否可用。",
+      "practices": [
+        {
+          "title": "高层板交期拉长时，为什么只盯制板厂产能还不够？",
+          "method": "共用电路板与材料的行业在评估交期时，既需核制板能力也要问上游基材是否可用。",
+          "conditions": "优先用于高层板及相关上游材料；需另核实际型号。",
+          "outcome": "这是一份 11 月 19 日发布的行业风险提示；未披露学习机等具体订单的交付结果。",
+          "boundary": "这是一份 11 月 19 日发布的行业风险提示；未披露学习机等具体订单的交付结果。",
+          "nextCheck": "本公司使用的层数和材料中，哪一项已有厂商确认的交货时间？",
+          "stages": [
+            "供应链与采购",
+            "制造与交付"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "协会披露了高层板交期范围。",
+          "sourceUrl": "https://www.globenewswire.com/fr/news-release/2026/11/19/3406285/0/en/global-electronics-association-growing-shortages-across-the-pcb-supply-chain-threaten-the-next-wave-of-ai-and-electronics.html",
+          "locator": "Industry Alert · supply and materials data"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.globenewswire.com/fr/news-release/2026/11/19/3406285/0/en/global-electronics-association-growing-shortages-across-the-pcb-supply-chain-threaten-the-next-wave-of-ai-and-electronics.html",
+          "publisherGroup": "全球电子协会",
+          "name": "全球电子协会",
+          "publishedAt": "2026-11-19",
+          "role": "official",
+          "textHash": "6c1514f8ae55cb570528122dfe5cc973ffb942437539b95b15b79713807a7e33",
+          "readAt": "2026-11-24T00:50:28.196272+00:00",
+          "coverage": "excerpt"
+        }
+      ],
+      "score": 91,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-24T00:50:28.664061+00:00",
+      "sourceDate": "2026-11-19",
+      "date": "2026-11-19",
+      "title": "高层板交期拉长时，为什么只盯制板厂产能还不够？",
+      "summary": "全球电子协会在 11 月 19 日的行业提示中称，截至 9 月的一年内，所引订单指标增长 56.1%，出货增长 13.3%；高层板交期可达 16 至 20 周及以上。协会还提醒关注上游材料供应。"
     },
     {
       "id": "rss-cbe541898e205d5c",
@@ -8392,6 +8964,96 @@
       "summary": "NVIDIA的Jetson技术文章说明，功耗模式会改变可用核心与频率，监测工具可记录资源使用、温度和功耗。因此同一模型的性能不能脱离设备功耗配置讨论。文章发表于2023年，本轮作为基础知识补充，不作为今日芯片新品消息。"
     },
     {
+      "id": "m24-pi",
+      "eventId": "m24-pi",
+      "developmentId": "initial",
+      "titleZh": "一块板怎样走到装箱：外观检查、逐板启动、包装称重各管什么？",
+      "originalTitle": "Explore the Raspberry Pi factory floor in Wales, UK",
+      "companies": [
+        "Raspberry Pi",
+        "索尼英国技术中心"
+      ],
+      "stages": [
+        "制造与交付",
+        "质量与合规",
+        "服务与生命周期"
+      ],
+      "domestic": false,
+      "publishedAt": "2023-08-01T11:14:48+00:00",
+      "kind": "历史案例",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "Raspberry Pi 公开的索尼威尔士工厂记录显示，贴装途中设目检，分板前再检查；之后逐板启动测试，通过才单独装盒，随后称重检查包装内容。",
+        "points": [
+          "前段检查针对装配状态，启动测试检查通电后的行为，称重面向装箱完整性。",
+          "试产工程师可把每块板经历哪一关与结果对应起来；售后返件则按失效现象追查相应工序。"
+        ]
+      },
+      "boundary": "这是 2023 年公开的一条生产路线。未披露逐项测试覆盖率、首过率或返修批次台账。",
+      "meaning": "将外观、功能与包装分别验收，能让复盘清楚到底验证过什么。",
+      "question": "包装重量正常但用户无法启动时，能否追到该板的启动测试结果？",
+      "eventReason": "一块板怎样走到装箱：外观检查、逐板启动、包装称重各管什么？",
+      "selection": {
+        "scores": {
+          "相关性": 18,
+          "增量信息": 18,
+          "证据质量": 19,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "工厂实录说明分板后逐板启动，合格后进入包装。 这是 2023 年公开的一条生产路线。未披露逐项测试覆盖率、首过率或返修批次台账。"
+        }
+      },
+      "practices": [
+        {
+          "title": "一块板怎样走到装箱：外观检查、逐板启动、包装称重各管什么？",
+          "method": "将外观、功能与包装分别验收，能让复盘清楚到底验证过什么。",
+          "conditions": "适用于该工厂公开展示的流程；不同工厂需重查测试覆盖。",
+          "outcome": "这是 2023 年公开的一条生产路线。未披露逐项测试覆盖率、首过率或返修批次台账。",
+          "boundary": "这是 2023 年公开的一条生产路线。未披露逐项测试覆盖率、首过率或返修批次台账。",
+          "nextCheck": "包装重量正常但用户无法启动时，能否追到该板的启动测试结果？",
+          "stages": [
+            "制造与交付",
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "工厂实录说明分板后逐板启动，合格后进入包装。",
+          "sourceUrl": "https://www.raspberrypi.com/news/explore-the-raspberry-pi-factory-floor-in-wales-uk/",
+          "locator": "现场视频逐字稿后半段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.raspberrypi.com/news/explore-the-raspberry-pi-factory-floor-in-wales-uk/",
+          "publisherGroup": "Raspberry Pi",
+          "name": "Raspberry Pi",
+          "publishedAt": "2023-08-01T11:14:48+00:00",
+          "role": "official",
+          "textHash": "d566ed0dc643c0ed3fd136d7b218c09527954b011b22dc26e7bf31b5352cb7df",
+          "readAt": "2026-11-24T00:43:08.380245+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 91,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-24T00:50:28.664784+00:00",
+      "sourceDate": "2023-08-01T11:14:48+00:00",
+      "date": "2023-08-01T11:14:48+00:00",
+      "title": "一块板怎样走到装箱：外观检查、逐板启动、包装称重各管什么？",
+      "summary": "Raspberry Pi 公开的索尼威尔士工厂记录显示，贴装途中设目检，分板前再检查；之后逐板启动测试，通过才单独装盒，随后称重检查包装内容。"
+    },
+    {
       "id": "bambu-quality",
       "eventId": "bambu-quality",
       "developmentId": "initial",
@@ -13343,9 +14005,334 @@
       "date": null,
       "title": "同一件打印样品，支撑好拆和表面合格如何同时验收？",
       "summary": "拓竹 H2D 手册将两个调整方向放在一起讲：加大顶部 Z 间距可让支撑更易拆除，但支撑接触面质量会降低；水平方向的间距也影响拆除和刮伤风险。"
+    },
+    {
+      "id": "m24-multi",
+      "eventId": "m24-multi",
+      "developmentId": "initial",
+      "titleZh": "同一盏灯接入两个平台，怎样验证第二个平台真的接好了？",
+      "originalTitle": "Set up, manage, and control Matter-enabled devices with Google Home",
+      "companies": [
+        "Google"
+      ],
+      "stages": [
+        "研发与系统",
+        "服务与生命周期",
+        "质量与合规"
+      ],
+      "domestic": false,
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "智能家居",
+      "brief": {
+        "lead": "Google Home 指南把多平台接入拆成主平台共享、第二个平台接入和控制验证。使用扫码方式时需额外的移动设备；各平台还要准备与自己兼容的 Matter 中枢。",
+        "points": [
+          "接入后，用一个平台关灯，再到另一个平台看设备状态是否同步。",
+          "把生成配对凭据、完成配对、另一平台能收到实际状态分别作为验收点。"
+        ]
+      },
+      "boundary": "仅限该指南描述的兼容配置。离线撤权、跨品牌响应时延及失败率仍须另测。",
+      "meaning": "产品和客服可用同一条操作记录区分配对失败、控制失败和状态回写失败。",
+      "question": "第二个平台已配对但状态没更新时，哪个环节有可查回执？",
+      "eventReason": "同一盏灯接入两个平台，怎样验证第二个平台真的接好了？",
+      "selection": {
+        "scores": {
+          "相关性": 18,
+          "增量信息": 17,
+          "证据质量": 19,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "官方流程允许为第二个平台生成临时配对凭据。 仅限该指南描述的兼容配置。离线撤权、跨品牌响应时延及失败率仍须另测。"
+        }
+      },
+      "practices": [
+        {
+          "title": "同一盏灯接入两个平台，怎样验证第二个平台真的接好了？",
+          "method": "产品和客服可用同一条操作记录区分配对失败、控制失败和状态回写失败。",
+          "conditions": "适用于指南列明的 Matter 兼容平台、中枢与设备。",
+          "outcome": "仅限该指南描述的兼容配置。离线撤权、跨品牌响应时延及失败率仍须另测。",
+          "boundary": "仅限该指南描述的兼容配置。离线撤权、跨品牌响应时延及失败率仍须另测。",
+          "nextCheck": "第二个平台已配对但状态没更新时，哪个环节有可查回执？",
+          "stages": [
+            "研发与系统",
+            "服务与生命周期",
+            "质量与合规"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "官方流程允许为第二个平台生成临时配对凭据。",
+          "sourceUrl": "https://support.google.com/googlehome/answer/13127223?hl=en-CA",
+          "locator": "Share the devices 与配对后的控制检查"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://support.google.com/googlehome/answer/13127223?hl=en-CA",
+          "publisherGroup": "Google Home 官方帮助",
+          "name": "Google Home 官方帮助",
+          "publishedAt": null,
+          "role": "official",
+          "textHash": "efbefd835dfaacace4234f8ddd09a1b6895cf7819cbbd0b19bda5b10b8cf5db6",
+          "readAt": "2026-11-24T00:43:03.338151+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 90,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-24T00:50:28.665686+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "同一盏灯接入两个平台，怎样验证第二个平台真的接好了？",
+      "summary": "Google Home 指南把多平台接入拆成主平台共享、第二个平台接入和控制验证。使用扫码方式时需额外的移动设备；各平台还要准备与自己兼容的 Matter 中枢。"
+    },
+    {
+      "id": "m24-boox",
+      "eventId": "m24-boox",
+      "developmentId": "initial",
+      "titleZh": "换阅读器后找不到手写笔记，先核账号、服务器还是文件？",
+      "originalTitle": "BOOX Help Center · Note Syncing",
+      "companies": [
+        "文石 BOOX"
+      ],
+      "stages": [
+        "研发与系统",
+        "服务与生命周期",
+        "质量与合规"
+      ],
+      "domestic": true,
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "学习硬件",
+      "brief": {
+        "lead": "文石帮助页解释，手写笔记按 ONYX 账号和服务器同步。不同服务器分别存储；退出账号后，已同步笔记可能暂时不可见，再登录原账号才会显示。",
+        "points": [
+          "不仅要检查总开关，还要检查单本笔记的同步开关。网页查看时也要选同一服务器。",
+          "NeoReader 的书籍阅读进度和批注另有流程，还要求两台设备的对应文件目录一致。独立笔记和书内批注应分别排查。"
+        ]
+      },
+      "boundary": "仅适用于提供手写笔记功能的相应机型；没有观察到具体用户的数据是否丢失或实际恢复成功率。",
+      "meaning": "先让用户说明缺的是书内批注还是独立手写本，再核对账号、服务器、开关及原文件，减少无效的恢复操作。",
+      "question": "原账号重新登录后，两类内容是否都能在原设备与目标设备看到？",
+      "eventReason": "换阅读器后找不到手写笔记，先核账号、服务器还是文件？",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 18,
+          "证据质量": 19,
+          "机制清晰": 19,
+          "可行动性": 19
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "官方指南说明多账号设备的笔记可见范围。 仅适用于提供手写笔记功能的相应机型；没有观察到具体用户的数据是否丢失或实际恢复成功率。"
+        }
+      },
+      "practices": [
+        {
+          "title": "换阅读器后找不到手写笔记，先核账号、服务器还是文件？",
+          "method": "先让用户说明缺的是书内批注还是独立手写本，再核对账号、服务器、开关及原文件，减少无效的恢复操作。",
+          "conditions": "适用于支持手写笔记的机型及相应账号、服务器和设置。",
+          "outcome": "仅适用于提供手写笔记功能的相应机型；没有观察到具体用户的数据是否丢失或实际恢复成功率。",
+          "boundary": "仅适用于提供手写笔记功能的相应机型；没有观察到具体用户的数据是否丢失或实际恢复成功率。",
+          "nextCheck": "原账号重新登录后，两类内容是否都能在原设备与目标设备看到？",
+          "stages": [
+            "研发与系统",
+            "服务与生命周期",
+            "质量与合规"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "educationCategories": [
+        "reader"
+      ],
+      "facts": [
+        {
+          "claim": "官方指南说明多账号设备的笔记可见范围。",
+          "sourceUrl": "https://help.boox.com/653d4/f3f2e/affe8",
+          "locator": "Note Syncing · Account and Server"
+        },
+        {
+          "claim": "NeoReader 阅读数据同步还要核对对应文件所在目录。",
+          "sourceUrl": "https://help.boox.com/fa5fa/f733d/56960",
+          "locator": "Account, Server, and Directory"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://help.boox.com/653d4/f3f2e/affe8",
+          "publisherGroup": "文石官方帮助",
+          "name": "文石官方帮助",
+          "publishedAt": null,
+          "role": "official",
+          "textHash": "ea4fbbd28b6b9482d086854e1c5276bf957d548d19f2870a6344be931717faaa",
+          "readAt": "2026-11-24T00:43:09.063879+00:00",
+          "coverage": "body"
+        },
+        {
+          "url": "https://help.boox.com/fa5fa/f733d/56960",
+          "publisherGroup": "文石官方帮助",
+          "name": "Reading Data Syncing and Backup",
+          "publishedAt": null,
+          "role": "official",
+          "textHash": "7075a1d6f013834d7434ce53762aae1cb8a4081a4e92e59990d1820d7d65e31a",
+          "readAt": "2026-11-24T00:44:56.959741+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 94,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-24T00:50:28.667538+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "换阅读器后找不到手写笔记，先核账号、服务器还是文件？",
+      "summary": "文石帮助页解释，手写笔记按 ONYX 账号和服务器同步。不同服务器分别存储；退出账号后，已同步笔记可能暂时不可见，再登录原账号才会显示。"
+    },
+    {
+      "id": "m24-android",
+      "eventId": "m24-android",
+      "developmentId": "initial",
+      "titleZh": "学习机第一次开麦比连续跟读慢，该分别测哪段时间？",
+      "originalTitle": "Android NDK · Audio latency",
+      "companies": [
+        "Google"
+      ],
+      "stages": [
+        "研发与系统",
+        "质量与合规"
+      ],
+      "domestic": false,
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "Android 的文档将音频管线首次启动的等待与连续收发音频的时延分开。系统的低时延输出能力标记和专业音频往返能力标记也针对两种测量路径。",
+        "points": [
+          "文档对前一标记给出连续输出 45 毫秒以内，对后一标记给出连续往返 20 毫秒以内。二者都不能直接代替“点按跟读到收到评分”的整机测量。",
+          "可让音频工程、应用和教研使用同一段录音，分别留存首次开麦、连续跟读以及评分反馈的时间戳。"
+        ]
+      },
+      "boundary": "能力标记针对 Android 文档所列条件。未取得学习机实测数据，评分时间还受识别与应用处理影响。",
+      "meaning": "若只测连续工作，初始化造成的首题等待就会被漏掉。验收可同时保留冷启动与连续使用两组记录。",
+      "question": "同一台量产设备上，从首次点按到可用录音与从录音到评分分别花多久？",
+      "eventReason": "学习机第一次开麦比连续跟读慢，该分别测哪段时间？",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 17,
+          "证据质量": 19,
+          "机制清晰": 19,
+          "可行动性": 19
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "Android 对首次入队时的管线启动单独定义了时延。 能力标记针对 Android 文档所列条件。未取得学习机实测数据，评分时间还受识别与应用处理影响。"
+        }
+      },
+      "practices": [
+        {
+          "title": "学习机第一次开麦比连续跟读慢，该分别测哪段时间？",
+          "method": "若只测连续工作，初始化造成的首题等待就会被漏掉。验收可同时保留冷启动与连续使用两组记录。",
+          "conditions": "适用于Android音频链路；应保留设备、系统版本与音频路径。",
+          "outcome": "能力标记针对 Android 文档所列条件。未取得学习机实测数据，评分时间还受识别与应用处理影响。",
+          "boundary": "能力标记针对 Android 文档所列条件。未取得学习机实测数据，评分时间还受识别与应用处理影响。",
+          "nextCheck": "同一台量产设备上，从首次点按到可用录音与从录音到评分分别花多久？",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "Android 对首次入队时的管线启动单独定义了时延。",
+          "sourceUrl": "https://developer.android.com/ndk/guides/audio/audio-latency",
+          "locator": "Audio latency 名词说明及 Check your features"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://developer.android.com/ndk/guides/audio/audio-latency",
+          "publisherGroup": "Android Developers",
+          "name": "Android Developers",
+          "publishedAt": null,
+          "role": "official",
+          "textHash": "ba557002f1f307984598b16061ac62d8fa3ada1c5587147ea5ee855804e132b8",
+          "readAt": "2026-11-24T00:43:03.385460+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 93,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-24T00:50:28.668458+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "学习机第一次开麦比连续跟读慢，该分别测哪段时间？",
+      "summary": "Android 的文档将音频管线首次启动的等待与连续收发音频的时延分开。系统的低时延输出能力标记和专业音频往返能力标记也针对两种测量路径。"
     }
   ],
   "events": [
+    {
+      "id": "m24-mega",
+      "representativeId": "m24-mega",
+      "itemIds": [
+        "m24-mega"
+      ],
+      "publisherGroups": [
+        "美国商务部工业与安全局"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m24-r5",
+      "representativeId": "m24-r5",
+      "itemIds": [
+        "m24-r5"
+      ],
+      "publisherGroups": [
+        "联想来酷（IT之家转述渠道资料）"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m24-tagweb",
+      "representativeId": "m24-tagweb",
+      "itemIds": [
+        "m24-tagweb"
+      ],
+      "publisherGroups": [
+        "三星电子"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
     {
       "id": "m23-reprice",
       "representativeId": "m23-reprice",
@@ -13355,6 +14342,48 @@
       "publisherGroups": [
         "爱尔兰时报",
         "金融时报（韩国先驱经济转述）"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m24-r13",
+      "representativeId": "m24-r13",
+      "itemIds": [
+        "m24-r13"
+      ],
+      "publisherGroups": [
+        "自变量（IT之家转述）"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m24-board",
+      "representativeId": "m24-board",
+      "itemIds": [
+        "m24-board"
+      ],
+      "publisherGroups": [
+        "思特威（公司公告）"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m24-nvpdf",
+      "representativeId": "m24-nvpdf",
+      "itemIds": [
+        "m24-nvpdf"
+      ],
+      "publisherGroups": [
+        "英伟达"
       ],
       "developmentIds": [
         "initial"
@@ -13668,6 +14697,20 @@
       "publisherGroups": [
         "有道（公司财报）",
         "网易投资者关系"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m24-pcbweb",
+      "representativeId": "m24-pcbweb",
+      "itemIds": [
+        "m24-pcbweb"
+      ],
+      "publisherGroups": [
+        "全球电子协会"
       ],
       "developmentIds": [
         "initial"
@@ -14682,6 +15725,20 @@
       "selected": true
     },
     {
+      "id": "m24-pi",
+      "representativeId": "m24-pi",
+      "itemIds": [
+        "m24-pi"
+      ],
+      "publisherGroups": [
+        "Raspberry Pi"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
       "id": "bambu-quality",
       "representativeId": "bambu-quality",
       "itemIds": [
@@ -15385,352 +16442,51 @@
         "initial"
       ],
       "selected": true
+    },
+    {
+      "id": "m24-multi",
+      "representativeId": "m24-multi",
+      "itemIds": [
+        "m24-multi"
+      ],
+      "publisherGroups": [
+        "Google Home 官方帮助"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m24-boox",
+      "representativeId": "m24-boox",
+      "itemIds": [
+        "m24-boox"
+      ],
+      "publisherGroups": [
+        "文石官方帮助"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m24-android",
+      "representativeId": "m24-android",
+      "itemIds": [
+        "m24-android"
+      ],
+      "publisherGroups": [
+        "Android Developers"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
     }
   ],
   "runs": [
-    {
-      "coverage": "6 个 RSS 中 5 个成功；候选 30 篇中 8 篇新读、20 篇缓存、2 篇正文失败。重点查阅雷鸟、XREAL、影石，并补读科沃斯与石头岗位。新增 5 篇中文 brief，复核 HALO 并补系统分工实践；启元公告与同日媒体合并为一个新事件。岗位取得科沃斯正文与石头官方索引，影石和雷鸟 ATS 未取得职责，不把空列表当作零岗位。",
-      "sourceChecks": [
-        {
-          "url": "https://www.rayneo.com/pages/support-rayneo-io-ai-glasses",
-          "company": "雷鸟创新",
-          "stages": [
-            "研发与系统",
-            "渠道与销售",
-            "服务与生命周期"
-          ],
-          "purpose": "practice",
-          "state": "read",
-          "note": "实际读取条目所注明章节；按原始日期、来源类型和适用条件整理。",
-          "checkedAt": "2026-11-09T00:46:58.353783+00:00"
-        },
-        {
-          "url": "https://us.shop.xreal.com/pages/warranty-policy",
-          "company": "XREAL",
-          "stages": [
-            "渠道与销售",
-            "服务与生命周期",
-            "质量与合规"
-          ],
-          "purpose": "practice",
-          "state": "read",
-          "note": "实际读取条目所注明章节；按原始日期、来源类型和适用条件整理。",
-          "checkedAt": "2026-11-09T00:46:58.382936+00:00"
-        },
-        {
-          "url": "https://mall.roborock.com/introduction/jobs",
-          "company": "石头科技",
-          "stages": [
-            "供应链与采购",
-            "制造与交付",
-            "经营与组织"
-          ],
-          "purpose": "recruitment",
-          "state": "index",
-          "note": "实际读取条目所注明章节；按原始日期、来源类型和适用条件整理。",
-          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
-        },
-        {
-          "url": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-11/2026-11-09/12696266.PDF",
-          "company": "上纬新材启元",
-          "stages": [
-            "制造与交付",
-            "质量与合规",
-            "渠道与销售",
-            "服务与生命周期",
-            "经营与组织"
-          ],
-          "purpose": "practice",
-          "state": "read",
-          "note": "实际读取条目所注明章节；按原始日期、来源类型和适用条件整理。",
-          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
-        },
-        {
-          "url": "https://apple-aiml-research.github.io/ml-halo/",
-          "company": null,
-          "stages": [
-            "研发与系统",
-            "制造与交付"
-          ],
-          "purpose": "practice",
-          "state": "read",
-          "note": "实际读取条目所注明章节；按原始日期、来源类型和适用条件整理。",
-          "checkedAt": "2026-11-09T00:46:57.560360+00:00"
-        },
-        {
-          "url": "https://www.ithome.com/1/024/012.htm",
-          "company": null,
-          "stages": [
-            "研发与系统",
-            "经营与组织"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "note": "实际读取条目所注明章节；按原始日期、来源类型和适用条件整理。",
-          "checkedAt": "2026-11-09T00:45:19.339428+00:00"
-        },
-        {
-          "url": "https://www.insta360.com/cn/jobs",
-          "company": "影石创新",
-          "stages": [
-            "经营与组织",
-            "渠道与销售"
-          ],
-          "purpose": "recruitment",
-          "state": "read",
-          "note": "官方招聘主页可读，官网链接确认飞书 ATS；文化宣传未用于证明员工体验或组织效果。",
-          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
-        },
-        {
-          "url": "https://arashivision.jobs.feishu.cn/campus",
-          "company": "影石创新",
-          "stages": [
-            "经营与组织",
-            "供应链与采购"
-          ],
-          "purpose": "recruitment",
-          "state": "error",
-          "note": "浏览器仅呈现空列表框架，未取得职责正文；显示零不解释为公司没有招聘。",
-          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
-        },
-        {
-          "url": "https://arashivision.jobs.feishu.cn/social",
-          "company": "影石创新",
-          "stages": [
-            "经营与组织",
-            "供应链与采购"
-          ],
-          "purpose": "recruitment",
-          "state": "error",
-          "note": "浏览器仅呈现空列表框架，未取得职责正文；显示零不解释为公司没有招聘。",
-          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
-        },
-        {
-          "url": "https://leiniao-ibg.jobs.feishu.cn/",
-          "company": "雷鸟创新",
-          "stages": [
-            "经营与组织",
-            "渠道与销售"
-          ],
-          "purpose": "recruitment",
-          "state": "error",
-          "note": "公开页面无可读正文，且本轮未完成官网反向链接核验，不作为有效官方岗位观察。",
-          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
-        },
-        {
-          "url": "https://open.rayneo.cn/",
-          "company": "雷鸟创新",
-          "stages": [
-            "研发与系统",
-            "渠道与销售"
-          ],
-          "purpose": "practice",
-          "state": "error",
-          "note": "直连正文提取为空；搜索片段有开发者流程，但本轮未完成该域名归属核验，不用于知识修订。",
-          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
-        },
-        {
-          "url": "https://www.xreal.com/support",
-          "company": "XREAL",
-          "stages": [
-            "服务与生命周期",
-            "渠道与销售"
-          ],
-          "purpose": "practice",
-          "state": "read",
-          "note": "当前支持页导航到官方商城；读取服务入口，不把支持可用性理解为服务效果。",
-          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
-        },
-        {
-          "url": "https://mall.ecovacs.cn/job-detail-516.html",
-          "company": "科沃斯",
-          "stages": [
-            "需求与规划",
-            "渠道与销售",
-            "服务与生命周期",
-            "经营与组织"
-          ],
-          "purpose": "recruitment",
-          "state": "read",
-          "note": "重读已有产品线经理完整正文，职责未见变化，保留旧摘要与首次观察日期。",
-          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
-        },
-        {
-          "url": "https://money.finance.sina.com.cn/corp/go.php/vCB_AllBulletin/stockid/688585.phtml",
-          "company": null,
-          "stages": [
-            "制造与交付"
-          ],
-          "purpose": "news",
-          "state": "index",
-          "note": "读取公告索引并进入对应正文，核对公告日期和 PDF 链接。",
-          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
-        },
-        {
-          "url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12696266&stockid=688585",
-          "company": null,
-          "stages": [
-            "制造与交付",
-            "质量与合规"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "note": "读取公司公告转存正文与所链接一页 PDF，保留尚未回交易所核验的边界。",
-          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/995.htm",
-          "company": null,
-          "stages": [
-            "研发与系统"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "note": "读取新抓正文；营销价格、传闻、缺一手机制的演示不入精选，启元报道与公告合并去重。",
-          "checkedAt": "2026-11-09T00:45:19.336131+00:00"
-        },
-        {
-          "url": "https://www.ithome.com/1/024/012.htm",
-          "company": null,
-          "stages": [
-            "研发与系统"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "note": "读取新抓正文；营销价格、传闻、缺一手机制的演示不入精选，启元报道与公告合并去重。",
-          "checkedAt": "2026-11-09T00:45:19.339428+00:00"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/978.htm",
-          "company": null,
-          "stages": [
-            "研发与系统"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "note": "读取新抓正文；营销价格、传闻、缺一手机制的演示不入精选，启元报道与公告合并去重。",
-          "checkedAt": "2026-11-09T00:45:19.331814+00:00"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/969.htm",
-          "company": null,
-          "stages": [
-            "研发与系统"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "note": "读取新抓正文；营销价格、传闻、缺一手机制的演示不入精选，启元报道与公告合并去重。",
-          "checkedAt": "2026-11-09T00:45:19.343434+00:00"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/920.htm",
-          "company": null,
-          "stages": [
-            "研发与系统"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "note": "读取新抓正文；营销价格、传闻、缺一手机制的演示不入精选，启元报道与公告合并去重。",
-          "checkedAt": "2026-11-09T00:45:19.440194+00:00"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/917.htm",
-          "company": null,
-          "stages": [
-            "制造与交付",
-            "服务与生命周期"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "note": "读取新抓正文；营销价格、传闻、缺一手机制的演示不入精选，启元报道与公告合并去重。",
-          "checkedAt": "2026-11-09T00:45:19.436862+00:00"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/882.htm",
-          "company": null,
-          "stages": [
-            "研发与系统"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "note": "读取新抓正文；营销价格、传闻、缺一手机制的演示不入精选，启元报道与公告合并去重。",
-          "checkedAt": "2026-11-09T00:45:19.453330+00:00"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/881.htm",
-          "company": null,
-          "stages": [
-            "研发与系统"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "note": "读取新抓正文；营销价格、传闻、缺一手机制的演示不入精选，启元报道与公告合并去重。",
-          "checkedAt": "2026-11-09T00:45:19.447003+00:00"
-        },
-        {
-          "url": "https://www.cnx-software.com/2026/11/06/520-mhz-stm32h7p4-stm32h7p5-arm-cortex-m7-mcus-feature-hardware-signal-processor-hsp-optional-neural-art-npu",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "error",
-          "note": "curl: (56) The requested URL returned error: 403",
-          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
-        },
-        {
-          "url": "https://www.cnx-software.com/2026/11/05/altera-agilex-27-fpga-soc-family-features-up-to-17-6m-logic-elements-cortex-a720-a-520-cores-256-gbps-serdes-pcie-7-0",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "error",
-          "note": "curl: (56) The requested URL returned error: 403",
-          "checkedAt": "2026-11-09T00:50:02.116282+00:00"
-        }
-      ],
-      "knownGaps": [
-        "影石、雷鸟新轮换招聘入口未取得岗位正文；以科沃斯重读和石头采购索引补足可用观察。",
-        "石头索引无日期，当前在招及人数未知。",
-        "雷鸟支持页有待确认占位，未形成完整权限与数据流证据。",
-        "启元公告为媒体托管原始 PDF，尚缺交易所回源；使用指标缺分母。",
-        "知识各节点按实际可核字段记录部分复核，首轮完整复核期限不因补充内容后移。"
-      ],
-      "failedSources": [
-        "CNX RSS：403，历史数据保留。",
-        "浏览器仅呈现空列表框架，未取得职责正文；显示零不解释为公司没有招聘。",
-        "公开页面无可读正文，且本轮未完成官网反向链接核验，不作为有效官方岗位观察。",
-        "直连正文提取为空；搜索片段有开发者流程，但本轮未完成该域名归属核验，不用于知识修订。",
-        "curl: (56) The requested URL returned error: 403"
-      ],
-      "coverageCheck": {
-        "passed": true,
-        "companies": [
-          "XREAL",
-          "影石创新",
-          "石头科技",
-          "科沃斯",
-          "雷鸟创新"
-        ],
-        "stages": [
-          "供应链与采购",
-          "制造与交付",
-          "服务与生命周期",
-          "渠道与销售",
-          "经营与组织",
-          "质量与合规",
-          "需求与规划"
-        ],
-        "recruitmentCompanies": [
-          "影石创新",
-          "石头科技",
-          "科沃斯"
-        ],
-        "gaps": [],
-        "usableSources": 19
-      },
-      "successfulScan": true,
-      "completedAt": "2026-11-09T00:50:02.264209+00:00",
-      "reviewedCount": 6,
-      "selectedCount": 5
-    },
     {
       "coverage": "6个RSS源5个成功，共30条候选；本轮重点审阅2篇新官方技术正文并形成中文brief，余项按索引初筛。另查宇树采购、xTool售后、讯飞学习机功能和讯飞/小猿两份当前岗位正文，覆盖供应链、制造、质量、渠道、服务及组织。",
       "sourceChecks": [
@@ -33111,6 +33867,1054 @@
       "completedAt": "2026-11-23T10:45:20.583447+00:00",
       "reviewedCount": 4,
       "selectedCount": 4
+    },
+    {
+      "sourceChecks": [
+        {
+          "name": "美国商务部工业与安全局",
+          "url": "https://public-inspection.federalregister.gov/2026-23999.pdf",
+          "checkedAt": "2026-11-24T00:44:55.916572+00:00",
+          "purpose": "news",
+          "stages": [
+            "质量与合规",
+            "供应链与采购",
+            "制造与交付"
+          ],
+          "note": "清单变化可能使服务器、部件与渠道商的未交订单进入额外审核，影响交货时间。",
+          "company": null,
+          "state": "read",
+          "readId": "m24-mega",
+          "publishedAt": "2026-11-23T16:15:00-05:00",
+          "publisherGroup": "美国商务部工业与安全局",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "清单变化可能使服务器、部件与渠道商的未交订单进入额外审核，影响交货时间。",
+            "anchor": "by adding 7 entities to the Entity List"
+          }
+        },
+        {
+          "name": "思特威（公司公告）",
+          "url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12717868&stockid=688213",
+          "checkedAt": "2026-11-24T00:44:51.361611+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "经营与组织"
+          ],
+          "note": "影像设备团队估算上游供给时，可以先追溯代工厂扩产与资金来源，再以通过验证的批次和交货数据核对增量。",
+          "company": null,
+          "state": "read",
+          "readId": "m24-board",
+          "publishedAt": "2026-11-23",
+          "publisherGroup": "思特威（公司公告）",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "影像设备团队估算上游供给时，可以先追溯代工厂扩产与资金来源，再以通过验证的批次和交货数据核对增量。",
+            "anchor": "资金来源于银行贷款，不涉及募集资金"
+          }
+        },
+        {
+          "name": "英伟达",
+          "url": "https://nvidianews.nvidia.com/_gallery/download_pdf/6b04462d3d63321add7499dc/",
+          "checkedAt": "2026-11-24T00:45:23.446261+00:00",
+          "purpose": "news",
+          "stages": [
+            "经营与组织",
+            "质量与合规"
+          ],
+          "note": "跟踪组织变化时，任职生效日与调查结论发布日是两条时间线。",
+          "company": null,
+          "state": "read",
+          "readId": "m24-nvpdf",
+          "publishedAt": "2026-11-23",
+          "publisherGroup": "英伟达",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "跟踪组织变化时，任职生效日与调查结论发布日是两条时间线。",
+            "anchor": "Harvey Jones will remain as Board chair"
+          }
+        },
+        {
+          "name": "自变量（IT之家转述）",
+          "url": "https://www.ithome.com/1/030/890.htm",
+          "checkedAt": "2026-11-24T00:42:16.363739+00:00",
+          "purpose": "news",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "机器人评审可要求算法和现场团队分别提交实验记录、真实工况及人工接手记录。",
+          "company": null,
+          "state": "read",
+          "readId": "m24-r13",
+          "publishedAt": "2026-11-23T06:06:12+00:00",
+          "publisherGroup": "自变量（IT之家转述）",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "机器人评审可要求算法和现场团队分别提交实验记录、真实工况及人工接手记录。",
+            "anchor": "多种真机测试中零样本成功率可达 55.1%"
+          }
+        },
+        {
+          "name": "联想来酷（IT之家转述渠道资料）",
+          "url": "https://www.ithome.com/1/031/160.htm",
+          "checkedAt": "2026-11-24T00:42:16.330516+00:00",
+          "purpose": "news",
+          "stages": [
+            "需求与规划",
+            "渠道与销售",
+            "制造与交付"
+          ],
+          "note": "渠道培训时应标出样机当前能演示的功能和仍待发布的部分。",
+          "company": null,
+          "state": "read",
+          "readId": "m24-r5",
+          "publishedAt": "2026-11-23T11:04:06+00:00",
+          "publisherGroup": "联想来酷（IT之家转述渠道资料）",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "渠道培训时应标出样机当前能演示的功能和仍待发布的部分。",
+            "anchor": "6 类姿态（陆续开放）"
+          }
+        },
+        {
+          "name": "全球电子协会",
+          "url": "https://www.globenewswire.com/fr/news-release/2026/11/19/3406285/0/en/global-electronics-association-growing-shortages-across-the-pcb-supply-chain-threaten-the-next-wave-of-ai-and-electronics.html",
+          "checkedAt": "2026-11-24T00:50:28.196272+00:00",
+          "purpose": "practice",
+          "stages": [
+            "供应链与采购",
+            "制造与交付"
+          ],
+          "note": "共用电路板与材料的行业在评估交期时，既需核制板能力也要问上游基材是否可用。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "Raspberry Pi",
+          "url": "https://www.raspberrypi.com/news/explore-the-raspberry-pi-factory-floor-in-wales-uk/",
+          "checkedAt": "2026-11-24T00:43:08.380245+00:00",
+          "purpose": "practice",
+          "stages": [
+            "制造与交付",
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "note": "将外观、功能与包装分别验收，能让复盘清楚到底验证过什么。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "Google Home 官方帮助",
+          "url": "https://support.google.com/googlehome/answer/13127223?hl=en-CA",
+          "checkedAt": "2026-11-24T00:43:03.338151+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统",
+            "服务与生命周期",
+            "质量与合规"
+          ],
+          "note": "产品和客服可用同一条操作记录区分配对失败、控制失败和状态回写失败。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "文石官方帮助",
+          "url": "https://help.boox.com/653d4/f3f2e/affe8",
+          "checkedAt": "2026-11-24T00:43:09.063879+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统",
+            "服务与生命周期",
+            "质量与合规"
+          ],
+          "note": "先让用户说明缺的是书内批注还是独立手写本，再核对账号、服务器、开关及原文件，减少无效的恢复操作。",
+          "company": "文石 BOOX",
+          "state": "read"
+        },
+        {
+          "name": "Android Developers",
+          "url": "https://developer.android.com/ndk/guides/audio/audio-latency",
+          "checkedAt": "2026-11-24T00:43:03.385460+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "若只测连续工作，初始化造成的首题等待就会被漏掉。验收可同时保留冷启动与连续使用两组记录。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "三星电子",
+          "url": "https://news.samsung.com/global/the-technology-behind-more-precise-finding-with-galaxy-smarttag3-and-smartthings",
+          "checkedAt": "2026-11-24T00:50:28.196272+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统",
+            "服务与生命周期",
+            "质量与合规"
+          ],
+          "note": "客服排查时先问用户看的是附近指引、历史发现还是遗失联系信息，三者的数据和处理方式不同。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "Co Print（Tom’s Hardware 报道）",
+          "url": "https://www.tomshardware.com/3d-printing/3d-printer-that-promises-simultaneous-printing-from-all-four-heads-gets-usd500-000-in-crowdfunding-four-printhead-co-print-quadro-msrp-set-at-just-usd899-promises-reduced-waste-and-faster-printing",
+          "checkedAt": "2026-11-24T00:42:18.781263+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "制造与交付"
+          ],
+          "note": "筹资和厂商目标可以核对，但尚无批量交付或四头同时打印的独立验证。",
+          "company": null,
+          "state": "read",
+          "readId": "m24-r0",
+          "publishedAt": "2026-11-23T16:30:59+00:00",
+          "publisherGroup": "Co Print（Tom’s Hardware 报道）",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "筹资和厂商目标可以核对，但尚无批量交付或四头同时打印的独立验证。",
+            "anchor": "It has already raised over $500,000"
+          }
+        },
+        {
+          "name": "路透社（IT之家转述）",
+          "url": "https://www.ithome.com/1/031/179.htm",
+          "checkedAt": "2026-11-24T00:42:16.326843+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "制造与交付"
+          ],
+          "note": "追溯至 11 月 18 日投资者活动，收入翻倍属于目标，暂缓重复刊载。",
+          "company": null,
+          "state": "read",
+          "readId": "m24-r1",
+          "publishedAt": "2026-11-23T11:35:33+00:00",
+          "publisherGroup": "路透社（IT之家转述）",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "追溯至 11 月 18 日投资者活动，收入翻倍属于目标，暂缓重复刊载。",
+            "anchor": "该企业计划在 2025~2028 年期间实现"
+          }
+        },
+        {
+          "name": "首尔经济日报",
+          "url": "https://www.ithome.com/1/031/040.htm",
+          "checkedAt": "2026-11-24T00:42:16.353151+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "制造与交付"
+          ],
+          "note": "原报道发生于 11 月 20 日。设备验证和未具名客户订单的归属尚未得到两家公司公开确认。",
+          "company": null,
+          "state": "read",
+          "readId": "m24-r7",
+          "publishedAt": "2026-11-23T09:14:52+00:00",
+          "publisherGroup": "首尔经济日报",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "原报道发生于 11 月 20 日。设备验证和未具名客户订单的归属尚未得到两家公司公开确认。",
+            "anchor": "计划将首份混合键合设备批量采购订单"
+          }
+        },
+        {
+          "name": "共同社",
+          "url": "https://www.ithome.com/1/030/954.htm",
+          "checkedAt": "2026-11-24T00:42:16.339642+00:00",
+          "purpose": "news",
+          "stages": [
+            "研发与系统",
+            "制造与交付"
+          ],
+          "note": "所述 2030 年属于路线设想；本次未取得可验收的量产节点。",
+          "company": null,
+          "state": "read",
+          "readId": "m24-r8",
+          "publishedAt": "2026-11-23T08:30:50+00:00",
+          "publisherGroup": "共同社",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "所述 2030 年属于路线设想；本次未取得可验收的量产节点。",
+            "anchor": "具体投放时间也可能根据客户实际需求提前"
+          }
+        },
+        {
+          "name": "思特威（公司公告）",
+          "url": "https://www.ithome.com/1/030/609.htm",
+          "checkedAt": "2026-11-24T00:42:16.360264+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "制造与交付"
+          ],
+          "note": "核对媒体报道后已回溯公司公告；按同一投资事件合并。",
+          "company": null,
+          "state": "read",
+          "readId": "m24-r21",
+          "publishedAt": "2026-11-22T08:02:02+00:00",
+          "publisherGroup": "思特威（公司公告）",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "核对媒体报道后已回溯公司公告；按同一投资事件合并。",
+            "anchor": "该交易旨在补齐高端 CMOS 图像传感器领域代工产能短板"
+          }
+        },
+        {
+          "name": "民报（IT之家转述）",
+          "url": "https://www.ithome.com/1/030/603.htm",
+          "checkedAt": "2026-11-24T00:42:16.366772+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "制造与交付"
+          ],
+          "note": "内存由 16GB 改为 8GB 仍是公司考虑的选项，未取得确定出货机型或相同负载测试。",
+          "company": null,
+          "state": "read",
+          "readId": "m24-r22",
+          "publishedAt": "2026-11-22T07:48:33+00:00",
+          "publisherGroup": "民报（IT之家转述）",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "内存由 16GB 改为 8GB 仍是公司考虑的选项，未取得确定出货机型或相同负载测试。",
+            "anchor": "公司考虑调整部分中低端机型的内存配置"
+          }
+        },
+        {
+          "name": "全球电子协会",
+          "url": "https://www.ithome.com/1/030/573.htm",
+          "checkedAt": "2026-11-24T00:42:16.356835+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "制造与交付"
+          ],
+          "note": "协会原发于 11 月 19 日；另列历史深读，交期预测尚待具体订单验证。",
+          "company": null,
+          "state": "read",
+          "readId": "m24-r25",
+          "publishedAt": "2026-11-22T06:25:23+00:00",
+          "publisherGroup": "全球电子协会",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "协会原发于 11 月 19 日；另列历史深读，交期预测尚待具体订单验证。",
+            "anchor": "PCB 短缺至少会持续到 2027 年上半年"
+          }
+        },
+        {
+          "name": "Tom’s Hardware",
+          "url": "https://www.ithome.com/1/030/524.htm",
+          "checkedAt": "2026-11-24T00:42:16.419512+00:00",
+          "purpose": "news",
+          "stages": [
+            "研发与系统",
+            "制造与交付"
+          ],
+          "note": "展会展示与性能设想，未给出独立可复现的业务负载与上市交付。",
+          "company": null,
+          "state": "read",
+          "readId": "m24-r29",
+          "publishedAt": "2026-11-22T00:04:47+00:00",
+          "publisherGroup": "Tom’s Hardware",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "展会展示与性能设想，未给出独立可复现的业务负载与上市交付。",
+            "anchor": "其中一款产品 SSD 内置 NPU"
+          }
+        },
+        {
+          "name": "首尔经济日报原始报道",
+          "url": "https://www.sedaily.com/article/20116636",
+          "checkedAt": "2026-11-24T00:43:08.931525+00:00",
+          "purpose": "practice",
+          "stages": [
+            "制造与交付",
+            "供应链与采购"
+          ],
+          "note": "已核对清州设备验证、拟采购与消息来源；尚无明确采购量或双方确认的批量交付。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "文石阅读数据备份帮助",
+          "url": "https://help.boox.com/fa5fa/f733d/56960",
+          "checkedAt": "2026-11-24T00:44:56.959741+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统",
+            "服务与生命周期"
+          ],
+          "note": "核对源文件与阅读进度备份的目录、版本和大小限制。",
+          "company": "文石 BOOX",
+          "state": "read"
+        },
+        {
+          "name": "litnews.ai",
+          "url": "https://litnews.ai/opinions/cand/5-26-cv-06345/ecf-68.pdf",
+          "checkedAt": "2026-11-24T00:43:02.767372+00:00",
+          "purpose": "practice",
+          "stages": [
+            "供应链与采购",
+            "质量与合规"
+          ],
+          "note": "重读第68号法院文件的程序结论与日程；本次未取得新的实体裁判。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "casrai.org",
+          "url": "https://casrai.org/news/dram-antitrust-motion-dismiss-denied-november-2026",
+          "checkedAt": "2026-11-24T00:44:55.882949+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规"
+          ],
+          "note": "案件时间线只作导航，不将更新日期当作新裁判。",
+          "company": null,
+          "state": "index"
+        },
+        {
+          "name": "www.govinfo.gov",
+          "url": "https://www.govinfo.gov/content/pkg/FR-2026-11-23/pdf/2026-23802.pdf",
+          "checkedAt": "2026-11-24T00:43:07.902021+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规"
+          ],
+          "note": "核对 2026-23802 号文件正文，与本轮实体清单并非同一份公告；清单采用 2026-23999。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "www.cpsc.gov",
+          "url": "https://www.cpsc.gov/Recalls",
+          "checkedAt": "2026-11-24T00:43:08.075118+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "note": "查美国消费品安全委员会召回目录，未按目录标题写入新事件。",
+          "company": null,
+          "state": "index"
+        },
+        {
+          "name": "help.boox.com",
+          "url": "https://help.boox.com/fa5fa/4d151/f57ec",
+          "checkedAt": "2026-11-24T00:43:09.174374+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统",
+            "服务与生命周期"
+          ],
+          "note": "读取手写笔记工具、导出格式与录音标记说明。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "shop.boox.com",
+          "url": "https://shop.boox.com/blogs/news/backing-up-and-restoring-your-notes",
+          "checkedAt": "2026-11-24T00:43:49.343533+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统",
+            "服务与生命周期"
+          ],
+          "note": "复查文石公开说明的本地与云端笔记备份，以当前帮助页限定操作和机型。",
+          "company": null,
+          "state": "read"
+        },
+        {
+          "name": "英伟达新闻站直连",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+          "checkedAt": "2026-11-24T00:44:55.770536+00:00",
+          "purpose": "news",
+          "stages": [
+            "经营与组织"
+          ],
+          "note": "直连仅返回相关文章目录，另行取得同一新闻稿的官方 PDF。",
+          "company": null,
+          "state": "index"
+        },
+        {
+          "name": "www.sec.gov",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm",
+          "checkedAt": "2026-11-24T00:44:55.760901+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统"
+          ],
+          "note": "本次直连未取得正文：curl: (56) The requested URL returned error: 403\n",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "name": "x2robot.com",
+          "url": "https://x2robot.com/en/blog/wall-oss-1",
+          "checkedAt": "2026-11-24T00:43:43.682436+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统"
+          ],
+          "note": "本次直连未取得正文：No usable article text; browser/source verification needed",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "name": "apps.apple.com",
+          "url": "https://apps.apple.com/cn/app/id6738277050",
+          "checkedAt": "2026-11-24T00:42:28.357538+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统"
+          ],
+          "note": "本次直连未取得正文：curl: (28) Failed to connect to apps.apple.com port 443 after 12002 ms: Timeout was reached\n",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "name": "www.electronics.org",
+          "url": "https://www.electronics.org/newsroom/global-electronics-association-growing-shortages-across-pcb-supply-chain-threaten-next-wave",
+          "checkedAt": "2026-11-24T00:43:50.739677+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统"
+          ],
+          "note": "本次直连未取得正文：curl: (56) The requested URL returned error: 404\n",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "name": "www.globenewswire.com",
+          "url": "https://www.globenewswire.com/news-release/2026/11/23/3408046/0/en/x-square-robot-introduces-wall-oss-1-0-understand-more-act-better-a-native-foundation-model-for-the-physical-world.html",
+          "checkedAt": "2026-11-24T00:43:49.304864+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统"
+          ],
+          "note": "本次直连未取得正文：curl: (56) The requested URL returned error: 403\n",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "name": "news.samsung.com",
+          "url": "https://news.samsung.com/global/the-technology-behind-more-precise-finding-with-galaxy-smarttag3-and-smartthings",
+          "checkedAt": "2026-11-24T00:43:37.066548+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统"
+          ],
+          "note": "本次直连未取得正文：curl: (28) Operation timed out after 35009 milliseconds with 0 bytes received\n",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "name": "www.cnx-software.com",
+          "url": "https://www.cnx-software.com/2026/11/23/piccola-cnc-open-source-desktop-milling-machine-with-pcb-auto-leveling-and-integrated-cam",
+          "checkedAt": "2026-11-24T00:42:21.915353+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统"
+          ],
+          "note": "本次直连未取得正文：curl: (56) The requested URL returned error: 403\n",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "name": "booxsupport.zendesk.com",
+          "url": "https://booxsupport.zendesk.com/hc/en-us/articles/25401838386196-Reading-Data-Syncing-and-Backup",
+          "checkedAt": "2026-11-24T00:42:28.393810+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统"
+          ],
+          "note": "本次直连未取得正文：curl: (28) Failed to connect to booxsupport.zendesk.com port 443 after 12009 ms: Timeout was re",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "name": "www.globenewswire.com",
+          "url": "https://www.globenewswire.com/fr/news-release/2026/11/19/3406285/0/en/global-electronics-association-growing-shortages-across-the-pcb-supply-chain-threaten-the-next-wave-of-ai-and-electronics.html",
+          "checkedAt": "2026-11-24T00:43:07.599242+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统"
+          ],
+          "note": "本次直连未取得正文：curl: (56) The requested URL returned error: 403\n",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "name": "www.cnx-software.com",
+          "url": "https://www.cnx-software.com/2026/11/23/tessera-open-source-dashboard-for-home-assistant-runs-on-esp32-touchscreen-devkits",
+          "checkedAt": "2026-11-24T00:42:21.721538+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统"
+          ],
+          "note": "本次直连未取得正文：curl: (56) The requested URL returned error: 403\n",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "name": "www.sse.com.cn",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-11-23/688213_20261123_POMP.pdf",
+          "checkedAt": "2026-11-24T00:43:26.167752+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统"
+          ],
+          "note": "本次直连未取得正文：Command '['curl', '-fsSL', '--max-time', '24', 'https://www.sse.com.cn/disclosure/listedinfo/an",
+          "company": null,
+          "state": "error"
+        },
+        {
+          "url": "https://news.samsung.com/global/the-technology-behind-more-precise-finding-with-galaxy-smarttag3-and-smartthings",
+          "name": "RSS 正文抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-24T00:43:17.732399+00:00",
+          "note": "此次抓取失败：curl: (28) Operation timed out after 35009 milliseconds with 0 bytes received\n"
+        },
+        {
+          "url": "https://www.ithome.com/1/027/856.htm",
+          "name": "RSS 正文抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-24T00:43:17.732399+00:00",
+          "note": "此次抓取失败：curl: (28) Failed to connect to www.ithome.com port 443 after 12008 ms: Timeout was reache"
+        },
+        {
+          "url": "https://news.samsung.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing",
+          "name": "RSS 正文抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-24T00:43:17.732399+00:00",
+          "note": "此次抓取失败：curl: (28) Failed to connect to news.samsung.com port 443 after 12010 ms: Timeout was reac"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/17/review-seeed-studio-4-26-mono-and-7-3-color-e-paper-kit-with-opendisplay-and-home-assistant",
+          "name": "RSS 正文抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-24T00:43:17.732399+00:00",
+          "note": "此次抓取失败：curl: (56) The requested URL returned error: 403\n"
+        },
+        {
+          "url": "https://news.samsung.com/global/upgraded-sleep-apnea-feature-now-available-on-galaxy-ring-following-regulatory-approvals-from-us-fda-and-korea-mfds",
+          "name": "RSS 正文抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-24T00:43:17.732399+00:00",
+          "note": "此次抓取失败：curl: (28) Operation timed out after 35009 milliseconds with 0 bytes received\n"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/17/forlinx-ok8275aa-c-a-qualcomm-qcs8275-industrial-sbc-with-12gb-lpddr5-256gb-ufs-storage",
+          "name": "RSS 正文抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-24T00:43:17.732399+00:00",
+          "note": "此次抓取失败：curl: (56) The requested URL returned error: 403\n"
+        },
+        {
+          "url": "https://news.samsung.com/global/samsung-introduces-smartthings-now-in-new-platform-update-that-brings-more-intuitive-user-experiences",
+          "name": "RSS 正文抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-24T00:43:17.732399+00:00",
+          "note": "此次抓取失败：curl: (28) Operation timed out after 35011 milliseconds with 0 bytes received\n"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/16/aaeon-boxer-8741ai-industrial-edge-ai-box-pc-nvidia-jetson-thor-t5000-with-dual-10gbe-and-four-5gbe-lan",
+          "name": "RSS 正文抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-24T00:43:17.732399+00:00",
+          "note": "此次抓取失败：curl: (56) The requested URL returned error: 403\n"
+        },
+        {
+          "url": "https://news.samsung.com/global/samsung-and-mistral-ai-announce-strategic-partnership-for-intelligence-driven-semiconductor-infrastructure",
+          "name": "RSS 正文抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-24T00:43:17.732399+00:00",
+          "note": "此次抓取失败：curl: (28) Operation timed out after 35009 milliseconds with 0 bytes received\n"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/16/69-home-assistant-connect-aux-2-offers-poe-audio-streaming-rs-232-control-bluetooth-proxy",
+          "name": "RSS 正文抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-24T00:43:17.732399+00:00",
+          "note": "此次抓取失败：curl: (56) The requested URL returned error: 403\n"
+        },
+        {
+          "url": "https://www.cnx-software.com/2026/11/13/vantron-i-mx-952-smarc-system-on-module-for-edge-ai-vision-and-industrial-hmi",
+          "name": "RSS 正文抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-24T00:43:17.732399+00:00",
+          "note": "此次抓取失败：curl: (56) The requested URL returned error: 403\n"
+        },
+        {
+          "name": "供应商管理工程师-硬件方向",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
+          "checkedAt": "2026-11-24T00:42:21.717960+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "服务与生命周期"
+          ],
+          "note": "同一岗位当前职责与上次一致。消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "2026届春招-供应链运营管培生",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "checkedAt": "2026-11-24T00:42:23.231034+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "服务与生命周期"
+          ],
+          "note": "同一岗位当前职责与上次一致。正文明确学习机售后及小猿设备业务；管培生职责可能含轮岗，不能视为固定组织架构",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "渠道运营（D110568）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/5c016df5-2a57-4758-b3e3-4a58eb276ffe",
+          "checkedAt": "2026-11-24T00:42:22.686655+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "note": "同一岗位链接明确显示停止招聘。此前职责面向教辅图书经销渠道；职位关闭原因未知。",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "2026届校招-AI产品教研",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/70dc09b3-4eef-444b-8b17-f31ad6614dcf",
+          "checkedAt": "2026-11-24T00:42:23.138238+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "同一岗位当前职责与上次一致。小学AIGC教育产品，正文未限定设备或学习机团队",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "算法实习生-多模态文档理解",
+          "url": "https://app.mokahr.com/social-recruitment/fenbi/45505#/job/5ecdce43-9ab2-48bb-ade9-ff021311daef",
+          "checkedAt": "2026-11-24T00:42:23.258246+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "同一岗位当前职责与上次一致。基础研发部教育OCR能力，未说明专属学习机",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "算法工程师（D110740）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/e6056b1d-580b-442d-a27f-9ab9f12cd4b1",
+          "checkedAt": "2026-11-24T00:42:23.238560+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "同一岗位当前职责与上次一致。穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "题库教研（D111300）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/0223c4d9-1a3a-4d44-b3da-ce58723e1311",
+          "checkedAt": "2026-11-24T00:42:23.114089+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "同一岗位当前职责与上次一致。题库教研审核与业务反馈，未披露硬件品类；正文岗位名为小数教研，要求却写初高中教材，学段边界待确认。",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "消费者BG-中级渠道经理-北京/上海/合肥",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=179aac28-bb83-4ed6-938e-25d57a57899b",
+          "checkedAt": "2026-11-24T00:42:21.227196+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "note": "同一岗位当前职责与上次一致。消费者业务渠道，未指明学习机产品线",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "AI研究院-算法工程师-OCR方向(J14869)",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=dc4e67cc-59ed-4a75-8b7a-e0d6ae6faaa9",
+          "checkedAt": "2026-11-24T00:42:21.055461+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "同一岗位当前职责与上次一致。集团统一招聘的OCR能力，未指定学习机或词典笔项目",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "2026届春招-硬件研发工程师",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "checkedAt": "2026-11-24T00:42:23.186231+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "note": "同一岗位当前职责与上次一致。原文明确小猿产品及学习机、学练机业务，未划分具体型号",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "作业帮采购检索",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/jobs?keyword=%E9%87%87%E8%B4%AD&page=1&anchorName=jobsList",
+          "checkedAt": "2026-11-24T00:46:25.853492+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "供应链与采购"
+          ],
+          "note": "作业帮采购搜索仍返回加载框架，未读到匹配岗位的职责。",
+          "company": "作业帮",
+          "state": "index"
+        },
+        {
+          "name": "作业帮 产品说明",
+          "url": "https://smart.zuoyebang.com/about",
+          "checkedAt": "2026-11-24T00:42:16.411580+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "复读企业说明中的数据、内容与硬件范围。",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "科大讯飞 产品说明",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "checkedAt": "2026-11-24T00:42:16.936608+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "复查分学段说明、答疑与精准学流程。",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "猿辅导（小猿） 产品说明",
+          "url": "https://apps.apple.com/cn/app/id6738277050",
+          "checkedAt": "2026-11-24T00:49:58.545837+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "复查家长可以管理的设备与使用时长。",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "华为 产品说明",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn00734120/",
+          "checkedAt": "2026-11-24T00:42:18.865438+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "复查上课时段及离线状态排查步骤。",
+          "company": "华为",
+          "state": "read"
+        },
+        {
+          "name": "科大讯飞 产品说明",
+          "url": "https://edu.iflytek.com/solution/family/transpen",
+          "checkedAt": "2026-11-24T00:42:16.952092+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "复查查词、翻译与学习功能的官方使用说明。",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "掌阅 产品说明",
+          "url": "https://m.ithome.com/html/811360.htm",
+          "checkedAt": "2026-11-24T00:42:16.533795+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "复读当时版本的笔记、阅读与私密书同步边界。",
+          "company": "掌阅",
+          "state": "read"
+        },
+        {
+          "name": "文石 BOOX 产品说明",
+          "url": "https://help.boox.com/fa5fa/f733d/56960",
+          "checkedAt": "2026-11-24T00:44:56.959741+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "读取新版阅读数据同步与备份说明，核对目录、账号、版本及 200MB 限制。",
+          "company": "文石 BOOX",
+          "state": "read"
+        },
+        {
+          "name": "文石 BOOX 产品说明",
+          "url": "https://help.boox.com/653d4/f3f2e/affe8",
+          "checkedAt": "2026-11-24T00:43:09.063879+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对独立笔记的账号、服务器和退出后可见性。",
+          "company": "文石 BOOX",
+          "state": "read"
+        }
+      ],
+      "failedSources": [
+        "本次直连未取得正文：curl: (56) The requested URL returned error: 403\n",
+        "本次直连未取得正文：No usable article text; browser/source verification needed",
+        "本次直连未取得正文：curl: (28) Failed to connect to apps.apple.com port 443 after 12002 ms: Timeout was reached\n",
+        "本次直连未取得正文：curl: (56) The requested URL returned error: 404\n",
+        "本次直连未取得正文：curl: (28) Operation timed out after 35009 milliseconds with 0 bytes received\n",
+        "本次直连未取得正文：curl: (28) Failed to connect to booxsupport.zendesk.com port 443 after 12009 ms: Timeout was re",
+        "本次直连未取得正文：Command '['curl', '-fsSL', '--max-time', '24', 'https://www.sse.com.cn/disclosure/listedinfo/an",
+        "此次抓取失败：curl: (28) Operation timed out after 35009 milliseconds with 0 bytes received\n",
+        "此次抓取失败：curl: (28) Failed to connect to www.ithome.com port 443 after 12008 ms: Timeout was reache",
+        "此次抓取失败：curl: (28) Failed to connect to news.samsung.com port 443 after 12010 ms: Timeout was reac",
+        "此次抓取失败：curl: (56) The requested URL returned error: 403\n",
+        "此次抓取失败：curl: (28) Operation timed out after 35011 milliseconds with 0 bytes received\n"
+      ],
+      "coverage": "核对东南亚实体清单正式文本、英伟达任职公告、思特威股权投资及其晶圆供给边界。复查三家核心学习硬件企业的十个岗位链接；审读上游物料、量产检查、音频评估、设备接入与笔记恢复指南。",
+      "knownGaps": [
+        "DRAM 民事案仍缺新的裁判依据。Besi 报道属于设备验证和拟采购，批量交付未获双方确认。",
+        "作业帮教辅渠道岗位已关闭，无法判断人员去向；采购检索只返回列表框架。",
+        "芯片代工客户良率、阅读器同步成功率与学习机真实跟读时延仍无同口径实测。"
+      ],
+      "coverageCheck": {
+        "newsResearch": {
+          "passed": true,
+          "bodyCount": 12,
+          "publisherGroups": [
+            "Co Print（Tom’s Hardware 报道）",
+            "Tom’s Hardware",
+            "全球电子协会",
+            "共同社",
+            "思特威（公司公告）",
+            "民报（IT之家转述）",
+            "美国商务部工业与安全局",
+            "自变量（IT之家转述）",
+            "英伟达",
+            "路透社（IT之家转述）",
+            "首尔经济日报"
+          ],
+          "requiredBodies": 6,
+          "requiredPublisherGroups": 3
+        },
+        "passed": true,
+        "companies": [
+          "作业帮",
+          "华为",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "gaps": [],
+        "usableSources": 43
+      },
+      "successfulScan": true,
+      "completedAt": "2026-11-24T00:50:28.680826+00:00",
+      "reviewedCount": 11,
+      "selectedCount": 11
     }
   ]
 }

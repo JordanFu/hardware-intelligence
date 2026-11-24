@@ -110,7 +110,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-23T00:49:09.388830+00:00",
+      "reviewedAt": "2026-11-24T00:50:43.175847+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "作业帮"
@@ -167,7 +167,7 @@
         }
       ],
       "updatedAt": "2026-11-17T00:46:36.233260+00:00",
-      "reviewedAt": "2026-11-23T00:49:09.388830+00:00",
+      "reviewedAt": "2026-11-24T00:50:43.175847+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "科大讯飞",
@@ -225,7 +225,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-23T00:49:09.388830+00:00",
+      "reviewedAt": "2026-11-24T00:50:43.175847+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "猿辅导",
@@ -587,7 +587,7 @@
         }
       ],
       "updatedAt": "2026-11-21T00:46:30.147094+00:00",
-      "reviewedAt": "2026-11-23T00:49:09.388830+00:00",
+      "reviewedAt": "2026-11-24T00:50:43.175847+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "科大讯飞",
@@ -668,14 +668,15 @@
         "points": [
           "指南要求同步使用同一账号、服务器与文件目录；服务器数据独立存放。",
           "V4.1起可上传源文件；本地备份生成.booxc文件，迁移双方需为V4.1或以上。",
-          "指南另列源文件云端上传条件，每个文档不超过 200 MB。"
+          "指南另列源文件云端上传条件，每个文档不超过 200 MB。",
+          "独立手写笔记另有账号和单本同步开关；退出原账号后笔记可能暂时不可见。"
         ]
       },
       "dimensions": {
         "product": "阅读器与电子纸设备上的NeoReader阅读数据流程；不把全部BOOX设备视为同一型号。",
         "content": "阅读进度、批注与源文件同步分开；所读英文指南不能证明中文书库及内容授权。",
         "channel": "当前国内售价、渠道权益、账号地区与服务器适用性待核验。",
-        "delivery": "本地备份迁移须核对两端固件；实际恢复成功率、售后支持与硬件质量未知。",
+        "delivery": "本地备份迁移须核对两端固件；实际恢复成功率、售后支持与硬件质量未知。 独立笔记另需核对原账号、服务器和单本同步开关。",
         "organization": "研究问题：设备阅读软件、账号云服务和客服如何交接同步失败？未取得组织与岗位证据。"
       },
       "boundary": "当前英文帮助页未标明确发布日期；机型、地区、账号体系、内容授权和成功率需分别核实，未进行设备迁移实测，不将V4.1能力称为今天新发布。",
@@ -687,13 +688,23 @@
       "sources": [
         {
           "id": "boox-sync",
-          "title": "BOOX Reading Data Syncing and Backup",
-          "url": "https://booxsupport.zendesk.com/hc/en-us/articles/25401838386196-Reading-Data-Syncing-and-Backup",
-          "publishedAt": null,
           "role": "official",
-          "readAt": "2026-11-18T10:44:38.801288+00:00",
+          "title": "文石帮助 · 阅读数据同步和备份",
+          "publishedAt": null,
+          "url": "https://help.boox.com/fa5fa/f733d/56960",
+          "readAt": "2026-11-24T00:44:56.959741+00:00",
           "coverage": "body",
-          "textHash": "f5878541e54607720767a86acb2608994952f0e78cbe17e16172d680506a10f6"
+          "textHash": "7075a1d6f013834d7434ce53762aae1cb8a4081a4e92e59990d1820d7d65e31a"
+        },
+        {
+          "id": "boox-notes",
+          "role": "official",
+          "title": "文石帮助 · 手写笔记同步",
+          "publishedAt": null,
+          "url": "https://help.boox.com/653d4/f3f2e/affe8",
+          "readAt": "2026-11-24T00:43:09.063879+00:00",
+          "coverage": "body",
+          "textHash": "ea4fbbd28b6b9482d086854e1c5276bf957d548d19f2870a6344be931717faaa"
         }
       ],
       "facts": [
@@ -711,11 +722,16 @@
           "sourceId": "boox-sync",
           "claim": "指南另列源文件云端上传条件，每个文档不超过 200 MB。",
           "locator": "Sync the Source File · Note"
+        },
+        {
+          "sourceId": "boox-notes",
+          "claim": "手写笔记按账号显示；退出账号后，需再登录原账号才可见。",
+          "locator": "Account and Server · Note 3"
         }
       ],
-      "updatedAt": "2026-11-18T10:46:04.384492+00:00",
-      "reviewedAt": "2026-11-21T00:46:30.147094+00:00",
-      "lastReviewStatus": "error"
+      "updatedAt": "2026-11-24T00:50:43.175847+00:00",
+      "reviewedAt": "2026-11-24T00:50:43.175847+00:00",
+      "lastReviewStatus": "reviewed"
     },
     {
       "id": "ireader-smartos",
@@ -767,7 +783,7 @@
         }
       ],
       "updatedAt": "2026-11-20T00:43:29.502492+00:00",
-      "reviewedAt": "2026-11-23T00:49:09.388830+00:00",
+      "reviewedAt": "2026-11-24T00:50:43.175847+00:00",
       "lastReviewStatus": "reviewed"
     },
     {
@@ -818,7 +834,7 @@
         }
       ],
       "updatedAt": "2026-11-22T00:50:54.415164+00:00",
-      "reviewedAt": "2026-11-22T00:50:54.415164+00:00",
+      "reviewedAt": "2026-11-24T00:50:43.175847+00:00",
       "lastReviewStatus": "reviewed"
     },
     {
@@ -2197,6 +2213,144 @@
             "pen"
           ],
           "note": "演示列出词典笔型号和近期 SKU 调整。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-24T00:50:43.175847+00:00",
+      "summary": "三家核心公司共复查十个岗位链接；作业帮一条教辅图书渠道岗位明确关闭。文石档案补核阅读批注与独立手写本的不同同步条件。",
+      "checks": [
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "name": "2026届春招-供应链运营管培生",
+          "state": "body",
+          "checkedAt": "2026-11-24T00:42:23.231034+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "同一岗位当前职责与上次一致。正文明确学习机售后及小猿设备业务；管培生职责可能含轮岗，不能视为固定组织架构"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "name": "2026届春招-硬件研发工程师",
+          "state": "body",
+          "checkedAt": "2026-11-24T00:42:23.186231+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "同一岗位当前职责与上次一致。原文明确小猿产品及学习机、学练机业务，未划分具体型号"
+        },
+        {
+          "company": "作业帮",
+          "url": "https://smart.zuoyebang.com/about",
+          "name": "作业帮 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-24T00:42:16.411580+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "复读企业说明中的数据、内容与硬件范围。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "name": "科大讯飞 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-24T00:42:16.936608+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "复查分学段说明、答疑与精准学流程。"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://apps.apple.com/cn/app/id6738277050",
+          "name": "猿辅导（小猿） 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-24T00:49:58.545837+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "复查家长可以管理的设备与使用时长。"
+        },
+        {
+          "company": "华为",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn00734120/",
+          "name": "华为 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-24T00:42:18.865438+00:00",
+          "categoryIds": [
+            "watch"
+          ],
+          "note": "复查上课时段及离线状态排查步骤。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://edu.iflytek.com/solution/family/transpen",
+          "name": "科大讯飞 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-24T00:42:16.952092+00:00",
+          "categoryIds": [
+            "pen"
+          ],
+          "note": "复查查词、翻译与学习功能的官方使用说明。"
+        },
+        {
+          "company": "掌阅",
+          "url": "https://m.ithome.com/html/811360.htm",
+          "name": "掌阅 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-24T00:42:16.533795+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "note": "复读当时版本的笔记、阅读与私密书同步边界。"
+        },
+        {
+          "company": "文石 BOOX",
+          "url": "https://booxsupport.zendesk.com/hc/en-us/articles/25401838386196-Reading-Data-Syncing-and-Backup",
+          "name": "原帮助中心链接",
+          "purpose": "practice",
+          "state": "error",
+          "checkedAt": "2026-11-24T00:42:28.393810+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "note": "旧入口读取失败，已转到新的官方帮助中心核对同名指南。"
+        },
+        {
+          "company": "文石 BOOX",
+          "url": "https://help.boox.com/fa5fa/f733d/56960",
+          "name": "文石 BOOX 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-24T00:44:56.959741+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "note": "读取新版阅读数据同步与备份说明，核对目录、账号、版本及 200MB 限制。"
+        },
+        {
+          "company": "文石 BOOX",
+          "url": "https://help.boox.com/653d4/f3f2e/affe8",
+          "name": "文石 BOOX 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-24T00:43:09.063879+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "note": "核对独立笔记的账号、服务器和退出后可见性。"
         }
       ]
     }
@@ -3981,6 +4135,168 @@
               "locator": "有道业务页 · Smart devices 段"
             }
           ]
+        }
+      }
+    },
+    {
+      "profileId": "zuoyebang-tablet",
+      "reviewedAt": "2026-11-24T00:50:43.175847+00:00",
+      "status": "reviewed",
+      "assessment": "复读企业说明中的数据、内容与硬件范围。",
+      "changes": {}
+    },
+    {
+      "profileId": "iflytek-tablet",
+      "reviewedAt": "2026-11-24T00:50:43.175847+00:00",
+      "status": "reviewed",
+      "assessment": "复查分学段说明、答疑与精准学流程。",
+      "changes": {}
+    },
+    {
+      "profileId": "yuan-tablet",
+      "reviewedAt": "2026-11-24T00:50:43.175847+00:00",
+      "status": "reviewed",
+      "assessment": "复查家长可以管理的设备与使用时长。",
+      "changes": {}
+    },
+    {
+      "profileId": "huawei-watch-classmode",
+      "reviewedAt": "2026-11-24T00:50:43.175847+00:00",
+      "status": "reviewed",
+      "assessment": "复查上课时段及离线状态排查步骤。",
+      "changes": {}
+    },
+    {
+      "profileId": "iflytek-pen",
+      "reviewedAt": "2026-11-24T00:50:43.175847+00:00",
+      "status": "reviewed",
+      "assessment": "复查查词、翻译与学习功能的官方使用说明。",
+      "changes": {}
+    },
+    {
+      "profileId": "ireader-smartos",
+      "reviewedAt": "2026-11-24T00:50:43.175847+00:00",
+      "status": "reviewed",
+      "assessment": "复读当时版本的笔记、阅读与私密书同步边界。",
+      "changes": {}
+    },
+    {
+      "profileId": "boox-reading-workflow",
+      "reviewedAt": "2026-11-24T00:50:43.175847+00:00",
+      "status": "reviewed",
+      "assessment": "从当前官方帮助恢复阅读数据操作依据，并补充独立笔记在更换账号后的可见性。",
+      "changes": {
+        "dimensions": {
+          "before": {
+            "product": "阅读器与电子纸设备上的NeoReader阅读数据流程；不把全部BOOX设备视为同一型号。",
+            "content": "阅读进度、批注与源文件同步分开；所读英文指南不能证明中文书库及内容授权。",
+            "channel": "当前国内售价、渠道权益、账号地区与服务器适用性待核验。",
+            "delivery": "本地备份迁移须核对两端固件；实际恢复成功率、售后支持与硬件质量未知。",
+            "organization": "研究问题：设备阅读软件、账号云服务和客服如何交接同步失败？未取得组织与岗位证据。"
+          },
+          "after": {
+            "product": "阅读器与电子纸设备上的NeoReader阅读数据流程；不把全部BOOX设备视为同一型号。",
+            "content": "阅读进度、批注与源文件同步分开；所读英文指南不能证明中文书库及内容授权。",
+            "channel": "当前国内售价、渠道权益、账号地区与服务器适用性待核验。",
+            "delivery": "本地备份迁移须核对两端固件；实际恢复成功率、售后支持与硬件质量未知。 独立笔记另需核对原账号、服务器和单本同步开关。",
+            "organization": "研究问题：设备阅读软件、账号云服务和客服如何交接同步失败？未取得组织与岗位证据。"
+          }
+        },
+        "sources": {
+          "before": [
+            {
+              "id": "boox-sync",
+              "title": "BOOX Reading Data Syncing and Backup",
+              "url": "https://booxsupport.zendesk.com/hc/en-us/articles/25401838386196-Reading-Data-Syncing-and-Backup",
+              "publishedAt": null,
+              "role": "official",
+              "readAt": "2026-11-18T10:44:38.801288+00:00",
+              "coverage": "body",
+              "textHash": "f5878541e54607720767a86acb2608994952f0e78cbe17e16172d680506a10f6"
+            }
+          ],
+          "after": [
+            {
+              "id": "boox-sync",
+              "role": "official",
+              "title": "文石帮助 · 阅读数据同步和备份",
+              "publishedAt": null,
+              "url": "https://help.boox.com/fa5fa/f733d/56960",
+              "readAt": "2026-11-24T00:44:56.959741+00:00",
+              "coverage": "body",
+              "textHash": "7075a1d6f013834d7434ce53762aae1cb8a4081a4e92e59990d1820d7d65e31a"
+            },
+            {
+              "id": "boox-notes",
+              "role": "official",
+              "title": "文石帮助 · 手写笔记同步",
+              "publishedAt": null,
+              "url": "https://help.boox.com/653d4/f3f2e/affe8",
+              "readAt": "2026-11-24T00:43:09.063879+00:00",
+              "coverage": "body",
+              "textHash": "ea4fbbd28b6b9482d086854e1c5276bf957d548d19f2870a6344be931717faaa"
+            }
+          ]
+        },
+        "facts": {
+          "before": [
+            {
+              "sourceId": "boox-sync",
+              "claim": "同步需要一致的账号与服务器。",
+              "locator": "Account, Server, and Directory"
+            },
+            {
+              "sourceId": "boox-sync",
+              "claim": "本地备份恢复有双方版本条件。",
+              "locator": "Local Library Backup"
+            },
+            {
+              "sourceId": "boox-sync",
+              "claim": "指南另列源文件云端上传条件，每个文档不超过 200 MB。",
+              "locator": "Sync the Source File · Note"
+            }
+          ],
+          "after": [
+            {
+              "sourceId": "boox-sync",
+              "claim": "同步需要一致的账号与服务器。",
+              "locator": "Account, Server, and Directory"
+            },
+            {
+              "sourceId": "boox-sync",
+              "claim": "本地备份恢复有双方版本条件。",
+              "locator": "Local Library Backup"
+            },
+            {
+              "sourceId": "boox-sync",
+              "claim": "指南另列源文件云端上传条件，每个文档不超过 200 MB。",
+              "locator": "Sync the Source File · Note"
+            },
+            {
+              "sourceId": "boox-notes",
+              "claim": "手写笔记按账号显示；退出账号后，需再登录原账号才可见。",
+              "locator": "Account and Server · Note 3"
+            }
+          ]
+        },
+        "brief": {
+          "before": {
+            "lead": "BOOX 官方指南把阅读进度、批注等阅读数据同步与源文件上传分开，也提供本地书库备份。对阅读器研究，设备之外还要看账号、服务器、目录及版本条件，才能判断换设备后能否继续阅读。当前读取的是英文帮助页，不据此保证国内型号权益一致。",
+            "points": [
+              "指南要求同步使用同一账号、服务器与文件目录；服务器数据独立存放。",
+              "V4.1起可上传源文件；本地备份生成.booxc文件，迁移双方需为V4.1或以上。",
+              "指南另列源文件云端上传条件，每个文档不超过 200 MB。"
+            ]
+          },
+          "after": {
+            "lead": "BOOX 官方指南把阅读进度、批注等阅读数据同步与源文件上传分开，也提供本地书库备份。对阅读器研究，设备之外还要看账号、服务器、目录及版本条件，才能判断换设备后能否继续阅读。当前读取的是英文帮助页，不据此保证国内型号权益一致。",
+            "points": [
+              "指南要求同步使用同一账号、服务器与文件目录；服务器数据独立存放。",
+              "V4.1起可上传源文件；本地备份生成.booxc文件，迁移双方需为V4.1或以上。",
+              "指南另列源文件云端上传条件，每个文档不超过 200 MB。",
+              "独立手写笔记另有账号和单本同步开关；退出原账号后笔记可能暂时不可见。"
+            ]
+          }
         }
       }
     }

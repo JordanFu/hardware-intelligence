@@ -1,6 +1,108 @@
 {
   "editions": [
     {
+      "id": "daily-2026-11-24",
+      "date": "2026-11-24",
+      "generatedAt": "2026-11-24T00:50:28.682117+00:00",
+      "state": "partial",
+      "bootstrap": false,
+      "windowNote": "优先最近 72 小时的新事件；按北京时间出刊。7 期内同一进展不重复。",
+      "itemIds": [
+        "m24-mega",
+        "m24-board",
+        "m24-r13",
+        "m24-r5",
+        "m24-nvpdf"
+      ],
+      "developmentKeys": [
+        [
+          "m24-mega",
+          "initial"
+        ],
+        [
+          "m24-board",
+          "initial"
+        ],
+        [
+          "m24-r13",
+          "initial"
+        ],
+        [
+          "m24-r5",
+          "initial"
+        ],
+        [
+          "m24-nvpdf",
+          "initial"
+        ]
+      ],
+      "reviewedCount": 11,
+      "failedSources": [
+        "本次直连未取得正文：curl: (56) The requested URL returned error: 403\n",
+        "本次直连未取得正文：No usable article text; browser/source verification needed",
+        "本次直连未取得正文：curl: (28) Failed to connect to apps.apple.com port 443 after 12002 ms: Timeout was reached\n",
+        "本次直连未取得正文：curl: (56) The requested URL returned error: 404\n",
+        "本次直连未取得正文：curl: (28) Operation timed out after 35009 milliseconds with 0 bytes received\n",
+        "本次直连未取得正文：curl: (28) Failed to connect to booxsupport.zendesk.com port 443 after 12009 ms: Timeout was re",
+        "本次直连未取得正文：Command '['curl', '-fsSL', '--max-time', '24', 'https://www.sse.com.cn/disclosure/listedinfo/an",
+        "此次抓取失败：curl: (28) Operation timed out after 35009 milliseconds with 0 bytes received\n",
+        "此次抓取失败：curl: (28) Failed to connect to www.ithome.com port 443 after 12008 ms: Timeout was reache",
+        "此次抓取失败：curl: (28) Failed to connect to news.samsung.com port 443 after 12010 ms: Timeout was reac",
+        "此次抓取失败：curl: (56) The requested URL returned error: 403\n",
+        "此次抓取失败：curl: (28) Operation timed out after 35011 milliseconds with 0 bytes received\n"
+      ],
+      "coverage": "核对东南亚实体清单正式文本、英伟达任职公告、思特威股权投资及其晶圆供给边界。复查三家核心学习硬件企业的十个岗位链接；审读上游物料、量产检查、音频评估、设备接入与笔记恢复指南。",
+      "knownGaps": [
+        "DRAM 民事案仍缺新的裁判依据。Besi 报道属于设备验证和拟采购，批量交付未获双方确认。",
+        "作业帮教辅渠道岗位已关闭，无法判断人员去向；采购检索只返回列表框架。",
+        "芯片代工客户良率、阅读器同步成功率与学习机真实跟读时延仍无同口径实测。"
+      ],
+      "coverageCheck": {
+        "newsResearch": {
+          "passed": true,
+          "bodyCount": 12,
+          "publisherGroups": [
+            "Co Print（Tom’s Hardware 报道）",
+            "Tom’s Hardware",
+            "全球电子协会",
+            "共同社",
+            "思特威（公司公告）",
+            "民报（IT之家转述）",
+            "美国商务部工业与安全局",
+            "自变量（IT之家转述）",
+            "英伟达",
+            "路透社（IT之家转述）",
+            "首尔经济日报"
+          ],
+          "requiredBodies": 6,
+          "requiredPublisherGroups": 3
+        },
+        "passed": true,
+        "companies": [
+          "作业帮",
+          "华为",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "gaps": [],
+        "usableSources": 43
+      }
+    },
+    {
       "id": "daily-2026-11-23",
       "date": "2026-11-23",
       "generatedAt": "2026-11-23T00:51:52.460629+00:00",

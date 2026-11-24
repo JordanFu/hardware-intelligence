@@ -3,103 +3,89 @@
   "startedAt": "2026-11-06T07:45:08.434151+00:00",
   "nodes": {
     "chain-3": {
-      "attemptedAt": "2026-11-23T10:46:17.398881+00:00",
+      "attemptedAt": "2026-11-24T00:51:25.466857+00:00",
       "status": "partial",
-      "assessment": "对照 TI 当前申样 FAQ 与 2019 年具体 PCN，确认不同时间窗的起算事件。",
+      "assessment": "核对思特威公司公告的资金与爬坡风险，并用协会原文限定高层板交期数据的范围。",
       "gaps": [
         "补核 Oracle 26C 的 MOQ 计算；各企业实际参数、运输起止、库存边界仍待订单和台账核验。",
         "公开资料没有供应商审核标准、实际通过率、采购质量接口和履约结果。"
       ],
       "reviewedFields": [
-        "flow",
-        "team"
+        "flow"
       ],
       "evidence": [
         {
-          "itemId": "e23-ti",
-          "title": "收到元器件变更通知后，留给采购申请样品的时间有多久？",
+          "itemId": "m24-board",
+          "title": "思特威拟用银行贷款增资晶圆代工厂，董事会通过后还要看实际供货",
           "facts": [
             {
-              "claim": "公司把收到通知列为可开始影响分析的节点。",
-              "sourceUrl": "https://www.ti.com/en-us/support/faqs/product-change-notifications/change-notification",
-              "locator": "TI 变更通知流程 FAQ"
-            },
-            {
-              "claim": "TI 允许在变更通知后六十天内申请样品。",
-              "sourceUrl": "https://www.ti.com/en-us/support/faqs/product-change-notifications/request-deadline",
-              "locator": "样品申请期限 FAQ"
-            },
-            {
-              "claim": "2019 年这份通知规定了 180 天样品评估期，并另外列出首次出货日期。",
-              "sourceUrl": "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/PCN20191104001.pdf",
-              "locator": "通知第1页收样起算说明及第3页日期表"
+              "claim": "公司披露本次增资的资金来源。",
+              "sourceUrl": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12717868&stockid=688213",
+              "locator": "公司公告 2026-053 出资方式与重要风险提示"
             }
           ],
-          "boundary": "当前 FAQ 给出 60 天申样期。历史 PCN 另有 30 天申样、180 天评估的约定，两者适用时期不同；实际订单以对应通知和合同为依据。客户最终验证与量产批准结果未披露。",
+          "boundary": "董事会审议与拟取得股权已有公告，最终交割、客户良率和实际供应量仍待披露。",
           "sources": [
             {
-              "url": "https://www.ti.com/en-us/support/faqs/product-change-notifications/change-notification",
-              "publisherGroup": "德州仪器",
-              "name": "德州仪器",
-              "publishedAt": null,
+              "url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12717868&stockid=688213",
+              "publisherGroup": "思特威（公司公告）",
+              "name": "思特威（公司公告）",
+              "publishedAt": "2026-11-23",
               "role": "official",
-              "textHash": "df8186fd098e8dde09feb1f7ba2150664a9bc3bebc98fc96b048128173a5a2fc",
-              "readAt": "2026-11-23T10:40:28.331909+00:00",
+              "textHash": "ef73c07b2ed7a1baacf4f20a66b97237a010f4f68a2e4aa798583df24740dfc2",
+              "readAt": "2026-11-24T00:44:51.361611+00:00",
               "coverage": "body"
-            },
+            }
+          ]
+        },
+        {
+          "itemId": "m24-pcbweb",
+          "title": "高层板交期拉长时，为什么只盯制板厂产能还不够？",
+          "facts": [
             {
-              "url": "https://www.ti.com/en-us/support/faqs/product-change-notifications/request-deadline",
-              "publisherGroup": "德州仪器",
-              "name": "TI 样品申请期限 FAQ",
-              "publishedAt": null,
-              "role": "official",
-              "textHash": "d92be7bf5bc3020f864ada8f0c366a0ce1e5fa6431819af4fb34132b514bb460",
-              "readAt": "2026-11-23T10:40:27.841861+00:00",
-              "coverage": "body"
-            },
+              "claim": "协会披露了高层板交期范围。",
+              "sourceUrl": "https://www.globenewswire.com/fr/news-release/2026/11/19/3406285/0/en/global-electronics-association-growing-shortages-across-the-pcb-supply-chain-threaten-the-next-wave-of-ai-and-electronics.html",
+              "locator": "Industry Alert · supply and materials data"
+            }
+          ],
+          "boundary": "这是一份 11 月 19 日发布的行业风险提示；未披露学习机等具体订单的交付结果。",
+          "sources": [
             {
-              "url": "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/PCN20191104001.pdf",
-              "publisherGroup": "德州仪器",
-              "name": "TI 工艺变更通知 PCN 20191104001.1",
-              "publishedAt": "2019-12-05",
+              "url": "https://www.globenewswire.com/fr/news-release/2026/11/19/3406285/0/en/global-electronics-association-growing-shortages-across-the-pcb-supply-chain-threaten-the-next-wave-of-ai-and-electronics.html",
+              "publisherGroup": "全球电子协会",
+              "name": "全球电子协会",
+              "publishedAt": "2026-11-19",
               "role": "official",
-              "textHash": "8fc386359c82cbf54cd122ac65a7e1bd1c145fb7038aa69beb0431c3013b2fb9",
-              "readAt": "2026-11-23T10:44:53.578067+00:00",
-              "coverage": "body"
+              "textHash": "6c1514f8ae55cb570528122dfe5cc973ffb942437539b95b15b79713807a7e33",
+              "readAt": "2026-11-24T00:50:28.196272+00:00",
+              "coverage": "excerpt"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "e23-ti",
-          "url": "https://www.ti.com/en-us/support/faqs/product-change-notifications/change-notification",
-          "checkedAt": "2026-11-23T10:40:28.331909+00:00",
+          "itemId": "m24-board",
+          "url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12717868&stockid=688213",
+          "checkedAt": "2026-11-24T00:44:51.361611+00:00",
           "state": "body",
-          "note": "本轮读取正文。账户通知与样品可用状态。"
+          "note": "本轮读取正文。复查投资公告 2026-053 的出资、审批状态、代工业务与风险提示。"
         },
         {
-          "itemId": "e23-ti",
-          "url": "https://www.ti.com/en-us/support/faqs/product-change-notifications/request-deadline",
-          "checkedAt": "2026-11-23T10:40:27.841861+00:00",
+          "itemId": "m24-pcbweb",
+          "url": "https://www.globenewswire.com/fr/news-release/2026/11/19/3406285/0/en/global-electronics-association-growing-shortages-across-the-pcb-supply-chain-threaten-the-next-wave-of-ai-and-electronics.html",
+          "checkedAt": "2026-11-24T00:50:28.196272+00:00",
           "state": "body",
-          "note": "本轮读取正文。当前 FAQ 的 60 天申样期限。"
-        },
-        {
-          "itemId": "e23-ti",
-          "url": "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/PCN20191104001.pdf",
-          "checkedAt": "2026-11-23T10:44:53.578067+00:00",
-          "state": "body",
-          "note": "本轮读取正文。2019 年通知第1页确认与申样、第3页日期与评估期。"
+          "note": "本轮读取原文相关段落。复核协会原发风险提示中材料制约、订单、出货和高层板交期段。"
         }
       ],
-      "reviewedAt": "2026-11-23T10:46:17.398881+00:00",
+      "reviewedAt": "2026-11-24T00:51:25.466857+00:00",
       "patch": {
         "basics": "MOQ 是最小订购量；交期包含采购、生产和运输，不能只看供应商承诺。 供应商登记仅是提交资料的入口，不能自动等同于资格审核通过或获得采购订单。 Oracle 26C 计划模块中，净需求 100 件且最小订购量设为 150 件，会产生 150 件的建议单；建议量与实际签约量要用单据另行核对。",
         "exercise": "选一颗关键器件，写出交期风险、替代验证要求和缺料升级路径。 再区分供应商资料登记、资格核验、质量验收和订单获取；无公开依据的门槛标为待核验。",
         "team": "研发与采购共同明确替代料边界；供应商质量、计划、财务一起管理风险。小猿管培岗位另提供具体交接样本：销售计划提出配件需求，采购跟进合同和付款，工厂关注物料齐套，售后反馈问题；不能据此推断一人承担全部工作或拥有全部放行权。 采购核对具体通知与可订旧料，研发和质量核对样品及验证结论。放行责任需要项目授权文件。",
         "metrics": "库存周转天数 = 期间平均库存成本 / 期间销售成本 × 期间天数；口径与周期一致。 库存周转须明确成本口径。Oracle Retail 的该指标用本期已售商品成本除以期初、期末库存成本的均值。另将存储现货报价与按季合约报价分列，不能直接跨口径比较。",
-        "flow": "预测与物料规格 → 合格供应、交期与库存方案 上游产品变更时，先核受影响料号、通知和实际到样日期，再分列申样期限、评估期限、拟首次出货、旧料末次订购。"
+        "flow": "预测与物料规格 → 合格供应、交期与库存方案 上游产品变更时，先核受影响料号、通知和实际到样日期，再分列申样期限、评估期限、拟首次出货、旧料末次订购。 代工股权投资、实际可用产能及达标批次要分别验证。电子板供应还要核对具体层数和所用基材；上游材料紧缺会限制制板扩产的交付作用。"
       },
       "lessons": [
         {
@@ -168,44 +154,80 @@
             "e23-ti"
           ],
           "updatedAt": "2026-11-23T10:46:17.398881+00:00"
+        },
+        {
+          "id": "m24-foundry-equity",
+          "title": "参股代工厂之后，哪一步能证明拿到了产能",
+          "learning": "思特威披露增资方案及银行贷款来源，同时提示代工厂仍处产能爬坡阶段。",
+          "application": "追踪董事会决议、股权交割、设备与工艺验证，再核客户实际取得的合格批次。",
+          "boundary": "公告没有给出客户专属排产、良率或已交货数量。",
+          "itemIds": [
+            "m24-board"
+          ],
+          "updatedAt": "2026-11-24T00:51:25.466857+00:00"
+        },
+        {
+          "id": "m24-pcb-orders",
+          "title": "供货紧张时为何同时看订单、出货与材料交期",
+          "learning": "全球电子协会分别披露订单与出货增长，并列出高层板交期以及材料端制约。",
+          "application": "检查某款学习机时，先确认板层和材料，再核查该厂已确认的排产时间与交期。",
+          "boundary": "协会提示不代表所有板厂、板层与材料的交期。",
+          "itemIds": [
+            "m24-pcbweb"
+          ],
+          "updatedAt": "2026-11-24T00:51:25.466857+00:00"
         }
       ],
-      "updatedAt": "2026-11-23T10:46:17.398881+00:00"
+      "updatedAt": "2026-11-24T00:51:25.466857+00:00"
     },
     "chain-7": {
-      "attemptedAt": "2026-11-23T00:52:06.880964+00:00",
+      "attemptedAt": "2026-11-24T00:51:25.466857+00:00",
       "status": "partial",
-      "assessment": "日本消费者厅列出安克 A1257 共 401,771 件，2026 年 11 月 19 日回收率为 55.8%。本次新报火灾仍待归因，公告另列。",
+      "assessment": "核对文石两份当前官方帮助页，以区分账号退出暂时不可见、阅读批注匹配及本地恢复。",
       "gaps": [
         "缺少召回登记、寄发和最终处置各阶段完成数据。",
         "本轮补平台计数定义，但跨工单重复联系归属、观察窗口及排除项仍需业务级定义。",
         "没有设备停产通知、维修时效和恢复使用结果；华为该空间其他备份渠道仍未核实。"
       ],
       "reviewedFields": [
-        "flow",
-        "metrics"
+        "exercise"
       ],
       "evidence": [
         {
-          "itemId": "m23-jp",
-          "title": "四十万件移动电源召回，一年多后怎样核对进度？",
+          "itemId": "m24-boox",
+          "title": "换阅读器后找不到手写笔记，先核账号、服务器还是文件？",
           "facts": [
             {
-              "claim": "公告给出回收进度与截止日期。",
-              "sourceUrl": "https://www.caa.go.jp/notice/assets/consumer_safety_cms202_261120_01.pdf",
-              "locator": "召回对象、回收率及事故件数注记"
+              "claim": "官方指南说明多账号设备的笔记可见范围。",
+              "sourceUrl": "https://help.boox.com/653d4/f3f2e/affe8",
+              "locator": "Note Syncing · Account and Server"
+            },
+            {
+              "claim": "NeoReader 阅读数据同步还要核对对应文件所在目录。",
+              "sourceUrl": "https://help.boox.com/fa5fa/f733d/56960",
+              "locator": "Account, Server, and Directory"
             }
           ],
-          "boundary": "比例限于这次召回。未披露逐台换货完成情况，新增火灾与原召回原因之间的关系尚在调查。",
+          "boundary": "仅适用于提供手写笔记功能的相应机型；没有观察到具体用户的数据是否丢失或实际恢复成功率。",
           "sources": [
             {
-              "url": "https://www.caa.go.jp/notice/assets/consumer_safety_cms202_261120_01.pdf",
-              "publisherGroup": "日本消费者厅",
-              "name": "日本消费者厅",
-              "publishedAt": "2026-11-20",
+              "url": "https://help.boox.com/653d4/f3f2e/affe8",
+              "publisherGroup": "文石官方帮助",
+              "name": "文石官方帮助",
+              "publishedAt": null,
               "role": "official",
-              "textHash": "bb376bad595cf1c5d32f14331db3770d11df1448113d0cdbf6ff2fa31a07b7cf",
-              "readAt": "2026-11-23T00:43:04.742919+00:00",
+              "textHash": "ea4fbbd28b6b9482d086854e1c5276bf957d548d19f2870a6344be931717faaa",
+              "readAt": "2026-11-24T00:43:09.063879+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://help.boox.com/fa5fa/f733d/56960",
+              "publisherGroup": "文石官方帮助",
+              "name": "Reading Data Syncing and Backup",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "7075a1d6f013834d7434ce53762aae1cb8a4081a4e92e59990d1820d7d65e31a",
+              "readAt": "2026-11-24T00:44:56.959741+00:00",
               "coverage": "body"
             }
           ]
@@ -213,17 +235,24 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "m23-jp",
-          "url": "https://www.caa.go.jp/notice/assets/consumer_safety_cms202_261120_01.pdf",
-          "checkedAt": "2026-11-23T00:43:04.742919+00:00",
+          "itemId": "m24-boox",
+          "url": "https://help.boox.com/653d4/f3f2e/affe8",
+          "checkedAt": "2026-11-24T00:43:09.063879+00:00",
           "state": "body",
-          "note": "核对召回启动日期、产品数量、回收率和事故计数脚注。"
+          "note": "本轮读取正文。核对 Note Syncing 的账号、服务器和退出后可见性。"
+        },
+        {
+          "itemId": "m24-boox",
+          "url": "https://help.boox.com/fa5fa/f733d/56960",
+          "checkedAt": "2026-11-24T00:44:56.959741+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对 NeoReader 的目录、备份包、200MB 与双方固件条件。"
         }
       ],
-      "reviewedAt": "2026-11-23T00:52:06.880964+00:00",
+      "reviewedAt": "2026-11-24T00:51:25.466857+00:00",
       "patch": {
         "basics": "OTA 是远程软件更新；支持周期、回滚和停止服务的安排也是产品承诺。 对互联设备，还应检查所有权转移、恢复出厂与退出时的数据处理；这些是从岗位职责提炼的验收问题，不能视为全行业已落实的规范。",
-        "exercise": "追踪一次服务事件，从用户发现到真正恢复使用，找出重复解释和重复操作。 补充一次设备转售或恢复出厂场景，列清设备、账号和云端数据的处理责任与验证证据。 对返修场景增加购买证明、排障记录、寄送指引与恢复使用四步，检查哪些信息能在授权范围内复用，避免用户重复解释。 阅读器迁移时核对账号、上传标志、私密设置与新设备本地可读状态；书架中的一条记录不能单独证明文件已经恢复。",
+        "exercise": "追踪一次服务事件，从用户发现到真正恢复使用，找出重复解释和重复操作。 补充一次设备转售或恢复出厂场景，列清设备、账号和云端数据的处理责任与验证证据。 对返修场景增加购买证明、排障记录、寄送指引与恢复使用四步，检查哪些信息能在授权范围内复用，避免用户重复解释。 阅读器迁移时核对账号、上传标志、私密设置与新设备本地可读状态；书架中的一条记录不能单独证明文件已经恢复。 阅读器换机后分别验证独立笔记、书内批注和源文件；让用户核对原账号、服务器和同步开关，并在两台设备上检查文档目录和恢复版本。",
         "flow": "使用、故障与反馈 → 安装、维修、更新、备件与退出方案 服务研究还应区分线上排障、返修授权、运输维修以及停产通知四个节点，逐一确认交接资料与承诺主体。 更换部件的保修起点可与整机不同。核对受影响批次、部件实际签收日期及原机保修条款，并将发出、签收、用户换件和恢复使用分别记录。 本次新报事故的原因尚在调查时，对照公告注记，检查是否已计入同批产品的既有事故统计。",
         "metrics": "首次解决率须先声明问题范围、首次交互、重复联系窗口与分母。Zendesk one-touch还可包含零次回复且已解决或关闭的工单，是特定报表计数；不能直接等同设备恢复使用率或用户资料恢复率。 跟踪召回时同时写明对象数量、统计截止日及实际回收率；通知、回收、换货、退款和确认事故分别计数。",
         "pitfall": "将工单关闭、一次回复或能再次登录当作问题解决；应分开核验重复求助、设备恢复使用与资料保留，不能通过减少必要沟通提高计数。"
@@ -316,9 +345,20 @@
             "m23-jp"
           ],
           "updatedAt": "2026-11-23T00:52:06.880964+00:00"
+        },
+        {
+          "id": "m24-boox-recovery",
+          "title": "先问缺的是笔记本还是书内批注",
+          "learning": "文石分别说明两类内容的同步；独立笔记可能在退出账号后暂不可见，阅读数据还要求同文件、同目录。",
+          "application": "售后先确认内容类型和账号服务器，再核单项开关与原文件，按各自路径验证恢复。",
+          "boundary": "限于相应机型与固件的官方说明，个案能否恢复仍须实测。",
+          "itemIds": [
+            "m24-boox"
+          ],
+          "updatedAt": "2026-11-24T00:51:25.466857+00:00"
         }
       ],
-      "updatedAt": "2026-11-23T00:52:06.880964+00:00"
+      "updatedAt": "2026-11-24T00:51:25.466857+00:00"
     },
     "track-5": {
       "attemptedAt": "2026-11-22T10:42:39.386204+00:00",
@@ -623,116 +663,60 @@
       "updatedAt": "2026-11-23T10:46:17.398881+00:00"
     },
     "chain-4": {
-      "attemptedAt": "2026-11-22T10:42:39.386204+00:00",
+      "attemptedAt": "2026-11-24T00:51:25.466857+00:00",
       "status": "partial",
-      "assessment": "复核试产问题由谁整改、如何决定二次试产，并对照工厂研究核查产线周良率与一次通过率的计数边界。",
+      "assessment": "核对公开工厂记录中的检测顺序与对象，限定每道检查能回答的交付问题。",
       "gaps": [
         "已核企业制度中的整改归属、复验与例外审批，仍缺具体批次的原始签核记录。",
         "已取得真实工厂的产线周统计，尚缺能逐件重算首次、返测及最终处置的批次流水。",
         "未取得上述公司按同一口径披露的改进前后量产结果。"
       ],
       "reviewedFields": [
-        "metrics",
+        "flow",
         "team"
       ],
       "evidence": [
         {
-          "itemId": "e22-fpy",
-          "title": "同一组装线的良率和一次通过率，为什么会相差这么多？",
+          "itemId": "m24-pi",
+          "title": "一块板怎样走到装箱：外观检查、逐板启动、包装称重各管什么？",
           "facts": [
             {
-              "claim": "该研究明确定义通过所有纳入测试站且从未返测的一次通过口径。",
-              "sourceUrl": "https://fsi-live.s3.us-west-1.amazonaws.com/s3fs-public/manufacturingproductivitywithworkerturnover1_0.pdf",
-              "locator": "PDF 第15页，公式（2）及脚注23、24"
-            },
-            {
-              "claim": "表2按产线周给出平均良率和一次通过率。",
-              "sourceUrl": "https://fsi-live.s3.us-west-1.amazonaws.com/s3fs-public/manufacturingproductivitywithworkerturnover1_0.pdf",
-              "locator": "PDF 第16页，Table 2"
+              "claim": "工厂实录说明分板后逐板启动，合格后进入包装。",
+              "sourceUrl": "https://www.raspberrypi.com/news/explore-the-raspberry-pi-factory-floor-in-wales-uk/",
+              "locator": "现场视频逐字稿后半段"
             }
           ],
-          "boundary": "数字为论文的产线周样本汇总。一次通过率不是全部消费电子工厂的基准，不能据此推断最终报废率、个人绩效或学习机的典型良率。",
+          "boundary": "这是 2023 年公开的一条生产路线。未披露逐项测试覆盖率、首过率或返修批次台账。",
           "sources": [
             {
-              "url": "https://fsi-live.s3.us-west-1.amazonaws.com/s3fs-public/manufacturingproductivitywithworkerturnover1_0.pdf",
-              "publisherGroup": "Moon 等 · 斯坦福研究工作论文",
-              "name": "Moon 等 · 斯坦福研究工作论文",
-              "publishedAt": "2019-11-25",
-              "role": "research",
-              "textHash": "b912b993bfe395320b553fccef03d1938ed20aeb7a2039e4665a57bde85dedd7",
-              "readAt": "2026-11-22T10:39:10.735210+00:00",
-              "coverage": "excerpt"
-            }
-          ]
-        },
-        {
-          "itemId": "e22-invt",
-          "title": "试产问题关完了，谁来决定能否进入下一阶段？",
-          "facts": [
-            {
-              "claim": "欣锐披露项目经理发起阶段评审、输出签审文件并跟踪阶段变更。",
-              "sourceUrl": "https://static.cninfo.com.cn/finalpage/2020-06-29/1207965722.PDF",
-              "locator": "申报稿 1-1-25，新产品导入试产"
-            },
-            {
-              "claim": "崧盛披露两类问题分别由研发部和工程部改善，整改后评估是否二次试产。",
-              "sourceUrl": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202204/RAS_202204_00017F64A3CB7E3FE6D89ACBA93EA43F.pdf",
-              "locator": "修订稿 1-1-104，产品试产阶段"
-            },
-            {
-              "claim": "崧盛将验证后的问题关闭与仍有最终不合格项时的批准分开。",
-              "sourceUrl": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202204/RAS_202204_00017F64A3CB7E3FE6D89ACBA93EA43F.pdf",
-              "locator": "修订稿 1-1-104，产品验证阶段"
-            }
-          ],
-          "boundary": "两家公司披露的是当时的流程。发起评审与最终签字权限须分别取证；两份材料均未给某款学习机的批次签字单或放行结果。",
-          "sources": [
-            {
-              "url": "https://static.cninfo.com.cn/finalpage/2020-06-29/1207965722.PDF",
-              "publisherGroup": "欣锐科技 · 募集说明书",
-              "name": "欣锐科技 · 募集说明书",
-              "publishedAt": "2020-06-29",
+              "url": "https://www.raspberrypi.com/news/explore-the-raspberry-pi-factory-floor-in-wales-uk/",
+              "publisherGroup": "Raspberry Pi",
+              "name": "Raspberry Pi",
+              "publishedAt": "2023-08-01T11:14:48+00:00",
               "role": "official",
-              "textHash": "31d5024f089d0155ecabbe7cdc7bd628e77b2cfd165d6bfc272d03a1b20b59f3",
-              "readAt": "2026-11-22T10:38:11.668810+00:00",
-              "coverage": "excerpt"
-            },
-            {
-              "url": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202204/RAS_202204_00017F64A3CB7E3FE6D89ACBA93EA43F.pdf",
-              "publisherGroup": "崧盛股份",
-              "name": "崧盛股份 · 2022 年 3 月募集说明书修订稿",
-              "publishedAt": null,
-              "role": "official",
-              "textHash": "28003fea0ef101bceeb8fae85d8c830acec5c1c50a95adb2485ebea6eca4f28a",
-              "readAt": "2026-11-22T10:38:12.611450+00:00",
-              "coverage": "excerpt"
+              "textHash": "d566ed0dc643c0ed3fd136d7b218c09527954b011b22dc26e7bf31b5352cb7df",
+              "readAt": "2026-11-24T00:43:08.380245+00:00",
+              "coverage": "body"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "e22-fpy",
-          "url": "https://fsi-live.s3.us-west-1.amazonaws.com/s3fs-public/manufacturingproductivitywithworkerturnover1_0.pdf",
-          "checkedAt": "2026-11-22T10:39:10.735210+00:00",
+          "itemId": "m24-pi",
+          "url": "https://www.raspberrypi.com/news/explore-the-raspberry-pi-factory-floor-in-wales-uk/",
+          "checkedAt": "2026-11-24T00:43:08.380245+00:00",
           "state": "body",
-          "note": "本轮读取原文相关段落。工作论文 PDF 第15–16页，公式2、脚注23及24、表2。"
-        },
-        {
-          "itemId": "e22-invt",
-          "url": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202204/RAS_202204_00017F64A3CB7E3FE6D89ACBA93EA43F.pdf",
-          "checkedAt": "2026-11-22T10:38:12.611450+00:00",
-          "state": "body",
-          "note": "本轮读取原文相关段落。募集说明书 1-1-104 验证和试产两节。"
+          "note": "本轮读取正文。复核 2023 年工厂视频逐字稿，含分板、启动与包装顺序。"
         }
       ],
-      "reviewedAt": "2026-11-22T10:42:39.386204+00:00",
+      "reviewedAt": "2026-11-24T00:51:25.466857+00:00",
       "patch": {
-        "team": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。石头商城岗位正文提供具体样本：NPI-PE输出DFX报告、组包流程、作业文件及治具要求；PQE衔接试制、量产、代工与售后质量；PQC监督出货及过程。正式放行权仍须项目证据。 平台和内存可以同时开发。最初样品失效时保留样品编号、平台及固件版本，由能重现故障的一方与供应商交叉验证。 崧盛在试产中按设计缺陷和工艺缺陷分配整改，再评估是否二次试产；验证阶段仍有最终不合格项时另有批准要求。",
+        "team": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。石头商城岗位正文提供具体样本：NPI-PE输出DFX报告、组包流程、作业文件及治具要求；PQE衔接试制、量产、代工与售后质量；PQC监督出货及过程。正式放行权仍须项目证据。 平台和内存可以同时开发。最初样品失效时保留样品编号、平台及固件版本，由能重现故障的一方与供应商交叉验证。 崧盛在试产中按设计缺陷和工艺缺陷分配整改，再评估是否二次试产；验证阶段仍有最终不合格项时另有批准要求。 把装配异常、板级启动失败、装箱缺件各自关联到相应的检测记录和跟进岗位。具体质量放行权需看项目授权。",
         "exercise": "沿一次试产异常核对设计版本、工艺条件和关闭证据；为进入下一阶段列清交付物、依赖、验收人和未关闭问题。Autodesk阶段门说明可作为检查框架，系统状态完成不能替代实际验证。",
         "metrics": "一次通过率 = 首次完成该过程并满足质量要求、无需复测或返工等再次处理的单位数 / 进入该过程的单位总数。须固定工序、批次、期间及缺陷规则；不能用返工后最终合格率替代。 ASQ 将返测和离线维修也排除在首次合格之外。生产记录须保留首次判定，再单列返测或维修后的最终处置。 对多站产线还要说明是否按站点比例连乘，是否排除老化站，以及按批次还是按产线周汇总。",
         "basics": "NPI是新产品导入，具体门槛仍需项目定义。DFM关注设计与所选制造工艺的适配；例如Protolabs根据CAD几何提供反馈，分析变量随制造服务变化。几何可制造不等于整机功能、可靠性或量产良率已验证。",
-        "flow": "验证通过的设计 → 就绪并经过验证的工装、夹具和测试台 → 试产检查产线节拍、报废与批次良率 → 稳定交付。具体试产准入条件按项目确定。"
+        "flow": "验证通过的设计 → 就绪并经过验证的工装、夹具和测试台 → 试产检查产线节拍、报废与批次良率 → 稳定交付。具体试产准入条件按项目确定。 索尼英国生产 Raspberry Pi 的案例在多个装配步骤目检、分板后逐板启动；通过后独立装盒，称重检查包装内容，再装大箱发运。"
       },
       "lessons": [
         {
@@ -835,42 +819,78 @@
             "e22-invt"
           ],
           "updatedAt": "2026-11-22T10:42:39.386204+00:00"
+        },
+        {
+          "id": "m24-pi-stations",
+          "title": "外观、启动和装箱称重分别能发现什么",
+          "learning": "工厂逐板启动，合格板才进入包装；装箱后的称重用于查包装内容。",
+          "application": "取一台退回的设备，从故障类型追查装配、启动或装箱记录；保留原始工序结果。",
+          "boundary": "工厂视频逐字稿未披露每项通过率、返测或责任签字。",
+          "itemIds": [
+            "m24-pi"
+          ],
+          "updatedAt": "2026-11-24T00:51:25.466857+00:00"
         }
       ],
-      "updatedAt": "2026-11-22T10:42:39.386204+00:00"
+      "updatedAt": "2026-11-24T00:51:25.466857+00:00"
     },
     "track-2": {
-      "attemptedAt": "2026-11-22T00:51:32.465861+00:00",
+      "attemptedAt": "2026-11-24T00:51:25.466857+00:00",
       "status": "partial",
-      "assessment": "Nest 指南把自动迁移的视频历史与必须事先导出的旧网页片段区分，并为旧账号给出另一个期限。",
+      "assessment": "核对多平台控制的验收操作，以及同一家庭场景中近距离指引、远程发现和状态可见性的条件。",
       "gaps": [
         "已核三份文档中的授权入口或角色；仍缺特定设备权限、离线撤权及跨平台实测。",
         "没有可比故障率、用户样本和售后改善数据。"
       ],
       "reviewedFields": [
-        "chain"
+        "chain",
+        "constraint"
       ],
       "evidence": [
         {
-          "itemId": "m22-helpweb",
-          "title": "换控制应用时，设备、视频历史和手动保存的片段怎样分别交接？",
+          "itemId": "m24-multi",
+          "title": "同一盏灯接入两个平台，怎样验证第二个平台真的接好了？",
           "facts": [
             {
-              "claim": "旧网页中保存的视频片段有单独的下载要求。",
-              "sourceUrl": "https://support.google.com/googlehome/answer/18959693?hl=en",
-              "locator": "平台支持页，Important dates 与 Download any saved video clips"
+              "claim": "官方流程允许为第二个平台生成临时配对凭据。",
+              "sourceUrl": "https://support.google.com/googlehome/answer/13127223?hl=en-CA",
+              "locator": "Share the devices 与配对后的控制检查"
             }
           ],
-          "boundary": "厂商说明的是迁移计划；尚无完成率、遗失率或内部负责人。学习机部分为迁移验收推演。",
+          "boundary": "仅限该指南描述的兼容配置。离线撤权、跨品牌响应时延及失败率仍须另测。",
           "sources": [
             {
-              "url": "https://support.google.com/googlehome/answer/18959693?hl=en",
-              "publisherGroup": "Google Nest 支持",
-              "name": "Google Nest 支持",
+              "url": "https://support.google.com/googlehome/answer/13127223?hl=en-CA",
+              "publisherGroup": "Google Home 官方帮助",
+              "name": "Google Home 官方帮助",
               "publishedAt": null,
               "role": "official",
-              "textHash": "87e958bcfb7f9bf0ab5ce7d67a6e1cff54e0dca4dfd2727e6281479a49e62837",
-              "readAt": "2026-11-22T00:44:42Z",
+              "textHash": "efbefd835dfaacace4234f8ddd09a1b6895cf7819cbbd0b19bda5b10b8cf5db6",
+              "readAt": "2026-11-24T00:43:03.338151+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "m24-tagweb",
+          "title": "定位标签离开手机蓝牙范围后，地图上的记录来自哪里？",
+          "facts": [
+            {
+              "claim": "官方说明将地图标记定义为标签被发现的位置，给出七天展示范围。",
+              "sourceUrl": "https://news.samsung.com/global/the-technology-behind-more-precise-finding-with-galaxy-smarttag3-and-smartthings",
+              "locator": "Location History 与 Lost Mode 段"
+            }
+          ],
+          "boundary": "文档说明功能及历史范围，未公布各地区发现成功率或通知延时。",
+          "sources": [
+            {
+              "url": "https://news.samsung.com/global/the-technology-behind-more-precise-finding-with-galaxy-smarttag3-and-smartthings",
+              "publisherGroup": "三星电子",
+              "name": "三星电子",
+              "publishedAt": "2026-11-23T08:00:00+00:00",
+              "role": "official",
+              "textHash": "70cf52259d81c7ac827b6d3e699237972460b3d64b8ad50cad81999c9cfe000f",
+              "readAt": "2026-11-24T00:50:28.196272+00:00",
               "coverage": "excerpt"
             }
           ]
@@ -878,19 +898,26 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "m22-helpweb",
-          "url": "https://support.google.com/googlehome/answer/18959693?hl=en",
-          "checkedAt": "2026-11-22T00:44:42Z",
+          "itemId": "m24-multi",
+          "url": "https://support.google.com/googlehome/answer/13127223?hl=en-CA",
+          "checkedAt": "2026-11-24T00:43:03.338151+00:00",
           "state": "body",
-          "note": "阅读官方指南 Important dates、旧网页片段下载和账号迁移相关段落。"
+          "note": "本轮读取正文。核对每个平台的中枢前提、连接第二个应用及用灯的状态更新验证操作。"
+        },
+        {
+          "itemId": "m24-tagweb",
+          "url": "https://news.samsung.com/global/the-technology-behind-more-precise-finding-with-galaxy-smarttag3-and-smartthings",
+          "checkedAt": "2026-11-24T00:50:28.196272+00:00",
+          "state": "body",
+          "note": "本轮读取原文相关段落。读取官方技术说明 Location History 与离线发现、近距离及遗失模式相关段落。"
         }
       ],
-      "reviewedAt": "2026-11-22T00:51:32.465861+00:00",
+      "reviewedAt": "2026-11-24T00:51:25.466857+00:00",
       "patch": {
-        "constraint": "兼容性、配网成本、稳定性与家庭成员协同。离线范围须按触发、动作和反馈分别核对：Aqara M200说明部分自动化本地执行，但云推送仍需要云连接；不能据“本地自动化”承诺全部提醒和远程控制可用。",
+        "constraint": "兼容性、配网成本、稳定性与家庭成员协同。离线范围须按触发、动作和反馈分别核对：Aqara M200说明部分自动化本地执行，但云推送仍需要云连接；不能据“本地自动化”承诺全部提醒和远程控制可用。 适配平台和中枢是前置条件。丢失标签超出近距离链路时，三星的远距离发现依赖附近参与离线查找的设备，历史记录的时间不等于当前位置。",
         "team": "嵌入式、连接协议、云平台、客户端、认证与售后 售后交给协议、固件或平台团队的信息应包含型号/版本、连接路径、受影响范围和复现步骤；诊断日志按支持范围自愿启用，并保留本地保存选择。 产品、客户端与售后可用临时照护者借用一台设备的情境，逐项核对邀约界面、可操作的设备、可执行的动作及回收权限的角色。",
         "metrics": "配网成功率；离线可用率；跨品牌联动失败率 观察时分别记录单设备、桥接路径和平台功能故障；固定型号、固件和平台组合后再比较，不能把重置后重新配网成功视为全部功能恢复。",
-        "chain": "连接协议 → 设备与网关 → 场景联动 → 安装与售后 服务切换时，将设备控制、自动迁移的历史和需手动导出的文件分列。不同条目可能对应不同期限和操作人。"
+        "chain": "连接协议 → 设备与网关 → 场景联动 → 安装与售后 服务切换时，将设备控制、自动迁移的历史和需手动导出的文件分列。不同条目可能对应不同期限和操作人。 Matter 设备跨平台接入时，在主平台生成临时凭据，到第二个平台完成配对，再用一次真实控制核对两端的状态是否一致。"
       },
       "lessons": [
         {
@@ -947,14 +974,36 @@
             "m22-helpweb"
           ],
           "updatedAt": "2026-11-22T00:51:32.465861+00:00"
+        },
+        {
+          "id": "m24-matter-confirm",
+          "title": "如何验收第二个平台真正接入了同一台设备",
+          "learning": "Google Home 指南用实际开关与另一端状态更新确认接入，临时二维码或配对码只完成其中一个步骤。",
+          "application": "分别记发码、配对、执行控制和另一端状态更新的时间；确定失败发生在哪一步。",
+          "boundary": "仅核官方流程，未做家庭离线、撤权或异厂商实机验证。",
+          "itemIds": [
+            "m24-multi"
+          ],
+          "updatedAt": "2026-11-24T00:51:25.466857+00:00"
+        },
+        {
+          "id": "m24-tag-timestamp",
+          "title": "在地图上看到的时间点对应哪一次发现",
+          "learning": "SmartThings 说明远程位置历史来自参与离线查找的设备，过去七天的发现和近距离指南对应不同的数据来源。",
+          "application": "保存最后一次发现时间，并分别测试近距离、离开蓝牙范围及周围缺少兼容设备的场景。",
+          "boundary": "仅适用相应三星设备和功能设置，覆盖密度、精度和实时性仍待实测。",
+          "itemIds": [
+            "m24-tagweb"
+          ],
+          "updatedAt": "2026-11-24T00:51:25.466857+00:00"
         }
       ],
-      "updatedAt": "2026-11-22T00:51:32.465861+00:00"
+      "updatedAt": "2026-11-24T00:51:25.466857+00:00"
     },
     "chain-2": {
-      "attemptedAt": "2026-11-22T10:42:39.386204+00:00",
+      "attemptedAt": "2026-11-24T00:51:25.466857+00:00",
       "status": "partial",
-      "assessment": "核对研发向试产交接的输入文件、工程问题复验以及项目经理发起转阶段评审的职责，并用真实小批出货决定作对照。",
+      "assessment": "复核 Android 对首次启动和连续音频路径的定义，区分系统能力与学习应用整段交互。",
       "gaps": [
         "验证某段 RTL 行为一致不能证明所有整机功能覆盖。",
         "已核实两份历史案例中的转阶段接口，尚缺学习设备实际批次的签审文件和整机验证记录。",
@@ -962,103 +1011,47 @@
       ],
       "reviewedFields": [
         "exercise",
-        "flow"
+        "metrics"
       ],
       "evidence": [
         {
-          "itemId": "e22-invt",
-          "title": "试产问题关完了，谁来决定能否进入下一阶段？",
+          "itemId": "m24-android",
+          "title": "学习机第一次开麦比连续跟读慢，该分别测哪段时间？",
           "facts": [
             {
-              "claim": "欣锐披露项目经理发起阶段评审、输出签审文件并跟踪阶段变更。",
-              "sourceUrl": "https://static.cninfo.com.cn/finalpage/2020-06-29/1207965722.PDF",
-              "locator": "申报稿 1-1-25，新产品导入试产"
-            },
-            {
-              "claim": "崧盛披露两类问题分别由研发部和工程部改善，整改后评估是否二次试产。",
-              "sourceUrl": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202204/RAS_202204_00017F64A3CB7E3FE6D89ACBA93EA43F.pdf",
-              "locator": "修订稿 1-1-104，产品试产阶段"
-            },
-            {
-              "claim": "崧盛将验证后的问题关闭与仍有最终不合格项时的批准分开。",
-              "sourceUrl": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202204/RAS_202204_00017F64A3CB7E3FE6D89ACBA93EA43F.pdf",
-              "locator": "修订稿 1-1-104，产品验证阶段"
+              "claim": "Android 对首次入队时的管线启动单独定义了时延。",
+              "sourceUrl": "https://developer.android.com/ndk/guides/audio/audio-latency",
+              "locator": "Audio latency 名词说明及 Check your features"
             }
           ],
-          "boundary": "两家公司披露的是当时的流程。发起评审与最终签字权限须分别取证；两份材料均未给某款学习机的批次签字单或放行结果。",
+          "boundary": "能力标记针对 Android 文档所列条件。未取得学习机实测数据，评分时间还受识别与应用处理影响。",
           "sources": [
             {
-              "url": "https://static.cninfo.com.cn/finalpage/2020-06-29/1207965722.PDF",
-              "publisherGroup": "欣锐科技 · 募集说明书",
-              "name": "欣锐科技 · 募集说明书",
-              "publishedAt": "2020-06-29",
-              "role": "official",
-              "textHash": "31d5024f089d0155ecabbe7cdc7bd628e77b2cfd165d6bfc272d03a1b20b59f3",
-              "readAt": "2026-11-22T10:38:11.668810+00:00",
-              "coverage": "excerpt"
-            },
-            {
-              "url": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202204/RAS_202204_00017F64A3CB7E3FE6D89ACBA93EA43F.pdf",
-              "publisherGroup": "崧盛股份",
-              "name": "崧盛股份 · 2022 年 3 月募集说明书修订稿",
+              "url": "https://developer.android.com/ndk/guides/audio/audio-latency",
+              "publisherGroup": "Android Developers",
+              "name": "Android Developers",
               "publishedAt": null,
               "role": "official",
-              "textHash": "28003fea0ef101bceeb8fae85d8c830acec5c1c50a95adb2485ebea6eca4f28a",
-              "readAt": "2026-11-22T10:38:12.611450+00:00",
-              "coverage": "excerpt"
-            }
-          ]
-        },
-        {
-          "itemId": "e22-novena",
-          "title": "十二台左右的试用机寄出后，Novena 团队凭什么启动数百台生产？",
-          "facts": [
-            {
-              "claim": "团队在试寄桌面版后等待用户反馈，再作出扩大生产的决定。",
-              "sourceUrl": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
-              "locator": "原发项目更新，initial trial 及其后两段"
-            },
-            {
-              "claim": "首批反馈促成设计与装箱流程微调。",
-              "sourceUrl": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
-              "locator": "原发项目更新，首批试用反馈段"
-            }
-          ],
-          "boundary": "这是小批量开源计算设备项目；桌面版试寄与笔记本后续发运应分开。样本数和等待期属于当时这宗决定，不能当成学习机量产门槛。",
-          "sources": [
-            {
-              "url": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
-              "publisherGroup": "Kosagi 项目团队",
-              "name": "Kosagi 项目团队",
-              "publishedAt": "2015-02-05",
-              "role": "official",
-              "textHash": "9051d92aab4abdf72668ab0f5dac533050d9cde298ab04dfcf3ce3dd09158979",
-              "readAt": "2026-11-22T10:41:46Z",
-              "coverage": "excerpt"
+              "textHash": "ba557002f1f307984598b16061ac62d8fa3ada1c5587147ea5ee855804e132b8",
+              "readAt": "2026-11-24T00:43:03.385460+00:00",
+              "coverage": "body"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "e22-invt",
-          "url": "https://static.cninfo.com.cn/finalpage/2020-06-29/1207965722.PDF",
-          "checkedAt": "2026-11-22T10:38:11.668810+00:00",
+          "itemId": "m24-android",
+          "url": "https://developer.android.com/ndk/guides/audio/audio-latency",
+          "checkedAt": "2026-11-24T00:43:03.385460+00:00",
           "state": "body",
-          "note": "本轮读取原文相关段落。申报稿 1-1-25 新产品导入试产。"
-        },
-        {
-          "itemId": "e22-novena",
-          "url": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
-          "checkedAt": "2026-11-22T10:41:46Z",
-          "state": "body",
-          "note": "本轮读取原文相关段落。项目团队公开的首批试寄与设计、装箱变化。"
+          "note": "本轮读取正文。阅读 latency definitions、warmup 与 Check your features 段。"
         }
       ],
-      "reviewedAt": "2026-11-22T10:42:39.386204+00:00",
+      "reviewedAt": "2026-11-24T00:51:25.466857+00:00",
       "patch": {
-        "metrics": "任务延迟用同一输入、环境与分位数比较；不能只报告平均值或实验室峰值。 对加工设备还应固定材料、任务和成品质量条件，分别记录准备、加工与失败恢复耗时；标称最高运动速度不能直接折算真实产能。 排查学习机跟读等待时，音频团队固定设备和音频路径测回环，应用与识别团队另记说完、识别完成和评分可见的时点，按相同输入比较。",
-        "exercise": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。 把召开评审、形成签审文件、更新系统阶段分别落到材料和角色。",
+        "metrics": "任务延迟用同一输入、环境与分位数比较；不能只报告平均值或实验室峰值。 对加工设备还应固定材料、任务和成品质量条件，分别记录准备、加工与失败恢复耗时；标称最高运动速度不能直接折算真实产能。 排查学习机跟读等待时，音频团队固定设备和音频路径测回环，应用与识别团队另记说完、识别完成和评分可见的时点，按相同输入比较。 音频评测把首次启用管线的等待、连续输出、连续往返与最终评分分开；报告设备、系统版本、采样路径及是否冷启动。",
+        "exercise": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。 把召开评审、形成签审文件、更新系统阶段分别落到材料和角色。 让同一学习设备先首次开麦，再连续跟读同一段音频，分别验证录入与评分。Android 功能标记可作前置检查。",
         "basics": "BOM是制造所需项目的汇总，可包含编号、数量、描述与生命周期状态；交接时还需核对版本。Autodesk Vault 2026提供修订比较，这是具体软件规则，不是所有企业的通用制度。BOM不能代替完整业务成本；Formlabs解释中，EVT聚焦关键功能与可制造设计，DVT细化设计并测试接近量产的产品，PVT检验生产线稳定制造能力。缩写、样品数量、周期与退出条件须按项目定义。",
         "flow": "需求与成本边界 → 系统架构、接口与验证计划 转试产前明确将哪个版本的物料清单、规格书和结构图转换成生产规范，并记录问题关闭与阶段切换。"
       },
@@ -1128,9 +1121,20 @@
             "e22-invt"
           ],
           "updatedAt": "2026-11-22T10:42:39.386204+00:00"
+        },
+        {
+          "id": "m24-cold-audio",
+          "title": "为什么只测连续跟读会漏掉第一题的等待",
+          "learning": "Android 分开定义首次入队启动与连续音频输送；低时延输出和专业往返标记的适用路径也不同。",
+          "application": "音频、应用和教研先约定首次点按、可用音频、评分完成三个可记录的节点，再用量产设备复测。",
+          "boundary": "官方定义不提供竞品整机时延；内容识别与教学反馈需另测。",
+          "itemIds": [
+            "m24-android"
+          ],
+          "updatedAt": "2026-11-24T00:51:25.466857+00:00"
         }
       ],
-      "updatedAt": "2026-11-22T10:42:39.386204+00:00"
+      "updatedAt": "2026-11-24T00:51:25.466857+00:00"
     },
     "chain-5": {
       "attemptedAt": "2026-11-23T10:46:17.398881+00:00",
@@ -3186,6 +3190,60 @@
           "hash": "e16636b5f5498abef46a798a63925a1b109047e4f0a691822bbfd1e893360a83",
           "decision": "integrated",
           "reason": "影目召回计划把风险定位到特定第三方应用和长时使用条件，给出目标版本并安排推送通知。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-24T00:51:25.466857+00:00",
+      "reviewedNodes": [
+        "track-2",
+        "chain-2",
+        "chain-4",
+        "chain-3",
+        "chain-7"
+      ],
+      "decisions": [
+        {
+          "itemId": "m24-multi",
+          "hash": "c7ba276543f634a5d1db27c35a3a10b28b1919089793b4fd178cbcdd3013e7fb",
+          "decision": "integrated",
+          "reason": "Google Home 指南用实际开关与另一端状态更新确认接入，临时二维码或配对码只完成其中一个步骤。"
+        },
+        {
+          "itemId": "m24-tagweb",
+          "hash": "bc074efb5896206b5b85a8d875c11f05d6013e046eeffee7c0f23139063eb5bf",
+          "decision": "integrated",
+          "reason": "SmartThings 说明远程位置历史来自参与离线查找的设备，过去七天的发现和近距离指南对应不同的数据来源。"
+        },
+        {
+          "itemId": "m24-android",
+          "hash": "a1669e0fe11588a34aef33d85611338dd80b43fe5694de70700bc95ce3fc628f",
+          "decision": "integrated",
+          "reason": "Android 分开定义首次入队启动与连续音频输送；低时延输出和专业往返标记的适用路径也不同。"
+        },
+        {
+          "itemId": "m24-pi",
+          "hash": "49d58202bc72c12ee572d7065710787fe1c5b83de523227a8e5fb35488c8aa55",
+          "decision": "integrated",
+          "reason": "工厂逐板启动，合格板才进入包装；装箱后的称重用于查包装内容。"
+        },
+        {
+          "itemId": "m24-board",
+          "hash": "cc5f5d998c6fc0eb2ed071a9454cb3b5857a39692d8a9a8af1182ffebe1763ed",
+          "decision": "integrated",
+          "reason": "思特威披露增资方案及银行贷款来源，同时提示代工厂仍处产能爬坡阶段。"
+        },
+        {
+          "itemId": "m24-pcbweb",
+          "hash": "e0b5ddc24e6e5623f821c4dd1109a1fb678e7e3c0263fe39d401c4e57faaa6e2",
+          "decision": "integrated",
+          "reason": "全球电子协会分别披露订单与出货增长，并列出高层板交期以及材料端制约。"
+        },
+        {
+          "itemId": "m24-boox",
+          "hash": "c72f2c5e2280d565c5b59904746cbeaa6822e6abe9f9aeb616cd47e5299bf7c8",
+          "decision": "integrated",
+          "reason": "文石分别说明两类内容的同步；独立笔记可能在退出账号后暂不可见，阅读数据还要求同文件、同目录。"
         }
       ]
     }
@@ -12826,6 +12884,479 @@
           "checkedAt": "2026-11-23T10:45:20.328944+00:00",
           "state": "body",
           "note": "本轮读取正文。复核公告所述左镜腿过热的使用条件和升级前提示。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-2",
+      "reviewedAt": "2026-11-24T00:51:25.466857+00:00",
+      "status": "partial",
+      "assessment": "核对多平台控制的验收操作，以及同一家庭场景中近距离指引、远程发现和状态可见性的条件。",
+      "gaps": [
+        "已核三份文档中的授权入口或角色；仍缺特定设备权限、离线撤权及跨平台实测。",
+        "没有可比故障率、用户样本和售后改善数据。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint"
+      ],
+      "changes": {
+        "chain": {
+          "before": "连接协议 → 设备与网关 → 场景联动 → 安装与售后 服务切换时，将设备控制、自动迁移的历史和需手动导出的文件分列。不同条目可能对应不同期限和操作人。",
+          "after": "连接协议 → 设备与网关 → 场景联动 → 安装与售后 服务切换时，将设备控制、自动迁移的历史和需手动导出的文件分列。不同条目可能对应不同期限和操作人。 Matter 设备跨平台接入时，在主平台生成临时凭据，到第二个平台完成配对，再用一次真实控制核对两端的状态是否一致。"
+        },
+        "constraint": {
+          "before": "兼容性、配网成本、稳定性与家庭成员协同。离线范围须按触发、动作和反馈分别核对：Aqara M200说明部分自动化本地执行，但云推送仍需要云连接；不能据“本地自动化”承诺全部提醒和远程控制可用。",
+          "after": "兼容性、配网成本、稳定性与家庭成员协同。离线范围须按触发、动作和反馈分别核对：Aqara M200说明部分自动化本地执行，但云推送仍需要云连接；不能据“本地自动化”承诺全部提醒和远程控制可用。 适配平台和中枢是前置条件。丢失标签超出近距离链路时，三星的远距离发现依赖附近参与离线查找的设备，历史记录的时间不等于当前位置。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m24-matter-confirm",
+            "title": "如何验收第二个平台真正接入了同一台设备",
+            "learning": "Google Home 指南用实际开关与另一端状态更新确认接入，临时二维码或配对码只完成其中一个步骤。",
+            "application": "分别记发码、配对、执行控制和另一端状态更新的时间；确定失败发生在哪一步。",
+            "boundary": "仅核官方流程，未做家庭离线、撤权或异厂商实机验证。",
+            "itemIds": [
+              "m24-multi"
+            ]
+          }
+        },
+        {
+          "before": null,
+          "after": {
+            "id": "m24-tag-timestamp",
+            "title": "在地图上看到的时间点对应哪一次发现",
+            "learning": "SmartThings 说明远程位置历史来自参与离线查找的设备，过去七天的发现和近距离指南对应不同的数据来源。",
+            "application": "保存最后一次发现时间，并分别测试近距离、离开蓝牙范围及周围缺少兼容设备的场景。",
+            "boundary": "仅适用相应三星设备和功能设置，覆盖密度、精度和实时性仍待实测。",
+            "itemIds": [
+              "m24-tagweb"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m24-multi",
+          "title": "同一盏灯接入两个平台，怎样验证第二个平台真的接好了？",
+          "facts": [
+            {
+              "claim": "官方流程允许为第二个平台生成临时配对凭据。",
+              "sourceUrl": "https://support.google.com/googlehome/answer/13127223?hl=en-CA",
+              "locator": "Share the devices 与配对后的控制检查"
+            }
+          ],
+          "boundary": "仅限该指南描述的兼容配置。离线撤权、跨品牌响应时延及失败率仍须另测。",
+          "sources": [
+            {
+              "url": "https://support.google.com/googlehome/answer/13127223?hl=en-CA",
+              "publisherGroup": "Google Home 官方帮助",
+              "name": "Google Home 官方帮助",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "efbefd835dfaacace4234f8ddd09a1b6895cf7819cbbd0b19bda5b10b8cf5db6",
+              "readAt": "2026-11-24T00:43:03.338151+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "m24-tagweb",
+          "title": "定位标签离开手机蓝牙范围后，地图上的记录来自哪里？",
+          "facts": [
+            {
+              "claim": "官方说明将地图标记定义为标签被发现的位置，给出七天展示范围。",
+              "sourceUrl": "https://news.samsung.com/global/the-technology-behind-more-precise-finding-with-galaxy-smarttag3-and-smartthings",
+              "locator": "Location History 与 Lost Mode 段"
+            }
+          ],
+          "boundary": "文档说明功能及历史范围，未公布各地区发现成功率或通知延时。",
+          "sources": [
+            {
+              "url": "https://news.samsung.com/global/the-technology-behind-more-precise-finding-with-galaxy-smarttag3-and-smartthings",
+              "publisherGroup": "三星电子",
+              "name": "三星电子",
+              "publishedAt": "2026-11-23T08:00:00+00:00",
+              "role": "official",
+              "textHash": "70cf52259d81c7ac827b6d3e699237972460b3d64b8ad50cad81999c9cfe000f",
+              "readAt": "2026-11-24T00:50:28.196272+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m24-multi",
+          "url": "https://support.google.com/googlehome/answer/13127223?hl=en-CA",
+          "checkedAt": "2026-11-24T00:43:03.338151+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对每个平台的中枢前提、连接第二个应用及用灯的状态更新验证操作。"
+        },
+        {
+          "itemId": "m24-tagweb",
+          "url": "https://news.samsung.com/global/the-technology-behind-more-precise-finding-with-galaxy-smarttag3-and-smartthings",
+          "checkedAt": "2026-11-24T00:50:28.196272+00:00",
+          "state": "body",
+          "note": "本轮读取原文相关段落。读取官方技术说明 Location History 与离线发现、近距离及遗失模式相关段落。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-2",
+      "reviewedAt": "2026-11-24T00:51:25.466857+00:00",
+      "status": "partial",
+      "assessment": "复核 Android 对首次启动和连续音频路径的定义，区分系统能力与学习应用整段交互。",
+      "gaps": [
+        "验证某段 RTL 行为一致不能证明所有整机功能覆盖。",
+        "已核实两份历史案例中的转阶段接口，尚缺学习设备实际批次的签审文件和整机验证记录。",
+        "已核 Android 音频回环的测量边界；实际学习机的端到端分位数、返工及整机验证数据待查。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "metrics"
+      ],
+      "changes": {
+        "metrics": {
+          "before": "任务延迟用同一输入、环境与分位数比较；不能只报告平均值或实验室峰值。 对加工设备还应固定材料、任务和成品质量条件，分别记录准备、加工与失败恢复耗时；标称最高运动速度不能直接折算真实产能。 排查学习机跟读等待时，音频团队固定设备和音频路径测回环，应用与识别团队另记说完、识别完成和评分可见的时点，按相同输入比较。",
+          "after": "任务延迟用同一输入、环境与分位数比较；不能只报告平均值或实验室峰值。 对加工设备还应固定材料、任务和成品质量条件，分别记录准备、加工与失败恢复耗时；标称最高运动速度不能直接折算真实产能。 排查学习机跟读等待时，音频团队固定设备和音频路径测回环，应用与识别团队另记说完、识别完成和评分可见的时点，按相同输入比较。 音频评测把首次启用管线的等待、连续输出、连续往返与最终评分分开；报告设备、系统版本、采样路径及是否冷启动。"
+        },
+        "exercise": {
+          "before": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。 把召开评审、形成签审文件、更新系统阶段分别落到材料和角色。",
+          "after": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。 把召开评审、形成签审文件、更新系统阶段分别落到材料和角色。 让同一学习设备先首次开麦，再连续跟读同一段音频，分别验证录入与评分。Android 功能标记可作前置检查。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m24-cold-audio",
+            "title": "为什么只测连续跟读会漏掉第一题的等待",
+            "learning": "Android 分开定义首次入队启动与连续音频输送；低时延输出和专业往返标记的适用路径也不同。",
+            "application": "音频、应用和教研先约定首次点按、可用音频、评分完成三个可记录的节点，再用量产设备复测。",
+            "boundary": "官方定义不提供竞品整机时延；内容识别与教学反馈需另测。",
+            "itemIds": [
+              "m24-android"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m24-android",
+          "title": "学习机第一次开麦比连续跟读慢，该分别测哪段时间？",
+          "facts": [
+            {
+              "claim": "Android 对首次入队时的管线启动单独定义了时延。",
+              "sourceUrl": "https://developer.android.com/ndk/guides/audio/audio-latency",
+              "locator": "Audio latency 名词说明及 Check your features"
+            }
+          ],
+          "boundary": "能力标记针对 Android 文档所列条件。未取得学习机实测数据，评分时间还受识别与应用处理影响。",
+          "sources": [
+            {
+              "url": "https://developer.android.com/ndk/guides/audio/audio-latency",
+              "publisherGroup": "Android Developers",
+              "name": "Android Developers",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "ba557002f1f307984598b16061ac62d8fa3ada1c5587147ea5ee855804e132b8",
+              "readAt": "2026-11-24T00:43:03.385460+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m24-android",
+          "url": "https://developer.android.com/ndk/guides/audio/audio-latency",
+          "checkedAt": "2026-11-24T00:43:03.385460+00:00",
+          "state": "body",
+          "note": "本轮读取正文。阅读 latency definitions、warmup 与 Check your features 段。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-4",
+      "reviewedAt": "2026-11-24T00:51:25.466857+00:00",
+      "status": "partial",
+      "assessment": "核对公开工厂记录中的检测顺序与对象，限定每道检查能回答的交付问题。",
+      "gaps": [
+        "已核企业制度中的整改归属、复验与例外审批，仍缺具体批次的原始签核记录。",
+        "已取得真实工厂的产线周统计，尚缺能逐件重算首次、返测及最终处置的批次流水。",
+        "未取得上述公司按同一口径披露的改进前后量产结果。"
+      ],
+      "reviewedFields": [
+        "flow",
+        "team"
+      ],
+      "changes": {
+        "flow": {
+          "before": "验证通过的设计 → 就绪并经过验证的工装、夹具和测试台 → 试产检查产线节拍、报废与批次良率 → 稳定交付。具体试产准入条件按项目确定。",
+          "after": "验证通过的设计 → 就绪并经过验证的工装、夹具和测试台 → 试产检查产线节拍、报废与批次良率 → 稳定交付。具体试产准入条件按项目确定。 索尼英国生产 Raspberry Pi 的案例在多个装配步骤目检、分板后逐板启动；通过后独立装盒，称重检查包装内容，再装大箱发运。"
+        },
+        "team": {
+          "before": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。石头商城岗位正文提供具体样本：NPI-PE输出DFX报告、组包流程、作业文件及治具要求；PQE衔接试制、量产、代工与售后质量；PQC监督出货及过程。正式放行权仍须项目证据。 平台和内存可以同时开发。最初样品失效时保留样品编号、平台及固件版本，由能重现故障的一方与供应商交叉验证。 崧盛在试产中按设计缺陷和工艺缺陷分配整改，再评估是否二次试产；验证阶段仍有最终不合格项时另有批准要求。",
+          "after": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。石头商城岗位正文提供具体样本：NPI-PE输出DFX报告、组包流程、作业文件及治具要求；PQE衔接试制、量产、代工与售后质量；PQC监督出货及过程。正式放行权仍须项目证据。 平台和内存可以同时开发。最初样品失效时保留样品编号、平台及固件版本，由能重现故障的一方与供应商交叉验证。 崧盛在试产中按设计缺陷和工艺缺陷分配整改，再评估是否二次试产；验证阶段仍有最终不合格项时另有批准要求。 把装配异常、板级启动失败、装箱缺件各自关联到相应的检测记录和跟进岗位。具体质量放行权需看项目授权。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m24-pi-stations",
+            "title": "外观、启动和装箱称重分别能发现什么",
+            "learning": "工厂逐板启动，合格板才进入包装；装箱后的称重用于查包装内容。",
+            "application": "取一台退回的设备，从故障类型追查装配、启动或装箱记录；保留原始工序结果。",
+            "boundary": "工厂视频逐字稿未披露每项通过率、返测或责任签字。",
+            "itemIds": [
+              "m24-pi"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m24-pi",
+          "title": "一块板怎样走到装箱：外观检查、逐板启动、包装称重各管什么？",
+          "facts": [
+            {
+              "claim": "工厂实录说明分板后逐板启动，合格后进入包装。",
+              "sourceUrl": "https://www.raspberrypi.com/news/explore-the-raspberry-pi-factory-floor-in-wales-uk/",
+              "locator": "现场视频逐字稿后半段"
+            }
+          ],
+          "boundary": "这是 2023 年公开的一条生产路线。未披露逐项测试覆盖率、首过率或返修批次台账。",
+          "sources": [
+            {
+              "url": "https://www.raspberrypi.com/news/explore-the-raspberry-pi-factory-floor-in-wales-uk/",
+              "publisherGroup": "Raspberry Pi",
+              "name": "Raspberry Pi",
+              "publishedAt": "2023-08-01T11:14:48+00:00",
+              "role": "official",
+              "textHash": "d566ed0dc643c0ed3fd136d7b218c09527954b011b22dc26e7bf31b5352cb7df",
+              "readAt": "2026-11-24T00:43:08.380245+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m24-pi",
+          "url": "https://www.raspberrypi.com/news/explore-the-raspberry-pi-factory-floor-in-wales-uk/",
+          "checkedAt": "2026-11-24T00:43:08.380245+00:00",
+          "state": "body",
+          "note": "本轮读取正文。复核 2023 年工厂视频逐字稿，含分板、启动与包装顺序。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-3",
+      "reviewedAt": "2026-11-24T00:51:25.466857+00:00",
+      "status": "partial",
+      "assessment": "核对思特威公司公告的资金与爬坡风险，并用协会原文限定高层板交期数据的范围。",
+      "gaps": [
+        "补核 Oracle 26C 的 MOQ 计算；各企业实际参数、运输起止、库存边界仍待订单和台账核验。",
+        "公开资料没有供应商审核标准、实际通过率、采购质量接口和履约结果。"
+      ],
+      "reviewedFields": [
+        "flow"
+      ],
+      "changes": {
+        "flow": {
+          "before": "预测与物料规格 → 合格供应、交期与库存方案 上游产品变更时，先核受影响料号、通知和实际到样日期，再分列申样期限、评估期限、拟首次出货、旧料末次订购。",
+          "after": "预测与物料规格 → 合格供应、交期与库存方案 上游产品变更时，先核受影响料号、通知和实际到样日期，再分列申样期限、评估期限、拟首次出货、旧料末次订购。 代工股权投资、实际可用产能及达标批次要分别验证。电子板供应还要核对具体层数和所用基材；上游材料紧缺会限制制板扩产的交付作用。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m24-foundry-equity",
+            "title": "参股代工厂之后，哪一步能证明拿到了产能",
+            "learning": "思特威披露增资方案及银行贷款来源，同时提示代工厂仍处产能爬坡阶段。",
+            "application": "追踪董事会决议、股权交割、设备与工艺验证，再核客户实际取得的合格批次。",
+            "boundary": "公告没有给出客户专属排产、良率或已交货数量。",
+            "itemIds": [
+              "m24-board"
+            ]
+          }
+        },
+        {
+          "before": null,
+          "after": {
+            "id": "m24-pcb-orders",
+            "title": "供货紧张时为何同时看订单、出货与材料交期",
+            "learning": "全球电子协会分别披露订单与出货增长，并列出高层板交期以及材料端制约。",
+            "application": "检查某款学习机时，先确认板层和材料，再核查该厂已确认的排产时间与交期。",
+            "boundary": "协会提示不代表所有板厂、板层与材料的交期。",
+            "itemIds": [
+              "m24-pcbweb"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m24-board",
+          "title": "思特威拟用银行贷款增资晶圆代工厂，董事会通过后还要看实际供货",
+          "facts": [
+            {
+              "claim": "公司披露本次增资的资金来源。",
+              "sourceUrl": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12717868&stockid=688213",
+              "locator": "公司公告 2026-053 出资方式与重要风险提示"
+            }
+          ],
+          "boundary": "董事会审议与拟取得股权已有公告，最终交割、客户良率和实际供应量仍待披露。",
+          "sources": [
+            {
+              "url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12717868&stockid=688213",
+              "publisherGroup": "思特威（公司公告）",
+              "name": "思特威（公司公告）",
+              "publishedAt": "2026-11-23",
+              "role": "official",
+              "textHash": "ef73c07b2ed7a1baacf4f20a66b97237a010f4f68a2e4aa798583df24740dfc2",
+              "readAt": "2026-11-24T00:44:51.361611+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "m24-pcbweb",
+          "title": "高层板交期拉长时，为什么只盯制板厂产能还不够？",
+          "facts": [
+            {
+              "claim": "协会披露了高层板交期范围。",
+              "sourceUrl": "https://www.globenewswire.com/fr/news-release/2026/11/19/3406285/0/en/global-electronics-association-growing-shortages-across-the-pcb-supply-chain-threaten-the-next-wave-of-ai-and-electronics.html",
+              "locator": "Industry Alert · supply and materials data"
+            }
+          ],
+          "boundary": "这是一份 11 月 19 日发布的行业风险提示；未披露学习机等具体订单的交付结果。",
+          "sources": [
+            {
+              "url": "https://www.globenewswire.com/fr/news-release/2026/11/19/3406285/0/en/global-electronics-association-growing-shortages-across-the-pcb-supply-chain-threaten-the-next-wave-of-ai-and-electronics.html",
+              "publisherGroup": "全球电子协会",
+              "name": "全球电子协会",
+              "publishedAt": "2026-11-19",
+              "role": "official",
+              "textHash": "6c1514f8ae55cb570528122dfe5cc973ffb942437539b95b15b79713807a7e33",
+              "readAt": "2026-11-24T00:50:28.196272+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m24-board",
+          "url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12717868&stockid=688213",
+          "checkedAt": "2026-11-24T00:44:51.361611+00:00",
+          "state": "body",
+          "note": "本轮读取正文。复查投资公告 2026-053 的出资、审批状态、代工业务与风险提示。"
+        },
+        {
+          "itemId": "m24-pcbweb",
+          "url": "https://www.globenewswire.com/fr/news-release/2026/11/19/3406285/0/en/global-electronics-association-growing-shortages-across-the-pcb-supply-chain-threaten-the-next-wave-of-ai-and-electronics.html",
+          "checkedAt": "2026-11-24T00:50:28.196272+00:00",
+          "state": "body",
+          "note": "本轮读取原文相关段落。复核协会原发风险提示中材料制约、订单、出货和高层板交期段。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-7",
+      "reviewedAt": "2026-11-24T00:51:25.466857+00:00",
+      "status": "partial",
+      "assessment": "核对文石两份当前官方帮助页，以区分账号退出暂时不可见、阅读批注匹配及本地恢复。",
+      "gaps": [
+        "缺少召回登记、寄发和最终处置各阶段完成数据。",
+        "本轮补平台计数定义，但跨工单重复联系归属、观察窗口及排除项仍需业务级定义。",
+        "没有设备停产通知、维修时效和恢复使用结果；华为该空间其他备份渠道仍未核实。"
+      ],
+      "reviewedFields": [
+        "exercise"
+      ],
+      "changes": {
+        "exercise": {
+          "before": "追踪一次服务事件，从用户发现到真正恢复使用，找出重复解释和重复操作。 补充一次设备转售或恢复出厂场景，列清设备、账号和云端数据的处理责任与验证证据。 对返修场景增加购买证明、排障记录、寄送指引与恢复使用四步，检查哪些信息能在授权范围内复用，避免用户重复解释。 阅读器迁移时核对账号、上传标志、私密设置与新设备本地可读状态；书架中的一条记录不能单独证明文件已经恢复。",
+          "after": "追踪一次服务事件，从用户发现到真正恢复使用，找出重复解释和重复操作。 补充一次设备转售或恢复出厂场景，列清设备、账号和云端数据的处理责任与验证证据。 对返修场景增加购买证明、排障记录、寄送指引与恢复使用四步，检查哪些信息能在授权范围内复用，避免用户重复解释。 阅读器迁移时核对账号、上传标志、私密设置与新设备本地可读状态；书架中的一条记录不能单独证明文件已经恢复。 阅读器换机后分别验证独立笔记、书内批注和源文件；让用户核对原账号、服务器和同步开关，并在两台设备上检查文档目录和恢复版本。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m24-boox-recovery",
+            "title": "先问缺的是笔记本还是书内批注",
+            "learning": "文石分别说明两类内容的同步；独立笔记可能在退出账号后暂不可见，阅读数据还要求同文件、同目录。",
+            "application": "售后先确认内容类型和账号服务器，再核单项开关与原文件，按各自路径验证恢复。",
+            "boundary": "限于相应机型与固件的官方说明，个案能否恢复仍须实测。",
+            "itemIds": [
+              "m24-boox"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m24-boox",
+          "title": "换阅读器后找不到手写笔记，先核账号、服务器还是文件？",
+          "facts": [
+            {
+              "claim": "官方指南说明多账号设备的笔记可见范围。",
+              "sourceUrl": "https://help.boox.com/653d4/f3f2e/affe8",
+              "locator": "Note Syncing · Account and Server"
+            },
+            {
+              "claim": "NeoReader 阅读数据同步还要核对对应文件所在目录。",
+              "sourceUrl": "https://help.boox.com/fa5fa/f733d/56960",
+              "locator": "Account, Server, and Directory"
+            }
+          ],
+          "boundary": "仅适用于提供手写笔记功能的相应机型；没有观察到具体用户的数据是否丢失或实际恢复成功率。",
+          "sources": [
+            {
+              "url": "https://help.boox.com/653d4/f3f2e/affe8",
+              "publisherGroup": "文石官方帮助",
+              "name": "文石官方帮助",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "ea4fbbd28b6b9482d086854e1c5276bf957d548d19f2870a6344be931717faaa",
+              "readAt": "2026-11-24T00:43:09.063879+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://help.boox.com/fa5fa/f733d/56960",
+              "publisherGroup": "文石官方帮助",
+              "name": "Reading Data Syncing and Backup",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "7075a1d6f013834d7434ce53762aae1cb8a4081a4e92e59990d1820d7d65e31a",
+              "readAt": "2026-11-24T00:44:56.959741+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m24-boox",
+          "url": "https://help.boox.com/653d4/f3f2e/affe8",
+          "checkedAt": "2026-11-24T00:43:09.063879+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对 Note Syncing 的账号、服务器和退出后可见性。"
+        },
+        {
+          "itemId": "m24-boox",
+          "url": "https://help.boox.com/fa5fa/f733d/56960",
+          "checkedAt": "2026-11-24T00:44:56.959741+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对 NeoReader 的目录、备份包、200MB 与双方固件条件。"
         }
       ]
     }
