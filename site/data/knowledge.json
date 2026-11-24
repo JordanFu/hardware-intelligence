@@ -361,41 +361,46 @@
       "updatedAt": "2026-11-24T00:51:25.466857+00:00"
     },
     "track-5": {
-      "attemptedAt": "2026-11-22T10:42:39.386204+00:00",
+      "attemptedAt": "2026-11-24T10:49:21.407951+00:00",
       "status": "partial",
-      "assessment": "核对一次从首批客户试寄到扩大生产的实务决定，补充设计公差、包装和工厂窗口之间的取舍。",
+      "assessment": "公开索引取得 2015 年 4 月项目原文履约、余料与补货分工段；原站直连 403。阶段进度为作者自述。",
       "gaps": [
         "已取得团队公开的实际投产决定，仍缺其内部签核与完整批次良率，其他项目的签核授权仍待核实。"
       ],
       "reviewedFields": [
-        "constraint"
+        "chain"
       ],
       "evidence": [
         {
-          "itemId": "e22-novena",
-          "title": "十二台左右的试用机寄出后，Novena 团队凭什么启动数百台生产？",
+          "itemId": "e24-novena-stock",
+          "title": "众筹交付后，谁来垫钱做现货，谁来管配件？",
           "facts": [
             {
-              "claim": "团队在试寄桌面版后等待用户反馈，再作出扩大生产的决定。",
-              "sourceUrl": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
-              "locator": "原发项目更新，initial trial 及其后两段"
+              "claim": "项目团队披露了自己与平台之间的补产分工。",
+              "sourceUrl": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1566",
+              "locator": "April Backer Update · 末段，主板与配件生产"
             },
             {
-              "claim": "首批反馈促成设计与装箱流程微调。",
-              "sourceUrl": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
-              "locator": "原发项目更新，首批试用反馈段"
+              "claim": "作者按三种产品分别报告履约进度。",
+              "sourceUrl": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1566",
+              "locator": "首段，履约进度"
+            },
+            {
+              "claim": "团队计划核清已承诺订单并为缺陷机留出余量之后再出售剩件。",
+              "sourceUrl": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1566",
+              "locator": "余料处理段"
             }
           ],
-          "boundary": "这是小批量开源计算设备项目；桌面版试寄与笔记本后续发运应分开。样本数和等待期属于当时这宗决定，不能当成学习机量产门槛。",
+          "boundary": "这是小批量开源电脑项目当年的决策。团队披露的是阶段履约与后续备货安排，未给出最终缺货率、备件消耗和利润。",
           "sources": [
             {
-              "url": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
+              "url": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1566",
               "publisherGroup": "Kosagi 项目团队",
               "name": "Kosagi 项目团队",
-              "publishedAt": "2015-02-05",
+              "publishedAt": "2015-04-12",
               "role": "official",
-              "textHash": "9051d92aab4abdf72668ab0f5dac533050d9cde298ab04dfcf3ce3dd09158979",
-              "readAt": "2026-11-22T10:41:46Z",
+              "textHash": "c3e7c3ab281b66c1b839d21b1dc48e304c89f83d8084ac024deab0b8497e9732",
+              "readAt": "2026-11-24T10:48:51.625951+00:00",
               "coverage": "excerpt"
             }
           ]
@@ -403,19 +408,20 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "e22-novena",
-          "url": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1484",
-          "checkedAt": "2026-11-22T10:41:46Z",
-          "state": "body",
-          "note": "本轮读取原文相关段落。2015年2月5日原发试寄与投产决定段，网页可读节选。"
+          "itemId": "e24-novena-stock",
+          "url": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1566",
+          "checkedAt": "2026-11-24T10:49:21.317434+00:00",
+          "state": "cached",
+          "note": "公开索引取得 2015 年 4 月项目原文履约、余料与补货分工段；原站直连 403。阶段进度为作者自述。"
         }
       ],
-      "reviewedAt": "2026-11-22T10:42:39.386204+00:00",
+      "reviewedAt": "2026-11-24T10:49:21.407951+00:00",
       "patch": {
         "constraint": "成本、质量、交期、维修和供货风险；互联设备另需检查设备、应用、云的协同安全与退出时的数据处理。 混合工艺还需同时检查区域边界衔接、路径避让和切换开销，界面步骤减少不能掩盖质量约束。 试寄可以先检验结构与包装；是否扩大生产还要权衡反馈覆盖、工厂日历及继续等待的代价。",
         "team": "产品、系统工程、制造、采购、质量、法规与售后。研究外协时另核技术文件提供方、参数变更权、驻厂支持与验收记录；公司之间的边界不能由生产地点直接推断。 小猿历史岗位把测试用例、模块到整机定位、设计评审和试产整改列为同一岗位可参与的环节。责任接口要用项目记录另行确认。",
         "examples": "品牌方、ODM / EMS、模组供应商；拓竹H3C作为软硬件协同的观察样本，非行业排名。",
-        "metrics": "关键缺陷关闭率；良率；交期；返修原因；比较自动化功能时另记录用户准备步骤、设计修改后的重做次数、总加工时间与成品验收结果，不能只看算法速度。 指向收音验收须固定讲话者角度和距离，记录干扰源位置、遮挡及原始音轨，再单独评估转写。"
+        "metrics": "关键缺陷关闭率；良率；交期；返修原因；比较自动化功能时另记录用户准备步骤、设计修改后的重做次数、总加工时间与成品验收结果，不能只看算法速度。 指向收音验收须固定讲话者角度和距离，记录干扰源位置、遮挡及原始音轨，再单独评估转写。",
+        "chain": "用户需求 → 原型 → 设计验证 → 生产验证 → 量产与服务 小批量投产后，按产品配置分开核对已履约订单和后续补产。项目团队与渠道伙伴可以分别承担主板和配件的备货责任。"
       },
       "lessons": [
         {
@@ -505,9 +511,20 @@
             "e22-novena"
           ],
           "updatedAt": "2026-11-22T10:42:39.386204+00:00"
+        },
+        {
+          "id": "e24-track-5",
+          "title": "共用一块主板，为什么要分别报三种产品的交付进度？",
+          "learning": "Novena 四月自述主板与桌面机订单已履约，笔记本只完成约四分之一；后续团队承担主板库存风险，渠道伙伴安排其他配件生产。",
+          "application": "在学习机首发复盘中按型号列已承诺、已发货、缺件和换货预留，再由实际承担库存资金的人确认下一批可售量。",
+          "boundary": "小批量历史案例；四月材料未给出最终履约率、退换消耗或盈利结果。",
+          "itemIds": [
+            "e24-novena-stock"
+          ],
+          "updatedAt": "2026-11-24T10:49:21.407951+00:00"
         }
       ],
-      "updatedAt": "2026-11-22T10:42:39.386204+00:00"
+      "updatedAt": "2026-11-24T10:49:21.407951+00:00"
     },
     "chain-1": {
       "attemptedAt": "2026-11-23T10:46:17.398881+00:00",
@@ -1516,77 +1533,60 @@
       "updatedAt": "2026-11-23T10:46:17.398881+00:00"
     },
     "chain-6": {
-      "attemptedAt": "2026-11-23T00:52:06.880964+00:00",
+      "attemptedAt": "2026-11-24T10:49:21.407951+00:00",
       "status": "partial",
-      "assessment": "有道三季度智能设备毛利率由 50.3% 降至 41.0%。公司解释为物料成本增加；同期网易披露调整 SKU 组合及推出两款笔。",
+      "assessment": "核对 Shopify 当前帮助页的按市场、按订单和按商品利润小节；本轮浏览器取得正文。",
       "gaps": [
         "已复核两个公司披露的渠道层级及贡献毛益的通常计算方式。读书郎单店合同的费率、退货分摊和各经销商终端动销台账本轮未取得，无法核算单店贡献。"
       ],
       "reviewedFields": [
-        "metrics"
+        "exercise"
       ],
       "evidence": [
         {
-          "itemId": "m23-ydft",
-          "title": "有道智能设备毛利率降至 41%，怎样追到成本和产品组合？",
+          "itemId": "shopify-profit-cost-coverage",
+          "title": "促销后这款学习机到底赚了多少？先查利润报表漏掉了哪些订单",
           "facts": [
             {
-              "claim": "有道披露智能设备业务的毛利率与同比口径。",
-              "sourceUrl": "https://markets.ft.markitdigital.com/data/announce/detail?dockey=600-202611190400PR_NEWS_USPRX____CN02238-1",
-              "locator": "Gross Margin by business"
+              "claim": "商品或规格售出时已登记成本，才能进入利润统计。",
+              "sourceUrl": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
+              "locator": "Adding cost per item"
             },
             {
-              "claim": "演示列出词典笔型号和近期 SKU 调整。",
-              "sourceUrl": "https://ir.netease.com/static-files/4ce9997f-f8b2-4df7-a71e-a754261a5fb4",
-              "locator": "有道业务页 · Smart devices 段"
+              "claim": "期间的折扣和退款会影响毛利率。",
+              "sourceUrl": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
+              "locator": "Discounts and refunds"
             }
           ],
-          "boundary": "财报为未经审计的业务汇总，无法算出其中任何一支笔的利润，也不能定位某个零件涨价或个别团队的人员变化。",
+          "boundary": "依据 Shopify 自身报表说明。公开资料没有给出国内学习机厂商的实际成本、返利合同、平台账期或单台贡献利润。",
           "sources": [
             {
-              "url": "https://markets.ft.markitdigital.com/data/announce/detail?dockey=600-202611190400PR_NEWS_USPRX____CN02238-1",
-              "publisherGroup": "有道（公司财报）",
-              "name": "有道（公司财报）",
-              "publishedAt": "2026-11-19",
-              "role": "official",
-              "textHash": "40c398a58ed502614787cea88f119b921c881933b039792df29593a768e9217f",
-              "readAt": "2026-11-23T00:43:07.295939+00:00",
-              "coverage": "body"
-            },
-            {
-              "url": "https://ir.netease.com/static-files/4ce9997f-f8b2-4df7-a71e-a754261a5fb4",
-              "publisherGroup": "网易投资者关系",
-              "name": "网易三季度投资者演示 · 有道业务页",
+              "url": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
+              "publisherGroup": "Shopify",
+              "name": "Shopify 帮助中心",
               "publishedAt": null,
               "role": "official",
-              "textHash": "c396a17e82bd2bad5fc7d27d50309524aa2e58134d8d753ee8c913a952f7e6df",
-              "readAt": "2026-11-23T00:50:15.390318+00:00",
-              "coverage": "excerpt"
+              "textHash": "92598227f465721c412d7e62a7d2784258feb7af53950b9e0fe008dc604f63ac",
+              "readAt": "2026-11-19T10:39:23.445990+00:00",
+              "coverage": "body"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "m23-ydft",
-          "url": "https://markets.ft.markitdigital.com/data/announce/detail?dockey=600-202611190400PR_NEWS_USPRX____CN02238-1",
-          "checkedAt": "2026-11-23T00:43:07.295939+00:00",
+          "itemId": "shopify-profit-cost-coverage",
+          "url": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
+          "checkedAt": "2026-11-24T10:49:21.317434+00:00",
           "state": "body",
-          "note": "读取智能设备净收入、毛利率、材料成本解释。"
-        },
-        {
-          "itemId": "m23-ydft",
-          "url": "https://ir.netease.com/static-files/4ce9997f-f8b2-4df7-a71e-a754261a5fb4",
-          "checkedAt": "2026-11-23T00:50:15.390318+00:00",
-          "state": "body",
-          "note": "仅核对投资者演示中有道业务与两款笔的段落。"
+          "note": "核对 Shopify 当前帮助页的按市场、按订单和按商品利润小节；本轮浏览器取得正文。"
         }
       ],
-      "reviewedAt": "2026-11-23T00:52:06.880964+00:00",
+      "reviewedAt": "2026-11-24T10:49:21.407951+00:00",
       "patch": {
         "flow": "用户需求与库存 → 定价、渠道政策、交付承诺与终端反馈 还需核对销售主体、支持地区、购买凭证与设备序列号在售后受理中的衔接。",
         "team": "销售、市场、计划、零售、财务对齐销售预测、货盘、促销与退货规则。 XREAL 的公开流程提示渠道与服务之间存在购买证据交接；研究时应确认能否复用已授权订单信息，减少用户重复提交。",
-        "exercise": "选一个销售活动，列出从备货到退货的责任与反馈，不只统计订单数。 选择一个具体渠道和地区，画出从购买承诺到问题处理的用户路径，记录需要重复提供的信息及尚未明确的责任。 对一次售罄率变化另列统计窗口、库存范围及模型版本，先排除统计变更再讨论备货和促销。",
+        "exercise": "选一个销售活动，列出从备货到退货的责任与反馈，不只统计订单数。 选择一个具体渠道和地区，画出从购买承诺到问题处理的用户路径，记录需要重复提供的信息及尚未明确的责任。 对一次售罄率变化另列统计窗口、库存范围及模型版本，先排除统计变更再讨论备货和促销。 抽取一笔跨境订单，对照商品毛利与订单利润两张报表，分别找出买家付的运费税费、店铺实际承担的运费税费，标出只有一侧有数据的项目。",
         "metrics": "网店转化率先确认分母：Shopify以购买会话占总会话计算，同一会话可含多笔订单。比较时固定期间、漏斗路径、过滤与计量版本；不能直接套到门店或经销商。渠道贡献金额按同范围收入扣除变动成本；贡献率再除以该收入。先确认退款已冲减的项目，核对实际合同中按件和固定收费的部分。 售罄率另核库存分母：Shopify示例为售出数量/（售出数量+期末库存）；其2026年10月1日库存模型改变，跨期不能直接解释为经营变化。 利润对账另核售出时成本字段覆盖的规格，并按净销售额核对折扣、退款和缺成本成交金额。 产品组合变更时，经营复盘先标明收入和毛利的业务范围，再按机型、出货批次、物料成本与渠道折扣追溯。单个品类新增产品不等于该品类实现分部毛利。",
         "basics": "Sell-in 记录供给方卖给渠道的交易。Sell-through 的下一手买方需按数据提供方确认：零售渠道可能报到消费者，多级经销也可能只报到下一家经销商或门店。汇总时应分开交易层级。"
       },
@@ -1667,9 +1667,20 @@
             "m23-ydft"
           ],
           "updatedAt": "2026-11-23T00:52:06.880964+00:00"
+        },
+        {
+          "id": "e24-chain-6",
+          "title": "同一台设备卖到两个市场，运费和税费在哪一层核对？",
+          "learning": "Shopify 的按订单及按市场报表分别列买家支付与店铺承担的费用。商品毛利则取净销售额减商品成本。",
+          "application": "把同一订单的物流收费、实付运费、关税与进口税分别对齐。比较市场前还要核对同一时期和退款范围。",
+          "boundary": "平台报表结构提供对账方法；实际交易费用、单店合同和贡献利润还要看店铺台账。",
+          "itemIds": [
+            "shopify-profit-cost-coverage"
+          ],
+          "updatedAt": "2026-11-24T10:49:21.407951+00:00"
         }
       ],
-      "updatedAt": "2026-11-23T00:52:06.880964+00:00"
+      "updatedAt": "2026-11-24T10:49:21.407951+00:00"
     },
     "track-0": {
       "attemptedAt": "2026-11-23T10:46:17.398881+00:00",
@@ -1820,43 +1831,41 @@
       "updatedAt": "2026-11-23T10:46:17.398881+00:00"
     },
     "track-1": {
-      "attemptedAt": "2026-11-22T10:42:39.386204+00:00",
+      "attemptedAt": "2026-11-24T10:49:21.407951+00:00",
       "status": "partial",
-      "assessment": "将机器人到点完成、识别误报和需要人工补做的真实残留分开，检查产品指南给出的交付接口与可观察结果。",
+      "assessment": "核对大疆美国帮助中心服务等级表、四步流程与 FAQ 的跨区域使用条款。",
       "gaps": [
-        "普渡已提供清洁人员接手的操作依据；仍缺单一站点的事件日志、人工耗时、复核后任务完成情况。",
-        "不同无人机保养范围与机器人跨厂商可比实测仍待核实。"
+        "缺单一站点的实际作业工时、任务完成日志及跨厂商可比记录。"
       ],
       "reviewedFields": [
-        "metrics",
-        "team"
+        "constraint"
       ],
       "evidence": [
         {
-          "itemId": "e22-pudu",
-          "title": "清洁机器人把地砖花纹认成污渍，现场人员该怎么接手？",
+          "itemId": "e20-dji",
+          "title": "大疆行业无人机送保养，发现另需付费的损坏时谁决定？",
           "facts": [
             {
-              "claim": "指南将顽固污渍的现场确认与手动清洁交给清洁人员。",
-              "sourceUrl": "https://academy.pudutech.com/zh/docs/PUDU-CC1-Pro-cao-zuo-zhi-nan",
-              "locator": "4.9.1，09 人机协作－引导清洁"
+              "claim": "超出保养范围的损坏由客户选择是否另行付费维修。",
+              "sourceUrl": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
+              "locator": "How to Use Maintenance Service · Step 3"
             },
             {
-              "claim": "手册允许通过手动校验或自动学习处理易被误识别的地面花纹。",
-              "sourceUrl": "https://academy.pudutech.com/zh/docs/PUDU-CC1-Pro-cao-zuo-zhi-nan",
-              "locator": "4.9.1，08 AI自动/手动豁免"
+              "claim": "申请后生成工单号，用户可查看进度并下载维护报告。",
+              "sourceUrl": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
+              "locator": "Service Progress Inquiry · Maintenance records"
             }
           ],
-          "boundary": "来自型号 CCBC02、V5.0 操作指南；未取得现场清洁率、误检率或人工节省工时。",
+          "boundary": "依据大疆英文支持页列明的企业机型和地区，未查得中国大陆统一的服务价格、周转时长或实际完成率。",
           "sources": [
             {
-              "url": "https://academy.pudutech.com/zh/docs/PUDU-CC1-Pro-cao-zuo-zhi-nan",
-              "publisherGroup": "普渡学院",
-              "name": "普渡学院",
-              "publishedAt": "2026-03-13",
+              "url": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
+              "publisherGroup": "大疆技术支持",
+              "name": "大疆技术支持",
+              "publishedAt": null,
               "role": "official",
-              "textHash": "538b0cd85ff2f2f296e1ca3fb9e6cab907463548852aec8a904b9eec9fd8390b",
-              "readAt": "2026-11-22T10:37:46.622174+00:00",
+              "textHash": "e0195372c19294852d06d4eb82cbb81d94c522c4a2a17d9e33b14e296abde504",
+              "readAt": "2026-11-20T10:42:17.557207+00:00",
               "coverage": "body"
             }
           ]
@@ -1864,17 +1873,17 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "e22-pudu",
-          "url": "https://academy.pudutech.com/zh/docs/PUDU-CC1-Pro-cao-zuo-zhi-nan",
-          "checkedAt": "2026-11-22T10:37:46.622174+00:00",
+          "itemId": "e20-dji",
+          "url": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
+          "checkedAt": "2026-11-24T10:49:21.317434+00:00",
           "state": "body",
-          "note": "本轮读取正文。V5.0 清洁设置中的误报豁免、引导清洁及协作清洁。"
+          "note": "核对大疆美国帮助中心服务等级表、四步流程与 FAQ 的跨区域使用条款。"
         }
       ],
-      "reviewedAt": "2026-11-22T10:42:39.386204+00:00",
+      "reviewedAt": "2026-11-24T10:49:21.407951+00:00",
       "patch": {
         "examples": "DJI、宇树、NVIDIA 生态；新增上纬新材启元作为量产与商业化阶段观察对象，HALO 作为基于宇树 G1 的研究系统样本。",
-        "constraint": "真实环境中的安全、可靠性与维护成本。宇树实物部署说明明确其程序仅为示例、不是稳定控制；模型能运行与业务可交付须分别取证，不能从演示外推任务可靠性。",
+        "constraint": "真实环境中的安全、可靠性与维护成本。宇树实物部署说明明确其程序仅为示例、不是稳定控制；模型能运行与业务可交付须分别取证，不能从演示外推任务可靠性。 比较服务周转时间时应记录机型、服务等级和使用地区。大疆该计划的三档服务均含清洁、检查、更新及校准，核心部件更换只列在高级档。",
         "metrics": "任务成功率；人工接管频次；故障恢复时间；现场工时 使用频次另列统计对象、窗口与分母；高频交互不直接证明任务完成、人工负担减少或用户价值。 按同一批任务分列误报位置、真实残留、人工实际处理及用时，保留未处理项。",
         "team": "控制、感知、机械、电气、仿真、现场交付 交付团队复盘一次保养时，可用同一工单对照原授权、追加报价、客户决定和维护报告，分开记录等候用户与实际作业时间。 普渡 CC1 Pro 把真实残留交由现场清洁人员确认和清理；对花纹等误报则另有豁免入口。"
       },
@@ -1934,9 +1943,20 @@
             "e22-pudu"
           ],
           "updatedAt": "2026-11-22T10:42:39.386204+00:00"
+        },
+        {
+          "id": "e24-track-1",
+          "title": "两台无人机的保养时间，可以直接比吗？",
+          "learning": "大疆服务表对易损件与核心部件分别列项；服务地区还影响跨区使用时的费用及受理条件。",
+          "application": "抽查两张工单，先匹配机型、地区、服务档与追加维修授权，再分出运输、等待确认和实际作业时间。",
+          "boundary": "限大疆该份行业无人机服务说明。没有相同条件的工单数据，无法比较效率。",
+          "itemIds": [
+            "e20-dji"
+          ],
+          "updatedAt": "2026-11-24T10:49:21.407951+00:00"
         }
       ],
-      "updatedAt": "2026-11-22T10:42:39.386204+00:00"
+      "updatedAt": "2026-11-24T10:49:21.407951+00:00"
     },
     "track-3": {
       "attemptedAt": "2026-11-23T00:52:06.880964+00:00",
@@ -3244,6 +3264,22 @@
           "hash": "c72f2c5e2280d565c5b59904746cbeaa6822e6abe9f9aeb616cd47e5299bf7c8",
           "decision": "integrated",
           "reason": "文石分别说明两类内容的同步；独立笔记可能在退出账号后暂不可见，阅读数据还要求同文件、同目录。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-24T10:49:21.407951+00:00",
+      "reviewedNodes": [
+        "track-1",
+        "track-5",
+        "chain-6"
+      ],
+      "decisions": [
+        {
+          "itemId": "e24-novena-stock",
+          "hash": "68db3cbaa04376936df78fc88ad056e535c8a101edca3849a92b155da2d4c319",
+          "decision": "integrated",
+          "reason": "四月项目记录补足投产后各型号实际履约进度和团队、渠道平台的备货分工。"
         }
       ]
     }
@@ -13357,6 +13393,230 @@
           "checkedAt": "2026-11-24T00:44:56.959741+00:00",
           "state": "body",
           "note": "本轮读取正文。核对 NeoReader 的目录、备份包、200MB 与双方固件条件。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-1",
+      "reviewedAt": "2026-11-24T10:49:21.407951+00:00",
+      "status": "partial",
+      "assessment": "核对大疆美国帮助中心服务等级表、四步流程与 FAQ 的跨区域使用条款。",
+      "gaps": [
+        "缺单一站点的实际作业工时、任务完成日志及跨厂商可比记录。"
+      ],
+      "reviewedFields": [
+        "constraint"
+      ],
+      "changes": {
+        "constraint": {
+          "before": "真实环境中的安全、可靠性与维护成本。宇树实物部署说明明确其程序仅为示例、不是稳定控制；模型能运行与业务可交付须分别取证，不能从演示外推任务可靠性。",
+          "after": "真实环境中的安全、可靠性与维护成本。宇树实物部署说明明确其程序仅为示例、不是稳定控制；模型能运行与业务可交付须分别取证，不能从演示外推任务可靠性。 比较服务周转时间时应记录机型、服务等级和使用地区。大疆该计划的三档服务均含清洁、检查、更新及校准，核心部件更换只列在高级档。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e24-track-1",
+            "title": "两台无人机的保养时间，可以直接比吗？",
+            "learning": "大疆服务表对易损件与核心部件分别列项；服务地区还影响跨区使用时的费用及受理条件。",
+            "application": "抽查两张工单，先匹配机型、地区、服务档与追加维修授权，再分出运输、等待确认和实际作业时间。",
+            "boundary": "限大疆该份行业无人机服务说明。没有相同条件的工单数据，无法比较效率。",
+            "itemIds": [
+              "e20-dji"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e20-dji",
+          "title": "大疆行业无人机送保养，发现另需付费的损坏时谁决定？",
+          "facts": [
+            {
+              "claim": "超出保养范围的损坏由客户选择是否另行付费维修。",
+              "sourceUrl": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
+              "locator": "How to Use Maintenance Service · Step 3"
+            },
+            {
+              "claim": "申请后生成工单号，用户可查看进度并下载维护报告。",
+              "sourceUrl": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
+              "locator": "Service Progress Inquiry · Maintenance records"
+            }
+          ],
+          "boundary": "依据大疆英文支持页列明的企业机型和地区，未查得中国大陆统一的服务价格、周转时长或实际完成率。",
+          "sources": [
+            {
+              "url": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
+              "publisherGroup": "大疆技术支持",
+              "name": "大疆技术支持",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "e0195372c19294852d06d4eb82cbb81d94c522c4a2a17d9e33b14e296abde504",
+              "readAt": "2026-11-20T10:42:17.557207+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e20-dji",
+          "url": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
+          "checkedAt": "2026-11-24T10:49:21.317434+00:00",
+          "state": "body",
+          "note": "核对大疆美国帮助中心服务等级表、四步流程与 FAQ 的跨区域使用条款。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-5",
+      "reviewedAt": "2026-11-24T10:49:21.407951+00:00",
+      "status": "partial",
+      "assessment": "公开索引取得 2015 年 4 月项目原文履约、余料与补货分工段；原站直连 403。阶段进度为作者自述。",
+      "gaps": [
+        "已取得团队公开的实际投产决定，仍缺其内部签核与完整批次良率，其他项目的签核授权仍待核实。"
+      ],
+      "reviewedFields": [
+        "chain"
+      ],
+      "changes": {
+        "chain": {
+          "before": "用户需求 → 原型 → 设计验证 → 生产验证 → 量产与服务",
+          "after": "用户需求 → 原型 → 设计验证 → 生产验证 → 量产与服务 小批量投产后，按产品配置分开核对已履约订单和后续补产。项目团队与渠道伙伴可以分别承担主板和配件的备货责任。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e24-track-5",
+            "title": "共用一块主板，为什么要分别报三种产品的交付进度？",
+            "learning": "Novena 四月自述主板与桌面机订单已履约，笔记本只完成约四分之一；后续团队承担主板库存风险，渠道伙伴安排其他配件生产。",
+            "application": "在学习机首发复盘中按型号列已承诺、已发货、缺件和换货预留，再由实际承担库存资金的人确认下一批可售量。",
+            "boundary": "小批量历史案例；四月材料未给出最终履约率、退换消耗或盈利结果。",
+            "itemIds": [
+              "e24-novena-stock"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e24-novena-stock",
+          "title": "众筹交付后，谁来垫钱做现货，谁来管配件？",
+          "facts": [
+            {
+              "claim": "项目团队披露了自己与平台之间的补产分工。",
+              "sourceUrl": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1566",
+              "locator": "April Backer Update · 末段，主板与配件生产"
+            },
+            {
+              "claim": "作者按三种产品分别报告履约进度。",
+              "sourceUrl": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1566",
+              "locator": "首段，履约进度"
+            },
+            {
+              "claim": "团队计划核清已承诺订单并为缺陷机留出余量之后再出售剩件。",
+              "sourceUrl": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1566",
+              "locator": "余料处理段"
+            }
+          ],
+          "boundary": "这是小批量开源电脑项目当年的决策。团队披露的是阶段履约与后续备货安排，未给出最终缺货率、备件消耗和利润。",
+          "sources": [
+            {
+              "url": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1566",
+              "publisherGroup": "Kosagi 项目团队",
+              "name": "Kosagi 项目团队",
+              "publishedAt": "2015-04-12",
+              "role": "official",
+              "textHash": "c3e7c3ab281b66c1b839d21b1dc48e304c89f83d8084ac024deab0b8497e9732",
+              "readAt": "2026-11-24T10:48:51.625951+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e24-novena-stock",
+          "url": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1566",
+          "checkedAt": "2026-11-24T10:49:21.317434+00:00",
+          "state": "cached",
+          "note": "公开索引取得 2015 年 4 月项目原文履约、余料与补货分工段；原站直连 403。阶段进度为作者自述。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-6",
+      "reviewedAt": "2026-11-24T10:49:21.407951+00:00",
+      "status": "partial",
+      "assessment": "核对 Shopify 当前帮助页的按市场、按订单和按商品利润小节；本轮浏览器取得正文。",
+      "gaps": [
+        "已复核两个公司披露的渠道层级及贡献毛益的通常计算方式。读书郎单店合同的费率、退货分摊和各经销商终端动销台账本轮未取得，无法核算单店贡献。"
+      ],
+      "reviewedFields": [
+        "exercise"
+      ],
+      "changes": {
+        "exercise": {
+          "before": "选一个销售活动，列出从备货到退货的责任与反馈，不只统计订单数。 选择一个具体渠道和地区，画出从购买承诺到问题处理的用户路径，记录需要重复提供的信息及尚未明确的责任。 对一次售罄率变化另列统计窗口、库存范围及模型版本，先排除统计变更再讨论备货和促销。",
+          "after": "选一个销售活动，列出从备货到退货的责任与反馈，不只统计订单数。 选择一个具体渠道和地区，画出从购买承诺到问题处理的用户路径，记录需要重复提供的信息及尚未明确的责任。 对一次售罄率变化另列统计窗口、库存范围及模型版本，先排除统计变更再讨论备货和促销。 抽取一笔跨境订单，对照商品毛利与订单利润两张报表，分别找出买家付的运费税费、店铺实际承担的运费税费，标出只有一侧有数据的项目。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e24-chain-6",
+            "title": "同一台设备卖到两个市场，运费和税费在哪一层核对？",
+            "learning": "Shopify 的按订单及按市场报表分别列买家支付与店铺承担的费用。商品毛利则取净销售额减商品成本。",
+            "application": "把同一订单的物流收费、实付运费、关税与进口税分别对齐。比较市场前还要核对同一时期和退款范围。",
+            "boundary": "平台报表结构提供对账方法；实际交易费用、单店合同和贡献利润还要看店铺台账。",
+            "itemIds": [
+              "shopify-profit-cost-coverage"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "shopify-profit-cost-coverage",
+          "title": "促销后这款学习机到底赚了多少？先查利润报表漏掉了哪些订单",
+          "facts": [
+            {
+              "claim": "商品或规格售出时已登记成本，才能进入利润统计。",
+              "sourceUrl": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
+              "locator": "Adding cost per item"
+            },
+            {
+              "claim": "期间的折扣和退款会影响毛利率。",
+              "sourceUrl": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
+              "locator": "Discounts and refunds"
+            }
+          ],
+          "boundary": "依据 Shopify 自身报表说明。公开资料没有给出国内学习机厂商的实际成本、返利合同、平台账期或单台贡献利润。",
+          "sources": [
+            {
+              "url": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
+              "publisherGroup": "Shopify",
+              "name": "Shopify 帮助中心",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "92598227f465721c412d7e62a7d2784258feb7af53950b9e0fe008dc604f63ac",
+              "readAt": "2026-11-19T10:39:23.445990+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "shopify-profit-cost-coverage",
+          "url": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
+          "checkedAt": "2026-11-24T10:49:21.317434+00:00",
+          "state": "body",
+          "note": "核对 Shopify 当前帮助页的按市场、按订单和按商品利润小节；本轮浏览器取得正文。"
         }
       ]
     }
