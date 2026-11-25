@@ -3,24 +3,39 @@
     {
       "id": "daily-2026-11-25",
       "date": "2026-11-25",
-      "generatedAt": "2026-11-25T00:47:54.771529+00:00",
+      "generatedAt": "2026-11-25T10:47:05.683157+00:00",
       "state": "partial",
       "bootstrap": false,
       "windowNote": "优先最近 72 小时的新事件；按北京时间出刊。7 期内同一进展不重复。",
       "itemIds": [
+        "e25-itctext",
+        "e25-trend",
         "m25-nand",
         "m25-mi",
+        "e25-r0",
         "m25-p3",
         "m25-r10",
         "m25-aws"
       ],
       "developmentKeys": [
         [
+          "e25-itctext",
+          "initial"
+        ],
+        [
+          "e25-trend",
+          "initial"
+        ],
+        [
           "m25-nand",
           "initial"
         ],
         [
           "m25-mi",
+          "initial"
+        ],
+        [
+          "e25-r0",
           "initial"
         ],
         [
@@ -36,28 +51,34 @@
           "initial"
         ]
       ],
-      "reviewedCount": 9,
+      "reviewedCount": 6,
       "failedSources": [
         "本次抓取失败：curl: (28) Operation timed out after 35010 milliseconds with 0 bytes received\n",
-        "作业帮采购搜索本次直连超过重定向上限，未取得匹配岗位正文。"
+        "作业帮采购搜索本次直连超过重定向上限，未取得匹配岗位正文。",
+        "入口返回 HTTP 429；另查具体产品页。"
       ],
-      "coverage": "审读西安 NAND 改线、港交所小米财报、亚马逊技术交易、拓竹与华为新品等正文；核对三家核心学习硬件公司的十个岗位链接及阅读器服务说明。 从作业帮官方最新职位另读教育转介绍、广告商业化和财务分析三个岗位。",
+      "coverage": "审读西安 NAND 改线、港交所小米财报、亚马逊技术交易、拓竹与华为新品等正文；核对三家核心学习硬件公司的十个岗位链接及阅读器服务说明。 从作业帮官方最新职位另读教育转介绍、广告商业化和财务分析三个岗位。 晚间补核存储专利进口调查、采购展望、小鹏量产计划，以及儿童播放器召回和系统更新等实践。",
       "knownGaps": [
         "三星西安改线目标来自行业消息，未取得设备验收或客户配额；内存民事案未取得新的实体裁判。",
         "十代 Kindle 安全更新承诺不等于书店停服。语音研究尚无量产中文学习机儿童自由回答与教师评分对照。",
-        "作业帮此前关闭的教辅渠道岗位仍显示关闭；官方社招用“采购”检索无匹配，供应链职责正文仍有缺口。"
+        "作业帮此前关闭的教辅渠道岗位仍显示关闭；官方社招用“采购”检索无匹配，供应链职责正文仍有缺口。",
+        "未取得学习机具体内存料号的新报价、小鹏量产验收或 Yoto 两轮召回的逐户完成率。"
       ],
       "coverageCheck": {
         "newsResearch": {
           "passed": true,
-          "bodyCount": 9,
+          "bodyCount": 16,
           "publisherGroups": [
+            "IT之家",
             "IT之家现场报道",
             "IT之家转述未证实消息",
             "Tom’s Hardware",
+            "TrendForce 集邦咨询",
             "亚马逊",
+            "佳能",
             "小米集团",
             "拓竹科技",
+            "美国国际贸易委员会",
             "首尔经济日报"
           ],
           "requiredBodies": 6,
@@ -86,8 +107,103 @@
           "科大讯飞"
         ],
         "gaps": [],
-        "usableSources": 47
-      }
+        "usableSources": 65
+      },
+      "revisions": [
+        {
+          "reason": "晚间取得美国国际贸易委员会正式终止决定、集邦新预测及小鹏量产计划，补录三条进展及三篇实践，保留晨间扫描。",
+          "replacedAt": "2026-11-25T10:47:05.683157+00:00",
+          "edition": {
+            "id": "daily-2026-11-25",
+            "date": "2026-11-25",
+            "generatedAt": "2026-11-25T00:47:54.771529+00:00",
+            "state": "partial",
+            "bootstrap": false,
+            "windowNote": "优先最近 72 小时的新事件；按北京时间出刊。7 期内同一进展不重复。",
+            "itemIds": [
+              "m25-nand",
+              "m25-mi",
+              "m25-p3",
+              "m25-r10",
+              "m25-aws"
+            ],
+            "developmentKeys": [
+              [
+                "m25-nand",
+                "initial"
+              ],
+              [
+                "m25-mi",
+                "initial"
+              ],
+              [
+                "m25-p3",
+                "initial"
+              ],
+              [
+                "m25-r10",
+                "initial"
+              ],
+              [
+                "m25-aws",
+                "initial"
+              ]
+            ],
+            "reviewedCount": 9,
+            "failedSources": [
+              "本次抓取失败：curl: (28) Operation timed out after 35010 milliseconds with 0 bytes received\n",
+              "作业帮采购搜索本次直连超过重定向上限，未取得匹配岗位正文。"
+            ],
+            "coverage": "审读西安 NAND 改线、港交所小米财报、亚马逊技术交易、拓竹与华为新品等正文；核对三家核心学习硬件公司的十个岗位链接及阅读器服务说明。 从作业帮官方最新职位另读教育转介绍、广告商业化和财务分析三个岗位。",
+            "knownGaps": [
+              "三星西安改线目标来自行业消息，未取得设备验收或客户配额；内存民事案未取得新的实体裁判。",
+              "十代 Kindle 安全更新承诺不等于书店停服。语音研究尚无量产中文学习机儿童自由回答与教师评分对照。",
+              "作业帮此前关闭的教辅渠道岗位仍显示关闭；官方社招用“采购”检索无匹配，供应链职责正文仍有缺口。"
+            ],
+            "coverageCheck": {
+              "newsResearch": {
+                "passed": true,
+                "bodyCount": 9,
+                "publisherGroups": [
+                  "IT之家现场报道",
+                  "IT之家转述未证实消息",
+                  "Tom’s Hardware",
+                  "亚马逊",
+                  "小米集团",
+                  "拓竹科技",
+                  "首尔经济日报"
+                ],
+                "requiredBodies": 6,
+                "requiredPublisherGroups": 3
+              },
+              "passed": true,
+              "companies": [
+                "作业帮",
+                "华为",
+                "小米",
+                "猿辅导（小猿）",
+                "科大讯飞"
+              ],
+              "stages": [
+                "供应链与采购",
+                "制造与交付",
+                "服务与生命周期",
+                "渠道与销售",
+                "经营与组织",
+                "质量与合规",
+                "需求与规划"
+              ],
+              "recruitmentCompanies": [
+                "作业帮",
+                "猿辅导（小猿）",
+                "科大讯飞"
+              ],
+              "gaps": [],
+              "usableSources": 47
+            }
+          }
+        }
+      ]
     },
     {
       "id": "daily-2026-11-24",

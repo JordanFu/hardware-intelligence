@@ -3,86 +3,56 @@
   "startedAt": "2026-11-06T07:45:08.434151+00:00",
   "nodes": {
     "chain-3": {
-      "attemptedAt": "2026-11-24T00:51:25.466857+00:00",
+      "attemptedAt": "2026-11-25T10:47:40.796614+00:00",
       "status": "partial",
-      "assessment": "核对思特威公司公告的资金与爬坡风险，并用协会原文限定高层板交期数据的范围。",
+      "assessment": "集邦在同一份展望中分别预计 NAND 进入下行周期、DRAM 供需仍紧但涨势放缓，买方需求变动针对特定产品和市场。",
       "gaps": [
         "补核 Oracle 26C 的 MOQ 计算；各企业实际参数、运输起止、库存边界仍待订单和台账核验。",
-        "公开资料没有供应商审核标准、实际通过率、采购质量接口和履约结果。"
+        "公开资料没有供应商审核标准、实际通过率、采购质量接口和履约结果。",
+        "具体教育设备的供应商报价、批次和生效时间尚缺。"
       ],
       "reviewedFields": [
-        "flow"
+        "exercise"
       ],
       "evidence": [
         {
-          "itemId": "m24-board",
-          "title": "思特威拟用银行贷款增资晶圆代工厂，董事会通过后还要看实际供货",
+          "itemId": "e25-trend",
+          "title": "集邦下调 2027 年存储业展望，DRAM 与 NAND 的价格方向为何不同？",
           "facts": [
             {
-              "claim": "公司披露本次增资的资金来源。",
-              "sourceUrl": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12717868&stockid=688213",
-              "locator": "公司公告 2026-053 出资方式与重要风险提示"
+              "claim": "集邦预测 DRAM 合约价季度涨幅将收窄。",
+              "sourceUrl": "https://www.trendforce.com/presscenter/news/20261125-13321.html",
+              "locator": "原文 DRAM 展望段"
             }
           ],
-          "boundary": "董事会审议与拟取得股权已有公告，最终交割、客户良率和实际供应量仍待披露。",
+          "boundary": "这是机构对 2027 年的预测；未披露任何学习机客户的合同价、交期或已生效折扣。",
           "sources": [
             {
-              "url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12717868&stockid=688213",
-              "publisherGroup": "思特威（公司公告）",
-              "name": "思特威（公司公告）",
-              "publishedAt": "2026-11-23",
-              "role": "official",
-              "textHash": "ef73c07b2ed7a1baacf4f20a66b97237a010f4f68a2e4aa798583df24740dfc2",
-              "readAt": "2026-11-24T00:44:51.361611+00:00",
+              "url": "https://www.trendforce.com/presscenter/news/20261125-13321.html",
+              "publisherGroup": "TrendForce 集邦咨询",
+              "name": "TrendForce 集邦咨询",
+              "publishedAt": "2026-11-25",
+              "role": "research",
+              "textHash": "d1ae5ce46ab6ed7934e7457421f0b62bfa09d4a7f400e8eee68144000c2aa9d3",
+              "readAt": "2026-11-25T10:41:52.423319+00:00",
               "coverage": "body"
-            }
-          ]
-        },
-        {
-          "itemId": "m24-pcbweb",
-          "title": "高层板交期拉长时，为什么只盯制板厂产能还不够？",
-          "facts": [
-            {
-              "claim": "协会披露了高层板交期范围。",
-              "sourceUrl": "https://www.globenewswire.com/fr/news-release/2026/11/19/3406285/0/en/global-electronics-association-growing-shortages-across-the-pcb-supply-chain-threaten-the-next-wave-of-ai-and-electronics.html",
-              "locator": "Industry Alert · supply and materials data"
-            }
-          ],
-          "boundary": "这是一份 11 月 19 日发布的行业风险提示；未披露学习机等具体订单的交付结果。",
-          "sources": [
-            {
-              "url": "https://www.globenewswire.com/fr/news-release/2026/11/19/3406285/0/en/global-electronics-association-growing-shortages-across-the-pcb-supply-chain-threaten-the-next-wave-of-ai-and-electronics.html",
-              "publisherGroup": "全球电子协会",
-              "name": "全球电子协会",
-              "publishedAt": "2026-11-19",
-              "role": "official",
-              "textHash": "6c1514f8ae55cb570528122dfe5cc973ffb942437539b95b15b79713807a7e33",
-              "readAt": "2026-11-24T00:50:28.196272+00:00",
-              "coverage": "excerpt"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "m24-board",
-          "url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12717868&stockid=688213",
-          "checkedAt": "2026-11-24T00:44:51.361611+00:00",
+          "itemId": "e25-trend",
+          "url": "https://www.trendforce.com/presscenter/news/20261125-13321.html",
+          "checkedAt": "2026-11-25T10:41:52.423319+00:00",
           "state": "body",
-          "note": "本轮读取正文。复查投资公告 2026-053 的出资、审批状态、代工业务与风险提示。"
-        },
-        {
-          "itemId": "m24-pcbweb",
-          "url": "https://www.globenewswire.com/fr/news-release/2026/11/19/3406285/0/en/global-electronics-association-growing-shortages-across-the-pcb-supply-chain-threaten-the-next-wave-of-ai-and-electronics.html",
-          "checkedAt": "2026-11-24T00:50:28.196272+00:00",
-          "state": "body",
-          "note": "本轮读取原文相关段落。复核协会原发风险提示中材料制约、订单、出货和高层板交期段。"
+          "note": "本轮读取正文。核对企业级 SSD 采购计划、DRAM 合约涨幅与预测期间。"
         }
       ],
-      "reviewedAt": "2026-11-24T00:51:25.466857+00:00",
+      "reviewedAt": "2026-11-25T10:47:40.796614+00:00",
       "patch": {
         "basics": "MOQ 是最小订购量；交期包含采购、生产和运输，不能只看供应商承诺。 供应商登记仅是提交资料的入口，不能自动等同于资格审核通过或获得采购订单。 Oracle 26C 计划模块中，净需求 100 件且最小订购量设为 150 件，会产生 150 件的建议单；建议量与实际签约量要用单据另行核对。",
-        "exercise": "选一颗关键器件，写出交期风险、替代验证要求和缺料升级路径。 再区分供应商资料登记、资格核验、质量验收和订单获取；无公开依据的门槛标为待核验。",
+        "exercise": "选一颗关键器件，写出交期风险、替代验证要求和缺料升级路径。 再区分供应商资料登记、资格核验、质量验收和订单获取；无公开依据的门槛标为待核验。 预算评审时将 DRAM 和 NAND 拆成两行，各自列出应用、料号、报价有效期与交货批次。把机构预测写入情景假设，收到供应商报价后再调整成本表。",
         "team": "研发与采购共同明确替代料边界；供应商质量、计划、财务一起管理风险。小猿管培岗位另提供具体交接样本：销售计划提出配件需求，采购跟进合同和付款，工厂关注物料齐套，售后反馈问题；不能据此推断一人承担全部工作或拥有全部放行权。 采购核对具体通知与可订旧料，研发和质量核对样品及验证结论。放行责任需要项目授权文件。",
         "metrics": "库存周转天数 = 期间平均库存成本 / 期间销售成本 × 期间天数；口径与周期一致。 库存周转须明确成本口径。Oracle Retail 的该指标用本期已售商品成本除以期初、期末库存成本的均值。另将存储现货报价与按季合约报价分列，不能直接跨口径比较。",
         "flow": "预测与物料规格 → 合格供应、交期与库存方案 上游产品变更时，先核受影响料号、通知和实际到样日期，再分列申样期限、评估期限、拟首次出货、旧料末次订购。 代工股权投资、实际可用产能及达标批次要分别验证。电子板供应还要核对具体层数和所用基材；上游材料紧缺会限制制板扩产的交付作用。"
@@ -176,9 +146,20 @@
             "m24-pcbweb"
           ],
           "updatedAt": "2026-11-24T00:51:25.466857+00:00"
+        },
+        {
+          "id": "e25-trend-lesson",
+          "title": "一个“存储价格”数字够用来做采购预算吗？",
+          "learning": "集邦在同一份展望中分别预计 NAND 进入下行周期、DRAM 供需仍紧但涨势放缓，买方需求变动针对特定产品和市场。",
+          "application": "让采购提供同规格、同币种和同税费口径报价，财务核实结算条款，再回看哪个预测假设需要修正。",
+          "boundary": "机构预测没有给出学习机供应商的成交价、交期或采购数量。",
+          "itemIds": [
+            "e25-trend"
+          ],
+          "updatedAt": "2026-11-25T10:47:40.796614+00:00"
         }
       ],
-      "updatedAt": "2026-11-24T00:51:25.466857+00:00"
+      "updatedAt": "2026-11-25T10:47:40.796614+00:00"
     },
     "chain-7": {
       "attemptedAt": "2026-11-25T00:48:04.096649+00:00",
@@ -870,86 +851,55 @@
       "updatedAt": "2026-11-24T00:51:25.466857+00:00"
     },
     "track-2": {
-      "attemptedAt": "2026-11-24T00:51:25.466857+00:00",
+      "attemptedAt": "2026-11-25T10:47:40.796614+00:00",
       "status": "partial",
-      "assessment": "核对多平台控制的验收操作，以及同一家庭场景中近距离指引、远程发现和状态可见性的条件。",
+      "assessment": "Google 明确说明 Nest × Yale 离线时，具有限时授权的用户不能用口令开门。",
       "gaps": [
         "已核三份文档中的授权入口或角色；仍缺特定设备权限、离线撤权及跨平台实测。",
-        "没有可比故障率、用户样本和售后改善数据。"
+        "没有可比故障率、用户样本和售后改善数据。",
+        "未查得同一条件下不同品牌对离线限时授权的完整实测。"
       ],
       "reviewedFields": [
-        "chain",
         "constraint"
       ],
       "evidence": [
         {
-          "itemId": "m24-multi",
-          "title": "同一盏灯接入两个平台，怎样验证第二个平台真的接好了？",
+          "itemId": "e25-nest",
+          "title": "智能门锁离线，平时能用的限时授权还能兑现吗？",
           "facts": [
             {
-              "claim": "官方流程允许为第二个平台生成临时配对凭据。",
-              "sourceUrl": "https://support.google.com/googlehome/answer/13127223?hl=en-CA",
-              "locator": "Share the devices 与配对后的控制检查"
+              "claim": "该机型对限时授权用户给出单独的离线限制。",
+              "sourceUrl": "https://support.google.com/googlehome/answer/9233966?hl=en",
+              "locator": "Offline 使用说明 Important 段"
             }
           ],
-          "boundary": "仅限该指南描述的兼容配置。离线撤权、跨品牌响应时延及失败率仍须另测。",
+          "boundary": "限于对应机型及该帮助页描述的离线状态。其他产品的离线授权行为需要各自的说明或实测。",
           "sources": [
             {
-              "url": "https://support.google.com/googlehome/answer/13127223?hl=en-CA",
-              "publisherGroup": "Google Home 官方帮助",
-              "name": "Google Home 官方帮助",
+              "url": "https://support.google.com/googlehome/answer/9233966?hl=en",
+              "publisherGroup": "Google Nest 帮助",
+              "name": "Google Nest 帮助",
               "publishedAt": null,
               "role": "official",
-              "textHash": "efbefd835dfaacace4234f8ddd09a1b6895cf7819cbbd0b19bda5b10b8cf5db6",
-              "readAt": "2026-11-24T00:43:03.338151+00:00",
+              "textHash": "9a3dfb63d3ec9fa92e6eb72e59cf0fa28338a82be0006407a076effaa017bf18",
+              "readAt": "2026-11-25T10:43:01.191512+00:00",
               "coverage": "body"
-            }
-          ]
-        },
-        {
-          "itemId": "m24-tagweb",
-          "title": "定位标签离开手机蓝牙范围后，地图上的记录来自哪里？",
-          "facts": [
-            {
-              "claim": "官方说明将地图标记定义为标签被发现的位置，给出七天展示范围。",
-              "sourceUrl": "https://news.samsung.com/global/the-technology-behind-more-precise-finding-with-galaxy-smarttag3-and-smartthings",
-              "locator": "Location History 与 Lost Mode 段"
-            }
-          ],
-          "boundary": "文档说明功能及历史范围，未公布各地区发现成功率或通知延时。",
-          "sources": [
-            {
-              "url": "https://news.samsung.com/global/the-technology-behind-more-precise-finding-with-galaxy-smarttag3-and-smartthings",
-              "publisherGroup": "三星电子",
-              "name": "三星电子",
-              "publishedAt": "2026-11-23T08:00:00+00:00",
-              "role": "official",
-              "textHash": "70cf52259d81c7ac827b6d3e699237972460b3d64b8ad50cad81999c9cfe000f",
-              "readAt": "2026-11-24T00:50:28.196272+00:00",
-              "coverage": "excerpt"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "m24-multi",
-          "url": "https://support.google.com/googlehome/answer/13127223?hl=en-CA",
-          "checkedAt": "2026-11-24T00:43:03.338151+00:00",
+          "itemId": "e25-nest",
+          "url": "https://support.google.com/googlehome/answer/9233966?hl=en",
+          "checkedAt": "2026-11-25T10:43:01.191512+00:00",
           "state": "body",
-          "note": "本轮读取正文。核对每个平台的中枢前提、连接第二个应用及用灯的状态更新验证操作。"
-        },
-        {
-          "itemId": "m24-tagweb",
-          "url": "https://news.samsung.com/global/the-technology-behind-more-precise-finding-with-galaxy-smarttag3-and-smartthings",
-          "checkedAt": "2026-11-24T00:50:28.196272+00:00",
-          "state": "body",
-          "note": "本轮读取原文相关段落。读取官方技术说明 Location History 与离线发现、近距离及遗失模式相关段落。"
+          "note": "本轮读取正文。核对限时授权及离线时的通知限制。"
         }
       ],
-      "reviewedAt": "2026-11-24T00:51:25.466857+00:00",
+      "reviewedAt": "2026-11-25T10:47:40.796614+00:00",
       "patch": {
-        "constraint": "兼容性、配网成本、稳定性与家庭成员协同。离线范围须按触发、动作和反馈分别核对：Aqara M200说明部分自动化本地执行，但云推送仍需要云连接；不能据“本地自动化”承诺全部提醒和远程控制可用。 适配平台和中枢是前置条件。丢失标签超出近距离链路时，三星的远距离发现依赖附近参与离线查找的设备，历史记录的时间不等于当前位置。",
+        "constraint": "兼容性、配网成本、稳定性与家庭成员协同。离线范围须按触发、动作和反馈分别核对：Aqara M200说明部分自动化本地执行，但云推送仍需要云连接；不能据“本地自动化”承诺全部提醒和远程控制可用。 适配平台和中枢是前置条件。丢失标签超出近距离链路时，三星的远距离发现依赖附近参与离线查找的设备，历史记录的时间不等于当前位置。 测试智能门锁的离线体验时，将常规授权、限时授权和远程通知分别列项。按对应型号记录离线时仍可执行的操作、失败提示与恢复条件。",
         "team": "嵌入式、连接协议、云平台、客户端、认证与售后 售后交给协议、固件或平台团队的信息应包含型号/版本、连接路径、受影响范围和复现步骤；诊断日志按支持范围自愿启用，并保留本地保存选择。 产品、客户端与售后可用临时照护者借用一台设备的情境，逐项核对邀约界面、可操作的设备、可执行的动作及回收权限的角色。",
         "metrics": "配网成功率；离线可用率；跨品牌联动失败率 观察时分别记录单设备、桥接路径和平台功能故障；固定型号、固件和平台组合后再比较，不能把重置后重新配网成功视为全部功能恢复。",
         "chain": "连接协议 → 设备与网关 → 场景联动 → 安装与售后 服务切换时，将设备控制、自动迁移的历史和需手动导出的文件分列。不同条目可能对应不同期限和操作人。 Matter 设备跨平台接入时，在主平台生成临时凭据，到第二个平台完成配对，再用一次真实控制核对两端的状态是否一致。"
@@ -1031,44 +981,55 @@
             "m24-tagweb"
           ],
           "updatedAt": "2026-11-24T00:51:25.466857+00:00"
+        },
+        {
+          "id": "e25-nest-lesson",
+          "title": "同一把门锁离线，哪些授权还能用？",
+          "learning": "Google 明确说明 Nest × Yale 离线时，具有限时授权的用户不能用口令开门。",
+          "application": "测试人员可用获授权的测试设备和不同账户，分别验证本地操作、定时授权和远程通知，将结果写进用户帮助。",
+          "boundary": "限制适用于文档所指的机型；其他门锁需要各自的离线说明与实测。",
+          "itemIds": [
+            "e25-nest"
+          ],
+          "updatedAt": "2026-11-25T10:47:40.796614+00:00"
         }
       ],
-      "updatedAt": "2026-11-24T00:51:25.466857+00:00"
+      "updatedAt": "2026-11-25T10:47:40.796614+00:00"
     },
     "chain-2": {
-      "attemptedAt": "2026-11-24T00:51:25.466857+00:00",
+      "attemptedAt": "2026-11-25T10:47:40.796614+00:00",
       "status": "partial",
-      "assessment": "复核 Android 对首次启动和连续音频路径的定义，区分系统能力与学习应用整段交互。",
+      "assessment": "Android 传统 A/B 机制有明确的目标槽位与启动成功标记。设备能顺利启动后，仍需另行测试学生任务。",
       "gaps": [
         "验证某段 RTL 行为一致不能证明所有整机功能覆盖。",
         "已核实两份历史案例中的转阶段接口，尚缺学习设备实际批次的签审文件和整机验证记录。",
-        "已核 Android 音频回环的测量边界；实际学习机的端到端分位数、返工及整机验证数据待查。"
+        "已核 Android 音频回环的测量边界；实际学习机的端到端分位数、返工及整机验证数据待查。",
+        "未取得具体学习机升级前后同一离线任务的样机记录。"
       ],
       "reviewedFields": [
-        "exercise",
-        "metrics"
+        "exercise"
       ],
       "evidence": [
         {
-          "itemId": "m24-android",
-          "title": "学习机第一次开麦比连续跟读慢，该分别测哪段时间？",
+          "itemId": "e25-boot",
+          "title": "学习机升级后能开机，怎样再验一遍学生的作业？",
           "facts": [
             {
-              "claim": "Android 对首次入队时的管线启动单独定义了时延。",
-              "sourceUrl": "https://developer.android.com/ndk/guides/audio/audio-latency",
-              "locator": "Audio latency 名词说明及 Check your features"
+              "claim": "传统 A/B 流程有单独的启动成功标记。",
+              "sourceUrl": "https://source.android.com/docs/core/ota/ab",
+              "locator": "A/B 更新生命周期"
             }
           ],
-          "boundary": "能力标记针对 Android 文档所列条件。未取得学习机实测数据，评分时间还受识别与应用处理影响。",
+          "boundary": "官方文档描述传统 A/B；具体学习机采用的更新机制、离线数据格式与回退表现须在对应机型验证。",
           "sources": [
             {
-              "url": "https://developer.android.com/ndk/guides/audio/audio-latency",
-              "publisherGroup": "Android Developers",
-              "name": "Android Developers",
+              "url": "https://source.android.com/docs/core/ota/ab",
+              "publisherGroup": "Android 开源项目",
+              "name": "Android 开源项目",
               "publishedAt": null,
               "role": "official",
-              "textHash": "ba557002f1f307984598b16061ac62d8fa3ada1c5587147ea5ee855804e132b8",
-              "readAt": "2026-11-24T00:43:03.385460+00:00",
+              "textHash": "0ea69fa073a7545e083c34030c6180552e4aee7cf9cf22a44729675c5a18345d",
+              "readAt": "2026-11-25T10:41:39.218504+00:00",
               "coverage": "body"
             }
           ]
@@ -1076,17 +1037,17 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "m24-android",
-          "url": "https://developer.android.com/ndk/guides/audio/audio-latency",
-          "checkedAt": "2026-11-24T00:43:03.385460+00:00",
+          "itemId": "e25-boot",
+          "url": "https://source.android.com/docs/core/ota/ab",
+          "checkedAt": "2026-11-25T10:41:39.218504+00:00",
           "state": "body",
-          "note": "本轮读取正文。阅读 latency definitions、warmup 与 Check your features 段。"
+          "note": "本轮读取正文。复核传统 A/B 目标槽位、启动和成功标记。"
         }
       ],
-      "reviewedAt": "2026-11-24T00:51:25.466857+00:00",
+      "reviewedAt": "2026-11-25T10:47:40.796614+00:00",
       "patch": {
         "metrics": "任务延迟用同一输入、环境与分位数比较；不能只报告平均值或实验室峰值。 对加工设备还应固定材料、任务和成品质量条件，分别记录准备、加工与失败恢复耗时；标称最高运动速度不能直接折算真实产能。 排查学习机跟读等待时，音频团队固定设备和音频路径测回环，应用与识别团队另记说完、识别完成和评分可见的时点，按相同输入比较。 音频评测把首次启用管线的等待、连续输出、连续往返与最终评分分开；报告设备、系统版本、采样路径及是否冷启动。",
-        "exercise": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。 把召开评审、形成签审文件、更新系统阶段分别落到材料和角色。 让同一学习设备先首次开麦，再连续跟读同一段音频，分别验证录入与评分。Android 功能标记可作前置检查。",
+        "exercise": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。 把召开评审、形成签审文件、更新系统阶段分别落到材料和角色。 让同一学习设备先首次开麦，再连续跟读同一段音频，分别验证录入与评分。Android 功能标记可作前置检查。 将升级放行分两步演练：先查适用机型的启动与回退记录，再让应用团队用升级前的离线作业完成续写、保存和提交。分别记录失败步骤及复现条件。",
         "basics": "BOM是制造所需项目的汇总，可包含编号、数量、描述与生命周期状态；交接时还需核对版本。Autodesk Vault 2026提供修订比较，这是具体软件规则，不是所有企业的通用制度。BOM不能代替完整业务成本；Formlabs解释中，EVT聚焦关键功能与可制造设计，DVT细化设计并测试接近量产的产品，PVT检验生产线稳定制造能力。缩写、样品数量、周期与退出条件须按项目定义。",
         "flow": "需求与成本边界 → 系统架构、接口与验证计划 转试产前明确将哪个版本的物料清单、规格书和结构图转换成生产规范，并记录问题关闭与阶段切换。"
       },
@@ -1167,43 +1128,69 @@
             "m24-android"
           ],
           "updatedAt": "2026-11-24T00:51:25.466857+00:00"
+        },
+        {
+          "id": "e25-boot-lesson",
+          "title": "系统升级成功，学生的旧作业也能交吗？",
+          "learning": "Android 传统 A/B 机制有明确的目标槽位与启动成功标记。设备能顺利启动后，仍需另行测试学生任务。",
+          "application": "系统组保留更新日志，应用与教研人员用授权的测试作业验证打开、续写、提交。发布负责人核对两个结果。",
+          "boundary": "官方文档说明传统 A/B；机型采用的方案以及作业能否迁移须在对应设备另测。",
+          "itemIds": [
+            "e25-boot"
+          ],
+          "updatedAt": "2026-11-25T10:47:40.796614+00:00"
         }
       ],
-      "updatedAt": "2026-11-24T00:51:25.466857+00:00"
+      "updatedAt": "2026-11-25T10:47:40.796614+00:00"
     },
     "chain-5": {
-      "attemptedAt": "2026-11-23T10:46:17.398881+00:00",
+      "attemptedAt": "2026-11-25T10:47:40.796614+00:00",
       "status": "partial",
-      "assessment": "补核国内智能眼镜以 OTA 作为召回补救的型号、风险环境、升级版本和触达渠道。",
+      "assessment": "Yoto Mini 的第二次美国召回通知要求已领智能充电线的家庭也申请电池更换套件。",
       "gaps": [
         "已核美国指南的纽扣电池范围及警示，其他市场和其他认证仍待对应依据。",
-        "现场故障与部署成效没有可比当前结果；本次仅核验制造指标的定义和追溯线索。"
+        "现场故障与部署成效没有可比当前结果；本次仅核验制造指标的定义和追溯线索。",
+        "缺少逐台处理记录，无法评估第二次补救的实际覆盖率。"
       ],
       "reviewedFields": [
-        "exercise",
         "flow"
       ],
       "evidence": [
         {
-          "itemId": "e23-inmoweb",
-          "title": "通过 OTA 召回智能眼镜，怎样知道用户的设备完成了修复？",
+          "itemId": "e25-yoto",
+          "title": "儿童播放器召回方案升级，已经领过配件的家庭还要做什么？",
           "facts": [
             {
-              "claim": "公告明确固件版本与功耗管理修复路径。",
-              "sourceUrl": "https://www.samr.gov.cn/zlfzj/qxcpzh/zhdt/art/2026/art_86dbae86909d4a49b4eaa9f54c0f1ea5.html",
-              "locator": "召回公告第三段，补救措施"
+              "claim": "第二轮通知覆盖已经领取上一轮配件的消费者。",
+              "sourceUrl": "https://www.cpsc.gov/Recalls/2025/Yoto-Reannounces-Recall-of-Yoto-Mini-Speakers-for-Children-Due-to-Burn-and-Fire-Hazards-New-Full-Battery-Replacement-Kit-Now-Available",
+              "locator": "Remedy 段"
+            },
+            {
+              "claim": "首轮通知列明智能充电线。",
+              "sourceUrl": "https://www.cpsc.gov/Recalls/2024/Yoto-Recalls-Yoto-Mini-Speakers-for-Children-Due-to-Burn-and-Fire-Hazards",
+              "locator": "原召回补救说明"
             }
           ],
-          "boundary": "4701 副是召回范围。公告未公布成功升级的数量、修复后的温升数据或事故率。",
+          "boundary": "两轮公开通知说明补救方案改变；公开资料没有给出逐户触达率、更换完成率或团队内部汇报关系。",
           "sources": [
             {
-              "url": "https://www.samr.gov.cn/zlfzj/qxcpzh/zhdt/art/2026/art_86dbae86909d4a49b4eaa9f54c0f1ea5.html",
-              "publisherGroup": "市场监管总局质量发展局、召回中心",
-              "name": "市场监管总局质量发展局、召回中心",
-              "publishedAt": "2026-11-10T15:00:00+08:00",
+              "url": "https://www.cpsc.gov/Recalls/2025/Yoto-Reannounces-Recall-of-Yoto-Mini-Speakers-for-Children-Due-to-Burn-and-Fire-Hazards-New-Full-Battery-Replacement-Kit-Now-Available",
+              "publisherGroup": "美国消费品安全委员会",
+              "name": "美国消费品安全委员会",
+              "publishedAt": "2024-12-12",
               "role": "official",
-              "textHash": "d444cfb9da236cb9b7794eed4194060b5d4a7b2111e79181265543e24687d9f1",
-              "readAt": "2026-11-23T10:45:20.328944+00:00",
+              "textHash": "24dfdcb291f3624909affe7023bf39ad31d7ff9f9b0215a37f423703f9922801",
+              "readAt": "2026-11-25T10:42:58.281180+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://www.cpsc.gov/Recalls/2024/Yoto-Recalls-Yoto-Mini-Speakers-for-Children-Due-to-Burn-and-Fire-Hazards",
+              "publisherGroup": "美国消费品安全委员会",
+              "name": "美国消费品安全委员会",
+              "publishedAt": "2024-04-11",
+              "role": "official",
+              "textHash": "cf583ab4e9acaaaf0fbae26c4d4a485a574b736b32470bb0423121463dc44ab8",
+              "readAt": "2026-11-25T10:42:58.464676+00:00",
               "coverage": "body"
             }
           ]
@@ -1211,16 +1198,23 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "e23-inmoweb",
-          "url": "https://www.samr.gov.cn/zlfzj/qxcpzh/zhdt/art/2026/art_86dbae86909d4a49b4eaa9f54c0f1ea5.html",
-          "checkedAt": "2026-11-23T10:45:20.328944+00:00",
+          "itemId": "e25-yoto",
+          "url": "https://www.cpsc.gov/Recalls/2025/Yoto-Reannounces-Recall-of-Yoto-Mini-Speakers-for-Children-Due-to-Burn-and-Fire-Hazards-New-Full-Battery-Replacement-Kit-Now-Available",
+          "checkedAt": "2026-11-25T10:42:58.281180+00:00",
           "state": "body",
-          "note": "本轮读取正文。监管公告中的生产期间、过热条件、目标固件与系统通知。"
+          "note": "本轮读取正文。复查第二次公告 Remedy 对已经领线家庭的要求。"
+        },
+        {
+          "itemId": "e25-yoto",
+          "url": "https://www.cpsc.gov/Recalls/2024/Yoto-Recalls-Yoto-Mini-Speakers-for-Children-Due-to-Burn-and-Fire-Hazards",
+          "checkedAt": "2026-11-25T10:42:58.464676+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对首轮公告提供充电线的适用说明。"
         }
       ],
-      "reviewedAt": "2026-11-23T10:46:17.398881+00:00",
+      "reviewedAt": "2026-11-25T10:47:40.796614+00:00",
       "patch": {
-        "flow": "风险识别与需求 → 验证证据、过程控制与上市条件 对有明确使用限制的设备，还要检查现场条件、训练和责任人员是否满足该型号说明，不能仅凭设备合格就认为现场可用。 对适用美国纽扣电池要求的产品，出货评审同时核对电池仓样件、使用与滥用测试、实物及包装警示和随附说明；不同版本的包材分别检查。 儿童可拆部件发生风险时，记录部件怎样脱落、包装识别码、销售渠道和售后处置凭证。分别记录涉及数量与已办理数量。 固件升级作为召回措施时，登记涉及的序列或批次、设备实际版本、通知和升级回执，再验证修复后的风险。",
+        "flow": "风险识别与需求 → 验证证据、过程控制与上市条件 对有明确使用限制的设备，还要检查现场条件、训练和责任人员是否满足该型号说明，不能仅凭设备合格就认为现场可用。 对适用美国纽扣电池要求的产品，出货评审同时核对电池仓样件、使用与滥用测试、实物及包装警示和随附说明；不同版本的包材分别检查。 儿童可拆部件发生风险时，记录部件怎样脱落、包装识别码、销售渠道和售后处置凭证。分别记录涉及数量与已办理数量。 固件升级作为召回措施时，登记涉及的序列或批次、设备实际版本、通知和升级回执，再验证修复后的风险。 召回方案更改后，以设备批次和补救版本核对通知范围，分开记录已通知、领取套件及完成更换；在上一版登记为完成的用户仍可能需要第二次联系。",
         "team": "质量、安全、研发、制造与服务协同定义缺陷等级、放行权和整改验证。 MetalFab 官方资料要求指定激光安全负责人并限制进入受控区域的人员；这是特定产品的部署职责样本，不能替代其他产品的法规与风险评估。",
         "basics": "初始质量关注开始使用时是否符合要求；可靠性关注运行一段时间后是否仍满足要求。初始合格不能证明使用期可靠。可靠性、安全与法规准入是不同问题；本轮仅核对初始质量与使用期可靠性的时间区分，安全及认证范围仍待专门复核。",
         "metrics": "生产直通率应明确工序范围、首次检验和返工排除规则；最终检验合格不等于全流程一次通过。现场故障率仍需同时记录样本、使用条件与时间窗。",
@@ -1304,9 +1298,20 @@
             "e23-inmoweb"
           ],
           "updatedAt": "2026-11-23T10:46:17.398881+00:00"
+        },
+        {
+          "id": "e25-yoto-lesson",
+          "title": "召回改了补救方案，谁还需要收到第二次通知？",
+          "learning": "Yoto Mini 的第二次美国召回通知要求已领智能充电线的家庭也申请电池更换套件。",
+          "application": "质量团队明确受影响批次与补救版本，服务团队按版本重新圈定联系范围，并逐项核对触达、领取和处理回执。",
+          "boundary": "这是从公开补救范围推导的分工练习。两轮通知没有披露内部人员分工、逐户联系结果或更换率。",
+          "itemIds": [
+            "e25-yoto"
+          ],
+          "updatedAt": "2026-11-25T10:47:40.796614+00:00"
         }
       ],
-      "updatedAt": "2026-11-23T10:46:17.398881+00:00"
+      "updatedAt": "2026-11-25T10:47:40.796614+00:00"
     },
     "chain-8": {
       "attemptedAt": "2026-11-25T00:48:04.096649+00:00",
@@ -3436,6 +3441,41 @@
           "hash": "325e7153896b8584686f91fad6d4e53f4a155ace3de45ac48fbd0850fc4fe6a7",
           "decision": "integrated",
           "reason": "荷兰数据保护机构报告在模拟场景观察到眼镜错误声称救护车在路上。其测试还发现对玩具警示的遗漏。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-25T10:47:40.796614+00:00",
+      "reviewedNodes": [
+        "chain-5",
+        "chain-2",
+        "chain-3",
+        "track-2"
+      ],
+      "decisions": [
+        {
+          "itemId": "e25-yoto",
+          "hash": "6a6c1cdfcb8926c58aa39d8e089b39693dcfa38d3cbe3b283e050397e6344f09",
+          "decision": "integrated",
+          "reason": "Yoto Mini 的第二次美国召回通知要求已领智能充电线的家庭也申请电池更换套件。"
+        },
+        {
+          "itemId": "e25-boot",
+          "hash": "6c74950598f6238a9754352d93455d1b7945a9ec9af5d8f56f154af765eeb027",
+          "decision": "integrated",
+          "reason": "Android 传统 A/B 机制有明确的目标槽位与启动成功标记。设备能顺利启动后，仍需另行测试学生任务。"
+        },
+        {
+          "itemId": "e25-trend",
+          "hash": "b8fc6a616d09f9b8bfb9321f6c951e52482df7d92bd17238880842d456ab75fe",
+          "decision": "integrated",
+          "reason": "集邦在同一份展望中分别预计 NAND 进入下行周期、DRAM 供需仍紧但涨势放缓，买方需求变动针对特定产品和市场。"
+        },
+        {
+          "itemId": "e25-nest",
+          "hash": "92cb1c329b770fc944f6f61082f83e6c8c17e0ce5843c859bdaa3e19bdfd2c32",
+          "decision": "integrated",
+          "reason": "Google 明确说明 Nest × Yale 离线时，具有限时授权的用户不能用口令开门。"
         }
       ]
     }
@@ -14267,6 +14307,309 @@
           "checkedAt": "2026-11-25T00:40:54.065652+00:00",
           "state": "body",
           "note": "本轮读取正文。读取 11 月 19 日监管原文的测试范围与模拟场景。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-5",
+      "reviewedAt": "2026-11-25T10:47:40.796614+00:00",
+      "status": "partial",
+      "assessment": "Yoto Mini 的第二次美国召回通知要求已领智能充电线的家庭也申请电池更换套件。",
+      "gaps": [
+        "已核美国指南的纽扣电池范围及警示，其他市场和其他认证仍待对应依据。",
+        "现场故障与部署成效没有可比当前结果；本次仅核验制造指标的定义和追溯线索。",
+        "缺少逐台处理记录，无法评估第二次补救的实际覆盖率。"
+      ],
+      "reviewedFields": [
+        "flow"
+      ],
+      "changes": {
+        "flow": {
+          "before": "风险识别与需求 → 验证证据、过程控制与上市条件 对有明确使用限制的设备，还要检查现场条件、训练和责任人员是否满足该型号说明，不能仅凭设备合格就认为现场可用。 对适用美国纽扣电池要求的产品，出货评审同时核对电池仓样件、使用与滥用测试、实物及包装警示和随附说明；不同版本的包材分别检查。 儿童可拆部件发生风险时，记录部件怎样脱落、包装识别码、销售渠道和售后处置凭证。分别记录涉及数量与已办理数量。 固件升级作为召回措施时，登记涉及的序列或批次、设备实际版本、通知和升级回执，再验证修复后的风险。",
+          "after": "风险识别与需求 → 验证证据、过程控制与上市条件 对有明确使用限制的设备，还要检查现场条件、训练和责任人员是否满足该型号说明，不能仅凭设备合格就认为现场可用。 对适用美国纽扣电池要求的产品，出货评审同时核对电池仓样件、使用与滥用测试、实物及包装警示和随附说明；不同版本的包材分别检查。 儿童可拆部件发生风险时，记录部件怎样脱落、包装识别码、销售渠道和售后处置凭证。分别记录涉及数量与已办理数量。 固件升级作为召回措施时，登记涉及的序列或批次、设备实际版本、通知和升级回执，再验证修复后的风险。 召回方案更改后，以设备批次和补救版本核对通知范围，分开记录已通知、领取套件及完成更换；在上一版登记为完成的用户仍可能需要第二次联系。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e25-yoto-lesson",
+            "title": "召回改了补救方案，谁还需要收到第二次通知？",
+            "learning": "Yoto Mini 的第二次美国召回通知要求已领智能充电线的家庭也申请电池更换套件。",
+            "application": "质量团队明确受影响批次与补救版本，服务团队按版本重新圈定联系范围，并逐项核对触达、领取和处理回执。",
+            "boundary": "这是从公开补救范围推导的分工练习。两轮通知没有披露内部人员分工、逐户联系结果或更换率。",
+            "itemIds": [
+              "e25-yoto"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e25-yoto",
+          "title": "儿童播放器召回方案升级，已经领过配件的家庭还要做什么？",
+          "facts": [
+            {
+              "claim": "第二轮通知覆盖已经领取上一轮配件的消费者。",
+              "sourceUrl": "https://www.cpsc.gov/Recalls/2025/Yoto-Reannounces-Recall-of-Yoto-Mini-Speakers-for-Children-Due-to-Burn-and-Fire-Hazards-New-Full-Battery-Replacement-Kit-Now-Available",
+              "locator": "Remedy 段"
+            },
+            {
+              "claim": "首轮通知列明智能充电线。",
+              "sourceUrl": "https://www.cpsc.gov/Recalls/2024/Yoto-Recalls-Yoto-Mini-Speakers-for-Children-Due-to-Burn-and-Fire-Hazards",
+              "locator": "原召回补救说明"
+            }
+          ],
+          "boundary": "两轮公开通知说明补救方案改变；公开资料没有给出逐户触达率、更换完成率或团队内部汇报关系。",
+          "sources": [
+            {
+              "url": "https://www.cpsc.gov/Recalls/2025/Yoto-Reannounces-Recall-of-Yoto-Mini-Speakers-for-Children-Due-to-Burn-and-Fire-Hazards-New-Full-Battery-Replacement-Kit-Now-Available",
+              "publisherGroup": "美国消费品安全委员会",
+              "name": "美国消费品安全委员会",
+              "publishedAt": "2024-12-12",
+              "role": "official",
+              "textHash": "24dfdcb291f3624909affe7023bf39ad31d7ff9f9b0215a37f423703f9922801",
+              "readAt": "2026-11-25T10:42:58.281180+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://www.cpsc.gov/Recalls/2024/Yoto-Recalls-Yoto-Mini-Speakers-for-Children-Due-to-Burn-and-Fire-Hazards",
+              "publisherGroup": "美国消费品安全委员会",
+              "name": "美国消费品安全委员会",
+              "publishedAt": "2024-04-11",
+              "role": "official",
+              "textHash": "cf583ab4e9acaaaf0fbae26c4d4a485a574b736b32470bb0423121463dc44ab8",
+              "readAt": "2026-11-25T10:42:58.464676+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e25-yoto",
+          "url": "https://www.cpsc.gov/Recalls/2025/Yoto-Reannounces-Recall-of-Yoto-Mini-Speakers-for-Children-Due-to-Burn-and-Fire-Hazards-New-Full-Battery-Replacement-Kit-Now-Available",
+          "checkedAt": "2026-11-25T10:42:58.281180+00:00",
+          "state": "body",
+          "note": "本轮读取正文。复查第二次公告 Remedy 对已经领线家庭的要求。"
+        },
+        {
+          "itemId": "e25-yoto",
+          "url": "https://www.cpsc.gov/Recalls/2024/Yoto-Recalls-Yoto-Mini-Speakers-for-Children-Due-to-Burn-and-Fire-Hazards",
+          "checkedAt": "2026-11-25T10:42:58.464676+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对首轮公告提供充电线的适用说明。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-2",
+      "reviewedAt": "2026-11-25T10:47:40.796614+00:00",
+      "status": "partial",
+      "assessment": "Android 传统 A/B 机制有明确的目标槽位与启动成功标记。设备能顺利启动后，仍需另行测试学生任务。",
+      "gaps": [
+        "验证某段 RTL 行为一致不能证明所有整机功能覆盖。",
+        "已核实两份历史案例中的转阶段接口，尚缺学习设备实际批次的签审文件和整机验证记录。",
+        "已核 Android 音频回环的测量边界；实际学习机的端到端分位数、返工及整机验证数据待查。",
+        "未取得具体学习机升级前后同一离线任务的样机记录。"
+      ],
+      "reviewedFields": [
+        "exercise"
+      ],
+      "changes": {
+        "exercise": {
+          "before": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。 把召开评审、形成签审文件、更新系统阶段分别落到材料和角色。 让同一学习设备先首次开麦，再连续跟读同一段音频，分别验证录入与评分。Android 功能标记可作前置检查。",
+          "after": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。 把召开评审、形成签审文件、更新系统阶段分别落到材料和角色。 让同一学习设备先首次开麦，再连续跟读同一段音频，分别验证录入与评分。Android 功能标记可作前置检查。 将升级放行分两步演练：先查适用机型的启动与回退记录，再让应用团队用升级前的离线作业完成续写、保存和提交。分别记录失败步骤及复现条件。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e25-boot-lesson",
+            "title": "系统升级成功，学生的旧作业也能交吗？",
+            "learning": "Android 传统 A/B 机制有明确的目标槽位与启动成功标记。设备能顺利启动后，仍需另行测试学生任务。",
+            "application": "系统组保留更新日志，应用与教研人员用授权的测试作业验证打开、续写、提交。发布负责人核对两个结果。",
+            "boundary": "官方文档说明传统 A/B；机型采用的方案以及作业能否迁移须在对应设备另测。",
+            "itemIds": [
+              "e25-boot"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e25-boot",
+          "title": "学习机升级后能开机，怎样再验一遍学生的作业？",
+          "facts": [
+            {
+              "claim": "传统 A/B 流程有单独的启动成功标记。",
+              "sourceUrl": "https://source.android.com/docs/core/ota/ab",
+              "locator": "A/B 更新生命周期"
+            }
+          ],
+          "boundary": "官方文档描述传统 A/B；具体学习机采用的更新机制、离线数据格式与回退表现须在对应机型验证。",
+          "sources": [
+            {
+              "url": "https://source.android.com/docs/core/ota/ab",
+              "publisherGroup": "Android 开源项目",
+              "name": "Android 开源项目",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "0ea69fa073a7545e083c34030c6180552e4aee7cf9cf22a44729675c5a18345d",
+              "readAt": "2026-11-25T10:41:39.218504+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e25-boot",
+          "url": "https://source.android.com/docs/core/ota/ab",
+          "checkedAt": "2026-11-25T10:41:39.218504+00:00",
+          "state": "body",
+          "note": "本轮读取正文。复核传统 A/B 目标槽位、启动和成功标记。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-3",
+      "reviewedAt": "2026-11-25T10:47:40.796614+00:00",
+      "status": "partial",
+      "assessment": "集邦在同一份展望中分别预计 NAND 进入下行周期、DRAM 供需仍紧但涨势放缓，买方需求变动针对特定产品和市场。",
+      "gaps": [
+        "补核 Oracle 26C 的 MOQ 计算；各企业实际参数、运输起止、库存边界仍待订单和台账核验。",
+        "公开资料没有供应商审核标准、实际通过率、采购质量接口和履约结果。",
+        "具体教育设备的供应商报价、批次和生效时间尚缺。"
+      ],
+      "reviewedFields": [
+        "exercise"
+      ],
+      "changes": {
+        "exercise": {
+          "before": "选一颗关键器件，写出交期风险、替代验证要求和缺料升级路径。 再区分供应商资料登记、资格核验、质量验收和订单获取；无公开依据的门槛标为待核验。",
+          "after": "选一颗关键器件，写出交期风险、替代验证要求和缺料升级路径。 再区分供应商资料登记、资格核验、质量验收和订单获取；无公开依据的门槛标为待核验。 预算评审时将 DRAM 和 NAND 拆成两行，各自列出应用、料号、报价有效期与交货批次。把机构预测写入情景假设，收到供应商报价后再调整成本表。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e25-trend-lesson",
+            "title": "一个“存储价格”数字够用来做采购预算吗？",
+            "learning": "集邦在同一份展望中分别预计 NAND 进入下行周期、DRAM 供需仍紧但涨势放缓，买方需求变动针对特定产品和市场。",
+            "application": "让采购提供同规格、同币种和同税费口径报价，财务核实结算条款，再回看哪个预测假设需要修正。",
+            "boundary": "机构预测没有给出学习机供应商的成交价、交期或采购数量。",
+            "itemIds": [
+              "e25-trend"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e25-trend",
+          "title": "集邦下调 2027 年存储业展望，DRAM 与 NAND 的价格方向为何不同？",
+          "facts": [
+            {
+              "claim": "集邦预测 DRAM 合约价季度涨幅将收窄。",
+              "sourceUrl": "https://www.trendforce.com/presscenter/news/20261125-13321.html",
+              "locator": "原文 DRAM 展望段"
+            }
+          ],
+          "boundary": "这是机构对 2027 年的预测；未披露任何学习机客户的合同价、交期或已生效折扣。",
+          "sources": [
+            {
+              "url": "https://www.trendforce.com/presscenter/news/20261125-13321.html",
+              "publisherGroup": "TrendForce 集邦咨询",
+              "name": "TrendForce 集邦咨询",
+              "publishedAt": "2026-11-25",
+              "role": "research",
+              "textHash": "d1ae5ce46ab6ed7934e7457421f0b62bfa09d4a7f400e8eee68144000c2aa9d3",
+              "readAt": "2026-11-25T10:41:52.423319+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e25-trend",
+          "url": "https://www.trendforce.com/presscenter/news/20261125-13321.html",
+          "checkedAt": "2026-11-25T10:41:52.423319+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对企业级 SSD 采购计划、DRAM 合约涨幅与预测期间。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-2",
+      "reviewedAt": "2026-11-25T10:47:40.796614+00:00",
+      "status": "partial",
+      "assessment": "Google 明确说明 Nest × Yale 离线时，具有限时授权的用户不能用口令开门。",
+      "gaps": [
+        "已核三份文档中的授权入口或角色；仍缺特定设备权限、离线撤权及跨平台实测。",
+        "没有可比故障率、用户样本和售后改善数据。",
+        "未查得同一条件下不同品牌对离线限时授权的完整实测。"
+      ],
+      "reviewedFields": [
+        "constraint"
+      ],
+      "changes": {
+        "constraint": {
+          "before": "兼容性、配网成本、稳定性与家庭成员协同。离线范围须按触发、动作和反馈分别核对：Aqara M200说明部分自动化本地执行，但云推送仍需要云连接；不能据“本地自动化”承诺全部提醒和远程控制可用。 适配平台和中枢是前置条件。丢失标签超出近距离链路时，三星的远距离发现依赖附近参与离线查找的设备，历史记录的时间不等于当前位置。",
+          "after": "兼容性、配网成本、稳定性与家庭成员协同。离线范围须按触发、动作和反馈分别核对：Aqara M200说明部分自动化本地执行，但云推送仍需要云连接；不能据“本地自动化”承诺全部提醒和远程控制可用。 适配平台和中枢是前置条件。丢失标签超出近距离链路时，三星的远距离发现依赖附近参与离线查找的设备，历史记录的时间不等于当前位置。 测试智能门锁的离线体验时，将常规授权、限时授权和远程通知分别列项。按对应型号记录离线时仍可执行的操作、失败提示与恢复条件。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e25-nest-lesson",
+            "title": "同一把门锁离线，哪些授权还能用？",
+            "learning": "Google 明确说明 Nest × Yale 离线时，具有限时授权的用户不能用口令开门。",
+            "application": "测试人员可用获授权的测试设备和不同账户，分别验证本地操作、定时授权和远程通知，将结果写进用户帮助。",
+            "boundary": "限制适用于文档所指的机型；其他门锁需要各自的离线说明与实测。",
+            "itemIds": [
+              "e25-nest"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e25-nest",
+          "title": "智能门锁离线，平时能用的限时授权还能兑现吗？",
+          "facts": [
+            {
+              "claim": "该机型对限时授权用户给出单独的离线限制。",
+              "sourceUrl": "https://support.google.com/googlehome/answer/9233966?hl=en",
+              "locator": "Offline 使用说明 Important 段"
+            }
+          ],
+          "boundary": "限于对应机型及该帮助页描述的离线状态。其他产品的离线授权行为需要各自的说明或实测。",
+          "sources": [
+            {
+              "url": "https://support.google.com/googlehome/answer/9233966?hl=en",
+              "publisherGroup": "Google Nest 帮助",
+              "name": "Google Nest 帮助",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "9a3dfb63d3ec9fa92e6eb72e59cf0fa28338a82be0006407a076effaa017bf18",
+              "readAt": "2026-11-25T10:43:01.191512+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e25-nest",
+          "url": "https://support.google.com/googlehome/answer/9233966?hl=en",
+          "checkedAt": "2026-11-25T10:43:01.191512+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对限时授权及离线时的通知限制。"
         }
       ]
     }
