@@ -1,8 +1,276 @@
 {
   "schemaVersion": 1,
-  "lastCompletedAt": "2026-11-24T10:48:52.176449+00:00",
+  "lastCompletedAt": "2026-11-25T00:47:54.770282+00:00",
   "method": "Codex 初筛评分 + 逐条证据复核；非两个独立模型评分",
   "items": [
+    {
+      "id": "m25-r10",
+      "eventId": "m25-r10",
+      "developmentId": "initial",
+      "titleZh": "华为发布 WATCH Air，薄型表壳的续航要按使用条件核对",
+      "originalTitle": "华为最薄智能手表 WATCH Air 发布：6.9 毫米超薄机身，2499 元起",
+      "companies": [
+        "华为"
+      ],
+      "stages": [
+        "需求与规划",
+        "研发与系统",
+        "渠道与销售"
+      ],
+      "domestic": true,
+      "publishedAt": "2026-11-24T08:28:45+00:00",
+      "kind": "新闻",
+      "category": "可穿戴与眼镜",
+      "brief": {
+        "lead": "华为在 11 月 24 日发布会上推出 WATCH Air，报道列出 6.9 毫米机身和 2499 元起售价，计划 12 月 4 日开售。产品把异形电池与机身内部空间利用作为薄型设计的一部分。",
+        "points": [
+          "报道转述的常规续航约五天，缺少同亮度、常亮显示与定位等条件下的对比测试。",
+          "做可穿戴需求评审时，可让结构、电池和产品团队同时说明厚度的测量位置、使用模式与可接受的充电频率。"
+        ]
+      },
+      "boundary": "普通智能手表发布消息；没有儿童场景、电池实测或健康功能临床效果依据。",
+      "meaning": "在样机尺寸和续航达标之间取舍，应先把两者的测量条件写在同一张验收单上。",
+      "question": "连续开启屏幕、定位或运动记录后，实际续航会如何变化？",
+      "eventReason": "华为发布 WATCH Air，薄型表壳的续航要按使用条件核对",
+      "selection": {
+        "scores": {
+          "相关性": 18,
+          "增量信息": 16,
+          "证据质量": 17,
+          "机制清晰": 17,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "现场报道提及内部布局与电池选择。 普通智能手表发布消息；没有儿童场景、电池实测或健康功能临床效果依据。"
+        }
+      },
+      "facts": [
+        {
+          "claim": "现场报道提及内部布局与电池选择。",
+          "sourceUrl": "https://www.ithome.com/1/031/578.htm",
+          "locator": "机身与续航段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.ithome.com/1/031/578.htm",
+          "publisherGroup": "IT之家现场报道",
+          "name": "IT之家现场报道",
+          "publishedAt": "2026-11-24T08:28:45+00:00",
+          "role": "media",
+          "textHash": "eea5075d1200f72ee7fbc2440b5fcde735ac34c1f3df3188b4c3cd23877f9003",
+          "readAt": "2026-11-25T00:40:10.895585+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 85,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-25T00:47:54.755916+00:00",
+      "sourceDate": "2026-11-24T08:28:45+00:00",
+      "date": "2026-11-24T08:28:45+00:00",
+      "title": "华为发布 WATCH Air，薄型表壳的续航要按使用条件核对",
+      "summary": "华为在 11 月 24 日发布会上推出 WATCH Air，报道列出 6.9 毫米机身和 2499 元起售价，计划 12 月 4 日开售。产品把异形电池与机身内部空间利用作为薄型设计的一部分。"
+    },
+    {
+      "id": "m25-mi",
+      "eventId": "m25-mi",
+      "developmentId": "initial",
+      "titleZh": "小米三季报：内存等器件涨价，手机与 IoT 毛利要分开看",
+      "originalTitle": "Xiaomi Corporation · 2026 Third Quarter Results",
+      "companies": [
+        "小米"
+      ],
+      "stages": [
+        "供应链与采购",
+        "经营与组织",
+        "渠道与销售"
+      ],
+      "domestic": true,
+      "publishedAt": "2026-11-24",
+      "kind": "新闻",
+      "category": "经营与组织",
+      "brief": {
+        "lead": "小米披露，手机毛利率由上年同期的 11.1% 降至 9.2%，IoT 与生活消费产品由 23.9% 降至 21.7%。公司将手机毛利承压主要归因于关键器件涨价，中国大陆产品组合改善抵消了部分影响。",
+        "points": [
+          "IoT 业务还受产品组合变化影响。中国大陆笔记本和海外可穿戴产品毛利改善，部分抵消了下行压力。",
+          "学习机团队若要判断内存涨价影响，采购要给出料号及生效批次，经营团队要拿同一机型的净售价与成本对账；集团分项只能提供排查方向。"
+        ]
+      },
+      "boundary": "数据为集团未经审计季度披露；未按具体学习设备披露内存采购单价或毛利贡献。",
+      "meaning": "器件报价传导到某款产品的程度取决于备货批次、产品组合与净售价，需要分别取证。",
+      "question": "同一 SKU 的新采购批次何时进入实际销售成本？",
+      "eventReason": "小米三季报：内存等器件涨价，手机与 IoT 毛利要分开看",
+      "selection": {
+        "scores": {
+          "相关性": 20,
+          "增量信息": 19,
+          "证据质量": 20,
+          "机制清晰": 19,
+          "可行动性": 19
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "公司按业务分别列出本季与上年同期毛利率。 数据为集团未经审计季度披露；未按具体学习设备披露内存采购单价或毛利贡献。"
+        }
+      },
+      "practices": [
+        {
+          "title": "小米三季报：内存等器件涨价，手机与 IoT 毛利要分开看",
+          "method": "器件报价传导到某款产品的程度取决于备货批次、产品组合与净售价，需要分别取证。",
+          "conditions": "学习机团队若要判断内存涨价影响，采购要给出料号及生效批次，经营团队要拿同一机型的净售价与成本对账；集团分项只能提供排查方向。",
+          "outcome": "数据为集团未经审计季度披露；未按具体学习设备披露内存采购单价或毛利贡献。",
+          "boundary": "数据为集团未经审计季度披露；未按具体学习设备披露内存采购单价或毛利贡献。",
+          "nextCheck": "同一 SKU 的新采购批次何时进入实际销售成本？",
+          "stages": [
+            "供应链与采购",
+            "经营与组织",
+            "渠道与销售"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "公司按业务分别列出本季与上年同期毛利率。",
+          "sourceUrl": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1124/2026112400538.pdf",
+          "locator": "港交所业绩公告第13页，毛利及毛利率"
+        },
+        {
+          "claim": "公司同时提及关键器件价格与产品组合。",
+          "sourceUrl": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1124/2026112400538.pdf",
+          "locator": "第13页，IoT 及生活消费产品段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1124/2026112400538.pdf",
+          "publisherGroup": "小米集团",
+          "name": "小米集团",
+          "publishedAt": "2026-11-24",
+          "role": "official",
+          "textHash": "31828b101d81adc593fbf5dd272d0869aa9e37a74632ab1be12ecb8856c1ef0f",
+          "readAt": "2026-11-25T00:40:53.830113+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 97,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-25T00:47:54.738007+00:00",
+      "sourceDate": "2026-11-24",
+      "date": "2026-11-24",
+      "title": "小米三季报：内存等器件涨价，手机与 IoT 毛利要分开看",
+      "summary": "小米披露，手机毛利率由上年同期的 11.1% 降至 9.2%，IoT 与生活消费产品由 23.9% 降至 21.7%。公司将手机毛利承压主要归因于关键器件涨价，中国大陆产品组合改善抵消了部分影响。"
+    },
+    {
+      "id": "m25-p3",
+      "eventId": "m25-p3",
+      "developmentId": "initial",
+      "titleZh": "拓竹 P3C 标配五个打印工具，换料速度怎么验收到整件？",
+      "originalTitle": "Bambu Lab P3C brings home its H3C technology at half the price",
+      "companies": [
+        "拓竹科技"
+      ],
+      "stages": [
+        "研发与系统",
+        "制造与交付",
+        "质量与合规"
+      ],
+      "domestic": true,
+      "publishedAt": "2026-11-24",
+      "kind": "新闻",
+      "category": "制造与创作",
+      "brief": {
+        "lead": "拓竹把 H3C 的换头方案带到 P3C。新机有七个工具位，标配五个；厂商给出的六秒指标对应材料切换。独立测评则记下了完整零件的耗时和材料条件。",
+        "points": [
+          "测评者以相同层高、切片限速分别打印 48 个 75A 和 48 个 90A TPU 履带件，两次总耗时分别为 19 小时 10 分和 19 小时 40 分。",
+          "课堂或小批量工坊排产时，可记录换头次数、总机时、失败重打和后处理；单次换头时长只解释其中一个步骤。"
+        ]
+      },
+      "boundary": "独立样件包含两种材料的分别打印，不能当作两机型或多头与单头的对照实验。",
+      "meaning": "选择工具配置前，需把各阶段耗时与能交付的合格件数量放回同一任务估算。",
+      "question": "在同一模型和验收要求下，多材质批量打印的等待与返工分别占多少？",
+      "eventReason": "拓竹 P3C 标配五个打印工具，换料速度怎么验收到整件？",
+      "selection": {
+        "scores": {
+          "相关性": 18,
+          "增量信息": 18,
+          "证据质量": 19,
+          "机制清晰": 18,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "厂商说明标配工具数量。 独立样件包含两种材料的分别打印，不能当作两机型或多头与单头的对照实验。"
+        }
+      },
+      "practices": [
+        {
+          "title": "拓竹 P3C 标配五个打印工具，换料速度怎么验收到整件？",
+          "method": "选择工具配置前，需把各阶段耗时与能交付的合格件数量放回同一任务估算。",
+          "conditions": "课堂或小批量工坊排产时，可记录换头次数、总机时、失败重打和后处理；单次换头时长只解释其中一个步骤。",
+          "outcome": "独立样件包含两种材料的分别打印，不能当作两机型或多头与单头的对照实验。",
+          "boundary": "独立样件包含两种材料的分别打印，不能当作两机型或多头与单头的对照实验。",
+          "nextCheck": "在同一模型和验收要求下，多材质批量打印的等待与返工分别占多少？",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "厂商说明标配工具数量。",
+          "sourceUrl": "https://blog.bambulab.com/bambu-lab-p3c-brings-home-its-h3c-technology-at-half-the-price/",
+          "locator": "产品发布说明首段"
+        },
+        {
+          "claim": "测评记录了两组批量打印用时。",
+          "sourceUrl": "https://www.tomshardware.com/3d-printing/bambu-lab-p3c-review",
+          "locator": "测评打印 TPU 履带样件段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://blog.bambulab.com/bambu-lab-p3c-brings-home-its-h3c-technology-at-half-the-price/",
+          "publisherGroup": "拓竹科技",
+          "name": "拓竹科技",
+          "publishedAt": "2026-11-24",
+          "role": "official",
+          "textHash": "060a4cb5d05b4cc9b5970a4cbcf481153ed4b79fc9ba79962edf2828546dfe30",
+          "readAt": "2026-11-25T00:41:28.384116+00:00",
+          "coverage": "body"
+        },
+        {
+          "url": "https://www.tomshardware.com/3d-printing/bambu-lab-p3c-review",
+          "publisherGroup": "Tom’s Hardware",
+          "name": "Tom’s Hardware",
+          "publishedAt": "2026-11-24T14:00:00+00:00",
+          "role": "media",
+          "textHash": "c8aba756faf0679478be4814a205fdd24ce53ea45db746068c8db0b4f1ec1f30",
+          "readAt": "2026-11-25T00:40:12.453580+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 91,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-25T00:47:54.740606+00:00",
+      "sourceDate": "2026-11-24",
+      "date": "2026-11-24",
+      "title": "拓竹 P3C 标配五个打印工具，换料速度怎么验收到整件？",
+      "summary": "拓竹把 H3C 的换头方案带到 P3C。新机有七个工具位，标配五个；厂商给出的六秒指标对应材料切换。独立测评则记下了完整零件的耗时和材料条件。"
+    },
     {
       "id": "m24-mega",
       "eventId": "m24-mega",
@@ -575,6 +843,159 @@
       "date": "2026-11-23",
       "title": "英伟达董事会恢复黄仁勋职务，独立委员会继续调查",
       "summary": "英伟达宣布，董事会一致表决恢复黄仁勋的总裁、首席执行官及董事职务，立即生效。Harvey Jones 留任董事长，临时履职的 Colette Kress 继续担任首席财务官。"
+    },
+    {
+      "id": "m25-nand",
+      "eventId": "m25-nand",
+      "developmentId": "initial",
+      "titleZh": "三星西安 NAND 转产线索：企业级 SSD 用料与消费级供给要分开跟",
+      "originalTitle": "Samsung to Quintuple AI Data Center NAND Output at Xi’an Plant",
+      "companies": [
+        "三星电子"
+      ],
+      "stages": [
+        "供应链与采购",
+        "制造与交付"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-23",
+      "kind": "新闻",
+      "category": "供应链与采购",
+      "brief": {
+        "lead": "《首尔经济日报》援引行业消息称，三星西安二厂拟提高面向企业级 SSD 的 V9 NAND 比重，计划改造设备并转换部分旧工艺线。报道所述设备进场和完成改线均在 2027 年。",
+        "points": [
+          "原报道估计 V9 月产能目标约为五万片 300 毫米晶圆。这个数字对应指定工艺和厂区。",
+          "采购应先核供应商、工艺代际、控制器适配与已确认交期，再判断学习设备使用的存储料号是否受影响。"
+        ]
+      },
+      "boundary": "来自行业消息，未取得三星对此次目标的正式确认、设备验收或客户配额。无法据此推断消费级存储售价。",
+      "meaning": "同一厂区的工艺代际切换会改变产品组合；企业盘产能目标对终端采购的影响，仍要落实到具体规格和订单。",
+      "question": "是否出现设备验收、客户送样或对具体料号交期的正式通知？",
+      "eventReason": "三星西安 NAND 转产线索：企业级 SSD 用料与消费级供给要分开跟",
+      "selection": {
+        "scores": {
+          "相关性": 20,
+          "增量信息": 18,
+          "证据质量": 16,
+          "机制清晰": 19,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "原报道给出设备计划进场时间。 来自行业消息，未取得三星对此次目标的正式确认、设备验收或客户配额。无法据此推断消费级存储售价。"
+        }
+      },
+      "impactLevel": "industry-wide",
+      "impactReason": "同一厂区的工艺代际切换会改变产品组合；企业盘产能目标对终端采购的影响，仍要落实到具体规格和订单。",
+      "facts": [
+        {
+          "claim": "原报道给出设备计划进场时间。",
+          "sourceUrl": "https://en.sedaily.com/business/2026/11/23/samsung-to-quintuple-ai-data-center-nand-output-at-xian",
+          "locator": "西安二厂设备与改线计划段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://en.sedaily.com/business/2026/11/23/samsung-to-quintuple-ai-data-center-nand-output-at-xian",
+          "publisherGroup": "首尔经济日报",
+          "name": "首尔经济日报",
+          "publishedAt": "2026-11-23",
+          "role": "media",
+          "textHash": "77fde9563ed6e3e5be5a877dd6e05d0604508ea9ea026a7a718a6f91e510df4b",
+          "readAt": "2026-11-25T00:41:29.122969+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 91,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-25T00:47:54.738758+00:00",
+      "sourceDate": "2026-11-23",
+      "date": "2026-11-23",
+      "title": "三星西安 NAND 转产线索：企业级 SSD 用料与消费级供给要分开跟",
+      "summary": "《首尔经济日报》援引行业消息称，三星西安二厂拟提高面向企业级 SSD 的 V9 NAND 比重，计划改造设备并转换部分旧工艺线。报道所述设备进场和完成改线均在 2027 年。"
+    },
+    {
+      "id": "m25-aws",
+      "eventId": "m25-aws",
+      "developmentId": "initial",
+      "titleZh": "亚马逊签约购买 Decart 优化技术，并拟引入创始人与工程团队",
+      "originalTitle": "Amazon to purchase Decart’s AI optimization technology",
+      "companies": [
+        "亚马逊",
+        "Decart"
+      ],
+      "stages": [
+        "研发与系统",
+        "经营与组织"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-23",
+      "kind": "新闻",
+      "category": "端侧 AI 与芯片",
+      "brief": {
+        "lead": "亚马逊宣布已签约购买 DOS 优化软件背后的专有技术，并计划让 Decart 创始人及研究、工程人员加入。双方从 2025 年开始合作，公告将优化软件与自研芯片的推理性能联系起来。",
+        "points": [
+          "公告列明交易完成及监管条件，团队实际到岗、整合进度和性能收益仍待后续披露。",
+          "比较软硬件协同时，应记录优化层覆盖的芯片和工作负载，并在同一任务上核对端到端耗时、质量和成本。"
+        ]
+      },
+      "boundary": "交易对象是公告所述技术；未披露实际到岗人数、已完成交割或学习设备上的性能结果。",
+      "meaning": "评估这类团队变化时，分别跟踪技术权利、人员到岗、后续交付物和复现实测。",
+      "question": "合作形成的软件何时在相同模型与负载上交付可比结果？",
+      "eventReason": "亚马逊签约购买 Decart 优化技术，并拟引入创始人与工程团队",
+      "selection": {
+        "scores": {
+          "相关性": 18,
+          "增量信息": 18,
+          "证据质量": 20,
+          "机制清晰": 17,
+          "可行动性": 17
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "公司确认签署技术购买协议。 交易对象是公告所述技术；未披露实际到岗人数、已完成交割或学习设备上的性能结果。"
+        }
+      },
+      "organization": [
+        {
+          "title": "亚马逊签约购买 Decart 优化技术，并拟引入创始人与工程团队",
+          "kind": "已披露机制",
+          "observation": "亚马逊宣布已签约购买 DOS 优化软件背后的专有技术，并计划让 Decart 创始人及研究、工程人员加入。双方从 2025 年开始合作，公告将优化软件与自研芯片的推理性能联系起来。",
+          "implication": "评估这类团队变化时，分别跟踪技术权利、人员到岗、后续交付物和复现实测。",
+          "boundary": "交易对象是公告所述技术；未披露实际到岗人数、已完成交割或学习设备上的性能结果。",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "公司确认签署技术购买协议。",
+          "sourceUrl": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization",
+          "locator": "交易公告首段及前瞻性声明"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization",
+          "publisherGroup": "亚马逊",
+          "name": "亚马逊",
+          "publishedAt": "2026-11-23",
+          "role": "official",
+          "textHash": "026c2ec5de04a57a43fec3245bef9f128e81751c078a5234e7274fa0b1ee57ce",
+          "readAt": "2026-11-25T00:41:28.888430+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 90,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-25T00:47:54.741276+00:00",
+      "sourceDate": "2026-11-23",
+      "date": "2026-11-23",
+      "title": "亚马逊签约购买 Decart 优化技术，并拟引入创始人与工程团队",
+      "summary": "亚马逊宣布已签约购买 DOS 优化软件背后的专有技术，并计划让 Decart 创始人及研究、工程人员加入。双方从 2025 年开始合作，公告将优化软件与自研芯片的推理性能联系起来。"
     },
     {
       "id": "m23-server",
@@ -2419,6 +2840,95 @@
       "date": "2026-11-19",
       "title": "高层板交期拉长时，为什么只盯制板厂产能还不够？",
       "summary": "全球电子协会在 11 月 19 日的行业提示中称，截至 9 月的一年内，所引订单指标增长 56.1%，出货增长 13.3%；高层板交期可达 16 至 20 周及以上。协会还提醒关注上游材料供应。"
+    },
+    {
+      "id": "m25-glasses",
+      "eventId": "m25-glasses",
+      "developmentId": "initial",
+      "titleZh": "AI 眼镜读懂了画面，用户怎么知道它有没有真的呼叫帮助？",
+      "originalTitle": "AP advises against purchasing AI camera glasses",
+      "companies": [
+        "荷兰数据保护机构"
+      ],
+      "stages": [
+        "需求与规划",
+        "质量与合规",
+        "服务与生命周期"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-19",
+      "kind": "历史案例",
+      "category": "可穿戴与眼镜",
+      "brief": {
+        "lead": "荷兰数据保护机构测试六款带摄像头的 AI 眼镜。一次模拟复苏中，其中一副眼镜错误地表示救护车已经在路上。机构还记录了玩具安全警示被忽略的情形，并就日常使用风险提出消费建议。",
+        "points": [
+          "产品验收可将三件事分别留证：模型说了什么、设备实际执行了什么、用户能否分辨二者。",
+          "用于儿童学习设备时，可先在模拟场景核对设备是否漏读警示、是否声称执行了设备没有的动作。涉及旁人录音录像时另核授权。"
+        ]
+      },
+      "boundary": "测试覆盖六款眼镜，未提供适用于所有设备的错误概率；消费建议的地域和产品范围应保留。",
+      "meaning": "将模型回答和外部动作的回执分开测试，才能找出设备给使用者造成的错误预期。",
+      "question": "没有动作回执时，用户界面怎样表达实际状态？",
+      "eventReason": "AI 眼镜读懂了画面，用户怎么知道它有没有真的呼叫帮助？",
+      "selection": {
+        "scores": {
+          "相关性": 18,
+          "增量信息": 18,
+          "证据质量": 19,
+          "机制清晰": 19,
+          "可行动性": 18
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "机构报告了一次模拟情境中的错误反馈。 测试覆盖六款眼镜，未提供适用于所有设备的错误概率；消费建议的地域和产品范围应保留。"
+        }
+      },
+      "practices": [
+        {
+          "title": "AI 眼镜读懂了画面，用户怎么知道它有没有真的呼叫帮助？",
+          "method": "将模型回答和外部动作的回执分开测试，才能找出设备给使用者造成的错误预期。",
+          "conditions": "用于儿童学习设备时，可先在模拟场景核对设备是否漏读警示、是否声称执行了设备没有的动作。涉及旁人录音录像时另核授权。",
+          "outcome": "测试覆盖六款眼镜，未提供适用于所有设备的错误概率；消费建议的地域和产品范围应保留。",
+          "boundary": "测试覆盖六款眼镜，未提供适用于所有设备的错误概率；消费建议的地域和产品范围应保留。",
+          "nextCheck": "没有动作回执时，用户界面怎样表达实际状态？",
+          "stages": [
+            "需求与规划",
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "机构报告了一次模拟情境中的错误反馈。",
+          "sourceUrl": "https://autoriteitpersoonsgegevens.nl/en/current/ap-advises-against-purchasing-ai-camera-glasses-serious-risks-for-users-and-bystanders",
+          "locator": "监管机构测试摘要与未成年人段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://autoriteitpersoonsgegevens.nl/en/current/ap-advises-against-purchasing-ai-camera-glasses-serious-risks-for-users-and-bystanders",
+          "publisherGroup": "荷兰数据保护机构 AP",
+          "name": "荷兰数据保护机构 AP",
+          "publishedAt": "2026-11-19",
+          "role": "official",
+          "textHash": "c127eb0b93d1e8cea3b80916e767307051e9c95eff18712b7b1d6879d6366da6",
+          "readAt": "2026-11-25T00:40:54.065652+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 92,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-25T00:47:54.756588+00:00",
+      "sourceDate": "2026-11-19",
+      "date": "2026-11-19",
+      "title": "AI 眼镜读懂了画面，用户怎么知道它有没有真的呼叫帮助？",
+      "summary": "荷兰数据保护机构测试六款带摄像头的 AI 眼镜。一次模拟复苏中，其中一副眼镜错误地表示救护车已经在路上。机构还记录了玩具安全警示被忽略的情形，并就日常使用风险提出消费建议。"
     },
     {
       "id": "rss-cbe541898e205d5c",
@@ -6165,6 +6675,110 @@
       "summary": "拓竹记录一所教育机构将 3D 打印带入课程的过程。材料同时提到初期设备故障和工作流程探索，说明购买硬件只是落地的开始。"
     },
     {
+      "id": "m25-academy",
+      "eventId": "m25-academy",
+      "developmentId": "initial",
+      "titleZh": "教室只有一台打印机，排课前要把谁的等待算进去？",
+      "originalTitle": "Renaissance Academy of Learning expands STEAM education through Bambu Lab 3D printing",
+      "companies": [
+        "拓竹科技",
+        "Renaissance Academy of Learning"
+      ],
+      "stages": [
+        "需求与规划",
+        "制造与交付",
+        "服务与生命周期",
+        "经营与组织"
+      ],
+      "domestic": true,
+      "publishedAt": "2026-11-02",
+      "kind": "历史案例",
+      "category": "制造与创作",
+      "brief": {
+        "lead": "加拿大一所学校用一台 H2S 开设创客营，希望学生能在校内把设计变成实物。教师最初遇到进料、卡料和 Z 轴问题，说明书未覆盖所有情形。学校随后研究批量切片、任务排队和后处理办法。",
+        "points": [
+          "项目先办夏令营，其他课程许多仍在开发。报名很快满员只能说明需求，无法衡量学生能否独立完成设计。",
+          "将做法迁移到学习设备试点，可以先排出同一节课每个小组何时提交、设备何时空闲、故障时谁接手，最后看学生在课内是否拿到并修改成品。"
+        ]
+      },
+      "boundary": "厂商撰写的学校案例，未给出实施后的排队时间、教师工时或学习效果。",
+      "meaning": "单机演示跑通后，还要在整班真实容量下验收；排课与设备管理人员需要共同核对拥堵和返工发生在哪一步。",
+      "question": "按真实班级人数排课，谁在等机器，谁在等教师排障，是否留得出第二次迭代的时间？",
+      "eventReason": "教室只有一台打印机，排课前要把谁的等待算进去？",
+      "selection": {
+        "scores": {
+          "相关性": 18,
+          "增量信息": 18,
+          "证据质量": 17,
+          "机制清晰": 19,
+          "可行动性": 19
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "学校开始研究打印队列管理。 厂商撰写的学校案例，未给出实施后的排队时间、教师工时或学习效果。"
+        }
+      },
+      "practices": [
+        {
+          "title": "教室只有一台打印机，排课前要把谁的等待算进去？",
+          "method": "单机演示跑通后，还要在整班真实容量下验收；排课与设备管理人员需要共同核对拥堵和返工发生在哪一步。",
+          "conditions": "将做法迁移到学习设备试点，可以先排出同一节课每个小组何时提交、设备何时空闲、故障时谁接手，最后看学生在课内是否拿到并修改成品。",
+          "outcome": "厂商撰写的学校案例，未给出实施后的排队时间、教师工时或学习效果。",
+          "boundary": "厂商撰写的学校案例，未给出实施后的排队时间、教师工时或学习效果。",
+          "nextCheck": "按真实班级人数排课，谁在等机器，谁在等教师排障，是否留得出第二次迭代的时间？",
+          "stages": [
+            "需求与规划",
+            "制造与交付",
+            "服务与生命周期",
+            "经营与组织"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "organization": [
+        {
+          "title": "教室只有一台打印机，排课前要把谁的等待算进去？",
+          "kind": "已披露机制",
+          "observation": "加拿大一所学校用一台 H2S 开设创客营，希望学生能在校内把设计变成实物。教师最初遇到进料、卡料和 Z 轴问题，说明书未覆盖所有情形。学校随后研究批量切片、任务排队和后处理办法。",
+          "implication": "单机演示跑通后，还要在整班真实容量下验收；排课与设备管理人员需要共同核对拥堵和返工发生在哪一步。",
+          "boundary": "厂商撰写的学校案例，未给出实施后的排队时间、教师工时或学习效果。",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "学校开始研究打印队列管理。",
+          "sourceUrl": "https://blog.bambulab.com/renaissance-academy-of-learning-expands-steam-education-through-bambu-lab-3d-printing/",
+          "locator": "早期落地与教师排障段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://blog.bambulab.com/renaissance-academy-of-learning-expands-steam-education-through-bambu-lab-3d-printing/",
+          "publisherGroup": "拓竹教育案例",
+          "name": "拓竹教育案例",
+          "publishedAt": "2026-11-02",
+          "role": "official",
+          "textHash": "149e27afb0d058cd128c9f1acff6cd0b0d97f50cdc96f0cd89d946f9d8132e50",
+          "readAt": "2026-11-25T00:41:28.417846+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 91,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-25T00:47:54.755454+00:00",
+      "sourceDate": "2026-11-02",
+      "date": "2026-11-02",
+      "title": "教室只有一台打印机，排课前要把谁的等待算进去？",
+      "summary": "加拿大一所学校用一台 H2S 开设创客营，希望学生能在校内把设计变成实物。教师最初遇到进料、卡料和 Z 轴问题，说明书未覆盖所有情形。学校随后研究批量切片、任务排队和后处理办法。"
+    },
+    {
       "id": "bambu-service",
       "eventId": "bambu-service",
       "developmentId": "initial",
@@ -9052,6 +9666,110 @@
       "date": "2023-08-01T11:14:48+00:00",
       "title": "一块板怎样走到装箱：外观检查、逐板启动、包装称重各管什么？",
       "summary": "Raspberry Pi 公开的索尼威尔士工厂记录显示，贴装途中设目检，分板前再检查；之后逐板启动测试，通过才单独装盒，随后称重检查包装内容。"
+    },
+    {
+      "id": "m25-asr",
+      "eventId": "m25-asr",
+      "developmentId": "initial",
+      "titleZh": "跟读能识别，自由回答也能识别吗？语音验收要留两套题",
+      "originalTitle": "Responsible AI at Google Research: AI for Social Good",
+      "companies": [
+        "Google Research"
+      ],
+      "stages": [
+        "需求与规划",
+        "研发与系统",
+        "质量与合规"
+      ],
+      "domestic": false,
+      "publishedAt": "2023-06-21",
+      "kind": "历史案例",
+      "category": "端侧 AI 与芯片",
+      "brief": {
+        "lead": "Google 的 Euphonia 团队分别评估照稿读和自然对话。照稿读的数据按说话人和短语隔离训练、验证与测试；另请测试者录对话，去除可识别个人的信息，再由言语治疗专业人员转写。",
+        "points": [
+          "自然对话集包含 29 位说话者、超过 1500 条话语。另一项 27 人研究在特定言语障碍样本中观察到，朗读与对话的识别准确性有显著差异。",
+          "用于学习机验收时，教研可分别设计朗读题和自由回答题，算法按任务对照人工转写算词错误率；教学评分是否正确另与教师判断核对。"
+        ]
+      },
+      "boundary": "两项材料研究的是特定人群的语音转写；学习机上的中文儿童表现、教学得分与端侧速度都需单独实测。",
+      "meaning": "若固定题库或同一个人的录音同时出现在训练和验收集，便难以回答设备能否处理陌生用户的自由表达。",
+      "question": "在同一设备、相近噪声下，读指定句与自主作答的错误各集中在哪些词？",
+      "eventReason": "跟读能识别，自由回答也能识别吗？语音验收要留两套题",
+      "selection": {
+        "scores": {
+          "相关性": 20,
+          "增量信息": 18,
+          "证据质量": 19,
+          "机制清晰": 20,
+          "可行动性": 19
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "研究明确说明同一说话人和短语没有跨数据集。 两项材料研究的是特定人群的语音转写；学习机上的中文儿童表现、教学得分与端侧速度都需单独实测。"
+        }
+      },
+      "practices": [
+        {
+          "title": "跟读能识别，自由回答也能识别吗？语音验收要留两套题",
+          "method": "若固定题库或同一个人的录音同时出现在训练和验收集，便难以回答设备能否处理陌生用户的自由表达。",
+          "conditions": "用于学习机验收时，教研可分别设计朗读题和自由回答题，算法按任务对照人工转写算词错误率；教学评分是否正确另与教师判断核对。",
+          "outcome": "两项材料研究的是特定人群的语音转写；学习机上的中文儿童表现、教学得分与端侧速度都需单独实测。",
+          "boundary": "两项材料研究的是特定人群的语音转写；学习机上的中文儿童表现、教学得分与端侧速度都需单独实测。",
+          "nextCheck": "在同一设备、相近噪声下，读指定句与自主作答的错误各集中在哪些词？",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "研究明确说明同一说话人和短语没有跨数据集。",
+          "sourceUrl": "https://research.google/blog/responsible-ai-at-google-research-ai-for-social-good/",
+          "locator": "Prompted Speech 与 Real Conversation 两节"
+        },
+        {
+          "claim": "研究比较了 27 位参与者的朗读与对话识别。",
+          "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12379580/",
+          "locator": "方法与研究结果"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://research.google/blog/responsible-ai-at-google-research-ai-for-social-good/",
+          "publisherGroup": "Google Research",
+          "name": "Google Research",
+          "publishedAt": "2023-06-21",
+          "role": "research",
+          "textHash": "8c4ae9c8839830f43376100d32a1b77514fb54bdf02323ac68c45bdc0cdb9f10",
+          "readAt": "2026-11-25T00:40:53.486168+00:00",
+          "coverage": "body"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12379580/",
+          "publisherGroup": "研究作者 · JSLHR",
+          "name": "研究作者 · JSLHR",
+          "publishedAt": "2024-07-04",
+          "role": "research",
+          "textHash": "65633a763c97d7fa9126e149bd18f68341a27152d5a7ff10c4dcf68ff838d65d",
+          "readAt": "2026-11-25T00:40:54.061478+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 96,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-25T00:47:54.754534+00:00",
+      "sourceDate": "2023-06-21",
+      "date": "2023-06-21",
+      "title": "跟读能识别，自由回答也能识别吗？语音验收要留两套题",
+      "summary": "Google 的 Euphonia 团队分别评估照稿读和自然对话。照稿读的数据按说话人和短语隔离训练、验证与测试；另请测试者录对话，去除可识别个人的信息，再由言语治疗专业人员转写。"
     },
     {
       "id": "bambu-quality",
@@ -14408,9 +15126,159 @@
       "date": null,
       "title": "学习机第一次开麦比连续跟读慢，该分别测哪段时间？",
       "summary": "Android 的文档将音频管线首次启动的等待与连续收发音频的时延分开。系统的低时延输出能力标记和专业音频往返能力标记也针对两种测量路径。"
+    },
+    {
+      "id": "m25-kindle",
+      "eventId": "m25-kindle",
+      "developmentId": "initial",
+      "titleZh": "第十代 Kindle 到年底还能做什么？先查安全更新承诺，再查书店服务",
+      "originalTitle": "Kindle E-Reader Device Software Security Updates",
+      "companies": [
+        "亚马逊"
+      ],
+      "stages": [
+        "服务与生命周期",
+        "质量与合规",
+        "渠道与销售"
+      ],
+      "domestic": false,
+      "publishedAt": null,
+      "kind": "常青资料",
+      "category": "学习硬件",
+      "brief": {
+        "lead": "亚马逊把表格列为安全更新的最低支持期限。2019 年基础版 Kindle 和 Kids 十代、2018 年 Paperwhite 十代列到 2026 年 12 月 31 日，2019 年 Oasis 十代列到 2028 年底。同为第十代，日期也不同。",
+        "points": [
+          "该说明对从美国亚马逊自营买的新机另给购机后至少四年或表中日期、取较晚者的承诺。",
+          "另一份针对 2012 年及更早设备的公告才逐项说明购买、借阅和下载等功能调整。家长查一台在用设备，要对照具体型号、购机条件与受影响的服务。"
+        ]
+      },
+      "boundary": "截止承诺无法推断次日停止运行或书店关闭；不同站点、型号及购买条件需分别查证。",
+      "meaning": "售后回复前先核设备型号和地区，再区分安全补丁、已下载内容、购书与重新下载，逐项给依据。",
+      "question": "厂家是否另发了针对这台设备和具体服务的停服通知？",
+      "eventReason": "第十代 Kindle 到年底还能做什么？先查安全更新承诺，再查书店服务",
+      "selection": {
+        "scores": {
+          "相关性": 20,
+          "增量信息": 19,
+          "证据质量": 20,
+          "机制清晰": 19,
+          "可行动性": 19
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "官方表头将日期限定为安全更新至少支持到何时。 截止承诺无法推断次日停止运行或书店关闭；不同站点、型号及购买条件需分别查证。"
+        }
+      },
+      "practices": [
+        {
+          "title": "第十代 Kindle 到年底还能做什么？先查安全更新承诺，再查书店服务",
+          "method": "售后回复前先核设备型号和地区，再区分安全补丁、已下载内容、购书与重新下载，逐项给依据。",
+          "conditions": "另一份针对 2012 年及更早设备的公告才逐项说明购买、借阅和下载等功能调整。家长查一台在用设备，要对照具体型号、购机条件与受影响的服务。",
+          "outcome": "截止承诺无法推断次日停止运行或书店关闭；不同站点、型号及购买条件需分别查证。",
+          "boundary": "截止承诺无法推断次日停止运行或书店关闭；不同站点、型号及购买条件需分别查证。",
+          "nextCheck": "厂家是否另发了针对这台设备和具体服务的停服通知？",
+          "stages": [
+            "服务与生命周期",
+            "质量与合规",
+            "渠道与销售"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "educationCategories": [
+        "reader"
+      ],
+      "facts": [
+        {
+          "claim": "官方表头将日期限定为安全更新至少支持到何时。",
+          "sourceUrl": "https://digprjsurvey.amazon.com/csad/help/node/GF3LDHSB5YM9BYF7?theme=light",
+          "locator": "美国帮助页，承诺说明与十代设备表"
+        },
+        {
+          "claim": "英国帮助页另有按发行年份限定的功能调整通知。",
+          "sourceUrl": "https://digprjsurvey.amazon.co.uk/csad/help/node/TRXsYxKJr4WTdsVs2P",
+          "locator": "早期设备支持公告，适用设备与功能段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://digprjsurvey.amazon.com/csad/help/node/GF3LDHSB5YM9BYF7?theme=light",
+          "publisherGroup": "亚马逊设备帮助",
+          "name": "亚马逊设备帮助",
+          "publishedAt": null,
+          "role": "official",
+          "textHash": "7172012caca84828feb453c134c67f8ec3a5cb67b884b559ba8575bfe65bc611",
+          "readAt": "2026-11-25T00:40:54.410722+00:00",
+          "coverage": "body"
+        },
+        {
+          "url": "https://digprjsurvey.amazon.co.uk/csad/help/node/TRXsYxKJr4WTdsVs2P",
+          "publisherGroup": "亚马逊英国设备帮助",
+          "name": "亚马逊英国设备帮助",
+          "publishedAt": null,
+          "role": "official",
+          "textHash": "03f9ea7aa227f313efb4a038c0f190a1806fdf4cc6f090762c39842600677397",
+          "readAt": "2026-11-25T00:40:55.428506+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 97,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-25T00:47:54.751814+00:00",
+      "sourceDate": null,
+      "date": null,
+      "title": "第十代 Kindle 到年底还能做什么？先查安全更新承诺，再查书店服务",
+      "summary": "亚马逊把表格列为安全更新的最低支持期限。2019 年基础版 Kindle 和 Kids 十代、2018 年 Paperwhite 十代列到 2026 年 12 月 31 日，2019 年 Oasis 十代列到 2028 年底。同为第十代，日期也不同。"
     }
   ],
   "events": [
+    {
+      "id": "m25-r10",
+      "representativeId": "m25-r10",
+      "itemIds": [
+        "m25-r10"
+      ],
+      "publisherGroups": [
+        "IT之家现场报道"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m25-mi",
+      "representativeId": "m25-mi",
+      "itemIds": [
+        "m25-mi"
+      ],
+      "publisherGroups": [
+        "小米集团"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m25-p3",
+      "representativeId": "m25-p3",
+      "itemIds": [
+        "m25-p3"
+      ],
+      "publisherGroups": [
+        "Tom’s Hardware",
+        "拓竹科技"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
     {
       "id": "m24-mega",
       "representativeId": "m24-mega",
@@ -14504,6 +15372,34 @@
       ],
       "publisherGroups": [
         "英伟达"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m25-nand",
+      "representativeId": "m25-nand",
+      "itemIds": [
+        "m25-nand"
+      ],
+      "publisherGroups": [
+        "首尔经济日报"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m25-aws",
+      "representativeId": "m25-aws",
+      "itemIds": [
+        "m25-aws"
+      ],
+      "publisherGroups": [
+        "亚马逊"
       ],
       "developmentIds": [
         "initial"
@@ -14831,6 +15727,20 @@
       ],
       "publisherGroups": [
         "全球电子协会"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m25-glasses",
+      "representativeId": "m25-glasses",
+      "itemIds": [
+        "m25-glasses"
+      ],
+      "publisherGroups": [
+        "荷兰数据保护机构 AP"
       ],
       "developmentIds": [
         "initial"
@@ -15422,6 +16332,20 @@
       "selected": true
     },
     {
+      "id": "m25-academy",
+      "representativeId": "m25-academy",
+      "itemIds": [
+        "m25-academy"
+      ],
+      "publisherGroups": [
+        "拓竹教育案例"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
       "id": "bambu-service",
       "representativeId": "bambu-service",
       "itemIds": [
@@ -15852,6 +16776,21 @@
       ],
       "publisherGroups": [
         "Raspberry Pi"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m25-asr",
+      "representativeId": "m25-asr",
+      "itemIds": [
+        "m25-asr"
+      ],
+      "publisherGroups": [
+        "Google Research",
+        "研究作者 · JSLHR"
       ],
       "developmentIds": [
         "initial"
@@ -16618,431 +17557,24 @@
         "initial"
       ],
       "selected": true
+    },
+    {
+      "id": "m25-kindle",
+      "representativeId": "m25-kindle",
+      "itemIds": [
+        "m25-kindle"
+      ],
+      "publisherGroups": [
+        "亚马逊英国设备帮助",
+        "亚马逊设备帮助"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
     }
   ],
   "runs": [
-    {
-      "coverage": "6个RSS源4个成功；30条候选初筛，重点读取Figure招聘报道并回源岗位、拓竹STEM回顾。新增BOOX阅读同步与Figure夜班职责两篇常青brief；查阅作业帮、小猿、绿米及拓竹当前正文，覆盖制造、质量、渠道、服务和组织。无已核实的新事件，不用旧资料填日报。",
-      "sourceChecks": [
-        {
-          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/bce3303d-d5ee-41f0-b76f-30e4a45d7d43",
-          "company": "作业帮",
-          "stages": [
-            "研发与系统",
-            "制造与交付",
-            "质量与合规"
-          ],
-          "purpose": "recruitment",
-          "state": "read",
-          "checkedAt": "2026-11-11T00:41:21.640Z",
-          "note": "复读同ID儿童手表结构职责，与既有版本逐项相同；未明确城市。"
-        },
-        {
-          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
-          "company": "猿辅导（小猿）",
-          "stages": [
-            "研发与系统",
-            "制造与交付",
-            "质量与合规"
-          ],
-          "purpose": "recruitment",
-          "state": "read",
-          "checkedAt": "2026-11-11T00:41:21.665Z",
-          "note": "复读同ID硬件设计、测试、试产职责，与既有版本相同。"
-        },
-        {
-          "url": "https://booxsupport.zendesk.com/hc/en-us/articles/25401838386196-Reading-Data-Syncing-and-Backup",
-          "company": null,
-          "stages": [
-            "研发与系统",
-            "服务与生命周期",
-            "渠道与销售"
-          ],
-          "purpose": "practice",
-          "state": "read",
-          "checkedAt": "2026-11-11T00:42:15.717Z",
-          "note": "实际浏览器读取英文官方指南；直连403另留失败记录。"
-        },
-        {
-          "url": "https://job-boards.greenhouse.io/figureai/jobs/4727582006",
-          "company": null,
-          "stages": [
-            "制造与交付",
-            "质量与合规",
-            "服务与生命周期",
-            "经营与组织"
-          ],
-          "purpose": "recruitment",
-          "state": "read",
-          "checkedAt": "2026-11-11T00:42:48.788011+00:00",
-          "note": "阅读当前完整职责；培训段落时间不一致，保留待确认。"
-        },
-        {
-          "url": "https://store-support.aqara.com/blogs/guide/troubleshooting-matter-devices-with-aqara",
-          "company": "绿米 Aqara",
-          "stages": [
-            "研发与系统",
-            "服务与生命周期",
-            "质量与合规"
-          ],
-          "purpose": "practice",
-          "state": "read",
-          "checkedAt": "2026-11-11T00:41:49.342246+00:00",
-          "note": "重读故障分流、桥接与功能兼容、重置及日志段落，不扩大到所有设备。"
-        },
-        {
-          "url": "https://blog.bambulab.com/quality-assurance-and-operations-update/",
-          "company": "Bambu Lab 拓竹",
-          "stages": [
-            "制造与交付",
-            "质量与合规",
-            "服务与生命周期"
-          ],
-          "purpose": "practice",
-          "state": "read",
-          "checkedAt": "2026-11-11T00:41:49.401507+00:00",
-          "note": "重读历史X1/P1P质量说明的出厂测试、运输问题与包装改动；不当作当前故障率。"
-        },
-        {
-          "url": "https://blog.bambulab.com/first-time-together-makerworld-makers-from-across-the-u-s-meet-in-san-jose",
-          "company": "Bambu Lab 拓竹",
-          "stages": [
-            "需求与规划",
-            "渠道与销售",
-            "经营与组织"
-          ],
-          "purpose": "practice",
-          "state": "read",
-          "checkedAt": "2026-11-11T00:41:49.517411+00:00",
-          "note": "重读10月24日活动回顾中的创作者反馈与实物履约机制，未发现支持更新既有结论的新证据。"
-        },
-        {
-          "url": "https://www.ithome.com/1/025/140.htm",
-          "company": null,
-          "stages": [
-            "经营与组织",
-            "服务与生命周期"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "checkedAt": "2026-11-11T00:42:05.792317+00:00",
-          "note": "读取媒体正文后回源岗位；媒体日期不作为职位发布日期。"
-        },
-        {
-          "url": "https://blog.bambulab.com/from-cars-to-robotic-arms-inspiring-young-engineers-through-hands-on-stem",
-          "company": "Bambu Lab 拓竹",
-          "stages": [
-            "需求与规划",
-            "研发与系统"
-          ],
-          "purpose": "news",
-          "state": "read",
-          "checkedAt": "2026-11-11T00:42:06.246390+00:00",
-          "note": "读取学校大使自述工作坊，属于过去数月的案例且缺学习效果测量；不作为当日新活动。"
-        },
-        {
-          "url": "https://booxsupport.zendesk.com/hc/en-us/articles/25401838386196-Reading-Data-Syncing-and-Backup",
-          "company": null,
-          "stages": [
-            "服务与生命周期"
-          ],
-          "purpose": "practice",
-          "state": "error",
-          "checkedAt": "2026-11-11T00:41:59.464558+00:00",
-          "note": "直连正文返回403；已用浏览器读到正文，保留原失败而不推断内容不存在。"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/622.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/025/152.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/025/146.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/024/828.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/024/755.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/024/535.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/024/516.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/995.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/768.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/767.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/546.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/025/226.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/025/210.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/025/188.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/025/155.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/024/797.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/024/542.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/024/534.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/024/531.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/024/525.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/024/514.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/024/506.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/024/505.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/024/502.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/024/213.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/024/102.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/024/088.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        },
-        {
-          "url": "https://www.ithome.com/1/024/060.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-11T00:44:01.605908+00:00",
-          "note": "本轮只完成候选标题初筛，下载或缓存不等于正文审阅；促销、重复与待回源材料不据标题生成摘要。"
-        }
-      ],
-      "knownGaps": [
-        "本轮拓竹RSS超时、CNX403；直接博客正文可读不代表RSS已恢复。",
-        "28条候选未逐篇完成正文复核；没有合格新事件是本轮筛选结果，不是行业无动态。",
-        "作业帮供应链专属正文缺口仍在；两份硬件岗位未见职责变化。",
-        "知识节点仍为部分复核，不推进完整复核期限。"
-      ],
-      "failedSources": [
-        "Bambu RSS连接超时，历史保留。",
-        "CNX RSS返回403，历史保留。",
-        "直连正文返回403；已用浏览器读到正文，保留原失败而不推断内容不存在。"
-      ],
-      "coverageCheck": {
-        "passed": true,
-        "companies": [
-          "Bambu Lab 拓竹",
-          "作业帮",
-          "猿辅导（小猿）",
-          "绿米 Aqara"
-        ],
-        "stages": [
-          "制造与交付",
-          "服务与生命周期",
-          "渠道与销售",
-          "经营与组织",
-          "质量与合规",
-          "需求与规划"
-        ],
-        "recruitmentCompanies": [
-          "作业帮",
-          "猿辅导（小猿）"
-        ],
-        "gaps": [],
-        "usableSources": 37
-      },
-      "successfulScan": true,
-      "completedAt": "2026-11-11T00:45:55.209301+00:00",
-      "reviewedCount": 2,
-      "selectedCount": 2
-    },
     {
       "coverage": "6个RSS源5个成功；30条候选初筛，阅读全文确认1条拓竹本地伙伴新进展。实际查阅拓竹、xTool、作业帮和科大讯飞4家国内公司，覆盖制造、质量、渠道、服务与组织；2家核心竞品当前岗位正文。作业帮旧岗位明确关闭与另一岗位首次收录分别记录。",
       "sourceChecks": [
@@ -35757,6 +36289,853 @@
       "completedAt": "2026-11-24T10:48:52.176449+00:00",
       "reviewedCount": 1,
       "selectedCount": 1
+    },
+    {
+      "sourceChecks": [
+        {
+          "name": "小米集团",
+          "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1124/2026112400538.pdf",
+          "checkedAt": "2026-11-25T00:40:53.830113+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "经营与组织",
+            "渠道与销售"
+          ],
+          "note": "器件报价传导到某款产品的程度取决于备货批次、产品组合与净售价，需要分别取证。",
+          "company": "小米",
+          "state": "read",
+          "readId": "m25-mi",
+          "publishedAt": "2026-11-24",
+          "publisherGroup": "小米集团",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "器件报价传导到某款产品的程度取决于备货批次、产品组合与净售价，需要分别取证。",
+            "anchor": "Smartphones 4,181.9 9.2% 5,095.5 11.1%"
+          }
+        },
+        {
+          "name": "首尔经济日报",
+          "url": "https://en.sedaily.com/business/2026/11/23/samsung-to-quintuple-ai-data-center-nand-output-at-xian",
+          "checkedAt": "2026-11-25T00:41:29.122969+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "制造与交付"
+          ],
+          "note": "同一厂区的工艺代际切换会改变产品组合；企业盘产能目标对终端采购的影响，仍要落实到具体规格和订单。",
+          "company": "三星电子",
+          "state": "read",
+          "readId": "m25-nand",
+          "publishedAt": "2026-11-23",
+          "publisherGroup": "首尔经济日报",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "同一厂区的工艺代际切换会改变产品组合；企业盘产能目标对终端采购的影响，仍要落实到具体规格和订单。",
+            "anchor": "plans to bring in equipment around February next year"
+          }
+        },
+        {
+          "name": "拓竹科技",
+          "url": "https://blog.bambulab.com/bambu-lab-p3c-brings-home-its-h3c-technology-at-half-the-price/",
+          "checkedAt": "2026-11-25T00:41:28.384116+00:00",
+          "purpose": "news",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "note": "选择工具配置前，需把各阶段耗时与能交付的合格件数量放回同一任务估算。",
+          "company": "拓竹科技",
+          "state": "read",
+          "readId": "m25-p3",
+          "publishedAt": "2026-11-24",
+          "publisherGroup": "拓竹科技",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "选择工具配置前，需把各阶段耗时与能交付的合格件数量放回同一任务估算。",
+            "anchor": "5 standard PrintTools pre-installed"
+          }
+        },
+        {
+          "name": "亚马逊",
+          "url": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization",
+          "checkedAt": "2026-11-25T00:41:28.888430+00:00",
+          "purpose": "news",
+          "stages": [
+            "研发与系统",
+            "经营与组织"
+          ],
+          "note": "评估这类团队变化时，分别跟踪技术权利、人员到岗、后续交付物和复现实测。",
+          "company": "亚马逊",
+          "state": "read",
+          "readId": "m25-aws",
+          "publishedAt": "2026-11-23",
+          "publisherGroup": "亚马逊",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "评估这类团队变化时，分别跟踪技术权利、人员到岗、后续交付物和复现实测。",
+            "anchor": "signed an agreement to purchase the proprietary technology"
+          }
+        },
+        {
+          "name": "亚马逊设备帮助",
+          "url": "https://digprjsurvey.amazon.com/csad/help/node/GF3LDHSB5YM9BYF7?theme=light",
+          "checkedAt": "2026-11-25T00:40:54.410722+00:00",
+          "purpose": "practice",
+          "stages": [
+            "服务与生命周期",
+            "质量与合规",
+            "渠道与销售"
+          ],
+          "note": "售后回复前先核设备型号和地区，再区分安全补丁、已下载内容、购书与重新下载，逐项给依据。",
+          "company": "亚马逊",
+          "state": "read"
+        },
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/responsible-ai-at-google-research-ai-for-social-good/",
+          "checkedAt": "2026-11-25T00:40:53.486168+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "若固定题库或同一个人的录音同时出现在训练和验收集，便难以回答设备能否处理陌生用户的自由表达。",
+          "company": "Google Research",
+          "state": "read"
+        },
+        {
+          "name": "拓竹教育案例",
+          "url": "https://blog.bambulab.com/renaissance-academy-of-learning-expands-steam-education-through-bambu-lab-3d-printing/",
+          "checkedAt": "2026-11-25T00:41:28.417846+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "制造与交付",
+            "服务与生命周期",
+            "经营与组织"
+          ],
+          "note": "单机演示跑通后，还要在整班真实容量下验收；排课与设备管理人员需要共同核对拥堵和返工发生在哪一步。",
+          "company": "拓竹科技",
+          "state": "read"
+        },
+        {
+          "name": "IT之家现场报道",
+          "url": "https://www.ithome.com/1/031/578.htm",
+          "checkedAt": "2026-11-25T00:40:10.895585+00:00",
+          "purpose": "news",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "渠道与销售"
+          ],
+          "note": "在样机尺寸和续航达标之间取舍，应先把两者的测量条件写在同一张验收单上。",
+          "company": "华为",
+          "state": "read",
+          "readId": "m25-r10",
+          "publishedAt": "2026-11-24T08:28:45+00:00",
+          "publisherGroup": "IT之家现场报道",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "在样机尺寸和续航达标之间取舍，应先把两者的测量条件写在同一张验收单上。",
+            "anchor": "高硅叠片异形电池提高空间利用率"
+          }
+        },
+        {
+          "name": "荷兰数据保护机构 AP",
+          "url": "https://autoriteitpersoonsgegevens.nl/en/current/ap-advises-against-purchasing-ai-camera-glasses-serious-risks-for-users-and-bystanders",
+          "checkedAt": "2026-11-25T00:40:54.065652+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "note": "将模型回答和外部动作的回执分开测试，才能找出设备给使用者造成的错误预期。",
+          "company": "荷兰数据保护机构 AP",
+          "state": "read"
+        },
+        {
+          "name": "拓竹科技",
+          "url": "https://www.ithome.com/1/031/887.htm",
+          "checkedAt": "2026-11-25T00:40:11.965271+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "服务与生命周期"
+          ],
+          "note": "发布会转述与拓竹原文对应同一机型，采用原文并保留媒体实测。",
+          "company": "拓竹科技",
+          "state": "read",
+          "readId": "m25-r3",
+          "publishedAt": "2026-11-24T14:39:10+00:00",
+          "publisherGroup": "拓竹科技",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "发布会转述与拓竹原文对应同一机型，采用原文并保留媒体实测。",
+            "anchor": "标配 5 个打印头"
+          }
+        },
+        {
+          "name": "Tom’s Hardware",
+          "url": "https://www.tomshardware.com/3d-printing/bambu-lab-p3c-review",
+          "checkedAt": "2026-11-25T00:40:12.453580+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "服务与生命周期"
+          ],
+          "note": "已合并到 P3C 条目，仅以两组履带样件作实测依据。",
+          "company": "拓竹科技",
+          "state": "read",
+          "readId": "m25-r6",
+          "publishedAt": "2026-11-24T14:00:00+00:00",
+          "publisherGroup": "Tom’s Hardware",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "已合并到 P3C 条目，仅以两组履带样件作实测依据。",
+            "anchor": "19 hours and 40 minutes"
+          }
+        },
+        {
+          "name": "小鹏汽车",
+          "url": "https://www.ithome.com/1/031/818.htm",
+          "checkedAt": "2026-11-25T00:40:11.135995+00:00",
+          "purpose": "news",
+          "stages": [
+            "需求与规划",
+            "研发与系统"
+          ],
+          "note": "预热视频只呈现选取场景，待正式演示及接管条件。",
+          "company": "小鹏汽车",
+          "state": "read",
+          "readId": "m25-r7",
+          "publishedAt": "2026-11-24T11:46:56+00:00",
+          "publisherGroup": "小鹏汽车",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "预热视频只呈现选取场景，待正式演示及接管条件。",
+            "anchor": "模拟居家环境中"
+          }
+        },
+        {
+          "name": "小米集团",
+          "url": "https://www.ithome.com/1/031/716.htm",
+          "checkedAt": "2026-11-25T00:40:12.126182+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "服务与生命周期"
+          ],
+          "note": "媒体摘要对应港交所同一财报，合并来源。",
+          "company": "小米",
+          "state": "read",
+          "readId": "m25-r9",
+          "publishedAt": "2026-11-24T09:42:54+00:00",
+          "publisherGroup": "小米集团",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "媒体摘要对应港交所同一财报，合并来源。",
+            "anchor": "总营收 1072 亿元"
+          }
+        },
+        {
+          "name": "IDC",
+          "url": "https://www.ithome.com/1/031/553.htm",
+          "checkedAt": "2026-11-25T00:40:11.026300+00:00",
+          "purpose": "news",
+          "stages": [
+            "需求与规划",
+            "研发与系统"
+          ],
+          "note": "预测未来出货与渠道演进，尚无对应实际出货及售后数据。",
+          "company": "IDC",
+          "state": "read",
+          "readId": "m25-r11",
+          "publishedAt": "2026-11-24T08:14:30+00:00",
+          "publisherGroup": "IDC",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "预测未来出货与渠道演进，尚无对应实际出货及售后数据。",
+            "anchor": "2027 年"
+          }
+        },
+        {
+          "name": "荷兰数据保护机构 AP",
+          "url": "https://www.ithome.com/1/031/519.htm",
+          "checkedAt": "2026-11-25T00:40:12.032992+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "服务与生命周期"
+          ],
+          "note": "原公告超出新闻窗口，列知识深读。",
+          "company": "荷兰数据保护机构 AP",
+          "state": "read",
+          "readId": "m25-r14",
+          "publishedAt": "2026-11-24T07:29:52+00:00",
+          "publisherGroup": "荷兰数据保护机构 AP",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "原公告超出新闻窗口，列知识深读。",
+            "anchor": "当地时间 19 日"
+          }
+        },
+        {
+          "name": "IT之家转述未证实消息",
+          "url": "https://www.ithome.com/1/031/515.htm",
+          "checkedAt": "2026-11-25T00:40:11.796846+00:00",
+          "purpose": "news",
+          "stages": [
+            "需求与规划",
+            "研发与系统"
+          ],
+          "note": "机型配置和供应策略仍待品牌确认。",
+          "company": "三星电子",
+          "state": "read",
+          "readId": "m25-r16",
+          "publishedAt": "2026-11-24T07:22:11+00:00",
+          "publisherGroup": "IT之家转述未证实消息",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "机型配置和供应策略仍待品牌确认。",
+            "anchor": "目前上述配置仍属于爆料信息"
+          }
+        },
+        {
+          "name": "IT之家",
+          "url": "https://www.ithome.com/1/031/507.htm",
+          "checkedAt": "2026-11-25T00:40:12.661110+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "服务与生命周期"
+          ],
+          "note": "回溯厂商仅承诺最低安全更新时间，范围见阅读器深读。",
+          "company": "亚马逊",
+          "state": "read",
+          "readId": "m25-r17",
+          "publishedAt": "2026-11-24T07:12:34+00:00",
+          "publisherGroup": "IT之家",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "回溯厂商仅承诺最低安全更新时间，范围见阅读器深读。",
+            "anchor": "已下载到本地的电子书"
+          }
+        },
+        {
+          "name": "亚马逊",
+          "url": "https://www.ithome.com/1/031/262.htm",
+          "checkedAt": "2026-11-25T00:40:12.142052+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "服务与生命周期"
+          ],
+          "note": "回溯原公告，避免将签约写成交割，金额未披露。",
+          "company": "亚马逊",
+          "state": "read",
+          "readId": "m25-r20",
+          "publishedAt": "2026-11-24T00:13:49+00:00",
+          "publisherGroup": "亚马逊",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "回溯原公告，避免将签约写成交割，金额未披露。",
+            "anchor": "没有披露此次交易的金额或财务条款"
+          }
+        },
+        {
+          "name": "首尔经济日报",
+          "url": "https://www.ithome.com/1/031/258.htm",
+          "checkedAt": "2026-11-25T00:40:11.139210+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "服务与生命周期"
+          ],
+          "note": "回溯原报，并保留两文对晶圆投入量的不同描述。",
+          "company": "三星电子",
+          "state": "read",
+          "readId": "m25-r23",
+          "publishedAt": "2026-11-23T23:52:36+00:00",
+          "publisherGroup": "首尔经济日报",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "回溯原报，并保留两文对晶圆投入量的不同描述。",
+            "anchor": "相关设备预计于 2027 年 2 月左右进场"
+          }
+        },
+        {
+          "name": "JSLHR 研究作者",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12379580/",
+          "checkedAt": "2026-11-25T00:40:54.061478+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规",
+            "研发与系统"
+          ],
+          "note": "复核 27 位参与者、语音模式和准确性差异的实际适用范围。",
+          "company": "研究作者",
+          "state": "read"
+        },
+        {
+          "name": "亚马逊英国站",
+          "url": "https://digprjsurvey.amazon.co.uk/csad/help/node/TRXsYxKJr4WTdsVs2P",
+          "checkedAt": "2026-11-25T00:40:55.428506+00:00",
+          "purpose": "practice",
+          "stages": [
+            "服务与生命周期"
+          ],
+          "note": "复核 2012 年及以前设备的服务调整，避免跨代套用。",
+          "company": "亚马逊",
+          "state": "read"
+        },
+        {
+          "name": "美国联邦法院",
+          "url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-5_26-cv-06345/pdf/USCOURTS-cand-5_26-cv-06345-0.pdf",
+          "checkedAt": "2026-11-25T00:40:55.697133+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规",
+            "供应链与采购"
+          ],
+          "note": "核对 11 月 14 日命令的程序结论；此次检索未取得更新裁判。",
+          "company": "三星电子、美光、SK 海力士",
+          "state": "read"
+        },
+        {
+          "name": "美国 CPSC 召回目录",
+          "url": "https://www.cpsc.gov/Recalls",
+          "checkedAt": "2026-11-25T00:40:53.570986+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "note": "目录可读，检查近期产品与补救措施；未将目录更新计作新事件。",
+          "company": "美国 CPSC",
+          "state": "index"
+        },
+        {
+          "name": "These are the four cheapest 32GB DDR5 memory kits we’ve found",
+          "url": "https://www.tomshardware.com/pc-components/ram/these-are-the-four-cheapest-32gb-ddr5-memory-kits-weve-found-save-up-to-usd110-on-kits-available-from-patriot-team-group-and-v-color-up-to-ddr5-6400",
+          "checkedAt": "2026-11-25T00:40:12.498136+00:00",
+          "purpose": "practice",
+          "stages": [
+            "供应链与采购",
+            "渠道与销售"
+          ],
+          "note": "查当前零售样价，不能推断内存合约价格。",
+          "company": "多家内存品牌",
+          "state": "read"
+        },
+        {
+          "name": "Bambu Lab shows off H3C tool changer, first laser at Formnext 202",
+          "url": "https://www.tomshardware.com/3d-printing/bambu-lab-shows-off-h3c-tool-changer-first-laser-at-formnext-2026-prusa-research-snapmaker-creality-elegoo-anycubic-and-flashforge-also-on-display",
+          "checkedAt": "2026-11-25T00:40:12.588769+00:00",
+          "purpose": "practice",
+          "stages": [
+            "供应链与采购",
+            "渠道与销售"
+          ],
+          "note": "现场展览回顾，旧机型参展未形成新的量产依据。",
+          "company": "拓竹科技",
+          "state": "read"
+        },
+        {
+          "name": "14999 元起华为首款鸿蒙小折叠电脑 MateBook Fold S 正式发布：14.7 英寸 OLED 内屏、麒麟 XE90 ",
+          "url": "https://www.ithome.com/1/031/537.htm",
+          "checkedAt": "2026-11-25T00:40:11.143492+00:00",
+          "purpose": "practice",
+          "stages": [
+            "供应链与采购",
+            "渠道与销售"
+          ],
+          "note": "已审读发布资料，本轮选手表代表该场发布会，其他机型规格保留线索。",
+          "company": "华为",
+          "state": "read"
+        },
+        {
+          "name": "华为 Mate X8 大折旗舰机发布：麒麟 9050 Pro 逻辑折叠 τ 芯片、内屏亮度比肩双层 OLED，12,999 元起",
+          "url": "https://www.ithome.com/1/031/517.htm",
+          "checkedAt": "2026-11-25T00:40:11.845837+00:00",
+          "purpose": "practice",
+          "stages": [
+            "供应链与采购",
+            "渠道与销售"
+          ],
+          "note": "已审读发布资料，本轮选手表代表该场发布会，其他机型规格保留线索。",
+          "company": "华为",
+          "state": "read"
+        },
+        {
+          "url": "https://news.samsung.com/global/the-technology-behind-more-precise-finding-with-galaxy-smarttag3-and-smartthings",
+          "name": "RSS 正文抓取",
+          "purpose": "news",
+          "stages": [
+            "研发与系统"
+          ],
+          "state": "error",
+          "checkedAt": "2026-11-25T00:40:49.705104+00:00",
+          "note": "本次抓取失败：curl: (28) Operation timed out after 35010 milliseconds with 0 bytes received\n"
+        },
+        {
+          "name": "供应商管理工程师-硬件方向",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
+          "checkedAt": "2026-11-25T00:40:22.250583+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "服务与生命周期"
+          ],
+          "note": "同一岗位当前职责与上次一致。消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "2026届春招-供应链运营管培生",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "checkedAt": "2026-11-25T00:40:21.606150+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "服务与生命周期"
+          ],
+          "note": "同一岗位当前职责与上次一致。正文明确学习机售后及小猿设备业务；管培生职责可能含轮岗，不能视为固定组织架构",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "渠道运营（D110568）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/5c016df5-2a57-4758-b3e3-4a58eb276ffe",
+          "checkedAt": "2026-11-25T00:40:24.299438+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "note": "同一岗位链接明确显示停止招聘。此前职责面向教辅图书经销渠道；职位关闭原因未知。",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "2026届校招-AI产品教研",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/70dc09b3-4eef-444b-8b17-f31ad6614dcf",
+          "checkedAt": "2026-11-25T00:40:23.738341+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "同一岗位当前职责与上次一致。小学AIGC教育产品，正文未限定设备或学习机团队",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "算法实习生-多模态文档理解",
+          "url": "https://app.mokahr.com/social-recruitment/fenbi/45505#/job/5ecdce43-9ab2-48bb-ade9-ff021311daef",
+          "checkedAt": "2026-11-25T00:40:24.307814+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "同一岗位当前职责与上次一致。基础研发部教育OCR能力，未说明专属学习机",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "算法工程师（D110740）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/e6056b1d-580b-442d-a27f-9ab9f12cd4b1",
+          "checkedAt": "2026-11-25T00:40:24.812782+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "同一岗位当前职责与上次一致。穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "题库教研（D111300）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/0223c4d9-1a3a-4d44-b3da-ce58723e1311",
+          "checkedAt": "2026-11-25T00:40:24.301459+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "同一岗位当前职责与上次一致。题库教研审核与业务反馈，未披露硬件品类；正文岗位名为小数教研，要求却写初高中教材，学段边界待确认。",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "消费者BG-中级渠道经理-北京/上海/合肥",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=179aac28-bb83-4ed6-938e-25d57a57899b",
+          "checkedAt": "2026-11-25T00:40:22.734879+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "note": "同一岗位当前职责与上次一致。消费者业务渠道，未指明学习机产品线",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "AI研究院-算法工程师-OCR方向(J14869)",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=dc4e67cc-59ed-4a75-8b7a-e0d6ae6faaa9",
+          "checkedAt": "2026-11-25T00:40:22.796309+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "同一岗位当前职责与上次一致。集团统一招聘的OCR能力，未指定学习机或词典笔项目",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "2026届春招-硬件研发工程师",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "checkedAt": "2026-11-25T00:40:22.334918+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "note": "同一岗位当前职责与上次一致。原文明确小猿产品及学习机、学练机业务，未划分具体型号",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "作业帮采购检索",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/jobs?keyword=%E9%87%87%E8%B4%AD&page=1&anchorName=jobsList",
+          "checkedAt": "2026-11-25T00:41:19.593915+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "供应链与采购"
+          ],
+          "note": "作业帮采购搜索本次直连超过重定向上限，未取得匹配岗位正文。",
+          "company": "作业帮",
+          "state": "error"
+        },
+        {
+          "name": "作业帮 产品说明",
+          "url": "https://smart.zuoyebang.com/about",
+          "checkedAt": "2026-11-25T00:40:10.685963+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "复读企业说明中的数据、内容与硬件范围。",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "科大讯飞 产品说明",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "checkedAt": "2026-11-25T00:40:11.606891+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "复查分学段说明、答疑与精准学流程。",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "猿辅导（小猿） 产品说明",
+          "url": "https://apps.apple.com/cn/app/id6738277050",
+          "checkedAt": "2026-11-25T00:40:12.542226+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "复查家长可以管理的设备与使用时长。",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "华为 产品说明",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn00734120/",
+          "checkedAt": "2026-11-25T00:40:12.601912+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "复查上课时段及离线状态排查步骤。",
+          "company": "华为",
+          "state": "read"
+        },
+        {
+          "name": "科大讯飞 产品说明",
+          "url": "https://edu.iflytek.com/solution/family/transpen",
+          "checkedAt": "2026-11-25T00:40:11.624722+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "复查查词、翻译与学习功能的官方使用说明。",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "掌阅 产品说明",
+          "url": "https://m.ithome.com/html/811360.htm",
+          "checkedAt": "2026-11-25T00:40:13.081976+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "复读当时版本的笔记、阅读与私密书同步边界。",
+          "company": "掌阅",
+          "state": "read"
+        },
+        {
+          "name": "Amazon 产品说明",
+          "url": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
+          "checkedAt": "2026-11-25T00:42:04.881509+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "复核词汇功能语言、地区与儿童订阅条件。",
+          "company": "Amazon",
+          "state": "read"
+        },
+        {
+          "name": "Amazon 产品说明",
+          "url": "https://digprjsurvey.amazon.com/csad/help/node/GF3LDHSB5YM9BYF7?theme=light",
+          "checkedAt": "2026-11-25T00:40:54.410722+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对安全更新最低期限、购买条件与各型号差异。",
+          "company": "Amazon",
+          "state": "read"
+        },
+        {
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/jobs?keyword=%E9%87%87%E8%B4%AD&page=1&anchorName=jobsList",
+          "name": "作业帮招聘 · 浏览器复核采购搜索",
+          "checkedAt": "2026-11-25T00:46:29.157161+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "供应链与采购"
+          ],
+          "company": "作业帮",
+          "state": "index",
+          "note": "本轮在作业帮已核验社招租户检索“采购”，加载完成后返回暂无匹配职位；其他招聘渠道、职位名与实际编制仍未知。"
+        },
+        {
+          "name": "作业帮 · C端产品经理（D111531）",
+          "company": "作业帮",
+          "stages": [
+            "渠道与销售"
+          ],
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/2acfd25b-57d2-4cc2-8bff-10277e018886",
+          "checkedAt": "2026-11-25T00:47:24.156483+00:00",
+          "purpose": "recruitment",
+          "state": "read",
+          "note": "正文明确教育行业转介绍，未写明学习机、渠道经销或硬件交付。"
+        },
+        {
+          "name": "作业帮 · 商业化运营（D111530）",
+          "company": "作业帮",
+          "stages": [
+            "渠道与销售"
+          ],
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/401633ed-de27-4129-b6ff-934bcf595a0c",
+          "checkedAt": "2026-11-25T00:47:29.706395+00:00",
+          "purpose": "recruitment",
+          "state": "read",
+          "note": "正文描述广告预算和平台流量，未提供学习硬件归属。"
+        },
+        {
+          "name": "作业帮 · 财务分析（D111533）",
+          "company": "作业帮",
+          "stages": [
+            "经营与组织"
+          ],
+          "purpose": "recruitment",
+          "state": "read",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/ebfd18fc-4608-4f8e-a049-12565eb7a09c",
+          "checkedAt": "2026-11-25T00:47:26.944107+00:00",
+          "note": "正文列预算风险、业财衔接与经营分析，未核实团队归属或硬件采购授权。"
+        }
+      ],
+      "failedSources": [
+        "本次抓取失败：curl: (28) Operation timed out after 35010 milliseconds with 0 bytes received\n",
+        "作业帮采购搜索本次直连超过重定向上限，未取得匹配岗位正文。"
+      ],
+      "coverage": "审读西安 NAND 改线、港交所小米财报、亚马逊技术交易、拓竹与华为新品等正文；核对三家核心学习硬件公司的十个岗位链接及阅读器服务说明。 从作业帮官方最新职位另读教育转介绍、广告商业化和财务分析三个岗位。",
+      "knownGaps": [
+        "三星西安改线目标来自行业消息，未取得设备验收或客户配额；内存民事案未取得新的实体裁判。",
+        "十代 Kindle 安全更新承诺不等于书店停服。语音研究尚无量产中文学习机儿童自由回答与教师评分对照。",
+        "作业帮此前关闭的教辅渠道岗位仍显示关闭；官方社招用“采购”检索无匹配，供应链职责正文仍有缺口。"
+      ],
+      "coverageCheck": {
+        "newsResearch": {
+          "passed": true,
+          "bodyCount": 9,
+          "publisherGroups": [
+            "IT之家现场报道",
+            "IT之家转述未证实消息",
+            "Tom’s Hardware",
+            "亚马逊",
+            "小米集团",
+            "拓竹科技",
+            "首尔经济日报"
+          ],
+          "requiredBodies": 6,
+          "requiredPublisherGroups": 3
+        },
+        "passed": true,
+        "companies": [
+          "作业帮",
+          "华为",
+          "小米",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "gaps": [],
+        "usableSources": 47
+      },
+      "successfulScan": true,
+      "completedAt": "2026-11-25T00:47:54.770282+00:00",
+      "reviewedCount": 9,
+      "selectedCount": 9
     }
   ]
 }

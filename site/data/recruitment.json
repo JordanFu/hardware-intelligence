@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-24T00:50:43.084035+00:00",
+  "checkedAt": "2026-11-25T00:48:03.626362+00:00",
   "jobs": [
     {
       "company": "DJI 大疆",
@@ -758,8 +758,8 @@
       "scopeNote": "穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队",
       "id": "job-dee6ed39b271d521",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-24T00:50:43.084035+00:00",
-      "sourceHash": "2846686c8bb2b992e7ea19088f040c418b5fd298099420fb7249def5c63f4df1",
+      "lastSeen": "2026-11-25T00:48:03.626362+00:00",
+      "sourceHash": "a83bafc98bf834613d0f60ee5ae4879d54f740927a11660704ee8c7111494aed",
       "change": "持续可见",
       "versions": [
         {
@@ -917,8 +917,8 @@
       "scopeNote": "教辅图书经销商渠道；不能作为学习机零售组织证据",
       "id": "job-a74c7e3ad3b31f9d",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-24T00:50:43.084035+00:00",
-      "sourceHash": "7056e7e13deeab712e8b292e4078f3fcbf5495fa5db91f17b634a6486c4efcc4",
+      "lastSeen": "2026-11-25T00:48:03.626362+00:00",
+      "sourceHash": "a04823727c30f5b640bfabf7ea4c5099e8559c861d548a8a4c083574a8ce9412",
       "change": "来源明确关闭",
       "versions": [
         {
@@ -1095,7 +1095,7 @@
       "scopeNote": "集团统一招聘的OCR能力，未指定学习机或词典笔项目",
       "id": "job-6ad13572c435cde0",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-24T00:50:43.084035+00:00",
+      "lastSeen": "2026-11-25T00:48:03.626362+00:00",
       "sourceHash": "46428c6fef15a49e07d70af7d8d0f94c1cd36347c94ff1a8705d6e3c8ba28011",
       "change": "持续可见",
       "versions": [
@@ -1221,7 +1221,7 @@
       "scopeNote": "消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机",
       "id": "job-64eaead4b243a34c",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-24T00:50:43.084035+00:00",
+      "lastSeen": "2026-11-25T00:48:03.626362+00:00",
       "sourceHash": "d367fee8f52072da2786051fc233e03f2d8bd9886ef73c5619bfbf8fe35f8c33",
       "change": "持续可见",
       "versions": [
@@ -1284,7 +1284,7 @@
       "scopeNote": "消费者业务渠道，未指明学习机产品线",
       "id": "job-c1045357d5154cb3",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-24T00:50:43.084035+00:00",
+      "lastSeen": "2026-11-25T00:48:03.626362+00:00",
       "sourceHash": "3815c59cfbe4945a2b8f22e6936f3d0feba47dfb25445f1b7845354b7d920229",
       "change": "持续可见",
       "versions": [
@@ -1347,7 +1347,7 @@
       "scopeNote": "小学AIGC教育产品，正文未限定设备或学习机团队",
       "id": "job-03f79073b0d9a735",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-24T00:50:43.084035+00:00",
+      "lastSeen": "2026-11-25T00:48:03.626362+00:00",
       "sourceHash": "a8d3fae89f684f2c9f9f22d1ed143527dd44600eacdf871ecc8663a6b99f1855",
       "change": "持续可见",
       "versions": [
@@ -1411,8 +1411,8 @@
       "scopeNote": "基础研发部教育OCR能力，未说明专属学习机",
       "id": "job-36588c371ea71881",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-24T00:50:43.084035+00:00",
-      "sourceHash": "86c0ef2be81ebb0dca088e7541417ff8ae75341b7a24a4d33823a3be06a78e11",
+      "lastSeen": "2026-11-25T00:48:03.626362+00:00",
+      "sourceHash": "2ad7873a673cdd159ae212051ffc79d8d2be02fad1b1467b243dcfa096efed52",
       "change": "持续可见",
       "versions": [
         {
@@ -1478,7 +1478,7 @@
       ],
       "id": "job-6c6331e12e6b4c66",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-24T00:50:43.084035+00:00",
+      "lastSeen": "2026-11-25T00:48:03.626362+00:00",
       "sourceHash": "2c8e92aeec8845f458bdc658e6f76ca865dda8ad852ef8c28ee8de426eea753f",
       "change": "持续可见",
       "versions": [
@@ -1548,7 +1548,7 @@
       ],
       "id": "job-547c6c04c9807a51",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-24T00:50:43.084035+00:00",
+      "lastSeen": "2026-11-25T00:48:03.626362+00:00",
       "sourceHash": "982ecc6cff1cfeb8d1a745669098f97d72ce74b99df011b75c55a1b7aeae3821",
       "change": "持续可见",
       "versions": [
@@ -1677,8 +1677,8 @@
       "scopeNote": "题库教研审核与业务反馈，未披露硬件品类；正文岗位名为小数教研，要求却写初高中教材，学段边界待确认。",
       "id": "job-412d1d016a91f620",
       "firstSeen": "2026-11-12T00:50:37.226067+00:00",
-      "lastSeen": "2026-11-24T00:50:43.084035+00:00",
-      "sourceHash": "c5c70e7570dff075dd01b9bed20f39e14d586d6c5ac77d46a6d6d552121cb851",
+      "lastSeen": "2026-11-25T00:48:03.626362+00:00",
+      "sourceHash": "71970918eadc49c3b04e8ebc015ca05655c2b8f6765d2a060b476df7e15114bf",
       "change": "持续可见",
       "versions": [
         {
@@ -1773,6 +1773,132 @@
           ],
           "businessScope": "教育业务参考",
           "scopeNote": "实验教学内容产品，未指定学习机或其他终端。",
+          "educationCategories": null
+        }
+      ]
+    },
+    {
+      "company": "作业帮",
+      "postingId": "2acfd25b-57d2-4cc2-8bff-10277e018886",
+      "title": "C端产品经理（D111531）",
+      "family": "渠道",
+      "location": "北京市",
+      "stages": [
+        "渠道与销售",
+        "经营与组织"
+      ],
+      "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/2acfd25b-57d2-4cc2-8bff-10277e018886",
+      "postedAt": "2026-11-24",
+      "access": "正文可见",
+      "responsibilities": [
+        "策划并执行教育转介绍项目",
+        "拆分阶段、设定指标并依据数据调整运营策略"
+      ],
+      "interfaces": [
+        "原文提到指导团队与跟踪项目阶段，协作部门和审批人未披露。"
+      ],
+      "requirements": [
+        "有教育转介绍项目经验，能够按阶段设定指标并评估。"
+      ],
+      "decisionQuestion": "转介绍发生在哪项业务，团队能控制哪一段转化？",
+      "boundary": "正文明确教育行业转介绍，未写明学习机、渠道经销或硬件交付。 首次收录，人数、内部分工和实际项目结果未知。",
+      "locator": "职位描述、岗位职责与任职要求",
+      "coverage": "body",
+      "educationResearch": true,
+      "businessScope": "教育业务参考",
+      "scopeNote": "正文明确教育行业转介绍，未写明学习机、渠道经销或硬件交付。",
+      "id": "job-ec969a859709b312",
+      "firstSeen": "2026-11-25T00:48:03.626362+00:00",
+      "lastSeen": "2026-11-25T00:48:03.626362+00:00",
+      "sourceHash": "cc9a423219d3040e63c9b7451d1936cb38e7fde2739cc803557f916c1830a9b3",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-25T00:48:03.626362+00:00",
+          "sourceHash": "cc9a423219d3040e63c9b7451d1936cb38e7fde2739cc803557f916c1830a9b3",
+          "access": "正文可见",
+          "title": "C端产品经理（D111531）",
+          "family": "渠道",
+          "location": "北京市",
+          "responsibilities": [
+            "策划并执行教育转介绍项目",
+            "拆分阶段、设定指标并依据数据调整运营策略"
+          ],
+          "interfaces": [
+            "原文提到指导团队与跟踪项目阶段，协作部门和审批人未披露。"
+          ],
+          "requirements": [
+            "有教育转介绍项目经验，能够按阶段设定指标并评估。"
+          ],
+          "stages": [
+            "渠道与销售",
+            "经营与组织"
+          ],
+          "businessScope": "教育业务参考",
+          "scopeNote": "正文明确教育行业转介绍，未写明学习机、渠道经销或硬件交付。",
+          "educationCategories": null
+        }
+      ]
+    },
+    {
+      "company": "作业帮",
+      "postingId": "401633ed-de27-4129-b6ff-934bcf595a0c",
+      "title": "商业化运营（D111530）",
+      "family": "渠道",
+      "location": "北京市",
+      "stages": [
+        "渠道与销售",
+        "经营与组织"
+      ],
+      "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/401633ed-de27-4129-b6ff-934bcf595a0c",
+      "postedAt": "2026-11-24",
+      "access": "正文可见",
+      "responsibilities": [
+        "对接广告平台、直客与预算渠道，管理广告源与流量分层",
+        "诊断填充率、eCPM 及预算消耗波动，按数据调整变现策略"
+      ],
+      "interfaces": [
+        "原文列出广告平台、广告主与代理方，对硬件经销商的职责未作说明。"
+      ],
+      "requirements": [
+        "要求互联网广告变现经验，熟悉聚合平台、预算获取与广告位配置。"
+      ],
+      "decisionQuestion": "岗位所说的渠道是广告预算来源还是设备销售通路，经营结果落在哪类台账？",
+      "boundary": "正文描述广告预算和平台流量，未提供学习硬件归属。 首次收录，人数、内部分工和实际项目结果未知。",
+      "locator": "职位描述、岗位职责与任职要求",
+      "coverage": "body",
+      "educationResearch": true,
+      "businessScope": "相邻业务参考",
+      "scopeNote": "正文描述广告预算和平台流量，未提供学习硬件归属。",
+      "id": "job-2af8f790d06b3ef7",
+      "firstSeen": "2026-11-25T00:48:03.626362+00:00",
+      "lastSeen": "2026-11-25T00:48:03.626362+00:00",
+      "sourceHash": "d79efee26ff4a0b8f1b771af2a022f735c423fa29b9fc1421a929c5e4aa92c65",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-25T00:48:03.626362+00:00",
+          "sourceHash": "d79efee26ff4a0b8f1b771af2a022f735c423fa29b9fc1421a929c5e4aa92c65",
+          "access": "正文可见",
+          "title": "商业化运营（D111530）",
+          "family": "渠道",
+          "location": "北京市",
+          "responsibilities": [
+            "对接广告平台、直客与预算渠道，管理广告源与流量分层",
+            "诊断填充率、eCPM 及预算消耗波动，按数据调整变现策略"
+          ],
+          "interfaces": [
+            "原文列出广告平台、广告主与代理方，对硬件经销商的职责未作说明。"
+          ],
+          "requirements": [
+            "要求互联网广告变现经验，熟悉聚合平台、预算获取与广告位配置。"
+          ],
+          "stages": [
+            "渠道与销售",
+            "经营与组织"
+          ],
+          "businessScope": "相邻业务参考",
+          "scopeNote": "正文描述广告预算和平台流量，未提供学习硬件归属。",
           "educationCategories": null
         }
       ]
@@ -2056,6 +2182,22 @@
       "jobId": "job-a74c7e3ad3b31f9d",
       "observedAt": "2026-11-24T00:50:43.084035+00:00",
       "kind": "来源明确关闭",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-ec969a859709b312",
+      "observedAt": "2026-11-25T00:48:03.626362+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-2af8f790d06b3ef7",
+      "observedAt": "2026-11-25T00:48:03.626362+00:00",
+      "kind": "首次收录基线",
       "fields": [],
       "before": {},
       "after": {}
@@ -3589,6 +3731,146 @@
         }
       ],
       "checkedAt": "2026-11-24T00:50:43.084035+00:00"
+    },
+    {
+      "company": "科大讯飞",
+      "state": "partial",
+      "complete": false,
+      "note": "仅核对列出的官方岗位链接、可见范围和职责。",
+      "familyChecks": [
+        {
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
+          "family": "供应链",
+          "state": "body",
+          "jobIds": [
+            "job-64eaead4b243a34c"
+          ],
+          "note": "同一岗位当前职责与上次一致。消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机"
+        },
+        {
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=179aac28-bb83-4ed6-938e-25d57a57899b",
+          "family": "渠道",
+          "state": "body",
+          "jobIds": [
+            "job-c1045357d5154cb3"
+          ],
+          "note": "同一岗位当前职责与上次一致。消费者业务渠道，未指明学习机产品线"
+        },
+        {
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=dc4e67cc-59ed-4a75-8b7a-e0d6ae6faaa9",
+          "family": "算法",
+          "state": "body",
+          "jobIds": [
+            "job-6ad13572c435cde0"
+          ],
+          "note": "同一岗位当前职责与上次一致。集团统一招聘的OCR能力，未指定学习机或词典笔项目"
+        }
+      ],
+      "checkedAt": "2026-11-25T00:48:03.626362+00:00"
+    },
+    {
+      "company": "猿辅导（小猿）",
+      "state": "partial",
+      "complete": false,
+      "note": "仅核对列出的官方岗位链接、可见范围和职责。",
+      "familyChecks": [
+        {
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "family": "供应链",
+          "state": "body",
+          "jobIds": [
+            "job-547c6c04c9807a51"
+          ],
+          "note": "同一岗位当前职责与上次一致。正文明确学习机售后及小猿设备业务；管培生职责可能含轮岗，不能视为固定组织架构"
+        },
+        {
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/70dc09b3-4eef-444b-8b17-f31ad6614dcf",
+          "family": "教研",
+          "state": "body",
+          "jobIds": [
+            "job-03f79073b0d9a735"
+          ],
+          "note": "同一岗位当前职责与上次一致。小学AIGC教育产品，正文未限定设备或学习机团队"
+        },
+        {
+          "url": "https://app.mokahr.com/social-recruitment/fenbi/45505#/job/5ecdce43-9ab2-48bb-ade9-ff021311daef",
+          "family": "算法",
+          "state": "body",
+          "jobIds": [
+            "job-36588c371ea71881"
+          ],
+          "note": "同一岗位当前职责与上次一致。基础研发部教育OCR能力，未说明专属学习机"
+        },
+        {
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "family": "硬件",
+          "state": "body",
+          "jobIds": [
+            "job-6c6331e12e6b4c66"
+          ],
+          "note": "同一岗位当前职责与上次一致。原文明确小猿产品及学习机、学练机业务，未划分具体型号"
+        }
+      ],
+      "checkedAt": "2026-11-25T00:48:03.626362+00:00"
+    },
+    {
+      "company": "作业帮",
+      "state": "partial",
+      "complete": false,
+      "note": "仅核对列出的官方岗位链接、可见范围和职责。",
+      "familyChecks": [
+        {
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/5c016df5-2a57-4758-b3e3-4a58eb276ffe",
+          "family": "渠道",
+          "state": "scope_gap",
+          "jobIds": [],
+          "note": "同一岗位链接明确显示停止招聘。此前职责面向教辅图书经销渠道；职位关闭原因未知。"
+        },
+        {
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/e6056b1d-580b-442d-a27f-9ab9f12cd4b1",
+          "family": "算法",
+          "state": "body",
+          "jobIds": [
+            "job-dee6ed39b271d521"
+          ],
+          "note": "同一岗位当前职责与上次一致。穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队"
+        },
+        {
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/0223c4d9-1a3a-4d44-b3da-ce58723e1311",
+          "family": "教研",
+          "state": "body",
+          "jobIds": [
+            "job-412d1d016a91f620"
+          ],
+          "note": "同一岗位当前职责与上次一致。题库教研审核与业务反馈，未披露硬件品类；正文岗位名为小数教研，要求却写初高中教材，学段边界待确认。"
+        },
+        {
+          "family": "供应链",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/jobs?keyword=%E9%87%87%E8%B4%AD&page=1&anchorName=jobsList",
+          "state": "index",
+          "jobIds": [],
+          "note": "本轮在作业帮已核验社招租户检索“采购”，加载完成后返回暂无匹配职位；其他招聘渠道、职位名与实际编制仍未知。"
+        },
+        {
+          "family": "渠道",
+          "state": "body",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/2acfd25b-57d2-4cc2-8bff-10277e018886",
+          "jobIds": [
+            "job-ec969a859709b312"
+          ],
+          "note": "正文明确教育行业转介绍，未写明学习机、渠道经销或硬件交付。"
+        },
+        {
+          "family": "渠道",
+          "state": "body",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/401633ed-de27-4129-b6ff-934bcf595a0c",
+          "jobIds": [
+            "job-2af8f790d06b3ef7"
+          ],
+          "note": "正文描述广告预算和平台流量，未提供学习硬件归属。"
+        }
+      ],
+      "checkedAt": "2026-11-25T00:48:03.626362+00:00"
     }
   ],
   "insights": [
@@ -3776,6 +4058,23 @@
       ],
       "educationResearch": true,
       "reviewedAt": "2026-11-21T00:46:30.057372+00:00",
+      "history": []
+    },
+    {
+      "id": "zuoyebang-channel-objects",
+      "educationResearch": true,
+      "title": "同叫渠道，作业帮这三类工作各在经营什么？",
+      "finding": "此前关闭的渠道运营岗对接教辅图书经销商。本轮两个公开岗位分别跟进教育转介绍和广告预算：一个按项目阶段看转化，另一个跟踪广告填充与收入。",
+      "interpretation": "比较渠道人才时，先问对接对象是谁、谁付款、实际交付什么。门店或经销商管理、用户推荐和广告流量经营需要的经验有差异。",
+      "alternative": "产品经理职称可能承担增长运营，这两份招聘也可能分属不同业务；岗位名称无法还原公司的组织层级。",
+      "nextAction": "面试看一个真实项目，由候选人说明客户对象、收入来源、可控指标与协作方，再与设备销售及售后履约的要求逐项匹配。",
+      "boundary": "仅据三份公开岗位正文；未证明学习机渠道调整、岗位替代或扩编。",
+      "jobIds": [
+        "job-a74c7e3ad3b31f9d",
+        "job-ec969a859709b312",
+        "job-2af8f790d06b3ef7"
+      ],
+      "reviewedAt": "2026-11-25T00:48:03.626362+00:00",
       "history": []
     }
   ]
