@@ -354,67 +354,58 @@
       "updatedAt": "2026-11-25T00:48:04.096649+00:00"
     },
     "track-5": {
-      "attemptedAt": "2026-11-24T10:49:21.407951+00:00",
+      "attemptedAt": "2026-11-26T00:45:24.187692+00:00",
       "status": "partial",
-      "assessment": "公开索引取得 2015 年 4 月项目原文履约、余料与补货分工段；原站直连 403。阶段进度为作者自述。",
+      "assessment": "三星对 MD310 的计划将客户验证列为量产预期的前置条件。",
       "gaps": [
-        "已取得团队公开的实际投产决定，仍缺其内部签核与完整批次良率，其他项目的签核授权仍待核实。"
+        "已取得团队公开的实际投产决定，仍缺其内部签核与完整批次良率，其他项目的签核授权仍待核实。",
+        "具体客户验证文件、量产结果仍待公开。"
       ],
       "reviewedFields": [
         "chain"
       ],
       "evidence": [
         {
-          "itemId": "e24-novena-stock",
-          "title": "众筹交付后，谁来垫钱做现货，谁来管配件？",
+          "itemId": "m26-md",
+          "title": "三星 MD310 排出送样时间，为什么量产还要等客户验证？",
           "facts": [
             {
-              "claim": "项目团队披露了自己与平台之间的补产分工。",
-              "sourceUrl": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1566",
-              "locator": "April Backer Update · 末段，主板与配件生产"
-            },
-            {
-              "claim": "作者按三种产品分别报告履约进度。",
-              "sourceUrl": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1566",
-              "locator": "首段，履约进度"
-            },
-            {
-              "claim": "团队计划核清已承诺订单并为缺陷机留出余量之后再出售剩件。",
-              "sourceUrl": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1566",
-              "locator": "余料处理段"
+              "claim": "负责人将下半年量产预期与客户验证关联。",
+              "sourceUrl": "https://www.thelec.net/news/articleView.html?idxno=15904",
+              "locator": "论坛报道，负责人原话及模组说明"
             }
           ],
-          "boundary": "这是小批量开源电脑项目当年的决策。团队披露的是阶段履约与后续备货安排，未给出最终缺货率、备件消耗和利润。",
+          "boundary": "没有具体客户的签收或量产结果；服务器 CXL 模组与学习机板载内存适用范围不同。",
           "sources": [
             {
-              "url": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1566",
-              "publisherGroup": "Kosagi 项目团队",
-              "name": "Kosagi 项目团队",
-              "publishedAt": "2015-04-12",
-              "role": "official",
-              "textHash": "c3e7c3ab281b66c1b839d21b1dc48e304c89f83d8084ac024deab0b8497e9732",
-              "readAt": "2026-11-24T10:48:51.625951+00:00",
-              "coverage": "excerpt"
+              "url": "https://www.thelec.net/news/articleView.html?idxno=15904",
+              "publisherGroup": "THE ELEC",
+              "name": "THE ELEC",
+              "publishedAt": "2026-11-25",
+              "role": "media",
+              "textHash": "5a274b5773b24974e77428d7ccabaef400981d26821539b442b9a0a0020a1ec9",
+              "readAt": "2026-11-26T00:38:45.398502+00:00",
+              "coverage": "body"
             }
           ]
         }
       ],
       "sourceChecks": [
         {
-          "itemId": "e24-novena-stock",
-          "url": "https://www.crowdsupply.com/sutajio-kosagi/novena/updates/1566",
-          "checkedAt": "2026-11-24T10:49:21.317434+00:00",
-          "state": "cached",
-          "note": "公开索引取得 2015 年 4 月项目原文履约、余料与补货分工段；原站直连 403。阶段进度为作者自述。"
+          "itemId": "m26-md",
+          "url": "https://www.thelec.net/news/articleView.html?idxno=15904",
+          "checkedAt": "2026-11-26T00:38:45.398502+00:00",
+          "state": "body",
+          "note": "本轮读取正文。负责人关于送样、客户验证及量产预期的原话。"
         }
       ],
-      "reviewedAt": "2026-11-24T10:49:21.407951+00:00",
+      "reviewedAt": "2026-11-26T00:45:24.187692+00:00",
       "patch": {
         "constraint": "成本、质量、交期、维修和供货风险；互联设备另需检查设备、应用、云的协同安全与退出时的数据处理。 混合工艺还需同时检查区域边界衔接、路径避让和切换开销，界面步骤减少不能掩盖质量约束。 试寄可以先检验结构与包装；是否扩大生产还要权衡反馈覆盖、工厂日历及继续等待的代价。",
         "team": "产品、系统工程、制造、采购、质量、法规与售后。研究外协时另核技术文件提供方、参数变更权、驻厂支持与验收记录；公司之间的边界不能由生产地点直接推断。 小猿历史岗位把测试用例、模块到整机定位、设计评审和试产整改列为同一岗位可参与的环节。责任接口要用项目记录另行确认。",
         "examples": "品牌方、ODM / EMS、模组供应商；拓竹H3C作为软硬件协同的观察样本，非行业排名。",
         "metrics": "关键缺陷关闭率；良率；交期；返修原因；比较自动化功能时另记录用户准备步骤、设计修改后的重做次数、总加工时间与成品验收结果，不能只看算法速度。 指向收音验收须固定讲话者角度和距离，记录干扰源位置、遮挡及原始音轨，再单独评估转写。",
-        "chain": "用户需求 → 原型 → 设计验证 → 生产验证 → 量产与服务 小批量投产后，按产品配置分开核对已履约订单和后续补产。项目团队与渠道伙伴可以分别承担主板和配件的备货责任。"
+        "chain": "用户需求 → 原型 → 设计验证 → 生产验证 → 量产与服务 小批量投产后，按产品配置分开核对已履约订单和后续补产。项目团队与渠道伙伴可以分别承担主板和配件的备货责任。 芯片与模组导入时分别标出供应商有样件、客户完成目标平台验证及供应商开始量产的日期；将公开目标与已完成记录分列。"
       },
       "lessons": [
         {
@@ -515,9 +506,20 @@
             "e24-novena-stock"
           ],
           "updatedAt": "2026-11-24T10:49:21.407951+00:00"
+        },
+        {
+          "id": "m26-md-lesson",
+          "title": "模组送样后，哪道验证决定客户能否备货？",
+          "learning": "三星对 MD310 的计划将客户验证列为量产预期的前置条件。",
+          "application": "产品与采购团队按实际平台记录样件编号、验收责任人、兼容性结果和供应商量产通知，再判断替代料何时可以进入备货计划。",
+          "boundary": "论坛报道针对服务器模组；未公布客户测试项目、通过率或实际供货量。",
+          "itemIds": [
+            "m26-md"
+          ],
+          "updatedAt": "2026-11-26T00:45:24.187692+00:00"
         }
       ],
-      "updatedAt": "2026-11-24T10:49:21.407951+00:00"
+      "updatedAt": "2026-11-26T00:45:24.187692+00:00"
     },
     "chain-1": {
       "attemptedAt": "2026-11-25T00:48:04.096649+00:00",
@@ -679,39 +681,39 @@
       "updatedAt": "2026-11-25T00:48:04.096649+00:00"
     },
     "chain-4": {
-      "attemptedAt": "2026-11-24T00:51:25.466857+00:00",
+      "attemptedAt": "2026-11-26T00:45:24.187692+00:00",
       "status": "partial",
-      "assessment": "核对公开工厂记录中的检测顺序与对象，限定每道检查能回答的交付问题。",
+      "assessment": "Bunnie Huang 记录了把板级验证脚本组织成产测场景、用依赖关系避免漏测的做法。",
       "gaps": [
         "已核企业制度中的整改归属、复验与例外审批，仍缺具体批次的原始签核记录。",
         "已取得真实工厂的产线周统计，尚缺能逐件重算首次、返测及最终处置的批次流水。",
-        "未取得上述公司按同一口径披露的改进前后量产结果。"
+        "未取得上述公司按同一口径披露的改进前后量产结果。",
+        "缺少学习机试产的逐台测项执行记录及变更前后漏测对照。"
       ],
       "reviewedFields": [
-        "flow",
-        "team"
+        "flow"
       ],
       "evidence": [
         {
-          "itemId": "m24-pi",
-          "title": "一块板怎样走到装箱：外观检查、逐板启动、包装称重各管什么？",
+          "itemId": "m26-fixture",
+          "title": "把研发脚本交给产线，怎样避免提速时漏掉一个必测步骤？",
           "facts": [
             {
-              "claim": "工厂实录说明分板后逐板启动，合格后进入包装。",
-              "sourceUrl": "https://www.raspberrypi.com/news/explore-the-raspberry-pi-factory-floor-in-wales-uk/",
-              "locator": "现场视频逐字稿后半段"
+              "claim": "作者说明以脚本依赖关系约束产测场景。",
+              "sourceUrl": "https://magazine.raspberrypi.com/articles/easier-hardware-testing-in-production",
+              "locator": "Exclave 脚本、场景和执行依赖段"
             }
           ],
-          "boundary": "这是 2023 年公开的一条生产路线。未披露逐项测试覆盖率、首过率或返修批次台账。",
+          "boundary": "属于作者的硬件项目经验；学习机分工是迁移练习，实际适用性和收益需要试产批次验证。",
           "sources": [
             {
-              "url": "https://www.raspberrypi.com/news/explore-the-raspberry-pi-factory-floor-in-wales-uk/",
-              "publisherGroup": "Raspberry Pi",
-              "name": "Raspberry Pi",
-              "publishedAt": "2023-08-01T11:14:48+00:00",
+              "url": "https://magazine.raspberrypi.com/articles/easier-hardware-testing-in-production",
+              "publisherGroup": "Raspberry Pi 官方杂志 · Bunnie Huang",
+              "name": "Raspberry Pi 官方杂志 · Bunnie Huang",
+              "publishedAt": "2019-03-12",
               "role": "official",
-              "textHash": "d566ed0dc643c0ed3fd136d7b218c09527954b011b22dc26e7bf31b5352cb7df",
-              "readAt": "2026-11-24T00:43:08.380245+00:00",
+              "textHash": "2f229352bf0f71b1dd3805b42f3020ba88b76ec20f9b9d11504d2592d4efac75",
+              "readAt": "2026-11-26T00:40:54.210712+00:00",
               "coverage": "body"
             }
           ]
@@ -719,20 +721,20 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "m24-pi",
-          "url": "https://www.raspberrypi.com/news/explore-the-raspberry-pi-factory-floor-in-wales-uk/",
-          "checkedAt": "2026-11-24T00:43:08.380245+00:00",
+          "itemId": "m26-fixture",
+          "url": "https://magazine.raspberrypi.com/articles/easier-hardware-testing-in-production",
+          "checkedAt": "2026-11-26T00:40:54.210712+00:00",
           "state": "body",
-          "note": "本轮读取正文。复核 2023 年工厂视频逐字稿，含分板、启动与包装顺序。"
+          "note": "本轮读取正文。核对作者对单项脚本、执行依赖和产线优化的说明。"
         }
       ],
-      "reviewedAt": "2026-11-24T00:51:25.466857+00:00",
+      "reviewedAt": "2026-11-26T00:45:24.187692+00:00",
       "patch": {
         "team": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。石头商城岗位正文提供具体样本：NPI-PE输出DFX报告、组包流程、作业文件及治具要求；PQE衔接试制、量产、代工与售后质量；PQC监督出货及过程。正式放行权仍须项目证据。 平台和内存可以同时开发。最初样品失效时保留样品编号、平台及固件版本，由能重现故障的一方与供应商交叉验证。 崧盛在试产中按设计缺陷和工艺缺陷分配整改，再评估是否二次试产；验证阶段仍有最终不合格项时另有批准要求。 把装配异常、板级启动失败、装箱缺件各自关联到相应的检测记录和跟进岗位。具体质量放行权需看项目授权。",
         "exercise": "沿一次试产异常核对设计版本、工艺条件和关闭证据；为进入下一阶段列清交付物、依赖、验收人和未关闭问题。Autodesk阶段门说明可作为检查框架，系统状态完成不能替代实际验证。",
         "metrics": "一次通过率 = 首次完成该过程并满足质量要求、无需复测或返工等再次处理的单位数 / 进入该过程的单位总数。须固定工序、批次、期间及缺陷规则；不能用返工后最终合格率替代。 ASQ 将返测和离线维修也排除在首次合格之外。生产记录须保留首次判定，再单列返测或维修后的最终处置。 对多站产线还要说明是否按站点比例连乘，是否排除老化站，以及按批次还是按产线周汇总。",
         "basics": "NPI是新产品导入，具体门槛仍需项目定义。DFM关注设计与所选制造工艺的适配；例如Protolabs根据CAD几何提供反馈，分析变量随制造服务变化。几何可制造不等于整机功能、可靠性或量产良率已验证。",
-        "flow": "验证通过的设计 → 就绪并经过验证的工装、夹具和测试台 → 试产检查产线节拍、报废与批次良率 → 稳定交付。具体试产准入条件按项目确定。 索尼英国生产 Raspberry Pi 的案例在多个装配步骤目检、分板后逐板启动；通过后独立装盒，称重检查包装内容，再装大箱发运。"
+        "flow": "验证通过的设计 → 就绪并经过验证的工装、夹具和测试台 → 试产检查产线节拍、报废与批次良率 → 稳定交付。具体试产准入条件按项目确定。 索尼英国生产 Raspberry Pi 的案例在多个装配步骤目检、分板后逐板启动；通过后独立装盒，称重检查包装内容，再装大箱发运。 把研发单项验证转成产测时，先画出前置测试与后续测试的依赖关系。产线调整顺序或压缩节拍后，用同一设备逐项核对必测步骤是否执行、失败后续步骤如何标记。"
       },
       "lessons": [
         {
@@ -846,9 +848,20 @@
             "m24-pi"
           ],
           "updatedAt": "2026-11-24T00:51:25.466857+00:00"
+        },
+        {
+          "id": "m26-fixture-lesson",
+          "title": "产测提速后，怎样发现一个必测步骤漏跑了？",
+          "learning": "Bunnie Huang 记录了把板级验证脚本组织成产测场景、用依赖关系避免漏测的做法。",
+          "application": "研发给出测项和前置条件，测试工程师安排场景，生产保留设备、版本和各步骤结果；流程调整后对照必测项复验。",
+          "boundary": "为作者的特定硬件项目经验；没有同条件漏测率、节拍或批量良率。",
+          "itemIds": [
+            "m26-fixture"
+          ],
+          "updatedAt": "2026-11-26T00:45:24.187692+00:00"
         }
       ],
-      "updatedAt": "2026-11-24T00:51:25.466857+00:00"
+      "updatedAt": "2026-11-26T00:45:24.187692+00:00"
     },
     "track-2": {
       "attemptedAt": "2026-11-25T10:47:40.796614+00:00",
@@ -1600,41 +1613,37 @@
       "updatedAt": "2026-11-25T00:48:04.096649+00:00"
     },
     "chain-6": {
-      "attemptedAt": "2026-11-24T10:49:21.407951+00:00",
+      "attemptedAt": "2026-11-26T00:45:24.187692+00:00",
       "status": "partial",
-      "assessment": "核对 Shopify 当前帮助页的按市场、按订单和按商品利润小节；本轮浏览器取得正文。",
+      "assessment": "Zero 越野车的美国召回要求联系授权经销商，由合格技术人员免费安装新固件。用户收到消息和车辆完成维修对应不同状态。",
       "gaps": [
-        "已复核两个公司披露的渠道层级及贡献毛益的通常计算方式。读书郎单店合同的费率、退货分摊和各经销商终端动销台账本轮未取得，无法核算单店贡献。"
+        "已复核两个公司披露的渠道层级及贡献毛益的通常计算方式。读书郎单店合同的费率、退货分摊和各经销商终端动销台账本轮未取得，无法核算单店贡献。",
+        "本案缺逐台维修完工与交还回执。"
       ],
       "reviewedFields": [
         "exercise"
       ],
       "evidence": [
         {
-          "itemId": "shopify-profit-cost-coverage",
-          "title": "促销后这款学习机到底赚了多少？先查利润报表漏掉了哪些订单",
+          "itemId": "m26-zero",
+          "title": "Zero 电动越野车召回：固件已经有修复方案，谁来装到车上？",
           "facts": [
             {
-              "claim": "商品或规格售出时已登记成本，才能进入利润统计。",
-              "sourceUrl": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
-              "locator": "Adding cost per item"
-            },
-            {
-              "claim": "期间的折扣和退款会影响毛利率。",
-              "sourceUrl": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
-              "locator": "Discounts and refunds"
+              "claim": "补救措施要求合格技术人员安装固件。",
+              "sourceUrl": "https://www.cpsc.gov/Recalls/2027/Zero-Motorcycles-Recalls-Zero-Off-Road-Motorcycles-Due-to-Risk-of-Serious-Injury-or-Death-from-Crash-Hazard",
+              "locator": "Recall Details · Remedy"
             }
           ],
-          "boundary": "依据 Shopify 自身报表说明。公开资料没有给出国内学习机厂商的实际成本、返利合同、平台账期或单台贡献利润。",
+          "boundary": "该路径适用于公告列明的两款车；公告未提供维修完工量或复验记录。",
           "sources": [
             {
-              "url": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
-              "publisherGroup": "Shopify",
-              "name": "Shopify 帮助中心",
-              "publishedAt": null,
+              "url": "https://www.cpsc.gov/Recalls/2027/Zero-Motorcycles-Recalls-Zero-Off-Road-Motorcycles-Due-to-Risk-of-Serious-Injury-or-Death-from-Crash-Hazard",
+              "publisherGroup": "美国消费品安全委员会",
+              "name": "美国消费品安全委员会",
+              "publishedAt": "2026-11-25",
               "role": "official",
-              "textHash": "92598227f465721c412d7e62a7d2784258feb7af53950b9e0fe008dc604f63ac",
-              "readAt": "2026-11-19T10:39:23.445990+00:00",
+              "textHash": "568643cbdcc21ac6eac7e2c8972877277036c44fe0c1bd1210d5d58445e6f187",
+              "readAt": "2026-11-26T00:41:08.952811+00:00",
               "coverage": "body"
             }
           ]
@@ -1642,18 +1651,18 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "shopify-profit-cost-coverage",
-          "url": "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports",
-          "checkedAt": "2026-11-24T10:49:21.317434+00:00",
+          "itemId": "m26-zero",
+          "url": "https://www.cpsc.gov/Recalls/2027/Zero-Motorcycles-Recalls-Zero-Off-Road-Motorcycles-Due-to-Risk-of-Serious-Injury-or-Death-from-Crash-Hazard",
+          "checkedAt": "2026-11-26T00:41:08.952811+00:00",
           "state": "body",
-          "note": "核对 Shopify 当前帮助页的按市场、按订单和按商品利润小节；本轮浏览器取得正文。"
+          "note": "本轮读取正文。核对具体车型、服务渠道和技术人员安装固件的要求。"
         }
       ],
-      "reviewedAt": "2026-11-24T10:49:21.407951+00:00",
+      "reviewedAt": "2026-11-26T00:45:24.187692+00:00",
       "patch": {
         "flow": "用户需求与库存 → 定价、渠道政策、交付承诺与终端反馈 还需核对销售主体、支持地区、购买凭证与设备序列号在售后受理中的衔接。",
         "team": "销售、市场、计划、零售、财务对齐销售预测、货盘、促销与退货规则。 XREAL 的公开流程提示渠道与服务之间存在购买证据交接；研究时应确认能否复用已授权订单信息，减少用户重复提交。",
-        "exercise": "选一个销售活动，列出从备货到退货的责任与反馈，不只统计订单数。 选择一个具体渠道和地区，画出从购买承诺到问题处理的用户路径，记录需要重复提供的信息及尚未明确的责任。 对一次售罄率变化另列统计窗口、库存范围及模型版本，先排除统计变更再讨论备货和促销。 抽取一笔跨境订单，对照商品毛利与订单利润两张报表，分别找出买家付的运费税费、店铺实际承担的运费税费，标出只有一侧有数据的项目。",
+        "exercise": "选一个销售活动，列出从备货到退货的责任与反馈，不只统计订单数。 选择一个具体渠道和地区，画出从购买承诺到问题处理的用户路径，记录需要重复提供的信息及尚未明确的责任。 对一次售罄率变化另列统计窗口、库存范围及模型版本，先排除统计变更再讨论备货和促销。 抽取一笔跨境订单，对照商品毛利与订单利润两张报表，分别找出买家付的运费税费、店铺实际承担的运费税费，标出只有一侧有数据的项目。 遇到“固件召回”时，先查公告指定的交付方式和有资格执行的主体。若需授权网点操作，渠道台账分列已联系、已预约、安装、复验及设备交还。",
         "metrics": "网店转化率先确认分母：Shopify以购买会话占总会话计算，同一会话可含多笔订单。比较时固定期间、漏斗路径、过滤与计量版本；不能直接套到门店或经销商。渠道贡献金额按同范围收入扣除变动成本；贡献率再除以该收入。先确认退款已冲减的项目，核对实际合同中按件和固定收费的部分。 售罄率另核库存分母：Shopify示例为售出数量/（售出数量+期末库存）；其2026年10月1日库存模型改变，跨期不能直接解释为经营变化。 利润对账另核售出时成本字段覆盖的规格，并按净销售额核对折扣、退款和缺成本成交金额。 产品组合变更时，经营复盘先标明收入和毛利的业务范围，再按机型、出货批次、物料成本与渠道折扣追溯。单个品类新增产品不等于该品类实现分部毛利。",
         "basics": "Sell-in 记录供给方卖给渠道的交易。Sell-through 的下一手买方需按数据提供方确认：零售渠道可能报到消费者，多级经销也可能只报到下一家经销商或门店。汇总时应分开交易层级。"
       },
@@ -1745,45 +1754,57 @@
             "shopify-profit-cost-coverage"
           ],
           "updatedAt": "2026-11-24T10:49:21.407951+00:00"
+        },
+        {
+          "id": "m26-zero-lesson",
+          "title": "固件已经发布，经销商台账里多少设备算修完？",
+          "learning": "Zero 越野车的美国召回要求联系授权经销商，由合格技术人员免费安装新固件。用户收到消息和车辆完成维修对应不同状态。",
+          "application": "在维修台账抽样找一台设备，把型号、预约、安装版本与交还记录串起来；按同批受影响设备作为覆盖率分母。",
+          "boundary": "原公告未披露完工率、网点能力或经销商结算条款。台账为研究建议。",
+          "itemIds": [
+            "m26-zero"
+          ],
+          "updatedAt": "2026-11-26T00:45:24.187692+00:00"
         }
       ],
-      "updatedAt": "2026-11-24T10:49:21.407951+00:00"
+      "updatedAt": "2026-11-26T00:45:24.187692+00:00"
     },
     "track-0": {
-      "attemptedAt": "2026-11-25T00:48:04.096649+00:00",
+      "attemptedAt": "2026-11-26T00:45:24.187692+00:00",
       "status": "partial",
-      "assessment": "荷兰数据保护机构报告在模拟场景观察到眼镜错误声称救护车在路上。其测试还发现对玩具警示的遗漏。",
+      "assessment": "华为儿童手表 5 活力版列有 IPX8 测试，也明确排除游泳、高温高湿和高速水流场景。",
       "gaps": [
         "FAQ 未解释设备离线时是否缓存或重发设置。",
         "Meta、Apple、Samsung观察对象未取得本轮当前正文。",
         "真实任务成功率、佩戴负担及续航缺跨企业实测；雷鸟数据地点、期限和删除传播仍未知。",
         "雷鸟最低手机系统与权限细节仍有占位；文件导入内容保真未做实机测试。",
-        "缺少在国内学习设备或同一眼镜多个版本上的对照实测。"
+        "缺少在国内学习设备或同一眼镜多个版本上的对照实测。",
+        "需用具体型号的维修及服务记录验证现实使用情况。"
       ],
       "reviewedFields": [
         "constraint"
       ],
       "evidence": [
         {
-          "itemId": "m25-glasses",
-          "title": "AI 眼镜读懂了画面，用户怎么知道它有没有真的呼叫帮助？",
+          "itemId": "m26-watch",
+          "title": "儿童手表通过防水测试，家长问能否戴着游泳，该怎么答？",
           "facts": [
             {
-              "claim": "机构报告了一次模拟情境中的错误反馈。",
-              "sourceUrl": "https://autoriteitpersoonsgegevens.nl/en/current/ap-advises-against-purchasing-ai-camera-glasses-serious-risks-for-users-and-bystanders",
-              "locator": "监管机构测试摘要与未成年人段"
+              "claim": "华为在脚注列出了具体不适用的活动。",
+              "sourceUrl": "https://consumer.huawei.com/cn/wearables/kids-watch-5-lite/",
+              "locator": "产品页脚注，IPX8 生活级防水"
             }
           ],
-          "boundary": "测试覆盖六款眼镜，未提供适用于所有设备的错误概率；消费建议的地域和产品范围应保留。",
+          "boundary": "具体型号的厂商说明。未获实际进水故障率、实地定位误差及售后责任分工记录。",
           "sources": [
             {
-              "url": "https://autoriteitpersoonsgegevens.nl/en/current/ap-advises-against-purchasing-ai-camera-glasses-serious-risks-for-users-and-bystanders",
-              "publisherGroup": "荷兰数据保护机构 AP",
-              "name": "荷兰数据保护机构 AP",
-              "publishedAt": "2026-11-19",
+              "url": "https://consumer.huawei.com/cn/wearables/kids-watch-5-lite/",
+              "publisherGroup": "华为消费者业务",
+              "name": "华为消费者业务",
+              "publishedAt": null,
               "role": "official",
-              "textHash": "c127eb0b93d1e8cea3b80916e767307051e9c95eff18712b7b1d6879d6366da6",
-              "readAt": "2026-11-25T00:40:54.065652+00:00",
+              "textHash": "d0bf12f4505c9d5bcb3f4713a8cc5c8d9519aabdbee254c72c4b119d348f123e",
+              "readAt": "2026-11-26T00:38:45.590985+00:00",
               "coverage": "body"
             }
           ]
@@ -1791,17 +1812,17 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "m25-glasses",
-          "url": "https://autoriteitpersoonsgegevens.nl/en/current/ap-advises-against-purchasing-ai-camera-glasses-serious-risks-for-users-and-bystanders",
-          "checkedAt": "2026-11-25T00:40:54.065652+00:00",
+          "itemId": "m26-watch",
+          "url": "https://consumer.huawei.com/cn/wearables/kids-watch-5-lite/",
+          "checkedAt": "2026-11-26T00:38:45.590985+00:00",
           "state": "body",
-          "note": "本轮读取正文。读取 11 月 19 日监管原文的测试范围与模拟场景。"
+          "note": "本轮读取正文。核对实验室测试、游泳和淋浴限制与磨损提醒。"
         }
       ],
-      "reviewedAt": "2026-11-25T00:48:04.096649+00:00",
+      "reviewedAt": "2026-11-26T00:45:24.187692+00:00",
       "patch": {
         "examples": "Meta、Apple、Samsung、雷鸟；本轮新增 XREAL 作为渠道与服务研究对象，不构成排名。",
-        "constraint": "佩戴舒适度、续航、隐私和持续使用 离线能力需按字幕、翻译等具体任务核验手机依赖、App 版本和预下载资源；不能仅凭“离线”断言数据不出端。 记录功能还应分别核对音频、转写、摘要与标签：雷鸟Life Log声明不存原始音频，但仍保留文字，不能据此推断没有个人数据留存。 儿童手表的远程规则需观察表端状态。华为上课禁用排查先核对时段与节假日，再核网络并可更换管理员。 穿戴产品的热风险会随应用负载和使用时长变化。影目 AIR3 召回公告限定了受影响批次，并将长时间运行部分第三方应用与左镜腿可能过热联系起来。 对带摄像头和语音回复的眼镜，抽查模拟任务中所说的动作是否有外部执行回执，并检查旁人摄录和场景警示是否能被正确处理。",
+        "constraint": "佩戴舒适度、续航、隐私和持续使用 离线能力需按字幕、翻译等具体任务核验手机依赖、App 版本和预下载资源；不能仅凭“离线”断言数据不出端。 记录功能还应分别核对音频、转写、摘要与标签：雷鸟Life Log声明不存原始音频，但仍保留文字，不能据此推断没有个人数据留存。 儿童手表的远程规则需观察表端状态。华为上课禁用排查先核对时段与节假日，再核网络并可更换管理员。 穿戴产品的热风险会随应用负载和使用时长变化。影目 AIR3 召回公告限定了受影响批次，并将长时间运行部分第三方应用与左镜腿可能过热联系起来。 对带摄像头和语音回复的眼镜，抽查模拟任务中所说的动作是否有外部执行回执，并检查旁人摄录和场景警示是否能被正确处理。 儿童手表的防护指标要回到具体机型和使用说明。记录厂商测试条件、排除的活动及磨损影响，分别回答实验室通过与家长能否在泳池使用。",
         "team": "光学 / 声学、算法、工业设计、移动应用、健康验证 还需核对 App、渠道与服务团队如何共用版本化功能条件，避免销售承诺与实际使用前提脱节。",
         "metrics": "完成一次真实任务的成功率；佩戴负担；续航；退货原因。文档类任务还需检查关键文字、图片与版式的保留情况及人工补做步骤；雷鸟提词器说明导入只留文字，支持格式数不能替代任务验收。 观察眼镜品类时同时记录销售额或台数、覆盖平台和统计期间，再用独立样本核对体验。"
       },
@@ -1905,46 +1926,53 @@
             "m25-glasses"
           ],
           "updatedAt": "2026-11-25T00:48:04.096649+00:00"
+        },
+        {
+          "id": "m26-watch-lesson",
+          "title": "标注 IPX8 的儿童手表，门店如何回答能不能戴去游泳？",
+          "learning": "华为儿童手表 5 活力版列有 IPX8 测试，也明确排除游泳、高温高湿和高速水流场景。",
+          "application": "质量和产品人员核对型号及脚注，渠道与客服将限制写成家长的常见问题；后续抽查页面与门店说法是否一致。",
+          "boundary": "仅适用于这款产品的公开说明。没有门店实际执行或维修效果的证据。",
+          "itemIds": [
+            "m26-watch"
+          ],
+          "updatedAt": "2026-11-26T00:45:24.187692+00:00"
         }
       ],
-      "updatedAt": "2026-11-25T00:48:04.096649+00:00"
+      "updatedAt": "2026-11-26T00:45:24.187692+00:00"
     },
     "track-1": {
-      "attemptedAt": "2026-11-24T10:49:21.407951+00:00",
+      "attemptedAt": "2026-11-26T00:45:24.187692+00:00",
       "status": "partial",
-      "assessment": "核对大疆美国帮助中心服务等级表、四步流程与 FAQ 的跨区域使用条款。",
+      "assessment": "小鹏说明 Robotaxi 业务向运营伙伴提供车辆平台和驾驶能力，披露了载客测试与示范运营计划。",
       "gaps": [
-        "缺单一站点的实际作业工时、任务完成日志及跨厂商可比记录。"
+        "缺单一站点的实际作业工时、任务完成日志及跨厂商可比记录。",
+        "实际运营伙伴及具体合同和异常处理验收记录待查。"
       ],
       "reviewedFields": [
-        "constraint"
+        "team"
       ],
       "evidence": [
         {
-          "itemId": "e20-dji",
-          "title": "大疆行业无人机送保养，发现另需付费的损坏时谁决定？",
+          "itemId": "m26-xp",
+          "title": "小鹏把 Robotaxi 的车辆技术与运营分开，YOYO-01 计划交给谁？",
           "facts": [
             {
-              "claim": "超出保养范围的损坏由客户选择是否另行付费维修。",
-              "sourceUrl": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
-              "locator": "How to Use Maintenance Service · Step 3"
-            },
-            {
-              "claim": "申请后生成工单号，用户可查看进度并下载维护报告。",
-              "sourceUrl": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
-              "locator": "Service Progress Inquiry · Maintenance records"
+              "claim": "小鹏说明自身定位及向运营伙伴提供的能力。",
+              "sourceUrl": "https://www.xpeng.com/pressroom/news/01a212b0d830a1e838d68a02a2110174",
+              "locator": "Extending Physical AI · Robotaxi 段"
             }
           ],
-          "boundary": "依据大疆英文支持页列明的企业机型和地区，未查得中国大陆统一的服务价格、周转时长或实际完成率。",
+          "boundary": "企业披露的业务定位和车型计划；未公布伙伴合同、逐项责任或商业回报。",
           "sources": [
             {
-              "url": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
-              "publisherGroup": "大疆技术支持",
-              "name": "大疆技术支持",
-              "publishedAt": null,
+              "url": "https://www.xpeng.com/pressroom/news/01a212b0d830a1e838d68a02a2110174",
+              "publisherGroup": "小鹏汽车",
+              "name": "小鹏汽车",
+              "publishedAt": "2026-11-25",
               "role": "official",
-              "textHash": "e0195372c19294852d06d4eb82cbb81d94c522c4a2a17d9e33b14e296abde504",
-              "readAt": "2026-11-20T10:42:17.557207+00:00",
+              "textHash": "8f9cf2646a056c8dfc5cd92ece38a9a2e828982e228a10869b7dcb8ec3244655",
+              "readAt": "2026-11-26T00:43:03.767715+00:00",
               "coverage": "body"
             }
           ]
@@ -1952,19 +1980,19 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "e20-dji",
-          "url": "https://support.dji.com/help/content?customId=en-us03400006896&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34",
-          "checkedAt": "2026-11-24T10:49:21.317434+00:00",
+          "itemId": "m26-xp",
+          "url": "https://www.xpeng.com/pressroom/news/01a212b0d830a1e838d68a02a2110174",
+          "checkedAt": "2026-11-26T00:43:03.767715+00:00",
           "state": "body",
-          "note": "核对大疆美国帮助中心服务等级表、四步流程与 FAQ 的跨区域使用条款。"
+          "note": "本轮读取正文。公司科技日公告，核对运行阶段、供给物和伙伴角色。"
         }
       ],
-      "reviewedAt": "2026-11-24T10:49:21.407951+00:00",
+      "reviewedAt": "2026-11-26T00:45:24.187692+00:00",
       "patch": {
         "examples": "DJI、宇树、NVIDIA 生态；新增上纬新材启元作为量产与商业化阶段观察对象，HALO 作为基于宇树 G1 的研究系统样本。",
         "constraint": "真实环境中的安全、可靠性与维护成本。宇树实物部署说明明确其程序仅为示例、不是稳定控制；模型能运行与业务可交付须分别取证，不能从演示外推任务可靠性。 比较服务周转时间时应记录机型、服务等级和使用地区。大疆该计划的三档服务均含清洁、检查、更新及校准，核心部件更换只列在高级档。",
         "metrics": "任务成功率；人工接管频次；故障恢复时间；现场工时 使用频次另列统计对象、窗口与分母；高频交互不直接证明任务完成、人工负担减少或用户价值。 按同一批任务分列误报位置、真实残留、人工实际处理及用时，保留未处理项。",
-        "team": "控制、感知、机械、电气、仿真、现场交付 交付团队复盘一次保养时，可用同一工单对照原授权、追加报价、客户决定和维护报告，分开记录等候用户与实际作业时间。 普渡 CC1 Pro 把真实残留交由现场清洁人员确认和清理；对花纹等误报则另有豁免入口。"
+        "team": "控制、感知、机械、电气、仿真、现场交付 交付团队复盘一次保养时，可用同一工单对照原授权、追加报价、客户决定和维护报告，分开记录等候用户与实际作业时间。 普渡 CC1 Pro 把真实残留交由现场清洁人员确认和清理；对花纹等误报则另有豁免入口。 观察无人驾驶商业项目时，把技术提供方、运营方与示范许可主体逐项核对。故障响应、调度、乘客服务和恢复运营的权责应追到项目约定。"
       },
       "lessons": [
         {
@@ -2033,9 +2061,20 @@
             "e20-dji"
           ],
           "updatedAt": "2026-11-24T10:49:21.407951+00:00"
+        },
+        {
+          "id": "m26-xp-lesson",
+          "title": "车辆与技术由一方提供，谁来负责每天的实际运营？",
+          "learning": "小鹏说明 Robotaxi 业务向运营伙伴提供车辆平台和驾驶能力，披露了载客测试与示范运营计划。",
+          "application": "做合作分工表时分别列车端验收、运营排班、异常受理和服务恢复，向技术提供方与运营方核对签字权及可见记录。",
+          "boundary": "公告只确定业务定位；未披露商业合同、每项运营职责或运行效率。",
+          "itemIds": [
+            "m26-xp"
+          ],
+          "updatedAt": "2026-11-26T00:45:24.187692+00:00"
         }
       ],
-      "updatedAt": "2026-11-24T10:49:21.407951+00:00"
+      "updatedAt": "2026-11-26T00:45:24.187692+00:00"
     },
     "track-3": {
       "attemptedAt": "2026-11-25T00:48:04.096649+00:00",
@@ -3476,6 +3515,48 @@
           "hash": "92cb1c329b770fc944f6f61082f83e6c8c17e0ce5843c859bdaa3e19bdfd2c32",
           "decision": "integrated",
           "reason": "Google 明确说明 Nest × Yale 离线时，具有限时授权的用户不能用口令开门。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-26T00:45:24.187692+00:00",
+      "reviewedNodes": [
+        "chain-4",
+        "chain-6",
+        "track-1",
+        "track-5",
+        "track-0"
+      ],
+      "decisions": [
+        {
+          "itemId": "m26-fixture",
+          "hash": "8c76c990261789048278c3c787faf8fb8a7da8c95e509252fe1f3470452e2f78",
+          "decision": "integrated",
+          "reason": "Bunnie Huang 记录了把板级验证脚本组织成产测场景、用依赖关系避免漏测的做法。"
+        },
+        {
+          "itemId": "m26-zero",
+          "hash": "5f1b44b513ad63b90e852882e3ad24644f2f63013bd2ffb69b042a88efea0748",
+          "decision": "integrated",
+          "reason": "Zero 越野车的美国召回要求联系授权经销商，由合格技术人员免费安装新固件。用户收到消息和车辆完成维修对应不同状态。"
+        },
+        {
+          "itemId": "m26-xp",
+          "hash": "2217906d3a02658204d83fa42048729fa80bbd41b42548051378fbb48fb65d18",
+          "decision": "integrated",
+          "reason": "小鹏说明 Robotaxi 业务向运营伙伴提供车辆平台和驾驶能力，披露了载客测试与示范运营计划。"
+        },
+        {
+          "itemId": "m26-md",
+          "hash": "f1f7ee4ddefdc3d50f37617ec407110bd8d0c89058f246f98b271125304980f0",
+          "decision": "integrated",
+          "reason": "三星对 MD310 的计划将客户验证列为量产预期的前置条件。"
+        },
+        {
+          "itemId": "m26-watch",
+          "hash": "7b825dd726ffaef2f65eab93c818f00e1cb121031c9a45df62140b8c13b002f7",
+          "decision": "integrated",
+          "reason": "华为儿童手表 5 活力版列有 IPX8 测试，也明确排除游泳、高温高湿和高速水流场景。"
         }
       ]
     }
@@ -14610,6 +14691,357 @@
           "checkedAt": "2026-11-25T10:43:01.191512+00:00",
           "state": "body",
           "note": "本轮读取正文。核对限时授权及离线时的通知限制。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-4",
+      "reviewedAt": "2026-11-26T00:45:24.187692+00:00",
+      "status": "partial",
+      "assessment": "Bunnie Huang 记录了把板级验证脚本组织成产测场景、用依赖关系避免漏测的做法。",
+      "gaps": [
+        "已核企业制度中的整改归属、复验与例外审批，仍缺具体批次的原始签核记录。",
+        "已取得真实工厂的产线周统计，尚缺能逐件重算首次、返测及最终处置的批次流水。",
+        "未取得上述公司按同一口径披露的改进前后量产结果。",
+        "缺少学习机试产的逐台测项执行记录及变更前后漏测对照。"
+      ],
+      "reviewedFields": [
+        "flow"
+      ],
+      "changes": {
+        "flow": {
+          "before": "验证通过的设计 → 就绪并经过验证的工装、夹具和测试台 → 试产检查产线节拍、报废与批次良率 → 稳定交付。具体试产准入条件按项目确定。 索尼英国生产 Raspberry Pi 的案例在多个装配步骤目检、分板后逐板启动；通过后独立装盒，称重检查包装内容，再装大箱发运。",
+          "after": "验证通过的设计 → 就绪并经过验证的工装、夹具和测试台 → 试产检查产线节拍、报废与批次良率 → 稳定交付。具体试产准入条件按项目确定。 索尼英国生产 Raspberry Pi 的案例在多个装配步骤目检、分板后逐板启动；通过后独立装盒，称重检查包装内容，再装大箱发运。 把研发单项验证转成产测时，先画出前置测试与后续测试的依赖关系。产线调整顺序或压缩节拍后，用同一设备逐项核对必测步骤是否执行、失败后续步骤如何标记。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m26-fixture-lesson",
+            "title": "产测提速后，怎样发现一个必测步骤漏跑了？",
+            "learning": "Bunnie Huang 记录了把板级验证脚本组织成产测场景、用依赖关系避免漏测的做法。",
+            "application": "研发给出测项和前置条件，测试工程师安排场景，生产保留设备、版本和各步骤结果；流程调整后对照必测项复验。",
+            "boundary": "为作者的特定硬件项目经验；没有同条件漏测率、节拍或批量良率。",
+            "itemIds": [
+              "m26-fixture"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m26-fixture",
+          "title": "把研发脚本交给产线，怎样避免提速时漏掉一个必测步骤？",
+          "facts": [
+            {
+              "claim": "作者说明以脚本依赖关系约束产测场景。",
+              "sourceUrl": "https://magazine.raspberrypi.com/articles/easier-hardware-testing-in-production",
+              "locator": "Exclave 脚本、场景和执行依赖段"
+            }
+          ],
+          "boundary": "属于作者的硬件项目经验；学习机分工是迁移练习，实际适用性和收益需要试产批次验证。",
+          "sources": [
+            {
+              "url": "https://magazine.raspberrypi.com/articles/easier-hardware-testing-in-production",
+              "publisherGroup": "Raspberry Pi 官方杂志 · Bunnie Huang",
+              "name": "Raspberry Pi 官方杂志 · Bunnie Huang",
+              "publishedAt": "2019-03-12",
+              "role": "official",
+              "textHash": "2f229352bf0f71b1dd3805b42f3020ba88b76ec20f9b9d11504d2592d4efac75",
+              "readAt": "2026-11-26T00:40:54.210712+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m26-fixture",
+          "url": "https://magazine.raspberrypi.com/articles/easier-hardware-testing-in-production",
+          "checkedAt": "2026-11-26T00:40:54.210712+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对作者对单项脚本、执行依赖和产线优化的说明。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-6",
+      "reviewedAt": "2026-11-26T00:45:24.187692+00:00",
+      "status": "partial",
+      "assessment": "Zero 越野车的美国召回要求联系授权经销商，由合格技术人员免费安装新固件。用户收到消息和车辆完成维修对应不同状态。",
+      "gaps": [
+        "已复核两个公司披露的渠道层级及贡献毛益的通常计算方式。读书郎单店合同的费率、退货分摊和各经销商终端动销台账本轮未取得，无法核算单店贡献。",
+        "本案缺逐台维修完工与交还回执。"
+      ],
+      "reviewedFields": [
+        "exercise"
+      ],
+      "changes": {
+        "exercise": {
+          "before": "选一个销售活动，列出从备货到退货的责任与反馈，不只统计订单数。 选择一个具体渠道和地区，画出从购买承诺到问题处理的用户路径，记录需要重复提供的信息及尚未明确的责任。 对一次售罄率变化另列统计窗口、库存范围及模型版本，先排除统计变更再讨论备货和促销。 抽取一笔跨境订单，对照商品毛利与订单利润两张报表，分别找出买家付的运费税费、店铺实际承担的运费税费，标出只有一侧有数据的项目。",
+          "after": "选一个销售活动，列出从备货到退货的责任与反馈，不只统计订单数。 选择一个具体渠道和地区，画出从购买承诺到问题处理的用户路径，记录需要重复提供的信息及尚未明确的责任。 对一次售罄率变化另列统计窗口、库存范围及模型版本，先排除统计变更再讨论备货和促销。 抽取一笔跨境订单，对照商品毛利与订单利润两张报表，分别找出买家付的运费税费、店铺实际承担的运费税费，标出只有一侧有数据的项目。 遇到“固件召回”时，先查公告指定的交付方式和有资格执行的主体。若需授权网点操作，渠道台账分列已联系、已预约、安装、复验及设备交还。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m26-zero-lesson",
+            "title": "固件已经发布，经销商台账里多少设备算修完？",
+            "learning": "Zero 越野车的美国召回要求联系授权经销商，由合格技术人员免费安装新固件。用户收到消息和车辆完成维修对应不同状态。",
+            "application": "在维修台账抽样找一台设备，把型号、预约、安装版本与交还记录串起来；按同批受影响设备作为覆盖率分母。",
+            "boundary": "原公告未披露完工率、网点能力或经销商结算条款。台账为研究建议。",
+            "itemIds": [
+              "m26-zero"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m26-zero",
+          "title": "Zero 电动越野车召回：固件已经有修复方案，谁来装到车上？",
+          "facts": [
+            {
+              "claim": "补救措施要求合格技术人员安装固件。",
+              "sourceUrl": "https://www.cpsc.gov/Recalls/2027/Zero-Motorcycles-Recalls-Zero-Off-Road-Motorcycles-Due-to-Risk-of-Serious-Injury-or-Death-from-Crash-Hazard",
+              "locator": "Recall Details · Remedy"
+            }
+          ],
+          "boundary": "该路径适用于公告列明的两款车；公告未提供维修完工量或复验记录。",
+          "sources": [
+            {
+              "url": "https://www.cpsc.gov/Recalls/2027/Zero-Motorcycles-Recalls-Zero-Off-Road-Motorcycles-Due-to-Risk-of-Serious-Injury-or-Death-from-Crash-Hazard",
+              "publisherGroup": "美国消费品安全委员会",
+              "name": "美国消费品安全委员会",
+              "publishedAt": "2026-11-25",
+              "role": "official",
+              "textHash": "568643cbdcc21ac6eac7e2c8972877277036c44fe0c1bd1210d5d58445e6f187",
+              "readAt": "2026-11-26T00:41:08.952811+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m26-zero",
+          "url": "https://www.cpsc.gov/Recalls/2027/Zero-Motorcycles-Recalls-Zero-Off-Road-Motorcycles-Due-to-Risk-of-Serious-Injury-or-Death-from-Crash-Hazard",
+          "checkedAt": "2026-11-26T00:41:08.952811+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对具体车型、服务渠道和技术人员安装固件的要求。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-1",
+      "reviewedAt": "2026-11-26T00:45:24.187692+00:00",
+      "status": "partial",
+      "assessment": "小鹏说明 Robotaxi 业务向运营伙伴提供车辆平台和驾驶能力，披露了载客测试与示范运营计划。",
+      "gaps": [
+        "缺单一站点的实际作业工时、任务完成日志及跨厂商可比记录。",
+        "实际运营伙伴及具体合同和异常处理验收记录待查。"
+      ],
+      "reviewedFields": [
+        "team"
+      ],
+      "changes": {
+        "team": {
+          "before": "控制、感知、机械、电气、仿真、现场交付 交付团队复盘一次保养时，可用同一工单对照原授权、追加报价、客户决定和维护报告，分开记录等候用户与实际作业时间。 普渡 CC1 Pro 把真实残留交由现场清洁人员确认和清理；对花纹等误报则另有豁免入口。",
+          "after": "控制、感知、机械、电气、仿真、现场交付 交付团队复盘一次保养时，可用同一工单对照原授权、追加报价、客户决定和维护报告，分开记录等候用户与实际作业时间。 普渡 CC1 Pro 把真实残留交由现场清洁人员确认和清理；对花纹等误报则另有豁免入口。 观察无人驾驶商业项目时，把技术提供方、运营方与示范许可主体逐项核对。故障响应、调度、乘客服务和恢复运营的权责应追到项目约定。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m26-xp-lesson",
+            "title": "车辆与技术由一方提供，谁来负责每天的实际运营？",
+            "learning": "小鹏说明 Robotaxi 业务向运营伙伴提供车辆平台和驾驶能力，披露了载客测试与示范运营计划。",
+            "application": "做合作分工表时分别列车端验收、运营排班、异常受理和服务恢复，向技术提供方与运营方核对签字权及可见记录。",
+            "boundary": "公告只确定业务定位；未披露商业合同、每项运营职责或运行效率。",
+            "itemIds": [
+              "m26-xp"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m26-xp",
+          "title": "小鹏把 Robotaxi 的车辆技术与运营分开，YOYO-01 计划交给谁？",
+          "facts": [
+            {
+              "claim": "小鹏说明自身定位及向运营伙伴提供的能力。",
+              "sourceUrl": "https://www.xpeng.com/pressroom/news/01a212b0d830a1e838d68a02a2110174",
+              "locator": "Extending Physical AI · Robotaxi 段"
+            }
+          ],
+          "boundary": "企业披露的业务定位和车型计划；未公布伙伴合同、逐项责任或商业回报。",
+          "sources": [
+            {
+              "url": "https://www.xpeng.com/pressroom/news/01a212b0d830a1e838d68a02a2110174",
+              "publisherGroup": "小鹏汽车",
+              "name": "小鹏汽车",
+              "publishedAt": "2026-11-25",
+              "role": "official",
+              "textHash": "8f9cf2646a056c8dfc5cd92ece38a9a2e828982e228a10869b7dcb8ec3244655",
+              "readAt": "2026-11-26T00:43:03.767715+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m26-xp",
+          "url": "https://www.xpeng.com/pressroom/news/01a212b0d830a1e838d68a02a2110174",
+          "checkedAt": "2026-11-26T00:43:03.767715+00:00",
+          "state": "body",
+          "note": "本轮读取正文。公司科技日公告，核对运行阶段、供给物和伙伴角色。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-5",
+      "reviewedAt": "2026-11-26T00:45:24.187692+00:00",
+      "status": "partial",
+      "assessment": "三星对 MD310 的计划将客户验证列为量产预期的前置条件。",
+      "gaps": [
+        "已取得团队公开的实际投产决定，仍缺其内部签核与完整批次良率，其他项目的签核授权仍待核实。",
+        "具体客户验证文件、量产结果仍待公开。"
+      ],
+      "reviewedFields": [
+        "chain"
+      ],
+      "changes": {
+        "chain": {
+          "before": "用户需求 → 原型 → 设计验证 → 生产验证 → 量产与服务 小批量投产后，按产品配置分开核对已履约订单和后续补产。项目团队与渠道伙伴可以分别承担主板和配件的备货责任。",
+          "after": "用户需求 → 原型 → 设计验证 → 生产验证 → 量产与服务 小批量投产后，按产品配置分开核对已履约订单和后续补产。项目团队与渠道伙伴可以分别承担主板和配件的备货责任。 芯片与模组导入时分别标出供应商有样件、客户完成目标平台验证及供应商开始量产的日期；将公开目标与已完成记录分列。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m26-md-lesson",
+            "title": "模组送样后，哪道验证决定客户能否备货？",
+            "learning": "三星对 MD310 的计划将客户验证列为量产预期的前置条件。",
+            "application": "产品与采购团队按实际平台记录样件编号、验收责任人、兼容性结果和供应商量产通知，再判断替代料何时可以进入备货计划。",
+            "boundary": "论坛报道针对服务器模组；未公布客户测试项目、通过率或实际供货量。",
+            "itemIds": [
+              "m26-md"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m26-md",
+          "title": "三星 MD310 排出送样时间，为什么量产还要等客户验证？",
+          "facts": [
+            {
+              "claim": "负责人将下半年量产预期与客户验证关联。",
+              "sourceUrl": "https://www.thelec.net/news/articleView.html?idxno=15904",
+              "locator": "论坛报道，负责人原话及模组说明"
+            }
+          ],
+          "boundary": "没有具体客户的签收或量产结果；服务器 CXL 模组与学习机板载内存适用范围不同。",
+          "sources": [
+            {
+              "url": "https://www.thelec.net/news/articleView.html?idxno=15904",
+              "publisherGroup": "THE ELEC",
+              "name": "THE ELEC",
+              "publishedAt": "2026-11-25",
+              "role": "media",
+              "textHash": "5a274b5773b24974e77428d7ccabaef400981d26821539b442b9a0a0020a1ec9",
+              "readAt": "2026-11-26T00:38:45.398502+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m26-md",
+          "url": "https://www.thelec.net/news/articleView.html?idxno=15904",
+          "checkedAt": "2026-11-26T00:38:45.398502+00:00",
+          "state": "body",
+          "note": "本轮读取正文。负责人关于送样、客户验证及量产预期的原话。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-0",
+      "reviewedAt": "2026-11-26T00:45:24.187692+00:00",
+      "status": "partial",
+      "assessment": "华为儿童手表 5 活力版列有 IPX8 测试，也明确排除游泳、高温高湿和高速水流场景。",
+      "gaps": [
+        "FAQ 未解释设备离线时是否缓存或重发设置。",
+        "Meta、Apple、Samsung观察对象未取得本轮当前正文。",
+        "真实任务成功率、佩戴负担及续航缺跨企业实测；雷鸟数据地点、期限和删除传播仍未知。",
+        "雷鸟最低手机系统与权限细节仍有占位；文件导入内容保真未做实机测试。",
+        "缺少在国内学习设备或同一眼镜多个版本上的对照实测。",
+        "需用具体型号的维修及服务记录验证现实使用情况。"
+      ],
+      "reviewedFields": [
+        "constraint"
+      ],
+      "changes": {
+        "constraint": {
+          "before": "佩戴舒适度、续航、隐私和持续使用 离线能力需按字幕、翻译等具体任务核验手机依赖、App 版本和预下载资源；不能仅凭“离线”断言数据不出端。 记录功能还应分别核对音频、转写、摘要与标签：雷鸟Life Log声明不存原始音频，但仍保留文字，不能据此推断没有个人数据留存。 儿童手表的远程规则需观察表端状态。华为上课禁用排查先核对时段与节假日，再核网络并可更换管理员。 穿戴产品的热风险会随应用负载和使用时长变化。影目 AIR3 召回公告限定了受影响批次，并将长时间运行部分第三方应用与左镜腿可能过热联系起来。 对带摄像头和语音回复的眼镜，抽查模拟任务中所说的动作是否有外部执行回执，并检查旁人摄录和场景警示是否能被正确处理。",
+          "after": "佩戴舒适度、续航、隐私和持续使用 离线能力需按字幕、翻译等具体任务核验手机依赖、App 版本和预下载资源；不能仅凭“离线”断言数据不出端。 记录功能还应分别核对音频、转写、摘要与标签：雷鸟Life Log声明不存原始音频，但仍保留文字，不能据此推断没有个人数据留存。 儿童手表的远程规则需观察表端状态。华为上课禁用排查先核对时段与节假日，再核网络并可更换管理员。 穿戴产品的热风险会随应用负载和使用时长变化。影目 AIR3 召回公告限定了受影响批次，并将长时间运行部分第三方应用与左镜腿可能过热联系起来。 对带摄像头和语音回复的眼镜，抽查模拟任务中所说的动作是否有外部执行回执，并检查旁人摄录和场景警示是否能被正确处理。 儿童手表的防护指标要回到具体机型和使用说明。记录厂商测试条件、排除的活动及磨损影响，分别回答实验室通过与家长能否在泳池使用。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m26-watch-lesson",
+            "title": "标注 IPX8 的儿童手表，门店如何回答能不能戴去游泳？",
+            "learning": "华为儿童手表 5 活力版列有 IPX8 测试，也明确排除游泳、高温高湿和高速水流场景。",
+            "application": "质量和产品人员核对型号及脚注，渠道与客服将限制写成家长的常见问题；后续抽查页面与门店说法是否一致。",
+            "boundary": "仅适用于这款产品的公开说明。没有门店实际执行或维修效果的证据。",
+            "itemIds": [
+              "m26-watch"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m26-watch",
+          "title": "儿童手表通过防水测试，家长问能否戴着游泳，该怎么答？",
+          "facts": [
+            {
+              "claim": "华为在脚注列出了具体不适用的活动。",
+              "sourceUrl": "https://consumer.huawei.com/cn/wearables/kids-watch-5-lite/",
+              "locator": "产品页脚注，IPX8 生活级防水"
+            }
+          ],
+          "boundary": "具体型号的厂商说明。未获实际进水故障率、实地定位误差及售后责任分工记录。",
+          "sources": [
+            {
+              "url": "https://consumer.huawei.com/cn/wearables/kids-watch-5-lite/",
+              "publisherGroup": "华为消费者业务",
+              "name": "华为消费者业务",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "d0bf12f4505c9d5bcb3f4713a8cc5c8d9519aabdbee254c72c4b119d348f123e",
+              "readAt": "2026-11-26T00:38:45.590985+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m26-watch",
+          "url": "https://consumer.huawei.com/cn/wearables/kids-watch-5-lite/",
+          "checkedAt": "2026-11-26T00:38:45.590985+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对实验室测试、游泳和淋浴限制与磨损提醒。"
         }
       ]
     }

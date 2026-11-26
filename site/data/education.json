@@ -110,7 +110,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-25T00:48:03.720012+00:00",
+      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "作业帮"
@@ -167,7 +167,7 @@
         }
       ],
       "updatedAt": "2026-11-17T00:46:36.233260+00:00",
-      "reviewedAt": "2026-11-25T00:48:03.720012+00:00",
+      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "科大讯飞",
@@ -225,7 +225,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-25T00:48:03.720012+00:00",
+      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "猿辅导",
@@ -284,7 +284,7 @@
         }
       ],
       "updatedAt": "2026-11-19T00:51:40.404223+00:00",
-      "reviewedAt": "2026-11-23T00:49:09.388830+00:00",
+      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "小天才"
@@ -346,7 +346,7 @@
         }
       ],
       "updatedAt": "2026-11-15T00:44:23.933338+00:00",
-      "reviewedAt": "2026-11-23T00:49:09.388830+00:00",
+      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "华为",
@@ -411,7 +411,7 @@
         }
       ],
       "updatedAt": "2026-11-22T00:50:54.415164+00:00",
-      "reviewedAt": "2026-11-22T00:50:54.415164+00:00",
+      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "Amazon"
@@ -540,7 +540,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-22T00:50:54.415164+00:00",
+      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "LeapFrog"
@@ -602,7 +602,7 @@
         }
       ],
       "updatedAt": "2026-11-21T00:46:30.147094+00:00",
-      "reviewedAt": "2026-11-25T00:48:03.720012+00:00",
+      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "科大讯飞",
@@ -798,7 +798,7 @@
         }
       ],
       "updatedAt": "2026-11-20T00:43:29.502492+00:00",
-      "reviewedAt": "2026-11-25T00:48:03.720012+00:00",
+      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
       "lastReviewStatus": "reviewed"
     },
     {
@@ -849,7 +849,7 @@
         }
       ],
       "updatedAt": "2026-11-22T00:50:54.415164+00:00",
-      "reviewedAt": "2026-11-25T00:48:03.720012+00:00",
+      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
       "lastReviewStatus": "reviewed"
     },
     {
@@ -917,6 +917,62 @@
       ],
       "updatedAt": "2026-11-23T00:49:09.388830+00:00",
       "reviewedAt": "2026-11-23T00:49:09.388830+00:00",
+      "lastReviewStatus": "reviewed"
+    },
+    {
+      "id": "huawei-kids-5-lite",
+      "company": "华为",
+      "tier": "相邻场景",
+      "categoryIds": [
+        "watch"
+      ],
+      "aliases": [
+        "华为儿童手表 5 活力版"
+      ],
+      "brief": {
+        "lead": "华为儿童手表 5 活力版列出了 IPX8 防水测试，同时明确将游泳、淋浴和温泉列为不适用场景。官网还提醒，日常磨损可能降低防护性能。",
+        "points": [
+          "质量团队可以保存测试所用标准和条件；产品、零售和客服共同维护一份按型号区分的场景说明，家长能直接查洗手、游泳等问题。",
+          "同页的离线定位也附有限制：手表须开机，位置刷新时间与精度受周围华为设备数量和密度影响。定位图标之外，还应让家长读得懂显示位置的时间。"
+        ]
+      },
+      "dimensions": {
+        "product": "离线定位须手表开机，位置刷新时间和精度受周围华为设备数量与密度影响。",
+        "content": "该机型列有上课禁用。课程和学习资源交付方式待核。",
+        "channel": "研究问题：店员如何向家长解释离线定位与防水条件？",
+        "delivery": "厂商列出参考 GB/T 4208-2017 的 IPX8 测试，排除游泳、淋浴和温泉等场景，日常磨损也可能降低防护。",
+        "organization": "研究问题：型号说明、客服答复与零售演示由哪些团队核对？"
+      },
+      "boundary": "具体型号的厂商说明。未获实际进水故障率、实地定位误差及售后责任分工记录。",
+      "gaps": [
+        "未取得实地离线定位对照、进水维修率或内部签核资料。"
+      ],
+      "sources": [
+        {
+          "id": "huawei-kids5-lite-official",
+          "title": "华为儿童手表 5 活力版 · 产品页与脚注",
+          "url": "https://consumer.huawei.com/cn/wearables/kids-watch-5-lite/",
+          "role": "official",
+          "publishedAt": null,
+          "readAt": "2026-11-26T00:38:45.590985+00:00",
+          "coverage": "body",
+          "textHash": "d0bf12f4505c9d5bcb3f4713a8cc5c8d9519aabdbee254c72c4b119d348f123e"
+        }
+      ],
+      "facts": [
+        {
+          "sourceId": "huawei-kids5-lite-official",
+          "claim": "产品列有防水测试，但型号说明排除游泳、淋浴等用途。",
+          "locator": "产品页防水脚注"
+        },
+        {
+          "sourceId": "huawei-kids5-lite-official",
+          "claim": "离线定位须开机，位置刷新时间与精度与周围华为设备有关。",
+          "locator": "产品页离线定位脚注"
+        }
+      ],
+      "updatedAt": "2026-11-26T00:44:39.690905+00:00",
+      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
       "lastReviewStatus": "reviewed"
     }
   ],
@@ -2492,6 +2548,192 @@
             "reader"
           ],
           "note": "核对安全更新最低期限、购买条件与各型号差异。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-26T00:44:39.690905+00:00",
+      "summary": "按华为儿童手表 5 活力版官方脚注补充定位和防水条件；复核核心公司、阅读器和海外学习设备。",
+      "checks": [
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "name": "2026届春招-供应链运营管培生",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:38:21.399342+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "同一岗位当前职责与上次一致。正文明确学习机售后及小猿设备业务；管培生职责可能含轮岗，不能视为固定组织架构"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "name": "2026届春招-硬件研发工程师",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:38:22.699125+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "同一岗位当前职责与上次一致。原文明确小猿产品及学习机、学练机业务，未划分具体型号"
+        },
+        {
+          "company": "作业帮",
+          "url": "https://smart.zuoyebang.com/about",
+          "name": "作业帮 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:38:15.934462+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "核对品牌材料中的内容、数据和系统关系。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "name": "科大讯飞 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:38:16.453242+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "核对学习机分学段内容和答疑流程。"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://apps.apple.com/cn/app/id6738277050",
+          "name": "猿辅导（小猿） 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:38:16.826851+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "复核家长端管理设备及使用时间的范围。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://edu.iflytek.com/solution/family/transpen",
+          "name": "科大讯飞 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:38:16.429026+00:00",
+          "categoryIds": [
+            "pen"
+          ],
+          "note": "复查查词与翻译功能，正文未披露整机识别率。"
+        },
+        {
+          "company": "小天才",
+          "url": "https://www.okii.com/html/pc/service/service_question.html",
+          "name": "小天才 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:38:16.075047+00:00",
+          "categoryIds": [
+            "watch"
+          ],
+          "note": "复核定时开关机的联网确认与关机充电场景。"
+        },
+        {
+          "company": "Amazon",
+          "url": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
+          "name": "Amazon 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:39:36.447992+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "核对家长管理、Kids+ 期限和 Google Play 的审批。"
+        },
+        {
+          "company": "LeapFrog",
+          "url": "https://www.leapfrog.com/en-us/products/tablet-family?bmLocale=en_US",
+          "name": "LeapFrog 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:39:37.824760+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "核对预装内容、试用及教育团队审核说明。"
+        },
+        {
+          "company": "华为",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+          "name": "华为 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:39:38.178838+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "复核教育空间适用机型、使用管理与删除后数据处理。"
+        },
+        {
+          "company": "掌阅",
+          "url": "https://m.ithome.com/html/811360.htm",
+          "name": "掌阅 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:38:16.131670+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "note": "复查 SmartOS 2.4 已列出的显示模式和同步限制。"
+        },
+        {
+          "company": "华为",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn00734120/",
+          "name": "华为 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:38:18.490236+00:00",
+          "categoryIds": [
+            "watch"
+          ],
+          "note": "核对官方上课禁用排查步骤。"
+        },
+        {
+          "company": "文石 BOOX",
+          "url": "https://help.boox.com/fa5fa/f733d/56960",
+          "name": "文石 BOOX 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:38:17.396262+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "note": "复核阅读同步的账户、服务器与目录条件；本轮仅查第一份说明。"
+        },
+        {
+          "company": "钉钉",
+          "url": "https://aihub.dingtalk.com/",
+          "name": "钉钉录音设备官方入口",
+          "purpose": "practice",
+          "state": "error",
+          "checkedAt": "2026-11-26T00:39:35.664805+00:00",
+          "categoryIds": [
+            "recorder"
+          ],
+          "note": "本轮直连未取得正文；既有档案保留上次有效日期。"
+        },
+        {
+          "company": "华为",
+          "url": "https://consumer.huawei.com/cn/wearables/kids-watch-5-lite/",
+          "name": "华为 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:38:45.590985+00:00",
+          "categoryIds": [
+            "watch"
+          ],
+          "note": "核对型号、离线定位开机与周边设备条件，以及防水测试与用途脚注。"
         }
       ]
     }
@@ -4571,6 +4813,156 @@
             "delivery": "未取得该产品的供应链、制造质量和售后结果资料。 美国帮助页列出 2019 年 Kindle Kids 十代安全更新至少至 2026 年 12 月 31 日；从 Amazon.com 自营买新机还要核购买日起四年与表列日期的较晚者。该表没有公布书店停用日。",
             "organization": "研究问题：内容采购、阅读体验、家长端和订阅服务如何分责？未取得岗位证据。"
           }
+        }
+      }
+    },
+    {
+      "profileId": "zuoyebang-tablet",
+      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
+      "status": "reviewed",
+      "assessment": "核对品牌材料中的内容、数据和系统关系。",
+      "changes": {}
+    },
+    {
+      "profileId": "iflytek-tablet",
+      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
+      "status": "reviewed",
+      "assessment": "核对学习机分学段内容和答疑流程。",
+      "changes": {}
+    },
+    {
+      "profileId": "yuan-tablet",
+      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
+      "status": "reviewed",
+      "assessment": "复核家长端管理设备及使用时间的范围。",
+      "changes": {}
+    },
+    {
+      "profileId": "iflytek-pen",
+      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
+      "status": "reviewed",
+      "assessment": "复查查词与翻译功能，正文未披露整机识别率。",
+      "changes": {}
+    },
+    {
+      "profileId": "okii-watch",
+      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
+      "status": "reviewed",
+      "assessment": "复核定时开关机的联网确认与关机充电场景。",
+      "changes": {}
+    },
+    {
+      "profileId": "amazon-tablet",
+      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
+      "status": "reviewed",
+      "assessment": "核对家长管理、Kids+ 期限和 Google Play 的审批。",
+      "changes": {}
+    },
+    {
+      "profileId": "leapfrog-tablet",
+      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
+      "status": "reviewed",
+      "assessment": "核对预装内容、试用及教育团队审核说明。",
+      "changes": {}
+    },
+    {
+      "profileId": "huawei-tablet",
+      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
+      "status": "reviewed",
+      "assessment": "复核教育空间适用机型、使用管理与删除后数据处理。",
+      "changes": {}
+    },
+    {
+      "profileId": "ireader-smartos",
+      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
+      "status": "reviewed",
+      "assessment": "复查 SmartOS 2.4 已列出的显示模式和同步限制。",
+      "changes": {}
+    },
+    {
+      "profileId": "huawei-watch-classmode",
+      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
+      "status": "reviewed",
+      "assessment": "核对官方上课禁用排查步骤。",
+      "changes": {}
+    },
+    {
+      "profileId": "huawei-kids-5-lite",
+      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
+      "status": "reviewed",
+      "assessment": "按单一实际机型建立防水与离线定位档案，两项能力均有产品页脚注。",
+      "changes": {
+        "brief": {
+          "before": {
+            "lead": "等待本轮已核对正文建立公开资料档案，未核验的信息不填充。",
+            "points": [
+              "等待可核对的原始资料。",
+              "未知项保留，不猜测参数和结果。"
+            ]
+          },
+          "after": {
+            "lead": "华为儿童手表 5 活力版列出了 IPX8 防水测试，同时明确将游泳、淋浴和温泉列为不适用场景。官网还提醒，日常磨损可能降低防护性能。",
+            "points": [
+              "质量团队可以保存测试所用标准和条件；产品、零售和客服共同维护一份按型号区分的场景说明，家长能直接查洗手、游泳等问题。",
+              "同页的离线定位也附有限制：手表须开机，位置刷新时间与精度受周围华为设备数量和密度影响。定位图标之外，还应让家长读得懂显示位置的时间。"
+            ]
+          }
+        },
+        "dimensions": {
+          "before": {
+            "organization": "待核验",
+            "content": "待核验",
+            "channel": "待核验",
+            "product": "待核验",
+            "delivery": "待核验"
+          },
+          "after": {
+            "product": "离线定位须手表开机，位置刷新时间和精度受周围华为设备数量与密度影响。",
+            "content": "该机型列有上课禁用。课程和学习资源交付方式待核。",
+            "channel": "研究问题：店员如何向家长解释离线定位与防水条件？",
+            "delivery": "厂商列出参考 GB/T 4208-2017 的 IPX8 测试，排除游泳、淋浴和温泉等场景，日常磨损也可能降低防护。",
+            "organization": "研究问题：型号说明、客服答复与零售演示由哪些团队核对？"
+          }
+        },
+        "boundary": {
+          "before": "待核验",
+          "after": "具体型号的厂商说明。未获实际进水故障率、实地定位误差及售后责任分工记录。"
+        },
+        "gaps": {
+          "before": [],
+          "after": [
+            "未取得实地离线定位对照、进水维修率或内部签核资料。"
+          ]
+        },
+        "sources": {
+          "before": [],
+          "after": [
+            {
+              "id": "huawei-kids5-lite-official",
+              "title": "华为儿童手表 5 活力版 · 产品页与脚注",
+              "url": "https://consumer.huawei.com/cn/wearables/kids-watch-5-lite/",
+              "role": "official",
+              "publishedAt": null,
+              "readAt": "2026-11-26T00:38:45.590985+00:00",
+              "coverage": "body",
+              "textHash": "d0bf12f4505c9d5bcb3f4713a8cc5c8d9519aabdbee254c72c4b119d348f123e"
+            }
+          ]
+        },
+        "facts": {
+          "before": [],
+          "after": [
+            {
+              "sourceId": "huawei-kids5-lite-official",
+              "claim": "产品列有防水测试，但型号说明排除游泳、淋浴等用途。",
+              "locator": "产品页防水脚注"
+            },
+            {
+              "sourceId": "huawei-kids5-lite-official",
+              "claim": "离线定位须开机，位置刷新时间与精度与周围华为设备有关。",
+              "locator": "产品页离线定位脚注"
+            }
+          ]
         }
       }
     }
