@@ -31,8 +31,18 @@ class EducationTests(unittest.TestCase):
   patch['facts'][0]['anchor']='Public evidence anchor';r=edu.publish(self.bundle(patch),self.data,self.work,self.clock)
   self.assertEqual(r['history'][-1]['changes']['boundary']['before'],self.p['boundary']);self.assertEqual(r['profiles'][0]['updatedAt'],self.clock.isoformat());self.assertNotIn('anchor',r['profiles'][0]['facts'][0])
  def test_source_date_change_alone_is_not_content_update(self):
-  p=copy.deepcopy(self.p);s=p['sources'][0];s['readId']='fixture';patch={'sources':[s],'facts':[dict(f,anchor='Public evidence anchor') for f in p['facts']]}
-  r=edu.publish(self.bundle(patch),self.data,self.work,self.clock);self.assertEqual(r['profiles'][0]['updatedAt'],self.p['updatedAt']);self.assertEqual(r['history'][-1]['changes'],{})
+  sources=copy.deepcopy(self.p['sources'])
+  patch={'sources':sources,'facts':[dict(f,anchor='Public evidence anchor') for f in self.p['facts']]}
+  bundle=self.bundle(patch)
+  bundle['checks']=[]
+  for index,source in enumerate(sources):
+   read_id=f'fixture-{index}'
+   source['readId']=read_id
+   bundle['checks'].append(dict(self.check,url=source['url'],readId=read_id))
+   write(self.work/(read_id+'.json'),dict(url=source['url'],text='Public evidence anchor. '*30,bodyStatus='body',readAt=self.clock.isoformat()))
+  result=edu.publish(bundle,self.data,self.work,self.clock)
+  self.assertEqual(result['profiles'][0]['updatedAt'],self.p['updatedAt'])
+  self.assertEqual(result['history'][-1]['changes'],{})
  def test_new_profile_without_evidence_is_not_written(self):
   b=self.bundle();b['newProfiles']=[dict(id='new-reader',company='New reader',tier='相邻场景',categoryIds=['reader'])]
   with self.assertRaises(ValueError):edu.publish(b,self.data,self.work,self.clock)
