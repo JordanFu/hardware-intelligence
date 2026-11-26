@@ -82,8 +82,8 @@
         "product": "智能学习硬件体系；具体机型、学段和配置需逐项核验。",
         "content": "跨产品内容与学情数据能力是官网披露的方向。",
         "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
-        "delivery": "未取得该产品的供应链、制造质量和售后结果资料。",
-        "organization": "研究问题：共用系统、内容维护与各产品团队如何划分责任？未取得实际组织接口制度。"
+        "delivery": "官方客服岗位明确受理学习机售后、检测故障、远程指导非硬件问题并记录服务数据。返修授权、维修网络和实际恢复率待核实。",
+        "organization": "研究问题：共用系统、内容维护与各产品团队如何划分责任？未取得实际组织接口制度。 客服岗位已披露受理与排障，和质量、维修团队的升级条件未披露。"
       },
       "boundary": "无日期品牌介绍；不采用缺少口径的销量、专利或人才比例宣称，不把生态规划等同于已实现效果。",
       "gaps": [
@@ -95,11 +95,21 @@
           "id": "edu-zuoyebang",
           "title": "作业帮智能 · 品牌介绍",
           "url": "https://smart.zuoyebang.com/about",
-          "publishedAt": null,
           "role": "official",
-          "readAt": "2026-11-09T01:53:06.944392+00:00",
+          "publishedAt": null,
+          "readAt": "2026-11-26T10:49:20.881715+00:00",
           "coverage": "body",
           "textHash": "ae6909cb8ab9f6a5934791f6cdb9f0a83ad756fd48dbf4fd7ad5f78af164509c"
+        },
+        {
+          "id": "zuoyebang-service-d111566",
+          "title": "客服专员（D111566）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/b6a78004-e648-48c8-96fa-6c30c3e6ef83",
+          "role": "official",
+          "publishedAt": "2026-11-26",
+          "readAt": "2026-11-26T10:47:26.152794+00:00",
+          "coverage": "body",
+          "textHash": "aa6606cb55fce030dcb6d8ddc20904315fb1fec6dbff842865abe160b250089e"
         }
       ],
       "facts": [
@@ -107,10 +117,15 @@
           "sourceId": "edu-zuoyebang",
           "claim": "官网披露内容、数据和 AIGC 的组合及跨产品系统。",
           "locator": "品牌介绍 / 聪明学系统"
+        },
+        {
+          "sourceId": "zuoyebang-service-d111566",
+          "claim": "官方岗位明确学习机、学习笔的故障检测，以及对非硬件故障的远程指导。",
+          "locator": "岗位职责第1、2、4、5项"
         }
       ],
-      "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
+      "updatedAt": "2026-11-26T10:50:29.664312+00:00",
+      "reviewedAt": "2026-11-26T10:50:29.664312+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "作业帮"
@@ -2736,6 +2751,216 @@
           "note": "核对型号、离线定位开机与周边设备条件，以及防水测试与用途脚注。"
         }
       ]
+    },
+    {
+      "completedAt": "2026-11-26T10:50:29.664312+00:00",
+      "summary": "晚间补入作业帮学习机售后职责；结构岗位同一 ID 仍关闭，官方社招三组关键词与硬件内容产品专项本次均无匹配。",
+      "checks": [
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "name": "2026届春招-供应链运营管培生",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:38:21.399342+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "同一岗位当前职责与上次一致。正文明确学习机售后及小猿设备业务；管培生职责可能含轮岗，不能视为固定组织架构"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "name": "2026届春招-硬件研发工程师",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:38:22.699125+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "同一岗位当前职责与上次一致。原文明确小猿产品及学习机、学练机业务，未划分具体型号"
+        },
+        {
+          "company": "作业帮",
+          "url": "https://smart.zuoyebang.com/about",
+          "name": "作业帮 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:38:15.934462+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "核对品牌材料中的内容、数据和系统关系。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "name": "科大讯飞 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:38:16.453242+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "核对学习机分学段内容和答疑流程。"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://apps.apple.com/cn/app/id6738277050",
+          "name": "猿辅导（小猿） 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:38:16.826851+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "复核家长端管理设备及使用时间的范围。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://edu.iflytek.com/solution/family/transpen",
+          "name": "科大讯飞 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:38:16.429026+00:00",
+          "categoryIds": [
+            "pen"
+          ],
+          "note": "复查查词与翻译功能，正文未披露整机识别率。"
+        },
+        {
+          "company": "小天才",
+          "url": "https://www.okii.com/html/pc/service/service_question.html",
+          "name": "小天才 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:38:16.075047+00:00",
+          "categoryIds": [
+            "watch"
+          ],
+          "note": "复核定时开关机的联网确认与关机充电场景。"
+        },
+        {
+          "company": "Amazon",
+          "url": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
+          "name": "Amazon 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:39:36.447992+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "核对家长管理、Kids+ 期限和 Google Play 的审批。"
+        },
+        {
+          "company": "LeapFrog",
+          "url": "https://www.leapfrog.com/en-us/products/tablet-family?bmLocale=en_US",
+          "name": "LeapFrog 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:39:37.824760+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "核对预装内容、试用及教育团队审核说明。"
+        },
+        {
+          "company": "华为",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+          "name": "华为 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:39:38.178838+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "复核教育空间适用机型、使用管理与删除后数据处理。"
+        },
+        {
+          "company": "掌阅",
+          "url": "https://m.ithome.com/html/811360.htm",
+          "name": "掌阅 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:38:16.131670+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "note": "复查 SmartOS 2.4 已列出的显示模式和同步限制。"
+        },
+        {
+          "company": "华为",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn00734120/",
+          "name": "华为 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:38:18.490236+00:00",
+          "categoryIds": [
+            "watch"
+          ],
+          "note": "核对官方上课禁用排查步骤。"
+        },
+        {
+          "company": "文石 BOOX",
+          "url": "https://help.boox.com/fa5fa/f733d/56960",
+          "name": "文石 BOOX 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:38:17.396262+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "note": "复核阅读同步的账户、服务器与目录条件；本轮仅查第一份说明。"
+        },
+        {
+          "company": "钉钉",
+          "url": "https://aihub.dingtalk.com/",
+          "name": "钉钉录音设备官方入口",
+          "purpose": "practice",
+          "state": "error",
+          "checkedAt": "2026-11-26T00:39:35.664805+00:00",
+          "categoryIds": [
+            "recorder"
+          ],
+          "note": "本轮直连未取得正文；既有档案保留上次有效日期。"
+        },
+        {
+          "company": "华为",
+          "url": "https://consumer.huawei.com/cn/wearables/kids-watch-5-lite/",
+          "name": "华为 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-26T00:38:45.590985+00:00",
+          "categoryIds": [
+            "watch"
+          ],
+          "note": "核对型号、离线定位开机与周边设备条件，以及防水测试与用途脚注。"
+        },
+        {
+          "company": "作业帮",
+          "url": "https://smart.zuoyebang.com/about",
+          "name": "作业帮智能品牌说明",
+          "state": "body",
+          "checkedAt": "2026-11-26T10:49:20.881715+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "practice",
+          "note": "当晚复核官方品牌介绍。"
+        },
+        {
+          "company": "作业帮",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/b6a78004-e648-48c8-96fa-6c30c3e6ef83",
+          "name": "客服专员（D111566）",
+          "state": "body",
+          "checkedAt": "2026-11-26T10:47:26.152794+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "明确学习机及学习笔售后工作；学习笔未明确为词典笔。"
+        }
+      ]
     }
   ],
   "history": [
@@ -4963,6 +5188,87 @@
               "locator": "产品页离线定位脚注"
             }
           ]
+        }
+      }
+    },
+    {
+      "profileId": "zuoyebang-tablet",
+      "reviewedAt": "2026-11-26T10:50:29.664312+00:00",
+      "status": "reviewed",
+      "assessment": "新增直接指向学习机的售后岗位，核对远程排障与硬件检测边界。",
+      "changes": {
+        "sources": {
+          "before": [
+            {
+              "id": "edu-zuoyebang",
+              "title": "作业帮智能 · 品牌介绍",
+              "url": "https://smart.zuoyebang.com/about",
+              "publishedAt": null,
+              "role": "official",
+              "readAt": "2026-11-09T01:53:06.944392+00:00",
+              "coverage": "body",
+              "textHash": "ae6909cb8ab9f6a5934791f6cdb9f0a83ad756fd48dbf4fd7ad5f78af164509c"
+            }
+          ],
+          "after": [
+            {
+              "id": "edu-zuoyebang",
+              "title": "作业帮智能 · 品牌介绍",
+              "url": "https://smart.zuoyebang.com/about",
+              "role": "official",
+              "publishedAt": null,
+              "readAt": "2026-11-26T10:49:20.881715+00:00",
+              "coverage": "body",
+              "textHash": "ae6909cb8ab9f6a5934791f6cdb9f0a83ad756fd48dbf4fd7ad5f78af164509c"
+            },
+            {
+              "id": "zuoyebang-service-d111566",
+              "title": "客服专员（D111566）",
+              "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/b6a78004-e648-48c8-96fa-6c30c3e6ef83",
+              "role": "official",
+              "publishedAt": "2026-11-26",
+              "readAt": "2026-11-26T10:47:26.152794+00:00",
+              "coverage": "body",
+              "textHash": "aa6606cb55fce030dcb6d8ddc20904315fb1fec6dbff842865abe160b250089e"
+            }
+          ]
+        },
+        "facts": {
+          "before": [
+            {
+              "sourceId": "edu-zuoyebang",
+              "claim": "官网披露内容、数据和 AIGC 的组合及跨产品系统。",
+              "locator": "品牌介绍 / 聪明学系统"
+            }
+          ],
+          "after": [
+            {
+              "sourceId": "edu-zuoyebang",
+              "claim": "官网披露内容、数据和 AIGC 的组合及跨产品系统。",
+              "locator": "品牌介绍 / 聪明学系统"
+            },
+            {
+              "sourceId": "zuoyebang-service-d111566",
+              "claim": "官方岗位明确学习机、学习笔的故障检测，以及对非硬件故障的远程指导。",
+              "locator": "岗位职责第1、2、4、5项"
+            }
+          ]
+        },
+        "dimensions": {
+          "before": {
+            "product": "智能学习硬件体系；具体机型、学段和配置需逐项核验。",
+            "content": "跨产品内容与学情数据能力是官网披露的方向。",
+            "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
+            "delivery": "未取得该产品的供应链、制造质量和售后结果资料。",
+            "organization": "研究问题：共用系统、内容维护与各产品团队如何划分责任？未取得实际组织接口制度。"
+          },
+          "after": {
+            "product": "智能学习硬件体系；具体机型、学段和配置需逐项核验。",
+            "content": "跨产品内容与学情数据能力是官网披露的方向。",
+            "channel": "未核验当前渠道组合、成交价、套餐与退订条件。",
+            "delivery": "官方客服岗位明确受理学习机售后、检测故障、远程指导非硬件问题并记录服务数据。返修授权、维修网络和实际恢复率待核实。",
+            "organization": "研究问题：共用系统、内容维护与各产品团队如何划分责任？未取得实际组织接口制度。 客服岗位已披露受理与排障，和质量、维修团队的升级条件未披露。"
+          }
         }
       }
     }
