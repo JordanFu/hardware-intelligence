@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-26T08:16:40.257978+00:00",
-  "lastSuccessfulAt": "2026-11-26T08:16:40.257978+00:00",
+  "checkedAt": "2026-11-26T10:52:17.150128+00:00",
+  "lastSuccessfulAt": "2026-11-26T10:52:17.150128+00:00",
   "health": [
     {
       "id": "nvidia",
       "state": "ok",
-      "checkedAt": "2026-11-26T08:16:40.257978+00:00",
-      "lastSuccessAt": "2026-11-26T08:16:40.257978+00:00",
+      "checkedAt": "2026-11-26T10:52:17.150128+00:00",
+      "lastSuccessAt": "2026-11-26T10:52:17.150128+00:00",
       "received": 18,
       "matched": 0,
       "excluded": 18,
@@ -15,8 +15,8 @@
     {
       "id": "samsung",
       "state": "ok",
-      "checkedAt": "2026-11-26T08:16:40.257978+00:00",
-      "lastSuccessAt": "2026-11-26T08:16:40.257978+00:00",
+      "checkedAt": "2026-11-26T10:52:17.150128+00:00",
+      "lastSuccessAt": "2026-11-26T10:52:17.150128+00:00",
       "received": 50,
       "matched": 5,
       "excluded": 45,
@@ -25,8 +25,8 @@
     {
       "id": "meta",
       "state": "ok",
-      "checkedAt": "2026-11-26T08:16:40.257978+00:00",
-      "lastSuccessAt": "2026-11-26T08:16:40.257978+00:00",
+      "checkedAt": "2026-11-26T10:52:17.150128+00:00",
+      "lastSuccessAt": "2026-11-26T10:52:17.150128+00:00",
       "received": 10,
       "matched": 0,
       "excluded": 10,
@@ -35,8 +35,8 @@
     {
       "id": "bambu",
       "state": "ok",
-      "checkedAt": "2026-11-26T08:16:40.257978+00:00",
-      "lastSuccessAt": "2026-11-26T08:16:40.257978+00:00",
+      "checkedAt": "2026-11-26T10:52:17.150128+00:00",
+      "lastSuccessAt": "2026-11-26T10:52:17.150128+00:00",
       "received": 15,
       "matched": 15,
       "excluded": 0,
@@ -44,33 +44,120 @@
     },
     {
       "id": "cnx",
-      "state": "error",
-      "checkedAt": "2026-11-26T08:16:40.257978+00:00",
-      "error": "curl: (22) The requested URL returned error: 403",
-      "lastSuccessAt": "2026-11-26T00:46:01.783727+00:00"
+      "state": "ok",
+      "checkedAt": "2026-11-26T10:52:17.150128+00:00",
+      "lastSuccessAt": "2026-11-26T10:52:17.150128+00:00",
+      "received": 32,
+      "matched": 12,
+      "excluded": 20,
+      "error": null
     },
     {
       "id": "ithome",
       "state": "ok",
-      "checkedAt": "2026-11-26T08:16:40.257978+00:00",
-      "lastSuccessAt": "2026-11-26T08:16:40.257978+00:00",
+      "checkedAt": "2026-11-26T10:52:17.150128+00:00",
+      "lastSuccessAt": "2026-11-26T10:52:17.150128+00:00",
       "received": 60,
-      "matched": 9,
-      "excluded": 51,
+      "matched": 8,
+      "excluded": 52,
       "error": null
     },
     {
       "id": "tomshardware",
       "state": "ok",
-      "checkedAt": "2026-11-26T08:16:40.257978+00:00",
-      "lastSuccessAt": "2026-11-26T08:16:40.257978+00:00",
+      "checkedAt": "2026-11-26T10:52:17.150128+00:00",
+      "lastSuccessAt": "2026-11-26T10:52:17.150128+00:00",
       "received": 50,
-      "matched": 3,
-      "excluded": 47,
+      "matched": 2,
+      "excluded": 48,
       "error": null
     }
   ],
   "items": [
+    {
+      "id": "rss-e9240813bb89748b",
+      "title": "索尼 WH-1000XM4C 头戴降噪耳机国行开售，1799 元",
+      "url": "https://www.ithome.com/1/033/027.htm",
+      "date": "2026-11-26T10:22:55+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "可穿戴与眼镜",
+      "status": "待核验",
+      "discoveredAt": "2026-11-26T10:52:17.150128+00:00"
+    },
+    {
+      "id": "rss-18334bfe79b63e97",
+      "title": "国内首个耐 1000℃ 高温消防侦察机器狗完成实战测试",
+      "url": "https://www.ithome.com/1/032/950.htm",
+      "date": "2026-11-26T09:10:05+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-26T10:52:17.150128+00:00"
+    },
+    {
+      "id": "rss-822e2361868b0728",
+      "title": "沃尔沃把人形机器人送进工厂：先学干活，明年年中正式上岗",
+      "url": "https://www.ithome.com/1/032/939.htm",
+      "date": "2026-11-26T08:52:18+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-26T10:52:17.150128+00:00"
+    },
+    {
+      "id": "rss-22651795f584c51b",
+      "title": "消息称三星电子成立半导体工厂机器人团队，2028 年启动内部部署",
+      "url": "https://www.ithome.com/1/032/931.htm",
+      "date": "2026-11-26T08:32:20+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-26T10:52:17.150128+00:00"
+    },
+    {
+      "id": "rss-f049c4a11f44bfc8",
+      "title": "Nothing 首款原生 AI 设备 Ear (note) 耳机外观公布，12 月 8 日发布",
+      "url": "https://www.ithome.com/1/032/914.htm",
+      "date": "2026-11-26T08:08:17+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "可穿戴与眼镜",
+      "status": "待核验",
+      "discoveredAt": "2026-11-26T10:52:17.150128+00:00"
+    },
+    {
+      "id": "rss-a7b70bd1ca3f4c08",
+      "title": "商汤开源机器人操作视觉语言模型 SenseNova-RoboRSI-27B 正式版，RoboDojo 评测得分超 GPT-6 Astra",
+      "url": "https://www.ithome.com/1/032/887.htm",
+      "date": "2026-11-26T07:54:28+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "机器人与无人机",
+      "status": "待核验",
+      "discoveredAt": "2026-11-26T10:52:17.150128+00:00"
+    },
+    {
+      "id": "rss-42af3da7b8064d49",
+      "title": "QCY Ti 耳夹式耳机发售：10.8mm 动圈、54 小时续航，259 元",
+      "url": "https://www.ithome.com/1/032/886.htm",
+      "date": "2026-11-26T07:50:21+00:00",
+      "sourceId": "ithome",
+      "source": "IT之家",
+      "tier": "媒体补充",
+      "category": "可穿戴与眼镜",
+      "status": "待核验",
+      "discoveredAt": "2026-11-26T10:52:17.150128+00:00"
+    },
     {
       "id": "rss-a1e1c5063d0d6661",
       "title": "vivo S70 系列手机官宣：旗舰版自带变焦闪光灯，搭载 X 同款传感器索尼 LYTIA 610",
@@ -178,6 +265,30 @@
       "category": "机器人与无人机",
       "status": "待核验",
       "discoveredAt": "2026-11-26T08:16:40.257978+00:00"
+    },
+    {
+      "id": "rss-6155acc2da43f6b6",
+      "title": "CamThink NeoEyes NE301 & NE302 Edge AI cameras get Wi-Fi HaLow connectivity for indoor and outdoor deployments (Sponsored)",
+      "url": "https://www.cnx-software.com/2026/11/26/camthink-neoeyes-ne301-ne302-edge-ai-cameras-get-wi-fi-halow-connectivity-for-indoor-and-outdoor-deployments",
+      "date": "2026-11-26T04:00:42+00:00",
+      "sourceId": "cnx",
+      "source": "CNX Software",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-26T10:52:17.150128+00:00"
+    },
+    {
+      "id": "rss-525a0d05e7d947c6",
+      "title": "Banana Pi BPI-M2C SBC features UNISOC UIS7885 SoC with 5G cellular connectivity, 8 TOPS NPU",
+      "url": "https://www.cnx-software.com/2026/11/26/banana-pi-bpi-m2c-sbc-features-unisoc-uis7885-soc-with-5g-cellular-connectivity-8-tops-npu",
+      "date": "2026-11-26T03:29:29+00:00",
+      "sourceId": "cnx",
+      "source": "CNX Software",
+      "tier": "媒体补充",
+      "category": "端侧 AI 与芯片",
+      "status": "待核验",
+      "discoveredAt": "2026-11-26T10:52:17.150128+00:00"
     },
     {
       "id": "rss-a4c25f8878bbe597",
