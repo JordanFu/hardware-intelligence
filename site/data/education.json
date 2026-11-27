@@ -125,7 +125,7 @@
         }
       ],
       "updatedAt": "2026-11-26T10:50:29.664312+00:00",
-      "reviewedAt": "2026-11-26T10:50:29.664312+00:00",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "作业帮"
@@ -182,7 +182,7 @@
         }
       ],
       "updatedAt": "2026-11-17T00:46:36.233260+00:00",
-      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "科大讯飞",
@@ -240,7 +240,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "猿辅导",
@@ -299,7 +299,7 @@
         }
       ],
       "updatedAt": "2026-11-19T00:51:40.404223+00:00",
-      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "小天才"
@@ -361,7 +361,7 @@
         }
       ],
       "updatedAt": "2026-11-15T00:44:23.933338+00:00",
-      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "华为",
@@ -426,7 +426,7 @@
         }
       ],
       "updatedAt": "2026-11-22T00:50:54.415164+00:00",
-      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "Amazon"
@@ -498,7 +498,7 @@
         }
       ],
       "updatedAt": "2026-11-25T00:48:03.720012+00:00",
-      "reviewedAt": "2026-11-25T00:48:03.720012+00:00",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "Amazon"
@@ -555,7 +555,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "LeapFrog"
@@ -617,7 +617,7 @@
         }
       ],
       "updatedAt": "2026-11-21T00:46:30.147094+00:00",
-      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "科大讯飞",
@@ -760,7 +760,7 @@
         }
       ],
       "updatedAt": "2026-11-24T00:50:43.175847+00:00",
-      "reviewedAt": "2026-11-24T00:50:43.175847+00:00",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
       "lastReviewStatus": "reviewed"
     },
     {
@@ -813,7 +813,7 @@
         }
       ],
       "updatedAt": "2026-11-20T00:43:29.502492+00:00",
-      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
       "lastReviewStatus": "reviewed"
     },
     {
@@ -864,7 +864,7 @@
         }
       ],
       "updatedAt": "2026-11-22T00:50:54.415164+00:00",
-      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
       "lastReviewStatus": "reviewed"
     },
     {
@@ -987,7 +987,58 @@
         }
       ],
       "updatedAt": "2026-11-26T00:44:39.690905+00:00",
-      "reviewedAt": "2026-11-26T00:44:39.690905+00:00",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "lastReviewStatus": "reviewed"
+    },
+    {
+      "id": "plaud-notepin-s",
+      "company": "Plaud",
+      "tier": "海外参照",
+      "categoryIds": [
+        "recorder"
+      ],
+      "aliases": [
+        "Plaud NotePin S"
+      ],
+      "brief": {
+        "lead": "Plaud 的 NotePin S 支持文档区分了三个状态。断网时设备仍可将音频存入本地；恢复联网后再打开手机应用同步，随后生成转写或摘要。",
+        "points": [
+          "客服先确认设备是否保存了录音，再查应用是否收到文件，最后查 AI 处理是否完成。三个问题对应不同的恢复动作。",
+          "用于学习场景的验证可在获得参与者同意后，用一段测试音频演练断网录入与重连恢复，分别留存录音、同步、转写三个时间点。"
+        ]
+      },
+      "dimensions": {
+        "product": "可离线采集并将录音保存到设备，标示本地存储为 64GB。",
+        "content": "要生成转写与摘要，文档指导恢复联网并打开手机应用。",
+        "channel": "研究问题：销售演示是否分别说明离线采集与联网转写？",
+        "delivery": "出行前可用一段已获同意的测试音频验证断网录入、重连、同步和生成文字。",
+        "organization": "岗位归属待核。售后排查可按设备是否留存、应用是否同步、AI 处理是否完成来定位问题。"
+      },
+      "boundary": "支持文档针对 NotePin S；未给出离线转写、恢复时长或其他品牌机型表现。",
+      "gaps": [
+        "学校场景适用性、异常恢复时长及服务团队内部职责待核。"
+      ],
+      "sources": [
+        {
+          "id": "plaud-offline-support",
+          "title": "Does Plaud NotePin S work offline?",
+          "url": "https://support.plaud.ai/hc/en-us/articles/53771056805785-Does-Plaud-NotePin-S-work-offline",
+          "role": "official",
+          "publishedAt": "2026-09-07",
+          "readAt": "2026-11-27T08:48:41.593351+08:00",
+          "coverage": "body",
+          "textHash": "be4cfeabcf7deb03a7a78be5dfb24676383fefad4626e38d752f1201d25afcb4"
+        }
+      ],
+      "facts": [
+        {
+          "sourceId": "plaud-offline-support",
+          "claim": "该型号官方文档确认设备可离线采集并保存音频。",
+          "locator": "支持页首段"
+        }
+      ],
+      "updatedAt": "2026-11-27T00:53:06.203863+00:00",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
       "lastReviewStatus": "reviewed"
     }
   ],
@@ -2959,6 +3010,288 @@
           ],
           "purpose": "recruitment",
           "note": "明确学习机及学习笔售后工作；学习笔未明确为词典笔。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-27T00:53:06.203863+00:00",
+      "summary": "补充 Plaud NotePin S 离线录入与联网转写的边界，复查三家核心竞品的产品及岗位。",
+      "checks": [
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "name": "2026届春招-供应链运营管培生",
+          "state": "body",
+          "checkedAt": "2026-11-27T00:45:27.877237+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "同一岗位的职责正文与上次一致。正文明确学习机售后及小猿设备业务；管培生职责可能含轮岗，不能视为固定组织架构"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "name": "2026届春招-硬件研发工程师",
+          "state": "body",
+          "checkedAt": "2026-11-27T00:45:27.624466+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "同一岗位的职责正文与上次一致。原文明确小猿产品及学习机、学练机业务，未划分具体型号"
+        },
+        {
+          "company": "作业帮",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/b6a78004-e648-48c8-96fa-6c30c3e6ef83",
+          "name": "客服专员（D111566）",
+          "state": "body",
+          "checkedAt": "2026-11-27T00:45:28.484862+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "同一岗位的职责正文与上次一致。明确学习机及学习笔售后工作；学习笔未明确为词典笔。"
+        },
+        {
+          "company": "作业帮",
+          "url": "https://smart.zuoyebang.com/about",
+          "name": "作业帮 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-27T00:45:17.965664+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "核对作业帮智能 · 品牌介绍。已复核原文中的证据锚点。"
+        },
+        {
+          "company": "作业帮",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/b6a78004-e648-48c8-96fa-6c30c3e6ef83",
+          "name": "作业帮 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-27T00:45:28.484862+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "核对客服专员（D111566）。已复核原文中的证据锚点。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "name": "科大讯飞 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-27T00:45:18.414343+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "核对科大讯飞 · AI学习机。已复核原文中的证据锚点。"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://apps.apple.com/cn/app/id6738277050",
+          "name": "猿辅导（小猿） 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-27T00:45:20.256407+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "核对小猿智能设备 · App Store开发者说明。已复核原文中的证据锚点。"
+        },
+        {
+          "company": "小天才",
+          "url": "https://www.okii.com/html/pc/service/service_question.html",
+          "name": "小天才 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-27T00:45:18.118632+00:00",
+          "categoryIds": [
+            "watch"
+          ],
+          "note": "核对小天才 · 常见问题。已复核原文中的证据锚点。"
+        },
+        {
+          "company": "华为",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+          "name": "华为 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-27T00:45:19.769494+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "核对华为 · 平板教育空间使用指南。已复核原文中的证据锚点。"
+        },
+        {
+          "company": "Amazon",
+          "url": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
+          "name": "Amazon 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-27T00:45:19.217552+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "核对Amazon · Kids Tablets介绍。已复核原文中的证据锚点。"
+        },
+        {
+          "company": "Amazon",
+          "url": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
+          "name": "Amazon 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-27T00:48:31.203005+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "note": "核对Amazon · Kindle Kids常见问题。已复核原文中的证据锚点。"
+        },
+        {
+          "company": "Amazon",
+          "url": "https://digprjsurvey.amazon.com/csad/help/node/GF3LDHSB5YM9BYF7?theme=light",
+          "name": "Amazon 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-27T00:48:32.277602+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "note": "核对Amazon 美国设备帮助 · 安全更新承诺。已复核原文中的证据锚点。"
+        },
+        {
+          "company": "LeapFrog",
+          "url": "https://www.leapfrog.com/en-us/products/tablet-family?bmLocale=en_US",
+          "name": "LeapFrog 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-27T00:45:20.621968+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "note": "核对LeapFrog · Tablet family。已复核原文中的证据锚点。"
+        },
+        {
+          "company": "科大讯飞",
+          "url": "https://edu.iflytek.com/solution/family/transpen",
+          "name": "科大讯飞 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-27T00:45:18.431941+00:00",
+          "categoryIds": [
+            "pen"
+          ],
+          "note": "核对科大讯飞 · AI翻译笔。已复核原文中的证据锚点。"
+        },
+        {
+          "company": "钉钉",
+          "url": "https://aihub.dingtalk.com/",
+          "name": "钉钉 · AI应用服务市场",
+          "purpose": "practice",
+          "state": "error",
+          "checkedAt": "2026-11-27T00:45:18.096022+00:00",
+          "categoryIds": [
+            "recorder"
+          ],
+          "note": "本轮直连未取得可用正文，仍需复核。"
+        },
+        {
+          "company": "文石 BOOX",
+          "url": "https://help.boox.com/fa5fa/f733d/56960",
+          "name": "文石 BOOX 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-27T00:45:19.086298+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "note": "核对文石帮助 · 阅读数据同步和备份。已复核原文中的证据锚点。"
+        },
+        {
+          "company": "文石 BOOX",
+          "url": "https://help.boox.com/653d4/f3f2e/affe8",
+          "name": "文石 BOOX 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-27T00:48:30.997671+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "note": "核对文石帮助 · 手写笔记同步。已复核原文中的证据锚点。"
+        },
+        {
+          "company": "掌阅",
+          "url": "https://m.ithome.com/html/811360.htm",
+          "name": "掌阅 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-27T00:45:18.145624+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "note": "核对IT之家整理掌阅 SmartOS 2.4 更新说明。已复核原文中的证据锚点。"
+        },
+        {
+          "company": "华为",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn00734120/",
+          "name": "华为 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-27T00:45:19.102845+00:00",
+          "categoryIds": [
+            "watch"
+          ],
+          "note": "核对华为儿童手表上课禁用异常排查。已复核原文中的证据锚点。"
+        },
+        {
+          "company": "网易有道",
+          "url": "https://markets.ft.markitdigital.com/data/announce/detail?dockey=600-202611190400PR_NEWS_USPRX____CN02238-1",
+          "name": "网易有道 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-27T00:48:34.046539+00:00",
+          "categoryIds": [
+            "pen"
+          ],
+          "note": "核对有道（公司财报）。已复核原文中的证据锚点。"
+        },
+        {
+          "company": "网易有道",
+          "url": "https://ir.netease.com/static-files/4ce9997f-f8b2-4df7-a71e-a754261a5fb4",
+          "name": "网易三季度投资者演示 · 有道业务页",
+          "purpose": "practice",
+          "state": "error",
+          "checkedAt": "2026-11-27T00:48:30.679817+00:00",
+          "categoryIds": [
+            "pen"
+          ],
+          "note": "本轮直连未取得可用正文，仍需复核。"
+        },
+        {
+          "company": "华为",
+          "url": "https://consumer.huawei.com/cn/wearables/kids-watch-5-lite/",
+          "name": "华为 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-27T00:48:31.410784+00:00",
+          "categoryIds": [
+            "watch"
+          ],
+          "note": "核对华为儿童手表 5 活力版 · 产品页与脚注。已复核原文中的证据锚点。"
+        },
+        {
+          "company": "Plaud",
+          "url": "https://support.plaud.ai/hc/en-us/articles/53771056805785-Does-Plaud-NotePin-S-work-offline",
+          "name": "Plaud 公开资料",
+          "purpose": "practice",
+          "state": "body",
+          "checkedAt": "2026-11-27T08:48:41.593351+08:00",
+          "categoryIds": [
+            "recorder"
+          ],
+          "note": "复核该机型在离线录音、恢复联网同步以及生成 AI 输出时的操作条件。"
         }
       ]
     }
@@ -5269,6 +5602,172 @@
             "delivery": "官方客服岗位明确受理学习机售后、检测故障、远程指导非硬件问题并记录服务数据。返修授权、维修网络和实际恢复率待核实。",
             "organization": "研究问题：共用系统、内容维护与各产品团队如何划分责任？未取得实际组织接口制度。 客服岗位已披露受理与排障，和质量、维修团队的升级条件未披露。"
           }
+        }
+      }
+    },
+    {
+      "profileId": "zuoyebang-tablet",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "status": "reviewed",
+      "assessment": "逐项复核本档案已有的官方来源和事实锚点，保留原有口径。",
+      "changes": {}
+    },
+    {
+      "profileId": "iflytek-tablet",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "status": "reviewed",
+      "assessment": "逐项复核本档案已有的官方来源和事实锚点，保留原有口径。",
+      "changes": {}
+    },
+    {
+      "profileId": "yuan-tablet",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "status": "reviewed",
+      "assessment": "逐项复核本档案已有的官方来源和事实锚点，保留原有口径。",
+      "changes": {}
+    },
+    {
+      "profileId": "okii-watch",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "status": "reviewed",
+      "assessment": "逐项复核本档案已有的官方来源和事实锚点，保留原有口径。",
+      "changes": {}
+    },
+    {
+      "profileId": "huawei-tablet",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "status": "reviewed",
+      "assessment": "逐项复核本档案已有的官方来源和事实锚点，保留原有口径。",
+      "changes": {}
+    },
+    {
+      "profileId": "amazon-tablet",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "status": "reviewed",
+      "assessment": "逐项复核本档案已有的官方来源和事实锚点，保留原有口径。",
+      "changes": {}
+    },
+    {
+      "profileId": "kindle-reader",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "status": "reviewed",
+      "assessment": "逐项复核本档案已有的官方来源和事实锚点，保留原有口径。",
+      "changes": {}
+    },
+    {
+      "profileId": "leapfrog-tablet",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "status": "reviewed",
+      "assessment": "逐项复核本档案已有的官方来源和事实锚点，保留原有口径。",
+      "changes": {}
+    },
+    {
+      "profileId": "iflytek-pen",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "status": "reviewed",
+      "assessment": "逐项复核本档案已有的官方来源和事实锚点，保留原有口径。",
+      "changes": {}
+    },
+    {
+      "profileId": "boox-reading-workflow",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "status": "reviewed",
+      "assessment": "逐项复核本档案已有的官方来源和事实锚点，保留原有口径。",
+      "changes": {}
+    },
+    {
+      "profileId": "ireader-smartos",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "status": "reviewed",
+      "assessment": "逐项复核本档案已有的官方来源和事实锚点，保留原有口径。",
+      "changes": {}
+    },
+    {
+      "profileId": "huawei-watch-classmode",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "status": "reviewed",
+      "assessment": "逐项复核本档案已有的官方来源和事实锚点，保留原有口径。",
+      "changes": {}
+    },
+    {
+      "profileId": "huawei-kids-5-lite",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "status": "reviewed",
+      "assessment": "逐项复核本档案已有的官方来源和事实锚点，保留原有口径。",
+      "changes": {}
+    },
+    {
+      "profileId": "plaud-notepin-s",
+      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "status": "reviewed",
+      "assessment": "从该机型帮助文档建立端侧与云端处理职责的场景参照。",
+      "changes": {
+        "brief": {
+          "before": {
+            "lead": "等待本轮已核对正文建立公开资料档案，未核验的信息不填充。",
+            "points": [
+              "等待可核对的原始资料。",
+              "未知项保留，不猜测参数和结果。"
+            ]
+          },
+          "after": {
+            "lead": "Plaud 的 NotePin S 支持文档区分了三个状态。断网时设备仍可将音频存入本地；恢复联网后再打开手机应用同步，随后生成转写或摘要。",
+            "points": [
+              "客服先确认设备是否保存了录音，再查应用是否收到文件，最后查 AI 处理是否完成。三个问题对应不同的恢复动作。",
+              "用于学习场景的验证可在获得参与者同意后，用一段测试音频演练断网录入与重连恢复，分别留存录音、同步、转写三个时间点。"
+            ]
+          }
+        },
+        "dimensions": {
+          "before": {
+            "delivery": "待核验",
+            "channel": "待核验",
+            "product": "待核验",
+            "organization": "待核验",
+            "content": "待核验"
+          },
+          "after": {
+            "product": "可离线采集并将录音保存到设备，标示本地存储为 64GB。",
+            "content": "要生成转写与摘要，文档指导恢复联网并打开手机应用。",
+            "channel": "研究问题：销售演示是否分别说明离线采集与联网转写？",
+            "delivery": "出行前可用一段已获同意的测试音频验证断网录入、重连、同步和生成文字。",
+            "organization": "岗位归属待核。售后排查可按设备是否留存、应用是否同步、AI 处理是否完成来定位问题。"
+          }
+        },
+        "boundary": {
+          "before": "待核验",
+          "after": "支持文档针对 NotePin S；未给出离线转写、恢复时长或其他品牌机型表现。"
+        },
+        "gaps": {
+          "before": [],
+          "after": [
+            "学校场景适用性、异常恢复时长及服务团队内部职责待核。"
+          ]
+        },
+        "sources": {
+          "before": [],
+          "after": [
+            {
+              "id": "plaud-offline-support",
+              "title": "Does Plaud NotePin S work offline?",
+              "url": "https://support.plaud.ai/hc/en-us/articles/53771056805785-Does-Plaud-NotePin-S-work-offline",
+              "role": "official",
+              "publishedAt": "2026-09-07",
+              "readAt": "2026-11-27T08:48:41.593351+08:00",
+              "coverage": "body",
+              "textHash": "be4cfeabcf7deb03a7a78be5dfb24676383fefad4626e38d752f1201d25afcb4"
+            }
+          ]
+        },
+        "facts": {
+          "before": [],
+          "after": [
+            {
+              "sourceId": "plaud-offline-support",
+              "claim": "该型号官方文档确认设备可离线采集并保存音频。",
+              "locator": "支持页首段"
+            }
+          ]
         }
       }
     }

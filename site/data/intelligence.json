@@ -1,8 +1,289 @@
 {
   "schemaVersion": 1,
-  "lastCompletedAt": "2026-11-26T10:50:29.432062+00:00",
+  "lastCompletedAt": "2026-11-27T00:53:47.847602+00:00",
   "method": "Codex 初筛评分 + 逐条证据复核；非两个独立模型评分",
   "items": [
+    {
+      "id": "m27-r0",
+      "eventId": "m27-r0",
+      "developmentId": "initial",
+      "titleZh": "内存紧缺时，宇瞻为何先为采购备现金？",
+      "originalTitle": "Electronics manufacturers set up memory 'war rooms' to find, lock in DRAM supplies amid worst shortage in history",
+      "companies": [
+        "宇瞻科技"
+      ],
+      "stages": [
+        "供应链与采购",
+        "经营与组织",
+        "制造与交付"
+      ],
+      "domestic": true,
+      "publishedAt": "2026-11-26T16:11:07+00:00",
+      "kind": "新闻",
+      "category": "供应链与采购",
+      "brief": {
+        "lead": "Tom’s Hardware 转述《华尔街日报》对宇瞻总经理的采访。报道说，宇瞻为可能突然出现的存储芯片货源准备了贷款，让采购团队有机会在货源出现时出手。",
+        "points": [
+          "该案例里，找到货、筹到款、敲定交期是三件不同的事。报道还提到企业在现货渠道寻找小批量供给，无法据此推算各企业的到货率。",
+          "对学习机备料，可让采购列出具体料号、数量、报价有效期及可核实交期，财务核算资金占用，工程同步识别需要重验的替代料。"
+        ]
+      },
+      "boundary": "本轮未读到《华尔街日报》完整原稿或企业信贷文件；个案不能确定国内整机厂存货、采购价格及交付影响。",
+      "meaning": "内存是多类设备共用器件。备款时点、替代验证与到货窗口会共同约束排产，团队可逐料核对对应证据。",
+      "question": "备款换来的是采购机会、确认订单，还是已有交期的可交货数量？",
+      "eventReason": "内存紧缺时，宇瞻为何先为采购备现金？",
+      "selection": {
+        "scores": {
+          "相关性": 20,
+          "增量信息": 20,
+          "证据质量": 17,
+          "机制清晰": 19,
+          "可行动性": 19
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "可读转述将备款做法归因于对宇瞻的采访。 本轮未读到《华尔街日报》完整原稿或企业信贷文件；个案不能确定国内整机厂存货、采购价格及交付影响。"
+        }
+      },
+      "impactLevel": "industry-wide",
+      "impactReason": "内存是多类设备共用器件。备款时点、替代验证与到货窗口会共同约束排产，团队可逐料核对对应证据。",
+      "practices": [
+        {
+          "title": "把现货机会与可下单、可交货的数量分开",
+          "method": "内存是多类设备共用器件。备款时点、替代验证与到货窗口会共同约束排产，团队可逐料核对对应证据。",
+          "conditions": "对学习机备料，可让采购列出具体料号、数量、报价有效期及可核实交期，财务核算资金占用，工程同步识别需要重验的替代料。",
+          "outcome": "报道披露备款做法，实际获货量和资金成本待核。",
+          "boundary": "本轮未读到《华尔街日报》完整原稿或企业信贷文件；个案不能确定国内整机厂存货、采购价格及交付影响。",
+          "nextCheck": "备款换来的是采购机会、确认订单，还是已有交期的可交货数量？",
+          "stages": [
+            "供应链与采购",
+            "经营与组织",
+            "制造与交付"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "可读转述将备款做法归因于对宇瞻的采访。",
+          "sourceUrl": "https://www.tomshardware.com/pc-components/dram/electronics-manufacturers-set-up-memory-war-rooms-to-find-lock-in-dram-supplies-amid-worst-shortage-in-history-employees-scour-ebay-contact-hundreds-of-brokers-and-snap-up-even-small-batches-of-just-5-to-12-units",
+          "locator": "Tom’s Hardware 转述原发采访的宇瞻段"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.tomshardware.com/pc-components/dram/electronics-manufacturers-set-up-memory-war-rooms-to-find-lock-in-dram-supplies-amid-worst-shortage-in-history-employees-scour-ebay-contact-hundreds-of-brokers-and-snap-up-even-small-batches-of-just-5-to-12-units",
+          "publisherGroup": "华尔街日报",
+          "name": "Tom’s Hardware（转述《华尔街日报》采访）",
+          "publishedAt": "2026-11-26T16:11:07+00:00",
+          "role": "media",
+          "textHash": "4833cc5860352e5500ca650e060bf5c9c80cf87a2ad7853a626def062f1c12fd",
+          "readAt": "2026-11-27T00:45:20.248362+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 95,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-27T00:53:47.828201+00:00",
+      "sourceDate": "2026-11-26T16:11:07+00:00",
+      "date": "2026-11-26T16:11:07+00:00",
+      "title": "内存紧缺时，宇瞻为何先为采购备现金？",
+      "summary": "Tom’s Hardware 转述《华尔街日报》对宇瞻总经理的采访。报道说，宇瞻为可能突然出现的存储芯片货源准备了贷款，让采购团队有机会在货源出现时出手。"
+    },
+    {
+      "id": "m27-r1",
+      "eventId": "m27-r1",
+      "developmentId": "initial",
+      "titleZh": "荷兰智能眼镜案开庭：录制指示灯能否让旁人知情？",
+      "originalTitle": "因隐私问题，荷兰多个组织要求法院叫停 Meta 智能眼镜销售",
+      "companies": [
+        "Meta",
+        "依视路陆逊梯卡"
+      ],
+      "stages": [
+        "需求与规划",
+        "质量与合规",
+        "渠道与销售"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-26T14:59:17+00:00",
+      "kind": "新闻",
+      "category": "可穿戴与眼镜",
+      "brief": {
+        "lead": "据路透社庭审报道的中文转述，荷兰消费者和数字权益组织请求法院限制 Meta 智能眼镜在荷兰销售，争议涉及旁人对拍摄是否知情及影像用途。代理律师在庭上援引录制指示灯，并反驳有关训练数据的主张。",
+        "points": [
+          "原告团体的案件记录也列有 11 月 26 日听证。已确认的是双方主张和听证进展，尚未核实作出禁售裁定。",
+          "对带录音或摄像功能的设备，产品评审可以分别请佩戴者和被记录者说明何时开始采集、从什么距离能辨认提示。"
+        ]
+      },
+      "boundary": "涉及荷兰特定诉讼；原告对隐私与数据用途的指控及被告答辩仍待法院判断。",
+      "meaning": "有指示灯只是设计事实。能否让周围的人察觉，应在真实观察距离、环境光和朝向下验证。",
+      "question": "后续裁定如何表述诉求范围和双方责任？",
+      "eventReason": "荷兰智能眼镜案开庭：录制指示灯能否让旁人知情？",
+      "selection": {
+        "scores": {
+          "相关性": 20,
+          "增量信息": 19,
+          "证据质量": 18,
+          "机制清晰": 19,
+          "可行动性": 19
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "报道记录了 Meta 一方就可见提示作出的答辩。 涉及荷兰特定诉讼；原告对隐私与数据用途的指控及被告答辩仍待法院判断。"
+        }
+      },
+      "facts": [
+        {
+          "claim": "报道记录了 Meta 一方就可见提示作出的答辩。",
+          "sourceUrl": "https://www.ithome.com/1/033/126.htm",
+          "locator": "中文庭审报道，Meta 答辩段"
+        },
+        {
+          "claim": "原告的案件进度列出 11 月 26 日听证。",
+          "sourceUrl": "https://www.thefirewall.eu/metabril",
+          "locator": "Verloop van de zaak"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.ithome.com/1/033/126.htm",
+          "publisherGroup": "路透社",
+          "name": "IT之家（转述路透社庭审报道）",
+          "publishedAt": "2026-11-26T14:59:17+00:00",
+          "role": "media",
+          "textHash": "ef8bfc3cc41673637be8d0bd83d1816f5988c24f6c4f6c778aa300e2a95f4e54",
+          "readAt": "2026-11-27T00:45:17.987310+00:00",
+          "coverage": "body"
+        },
+        {
+          "url": "https://www.thefirewall.eu/metabril",
+          "publisherGroup": "The Firewall",
+          "name": "The Firewall",
+          "publishedAt": null,
+          "role": "official",
+          "textHash": "e981711d6d786686fef7c95be4937f5ed1d8aebe9e003699fe39f94e55ffb66e",
+          "readAt": "2026-11-27T00:48:12.265874+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 95,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-27T00:53:47.829518+00:00",
+      "sourceDate": "2026-11-26T14:59:17+00:00",
+      "date": "2026-11-26T14:59:17+00:00",
+      "title": "荷兰智能眼镜案开庭：录制指示灯能否让旁人知情？",
+      "summary": "据路透社庭审报道的中文转述，荷兰消费者和数字权益组织请求法院限制 Meta 智能眼镜在荷兰销售，争议涉及旁人对拍摄是否知情及影像用途。代理律师在庭上援引录制指示灯，并反驳有关训练数据的主张。"
+    },
+    {
+      "id": "m27-r6",
+      "eventId": "m27-r6",
+      "developmentId": "initial",
+      "titleZh": "拓竹 S1 扫描仪发布：同一份规格里，为什么有两种精度？",
+      "originalTitle": "Easy in Hand, Pro in Every Scan: Bambu Lab introduces the S1 3D scanner",
+      "companies": [
+        "拓竹"
+      ],
+      "stages": [
+        "研发与系统",
+        "制造与交付",
+        "质量与合规"
+      ],
+      "domestic": true,
+      "publishedAt": "2026-11-26T14:00:46+00:00",
+      "kind": "新闻",
+      "category": "产品工程与量产",
+      "brief": {
+        "lead": "拓竹发布手持扫描仪 S1。蓝光模式给出的单帧精度最高为 0.02 毫米，体积精度写成 0.02 毫米加每米 0.06 毫米。按厂商公式，扫描一米长物体的指标为 0.08 毫米。",
+        "points": [
+          "这两个数字回答不同的问题。拿一个局部特征与拼接整件长度做比较时，要分别记录使用的模式、尺寸和测量基准。",
+          "厂商注明数值来自标准实验室条件，实际结果受环境、物体和操作条件影响。试制外壳验收时，可拿一件有已知尺寸的样件复测，再判断扫描数据能否用于装配。"
+        ]
+      },
+      "boundary": "实验室标称值；暂未见该设备在学习机外壳材料和工况下的独立对照或装配验收结果。",
+      "meaning": "产品工程师给出待验尺寸和允许偏差，测量人员记录模式、对象长度和基准件实测值，质量人员据此决定扫描数据适用范围。",
+      "question": "在哑光和反光外壳上，同一基准尺寸的实测偏差各是多少？",
+      "eventReason": "拓竹 S1 扫描仪发布：同一份规格里，为什么有两种精度？",
+      "selection": {
+        "scores": {
+          "相关性": 20,
+          "增量信息": 19,
+          "证据质量": 20,
+          "机制清晰": 20,
+          "可行动性": 19
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "拓竹写明蓝光模式体积精度中的长度项。 实验室标称值；暂未见该设备在学习机外壳材料和工况下的独立对照或装配验收结果。"
+        }
+      },
+      "practices": [
+        {
+          "title": "拓竹 S1 扫描仪发布：同一份规格里，为什么有两种精度？",
+          "method": "产品工程师给出待验尺寸和允许偏差，测量人员记录模式、对象长度和基准件实测值，质量人员据此决定扫描数据适用范围。",
+          "conditions": "厂商注明数值来自标准实验室条件，实际结果受环境、物体和操作条件影响。试制外壳验收时，可拿一件有已知尺寸的样件复测，再判断扫描数据能否用于装配。",
+          "outcome": "实验室标称值；暂未见该设备在学习机外壳材料和工况下的独立对照或装配验收结果。",
+          "boundary": "实验室标称值；暂未见该设备在学习机外壳材料和工况下的独立对照或装配验收结果。",
+          "nextCheck": "在哑光和反光外壳上，同一基准尺寸的实测偏差各是多少？",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "拓竹写明蓝光模式体积精度中的长度项。",
+          "sourceUrl": "https://blog.bambulab.com/easy-in-hand-pro-in-every-scan-bambu-lab-introduces-the-s1-3d-scanner",
+          "locator": "产品公告，四种模式精度及规格脚注"
+        },
+        {
+          "claim": "规格表明确标注测试条件。",
+          "sourceUrl": "https://store.bblcdn.com/s7/fmpta/d8daa4ae0988445ea90f99341474afce/Bambu_Lab_S1_Technical_Specifications.pdf",
+          "locator": "技术规格第 2 页脚注"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://blog.bambulab.com/easy-in-hand-pro-in-every-scan-bambu-lab-introduces-the-s1-3d-scanner",
+          "publisherGroup": "拓竹",
+          "name": "拓竹",
+          "publishedAt": "2026-11-26T14:00:46+00:00",
+          "role": "official",
+          "textHash": "fad0da65ec9db0b74206e870b2a5f5868ef1cf6e692f08d4683d2615a8cc2446",
+          "readAt": "2026-11-27T00:45:18.545524+00:00",
+          "coverage": "body"
+        },
+        {
+          "url": "https://store.bblcdn.com/s7/fmpta/d8daa4ae0988445ea90f99341474afce/Bambu_Lab_S1_Technical_Specifications.pdf",
+          "publisherGroup": "拓竹",
+          "name": "拓竹",
+          "publishedAt": null,
+          "role": "official",
+          "textHash": "820d30a7e4457496529f3c95d0dc4bf810ac4b88dd45d52ad47ab366cf86bda7",
+          "readAt": "2026-11-27T00:47:39.598696+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 98,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-27T00:53:47.827399+00:00",
+      "sourceDate": "2026-11-26T14:00:46+00:00",
+      "date": "2026-11-26T14:00:46+00:00",
+      "title": "拓竹 S1 扫描仪发布：同一份规格里，为什么有两种精度？",
+      "summary": "拓竹发布手持扫描仪 S1。蓝光模式给出的单帧精度最高为 0.02 毫米，体积精度写成 0.02 毫米加每米 0.06 毫米。按厂商公式，扫描一米长物体的指标为 0.08 毫米。"
+    },
     {
       "id": "e26-r1",
       "eventId": "e26-r1",
@@ -193,6 +474,108 @@
       "date": "2026-11-26",
       "title": "作业帮学习机报修，客服是先排障，还是直接换机？",
       "summary": "作业帮这份岗位写明服务学习机、学习笔：客服负责故障检测、受理跟进、投诉处理，并远程指导用户解决非硬件故障。记录服务数据、改善流程也属于职责。"
+    },
+    {
+      "id": "m27-hex",
+      "eventId": "m27-hex",
+      "developmentId": "initial",
+      "titleZh": "机器人进厂后谁来教？沃尔沃让自己的团队和供应商一起练",
+      "originalTitle": "Volvo Cars brings AEON to its Ghent plant",
+      "companies": [
+        "沃尔沃汽车",
+        "海克斯康"
+      ],
+      "stages": [
+        "制造与交付",
+        "研发与系统",
+        "经营与组织"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-11-26",
+      "kind": "新闻",
+      "category": "经营与组织",
+      "brief": {
+        "lead": "沃尔沃把 AEON 机器人带到比利时根特工厂，由自己的团队与海克斯康机器人部门合作，在真实工业任务上训练和验证。两家公司希望它能分担重复、对人体负担较大的作业。",
+        "points": [
+          "目前是训练。公告把扩大试点放在 2027 年上半年，把进入实际生产列为年中目标。试点、放行、正式排产可以分别查证。",
+          "学习机装配线若引入自动化，可由一线员工指出哪一步最费力，设备方和制造工程师用同一工件演练，再查人工接管、返工及员工实际体力负担。"
+        ]
+      },
+      "boundary": "未披露工厂内部签字权、量产节拍、岗位数量变化或员工负担的实测结果；学习机例子是迁移练习。",
+      "meaning": "先确定现场人员要解决的具体动作，让设备方和使用方共同验证，再用实际生产和员工体验决定扩大范围。",
+      "question": "哪项任务达到放行条件，现场员工能否中止或接管？",
+      "eventReason": "机器人进厂后谁来教？沃尔沃让自己的团队和供应商一起练",
+      "selection": {
+        "scores": {
+          "相关性": 20,
+          "增量信息": 20,
+          "证据质量": 20,
+          "机制清晰": 19,
+          "可行动性": 20
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "供应商公告写明沃尔沃团队与海克斯康机器人部门共同训练。 未披露工厂内部签字权、量产节拍、岗位数量变化或员工负担的实测结果；学习机例子是迁移练习。"
+        }
+      },
+      "practices": [
+        {
+          "title": "机器人进厂后谁来教？沃尔沃让自己的团队和供应商一起练",
+          "method": "先确定现场人员要解决的具体动作，让设备方和使用方共同验证，再用实际生产和员工体验决定扩大范围。",
+          "conditions": "学习机装配线若引入自动化，可由一线员工指出哪一步最费力，设备方和制造工程师用同一工件演练，再查人工接管、返工及员工实际体力负担。",
+          "outcome": "未披露工厂内部签字权、量产节拍、岗位数量变化或员工负担的实测结果；学习机例子是迁移练习。",
+          "boundary": "未披露工厂内部签字权、量产节拍、岗位数量变化或员工负担的实测结果；学习机例子是迁移练习。",
+          "nextCheck": "哪项任务达到放行条件，现场员工能否中止或接管？",
+          "stages": [
+            "制造与交付",
+            "研发与系统",
+            "经营与组织"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "organization": [
+        {
+          "title": "机器人进厂后谁来教？沃尔沃让自己的团队和供应商一起练",
+          "kind": "已披露机制",
+          "observation": "沃尔沃把 AEON 机器人带到比利时根特工厂，由自己的团队与海克斯康机器人部门合作，在真实工业任务上训练和验证。两家公司希望它能分担重复、对人体负担较大的作业。",
+          "implication": "先确定现场人员要解决的具体动作，让设备方和使用方共同验证，再用实际生产和员工体验决定扩大范围。",
+          "boundary": "未披露工厂内部签字权、量产节拍、岗位数量变化或员工负担的实测结果；学习机例子是迁移练习。",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "claim": "供应商公告写明沃尔沃团队与海克斯康机器人部门共同训练。",
+          "sourceUrl": "https://robotics.hexagon.com/volvo-cars-aeon-humanoid-robots-for-manufacturing/",
+          "locator": "公告第二段与工厂试点安排"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://robotics.hexagon.com/volvo-cars-aeon-humanoid-robots-for-manufacturing/",
+          "publisherGroup": "海克斯康机器人",
+          "name": "海克斯康机器人",
+          "publishedAt": "2026-11-26",
+          "role": "official",
+          "textHash": "bf64a12ae32e3bb012bc5cbe693aaf9893f9920c5e98f337f32a9bfd70e5abcc",
+          "readAt": "2026-11-27T00:47:39.364513+00:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 99,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-27T00:53:47.826362+00:00",
+      "sourceDate": "2026-11-26",
+      "date": "2026-11-26",
+      "title": "机器人进厂后谁来教？沃尔沃让自己的团队和供应商一起练",
+      "summary": "沃尔沃把 AEON 机器人带到比利时根特工厂，由自己的团队与海克斯康机器人部门合作，在真实工业任务上训练和验证。两家公司希望它能分担重复、对人体负担较大的作业。"
     },
     {
       "id": "m26-r4",
@@ -8858,6 +9241,98 @@
       "summary": "拓竹与七家无障碍组织发布设计活动，尝试把具体生活需求交给创作者社区。关键线索是需求定义与应用验证有不同参与者。"
     },
     {
+      "id": "m27-pin",
+      "eventId": "m27-pin",
+      "developmentId": "initial",
+      "titleZh": "录音笔离线能做哪一步？用三个状态排查“录了却没出摘要”",
+      "originalTitle": "Does Plaud NotePin S work offline?",
+      "companies": [
+        "Plaud"
+      ],
+      "stages": [
+        "需求与规划",
+        "研发与系统",
+        "服务与生命周期"
+      ],
+      "domestic": false,
+      "publishedAt": "2026-09-07",
+      "kind": "常青资料",
+      "category": "学习硬件",
+      "brief": {
+        "lead": "Plaud 的 NotePin S 支持文档区分了三个状态。断网时设备仍可将音频存入本地；恢复联网后再打开手机应用同步，随后生成转写或摘要。",
+        "points": [
+          "客服先确认设备是否保存了录音，再查应用是否收到文件，最后查 AI 处理是否完成。三个问题对应不同的恢复动作。",
+          "用于学习场景的验证可在获得参与者同意后，用一段测试音频演练断网录入与重连恢复，分别留存录音、同步、转写三个时间点。"
+        ]
+      },
+      "boundary": "支持文档针对 NotePin S；未给出离线转写、恢复时长或其他品牌机型表现。",
+      "meaning": "把“录到了”“手机上看得见”“文字已生成”写成三个独立验收条件，售后可以定位需要恢复的环节。",
+      "question": "断网后恢复网络，哪一步需要用户重新打开应用，已有录音能否找回？",
+      "eventReason": "录音笔离线能做哪一步？用三个状态排查“录了却没出摘要”",
+      "selection": {
+        "scores": {
+          "相关性": 19,
+          "增量信息": 19,
+          "证据质量": 20,
+          "机制清晰": 19,
+          "可行动性": 19
+        },
+        "review": {
+          "decision": "pass",
+          "reason": "该型号官方文档确认设备可离线采集并保存音频。 支持文档针对 NotePin S；未给出离线转写、恢复时长或其他品牌机型表现。"
+        }
+      },
+      "practices": [
+        {
+          "title": "录音笔离线能做哪一步？用三个状态排查“录了却没出摘要”",
+          "method": "把“录到了”“手机上看得见”“文字已生成”写成三个独立验收条件，售后可以定位需要恢复的环节。",
+          "conditions": "用于学习场景的验证可在获得参与者同意后，用一段测试音频演练断网录入与重连恢复，分别留存录音、同步、转写三个时间点。",
+          "outcome": "支持文档针对 NotePin S；未给出离线转写、恢复时长或其他品牌机型表现。",
+          "boundary": "支持文档针对 NotePin S；未给出离线转写、恢复时长或其他品牌机型表现。",
+          "nextCheck": "断网后恢复网络，哪一步需要用户重新打开应用，已有录音能否找回？",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "服务与生命周期"
+          ],
+          "evidenceLevel": "实践线索",
+          "factIndexes": [
+            0
+          ]
+        }
+      ],
+      "educationCategories": [
+        "recorder"
+      ],
+      "facts": [
+        {
+          "claim": "该型号官方文档确认设备可离线采集并保存音频。",
+          "sourceUrl": "https://support.plaud.ai/hc/en-us/articles/53771056805785-Does-Plaud-NotePin-S-work-offline",
+          "locator": "What requires internet 与 Recommended offline workflow"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://support.plaud.ai/hc/en-us/articles/53771056805785-Does-Plaud-NotePin-S-work-offline",
+          "publisherGroup": "Plaud",
+          "name": "Plaud",
+          "publishedAt": "2026-09-07",
+          "role": "official",
+          "textHash": "be4cfeabcf7deb03a7a78be5dfb24676383fefad4626e38d752f1201d25afcb4",
+          "readAt": "2026-11-27T08:48:41.593351+08:00",
+          "coverage": "body"
+        }
+      ],
+      "score": 96,
+      "selected": true,
+      "status": "AI 整理 · 未经人工核验",
+      "generatedAt": "2026-11-27T00:53:47.830728+00:00",
+      "sourceDate": "2026-09-07",
+      "date": "2026-09-07",
+      "title": "录音笔离线能做哪一步？用三个状态排查“录了却没出摘要”",
+      "summary": "Plaud 的 NotePin S 支持文档区分了三个状态。断网时设备仍可将音频存入本地；恢复联网后再打开手机应用同步，随后生成转写或摘要。"
+    },
+    {
       "id": "rss-4e1438b07dbaee4a",
       "eventId": "rss-4e1438b07dbaee4a",
       "developmentId": "initial",
@@ -16961,6 +17436,49 @@
   ],
   "events": [
     {
+      "id": "m27-r0",
+      "representativeId": "m27-r0",
+      "itemIds": [
+        "m27-r0"
+      ],
+      "publisherGroups": [
+        "华尔街日报"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m27-r1",
+      "representativeId": "m27-r1",
+      "itemIds": [
+        "m27-r1"
+      ],
+      "publisherGroups": [
+        "The Firewall",
+        "路透社"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m27-r6",
+      "representativeId": "m27-r6",
+      "itemIds": [
+        "m27-r6"
+      ],
+      "publisherGroups": [
+        "拓竹"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
       "id": "e26-r1",
       "representativeId": "e26-r1",
       "itemIds": [
@@ -16983,6 +17501,20 @@
       ],
       "publisherGroups": [
         "作业帮官方招聘"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
+      "id": "m27-hex",
+      "representativeId": "m27-hex",
+      "itemIds": [
+        "m27-hex"
+      ],
+      "publisherGroups": [
+        "海克斯康机器人"
       ],
       "developmentIds": [
         "initial"
@@ -18410,6 +18942,20 @@
       "selected": true
     },
     {
+      "id": "m27-pin",
+      "representativeId": "m27-pin",
+      "itemIds": [
+        "m27-pin"
+      ],
+      "publisherGroups": [
+        "Plaud"
+      ],
+      "developmentIds": [
+        "initial"
+      ],
+      "selected": true
+    },
+    {
       "id": "rss-4e1438b07dbaee4a",
       "representativeId": "rss-4e1438b07dbaee4a",
       "itemIds": [
@@ -19571,469 +20117,6 @@
     }
   ],
   "runs": [
-    {
-      "coverage": "6个RSS源5个成功，30条候选初筛；实际读取作业帮、讯飞、宇树、科沃斯4家国内公司正文，覆盖采购、质量、渠道、服务与组织。复核2家核心竞品算法岗位；新增JTBD与Jetson功耗2篇常青brief，今日无合格新事件入选。",
-      "sourceChecks": [
-        {
-          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/e6056b1d-580b-442d-a27f-9ab9f12cd4b1",
-          "company": "作业帮",
-          "stages": [
-            "研发与系统",
-            "质量与合规",
-            "经营与组织"
-          ],
-          "purpose": "recruitment",
-          "state": "read",
-          "checkedAt": "2026-11-14T00:40:06.098Z",
-          "note": "同ID当前正文；健康穿戴相邻业务，职责未变，不能归为学习硬件算法。"
-        },
-        {
-          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=dc4e67cc-59ed-4a75-8b7a-e0d6ae6faaa9",
-          "company": "科大讯飞",
-          "stages": [
-            "研发与系统",
-            "质量与合规",
-            "经营与组织"
-          ],
-          "purpose": "recruitment",
-          "state": "read",
-          "checkedAt": "2026-11-14T00:40:34.429Z",
-          "note": "同ID当前OCR正文；公司共享能力，职责未变，无学习机专属范围。"
-        },
-        {
-          "url": "https://www.unitree.com/cn/supplier/",
-          "company": "宇树科技",
-          "stages": [
-            "供应链与采购",
-            "质量与合规",
-            "经营与组织"
-          ],
-          "purpose": "practice",
-          "state": "read",
-          "checkedAt": "2026-11-14T00:40:45.885393+00:00",
-          "note": "实际读取采购纪律和供应商登记步骤；登记不等于准入或订单。"
-        },
-        {
-          "url": "https://mall.ecovacs.cn/job-detail-516.html",
-          "company": "科沃斯",
-          "stages": [
-            "需求与规划",
-            "研发与系统",
-            "渠道与销售",
-            "服务与生命周期",
-            "经营与组织"
-          ],
-          "purpose": "practice",
-          "state": "read",
-          "checkedAt": "2026-11-14T00:40:45.885518+00:00",
-          "note": "实际读取产品线经理职责与要求，含生命周期、退市、工厂和渠道接口；无当前招聘发布日期，不推断新增缺口。"
-        },
-        {
-          "url": "https://apple-aiml-research.github.io/ml-halo/",
-          "company": null,
-          "stages": [
-            "研发与系统",
-            "质量与合规"
-          ],
-          "purpose": "practice",
-          "state": "read",
-          "checkedAt": "2026-11-14T00:40:45.888485+00:00",
-          "note": "实际读取控制层级与训练说明；研究系统非商业部署成效。"
-        },
-        {
-          "url": "https://developer.nvidia.com/blog/power-optimization-with-nvidia-jetson/",
-          "company": null,
-          "stages": [
-            "研发与系统",
-            "质量与合规"
-          ],
-          "purpose": "practice",
-          "state": "read",
-          "checkedAt": "2026-11-14T00:40:45.885147+00:00",
-          "note": "已读人工署名正文，未把页面AI摘要单独当依据；2023年常青资料。"
-        },
-        {
-          "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
-          "company": null,
-          "stages": [
-            "需求与规划"
-          ],
-          "purpose": "practice",
-          "state": "read",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "仅读取Web提取的定义片段，未核验视频与案例。"
-        },
-        {
-          "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
-          "company": null,
-          "stages": [
-            "需求与规划"
-          ],
-          "purpose": "practice",
-          "state": "error",
-          "checkedAt": "2026-11-14T00:40:45.884594+00:00",
-          "note": "直连超时，保留失败；Web定义片段补读。"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/622.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/026/993.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/026/757.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/026/468.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/026/385.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/026/367.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/025/331.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/025/152.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/025/146.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/024/828.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/024/755.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/024/535.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/024/516.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/995.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/768.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/767.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/023/546.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/027/004.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/026/954.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/026/931.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.cnx-software.com/2026/11/13/vantron-i-mx-952-smarc-system-on-module-for-edge-ai-vision-and-industrial-hmi",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/026/839.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/026/815.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/026/814.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/026/791.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/026/667.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/026/591.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.cnx-software.com/2026/11/13/home-assistant-compatible-esp32-4-channel-pwm-fan-controller-is-designed-for-server-racks-and-nas-systems",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/026/555.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/026/544.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "本轮候选标题初筛；自动下载或缓存不等于阅读全文，不生成正文结论。"
-        },
-        {
-          "url": "https://www.ithome.com/1/026/757.htm",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "error",
-          "checkedAt": "2026-11-14T00:40:25.609494+00:00",
-          "note": "自动正文读取失败，本轮未补读该候选，保留覆盖缺口。"
-        },
-        {
-          "url": "https://www.cnx-software.com/2026/11/13/vantron-i-mx-952-smarc-system-on-module-for-edge-ai-vision-and-industrial-hmi",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "error",
-          "checkedAt": "2026-11-14T00:40:25.609494+00:00",
-          "note": "自动正文读取失败，本轮未补读该候选，保留覆盖缺口。"
-        },
-        {
-          "url": "https://www.cnx-software.com/2026/11/13/home-assistant-compatible-esp32-4-channel-pwm-fan-controller-is-designed-for-server-racks-and-nas-systems",
-          "company": null,
-          "stages": [],
-          "purpose": "news",
-          "state": "error",
-          "checkedAt": "2026-11-14T00:40:25.609494+00:00",
-          "note": "自动正文读取失败，本轮未补读该候选，保留覆盖缺口。"
-        },
-        {
-          "url": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-04-29/6982b351-77aa-4dc6-93df-4f4d3fe4e9bd.PDF",
-          "company": "科大讯飞",
-          "stages": [
-            "经营与组织"
-          ],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "国内公司搜索命中报告索引，本轮未读PDF正文，不生成财务或经营结论。"
-        },
-        {
-          "url": "https://static.cninfo.com.cn/finalpage/2026-08-22/1225493227.PDF",
-          "company": "科沃斯",
-          "stages": [
-            "经营与组织"
-          ],
-          "purpose": "news",
-          "state": "index",
-          "checkedAt": "2026-11-14T00:44:10.709041+00:00",
-          "note": "国内公司搜索命中报告索引，本轮未读PDF正文，不生成财务或经营结论。"
-        }
-      ],
-      "knownGaps": [
-        "30条候选未完成逐篇正文审核，零入选不表示行业无新事件。",
-        "作业帮算法样本为健康穿戴、讯飞为共享OCR；学习硬件专属算法与供应链证据仍不足。",
-        "14个知识节点完整复核已逾期；本轮仅更新实际有依据的概念和指标条件，不延长完整复核期限。",
-        "搜索命中的讯飞、科沃斯报告仅作索引线索，尚未读PDF正文。"
-      ],
-      "failedSources": [
-        "CNX RSS超时及HTTP 403，保留历史缓存。",
-        "Christensen Institute直连超时，仅Web定义片段可读。",
-        "直连超时，保留失败；Web定义片段补读。",
-        "自动正文读取失败，本轮未补读该候选，保留覆盖缺口。"
-      ],
-      "coverageCheck": {
-        "passed": true,
-        "companies": [
-          "作业帮",
-          "宇树科技",
-          "科大讯飞",
-          "科沃斯"
-        ],
-        "stages": [
-          "供应链与采购",
-          "服务与生命周期",
-          "渠道与销售",
-          "经营与组织",
-          "质量与合规",
-          "需求与规划"
-        ],
-        "recruitmentCompanies": [
-          "作业帮",
-          "科大讯飞"
-        ],
-        "gaps": [],
-        "usableSources": 39
-      },
-      "successfulScan": true,
-      "completedAt": "2026-11-14T00:44:11.050463+00:00",
-      "reviewedCount": 2,
-      "selectedCount": 2
-    },
     {
       "coverage": "6个RSS源5个成功，30条候选初筛；实际读取作业帮、讯飞、宇树、科沃斯4家国内公司正文，覆盖采购、质量、渠道、服务与组织。复核2家核心竞品算法岗位；新增JTBD与Jetson功耗2篇常青brief，今日无合格新事件入选。",
       "sourceChecks": [
@@ -41258,6 +41341,937 @@
       },
       "successfulScan": true,
       "completedAt": "2026-11-26T10:50:29.432062+00:00",
+      "reviewedCount": 5,
+      "selectedCount": 5
+    },
+    {
+      "sourceChecks": [
+        {
+          "name": "海克斯康机器人",
+          "url": "https://robotics.hexagon.com/volvo-cars-aeon-humanoid-robots-for-manufacturing/",
+          "checkedAt": "2026-11-27T00:47:39.364513+00:00",
+          "purpose": "news",
+          "stages": [
+            "制造与交付",
+            "研发与系统",
+            "经营与组织"
+          ],
+          "note": "先确定现场人员要解决的具体动作，让设备方和使用方共同验证，再用实际生产和员工体验决定扩大范围。",
+          "company": "沃尔沃汽车",
+          "state": "read",
+          "readId": "m27-hex",
+          "publishedAt": "2026-11-26",
+          "publisherGroup": "海克斯康机器人",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "先确定现场人员要解决的具体动作，让设备方和使用方共同验证，再用实际生产和员工体验决定扩大范围。",
+            "anchor": "own team is training AEON robots in close collaboration"
+          }
+        },
+        {
+          "name": "拓竹",
+          "url": "https://blog.bambulab.com/easy-in-hand-pro-in-every-scan-bambu-lab-introduces-the-s1-3d-scanner",
+          "checkedAt": "2026-11-27T00:45:18.545524+00:00",
+          "purpose": "news",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "note": "产品工程师给出待验尺寸和允许偏差，测量人员记录模式、对象长度和基准件实测值，质量人员据此决定扫描数据适用范围。",
+          "company": "拓竹",
+          "state": "read",
+          "readId": "m27-r6",
+          "publishedAt": "2026-11-26T14:00:46+00:00",
+          "publisherGroup": "拓竹",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "产品工程师给出待验尺寸和允许偏差，测量人员记录模式、对象长度和基准件实测值，质量人员据此决定扫描数据适用范围。",
+            "anchor": "volumetric accuracy is 0.02 mm + 0.06 mm/m"
+          }
+        },
+        {
+          "name": "华尔街日报",
+          "url": "https://www.tomshardware.com/pc-components/dram/electronics-manufacturers-set-up-memory-war-rooms-to-find-lock-in-dram-supplies-amid-worst-shortage-in-history-employees-scour-ebay-contact-hundreds-of-brokers-and-snap-up-even-small-batches-of-just-5-to-12-units",
+          "checkedAt": "2026-11-27T00:45:20.248362+00:00",
+          "purpose": "news",
+          "stages": [
+            "供应链与采购",
+            "经营与组织",
+            "制造与交付"
+          ],
+          "note": "内存是多类设备共用器件。备款时点、替代验证与到货窗口会共同约束排产，团队可逐料核对对应证据。",
+          "company": "宇瞻科技",
+          "state": "read",
+          "readId": "m27-r0",
+          "publishedAt": "2026-11-26T16:11:07+00:00",
+          "publisherGroup": "华尔街日报",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "内存是多类设备共用器件。备款时点、替代验证与到货窗口会共同约束排产，团队可逐料核对对应证据。",
+            "anchor": "Apacer had to take out loans"
+          }
+        },
+        {
+          "name": "路透社",
+          "url": "https://www.ithome.com/1/033/126.htm",
+          "checkedAt": "2026-11-27T00:45:17.987310+00:00",
+          "purpose": "news",
+          "stages": [
+            "需求与规划",
+            "质量与合规",
+            "渠道与销售"
+          ],
+          "note": "有指示灯只是设计事实。能否让周围的人察觉，应在真实观察距离、环境光和朝向下验证。",
+          "company": "Meta",
+          "state": "read",
+          "readId": "m27-r1",
+          "publishedAt": "2026-11-26T14:59:17+00:00",
+          "publisherGroup": "路透社",
+          "bodyReview": {
+            "decision": "pass",
+            "reason": "有指示灯只是设计事实。能否让周围的人察觉，应在真实观察距离、环境光和朝向下验证。",
+            "anchor": "镜架上配备了录制指示灯，旁人能够直观看到设备正在录像"
+          }
+        },
+        {
+          "name": "Plaud",
+          "url": "https://support.plaud.ai/hc/en-us/articles/53771056805785-Does-Plaud-NotePin-S-work-offline",
+          "checkedAt": "2026-11-27T08:48:41.593351+08:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "服务与生命周期"
+          ],
+          "note": "把“录到了”“手机上看得见”“文字已生成”写成三个独立验收条件，售后可以定位需要恢复的环节。",
+          "company": "Plaud",
+          "state": "read"
+        },
+        {
+          "name": "拓竹",
+          "url": "https://www.ithome.com/1/033/121.htm",
+          "checkedAt": "2026-11-27T00:45:17.969856+00:00",
+          "purpose": "news",
+          "stages": [
+            "需求与规划"
+          ],
+          "note": "同一 S1 发布，选用企业公告、技术规格。",
+          "company": "拓竹",
+          "state": "read",
+          "readId": "m27-r2",
+          "publishedAt": "2026-11-26T14:37:32+00:00",
+          "publisherGroup": "拓竹",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "同一 S1 发布，选用企业公告、技术规格。",
+            "anchor": "蓝色激光与红外散斑两种光源，可切换 34 束蓝激光交叉线、7 束蓝激光平行线、单"
+          }
+        },
+        {
+          "name": "华尔街日报",
+          "url": "https://www.ithome.com/1/033/116.htm",
+          "checkedAt": "2026-11-27T00:45:17.995206+00:00",
+          "purpose": "news",
+          "stages": [
+            "需求与规划"
+          ],
+          "note": "同一原发报道；转述的谈判细节未获公司确认。",
+          "company": "三星电子",
+          "state": "read",
+          "readId": "m27-r4",
+          "publishedAt": "2026-11-26T14:19:27+00:00",
+          "publisherGroup": "华尔街日报",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "同一原发报道；转述的谈判细节未获公司确认。",
+            "anchor": "资本集团和三星拒绝置评。特斯拉未回应置评请求。 报道还提到，芯片买家正长期驻守在"
+          }
+        },
+        {
+          "name": "IT之家",
+          "url": "https://www.ithome.com/1/033/077.htm",
+          "checkedAt": "2026-11-27T00:45:18.030657+00:00",
+          "purpose": "news",
+          "stages": [
+            "需求与规划"
+          ],
+          "note": "上架和后续发售分开，暂未获独立验证。",
+          "company": "JBL",
+          "state": "read",
+          "readId": "m27-r7",
+          "publishedAt": "2026-11-26T12:26:29+00:00",
+          "publisherGroup": "IT之家",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "上架和后续发售分开，暂未获独立验证。",
+            "anchor": "该耳机提供 ip54 认证，可选绿 / 黑 / 白三种半透明外观，单耳机重约 5"
+          }
+        },
+        {
+          "name": "IT之家",
+          "url": "https://www.ithome.com/1/033/027.htm",
+          "checkedAt": "2026-11-27T00:45:18.007534+00:00",
+          "purpose": "news",
+          "stages": [
+            "需求与规划"
+          ],
+          "note": "单品国行上市，未见新的渠道机制。",
+          "company": "索尼",
+          "state": "read",
+          "readId": "m27-r8",
+          "publishedAt": "2026-11-26T10:22:55+00:00",
+          "publisherGroup": "IT之家",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "单品国行上市，未见新的渠道机制。",
+            "anchor": "开启降噪时续航约 27 小时，关闭降噪时续航约 34 小时；支持蓝牙 6.0，可"
+          }
+        },
+        {
+          "name": "海克斯康机器人",
+          "url": "https://www.ithome.com/1/032/939.htm",
+          "checkedAt": "2026-11-27T00:45:18.011450+00:00",
+          "purpose": "news",
+          "stages": [
+            "需求与规划"
+          ],
+          "note": "与供应商原发公告归组。",
+          "company": "沃尔沃汽车",
+          "state": "read",
+          "readId": "m27-r10",
+          "publishedAt": "2026-11-26T08:52:18+00:00",
+          "publisherGroup": "海克斯康机器人",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "与供应商原发公告归组。",
+            "anchor": "沃尔沃汽车首席制造官马格努斯 · 尼尔松（magnus nilsson）说：“a"
+          }
+        },
+        {
+          "name": "ETNEWS",
+          "url": "https://www.ithome.com/1/032/931.htm",
+          "checkedAt": "2026-11-27T00:45:18.000211+00:00",
+          "purpose": "news",
+          "stages": [
+            "需求与规划"
+          ],
+          "note": "关于组建团队的媒体消息，未读到企业披露的职责及投产结果。",
+          "company": "三星电子",
+          "state": "read",
+          "readId": "m27-r11",
+          "publishedAt": "2026-11-26T08:32:20+00:00",
+          "publisherGroup": "ETNEWS",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "关于组建团队的媒体消息，未读到企业披露的职责及投产结果。",
+            "anchor": "三星电子半导体板块 —— ds（设备解决方案）部，已在其全球制造与基础设施总部下"
+          }
+        },
+        {
+          "name": "Nothing",
+          "url": "https://www.ithome.com/1/032/914.htm",
+          "checkedAt": "2026-11-27T00:45:18.034661+00:00",
+          "purpose": "news",
+          "stages": [
+            "需求与规划"
+          ],
+          "note": "公布外观及发布会日期，实际交付及离线能力待查。",
+          "company": "Nothing",
+          "state": "read",
+          "readId": "m27-r12",
+          "publishedAt": "2026-11-26T08:08:17+00:00",
+          "publisherGroup": "Nothing",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "公布外观及发布会日期，实际交付及离线能力待查。",
+            "anchor": "定位为 ai 记录工具，同时搭载品牌迄今为止最好的入耳式音频体验。其可以对线下对"
+          }
+        },
+        {
+          "name": "商汤科技",
+          "url": "https://www.ithome.com/1/032/887.htm",
+          "checkedAt": "2026-11-27T00:45:18.038668+00:00",
+          "purpose": "news",
+          "stages": [
+            "需求与规划"
+          ],
+          "note": "仿真基准得分不证明实体工位稳定达成。",
+          "company": "商汤科技",
+          "state": "read",
+          "readId": "m27-r13",
+          "publishedAt": "2026-11-26T07:54:28+00:00",
+          "publisherGroup": "商汤科技",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "仿真基准得分不证明实体工位稳定达成。",
+            "anchor": "正式版能够自主判断何时调用 vla、何时通过代码直接控制机械臂，并根据实际执行反"
+          }
+        },
+        {
+          "name": "QCY",
+          "url": "https://www.ithome.com/1/032/886.htm",
+          "checkedAt": "2026-11-27T00:45:18.026316+00:00",
+          "purpose": "news",
+          "stages": [
+            "需求与规划"
+          ],
+          "note": "单次产品上架，尚无同条件独立实测。",
+          "company": "QCY",
+          "state": "read",
+          "readId": "m27-r14",
+          "publishedAt": "2026-11-26T07:50:21+00:00",
+          "publisherGroup": "QCY",
+          "bodyReview": {
+            "decision": "hold",
+            "reason": "单次产品上架，尚无同条件独立实测。",
+            "anchor": "该产品提供 ipx5 认证，充电盒采用光面与哑光双拼撞色设计，耳机本体采用了高光"
+          }
+        },
+        {
+          "name": "美国联邦地区法院",
+          "url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-5_26-cv-06345/pdf/USCOURTS-cand-5_26-cv-06345-0.pdf",
+          "checkedAt": "2026-11-27T00:47:40.395713+00:00",
+          "purpose": "practice",
+          "stages": [
+            "供应链与采购",
+            "质量与合规"
+          ],
+          "note": "核对已收录 DRAM 民事案驳回动议裁定，本次未取得新的实体裁判。",
+          "company": "美国联邦地区法院",
+          "state": "read"
+        },
+        {
+          "name": "美国商务部",
+          "url": "https://www.govinfo.gov/content/pkg/FR-2026-11-19/html/2026-23529.htm",
+          "checkedAt": "2026-11-27T00:47:39.347343+00:00",
+          "purpose": "practice",
+          "stages": [
+            "供应链与采购",
+            "质量与合规"
+          ],
+          "note": "复核已收录出口规则文本。",
+          "company": "美国商务部",
+          "state": "read"
+        },
+        {
+          "name": "美国消费品安全委员会",
+          "url": "https://www.cpsc.gov/Recalls",
+          "checkedAt": "2026-11-27T00:47:39.407783+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规",
+            "服务与生命周期"
+          ],
+          "note": "检查召回目录，索引仅作检索入口。",
+          "company": "美国消费品安全委员会",
+          "state": "index"
+        },
+        {
+          "name": "拓竹",
+          "url": "https://store.bblcdn.com/s7/fmpta/d8daa4ae0988445ea90f99341474afce/Bambu_Lab_S1_Technical_Specifications.pdf",
+          "checkedAt": "2026-11-27T00:47:39.598696+00:00",
+          "purpose": "practice",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "核对精度定义与实验室限定。",
+          "company": "拓竹",
+          "state": "read"
+        },
+        {
+          "name": "The Firewall",
+          "url": "https://www.thefirewall.eu/metabril",
+          "checkedAt": "2026-11-27T00:48:12.265874+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规"
+          ],
+          "note": "核对原告的听证进度记录。",
+          "company": "The Firewall",
+          "state": "read"
+        },
+        {
+          "name": "华尔街日报",
+          "url": "https://www.wsj.com/tech/memory-chip-shortage-ai-electronics-prices-e58a065a",
+          "checkedAt": "2026-11-27T00:48:10.311603+00:00",
+          "purpose": "practice",
+          "stages": [
+            "供应链与采购"
+          ],
+          "note": "华尔街日报：直连未取得可用正文，保留该路径的读取失败。",
+          "company": "华尔街日报",
+          "state": "error"
+        },
+        {
+          "name": "沃尔沃汽车",
+          "url": "https://www.volvocars.com/uk/media/press-releases/5B712552CE36E240/",
+          "checkedAt": "2026-11-27T00:47:39.407974+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划"
+          ],
+          "note": "沃尔沃汽车：直连未取得可用正文，保留该路径的读取失败。",
+          "company": "沃尔沃汽车",
+          "state": "error"
+        },
+        {
+          "name": "荷兰消费者协会",
+          "url": "https://www.consumentenbond.nl/acties-claims/acties/meta-stop-met-camerabril",
+          "checkedAt": "2026-11-27T00:48:13.311487+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划"
+          ],
+          "note": "荷兰消费者协会：直连未取得可用正文，保留该路径的读取失败。",
+          "company": "荷兰消费者协会",
+          "state": "error"
+        },
+        {
+          "name": "路透社转载入口",
+          "url": "https://www.investing.com/news/stock-market-news/dutch-groups-ask-court-to-halt-meta-smart-glasses-sales-over-privacy-concerns-5052455",
+          "checkedAt": "2026-11-27T00:48:10.466097+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划"
+          ],
+          "note": "路透社转载入口：直连未取得可用正文，保留该路径的读取失败。",
+          "company": "路透社转载入口",
+          "state": "error"
+        },
+        {
+          "name": "Plaud",
+          "url": "https://support.plaud.ai/hc/en-us/articles/53771056805785-Does-Plaud-NotePin-S-work-offline",
+          "checkedAt": "2026-11-27T00:48:10.660514+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划"
+          ],
+          "note": "Plaud：直连未取得可用正文，保留该路径的读取失败。",
+          "company": "Plaud",
+          "state": "error"
+        },
+        {
+          "name": "2026届校招-AI产品教研",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/70dc09b3-4eef-444b-8b17-f31ad6614dcf",
+          "checkedAt": "2026-11-27T00:45:27.071056+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "同一岗位的职责正文与上次一致。小学AIGC教育产品，正文未限定设备或学习机团队",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "算法实习生-多模态文档理解",
+          "url": "https://app.mokahr.com/social-recruitment/fenbi/45505#/job/5ecdce43-9ab2-48bb-ade9-ff021311daef",
+          "checkedAt": "2026-11-27T00:45:28.103679+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "同一岗位的职责正文与上次一致。基础研发部教育OCR能力，未说明专属学习机",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "题库教研（D111300）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/0223c4d9-1a3a-4d44-b3da-ce58723e1311",
+          "checkedAt": "2026-11-27T00:45:27.824870+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "需求与规划",
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "同一岗位的职责正文与上次一致。题库教研审核与业务反馈，未披露硬件品类；正文岗位名为小数教研，要求却写初高中教材，学段边界待确认。",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "2026届春招-供应链运营管培生",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "checkedAt": "2026-11-27T00:45:27.877237+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "服务与生命周期"
+          ],
+          "note": "同一岗位的职责正文与上次一致。正文明确学习机售后及小猿设备业务；管培生职责可能含轮岗，不能视为固定组织架构",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "供应商管理工程师-硬件方向",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
+          "checkedAt": "2026-11-27T00:45:24.783236+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "供应链与采购",
+            "制造与交付",
+            "服务与生命周期"
+          ],
+          "note": "同一岗位的职责正文与上次一致。消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "AI研究院-算法工程师-OCR方向(J14869)",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=dc4e67cc-59ed-4a75-8b7a-e0d6ae6faaa9",
+          "checkedAt": "2026-11-27T00:45:24.756787+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "同一岗位的职责正文与上次一致。集团统一招聘的OCR能力，未指定学习机或词典笔项目",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "2026届春招-硬件研发工程师",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "checkedAt": "2026-11-27T00:45:27.624466+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "note": "同一岗位的职责正文与上次一致。原文明确小猿产品及学习机、学练机业务，未划分具体型号",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "渠道运营（D110568）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/5c016df5-2a57-4758-b3e3-4a58eb276ffe",
+          "checkedAt": "2026-11-27T00:45:27.718508+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "note": "该岗位链接明确显示停止招聘，原因未知。",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "消费者BG-中级渠道经理-北京/上海/合肥",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=179aac28-bb83-4ed6-938e-25d57a57899b",
+          "checkedAt": "2026-11-27T00:45:24.285922+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "note": "同一岗位的职责正文与上次一致。消费者业务渠道，未指明学习机产品线",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "算法工程师（D110740）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/e6056b1d-580b-442d-a27f-9ab9f12cd4b1",
+          "checkedAt": "2026-11-27T00:45:28.033115+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "质量与合规"
+          ],
+          "note": "同一岗位的职责正文与上次一致。穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "客服专员（D111566）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/b6a78004-e648-48c8-96fa-6c30c3e6ef83",
+          "checkedAt": "2026-11-27T00:45:28.484862+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "服务与生命周期",
+            "质量与合规"
+          ],
+          "note": "同一岗位的职责正文与上次一致。明确学习机及学习笔售后工作；学习笔未明确为词典笔。",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "硬件结构工程师（D110856）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/bce3303d-d5ee-41f0-b76f-30e4a45d7d43",
+          "checkedAt": "2026-11-27T00:45:27.498099+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "研发与系统",
+            "制造与交付",
+            "质量与合规"
+          ],
+          "note": "该岗位链接明确显示停止招聘，原因未知。",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "作业帮 产品说明",
+          "url": "https://smart.zuoyebang.com/about",
+          "checkedAt": "2026-11-27T00:45:17.965664+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对作业帮智能 · 品牌介绍。已复核原文中的证据锚点。",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "作业帮",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/b6a78004-e648-48c8-96fa-6c30c3e6ef83",
+          "checkedAt": "2026-11-27T00:48:33.424640+00:00",
+          "purpose": "practice",
+          "stages": [
+            "服务与生命周期"
+          ],
+          "note": "作业帮：直连未得正文，另用浏览器核验同一官方岗位。",
+          "company": "作业帮",
+          "state": "error"
+        },
+        {
+          "name": "作业帮 产品说明",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/b6a78004-e648-48c8-96fa-6c30c3e6ef83",
+          "checkedAt": "2026-11-27T00:45:28.484862+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对客服专员（D111566）。已复核原文中的证据锚点。",
+          "company": "作业帮",
+          "state": "read"
+        },
+        {
+          "name": "科大讯飞 产品说明",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "checkedAt": "2026-11-27T00:45:18.414343+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对科大讯飞 · AI学习机。已复核原文中的证据锚点。",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "猿辅导（小猿） 产品说明",
+          "url": "https://apps.apple.com/cn/app/id6738277050",
+          "checkedAt": "2026-11-27T00:45:20.256407+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对小猿智能设备 · App Store开发者说明。已复核原文中的证据锚点。",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "小天才 产品说明",
+          "url": "https://www.okii.com/html/pc/service/service_question.html",
+          "checkedAt": "2026-11-27T00:45:18.118632+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对小天才 · 常见问题。已复核原文中的证据锚点。",
+          "company": "小天才",
+          "state": "read"
+        },
+        {
+          "name": "华为 产品说明",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+          "checkedAt": "2026-11-27T00:45:19.769494+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对华为 · 平板教育空间使用指南。已复核原文中的证据锚点。",
+          "company": "华为",
+          "state": "read"
+        },
+        {
+          "name": "Amazon 产品说明",
+          "url": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
+          "checkedAt": "2026-11-27T00:45:19.217552+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对Amazon · Kids Tablets介绍。已复核原文中的证据锚点。",
+          "company": "Amazon",
+          "state": "read"
+        },
+        {
+          "name": "Amazon 产品说明",
+          "url": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
+          "checkedAt": "2026-11-27T00:48:31.203005+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对Amazon · Kindle Kids常见问题。已复核原文中的证据锚点。",
+          "company": "Amazon",
+          "state": "read"
+        },
+        {
+          "name": "Amazon 产品说明",
+          "url": "https://digprjsurvey.amazon.com/csad/help/node/GF3LDHSB5YM9BYF7?theme=light",
+          "checkedAt": "2026-11-27T00:48:32.277602+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对Amazon 美国设备帮助 · 安全更新承诺。已复核原文中的证据锚点。",
+          "company": "Amazon",
+          "state": "read"
+        },
+        {
+          "name": "LeapFrog 产品说明",
+          "url": "https://www.leapfrog.com/en-us/products/tablet-family?bmLocale=en_US",
+          "checkedAt": "2026-11-27T00:45:20.621968+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对LeapFrog · Tablet family。已复核原文中的证据锚点。",
+          "company": "LeapFrog",
+          "state": "read"
+        },
+        {
+          "name": "科大讯飞 产品说明",
+          "url": "https://edu.iflytek.com/solution/family/transpen",
+          "checkedAt": "2026-11-27T00:45:18.431941+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对科大讯飞 · AI翻译笔。已复核原文中的证据锚点。",
+          "company": "科大讯飞",
+          "state": "read"
+        },
+        {
+          "name": "钉钉 · AI应用服务市场",
+          "url": "https://aihub.dingtalk.com/",
+          "checkedAt": "2026-11-27T00:45:18.096022+00:00",
+          "purpose": "practice",
+          "stages": [
+            "服务与生命周期"
+          ],
+          "note": "钉钉 · AI应用服务市场：本轮直连未取得可用正文，仍需复核。",
+          "company": "钉钉",
+          "state": "error"
+        },
+        {
+          "name": "文石 BOOX 产品说明",
+          "url": "https://help.boox.com/fa5fa/f733d/56960",
+          "checkedAt": "2026-11-27T00:45:19.086298+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对文石帮助 · 阅读数据同步和备份。已复核原文中的证据锚点。",
+          "company": "文石 BOOX",
+          "state": "read"
+        },
+        {
+          "name": "文石 BOOX 产品说明",
+          "url": "https://help.boox.com/653d4/f3f2e/affe8",
+          "checkedAt": "2026-11-27T00:48:30.997671+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对文石帮助 · 手写笔记同步。已复核原文中的证据锚点。",
+          "company": "文石 BOOX",
+          "state": "read"
+        },
+        {
+          "name": "掌阅 产品说明",
+          "url": "https://m.ithome.com/html/811360.htm",
+          "checkedAt": "2026-11-27T00:45:18.145624+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对IT之家整理掌阅 SmartOS 2.4 更新说明。已复核原文中的证据锚点。",
+          "company": "掌阅",
+          "state": "read"
+        },
+        {
+          "name": "华为 产品说明",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn00734120/",
+          "checkedAt": "2026-11-27T00:45:19.102845+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对华为儿童手表上课禁用异常排查。已复核原文中的证据锚点。",
+          "company": "华为",
+          "state": "read"
+        },
+        {
+          "name": "网易有道 产品说明",
+          "url": "https://markets.ft.markitdigital.com/data/announce/detail?dockey=600-202611190400PR_NEWS_USPRX____CN02238-1",
+          "checkedAt": "2026-11-27T00:48:34.046539+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对有道（公司财报）。已复核原文中的证据锚点。",
+          "company": "网易有道",
+          "state": "read"
+        },
+        {
+          "name": "网易三季度投资者演示 · 有道业务页",
+          "url": "https://ir.netease.com/static-files/4ce9997f-f8b2-4df7-a71e-a754261a5fb4",
+          "checkedAt": "2026-11-27T00:48:30.679817+00:00",
+          "purpose": "practice",
+          "stages": [
+            "服务与生命周期"
+          ],
+          "note": "网易三季度投资者演示 · 有道业务页：本轮直连未取得可用正文，仍需复核。",
+          "company": "网易有道",
+          "state": "error"
+        },
+        {
+          "name": "华为 产品说明",
+          "url": "https://consumer.huawei.com/cn/wearables/kids-watch-5-lite/",
+          "checkedAt": "2026-11-27T00:48:31.410784+00:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "核对华为儿童手表 5 活力版 · 产品页与脚注。已复核原文中的证据锚点。",
+          "company": "华为",
+          "state": "read"
+        },
+        {
+          "name": "Plaud 产品说明",
+          "url": "https://support.plaud.ai/hc/en-us/articles/53771056805785-Does-Plaud-NotePin-S-work-offline",
+          "checkedAt": "2026-11-27T08:48:41.593351+08:00",
+          "purpose": "practice",
+          "stages": [
+            "需求与规划",
+            "服务与生命周期"
+          ],
+          "note": "复核该机型在离线录音、恢复联网同步以及生成 AI 输出时的操作条件。",
+          "company": "Plaud",
+          "state": "read"
+        },
+        {
+          "name": "直播运营负责人",
+          "url": "https://app.mokahr.com/social-recruitment/fenbi/45505#/job/e0ccd64d-0f72-49d3-a787-e87b44bac2d1",
+          "checkedAt": "2026-11-27T00:52:04.135548+00:00",
+          "purpose": "recruitment",
+          "stages": [
+            "渠道与销售",
+            "服务与生命周期"
+          ],
+          "note": "海豚AI一对一教学服务，未提学习硬件销售。职责未变，仍为教育服务业务的渠道参照。",
+          "company": "猿辅导（小猿）",
+          "state": "read"
+        },
+        {
+          "name": "CaseMagic 案卷索引",
+          "url": "https://casemagic.ai/case/cand/5-26-cv-06345",
+          "checkedAt": "2026-11-27T00:53:25.192799+00:00",
+          "purpose": "practice",
+          "stages": [
+            "质量与合规",
+            "供应链与采购"
+          ],
+          "note": "案号 5:26-cv-06345 的 11 月 25 日索引列为 Pro Hac Vice，涉及律师出庭资格；结合先前法院原文，本轮未核实新的实体裁判。",
+          "company": "三星电子",
+          "state": "index"
+        }
+      ],
+      "failedSources": [
+        "华尔街日报：直连未取得可用正文，保留该路径的读取失败。",
+        "沃尔沃汽车：直连未取得可用正文，保留该路径的读取失败。",
+        "荷兰消费者协会：直连未取得可用正文，保留该路径的读取失败。",
+        "路透社转载入口：直连未取得可用正文，保留该路径的读取失败。",
+        "Plaud：直连未取得可用正文，保留该路径的读取失败。",
+        "作业帮：直连未得正文，另用浏览器核验同一官方岗位。",
+        "钉钉 · AI应用服务市场：本轮直连未取得可用正文，仍需复核。",
+        "网易三季度投资者演示 · 有道业务页：本轮直连未取得可用正文，仍需复核。"
+      ],
+      "coverage": "审读内存采购、智能眼镜听证、工厂机器人试点及拓竹扫描仪；复核三家教育硬件核心公司的公开岗位，补读离线录音服务说明。",
+      "knownGaps": [
+        "宇瞻采访的全文与实际采购合同未取得；既有美国 DRAM 案未核实新的实体裁判。",
+        "沃尔沃工厂训练未提供岗位负担、节拍或良率的结果；扫描仪标称精度缺独立现场验收。",
+        "钉钉录音设备及部分公开资料直连失败；三家公司的职位复核不能推算招聘人数或团队编制。"
+      ],
+      "coverageCheck": {
+        "newsResearch": {
+          "passed": true,
+          "bodyCount": 12,
+          "publisherGroups": [
+            "ETNEWS",
+            "IT之家",
+            "Nothing",
+            "QCY",
+            "华尔街日报",
+            "商汤科技",
+            "拓竹",
+            "海克斯康机器人",
+            "路透社"
+          ],
+          "requiredBodies": 6,
+          "requiredPublisherGroups": 3
+        },
+        "passed": true,
+        "companies": [
+          "作业帮",
+          "华为",
+          "小天才",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "gaps": [],
+        "usableSources": 49
+      },
+      "successfulScan": true,
+      "completedAt": "2026-11-27T00:53:47.847602+00:00",
       "reviewedCount": 5,
       "selectedCount": 5
     }

@@ -3,38 +3,39 @@
   "startedAt": "2026-11-06T07:45:08.434151+00:00",
   "nodes": {
     "chain-3": {
-      "attemptedAt": "2026-11-25T10:47:40.796614+00:00",
+      "attemptedAt": "2026-11-27T00:53:48.256580+00:00",
       "status": "partial",
-      "assessment": "集邦在同一份展望中分别预计 NAND 进入下行周期、DRAM 供需仍紧但涨势放缓，买方需求变动针对特定产品和市场。",
+      "assessment": "Tom’s Hardware 转述《华尔街日报》采访，称宇瞻通过备款抓住短暂货源。材料证明的是报道中的准备动作，实际采购数量待查。",
       "gaps": [
         "补核 Oracle 26C 的 MOQ 计算；各企业实际参数、运输起止、库存边界仍待订单和台账核验。",
         "公开资料没有供应商审核标准、实际通过率、采购质量接口和履约结果。",
-        "具体教育设备的供应商报价、批次和生效时间尚缺。"
+        "具体教育设备的供应商报价、批次和生效时间尚缺。",
+        "尚缺公开的宇瞻采购批次、到货证明和备款成本。"
       ],
       "reviewedFields": [
         "exercise"
       ],
       "evidence": [
         {
-          "itemId": "e25-trend",
-          "title": "集邦下调 2027 年存储业展望，DRAM 与 NAND 的价格方向为何不同？",
+          "itemId": "m27-r0",
+          "title": "内存紧缺时，宇瞻为何先为采购备现金？",
           "facts": [
             {
-              "claim": "集邦预测 DRAM 合约价季度涨幅将收窄。",
-              "sourceUrl": "https://www.trendforce.com/presscenter/news/20261125-13321.html",
-              "locator": "原文 DRAM 展望段"
+              "claim": "可读转述将备款做法归因于对宇瞻的采访。",
+              "sourceUrl": "https://www.tomshardware.com/pc-components/dram/electronics-manufacturers-set-up-memory-war-rooms-to-find-lock-in-dram-supplies-amid-worst-shortage-in-history-employees-scour-ebay-contact-hundreds-of-brokers-and-snap-up-even-small-batches-of-just-5-to-12-units",
+              "locator": "Tom’s Hardware 转述原发采访的宇瞻段"
             }
           ],
-          "boundary": "这是机构对 2027 年的预测；未披露任何学习机客户的合同价、交期或已生效折扣。",
+          "boundary": "本轮未读到《华尔街日报》完整原稿或企业信贷文件；个案不能确定国内整机厂存货、采购价格及交付影响。",
           "sources": [
             {
-              "url": "https://www.trendforce.com/presscenter/news/20261125-13321.html",
-              "publisherGroup": "TrendForce 集邦咨询",
-              "name": "TrendForce 集邦咨询",
-              "publishedAt": "2026-11-25",
-              "role": "research",
-              "textHash": "d1ae5ce46ab6ed7934e7457421f0b62bfa09d4a7f400e8eee68144000c2aa9d3",
-              "readAt": "2026-11-25T10:41:52.423319+00:00",
+              "url": "https://www.tomshardware.com/pc-components/dram/electronics-manufacturers-set-up-memory-war-rooms-to-find-lock-in-dram-supplies-amid-worst-shortage-in-history-employees-scour-ebay-contact-hundreds-of-brokers-and-snap-up-even-small-batches-of-just-5-to-12-units",
+              "publisherGroup": "华尔街日报",
+              "name": "Tom’s Hardware（转述《华尔街日报》采访）",
+              "publishedAt": "2026-11-26T16:11:07+00:00",
+              "role": "media",
+              "textHash": "4833cc5860352e5500ca650e060bf5c9c80cf87a2ad7853a626def062f1c12fd",
+              "readAt": "2026-11-27T00:45:20.248362+00:00",
               "coverage": "body"
             }
           ]
@@ -42,17 +43,17 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "e25-trend",
-          "url": "https://www.trendforce.com/presscenter/news/20261125-13321.html",
-          "checkedAt": "2026-11-25T10:41:52.423319+00:00",
+          "itemId": "m27-r0",
+          "url": "https://www.tomshardware.com/pc-components/dram/electronics-manufacturers-set-up-memory-war-rooms-to-find-lock-in-dram-supplies-amid-worst-shortage-in-history-employees-scour-ebay-contact-hundreds-of-brokers-and-snap-up-even-small-batches-of-just-5-to-12-units",
+          "checkedAt": "2026-11-27T00:45:20.248362+00:00",
           "state": "body",
-          "note": "本轮读取正文。核对企业级 SSD 采购计划、DRAM 合约涨幅与预测期间。"
+          "note": "本轮读取正文。复核宇瞻采访的转述及小批量现货描述。"
         }
       ],
-      "reviewedAt": "2026-11-25T10:47:40.796614+00:00",
+      "reviewedAt": "2026-11-27T00:53:48.256580+00:00",
       "patch": {
         "basics": "MOQ 是最小订购量；交期包含采购、生产和运输，不能只看供应商承诺。 供应商登记仅是提交资料的入口，不能自动等同于资格审核通过或获得采购订单。 Oracle 26C 计划模块中，净需求 100 件且最小订购量设为 150 件，会产生 150 件的建议单；建议量与实际签约量要用单据另行核对。",
-        "exercise": "选一颗关键器件，写出交期风险、替代验证要求和缺料升级路径。 再区分供应商资料登记、资格核验、质量验收和订单获取；无公开依据的门槛标为待核验。 预算评审时将 DRAM 和 NAND 拆成两行，各自列出应用、料号、报价有效期与交货批次。把机构预测写入情景假设，收到供应商报价后再调整成本表。",
+        "exercise": "选一颗关键器件，写出交期风险、替代验证要求和缺料升级路径。 再区分供应商资料登记、资格核验、质量验收和订单获取；无公开依据的门槛标为待核验。 预算评审时将 DRAM 和 NAND 拆成两行，各自列出应用、料号、报价有效期与交货批次。把机构预测写入情景假设，收到供应商报价后再调整成本表。 当现货库存转瞬即逝时，把获得报价、资金可用、供应商确认数量、已锁定交期与最终收货分别记录。缺少确认的数量先保留为采购机会。",
         "team": "研发与采购共同明确替代料边界；供应商质量、计划、财务一起管理风险。小猿管培岗位另提供具体交接样本：销售计划提出配件需求，采购跟进合同和付款，工厂关注物料齐套，售后反馈问题；不能据此推断一人承担全部工作或拥有全部放行权。 采购核对具体通知与可订旧料，研发和质量核对样品及验证结论。放行责任需要项目授权文件。",
         "metrics": "库存周转天数 = 期间平均库存成本 / 期间销售成本 × 期间天数；口径与周期一致。 库存周转须明确成本口径。Oracle Retail 的该指标用本期已售商品成本除以期初、期末库存成本的均值。另将存储现货报价与按季合约报价分列，不能直接跨口径比较。",
         "flow": "预测与物料规格 → 合格供应、交期与库存方案 上游产品变更时，先核受影响料号、通知和实际到样日期，再分列申样期限、评估期限、拟首次出货、旧料末次订购。 代工股权投资、实际可用产能及达标批次要分别验证。电子板供应还要核对具体层数和所用基材；上游材料紧缺会限制制板扩产的交付作用。"
@@ -157,9 +158,20 @@
             "e25-trend"
           ],
           "updatedAt": "2026-11-25T10:47:40.796614+00:00"
+        },
+        {
+          "id": "m27-r0-lesson",
+          "title": "给内存采购准备现金后，财务能把多少写进可交付数量？",
+          "learning": "Tom’s Hardware 转述《华尔街日报》采访，称宇瞻通过备款抓住短暂货源。材料证明的是报道中的准备动作，实际采购数量待查。",
+          "application": "给计划团队一张按料号的记录，把可用现金、确认交期、进料验收各自对应到凭据；替代料还需工程和质量团队核验。",
+          "boundary": "基于媒体转述；没有采购台账可用于量化备款成效。",
+          "itemIds": [
+            "m27-r0"
+          ],
+          "updatedAt": "2026-11-27T00:53:48.256580+00:00"
         }
       ],
-      "updatedAt": "2026-11-25T10:47:40.796614+00:00"
+      "updatedAt": "2026-11-27T00:53:48.256580+00:00"
     },
     "chain-7": {
       "attemptedAt": "2026-11-26T10:51:21.240816+00:00",
@@ -728,39 +740,40 @@
       "updatedAt": "2026-11-26T10:51:21.240816+00:00"
     },
     "chain-4": {
-      "attemptedAt": "2026-11-26T00:45:24.187692+00:00",
+      "attemptedAt": "2026-11-27T00:53:48.256580+00:00",
       "status": "partial",
-      "assessment": "Bunnie Huang 记录了把板级验证脚本组织成产测场景、用依赖关系避免漏测的做法。",
+      "assessment": "沃尔沃工厂团队和海克斯康机器人部门共同训练 AEON。公开材料将当前训练、随后扩大的试点和实际生产目标分别列出。",
       "gaps": [
         "已核企业制度中的整改归属、复验与例外审批，仍缺具体批次的原始签核记录。",
         "已取得真实工厂的产线周统计，尚缺能逐件重算首次、返测及最终处置的批次流水。",
         "未取得上述公司按同一口径披露的改进前后量产结果。",
-        "缺少学习机试产的逐台测项执行记录及变更前后漏测对照。"
+        "缺少学习机试产的逐台测项执行记录及变更前后漏测对照。",
+        "缺少量产放行记录及现场员工负担对照。"
       ],
       "reviewedFields": [
-        "flow"
+        "team"
       ],
       "evidence": [
         {
-          "itemId": "m26-fixture",
-          "title": "把研发脚本交给产线，怎样避免提速时漏掉一个必测步骤？",
+          "itemId": "m27-hex",
+          "title": "机器人进厂后谁来教？沃尔沃让自己的团队和供应商一起练",
           "facts": [
             {
-              "claim": "作者说明以脚本依赖关系约束产测场景。",
-              "sourceUrl": "https://magazine.raspberrypi.com/articles/easier-hardware-testing-in-production",
-              "locator": "Exclave 脚本、场景和执行依赖段"
+              "claim": "供应商公告写明沃尔沃团队与海克斯康机器人部门共同训练。",
+              "sourceUrl": "https://robotics.hexagon.com/volvo-cars-aeon-humanoid-robots-for-manufacturing/",
+              "locator": "公告第二段与工厂试点安排"
             }
           ],
-          "boundary": "属于作者的硬件项目经验；学习机分工是迁移练习，实际适用性和收益需要试产批次验证。",
+          "boundary": "未披露工厂内部签字权、量产节拍、岗位数量变化或员工负担的实测结果；学习机例子是迁移练习。",
           "sources": [
             {
-              "url": "https://magazine.raspberrypi.com/articles/easier-hardware-testing-in-production",
-              "publisherGroup": "Raspberry Pi 官方杂志 · Bunnie Huang",
-              "name": "Raspberry Pi 官方杂志 · Bunnie Huang",
-              "publishedAt": "2019-03-12",
+              "url": "https://robotics.hexagon.com/volvo-cars-aeon-humanoid-robots-for-manufacturing/",
+              "publisherGroup": "海克斯康机器人",
+              "name": "海克斯康机器人",
+              "publishedAt": "2026-11-26",
               "role": "official",
-              "textHash": "2f229352bf0f71b1dd3805b42f3020ba88b76ec20f9b9d11504d2592d4efac75",
-              "readAt": "2026-11-26T00:40:54.210712+00:00",
+              "textHash": "bf64a12ae32e3bb012bc5cbe693aaf9893f9920c5e98f337f32a9bfd70e5abcc",
+              "readAt": "2026-11-27T00:47:39.364513+00:00",
               "coverage": "body"
             }
           ]
@@ -768,16 +781,16 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "m26-fixture",
-          "url": "https://magazine.raspberrypi.com/articles/easier-hardware-testing-in-production",
-          "checkedAt": "2026-11-26T00:40:54.210712+00:00",
+          "itemId": "m27-hex",
+          "url": "https://robotics.hexagon.com/volvo-cars-aeon-humanoid-robots-for-manufacturing/",
+          "checkedAt": "2026-11-27T00:47:39.364513+00:00",
           "state": "body",
-          "note": "本轮读取正文。核对作者对单项脚本、执行依赖和产线优化的说明。"
+          "note": "本轮读取正文。核对工厂参与者、训练任务范围和试点时间。"
         }
       ],
-      "reviewedAt": "2026-11-26T00:45:24.187692+00:00",
+      "reviewedAt": "2026-11-27T00:53:48.256580+00:00",
       "patch": {
-        "team": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。石头商城岗位正文提供具体样本：NPI-PE输出DFX报告、组包流程、作业文件及治具要求；PQE衔接试制、量产、代工与售后质量；PQC监督出货及过程。正式放行权仍须项目证据。 平台和内存可以同时开发。最初样品失效时保留样品编号、平台及固件版本，由能重现故障的一方与供应商交叉验证。 崧盛在试产中按设计缺陷和工艺缺陷分配整改，再评估是否二次试产；验证阶段仍有最终不合格项时另有批准要求。 把装配异常、板级启动失败、装箱缺件各自关联到相应的检测记录和跟进岗位。具体质量放行权需看项目授权。",
+        "team": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。石头商城岗位正文提供具体样本：NPI-PE输出DFX报告、组包流程、作业文件及治具要求；PQE衔接试制、量产、代工与售后质量；PQC监督出货及过程。正式放行权仍须项目证据。 平台和内存可以同时开发。最初样品失效时保留样品编号、平台及固件版本，由能重现故障的一方与供应商交叉验证。 崧盛在试产中按设计缺陷和工艺缺陷分配整改，再评估是否二次试产；验证阶段仍有最终不合格项时另有批准要求。 把装配异常、板级启动失败、装箱缺件各自关联到相应的检测记录和跟进岗位。具体质量放行权需看项目授权。 工厂引入机器人时，使用方参与训练和真实任务验证。区分已到厂、任务受训、试点与正式排产四种状态，分别列证据、验收人和现场接管条件。",
         "exercise": "沿一次试产异常核对设计版本、工艺条件和关闭证据；为进入下一阶段列清交付物、依赖、验收人和未关闭问题。Autodesk阶段门说明可作为检查框架，系统状态完成不能替代实际验证。",
         "metrics": "一次通过率 = 首次完成该过程并满足质量要求、无需复测或返工等再次处理的单位数 / 进入该过程的单位总数。须固定工序、批次、期间及缺陷规则；不能用返工后最终合格率替代。 ASQ 将返测和离线维修也排除在首次合格之外。生产记录须保留首次判定，再单列返测或维修后的最终处置。 对多站产线还要说明是否按站点比例连乘，是否排除老化站，以及按批次还是按产线周汇总。",
         "basics": "NPI是新产品导入，具体门槛仍需项目定义。DFM关注设计与所选制造工艺的适配；例如Protolabs根据CAD几何提供反馈，分析变量随制造服务变化。几何可制造不等于整机功能、可靠性或量产良率已验证。",
@@ -906,9 +919,20 @@
             "m26-fixture"
           ],
           "updatedAt": "2026-11-26T00:45:24.187692+00:00"
+        },
+        {
+          "id": "m27-hex-lesson",
+          "title": "机器人从供应商交到车间，谁参与训练和放行？",
+          "learning": "沃尔沃工厂团队和海克斯康机器人部门共同训练 AEON。公开材料将当前训练、随后扩大的试点和实际生产目标分别列出。",
+          "application": "一线人员指出重复或负担大的动作，两方共同演练；扩大部署前核对工件质量、人工接管、员工负担及作业时间。",
+          "boundary": "共同训练已披露，验收责任是待核问题；未披露量产效果。",
+          "itemIds": [
+            "m27-hex"
+          ],
+          "updatedAt": "2026-11-27T00:53:48.256580+00:00"
         }
       ],
-      "updatedAt": "2026-11-26T00:45:24.187692+00:00"
+      "updatedAt": "2026-11-27T00:53:48.256580+00:00"
     },
     "track-2": {
       "attemptedAt": "2026-11-25T10:47:40.796614+00:00",
@@ -1057,39 +1081,40 @@
       "updatedAt": "2026-11-25T10:47:40.796614+00:00"
     },
     "chain-2": {
-      "attemptedAt": "2026-11-25T10:47:40.796614+00:00",
+      "attemptedAt": "2026-11-27T00:53:48.256580+00:00",
       "status": "partial",
-      "assessment": "Android 传统 A/B 机制有明确的目标槽位与启动成功标记。设备能顺利启动后，仍需另行测试学生任务。",
+      "assessment": "NotePin S 支持说明分别给出离线保存、联网同步及生成文字的要求。",
       "gaps": [
         "验证某段 RTL 行为一致不能证明所有整机功能覆盖。",
         "已核实两份历史案例中的转阶段接口，尚缺学习设备实际批次的签审文件和整机验证记录。",
         "已核 Android 音频回环的测量边界；实际学习机的端到端分位数、返工及整机验证数据待查。",
-        "未取得具体学习机升级前后同一离线任务的样机记录。"
+        "未取得具体学习机升级前后同一离线任务的样机记录。",
+        "未获离线重试与转写失败恢复时长数据。"
       ],
       "reviewedFields": [
         "exercise"
       ],
       "evidence": [
         {
-          "itemId": "e25-boot",
-          "title": "学习机升级后能开机，怎样再验一遍学生的作业？",
+          "itemId": "m27-pin",
+          "title": "录音笔离线能做哪一步？用三个状态排查“录了却没出摘要”",
           "facts": [
             {
-              "claim": "传统 A/B 流程有单独的启动成功标记。",
-              "sourceUrl": "https://source.android.com/docs/core/ota/ab",
-              "locator": "A/B 更新生命周期"
+              "claim": "该型号官方文档确认设备可离线采集并保存音频。",
+              "sourceUrl": "https://support.plaud.ai/hc/en-us/articles/53771056805785-Does-Plaud-NotePin-S-work-offline",
+              "locator": "What requires internet 与 Recommended offline workflow"
             }
           ],
-          "boundary": "官方文档描述传统 A/B；具体学习机采用的更新机制、离线数据格式与回退表现须在对应机型验证。",
+          "boundary": "支持文档针对 NotePin S；未给出离线转写、恢复时长或其他品牌机型表现。",
           "sources": [
             {
-              "url": "https://source.android.com/docs/core/ota/ab",
-              "publisherGroup": "Android 开源项目",
-              "name": "Android 开源项目",
-              "publishedAt": null,
+              "url": "https://support.plaud.ai/hc/en-us/articles/53771056805785-Does-Plaud-NotePin-S-work-offline",
+              "publisherGroup": "Plaud",
+              "name": "Plaud",
+              "publishedAt": "2026-09-07",
               "role": "official",
-              "textHash": "0ea69fa073a7545e083c34030c6180552e4aee7cf9cf22a44729675c5a18345d",
-              "readAt": "2026-11-25T10:41:39.218504+00:00",
+              "textHash": "be4cfeabcf7deb03a7a78be5dfb24676383fefad4626e38d752f1201d25afcb4",
+              "readAt": "2026-11-27T08:48:41.593351+08:00",
               "coverage": "body"
             }
           ]
@@ -1097,17 +1122,17 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "e25-boot",
-          "url": "https://source.android.com/docs/core/ota/ab",
-          "checkedAt": "2026-11-25T10:41:39.218504+00:00",
+          "itemId": "m27-pin",
+          "url": "https://support.plaud.ai/hc/en-us/articles/53771056805785-Does-Plaud-NotePin-S-work-offline",
+          "checkedAt": "2026-11-27T08:48:41.593351+08:00",
           "state": "body",
-          "note": "本轮读取正文。复核传统 A/B 目标槽位、启动和成功标记。"
+          "note": "本轮读取正文。核对离线录音及恢复联网后的具体动作。"
         }
       ],
-      "reviewedAt": "2026-11-25T10:47:40.796614+00:00",
+      "reviewedAt": "2026-11-27T00:53:48.256580+00:00",
       "patch": {
         "metrics": "任务延迟用同一输入、环境与分位数比较；不能只报告平均值或实验室峰值。 对加工设备还应固定材料、任务和成品质量条件，分别记录准备、加工与失败恢复耗时；标称最高运动速度不能直接折算真实产能。 排查学习机跟读等待时，音频团队固定设备和音频路径测回环，应用与识别团队另记说完、识别完成和评分可见的时点，按相同输入比较。 音频评测把首次启用管线的等待、连续输出、连续往返与最终评分分开；报告设备、系统版本、采样路径及是否冷启动。",
-        "exercise": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。 把召开评审、形成签审文件、更新系统阶段分别落到材料和角色。 让同一学习设备先首次开麦，再连续跟读同一段音频，分别验证录入与评分。Android 功能标记可作前置检查。 将升级放行分两步演练：先查适用机型的启动与回退记录，再让应用团队用升级前的离线作业完成续写、保存和提交。分别记录失败步骤及复现条件。",
+        "exercise": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。 把召开评审、形成签审文件、更新系统阶段分别落到材料和角色。 让同一学习设备先首次开麦，再连续跟读同一段音频，分别验证录入与评分。Android 功能标记可作前置检查。 将升级放行分两步演练：先查适用机型的启动与回退记录，再让应用团队用升级前的离线作业完成续写、保存和提交。分别记录失败步骤及复现条件。 对既有离线采集又有云端处理的功能，用一次断网和重连分别验收本地留存、移动应用同步及服务端输出。记录恢复时点和能识别失败的一方。",
         "basics": "BOM是制造所需项目的汇总，可包含编号、数量、描述与生命周期状态；交接时还需核对版本。Autodesk Vault 2026提供修订比较，这是具体软件规则，不是所有企业的通用制度。BOM不能代替完整业务成本；Formlabs解释中，EVT聚焦关键功能与可制造设计，DVT细化设计并测试接近量产的产品，PVT检验生产线稳定制造能力。缩写、样品数量、周期与退出条件须按项目定义。",
         "flow": "需求与成本边界 → 系统架构、接口与验证计划 转试产前明确将哪个版本的物料清单、规格书和结构图转换成生产规范，并记录问题关闭与阶段切换。"
       },
@@ -1199,9 +1224,20 @@
             "e25-boot"
           ],
           "updatedAt": "2026-11-25T10:47:40.796614+00:00"
+        },
+        {
+          "id": "m27-pin-lesson",
+          "title": "录音成功却没有文字，应该查哪三个交付点？",
+          "learning": "NotePin S 支持说明分别给出离线保存、联网同步及生成文字的要求。",
+          "application": "在已获同意的测试中先断网录音，查看设备留存，再联网打开应用，分别核对文件同步和转写完成；每个交付点记录时间与责任接口。",
+          "boundary": "机型支持信息，应用到学习硬件需验证权限、机型、网络和失败恢复。",
+          "itemIds": [
+            "m27-pin"
+          ],
+          "updatedAt": "2026-11-27T00:53:48.256580+00:00"
         }
       ],
-      "updatedAt": "2026-11-25T10:47:40.796614+00:00"
+      "updatedAt": "2026-11-27T00:53:48.256580+00:00"
     },
     "chain-5": {
       "attemptedAt": "2026-11-25T10:47:40.796614+00:00",
@@ -1522,53 +1558,54 @@
       "updatedAt": "2026-11-26T10:51:21.240816+00:00"
     },
     "track-4": {
-      "attemptedAt": "2026-11-25T00:48:04.096649+00:00",
+      "attemptedAt": "2026-11-27T00:53:48.256580+00:00",
       "status": "partial",
-      "assessment": "P3C 公开资料描述换头时间；实测文章分两盘打印，给出每盘 48 个 TPU 件的切片条件与总机时。",
+      "assessment": "拓竹 S1 规格分别给出单帧值、含长度项的体积精度和实验室限定。",
       "gaps": [
         "创想三维海外商城确认退货后的寄回期限仍有 7/14 天两种表述，针对具体订单须核实。",
         "跨企业同任务的首次成功率、准备和恢复时间及维护成本仍缺实测。",
-        "同模型的多色方案净节时、废料和良品对照仍待测。"
+        "同模型的多色方案净节时、废料和良品对照仍待测。",
+        "尚缺现场不同表面与拼接长度下的独立实测。"
       ],
       "reviewedFields": [
         "metrics"
       ],
       "evidence": [
         {
-          "itemId": "m25-p3",
-          "title": "拓竹 P3C 标配五个打印工具，换料速度怎么验收到整件？",
+          "itemId": "m27-r6",
+          "title": "拓竹 S1 扫描仪发布：同一份规格里，为什么有两种精度？",
           "facts": [
             {
-              "claim": "厂商说明标配工具数量。",
-              "sourceUrl": "https://blog.bambulab.com/bambu-lab-p3c-brings-home-its-h3c-technology-at-half-the-price/",
-              "locator": "产品发布说明首段"
+              "claim": "拓竹写明蓝光模式体积精度中的长度项。",
+              "sourceUrl": "https://blog.bambulab.com/easy-in-hand-pro-in-every-scan-bambu-lab-introduces-the-s1-3d-scanner",
+              "locator": "产品公告，四种模式精度及规格脚注"
             },
             {
-              "claim": "测评记录了两组批量打印用时。",
-              "sourceUrl": "https://www.tomshardware.com/3d-printing/bambu-lab-p3c-review",
-              "locator": "测评打印 TPU 履带样件段"
+              "claim": "规格表明确标注测试条件。",
+              "sourceUrl": "https://store.bblcdn.com/s7/fmpta/d8daa4ae0988445ea90f99341474afce/Bambu_Lab_S1_Technical_Specifications.pdf",
+              "locator": "技术规格第 2 页脚注"
             }
           ],
-          "boundary": "独立样件包含两种材料的分别打印，不能当作两机型或多头与单头的对照实验。",
+          "boundary": "实验室标称值；暂未见该设备在学习机外壳材料和工况下的独立对照或装配验收结果。",
           "sources": [
             {
-              "url": "https://blog.bambulab.com/bambu-lab-p3c-brings-home-its-h3c-technology-at-half-the-price/",
-              "publisherGroup": "拓竹科技",
-              "name": "拓竹科技",
-              "publishedAt": "2026-11-24",
+              "url": "https://blog.bambulab.com/easy-in-hand-pro-in-every-scan-bambu-lab-introduces-the-s1-3d-scanner",
+              "publisherGroup": "拓竹",
+              "name": "拓竹",
+              "publishedAt": "2026-11-26T14:00:46+00:00",
               "role": "official",
-              "textHash": "060a4cb5d05b4cc9b5970a4cbcf481153ed4b79fc9ba79962edf2828546dfe30",
-              "readAt": "2026-11-25T00:41:28.384116+00:00",
+              "textHash": "fad0da65ec9db0b74206e870b2a5f5868ef1cf6e692f08d4683d2615a8cc2446",
+              "readAt": "2026-11-27T00:45:18.545524+00:00",
               "coverage": "body"
             },
             {
-              "url": "https://www.tomshardware.com/3d-printing/bambu-lab-p3c-review",
-              "publisherGroup": "Tom’s Hardware",
-              "name": "Tom’s Hardware",
-              "publishedAt": "2026-11-24T14:00:00+00:00",
-              "role": "media",
-              "textHash": "c8aba756faf0679478be4814a205fdd24ce53ea45db746068c8db0b4f1ec1f30",
-              "readAt": "2026-11-25T00:40:12.453580+00:00",
+              "url": "https://store.bblcdn.com/s7/fmpta/d8daa4ae0988445ea90f99341474afce/Bambu_Lab_S1_Technical_Specifications.pdf",
+              "publisherGroup": "拓竹",
+              "name": "拓竹",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "820d30a7e4457496529f3c95d0dc4bf810ac4b88dd45d52ad47ab366cf86bda7",
+              "readAt": "2026-11-27T00:47:39.598696+00:00",
               "coverage": "body"
             }
           ]
@@ -1576,25 +1613,25 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "m25-p3",
-          "url": "https://blog.bambulab.com/bambu-lab-p3c-brings-home-its-h3c-technology-at-half-the-price/",
-          "checkedAt": "2026-11-25T00:41:28.384116+00:00",
+          "itemId": "m27-r6",
+          "url": "https://blog.bambulab.com/easy-in-hand-pro-in-every-scan-bambu-lab-introduces-the-s1-3d-scanner",
+          "checkedAt": "2026-11-27T00:45:18.545524+00:00",
           "state": "body",
-          "note": "本轮读取正文。核对换头能力与标配工具数。"
+          "note": "本轮读取正文。核对蓝光模式长度项。"
         },
         {
-          "itemId": "m25-p3",
-          "url": "https://www.tomshardware.com/3d-printing/bambu-lab-p3c-review",
-          "checkedAt": "2026-11-25T00:40:12.453580+00:00",
+          "itemId": "m27-r6",
+          "url": "https://store.bblcdn.com/s7/fmpta/d8daa4ae0988445ea90f99341474afce/Bambu_Lab_S1_Technical_Specifications.pdf",
+          "checkedAt": "2026-11-27T00:47:39.598696+00:00",
           "state": "body",
-          "note": "本轮读取正文。测评 TPU 履带段，核对层高、限速和每次打印件数。"
+          "note": "本轮读取正文。核对技术规格的两组精度和实验室脚注。"
         }
       ],
-      "reviewedAt": "2026-11-25T00:48:04.096649+00:00",
+      "reviewedAt": "2026-11-27T00:53:48.256580+00:00",
       "patch": {
         "constraint": "良率、准备时间、耗材和失败恢复 制造工具不能只按峰值速度比较；需看材料适配、真实任务耗时和型号特定的部署条件。专业焊接设备的使用前提不得与桌面创作设备混同。 在混合喷嘴的同一件模型内，线宽和层高分别影响细节与节拍；两区应在高度带边界重新对齐。此约束来自拓竹 H3C 案例。 H2D 手册说明首层过高可导致附着不良、移位，过低可损伤喷嘴或打印板。先判断故障影响一个对象还是整盘，再选择恢复方式。 对拓竹 H2D 带支撑模型，顶部与水平间距共同影响拆除难度和接触表面质量；吸湿材料还受完工至拆除的等待时间影响。",
         "team": "运动控制、固件、结构、材料、切片软件、制造工程 涉及专业设备时，还需把现场交付、训练和安全责任接口纳入观察；具体职责取决于产品和使用场景。",
-        "metrics": "第一次任务成功率；准备时间；废料；维护成本 比较前固定机型、材料、任务与质量要求，另列准备、加工、维护和失败恢复时间；尚无跨企业统一实测数据。 同盘多件要分别记录计划件数、被跳过的对象、最终合格件和重做耗时。可继续执行整盘任务不能替代逐件验收。 试样可记录间距、拆除等待时间、表面损伤和后处理耗时，在外观要求相同的条件下比较。 批量制造测试同时记每盘数量、材料、层高、切片限速和总机时，再分别查合格件数、返工次数与后处理人时。"
+        "metrics": "第一次任务成功率；准备时间；废料；维护成本 比较前固定机型、材料、任务与质量要求，另列准备、加工、维护和失败恢复时间；尚无跨企业统一实测数据。 同盘多件要分别记录计划件数、被跳过的对象、最终合格件和重做耗时。可继续执行整盘任务不能替代逐件验收。 试样可记录间距、拆除等待时间、表面损伤和后处理耗时，在外观要求相同的条件下比较。 批量制造测试同时记每盘数量、材料、层高、切片限速和总机时，再分别查合格件数、返工次数与后处理人时。 手持扫描的单帧精度与整件体积精度分别记录。后者如含长度项，应记录物体长度和光源模式，并保留已知基准尺寸的偏差记录。"
       },
       "lessons": [
         {
@@ -1663,9 +1700,20 @@
             "m25-p3"
           ],
           "updatedAt": "2026-11-25T00:48:04.096649+00:00"
+        },
+        {
+          "id": "m27-r6-lesson",
+          "title": "扫描一米长的外壳，为什么不能直接引用单帧精度？",
+          "learning": "拓竹 S1 规格分别给出单帧值、含长度项的体积精度和实验室限定。",
+          "application": "工程与质量先核定待验尺寸和容差，在同一外壳上用基准件复测，对换模式或表面材质后的结果单列。",
+          "boundary": "属于单个机型的规格，未获用户现场与参考量具之间的独立对照。",
+          "itemIds": [
+            "m27-r6"
+          ],
+          "updatedAt": "2026-11-27T00:53:48.256580+00:00"
         }
       ],
-      "updatedAt": "2026-11-25T00:48:04.096649+00:00"
+      "updatedAt": "2026-11-27T00:53:48.256580+00:00"
     },
     "chain-6": {
       "attemptedAt": "2026-11-26T00:45:24.187692+00:00",
@@ -3637,6 +3685,41 @@
           "hash": "dbb5b2b7ca2a8ebb2e6524b29b39027817190be37824350916d89d407c05e27b",
           "decision": "integrated",
           "reason": "研究者将 Whisper 转写与原音对照，发现含有原音中不存在的整句或短语；样本中非人声占比较高时更常见。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-27T00:53:48.256580+00:00",
+      "reviewedNodes": [
+        "track-4",
+        "chain-2",
+        "chain-4",
+        "chain-3"
+      ],
+      "decisions": [
+        {
+          "itemId": "m27-r6",
+          "hash": "c4681b2b38f28f2c78a70954350f6fbcb1ee6e43529a4f72a74526c9d4fb7e6c",
+          "decision": "integrated",
+          "reason": "拓竹 S1 规格分别给出单帧值、含长度项的体积精度和实验室限定。"
+        },
+        {
+          "itemId": "m27-pin",
+          "hash": "b7cb388d7b91f302da80941c1f129c98708a22fb6d4f74d4f5af09bd06a14130",
+          "decision": "integrated",
+          "reason": "NotePin S 支持说明分别给出离线保存、联网同步及生成文字的要求。"
+        },
+        {
+          "itemId": "m27-hex",
+          "hash": "dd13827b12aaae5b4e0dded405bf971a8eced79efcd6c6bcf757b01d53995c3f",
+          "decision": "integrated",
+          "reason": "沃尔沃工厂团队和海克斯康机器人部门共同训练 AEON。公开材料将当前训练、随后扩大的试点和实际生产目标分别列出。"
+        },
+        {
+          "itemId": "m27-r0",
+          "hash": "b1b827126d3a15751f1bb1792ae9d5c7d7385a40c0acdf2ec9c753f1f82c875c",
+          "decision": "integrated",
+          "reason": "Tom’s Hardware 转述《华尔街日报》采访，称宇瞻通过备款抓住短暂货源。材料证明的是报道中的准备动作，实际采购数量待查。"
         }
       ]
     }
@@ -15468,6 +15551,314 @@
           "checkedAt": "2026-11-26T10:44:55.524215+00:00",
           "state": "body",
           "note": "本轮读取正文。会议论文的样本、人工判断标准和非人声时长比较。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-4",
+      "reviewedAt": "2026-11-27T00:53:48.256580+00:00",
+      "status": "partial",
+      "assessment": "拓竹 S1 规格分别给出单帧值、含长度项的体积精度和实验室限定。",
+      "gaps": [
+        "创想三维海外商城确认退货后的寄回期限仍有 7/14 天两种表述，针对具体订单须核实。",
+        "跨企业同任务的首次成功率、准备和恢复时间及维护成本仍缺实测。",
+        "同模型的多色方案净节时、废料和良品对照仍待测。",
+        "尚缺现场不同表面与拼接长度下的独立实测。"
+      ],
+      "reviewedFields": [
+        "metrics"
+      ],
+      "changes": {
+        "metrics": {
+          "before": "第一次任务成功率；准备时间；废料；维护成本 比较前固定机型、材料、任务与质量要求，另列准备、加工、维护和失败恢复时间；尚无跨企业统一实测数据。 同盘多件要分别记录计划件数、被跳过的对象、最终合格件和重做耗时。可继续执行整盘任务不能替代逐件验收。 试样可记录间距、拆除等待时间、表面损伤和后处理耗时，在外观要求相同的条件下比较。 批量制造测试同时记每盘数量、材料、层高、切片限速和总机时，再分别查合格件数、返工次数与后处理人时。",
+          "after": "第一次任务成功率；准备时间；废料；维护成本 比较前固定机型、材料、任务与质量要求，另列准备、加工、维护和失败恢复时间；尚无跨企业统一实测数据。 同盘多件要分别记录计划件数、被跳过的对象、最终合格件和重做耗时。可继续执行整盘任务不能替代逐件验收。 试样可记录间距、拆除等待时间、表面损伤和后处理耗时，在外观要求相同的条件下比较。 批量制造测试同时记每盘数量、材料、层高、切片限速和总机时，再分别查合格件数、返工次数与后处理人时。 手持扫描的单帧精度与整件体积精度分别记录。后者如含长度项，应记录物体长度和光源模式，并保留已知基准尺寸的偏差记录。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m27-r6-lesson",
+            "title": "扫描一米长的外壳，为什么不能直接引用单帧精度？",
+            "learning": "拓竹 S1 规格分别给出单帧值、含长度项的体积精度和实验室限定。",
+            "application": "工程与质量先核定待验尺寸和容差，在同一外壳上用基准件复测，对换模式或表面材质后的结果单列。",
+            "boundary": "属于单个机型的规格，未获用户现场与参考量具之间的独立对照。",
+            "itemIds": [
+              "m27-r6"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m27-r6",
+          "title": "拓竹 S1 扫描仪发布：同一份规格里，为什么有两种精度？",
+          "facts": [
+            {
+              "claim": "拓竹写明蓝光模式体积精度中的长度项。",
+              "sourceUrl": "https://blog.bambulab.com/easy-in-hand-pro-in-every-scan-bambu-lab-introduces-the-s1-3d-scanner",
+              "locator": "产品公告，四种模式精度及规格脚注"
+            },
+            {
+              "claim": "规格表明确标注测试条件。",
+              "sourceUrl": "https://store.bblcdn.com/s7/fmpta/d8daa4ae0988445ea90f99341474afce/Bambu_Lab_S1_Technical_Specifications.pdf",
+              "locator": "技术规格第 2 页脚注"
+            }
+          ],
+          "boundary": "实验室标称值；暂未见该设备在学习机外壳材料和工况下的独立对照或装配验收结果。",
+          "sources": [
+            {
+              "url": "https://blog.bambulab.com/easy-in-hand-pro-in-every-scan-bambu-lab-introduces-the-s1-3d-scanner",
+              "publisherGroup": "拓竹",
+              "name": "拓竹",
+              "publishedAt": "2026-11-26T14:00:46+00:00",
+              "role": "official",
+              "textHash": "fad0da65ec9db0b74206e870b2a5f5868ef1cf6e692f08d4683d2615a8cc2446",
+              "readAt": "2026-11-27T00:45:18.545524+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://store.bblcdn.com/s7/fmpta/d8daa4ae0988445ea90f99341474afce/Bambu_Lab_S1_Technical_Specifications.pdf",
+              "publisherGroup": "拓竹",
+              "name": "拓竹",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "820d30a7e4457496529f3c95d0dc4bf810ac4b88dd45d52ad47ab366cf86bda7",
+              "readAt": "2026-11-27T00:47:39.598696+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m27-r6",
+          "url": "https://blog.bambulab.com/easy-in-hand-pro-in-every-scan-bambu-lab-introduces-the-s1-3d-scanner",
+          "checkedAt": "2026-11-27T00:45:18.545524+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对蓝光模式长度项。"
+        },
+        {
+          "itemId": "m27-r6",
+          "url": "https://store.bblcdn.com/s7/fmpta/d8daa4ae0988445ea90f99341474afce/Bambu_Lab_S1_Technical_Specifications.pdf",
+          "checkedAt": "2026-11-27T00:47:39.598696+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对技术规格的两组精度和实验室脚注。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-2",
+      "reviewedAt": "2026-11-27T00:53:48.256580+00:00",
+      "status": "partial",
+      "assessment": "NotePin S 支持说明分别给出离线保存、联网同步及生成文字的要求。",
+      "gaps": [
+        "验证某段 RTL 行为一致不能证明所有整机功能覆盖。",
+        "已核实两份历史案例中的转阶段接口，尚缺学习设备实际批次的签审文件和整机验证记录。",
+        "已核 Android 音频回环的测量边界；实际学习机的端到端分位数、返工及整机验证数据待查。",
+        "未取得具体学习机升级前后同一离线任务的样机记录。",
+        "未获离线重试与转写失败恢复时长数据。"
+      ],
+      "reviewedFields": [
+        "exercise"
+      ],
+      "changes": {
+        "exercise": {
+          "before": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。 把召开评审、形成签审文件、更新系统阶段分别落到材料和角色。 让同一学习设备先首次开麦，再连续跟读同一段音频，分别验证录入与评分。Android 功能标记可作前置检查。 将升级放行分两步演练：先查适用机型的启动与回退记录，再让应用团队用升级前的离线作业完成续写、保存和提交。分别记录失败步骤及复现条件。",
+          "after": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。 把召开评审、形成签审文件、更新系统阶段分别落到材料和角色。 让同一学习设备先首次开麦，再连续跟读同一段音频，分别验证录入与评分。Android 功能标记可作前置检查。 将升级放行分两步演练：先查适用机型的启动与回退记录，再让应用团队用升级前的离线作业完成续写、保存和提交。分别记录失败步骤及复现条件。 对既有离线采集又有云端处理的功能，用一次断网和重连分别验收本地留存、移动应用同步及服务端输出。记录恢复时点和能识别失败的一方。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m27-pin-lesson",
+            "title": "录音成功却没有文字，应该查哪三个交付点？",
+            "learning": "NotePin S 支持说明分别给出离线保存、联网同步及生成文字的要求。",
+            "application": "在已获同意的测试中先断网录音，查看设备留存，再联网打开应用，分别核对文件同步和转写完成；每个交付点记录时间与责任接口。",
+            "boundary": "机型支持信息，应用到学习硬件需验证权限、机型、网络和失败恢复。",
+            "itemIds": [
+              "m27-pin"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m27-pin",
+          "title": "录音笔离线能做哪一步？用三个状态排查“录了却没出摘要”",
+          "facts": [
+            {
+              "claim": "该型号官方文档确认设备可离线采集并保存音频。",
+              "sourceUrl": "https://support.plaud.ai/hc/en-us/articles/53771056805785-Does-Plaud-NotePin-S-work-offline",
+              "locator": "What requires internet 与 Recommended offline workflow"
+            }
+          ],
+          "boundary": "支持文档针对 NotePin S；未给出离线转写、恢复时长或其他品牌机型表现。",
+          "sources": [
+            {
+              "url": "https://support.plaud.ai/hc/en-us/articles/53771056805785-Does-Plaud-NotePin-S-work-offline",
+              "publisherGroup": "Plaud",
+              "name": "Plaud",
+              "publishedAt": "2026-09-07",
+              "role": "official",
+              "textHash": "be4cfeabcf7deb03a7a78be5dfb24676383fefad4626e38d752f1201d25afcb4",
+              "readAt": "2026-11-27T08:48:41.593351+08:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m27-pin",
+          "url": "https://support.plaud.ai/hc/en-us/articles/53771056805785-Does-Plaud-NotePin-S-work-offline",
+          "checkedAt": "2026-11-27T08:48:41.593351+08:00",
+          "state": "body",
+          "note": "本轮读取正文。核对离线录音及恢复联网后的具体动作。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-4",
+      "reviewedAt": "2026-11-27T00:53:48.256580+00:00",
+      "status": "partial",
+      "assessment": "沃尔沃工厂团队和海克斯康机器人部门共同训练 AEON。公开材料将当前训练、随后扩大的试点和实际生产目标分别列出。",
+      "gaps": [
+        "已核企业制度中的整改归属、复验与例外审批，仍缺具体批次的原始签核记录。",
+        "已取得真实工厂的产线周统计，尚缺能逐件重算首次、返测及最终处置的批次流水。",
+        "未取得上述公司按同一口径披露的改进前后量产结果。",
+        "缺少学习机试产的逐台测项执行记录及变更前后漏测对照。",
+        "缺少量产放行记录及现场员工负担对照。"
+      ],
+      "reviewedFields": [
+        "team"
+      ],
+      "changes": {
+        "team": {
+          "before": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。石头商城岗位正文提供具体样本：NPI-PE输出DFX报告、组包流程、作业文件及治具要求；PQE衔接试制、量产、代工与售后质量；PQC监督出货及过程。正式放行权仍须项目证据。 平台和内存可以同时开发。最初样品失效时保留样品编号、平台及固件版本，由能重现故障的一方与供应商交叉验证。 崧盛在试产中按设计缺陷和工艺缺陷分配整改，再评估是否二次试产；验证阶段仍有最终不合格项时另有批准要求。 把装配异常、板级启动失败、装箱缺件各自关联到相应的检测记录和跟进岗位。具体质量放行权需看项目授权。",
+          "after": "研发、NPI、制造、工艺、设备、质量共同处理设计可制造性和产线爬坡。石头商城岗位正文提供具体样本：NPI-PE输出DFX报告、组包流程、作业文件及治具要求；PQE衔接试制、量产、代工与售后质量；PQC监督出货及过程。正式放行权仍须项目证据。 平台和内存可以同时开发。最初样品失效时保留样品编号、平台及固件版本，由能重现故障的一方与供应商交叉验证。 崧盛在试产中按设计缺陷和工艺缺陷分配整改，再评估是否二次试产；验证阶段仍有最终不合格项时另有批准要求。 把装配异常、板级启动失败、装箱缺件各自关联到相应的检测记录和跟进岗位。具体质量放行权需看项目授权。 工厂引入机器人时，使用方参与训练和真实任务验证。区分已到厂、任务受训、试点与正式排产四种状态，分别列证据、验收人和现场接管条件。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m27-hex-lesson",
+            "title": "机器人从供应商交到车间，谁参与训练和放行？",
+            "learning": "沃尔沃工厂团队和海克斯康机器人部门共同训练 AEON。公开材料将当前训练、随后扩大的试点和实际生产目标分别列出。",
+            "application": "一线人员指出重复或负担大的动作，两方共同演练；扩大部署前核对工件质量、人工接管、员工负担及作业时间。",
+            "boundary": "共同训练已披露，验收责任是待核问题；未披露量产效果。",
+            "itemIds": [
+              "m27-hex"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m27-hex",
+          "title": "机器人进厂后谁来教？沃尔沃让自己的团队和供应商一起练",
+          "facts": [
+            {
+              "claim": "供应商公告写明沃尔沃团队与海克斯康机器人部门共同训练。",
+              "sourceUrl": "https://robotics.hexagon.com/volvo-cars-aeon-humanoid-robots-for-manufacturing/",
+              "locator": "公告第二段与工厂试点安排"
+            }
+          ],
+          "boundary": "未披露工厂内部签字权、量产节拍、岗位数量变化或员工负担的实测结果；学习机例子是迁移练习。",
+          "sources": [
+            {
+              "url": "https://robotics.hexagon.com/volvo-cars-aeon-humanoid-robots-for-manufacturing/",
+              "publisherGroup": "海克斯康机器人",
+              "name": "海克斯康机器人",
+              "publishedAt": "2026-11-26",
+              "role": "official",
+              "textHash": "bf64a12ae32e3bb012bc5cbe693aaf9893f9920c5e98f337f32a9bfd70e5abcc",
+              "readAt": "2026-11-27T00:47:39.364513+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m27-hex",
+          "url": "https://robotics.hexagon.com/volvo-cars-aeon-humanoid-robots-for-manufacturing/",
+          "checkedAt": "2026-11-27T00:47:39.364513+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对工厂参与者、训练任务范围和试点时间。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-3",
+      "reviewedAt": "2026-11-27T00:53:48.256580+00:00",
+      "status": "partial",
+      "assessment": "Tom’s Hardware 转述《华尔街日报》采访，称宇瞻通过备款抓住短暂货源。材料证明的是报道中的准备动作，实际采购数量待查。",
+      "gaps": [
+        "补核 Oracle 26C 的 MOQ 计算；各企业实际参数、运输起止、库存边界仍待订单和台账核验。",
+        "公开资料没有供应商审核标准、实际通过率、采购质量接口和履约结果。",
+        "具体教育设备的供应商报价、批次和生效时间尚缺。",
+        "尚缺公开的宇瞻采购批次、到货证明和备款成本。"
+      ],
+      "reviewedFields": [
+        "exercise"
+      ],
+      "changes": {
+        "exercise": {
+          "before": "选一颗关键器件，写出交期风险、替代验证要求和缺料升级路径。 再区分供应商资料登记、资格核验、质量验收和订单获取；无公开依据的门槛标为待核验。 预算评审时将 DRAM 和 NAND 拆成两行，各自列出应用、料号、报价有效期与交货批次。把机构预测写入情景假设，收到供应商报价后再调整成本表。",
+          "after": "选一颗关键器件，写出交期风险、替代验证要求和缺料升级路径。 再区分供应商资料登记、资格核验、质量验收和订单获取；无公开依据的门槛标为待核验。 预算评审时将 DRAM 和 NAND 拆成两行，各自列出应用、料号、报价有效期与交货批次。把机构预测写入情景假设，收到供应商报价后再调整成本表。 当现货库存转瞬即逝时，把获得报价、资金可用、供应商确认数量、已锁定交期与最终收货分别记录。缺少确认的数量先保留为采购机会。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "m27-r0-lesson",
+            "title": "给内存采购准备现金后，财务能把多少写进可交付数量？",
+            "learning": "Tom’s Hardware 转述《华尔街日报》采访，称宇瞻通过备款抓住短暂货源。材料证明的是报道中的准备动作，实际采购数量待查。",
+            "application": "给计划团队一张按料号的记录，把可用现金、确认交期、进料验收各自对应到凭据；替代料还需工程和质量团队核验。",
+            "boundary": "基于媒体转述；没有采购台账可用于量化备款成效。",
+            "itemIds": [
+              "m27-r0"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "m27-r0",
+          "title": "内存紧缺时，宇瞻为何先为采购备现金？",
+          "facts": [
+            {
+              "claim": "可读转述将备款做法归因于对宇瞻的采访。",
+              "sourceUrl": "https://www.tomshardware.com/pc-components/dram/electronics-manufacturers-set-up-memory-war-rooms-to-find-lock-in-dram-supplies-amid-worst-shortage-in-history-employees-scour-ebay-contact-hundreds-of-brokers-and-snap-up-even-small-batches-of-just-5-to-12-units",
+              "locator": "Tom’s Hardware 转述原发采访的宇瞻段"
+            }
+          ],
+          "boundary": "本轮未读到《华尔街日报》完整原稿或企业信贷文件；个案不能确定国内整机厂存货、采购价格及交付影响。",
+          "sources": [
+            {
+              "url": "https://www.tomshardware.com/pc-components/dram/electronics-manufacturers-set-up-memory-war-rooms-to-find-lock-in-dram-supplies-amid-worst-shortage-in-history-employees-scour-ebay-contact-hundreds-of-brokers-and-snap-up-even-small-batches-of-just-5-to-12-units",
+              "publisherGroup": "华尔街日报",
+              "name": "Tom’s Hardware（转述《华尔街日报》采访）",
+              "publishedAt": "2026-11-26T16:11:07+00:00",
+              "role": "media",
+              "textHash": "4833cc5860352e5500ca650e060bf5c9c80cf87a2ad7853a626def062f1c12fd",
+              "readAt": "2026-11-27T00:45:20.248362+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "m27-r0",
+          "url": "https://www.tomshardware.com/pc-components/dram/electronics-manufacturers-set-up-memory-war-rooms-to-find-lock-in-dram-supplies-amid-worst-shortage-in-history-employees-scour-ebay-contact-hundreds-of-brokers-and-snap-up-even-small-batches-of-just-5-to-12-units",
+          "checkedAt": "2026-11-27T00:45:20.248362+00:00",
+          "state": "body",
+          "note": "本轮读取正文。复核宇瞻采访的转述及小批量现货描述。"
         }
       ]
     }
