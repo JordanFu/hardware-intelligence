@@ -935,18 +935,44 @@
       "updatedAt": "2026-11-27T00:53:48.256580+00:00"
     },
     "track-2": {
-      "attemptedAt": "2026-11-25T10:47:40.796614+00:00",
+      "attemptedAt": "2026-11-27T10:46:43.619997+00:00",
       "status": "partial",
-      "assessment": "Google 明确说明 Nest × Yale 离线时，具有限时授权的用户不能用口令开门。",
+      "assessment": "从限时授权离线可用性追到权限撤回的最后一步，DOOR 区分应用更新和门锁同步，Google 的 Nest × Yale 说明另列离线时的限时授权限制。",
       "gaps": [
-        "已核三份文档中的授权入口或角色；仍缺特定设备权限、离线撤权及跨平台实测。",
+        "DOOR 文档已明确特定非联网门锁的同步条件；实际撤权时延、与其他平台的互操作仍待实测。",
         "没有可比故障率、用户样本和售后改善数据。",
         "未查得同一条件下不同品牌对离线限时授权的完整实测。"
       ],
       "reviewedFields": [
-        "constraint"
+        "chain",
+        "constraint",
+        "team"
       ],
       "evidence": [
+        {
+          "itemId": "e27-doorweb",
+          "title": "访客权限已在应用中撤销，物业怎样确认门锁也收到了？",
+          "facts": [
+            {
+              "claim": "官方支持页限定了可操作的邀请人。",
+              "sourceUrl": "https://support.door.com/hc/en-us/articles/40212854012695-How-do-I-revoke-guest-access",
+              "locator": "About this feature 与 Steps"
+            }
+          ],
+          "boundary": "记录的是 DOOR 官方说明。实际传播时间、其他品牌表现及现场撤权成功率未获得独立验证。学习设备例子为测试建议。",
+          "sources": [
+            {
+              "url": "https://support.door.com/hc/en-us/articles/40212854012695-How-do-I-revoke-guest-access",
+              "publisherGroup": "DOOR 官方支持",
+              "name": "DOOR 官方支持",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "5a0743f816b3c6e81a4c063d30cf3760954fbdfecb5732e6bfb0e4cd1a55c218",
+              "readAt": "2026-11-27T10:39:11.823300+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
         {
           "itemId": "e25-nest",
           "title": "智能门锁离线，平时能用的限时授权还能兑现吗？",
@@ -970,20 +996,119 @@
               "coverage": "body"
             }
           ]
+        },
+        {
+          "itemId": "e20-mi",
+          "title": "给家人开设备权限，分享一台设备和加入整个家庭差在哪里？",
+          "facts": [
+            {
+              "claim": "小米支持页分别说明设备卡片分享与邀请家庭成员这两条路径。",
+              "sourceUrl": "https://www.mi.com/global/support/article/KA-07429/",
+              "locator": "Method 1 / Method 3"
+            },
+            {
+              "claim": "SmartThings 的邀请以地点为单位，只能由地点所有者移除成员。",
+              "sourceUrl": "https://www.samsung.com/us/support/answer/ANS10002634/",
+              "locator": "Invite members / View or remove members"
+            },
+            {
+              "claim": "家庭管理员可以添加普通成员，但不能删除整个家庭。",
+              "sourceUrl": "https://developer.tuya.com/en/docs/app-development/extension-family-member?id=Kcy2iwdhz60pm",
+              "locator": "Home Member Management · Member roles（2025-12-25 更新）"
+            }
+          ],
+          "boundary": "三份资料分别来自小米全球版说明、三星美国支持页和涂鸦 SDK。插件、地区、门锁等特定设备权限，以及撤销在离线设备上何时生效，仍需逐项核验。",
+          "sources": [
+            {
+              "url": "https://www.mi.com/global/support/article/KA-07429/",
+              "publisherGroup": "小米全球支持",
+              "name": "小米全球支持",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "d29456e292cfb87704e1fe7d05cda807cf8dc2288fbaccde5087ee01d0eaac50",
+              "readAt": "2026-11-20T10:42:16.984424+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://www.samsung.com/us/support/answer/ANS10002634/",
+              "publisherGroup": "Samsung 美国支持",
+              "name": "Samsung 美国支持",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "e336a8fb80343eb6458527cb239d48aa4d2f546369a89e603292fa2c4007ace2",
+              "readAt": "2026-11-20T10:42:17.836170+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://developer.tuya.com/en/docs/app-development/extension-family-member?id=Kcy2iwdhz60pm",
+              "publisherGroup": "涂鸦 Smart App SDK",
+              "name": "涂鸦 Smart App SDK",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "991699639eb2465541f4c84e8753712d3a84cb1ca4cdb40d110279207828dd50",
+              "readAt": "2026-11-20T10:42:52.227992+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "m24-multi",
+          "title": "同一盏灯接入两个平台，怎样验证第二个平台真的接好了？",
+          "facts": [
+            {
+              "claim": "官方流程允许为第二个平台生成临时配对凭据。",
+              "sourceUrl": "https://support.google.com/googlehome/answer/13127223?hl=en-CA",
+              "locator": "Share the devices 与配对后的控制检查"
+            }
+          ],
+          "boundary": "仅限该指南描述的兼容配置。离线撤权、跨品牌响应时延及失败率仍须另测。",
+          "sources": [
+            {
+              "url": "https://support.google.com/googlehome/answer/13127223?hl=en-CA",
+              "publisherGroup": "Google Home 官方帮助",
+              "name": "Google Home 官方帮助",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "efbefd835dfaacace4234f8ddd09a1b6895cf7819cbbd0b19bda5b10b8cf5db6",
+              "readAt": "2026-11-24T00:43:03.338151+00:00",
+              "coverage": "body"
+            }
+          ]
         }
       ],
       "sourceChecks": [
         {
+          "itemId": "e27-doorweb",
+          "url": "https://support.door.com/hc/en-us/articles/40212854012695-How-do-I-revoke-guest-access",
+          "checkedAt": "2026-11-27T10:39:11.823300+00:00",
+          "state": "body",
+          "note": "本轮读取正文。DOOR 关于邀请人权限、联网及离线设备同步条件的说明。"
+        },
+        {
           "itemId": "e25-nest",
           "url": "https://support.google.com/googlehome/answer/9233966?hl=en",
-          "checkedAt": "2026-11-25T10:43:01.191512+00:00",
+          "checkedAt": "2026-11-27T10:39:35.347236+00:00",
           "state": "body",
-          "note": "本轮读取正文。核对限时授权及离线时的通知限制。"
+          "note": "本轮读取正文。Nest × Yale 帮助页涉及的是断网时限时访问能力。"
+        },
+        {
+          "itemId": "e20-mi",
+          "url": "https://www.mi.com/global/support/article/KA-07429/",
+          "checkedAt": "2026-11-27T10:39:33.000024+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对小米设备共享的应用入口。"
+        },
+        {
+          "itemId": "m24-multi",
+          "url": "https://support.google.com/googlehome/answer/13127223?hl=en-CA",
+          "checkedAt": "2026-11-27T10:39:35.351962+00:00",
+          "state": "body",
+          "note": "本轮读取正文。SmartThings 文档区分主平台发起与次平台接入。"
         }
       ],
-      "reviewedAt": "2026-11-25T10:47:40.796614+00:00",
+      "reviewedAt": "2026-11-27T10:46:43.619997+00:00",
       "patch": {
-        "constraint": "兼容性、配网成本、稳定性与家庭成员协同。离线范围须按触发、动作和反馈分别核对：Aqara M200说明部分自动化本地执行，但云推送仍需要云连接；不能据“本地自动化”承诺全部提醒和远程控制可用。 适配平台和中枢是前置条件。丢失标签超出近距离链路时，三星的远距离发现依赖附近参与离线查找的设备，历史记录的时间不等于当前位置。 测试智能门锁的离线体验时，将常规授权、限时授权和远程通知分别列项。按对应型号记录离线时仍可执行的操作、失败提示与恢复条件。",
+        "constraint": "兼容性、配网成本、稳定性与家庭成员协同。离线范围须按触发、动作和反馈分别核对：Aqara M200说明部分自动化本地执行，但云推送仍需要云连接；不能据“本地自动化”承诺全部提醒和远程控制可用。 适配平台和中枢是前置条件。丢失标签超出近距离链路时，三星的远距离发现依赖附近参与离线查找的设备，历史记录的时间不等于当前位置。 测试智能门锁的离线体验时，将常规授权、限时授权和远程通知分别列项。按对应型号记录离线时仍可执行的操作、失败提示与恢复条件。 回收访客权限时也要区分应用受理与门锁同步。按邀请人、目标设备和连接方式留存回执；DOOR 对未联网设备给出的近端同步要求仅适用于其产品。",
         "team": "嵌入式、连接协议、云平台、客户端、认证与售后 售后交给协议、固件或平台团队的信息应包含型号/版本、连接路径、受影响范围和复现步骤；诊断日志按支持范围自愿启用，并保留本地保存选择。 产品、客户端与售后可用临时照护者借用一台设备的情境，逐项核对邀约界面、可操作的设备、可执行的动作及回收权限的角色。",
         "metrics": "配网成功率；离线可用率；跨品牌联动失败率 观察时分别记录单设备、桥接路径和平台功能故障；固定型号、固件和平台组合后再比较，不能把重置后重新配网成功视为全部功能恢复。",
         "chain": "连接协议 → 设备与网关 → 场景联动 → 安装与售后 服务切换时，将设备控制、自动迁移的历史和需手动导出的文件分列。不同条目可能对应不同期限和操作人。 Matter 设备跨平台接入时，在主平台生成临时凭据，到第二个平台完成配对，再用一次真实控制核对两端的状态是否一致。"
@@ -1076,9 +1201,21 @@
             "e25-nest"
           ],
           "updatedAt": "2026-11-25T10:47:40.796614+00:00"
+        },
+        {
+          "id": "door-revocation-sync",
+          "title": "住户已点撤销，哪一步才算门锁收到了变更？",
+          "learning": "DOOR 区分应用受理和目标设备状态，并要求由发出邀请的住户撤销访客。未联网的门锁需按厂商流程完成本地同步。",
+          "application": "管理自己的设备时，记录邀请人、目标门、连接方式、应用受理时间及设备同步确认，方便住户和客服定位待办。",
+          "boundary": "两个品牌的资料涉及不同权限操作；尚无同环境、同类型授权的跨品牌对照。",
+          "itemIds": [
+            "e27-doorweb",
+            "e25-nest"
+          ],
+          "updatedAt": "2026-11-27T10:46:43.619997+00:00"
         }
       ],
-      "updatedAt": "2026-11-25T10:47:40.796614+00:00"
+      "updatedAt": "2026-11-27T10:46:43.619997+00:00"
     },
     "chain-2": {
       "attemptedAt": "2026-11-27T00:53:48.256580+00:00",
@@ -1240,18 +1377,98 @@
       "updatedAt": "2026-11-27T00:53:48.256580+00:00"
     },
     "chain-5": {
-      "attemptedAt": "2026-11-25T10:47:40.796614+00:00",
+      "attemptedAt": "2026-11-27T10:46:43.619997+00:00",
       "status": "partial",
-      "assessment": "Yoto Mini 的第二次美国召回通知要求已领智能充电线的家庭也申请电池更换套件。",
+      "assessment": "在原有美国资料外补查澳大利亚对包装、说明书、散装货的要求；重读千分一对生产直通率的定义，以及 Yoto 二次补救要求。未获一件实际出口产品的合规或召回完结证据。",
       "gaps": [
-        "已核美国指南的纽扣电池范围及警示，其他市场和其他认证仍待对应依据。",
+        "已核美澳两份不同范围的资料；其他市场、具体产品判定和实际包装抽检结果仍待查。",
         "现场故障与部署成效没有可比当前结果；本次仅核验制造指标的定义和追溯线索。",
         "缺少逐台处理记录，无法评估第二次补救的实际覆盖率。"
       ],
       "reviewedFields": [
-        "flow"
+        "basics",
+        "exercise",
+        "flow",
+        "metrics"
       ],
       "evidence": [
+        {
+          "itemId": "e27-auweb",
+          "title": "含纽扣电池的配件出口澳大利亚，警示印在说明书上就够了吗？",
+          "facts": [
+            {
+              "claim": "监管指南说明一般包装要求中的正面警示符号。",
+              "sourceUrl": "https://www.productsafety.gov.au/business/search-mandatory-standards/button-and-coin-batteries-mandatory-standards/products-containing-button-and-coin-batteries-mandatory-information-standard",
+              "locator": "Warnings on packaging；另见 Lower risk products"
+            }
+          ],
+          "boundary": "限于澳大利亚该信息标准及所述产品情形；正式供货应结合标准全文及适用例外。没有特定学习设备通过认证或现场合规的结论。",
+          "sources": [
+            {
+              "url": "https://www.productsafety.gov.au/business/search-mandatory-standards/button-and-coin-batteries-mandatory-standards/products-containing-button-and-coin-batteries-mandatory-information-standard",
+              "publisherGroup": "澳大利亚竞争与消费者委员会",
+              "name": "澳大利亚竞争与消费者委员会",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "8c1eae349e9ee44de9061f0332b01848825dcd6480c7fd147e671a08557d4c88",
+              "readAt": "2026-11-27T10:39:11.824593+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "m20-button",
+          "title": "电池仓过了测试，包装能出货吗？把结构验证与警示文案放进同一次放行评审",
+          "facts": [
+            {
+              "claim": "指南将整机包装警示列为独立要求。",
+              "sourceUrl": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Button-Cell-and-Coin-Battery",
+              "locator": "Products Containing or Designed to Use Button Cell or Coin Batteries 小节"
+            }
+          ],
+          "boundary": "适用于指南界定的美国消费品范围，部分玩具及特定电池有不同适用条件。不能据此断定某款学习设备适用或通过认证。",
+          "sources": [
+            {
+              "url": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Button-Cell-and-Coin-Battery",
+              "publisherGroup": "美国消费品安全委员会 CPSC",
+              "name": "美国消费品安全委员会 CPSC",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "be4664ad3a096e45e9756ba65ab4fd6388484654b708226bc3a767889f8be8be",
+              "readAt": "2026-11-20T00:39:19.289751+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "qfy-outsourcing-control",
+          "title": "智能笔外协案例：生产执行与工艺、质量责任分开看",
+          "facts": [
+            {
+              "claim": "公司披露全制程外协的技术与品控责任。",
+              "sourceUrl": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+              "locator": "回复第81至82页：全制程外协"
+            },
+            {
+              "claim": "披露的生产直通率排除返工、返修和重工。",
+              "sourceUrl": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+              "locator": "回复第83页：生产直通率口径"
+            }
+          ],
+          "boundary": "历史申报回复节选，未全文阅读或独立验证；智能笔供应商的做法不能归为客户品牌内部制度，也不证明当前良率和组织成效。",
+          "sources": [
+            {
+              "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+              "name": "千分一 · 第二轮审核问询回复（历史材料）",
+              "publishedAt": null,
+              "publisherGroup": "千分一",
+              "role": "official",
+              "textHash": "e4298694324f305b6e8fd7a9a9f248fca7b10d1a776417531750961f3a1bdfb1",
+              "readAt": "2026-11-17T00:45:51.020581+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        },
         {
           "itemId": "e25-yoto",
           "title": "儿童播放器召回方案升级，已经领过配件的家庭还要做什么？",
@@ -1294,27 +1511,41 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "e25-yoto",
-          "url": "https://www.cpsc.gov/Recalls/2025/Yoto-Reannounces-Recall-of-Yoto-Mini-Speakers-for-Children-Due-to-Burn-and-Fire-Hazards-New-Full-Battery-Replacement-Kit-Now-Available",
-          "checkedAt": "2026-11-25T10:42:58.281180+00:00",
+          "itemId": "e27-auweb",
+          "url": "https://www.productsafety.gov.au/business/search-mandatory-standards/button-and-coin-batteries-mandatory-standards/products-containing-button-and-coin-batteries-mandatory-information-standard",
+          "checkedAt": "2026-11-27T10:39:11.824593+00:00",
           "state": "body",
-          "note": "本轮读取正文。复查第二次公告 Remedy 对已经领线家庭的要求。"
+          "note": "本轮读取正文。ACCC 指南对包装正面、说明书、散装与较低风险产品的分项要求。"
+        },
+        {
+          "itemId": "m20-button",
+          "url": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Button-Cell-and-Coin-Battery",
+          "checkedAt": "2026-11-27T10:39:32.507430+00:00",
+          "state": "body",
+          "note": "本轮读取正文。CPSC 指南单列玩具与警示适用范围。"
+        },
+        {
+          "itemId": "qfy-outsourcing-control",
+          "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+          "checkedAt": "2026-11-27T10:39:32.706016+00:00",
+          "state": "body",
+          "note": "本轮读取正文。审核回复第 83 页的直通率定义排除返工和返修。"
         },
         {
           "itemId": "e25-yoto",
-          "url": "https://www.cpsc.gov/Recalls/2024/Yoto-Recalls-Yoto-Mini-Speakers-for-Children-Due-to-Burn-and-Fire-Hazards",
-          "checkedAt": "2026-11-25T10:42:58.464676+00:00",
+          "url": "https://www.cpsc.gov/Recalls/2025/Yoto-Reannounces-Recall-of-Yoto-Mini-Speakers-for-Children-Due-to-Burn-and-Fire-Hazards-New-Full-Battery-Replacement-Kit-Now-Available",
+          "checkedAt": "2026-11-27T10:39:32.433867+00:00",
           "state": "body",
-          "note": "本轮读取正文。核对首轮公告提供充电线的适用说明。"
+          "note": "本轮读取正文。召回公告指出已领取旧线缆的人也需申请新的电池更换套件。"
         }
       ],
-      "reviewedAt": "2026-11-25T10:47:40.796614+00:00",
+      "reviewedAt": "2026-11-27T10:46:43.619997+00:00",
       "patch": {
         "flow": "风险识别与需求 → 验证证据、过程控制与上市条件 对有明确使用限制的设备，还要检查现场条件、训练和责任人员是否满足该型号说明，不能仅凭设备合格就认为现场可用。 对适用美国纽扣电池要求的产品，出货评审同时核对电池仓样件、使用与滥用测试、实物及包装警示和随附说明；不同版本的包材分别检查。 儿童可拆部件发生风险时，记录部件怎样脱落、包装识别码、销售渠道和售后处置凭证。分别记录涉及数量与已办理数量。 固件升级作为召回措施时，登记涉及的序列或批次、设备实际版本、通知和升级回执，再验证修复后的风险。 召回方案更改后，以设备批次和补救版本核对通知范围，分开记录已通知、领取套件及完成更换；在上一版登记为完成的用户仍可能需要第二次联系。",
         "team": "质量、安全、研发、制造与服务协同定义缺陷等级、放行权和整改验证。 MetalFab 官方资料要求指定激光安全负责人并限制进入受控区域的人员；这是特定产品的部署职责样本，不能替代其他产品的法规与风险评估。",
         "basics": "初始质量关注开始使用时是否符合要求；可靠性关注运行一段时间后是否仍满足要求。初始合格不能证明使用期可靠。可靠性、安全与法规准入是不同问题；本轮仅核对初始质量与使用期可靠性的时间区分，安全及认证范围仍待专门复核。",
         "metrics": "生产直通率应明确工序范围、首次检验和返工排除规则；最终检验合格不等于全流程一次通过。现场故障率仍需同时记录样本、使用条件与时间窗。",
-        "exercise": "给一种故障写出发现、遏制、原因、纠正、复验及防复发的责任链。 从一个受影响设备出发核对旧版、更新是否成功、更新后的测试情境，以及更新失败时的服务入口。"
+        "exercise": "给一种故障写出发现、遏制、原因、纠正、复验及防复发的责任链。 从一个受影响设备出发核对旧版、更新是否成功、更新后的测试情境，以及更新失败时的服务入口。 对含纽扣电池的附件，按实际目标市场分别检查盒装、散装与随附说明，记录适用条款、例外及待核实的实物版本。"
       },
       "lessons": [
         {
@@ -1405,9 +1636,20 @@
             "e25-yoto"
           ],
           "updatedAt": "2026-11-25T10:47:40.796614+00:00"
+        },
+        {
+          "id": "au-package-forms",
+          "title": "同一附件从带盒销售改为散售，质量团队要复查什么？",
+          "learning": "澳大利亚指南按是否包装、是否附说明书以及产品风险情形列出不同警示要求。",
+          "application": "让合规人员先确认国家、具体产品和例外，再将实际出货包装、随附说明和散售标签交给包装与零售核对。",
+          "boundary": "一般要求与较低风险情形的规则不同，个案适用性要查标准原文和具体型号。",
+          "itemIds": [
+            "e27-auweb"
+          ],
+          "updatedAt": "2026-11-27T10:46:43.619997+00:00"
         }
       ],
-      "updatedAt": "2026-11-25T10:47:40.796614+00:00"
+      "updatedAt": "2026-11-27T10:46:43.619997+00:00"
     },
     "chain-8": {
       "attemptedAt": "2026-11-26T10:51:21.240816+00:00",
@@ -1716,17 +1958,112 @@
       "updatedAt": "2026-11-27T00:53:48.256580+00:00"
     },
     "chain-6": {
-      "attemptedAt": "2026-11-26T00:45:24.187692+00:00",
+      "attemptedAt": "2026-11-27T10:46:43.619997+00:00",
       "status": "partial",
-      "assessment": "Zero 越野车的美国召回要求联系授权经销商，由合格技术人员免费安装新固件。用户收到消息和车辆完成维修对应不同状态。",
+      "assessment": "有道公开了设备收入确认时点及部分设备随服务交付时的分摊办法。对照读书郎的渠道代运营成本和 XREAL 保修所需购买凭据，分别核实交易、费用与售后凭证。",
       "gaps": [
         "已复核两个公司披露的渠道层级及贡献毛益的通常计算方式。读书郎单店合同的费率、退货分摊和各经销商终端动销台账本轮未取得，无法核算单店贡献。",
         "本案缺逐台维修完工与交还回执。"
       ],
       "reviewedFields": [
-        "exercise"
+        "basics",
+        "exercise",
+        "flow",
+        "team"
       ],
       "evidence": [
+        {
+          "itemId": "e27-youweb",
+          "title": "设备随课程交付，有道如何确认硬件收入？",
+          "facts": [
+            {
+              "claim": "有道将所述学习服务组合中的设备作为单独履约义务。",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1781753/000119312526155933/dao-20251231.htm",
+              "locator": "合并财务报表附注 2(n)(ii)，智能设备段"
+            }
+          ],
+          "boundary": "依据 2025 财年有道年报的相关段落；未获单笔合同、实际分摊或终端激活数据。其他企业和其他套餐须单独核对。",
+          "sources": [
+            {
+              "url": "https://www.sec.gov/Archives/edgar/data/1781753/000119312526155933/dao-20251231.htm",
+              "publisherGroup": "网易有道（SEC 年报）",
+              "name": "网易有道（SEC 年报）",
+              "publishedAt": "2026-04-15",
+              "role": "official",
+              "textHash": "0b093c39867b0f798d42cdd85672fed43ae81316c8cac2b2fa72cc5007df991e",
+              "readAt": "2026-11-27T10:39:11.822278+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        },
+        {
+          "itemId": "e21-readboy",
+          "title": "学习机旗舰店谁来运营，渠道费用该算到哪一笔？",
+          "facts": [
+            {
+              "claim": "公司把旗舰店委托专业团队运营产生的承包商成本列入销售及经销开支增加的原因。",
+              "sourceUrl": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042200480.pdf",
+              "locator": "管理层讨论与分析 · 销售及经销开支，印刷页31"
+            },
+            {
+              "claim": "贡献毛益用对应范围内的销售收入减变动成本。",
+              "sourceUrl": "https://www.shopify.com/blog/what-is-contribution-margin",
+              "locator": "FAQ · What is the formula for contribution margin?"
+            }
+          ],
+          "boundary": "所读为公司年报相关段落和会计概念说明。未见店铺合同、单台学习机费用、家庭购买量或本次活动的贡献利润。",
+          "sources": [
+            {
+              "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042200480.pdf",
+              "publisherGroup": "读书郎教育控股 · 港交所披露",
+              "name": "读书郎教育控股 · 港交所披露",
+              "publishedAt": "2026-04-22",
+              "role": "official",
+              "textHash": "18a7e5a40e0d203fef565b976eebe7eb69344dd85fc1e9f72fb5248676ac191a",
+              "readAt": "2026-11-21T10:46:29.832822+00:00",
+              "coverage": "excerpt"
+            },
+            {
+              "url": "https://www.shopify.com/blog/what-is-contribution-margin",
+              "publisherGroup": "Shopify · 贡献毛益说明",
+              "name": "Shopify · 贡献毛益说明",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "4decc99a2edd9fd9f160704dc1beb3e337250e3273974b667299fee906d43da5",
+              "readAt": "2026-11-21T10:45:34.414496+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "xreal-warranty",
+          "title": "XREAL 服务条款样本：销售渠道与售后受理信息相连",
+          "facts": [
+            {
+              "claim": "条款只覆盖规定渠道及所支持地区。",
+              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+              "locator": "Scope"
+            },
+            {
+              "claim": "申请信息包含订单和故障设备序列号。",
+              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+              "locator": "Making a claim"
+            }
+          ],
+          "boundary": "本轮读取 Scope 与 Making a claim 等业务流程段落；这是厂商自述的商业保修流程样本，不是对法定权利或条款效力的法律判断。当前适用地区、机型和购买时间仍须逐案核对。",
+          "sources": [
+            {
+              "url": "https://us.shop.xreal.com/pages/warranty-policy",
+              "name": "XREAL 美国商城保修政策",
+              "publishedAt": "2024-04-08",
+              "publisherGroup": "XREAL 美国商城保修政策",
+              "role": "official",
+              "textHash": "f6d9abd8a0da1c0e46c8883c61dc2dcc1047721091f3eaef3a7b3eb81d86b685",
+              "readAt": "2026-11-09T00:46:58.382936+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
         {
           "itemId": "m26-zero",
           "title": "Zero 电动越野车召回：固件已经有修复方案，谁来装到车上？",
@@ -1754,20 +2091,41 @@
       ],
       "sourceChecks": [
         {
+          "itemId": "e27-youweb",
+          "url": "https://www.sec.gov/Archives/edgar/data/1781753/000119312526155933/dao-20251231.htm",
+          "checkedAt": "2026-11-27T10:39:11.822278+00:00",
+          "state": "body",
+          "note": "本轮读取原文相关段落。读取年报附注 2(n)(ii) 对硬件交付、独立履约义务及单独售价方法的说明。"
+        },
+        {
+          "itemId": "e21-readboy",
+          "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042200480.pdf",
+          "checkedAt": "2026-11-27T10:39:41.136407+00:00",
+          "state": "body",
+          "note": "本轮读取正文。读书郎管理层说明京东、淘宝等旗舰店委托专业团队运营产生承包商成本。"
+        },
+        {
+          "itemId": "xreal-warranty",
+          "url": "https://us.shop.xreal.com/pages/warranty-policy",
+          "checkedAt": "2026-11-27T10:39:35.044816+00:00",
+          "state": "body",
+          "note": "本轮读取正文。保修条款要求相应购买凭证，能证明的业务事项与终端销量不同。"
+        },
+        {
           "itemId": "m26-zero",
           "url": "https://www.cpsc.gov/Recalls/2027/Zero-Motorcycles-Recalls-Zero-Off-Road-Motorcycles-Due-to-Risk-of-Serious-Injury-or-Death-from-Crash-Hazard",
-          "checkedAt": "2026-11-26T00:41:08.952811+00:00",
+          "checkedAt": "2026-11-27T10:39:36.269902+00:00",
           "state": "body",
-          "note": "本轮读取正文。核对具体车型、服务渠道和技术人员安装固件的要求。"
+          "note": "本轮读取正文。复核授权渠道固件维修的补救安排，没有逐台完成数据。"
         }
       ],
-      "reviewedAt": "2026-11-26T00:45:24.187692+00:00",
+      "reviewedAt": "2026-11-27T10:46:43.619997+00:00",
       "patch": {
         "flow": "用户需求与库存 → 定价、渠道政策、交付承诺与终端反馈 还需核对销售主体、支持地区、购买凭证与设备序列号在售后受理中的衔接。",
         "team": "销售、市场、计划、零售、财务对齐销售预测、货盘、促销与退货规则。 XREAL 的公开流程提示渠道与服务之间存在购买证据交接；研究时应确认能否复用已授权订单信息，减少用户重复提交。",
         "exercise": "选一个销售活动，列出从备货到退货的责任与反馈，不只统计订单数。 选择一个具体渠道和地区，画出从购买承诺到问题处理的用户路径，记录需要重复提供的信息及尚未明确的责任。 对一次售罄率变化另列统计窗口、库存范围及模型版本，先排除统计变更再讨论备货和促销。 抽取一笔跨境订单，对照商品毛利与订单利润两张报表，分别找出买家付的运费税费、店铺实际承担的运费税费，标出只有一侧有数据的项目。 遇到“固件召回”时，先查公告指定的交付方式和有资格执行的主体。若需授权网点操作，渠道台账分列已联系、已预约、安装、复验及设备交还。",
         "metrics": "网店转化率先确认分母：Shopify以购买会话占总会话计算，同一会话可含多笔订单。比较时固定期间、漏斗路径、过滤与计量版本；不能直接套到门店或经销商。渠道贡献金额按同范围收入扣除变动成本；贡献率再除以该收入。先确认退款已冲减的项目，核对实际合同中按件和固定收费的部分。 售罄率另核库存分母：Shopify示例为售出数量/（售出数量+期末库存）；其2026年10月1日库存模型改变，跨期不能直接解释为经营变化。 利润对账另核售出时成本字段覆盖的规格，并按净销售额核对折扣、退款和缺成本成交金额。 产品组合变更时，经营复盘先标明收入和毛利的业务范围，再按机型、出货批次、物料成本与渠道折扣追溯。单个品类新增产品不等于该品类实现分部毛利。",
-        "basics": "Sell-in 记录供给方卖给渠道的交易。Sell-through 的下一手买方需按数据提供方确认：零售渠道可能报到消费者，多级经销也可能只报到下一家经销商或门店。汇总时应分开交易层级。"
+        "basics": "Sell-in 记录供给方卖给渠道的交易。Sell-through 的下一手买方需按数据提供方确认：零售渠道可能报到消费者，多级经销也可能只报到下一家经销商或门店。汇总时应分开交易层级。 有道 2025 年报将部分随学习服务提供的设备单列履约义务。订单应区分控制权转移给哪一级客户，并分别查设备交付和服务履约时间。"
       },
       "lessons": [
         {
@@ -1868,9 +2226,20 @@
             "m26-zero"
           ],
           "updatedAt": "2026-11-26T00:45:24.187692+00:00"
+        },
+        {
+          "id": "youdao-device-revenue",
+          "title": "渠道报表里有一笔硬件收入，能否判断设备已到学生手上？",
+          "learning": "有道的收入确认以控制权转移为依据，按安排可能发生在经销商或终端签收时。随部分学习服务提供的智能终端另列履约义务。",
+          "application": "挑一个设备加服务的真实订单，列设备接收方、签收时间、课程履约及价格分摊依据，再核对报表统计范围。",
+          "boundary": "年报给出该公司的会计政策；单店具体合同、设备激活数和课程完成数仍缺。",
+          "itemIds": [
+            "e27-youweb"
+          ],
+          "updatedAt": "2026-11-27T10:46:43.619997+00:00"
         }
       ],
-      "updatedAt": "2026-11-26T00:45:24.187692+00:00"
+      "updatedAt": "2026-11-27T10:46:43.619997+00:00"
     },
     "track-0": {
       "attemptedAt": "2026-11-26T00:45:24.187692+00:00",
@@ -3720,6 +4089,34 @@
           "hash": "b1b827126d3a15751f1bb1792ae9d5c7d7385a40c0acdf2ec9c753f1f82c875c",
           "decision": "integrated",
           "reason": "Tom’s Hardware 转述《华尔街日报》采访，称宇瞻通过备款抓住短暂货源。材料证明的是报道中的准备动作，实际采购数量待查。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-27T10:46:43.619997+00:00",
+      "reviewedNodes": [
+        "chain-5",
+        "track-2",
+        "chain-6"
+      ],
+      "decisions": [
+        {
+          "itemId": "e27-auweb",
+          "hash": "9e42512de2e2ba69bc5af093fae37ad844198d11849723a1cef38c8c8b525ba4",
+          "decision": "integrated",
+          "reason": "澳大利亚指南按是否包装、是否附说明书以及产品风险情形列出不同警示要求。"
+        },
+        {
+          "itemId": "e27-doorweb",
+          "hash": "1fc587ae0535ec46e44bcf0e6a2deb5d175464ff8eb1b6b19b4a0aef7127f771",
+          "decision": "integrated",
+          "reason": "DOOR 区分应用受理和目标设备状态，并要求由发出邀请的住户撤销访客。未联网的门锁需按厂商流程完成本地同步。"
+        },
+        {
+          "itemId": "e27-youweb",
+          "hash": "16f9d2f6485626cc002fb9877b5cd579ecc0921f73c38046bda2519e4e91fea9",
+          "decision": "integrated",
+          "reason": "有道的收入确认以控制权转移为依据，按安排可能发生在经销商或终端签收时。随部分学习服务提供的智能终端另列履约义务。"
         }
       ]
     }
@@ -15859,6 +16256,573 @@
           "checkedAt": "2026-11-27T00:45:20.248362+00:00",
           "state": "body",
           "note": "本轮读取正文。复核宇瞻采访的转述及小批量现货描述。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-5",
+      "reviewedAt": "2026-11-27T10:46:43.619997+00:00",
+      "status": "partial",
+      "assessment": "在原有美国资料外补查澳大利亚对包装、说明书、散装货的要求；重读千分一对生产直通率的定义，以及 Yoto 二次补救要求。未获一件实际出口产品的合规或召回完结证据。",
+      "gaps": [
+        "已核美澳两份不同范围的资料；其他市场、具体产品判定和实际包装抽检结果仍待查。",
+        "现场故障与部署成效没有可比当前结果；本次仅核验制造指标的定义和追溯线索。",
+        "缺少逐台处理记录，无法评估第二次补救的实际覆盖率。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "exercise",
+        "flow",
+        "metrics"
+      ],
+      "changes": {
+        "exercise": {
+          "before": "给一种故障写出发现、遏制、原因、纠正、复验及防复发的责任链。 从一个受影响设备出发核对旧版、更新是否成功、更新后的测试情境，以及更新失败时的服务入口。",
+          "after": "给一种故障写出发现、遏制、原因、纠正、复验及防复发的责任链。 从一个受影响设备出发核对旧版、更新是否成功、更新后的测试情境，以及更新失败时的服务入口。 对含纽扣电池的附件，按实际目标市场分别检查盒装、散装与随附说明，记录适用条款、例外及待核实的实物版本。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "au-package-forms",
+            "title": "同一附件从带盒销售改为散售，质量团队要复查什么？",
+            "learning": "澳大利亚指南按是否包装、是否附说明书以及产品风险情形列出不同警示要求。",
+            "application": "让合规人员先确认国家、具体产品和例外，再将实际出货包装、随附说明和散售标签交给包装与零售核对。",
+            "boundary": "一般要求与较低风险情形的规则不同，个案适用性要查标准原文和具体型号。",
+            "itemIds": [
+              "e27-auweb"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e27-auweb",
+          "title": "含纽扣电池的配件出口澳大利亚，警示印在说明书上就够了吗？",
+          "facts": [
+            {
+              "claim": "监管指南说明一般包装要求中的正面警示符号。",
+              "sourceUrl": "https://www.productsafety.gov.au/business/search-mandatory-standards/button-and-coin-batteries-mandatory-standards/products-containing-button-and-coin-batteries-mandatory-information-standard",
+              "locator": "Warnings on packaging；另见 Lower risk products"
+            }
+          ],
+          "boundary": "限于澳大利亚该信息标准及所述产品情形；正式供货应结合标准全文及适用例外。没有特定学习设备通过认证或现场合规的结论。",
+          "sources": [
+            {
+              "url": "https://www.productsafety.gov.au/business/search-mandatory-standards/button-and-coin-batteries-mandatory-standards/products-containing-button-and-coin-batteries-mandatory-information-standard",
+              "publisherGroup": "澳大利亚竞争与消费者委员会",
+              "name": "澳大利亚竞争与消费者委员会",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "8c1eae349e9ee44de9061f0332b01848825dcd6480c7fd147e671a08557d4c88",
+              "readAt": "2026-11-27T10:39:11.824593+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "m20-button",
+          "title": "电池仓过了测试，包装能出货吗？把结构验证与警示文案放进同一次放行评审",
+          "facts": [
+            {
+              "claim": "指南将整机包装警示列为独立要求。",
+              "sourceUrl": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Button-Cell-and-Coin-Battery",
+              "locator": "Products Containing or Designed to Use Button Cell or Coin Batteries 小节"
+            }
+          ],
+          "boundary": "适用于指南界定的美国消费品范围，部分玩具及特定电池有不同适用条件。不能据此断定某款学习设备适用或通过认证。",
+          "sources": [
+            {
+              "url": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Button-Cell-and-Coin-Battery",
+              "publisherGroup": "美国消费品安全委员会 CPSC",
+              "name": "美国消费品安全委员会 CPSC",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "be4664ad3a096e45e9756ba65ab4fd6388484654b708226bc3a767889f8be8be",
+              "readAt": "2026-11-20T00:39:19.289751+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "qfy-outsourcing-control",
+          "title": "智能笔外协案例：生产执行与工艺、质量责任分开看",
+          "facts": [
+            {
+              "claim": "公司披露全制程外协的技术与品控责任。",
+              "sourceUrl": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+              "locator": "回复第81至82页：全制程外协"
+            },
+            {
+              "claim": "披露的生产直通率排除返工、返修和重工。",
+              "sourceUrl": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+              "locator": "回复第83页：生产直通率口径"
+            }
+          ],
+          "boundary": "历史申报回复节选，未全文阅读或独立验证；智能笔供应商的做法不能归为客户品牌内部制度，也不证明当前良率和组织成效。",
+          "sources": [
+            {
+              "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+              "name": "千分一 · 第二轮审核问询回复（历史材料）",
+              "publishedAt": null,
+              "publisherGroup": "千分一",
+              "role": "official",
+              "textHash": "e4298694324f305b6e8fd7a9a9f248fca7b10d1a776417531750961f3a1bdfb1",
+              "readAt": "2026-11-17T00:45:51.020581+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        },
+        {
+          "itemId": "e25-yoto",
+          "title": "儿童播放器召回方案升级，已经领过配件的家庭还要做什么？",
+          "facts": [
+            {
+              "claim": "第二轮通知覆盖已经领取上一轮配件的消费者。",
+              "sourceUrl": "https://www.cpsc.gov/Recalls/2025/Yoto-Reannounces-Recall-of-Yoto-Mini-Speakers-for-Children-Due-to-Burn-and-Fire-Hazards-New-Full-Battery-Replacement-Kit-Now-Available",
+              "locator": "Remedy 段"
+            },
+            {
+              "claim": "首轮通知列明智能充电线。",
+              "sourceUrl": "https://www.cpsc.gov/Recalls/2024/Yoto-Recalls-Yoto-Mini-Speakers-for-Children-Due-to-Burn-and-Fire-Hazards",
+              "locator": "原召回补救说明"
+            }
+          ],
+          "boundary": "两轮公开通知说明补救方案改变；公开资料没有给出逐户触达率、更换完成率或团队内部汇报关系。",
+          "sources": [
+            {
+              "url": "https://www.cpsc.gov/Recalls/2025/Yoto-Reannounces-Recall-of-Yoto-Mini-Speakers-for-Children-Due-to-Burn-and-Fire-Hazards-New-Full-Battery-Replacement-Kit-Now-Available",
+              "publisherGroup": "美国消费品安全委员会",
+              "name": "美国消费品安全委员会",
+              "publishedAt": "2024-12-12",
+              "role": "official",
+              "textHash": "24dfdcb291f3624909affe7023bf39ad31d7ff9f9b0215a37f423703f9922801",
+              "readAt": "2026-11-25T10:42:58.281180+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://www.cpsc.gov/Recalls/2024/Yoto-Recalls-Yoto-Mini-Speakers-for-Children-Due-to-Burn-and-Fire-Hazards",
+              "publisherGroup": "美国消费品安全委员会",
+              "name": "美国消费品安全委员会",
+              "publishedAt": "2024-04-11",
+              "role": "official",
+              "textHash": "cf583ab4e9acaaaf0fbae26c4d4a485a574b736b32470bb0423121463dc44ab8",
+              "readAt": "2026-11-25T10:42:58.464676+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e27-auweb",
+          "url": "https://www.productsafety.gov.au/business/search-mandatory-standards/button-and-coin-batteries-mandatory-standards/products-containing-button-and-coin-batteries-mandatory-information-standard",
+          "checkedAt": "2026-11-27T10:39:11.824593+00:00",
+          "state": "body",
+          "note": "本轮读取正文。ACCC 指南对包装正面、说明书、散装与较低风险产品的分项要求。"
+        },
+        {
+          "itemId": "m20-button",
+          "url": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Button-Cell-and-Coin-Battery",
+          "checkedAt": "2026-11-27T10:39:32.507430+00:00",
+          "state": "body",
+          "note": "本轮读取正文。CPSC 指南单列玩具与警示适用范围。"
+        },
+        {
+          "itemId": "qfy-outsourcing-control",
+          "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/ad4752b036b4185bd7332b7e96e67456.pdf",
+          "checkedAt": "2026-11-27T10:39:32.706016+00:00",
+          "state": "body",
+          "note": "本轮读取正文。审核回复第 83 页的直通率定义排除返工和返修。"
+        },
+        {
+          "itemId": "e25-yoto",
+          "url": "https://www.cpsc.gov/Recalls/2025/Yoto-Reannounces-Recall-of-Yoto-Mini-Speakers-for-Children-Due-to-Burn-and-Fire-Hazards-New-Full-Battery-Replacement-Kit-Now-Available",
+          "checkedAt": "2026-11-27T10:39:32.433867+00:00",
+          "state": "body",
+          "note": "本轮读取正文。召回公告指出已领取旧线缆的人也需申请新的电池更换套件。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-2",
+      "reviewedAt": "2026-11-27T10:46:43.619997+00:00",
+      "status": "partial",
+      "assessment": "从限时授权离线可用性追到权限撤回的最后一步，DOOR 区分应用更新和门锁同步，Google 的 Nest × Yale 说明另列离线时的限时授权限制。",
+      "gaps": [
+        "DOOR 文档已明确特定非联网门锁的同步条件；实际撤权时延、与其他平台的互操作仍待实测。",
+        "没有可比故障率、用户样本和售后改善数据。",
+        "未查得同一条件下不同品牌对离线限时授权的完整实测。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "team"
+      ],
+      "changes": {
+        "constraint": {
+          "before": "兼容性、配网成本、稳定性与家庭成员协同。离线范围须按触发、动作和反馈分别核对：Aqara M200说明部分自动化本地执行，但云推送仍需要云连接；不能据“本地自动化”承诺全部提醒和远程控制可用。 适配平台和中枢是前置条件。丢失标签超出近距离链路时，三星的远距离发现依赖附近参与离线查找的设备，历史记录的时间不等于当前位置。 测试智能门锁的离线体验时，将常规授权、限时授权和远程通知分别列项。按对应型号记录离线时仍可执行的操作、失败提示与恢复条件。",
+          "after": "兼容性、配网成本、稳定性与家庭成员协同。离线范围须按触发、动作和反馈分别核对：Aqara M200说明部分自动化本地执行，但云推送仍需要云连接；不能据“本地自动化”承诺全部提醒和远程控制可用。 适配平台和中枢是前置条件。丢失标签超出近距离链路时，三星的远距离发现依赖附近参与离线查找的设备，历史记录的时间不等于当前位置。 测试智能门锁的离线体验时，将常规授权、限时授权和远程通知分别列项。按对应型号记录离线时仍可执行的操作、失败提示与恢复条件。 回收访客权限时也要区分应用受理与门锁同步。按邀请人、目标设备和连接方式留存回执；DOOR 对未联网设备给出的近端同步要求仅适用于其产品。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "door-revocation-sync",
+            "title": "住户已点撤销，哪一步才算门锁收到了变更？",
+            "learning": "DOOR 区分应用受理和目标设备状态，并要求由发出邀请的住户撤销访客。未联网的门锁需按厂商流程完成本地同步。",
+            "application": "管理自己的设备时，记录邀请人、目标门、连接方式、应用受理时间及设备同步确认，方便住户和客服定位待办。",
+            "boundary": "两个品牌的资料涉及不同权限操作；尚无同环境、同类型授权的跨品牌对照。",
+            "itemIds": [
+              "e27-doorweb",
+              "e25-nest"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e27-doorweb",
+          "title": "访客权限已在应用中撤销，物业怎样确认门锁也收到了？",
+          "facts": [
+            {
+              "claim": "官方支持页限定了可操作的邀请人。",
+              "sourceUrl": "https://support.door.com/hc/en-us/articles/40212854012695-How-do-I-revoke-guest-access",
+              "locator": "About this feature 与 Steps"
+            }
+          ],
+          "boundary": "记录的是 DOOR 官方说明。实际传播时间、其他品牌表现及现场撤权成功率未获得独立验证。学习设备例子为测试建议。",
+          "sources": [
+            {
+              "url": "https://support.door.com/hc/en-us/articles/40212854012695-How-do-I-revoke-guest-access",
+              "publisherGroup": "DOOR 官方支持",
+              "name": "DOOR 官方支持",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "5a0743f816b3c6e81a4c063d30cf3760954fbdfecb5732e6bfb0e4cd1a55c218",
+              "readAt": "2026-11-27T10:39:11.823300+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "e25-nest",
+          "title": "智能门锁离线，平时能用的限时授权还能兑现吗？",
+          "facts": [
+            {
+              "claim": "该机型对限时授权用户给出单独的离线限制。",
+              "sourceUrl": "https://support.google.com/googlehome/answer/9233966?hl=en",
+              "locator": "Offline 使用说明 Important 段"
+            }
+          ],
+          "boundary": "限于对应机型及该帮助页描述的离线状态。其他产品的离线授权行为需要各自的说明或实测。",
+          "sources": [
+            {
+              "url": "https://support.google.com/googlehome/answer/9233966?hl=en",
+              "publisherGroup": "Google Nest 帮助",
+              "name": "Google Nest 帮助",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "9a3dfb63d3ec9fa92e6eb72e59cf0fa28338a82be0006407a076effaa017bf18",
+              "readAt": "2026-11-25T10:43:01.191512+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "e20-mi",
+          "title": "给家人开设备权限，分享一台设备和加入整个家庭差在哪里？",
+          "facts": [
+            {
+              "claim": "小米支持页分别说明设备卡片分享与邀请家庭成员这两条路径。",
+              "sourceUrl": "https://www.mi.com/global/support/article/KA-07429/",
+              "locator": "Method 1 / Method 3"
+            },
+            {
+              "claim": "SmartThings 的邀请以地点为单位，只能由地点所有者移除成员。",
+              "sourceUrl": "https://www.samsung.com/us/support/answer/ANS10002634/",
+              "locator": "Invite members / View or remove members"
+            },
+            {
+              "claim": "家庭管理员可以添加普通成员，但不能删除整个家庭。",
+              "sourceUrl": "https://developer.tuya.com/en/docs/app-development/extension-family-member?id=Kcy2iwdhz60pm",
+              "locator": "Home Member Management · Member roles（2025-12-25 更新）"
+            }
+          ],
+          "boundary": "三份资料分别来自小米全球版说明、三星美国支持页和涂鸦 SDK。插件、地区、门锁等特定设备权限，以及撤销在离线设备上何时生效，仍需逐项核验。",
+          "sources": [
+            {
+              "url": "https://www.mi.com/global/support/article/KA-07429/",
+              "publisherGroup": "小米全球支持",
+              "name": "小米全球支持",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "d29456e292cfb87704e1fe7d05cda807cf8dc2288fbaccde5087ee01d0eaac50",
+              "readAt": "2026-11-20T10:42:16.984424+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://www.samsung.com/us/support/answer/ANS10002634/",
+              "publisherGroup": "Samsung 美国支持",
+              "name": "Samsung 美国支持",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "e336a8fb80343eb6458527cb239d48aa4d2f546369a89e603292fa2c4007ace2",
+              "readAt": "2026-11-20T10:42:17.836170+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://developer.tuya.com/en/docs/app-development/extension-family-member?id=Kcy2iwdhz60pm",
+              "publisherGroup": "涂鸦 Smart App SDK",
+              "name": "涂鸦 Smart App SDK",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "991699639eb2465541f4c84e8753712d3a84cb1ca4cdb40d110279207828dd50",
+              "readAt": "2026-11-20T10:42:52.227992+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "m24-multi",
+          "title": "同一盏灯接入两个平台，怎样验证第二个平台真的接好了？",
+          "facts": [
+            {
+              "claim": "官方流程允许为第二个平台生成临时配对凭据。",
+              "sourceUrl": "https://support.google.com/googlehome/answer/13127223?hl=en-CA",
+              "locator": "Share the devices 与配对后的控制检查"
+            }
+          ],
+          "boundary": "仅限该指南描述的兼容配置。离线撤权、跨品牌响应时延及失败率仍须另测。",
+          "sources": [
+            {
+              "url": "https://support.google.com/googlehome/answer/13127223?hl=en-CA",
+              "publisherGroup": "Google Home 官方帮助",
+              "name": "Google Home 官方帮助",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "efbefd835dfaacace4234f8ddd09a1b6895cf7819cbbd0b19bda5b10b8cf5db6",
+              "readAt": "2026-11-24T00:43:03.338151+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e27-doorweb",
+          "url": "https://support.door.com/hc/en-us/articles/40212854012695-How-do-I-revoke-guest-access",
+          "checkedAt": "2026-11-27T10:39:11.823300+00:00",
+          "state": "body",
+          "note": "本轮读取正文。DOOR 关于邀请人权限、联网及离线设备同步条件的说明。"
+        },
+        {
+          "itemId": "e25-nest",
+          "url": "https://support.google.com/googlehome/answer/9233966?hl=en",
+          "checkedAt": "2026-11-27T10:39:35.347236+00:00",
+          "state": "body",
+          "note": "本轮读取正文。Nest × Yale 帮助页涉及的是断网时限时访问能力。"
+        },
+        {
+          "itemId": "e20-mi",
+          "url": "https://www.mi.com/global/support/article/KA-07429/",
+          "checkedAt": "2026-11-27T10:39:33.000024+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对小米设备共享的应用入口。"
+        },
+        {
+          "itemId": "m24-multi",
+          "url": "https://support.google.com/googlehome/answer/13127223?hl=en-CA",
+          "checkedAt": "2026-11-27T10:39:35.351962+00:00",
+          "state": "body",
+          "note": "本轮读取正文。SmartThings 文档区分主平台发起与次平台接入。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-6",
+      "reviewedAt": "2026-11-27T10:46:43.619997+00:00",
+      "status": "partial",
+      "assessment": "有道公开了设备收入确认时点及部分设备随服务交付时的分摊办法。对照读书郎的渠道代运营成本和 XREAL 保修所需购买凭据，分别核实交易、费用与售后凭证。",
+      "gaps": [
+        "已复核两个公司披露的渠道层级及贡献毛益的通常计算方式。读书郎单店合同的费率、退货分摊和各经销商终端动销台账本轮未取得，无法核算单店贡献。",
+        "本案缺逐台维修完工与交还回执。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "exercise",
+        "flow",
+        "team"
+      ],
+      "changes": {
+        "basics": {
+          "before": "Sell-in 记录供给方卖给渠道的交易。Sell-through 的下一手买方需按数据提供方确认：零售渠道可能报到消费者，多级经销也可能只报到下一家经销商或门店。汇总时应分开交易层级。",
+          "after": "Sell-in 记录供给方卖给渠道的交易。Sell-through 的下一手买方需按数据提供方确认：零售渠道可能报到消费者，多级经销也可能只报到下一家经销商或门店。汇总时应分开交易层级。 有道 2025 年报将部分随学习服务提供的设备单列履约义务。订单应区分控制权转移给哪一级客户，并分别查设备交付和服务履约时间。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "youdao-device-revenue",
+            "title": "渠道报表里有一笔硬件收入，能否判断设备已到学生手上？",
+            "learning": "有道的收入确认以控制权转移为依据，按安排可能发生在经销商或终端签收时。随部分学习服务提供的智能终端另列履约义务。",
+            "application": "挑一个设备加服务的真实订单，列设备接收方、签收时间、课程履约及价格分摊依据，再核对报表统计范围。",
+            "boundary": "年报给出该公司的会计政策；单店具体合同、设备激活数和课程完成数仍缺。",
+            "itemIds": [
+              "e27-youweb"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e27-youweb",
+          "title": "设备随课程交付，有道如何确认硬件收入？",
+          "facts": [
+            {
+              "claim": "有道将所述学习服务组合中的设备作为单独履约义务。",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1781753/000119312526155933/dao-20251231.htm",
+              "locator": "合并财务报表附注 2(n)(ii)，智能设备段"
+            }
+          ],
+          "boundary": "依据 2025 财年有道年报的相关段落；未获单笔合同、实际分摊或终端激活数据。其他企业和其他套餐须单独核对。",
+          "sources": [
+            {
+              "url": "https://www.sec.gov/Archives/edgar/data/1781753/000119312526155933/dao-20251231.htm",
+              "publisherGroup": "网易有道（SEC 年报）",
+              "name": "网易有道（SEC 年报）",
+              "publishedAt": "2026-04-15",
+              "role": "official",
+              "textHash": "0b093c39867b0f798d42cdd85672fed43ae81316c8cac2b2fa72cc5007df991e",
+              "readAt": "2026-11-27T10:39:11.822278+00:00",
+              "coverage": "excerpt"
+            }
+          ]
+        },
+        {
+          "itemId": "e21-readboy",
+          "title": "学习机旗舰店谁来运营，渠道费用该算到哪一笔？",
+          "facts": [
+            {
+              "claim": "公司把旗舰店委托专业团队运营产生的承包商成本列入销售及经销开支增加的原因。",
+              "sourceUrl": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042200480.pdf",
+              "locator": "管理层讨论与分析 · 销售及经销开支，印刷页31"
+            },
+            {
+              "claim": "贡献毛益用对应范围内的销售收入减变动成本。",
+              "sourceUrl": "https://www.shopify.com/blog/what-is-contribution-margin",
+              "locator": "FAQ · What is the formula for contribution margin?"
+            }
+          ],
+          "boundary": "所读为公司年报相关段落和会计概念说明。未见店铺合同、单台学习机费用、家庭购买量或本次活动的贡献利润。",
+          "sources": [
+            {
+              "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042200480.pdf",
+              "publisherGroup": "读书郎教育控股 · 港交所披露",
+              "name": "读书郎教育控股 · 港交所披露",
+              "publishedAt": "2026-04-22",
+              "role": "official",
+              "textHash": "18a7e5a40e0d203fef565b976eebe7eb69344dd85fc1e9f72fb5248676ac191a",
+              "readAt": "2026-11-21T10:46:29.832822+00:00",
+              "coverage": "excerpt"
+            },
+            {
+              "url": "https://www.shopify.com/blog/what-is-contribution-margin",
+              "publisherGroup": "Shopify · 贡献毛益说明",
+              "name": "Shopify · 贡献毛益说明",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "4decc99a2edd9fd9f160704dc1beb3e337250e3273974b667299fee906d43da5",
+              "readAt": "2026-11-21T10:45:34.414496+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "xreal-warranty",
+          "title": "XREAL 服务条款样本：销售渠道与售后受理信息相连",
+          "facts": [
+            {
+              "claim": "条款只覆盖规定渠道及所支持地区。",
+              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+              "locator": "Scope"
+            },
+            {
+              "claim": "申请信息包含订单和故障设备序列号。",
+              "sourceUrl": "https://us.shop.xreal.com/pages/warranty-policy",
+              "locator": "Making a claim"
+            }
+          ],
+          "boundary": "本轮读取 Scope 与 Making a claim 等业务流程段落；这是厂商自述的商业保修流程样本，不是对法定权利或条款效力的法律判断。当前适用地区、机型和购买时间仍须逐案核对。",
+          "sources": [
+            {
+              "url": "https://us.shop.xreal.com/pages/warranty-policy",
+              "name": "XREAL 美国商城保修政策",
+              "publishedAt": "2024-04-08",
+              "publisherGroup": "XREAL 美国商城保修政策",
+              "role": "official",
+              "textHash": "f6d9abd8a0da1c0e46c8883c61dc2dcc1047721091f3eaef3a7b3eb81d86b685",
+              "readAt": "2026-11-09T00:46:58.382936+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "m26-zero",
+          "title": "Zero 电动越野车召回：固件已经有修复方案，谁来装到车上？",
+          "facts": [
+            {
+              "claim": "补救措施要求合格技术人员安装固件。",
+              "sourceUrl": "https://www.cpsc.gov/Recalls/2027/Zero-Motorcycles-Recalls-Zero-Off-Road-Motorcycles-Due-to-Risk-of-Serious-Injury-or-Death-from-Crash-Hazard",
+              "locator": "Recall Details · Remedy"
+            }
+          ],
+          "boundary": "该路径适用于公告列明的两款车；公告未提供维修完工量或复验记录。",
+          "sources": [
+            {
+              "url": "https://www.cpsc.gov/Recalls/2027/Zero-Motorcycles-Recalls-Zero-Off-Road-Motorcycles-Due-to-Risk-of-Serious-Injury-or-Death-from-Crash-Hazard",
+              "publisherGroup": "美国消费品安全委员会",
+              "name": "美国消费品安全委员会",
+              "publishedAt": "2026-11-25",
+              "role": "official",
+              "textHash": "568643cbdcc21ac6eac7e2c8972877277036c44fe0c1bd1210d5d58445e6f187",
+              "readAt": "2026-11-26T00:41:08.952811+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e27-youweb",
+          "url": "https://www.sec.gov/Archives/edgar/data/1781753/000119312526155933/dao-20251231.htm",
+          "checkedAt": "2026-11-27T10:39:11.822278+00:00",
+          "state": "body",
+          "note": "本轮读取原文相关段落。读取年报附注 2(n)(ii) 对硬件交付、独立履约义务及单独售价方法的说明。"
+        },
+        {
+          "itemId": "e21-readboy",
+          "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042200480.pdf",
+          "checkedAt": "2026-11-27T10:39:41.136407+00:00",
+          "state": "body",
+          "note": "本轮读取正文。读书郎管理层说明京东、淘宝等旗舰店委托专业团队运营产生承包商成本。"
+        },
+        {
+          "itemId": "xreal-warranty",
+          "url": "https://us.shop.xreal.com/pages/warranty-policy",
+          "checkedAt": "2026-11-27T10:39:35.044816+00:00",
+          "state": "body",
+          "note": "本轮读取正文。保修条款要求相应购买凭证，能证明的业务事项与终端销量不同。"
+        },
+        {
+          "itemId": "m26-zero",
+          "url": "https://www.cpsc.gov/Recalls/2027/Zero-Motorcycles-Recalls-Zero-Off-Road-Motorcycles-Due-to-Risk-of-Serious-Injury-or-Death-from-Crash-Hazard",
+          "checkedAt": "2026-11-27T10:39:36.269902+00:00",
+          "state": "body",
+          "note": "本轮读取正文。复核授权渠道固件维修的补救安排，没有逐台完成数据。"
         }
       ]
     }

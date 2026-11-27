@@ -888,7 +888,7 @@
       "dimensions": {
         "product": "网易披露 AI 辅导笔 3 和词典笔 A7S Pro 两款产品，列入近期智能设备组合变化。",
         "content": "投资者材料确认产品品类，未拆分题库、词库或教研团队分工。",
-        "channel": "财报披露设备业务整体需求下降；缺各机型渠道销量、库存及折扣。",
+        "channel": "财报披露设备业务整体需求下降；缺各机型渠道销量、库存及折扣。 有道年报将词典笔列为示例。依据销售安排，控制权可能在交付经销商或终端时转移；核对终端销量仍需另外取得零售数据。",
         "delivery": "公司称设备毛利下滑主要受物料成本上涨影响，未披露料号和代工条款。",
         "organization": "研究问题：产品组合评审由谁提供需求预测、实际物料成本及分型号退货数据？"
       },
@@ -899,23 +899,33 @@
       "sources": [
         {
           "id": "m23-ydft",
-          "role": "official",
+          "url": "https://markets.ft.markitdigital.com/data/announce/detail?dockey=600-202611190400PR_NEWS_USPRX____CN02238-1",
           "title": "有道（公司财报）",
           "publishedAt": "2026-11-19",
-          "url": "https://markets.ft.markitdigital.com/data/announce/detail?dockey=600-202611190400PR_NEWS_USPRX____CN02238-1",
-          "readAt": "2026-11-23T00:43:07.295939+00:00",
+          "role": "official",
+          "readAt": "2026-11-27T10:39:39.341634+00:00",
           "coverage": "body",
           "textHash": "40c398a58ed502614787cea88f119b921c881933b039792df29593a768e9217f"
         },
         {
           "id": "m23-ydslides",
-          "role": "official",
+          "url": "https://ir.netease.com/static-files/4ce9997f-f8b2-4df7-a71e-a754261a5fb4",
           "title": "网易三季度投资者演示 · 有道业务页",
           "publishedAt": null,
-          "url": "https://ir.netease.com/static-files/4ce9997f-f8b2-4df7-a71e-a754261a5fb4",
-          "readAt": "2026-11-23T00:49:02.593197+00:00",
+          "role": "official",
+          "readAt": "2026-11-27T10:45:54.010249+00:00",
           "coverage": "excerpt",
-          "textHash": "c396a17e82bd2bad5fc7d27d50309524aa2e58134d8d753ee8c913a952f7e6df"
+          "textHash": "1d11d6ad016172b031b3e47f9e46913e3df1fe15b56e0dd8961fdf664224c1c6"
+        },
+        {
+          "id": "youdao-2025-20f-devices",
+          "url": "https://www.sec.gov/Archives/edgar/data/1781753/000119312526155933/dao-20251231.htm",
+          "title": "有道 2025 年报 · 附注 2(n)(ii)",
+          "publishedAt": "2026-04-15",
+          "role": "official",
+          "readAt": "2026-11-27T10:39:11.822278+00:00",
+          "coverage": "excerpt",
+          "textHash": "0b093c39867b0f798d42cdd85672fed43ae81316c8cac2b2fa72cc5007df991e"
         }
       ],
       "facts": [
@@ -928,10 +938,15 @@
           "sourceId": "m23-ydslides",
           "claim": "演示列出词典笔型号和近期 SKU 调整。",
           "locator": "有道业务页 · Smart devices 段"
+        },
+        {
+          "sourceId": "youdao-2025-20f-devices",
+          "locator": "附注 2(n)(ii)，Smart devices 首段",
+          "claim": "年报将词典笔列入可通过零售商或经销商销售的设备，控制权转移可能发生在终端或经销商签收。"
         }
       ],
-      "updatedAt": "2026-11-23T00:49:09.388830+00:00",
-      "reviewedAt": "2026-11-23T00:49:09.388830+00:00",
+      "updatedAt": "2026-11-27T10:46:43.753209+00:00",
+      "reviewedAt": "2026-11-27T10:46:43.753209+00:00",
       "lastReviewStatus": "reviewed"
     },
     {
@@ -3292,6 +3307,48 @@
             "recorder"
           ],
           "note": "复核该机型在离线录音、恢复联网同步以及生成 AI 输出时的操作条件。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-27T10:46:43.753209+00:00",
+      "summary": "有道词典笔渠道档案补充收入确认对象与时点，保留季度毛利和具体 SKU 的原始出处。",
+      "checks": [
+        {
+          "company": "网易有道",
+          "categoryIds": [
+            "pen"
+          ],
+          "url": "https://markets.ft.markitdigital.com/data/announce/detail?dockey=600-202611190400PR_NEWS_USPRX____CN02238-1",
+          "name": "有道（公司财报）",
+          "state": "body",
+          "checkedAt": "2026-11-27T10:39:39.341634+00:00",
+          "purpose": "practice",
+          "note": "核对智能设备毛利率的季度与同比口径。"
+        },
+        {
+          "company": "网易有道",
+          "categoryIds": [
+            "pen"
+          ],
+          "url": "https://ir.netease.com/static-files/4ce9997f-f8b2-4df7-a71e-a754261a5fb4",
+          "name": "网易三季度投资者演示 · 有道业务页",
+          "state": "excerpt",
+          "checkedAt": "2026-11-27T10:45:54.010249+00:00",
+          "purpose": "practice",
+          "note": "核对有道业务页列出的两款笔与产品组合说明。"
+        },
+        {
+          "company": "网易有道",
+          "categoryIds": [
+            "pen"
+          ],
+          "url": "https://www.sec.gov/Archives/edgar/data/1781753/000119312526155933/dao-20251231.htm",
+          "name": "有道 2025 年报 · 附注 2(n)(ii)",
+          "state": "excerpt",
+          "checkedAt": "2026-11-27T10:39:11.822278+00:00",
+          "purpose": "practice",
+          "note": "复核售给经销商或终端客户的确认时点，核对部分智能终端的单独履约义务。"
         }
       ]
     }
@@ -5766,6 +5823,117 @@
               "sourceId": "plaud-offline-support",
               "claim": "该型号官方文档确认设备可离线采集并保存音频。",
               "locator": "支持页首段"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "profileId": "youdao-pen",
+      "reviewedAt": "2026-11-27T10:46:43.753209+00:00",
+      "status": "reviewed",
+      "assessment": "交付给哪一级客户会影响渠道收入的解读，已复核年报及原有两个来源。",
+      "changes": {
+        "dimensions": {
+          "before": {
+            "product": "网易披露 AI 辅导笔 3 和词典笔 A7S Pro 两款产品，列入近期智能设备组合变化。",
+            "content": "投资者材料确认产品品类，未拆分题库、词库或教研团队分工。",
+            "channel": "财报披露设备业务整体需求下降；缺各机型渠道销量、库存及折扣。",
+            "delivery": "公司称设备毛利下滑主要受物料成本上涨影响，未披露料号和代工条款。",
+            "organization": "研究问题：产品组合评审由谁提供需求预测、实际物料成本及分型号退货数据？"
+          },
+          "after": {
+            "product": "网易披露 AI 辅导笔 3 和词典笔 A7S Pro 两款产品，列入近期智能设备组合变化。",
+            "content": "投资者材料确认产品品类，未拆分题库、词库或教研团队分工。",
+            "channel": "财报披露设备业务整体需求下降；缺各机型渠道销量、库存及折扣。 有道年报将词典笔列为示例。依据销售安排，控制权可能在交付经销商或终端时转移；核对终端销量仍需另外取得零售数据。",
+            "delivery": "公司称设备毛利下滑主要受物料成本上涨影响，未披露料号和代工条款。",
+            "organization": "研究问题：产品组合评审由谁提供需求预测、实际物料成本及分型号退货数据？"
+          }
+        },
+        "facts": {
+          "before": [
+            {
+              "sourceId": "m23-ydft",
+              "claim": "有道披露智能设备业务的毛利率与同比口径。",
+              "locator": "Gross Margin by business"
+            },
+            {
+              "sourceId": "m23-ydslides",
+              "claim": "演示列出词典笔型号和近期 SKU 调整。",
+              "locator": "有道业务页 · Smart devices 段"
+            }
+          ],
+          "after": [
+            {
+              "sourceId": "m23-ydft",
+              "claim": "有道披露智能设备业务的毛利率与同比口径。",
+              "locator": "Gross Margin by business"
+            },
+            {
+              "sourceId": "m23-ydslides",
+              "claim": "演示列出词典笔型号和近期 SKU 调整。",
+              "locator": "有道业务页 · Smart devices 段"
+            },
+            {
+              "sourceId": "youdao-2025-20f-devices",
+              "locator": "附注 2(n)(ii)，Smart devices 首段",
+              "claim": "年报将词典笔列入可通过零售商或经销商销售的设备，控制权转移可能发生在终端或经销商签收。"
+            }
+          ]
+        },
+        "sources": {
+          "before": [
+            {
+              "id": "m23-ydft",
+              "role": "official",
+              "title": "有道（公司财报）",
+              "publishedAt": "2026-11-19",
+              "url": "https://markets.ft.markitdigital.com/data/announce/detail?dockey=600-202611190400PR_NEWS_USPRX____CN02238-1",
+              "readAt": "2026-11-23T00:43:07.295939+00:00",
+              "coverage": "body",
+              "textHash": "40c398a58ed502614787cea88f119b921c881933b039792df29593a768e9217f"
+            },
+            {
+              "id": "m23-ydslides",
+              "role": "official",
+              "title": "网易三季度投资者演示 · 有道业务页",
+              "publishedAt": null,
+              "url": "https://ir.netease.com/static-files/4ce9997f-f8b2-4df7-a71e-a754261a5fb4",
+              "readAt": "2026-11-23T00:49:02.593197+00:00",
+              "coverage": "excerpt",
+              "textHash": "c396a17e82bd2bad5fc7d27d50309524aa2e58134d8d753ee8c913a952f7e6df"
+            }
+          ],
+          "after": [
+            {
+              "id": "m23-ydft",
+              "url": "https://markets.ft.markitdigital.com/data/announce/detail?dockey=600-202611190400PR_NEWS_USPRX____CN02238-1",
+              "title": "有道（公司财报）",
+              "publishedAt": "2026-11-19",
+              "role": "official",
+              "readAt": "2026-11-27T10:39:39.341634+00:00",
+              "coverage": "body",
+              "textHash": "40c398a58ed502614787cea88f119b921c881933b039792df29593a768e9217f"
+            },
+            {
+              "id": "m23-ydslides",
+              "url": "https://ir.netease.com/static-files/4ce9997f-f8b2-4df7-a71e-a754261a5fb4",
+              "title": "网易三季度投资者演示 · 有道业务页",
+              "publishedAt": null,
+              "role": "official",
+              "readAt": "2026-11-27T10:45:54.010249+00:00",
+              "coverage": "excerpt",
+              "textHash": "1d11d6ad016172b031b3e47f9e46913e3df1fe15b56e0dd8961fdf664224c1c6"
+            },
+            {
+              "id": "youdao-2025-20f-devices",
+              "url": "https://www.sec.gov/Archives/edgar/data/1781753/000119312526155933/dao-20251231.htm",
+              "title": "有道 2025 年报 · 附注 2(n)(ii)",
+              "publishedAt": "2026-04-15",
+              "role": "official",
+              "readAt": "2026-11-27T10:39:11.822278+00:00",
+              "coverage": "excerpt",
+              "textHash": "0b093c39867b0f798d42cdd85672fed43ae81316c8cac2b2fa72cc5007df991e"
             }
           ]
         }
