@@ -125,7 +125,7 @@
         }
       ],
       "updatedAt": "2026-11-26T10:50:29.664312+00:00",
-      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "作业帮"
@@ -182,7 +182,7 @@
         }
       ],
       "updatedAt": "2026-11-17T00:46:36.233260+00:00",
-      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "科大讯飞",
@@ -240,7 +240,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "猿辅导",
@@ -299,7 +299,7 @@
         }
       ],
       "updatedAt": "2026-11-19T00:51:40.404223+00:00",
-      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "小天才"
@@ -361,7 +361,7 @@
         }
       ],
       "updatedAt": "2026-11-15T00:44:23.933338+00:00",
-      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "华为",
@@ -426,7 +426,7 @@
         }
       ],
       "updatedAt": "2026-11-22T00:50:54.415164+00:00",
-      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "Amazon"
@@ -498,7 +498,7 @@
         }
       ],
       "updatedAt": "2026-11-25T00:48:03.720012+00:00",
-      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "Amazon"
@@ -555,7 +555,7 @@
         }
       ],
       "updatedAt": "2026-11-09T02:07:26.706398+00:00",
-      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "LeapFrog"
@@ -617,7 +617,7 @@
         }
       ],
       "updatedAt": "2026-11-21T00:46:30.147094+00:00",
-      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
       "lastReviewStatus": "reviewed",
       "aliases": [
         "科大讯飞",
@@ -760,7 +760,7 @@
         }
       ],
       "updatedAt": "2026-11-24T00:50:43.175847+00:00",
-      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
       "lastReviewStatus": "reviewed"
     },
     {
@@ -813,7 +813,7 @@
         }
       ],
       "updatedAt": "2026-11-20T00:43:29.502492+00:00",
-      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
       "lastReviewStatus": "reviewed"
     },
     {
@@ -834,10 +834,10 @@
         ]
       },
       "dimensions": {
-        "product": "智能关怀 App 设置上课禁用，排查涉及表端信号与 SIM 状态。",
+        "product": "智能关怀 App 设置上课禁用，排查涉及表端信号与 SIM 状态。 厂商列出上课禁用期间保留的管理员联系和 SOS 功能；具体来电规则依机型。",
         "content": "指南说明自定义时段与跳过法定节假日的设置。",
         "channel": "官网支持页提供操作与排障说明。",
-        "delivery": "建议等待 2 至 3 分钟检查表端，并排查网络，必要时换管理员尝试。",
+        "delivery": "建议等待 2 至 3 分钟检查表端，并排查网络，必要时换管理员尝试。 SOS 呼叫可因接听、挂断或循环结束而停止，客服需分别核对实际停止原因。",
         "organization": "研究问题：当家长设置与表端状态不同步时，应用、设备与客服分别需要哪项回执？"
       },
       "boundary": "该时长是排查建议，未披露离线指令缓存策略、服务时限或排障成功率。",
@@ -847,13 +847,33 @@
       "sources": [
         {
           "id": "hua-watch-guide",
-          "role": "official",
-          "title": "华为儿童手表上课禁用异常排查",
-          "publishedAt": null,
           "url": "https://consumer.huawei.com/cn/support/content/zh-cn00734120/",
-          "readAt": "2026-11-22T00:50:11.374488+00:00",
+          "title": "华为儿童手表上课禁用异常排查",
+          "role": "official",
+          "publishedAt": null,
+          "readAt": "2026-11-28T00:44:29.100017+00:00",
           "coverage": "body",
-          "textHash": "34a612ba6106caf6167f0bcacd7738ba5f14747374b73a98216e1ab685b42b38"
+          "textHash": "dadc0a3ed5f5917c8620c98f8138fb2c4f6c66e538648d2dd7dd852bd1ea4981"
+        },
+        {
+          "id": "m28-hwatch",
+          "role": "official",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn00737229/",
+          "title": "华为儿童手表设置上课禁用",
+          "publishedAt": null,
+          "readAt": "2026-11-28T00:45:12.042154+00:00",
+          "coverage": "body",
+          "textHash": "07714bd6542b85102a87ed462fdbbc39b87dc1e412feca2309a91e38548667de"
+        },
+        {
+          "id": "m28-sos",
+          "role": "official",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn15502387/",
+          "title": "华为儿童手表使用 SOS 功能",
+          "publishedAt": null,
+          "readAt": "2026-11-28T00:45:12.460479+00:00",
+          "coverage": "body",
+          "textHash": "e1a3d333dbf2ede8001ec1b59bcff7b538e55422ad0df55044cdd0809963709f"
         }
       ],
       "facts": [
@@ -861,10 +881,20 @@
           "sourceId": "hua-watch-guide",
           "claim": "指南规定设置后观察窗口，另列网络与管理员排查。",
           "locator": "开启或关闭上课禁用功能不生效"
+        },
+        {
+          "sourceId": "m28-hwatch",
+          "claim": "说明列出上课禁用中保留的查看时间、联系管理员及 SOS 等能力，并区分机型。",
+          "locator": "适用产品、设置及呼叫流程说明"
+        },
+        {
+          "sourceId": "m28-sos",
+          "claim": "适用机型按管理员顺序呼叫，接听、挂断或无人接听循环结束时停止。",
+          "locator": "适用产品、设置及呼叫流程说明"
         }
       ],
-      "updatedAt": "2026-11-22T00:50:54.415164+00:00",
-      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "updatedAt": "2026-11-28T00:50:59.795690+00:00",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
       "lastReviewStatus": "reviewed"
     },
     {
@@ -946,7 +976,7 @@
         }
       ],
       "updatedAt": "2026-11-27T10:46:43.753209+00:00",
-      "reviewedAt": "2026-11-27T10:46:43.753209+00:00",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
       "lastReviewStatus": "reviewed"
     },
     {
@@ -1002,7 +1032,7 @@
         }
       ],
       "updatedAt": "2026-11-26T00:44:39.690905+00:00",
-      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
       "lastReviewStatus": "reviewed"
     },
     {
@@ -1053,7 +1083,7 @@
         }
       ],
       "updatedAt": "2026-11-27T00:53:06.203863+00:00",
-      "reviewedAt": "2026-11-27T00:53:06.203863+00:00",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
       "lastReviewStatus": "reviewed"
     }
   ],
@@ -3349,6 +3379,372 @@
           "checkedAt": "2026-11-27T10:39:11.822278+00:00",
           "purpose": "practice",
           "note": "复核售给经销商或终端客户的确认时点，核对部分智能终端的单独履约义务。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-28T00:50:59.795690+00:00",
+      "summary": "复查学习机、词典笔、阅读器、录音设备与手表档案，补充华为课堂通信及紧急联系证据；未读入口保留失败。",
+      "checks": [
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "name": "2026届春招-供应链运营管培生",
+          "state": "body",
+          "checkedAt": "2026-11-28T00:44:36.194772+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "同一岗位的职责正文与上次一致。正文明确学习机售后及小猿设备业务；管培生职责可能含轮岗，不能视为固定组织架构"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "name": "2026届春招-硬件研发工程师",
+          "state": "body",
+          "checkedAt": "2026-11-28T00:44:36.128199+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "同一岗位的职责正文与上次一致。原文明确小猿产品及学习机、学练机业务，未划分具体型号"
+        },
+        {
+          "company": "作业帮",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/b6a78004-e648-48c8-96fa-6c30c3e6ef83",
+          "name": "客服专员（D111566）",
+          "state": "body",
+          "checkedAt": "2026-11-28T00:44:36.743018+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "recruitment",
+          "note": "同一岗位的职责正文与上次一致。明确学习机及学习笔售后工作；学习笔未明确为词典笔。"
+        },
+        {
+          "company": "作业帮",
+          "name": "作业帮智能 · 品牌介绍",
+          "url": "https://smart.zuoyebang.com/about",
+          "state": "body",
+          "checkedAt": "2026-11-28T00:44:27.491759+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "practice",
+          "note": "逐条复查已有事实在本次正文或指定段落中的依据。"
+        },
+        {
+          "company": "作业帮",
+          "name": "客服专员（D111566）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/b6a78004-e648-48c8-96fa-6c30c3e6ef83",
+          "state": "error",
+          "checkedAt": "2026-11-28T00:44:29.830689+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "practice",
+          "note": "本轮直接读取未取得正文。"
+        },
+        {
+          "company": "作业帮",
+          "name": "客服专员（D111566）",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/b6a78004-e648-48c8-96fa-6c30c3e6ef83",
+          "state": "body",
+          "checkedAt": "2026-11-28T00:44:36.743018+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "practice",
+          "note": "逐条复查已有事实在本次正文或指定段落中的依据。"
+        },
+        {
+          "company": "科大讯飞",
+          "name": "科大讯飞 · AI学习机",
+          "url": "https://edu.iflytek.com/solution/family/learning-pad",
+          "state": "body",
+          "checkedAt": "2026-11-28T00:44:27.950996+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "practice",
+          "note": "逐条复查已有事实在本次正文或指定段落中的依据。"
+        },
+        {
+          "company": "猿辅导（小猿）",
+          "name": "小猿智能设备 · App Store开发者说明",
+          "url": "https://apps.apple.com/cn/app/id6738277050",
+          "state": "body",
+          "checkedAt": "2026-11-28T00:44:30.782051+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "practice",
+          "note": "逐条复查已有事实在本次正文或指定段落中的依据。"
+        },
+        {
+          "company": "小天才",
+          "name": "小天才 · 常见问题",
+          "url": "https://www.okii.com/html/pc/service/service_question.html",
+          "state": "body",
+          "checkedAt": "2026-11-28T00:44:27.528220+00:00",
+          "categoryIds": [
+            "watch"
+          ],
+          "purpose": "practice",
+          "note": "逐条复查已有事实在本次正文或指定段落中的依据。"
+        },
+        {
+          "company": "华为",
+          "name": "华为 · 平板教育空间使用指南",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+          "state": "body",
+          "checkedAt": "2026-11-28T00:44:29.057650+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "practice",
+          "note": "逐条复查已有事实在本次正文或指定段落中的依据。"
+        },
+        {
+          "company": "Amazon",
+          "name": "Amazon · Kids Tablets介绍",
+          "url": "https://www.aboutamazon.com/news/devices/new-amazon-kids-tablets",
+          "state": "body",
+          "checkedAt": "2026-11-28T00:44:28.951535+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "practice",
+          "note": "逐条复查已有事实在本次正文或指定段落中的依据。"
+        },
+        {
+          "company": "Amazon",
+          "name": "Amazon · Kindle Kids常见问题",
+          "url": "https://www.aboutamazon.com/news/devices/amazon-kindle-kids-setup-questions-answered",
+          "state": "body",
+          "checkedAt": "2026-11-28T00:44:28.688520+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "purpose": "practice",
+          "note": "逐条复查已有事实在本次正文或指定段落中的依据。"
+        },
+        {
+          "company": "Amazon",
+          "name": "Amazon 美国设备帮助 · 安全更新承诺",
+          "url": "https://digprjsurvey.amazon.com/csad/help/node/GF3LDHSB5YM9BYF7?theme=light",
+          "state": "body",
+          "checkedAt": "2026-11-28T00:44:29.497959+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "purpose": "practice",
+          "note": "逐条复查已有事实在本次正文或指定段落中的依据。"
+        },
+        {
+          "company": "LeapFrog",
+          "name": "LeapFrog · Tablet family",
+          "url": "https://www.leapfrog.com/en-us/products/tablet-family?bmLocale=en_US",
+          "state": "body",
+          "checkedAt": "2026-11-28T00:44:29.823817+00:00",
+          "categoryIds": [
+            "tablet"
+          ],
+          "purpose": "practice",
+          "note": "逐条复查已有事实在本次正文或指定段落中的依据。"
+        },
+        {
+          "company": "科大讯飞",
+          "name": "科大讯飞 · AI翻译笔",
+          "url": "https://edu.iflytek.com/solution/family/transpen",
+          "state": "body",
+          "checkedAt": "2026-11-28T00:44:28.016463+00:00",
+          "categoryIds": [
+            "pen"
+          ],
+          "purpose": "practice",
+          "note": "逐条复查已有事实在本次正文或指定段落中的依据。"
+        },
+        {
+          "company": "钉钉",
+          "name": "钉钉 · AI应用服务市场",
+          "url": "https://aihub.dingtalk.com/",
+          "state": "error",
+          "checkedAt": "2026-11-28T00:44:27.574487+00:00",
+          "categoryIds": [
+            "recorder"
+          ],
+          "purpose": "practice",
+          "note": "本轮直接读取未取得正文。"
+        },
+        {
+          "company": "文石 BOOX",
+          "name": "文石帮助 · 阅读数据同步和备份",
+          "url": "https://help.boox.com/fa5fa/f733d/56960",
+          "state": "body",
+          "checkedAt": "2026-11-28T00:44:29.083859+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "purpose": "practice",
+          "note": "逐条复查已有事实在本次正文或指定段落中的依据。"
+        },
+        {
+          "company": "文石 BOOX",
+          "name": "文石帮助 · 手写笔记同步",
+          "url": "https://help.boox.com/653d4/f3f2e/affe8",
+          "state": "body",
+          "checkedAt": "2026-11-28T00:44:29.116098+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "purpose": "practice",
+          "note": "逐条复查已有事实在本次正文或指定段落中的依据。"
+        },
+        {
+          "company": "掌阅",
+          "name": "IT之家整理掌阅 SmartOS 2.4 更新说明",
+          "url": "https://m.ithome.com/html/811360.htm",
+          "state": "body",
+          "checkedAt": "2026-11-28T00:44:27.654473+00:00",
+          "categoryIds": [
+            "reader"
+          ],
+          "purpose": "practice",
+          "note": "逐条复查已有事实在本次正文或指定段落中的依据。"
+        },
+        {
+          "company": "华为",
+          "name": "华为儿童手表上课禁用异常排查",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn00734120/",
+          "state": "body",
+          "checkedAt": "2026-11-28T00:44:29.100017+00:00",
+          "categoryIds": [
+            "watch"
+          ],
+          "purpose": "practice",
+          "note": "逐条复查已有事实在本次正文或指定段落中的依据。"
+        },
+        {
+          "company": "网易有道",
+          "name": "有道（公司财报）",
+          "url": "https://markets.ft.markitdigital.com/data/announce/detail?dockey=600-202611190400PR_NEWS_USPRX____CN02238-1",
+          "state": "body",
+          "checkedAt": "2026-11-28T00:44:31.166768+00:00",
+          "categoryIds": [
+            "pen"
+          ],
+          "purpose": "practice",
+          "note": "逐条复查已有事实在本次正文或指定段落中的依据。"
+        },
+        {
+          "company": "网易有道",
+          "name": "网易三季度投资者演示 · 有道业务页",
+          "url": "https://ir.netease.com/static-files/4ce9997f-f8b2-4df7-a71e-a754261a5fb4",
+          "state": "error",
+          "checkedAt": "2026-11-28T00:44:29.185154+00:00",
+          "categoryIds": [
+            "pen"
+          ],
+          "purpose": "practice",
+          "note": "本轮直接读取未取得正文。"
+        },
+        {
+          "company": "网易有道",
+          "name": "网易三季度投资者演示 · 有道业务页",
+          "url": "https://ir.netease.com/static-files/4ce9997f-f8b2-4df7-a71e-a754261a5fb4",
+          "state": "excerpt",
+          "checkedAt": "2026-11-28T00:49:14.613625+00:00",
+          "categoryIds": [
+            "pen"
+          ],
+          "purpose": "practice",
+          "note": "逐条复查已有事实在本次正文或指定段落中的依据。"
+        },
+        {
+          "company": "网易有道",
+          "name": "有道 2025 年报 · 附注 2(n)(ii)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1781753/000119312526155933/dao-20251231.htm",
+          "state": "error",
+          "checkedAt": "2026-11-28T00:44:27.901190+00:00",
+          "categoryIds": [
+            "pen"
+          ],
+          "purpose": "practice",
+          "note": "本轮直接读取未取得正文。"
+        },
+        {
+          "company": "网易有道",
+          "name": "有道 2025 年报 · 附注 2(n)(ii)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1781753/000119312526155933/dao-20251231.htm",
+          "state": "excerpt",
+          "checkedAt": "2026-11-28T00:49:14.612823+00:00",
+          "categoryIds": [
+            "pen"
+          ],
+          "purpose": "practice",
+          "note": "逐条复查已有事实在本次正文或指定段落中的依据。"
+        },
+        {
+          "company": "华为",
+          "name": "华为儿童手表 5 活力版 · 产品页与脚注",
+          "url": "https://consumer.huawei.com/cn/wearables/kids-watch-5-lite/",
+          "state": "body",
+          "checkedAt": "2026-11-28T00:44:29.435090+00:00",
+          "categoryIds": [
+            "watch"
+          ],
+          "purpose": "practice",
+          "note": "逐条复查已有事实在本次正文或指定段落中的依据。"
+        },
+        {
+          "company": "Plaud",
+          "name": "Does Plaud NotePin S work offline?",
+          "url": "https://support.plaud.ai/hc/en-us/articles/53771056805785-Does-Plaud-NotePin-S-work-offline",
+          "state": "error",
+          "checkedAt": "2026-11-28T00:44:28.305659+00:00",
+          "categoryIds": [
+            "recorder"
+          ],
+          "purpose": "practice",
+          "note": "本轮直接读取未取得正文。"
+        },
+        {
+          "company": "Plaud",
+          "name": "Does Plaud NotePin S work offline?",
+          "url": "https://support.plaud.ai/hc/en-us/articles/53771056805785-Does-Plaud-NotePin-S-work-offline",
+          "state": "excerpt",
+          "checkedAt": "2026-11-28T00:49:14.600446+00:00",
+          "categoryIds": [
+            "recorder"
+          ],
+          "purpose": "practice",
+          "note": "逐条复查已有事实在本次正文或指定段落中的依据。"
+        },
+        {
+          "company": "华为",
+          "name": "华为儿童手表设置上课禁用",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn00737229/",
+          "state": "body",
+          "checkedAt": "2026-11-28T00:45:12.042154+00:00",
+          "categoryIds": [
+            "watch"
+          ],
+          "purpose": "practice",
+          "note": "说明列出上课禁用中保留的查看时间、联系管理员及 SOS 等能力，并区分机型。"
+        },
+        {
+          "company": "华为",
+          "name": "华为儿童手表使用 SOS 功能",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn15502387/",
+          "state": "body",
+          "checkedAt": "2026-11-28T00:45:12.460479+00:00",
+          "categoryIds": [
+            "watch"
+          ],
+          "purpose": "practice",
+          "note": "适用机型按管理员顺序呼叫，接听、挂断或无人接听循环结束时停止。"
         }
       ]
     }
@@ -5934,6 +6330,200 @@
               "readAt": "2026-11-27T10:39:11.822278+00:00",
               "coverage": "excerpt",
               "textHash": "0b093c39867b0f798d42cdd85672fed43ae81316c8cac2b2fa72cc5007df991e"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "profileId": "zuoyebang-tablet",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
+      "status": "reviewed",
+      "assessment": "所查原文仍支持档案既有事实，继续保留原有适用条件。",
+      "changes": {}
+    },
+    {
+      "profileId": "iflytek-tablet",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
+      "status": "reviewed",
+      "assessment": "所查原文仍支持档案既有事实，继续保留原有适用条件。",
+      "changes": {}
+    },
+    {
+      "profileId": "yuan-tablet",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
+      "status": "reviewed",
+      "assessment": "所查原文仍支持档案既有事实，继续保留原有适用条件。",
+      "changes": {}
+    },
+    {
+      "profileId": "okii-watch",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
+      "status": "reviewed",
+      "assessment": "所查原文仍支持档案既有事实，继续保留原有适用条件。",
+      "changes": {}
+    },
+    {
+      "profileId": "huawei-tablet",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
+      "status": "reviewed",
+      "assessment": "所查原文仍支持档案既有事实，继续保留原有适用条件。",
+      "changes": {}
+    },
+    {
+      "profileId": "amazon-tablet",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
+      "status": "reviewed",
+      "assessment": "所查原文仍支持档案既有事实，继续保留原有适用条件。",
+      "changes": {}
+    },
+    {
+      "profileId": "kindle-reader",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
+      "status": "reviewed",
+      "assessment": "所查原文仍支持档案既有事实，继续保留原有适用条件。",
+      "changes": {}
+    },
+    {
+      "profileId": "leapfrog-tablet",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
+      "status": "reviewed",
+      "assessment": "所查原文仍支持档案既有事实，继续保留原有适用条件。",
+      "changes": {}
+    },
+    {
+      "profileId": "iflytek-pen",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
+      "status": "reviewed",
+      "assessment": "所查原文仍支持档案既有事实，继续保留原有适用条件。",
+      "changes": {}
+    },
+    {
+      "profileId": "boox-reading-workflow",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
+      "status": "reviewed",
+      "assessment": "所查原文仍支持档案既有事实，继续保留原有适用条件。",
+      "changes": {}
+    },
+    {
+      "profileId": "ireader-smartos",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
+      "status": "reviewed",
+      "assessment": "所查原文仍支持档案既有事实，继续保留原有适用条件。",
+      "changes": {}
+    },
+    {
+      "profileId": "youdao-pen",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
+      "status": "reviewed",
+      "assessment": "所查原文仍支持档案既有事实，继续保留原有适用条件。",
+      "changes": {}
+    },
+    {
+      "profileId": "huawei-kids-5-lite",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
+      "status": "reviewed",
+      "assessment": "所查原文仍支持档案既有事实，继续保留原有适用条件。",
+      "changes": {}
+    },
+    {
+      "profileId": "plaud-notepin-s",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
+      "status": "reviewed",
+      "assessment": "所查原文仍支持档案既有事实，继续保留原有适用条件。",
+      "changes": {}
+    },
+    {
+      "profileId": "huawei-watch-classmode",
+      "reviewedAt": "2026-11-28T00:50:59.795690+00:00",
+      "status": "reviewed",
+      "assessment": "原有排障记录外，补充课堂可用的联系能力，以及 SOS 设备呼叫和接听状态之间的边界。",
+      "changes": {
+        "dimensions": {
+          "before": {
+            "product": "智能关怀 App 设置上课禁用，排查涉及表端信号与 SIM 状态。",
+            "content": "指南说明自定义时段与跳过法定节假日的设置。",
+            "channel": "官网支持页提供操作与排障说明。",
+            "delivery": "建议等待 2 至 3 分钟检查表端，并排查网络，必要时换管理员尝试。",
+            "organization": "研究问题：当家长设置与表端状态不同步时，应用、设备与客服分别需要哪项回执？"
+          },
+          "after": {
+            "product": "智能关怀 App 设置上课禁用，排查涉及表端信号与 SIM 状态。 厂商列出上课禁用期间保留的管理员联系和 SOS 功能；具体来电规则依机型。",
+            "content": "指南说明自定义时段与跳过法定节假日的设置。",
+            "channel": "官网支持页提供操作与排障说明。",
+            "delivery": "建议等待 2 至 3 分钟检查表端，并排查网络，必要时换管理员尝试。 SOS 呼叫可因接听、挂断或循环结束而停止，客服需分别核对实际停止原因。",
+            "organization": "研究问题：当家长设置与表端状态不同步时，应用、设备与客服分别需要哪项回执？"
+          }
+        },
+        "sources": {
+          "before": [
+            {
+              "id": "hua-watch-guide",
+              "role": "official",
+              "title": "华为儿童手表上课禁用异常排查",
+              "publishedAt": null,
+              "url": "https://consumer.huawei.com/cn/support/content/zh-cn00734120/",
+              "readAt": "2026-11-22T00:50:11.374488+00:00",
+              "coverage": "body",
+              "textHash": "34a612ba6106caf6167f0bcacd7738ba5f14747374b73a98216e1ab685b42b38"
+            }
+          ],
+          "after": [
+            {
+              "id": "hua-watch-guide",
+              "url": "https://consumer.huawei.com/cn/support/content/zh-cn00734120/",
+              "title": "华为儿童手表上课禁用异常排查",
+              "role": "official",
+              "publishedAt": null,
+              "readAt": "2026-11-28T00:44:29.100017+00:00",
+              "coverage": "body",
+              "textHash": "dadc0a3ed5f5917c8620c98f8138fb2c4f6c66e538648d2dd7dd852bd1ea4981"
+            },
+            {
+              "id": "m28-hwatch",
+              "role": "official",
+              "url": "https://consumer.huawei.com/cn/support/content/zh-cn00737229/",
+              "title": "华为儿童手表设置上课禁用",
+              "publishedAt": null,
+              "readAt": "2026-11-28T00:45:12.042154+00:00",
+              "coverage": "body",
+              "textHash": "07714bd6542b85102a87ed462fdbbc39b87dc1e412feca2309a91e38548667de"
+            },
+            {
+              "id": "m28-sos",
+              "role": "official",
+              "url": "https://consumer.huawei.com/cn/support/content/zh-cn15502387/",
+              "title": "华为儿童手表使用 SOS 功能",
+              "publishedAt": null,
+              "readAt": "2026-11-28T00:45:12.460479+00:00",
+              "coverage": "body",
+              "textHash": "e1a3d333dbf2ede8001ec1b59bcff7b538e55422ad0df55044cdd0809963709f"
+            }
+          ]
+        },
+        "facts": {
+          "before": [
+            {
+              "sourceId": "hua-watch-guide",
+              "claim": "指南规定设置后观察窗口，另列网络与管理员排查。",
+              "locator": "开启或关闭上课禁用功能不生效"
+            }
+          ],
+          "after": [
+            {
+              "sourceId": "hua-watch-guide",
+              "claim": "指南规定设置后观察窗口，另列网络与管理员排查。",
+              "locator": "开启或关闭上课禁用功能不生效"
+            },
+            {
+              "sourceId": "m28-hwatch",
+              "claim": "说明列出上课禁用中保留的查看时间、联系管理员及 SOS 等能力，并区分机型。",
+              "locator": "适用产品、设置及呼叫流程说明"
+            },
+            {
+              "sourceId": "m28-sos",
+              "claim": "适用机型按管理员顺序呼叫，接听、挂断或无人接听循环结束时停止。",
+              "locator": "适用产品、设置及呼叫流程说明"
             }
           ]
         }

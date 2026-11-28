@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-27T00:53:06.109744+00:00",
+  "checkedAt": "2026-11-28T00:50:59.694577+00:00",
   "jobs": [
     {
       "company": "DJI 大疆",
@@ -758,8 +758,8 @@
       "scopeNote": "穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队",
       "id": "job-dee6ed39b271d521",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-27T00:53:06.109744+00:00",
-      "sourceHash": "dbf673ac80ec9b0bd00626b9b74e2a2609270ef9632a64ab7736541d0f66db6a",
+      "lastSeen": "2026-11-28T00:50:59.694577+00:00",
+      "sourceHash": "1dbe84326358a8274891fdf50492e5bea565234f2242ff6d4a3bc11e9ccaca3f",
       "change": "持续可见",
       "versions": [
         {
@@ -824,8 +824,8 @@
       ],
       "id": "job-f3f120078f21d7a5",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-27T00:53:06.109744+00:00",
-      "sourceHash": "88024b2811e537b602951fc417cdcfa119604aeaf8bc4b4d37cc6878ac5eb2e3",
+      "lastSeen": "2026-11-28T00:50:59.694577+00:00",
+      "sourceHash": "f9959a78d1df0bba727f8cfdede13aaaae03cd3e2cacd044ccd7d6ef03200704",
       "change": "来源明确关闭",
       "versions": [
         {
@@ -917,8 +917,8 @@
       "scopeNote": "教辅图书经销商渠道；不能作为学习机零售组织证据",
       "id": "job-a74c7e3ad3b31f9d",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-27T00:53:06.109744+00:00",
-      "sourceHash": "88024b2811e537b602951fc417cdcfa119604aeaf8bc4b4d37cc6878ac5eb2e3",
+      "lastSeen": "2026-11-28T00:50:59.694577+00:00",
+      "sourceHash": "f9959a78d1df0bba727f8cfdede13aaaae03cd3e2cacd044ccd7d6ef03200704",
       "change": "来源明确关闭",
       "versions": [
         {
@@ -1095,7 +1095,7 @@
       "scopeNote": "集团统一招聘的OCR能力，未指定学习机或词典笔项目",
       "id": "job-6ad13572c435cde0",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-27T00:53:06.109744+00:00",
+      "lastSeen": "2026-11-28T00:50:59.694577+00:00",
       "sourceHash": "46428c6fef15a49e07d70af7d8d0f94c1cd36347c94ff1a8705d6e3c8ba28011",
       "change": "持续可见",
       "versions": [
@@ -1221,7 +1221,7 @@
       "scopeNote": "消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机",
       "id": "job-64eaead4b243a34c",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-27T00:53:06.109744+00:00",
+      "lastSeen": "2026-11-28T00:50:59.694577+00:00",
       "sourceHash": "d367fee8f52072da2786051fc233e03f2d8bd9886ef73c5619bfbf8fe35f8c33",
       "change": "持续可见",
       "versions": [
@@ -1284,7 +1284,7 @@
       "scopeNote": "消费者业务渠道，未指明学习机产品线",
       "id": "job-c1045357d5154cb3",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-27T00:53:06.109744+00:00",
+      "lastSeen": "2026-11-28T00:50:59.694577+00:00",
       "sourceHash": "a8177cd42a5383676c96832bf3bd112d12f7751cd46385c0dd25f331c54941a8",
       "change": "持续可见",
       "versions": [
@@ -1347,7 +1347,7 @@
       "scopeNote": "小学AIGC教育产品，正文未限定设备或学习机团队",
       "id": "job-03f79073b0d9a735",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-27T00:53:06.109744+00:00",
+      "lastSeen": "2026-11-28T00:50:59.694577+00:00",
       "sourceHash": "75ac301ab76fbf2cd5c655310538b6d445fe538652807468febf4adbb940b559",
       "change": "持续可见",
       "versions": [
@@ -1411,7 +1411,7 @@
       "scopeNote": "基础研发部教育OCR能力，未说明专属学习机",
       "id": "job-36588c371ea71881",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-27T00:53:06.109744+00:00",
+      "lastSeen": "2026-11-28T00:50:59.694577+00:00",
       "sourceHash": "86c0ef2be81ebb0dca088e7541417ff8ae75341b7a24a4d33823a3be06a78e11",
       "change": "持续可见",
       "versions": [
@@ -1478,7 +1478,7 @@
       ],
       "id": "job-6c6331e12e6b4c66",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-27T00:53:06.109744+00:00",
+      "lastSeen": "2026-11-28T00:50:59.694577+00:00",
       "sourceHash": "2c8e92aeec8845f458bdc658e6f76ca865dda8ad852ef8c28ee8de426eea753f",
       "change": "持续可见",
       "versions": [
@@ -1548,7 +1548,7 @@
       ],
       "id": "job-547c6c04c9807a51",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-27T00:53:06.109744+00:00",
+      "lastSeen": "2026-11-28T00:50:59.694577+00:00",
       "sourceHash": "982ecc6cff1cfeb8d1a745669098f97d72ce74b99df011b75c55a1b7aeae3821",
       "change": "持续可见",
       "versions": [
@@ -1613,8 +1613,8 @@
       "scopeNote": "海豚AI一对一教学服务，未提学习硬件销售",
       "id": "job-1aaf56ee506f9b32",
       "firstSeen": "2026-11-09T02:30:42.120805+00:00",
-      "lastSeen": "2026-11-27T00:53:06.109744+00:00",
-      "sourceHash": "8aefda4323896674aa510d202168aad57e7cba4cd5e58eb1688b62e1ff678656",
+      "lastSeen": "2026-11-28T00:50:59.694577+00:00",
+      "sourceHash": "e4afdd1a2845d2f8b454864ea955e338260ddf92b3da1b95d7ac450bf9efe2b1",
       "change": "持续可见",
       "versions": [
         {
@@ -1677,8 +1677,8 @@
       "scopeNote": "题库教研审核与业务反馈，未披露硬件品类；正文岗位名为小数教研，要求却写初高中教材，学段边界待确认。",
       "id": "job-412d1d016a91f620",
       "firstSeen": "2026-11-12T00:50:37.226067+00:00",
-      "lastSeen": "2026-11-27T00:53:06.109744+00:00",
-      "sourceHash": "ec2884af45528d025277786b08276ada17f73748c8d927b08be5593df2770e23",
+      "lastSeen": "2026-11-28T00:50:59.694577+00:00",
+      "sourceHash": "4e1e1fc066dea3b89a18a9d0400ddc9b62a0009392413a2d16c156a0e3cfe60e",
       "change": "持续可见",
       "versions": [
         {
@@ -1936,9 +1936,9 @@
       "scopeNote": "职责覆盖分校教学、招生、续报和教研；未披露学习设备内容责任。",
       "id": "job-f3cc7217d46c8fd9",
       "firstSeen": "2026-11-26T00:44:39.598140+00:00",
-      "lastSeen": "2026-11-26T00:44:39.598140+00:00",
-      "sourceHash": "bd1f191b7611f42f5af7e7d6a9252532b64bdd6ce9fe8ff67802941257b203fc",
-      "change": "首次收录基线",
+      "lastSeen": "2026-11-28T00:50:59.694577+00:00",
+      "sourceHash": "bb9ce8e45a5c88cc2d70eb00009fcd0173ae02eb245b87c50d1da325d9cddf91",
+      "change": "持续可见",
       "versions": [
         {
           "observedAt": "2026-11-26T00:44:39.598140+00:00",
@@ -2002,8 +2002,8 @@
       ],
       "id": "job-f3c42a5a14f88b6b",
       "firstSeen": "2026-11-26T10:50:29.565981+00:00",
-      "lastSeen": "2026-11-27T00:53:06.109744+00:00",
-      "sourceHash": "8f8721beb255790e4290dc1a42c5eb8cad25f13c8b91275f8e290596e0914437",
+      "lastSeen": "2026-11-28T00:50:59.694577+00:00",
+      "sourceHash": "d0b8d4860b8593ec1f2bccb4852898056af601f9e0819b6fd79d7e44aab5d4ef",
       "change": "持续可见",
       "versions": [
         {
@@ -2032,6 +2032,71 @@
           "educationCategories": [
             "tablet"
           ]
+        }
+      ]
+    },
+    {
+      "company": "作业帮",
+      "postingId": "ef6d0160-1b60-4a83-9543-ee88d2a71fe2",
+      "title": "课程教学教研（D111528）",
+      "family": "教研",
+      "location": "其他（页面未列明城市）",
+      "stages": [
+        "需求与规划",
+        "服务与生命周期",
+        "经营与组织"
+      ],
+      "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/ef6d0160-1b60-4a83-9543-ee88d2a71fe2",
+      "postedAt": "2026-11-27",
+      "access": "正文可见",
+      "responsibilities": [
+        "参与集体备课和模拟课堂，制定教学计划并完成班课讲授",
+        "与辅导老师配合完成系统课程，根据学员反馈调整内容和教学方法"
+      ],
+      "interfaces": [
+        "正文明确授课教师与辅导老师共同完成系统课程；没有说明与设备研发或题库审核团队的直接交接。"
+      ],
+      "requirements": [
+        "页面列 27 届本科及以上学历，要求班课教学经验、学科教学及团队协作能力。"
+      ],
+      "decisionQuestion": "团队需要能独立交付一门课的人，还是能审核题库并向业务反馈内容错误的人？各自如何验收？",
+      "boundary": "该职位面向班课交付，未披露学习机或词典笔内容职责；不能据此推断硬件教研编制。",
+      "locator": "职责描述 1–5 项、任职要求",
+      "coverage": "body",
+      "educationResearch": true,
+      "businessScope": "教育业务参考",
+      "scopeNote": "班课讲授与学员反馈迭代，正文未标学习硬件产品。",
+      "id": "job-9fc5a68625390241",
+      "firstSeen": "2026-11-28T00:50:59.694577+00:00",
+      "lastSeen": "2026-11-28T00:50:59.694577+00:00",
+      "sourceHash": "1851cfe50c237b23b4cbbe1b11b3a4a0cd352b7be5e9660a8b4c8f758ab3d3d4",
+      "change": "首次收录基线",
+      "versions": [
+        {
+          "observedAt": "2026-11-28T00:50:59.694577+00:00",
+          "sourceHash": "1851cfe50c237b23b4cbbe1b11b3a4a0cd352b7be5e9660a8b4c8f758ab3d3d4",
+          "access": "正文可见",
+          "title": "课程教学教研（D111528）",
+          "family": "教研",
+          "location": "其他（页面未列明城市）",
+          "responsibilities": [
+            "参与集体备课和模拟课堂，制定教学计划并完成班课讲授",
+            "与辅导老师配合完成系统课程，根据学员反馈调整内容和教学方法"
+          ],
+          "interfaces": [
+            "正文明确授课教师与辅导老师共同完成系统课程；没有说明与设备研发或题库审核团队的直接交接。"
+          ],
+          "requirements": [
+            "页面列 27 届本科及以上学历，要求班课教学经验、学科教学及团队协作能力。"
+          ],
+          "stages": [
+            "需求与规划",
+            "服务与生命周期",
+            "经营与组织"
+          ],
+          "businessScope": "教育业务参考",
+          "scopeNote": "班课讲授与学员反馈迭代，正文未标学习硬件产品。",
+          "educationCategories": null
         }
       ]
     }
@@ -2345,6 +2410,14 @@
     {
       "jobId": "job-f3c42a5a14f88b6b",
       "observedAt": "2026-11-26T10:50:29.565981+00:00",
+      "kind": "首次收录基线",
+      "fields": [],
+      "before": {},
+      "after": {}
+    },
+    {
+      "jobId": "job-9fc5a68625390241",
+      "observedAt": "2026-11-28T00:50:59.694577+00:00",
       "kind": "首次收录基线",
       "fields": [],
       "before": {},
@@ -4403,6 +4476,162 @@
         }
       ],
       "checkedAt": "2026-11-27T00:53:06.109744+00:00"
+    },
+    {
+      "company": "猿辅导（小猿）",
+      "state": "partial",
+      "complete": false,
+      "note": "已逐条对照本次查阅的岗位链接，其他职位与编制待核。",
+      "familyChecks": [
+        {
+          "family": "教研",
+          "state": "body",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/70dc09b3-4eef-444b-8b17-f31ad6614dcf",
+          "note": "同一岗位的职责正文与上次一致。小学AIGC教育产品，正文未限定设备或学习机团队",
+          "jobIds": [
+            "job-03f79073b0d9a735"
+          ]
+        },
+        {
+          "family": "渠道",
+          "state": "body",
+          "url": "https://app.mokahr.com/social-recruitment/fenbi/45505#/job/e0ccd64d-0f72-49d3-a787-e87b44bac2d1",
+          "note": "同一岗位的职责正文与上次一致。海豚AI一对一教学服务，未提学习硬件销售",
+          "jobIds": [
+            "job-1aaf56ee506f9b32"
+          ]
+        },
+        {
+          "family": "算法",
+          "state": "body",
+          "url": "https://app.mokahr.com/social-recruitment/fenbi/45505#/job/5ecdce43-9ab2-48bb-ade9-ff021311daef",
+          "note": "同一岗位的职责正文与上次一致。基础研发部教育OCR能力，未说明专属学习机",
+          "jobIds": [
+            "job-36588c371ea71881"
+          ]
+        },
+        {
+          "family": "供应链",
+          "state": "body",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/5f91bdbb-5b25-46ea-8b67-ae9ffc1b2212",
+          "note": "同一岗位的职责正文与上次一致。正文明确学习机售后及小猿设备业务；管培生职责可能含轮岗，不能视为固定组织架构",
+          "jobIds": [
+            "job-547c6c04c9807a51"
+          ]
+        },
+        {
+          "family": "硬件",
+          "state": "body",
+          "url": "https://hr.yuanfudao.com/campus-recruitment/fenbi/47742/?from=kousuan#/job/2cc39ade-54ea-48f5-b68d-7c15e4046578",
+          "note": "同一岗位的职责正文与上次一致。原文明确小猿产品及学习机、学练机业务，未划分具体型号",
+          "jobIds": [
+            "job-6c6331e12e6b4c66"
+          ]
+        }
+      ],
+      "checkedAt": "2026-11-28T00:50:59.694577+00:00"
+    },
+    {
+      "company": "作业帮",
+      "state": "partial",
+      "complete": false,
+      "note": "已逐条对照本次查阅的岗位链接，其他职位与编制待核。",
+      "familyChecks": [
+        {
+          "family": "教研",
+          "state": "body",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/0223c4d9-1a3a-4d44-b3da-ce58723e1311",
+          "note": "同一岗位的职责正文与上次一致。题库教研审核与业务反馈，未披露硬件品类；正文岗位名为小数教研，要求却写初高中教材，学段边界待确认。",
+          "jobIds": [
+            "job-412d1d016a91f620"
+          ]
+        },
+        {
+          "family": "渠道",
+          "state": "scope_gap",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/5c016df5-2a57-4758-b3e3-4a58eb276ffe",
+          "note": "该岗位链接明确显示停止招聘，原因未知。",
+          "jobIds": []
+        },
+        {
+          "family": "算法",
+          "state": "body",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/e6056b1d-580b-442d-a27f-9ab9f12cd4b1",
+          "note": "同一岗位的职责正文与上次一致。穿戴健康算法，包含女性生理场景；不能认定为儿童手表或学习机算法团队",
+          "jobIds": [
+            "job-dee6ed39b271d521"
+          ]
+        },
+        {
+          "family": "教研",
+          "state": "body",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/ded18605-5a4a-4a18-be4d-1c80e9868175",
+          "note": "同一岗位的职责正文与上次一致。职责覆盖分校教学、招生、续报和教研；未披露学习设备内容责任。",
+          "jobIds": [
+            "job-f3cc7217d46c8fd9"
+          ]
+        },
+        {
+          "family": "硬件",
+          "state": "scope_gap",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/bce3303d-d5ee-41f0-b76f-30e4a45d7d43",
+          "note": "该岗位链接明确显示停止招聘，原因未知。",
+          "jobIds": []
+        },
+        {
+          "family": "教研",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/job/ef6d0160-1b60-4a83-9543-ee88d2a71fe2",
+          "state": "body",
+          "jobIds": [
+            "job-9fc5a68625390241"
+          ],
+          "note": "班课讲授与学员反馈迭代，正文未标学习硬件产品。"
+        },
+        {
+          "family": "供应链",
+          "url": "https://app.mokahr.com/social-recruitment/zuoyebang/41328#/jobs?keyword=%E9%87%87%E8%B4%AD",
+          "state": "index",
+          "jobIds": [],
+          "note": "本次该关键词列表未显示匹配，不能据此判断岗位需求。"
+        }
+      ],
+      "checkedAt": "2026-11-28T00:50:59.694577+00:00"
+    },
+    {
+      "company": "科大讯飞",
+      "state": "partial",
+      "complete": false,
+      "note": "已逐条对照本次查阅的岗位链接，其他职位与编制待核。",
+      "familyChecks": [
+        {
+          "family": "供应链",
+          "state": "body",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=51602eb0-837d-46d5-bda4-81629a65f559",
+          "note": "同一岗位的职责正文与上次一致。消费电子物料供应商岗位，平板/手机经验为优先条件；不证明只服务学习机",
+          "jobIds": [
+            "job-64eaead4b243a34c"
+          ]
+        },
+        {
+          "family": "算法",
+          "state": "body",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=dc4e67cc-59ed-4a75-8b7a-e0d6ae6faaa9",
+          "note": "同一岗位的职责正文与上次一致。集团统一招聘的OCR能力，未指定学习机或词典笔项目",
+          "jobIds": [
+            "job-6ad13572c435cde0"
+          ]
+        },
+        {
+          "family": "渠道",
+          "state": "body",
+          "url": "https://iflytek.zhiye.com/social/detail?jobAdId=179aac28-bb83-4ed6-938e-25d57a57899b",
+          "note": "同一岗位的职责正文与上次一致。消费者业务渠道，未指明学习机产品线",
+          "jobIds": [
+            "job-c1045357d5154cb3"
+          ]
+        }
+      ],
+      "checkedAt": "2026-11-28T00:50:59.694577+00:00"
     }
   ],
   "insights": [
@@ -4637,6 +4866,22 @@
         "job-f3c42a5a14f88b6b"
       ],
       "reviewedAt": "2026-11-26T10:50:29.565981+00:00",
+      "history": []
+    },
+    {
+      "id": "zuoyebang-live-class-question-bank",
+      "title": "同样叫教研，班课交付和题库审核分别交付什么？",
+      "educationResearch": true,
+      "jobIds": [
+        "job-9fc5a68625390241",
+        "job-412d1d016a91f620"
+      ],
+      "finding": "课程教学教研要求备课、讲授、协同辅导老师及按学员反馈迭代。题库岗位要求审核学科题目、汇总错误并向管理者和业务反馈。",
+      "interpretation": "面试或分工时可以分别查一份改课前后的教学方案，及一份从错题发现到修订的审核记录，两者所需的协作接口有所区别。",
+      "alternative": "两则样本处于不同岗位层次和教学场景；其他团队可能由同一人员承担部分工作。",
+      "nextAction": "分别询问谁验收课堂交付、谁批准修题、学生反馈是否进入同一套内容修订流程，再核对实际交付物。",
+      "boundary": "公开岗位没有披露硬件业务归属、汇报线或职责合并，样本数不代表招聘人数。",
+      "reviewedAt": "2026-11-28T00:50:59.694577+00:00",
       "history": []
     }
   ]

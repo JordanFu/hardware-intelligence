@@ -1,6 +1,110 @@
 {
   "editions": [
     {
+      "id": "daily-2026-11-28",
+      "date": "2026-11-28",
+      "generatedAt": "2026-11-28T00:50:59.554813+00:00",
+      "state": "partial",
+      "bootstrap": false,
+      "windowNote": "优先最近 72 小时的新事件；按北京时间出刊。7 期内同一进展不重复。",
+      "itemIds": [
+        "m28-dram",
+        "m28-adapter",
+        "m28-r2",
+        "m28-rak",
+        "m28-r3",
+        "m28-light"
+      ],
+      "developmentKeys": [
+        [
+          "m28-dram",
+          "initial"
+        ],
+        [
+          "m28-adapter",
+          "initial"
+        ],
+        [
+          "m28-r2",
+          "initial"
+        ],
+        [
+          "m28-rak",
+          "initial"
+        ],
+        [
+          "m28-r3",
+          "initial"
+        ],
+        [
+          "m28-light",
+          "initial"
+        ]
+      ],
+      "reviewedCount": 8,
+      "failedSources": [
+        "该入口未读到可用正文。",
+        "此路径本轮读取失败。",
+        "本轮直接读取未取得正文。"
+      ],
+      "coverage": "审读国内机器人装配、门锁预售与出行试点评估，回溯集邦内存报告、英国两份监管通报。复查三家核心公司的岗位，并按周逐条重审 13 条暂缓实践。",
+      "knownGaps": [
+        "龙旗喇叭模组工位未披露独立验收及首次装配合格率；集邦情景未给出具体国内厂商采购合同。",
+        "DRAM 民事案新近索引针对律师出庭资格；本轮未核实新的实体裁判。",
+        "招聘页“采购”搜索无匹配，作业帮硬件专项筛选未能打开；班课和题库的具体设备业务归属均待核。",
+        "钉钉录音设备入口仍未取得可用正文；手表帮助页无法证明具体家庭的紧急呼叫接通率。"
+      ],
+      "coverageCheck": {
+        "newsResearch": {
+          "passed": true,
+          "bodyCount": 15,
+          "publisherGroups": [
+            "Economy Tribune",
+            "MTN",
+            "Origin Code",
+            "TrendForce 集邦咨询",
+            "华尔街日报",
+            "小米",
+            "小鹏汽车",
+            "广发证券",
+            "拉斯海马交通管理局",
+            "智元",
+            "英国 OPSS",
+            "首尔经济日报"
+          ],
+          "requiredBodies": 6,
+          "requiredPublisherGroups": 3
+        },
+        "passed": true,
+        "companies": [
+          "Bambu Lab 拓竹",
+          "作业帮",
+          "华为",
+          "安克创新",
+          "小天才",
+          "小米",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "stages": [
+          "供应链与采购",
+          "制造与交付",
+          "服务与生命周期",
+          "渠道与销售",
+          "经营与组织",
+          "质量与合规",
+          "需求与规划"
+        ],
+        "recruitmentCompanies": [
+          "作业帮",
+          "猿辅导（小猿）",
+          "科大讯飞"
+        ],
+        "gaps": [],
+        "usableSources": 77
+      }
+    },
+    {
       "id": "daily-2026-11-27",
       "date": "2026-11-27",
       "generatedAt": "2026-11-27T00:53:47.848482+00:00",
