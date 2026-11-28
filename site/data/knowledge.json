@@ -174,55 +174,154 @@
       "updatedAt": "2026-11-27T00:53:48.256580+00:00"
     },
     "chain-7": {
-      "attemptedAt": "2026-11-26T10:51:21.240816+00:00",
+      "attemptedAt": "2026-11-28T10:46:37.364735+00:00",
       "status": "partial",
-      "assessment": "用同一召回的企业服务公告和监管季度申报核对软件核验、检查、换件与汇总口径。",
+      "assessment": "对照华为两种空间的说明和既有阅读器资料，核清产品范围、受理时应问的问题和恢复成功的判断条件。",
       "gaps": [
         "已核一项召回的季度完成合计，登记、寄发、分类处置及最终恢复使用仍缺逐阶段数据。",
         "本轮补平台计数定义，但跨工单重复联系归属、观察窗口及排除项仍需业务级定义。",
-        "没有设备停产通知、维修时效和恢复使用结果；华为该空间其他备份渠道仍未核实。",
+        "华为资料已明确教育空间与主空间隔离，手机隐私空间支持特定迁移操作；MatePad Edge 教育空间密码丢失前可用的备份路径、实际恢复样例及服务耗时仍待核。",
         "未取得适用于十代 Kindle 的新书店停服公告。"
       ],
       "reviewedFields": [
-        "metrics",
+        "exercise",
+        "flow",
         "team"
       ],
       "evidence": [
         {
-          "itemId": "e26-service",
-          "title": "召回报表里的 222,886 辆，究竟完成了哪一步？",
+          "itemId": "e28-edu",
+          "title": "平板送修前，家长说“备份好了”，客服还要确认哪个空间？",
           "facts": [
             {
-              "claim": "第一季度汇总列出召回总体和计入完成的数量。",
-              "sourceUrl": "https://static.nhtsa.gov/odi/rcl/2025/RCLQRT-25V002-6832.PDF",
-              "locator": "季度表第1行及 Definitions"
+              "claim": "华为把教育空间与主空间的数据隔离列为产品特性。",
+              "sourceUrl": "https://consumer.huawei.com/cn/mobileservices/jiaoyukongjian/",
+              "locator": "产品页，快速进入教育空间"
             },
             {
-              "claim": "服务公告区分软件版本核对、症状检查及必要换件。",
-              "sourceUrl": "https://static.nhtsa.gov/odi/rcl/2025/RCRIT-25V002-2275.pdf",
-              "locator": "第1页 Correction"
+              "claim": "MatePad Edge 的指南列出忘记密码后删除重建的处理方式和数据清除风险。",
+              "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+              "locator": "重置密码段"
+            },
+            {
+              "claim": "手机隐私空间的说明将迁移至主空间列为外置备份前的步骤。",
+              "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn16021314/",
+              "locator": "设计说明"
+            },
+            {
+              "claim": "手机隐私空间文档说明向新机同类空间迁移的条件。",
+              "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn16090759/",
+              "locator": "空间克隆"
             }
           ],
-          "boundary": "这是指定召回的历史季度截面；不代表当前完成率、逐台换件或所有用户实际恢复使用。",
+          "boundary": "这三种条件分别来自平板教育空间和手机隐私空间的说明。未获得 MatePad Edge 教育空间通用导出路径或实际恢复结果。",
           "sources": [
             {
-              "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLQRT-25V002-6832.PDF",
-              "publisherGroup": "美国 NHTSA 托管的特斯拉季度申报",
-              "name": "美国 NHTSA 托管的特斯拉季度申报",
-              "publishedAt": "2025-05-01",
+              "url": "https://consumer.huawei.com/cn/mobileservices/jiaoyukongjian/",
+              "publisherGroup": "华为消费者业务",
+              "name": "华为消费者业务",
+              "publishedAt": null,
               "role": "official",
-              "textHash": "ee25f419372d1b178662629d1e39eafd7727b626036e680b2b8e7d67d5e43e9f",
-              "readAt": "2026-11-26T10:44:54.308431+00:00",
+              "textHash": "1208285b439cefbceb1a803fd21b5a0e230e231b06d231ee27e9c607974e40cf",
+              "readAt": "2026-11-28T10:43:18.507756+00:00",
               "coverage": "body"
             },
             {
-              "url": "https://static.nhtsa.gov/odi/rcl/2025/RCRIT-25V002-2275.pdf",
-              "publisherGroup": "特斯拉服务公告",
-              "name": "特斯拉服务公告",
-              "publishedAt": "2025-02-21",
+              "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+              "publisherGroup": "华为消费者业务",
+              "name": "华为消费者业务",
+              "publishedAt": null,
               "role": "official",
-              "textHash": "cd9f4379d3ae4f7be6c8eab70335c0d03ccf60097cd008bd1836111cb40758e6",
-              "readAt": "2026-11-26T10:44:54.168795+00:00",
+              "textHash": "26ca86bc4afb99497b8942cf400d585977ef1ed9639a4bc0bf57447eaedf9a9f",
+              "readAt": "2026-11-28T10:43:19.075732+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://consumer.huawei.com/cn/support/content/zh-cn16021314/",
+              "publisherGroup": "华为消费者业务",
+              "name": "华为消费者业务",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "50fa800dbc67aa92f0d1e1f7dbb9c43f9488cf5765d4a9b35d0468de6706a889",
+              "readAt": "2026-11-28T10:43:18.744313+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://consumer.huawei.com/cn/support/content/zh-cn16090759/",
+              "publisherGroup": "华为消费者业务",
+              "name": "华为消费者业务",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "67dd154f4bee91044c7abe809636137138ffc19a6a1f7c7c6a1bcd0f3817f78b",
+              "readAt": "2026-11-28T10:43:18.607276+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "huawei-education-reset-boundary",
+          "title": "华为教育空间：密码恢复涉及空间数据删除",
+          "facts": [
+            {
+              "claim": "指南说明忘记密码后不支持找回。",
+              "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+              "locator": "设置与重置密码"
+            },
+            {
+              "claim": "删除教育空间会同步删除其应用和数据且不可恢复。",
+              "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+              "locator": "重置密码提示"
+            }
+          ],
+          "boundary": "无明确发布日期，按当前支持说明补充；未操作设备、删除数据或验证备份机制。不是今日新增功能，也不证明所有学习记录都会丢失。",
+          "sources": [
+            {
+              "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+              "name": "华为官方资料",
+              "publishedAt": null,
+              "publisherGroup": "华为",
+              "role": "official",
+              "textHash": "17dca06954d13a3c2041c544db30b358ff84cd4c74c2c587677f06ec3a00007a",
+              "readAt": "2026-11-15T00:41:20.685838+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "m24-boox",
+          "title": "换阅读器后找不到手写笔记，先核账号、服务器还是文件？",
+          "facts": [
+            {
+              "claim": "官方指南说明多账号设备的笔记可见范围。",
+              "sourceUrl": "https://help.boox.com/653d4/f3f2e/affe8",
+              "locator": "Note Syncing · Account and Server"
+            },
+            {
+              "claim": "NeoReader 阅读数据同步还要核对对应文件所在目录。",
+              "sourceUrl": "https://help.boox.com/fa5fa/f733d/56960",
+              "locator": "Account, Server, and Directory"
+            }
+          ],
+          "boundary": "仅适用于提供手写笔记功能的相应机型；没有观察到具体用户的数据是否丢失或实际恢复成功率。",
+          "sources": [
+            {
+              "url": "https://help.boox.com/653d4/f3f2e/affe8",
+              "publisherGroup": "文石官方帮助",
+              "name": "文石官方帮助",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "ea4fbbd28b6b9482d086854e1c5276bf957d548d19f2870a6344be931717faaa",
+              "readAt": "2026-11-24T00:43:09.063879+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://help.boox.com/fa5fa/f733d/56960",
+              "publisherGroup": "文石官方帮助",
+              "name": "Reading Data Syncing and Backup",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "7075a1d6f013834d7434ce53762aae1cb8a4081a4e92e59990d1820d7d65e31a",
+              "readAt": "2026-11-24T00:44:56.959741+00:00",
               "coverage": "body"
             }
           ]
@@ -230,28 +329,56 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "e26-service",
-          "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLQRT-25V002-6832.PDF",
-          "checkedAt": "2026-11-26T10:44:54.308431+00:00",
+          "itemId": "e28-edu",
+          "url": "https://consumer.huawei.com/cn/mobileservices/jiaoyukongjian/",
+          "checkedAt": "2026-11-28T10:43:18.507756+00:00",
           "state": "body",
-          "note": "本轮读取正文。第一季度表第1行与三类完成状态定义。"
+          "note": "本轮读取正文。产品页，快速进入教育空间。华为把教育空间与主空间的数据隔离列为产品特性。"
         },
         {
-          "itemId": "e26-service",
-          "url": "https://static.nhtsa.gov/odi/rcl/2025/RCRIT-25V002-2275.pdf",
-          "checkedAt": "2026-11-26T10:44:54.168795+00:00",
+          "itemId": "e28-edu",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+          "checkedAt": "2026-11-28T10:43:19.075732+00:00",
           "state": "body",
-          "note": "本轮读取正文。同案服务公告第1页的软件版本、检查和条件性换件。"
+          "note": "本轮读取正文。重置密码段。MatePad Edge 的指南列出忘记密码后删除重建的处理方式和数据清除风险。"
+        },
+        {
+          "itemId": "e28-edu",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16021314/",
+          "checkedAt": "2026-11-28T10:43:18.744313+00:00",
+          "state": "body",
+          "note": "本轮读取正文。设计说明。手机隐私空间的说明将迁移至主空间列为外置备份前的步骤。"
+        },
+        {
+          "itemId": "e28-edu",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16090759/",
+          "checkedAt": "2026-11-28T10:43:18.607276+00:00",
+          "state": "body",
+          "note": "本轮读取正文。空间克隆。手机隐私空间文档说明向新机同类空间迁移的条件。"
+        },
+        {
+          "itemId": "huawei-education-reset-boundary",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+          "checkedAt": "2026-11-28T10:43:19.075732+00:00",
+          "state": "body",
+          "note": "本轮读取正文。复核特定机型与忘记密码后的删除条件。"
+        },
+        {
+          "itemId": "m24-boox",
+          "url": "https://help.boox.com/653d4/f3f2e/affe8",
+          "checkedAt": "2026-11-28T10:43:20.207116+00:00",
+          "state": "body",
+          "note": "本轮读取正文。复核笔记与书内批注两类数据的同步范围。"
         }
       ],
-      "reviewedAt": "2026-11-26T10:51:21.240816+00:00",
+      "reviewedAt": "2026-11-28T10:46:37.364735+00:00",
       "patch": {
         "basics": "OTA 是远程软件更新；支持周期、回滚和停止服务的安排也是产品承诺。 对互联设备，还应检查所有权转移、恢复出厂与退出时的数据处理；这些是从岗位职责提炼的验收问题，不能视为全行业已落实的规范。",
         "exercise": "追踪一次服务事件，从用户发现到真正恢复使用，找出重复解释和重复操作。 补充一次设备转售或恢复出厂场景，列清设备、账号和云端数据的处理责任与验证证据。 对返修场景增加购买证明、排障记录、寄送指引与恢复使用四步，检查哪些信息能在授权范围内复用，避免用户重复解释。 阅读器迁移时核对账号、上传标志、私密设置与新设备本地可读状态；书架中的一条记录不能单独证明文件已经恢复。 阅读器换机后分别验证独立笔记、书内批注和源文件；让用户核对原账号、服务器和同步开关，并在两台设备上检查文档目录和恢复版本。",
         "flow": "使用、故障与反馈 → 安装、维修、更新、备件与退出方案 服务研究还应区分线上排障、返修授权、运输维修以及停产通知四个节点，逐一确认交接资料与承诺主体。 更换部件的保修起点可与整机不同。核对受影响批次、部件实际签收日期及原机保修条款，并将发出、签收、用户换件和恢复使用分别记录。 本次新报事故的原因尚在调查时，对照公告注记，检查是否已计入同批产品的既有事故统计。 设备支持期到期前，按型号、地区、购买条件分别核安全补丁、买书、下载与已存内容，把有期限的承诺和已经公告的服务变更分别通知用户。",
         "metrics": "首次解决率须先声明问题范围、首次交互、重复联系窗口与分母。Zendesk one-touch还可包含零次回复且已解决或关闭的工单，是特定报表计数；不能直接等同设备恢复使用率或用户资料恢复率。 跟踪召回时同时写明对象数量、统计截止日及实际回收率；通知、回收、换货、退款和确认事故分别计数。 不同申报制度可能把已补救、检查后无需补救、退回库存合并计入一个字段。先查该表定义，再判断合计数能否回答换件或恢复使用问题。",
         "pitfall": "将工单关闭、一次回复或能再次登录当作问题解决；应分开核验重复求助、设备恢复使用与资料保留，不能通过减少必要沟通提高计数。",
-        "team": "服务、质量、研发、物流负责问题复现、版本修复、备件与通知。 在需要按症状决定换件的项目中，让维修端保留检查与处置记录，经营汇总时按监管表定义归类。"
+        "team": "服务、质量、研发、物流负责问题复现、版本修复、备件与通知。 在需要按症状决定换件的项目中，让维修端保留检查与处置记录，经营汇总时按监管表定义归类。 受理学习设备时，先与家长核对资料所在应用、账号、空间及能否访问。把可重新登录与在另一端成功打开原资料分别记录；用测试资料演练，家庭无需向客服出示作业正文。"
       },
       "lessons": [
         {
@@ -374,9 +501,20 @@
             "e26-service"
           ],
           "updatedAt": "2026-11-26T10:51:21.240816+00:00"
+        },
+        {
+          "id": "e28-edu-chain-7",
+          "title": "送修前怎样确认孩子的作业另有一份可用副本？",
+          "learning": "送修前将「可重新登录」和「这份作业能重新打开」作为两个验收项。按具体设备、系统、账号及空间核实，结果交给家长确认。",
+          "application": "客服可以先问作业存在哪个空间、哪个应用，家长还能否进入，能否在另一设备受控打开同一份副本。缺少验证时，将资料状态记为待确认。",
+          "boundary": "这三种条件分别来自平板教育空间和手机隐私空间的说明。未获得 MatePad Edge 教育空间通用导出路径或实际恢复结果。",
+          "itemIds": [
+            "e28-edu"
+          ],
+          "updatedAt": "2026-11-28T10:46:37.364735+00:00"
         }
       ],
-      "updatedAt": "2026-11-26T10:51:21.240816+00:00"
+      "updatedAt": "2026-11-28T10:46:37.364735+00:00"
     },
     "track-5": {
       "attemptedAt": "2026-11-28T00:52:57.772264+00:00",
@@ -1313,40 +1451,81 @@
       "updatedAt": "2026-11-27T10:46:43.619997+00:00"
     },
     "chain-2": {
-      "attemptedAt": "2026-11-27T00:53:48.256580+00:00",
+      "attemptedAt": "2026-11-28T10:46:37.364735+00:00",
       "status": "partial",
-      "assessment": "NotePin S 支持说明分别给出离线保存、联网同步及生成文字的要求。",
+      "assessment": "把研发侧请求支持状态与学生看到的结果分别验收，同时对照已有首次开麦和连续录音的时延资料。",
       "gaps": [
         "验证某段 RTL 行为一致不能证明所有整机功能覆盖。",
         "已核实两份历史案例中的转阶段接口，尚缺学习设备实际批次的签审文件和整机验证记录。",
         "已核 Android 音频回环的测量边界；实际学习机的端到端分位数、返工及整机验证数据待查。",
         "未取得具体学习机升级前后同一离线任务的样机记录。",
-        "未获离线重试与转写失败恢复时长数据。"
+        "已核 Android API 33 按目标语言区分已安装、待下载与远端支持等状态。目标机型在首次离线使用或失败重试后恢复到可见文字的实测时长仍待查。"
       ],
       "reviewedFields": [
-        "exercise"
+        "basics",
+        "exercise",
+        "flow"
       ],
       "evidence": [
         {
-          "itemId": "m27-pin",
-          "title": "录音笔离线能做哪一步？用三个状态排查“录了却没出摘要”",
+          "itemId": "e28-lang",
+          "title": "学习机支持离线听写，首次断网时目标语言已经装好了吗？",
           "facts": [
             {
-              "claim": "该型号官方文档确认设备可离线采集并保存音频。",
-              "sourceUrl": "https://support.plaud.ai/hc/en-us/articles/53771056805785-Does-Plaud-NotePin-S-work-offline",
-              "locator": "What requires internet 与 Recommended offline workflow"
+              "claim": "Android 明确列出可支持但使用前尚需下载的语言。",
+              "sourceUrl": "https://developer.android.com/reference/android/speech/RecognitionSupport",
+              "locator": "getSupportedOnDeviceLanguages；另见 Installed、Pending 和 Online 方法"
+            },
+            {
+              "claim": "Android 提供单独查询系统端侧服务可用性的接口。",
+              "sourceUrl": "https://developer.android.com/reference/android/speech/SpeechRecognizer",
+              "locator": "isOnDeviceRecognitionAvailable"
             }
           ],
-          "boundary": "支持文档针对 NotePin S；未给出离线转写、恢复时长或其他品牌机型表现。",
+          "boundary": "文档给出采用对应 Android 接口的实现语义，具体学习机是否采用该服务、装有哪些语言及实际任务能否完成，须按机型验证。",
           "sources": [
             {
-              "url": "https://support.plaud.ai/hc/en-us/articles/53771056805785-Does-Plaud-NotePin-S-work-offline",
-              "publisherGroup": "Plaud",
-              "name": "Plaud",
-              "publishedAt": "2026-09-07",
+              "url": "https://developer.android.com/reference/android/speech/RecognitionSupport",
+              "publisherGroup": "Android Developers",
+              "name": "Android Developers",
+              "publishedAt": null,
               "role": "official",
-              "textHash": "be4cfeabcf7deb03a7a78be5dfb24676383fefad4626e38d752f1201d25afcb4",
-              "readAt": "2026-11-27T08:48:41.593351+08:00",
+              "textHash": "16c7782a2c41411cb873da52f804d90da7ceb73f7740a2fa4907c86456d7f0f5",
+              "readAt": "2026-11-28T10:43:20.422451+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://developer.android.com/reference/android/speech/SpeechRecognizer",
+              "publisherGroup": "Android Developers",
+              "name": "Android Developers",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "04c07d629ff9529d785e4dd0c5f0e3795cac9cc8897a31d11e1cc3938cfaea87",
+              "readAt": "2026-11-28T10:43:20.155623+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "m24-android",
+          "title": "学习机第一次开麦比连续跟读慢，该分别测哪段时间？",
+          "facts": [
+            {
+              "claim": "Android 对首次入队时的管线启动单独定义了时延。",
+              "sourceUrl": "https://developer.android.com/ndk/guides/audio/audio-latency",
+              "locator": "Audio latency 名词说明及 Check your features"
+            }
+          ],
+          "boundary": "能力标记针对 Android 文档所列条件。未取得学习机实测数据，评分时间还受识别与应用处理影响。",
+          "sources": [
+            {
+              "url": "https://developer.android.com/ndk/guides/audio/audio-latency",
+              "publisherGroup": "Android Developers",
+              "name": "Android Developers",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "ba557002f1f307984598b16061ac62d8fa3ada1c5587147ea5ee855804e132b8",
+              "readAt": "2026-11-24T00:43:03.385460+00:00",
               "coverage": "body"
             }
           ]
@@ -1354,17 +1533,31 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "m27-pin",
-          "url": "https://support.plaud.ai/hc/en-us/articles/53771056805785-Does-Plaud-NotePin-S-work-offline",
-          "checkedAt": "2026-11-27T08:48:41.593351+08:00",
+          "itemId": "e28-lang",
+          "url": "https://developer.android.com/reference/android/speech/RecognitionSupport",
+          "checkedAt": "2026-11-28T10:43:20.422451+00:00",
           "state": "body",
-          "note": "本轮读取正文。核对离线录音及恢复联网后的具体动作。"
+          "note": "本轮读取正文。getSupportedOnDeviceLanguages；另见 Installed、Pending 和 Online 方法。Android 明确列出可支持但使用前尚需下载的语言。"
+        },
+        {
+          "itemId": "e28-lang",
+          "url": "https://developer.android.com/reference/android/speech/SpeechRecognizer",
+          "checkedAt": "2026-11-28T10:43:20.155623+00:00",
+          "state": "body",
+          "note": "本轮读取正文。isOnDeviceRecognitionAvailable。Android 提供单独查询系统端侧服务可用性的接口。"
+        },
+        {
+          "itemId": "m24-android",
+          "url": "https://developer.android.com/ndk/guides/audio/audio-latency",
+          "checkedAt": "2026-11-28T10:43:19.776604+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对音频预热与输入、输出延迟定义。"
         }
       ],
-      "reviewedAt": "2026-11-27T00:53:48.256580+00:00",
+      "reviewedAt": "2026-11-28T10:46:37.364735+00:00",
       "patch": {
         "metrics": "任务延迟用同一输入、环境与分位数比较；不能只报告平均值或实验室峰值。 对加工设备还应固定材料、任务和成品质量条件，分别记录准备、加工与失败恢复耗时；标称最高运动速度不能直接折算真实产能。 排查学习机跟读等待时，音频团队固定设备和音频路径测回环，应用与识别团队另记说完、识别完成和评分可见的时点，按相同输入比较。 音频评测把首次启用管线的等待、连续输出、连续往返与最终评分分开；报告设备、系统版本、采样路径及是否冷启动。",
-        "exercise": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。 把召开评审、形成签审文件、更新系统阶段分别落到材料和角色。 让同一学习设备先首次开麦，再连续跟读同一段音频，分别验证录入与评分。Android 功能标记可作前置检查。 将升级放行分两步演练：先查适用机型的启动与回退记录，再让应用团队用升级前的离线作业完成续写、保存和提交。分别记录失败步骤及复现条件。 对既有离线采集又有云端处理的功能，用一次断网和重连分别验收本地留存、移动应用同步及服务端输出。记录恢复时点和能识别失败的一方。",
+        "exercise": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。 把召开评审、形成签审文件、更新系统阶段分别落到材料和角色。 让同一学习设备先首次开麦，再连续跟读同一段音频，分别验证录入与评分。Android 功能标记可作前置检查。 将升级放行分两步演练：先查适用机型的启动与回退记录，再让应用团队用升级前的离线作业完成续写、保存和提交。分别记录失败步骤及复现条件。 对既有离线采集又有云端处理的功能，用一次断网和重连分别验收本地留存、移动应用同步及服务端输出。记录恢复时点和能识别失败的一方。 挑同一条语音请求，对照目标语言已装、排队下载、尚需下载和远端支持四类返回信息，逐项核对本机是否就绪；用同一音频断网复测，记录应用提示、结果与重试步骤。",
         "basics": "BOM是制造所需项目的汇总，可包含编号、数量、描述与生命周期状态；交接时还需核对版本。Autodesk Vault 2026提供修订比较，这是具体软件规则，不是所有企业的通用制度。BOM不能代替完整业务成本；Formlabs解释中，EVT聚焦关键功能与可制造设计，DVT细化设计并测试接近量产的产品，PVT检验生产线稳定制造能力。缩写、样品数量、周期与退出条件须按项目定义。",
         "flow": "需求与成本边界 → 系统架构、接口与验证计划 转试产前明确将哪个版本的物料清单、规格书和结构图转换成生产规范，并记录问题关闭与阶段切换。"
       },
@@ -1467,9 +1660,20 @@
             "m27-pin"
           ],
           "updatedAt": "2026-11-27T00:53:48.256580+00:00"
+        },
+        {
+          "id": "e28-lang-chain-2",
+          "title": "首次断网听写，语言包处于哪种状态？",
+          "learning": "产品负责写清首次使用需不需要联网，研发报告该请求的服务及语言准备状态，测试在目标机型断网跑同一段录音并记录可见结果。",
+          "application": "让测试人员分别准备新机未装语言包、已安排下载、安装完成后断网三种情境。每次记录给学生的提示、能否重试和是否得到可读文本。",
+          "boundary": "文档给出采用对应 Android 接口的实现语义，具体学习机是否采用该服务、装有哪些语言及实际任务能否完成，须按机型验证。",
+          "itemIds": [
+            "e28-lang"
+          ],
+          "updatedAt": "2026-11-28T10:46:37.364735+00:00"
         }
       ],
-      "updatedAt": "2026-11-27T00:53:48.256580+00:00"
+      "updatedAt": "2026-11-28T10:46:37.364735+00:00"
     },
     "chain-5": {
       "attemptedAt": "2026-11-27T10:46:43.619997+00:00",
@@ -2767,40 +2971,109 @@
       "updatedAt": "2026-11-28T00:52:57.772264+00:00"
     },
     "track-3": {
-      "attemptedAt": "2026-11-26T10:51:21.240816+00:00",
+      "attemptedAt": "2026-11-28T10:46:37.364735+00:00",
       "status": "partial",
-      "assessment": "复查研究者对凭空新增短语的判定与非人声时段分析，补充录音设备的验收任务。",
+      "assessment": "以固定版本高通模型卡核对设备、语言、两段组件时延及输出长度，复读 MLPerf Tiny 的质量约束与瑞芯微的部署资料。",
       "gaps": [
         "已核 MLPerf Tiny 的单次推理质量和能耗边界；跨竞品、同任务整机功耗和时延仍缺实测。",
-        "已补瑞芯微软件栈层次；Qualcomm、NVIDIA及各厂商具体型号和工具仍未全面复核。",
+        "已核瑞芯微软件栈，以及高通特定英文模型与参考设备的组件计时；其他 Qualcomm 和 NVIDIA 组合、量产学习机整机结果仍待独立验证。",
         "模型压缩方法、BSP细节、维护成本及同任务整机测量仍缺完整依据。",
         "量产学习机仍缺同一批儿童在不同任务下的识别与教师评分实测。"
       ],
       "reviewedFields": [
-        "metrics",
-        "team"
+        "chain",
+        "constraint",
+        "metrics"
       ],
       "evidence": [
         {
-          "itemId": "e26-speech",
-          "title": "录音设备多写了一句话，平均识别分数能看出来吗？",
+          "itemId": "e28-hf",
+          "title": "“2 毫秒”从哪一步算起？拆开端侧听写的两段耗时",
           "facts": [
             {
-              "claim": "研究报告约 1% 的被测转写含有原声中没有的短语或句子。",
-              "sourceUrl": "https://facctconference.org/static/papers24/facct24-111.pdf",
-              "locator": "论文摘要、人工核验方法与非人声时长分析"
+              "claim": "高通在该卡的示例任务中列出编码器的估算推理时间。",
+              "sourceUrl": "https://huggingface.co/qualcomm/Whisper-Tiny-En/raw/f2cde1a0fd50698585747f8e25a8c53ce058b2bf/README.md",
+              "locator": "Profile Job summary of WhisperEncoder / WhisperDecoder"
+            },
+            {
+              "claim": "同份示例的解码器估算时间是 2.06 毫秒。",
+              "sourceUrl": "https://huggingface.co/qualcomm/Whisper-Tiny-En/raw/f2cde1a0fd50698585747f8e25a8c53ce058b2bf/README.md",
+              "locator": "WhisperDecoder"
+            },
+            {
+              "claim": "该模型卡列了平均解码长度假设。",
+              "sourceUrl": "https://huggingface.co/qualcomm/Whisper-Tiny-En/raw/f2cde1a0fd50698585747f8e25a8c53ce058b2bf/README.md",
+              "locator": "模型说明"
             }
           ],
-          "boundary": "研究针对特定模型、版本和英语样本；未测试中国儿童、钉钉设备或 Xnote，也不能将 1% 当为这些设备的错误率。",
+          "boundary": "固定版本的英文模型卡及参考设备示例。未在国内学习机上实测，儿童普通话识别正确率、散热和功耗仍待验证。",
           "sources": [
             {
-              "url": "https://facctconference.org/static/papers24/facct24-111.pdf",
-              "publisherGroup": "ACM FAccT 研究作者",
-              "name": "ACM FAccT 研究作者",
-              "publishedAt": "2024-06-03",
-              "role": "research",
-              "textHash": "f31ae18d71363aadd592419d0efac76435cef12299af8fc44b2d6a04fc70b589",
-              "readAt": "2026-11-26T10:44:55.524215+00:00",
+              "url": "https://huggingface.co/qualcomm/Whisper-Tiny-En/raw/f2cde1a0fd50698585747f8e25a8c53ce058b2bf/README.md",
+              "publisherGroup": "高通 Qualcomm AI Hub",
+              "name": "高通 Qualcomm AI Hub",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "e465a8252c4d27dbdd2eb243089d205e51abd8754e462f429ce4102d48659600",
+              "readAt": "2026-11-28T10:43:18.144579+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "m21-tiny",
+          "title": "词典笔的端侧模型更快了，换了模型还能直接比吗？",
+          "facts": [
+            {
+              "claim": "每项任务有固定的质量目标。",
+              "sourceUrl": "https://mlcommons.org/2026/07/mlperf-tiny-v1-4-results/",
+              "locator": "What does MLPerf Tiny measure 小节"
+            }
+          ],
+          "boundary": "这是低功耗设备的基准方法。未测试某一品牌的词典笔，单次推理耗能也不能直接换算整机续航。",
+          "sources": [
+            {
+              "url": "https://mlcommons.org/2026/07/mlperf-tiny-v1-4-results/",
+              "publisherGroup": "MLCommons",
+              "name": "MLCommons",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "15550482249298ea0d37bd902fd576a7f7a6a4b967f5e4a16d3d68ba66230469",
+              "readAt": "2026-11-21T00:40:51.829788+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "rknn-deployment-layers",
+          "title": "瑞芯微RKNN：模型转换、板端运行时与驱动各有接口",
+          "facts": [
+            {
+              "claim": "工具链将模型转换与板端推理衔接。",
+              "sourceUrl": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
+              "locator": "Description"
+            },
+            {
+              "claim": "Toolkit2与旧版Toolkit不兼容。",
+              "sourceUrl": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
+              "locator": "Notes"
+            },
+            {
+              "claim": "内核驱动负责与NPU硬件交互。",
+              "sourceUrl": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
+              "locator": "Description"
+            }
+          ],
+          "boundary": "当前主分支说明，不是固定版本测试报告；不判断模型精度、耗电、延迟或人员效率。未安装或执行仓库代码。",
+          "sources": [
+            {
+              "url": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
+              "name": "瑞芯微官方资料",
+              "publishedAt": null,
+              "publisherGroup": "瑞芯微",
+              "role": "official",
+              "textHash": "53b24cbf05a899e4296f5fdd060c662d204c7e687140305d655c1f05cac96550",
+              "readAt": "2026-11-16T10:37:42.034691+00:00",
               "coverage": "body"
             }
           ]
@@ -2808,17 +3081,31 @@
       ],
       "sourceChecks": [
         {
-          "itemId": "e26-speech",
-          "url": "https://facctconference.org/static/papers24/facct24-111.pdf",
-          "checkedAt": "2026-11-26T10:44:55.524215+00:00",
+          "itemId": "e28-hf",
+          "url": "https://huggingface.co/qualcomm/Whisper-Tiny-En/raw/f2cde1a0fd50698585747f8e25a8c53ce058b2bf/README.md",
+          "checkedAt": "2026-11-28T10:43:18.144579+00:00",
           "state": "body",
-          "note": "本轮读取正文。会议论文的样本、人工判断标准和非人声时长比较。"
+          "note": "本轮读取正文。Profile Job summary of WhisperEncoder / WhisperDecoder。高通在该卡的示例任务中列出编码器的估算推理时间。"
+        },
+        {
+          "itemId": "m21-tiny",
+          "url": "https://mlcommons.org/2026/07/mlperf-tiny-v1-4-results/",
+          "checkedAt": "2026-11-28T10:43:19.334875+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对推理时间、单次能耗及质量目标分别定义。"
+        },
+        {
+          "itemId": "rknn-deployment-layers",
+          "url": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
+          "checkedAt": "2026-11-28T10:43:17.917883+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对模型转换与端上运行的关系。"
         }
       ],
-      "reviewedAt": "2026-11-26T10:51:21.240816+00:00",
+      "reviewedAt": "2026-11-28T10:46:37.364735+00:00",
       "patch": {
         "chain": "芯片 / 模组 → SDK与模型转换 → 板端运行时和驱动 → 整机集成。RKNN示例把转换工具、Python或C/C++接口与NPU内核驱动分层；模型文件交接不能替代运行环境核对。",
-        "metrics": "同一任务下的延迟、功耗、内存与准确性 不同层级运行频率不能直接替代端到端响应延迟；需固定任务、系统边界和设备版本，再测功耗、内存与效果。 对Jetson样本还应记录功耗模式、核心/频率配置和温度日志；模组监测功耗不等于整机功耗，配置与散热条件不同的成绩不能直接比较。 MLPerf Tiny 固定任务及质量门槛，再比较时延和单次推理能耗；说明测试集、负载、配置和测量范围。比较整机续航时还需连续使用和待机耗能。 记录端侧语言模型测试所用数据集、准确性、模型大小与实际执行后端。相同芯片标称值不能替代运行配置。 语音设备验收按朗读与自由回答分组，分别核说话人、题目是否跨训练与测试集；保留人工转写与模型输出。词错误率、教学评分与整机时延分别测量。 录音转写增加一项单独验收：逐段对照原音，统计包含无依据新增整句的片段数，并注明样本、分母和非人声时段。",
+        "metrics": "同一任务下的延迟、功耗、内存与准确性 不同层级运行频率不能直接替代端到端响应延迟；需固定任务、系统边界和设备版本，再测功耗、内存与效果。 对Jetson样本还应记录功耗模式、核心/频率配置和温度日志；模组监测功耗不等于整机功耗，配置与散热条件不同的成绩不能直接比较。 MLPerf Tiny 固定任务及质量门槛，再比较时延和单次推理能耗；说明测试集、负载、配置和测量范围。比较整机续航时还需连续使用和待机耗能。 记录端侧语言模型测试所用数据集、准确性、模型大小与实际执行后端。相同芯片标称值不能替代运行配置。 语音设备验收按朗读与自由回答分组，分别核说话人、题目是否跨训练与测试集；保留人工转写与模型输出。词错误率、教学评分与整机时延分别测量。 录音转写增加一项单独验收：逐段对照原音，统计包含无依据新增整句的片段数，并注明样本、分母和非人声时段。 生成式听写分别交付首个 token 和后续每步的耗时，注明输出长度、模型版本和参考设备。面向学生的整句显示与评分返回另在目标整机计时。",
         "team": "芯片 / BSP、模型压缩、系统软件、热设计、应用工程。研究接口：模型团队与板端团队应核对模型、转换工具、芯片、运行时和驱动版本；这是由RKNN分层形成的检查问题，不是公司组织图。 做录音设备验收时，语音工程师保留逐字稿与版本，评测人员核原音，应用团队再核摘要，定位错误首次出现的位置。",
         "constraint": "延迟、内存、散热、能耗和模型持续维护 MLPerf Mobile v6.0 的语言模型任务可在内存足够时用 CPU 执行；NPU 加速覆盖特定模型与平台组合。"
       },
@@ -2911,9 +3198,20 @@
             "e26-speech"
           ],
           "updatedAt": "2026-11-26T10:51:21.240816+00:00"
+        },
+        {
+          "id": "e28-hf-track-3",
+          "title": "一句听写的耗时，先区分首次出字和后续生成",
+          "learning": "测一段听写时按用户可见节点计时，交付结果附输入输出长度、设备和运行环境，另存组件数据以定位瓶颈。",
+          "application": "将这个办法用于跟读设备，可分别记录录音结束、第一段可见文本、整句上屏和评分返回。算法团队说明组件计时，应用与测试团队用同一段音频记录完整过程。",
+          "boundary": "固定版本的英文模型卡及参考设备示例。未在国内学习机上实测，儿童普通话识别正确率、散热和功耗仍待验证。",
+          "itemIds": [
+            "e28-hf"
+          ],
+          "updatedAt": "2026-11-28T10:46:37.364735+00:00"
         }
       ],
-      "updatedAt": "2026-11-26T10:51:21.240816+00:00"
+      "updatedAt": "2026-11-28T10:46:37.364735+00:00"
     }
   },
   "runs": [
@@ -4456,6 +4754,34 @@
           "hash": "507fe6d9508cce480c798f24227d976de0cd350e748383a08a285cdad6589c9e",
           "decision": "integrated",
           "reason": "柏林门店及 E1 专项说明已补上开业日期、访问和预约条件，可沉淀计划与服务兑现的区别。"
+        }
+      ]
+    },
+    {
+      "completedAt": "2026-11-28T10:46:37.364735+00:00",
+      "reviewedNodes": [
+        "chain-7",
+        "track-3",
+        "chain-2"
+      ],
+      "decisions": [
+        {
+          "itemId": "e28-edu",
+          "hash": "5286988fe64dcc3187d7225bc03b41df7416af6de58abadb37209d3fc7e9337d",
+          "decision": "integrated",
+          "reason": "送修前将「可重新登录」和「这份作业能重新打开」作为两个验收项。按具体设备、系统、账号及空间核实，结果交给家长确认。"
+        },
+        {
+          "itemId": "e28-hf",
+          "hash": "da87dc5e247bc2e26539472cf2b8a66da5922019ebeba6ada83e55c6d7be8013",
+          "decision": "integrated",
+          "reason": "测一段听写时按用户可见节点计时，交付结果附输入输出长度、设备和运行环境，另存组件数据以定位瓶颈。"
+        },
+        {
+          "itemId": "e28-lang",
+          "hash": "fba4b06ad136e1e7f92b28f9f5b32f9acc407827c69d6d7b435bcafdf089ce01",
+          "decision": "integrated",
+          "reason": "产品负责写清首次使用需不需要联网，研发报告该请求的服务及语言准备状态，测试在目标机型断网跑同一段录音并记录可见结果。"
         }
       ]
     }
@@ -17874,6 +18200,509 @@
           "checkedAt": "2026-11-28T00:44:27.485836+00:00",
           "state": "body",
           "note": "本轮读取正文。IT之家。核对与该条结论直接相关的段落。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-7",
+      "reviewedAt": "2026-11-28T10:46:37.364735+00:00",
+      "status": "partial",
+      "assessment": "对照华为两种空间的说明和既有阅读器资料，核清产品范围、受理时应问的问题和恢复成功的判断条件。",
+      "gaps": [
+        "已核一项召回的季度完成合计，登记、寄发、分类处置及最终恢复使用仍缺逐阶段数据。",
+        "本轮补平台计数定义，但跨工单重复联系归属、观察窗口及排除项仍需业务级定义。",
+        "华为资料已明确教育空间与主空间隔离，手机隐私空间支持特定迁移操作；MatePad Edge 教育空间密码丢失前可用的备份路径、实际恢复样例及服务耗时仍待核。",
+        "未取得适用于十代 Kindle 的新书店停服公告。"
+      ],
+      "reviewedFields": [
+        "exercise",
+        "flow",
+        "team"
+      ],
+      "changes": {
+        "team": {
+          "before": "服务、质量、研发、物流负责问题复现、版本修复、备件与通知。 在需要按症状决定换件的项目中，让维修端保留检查与处置记录，经营汇总时按监管表定义归类。",
+          "after": "服务、质量、研发、物流负责问题复现、版本修复、备件与通知。 在需要按症状决定换件的项目中，让维修端保留检查与处置记录，经营汇总时按监管表定义归类。 受理学习设备时，先与家长核对资料所在应用、账号、空间及能否访问。把可重新登录与在另一端成功打开原资料分别记录；用测试资料演练，家庭无需向客服出示作业正文。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e28-edu-chain-7",
+            "title": "送修前怎样确认孩子的作业另有一份可用副本？",
+            "learning": "送修前将「可重新登录」和「这份作业能重新打开」作为两个验收项。按具体设备、系统、账号及空间核实，结果交给家长确认。",
+            "application": "客服可以先问作业存在哪个空间、哪个应用，家长还能否进入，能否在另一设备受控打开同一份副本。缺少验证时，将资料状态记为待确认。",
+            "boundary": "这三种条件分别来自平板教育空间和手机隐私空间的说明。未获得 MatePad Edge 教育空间通用导出路径或实际恢复结果。",
+            "itemIds": [
+              "e28-edu"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e28-edu",
+          "title": "平板送修前，家长说“备份好了”，客服还要确认哪个空间？",
+          "facts": [
+            {
+              "claim": "华为把教育空间与主空间的数据隔离列为产品特性。",
+              "sourceUrl": "https://consumer.huawei.com/cn/mobileservices/jiaoyukongjian/",
+              "locator": "产品页，快速进入教育空间"
+            },
+            {
+              "claim": "MatePad Edge 的指南列出忘记密码后删除重建的处理方式和数据清除风险。",
+              "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+              "locator": "重置密码段"
+            },
+            {
+              "claim": "手机隐私空间的说明将迁移至主空间列为外置备份前的步骤。",
+              "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn16021314/",
+              "locator": "设计说明"
+            },
+            {
+              "claim": "手机隐私空间文档说明向新机同类空间迁移的条件。",
+              "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn16090759/",
+              "locator": "空间克隆"
+            }
+          ],
+          "boundary": "这三种条件分别来自平板教育空间和手机隐私空间的说明。未获得 MatePad Edge 教育空间通用导出路径或实际恢复结果。",
+          "sources": [
+            {
+              "url": "https://consumer.huawei.com/cn/mobileservices/jiaoyukongjian/",
+              "publisherGroup": "华为消费者业务",
+              "name": "华为消费者业务",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "1208285b439cefbceb1a803fd21b5a0e230e231b06d231ee27e9c607974e40cf",
+              "readAt": "2026-11-28T10:43:18.507756+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+              "publisherGroup": "华为消费者业务",
+              "name": "华为消费者业务",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "26ca86bc4afb99497b8942cf400d585977ef1ed9639a4bc0bf57447eaedf9a9f",
+              "readAt": "2026-11-28T10:43:19.075732+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://consumer.huawei.com/cn/support/content/zh-cn16021314/",
+              "publisherGroup": "华为消费者业务",
+              "name": "华为消费者业务",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "50fa800dbc67aa92f0d1e1f7dbb9c43f9488cf5765d4a9b35d0468de6706a889",
+              "readAt": "2026-11-28T10:43:18.744313+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://consumer.huawei.com/cn/support/content/zh-cn16090759/",
+              "publisherGroup": "华为消费者业务",
+              "name": "华为消费者业务",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "67dd154f4bee91044c7abe809636137138ffc19a6a1f7c7c6a1bcd0f3817f78b",
+              "readAt": "2026-11-28T10:43:18.607276+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "huawei-education-reset-boundary",
+          "title": "华为教育空间：密码恢复涉及空间数据删除",
+          "facts": [
+            {
+              "claim": "指南说明忘记密码后不支持找回。",
+              "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+              "locator": "设置与重置密码"
+            },
+            {
+              "claim": "删除教育空间会同步删除其应用和数据且不可恢复。",
+              "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+              "locator": "重置密码提示"
+            }
+          ],
+          "boundary": "无明确发布日期，按当前支持说明补充；未操作设备、删除数据或验证备份机制。不是今日新增功能，也不证明所有学习记录都会丢失。",
+          "sources": [
+            {
+              "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+              "name": "华为官方资料",
+              "publishedAt": null,
+              "publisherGroup": "华为",
+              "role": "official",
+              "textHash": "17dca06954d13a3c2041c544db30b358ff84cd4c74c2c587677f06ec3a00007a",
+              "readAt": "2026-11-15T00:41:20.685838+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "m24-boox",
+          "title": "换阅读器后找不到手写笔记，先核账号、服务器还是文件？",
+          "facts": [
+            {
+              "claim": "官方指南说明多账号设备的笔记可见范围。",
+              "sourceUrl": "https://help.boox.com/653d4/f3f2e/affe8",
+              "locator": "Note Syncing · Account and Server"
+            },
+            {
+              "claim": "NeoReader 阅读数据同步还要核对对应文件所在目录。",
+              "sourceUrl": "https://help.boox.com/fa5fa/f733d/56960",
+              "locator": "Account, Server, and Directory"
+            }
+          ],
+          "boundary": "仅适用于提供手写笔记功能的相应机型；没有观察到具体用户的数据是否丢失或实际恢复成功率。",
+          "sources": [
+            {
+              "url": "https://help.boox.com/653d4/f3f2e/affe8",
+              "publisherGroup": "文石官方帮助",
+              "name": "文石官方帮助",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "ea4fbbd28b6b9482d086854e1c5276bf957d548d19f2870a6344be931717faaa",
+              "readAt": "2026-11-24T00:43:09.063879+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://help.boox.com/fa5fa/f733d/56960",
+              "publisherGroup": "文石官方帮助",
+              "name": "Reading Data Syncing and Backup",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "7075a1d6f013834d7434ce53762aae1cb8a4081a4e92e59990d1820d7d65e31a",
+              "readAt": "2026-11-24T00:44:56.959741+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e28-edu",
+          "url": "https://consumer.huawei.com/cn/mobileservices/jiaoyukongjian/",
+          "checkedAt": "2026-11-28T10:43:18.507756+00:00",
+          "state": "body",
+          "note": "本轮读取正文。产品页，快速进入教育空间。华为把教育空间与主空间的数据隔离列为产品特性。"
+        },
+        {
+          "itemId": "e28-edu",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+          "checkedAt": "2026-11-28T10:43:19.075732+00:00",
+          "state": "body",
+          "note": "本轮读取正文。重置密码段。MatePad Edge 的指南列出忘记密码后删除重建的处理方式和数据清除风险。"
+        },
+        {
+          "itemId": "e28-edu",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16021314/",
+          "checkedAt": "2026-11-28T10:43:18.744313+00:00",
+          "state": "body",
+          "note": "本轮读取正文。设计说明。手机隐私空间的说明将迁移至主空间列为外置备份前的步骤。"
+        },
+        {
+          "itemId": "e28-edu",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16090759/",
+          "checkedAt": "2026-11-28T10:43:18.607276+00:00",
+          "state": "body",
+          "note": "本轮读取正文。空间克隆。手机隐私空间文档说明向新机同类空间迁移的条件。"
+        },
+        {
+          "itemId": "huawei-education-reset-boundary",
+          "url": "https://consumer.huawei.com/cn/support/content/zh-cn16108337/",
+          "checkedAt": "2026-11-28T10:43:19.075732+00:00",
+          "state": "body",
+          "note": "本轮读取正文。复核特定机型与忘记密码后的删除条件。"
+        },
+        {
+          "itemId": "m24-boox",
+          "url": "https://help.boox.com/653d4/f3f2e/affe8",
+          "checkedAt": "2026-11-28T10:43:20.207116+00:00",
+          "state": "body",
+          "note": "本轮读取正文。复核笔记与书内批注两类数据的同步范围。"
+        }
+      ]
+    },
+    {
+      "nodeId": "track-3",
+      "reviewedAt": "2026-11-28T10:46:37.364735+00:00",
+      "status": "partial",
+      "assessment": "以固定版本高通模型卡核对设备、语言、两段组件时延及输出长度，复读 MLPerf Tiny 的质量约束与瑞芯微的部署资料。",
+      "gaps": [
+        "已核 MLPerf Tiny 的单次推理质量和能耗边界；跨竞品、同任务整机功耗和时延仍缺实测。",
+        "已核瑞芯微软件栈，以及高通特定英文模型与参考设备的组件计时；其他 Qualcomm 和 NVIDIA 组合、量产学习机整机结果仍待独立验证。",
+        "模型压缩方法、BSP细节、维护成本及同任务整机测量仍缺完整依据。",
+        "量产学习机仍缺同一批儿童在不同任务下的识别与教师评分实测。"
+      ],
+      "reviewedFields": [
+        "chain",
+        "constraint",
+        "metrics"
+      ],
+      "changes": {
+        "metrics": {
+          "before": "同一任务下的延迟、功耗、内存与准确性 不同层级运行频率不能直接替代端到端响应延迟；需固定任务、系统边界和设备版本，再测功耗、内存与效果。 对Jetson样本还应记录功耗模式、核心/频率配置和温度日志；模组监测功耗不等于整机功耗，配置与散热条件不同的成绩不能直接比较。 MLPerf Tiny 固定任务及质量门槛，再比较时延和单次推理能耗；说明测试集、负载、配置和测量范围。比较整机续航时还需连续使用和待机耗能。 记录端侧语言模型测试所用数据集、准确性、模型大小与实际执行后端。相同芯片标称值不能替代运行配置。 语音设备验收按朗读与自由回答分组，分别核说话人、题目是否跨训练与测试集；保留人工转写与模型输出。词错误率、教学评分与整机时延分别测量。 录音转写增加一项单独验收：逐段对照原音，统计包含无依据新增整句的片段数，并注明样本、分母和非人声时段。",
+          "after": "同一任务下的延迟、功耗、内存与准确性 不同层级运行频率不能直接替代端到端响应延迟；需固定任务、系统边界和设备版本，再测功耗、内存与效果。 对Jetson样本还应记录功耗模式、核心/频率配置和温度日志；模组监测功耗不等于整机功耗，配置与散热条件不同的成绩不能直接比较。 MLPerf Tiny 固定任务及质量门槛，再比较时延和单次推理能耗；说明测试集、负载、配置和测量范围。比较整机续航时还需连续使用和待机耗能。 记录端侧语言模型测试所用数据集、准确性、模型大小与实际执行后端。相同芯片标称值不能替代运行配置。 语音设备验收按朗读与自由回答分组，分别核说话人、题目是否跨训练与测试集；保留人工转写与模型输出。词错误率、教学评分与整机时延分别测量。 录音转写增加一项单独验收：逐段对照原音，统计包含无依据新增整句的片段数，并注明样本、分母和非人声时段。 生成式听写分别交付首个 token 和后续每步的耗时，注明输出长度、模型版本和参考设备。面向学生的整句显示与评分返回另在目标整机计时。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e28-hf-track-3",
+            "title": "一句听写的耗时，先区分首次出字和后续生成",
+            "learning": "测一段听写时按用户可见节点计时，交付结果附输入输出长度、设备和运行环境，另存组件数据以定位瓶颈。",
+            "application": "将这个办法用于跟读设备，可分别记录录音结束、第一段可见文本、整句上屏和评分返回。算法团队说明组件计时，应用与测试团队用同一段音频记录完整过程。",
+            "boundary": "固定版本的英文模型卡及参考设备示例。未在国内学习机上实测，儿童普通话识别正确率、散热和功耗仍待验证。",
+            "itemIds": [
+              "e28-hf"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e28-hf",
+          "title": "“2 毫秒”从哪一步算起？拆开端侧听写的两段耗时",
+          "facts": [
+            {
+              "claim": "高通在该卡的示例任务中列出编码器的估算推理时间。",
+              "sourceUrl": "https://huggingface.co/qualcomm/Whisper-Tiny-En/raw/f2cde1a0fd50698585747f8e25a8c53ce058b2bf/README.md",
+              "locator": "Profile Job summary of WhisperEncoder / WhisperDecoder"
+            },
+            {
+              "claim": "同份示例的解码器估算时间是 2.06 毫秒。",
+              "sourceUrl": "https://huggingface.co/qualcomm/Whisper-Tiny-En/raw/f2cde1a0fd50698585747f8e25a8c53ce058b2bf/README.md",
+              "locator": "WhisperDecoder"
+            },
+            {
+              "claim": "该模型卡列了平均解码长度假设。",
+              "sourceUrl": "https://huggingface.co/qualcomm/Whisper-Tiny-En/raw/f2cde1a0fd50698585747f8e25a8c53ce058b2bf/README.md",
+              "locator": "模型说明"
+            }
+          ],
+          "boundary": "固定版本的英文模型卡及参考设备示例。未在国内学习机上实测，儿童普通话识别正确率、散热和功耗仍待验证。",
+          "sources": [
+            {
+              "url": "https://huggingface.co/qualcomm/Whisper-Tiny-En/raw/f2cde1a0fd50698585747f8e25a8c53ce058b2bf/README.md",
+              "publisherGroup": "高通 Qualcomm AI Hub",
+              "name": "高通 Qualcomm AI Hub",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "e465a8252c4d27dbdd2eb243089d205e51abd8754e462f429ce4102d48659600",
+              "readAt": "2026-11-28T10:43:18.144579+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "m21-tiny",
+          "title": "词典笔的端侧模型更快了，换了模型还能直接比吗？",
+          "facts": [
+            {
+              "claim": "每项任务有固定的质量目标。",
+              "sourceUrl": "https://mlcommons.org/2026/07/mlperf-tiny-v1-4-results/",
+              "locator": "What does MLPerf Tiny measure 小节"
+            }
+          ],
+          "boundary": "这是低功耗设备的基准方法。未测试某一品牌的词典笔，单次推理耗能也不能直接换算整机续航。",
+          "sources": [
+            {
+              "url": "https://mlcommons.org/2026/07/mlperf-tiny-v1-4-results/",
+              "publisherGroup": "MLCommons",
+              "name": "MLCommons",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "15550482249298ea0d37bd902fd576a7f7a6a4b967f5e4a16d3d68ba66230469",
+              "readAt": "2026-11-21T00:40:51.829788+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "rknn-deployment-layers",
+          "title": "瑞芯微RKNN：模型转换、板端运行时与驱动各有接口",
+          "facts": [
+            {
+              "claim": "工具链将模型转换与板端推理衔接。",
+              "sourceUrl": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
+              "locator": "Description"
+            },
+            {
+              "claim": "Toolkit2与旧版Toolkit不兼容。",
+              "sourceUrl": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
+              "locator": "Notes"
+            },
+            {
+              "claim": "内核驱动负责与NPU硬件交互。",
+              "sourceUrl": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
+              "locator": "Description"
+            }
+          ],
+          "boundary": "当前主分支说明，不是固定版本测试报告；不判断模型精度、耗电、延迟或人员效率。未安装或执行仓库代码。",
+          "sources": [
+            {
+              "url": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
+              "name": "瑞芯微官方资料",
+              "publishedAt": null,
+              "publisherGroup": "瑞芯微",
+              "role": "official",
+              "textHash": "53b24cbf05a899e4296f5fdd060c662d204c7e687140305d655c1f05cac96550",
+              "readAt": "2026-11-16T10:37:42.034691+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e28-hf",
+          "url": "https://huggingface.co/qualcomm/Whisper-Tiny-En/raw/f2cde1a0fd50698585747f8e25a8c53ce058b2bf/README.md",
+          "checkedAt": "2026-11-28T10:43:18.144579+00:00",
+          "state": "body",
+          "note": "本轮读取正文。Profile Job summary of WhisperEncoder / WhisperDecoder。高通在该卡的示例任务中列出编码器的估算推理时间。"
+        },
+        {
+          "itemId": "m21-tiny",
+          "url": "https://mlcommons.org/2026/07/mlperf-tiny-v1-4-results/",
+          "checkedAt": "2026-11-28T10:43:19.334875+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对推理时间、单次能耗及质量目标分别定义。"
+        },
+        {
+          "itemId": "rknn-deployment-layers",
+          "url": "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/master/README.md",
+          "checkedAt": "2026-11-28T10:43:17.917883+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对模型转换与端上运行的关系。"
+        }
+      ]
+    },
+    {
+      "nodeId": "chain-2",
+      "reviewedAt": "2026-11-28T10:46:37.364735+00:00",
+      "status": "partial",
+      "assessment": "把研发侧请求支持状态与学生看到的结果分别验收，同时对照已有首次开麦和连续录音的时延资料。",
+      "gaps": [
+        "验证某段 RTL 行为一致不能证明所有整机功能覆盖。",
+        "已核实两份历史案例中的转阶段接口，尚缺学习设备实际批次的签审文件和整机验证记录。",
+        "已核 Android 音频回环的测量边界；实际学习机的端到端分位数、返工及整机验证数据待查。",
+        "未取得具体学习机升级前后同一离线任务的样机记录。",
+        "已核 Android API 33 按目标语言区分已安装、待下载与远端支持等状态。目标机型在首次离线使用或失败重试后恢复到可见文字的实测时长仍待查。"
+      ],
+      "reviewedFields": [
+        "basics",
+        "exercise",
+        "flow"
+      ],
+      "changes": {
+        "exercise": {
+          "before": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。 把召开评审、形成签审文件、更新系统阶段分别落到材料和角色。 让同一学习设备先首次开麦，再连续跟读同一段音频，分别验证录入与评分。Android 功能标记可作前置检查。 将升级放行分两步演练：先查适用机型的启动与回退记录，再让应用团队用升级前的离线作业完成续写、保存和提交。分别记录失败步骤及复现条件。 对既有离线采集又有云端处理的功能，用一次断网和重连分别验收本地留存、移动应用同步及服务端输出。记录恢复时点和能识别失败的一方。",
+          "after": "为一个硬件功能分别写出：当前样机能证明什么，设计验证还缺什么，量产试制要观察什么；每个问题对应样品版本、测试条件和放行证据。 把召开评审、形成签审文件、更新系统阶段分别落到材料和角色。 让同一学习设备先首次开麦，再连续跟读同一段音频，分别验证录入与评分。Android 功能标记可作前置检查。 将升级放行分两步演练：先查适用机型的启动与回退记录，再让应用团队用升级前的离线作业完成续写、保存和提交。分别记录失败步骤及复现条件。 对既有离线采集又有云端处理的功能，用一次断网和重连分别验收本地留存、移动应用同步及服务端输出。记录恢复时点和能识别失败的一方。 挑同一条语音请求，对照目标语言已装、排队下载、尚需下载和远端支持四类返回信息，逐项核对本机是否就绪；用同一音频断网复测，记录应用提示、结果与重试步骤。"
+        }
+      },
+      "lessonChanges": [
+        {
+          "before": null,
+          "after": {
+            "id": "e28-lang-chain-2",
+            "title": "首次断网听写，语言包处于哪种状态？",
+            "learning": "产品负责写清首次使用需不需要联网，研发报告该请求的服务及语言准备状态，测试在目标机型断网跑同一段录音并记录可见结果。",
+            "application": "让测试人员分别准备新机未装语言包、已安排下载、安装完成后断网三种情境。每次记录给学生的提示、能否重试和是否得到可读文本。",
+            "boundary": "文档给出采用对应 Android 接口的实现语义，具体学习机是否采用该服务、装有哪些语言及实际任务能否完成，须按机型验证。",
+            "itemIds": [
+              "e28-lang"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "itemId": "e28-lang",
+          "title": "学习机支持离线听写，首次断网时目标语言已经装好了吗？",
+          "facts": [
+            {
+              "claim": "Android 明确列出可支持但使用前尚需下载的语言。",
+              "sourceUrl": "https://developer.android.com/reference/android/speech/RecognitionSupport",
+              "locator": "getSupportedOnDeviceLanguages；另见 Installed、Pending 和 Online 方法"
+            },
+            {
+              "claim": "Android 提供单独查询系统端侧服务可用性的接口。",
+              "sourceUrl": "https://developer.android.com/reference/android/speech/SpeechRecognizer",
+              "locator": "isOnDeviceRecognitionAvailable"
+            }
+          ],
+          "boundary": "文档给出采用对应 Android 接口的实现语义，具体学习机是否采用该服务、装有哪些语言及实际任务能否完成，须按机型验证。",
+          "sources": [
+            {
+              "url": "https://developer.android.com/reference/android/speech/RecognitionSupport",
+              "publisherGroup": "Android Developers",
+              "name": "Android Developers",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "16c7782a2c41411cb873da52f804d90da7ceb73f7740a2fa4907c86456d7f0f5",
+              "readAt": "2026-11-28T10:43:20.422451+00:00",
+              "coverage": "body"
+            },
+            {
+              "url": "https://developer.android.com/reference/android/speech/SpeechRecognizer",
+              "publisherGroup": "Android Developers",
+              "name": "Android Developers",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "04c07d629ff9529d785e4dd0c5f0e3795cac9cc8897a31d11e1cc3938cfaea87",
+              "readAt": "2026-11-28T10:43:20.155623+00:00",
+              "coverage": "body"
+            }
+          ]
+        },
+        {
+          "itemId": "m24-android",
+          "title": "学习机第一次开麦比连续跟读慢，该分别测哪段时间？",
+          "facts": [
+            {
+              "claim": "Android 对首次入队时的管线启动单独定义了时延。",
+              "sourceUrl": "https://developer.android.com/ndk/guides/audio/audio-latency",
+              "locator": "Audio latency 名词说明及 Check your features"
+            }
+          ],
+          "boundary": "能力标记针对 Android 文档所列条件。未取得学习机实测数据，评分时间还受识别与应用处理影响。",
+          "sources": [
+            {
+              "url": "https://developer.android.com/ndk/guides/audio/audio-latency",
+              "publisherGroup": "Android Developers",
+              "name": "Android Developers",
+              "publishedAt": null,
+              "role": "official",
+              "textHash": "ba557002f1f307984598b16061ac62d8fa3ada1c5587147ea5ee855804e132b8",
+              "readAt": "2026-11-24T00:43:03.385460+00:00",
+              "coverage": "body"
+            }
+          ]
+        }
+      ],
+      "sourceChecks": [
+        {
+          "itemId": "e28-lang",
+          "url": "https://developer.android.com/reference/android/speech/RecognitionSupport",
+          "checkedAt": "2026-11-28T10:43:20.422451+00:00",
+          "state": "body",
+          "note": "本轮读取正文。getSupportedOnDeviceLanguages；另见 Installed、Pending 和 Online 方法。Android 明确列出可支持但使用前尚需下载的语言。"
+        },
+        {
+          "itemId": "e28-lang",
+          "url": "https://developer.android.com/reference/android/speech/SpeechRecognizer",
+          "checkedAt": "2026-11-28T10:43:20.155623+00:00",
+          "state": "body",
+          "note": "本轮读取正文。isOnDeviceRecognitionAvailable。Android 提供单独查询系统端侧服务可用性的接口。"
+        },
+        {
+          "itemId": "m24-android",
+          "url": "https://developer.android.com/ndk/guides/audio/audio-latency",
+          "checkedAt": "2026-11-28T10:43:19.776604+00:00",
+          "state": "body",
+          "note": "本轮读取正文。核对音频预热与输入、输出延迟定义。"
         }
       ]
     }
